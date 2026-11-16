@@ -64,9 +64,47 @@ def kokoro_tts(text, voice, speed, wav):
     return wav
 
 
+def http_tts(url, headers, payload, out):
+    import os
+    import urllib.request
+    req = urllib.request.Request(url, data=json.dumps(payload).encode(), method="POST",
+                                 headers={"Content-Type": "application/json", **headers})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        out.write_bytes(r.read())
+    return out
+
+
+def premium_tts(text, voice, out_base):
+    """Paid voices. Keys come from env vars, or from the Claude cloud proxy, which injects the saved
+    key for the host (the placeholder value is then replaced on the way out)."""
+    import os
+    engine, _, name = voice.partition(":")
+    mp3 = out_base.with_suffix(".mp3")
+    if engine == "eleven":
+        key = os.environ.get("ELEVENLABS_API_KEY", "set-by-proxy")
+        return http_tts(f"https://api.elevenlabs.io/v1/text-to-speech/{name}?output_format=mp3_44100_128",
+                        {"xi-api-key": key},
+                        {"text": text, "model_id": "eleven_multilingual_v2",
+                         "voice_settings": {"stability": 0.45, "similarity_boost": 0.8, "style": 0.35}}, mp3)
+    if engine == "openai":
+        key = os.environ.get("OPENAI_API_KEY", "set-by-proxy")
+        return http_tts("https://api.openai.com/v1/audio/speech", {"Authorization": f"Bearer {key}"},
+                        {"model": "gpt-4o-mini-tts", "voice": name or "onyx", "input": text, "response_format": "mp3",
+                         "instructions": "Energetic, confident YouTube gaming news narrator. Punchy, fast-paced, "
+                                         "clear. Slight excitement on big numbers and reveals."}, mp3)
+    raise ValueError(f"unknown voice engine: {engine}")
+
+
 def tts(text, voice, rate, out_base):
-    """Voice engines: Kokoro voices (am_*, af_*, bm_*, bf_*) run locally; en-US-*Neural voices use
-    Microsoft edge-tts (needs a normal internet connection). Falls back to robotic espeak-ng."""
+    """Voice engines: "eleven:<voice_id>" (ElevenLabs) and "openai:<voice>" (OpenAI) are paid APIs;
+    Kokoro voices (am_*, af_*, bm_*, bf_*) run locally for free; en-US-*Neural voices use Microsoft
+    edge-tts (needs a normal internet connection). Falls back to robotic espeak-ng."""
+    if ":" in voice:
+        try:
+            return premium_tts(text, voice, out_base)
+        except Exception as e:
+            print(f"  ! {voice.split(':')[0]} voice failed ({type(e).__name__}: {e}); using free Kokoro voice")
+            voice = "am_michael"
     if not voice.endswith("Neural"):
         try:
             speed = 1 + int(rate.strip("%+")) / 100 if rate.strip("%+-").isdigit() else 1.08
