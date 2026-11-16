@@ -1,4 +1,4 @@
 # Channel owner settings
 
-- Time zone: (not set yet; posting times are given in US Eastern)
+- Time zone: US Eastern (Miami, Florida), America/New_York. Posting times in CLAUDE.md are already local.
 - Upload style: owner reviews every video, then uploads and schedules in YouTube Studio
