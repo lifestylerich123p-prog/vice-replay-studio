@@ -11,11 +11,18 @@ make sensible choices, finish the whole run, and explain your choices in the fin
 2. **Make it** following CLAUDE.md: research with web search (facts from the last few days, keep source
    URLs), write `episodes/<slug>.json` with both `segments` and `short`, render the `--preview`, check 3-4
    frames, then render the final video and the `--short`.
-3. **Deliver for review** with SendUserFile (status `proactive`): the main .mp4, the -short.mp4 and
-   thumbnail.jpg from `output/<slug>/`. Then post one message containing, ready to paste into YouTube Studio:
-   3 title options (best first), the full description.txt, the tags from tags.txt, and a title + 2-3
-   hashtags for the Short. Point out anything the owner should double-check (e.g. a fact that was still
-   developing).
+3. **Deliver for review** as a private review page, published with the Artifact tool (load the
+   artifact-design skill first if you have it). Put these in one folder and publish `index.html` with the
+   other files passed through `files`:
+   - the main .mp4, the -short.mp4 and thumbnail.jpg from `output/<slug>/` (each must be under 15 MB:
+     if one isn't, re-encode it with ffmpeg at a higher `-crf`, e.g. 26, until it fits);
+   - `index.html`: page title "Vice Replay: <short topic>". Show the thumbnail, a `<video controls>` player
+     for each video, each with a download link, and copy buttons for: 3 title options (best first), the
+     full description.txt, the tags from tags.txt, and a title + 2-3 hashtags for the Short. Dark
+     background, pink #FF1F8E / cyan #00E5D2 accents, readable on a phone.
+   Also send the files with SendUserFile (status `proactive`) if that tool is available.
+   End the run with a short message: the review page link, the recommended title, and anything the
+   owner should double-check (e.g. a fact that was still developing).
 4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), then
    commit `episodes/<slug>.json` and `content/log.md` and push to `main`. Videos are not committed.
 5. If something fails (render error, no reliable news), still report what happened and what you made.
