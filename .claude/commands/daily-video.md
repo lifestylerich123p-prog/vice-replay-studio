@@ -9,12 +9,16 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    right now and pick the strongest topic. Check `content/log.md` and `episodes/` so you never repeat a
    topic that was already made.
 2. **Make it** following CLAUDE.md: research with web search (facts from the last few days, keep source
-   URLs), write `episodes/<slug>.json` with both `segments` and `short`, render the `--preview`, check 3-4
-   frames, then render the final video and the `--short`.
+   URLs), write `episodes/<slug>.json` with `segments`, `short` (cut from this video) and `shorts` holding
+   ONE standalone news Short (id `news`). For that news Short, prefer what big streamers and creators are
+   doing with GTA 6 right now (launch marathons, records, viral moments, reactions), else the most-talked-
+   about GTA 6 news of the day; it must be a different story from the main video. Render the `--preview`,
+   check 3-4 frames, then render the final video and `--short` (renders both Shorts).
 3. **Deliver for review** with SendUserFile (status `proactive`): the main .mp4, the -short.mp4 and
-   thumbnail.jpg from `output/<slug>/`. Then post one message containing, ready to paste into YouTube Studio:
-   3 title options (best first), the full description.txt, the tags from tags.txt, and a title + 2-3
-   hashtags for the Short. Point out anything the owner should double-check (e.g. a fact that was still
+   thumbnail.jpg from `output/<slug>/`, plus the second Short (`-short-news.mp4`). Then post one message containing, ready to paste into YouTube Studio:
+   3 title options (best first), the full description.txt, the tags from tags.txt, and for each Short
+   the contents of its .txt file. Suggest a posting order: main video now, Short 1 three hours later,
+   news Short in the evening. Point out anything the owner should double-check (e.g. a fact that was still
    developing). Only if SendUserFile is not available: publish a private review page with the Artifact tool
    holding the videos, thumbnail and that text instead.
 4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), then

@@ -2,6 +2,8 @@
 
 The daily automation picks the row for today's date (UTC). If the facts for that topic aren't out yet,
 or another creator angle clearly fits the day better, it picks a better topic and logs why.
+Every day also gets a standalone news Short, ideally about what big streamers and creators are
+doing with GTA 6 (launch marathons, first reactions, records, viral moments).
 After the last row, it picks trending GTA 6 topics itself (see `.claude/commands/daily-video.md`).
 
 | Date (2026) | Main video | Short |

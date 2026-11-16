@@ -210,9 +210,10 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     brand.headline_card(seg.get("headline", ""), w, h, vertical).save(ov)
     subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical)
     out = work / f"seg_{i:02d}.mp4"
+    fade_in = "" if (vertical and i == 0) else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
     fc = (f"[0:v]{vf},setsar=1,fps={FPS}[bg];[bg][1:v]overlay=0:0,"
           f"subtitles='{subs}':fontsdir='{brand.FONTS}',"
-          f"fade=t=in:st=0:d=0.25,fade=t=out:st={dur - 0.25}:d=0.25[v];"
+          f"{fade_in}fade=t=out:st={dur - 0.25}:d=0.25[v];"
           f"[2:a]adelay=200|200,apad,atrim=0:{dur},aformat=sample_rates=48000:channel_layouts=stereo[a]")
     run(["ffmpeg", "-y", "-v", "error", *vin, "-loop", "1", "-i", str(ov), "-i", str(audio),
          "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-t", str(dur), *enc, str(out)])
@@ -280,31 +281,11 @@ def fmt_ts(t):
     return f"{t // 60}:{t % 60:02d}"
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("episode")
-    ap.add_argument("--short", action="store_true", help="vertical 1080x1920 YouTube Short")
-    ap.add_argument("--preview", action="store_true", help="fast low-res draft")
-    ap.add_argument("--voice", help=f"edge-tts voice (default {DEFAULT_VOICE})")
-    a = ap.parse_args()
-
-    ep_path = Path(a.episode).resolve()
-    ep = json.loads(ep_path.read_text())
-    base = ep_path.parent
-    slug = ep.get("slug") or re.sub(r"[^a-z0-9]+", "-", ep["title"].lower()).strip("-")
-    vertical = a.short
-    w, h = (1080, 1920) if vertical else (1920, 1080)
-    if a.preview:
-        w, h = w // 2, h // 2
-    enc = ENC + (["-preset", "veryfast", "-crf", "28"] if a.preview else [])
-    voice = a.voice or ep.get("voice", DEFAULT_VOICE)
-    rate = ep.get("rate", "+8%")
-
+def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, name):
+    """Render one video (main or a Short) and return (final_path, chapters, used_footage)."""
     out_dir = ROOT / "output" / slug
-    work = out_dir / ("work_short" if vertical else "work")
+    work = out_dir / (f"work_{name}" if vertical else "work")
     work.mkdir(parents=True, exist_ok=True)
-
-    segments = ep["short"] if vertical and ep.get("short") else ep["segments"]
     # Footage library: every file in media/ (official screenshots, trailer clips, your gameplay).
     # Segments without their own "media" rotate through it; "media": "none" keeps the neon background.
     library = sorted(p for p in (ROOT / "media").rglob("*") if p.suffix.lower() in VIDEO_EXT | IMAGE_EXT)
@@ -339,10 +320,9 @@ def main():
 
     lst = work / "concat.txt"
     lst.write_text("".join(f"file '{p}'\n" for p in parts))
-    name = f"{slug}{'-short' if vertical else ''}{'-preview' if a.preview else ''}.mp4"
     raw = work / "joined.mp4"
     run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(raw)])
-    final = out_dir / name
+    final = out_dir / f"{name}{'-preview' if preview else ''}.mp4"
     music = ep.get("music")
     music = (base / music) if music else next(iter(sorted((ROOT / "assets" / "music").glob("*.mp3"))), None)
     mixed = work / "mixed.mp4"
@@ -353,7 +333,51 @@ def main():
     # YouTube plays back at about -14 LUFS; normalize so the voice isn't quiet next to other videos
     run(["ffmpeg", "-y", "-v", "error", "-i", str(mixed), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
          "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(final)])
+    return final, chapters, used_footage
 
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("episode")
+    ap.add_argument("--short", action="store_true", help="vertical 1080x1920 YouTube Short")
+    ap.add_argument("--preview", action="store_true", help="fast low-res draft")
+    ap.add_argument("--voice", help=f"edge-tts voice (default {DEFAULT_VOICE})")
+    a = ap.parse_args()
+
+    ep_path = Path(a.episode).resolve()
+    ep = json.loads(ep_path.read_text())
+    base = ep_path.parent
+    slug = ep.get("slug") or re.sub(r"[^a-z0-9]+", "-", ep["title"].lower()).strip("-")
+    vertical = a.short
+    w, h = (1080, 1920) if vertical else (1920, 1080)
+    if a.preview:
+        w, h = w // 2, h // 2
+    enc = ENC + (["-preset", "veryfast", "-crf", "28"] if a.preview else [])
+    voice = a.voice or ep.get("voice", DEFAULT_VOICE)
+    rate = ep.get("rate", "+8%")
+
+    out_dir = ROOT / "output" / slug
+    if vertical:
+        # "shorts": list of {"id", "title", "description", "segments"}; the legacy "short" is the main-cut Short
+        shorts = ([{"id": "", "title": ep.get("short_title", ""), "description": ep.get("short_description", ""),
+                    "segments": ep["short"]}] if ep.get("short") else []) + ep.get("shorts", [])
+        if not shorts:
+            sys.exit("No 'short' or 'shorts' in this episode.")
+        for sh in shorts:
+            name = f"{slug}-short" + (f"-{sh['id']}" if sh.get("id") else "")
+            print(f"== Short: {name}")
+            final, _, used = build(ep, base, slug, sh["segments"], True, a.preview, enc, w, h, voice, rate, name)
+            tags = " ".join("#" + t for t in sh.get("hashtags", ["GTA6", "GTAVI", "Shorts"]))
+            lines = ["TITLE", sh.get("title") or ep["title"], "", "DESCRIPTION", sh.get("description", ""), ""]
+            if used:
+                lines += ["GTA VI footage/screenshots: Rockstar Games, used for news and commentary.", ""]
+            lines += ["Vice Replay is a fan channel, not affiliated with Rockstar Games.", "", tags]
+            (out_dir / f"{name}.txt").write_text("\n".join(lines))
+            print(f"Done: {final}  ({fmt_ts(duration(final))})")
+        return
+    final, chapters, used_footage = build(ep, base, slug, ep["segments"], False, a.preview, enc, w, h, voice,
+                                          rate, slug)
+    out_dir = ROOT / "output" / slug
     if not vertical:
         th = ep.get("thumbnail", {})
         bg = th.get("image")
