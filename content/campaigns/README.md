@@ -3,6 +3,15 @@
 Streamers and brands pay per 1,000 views for clips of their streams. Because the streamer gives permission,
 campaign footage is the ONE case where Vice Replay may use a streamer's own video and audio.
 
+## Owner approval comes first
+Claude never picks, joins or clips a campaign on its own. A campaign is only worked on when its file has
+`"owner_approved": true`, set after the owner reviewed the campaign and said yes. No approval, no clips.
+
+## Submit within 30 minutes of posting
+Every clip must be submitted on the campaign page within **30 minutes** of going live (`submit_within_minutes`).
+So: only schedule a campaign clip for a time you'll be at your phone, post it, copy the link, submit it, and
+log both times in `tracker.md`.
+
 ## Join a campaign
 1. Pick GTA 6 campaigns only (they fit the channel and its audience).
 2. Copy `_example.json` to `<short-name>.json` (e.g. `lacy-gta6.json`) and fill it in:
@@ -12,6 +21,7 @@ campaign footage is the ONE case where Vice Replay may use a streamer's own vide
      fractions of the frame `[x, y, width, height]` (Claude can measure this from one frame of a VOD).
    - `layout`: `stacked` (camera on top, game below), `blur` (whole frame centred) or `full` (centre crop).
    - `status`: `active` while you're clipping it, `ended` after.
+   - `owner_approved`: `true` only after the owner approves the campaign (with `owner_approved_on` date).
 3. Add source footage to `source_queue` (VOD links or file paths the campaign allows you to use).
 
 ## Make clips

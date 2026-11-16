@@ -28,7 +28,9 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    commit `episodes/<slug>.json` and `content/log.md` and push to `main`. Videos are not committed.
    If the push is refused, try once to attach the repo with push access (add_repo), push again, and if it is
    still refused don't keep trying: send the episode JSON with SendUserFile and say the log wasn't saved.
-5. **Campaign clips**: for each `content/campaigns/*.json` with `status` `active` and something in
+5. **Campaign clips**: only for campaigns the owner approved (`owner_approved: true`); never start or join one
+   yourself. For each `content/campaigns/*.json` with `owner_approved` true, `status` `active` and something in
    `source_queue`, follow `.claude/commands/campaign-clips.md` and deliver up to `max_clips_per_day` clips
-   in the same report, with a posting time from the schedule.
+   in the same report, with a posting time from the schedule and the reminder to submit each clip on the
+   campaign page within 30 minutes of it going live.
 6. If something fails (render error, no reliable news), still report what happened and what you made.

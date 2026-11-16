@@ -69,6 +69,9 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
 - Every video needs a real angle (a guide, a list, an opinion, the owner's gameplay). Don't churn out
   near-identical videos: YouTube demonetizes mass-produced, repetitive content.
 - Don't spoil story content in titles or thumbnails.
+- Campaigns need the owner's approval first: only clip campaigns whose file has `owner_approved: true`, which
+  is set only when the owner approves that campaign in chat. Each campaign clip must be submitted on the
+  campaign page within 30 minutes of being posted; every delivery says so.
 - Paid clipping campaigns (Whop Content Rewards etc.): the one exception where a streamer's own footage and
   voice may be used, because the campaign grants permission. Only GTA 6 campaigns, only footage from where
   the campaign says, and follow every rule in `content/campaigns/<name>.json` exactly (length, credit,

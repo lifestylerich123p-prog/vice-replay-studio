@@ -1,4 +1,6 @@
 {
+  "owner_approved": false,
+  "owner_approved_on": "",
   "name": "Example streamer GTA 6 campaign",
   "platform": "Whop Content Rewards",
   "campaign_url": "paste the campaign link here",
@@ -31,5 +33,6 @@
   "source_footage": "where the campaign says to get footage (VOD links, Drive folder)",
   "source_queue": [],
   "max_clips_per_day": 2,
-  "notes": "Copy this file to content/campaigns/<short-name>.json for each campaign you join, set status to active."
+  "notes": "Copy this file to content/campaigns/<short-name>.json for each campaign you join, set status to active.",
+  "submit_within_minutes": 30
 }
