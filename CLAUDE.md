@@ -40,7 +40,14 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
   GTA 6 trailers, and the owner's own gameplay. Never other creators' videos, never a whole trailer.
   Clip audio is always dropped (trailer music is what triggers Content ID claims); the narration must
   add real commentary on top. Pick a matching file per segment when the filename makes that possible
-  (e.g. `media/beach-sunset.jpg` for a segment about beaches).
+  (e.g. `media/beach-sunset.jpg` for a segment about beaches). `media/official/` holds 51 official Rockstar
+  screenshots named by place, character or car (vice-city-*, leonida-keys-*, grassrivers-*, port-gellhorn-*,
+  mount-kalaga-*, ambrosia-*, jason-duval-*, lucia-caminos-*, jason-and-lucia-*, car-*, and supporting
+  characters). Set `media` per segment to the best match; rotate so one video doesn't repeat a shot.
+  Keep strip-club or sexualized images out of the library (they get videos age-restricted/limited ads).
+- No official GTA 6 music: the radio stations, trailer songs and the Justice score are licensed music that
+  Content ID claims. Don't download or use them. Game sound (engines, city ambience, gunfire) is fine
+  only from the owner's own gameplay recorded with the in-game radio and music turned off.
 - Keep it cheap: the voice is the free Kokoro voice unless the owner says otherwise. Don't add paid APIs.
 - Do not make the channel look official: no Rockstar logos, and the description keeps the
   "not affiliated" line.
