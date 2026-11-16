@@ -69,6 +69,11 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
 - Every video needs a real angle (a guide, a list, an opinion, the owner's gameplay). Don't churn out
   near-identical videos: YouTube demonetizes mass-produced, repetitive content.
 - Don't spoil story content in titles or thumbnails.
+- Paid clipping campaigns (Whop Content Rewards etc.): the one exception where a streamer's own footage and
+  voice may be used, because the campaign grants permission. Only GTA 6 campaigns, only footage from where
+  the campaign says, and follow every rule in `content/campaigns/<name>.json` exactly (length, credit,
+  hashtags, platforms). Tool: `studio/clip.py`; command: `/campaign-clips`. No Vice Replay music on these:
+  keep the original audio. Keep campaign clips to `max_clips_per_day` so the channel stays Vice Replay.
 - Streamer/creator news (e.g. what big streamers are planning or doing in GTA 6) performs best on this
   channel. Cover it as news in our own format: our voice, our graphics, our footage library. Never use a
   streamer's stream or video footage, and don't put words in their mouths: only report what reliable

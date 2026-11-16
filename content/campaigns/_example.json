@@ -1,0 +1,35 @@
+{
+  "name": "Example streamer GTA 6 campaign",
+  "platform": "Whop Content Rewards",
+  "campaign_url": "paste the campaign link here",
+  "rate_per_1000_views": 1.5,
+  "status": "example",
+  "layout": "stacked",
+  "facecam_box": [
+    0.0,
+    0.0,
+    0.28,
+    0.32
+  ],
+  "gameplay_box": [
+    0.12,
+    0.0,
+    0.76,
+    1.0
+  ],
+  "clip_seconds": 30,
+  "captions": true,
+  "on_screen_credit": "twitch.tv/streamer",
+  "required_hashtags": [
+    "#GTA6"
+  ],
+  "required_in_caption": "",
+  "rules": [
+    "Copy every rule from the campaign page here, word for word.",
+    "Example: clips must be 15-60 seconds, posted on YouTube Shorts / TikTok / Instagram."
+  ],
+  "source_footage": "where the campaign says to get footage (VOD links, Drive folder)",
+  "source_queue": [],
+  "max_clips_per_day": 2,
+  "notes": "Copy this file to content/campaigns/<short-name>.json for each campaign you join, set status to active."
+}
