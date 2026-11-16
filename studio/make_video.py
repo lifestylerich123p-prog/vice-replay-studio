@@ -170,10 +170,14 @@ def caption_file(text, start, total, out, w, h, vertical):
 
 # ---------- visuals ----------
 
-def visual_input(media, dur, w, h, seed, work):
-    """ffmpeg input args + filter for the segment background."""
+def visual_input(media, dur, w, h, seed, work, start=None):
+    """ffmpeg input args + filter for the segment background. Clip audio is never used
+    (trailer music is what triggers Content ID claims)."""
     if media and Path(media).suffix.lower() in VIDEO_EXT:
-        args = ["-stream_loop", "-1", "-i", str(media)]
+        if start is None:  # spread segments across the clip so the same shot isn't reused
+            length = duration(media)
+            start = (seed * 7.3) % max(1.0, length - dur) if length > dur + 1 else 0
+        args = ["-ss", f"{start:.2f}", "-stream_loop", "-1", "-i", str(media)]
         vf = f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},eq=brightness=-0.04:saturation=1.15"
         return args, vf
     if media and Path(media).suffix.lower() in IMAGE_EXT:
@@ -201,7 +205,7 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     if media and not Path(media).exists():
         print(f"  ! media not found, using generated background: {media}")
         media = None
-    vin, vf = visual_input(media, dur, w, h, i, work)
+    vin, vf = visual_input(media, dur, w, h, i, work, seg.get("media_start"))
     ov = work / f"ov_{i}.png"
     brand.headline_card(seg.get("headline", ""), w, h, vertical).save(ov)
     subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical)
@@ -301,9 +305,19 @@ def main():
     work.mkdir(parents=True, exist_ok=True)
 
     segments = ep["short"] if vertical and ep.get("short") else ep["segments"]
+    # Footage library: every file in media/ (official screenshots, trailer clips, your gameplay).
+    # Segments without their own "media" rotate through it; "media": "none" keeps the neon background.
+    library = sorted(p for p in (ROOT / "media").rglob("*") if p.suffix.lower() in VIDEO_EXT | IMAGE_EXT)
+    k = 0
     for s in segments:
-        if s.get("media"):
+        if s.get("media") == "none":
+            s["media"] = None
+        elif s.get("media"):
             s["media"] = str((base / s["media"]).resolve()) if not Path(s["media"]).is_absolute() else s["media"]
+        elif library:
+            s["media"] = str(library[(k + len(slug)) % len(library)])
+            k += 1
+    used_footage = any(s.get("media") for s in segments)
 
     parts, chapters, t = [], [], 0.0
     if not vertical:
@@ -355,6 +369,8 @@ def main():
         desc = [ep.get("description", ep["title"]), ""]
         if len(ch) >= 3:
             desc += ["CHAPTERS"] + [f"{fmt_ts(s)} {n}" for s, n in ch] + [""]
+        if used_footage:
+            desc += ["Grand Theft Auto VI footage and screenshots: Rockstar Games, used for news and commentary.", ""]
         if ep.get("sources"):
             desc += ["SOURCES"] + ep["sources"] + [""]
         desc += ["Subscribe to Vice Replay for GTA's wildest moments. On replay.", "",

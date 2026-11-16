@@ -29,8 +29,13 @@ Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2 on deep purple/black, Ant
 Also give the user 3 alternative titles (under 60 characters, the main keyword "GTA 6" first).
 
 ## Rules for this channel
-- Do not use Rockstar trailer footage or other creators' clips in `media/`. Use the owner's own gameplay
-  captures or screenshots, or the generated backgrounds. Re-uploaded trailers get Content ID claims.
+- Footage library: everything in `media/` is used automatically as segment backgrounds (segments with no
+  `media` rotate through it). Allowed there: official Rockstar screenshots, short clips cut from official
+  GTA 6 trailers, and the owner's own gameplay. Never other creators' videos, never a whole trailer.
+  Clip audio is always dropped (trailer music is what triggers Content ID claims); the narration must
+  add real commentary on top. Pick a matching file per segment when the filename makes that possible
+  (e.g. `media/beach-sunset.jpg` for a segment about beaches).
+- Keep it cheap: the voice is the free Kokoro voice unless the owner says otherwise. Don't add paid APIs.
 - Do not make the channel look official: no Rockstar logos, and the description keeps the
   "not affiliated" line.
 - Every video needs a real angle (a guide, a list, an opinion, the owner's gameplay). Don't churn out

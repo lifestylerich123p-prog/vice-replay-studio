@@ -2,9 +2,8 @@ output/
 __pycache__/
 *.pyc
 .DS_Store
-# your raw gameplay is big; keep it out of git
-media/*
-!media/.gitkeep
+# media/ (footage library) IS committed so the daily automation can use it; keep files under 25 MB
+media/_*
 assets/music/*
 !assets/music/.gitkeep
 
