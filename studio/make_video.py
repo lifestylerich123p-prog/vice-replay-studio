@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 FPS = 30
 VIDEO_EXT = {".mp4", ".mov", ".mkv", ".webm", ".m4v"}
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".webp"}
-DEFAULT_VOICE = "en-US-AndrewNeural"
+DEFAULT_VOICE = "am_michael"
 
 
 def run(cmd):
@@ -39,12 +39,45 @@ def duration(path):
 
 # ---------- voice ----------
 
+VOICE_DIR = ROOT / "assets" / "voice"
+KOKORO_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+KOKORO_FILES = ["kokoro-v1.0.int8.onnx", "voices-v1.0.bin"]
+_kokoro = None
+
+
+def kokoro_tts(text, voice, speed, wav):
+    """Kokoro: free open-source neural voice that runs locally (no API key, no internet after first run)."""
+    global _kokoro
+    if _kokoro is None:
+        import urllib.request
+        from kokoro_onnx import Kokoro
+        VOICE_DIR.mkdir(parents=True, exist_ok=True)
+        for f in KOKORO_FILES:
+            if not (VOICE_DIR / f).exists():
+                print(f"  downloading voice model {f} (one time)...")
+                urllib.request.urlretrieve(KOKORO_URL + f, VOICE_DIR / (f + ".part"))
+                (VOICE_DIR / (f + ".part")).rename(VOICE_DIR / f)
+        _kokoro = Kokoro(str(VOICE_DIR / KOKORO_FILES[0]), str(VOICE_DIR / KOKORO_FILES[1]))
+    import soundfile as sf
+    samples, sr = _kokoro.create(text, voice=voice, speed=speed, lang="en-us")
+    sf.write(str(wav), samples, sr)
+    return wav
+
+
 def tts(text, voice, rate, out_base):
-    """Neural voice via edge-tts (free, needs internet). Falls back to offline espeak-ng."""
+    """Voice engines: Kokoro voices (am_*, af_*, bm_*, bf_*) run locally; en-US-*Neural voices use
+    Microsoft edge-tts (needs a normal internet connection). Falls back to robotic espeak-ng."""
+    if not voice.endswith("Neural"):
+        try:
+            speed = 1 + int(rate.strip("%+")) / 100 if rate.strip("%+-").isdigit() else 1.08
+            return kokoro_tts(text, voice, speed, out_base.with_suffix(".wav"))
+        except Exception as e:
+            print(f"  Kokoro voice failed ({type(e).__name__}: {e}); trying fallback")
     mp3 = out_base.with_suffix(".mp3")
     try:
         import edge_tts
-        asyncio.run(edge_tts.Communicate(text, voice, rate=rate).save(str(mp3)))
+        v = voice if voice.endswith("Neural") else "en-US-AndrewNeural"
+        asyncio.run(edge_tts.Communicate(text, v, rate=rate).save(str(mp3)))
         if mp3.stat().st_size > 1000:
             return mp3
     except Exception as e:  # network blocked, package missing, ...
@@ -260,10 +293,14 @@ def main():
     final = out_dir / name
     music = ep.get("music")
     music = (base / music) if music else next(iter(sorted((ROOT / "assets" / "music").glob("*.mp3"))), None)
+    mixed = work / "mixed.mp4"
     if music and Path(music).exists():
-        mix_music(raw, music, final, ["-c:a", "aac", "-b:a", "192k"])
+        mix_music(raw, music, mixed, ["-c:a", "aac", "-b:a", "192k"])
     else:
-        shutil.copy(raw, final)
+        shutil.copy(raw, mixed)
+    # YouTube plays back at about -14 LUFS; normalize so the voice isn't quiet next to other videos
+    run(["ffmpeg", "-y", "-v", "error", "-i", str(mixed), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
+         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(final)])
 
     if not vertical:
         th = ep.get("thumbnail", {})
