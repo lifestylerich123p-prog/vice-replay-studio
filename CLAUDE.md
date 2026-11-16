@@ -48,6 +48,9 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
 - No official GTA 6 music: the radio stations, trailer songs and the Justice score are licensed music that
   Content ID claims. Don't download or use them. Game sound (engines, city ambience, gunfire) is fine
   only from the owner's own gameplay recorded with the in-game radio and music turned off.
+- Audio is automatic: an original synthwave theme (`studio/sound.py`, generated, no licensing) ducks under the
+  voice, with a whoosh on every cut and an impact on the hook. Captions highlight each word as it's spoken.
+  Set `"music": "none"` or `"sfx": false` in an episode to turn them off.
 - Keep it cheap: the voice is the free Kokoro voice unless the owner says otherwise. Don't add paid APIs.
 - Do not make the channel look official: no Rockstar logos, and the description keeps the
   "not affiliated" line.

@@ -156,13 +156,20 @@ def caption_file(text, start, total, out, w, h, vertical):
         f"Style: Cap,Montserrat ExtraBold,{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H8C1F00FF,1,0,0,0,100,100,0,0,1,{max(4, size // 10)},3,2,60,60,{margin_v},1",
         "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
+    # word-by-word: the whole chunk stays on screen, the word being spoken pops in cyan and slightly bigger
     t = start
     for c, wt in zip(chunks, weights):
         d = span * wt / sum(weights)
-        cap = c.upper()
-        # make numbers pop in cyan
-        cap = re.sub(r"(\$?\d[\d,.:]*\s?(?:GB|%|K|M)?)", r"{\\c&HD2E500&}\1{\\c&HFFFFFF&}", cap)
-        lines.append(f"Dialogue: 0,{ass_time(t)},{ass_time(t + d)},Cap,,0,0,0,,{{\\fad(60,40)}}{cap}")
+        words_c = c.upper().split()
+        ww = [len(x) + 2 for x in words_c]
+        wt0 = t
+        for j, word_len in enumerate(ww):
+            wd = d * word_len / sum(ww)
+            shown = " ".join(
+                (r"{\c&HD2E500&\fscx112\fscy112}" + x + r"{\c&HFFFFFF&\fscx100\fscy100}") if k == j else x
+                for k, x in enumerate(words_c))
+            lines.append(f"Dialogue: 0,{ass_time(wt0)},{ass_time(wt0 + wd)},Cap,,0,0,0,,{shown}")
+            wt0 += wd
         t += d
     out.write_text("\n".join(lines), encoding="utf-8")
     return out
@@ -268,12 +275,30 @@ def outro_image(text, w, h, path):
     return path
 
 
-def mix_music(video, music, out, enc_audio):
+def mix_audio(video, music, sfx, out, enc_audio, music_level=0.16):
+    """Voice + music bed that ducks under the voice (sidechain) + sound effects."""
     total = duration(video)
-    fc = (f"[1:a]volume=0.10,afade=t=in:d=1.5,afade=t=out:st={max(0, total - 3)}:d=3,atrim=0:{total}[m];"
-          f"[0:a][m]amix=inputs=2:duration=first:normalize=0[a]")
-    run(["ffmpeg", "-y", "-v", "error", "-i", str(video), "-stream_loop", "-1", "-i", str(music),
-         "-filter_complex", fc, "-map", "0:v", "-map", "[a]", "-c:v", "copy", *enc_audio, str(out)])
+    ins = ["-i", str(video)]
+    fc = "[0:a]asplit=2[v][key];"
+    mixin = "[v]"
+    n = 1
+    if music:
+        ins += ["-stream_loop", "-1", "-i", str(music)]
+        fc += (f"[{n}:a]volume={music_level},afade=t=in:d=0.8,afade=t=out:st={max(0, total - 2.5)}:d=2.5,"
+               f"atrim=0:{total},aformat=sample_rates=48000:channel_layouts=stereo[mraw];"
+               f"[mraw][key]sidechaincompress=threshold=0.03:ratio=6:attack=15:release=350[m];")
+        mixin += "[m]"
+        n += 1
+    else:
+        fc += "[key]anullsink;"
+    if sfx:
+        ins += ["-i", str(sfx)]
+        fc += f"[{n}:a]volume=0.55,aformat=sample_rates=48000:channel_layouts=stereo[s];"
+        mixin += "[s]"
+        n += 1
+    fc += f"{mixin}amix=inputs={n}:duration=first:normalize=0[a]"
+    run(["ffmpeg", "-y", "-v", "error", *ins, "-filter_complex", fc, "-map", "0:v", "-map", "[a]",
+         "-c:v", "copy", *enc_audio, str(out)])
 
 
 def fmt_ts(t):
@@ -301,6 +326,7 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     used_footage = any(s.get("media") for s in segments)
 
     parts, chapters, t = [], [], 0.0
+    cuts, impacts = [], [0.0]  # sound effects: impact on the hook, whoosh on every cut
     if not vertical:
         intro = render_card("intro", intro_image(ep["title"], w, h, work / "intro.png"), 2.6, work, enc, w, h)
         parts.append(intro)
@@ -311,9 +337,12 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
         clip, d = render_segment(i, seg, audio, w, h, vertical, work, enc)
         if seg.get("chapter") or seg.get("headline"):
             chapters.append((0.0 if i == 0 and vertical else t, seg.get("chapter") or seg["headline"]))
+        if t > 0:
+            cuts.append(t)
         parts.append(clip)
         t += duration(clip)
     if not vertical:
+        cuts.append(t)
         outro = render_card("outro", outro_image(ep.get("outro_card", "New GTA 6 videos every week"), w, h,
                                                  work / "outro.png"), 4.0, work, enc, w, h)
         parts.append(outro)
@@ -323,13 +352,22 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     raw = work / "joined.mp4"
     run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(raw)])
     final = out_dir / f"{name}{'-preview' if preview else ''}.mp4"
+    # Music: the episode's "music" file, else the first track in assets/music/, else the original theme
+    # (generated on first use). "music": "none" turns it off; "sfx": false turns sound effects off.
+    from . import sound
     music = ep.get("music")
-    music = (base / music) if music else next(iter(sorted((ROOT / "assets" / "music").glob("*.mp3"))), None)
-    mixed = work / "mixed.mp4"
-    if music and Path(music).exists():
-        mix_music(raw, music, mixed, ["-c:a", "aac", "-b:a", "192k"])
+    if music == "none":
+        music = None
+    elif music:
+        music = base / music
     else:
-        shutil.copy(raw, mixed)
+        lib = sorted(p for p in (ROOT / "assets" / "music").glob("*") if p.suffix.lower() in {".mp3", ".wav", ".m4a"})
+        music = lib[0] if lib else sound.theme(ROOT / "assets" / "music" / "vice-replay-theme.wav")
+    sfx = None
+    if ep.get("sfx", True):
+        sfx = sound.sfx_track(work / "sfx.wav", duration(raw), cuts, impacts)
+    mixed = work / "mixed.mp4"
+    mix_audio(raw, music if music and Path(music).exists() else None, sfx, mixed, ["-c:a", "aac", "-b:a", "192k"])
     # YouTube plays back at about -14 LUFS; normalize so the voice isn't quiet next to other videos
     run(["ffmpeg", "-y", "-v", "error", "-i", str(mixed), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
          "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(final)])

@@ -1,0 +1,40 @@
+{
+  "title": "YouTube's 24-Hour GTA 6 Launch Stream",
+  "slug": "youtube-24h-gta6-stream",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "short_title": "YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts",
+  "short_description": "YouTube's 24-hour GTA 6 launch stream: RDCWorld pre-show at 11 PM ET on Nov 18, then 24 hours of GTA 6 from midnight ET with 30+ creators including Caylus, Zhong and Kat, Jelly, Rivers, Jake Baldino and Cinna. Sources: GTA BOOM, Streams Charts, Notebookcheck.",
+  "sources": [
+    "GTA BOOM: https://www.gtaboom.com/gta-6-is-getting-a-24-hour-youtube-livestream-with-more-than-30-creators-5ad2",
+    "Streams Charts: https://streamscharts.com/news/youtube-announces-24-hour-gta-6-launch-marathon-global-creators",
+    "Notebookcheck: https://www.notebookcheck.net/YouTube-to-host-24-hour-GTA-6-release-date-livestream-with-launch-day-gameplay.1449040.0.html"
+  ],
+  "short": [
+    {
+      "headline": "24 hours of GTA 6",
+      "text": "YouTube is streaming GTA 6 for twenty four hours straight, with over thirty creators.",
+      "media": "../media/official/vice-city-13.jpg"
+    },
+    {
+      "headline": "11 PM ET, Nov 18",
+      "text": "It starts with an RDC World pre-show at 11 PM Eastern on November 18th.",
+      "media": "../media/official/vice-city-11.jpg"
+    },
+    {
+      "headline": "Midnight: go time",
+      "text": "Then at midnight Eastern, the twenty four hour GTA 6 marathon begins, on YouTube's own channel.",
+      "media": "../media/official/vice-city-17.jpg"
+    },
+    {
+      "headline": "Who's playing",
+      "text": "Caylus, Zhong and Kat, Jelly, Rivers, Jake Baldino, Cinna, and creators from over a dozen countries.",
+      "media": "../media/official/jason-and-lucia-09.jpg"
+    },
+    {
+      "headline": "Watch or play?",
+      "text": "So, are you watching, or playing at midnight yourself? Follow Vice Replay for launch week.",
+      "media": "../media/official/vice-city-15.jpg"
+    }
+  ]
+}
