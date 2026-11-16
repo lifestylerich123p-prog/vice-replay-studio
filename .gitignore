@@ -1,0 +1,9 @@
+output/
+__pycache__/
+*.pyc
+.DS_Store
+# your raw gameplay is big; keep it out of git
+media/*
+!media/.gitkeep
+assets/music/*
+!assets/music/.gitkeep
