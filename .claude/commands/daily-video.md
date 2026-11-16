@@ -15,10 +15,13 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    about GTA 6 news of the day; it must be a different story from the main video. Render the `--preview`,
    check 3-4 frames, then render the final video and `--short` (renders both Shorts).
 3. **Deliver for review** with SendUserFile (status `proactive`): the main .mp4, the -short.mp4 and
-   thumbnail.jpg from `output/<slug>/`, plus the second Short (`-short-news.mp4`). Then post one message containing, ready to paste into YouTube Studio:
+   thumbnail-a/b/c.jpg from `output/<slug>/`, plus the second Short (`-short-news.mp4`). Then post one message containing, ready to paste into YouTube Studio:
    3 title options (best first), the full description.txt, the tags from tags.txt, and for each Short
-   the contents of its .txt file. Suggest a posting order: main video now, Short 1 three hours later,
-   news Short in the evening. Point out anything the owner should double-check (e.g. a fact that was still
+   the contents of its .txt file. Add a **posting plan**: the exact time to schedule each
+   upload today, from the posting schedule in CLAUDE.md for today's weekday (Eastern time, plus the
+   owner's local time if `content/owner.md` gives a time zone), and the `pinned_comment` to pin on each.
+   Remind them to add thumbnail-a/b/c with Test & Compare on the main video and to link the main video
+   as the Shorts' "Related video". Point out anything the owner should double-check (e.g. a fact that was still
    developing). Only if SendUserFile is not available: publish a private review page with the Artifact tool
    holding the videos, thumbnail and that text instead.
 4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), then

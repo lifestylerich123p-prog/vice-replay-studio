@@ -20,8 +20,14 @@ Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2 on deep purple/black, Ant
      (same segment format, 2-4 segments, 20-45 seconds). The daily run adds one news Short here.
    - Shorts get far more views than long videos on this channel. Short segment 1 must hook in the first
      2 seconds (a number, a name, a surprise), and its `headline` doubles as the Short's cover text.
-   - `thumbnail`: `line1` (1-2 words, white), `line2` (2-3 words, pink slab), `tag` (2-4 words).
+   - `thumbnail`: `line1` (1-2 words, white), `line2` (2-3 words, pink slab), `tag` (2-4 words), `image`
+     (the best screenshot for it). The render makes thumbnail-a/b/c.jpg with different pictures for
+     YouTube Studio's Test & Compare (up to 3 thumbnails per video).
      Thumbnail text must not repeat the title word for word.
+   - Make Shorts loop: the last line should flow back into the first (e.g. ends "...and that's why" while
+     the hook starts with the reason), so replays count as extra watch time.
+   - `pinned_comment`: one question for the comments that's easy to answer (pick-one or a number), posted and
+     pinned by the owner right after upload.
    - Write narration for the ear: short sentences, spell numbers the way they should be spoken
      when it matters ("212 gigabytes"), no emoji, no markdown.
 3. **Render**:
@@ -33,6 +39,12 @@ Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2 on deep purple/black, Ant
    and read `output/<slug>/description.txt`. Then report the output paths and the title options.
 
 Also give the user 3 alternative titles (under 60 characters, the main keyword "GTA 6" first).
+
+## Posting schedule (US Eastern time; starting point, adjust from YouTube Studio analytics)
+- Weekdays: main video 3-4 PM, Short cut from it 6 PM, news Short 8-9 PM.
+- Saturday: main video 1-2 PM, Shorts 4 PM and 8 PM. Sunday: like weekdays, 1 hour earlier.
+- Big news breaks: post the Short as soon as it's ready; freshness beats the schedule.
+- Upload everything in the morning and use YouTube Studio's Schedule option, so posting happens on time.
 
 ## Rules for this channel
 - Footage library: everything in `media/` is used automatically as segment backgrounds (segments with no
