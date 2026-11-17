@@ -10,3 +10,4 @@
   only under the rules in `.claude/commands/breaking-news.md` (score 8+/10, 2+ reputable sources, max 2 per day,
   Shorts only, no spoilers, no repeats). Everything else still waits for the owner's "approve". The owner can turn
   this off any time by saying so; then delete this line.
+- Gear page (affiliate links, share as 'anyone with the link'): https://claude.ai/artifact/RHP44Wm5Dyhn7WJn3yMmNW (source: pages/gear.html)

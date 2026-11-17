@@ -10,3 +10,8 @@ never promise things the channel can't deliver. Skip spam, and for rude or hatef
 
 Format: the comment (shortened), then the reply ready to copy, one block each. Mark the 1-2 best comments to
 **heart and pin**, since that encourages more comments.
+
+Affiliate links in replies: ONLY when a commenter asks what to buy or use (an SSD, storage, controller, headset,
+capture card, where to get the game), answer the question and add the one matching link from
+`content/affiliate.json` (with `?tag=`/`&tag=` added) plus "(affiliate link)". Also offer the gear page:
+https://claude.ai/artifact/RHP44Wm5Dyhn7WJn3yMmNW. Never add links to replies that didn't ask for a product.
