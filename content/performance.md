@@ -11,6 +11,21 @@ make more of. Views are as of the "Checked" date.
 | 2026-11-16 | GTA 6 Is Bigger Than Vice City: 6 Places to Know | Main | Game info | 2026-11-13 | 14 | | 0 | |
 | 2026-11-16 | GTA 6 Survival Guide: 7 Things to Do Before You Play | Main | Guide | 2026-11-13 | 8 | | 0 | |
 
+<!-- auto:start -->
+## Live YouTube numbers (auto, 2026-11-17T00:37 UTC, 1 subscribers)
+
+| Video / Short | Type | Posted | Views | Views/hour | Likes | Comments |
+|---|---|---|---|---|---|---|
+| [Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy](https://www.youtube.com/watch?v=oYqPC06109w) | Short | 2026-11-14 | 4,445 | 83.2 | 37 | 4 |
+| [GTA 6 in 3 days: what you need to know #GTA6 #Shorts](https://www.youtube.com/watch?v=wPPhLBHS7-M) | Short | 2026-11-16 | 91 | 56.0 | 2 | 0 |
+| [YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts](https://www.youtube.com/watch?v=DIFRHVF6T0E) | Short | 2026-11-16 | 180 | 49.1 | 5 | 0 |
+| [GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore](https://www.youtube.com/watch?v=kLxIVUzSOaI) | Short | 2026-11-14 | 159 | 2.7 | 7 | 0 |
+| [GTA 6 Chaos Is Coming 🌴 | Vice Replay](https://www.youtube.com/watch?v=2MOr9zSDyfM) | Short | 2026-11-13 | 38 | 0.5 | 1 | 0 |
+| [GTA 6 Launches in 3 Days: Unlock Time, Download Size & Price](https://www.youtube.com/watch?v=vJDnv7_7Hcs) | Short | 2026-11-16 | 1 | 0.2 | 0 | 0 |
+| [GTA 6 Is Bigger Than Vice City: 6 Places to Know](https://www.youtube.com/watch?v=GjhaJdjHR4Q) | Short | 2026-11-13 | 14 | 0.2 | 2 | 0 |
+| [GTA 6 Survival Guide: 7 Things to Do Before You Play](https://www.youtube.com/watch?v=YqnShunG7WY) | Main | 2026-11-13 | 8 | 0.1 | 1 | 0 |
+<!-- auto:end -->
+
 ## What's working (update after each check)
 - Streamer/creator news Shorts get far more views than anything else.
 - Long videos get very few views so far; keep them, but put the effort into Shorts.
