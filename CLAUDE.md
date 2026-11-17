@@ -37,6 +37,11 @@ Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2 on deep purple/black, Ant
      the required disclosure. Set `affiliate` to pick sets: ["storage","game"] (default; downloads, launch, news),
      ["storage","gear"] (guides, tips, gameplay), or [] for none (e.g. sensitive news). Never claim we used or
      reviewed a product, and never put affiliate links in a way that hides the disclosure.
+   - Links in Shorts descriptions aren't clickable, so Shorts send people to the long video: end the main Short's
+     `short_description` with "Full video on the channel ⬇️" and remind the owner to set "Related video". The long
+     video carries the affiliate links (description + pinned comment, added automatically).
+   - On download/storage/gear/launch topics, the long video's last or second-to-last segment may add ONE natural line
+     like "If you're short on space, I put storage links in the description." Never more than once, never pushy.
    - Playlists are automatic (main -> "GTA 6 News & Guides", Short -> "GTA 6 Shorts", news Short -> "GTA 6
      Streamer & Breaking News"); set `playlist` on an item only to override.
    - Write narration for the ear: short sentences, spell numbers the way they should be spoken

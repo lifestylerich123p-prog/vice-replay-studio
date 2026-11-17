@@ -231,8 +231,17 @@ def main():
     if allow("main") and (out / f"{slug}.mp4").exists():
         titles = ep.get("title_options") or [ep["title"]]
         title = titles[min(a.title, len(titles)) - 1]
+        pin_main = ep.get("pinned_comment")
+        aff_cfg = ROOT / "content" / "affiliate.json"
+        if pin_main and ep.get("pin_affiliate", True) and aff_cfg.exists():
+            cfg = json.loads(aff_cfg.read_text())
+            names = ep.get("affiliate", cfg.get("default_sets", []))
+            first = next((it for n in names for it in cfg["sets"].get(n, [])), None) if cfg.get("enabled") else None
+            if first:
+                url = first[1] + ("&" if "?" in first[1] else "?") + "tag=" + cfg["tag"]
+                pin_main = f"{pin_main}\n\n{first[0]}: {url} (affiliate link)"
         jobs.append(("main", out / f"{slug}.mp4", title, (out / "description.txt").read_text(), tags, t_main,
-                     out / "thumbnail-a.jpg", ep.get("pinned_comment"), ep.get("es"), out / f"{slug}.timings.json",
+                     out / "thumbnail-a.jpg", pin_main, ep.get("es"), out / f"{slug}.timings.json",
                      ep.get("playlist") or PLAYLISTS["main"]))
     shorts = ([{"id": "", "pinned_comment": ep.get("pinned_comment"), "playlist": ep.get("short_playlist")}]
               if ep.get("short") else []) + ep.get("shorts", [])

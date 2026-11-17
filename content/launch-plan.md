@@ -21,3 +21,10 @@ After the last row, it picks trending GTA 6 topics itself (see `.claude/commands
 - Only report things that verifiable sources say. Label leaks and rumors as such.
 - Tips/money/hidden-detail videos: base them on what's reported by reputable sites and players (and cite
   them), never invented game mechanics.
+
+## Shopping moments (affiliate)
+| Date | Main video | Short |
+|---|---|---|
+| Wed Nov 25 | Best GTA 6 Black Friday Deals: Storage, Controllers, the Game (affiliate ["storage","game","gear"]) | "GTA 6 is 212GB: the cheapest fix this Black Friday" |
+| Mon Nov 30 | Cyber Monday: last chance GTA 6 gear deals | "Last call: GTA 6 storage deal" |
+Only list deals you can verify on the day; say "check the price at the link" instead of quoting prices that change.
