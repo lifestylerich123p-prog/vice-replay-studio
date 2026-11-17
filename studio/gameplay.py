@@ -38,6 +38,17 @@ def download(link):
         gdown.download(url=link, output=str(RAW) + "/", quiet=False, fuzzy=True, resume=True)
 
 
+CATEGORIES = {"wild": "Wildest moments", "chase": "Chases & crashes", "funny": "Funny & fails",
+              "glitch": "Glitches", "beauty": "Scenery & cars"}
+
+
+def category(src):
+    """Subfolder the owner dropped the clip in (e.g. '2 - Chases & crashes'), used to pick Short angles."""
+    rel = src.relative_to(RAW).parts
+    name = rel[0].lower() if len(rel) > 1 else ""
+    return next((v for k, v in CATEGORIES.items() if k in name), "Unsorted")
+
+
 def highlights(src, top):
     """Use the clip finder's scoring, then cut 16:9 clips (no reframing) into media/gameplay/."""
     from .clip import find_moments, probe
@@ -50,7 +61,8 @@ def highlights(src, top):
                         "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080",
                         "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-pix_fmt", "yuv420p",
                         "-c:a", "aac", "-b:a", "160k", str(out)], check=True)
-        made.append({"file": str(out.relative_to(ROOT)), "from": src.name, "start": round(start, 1), "score": score})
+        made.append({"file": str(out.relative_to(ROOT)), "from": src.name, "start": round(start, 1), "score": score,
+                     "category": category(src)})
     return made
 
 
@@ -76,7 +88,7 @@ def main():
     print("\nNew highlight clips:")
     for src in new:
         for h in done[src.name]:
-            print(f"  {h['file']}  (from {h['from']} at {h['start']}s, score {h['score']})")
+            print(f"  {h['file']}  [{h.get('category', 'Unsorted')}] (from {h['from']} at {h['start']}s, score {h['score']})")
 
 
 if __name__ == "__main__":

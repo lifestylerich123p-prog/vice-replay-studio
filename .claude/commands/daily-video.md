@@ -8,7 +8,9 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    new recordings and cut highlights into `media/gameplay/` (used as backgrounds automatically; prefer
    them over screenshots). If there's a great highlight (high score, something wild happens), make one
    of today's Shorts a "wildest moment" Short around it: our voice explaining what happened, game sound
-   under it (set that segment's `media` to the clip).
+   under it (set that segment's `media` to the clip). `media/gameplay/processed.json` gives each clip's
+   `category` from the Drive subfolder it was dropped in (Wildest moments, Chases & crashes, Funny & fails,
+   Glitches, Scenery & cars): use it for the Short's angle, e.g. a "funniest fail of the day" Short.
 1. **Pick the topic.** Today's date is in your context. Read `content/launch-plan.md` and use today's row.
    If there is no row for today, search the web for what GTA 6 players are searching for and talking about
    right now and pick the strongest topic. Check `content/log.md` and `episodes/` so you never repeat a
