@@ -1,6 +1,7 @@
 """Run this ONCE on your own computer to give the Vice Replay machine permission to upload to your channel.
 
-    python3 tools/youtube_auth.py CLIENT_ID CLIENT_SECRET
+    python3 youtube_auth.py client_secret_XXXX.json      (the JSON file Google gave you)
+    python3 youtube_auth.py CLIENT_ID CLIENT_SECRET       (or the two values)
 
 It opens your browser, you sign in with the Google account that owns the Vice Replay channel and click Allow,
 and it prints a REFRESH TOKEN. Put these three values in the Claude environment settings
@@ -25,9 +26,16 @@ SCOPES = "https://www.googleapis.com/auth/youtube.upload https://www.googleapis.
 
 
 def main():
-    if len(sys.argv) != 3:
+    if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
+        cfg = json.load(open(sys.argv[1]))
+        cfg = cfg.get("installed") or cfg.get("web") or cfg
+        client_id, client_secret = cfg["client_id"], cfg["client_secret"]
+    elif len(sys.argv) == 3:
+        client_id, client_secret = sys.argv[1], sys.argv[2]
+    else:
         sys.exit(__doc__)
-    client_id, client_secret = sys.argv[1], sys.argv[2]
+    print("Client ID (put this in YT_CLIENT_ID):\n" + client_id + "\n")
+    print("Client secret (put this in YT_CLIENT_SECRET):\n" + client_secret + "\n")
     state = secrets.token_urlsafe(16)
     result = {}
 
