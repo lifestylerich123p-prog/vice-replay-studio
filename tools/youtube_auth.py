@@ -76,6 +76,13 @@ def main():
     if "refresh_token" not in tok:
         sys.exit("Google didn't return a refresh token. Remove the app's access at myaccount.google.com/permissions "
                  "and run this again.")
+    granted = tok.get("scope", "")
+    print("Permissions granted:")
+    for name, scope in (("upload videos", "youtube.upload"), ("manage comments/playlists/subtitles", "youtube.force-ssl"),
+                        ("read YouTube Analytics", "yt-analytics.readonly")):
+        print(f"  {'YES' if scope in granted else 'NO '}  {name}")
+    if "yt-analytics.readonly" not in granted:
+        print("\nAnalytics was NOT granted. Run this again and tick every box on Google's permission screen.\n")
     print("Success! Put this in the environment settings as YT_REFRESH_TOKEN (don't share it):\n")
     print(tok["refresh_token"])
 
