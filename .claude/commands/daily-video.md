@@ -11,10 +11,19 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    under it (set that segment's `media` to the clip). `media/gameplay/processed.json` gives each clip's
    `category` from the Drive subfolder it was dropped in (Wildest moments, Chases & crashes, Funny & fails,
    Glitches, Scenery & cars): use it for the Short's angle, e.g. a "funniest fail of the day" Short.
+0b. **Learn first**: run `python -m studio.learn` (YouTube Data API; if it fails because there is no API key,
+   say so in the report and continue). Then read `content/learn/channel.json` (our uploads with views/hour),
+   today's `content/learn/market-<date>.md` (the hottest GTA 6 videos and Shorts on YouTube right now),
+   `content/learn/patterns.md` and `content/learn/lessons.md`. Write 1-3 new dated lessons to `lessons.md`:
+   which of OUR topic kinds, hooks, title styles and posting times got the most views per hour, and what the
+   market's winners have in common (topics, title wording, length, Shorts vs long). Only claim what the
+   numbers show. Use the lessons in every choice below: topic, hook, title options, thumbnail text, length.
+   Learn from winning videos' patterns; never copy their titles, footage or thumbnails.
 1. **Pick the topic.** Today's date is in your context. Read `content/launch-plan.md` and use today's row.
    If there is no row for today, search the web for what GTA 6 players are searching for and talking about
    right now and pick the strongest topic. Check `content/log.md` and `episodes/` so you never repeat a
-   topic that was already made.
+   topic that was already made. If a market winner shows a GTA 6 story or angle people are hungry for that we
+   haven't covered, prefer it (with our own research and angle).
 2. **Make it** following CLAUDE.md: research with web search (facts from the last few days, keep source
    URLs), write `episodes/<slug>.json` with `segments`, `short` (cut from this video) and `shorts` holding
    ONE standalone news Short (id `news`). For that news Short, prefer what big streamers and creators are

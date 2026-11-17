@@ -5,8 +5,8 @@ a GTA 6 fan channel. Tagline: "GTA's wildest moments. On replay."
 Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2 on deep purple/black, Anton headlines.
 
 ## How a video gets made
-1. **Research** the topic with web search. Check `content/performance.md` first and lean toward the topic kinds
-   that perform best there. GTA 6 news moves fast, so search before writing and use only facts
+1. **Research** the topic with web search. Check `content/learn/lessons.md`, `content/performance.md` and the
+   latest `content/learn/market-*.md` first, and lean toward what the numbers say works. GTA 6 news moves fast, so search before writing and use only facts
    you found from today or recent days. Keep the source URLs for the `sources` list. If something is a
    rumor or leak, the script must say so ("reportedly", "according to leaks").
 2. **Write** `episodes/<slug>.json` following `episodes/gta6-3-days.json`:
@@ -79,6 +79,9 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
   immediately schedule a reminder with send_later for 25 minutes later: "Submit <clip> on the <campaign> page
   now: 5 minutes left in the 30-minute window", and log the posted time in `content/campaigns/tracker.md`.
   When the reminder fires, send it as a push notification if that tool is available.
+- Learning loop: `python -m studio.learn` pulls our channel's live numbers and the hottest GTA 6 videos on
+  YouTube (free YouTube Data API; key in the environment's settings as the `YOUTUBE_API_KEY` variable or a
+  network secret for www.googleapis.com). Lessons live in `content/learn/lessons.md`; every run adds to them.
 - Helpers: `/stats` logs YouTube Studio screenshots into `content/performance.md` (the daily run favors what
   works there); `/reply-comments` writes comment replies; `/campaign-clips` makes campaign clips.
 - Paid clipping campaigns (Whop Content Rewards etc.): the one exception where a streamer's own footage and
