@@ -41,7 +41,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
      (re-encode with a higher `-crf` if not). If updating the URL fails, publish a new page and give its link.
    - Also send the main .mp4, every Short .mp4 and thumbnail-a/b/c.jpg with SendUserFile (status
      `proactive`) so the owner can save them to upload.
-   - Final message: the review page link, the posting plan (times from the page), the recommended title, and
+   - Final message starts with: **Reply "approve" here to schedule everything on YouTube automatically** (or
+     "approve the Shorts", "approve, use title 2", or ask for changes first). Then: the review page link, the posting plan (times from the page), the recommended title, and
      anything to double-check (e.g. a fact that was still developing). Remind them to set Test & Compare with
      the 3 thumbnails and "Related video" on the Shorts.
 4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), then

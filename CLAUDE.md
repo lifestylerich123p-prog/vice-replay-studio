@@ -72,6 +72,14 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
 - Every video needs a real angle (a guide, a list, an opinion, the owner's gameplay). Don't churn out
   near-identical videos: YouTube demonetizes mass-produced, repetitive content.
 - Don't spoil story content in titles or thumbnails.
+- Auto-posting to YouTube (after approval only): when the owner replies in a delivery session with an approval
+  ("approve", "approve all", "approve the Shorts", "approve, use title 2", ...), run
+  `python -m studio.youtube_upload episodes/<slug>.json --approve <all|main,short,news> [--title N]`. It uploads and
+  schedules each approved upload for its posting time. Never upload without an explicit approval message from the
+  owner in chat, never upload campaign clips (the owner posts those), and apply any changes the owner asks for
+  (titles, which items) before uploading. Report each video link and its scheduled time, and remind the owner
+  to pin the pinned comment, set "Related video" on the Shorts and add thumbnails B and C in Test & Compare.
+  If the YT_* variables are missing, say so and list the manual upload steps instead.
 - Campaigns need the owner's approval first: only clip campaigns whose file has `owner_approved: true`, which
   is set only when the owner approves that campaign in chat. Each campaign clip must be submitted on the
   campaign page within 30 minutes of being posted; every delivery says so.
