@@ -8,6 +8,7 @@ import argparse
 import datetime as dt
 import html
 import json
+import re
 import shutil
 from pathlib import Path
 
@@ -102,6 +103,10 @@ def build(ep_path, day):
         title = sh.get("title") or (txt.split("\n")[1] if txt.count("\n") > 1 else ep["title"])
         desc = txt.split("DESCRIPTION\n", 1)[-1].strip() if "DESCRIPTION" in txt else ""
         blocks = [copy_block("Title", title, f"s{k}-title"), copy_block("Description", desc, f"s{k}-desc")]
+        # TikTok / Instagram Reels: same video, one caption (no #Shorts), hashtags people search on TikTok
+        social = re.sub(r"\s*#\w+", "", title).strip()
+        tags = " ".join(sh.get("tiktok_hashtags") or ["#GTA6", "#GTAVI", "#ViceCity", "#gaming", "#gta6news"])
+        blocks.append(copy_block("TikTok / Reels caption", f"{social} {tags}", f"s{k}-tiktok"))
         if sh.get("pinned_comment"):
             blocks.append(copy_block("Pinned comment", sh["pinned_comment"], f"s{k}-pin"))
         when = t_short if k == 0 else t_news

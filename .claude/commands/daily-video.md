@@ -44,6 +44,9 @@ make sensible choices, finish the whole run, and explain your choices in the fin
      `output/<slug>/review/index.html` with that `url`, passing every other file in the review folder via
      `files`, and `null` for each old file listed that isn't in today's set. Each file must be under 15 MB
      (re-encode with a higher `-crf` if not). If updating the URL fails, publish a new page and give its link.
+   - The review page also shows a "TikTok / Reels caption" for each Short (the owner reposts Shorts on TikTok and
+     Instagram by hand; TikTok keeps API posts from unaudited apps private). Optionally set `tiktok_hashtags`
+     per Short (3-5 hashtags people search on TikTok right now).
    - Also send the main .mp4, every Short .mp4 and thumbnail-a/b/c.jpg with SendUserFile (status
      `proactive`) so the owner can save them to upload.
    - Final message starts with: **Reply "approve" here to schedule everything on YouTube automatically** (or
