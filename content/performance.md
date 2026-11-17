@@ -12,11 +12,11 @@ make more of. Views are as of the "Checked" date.
 | 2026-11-16 | GTA 6 Survival Guide: 7 Things to Do Before You Play | Main | Guide | 2026-11-13 | 8 | | 0 | |
 
 <!-- auto:start -->
-## Live YouTube numbers (auto, 2026-11-17T17:16 UTC, 1 subscribers)
+## Live YouTube numbers (auto, 2026-11-17T17:21 UTC, 1 subscribers)
 
 | Video / Short | Type | Posted | Views | Views/hour | Likes | Comments |
 |---|---|---|---|---|---|---|
-| [Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy](https://www.youtube.com/watch?v=oYqPC06109w) | Short | 2026-11-14 | 5,101 | 72.8 | 40 | 4 |
+| [Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy](https://www.youtube.com/watch?v=oYqPC06109w) | Short | 2026-11-14 | 5,101 | 72.7 | 40 | 4 |
 | [YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts](https://www.youtube.com/watch?v=DIFRHVF6T0E) | Short | 2026-11-16 | 192 | 9.4 | 5 | 0 |
 | [GTA 6 in 3 days: what you need to know #GTA6 #Shorts](https://www.youtube.com/watch?v=wPPhLBHS7-M) | Short | 2026-11-16 | 119 | 6.5 | 2 | 0 |
 | [GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore](https://www.youtube.com/watch?v=kLxIVUzSOaI) | Short | 2026-11-14 | 160 | 2.1 | 7 | 0 |
