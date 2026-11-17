@@ -106,8 +106,19 @@ def main():
     ap.add_argument("--title", type=int, default=1, help="which title option to use for the main video (1-3)")
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
     ap.add_argument("--test", action="store_true", help="upload a 5-second private test video and report its status")
+    ap.add_argument("--comment", nargs=2, metavar=("VIDEO_ID", "TEXT"), action="append",
+                    help="post TEXT as a comment on VIDEO_ID (repeatable); use once the video is public")
     a = ap.parse_args()
     tok = token()
+
+    if a.comment:
+        for vid, text in a.comment:
+            try:
+                comment(tok, vid, text)
+                print(f"commented on {vid}")
+            except SystemExit as e:
+                print(f"! comment on {vid} failed: {e}")
+        return
 
     if a.test:
         clip = ROOT / "output" / "_upload_test.mp4"
@@ -163,8 +174,13 @@ def main():
                      "scheduled_et": when if publish_at else "published now",
                      "privacy_returned": v.get("status", {}).get("privacyStatus")}
         done_file.write_text(json.dumps(done, indent=2))
-        for step, fn in (("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb)),
-                         ("comment", lambda: comment(tok, vid, pin))):
+        steps = [("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb))]
+        if publish_at:
+            done[key]["comment"] = "pending: post after it goes live"
+            done[key]["comment_text"] = pin or ""
+        else:
+            steps.append(("comment", lambda: comment(tok, vid, pin)))
+        for step, fn in steps:
             try:
                 fn()
                 done[key][step] = "ok"
@@ -173,6 +189,12 @@ def main():
                 print(f"  ! {step} failed for {key}: {e}")
             done_file.write_text(json.dumps(done, indent=2))
     print(json.dumps(done, indent=2))
+    later = [(d["id"], d["comment_text"], d["scheduled_et"]) for d in done.values()
+             if str(d.get("comment", "")).startswith("pending") and d.get("comment_text")]
+    if later:
+        last = max(later, key=lambda x: dt.datetime.strptime(x[2], "%I:%M %p"))[2]
+        cmd = "python -m studio.youtube_upload " + " ".join(f"--comment {v} {json.dumps(t)}" for v, t, _ in later)
+        print(f"\nCOMMENTS TO POST AFTER {last} ET (videos are private until then):\n{cmd}")
 
 
 if __name__ == "__main__":

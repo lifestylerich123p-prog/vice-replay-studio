@@ -77,8 +77,12 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
   `python -m studio.youtube_upload episodes/<slug>.json --approve <all|main,short,news> [--title N]`. It uploads and
   schedules each approved upload for its posting time. Never upload without an explicit approval message from the
   owner in chat, never upload campaign clips (the owner posts those), and apply any changes the owner asks for
-  (titles, which items) before uploading. Report each video link and its scheduled time, and remind the owner
-  to pin the pinned comment, set "Related video" on the Shorts and add thumbnails B and C in Test & Compare.
+  (titles, which items) before uploading. Scheduled videos are private until their time and YouTube refuses
+  comments on private videos, so the uploader prints a "COMMENTS TO POST AFTER <time>" command: right after
+  uploading, schedule it with send_later for 10 minutes after that time, with the message "Post today's pinned
+  comments now: <the command>", and run the command when it arrives. Report each video link and its scheduled
+  time, and remind the owner to pin the comments (after they're posted), set "Related video" on the Shorts and add
+  thumbnails B and C in Test & Compare.
   If the YT_* variables are missing, say so and list the manual upload steps instead.
 - Campaigns need the owner's approval first: only clip campaigns whose file has `owner_approved: true`, which
   is set only when the owner approves that campaign in chat. Each campaign clip must be submitted on the

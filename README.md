@@ -1,40 +1,44 @@
 # Vice Replay Studio
 
-Turns Claude Code into a video machine for the Vice Replay GTA 6 channel.
-You give it a topic, and it researches it, writes the script, then makes the voiceover, branded visuals,
-captions, a 16:9 video, a 9:16 Short, a thumbnail and a YouTube description with chapters.
+The video machine for **Vice Replay** (@ViceReplayTV-q8s), a GTA 6 fan channel.
+Claude researches, scripts, renders, learns from YouTube, and (after you approve) uploads.
 
-## One-time setup (on your computer)
-1. Install Python 3.10+, ffmpeg and Claude Code.
-   - Mac: `brew install python ffmpeg`
-   - Windows: `winget install Python.Python.3.12 Gyan.FFmpeg`
-2. In this folder: `pip install -r requirements.txt`
+## Your day
+| When (Miami time) | What happens | Your part |
+|---|---|---|
+| 5:13 AM | Daily run: learns from YouTube, pulls Drive gameplay, makes 1 video + 2 Shorts + 3 thumbnails, updates the review page | Phone notification |
+| Morning | [Review page](https://claude.ai/artifact/DWvVW2BQrHZP9Xfs5Ve17Q): watch, check titles | Reply **"approve"** in that session |
+| After approval | Uploads + schedules everything (main 3:30 PM, Shorts 6:00 / 8:30 PM weekdays), not made for kids; posts the comments after each goes live | Pin the comments, set "Related video" on Shorts, add thumbnails B/C (Test & Compare) |
+| Nov 18-20, 12:23 + 5:23 PM | Launch-week breaking-news check: a Short to post right away, only if big news | Post it |
+| Sundays 11:37 AM | Upgrade scout: 3 upgrade ideas + next week's plan | Tell Claude what to build |
+| Anytime | Drop gameplay clips in the Drive folder (5 category subfolders) | Record with radio/music at 0, mic off |
 
-## Make a video
-Open Claude Code in this folder and type:
+Commands in Claude Code: `/new-video <topic>`, `/stats` (+ YouTube Studio screenshot), `/reply-comments`,
+`/campaign-clips <name>` (approved campaigns only; you post those and submit within 30 minutes).
 
-    /new-video GTA 6 best early-game money tips
+## How it's built
+| Folder / file | What it does |
+|---|---|
+| `studio/make_video.py` | Script JSON -> video + Shorts: free Kokoro voice, screenshots/gameplay, word-by-word captions, original music + sound effects, thumbnails A/B/C, description with chapters |
+| `studio/learn.py` | Live stats of our uploads + the hottest GTA 6 videos on YouTube -> `content/learn/` |
+| `studio/review_page.py` | Builds the phone review page |
+| `studio/youtube_upload.py` | Uploads approved videos and schedules them; `--comment` posts comments once public |
+| `studio/gameplay.py` | Pulls clips from Google Drive and cuts the best moments into `media/gameplay/` |
+| `studio/clip.py` | Highlight clipper for approved clipping campaigns and long recordings |
+| `studio/sound.py`, `studio/brand.py` | Original music/SFX and the Vice Replay look |
+| `episodes/` | One script per video (JSON) |
+| `content/` | Owner settings, content plan, video log, performance + lessons (the machine's memory), campaigns |
+| `media/official/` | 51 official GTA 6 screenshots (strip-club shots excluded) |
+| `tools/youtube_auth.py` | One-time YouTube upload connection (run on your Mac; redo every 7 days while the Google app is in Testing) |
+| `.claude/commands/` | The routines behind each command and the daily run |
 
-or just `/new-video` and Claude picks a trending topic.
+## Settings (cloud environment `vice-replay-studio`)
+- Network secret for `www.googleapis.com` (`X-Goog-Api-Key`, path `/youtube/v3/`): read-only YouTube key for learning.
+- Environment variables `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN`: upload permission.
+- Allowed hosts: Google/YouTube APIs, Google Drive, Hugging Face (caption model), Rockstar's site (screenshots), plugin servers.
 
-Output goes to `output/<slug>/`: the .mp4, the -short.mp4, thumbnail.jpg, description.txt, tags.txt.
-
-## Make it look better
-- **Your gameplay**: put clips or screenshots in `media/`, and Claude uses them as segment backgrounds
-  instead of the generated neon city. Your own gameplay is what makes videos stand out (and is safe from
-  copyright claims).
-- **Music**: drop a royalty-free .mp3 into `assets/music/` (YouTube Audio Library is free). It's mixed in quietly.
-- **Voice**: default is Kokoro `am_michael`, a free AI voice that runs on the machine (its model downloads
-  automatically on first run, about 120 MB). Other Kokoro voices: `am_adam`, `am_fenrir`, `am_puck`,
-  `bm_george` (British). Microsoft voices such as `en-US-AndrewNeural` also work on a normal internet
-  connection (not in Claude cloud sessions). Set `"voice"` in the episode file.
-
-## Run it by hand
-    python -m studio.make_video episodes/gta6-3-days.json --preview
-    python -m studio.make_video episodes/gta6-3-days.json
-    python -m studio.make_video episodes/gta6-3-days.json --short
-
-## Automation
-A scheduled task runs `/daily-video` every day in a Claude cloud session: it picks the day's topic from
-`content/launch-plan.md` (or a trending one), makes the video, Short and thumbnail, sends them to you
-for review, and logs the episode in `content/log.md`. You review and upload.
+## Rules that keep the channel safe
+No licensed music (no GTA radio/trailer songs/score) · official screenshots and your own gameplay only, never
+other creators' footage (except approved campaigns) · "not affiliated with Rockstar" line in every description ·
+no spoilers in titles/thumbnails · nothing is uploaded without your approval · every video has a real angle.
+Full rules: `CLAUDE.md`.
