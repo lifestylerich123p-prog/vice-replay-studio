@@ -57,6 +57,8 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
   mount-kalaga-*, ambrosia-*, jason-duval-*, lucia-caminos-*, jason-and-lucia-*, car-*, and supporting
   characters). Set `media` per segment to the best match; rotate so one video doesn't repeat a shot.
   Keep strip-club or sexualized images out of the library (they get videos age-restricted/limited ads).
+- Owner gameplay comes from the Google Drive folder in `content/owner.md`: `python -m studio.gameplay` downloads
+  new recordings and cuts highlights into `media/gameplay/` (not committed; pulled fresh each run).
 - No official GTA 6 music: the radio stations, trailer songs and the Justice score are licensed music that
   Content ID claims. Don't download or use them. Game sound (engines, city ambience, gunfire) is fine
   only from the owner's own gameplay recorded with the in-game radio and music turned off.

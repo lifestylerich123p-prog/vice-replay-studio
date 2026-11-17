@@ -9,3 +9,6 @@ assets/music/*
 
 # voice model, downloaded automatically on first run
 assets/voice/
+
+# gameplay pulled from Google Drive each run (too big for git)
+media/gameplay/
