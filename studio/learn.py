@@ -133,7 +133,7 @@ def market():
     shorts = [v for v in vids if v["type"] == "Short"]
     mains = [v for v in vids if v["type"] == "Main"]
     caps = sum(1 for v in vids[:30] if re.search(r"\b[A-Z]{4,}\b", v["title"]))
-    nums = sum(1 for v in vids[:30] if re.search(r"\d", v["title"]))
+    nums = sum(1 for v in vids[:30] if re.search(r"\d", re.sub(r"(?i)gta\s*(6|vi)\b", "", v["title"])))
     lines = [f"# What's winning on YouTube: GTA 6, last 48 hours ({today})", "",
              f"Top {len(vids)} by views. Shorts: {len(shorts)}, longer videos: {len(mains)}.",
              f"Titles with a WORD IN CAPS: {caps}/30. Titles with a number: {nums}/30.",
