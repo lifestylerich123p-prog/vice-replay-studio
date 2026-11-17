@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "tag": "vicereplay-20",
+  "heading": "GEAR FOR GTA 6 (affiliate links)",
+  "disclosure": "Some links above are affiliate links: as an Amazon Associate I earn from qualifying purchases, at no extra cost to you.",
+  "sets": {
+    "storage": [
+      ["PS5 storage upgrade (2TB SSD)", "https://www.amazon.com/s?k=PS5+compatible+2TB+NVMe+SSD+with+heatsink"],
+      ["Xbox Series X|S storage expansion card", "https://www.amazon.com/s?k=Xbox+Series+X+S+storage+expansion+card+2TB"]
+    ],
+    "game": [
+      ["GTA 6 for PS5", "https://www.amazon.com/s?k=Grand+Theft+Auto+VI+PS5"],
+      ["GTA 6 for Xbox Series X|S", "https://www.amazon.com/s?k=Grand+Theft+Auto+VI+Xbox+Series+X"]
+    ],
+    "gear": [
+      ["PS5 DualSense controller", "https://www.amazon.com/s?k=PS5+DualSense+controller"],
+      ["Gaming headset", "https://www.amazon.com/s?k=gaming+headset+PS5+Xbox"],
+      ["Capture card (record your gameplay)", "https://www.amazon.com/s?k=capture+card+PS5+1080p"]
+    ]
+  },
+  "default_sets": ["storage", "game"]
+}

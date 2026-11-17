@@ -378,6 +378,24 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     return final, chapters, used_footage
 
 
+def affiliate_block(ep):
+    """Amazon affiliate links + required disclosure (content/affiliate.json). Episode `affiliate`: list of set
+    names, or [] to leave links out."""
+    cfg_path = ROOT / "content" / "affiliate.json"
+    if not cfg_path.exists():
+        return []
+    cfg = json.loads(cfg_path.read_text())
+    if not cfg.get("enabled"):
+        return []
+    names = ep.get("affiliate", cfg.get("default_sets", []))
+    items = [it for n in names for it in cfg["sets"].get(n, [])]
+    if not items:
+        return []
+    sep = lambda u: "&" if "?" in u else "?"
+    lines = [cfg["heading"]] + [f"{label}: {url}{sep(url)}tag={cfg['tag']}" for label, url in items]
+    return lines + [cfg["disclosure"], ""]
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("episode")
@@ -447,6 +465,7 @@ def main():
             desc += ["Grand Theft Auto VI footage and screenshots: Rockstar Games, used for news and commentary.", ""]
         if ep.get("sources"):
             desc += ["SOURCES"] + ep["sources"] + [""]
+        desc += affiliate_block(ep)
         desc += ["Subscribe to Vice Replay for GTA's wildest moments. On replay.", "",
                  "Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive.", "",
                  " ".join("#" + tg.replace(" ", "") for tg in ep.get("hashtags", ["GTA6", "GTAVI", "ViceCity"]))]

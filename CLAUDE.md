@@ -33,6 +33,10 @@ Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2 on deep purple/black, Ant
      Spanish, same meaning, similar length; keep names like GTA 6, Vice City, Kai Cenat as they are). Add `es`
      {`title`, `description`} for the main video, `short_es` for the main Short, and `es` inside each `shorts`
      item. The uploader adds them as YouTube's Spanish title/description and Spanish subtitles.
+   - Affiliate links (Amazon, `content/affiliate.json`) are added to the main video's description automatically with
+     the required disclosure. Set `affiliate` to pick sets: ["storage","game"] (default; downloads, launch, news),
+     ["storage","gear"] (guides, tips, gameplay), or [] for none (e.g. sensitive news). Never claim we used or
+     reviewed a product, and never put affiliate links in a way that hides the disclosure.
    - Playlists are automatic (main -> "GTA 6 News & Guides", Short -> "GTA 6 Shorts", news Short -> "GTA 6
      Streamer & Breaking News"); set `playlist` on an item only to override.
    - Write narration for the ear: short sentences, spell numbers the way they should be spoken

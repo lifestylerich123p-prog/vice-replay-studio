@@ -29,11 +29,12 @@ def main():
     # channel settings
     ch, _ = req("GET", YT + "channels?part=brandingSettings,snippet&mine=true", tok)
     c = ch["items"][0]
+    plan.setdefault("channel", {})
     b = c.get("brandingSettings", {"channel": {}})
     b.setdefault("channel", {})
-    want = plan["channel"]
+    want = plan["channel"] or {}
     changes = {k: v for k, v in want.items() if b["channel"].get(k) != v}
-    if changes:
+    if changes and want:
         b["channel"].update(changes)
         report.append(f"channel: {', '.join(changes)}")
         if not a.dry_run:
@@ -43,7 +44,7 @@ def main():
     ids = [v["id"] for v in plan["videos"]]
     r, _ = req("GET", YT + "videos?part=snippet,localizations&id=" + ",".join(ids), tok)
     current = {v["id"]: v for v in r.get("items", [])}
-    line = plan["not_affiliated_line"]
+    line = plan.get("not_affiliated_line", "Vice Replay is a fan channel and is not affiliated with Rockstar Games.")
     for item in plan["videos"]:
         v = current.get(item["id"])
         if not v:
@@ -59,7 +60,10 @@ def main():
         if "not affiliated" not in body_sn["description"].lower():
             body_sn["description"] = (body_sn["description"].rstrip() + "\n\n" + line)[:4900]
             did.append("not-affiliated line")
-        tags = list(dict.fromkeys(body_sn["tags"] + plan["common_tags"] + item.get("tags", [])))[:30]
+        if item.get("append") and "tag=vicereplay-20" not in body_sn["description"]:
+            body_sn["description"] = (body_sn["description"].rstrip() + "\n\n" + item["append"])[:4900]
+            did.append("affiliate links")
+        tags = list(dict.fromkeys(body_sn["tags"] + plan.get("common_tags", []) + item.get("tags", [])))[:30]
         if tags != body_sn["tags"]:
             body_sn["tags"] = tags
             did.append(f"tags ({len(tags)})")
