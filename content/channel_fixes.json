@@ -1,0 +1,31 @@
+{
+  "note": "One-time channel cleanup (2026-11-17). Apply with: python -m studio.channel_fix content/channel_fixes.json",
+  "channel": {
+    "description": "GTA 6 news, launch guides, streamer news and the wildest GTA moments. On replay. 🎮🌴\n\nNew Shorts every day: breaking GTA 6 news, what the biggest streamers are doing, tips, hidden details and gameplay chaos from Vice City and Leonida.\n\nNoticias de GTA 6 todos los días, también en español.\n\nRun it back. ⏪\n\nIndependent fan channel. Not affiliated with Rockstar Games or Take-Two Interactive. Sources are listed in every description.",
+    "keywords": "\"GTA 6\" \"GTA VI\" \"GTA 6 news\" \"Vice City\" Leonida \"Grand Theft Auto VI\" \"GTA 6 Shorts\" \"GTA 6 streamers\" \"GTA 6 tips\" \"GTA 6 gameplay\" \"Vice Replay\"",
+    "defaultLanguage": "en",
+    "country": "US"
+  },
+  "not_affiliated_line": "Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive.",
+  "common_tags": ["GTA 6", "GTA VI", "GTA 6 news", "Grand Theft Auto 6", "Vice City", "Leonida", "Rockstar Games", "GTA 6 Shorts"],
+  "videos": [
+    {"id": "wPPhLBHS7-M", "playlist": "GTA 6 Shorts", "tags": ["GTA 6 release date", "GTA 6 download size", "GTA 6 preload"],
+     "es": {"title": "GTA 6 en 3 días: lo que necesitas saber #GTA6 #Shorts", "description": "GTA 6 se desbloquea el 19 de noviembre a medianoche en PS5 y Xbox Series X|S. Descarga de hasta 212 GB, la precarga ya está activa. Sin versión de PC ni GTA Online en el lanzamiento."}},
+    {"id": "DIFRHVF6T0E", "playlist": "GTA 6 Streamer & Breaking News", "tags": ["GTA 6 livestream", "GTA 6 YouTube stream", "GTA 6 streamers"],
+     "es": {"title": "YouTube transmitirá GTA 6 durante 24 HORAS #GTA6 #Shorts", "description": "La transmisión de 24 horas de YouTube para el lanzamiento de GTA 6: pre-show de RDCWorld el 18 de noviembre a las 11 PM ET y luego 24 horas de GTA 6 desde la medianoche ET con más de 30 creadores."}},
+    {"id": "vJDnv7_7Hcs", "playlist": "GTA 6 News & Guides", "tags": [],
+     "es": {"title": "GTA 6 sale en 3 días: hora de desbloqueo, tamaño y precio", "description": "Faltan tres días para GTA 6: cuándo se desbloquea, cuánto pesa la descarga, cuánto cuesta y qué NO trae el día uno."}},
+    {"id": "oYqPC06109w", "playlist": "GTA 6 Streamer & Breaking News", "tags": ["Lacy", "GTA 6 marathon", "GTA 6 streamers"],
+     "es": {"title": "El plan LOCO de Lacy para el maratón de GTA 6 💀🔥 #lacy", "description": "El plan de Lacy para su maratón de GTA 6 en el lanzamiento."}},
+    {"id": "kLxIVUzSOaI", "playlist": "GTA 6 Shorts", "tags": ["GTA 6 map", "GTA 6 locations"],
+     "es": {"title": "¡GTA 6 es más que Vice City! 🌴 6 lugares para explorar", "description": "Seis lugares de Leonida que hay que conocer en GTA 6, más allá de Vice City."}},
+    {"id": "GjhaJdjHR4Q", "playlist": "GTA 6 News & Guides", "tags": ["GTA 6 map", "GTA 6 locations", "Leonida map"],
+     "es": {"title": "GTA 6 es más grande que Vice City: 6 lugares que debes conocer", "description": "Un recorrido por seis lugares de Leonida en GTA 6, más allá de Vice City."}},
+    {"id": "YqnShunG7WY", "playlist": "GTA 6 News & Guides", "tags": ["GTA 6 tips", "GTA 6 guide", "GTA 6 beginner tips"],
+     "es": {"title": "Guía de supervivencia de GTA 6: 7 cosas que hacer antes de jugar", "description": "Siete cosas que conviene hacer antes de empezar a jugar GTA 6, sin spoilers."}},
+    {"id": "2MOr9zSDyfM", "playlist": "GTA 6 Shorts", "tags": ["Vice Replay"],
+     "es": {"title": "Se viene el caos de GTA 6 🌴 | Vice Replay", "description": "Vice Replay: los momentos más locos de GTA. En repetición."}},
+    {"id": "_5ZWAUY75y4", "playlist": "GTA 6 Streamer & Breaking News", "tags": ["Manni L. Perez", "GTA 6 Lucia", "The Game Awards 2026"]},
+    {"id": "xvudsg_o6ow", "playlist": "GTA 6 Streamer & Breaking News", "tags": ["The Game Awards 2026", "GTA 6 Game of the Year"]}
+  ]
+}

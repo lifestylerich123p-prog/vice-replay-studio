@@ -147,6 +147,9 @@ def add_to_playlist(tok, vid, title):
                    {"snippet": {"title": title, "description": f"{title} from Vice Replay: GTA's wildest moments. On replay.",
                                 "defaultLanguage": "en"}, "status": {"privacyStatus": "public"}})
         _playlist_cache[title] = r["id"]
+    existing, _ = req("GET", yt + f"playlistItems?part=id&playlistId={_playlist_cache[title]}&videoId={vid}", tok)
+    if existing.get("items"):
+        return  # already in this playlist
     # a brand-new playlist (or video) can briefly return 409/503; wait and retry a few times
     import time
     for attempt in range(4):
