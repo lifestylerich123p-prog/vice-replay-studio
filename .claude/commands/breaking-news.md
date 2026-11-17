@@ -5,6 +5,10 @@ Breaking-news run for Vice Replay. Nobody is watching live. The owner gave STAND
 `content/owner.md`) to publish breaking-news Shorts without asking, ONLY under the rules below. Anything that
 doesn't pass every rule is NOT auto-posted.
 
+0. **Free radar first (saves usage)**: before reading anything else, run `python -m studio.radar`.
+   - Exit code 1 (QUIET): reply only "Nothing big right now (radar: quiet)." and stop. Don't read other files,
+     don't search, don't render.
+   - Exit code 0 (BIG) or 2 (UNKNOWN): continue below, starting with the stories the radar printed.
 1. **Learn**: `python -m studio.learn` (our uploads + what's hot on YouTube right now). From
    `content/learn/channel.json`, list our uploads from the last 24 hours and count how many have
    `#ViceReplayBreaking` in the title or were described as breaking (check titles; when unsure, count it).

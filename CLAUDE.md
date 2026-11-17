@@ -96,6 +96,8 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
 - Learning loop: `python -m studio.learn` pulls our channel's live numbers and the hottest GTA 6 videos on
   YouTube (free YouTube Data API; key in the environment's settings as the `YOUTUBE_API_KEY` variable or a
   network secret for www.googleapis.com). Lessons live in `content/learn/lessons.md`; every run adds to them.
+- Saving usage: `python -m studio.radar` (free, no AI) checks Google News; breaking-news runs stop right away when
+  it says QUIET. Keep runs lean: don't re-read big files or re-run renders without a reason.
 - Helpers: `/stats` logs YouTube Studio screenshots into `content/performance.md` (the daily run favors what
   works there); `/reply-comments` writes comment replies; `/campaign-clips` makes campaign clips.
 - Paid clipping campaigns (Whop Content Rewards etc.): the one exception where a streamer's own footage and
