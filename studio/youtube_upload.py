@@ -147,8 +147,17 @@ def add_to_playlist(tok, vid, title):
                    {"snippet": {"title": title, "description": f"{title} from Vice Replay: GTA's wildest moments. On replay.",
                                 "defaultLanguage": "en"}, "status": {"privacyStatus": "public"}})
         _playlist_cache[title] = r["id"]
-    req("POST", yt + "playlistItems?part=snippet", tok,
-        {"snippet": {"playlistId": _playlist_cache[title], "resourceId": {"kind": "youtube#video", "videoId": vid}}})
+    # a brand-new playlist (or video) can briefly return 409/503; wait and retry a few times
+    import time
+    for attempt in range(4):
+        try:
+            req("POST", yt + "playlistItems?part=snippet", tok,
+                {"snippet": {"playlistId": _playlist_cache[title], "resourceId": {"kind": "youtube#video", "videoId": vid}}})
+            return
+        except SystemExit:
+            if attempt == 3:
+                raise
+            time.sleep(5 * (attempt + 1))
 
 
 def slot(day, hhmm):
