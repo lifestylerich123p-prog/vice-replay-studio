@@ -105,6 +105,7 @@ def main():
     ap.add_argument("--approve", default="", help="all, or a comma list of: main, short, news (or a Short id)")
     ap.add_argument("--title", type=int, default=1, help="which title option to use for the main video (1-3)")
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
+    ap.add_argument("--now", action="store_true", help="publish immediately (public) instead of at the schedule times")
     ap.add_argument("--test", action="store_true", help="upload a 5-second private test video and report its status")
     ap.add_argument("--comment", nargs=2, metavar=("VIDEO_ID", "TEXT"), action="append",
                     help="post TEXT as a comment on VIDEO_ID (repeatable); use once the video is public")
@@ -166,7 +167,7 @@ def main():
         if key in done:
             print(f"skip {key}: already uploaded ({done[key]['url']})")
             continue
-        publish_at = slot(day, when)
+        publish_at = None if a.now else slot(day, when)
         print(f"uploading {key}: {title}  ->  {'now' if not publish_at else when + ' ET'}")
         v = upload(tok, path, title, desc, tg, publish_at)
         vid = v["id"]
