@@ -79,7 +79,7 @@ def set_thumbnail(tok, vid, jpg):
 
 def comment(tok, vid, text):
     if text:
-        req("POST", "https://www.googleapis.com/youtube/v3/commentThreads?part=snippet", tok,
+        req("POST", "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet", tok,
             {"snippet": {"videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}})
 
 
@@ -159,13 +159,19 @@ def main():
         print(f"uploading {key}: {title}  ->  {'now' if not publish_at else when + ' ET'}")
         v = upload(tok, path, title, desc, tg, publish_at)
         vid = v["id"]
-        if thumb:
-            set_thumbnail(tok, vid, thumb)
-        comment(tok, vid, pin)
         done[key] = {"id": vid, "url": f"https://www.youtube.com/watch?v={vid}", "title": title,
                      "scheduled_et": when if publish_at else "published now",
                      "privacy_returned": v.get("status", {}).get("privacyStatus")}
         done_file.write_text(json.dumps(done, indent=2))
+        for step, fn in (("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb)),
+                         ("comment", lambda: comment(tok, vid, pin))):
+            try:
+                fn()
+                done[key][step] = "ok"
+            except SystemExit as e:
+                done[key][step] = f"failed: {e}"
+                print(f"  ! {step} failed for {key}: {e}")
+            done_file.write_text(json.dumps(done, indent=2))
     print(json.dumps(done, indent=2))
 
 
