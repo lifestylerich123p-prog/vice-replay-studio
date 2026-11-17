@@ -12,14 +12,16 @@ make more of. Views are as of the "Checked" date.
 | 2026-11-16 | GTA 6 Survival Guide: 7 Things to Do Before You Play | Main | Guide | 2026-11-13 | 8 | | 0 | |
 
 <!-- auto:start -->
-## Live YouTube numbers (auto, 2026-11-17T17:21 UTC, 1 subscribers)
+## Live YouTube numbers (auto, 2026-11-17T19:32 UTC, 2 subscribers)
 
 | Video / Short | Type | Posted | Views | Views/hour | Likes | Comments |
 |---|---|---|---|---|---|---|
-| [Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy](https://www.youtube.com/watch?v=oYqPC06109w) | Short | 2026-11-14 | 5,101 | 72.7 | 40 | 4 |
-| [YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts](https://www.youtube.com/watch?v=DIFRHVF6T0E) | Short | 2026-11-16 | 192 | 9.4 | 5 | 0 |
-| [GTA 6 in 3 days: what you need to know #GTA6 #Shorts](https://www.youtube.com/watch?v=wPPhLBHS7-M) | Short | 2026-11-16 | 119 | 6.5 | 2 | 0 |
-| [GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore](https://www.youtube.com/watch?v=kLxIVUzSOaI) | Short | 2026-11-14 | 160 | 2.1 | 7 | 0 |
+| [Lucia's actress is CONFIRMED before launch #GTA6 #Shorts](https://www.youtube.com/watch?v=_5ZWAUY75y4) | Short | 2026-11-17 | 220 | 114.7 | 7 | 2 |
+| [GTA 6 just got nominated for GAME OF THE YEAR #GTA6 #Shorts](https://www.youtube.com/watch?v=xvudsg_o6ow) | Short | 2026-11-17 | 185 | 88.8 | 3 | 2 |
+| [Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy](https://www.youtube.com/watch?v=oYqPC06109w) | Short | 2026-11-14 | 5,108 | 70.6 | 40 | 4 |
+| [YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts](https://www.youtube.com/watch?v=DIFRHVF6T0E) | Short | 2026-11-16 | 198 | 8.8 | 5 | 0 |
+| [GTA 6 in 3 days: what you need to know #GTA6 #Shorts](https://www.youtube.com/watch?v=wPPhLBHS7-M) | Short | 2026-11-16 | 120 | 5.8 | 2 | 0 |
+| [GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore](https://www.youtube.com/watch?v=kLxIVUzSOaI) | Short | 2026-11-14 | 160 | 2.0 | 7 | 0 |
 | [GTA 6 Chaos Is Coming 🌴 | Vice Replay](https://www.youtube.com/watch?v=2MOr9zSDyfM) | Short | 2026-11-13 | 35 | 0.4 | 1 | 0 |
 | [GTA 6 Is Bigger Than Vice City: 6 Places to Know](https://www.youtube.com/watch?v=GjhaJdjHR4Q) | Short | 2026-11-13 | 14 | 0.2 | 2 | 0 |
 | [GTA 6 Launches in 3 Days: Unlock Time, Download Size & Price](https://www.youtube.com/watch?v=vJDnv7_7Hcs) | Short | 2026-11-16 | 3 | 0.1 | 0 | 0 |
