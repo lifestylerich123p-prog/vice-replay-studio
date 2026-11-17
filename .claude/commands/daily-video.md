@@ -14,7 +14,9 @@ make sensible choices, finish the whole run, and explain your choices in the fin
 0b. **Learn first**: run `python -m studio.learn` (YouTube Data API; if it fails because there is no API key,
    say so in the report and continue). Then read `content/learn/channel.json` (our uploads with views/hour),
    today's `content/learn/market-<date>.md` (the hottest GTA 6 videos and Shorts on YouTube right now),
-   `content/learn/patterns.md` and `content/learn/lessons.md`. Write 1-3 new dated lessons to `lessons.md`:
+   `content/learn/patterns.md`, `content/learn/lessons.md`, and if present `content/learn/analytics.json`
+   (private numbers: % of each video watched, seconds watched, subscribers gained, where views come from;
+   these beat view counts for judging hooks and length) and `content/learn/comments.json`. Write 1-3 new dated lessons to `lessons.md`:
    which of OUR topic kinds, hooks, title styles and posting times got the most views per hour, and what the
    market's winners have in common (topics, title wording, length, Shorts vs long). Only claim what the
    numbers show. Use the lessons in every choice below: topic, hook, title options, thumbnail text, length.
@@ -31,7 +33,10 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    about GTA 6 news of the day; it must be a different story from the main video. Render the `--preview`,
    check 3-4 frames, then render the final video and `--short` (renders both Shorts).
 3. **Deliver for review**:
-   - Put `title_options` (3 titles, best first) and `pinned_comment` in the episode JSON, then run
+   - Put `title_options` (3 titles, best first) and `pinned_comment` in the episode JSON. From
+     `content/learn/comments.json`, take up to 8 recent comments without a reply (skip spam/hate) and add
+     `comment_replies`: [{`author`, `comment`, `url`, `reply`}] with replies in the Vice Replay voice (short,
+     friendly, hyped, a question when it helps; Spanish reply to a Spanish comment). Then run
      `python -m studio.review_page episodes/<slug>.json`. It builds `output/<slug>/review/` (index.html plus
      the videos and thumbnails, with posting times for today's weekday).
    - Update the owner's pinned review page (URL in `content/owner.md`) with the Artifact tool: first

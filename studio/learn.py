@@ -21,6 +21,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -91,7 +92,7 @@ def mine():
             break
     vids = sorted(video_details(ids), key=lambda v: v["views_per_hour"], reverse=True)
     LEARN.mkdir(parents=True, exist_ok=True)
-    snap = {"checked": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
+    snap = {"checked": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"), "channel_id": c["id"],
             "subscribers": c["statistics"].get("subscriberCount"), "videos": vids}
     (LEARN / "channel.json").write_text(json.dumps(snap, indent=2))
     # refresh the auto table in performance.md (between markers)
@@ -154,6 +155,64 @@ def market():
     return vids
 
 
+def analytics(channel_titles):
+    """Private YouTube Analytics (needs the upload connection with the yt-analytics.readonly permission)."""
+    try:
+        from .youtube_upload import token
+        tok = token()
+    except SystemExit as e:
+        print(f"Analytics skipped: {e}")
+        return None
+    end = dt.date.today()
+    start = end - dt.timedelta(days=28)
+
+    def report(**p):
+        q = {"ids": "channel==MINE", "startDate": start.isoformat(), "endDate": end.isoformat(), **p}
+        r = urllib.request.Request("https://youtubeanalytics.googleapis.com/v2/reports?" + urllib.parse.urlencode(q),
+                                   headers={"Authorization": f"Bearer {tok}"})
+        with urllib.request.urlopen(r, timeout=30) as resp:
+            d = json.load(resp)
+        cols = [c["name"] for c in d.get("columnHeaders", [])]
+        return [dict(zip(cols, row)) for row in d.get("rows", [])]
+    try:
+        per_video = report(metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,"
+                                   "subscribersGained,likes,shares", dimensions="video", sort="-views", maxResults=50)
+        sources = report(metrics="views", dimensions="insightTrafficSourceType", sort="-views")
+    except urllib.error.HTTPError as e:
+        msg = e.read().decode(errors="ignore")[:300]
+        hint = " Reconnect with tools/youtube_auth.py to grant the analytics permission." if e.code in (401, 403) else ""
+        print(f"Analytics unavailable ({e.code}).{hint} {msg}")
+        return None
+    for row in per_video:
+        row["title"] = channel_titles.get(row.get("video"), row.get("video"))
+    data = {"from": start.isoformat(), "to": end.isoformat(), "videos": per_video, "traffic_sources": sources}
+    (LEARN / "analytics.json").write_text(json.dumps(data, indent=2))
+    print("Analytics (last 28 days): avg % watched / avg seconds watched / subs gained per upload")
+    for r in per_video[:6]:
+        print(f"  {r.get('averageViewPercentage', 0):5.1f}%  {r.get('averageViewDuration', 0):>4}s  "
+              f"+{r.get('subscribersGained', 0)} subs  {r.get('views', 0):>6} views  {r['title']}")
+    print("Where views come from: " + ", ".join(f"{s['insightTrafficSourceType']} {s['views']}" for s in sources[:6]))
+    return data
+
+
+def comments(channel_id, own_title):
+    """Newest comments on our videos (public data), for the daily reply suggestions."""
+    r = call("commentThreads", part="snippet", allThreadsRelatedToChannelId=channel_id, maxResults=50, order="time")
+    out = []
+    for th in r.get("items", []):
+        top = th["snippet"]["topLevelComment"]["snippet"]
+        if top.get("authorChannelId", {}).get("value") == channel_id:
+            continue  # our own comments
+        out.append({"video": th["snippet"].get("videoId"), "author": top.get("authorDisplayName"),
+                    "text": top.get("textOriginal"), "published": top.get("publishedAt"),
+                    "likes": top.get("likeCount", 0), "replies": th["snippet"].get("totalReplyCount", 0),
+                    "url": f"https://www.youtube.com/watch?v={th['snippet'].get('videoId')}&lc={th['id']}"})
+    (LEARN / "comments.json").write_text(json.dumps(out, indent=2))
+    unanswered = [c for c in out if not c["replies"]]
+    print(f"Comments: {len(out)} recent, {len(unanswered)} without a reply yet")
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--mine", action="store_true")
@@ -161,7 +220,12 @@ def main():
     a = ap.parse_args()
     both = not (a.mine or a.market)
     if a.mine or both:
-        mine()
+        snap = mine()
+        try:
+            comments(snap["channel_id"], None)
+        except SystemExit as e:
+            print(f"Comments skipped: {e}")
+        analytics({v["id"]: v["title"] for v in snap["videos"]})
     if a.market or both:
         market()
 

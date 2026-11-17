@@ -53,7 +53,7 @@ def req(method, url, tok, body=None, ctype="application/json", headers=None):
         sys.exit(f"YouTube error {e.code} on {method} {url.split('?')[0]}: {e.read().decode(errors='ignore')[:600]}")
 
 
-def upload(tok, path, title, description, tags, publish_at=None, privacy="public"):
+def upload(tok, path, title, description, tags, publish_at=None, privacy="public", es=None):
     status = {"selfDeclaredMadeForKids": False, "embeddable": True}
     if publish_at:
         status.update(privacyStatus="private", publishAt=publish_at)
@@ -62,8 +62,13 @@ def upload(tok, path, title, description, tags, publish_at=None, privacy="public
     meta = {"snippet": {"title": title[:100], "description": description[:4900], "tags": tags[:30],
                         "categoryId": "20", "defaultLanguage": "en", "defaultAudioLanguage": "en"},
             "status": status}
+    parts = "snippet,status"
+    if es and es.get("title"):
+        # Spanish title/description: YouTube shows them to Spanish-speaking viewers automatically
+        meta["localizations"] = {"es": {"title": es["title"][:100], "description": (es.get("description") or "")[:4900]}}
+        parts += ",localizations"
     size = Path(path).stat().st_size
-    _, h = req("POST", "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
+    _, h = req("POST", f"https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part={parts}",
                tok, meta, headers={"X-Upload-Content-Type": "video/mp4", "X-Upload-Content-Length": str(size)})
     loc = h["Location"]
     with open(path, "rb") as f:
@@ -81,6 +86,61 @@ def comment(tok, vid, text):
     if text:
         req("POST", "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet", tok,
             {"snippet": {"videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}})
+
+
+def spanish_srt(timings_file):
+    """Spanish subtitles from the episode's per-segment Spanish text, timed to the narration."""
+    if not Path(timings_file).exists():
+        return None
+    segs = [x for x in json.loads(Path(timings_file).read_text()) if x.get("text_es")]
+    if not segs:
+        return None
+
+    def ts(t):
+        ms = int(round(t * 1000))
+        return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
+    cues, n = [], 0
+    for sg in segs:
+        words = sg["text_es"].split()
+        k = max(1, -(-len(words) // 8))  # number of lines, then split the words evenly across them
+        size = -(-len(words) // k)
+        chunks = [" ".join(words[i:i + size]) for i in range(0, len(words), size)]
+        span, t = sg["end"] - sg["start"], sg["start"]
+        total = sum(len(c) for c in chunks) or 1
+        for c in chunks:
+            d = span * len(c) / total
+            n += 1
+            cues.append(f"{n}\n{ts(t)} --> {ts(t + d)}\n{c}\n")
+            t += d
+    return "\n".join(cues)
+
+
+def upload_caption(tok, vid, srt, lang="es", name="Español"):
+    boundary = "vrboundary7f3a"
+    meta = json.dumps({"snippet": {"videoId": vid, "language": lang, "name": name, "isDraft": False}})
+    body = (f"--{boundary}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n{meta}\r\n"
+            f"--{boundary}\r\nContent-Type: application/octet-stream\r\n\r\n{srt}\r\n--{boundary}--").encode()
+    req("POST", "https://www.googleapis.com/upload/youtube/v3/captions?uploadType=multipart&part=snippet", tok, body,
+        ctype=f"multipart/related; boundary={boundary}")
+
+
+PLAYLISTS = {"main": "GTA 6 News & Guides", "short": "GTA 6 Shorts", "news": "GTA 6 Streamer & Breaking News"}
+_playlist_cache = {}
+
+
+def add_to_playlist(tok, vid, title):
+    """Adds the video to the named playlist, creating the playlist (public) the first time."""
+    yt = "https://youtube.googleapis.com/youtube/v3/"
+    if not _playlist_cache:
+        r, _ = req("GET", yt + "playlists?part=snippet&mine=true&maxResults=50", tok)
+        _playlist_cache.update({p["snippet"]["title"]: p["id"] for p in r.get("items", [])})
+    if title not in _playlist_cache:
+        r, _ = req("POST", yt + "playlists?part=snippet,status", tok,
+                   {"snippet": {"title": title, "description": f"{title} from Vice Replay: GTA's wildest moments. On replay.",
+                                "defaultLanguage": "en"}, "status": {"privacyStatus": "public"}})
+        _playlist_cache[title] = r["id"]
+    req("POST", yt + "playlistItems?part=snippet", tok,
+        {"snippet": {"playlistId": _playlist_cache[title], "resourceId": {"kind": "youtube#video", "videoId": vid}}})
 
 
 def slot(day, hhmm):
@@ -152,30 +212,39 @@ def main():
         titles = ep.get("title_options") or [ep["title"]]
         title = titles[min(a.title, len(titles)) - 1]
         jobs.append(("main", out / f"{slug}.mp4", title, (out / "description.txt").read_text(), tags, t_main,
-                     out / "thumbnail-a.jpg", ep.get("pinned_comment")))
-    shorts = ([{"id": "", "pinned_comment": ep.get("pinned_comment")}] if ep.get("short") else []) + ep.get("shorts", [])
+                     out / "thumbnail-a.jpg", ep.get("pinned_comment"), ep.get("es"), out / f"{slug}.timings.json",
+                     ep.get("playlist") or PLAYLISTS["main"]))
+    shorts = ([{"id": "", "pinned_comment": ep.get("pinned_comment"), "playlist": ep.get("short_playlist")}]
+              if ep.get("short") else []) + ep.get("shorts", [])
     for k, sh in enumerate(shorts):
         key = "short" if not sh.get("id") else sh["id"]
         name = f"{slug}-short" + (f"-{sh['id']}" if sh.get("id") else "")
         if not allow(key) or not (out / f"{name}.mp4").exists():
             continue
         title, desc = parse_short_txt(out / f"{name}.txt")
+        es = sh.get("es") or (ep.get("short_es") if not sh.get("id") else None)
+        playlist = sh.get("playlist") or (PLAYLISTS["short"] if not sh.get("id") else PLAYLISTS["news"])
         jobs.append((key, out / f"{name}.mp4", title or sh.get("title") or ep["title"], desc, tags,
-                     t_short if k == 0 else t_news, None, sh.get("pinned_comment")))
+                     t_short if k == 0 else t_news, None, sh.get("pinned_comment"), es, out / f"{name}.timings.json",
+                     playlist))
 
-    for key, path, title, desc, tg, when, thumb, pin in jobs:
+    for key, path, title, desc, tg, when, thumb, pin, es, timings, playlist in jobs:
         if key in done:
             print(f"skip {key}: already uploaded ({done[key]['url']})")
             continue
         publish_at = None if a.now else slot(day, when)
         print(f"uploading {key}: {title}  ->  {'now' if not publish_at else when + ' ET'}")
-        v = upload(tok, path, title, desc, tg, publish_at)
+        v = upload(tok, path, title, desc, tg, publish_at, es=es)
         vid = v["id"]
         done[key] = {"id": vid, "url": f"https://www.youtube.com/watch?v={vid}", "title": title,
                      "scheduled_et": when if publish_at else "published now",
                      "privacy_returned": v.get("status", {}).get("privacyStatus")}
         done_file.write_text(json.dumps(done, indent=2))
-        steps = [("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb))]
+        srt = spanish_srt(timings)
+        steps = [("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb)),
+                 ("spanish_subtitles", lambda: srt and upload_caption(tok, vid, srt)),
+                 ("playlist", lambda: add_to_playlist(tok, vid, playlist))]
+        done[key]["spanish_title"] = "yes" if es and es.get("title") else "no (episode has no 'es')"
         if publish_at:
             done[key]["comment"] = "pending: post after it goes live"
             done[key]["comment_text"] = pin or ""

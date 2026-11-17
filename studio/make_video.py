@@ -326,7 +326,7 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     used_footage = any(s.get("media") for s in segments)
 
     parts, chapters, t = [], [], 0.0
-    cuts, impacts = [], [0.0]  # sound effects: impact on the hook, whoosh on every cut
+    cuts, impacts, timings = [], [0.0], []  # sound effects: impact on the hook, whoosh on every cut
     if not vertical:
         intro = render_card("intro", intro_image(ep["title"], w, h, work / "intro.png"), 2.6, work, enc, w, h)
         parts.append(intro)
@@ -339,6 +339,8 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
             chapters.append((0.0 if i == 0 and vertical else t, seg.get("chapter") or seg["headline"]))
         if t > 0:
             cuts.append(t)
+        timings.append({"start": round(t + 0.2, 2), "end": round(t + d - 0.25, 2), "text": seg["text"],
+                        "text_es": seg.get("text_es", "")})
         parts.append(clip)
         t += duration(clip)
     if not vertical:
@@ -371,6 +373,8 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     # YouTube plays back at about -14 LUFS; normalize so the voice isn't quiet next to other videos
     run(["ffmpeg", "-y", "-v", "error", "-i", str(mixed), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
          "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(final)])
+    # segment timings, so subtitles in other languages can be lined up with the narration
+    (out_dir / f"{name}.timings.json").write_text(json.dumps(timings, indent=2))
     return final, chapters, used_footage
 
 

@@ -29,6 +29,12 @@ Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2 on deep purple/black, Ant
      the hook starts with the reason), so replays count as extra watch time.
    - `pinned_comment`: one question for the comments that's easy to answer (pick-one or a number), posted and
      pinned by the owner right after upload.
+   - Spanish (free extra audience): every segment (main and Shorts) also gets `text_es` (natural Latin American
+     Spanish, same meaning, similar length; keep names like GTA 6, Vice City, Kai Cenat as they are). Add `es`
+     {`title`, `description`} for the main video, `short_es` for the main Short, and `es` inside each `shorts`
+     item. The uploader adds them as YouTube's Spanish title/description and Spanish subtitles.
+   - Playlists are automatic (main -> "GTA 6 News & Guides", Short -> "GTA 6 Shorts", news Short -> "GTA 6
+     Streamer & Breaking News"); set `playlist` on an item only to override.
    - Write narration for the ear: short sentences, spell numbers the way they should be spoken
      when it matters ("212 gigabytes"), no emoji, no markdown.
 3. **Render**:

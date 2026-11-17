@@ -110,6 +110,17 @@ def build(ep_path, day):
         cards.append(card(f"short{k}", kind, when, title, vid, None, blocks, extra))
         n += 1
 
+    # suggested replies to new comments (from content/learn/comments.json, written into the episode by the daily run)
+    replies = ep.get("comment_replies") or []
+    if replies:
+        blocks = []
+        for i, r in enumerate(replies):
+            blocks.append(f'<p class="hint"><b>{esc(r.get("author", ""))}</b>: {esc(r.get("comment", ""))} '
+                          f'<a href="{esc(r.get("url", ""))}" style="color:var(--cyan)">open</a></p>')
+            blocks.append(copy_block(f"Reply {i + 1}", r.get("reply", ""), f"reply-{i}"))
+        cards.append(card("replies", "Reply to comments", "ASAP", f"{len(replies)} new comments", None, None, blocks))
+        n += 1
+
     page = TEMPLATE.replace("{{DATE}}", day.strftime("%A, %B %-d")) \
         .replace("{{COUNT}}", str(n)) \
         .replace("{{TOPIC}}", esc(ep["title"])) \

@@ -1,5 +1,6 @@
 {
-  "checked": "2026-11-17T00:46+00:00",
+  "checked": "2026-11-17T17:16+00:00",
+  "channel_id": "UCzk9Wts3WFynOHZQJRWOQIw",
   "subscribers": "1",
   "videos": [
     {
@@ -9,24 +10,11 @@
       "published": "2026-11-14T19:10:35Z",
       "seconds": 19,
       "type": "Short",
-      "views": 4453,
-      "likes": 37,
+      "views": 5101,
+      "likes": 40,
       "comments": 4,
-      "views_per_hour": 83.1,
+      "views_per_hour": 72.8,
       "url": "https://www.youtube.com/watch?v=oYqPC06109w"
-    },
-    {
-      "id": "wPPhLBHS7-M",
-      "title": "GTA 6 in 3 days: what you need to know #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-16T23:00:07Z",
-      "seconds": 30,
-      "type": "Short",
-      "views": 91,
-      "likes": 2,
-      "comments": 0,
-      "views_per_hour": 51.3,
-      "url": "https://www.youtube.com/watch?v=wPPhLBHS7-M"
     },
     {
       "id": "DIFRHVF6T0E",
@@ -35,11 +23,24 @@
       "published": "2026-11-16T20:57:42Z",
       "seconds": 34,
       "type": "Short",
-      "views": 180,
+      "views": 192,
       "likes": 5,
       "comments": 0,
-      "views_per_hour": 47.2,
+      "views_per_hour": 9.4,
       "url": "https://www.youtube.com/watch?v=DIFRHVF6T0E"
+    },
+    {
+      "id": "wPPhLBHS7-M",
+      "title": "GTA 6 in 3 days: what you need to know #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-16T23:00:07Z",
+      "seconds": 30,
+      "type": "Short",
+      "views": 119,
+      "likes": 2,
+      "comments": 0,
+      "views_per_hour": 6.5,
+      "url": "https://www.youtube.com/watch?v=wPPhLBHS7-M"
     },
     {
       "id": "kLxIVUzSOaI",
@@ -48,10 +49,10 @@
       "published": "2026-11-14T13:12:12Z",
       "seconds": 29,
       "type": "Short",
-      "views": 159,
+      "views": 160,
       "likes": 7,
       "comments": 0,
-      "views_per_hour": 2.7,
+      "views_per_hour": 2.1,
       "url": "https://www.youtube.com/watch?v=kLxIVUzSOaI"
     },
     {
@@ -61,24 +62,11 @@
       "published": "2026-11-13T20:58:44Z",
       "seconds": 11,
       "type": "Short",
-      "views": 38,
+      "views": 35,
       "likes": 1,
       "comments": 0,
-      "views_per_hour": 0.5,
+      "views_per_hour": 0.4,
       "url": "https://www.youtube.com/watch?v=2MOr9zSDyfM"
-    },
-    {
-      "id": "vJDnv7_7Hcs",
-      "title": "GTA 6 Launches in 3 Days: Unlock Time, Download Size & Price",
-      "channel": "Vice Replay",
-      "published": "2026-11-16T20:27:00Z",
-      "seconds": 124,
-      "type": "Short",
-      "views": 1,
-      "likes": 0,
-      "comments": 0,
-      "views_per_hour": 0.2,
-      "url": "https://www.youtube.com/watch?v=vJDnv7_7Hcs"
     },
     {
       "id": "GjhaJdjHR4Q",
@@ -92,6 +80,19 @@
       "comments": 0,
       "views_per_hour": 0.2,
       "url": "https://www.youtube.com/watch?v=GjhaJdjHR4Q"
+    },
+    {
+      "id": "vJDnv7_7Hcs",
+      "title": "GTA 6 Launches in 3 Days: Unlock Time, Download Size & Price",
+      "channel": "Vice Replay",
+      "published": "2026-11-16T20:27:00Z",
+      "seconds": 124,
+      "type": "Short",
+      "views": 3,
+      "likes": 0,
+      "comments": 0,
+      "views_per_hour": 0.1,
+      "url": "https://www.youtube.com/watch?v=vJDnv7_7Hcs"
     },
     {
       "id": "YqnShunG7WY",
