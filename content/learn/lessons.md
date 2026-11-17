@@ -19,3 +19,7 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   "Chaos Is Coming" teaser loses people fast (43.9%, 4 s): vague teasers don't work, specific news does.
 - 2026-11-17: Long videos are watched only ~25% (31-60 s of 2-4 min): the first 30 seconds must deliver the
   payoff, and long videos should stay near 2 minutes until retention improves.
+- 2026-11-17 (evening): The market's top Shorts are short relatable launch moments ("Xbox gamers can play GTA 6 early",
+  47K views/h; "Deciding which game to delete", 141K/h). The New Zealand early-play trick is a proven hungry angle; we cover
+  it with risks/PS5-vs-Xbox so it is not a copy of the unlock-time video.
+- 2026-11-17: Gameplay pull failed (proxy 403 on the Drive download host); today's run used official screenshots.
