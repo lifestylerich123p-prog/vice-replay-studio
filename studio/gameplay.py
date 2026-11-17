@@ -33,7 +33,7 @@ def download(link):
     import gdown
     RAW.mkdir(parents=True, exist_ok=True)
     if "/folders/" in link:
-        gdown.download_folder(url=link, output=str(RAW), quiet=False, remaining_ok=True, resume=True)
+        gdown.download_folder(url=link, output=str(RAW), quiet=False, resume=True, retries=2)
     else:
         gdown.download(url=link, output=str(RAW) + "/", quiet=False, fuzzy=True, resume=True)
 

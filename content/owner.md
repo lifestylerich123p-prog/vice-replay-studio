@@ -2,4 +2,4 @@
 
 - Time zone: US Eastern (Miami, Florida), America/New_York. Posting times in CLAUDE.md are already local.
 - Upload style: owner reviews every video, then uploads and schedules in YouTube Studio
-- Gameplay Drive folder: (not set yet; paste the Google Drive folder link here, shared as "anyone with the link")
+- Gameplay Drive folder: https://drive.google.com/drive/folders/1P6MdlMGA3R6q2jotp9hZ_plpF6Xj_e8w
