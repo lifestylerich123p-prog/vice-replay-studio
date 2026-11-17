@@ -38,8 +38,16 @@ def token():
         sys.exit("Missing " + ", ".join(missing) + ": add them in the environment's settings (see tools/youtube_auth.py).")
     data = urllib.parse.urlencode({"client_id": os.environ["YT_CLIENT_ID"], "client_secret": os.environ["YT_CLIENT_SECRET"],
                                    "refresh_token": os.environ["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"}).encode()
-    with urllib.request.urlopen(urllib.request.Request("https://oauth2.googleapis.com/token", data=data), timeout=30) as r:
-        return json.load(r)["access_token"]
+    try:
+        with urllib.request.urlopen(urllib.request.Request("https://oauth2.googleapis.com/token", data=data), timeout=30) as r:
+            return json.load(r)["access_token"]
+    except urllib.error.HTTPError as e:
+        body = e.read().decode(errors="ignore")
+        if "invalid_grant" in body:
+            sys.exit("YOUTUBE CONNECTION EXPIRED: the weekly YouTube permission ran out. Reconnect on your Mac with "
+                     "tools/youtube_auth.py (Terminal step) and paste the new YT_REFRESH_TOKEN into the environment "
+                     "settings. Until then, upload by hand from the review page.")
+        sys.exit(f"YouTube sign-in failed ({e.code}): {body[:300]}")
 
 
 def req(method, url, tok, body=None, ctype="application/json", headers=None):
