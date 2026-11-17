@@ -13,3 +13,9 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   ("Deciding which game to delete for GTA 6", 171K views/hour), streamer marathon content (Kai Cenat marathon,
   160K/h) and performance debates ("30 FPS on PS5", 96K/h). Angles to use: storage/deleting games, 30 vs 60 FPS,
   big streamers' marathons, relatable "every GTA fan right now" moments.
+- 2026-11-17 (first private analytics, last 28 days): 97% of our views come from the Shorts feed (SHORTS 1,648 vs
+  YouTube search 55, related videos 10). Shorts are how we grow; long videos are a bonus.
+- 2026-11-17: Lacy Short is watched 87.9% on average (16 s): a strong hook + streamer name keeps people. The
+  "Chaos Is Coming" teaser loses people fast (43.9%, 4 s): vague teasers don't work, specific news does.
+- 2026-11-17: Long videos are watched only ~25% (31-60 s of 2-4 min): the first 30 seconds must deliver the
+  payoff, and long videos should stay near 2 minutes until retention improves.
