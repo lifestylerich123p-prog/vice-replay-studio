@@ -1,0 +1,95 @@
+{
+  "from": "2026-10-20",
+  "to": "2026-11-17",
+  "videos": [
+    {
+      "video": "oYqPC06109w",
+      "views": 1585,
+      "estimatedMinutesWatched": 228,
+      "averageViewDuration": 16,
+      "averageViewPercentage": 87.93,
+      "subscribersGained": 1,
+      "likes": 22,
+      "shares": 0,
+      "title": "Lacy's INSANE GTA 6 Marathon Plan \ud83d\udc80\ud83d\udd25 #lacy"
+    },
+    {
+      "video": "kLxIVUzSOaI",
+      "views": 101,
+      "estimatedMinutesWatched": 18,
+      "averageViewDuration": 19,
+      "averageViewPercentage": 67.96,
+      "subscribersGained": 0,
+      "likes": 3,
+      "shares": 0,
+      "title": "GTA 6 Is More Than Vice City! \ud83c\udf34 6 Locations to Explore"
+    },
+    {
+      "video": "2MOr9zSDyfM",
+      "views": 34,
+      "estimatedMinutesWatched": 0,
+      "averageViewDuration": 4,
+      "averageViewPercentage": 43.88,
+      "subscribersGained": 0,
+      "likes": 1,
+      "shares": 0,
+      "title": "GTA 6 Chaos Is Coming \ud83c\udf34 | Vice Replay"
+    },
+    {
+      "video": "GjhaJdjHR4Q",
+      "views": 14,
+      "estimatedMinutesWatched": 7,
+      "averageViewDuration": 31,
+      "averageViewPercentage": 25.52,
+      "subscribersGained": 1,
+      "likes": 2,
+      "shares": 1,
+      "title": "GTA 6 Is Bigger Than Vice City: 6 Places to Know"
+    },
+    {
+      "video": "YqnShunG7WY",
+      "views": 7,
+      "estimatedMinutesWatched": 7,
+      "averageViewDuration": 60,
+      "averageViewPercentage": 26.91,
+      "subscribersGained": 0,
+      "likes": 1,
+      "shares": 1,
+      "title": "GTA 6 Survival Guide: 7 Things to Do Before You Play"
+    }
+  ],
+  "traffic_sources": [
+    {
+      "insightTrafficSourceType": "SHORTS",
+      "views": 1648
+    },
+    {
+      "insightTrafficSourceType": "YT_SEARCH",
+      "views": 55
+    },
+    {
+      "insightTrafficSourceType": "YT_OTHER_PAGE",
+      "views": 11
+    },
+    {
+      "insightTrafficSourceType": "RELATED_VIDEO",
+      "views": 10
+    },
+    {
+      "insightTrafficSourceType": "YT_CHANNEL",
+      "views": 6
+    },
+    {
+      "insightTrafficSourceType": "SUBSCRIBER",
+      "views": 5
+    },
+    {
+      "insightTrafficSourceType": "EXT_URL",
+      "views": 4
+    },
+    {
+      "insightTrafficSourceType": "NO_LINK_OTHER",
+      "views": 2
+    }
+  ]
+}
