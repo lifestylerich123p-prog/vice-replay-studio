@@ -10,8 +10,23 @@
     "tag": "UNLOCK TIME + SIZE",
     "image": null
   },
-  "tags": ["GTA 6", "GTA VI", "GTA 6 release date", "GTA 6 release time", "GTA 6 download size", "GTA 6 preload", "GTA 6 price", "Vice City", "Leonida", "Rockstar Games"],
-  "hashtags": ["GTA6", "GTAVI", "ViceCity"],
+  "tags": [
+    "GTA 6",
+    "GTA VI",
+    "GTA 6 release date",
+    "GTA 6 release time",
+    "GTA 6 download size",
+    "GTA 6 preload",
+    "GTA 6 price",
+    "Vice City",
+    "Leonida",
+    "Rockstar Games"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "ViceCity"
+  ],
   "sources": [
     "Forbes - release time, download size: https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/",
     "Gameluster - 212GB preload: https://gameluster.com/gta-6-212gb-download-size-preload/"
@@ -82,5 +97,11 @@
       "text": "No PC version at launch, and GTA Online is expected in 2027. Follow Vice Replay for launch week.",
       "media": null
     }
-  ]
+  ],
+  "title_options": [
+    "GTA 6 Launches in 3 Days: Unlock Time, Download Size & Price",
+    "GTA 6 in 3 Days: Exact Unlock Time & 212GB Download",
+    "GTA 6 Is Almost Here: Everything to Know Before Launch"
+  ],
+  "pinned_comment": "Playing at midnight or waiting till morning? \ud83c\udf19 or \u2600\ufe0f"
 }

@@ -21,16 +21,20 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    doing with GTA 6 right now (launch marathons, records, viral moments, reactions), else the most-talked-
    about GTA 6 news of the day; it must be a different story from the main video. Render the `--preview`,
    check 3-4 frames, then render the final video and `--short` (renders both Shorts).
-3. **Deliver for review** with SendUserFile (status `proactive`): the main .mp4, the -short.mp4 and
-   thumbnail-a/b/c.jpg from `output/<slug>/`, plus the second Short (`-short-news.mp4`). Then post one message containing, ready to paste into YouTube Studio:
-   3 title options (best first), the full description.txt, the tags from tags.txt, and for each Short
-   the contents of its .txt file. Add a **posting plan**: the exact time to schedule each
-   upload today, from the posting schedule in CLAUDE.md for today's weekday (Eastern time, plus the
-   owner's local time if `content/owner.md` gives a time zone), and the `pinned_comment` to pin on each.
-   Remind them to add thumbnail-a/b/c with Test & Compare on the main video and to link the main video
-   as the Shorts' "Related video". Point out anything the owner should double-check (e.g. a fact that was still
-   developing). Only if SendUserFile is not available: publish a private review page with the Artifact tool
-   holding the videos, thumbnail and that text instead.
+3. **Deliver for review**:
+   - Put `title_options` (3 titles, best first) and `pinned_comment` in the episode JSON, then run
+     `python -m studio.review_page episodes/<slug>.json`. It builds `output/<slug>/review/` (index.html plus
+     the videos and thumbnails, with posting times for today's weekday).
+   - Update the owner's pinned review page (URL in `content/owner.md`) with the Artifact tool: first
+     `action: "read"` on that URL and `action: "list", scope: "files"` on it, then publish
+     `output/<slug>/review/index.html` with that `url`, passing every other file in the review folder via
+     `files`, and `null` for each old file listed that isn't in today's set. Each file must be under 15 MB
+     (re-encode with a higher `-crf` if not). If updating the URL fails, publish a new page and give its link.
+   - Also send the main .mp4, every Short .mp4 and thumbnail-a/b/c.jpg with SendUserFile (status
+     `proactive`) so the owner can save them to upload.
+   - Final message: the review page link, the posting plan (times from the page), the recommended title, and
+     anything to double-check (e.g. a fact that was still developing). Remind them to set Test & Compare with
+     the 3 thumbnails and "Related video" on the Shorts.
 4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), then
    commit `episodes/<slug>.json` and `content/log.md` and push to `main`. Videos are not committed.
    If the push is refused, try once to attach the repo with push access (add_repo), push again, and if it is
