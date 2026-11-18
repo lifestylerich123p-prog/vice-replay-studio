@@ -1,11 +1,11 @@
 {
   "owner_approved": false,
   "owner_approved_on": "",
-  "name": "TOMO GTA VI Clipping (Clipping Nation)",
+  "name": "Tomo GTA VI Clipping (Clipping Nation)",
   "platform": "Content Rewards",
-  "campaign_url": "https://contentrewards.com/c/discover (search: TOMO GTA VI Clipping)",
+  "campaign_url": "Content Rewards: TOMO GTA VI Clipping (joined Nov 18); rules on Notion (Clipping Nation)",
   "rate_per_1000_views": 2.0,
-  "status": "candidate",
+  "status": "joined, waiting for owner approval",
   "engine": "local",
   "layout": "stacked",
   "facecam_box": [
@@ -22,22 +22,53 @@
   ],
   "clip_seconds": 30,
   "captions": true,
-  "on_screen_credit": "TODO from rules",
+  "on_screen_credit": "@Tomovids",
   "required_hashtags": [
-    "#GTA6"
+    "#tomovids",
+    "#gta6"
   ],
-  "required_in_caption": "",
+  "required_in_caption": "Mention Tomo and @Tomovids, plus a CTA like 'Subscribe to Tomo on YouTube'",
   "rules": [
-    "From the Content Rewards article (Nov 18, 2026): clips of Tomo's GTA 6 livestreams and videos from his YouTube channel.",
-    "Platforms: TikTok, Instagram, YouTube Shorts. $2.00 per 1,000 views, $4 min to $150 max per clip, $1,000 budget.",
-    "TODO: copy the full rules from the campaign page (locked until joining) before making clips."
+    "Videos must feature Tomo and be sourced mainly from his GTA VI YouTube livestreams or his GTA VI videos.",
+    "CTA: every clip must mention Tomo and tell viewers where to watch more, e.g. 'subscribe to Tomo on YouTube'.",
+    "Platforms: TikTok, Instagram Reels and YouTube Shorts only; cross-posting to all three encouraged.",
+    "English only; audience at least 40% Tier 1 (USA, UK, Canada, Australia). At 2,000 views send a screenshot/recording of the country breakdown to the Discord support chat, or the video won't be approved.",
+    "Caption: use #tomovids and #gta6, and mention @Tomovids on screen or in the caption.",
+    "Captions must be readable without sound.",
+    "Likes must be visible on all clips (hidden likes are rejected).",
+    "Account must be in a related niche (gaming, GTA, streamers, clips).",
+    "Keep at least a 1% engagement rate.",
+    "Every clip must stay live for at least 30 days.",
+    "Original edits only: no stolen/reuploaded clips, no 1:1 copies, don't post the same or nearly identical clip more than 5 times.",
+    "No engagement bait: no misleading titles, fake context or clickbait thumbnails; never portray Tomo in a negative light.",
+    "No AI-generated thumbnails or content.",
+    "No fake engagement (bought/botted views = permanent ban).",
+    "Submit the video link within 30 minutes of posting.",
+    "No low-effort content: no raw screen recordings, random moments or clips with no clear purpose; properly edited and engaging.",
+    "Structure: hook in the first 2 seconds, one clear funny/crazy/surprising moment needing little context, CTA naming Tomo.",
+    "Priority: funny/chaotic moments and first reactions to GTA VI (features, cars, places, missions), stunts, chases, fails, interactions.",
+    "Payout: join Clipping Nation Whop + Discord, connect socials in Whop (Settings > Connected Accounts), submit within 30 min, send analytics at 2,000 views."
   ],
-  "source_footage": "Tomo's GTA 6 livestreams and his YouTube channel (per campaign)",
+  "source_footage": "youtube.com/@Tomovids: GTA VI livestreams (Live tab VODs) and GTA VI videos",
   "source_queue": [],
   "max_clips_per_day": 2,
-  "notes": "Candidate picked Nov 18: lowest bar to get paid (2,000 views for the $4 minimum), all 3 platforms, $2 CPM.",
+  "notes": "Joined Nov 18. Tomo streams GTA VI from launch day (Nov 19). Hook card + captions + end CTA 'Subscribe to Tomo on YouTube @Tomovids'. Owner must send analytics at 2,000 views per clip.",
   "submit_within_minutes": 30,
   "min_payout_per_clip": 4.0,
   "max_payout_per_clip": 150.0,
-  "budget": 1000
+  "budget": 1000,
+  "budget_left_nov18": 925,
+  "min_views_to_pay": 2000,
+  "extra_hashtags_pool": [
+    "#tomo",
+    "#gtavi",
+    "#gta",
+    "#gaming",
+    "#funnymoments"
+  ],
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts"
+  ]
 }
