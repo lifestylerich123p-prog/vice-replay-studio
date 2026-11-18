@@ -13,3 +13,4 @@
 | 2026-11-17 | website | vicereplay.com: 10 guides/news articles, /links/, /contact/, Search Console, Cloudflare analytics, contact@vicereplay.com | Owner request |
 | 2026-11-17 | gta6-is-out | GTA 6 is OUT: do these 3 things first (Short) | Owner approved; scheduled 12:00 AM ET Nov 19 (DBlAdqc1orw); ES version for TikTok |
 | 2026-11-18 | gta6-physical-edition-no-disc | GTA 6 Physical Edition Has No Disc: What You're Buying (+ Short, streamer packages news Short) | Daily run (re-rendered in main chat after facts fixed: 212 GB, Nov 10 preload, midnight unlock); scheduled 3:30/6:00/8:30 PM ET |
+| 2026-11-18 | houser-launch-statement | Rockstar's boss just broke his silence on GTA 6 (Short) | Owner script + approval; published immediately (4EuMnzlLKTY); sources GameSpot, GamesRadar |
