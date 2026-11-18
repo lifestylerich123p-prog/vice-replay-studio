@@ -58,11 +58,10 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    uploaded, else null), card [line1, line2, screenshot from media/official], lede, 3-6 sections [heading, short HTML
    paragraphs/lists] rewritten from the script for reading, 1-3 faq, gear ["game","storage"] when it fits, sources).
    Also prepend 1-2 dated lines to `site/live.json` with today's biggest confirmed news (launch week; link our guide).
-   Same facts and rules as the video: sourced, rumors labeled, no spoilers. Scheduled runs can't push, so publish through
-   a helper session: call `create_session` with `source_url` https://github.com/lifestylerich123p-prog/vice-replay-studio,
-   title "🌐 Website: <slug>", and a prompt that starts "/publish-site" followed by FILES: each file path on its own line
-   and its full contents. Mention the helper session in the report; if create_session isn't available, say the website
-   update is waiting and attach the JSON files with SendUserFile.
+   Same facts and rules as the video: sourced, rumors labeled, no spoilers. Scheduled runs can't push, so publish by
+   calling `fire_trigger` with trigger_id `trig_01XX9xXTp8xfb4i3yYUFP9uF` (it wakes the owner's main control session,
+   which can push) and `text` = "FILES:" then each file path on its own line followed by its full contents. If
+   fire_trigger isn't available or fails, say the website update is waiting and attach the JSON files with SendUserFile.
 3c. **Spanish voice Shorts**: run `python -m studio.make_video episodes/<slug>.json --short --es` (free Spanish voice,
    files end in `-es.mp4` with a Spanish .txt). Send them with SendUserFile too, labeled for TikTok/Instagram in Spanish.
    They are NOT uploaded to the main YouTube channel (keeps it English); the owner posts them by hand.
