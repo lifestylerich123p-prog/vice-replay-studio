@@ -1,12 +1,12 @@
 {
-  "owner_approved": false,
-  "owner_approved_on": "",
+  "owner_approved": true,
+  "owner_approved_on": "2026-11-18",
   "name": "Tomo GTA VI Clipping (Clipping Nation)",
   "platform": "Content Rewards",
   "campaign_url": "Content Rewards: TOMO GTA VI Clipping (joined Nov 18); rules on Notion (Clipping Nation)",
   "rate_per_1000_views": 2.0,
-  "status": "joined, waiting for owner approval",
-  "engine": "local",
+  "status": "active",
+  "engine": "everygen",
   "layout": "stacked",
   "facecam_box": [
     0.0,
@@ -70,5 +70,6 @@
     "TikTok",
     "Instagram Reels",
     "YouTube Shorts"
-  ]
+  ],
+  "engine_note": "YouTube can't be downloaded from the cloud workspace (blocked), so this campaign uses Everygen's download_video + editor. Show the credit cost and get the owner's yes before each batch. Find new Tomo GTA VI streams/videos with the YouTube Data API (channel @Tomovids)."
 }
