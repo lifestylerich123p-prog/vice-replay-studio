@@ -55,7 +55,7 @@ def page(path, title, desc, body, wide=True):
 <main>
 {body}
 </main>
-<footer>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.</footer>
+<footer>Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.</footer>
 </div>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "4c4c637dcde8478da5fd7073dcde1b11"}}'></script><!-- End Cloudflare Web Analytics -->
 </body>
@@ -224,10 +224,20 @@ page("links/", "Vice Replay Links", "Every Vice Replay link: YouTube, TikTok, GT
 <a class="item" href="/guides/gta-6-cheats/">GTA 6 cheat codes<small>Confirmed list (updated after launch)</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/">GTA 6 guides<small>Unlock times, storage, the map</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/gear/">GTA 6 gear picks<small>Storage, controllers, capture (affiliate)</small><span aria-hidden="true">→</span></a>
+<a class="item" href="/contact/">Work with us<small>contact@vicereplay.com</small><span aria-hidden="true">→</span></a>
 </div>""")
 
+page("contact/", "Work With Vice Replay", "Sponsorships, clipping campaigns and business enquiries for Vice Replay, a GTA 6 news and Shorts channel.", f"""<h1>Work with <span>Vice Replay</span></h1>
+<p class="lede">Vice Replay is a GTA 6 channel: daily news, streamer news, guides and Shorts in English, with Spanish subtitles. We post on YouTube and TikTok.</p>
+<div class="box"><h3>Get in touch</h3><div class="btns"><a class="item" href="mailto:contact@vicereplay.com?subject=Vice%20Replay%20enquiry">contact@vicereplay.com<small>Sponsorships, campaigns, press</small><span aria-hidden="true">→</span></a></div></div>
+<h2>What we can do</h2>
+<ul class="list"><li><b>Sponsored segments</b> in a GTA 6 video or Short, clearly labeled as sponsored.</li><li><b>Clipping campaigns</b> for GTA 6 streamers and creators.</li><li><b>Gear and game features</b> on this site and in our videos.</li></ul>
+<h2>What we don't do</h2>
+<ul class="list"><li>Fake reviews or claims that we used a product we haven't.</li><li>Gambling, account selling, "money generators" or anything that breaks Rockstar's or YouTube's rules.</li><li>Hidden ads: every paid placement is disclosed.</li></ul>
+<p>Include your brand or channel, what you have in mind, and your timing. We usually reply within 2 days.</p>""")
+
 open(os.path.join(SITE, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
-urls = [("", "2026-11-18"), ("guides/", "2026-11-18"), ("gear/", "2026-11-18"), ("links/", "2026-11-18")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES]
+urls = [("", "2026-11-18"), ("guides/", "2026-11-18"), ("gear/", "2026-11-18"), ("links/", "2026-11-18"), ("contact/", "2026-11-18")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES]
 open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
 print("ok", len(GUIDES))
