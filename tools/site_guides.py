@@ -1,7 +1,7 @@
 # Builds the guide pages, /links/, sitemap.xml and robots.txt for vicereplay.com (repo vicereplay-site).
 # Add a guide() call per new video, run: python tools/site_guides.py, then commit+push vicereplay-site.
 import os, html, json
-SITE = "/home/user/vicereplay-site"
+SITE = os.environ.get("VICEREPLAY_SITE") or os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "vicereplay-site")
 DOMAIN = "https://vicereplay.com"
 TAG = "vicereplay-20"
 YT = "https://www.youtube.com/@vicereplaytv-q8s"
@@ -381,12 +381,7 @@ guide("gta-6-game-awards-nominations", "GTA 6 at The Game Awards 2026: 8 Nominat
 {sources([("Insider Gaming: Lucia's actress revealed","https://insider-gaming.com/gta-6-lucia-actress-officially-revealed-during-2026-game-awards-nominations/"),("GamesRadar: Lucia actor revealed","https://www.gamesradar.com/games/grand-theft-auto/gta-6-lucia-actor-revealed-thanks-to-the-game-awards-best-performance-nomination-and-yes-its-exactly-who-everyone-expected/"),("Destructoid: TGA 2026 nominations","https://www.destructoid.com/gta-6-the-game-awards-tga-nominations-2026/"),("Forbes: Game of the Year nominees","https://www.forbes.com/sites/paultassi/2026/11/17/the-6-game-of-the-year-nominees-at-the-game-awards--did-gta-6-make-it/")])}""")
 
 # 11. Launch live hub (update the UPDATES list every day of launch week; newest first)
-UPDATES = [
- ("Nov 17, 9 PM ET", "Cheat codes: still none confirmed. Lists going around are recycled GTA 5 codes. <a href=\"/guides/gta-6-cheats/\">Our cheats tracker</a>."),
- ("Nov 17, 12 PM ET", "The Game Awards 2026 nominations: GTA 6 gets 8, including Game of the Year. Lucia's actress, Manni L. Perez, is nominated for Best Performance. <a href=\"/guides/gta-6-game-awards-nominations/\">Details</a>."),
- ("Nov 17", "Reviews are reportedly due November 18, the day before launch (not confirmed by Rockstar). <a href=\"/guides/gta-6-reviews/\">The score to beat</a>."),
- ("Nov 16", "Preload has been live since November 10: the install is up to 212 GB. <a href=\"/guides/gta-6-storage/\">Out of space?</a>"),
-]
+UPDATES = [(u["time"], u["html"]) for u in json.load(open(os.path.join(STUDIO, "site/live.json")))]  # newest first
 guide("gta-6-launch-live", "GTA 6 Launch: Live Updates, Times and Everything You Need Tonight",
  "GTA 6 launch live updates: unlock times, YouTube's 24-hour stream, reviews, cheats, storage and PC news in one page, updated every day of launch week.",
  "2026-11-17", f"""<h1>GTA 6 launch: <span>live updates</span></h1>
@@ -494,6 +489,25 @@ guide("gta-6-lanzamiento-en-vivo", "Lanzamiento de GTA 6: actualizaciones en viv
 <ul class="list"><li><a href="/es/guias/hora-de-lanzamiento-gta-6/">A qué hora se desbloquea</a></li><li><a href="/es/guias/espacio-gta-6/">¿Sin espacio? Primero lo gratis</a></li><li><a href="/es/guias/gta-6-pc/">GTA 6 en PC</a></li></ul>
 {gearbox(GAME + STORAGE, "Enlaces directos (Amazon EE. UU.):")}""",
  faq=[("¿Cuándo sale GTA 6?", "El 19 de noviembre de 2026 en PS5 y Xbox Series X|S, a la medianoche hora local.")], lang="es")
+
+# Guides written as data by the daily run: site/guides/<slug>.json
+# {"slug","lang":"en|es","title","desc","date","video":"YouTube id or null","card":[line1,line2,"screenshot.jpg"],
+#  "lede","sections":[[heading, html]],"note","faq":[[q,a]],"gear":["game","storage"],"sources":[[name,url]]}
+import glob as _glob
+for _f in sorted(_glob.glob(os.path.join(STUDIO, "site/guides/*.json"))):
+    g = json.load(open(_f))
+    if g.get("card"): CARDS[g["slug"]] = tuple(g["card"])
+    items = (GAME if "game" in g.get("gear", []) else []) + (STORAGE if "storage" in g.get("gear", []) else [])
+    es = g.get("lang") == "es"
+    h1 = g.get("h1") or g["title"]
+    body = f'<h1>{h1}</h1><p class="meta">{"Actualizado el" if es else "Updated"} {g["date"]} · Vice Replay</p><p class="lede">{g.get("lede", "")}</p>'
+    body += video(g["video"], g["title"]) if g.get("video") else ""
+    body += "".join(f"<h2>{html.escape(h)}</h2>{b}" for h, b in g.get("sections", []))
+    body += f'<div class="note">{g["note"]}</div>' if g.get("note") else ""
+    body += gearbox(items, "Enlaces (Amazon EE. UU.):" if es else "Getting GTA 6 or making room for it? Links go to current listings:") if items else ""
+    body += watchmore(g["video"]) if g.get("video") else ""
+    body += sources([tuple(x) for x in g.get("sources", [])]) if g.get("sources") else ""
+    guide(g["slug"], g["title"], g["desc"], g["date"], body, faq=[tuple(x) for x in g.get("faq", [])] or None, lang=g.get("lang", "en"))
 
 GUIDES_ES.sort(key=lambda g: g[3], reverse=True)
 page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en español: trucos, hora de lanzamiento, espacio y PC. Sin spoilers.",

@@ -59,7 +59,7 @@ def kokoro_tts(text, voice, speed, wav):
                 (VOICE_DIR / (f + ".part")).rename(VOICE_DIR / f)
         _kokoro = Kokoro(str(VOICE_DIR / KOKORO_FILES[0]), str(VOICE_DIR / KOKORO_FILES[1]))
     import soundfile as sf
-    samples, sr = _kokoro.create(text, voice=voice, speed=speed, lang="en-us")
+    samples, sr = _kokoro.create(text, voice=voice, speed=speed, lang="es" if voice[:3] in ("ef_", "em_") else "en-us")
     sf.write(str(wav), samples, sr)
     return wav
 
@@ -402,6 +402,7 @@ def main():
     ap.add_argument("--short", action="store_true", help="vertical 1080x1920 YouTube Short")
     ap.add_argument("--preview", action="store_true", help="fast low-res draft")
     ap.add_argument("--voice", help=f"edge-tts voice (default {DEFAULT_VOICE})")
+    ap.add_argument("--es", action="store_true", help="Spanish-voiced Shorts (free Kokoro em_alex voice, text_es; files end in -es)")
     a = ap.parse_args()
 
     ep_path = Path(a.episode).resolve()
@@ -423,15 +424,29 @@ def main():
                     "segments": ep["short"]}] if ep.get("short") else []) + ep.get("shorts", [])
         if not shorts:
             sys.exit("No 'short' or 'shorts' in this episode.")
+        if a.es:
+            voice = a.voice or ep.get("voice_es", "em_alex")
+            es_shorts = []
+            for k, sh in enumerate(shorts):
+                es = sh.get("es") or (ep.get("short_es") if k == 0 and not sh.get("id") else None) or {}
+                if not all(x.get("text_es") for x in sh["segments"]):
+                    print(f"skip Spanish {sh.get('id') or 'short'}: a segment has no text_es")
+                    continue
+                segs = [dict(x, text=x["text_es"], headline=x.get("headline_es") or x.get("headline")) for x in sh["segments"]]
+                es_shorts.append(dict(sh, segments=segs, title=es.get("title") or sh.get("title"),
+                                      description=es.get("description") or sh.get("description"), lang_suffix="-es"))
+            shorts = es_shorts
         for sh in shorts:
-            name = f"{slug}-short" + (f"-{sh['id']}" if sh.get("id") else "")
+            name = f"{slug}-short" + (f"-{sh['id']}" if sh.get("id") else "") + sh.get("lang_suffix", "")
             print(f"== Short: {name}")
             final, _, used = build(ep, base, slug, sh["segments"], True, a.preview, enc, w, h, voice, rate, name)
             tags = " ".join("#" + t for t in sh.get("hashtags", ["GTA6", "GTAVI", "Shorts"]))
             lines = ["TITLE", sh.get("title") or ep["title"], "", "DESCRIPTION", sh.get("description", ""), ""]
             if used:
-                lines += ["GTA VI footage/screenshots: Rockstar Games, used for news and commentary.", ""]
-            lines += ["Vice Replay is a fan channel, not affiliated with Rockstar Games.", "", tags]
+                lines += ["Imágenes de GTA VI: Rockstar Games, usadas para noticias y comentario." if a.es else
+                          "GTA VI footage/screenshots: Rockstar Games, used for news and commentary.", ""]
+            lines += ["Vice Replay es un canal de fans, no afiliado con Rockstar Games." if a.es else
+                      "Vice Replay is a fan channel, not affiliated with Rockstar Games.", "", tags]
             (out_dir / f"{name}.txt").write_text("\n".join(lines))
             print(f"Done: {final}  ({fmt_ts(duration(final))})")
         return

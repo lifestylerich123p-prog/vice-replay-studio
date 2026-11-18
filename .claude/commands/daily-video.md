@@ -53,6 +53,19 @@ make sensible choices, finish the whole run, and explain your choices in the fin
      "approve the Shorts", "approve, use title 2", or ask for changes first). Then: the review page link, the posting plan (times from the page), the recommended title, and
      anything to double-check (e.g. a fact that was still developing). Remind them to set Test & Compare with
      the 3 thumbnails and "Related video" on the Shorts.
+3b. **Website** (vicereplay.com): write a guide for today's main video as `site/guides/<slug>.json` (format at the top of the
+   loader in `tools/site_guides.py`: slug, lang "en", title (60-70 chars, keyword first), desc, date, video (YouTube id once
+   uploaded, else null), card [line1, line2, screenshot from media/official], lede, 3-6 sections [heading, short HTML
+   paragraphs/lists] rewritten from the script for reading, 1-3 faq, gear ["game","storage"] when it fits, sources).
+   Also prepend 1-2 dated lines to `site/live.json` with today's biggest confirmed news (launch week; link our guide).
+   Same facts and rules as the video: sourced, rumors labeled, no spoilers. Scheduled runs can't push, so publish through
+   a helper session: call `create_session` with `source_url` https://github.com/lifestylerich123p-prog/vice-replay-studio,
+   title "🌐 Website: <slug>", and a prompt that starts "/publish-site" followed by FILES: each file path on its own line
+   and its full contents. Mention the helper session in the report; if create_session isn't available, say the website
+   update is waiting and attach the JSON files with SendUserFile.
+3c. **Spanish voice Shorts**: run `python -m studio.make_video episodes/<slug>.json --short --es` (free Spanish voice,
+   files end in `-es.mp4` with a Spanish .txt). Send them with SendUserFile too, labeled for TikTok/Instagram in Spanish.
+   They are NOT uploaded to the main YouTube channel (keeps it English); the owner posts them by hand.
 4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), then
    commit `episodes/<slug>.json` and `content/log.md` and push to `main`. Videos are not committed.
    If the push is refused, try once to attach the repo with push access (add_repo), push again, and if it is
