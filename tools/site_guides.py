@@ -208,6 +208,69 @@ guide("gta-6-cheats", "GTA 6 Cheat Codes: Confirmed List (and the Fake Ones)",
 {watchmore("pcoMWOraJA4")}
 {sources([("GTA BOOM: current GTA 6 cheat status","https://gtaboom.com/gta-6-cheats-9nd6"),("GTA BOSS: GTA 6 cheats","https://www.gtaboss.gg/gta-6/guides/gta-6-cheats"),("GTA Wiki: Cheats in GTA VI","https://gta.fandom.com/wiki/Cheats_in_GTA_VI"),("GTAVI.tips: confirmed vs fake","https://www.gtavi.tips/gta-6-cheats")])}""")
 
+# 7-10. News articles (Nov 17)
+guide("gta-6-pc-release-date", "GTA 6 on PC: Release Date and What's Actually Reported",
+ "GTA 6 launches on PS5 and Xbox Series X|S only. Here's what Take-Two has said about PC, the reported early 2027 window, and what's still unconfirmed.",
+ "2026-11-17", f"""<h1>GTA 6 on PC: <span>when?</span></h1>
+<p class="meta">Updated November 17, 2026 · Vice Replay</p>
+<p class="lede">GTA 6 launches on November 19, 2026, on <b>PS5 and Xbox Series X|S only</b>. There is no official PC release date yet. Here's what's known and what's only reported.</p>
+<h2>What's official</h2>
+<p>Take-Two and Rockstar have only announced console versions. Take-Two CEO Strauss Zelnick has defended the console-first plan, saying Rockstar "always starts on console" and serves its core audience first.</p>
+<h2>What's reported: early 2027</h2>
+<p>According to a GamesBeat report citing four anonymous industry sources, Rockstar is reportedly aiming for a PC release between <b>January and March 2027</b>. Rockstar and Take-Two have not confirmed it. Some outlets also read Take-Two's financial outlook as a hint at early 2027, but that's an interpretation, not an announcement.</p>
+<h2>History says: wait</h2>
+<p>Rockstar's last big games followed the same pattern. GTA 5 reached PC about a year and a half after its console launch, and Red Dead Redemption 2 about a year after. A wait of a few months would actually be faster than usual.</p>
+<h2>What PC players can do now</h2>
+<ul class="list"><li>Don't buy "GTA 6 PC" keys or downloads: there's no PC version, so they're scams.</li><li>Watch Rockstar's official channels for the real announcement.</li><li>Playing on console? <a href="/guides/gta-6-storage/">Make room for the 212 GB install.</a></li></ul>
+{gearbox(GAME + STORAGE, "Playing on console at launch? These searches show current options and prices:")}
+{sources([("GodisaGeek: PC reportedly targets Q1 2027","https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"),("Outlook Respawn: PC reportedly early 2027","https://respawn.outlookindia.com/gaming/gaming-news/gta-6-pc-release-reportedly-targets-early-2027"),("tbreak: Take-Two CEO on console-first","https://tbreak.com/gta-6-pc-release-delayed-console-first/"),("Gfinity: GTA 6 platforms explained","https://www.gfinityesports.com/article/will-gta-6-come-to-pc-at-launch-platforms-explained")])}""")
+
+guide("gta-6-launch-streams", "GTA 6 Launch Streams: YouTube's 24-Hour Livestream and Kai Cenat's 100% Marathon",
+ "Where to watch GTA 6 on launch night: YouTube's 24-hour livestream with 30+ creators starting November 19, plus Kai Cenat's plan to 100% the game on stream.",
+ "2026-11-17", f"""<h1>GTA 6 launch night: <span>where to watch</span></h1>
+<p class="meta">Updated November 17, 2026 · Vice Replay</p>
+<p class="lede">GTA 6 might be the biggest launch night in streaming history. Here's what's been announced, so you know where to watch if you're not playing yet.</p>
+<h2>YouTube's 24-hour GTA 6 livestream</h2>
+<p>YouTube is hosting <b>"Launch Day: YouTube's 24 Hour GTAVI Livestream"</b> with more than 30 creators. According to reports, a pre-show hosted by RDCWorld starts at <b>11 PM Eastern on November 18</b>, and the 24-hour main stream begins at <b>midnight Eastern on November 19</b>, with streams in several languages.</p>
+<h2>Kai Cenat's 100% marathon</h2>
+<p>Kai Cenat has said he wants to complete GTA 6 to 100% on stream: not just the story, but every optional extra. How long that takes depends on how big the game really is, and nobody knows that yet.</p>
+<h2>Watching without spoilers</h2>
+<p>Streams will show the story live. If you want to go in blind, skip the marathons for the first few days and mute "GTA 6" on social apps. <a href="/guides/gta-6-launch-checklist/">Our launch checklist</a> has more.</p>
+<div class="note">Plans can change on launch night. Check each creator's own channel for the final times.</div>
+{watchmore("DIFRHVF6T0E")}
+{sources([("Notebookcheck: YouTube 24-hour GTA 6 livestream","https://www.notebookcheck.net/YouTube-to-host-24-hour-GTA-6-release-date-livestream-with-launch-day-gameplay.1449040.0.html"),("GTA BOOM: 24-hour livestream with 30+ creators","https://www.gtaboom.com/gta-6-is-getting-a-24-hour-youtube-livestream-with-more-than-30-creators-5ad2"),("Streams Charts: YouTube launch marathon","https://streamscharts.com/news/youtube-announces-24-hour-gta-6-launch-marathon-global-creators"),("Sportskeeda: Kai Cenat 100% marathon","https://sportskeeda.com/us/streamers/news-kai-cenat-hold-gta-6-100-playthrough-marathon-upon-game-s-release"),("GTA BOOM: Kai Cenat wants to 100% GTA 6","https://www.gtaboom.com/kai-cenat-wants-to-100-gta-6-in-one-nonstop-marathon-d0ed")])}""")
+
+guide("gta-6-reviews", "GTA 6 Reviews: When They Drop and the Score to Beat",
+ "When do GTA 6 reviews come out? The embargo is reportedly November 18, the day before launch. Plus the Metacritic scores GTA 6 has to beat.",
+ "2026-11-17", f"""<h1>GTA 6 reviews: <span>the score to beat</span></h1>
+<p class="meta">Updated November 17, 2026 · Vice Replay · We'll update this when reviews are out</p>
+<p class="lede">GTA 6 reviews are reportedly coming <b>November 18</b>, one day before launch. Here's what's known, and the scores Rockstar has to beat.</p>
+<h2>When are reviews out?</h2>
+<p>The review embargo is reportedly <b>November 18</b>. Leaker NateTheHate first pointed to that date and several outlets have repeated it, but Rockstar hasn't confirmed it. If it's right, critics' verdicts arrive the day before you can play.</p>
+<h2>Early PlayStation Store ratings? Ignore them</h2>
+<p>A handful of player ratings showed up on the PlayStation Store before launch. It's a tiny sample from people who can't have finished the game, so it says nothing about how good it is.</p>
+<h2>The scores to beat</h2>
+<ul class="list"><li><b>GTA 4:</b> 98 on Metacritic (Xbox 360)</li><li><b>GTA 3:</b> 97</li><li><b>GTA 5:</b> 97</li></ul>
+<p>Anything in the high 90s puts GTA 6 with the best-reviewed games ever. Anything lower will be big news.</p>
+<h2>Already in the awards race</h2>
+<p>GTA 6 got <a href="/guides/gta-6-game-awards-nominations/">8 nominations at The Game Awards 2026</a>, including Game of the Year, before reviews were even out.</p>
+{gearbox(GAME + STORAGE, "Buying GTA 6 or making room for it? These searches show current options and prices:")}
+{sources([("Insider Gaming: GTA 6 review embargo","https://insider-gaming.com/grand-theft-auto-6-review-embargo/"),("Dot Esports: review embargo date","https://dotesports.com/gta/news/gta-6-review-embargo-date"),("Notebookcheck: PS Store reviews before embargo","https://www.notebookcheck.net/GTA-6-PS5-reviews-already-live-on-PlayStation-Store-before-embargo-and-release-date.1447176.0.html")])}""")
+
+guide("gta-6-game-awards-nominations", "GTA 6 at The Game Awards 2026: 8 Nominations Including Game of the Year",
+ "GTA 6 earned 8 nominations at The Game Awards 2026, including Game of the Year and Best Performance for Lucia's actress Manni L. Perez, two days before launch.",
+ "2026-11-17", f"""<h1>GTA 6 is up for <span>Game of the Year</span></h1>
+<p class="meta">Updated November 17, 2026 · Vice Replay</p>
+<p class="lede">The Game Awards 2026 nominations came out on November 17, two days before GTA 6 even launched, and GTA 6 got <b>8 nominations</b>, including <b>Game of the Year</b>.</p>
+<h2>Lucia's actress, confirmed</h2>
+<p>One nomination finally confirmed something fans had guessed since the first trailer: <b>Manni L. Perez</b> plays Lucia. She's nominated for Best Performance. Jason's actor still hasn't been officially revealed.</p>
+<h2>Why this is unusual</h2>
+<p>Games have to be out by the eligibility cutoff, and GTA 6 launches November 19, just inside it. Jurors got very little time with the game before voting on nominations.</p>
+<h2>When are the winners revealed?</h2>
+<p>The Game Awards 2026 show is on <b>December 10, 2026</b>, at the Peacock Theater in Los Angeles.</p>
+<div class="box"><h3>Watch</h3><div class="btns"><a class="item" href="https://www.youtube.com/watch?v=xvudsg_o6ow" target="_blank" rel="noopener">GTA 6 just got nominated for Game of the Year<small>Vice Replay Short</small><span aria-hidden="true">→</span></a><a class="item" href="https://www.youtube.com/watch?v=_5ZWAUY75y4" target="_blank" rel="noopener">Lucia's actress is CONFIRMED<small>Vice Replay Short</small><span aria-hidden="true">→</span></a></div></div>
+{sources([("Insider Gaming: Lucia's actress revealed","https://insider-gaming.com/gta-6-lucia-actress-officially-revealed-during-2026-game-awards-nominations/"),("GamesRadar: Lucia actor revealed","https://www.gamesradar.com/games/grand-theft-auto/gta-6-lucia-actor-revealed-thanks-to-the-game-awards-best-performance-nomination-and-yes-its-exactly-who-everyone-expected/"),("Destructoid: TGA 2026 nominations","https://www.destructoid.com/gta-6-the-game-awards-tga-nominations-2026/"),("Forbes: Game of the Year nominees","https://www.forbes.com/sites/paultassi/2026/11/17/the-6-game-of-the-year-nominees-at-the-game-awards--did-gta-6-make-it/")])}""")
+
 # guides index
 GUIDES.sort(key=lambda g: g[3], reverse=True)
 cards = "".join(f'<a class="card" href="/guides/{s}/"><b>{html.escape(t)}</b><small>{html.escape(d)}</small></a>' for s, t, d, _ in GUIDES)
