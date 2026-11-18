@@ -39,6 +39,7 @@ Be honest: free fixes first, upgrades second; never claim we tested a product.
 ## Shopping moments (affiliate)
 | Date | Main video | Short |
 |---|---|---|
+| Tue Nov 24 | GTA 6 Gift Guide: What to Buy a GTA 6 Fan (game, storage, controller, headset; affiliate ["storage","game","gear"]; links to vicereplay.com/guides/gta-6-gift-guide/) | "Buying for a GTA 6 fan? Get this, not that" |
 | Wed Nov 25 | Best GTA 6 Black Friday Deals: Storage, Controllers, the Game (affiliate ["storage","game","gear"]) | "GTA 6 is 212GB: the cheapest fix this Black Friday" |
 | Mon Nov 30 | Cyber Monday: last chance GTA 6 gear deals | "Last call: GTA 6 storage deal" |
 Only list deals you can verify on the day; say "check the price at the link" instead of quoting prices that change.
