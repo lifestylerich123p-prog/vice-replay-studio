@@ -5,7 +5,7 @@ SITE = "/home/user/vicereplay-site"
 DOMAIN = "https://vicereplay.com"
 TAG = "vicereplay-20"
 YT = "https://www.youtube.com/@vicereplaytv-q8s"
-def amz(q): return f"https://www.amazon.com/s?k={q.replace(' ','+')}&tag={TAG}"
+def amz(q): return f"{q}?tag={TAG}" if q.startswith("http") else f"https://www.amazon.com/s?k={q.replace(' ','+')}&tag={TAG}"
 
 CSS = """:root{--bg:#0d0717;--panel:#170d26;--panel-2:#21123a;--line:#3a2357;--fg:#f4eefc;--muted:#b7a9cf;--pink:#ff1f8e;--cyan:#00e5d2;
 --display:"Anton","Impact","Arial Narrow",sans-serif;--body:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:dark}
@@ -74,7 +74,7 @@ def gearbox(items, intro="If you're short on space for the 212 GB install, these
 
 STORAGE = [("PS5 storage upgrade (2TB NVMe SSD with heatsink)", "PS5 compatible 2TB NVMe SSD with heatsink"),
            ("Xbox Series X|S storage expansion card", "Xbox Series X S storage expansion card 2TB")]
-GAME = [("GTA 6 for PS5", "Grand Theft Auto VI PS5"), ("GTA 6 for Xbox Series X|S", "Grand Theft Auto VI Xbox Series X")]
+GAME = [("GTA 6 for PS5", "https://www.amazon.com/dp/B0H6K928WL"), ("GTA 6 for Xbox Series X|S", "https://www.amazon.com/dp/B0H6K49W6Y")]
 
 def sources(lst):
     return '<div class="sources"><h2>Sources</h2><ul class="list">' + "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{html.escape(n)}</a></li>' for n, u in lst) + "</ul></div>"
