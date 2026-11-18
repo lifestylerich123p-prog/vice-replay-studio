@@ -54,7 +54,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
      `proactive`) so the owner can save them to upload.
    - "approve" / "approve all" also posts the `comment_replies` (the uploader's `replies` item); "approve the Shorts"
      doesn't. Show the replies on the review page so the owner can change or drop any before approving.
-   - Final message starts with: **Reply "approve" here to schedule everything on YouTube automatically** (or
+   - Final message starts with: **Reply "approve" in the main chat ("🎬 Vice Replay Studio (main control)") to schedule
+     everything on YouTube** (this scheduled chat can't upload) (or
      "approve the Shorts", "approve, use title 2", or ask for changes first). Then: the review page link, the posting plan (times from the page), the recommended title, and
      anything to double-check (e.g. a fact that was still developing). Remind them to set Test & Compare with
      the 3 thumbnails and "Related video" on the Shorts.
@@ -65,7 +66,10 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    Also prepend 1-2 dated lines to `site/live.json` with today's biggest confirmed news (launch week; link our guide).
    Same facts and rules as the video: sourced, rumors labeled, no spoilers. Scheduled runs CAN'T push to GitHub (403):
    don't try git push or commit for these files. Publish ONLY by calling `fire_trigger` with trigger_id `trig_01XX9xXTp8xfb4i3yYUFP9uF` (it wakes the owner's main control session,
-   which can push) and `text` = "FILES:" then each file path on its own line followed by its full contents. If
+   which can push) and `text` = "FILES:" then each file path on its own line followed by its full contents. ALWAYS
+   include `episodes/<slug>.json` and the new `content/log.md` line too: the main chat saves them, and because this
+   scheduled chat can't upload, the owner approves in the main chat ("🎬 Vice Replay Studio (main control)"), which
+   re-renders from the episode file and uploads. Say that in the final message: "Reply approve in the main chat". If
    fire_trigger isn't available or fails, say the website update is waiting and attach the JSON files with SendUserFile.
 3d. **TikTok chat**: `send_message` session `session_01CJRsWQ4prmRGdfaEyZXz7q` ("📱 Vice Replay TikTok") with, for every Short
    (English and Spanish): its TikTok caption + hashtags and a posting time (after the YouTube version), and say the

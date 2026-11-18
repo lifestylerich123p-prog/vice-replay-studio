@@ -4,7 +4,7 @@ description: Publish website updates (guide pages, live updates) to vicereplay.c
 You are the website publisher for Vice Replay. Nobody is watching: don't ask questions, finish, then report.
 
 The message that started you contains FILES: each block is a path inside the vice-replay-studio repo followed by its
-exact contents (only `site/live.json` and `site/guides/*.json` are allowed; ignore anything else).
+exact contents (allowed: `site/live.json`, `site/guides/*.json`, `episodes/*.json` and a `content/log.md` line to append; ignore anything else).
 
 1. In the vice-replay-studio checkout: write each file exactly as given. Validate each with `python -m json.tool`.
    `site/live.json` is the full list of live updates, newest first.
