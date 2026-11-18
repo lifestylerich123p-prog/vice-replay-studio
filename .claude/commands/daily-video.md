@@ -67,6 +67,9 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    calling `fire_trigger` with trigger_id `trig_01XX9xXTp8xfb4i3yYUFP9uF` (it wakes the owner's main control session,
    which can push) and `text` = "FILES:" then each file path on its own line followed by its full contents. If
    fire_trigger isn't available or fails, say the website update is waiting and attach the JSON files with SendUserFile.
+3d. **TikTok chat**: `send_message` session `session_01CJRsWQ4prmRGdfaEyZXz7q` ("📱 Vice Replay TikTok") with, for every Short
+   (English and Spanish): its TikTok caption + hashtags and a posting time (after the YouTube version), and say the
+   files are in today's daily-run chat. Treat it as a hand-off; don't wait for a reply.
 3c. **Spanish voice Shorts**: run `python -m studio.make_video episodes/<slug>.json --short --es` (free Spanish voice,
    files end in `-es.mp4` with a Spanish .txt). Send them with SendUserFile too, labeled for TikTok/Instagram in Spanish.
    They are NOT uploaded to the main YouTube channel (keeps it English); the owner posts them by hand.
