@@ -12,3 +12,4 @@
 | 2026-11-17 | gta6-cheat-codes | Those GTA 6 cheat codes are FAKE (Short) + vicereplay.com/guides/gta-6-cheats | Owner request; no codes confirmed pre-launch; scheduled 9:30 PM ET (yKISW4fJj3Y) |
 | 2026-11-17 | website | vicereplay.com: 10 guides/news articles, /links/, /contact/, Search Console, Cloudflare analytics, contact@vicereplay.com | Owner request |
 | 2026-11-17 | gta6-is-out | GTA 6 is OUT: do these 3 things first (Short) | Owner approved; scheduled 12:00 AM ET Nov 19 (DBlAdqc1orw); ES version for TikTok |
+| 2026-11-18 | gta6-physical-edition-no-disc | GTA 6 Physical Edition Has No Disc: What You're Buying (+ Short, streamer packages news Short) | Daily run (re-rendered in main chat after facts fixed: 212 GB, Nov 10 preload, midnight unlock); scheduled 3:30/6:00/8:30 PM ET |

@@ -321,7 +321,7 @@ def main():
             done_file.write_text(json.dumps(done, indent=2))
     print(json.dumps(done, indent=2))
     later = [(d["id"], d["comment_text"], d["scheduled_et"]) for d in done.values()
-             if str(d.get("comment", "")).startswith("pending") and d.get("comment_text")]
+             if isinstance(d, dict) and str(d.get("comment", "")).startswith("pending") and d.get("comment_text")]
     if later:
         last = max(later, key=lambda x: dt.datetime.strptime(x[2], "%I:%M %p"))[2]
         cmd = "python -m studio.youtube_upload " + " ".join(f"--comment {v} {json.dumps(t)}" for v, t, _ in later)
