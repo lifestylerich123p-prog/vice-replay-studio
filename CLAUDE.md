@@ -91,7 +91,7 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
 - Don't spoil story content in titles or thumbnails.
 - Auto-posting to YouTube (after approval only): when the owner replies in a delivery session with an approval
   ("approve", "approve all", "approve the Shorts", "approve, use title 2", ...), run
-  `python -m studio.youtube_upload episodes/<slug>.json --approve <all|main,short,news> [--title N]`. It uploads and
+  `python -m studio.youtube_upload episodes/<slug>.json --approve <all|main,short,news,replies> [--title N]` ("all" also posts the approved comment replies). It uploads and
   schedules each approved upload for its posting time. Never upload without an explicit approval message from the
   owner in chat, never upload campaign clips (the owner posts those), and apply any changes the owner asks for
   (titles, which items) before uploading. Scheduled videos are private until their time and YouTube refuses

@@ -21,7 +21,10 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    market's winners have in common (topics, title wording, length, Shorts vs long). Only claim what the
    numbers show. Use the lessons in every choice below: topic, hook, title options, thumbnail text, length.
    Learn from winning videos' patterns; never copy their titles, footage or thumbnails.
-1. **Pick the topic.** Today's date is in your context. Read `content/launch-plan.md` and use today's row.
+1. **Pick the topic.** On Sundays the main video is the weekly recap, "GTA 6 This Week: <the week's biggest story>":
+   the 5-7 biggest confirmed stories of the past 7 days (use `content/log.md`, our Shorts and fresh searches), one segment
+   each, with our take; the Short is the week's single biggest moment. (A plan row for that Sunday overrides this.)
+   Otherwise: Today's date is in your context. Read `content/launch-plan.md` and use today's row.
    If there is no row for today, search the web for what GTA 6 players are searching for and talking about
    right now and pick the strongest topic. Check `content/log.md` and `episodes/` so you never repeat a
    topic that was already made. If a market winner shows a GTA 6 story or angle people are hungry for that we
@@ -49,6 +52,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
      per Short (3-5 hashtags people search on TikTok right now).
    - Also send the main .mp4, every Short .mp4 and thumbnail-a/b/c.jpg with SendUserFile (status
      `proactive`) so the owner can save them to upload.
+   - "approve" / "approve all" also posts the `comment_replies` (the uploader's `replies` item); "approve the Shorts"
+     doesn't. Show the replies on the review page so the owner can change or drop any before approving.
    - Final message starts with: **Reply "approve" here to schedule everything on YouTube automatically** (or
      "approve the Shorts", "approve, use title 2", or ask for changes first). Then: the review page link, the posting plan (times from the page), the recommended title, and
      anything to double-check (e.g. a fact that was still developing). Remind them to set Test & Compare with

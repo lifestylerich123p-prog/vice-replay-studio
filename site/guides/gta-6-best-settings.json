@@ -1,0 +1,56 @@
+{
+ "slug": "gta-6-best-settings",
+ "lang": "en",
+ "title": "Best TV and Console Settings for GTA 6 (PS5 and Xbox)",
+ "h1": "Best settings for GTA 6: <span>TV and console</span>",
+ "desc": "Get GTA 6 looking and sounding right: TV Game Mode, HDR calibration, motion smoothing off, and console audio settings for PS5 and Xbox Series X|S.",
+ "date": "2026-11-18",
+ "video": "YqnShunG7WY",
+ "card": [
+  "BEST SETTINGS",
+  "FOR GTA 6",
+  "vice-city-19.jpg"
+ ],
+ "lede": "Five minutes of setup before launch makes GTA 6 look and feel better. These are free changes on your TV and console; no new gear needed.",
+ "sections": [
+  [
+   "1. Turn on your TV's Game Mode",
+   "<p>It cuts input lag so driving and aiming feel responsive. Many TVs call it Game Mode, Game, or ALLM (switches on automatically).</p>"
+  ],
+  [
+   "2. Calibrate HDR",
+   "<p><b>PS5:</b> Settings → Screen and Video → Video Output → Adjust HDR. <b>Xbox:</b> run the free Xbox HDR Game Calibration app. Then use GTA 6's own brightness screen.</p>"
+  ],
+  [
+   "3. Turn off motion smoothing",
+   "<p>TV features like motion smoothing (TruMotion, MotionFlow, Auto Motion Plus) add lag and look odd in games. Game Mode usually turns them off; check anyway.</p>"
+  ],
+  [
+   "4. Don't expect 60 fps",
+   "<p>GTA 6 reportedly targets <b>30 fps</b> on every console, including PS5 Pro, according to a Notebookcheck report. Rockstar hasn't published a full graphics-mode list, so check the game's settings menu on launch day.</p>"
+  ],
+  [
+   "5. Sound",
+   "<p>Headphones help in a game this dense. On PS5, try the 3D Audio setting for headphones. And if you record clips to share, turn the in-game radio off to avoid music copyright claims.</p>"
+  ]
+ ],
+ "faq": [
+  [
+   "Does GTA 6 run at 60fps?",
+   "Reportedly not: a Notebookcheck report says Rockstar targets 30 fps on all consoles, including PS5 Pro."
+  ]
+ ],
+ "gear": [
+  "gear"
+ ],
+ "sources": [
+  [
+   "Notebookcheck: console performance targets",
+   "https://notebookcheck.net/Rockstar-reveals-GTA-6-console-performance-targets-and-PS5-Pro-upgrades.1447121.0.html"
+  ],
+  [
+   "Dexerto: 60fps unlikely",
+   "https://www.dexerto.com/gta/gta-6-unlikely-to-be-60fps-even-on-ps5-pro-according-to-experts-3381158/"
+  ]
+ ]
+}

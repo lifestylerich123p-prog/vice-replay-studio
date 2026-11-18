@@ -131,6 +131,8 @@ STORAGE = [("PS5 storage upgrade (2TB NVMe SSD with heatsink)", "PS5 compatible 
            ("Xbox Series X|S storage expansion card", "Xbox Series X S storage expansion card 2TB")]
 GAME = [("GTA 6 for PS5", "https://www.amazon.com/dp/B0H6K928WL"), ("GTA 6 for Xbox Series X|S", "https://www.amazon.com/dp/B0H6K49W6Y")]
 
+GEAR = [("PS5 DualSense controller", "PS5 DualSense controller"), ("Gaming headset (PS5 / Xbox)", "gaming headset PS5 Xbox")]
+
 def sources(lst):
     return '<div class="sources"><h2>Sources</h2><ul class="list">' + "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{html.escape(n)}</a></li>' for n, u in lst) + "</ul></div>"
 
@@ -497,10 +499,10 @@ import glob as _glob
 for _f in sorted(_glob.glob(os.path.join(STUDIO, "site/guides/*.json"))):
     g = json.load(open(_f))
     if g.get("card"): CARDS[g["slug"]] = tuple(g["card"])
-    items = (GAME if "game" in g.get("gear", []) else []) + (STORAGE if "storage" in g.get("gear", []) else [])
+    items = (GAME if "game" in g.get("gear", []) else []) + (STORAGE if "storage" in g.get("gear", []) else []) + (GEAR if "gear" in g.get("gear", []) else [])
     es = g.get("lang") == "es"
     h1 = g.get("h1") or g["title"]
-    body = f'<h1>{h1}</h1><p class="meta">{"Actualizado el" if es else "Updated"} {g["date"]} · Vice Replay</p><p class="lede">{g.get("lede", "")}</p>'
+    body = f'<h1>{h1}</h1><p class="meta">{"Actualizado el" if es else "Updated"} {__import__("datetime").date.fromisoformat(g["date"]).strftime("%B %-d, %Y")} · Vice Replay</p><p class="lede">{g.get("lede", "")}</p>'
     body += video(g["video"], g["title"]) if g.get("video") else ""
     body += "".join(f"<h2>{html.escape(h)}</h2>{b}" for h, b in g.get("sections", []))
     body += f'<div class="note">{g["note"]}</div>' if g.get("note") else ""

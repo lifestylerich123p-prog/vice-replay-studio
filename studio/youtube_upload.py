@@ -17,6 +17,7 @@ second run skips anything already uploaded.
 import argparse
 import datetime as dt
 import json
+from urllib.parse import parse_qs, urlparse
 import os
 import sys
 import urllib.error
@@ -94,6 +95,28 @@ def comment(tok, vid, text):
     if text:
         req("POST", "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet", tok,
             {"snippet": {"videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}})
+
+
+def reply(tok, parent_id, text):
+    req("POST", "https://youtube.googleapis.com/youtube/v3/comments?part=snippet", tok,
+        {"snippet": {"parentId": parent_id, "textOriginal": text}})
+
+
+def post_replies(tok, ep, done, done_file):
+    """Post the approved comment_replies (each has the comment's url with &lc=<comment id>). Skips ones already sent."""
+    sent = done.setdefault("replies", [])
+    for r in ep.get("comment_replies", []):
+        cid = parse_qs(urlparse(r.get("url", "")).query).get("lc", [None])[0]
+        if not cid or not r.get("reply") or cid in sent:
+            continue
+        try:
+            reply(tok, cid, r["reply"])
+            sent.append(cid)
+            print(f"replied to {r.get('author', '?')}: {r['reply'][:60]}")
+        except SystemExit as e:
+            print(f"! reply to {r.get('author', '?')} failed: {e}")
+    done_file.parent.mkdir(parents=True, exist_ok=True)
+    done_file.write_text(json.dumps(done, indent=2))
 
 
 def spanish_srt(timings_file):
@@ -182,7 +205,7 @@ def parse_short_txt(p):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("episode", nargs="?")
-    ap.add_argument("--approve", default="", help="all, or a comma list of: main, short, news (or a Short id)")
+    ap.add_argument("--approve", default="", help="all, or a comma list of: main, short, news, replies (or a Short id); all includes replies")
     ap.add_argument("--title", type=int, default=1, help="which title option to use for the main video (1-3)")
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
     ap.add_argument("--at", help='override the posting time for every approved item, e.g. "9:30 PM" (ET)')
@@ -230,6 +253,8 @@ def main():
     done = json.loads(done_file.read_text()) if done_file.exists() else {}
     tags = [t.strip() for t in (out / "tags.txt").read_text().split(",")] if (out / "tags.txt").exists() else []
 
+    if allow("replies"):
+        post_replies(tok, ep, done, done_file)
     jobs = []
     if allow("main") and (out / f"{slug}.mp4").exists():
         titles = ep.get("title_options") or [ep["title"]]
