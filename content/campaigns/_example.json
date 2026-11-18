@@ -6,6 +6,7 @@
   "campaign_url": "paste the campaign link here",
   "rate_per_1000_views": 1.5,
   "status": "example",
+  "engine": "local",
   "layout": "stacked",
   "facecam_box": [
     0.0,
@@ -33,6 +34,6 @@
   "source_footage": "where the campaign says to get footage (VOD links, Drive folder)",
   "source_queue": [],
   "max_clips_per_day": 2,
-  "notes": "Copy this file to content/campaigns/<short-name>.json for each campaign you join, set status to active.",
+  "notes": "Copy this file to content/campaigns/<short-name>.json for each campaign you join, set status to active. engine: \"local\" (free, studio/clip.py) or \"everygen\" (paid Everygen credits, better edits; ClipCircuit method).",
   "submit_within_minutes": 30
 }

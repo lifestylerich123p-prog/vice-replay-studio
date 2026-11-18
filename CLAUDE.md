@@ -126,7 +126,8 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
 - Paid clipping campaigns (Whop Content Rewards etc.): the one exception where a streamer's own footage and
   voice may be used, because the campaign grants permission. Only GTA 6 campaigns, only footage from where
   the campaign says, and follow every rule in `content/campaigns/<name>.json` exactly (length, credit,
-  hashtags, platforms). Tool: `studio/clip.py`; command: `/campaign-clips`. No Vice Replay music on these:
+  hashtags, platforms). Tools: `studio/clip.py` (free) or Everygen (the owner's paid editor, ClipCircuit method; spend
+  credits only after a cost estimate and the owner's yes); command: `/campaign-clips`. No Vice Replay music on these:
   keep the original audio. Keep campaign clips to `max_clips_per_day` so the channel stays Vice Replay.
 - Streamer/creator news (e.g. what big streamers are planning or doing in GTA 6) performs best on this
   channel. Cover it as news in our own format: our voice, our graphics, our footage library. Never use a
