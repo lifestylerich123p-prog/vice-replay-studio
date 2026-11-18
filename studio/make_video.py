@@ -214,7 +214,7 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
         media = None
     vin, vf = visual_input(media, dur, w, h, i, work, seg.get("media_start"))
     ov = work / f"ov_{i}.png"
-    brand.headline_card(seg.get("headline", ""), w, h, vertical).save(ov)
+    brand.headline_card(seg.get("headline", ""), w, h, vertical, seg.get("cta")).save(ov)
     subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical)
     out = work / f"seg_{i:02d}.mp4"
     fade_in = "" if (vertical and i == 0) else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
@@ -324,6 +324,9 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
             s["media"] = str(library[(k + len(slug)) % len(library)])
             k += 1
     used_footage = any(s.get("media") for s in segments)
+    if vertical and segments and ep.get("follow_cta", True):
+        es = any(s.get("text") == s.get("text_es") for s in segments if s.get("text_es"))
+        segments[-1]["cta"] = "SÍGUENOS: GTA 6 A DIARIO" if es else "FOLLOW FOR DAILY GTA 6"
 
     parts, chapters, t = [], [], 0.0
     cuts, impacts, timings = [], [0.0], []  # sound effects: impact on the hook, whoosh on every cut

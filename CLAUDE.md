@@ -25,6 +25,8 @@ Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2 on deep purple/black, Ant
      (the best screenshot for it). The render makes thumbnail-a/b/c.jpg with different pictures for
      YouTube Studio's Test & Compare (up to 3 thumbnails per video).
      Thumbnail text must not repeat the title word for word.
+   - Every Short's last segment automatically shows a "FOLLOW FOR DAILY GTA 6" badge (Spanish: "SÍGUENOS: GTA 6 A
+     DIARIO"); subscribers are the channel's bottleneck for monetization. Set `"follow_cta": false` to turn it off.
    - Make Shorts loop: the last line should flow back into the first (e.g. ends "...and that's why" while
      the hook starts with the reason), so replays count as extra watch time.
    - `pinned_comment`: one question for the comments that's easy to answer (pick-one or a number), posted and

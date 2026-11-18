@@ -5,18 +5,50 @@
   "disclosure": "Some links above are affiliate links: as an Amazon Associate I earn from qualifying purchases, at no extra cost to you.",
   "sets": {
     "storage": [
-      ["PS5 storage upgrade (2TB SSD)", "https://www.amazon.com/s?k=PS5+compatible+2TB+NVMe+SSD+with+heatsink"],
-      ["Xbox Series X|S storage expansion card", "https://www.amazon.com/s?k=Xbox+Series+X+S+storage+expansion+card+2TB"]
+      [
+        "PS5 storage upgrade (2TB SSD)",
+        "https://www.amazon.com/s?k=PS5+compatible+2TB+NVMe+SSD+with+heatsink"
+      ],
+      [
+        "Xbox Series X|S storage expansion card",
+        "https://www.amazon.com/s?k=Xbox+Series+X+S+storage+expansion+card+2TB"
+      ],
+      [
+        "Free 30-day Amazon Prime trial (fast delivery)",
+        "https://www.amazon.com/tryprimefree"
+      ]
     ],
     "game": [
-      ["GTA 6 for PS5", "https://www.amazon.com/dp/B0H6K928WL"],
-      ["GTA 6 for Xbox Series X|S", "https://www.amazon.com/dp/B0H6K49W6Y"]
+      [
+        "GTA 6 for PS5",
+        "https://www.amazon.com/dp/B0H6K928WL"
+      ],
+      [
+        "GTA 6 for Xbox Series X|S",
+        "https://www.amazon.com/dp/B0H6K49W6Y"
+      ],
+      [
+        "Free 30-day Amazon Prime trial (fast delivery)",
+        "https://www.amazon.com/tryprimefree"
+      ]
     ],
     "gear": [
-      ["PS5 DualSense controller", "https://www.amazon.com/s?k=PS5+DualSense+controller"],
-      ["Gaming headset", "https://www.amazon.com/s?k=gaming+headset+PS5+Xbox"],
-      ["Capture card (record your gameplay)", "https://www.amazon.com/s?k=capture+card+PS5+1080p"]
+      [
+        "PS5 DualSense controller",
+        "https://www.amazon.com/s?k=PS5+DualSense+controller"
+      ],
+      [
+        "Gaming headset",
+        "https://www.amazon.com/s?k=gaming+headset+PS5+Xbox"
+      ],
+      [
+        "Capture card (record your gameplay)",
+        "https://www.amazon.com/s?k=capture+card+PS5+1080p"
+      ]
     ]
   },
-  "default_sets": ["storage", "game"]
+  "default_sets": [
+    "storage",
+    "game"
+  ]
 }

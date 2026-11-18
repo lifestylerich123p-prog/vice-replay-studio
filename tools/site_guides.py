@@ -124,6 +124,7 @@ def video(vid, title):
     return f'<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{vid}" title="{html.escape(title)}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>'
 
 def gearbox(items, intro="If you're short on space for the 212 GB install, these searches show current options and prices:"):
+    items = list(items) + [("Free 30-day Amazon Prime trial: fast delivery", "https://www.amazon.com/tryprimefree")]
     lis = "".join(f'<a class="item" href="{amz(q)}" target="_blank" rel="sponsored noopener">{html.escape(label)}<span aria-hidden="true">→</span></a>' for label, q in items)
     return f'<div class="box"><h3>Gear for GTA 6 (affiliate links)</h3><p>{intro}</p><div class="btns">{lis}</div><p class="sources" style="margin:10px 0 0">Affiliate links: as an Amazon Associate I earn from qualifying purchases, at no extra cost to you. We haven\'t tested these products; check reviews and compatibility before you buy. <a href="/gear/">All gear picks</a></p></div>'
 

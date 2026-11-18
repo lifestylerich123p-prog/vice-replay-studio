@@ -119,10 +119,19 @@ def fit_lines(text, fnt_path, max_w, start_size, min_size=40):
     return font(fnt_path, min_size), [text]
 
 
-def headline_card(text, w, h, vertical=False):
-    """Transparent overlay: slanted pink slab with the segment headline + channel bug."""
+def headline_card(text, w, h, vertical=False, cta=None):
+    """Transparent overlay: slanted pink slab with the segment headline + channel bug (+ a follow pill on a Short's
+    last segment, placed above YouTube's bottom UI and below the captions)."""
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
+    if cta:
+        f = font(HEADLINE_FONT, int(h * 0.032))
+        tw = f.getlength(cta)
+        px, py = int(h * 0.022), int(h * 0.012)
+        x = (w - tw) / 2
+        y = int(h * 0.755)
+        d.rounded_rectangle([x - px, y - py, x + tw + px, y + f.size + py], radius=int(f.size * 0.6), fill=CYAN + (240,))
+        d.text((x, y - f.size * 0.04), cta, font=f, fill=(13, 7, 23))
     if text:
         max_w = int(w * (0.82 if vertical else 0.55))
         f, lines = fit_lines(text.upper(), HEADLINE_FONT, max_w, int(h * (0.06 if vertical else 0.085)))
