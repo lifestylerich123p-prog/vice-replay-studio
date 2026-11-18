@@ -113,6 +113,10 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
 - Learning loop: `python -m studio.learn` pulls our channel's live numbers and the hottest GTA 6 videos on
   YouTube (free YouTube Data API; key in the environment's settings as the `YOUTUBE_API_KEY` variable or a
   network secret for www.googleapis.com). Lessons live in `content/learn/lessons.md`; every run adds to them.
+- Stay organized (free, no AI): start every run by reading `content/INDEX.md` (map of where everything is, every
+  episode, YouTube id and website guide) instead of searching the repo, and end every run that made or changed
+  anything with `python -m studio.tidy` (deletes old renders and caches, archives old reports, rebuilds the index).
+  New files go in the folder the README's table says; finished one-off files go to `content/archive/`.
 - Saving usage: `python -m studio.radar` (free, no AI) checks Google News; breaking-news runs stop right away when
   it says QUIET. Keep runs lean: don't re-read big files or re-run renders without a reason.
 - Helpers: `/stats` logs YouTube Studio screenshots into `content/performance.md` (the daily run favors what

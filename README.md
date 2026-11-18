@@ -19,7 +19,7 @@ Commands: `/new-video <topic>`, `/stats` (+ Studio screenshot), `/reply-comments
 ## Folders
 | Folder | What's in it |
 |---|---|
-| `studio/` | The machine: `make_video.py` (videos, Shorts, `--es` Spanish voice), `youtube_upload.py` (approved uploads, comments, replies), `learn.py`, `radar.py`, `review_page.py`, `gameplay.py`, `clip.py`, `channel_fix.py`, `sound.py`, `brand.py` |
+| `studio/` | The machine: `tidy.py` (automatic cleaner + `content/INDEX.md` map), `make_video.py` (videos, Shorts, `--es` Spanish voice), `youtube_upload.py` (approved uploads, comments, replies), `learn.py`, `radar.py`, `review_page.py`, `gameplay.py`, `clip.py`, `channel_fix.py`, `sound.py`, `brand.py` |
 | `episodes/` | One script per video (JSON) |
 | `site/` | Website data: `guides/*.json` (guide pages written by the daily run) and `live.json` (launch live updates) |
 | `tools/` | `site_guides.py` builds vicereplay.com into the sibling `vicereplay-site` repo; `youtube_auth.py` reconnects YouTube |

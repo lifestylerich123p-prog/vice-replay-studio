@@ -73,8 +73,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
 3c. **Spanish voice Shorts**: run `python -m studio.make_video episodes/<slug>.json --short --es` (free Spanish voice,
    files end in `-es.mp4` with a Spanish .txt). Send them with SendUserFile too, labeled for TikTok/Instagram in Spanish.
    They are NOT uploaded to the main YouTube channel (keeps it English); the owner posts them by hand.
-4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), then
-   commit `episodes/<slug>.json` and `content/log.md` and push to `main`. Videos are not committed.
+4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), run
+   `python -m studio.tidy`, then commit `episodes/<slug>.json`, `content/log.md` and `content/INDEX.md` and push to `main`. Videos are not committed.
    If the push is refused, try once to attach the repo with push access (add_repo), push again, and if it is
    still refused don't keep trying: send the episode JSON with SendUserFile and say the log wasn't saved.
 5. **Campaign clips**: only for campaigns the owner approved (`owner_approved: true`); never start or join one
