@@ -14,6 +14,7 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| ? | gta6-storage-full | video | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | - |
 | 2026-11-18 | houser-launch-statement | Short | Rockstar's Sam Houser Breaks Silence as GTA 6 Launches | short: 4EuMnzlLKTY |
 | 2026-11-18 | gta6-physical-edition-no-disc | video | GTA 6 Physical Edition Has No Disc: What You're Buying | main: RmONg7-uN4w, short: 9lTZNbwbSec, news: rhf1qryjRSM |
 | 2026-11-18 | gta6-out-in-new-zealand | Short | GTA 6 Is Already Out in New Zealand: The Catch | short: DG_MpuSMDV8 |
@@ -45,6 +46,7 @@ Read this first instead of searching the repo.
 | 2026-11-18 | /guides/gta-6-best-settings/ | Best TV and Console Settings for GTA 6 (PS5 and Xbox) |
 | 2026-11-18 | /guides/gta-6-black-friday/ | GTA 6 Black Friday 2026: Storage, Controllers and the Game |
 | 2026-11-18 | /guides/gta-6-characters/ | Every GTA 6 Character Confirmed So Far (No Spoilers) |
+| 2026-11-18 | /guides/gta-6-gift-guide/ | GTA 6 Gift Guide 2026: Best Gifts for a GTA 6 Fan (PS5 and Xbox) |
 | 2026-11-18 | /guides/gta-6-map-size/ | How Big Is the GTA 6 Map? Leonida vs GTA 5 and Red Dead 2 |
 | 2026-11-18 | /guides/gta-6-physical-edition/ | GTA 6 Physical Edition: No Disc in the Box? What You're Actually Buying |
 | 2026-11-18 | /guides/gta-6-vs-gta-5/ | GTA 6 vs GTA 5: The Biggest Differences Explained |
