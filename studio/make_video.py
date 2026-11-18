@@ -313,7 +313,22 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     work.mkdir(parents=True, exist_ok=True)
     # Footage library: every file in media/ (official screenshots, trailer clips, your gameplay).
     # Segments without their own "media" rotate through it; "media": "none" keeps the neon background.
-    library = sorted(p for p in (ROOT / "media").rglob("*") if p.suffix.lower() in VIDEO_EXT | IMAGE_EXT)
+    library = sorted(p for p in (ROOT / "media").rglob("*")
+                     if p.suffix.lower() in VIDEO_EXT | IMAGE_EXT and "raw" not in p.parts)
+    # The owner's own gameplay is the best stock footage: Shorts use it for every segment whenever highlights
+    # exist (newest first), unless a segment sets "keep_media": true or the episode sets "use_gameplay": false.
+    gameplay = sorted((p for p in (ROOT / "media" / "gameplay").glob("*") if p.suffix.lower() in VIDEO_EXT),
+                      key=lambda p: p.stat().st_mtime, reverse=True) if (ROOT / "media" / "gameplay").exists() else []
+    if vertical and gameplay and ep.get("use_gameplay", True):
+        g = 0
+        for s in segments:
+            if not s.get("keep_media") and s.get("media") != "none":
+                s["media"] = str(gameplay[g % len(gameplay)])
+                s["media_start"] = None
+                g += 1
+        print(f"  using {min(g, len(gameplay))} of the owner's gameplay clips as Short backgrounds")
+    elif gameplay:
+        library = gameplay + [p for p in library if p not in gameplay]
     k = 0
     for s in segments:
         if s.get("media") == "none":

@@ -81,7 +81,12 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
   new official media: rockstargames.com/VI/downloads (screenshot and video packs); add new ones after viewing each. Set `media` per segment to the best match; rotate so one video doesn't repeat a shot.
   Keep strip-club or sexualized images out of the library (they get videos age-restricted/limited ads).
 - Owner gameplay comes from the Google Drive folder in `content/owner.md`: `python -m studio.gameplay` downloads
-  new recordings and cuts highlights into `media/gameplay/` (not committed; pulled fresh each run).
+  new recordings and cuts highlights into `media/gameplay/` (not committed; pulled fresh each run). The owner wants
+  their gameplay as the stock footage for Shorts: run `python -m studio.gameplay` before rendering any Short (daily run,
+  re-renders in the main chat, news Shorts). When highlights exist, every Short segment automatically uses them
+  (newest first) instead of screenshots/trailer clips; set `"keep_media": true` on a segment that must keep its own
+  picture (e.g. a character being discussed), or `"use_gameplay": false` on the episode. Long videos rotate gameplay
+  first too.
 - No official GTA 6 music: the radio stations, trailer songs and the Justice score are licensed music that
   Content ID claims. Don't download or use them. Game sound (engines, city ambience, gunfire) is fine
   only from the owner's own gameplay recorded with the in-game radio and music turned off.
