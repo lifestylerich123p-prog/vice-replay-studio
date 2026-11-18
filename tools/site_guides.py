@@ -57,6 +57,7 @@ def page(path, title, desc, body, wide=True):
 </main>
 <footer>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.</footer>
 </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "4c4c637dcde8478da5fd7073dcde1b11"}}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
 """
