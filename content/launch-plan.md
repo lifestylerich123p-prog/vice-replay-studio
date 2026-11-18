@@ -16,6 +16,11 @@ After the last row, it picks trending GTA 6 topics itself (see `.claude/commands
 | Sun Nov 22 | Wildest Moments From GTA 6's First Weekend (what players are sharing) | The single wildest clip story of the week |
 | Mon Nov 23 | GTA 6 Hidden Details Players Found in Week One | One hidden detail, explained |
 
+## Cheat codes watch (high search demand at launch)
+Nov 19-23: search for GTA 6 cheat codes every run. Only when reputable outlets (IGN, GameSpot, Polygon, Eurogamer, GamesRadar, Rockstar) or our own gameplay
+confirm working codes: make a "GTA 6 cheat codes that actually work" Short + main video (list with how to enter them, PS5 and Xbox), and tell
+the owner to update https://vicereplay.com/guides/gta-6-cheats/ (tools/site_guides.py). Never publish codes from pre-launch lists or fan sites alone.
+
 ## Rules
 - Launch day and after: avoid story spoilers in titles, thumbnails and the first 30 seconds.
 - Only report things that verifiable sources say. Label leaks and rumors as such.

@@ -188,6 +188,25 @@ guide("gta-6-storage", "GTA 6 Storage Full? How to Make Room on PS5 and Xbox (21
 <div class="note">More GTA 6 prep: <a href="/guides/gta-6-launch-checklist/">launch checklist</a> · <a href="/guides/gta-6-unlock-time/">unlock times</a></div>
 {sources([("Forbes: GTA 6 download size","https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/"),("PlayStation: how to add M.2 SSD storage to PS5","https://www.playstation.com/en-us/support/hardware/ps5-install-m2-ssd/"),("Xbox: storage options for Xbox Series X|S","https://support.xbox.com/en-US/help/hardware-network/console/xbox-series-x-s-storage-options")])}""")
 
+# 6. Cheats tracker
+guide("gta-6-cheats", "GTA 6 Cheat Codes: Confirmed List (and the Fake Ones)",
+ "Are there GTA 6 cheat codes? None are confirmed yet. Here's what's real, which lists are fake, and our tracker that updates when codes are verified after launch.",
+ "2026-11-18", f"""<h1>GTA 6 cheat codes: <span>what's real?</span></h1>
+<p class="meta">Updated November 18, 2026 · Vice Replay · We update this page when codes are verified</p>
+<p class="lede">Short answer: <b>no GTA 6 cheat codes are confirmed yet.</b> Rockstar hasn't announced any, and it hasn't ruled them out. The game comes out November 19, 2026, and we'll add real codes here once they're tested.</p>
+<div class="box"><h3>Confirmed GTA 6 cheats</h3><p style="margin:0"><b>None yet.</b> Check back after launch: this list gets updated as soon as codes are verified in the released game.</p></div>
+<h2>Those cheat lists online are fake</h2>
+<p>Most "GTA 6 cheat code" lists going around before launch are GTA 5 codes with a new name. Nobody outside Rockstar has played the final game, so nobody can have tested a code yet.</p>
+<h2>Will GTA 6 have cheats?</h2>
+<p>Probably. Every main GTA since GTA 3 has had cheats, typed as button combos or, in GTA 4 and GTA 5, phone numbers. But that's history, not a confirmation.</p>
+<h2>What not to expect</h2>
+<ul class="list"><li><b>A money cheat:</b> GTA 5 never had one, so don't count on it.</li><li><b>Cheats online:</b> GTA 5's cheats only work in story mode, and GTA Online for GTA 6 isn't expected until 2027.</li><li><b>Trophies and achievements:</b> in GTA 5, using a cheat disabled them for a while. Rockstar may do the same.</li></ul>
+<h2>Scam alert</h2>
+<p>Any site or video asking for your PlayStation or Xbox login, or offering a "money generator" download, is a scam. Never type your password anywhere except the official store or console.</p>
+{gearbox(GAME + STORAGE, "Getting GTA 6 or making room for the 212 GB install? These searches show current options and prices:")}
+{watchmore("pcoMWOraJA4")}
+{sources([("GTA BOOM: current GTA 6 cheat status","https://gtaboom.com/gta-6-cheats-9nd6"),("GTA BOSS: GTA 6 cheats","https://www.gtaboss.gg/gta-6/guides/gta-6-cheats"),("GTA Wiki: Cheats in GTA VI","https://gta.fandom.com/wiki/Cheats_in_GTA_VI"),("GTAVI.tips: confirmed vs fake","https://www.gtavi.tips/gta-6-cheats")])}""")
+
 # guides index
 GUIDES.sort(key=lambda g: g[3], reverse=True)
 cards = "".join(f'<a class="card" href="/guides/{s}/"><b>{html.escape(t)}</b><small>{html.escape(d)}</small></a>' for s, t, d, _ in GUIDES)
@@ -201,6 +220,7 @@ page("links/", "Vice Replay Links", "Every Vice Replay link: YouTube, TikTok, GT
 <div class="btns">
 <a class="item" href="{YT}?sub_confirmation=1" target="_blank" rel="noopener">YouTube<small>Daily GTA 6 news and Shorts</small><span aria-hidden="true">→</span></a>
 <a class="item" href="https://www.tiktok.com/@vicereplay00" target="_blank" rel="noopener">TikTok<small>@vicereplay00</small><span aria-hidden="true">→</span></a>
+<a class="item" href="/guides/gta-6-cheats/">GTA 6 cheat codes<small>Confirmed list (updated after launch)</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/">GTA 6 guides<small>Unlock times, storage, the map</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/gear/">GTA 6 gear picks<small>Storage, controllers, capture (affiliate)</small><span aria-hidden="true">→</span></a>
 </div>""")
