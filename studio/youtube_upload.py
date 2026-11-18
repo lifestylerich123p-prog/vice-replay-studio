@@ -185,6 +185,7 @@ def main():
     ap.add_argument("--approve", default="", help="all, or a comma list of: main, short, news (or a Short id)")
     ap.add_argument("--title", type=int, default=1, help="which title option to use for the main video (1-3)")
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
+    ap.add_argument("--at", help='override the posting time for every approved item, e.g. "9:30 PM" (ET)')
     ap.add_argument("--now", action="store_true", help="publish immediately (public) instead of at the schedule times")
     ap.add_argument("--test", action="store_true", help="upload a 5-second private test video and report its status")
     ap.add_argument("--comment", nargs=2, metavar=("VIDEO_ID", "TEXT"), action="append",
@@ -221,6 +222,8 @@ def main():
     out = ROOT / "output" / slug
     day = dt.date.fromisoformat(a.date) if a.date else dt.datetime.now(ET).date()
     t_main, t_short, t_news = times_for(day)
+    if a.at:
+        t_main = t_short = t_news = a.at
     want = {x.strip() for x in a.approve.split(",")}
     allow = lambda key: "all" in want or key in want
     done_file = out / "uploaded.json"

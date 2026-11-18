@@ -9,3 +9,4 @@
 | 2026-11-17 | gta6-unlock-time-every-time-zone | GTA 6 Unlock Time in Every Time Zone + 2 Shorts (incl. Kai Cenat news) | Daily run; first auto-upload, scheduled 3:30/6:00/8:30 PM ET |
 | 2026-11-17 | lucia-actress-confirmed | Lucia's actress is CONFIRMED before launch (breaking Short) | Game Awards nomination reveal, 6 reputable outlets; first breaking-news test, posted at 12:37 PM ET |
 | 2026-11-17 | gta6-new-zealand-trick | GTA 6 New Zealand Trick: Play Early or Risk Your Account? (+ Short, IShowSpeed NZ news Short) | Radar: NZ early-play trick covered by 4 reputable outlets; angle = how it works, Xbox vs PS5, risks, unconfirmed |
+| 2026-11-17 | gta6-cheat-codes | Those GTA 6 cheat codes are FAKE (Short) + vicereplay.com/guides/gta-6-cheats | Owner request; no codes confirmed pre-launch; scheduled 9:30 PM ET (yKISW4fJj3Y) |
