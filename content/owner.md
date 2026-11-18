@@ -12,4 +12,7 @@
   this off any time by saying so; then delete this line.
 - Business email: contact@vicereplay.com (Cloudflare Email Routing -> owner Gmail); site page /contact/
 - Website: https://vicereplay.com (GitHub Pages, repo lifestylerich123p-prog/vicereplay-site; domain on Cloudflare)
-- Gear page (affiliate links): https://vicereplay.com/gear/ . Use this link in banners, bios and replies; it's listed in Amazon Associates.
+- Gear page (affiliate links): https://vicereplay.com/gear/
+- Website pages: / (home), /gear/, /guides/ (10 guides+news, built by tools/site_guides.py), /links/ (bio link), /contact/.
+  Google Search Console verified + sitemap submitted (Nov 17). Cloudflare Web Analytics on every page.
+  New guide = add a guide() call in tools/site_guides.py, run it, push vicereplay-site. Scheduled runs can't push: do it in chat. . Use this link in banners, bios and replies; it's listed in Amazon Associates.
