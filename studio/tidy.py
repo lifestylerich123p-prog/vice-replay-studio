@@ -10,6 +10,10 @@ What it does:
 - content/learn/market-*.md: keeps the newest 14, moves older ones to content/archive/learn/.
 - site/live.json: keeps the newest 40 updates.
 - __pycache__ folders and stray .DS_Store files.
+- Footage: once the owner's own gameplay reaches GAMEPLAY_TARGET highlights in media/gameplay/, retires the stock
+  library: trailer clips and screenshots go to media/_retired/ (not committed; re-downloadable from
+  rockstargames.com/VI/downloads), except a small core kept for website share cards, thumbnails and news about a
+  specific character (anything referenced in tools/ or site/, plus the first shot of each place/character).
 - Writes content/INDEX.md: every episode (date, title, YouTube ids), every website guide, the latest learning
   files and where each kind of thing lives, so runs don't spend time searching.
 """
@@ -26,6 +30,33 @@ DAY = 86400
 
 def age_days(p):
     return (time.time() - p.stat().st_mtime) / DAY
+
+
+GAMEPLAY_TARGET = 30
+
+
+def retire_stock(dry, gone):
+    gp = ROOT / "media" / "gameplay"
+    clips = [p for p in gp.glob("*") if p.suffix.lower() in {".mp4", ".mov", ".mkv", ".webm", ".m4v"}] if gp.exists() else []
+    if len(clips) < GAMEPLAY_TARGET:
+        return
+    refs = ""
+    for f in list((ROOT / "tools").glob("*.py")) + list((ROOT / "site").rglob("*.json")):
+        refs += f.read_text(errors="ignore")
+    seen, keep = set(), set()
+    for p in sorted((ROOT / "media" / "official").glob("*")):
+        group = re.sub(r"-\d+$", "", p.stem)
+        if p.name in refs or group not in seen:
+            keep.add(p.name)
+        seen.add(group)
+    dest = ROOT / "media" / "_retired"
+    stock = [p for p in (ROOT / "media" / "official").glob("*") if p.name not in keep]
+    stock += list((ROOT / "media" / "trailer").glob("*")) if (ROOT / "media" / "trailer").exists() else []
+    for p in stock:
+        gone.append(f"{p.relative_to(ROOT)} -> media/_retired/ (gameplay replaces it)")
+        if not dry:
+            dest.mkdir(exist_ok=True)
+            shutil.move(str(p), dest / p.name)
 
 
 def clean(dry):
@@ -76,6 +107,7 @@ def clean(dry):
             gone.append(f"site/live.json: {len(items) - 40} old updates")
             if not dry:
                 live.write_text(json.dumps(items[:40], ensure_ascii=False, indent=1))
+    retire_stock(dry, gone)
     for p in list(ROOT.rglob("__pycache__")) + list(ROOT.rglob(".DS_Store")):
         if ".git" not in p.parts and p.exists():
             rm(p)

@@ -86,7 +86,8 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
   re-renders in the main chat, news Shorts). When highlights exist, every Short segment automatically uses them
   (newest first) instead of screenshots/trailer clips; set `"keep_media": true` on a segment that must keep its own
   picture (e.g. a character being discussed), or `"use_gameplay": false` on the episode. Long videos rotate gameplay
-  first too.
+  first too. Once there are 30+ gameplay highlights, `python -m studio.tidy` retires the stock screenshots and trailer
+  clips (keeps a small core for website cards, thumbnails and character news), as the owner asked.
 - No official GTA 6 music: the radio stations, trailer songs and the Justice score are licensed music that
   Content ID claims. Don't download or use them. Game sound (engines, city ambience, gunfire) is fine
   only from the owner's own gameplay recorded with the in-game radio and music turned off.
