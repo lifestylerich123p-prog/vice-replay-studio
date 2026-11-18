@@ -15,3 +15,4 @@
 | 2026-11-18 | gta6-physical-edition-no-disc | GTA 6 Physical Edition Has No Disc: What You're Buying (+ Short, streamer packages news Short) | Daily run (re-rendered in main chat after facts fixed: 212 GB, Nov 10 preload, midnight unlock); scheduled 3:30/6:00/8:30 PM ET |
 | 2026-11-18 | houser-launch-statement | Rockstar's boss just broke his silence on GTA 6 (Short) | Owner script + approval; published immediately (4EuMnzlLKTY); sources GameSpot, GamesRadar |
 | 2026-11-18 | gta6-out-in-new-zealand | GTA 6 is already OUT in New Zealand (the catch) (Short) | Owner approved; first video with new trailer clips; published now (DG_MpuSMDV8) |
+| 2026-11-18 | gta6-storage-full | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade (+ Short) | Owner request (Amazon sales push); scheduled 10:30 PM Nov 18 (MIvka1jBpJ0) and Short 8:00 AM Nov 19 (Wl6K3f5FtVU) |

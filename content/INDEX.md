@@ -14,8 +14,8 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| ? | gta6-storage-full | video | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | - |
 | 2026-11-18 | houser-launch-statement | Short | Rockstar's Sam Houser Breaks Silence as GTA 6 Launches | short: 4EuMnzlLKTY |
+| 2026-11-18 | gta6-storage-full | video | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | main: MIvka1jBpJ0, short: Wl6K3f5FtVU |
 | 2026-11-18 | gta6-physical-edition-no-disc | video | GTA 6 Physical Edition Has No Disc: What You're Buying | main: RmONg7-uN4w, short: 9lTZNbwbSec, news: rhf1qryjRSM |
 | 2026-11-18 | gta6-out-in-new-zealand | Short | GTA 6 Is Already Out in New Zealand: The Catch | short: DG_MpuSMDV8 |
 | 2026-11-17 | lucia-actress-confirmed | Short | Lucia's Actress Confirmed Before GTA 6 Launch | - |
