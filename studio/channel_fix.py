@@ -1,7 +1,7 @@
-"""Apply a channel cleanup plan (content/channel_fixes.json) to the Vice Replay channel. Owner approval required.
+"""Apply a channel cleanup plan (content/archive/channel_fixes.json) to the Vice Replay channel. Owner approval required.
 
-    python -m studio.channel_fix content/channel_fixes.json            # apply
-    python -m studio.channel_fix content/channel_fixes.json --dry-run  # show what would change
+    python -m studio.channel_fix content/archive/channel_fixes.json            # apply
+    python -m studio.channel_fix content/archive/channel_fixes.json --dry-run  # show what would change
 
 For each listed video: category -> Gaming, adds tags (keeps existing), appends the "not affiliated" line if
 missing, adds the Spanish title/description, and adds the video to its playlist (skips if already there).
