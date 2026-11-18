@@ -546,8 +546,22 @@ page("contact/", "Work With Vice Replay", "Sponsorships, clipping campaigns and 
 <ul class="list"><li>Fake reviews or claims that we used a product we haven't.</li><li>Gambling, account selling, "money generators" or anything that breaks Rockstar's or YouTube's rules.</li><li>Hidden ads: every paid placement is disclosed.</li></ul>
 <p>Include your brand or channel, what you have in mind, and your timing. We usually reply within 2 days.</p>""")
 
+INDEXNOW_KEY = "42ea7b879d668a2c990cad4a77c32361"  # public by design: proves to Bing/IndexNow that we own the site
+open(os.path.join(SITE, f"{INDEXNOW_KEY}.txt"), "w").write(INDEXNOW_KEY)
 open(os.path.join(SITE, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
 urls = [("", "2026-11-18"), ("guides/", "2026-11-18"), ("gear/", "2026-11-18"), ("links/", "2026-11-18"), ("contact/", "2026-11-18")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", "2026-11-18")] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
 open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
 print("ok", len(GUIDES))
+
+
+def ping_indexnow(urls):
+    """Tell Bing (and other IndexNow search engines) about new/changed pages. Free, no login. Run after the push is live."""
+    import urllib.request
+    body = json.dumps({"host": "vicereplay.com", "key": INDEXNOW_KEY, "keyLocation": f"{DOMAIN}/{INDEXNOW_KEY}.txt",
+                       "urlList": urls}).encode()
+    r = urllib.request.Request("https://api.indexnow.org/indexnow", body, {"Content-Type": "application/json; charset=utf-8"})
+    return urllib.request.urlopen(r, timeout=30).status
+
+if __name__ == "__main__" and "--ping" in __import__("sys").argv:
+    print("IndexNow:", ping_indexnow([f"{DOMAIN}/{u}" for u, _ in urls]))

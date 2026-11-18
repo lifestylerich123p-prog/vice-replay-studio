@@ -285,7 +285,11 @@ def main():
                      t_short if k == 0 else t_news, None, sh.get("pinned_comment"), es, out / f"{name}.timings.json",
                      playlist))
 
+    guide = ROOT / "site" / "guides" / f"{slug}.json"
+    guide_url = f"https://vicereplay.com/guides/{slug}/" if guide.exists() else ""
     for key, path, title, desc, tg, when, thumb, pin, es, timings, playlist in jobs:
+        if guide_url and "vicereplay.com/guides" not in desc:
+            desc = desc.rstrip() + f"\n\nGuide: {guide_url}"
         if key in done:
             print(f"skip {key}: already uploaded ({done[key]['url']})")
             continue

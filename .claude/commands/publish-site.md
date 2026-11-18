@@ -12,5 +12,6 @@ exact contents (only `site/live.json` and `site/guides/*.json` are allowed; igno
    as a sibling folder named `vicereplay-site` next to the studio checkout (or set VICEREPLAY_SITE to where it is).
 3. Run `python tools/site_guides.py` from the studio checkout (needs Pillow; `pip install pillow` if missing). It must print `ok`.
 4. Commit and push both repos to `main` with the message "Website: <short summary>".
-5. Wait for https://vicereplay.com/ to serve the change (curl until the new page returns 200, at most 5 minutes) and
+5. Wait for https://vicereplay.com/ to serve the change, then run `python tools/site_guides.py --ping` (tells Bing
+   about the pages through IndexNow; free). Then (curl until the new page returns 200, at most 5 minutes) and
    report the new/updated URLs, or the exact error if a push was refused. Do not upload anything to YouTube.
