@@ -23,3 +23,7 @@
   caption and posting time. From the main control session: push the .mp4s to a temporary branch `tiktok-files` (folder v/)
   and send_message that session to fetch them and SendUserFile them. Daily runs can't push: they send_message the captions,
   times and the name of the run's chat where the files are.
+
+- Impact.com (Best Buy / Walmart / Newegg affiliate): marketplace application DECLINED on Nov 18, 2026 (new site, no traffic
+  yet). Site verified with Impact's meta tag (keep it on the home page). Reapply in ~30-60 days once vicereplay.com has
+  steady visitors (Cloudflare Web Analytics) and the channel has more subscribers.
