@@ -14,4 +14,4 @@ Format: the comment (shortened), then the reply ready to copy, one block each. M
 Affiliate links in replies: ONLY when a commenter asks what to buy or use (an SSD, storage, controller, headset,
 capture card, where to get the game), answer the question and add the one matching link from
 `content/affiliate.json` (with `?tag=`/`&tag=` added) plus "(affiliate link)". Also offer the gear page:
-https://claude.ai/artifact/RHP44Wm5Dyhn7WJn3yMmNW. Never add links to replies that didn't ask for a product.
+https://vicereplay.com/gear/. Never add links to replies that didn't ask for a product.

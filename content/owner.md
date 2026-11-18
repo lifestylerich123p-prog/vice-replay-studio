@@ -10,4 +10,5 @@
   only under the rules in `.claude/commands/breaking-news.md` (score 8+/10, 2+ reputable sources, max 2 per day,
   Shorts only, no spoilers, no repeats). Everything else still waits for the owner's "approve". The owner can turn
   this off any time by saying so; then delete this line.
-- Gear page (affiliate links, share as 'anyone with the link'): https://claude.ai/artifact/RHP44Wm5Dyhn7WJn3yMmNW (source: pages/gear.html)
+- Website: https://vicereplay.com (GitHub Pages, repo lifestylerich123p-prog/vicereplay-site; domain on Cloudflare)
+- Gear page (affiliate links): https://vicereplay.com/gear/ . Use this link in banners, bios and replies; it's listed in Amazon Associates.

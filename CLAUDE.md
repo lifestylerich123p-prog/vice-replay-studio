@@ -37,6 +37,8 @@ Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2 on deep purple/black, Ant
      the required disclosure. Set `affiliate` to pick sets: ["storage","game"] (default; downloads, launch, news),
      ["storage","gear"] (guides, tips, gameplay), or [] for none (e.g. sensitive news). Never claim we used or
      reviewed a product, and never put affiliate links in a way that hides the disclosure.
+   - The gear page is https://vicereplay.com/gear/ (repo vicereplay-site). Mention "vicereplay.com/gear" in Short
+     descriptions and pinned comments when the topic is storage or gear.
    - Links in Shorts descriptions aren't clickable, so Shorts send people to the long video: end the main Short's
      `short_description` with "Full video on the channel ⬇️" and remind the owner to set "Related video". The long
      video carries the affiliate links (description + pinned comment, added automatically).
