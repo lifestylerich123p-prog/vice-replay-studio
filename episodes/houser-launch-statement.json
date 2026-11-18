@@ -1,0 +1,38 @@
+{
+  "title": "Rockstar's Sam Houser Breaks Silence as GTA 6 Launches",
+  "slug": "houser-launch-statement",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "short_title": "Rockstar's boss just broke his silence on GTA 6 #GTA6 #Shorts",
+  "short_description": "Rockstar co-founder Sam Houser issued a rare launch statement: Rockstar tried to make GTA 6 exceed your expectations and show what games can do. Sources: GameSpot, GamesRadar. #ViceReplayBreaking",
+  "short_es": {
+    "title": "El jefe de Rockstar rompió el silencio sobre GTA 6 #GTA6 #Shorts",
+    "description": "Sam Houser, cofundador de Rockstar, publicó un raro mensaje por el lanzamiento: quisieron que GTA 6 supere tus expectativas y muestre lo que pueden hacer los videojuegos. Fuentes: GameSpot, GamesRadar."
+  },
+  "short_playlist": "GTA 6 Streamer & Breaking News",
+  "pinned_comment": "Is GTA 6 living up to what Rockstar promised so far? Yes or not yet?",
+  "tiktok_hashtags": ["#gta6", "#rockstargames", "#gtavi", "#gaming", "#vicecity"],
+  "sources": [
+    "GameSpot: https://www.gamespot.com/articles/rockstar-founder-issues-rare-statement-as-gta-6-launches-to-superb-reviews-and-huge-sales/",
+    "GamesRadar: https://www.gamesradar.com/games/grand-theft-auto/as-gta-6-finally-releases-rockstar-boss-sam-houser-issues-rare-statement-we-are-incredibly-grateful-and-look-forward-to-many-more-years-of-sharing-these-experiences-with-you/",
+    "Xbox Achievements: https://www.xboxachievements.com/news/gta-6-launch-rare-statement-from-rockstar-co-founder-sam-houser/"
+  ],
+  "short": [
+    {"headline": "Houser breaks silence", "headline_es": "HOUSER ROMPE EL SILENCIO",
+     "text": "Rockstar's boss almost never speaks in public. Today, Sam Houser did.",
+     "text_es": "El jefe de Rockstar casi nunca habla en público. Hoy, Sam Houser lo hizo.",
+     "media": "../media/official/vice-city-01.jpg"},
+    {"headline": "Exceed expectations", "headline_es": "SUPERAR EXPECTATIVAS",
+     "text": "In a rare launch statement, he says Rockstar tried to make GTA 6 exceed your expectations, and show what games are capable of.",
+     "text_es": "En un raro mensaje por el lanzamiento, dice que Rockstar quiso que GTA 6 supere tus expectativas y muestre lo que pueden hacer los videojuegos.",
+     "media": "../media/official/jason-and-lucia-05.jpg"},
+    {"headline": "Unlocks at midnight", "headline_es": "SALE A MEDIANOCHE",
+     "text": "GTA 6 unlocks at midnight local time on November nineteenth, on PS5 and Xbox Series X and S.",
+     "text_es": "GTA 6 se desbloquea a la medianoche hora local del diecinueve de noviembre, en PS5 y Xbox Series X y S.",
+     "media": "../media/official/leonida-keys-02.jpg"},
+    {"headline": "Does it deliver?", "headline_es": "¿CUMPLE?",
+     "text": "So does it live up to the promise? Tell me below, because Rockstar's boss just broke his silence, and",
+     "text_es": "¿Cumple lo prometido? Dímelo abajo, porque el jefe de Rockstar acaba de romper el silencio, y",
+     "media": "../media/official/grassrivers-03.jpg"}
+  ]
+}

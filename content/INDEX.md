@@ -14,6 +14,7 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| ? | houser-launch-statement | Short | Rockstar's Sam Houser Breaks Silence as GTA 6 Launches | - |
 | 2026-11-18 | gta6-physical-edition-no-disc | video | GTA 6 Physical Edition Has No Disc: What You're Buying | main: RmONg7-uN4w, short: 9lTZNbwbSec, news: rhf1qryjRSM |
 | 2026-11-17 | lucia-actress-confirmed | Short | Lucia's Actress Confirmed Before GTA 6 Launch | - |
 | 2026-11-17 | gta6-unlock-time-every-time-zone | Short | GTA 6 Unlock Time in Every Time Zone (US, UK, EU, Australia) | - |
