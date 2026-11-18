@@ -72,10 +72,13 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
   GTA 6 trailers, and the owner's own gameplay. Never other creators' videos, never a whole trailer.
   Clip audio is always dropped (trailer music is what triggers Content ID claims); the narration must
   add real commentary on top. Pick a matching file per segment when the filename makes that possible
-  (e.g. `media/beach-sunset.jpg` for a segment about beaches). `media/official/` holds 51 official Rockstar
+  (e.g. `media/beach-sunset.jpg` for a segment about beaches). `media/official/` holds 137 official Rockstar
   screenshots named by place, character or car (vice-city-*, leonida-keys-*, grassrivers-*, port-gellhorn-*,
-  mount-kalaga-*, ambrosia-*, jason-duval-*, lucia-caminos-*, jason-and-lucia-*, car-*, and supporting
-  characters). Set `media` per segment to the best match; rotate so one video doesn't repeat a shot.
+  mount-kalaga-*, ambrosia-*, jason-duval-*, lucia-caminos-*, jason-and-lucia-*, car-*, vintage-* (Vintage Vice City
+  pack), and supporting characters: cal-hampton-*, boobie-ike-*, drequan-priest-*, real-dimez-*, raul-bautista-*,
+  brian-heder-*). `media/trailer/` holds 11 silent 2-6 s clips from the official Launch Trailer (launch-trailer-*:
+  motorbike, beach-plane, heist-explosion, helicopter-city, marina-aerial, ...) for moving backgrounds. Source for
+  new official media: rockstargames.com/VI/downloads (screenshot and video packs); add new ones after viewing each. Set `media` per segment to the best match; rotate so one video doesn't repeat a shot.
   Keep strip-club or sexualized images out of the library (they get videos age-restricted/limited ads).
 - Owner gameplay comes from the Google Drive folder in `content/owner.md`: `python -m studio.gameplay` downloads
   new recordings and cuts highlights into `media/gameplay/` (not committed; pulled fresh each run).

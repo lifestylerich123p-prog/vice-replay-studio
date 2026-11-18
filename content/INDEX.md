@@ -66,4 +66,4 @@ Read this first instead of searching the repo.
 | built-in | /es/guias/gta-6-lanzamiento-en-vivo/ | Lanzamiento de GTA 6: actualizaciones en vivo |
 
 ## Screenshot groups in media/official/
-ambrosia, boobie-ike, brian-heder, cal-hampton, car-electric-fang, car-grotti-cheetah, car-squalo, car-vapid-stanier, grassrivers, jason-and-lucia, jason-duval, leonida-keys, lucia-caminos, mount-kalaga, port-gellhorn, raul-bautista, real-dimez, vice-city
+ambrosia, boobie-ike, brian-heder, cal-hampton, car-electric-fang, car-grotti-cheetah, car-squalo, car-vapid-stanier, drequan-priest, grassrivers, jason-and-lucia, jason-duval, leonida-keys, lucia-caminos, mount-kalaga, port-gellhorn, raul-bautista, real-dimez, vice-city, vintage-vice-city-pack, vintage-vice-city-pack-exclusive-looks, vintage-vice-city-pack-vapid-stanier, vintage-vice-city-weapon-pattern
