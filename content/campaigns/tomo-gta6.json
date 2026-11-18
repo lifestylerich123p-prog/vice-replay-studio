@@ -1,0 +1,43 @@
+{
+  "owner_approved": false,
+  "owner_approved_on": "",
+  "name": "TOMO GTA VI Clipping (Clipping Nation)",
+  "platform": "Content Rewards",
+  "campaign_url": "https://contentrewards.com/c/discover (search: TOMO GTA VI Clipping)",
+  "rate_per_1000_views": 2.0,
+  "status": "candidate",
+  "engine": "local",
+  "layout": "stacked",
+  "facecam_box": [
+    0.0,
+    0.0,
+    0.28,
+    0.32
+  ],
+  "gameplay_box": [
+    0.12,
+    0.0,
+    0.76,
+    1.0
+  ],
+  "clip_seconds": 30,
+  "captions": true,
+  "on_screen_credit": "TODO from rules",
+  "required_hashtags": [
+    "#GTA6"
+  ],
+  "required_in_caption": "",
+  "rules": [
+    "From the Content Rewards article (Nov 18, 2026): clips of Tomo's GTA 6 livestreams and videos from his YouTube channel.",
+    "Platforms: TikTok, Instagram, YouTube Shorts. $2.00 per 1,000 views, $4 min to $150 max per clip, $1,000 budget.",
+    "TODO: copy the full rules from the campaign page (locked until joining) before making clips."
+  ],
+  "source_footage": "Tomo's GTA 6 livestreams and his YouTube channel (per campaign)",
+  "source_queue": [],
+  "max_clips_per_day": 2,
+  "notes": "Candidate picked Nov 18: lowest bar to get paid (2,000 views for the $4 minimum), all 3 platforms, $2 CPM.",
+  "submit_within_minutes": 30,
+  "min_payout_per_clip": 4.0,
+  "max_payout_per_clip": 150.0,
+  "budget": 1000
+}
