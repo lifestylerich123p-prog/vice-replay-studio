@@ -15,4 +15,6 @@
 - Gear page (affiliate links): https://vicereplay.com/gear/
 - Website pages: / (home), /gear/, /guides/ (10 guides+news, built by tools/site_guides.py), /links/ (bio link), /contact/.
   Google Search Console verified + sitemap submitted (Nov 17). Cloudflare Web Analytics on every page.
+  Launch live page: add a line to UPDATES in tools/site_guides.py each day of launch week (newest first).
+  Spanish guides under /es/guias/ (ALT dict pairs EN<->ES). Each guide gets a share image in /og/ (CARDS) and FAQ (FAQS).
   New guide = add a guide() call in tools/site_guides.py, run it, push vicereplay-site. Scheduled runs can't push: do it in chat. . Use this link in banners, bios and replies; it's listed in Amazon Associates.

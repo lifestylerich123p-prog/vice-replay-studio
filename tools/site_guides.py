@@ -33,29 +33,84 @@ a{color:var(--cyan)}p{margin:0 0 14px}ul.list{padding-left:22px}ul.list li{margi
 .sources{font-size:14px;color:var(--muted)}.sources a{word-break:break-word}
 footer{margin-top:44px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px}"""
 
-def page(path, title, desc, body, wide=True):
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+STUDIO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FONT_H = os.path.join(STUDIO, "assets/fonts/Anton.ttf"); FONT_B = os.path.join(STUDIO, "assets/fonts/Montserrat.ttf")
+OFFICIAL = os.path.join(STUDIO, "media/official")
+# English page path -> Spanish page path (hreflang pairs)
+ALT = {"guides/gta-6-cheats/": "es/guias/trucos-gta-6/", "guides/gta-6-storage/": "es/guias/espacio-gta-6/",
+       "guides/gta-6-unlock-time/": "es/guias/hora-de-lanzamiento-gta-6/", "guides/gta-6-pc-release-date/": "es/guias/gta-6-pc/",
+       "guides/gta-6-launch-live/": "es/guias/gta-6-lanzamiento-en-vivo/", "guides/": "es/"}
+ALT.update({v: k for k, v in list(ALT.items())})
+
+def card(name, line1, line2, shot=None):
+    """1200x630 share image (og:image) in the channel style. Returns its URL."""
+    W, H = 1200, 630
+    im = Image.new("RGB", (W, H), "#0d0717")
+    if shot and os.path.exists(os.path.join(OFFICIAL, shot)):
+        ph = Image.open(os.path.join(OFFICIAL, shot)).convert("RGB")
+        r = max(W / ph.width, H / ph.height); ph = ph.resize((int(ph.width * r) + 1, int(ph.height * r) + 1))
+        ph = ph.crop(((ph.width - W) // 2, (ph.height - H) // 2, (ph.width - W) // 2 + W, (ph.height - H) // 2 + H))
+        im.paste(ph)
+        shade = Image.new("L", (W, H)); sd = ImageDraw.Draw(shade)
+        for x in range(W): sd.line([(x, 0), (x, H)], fill=int(235 - 150 * x / W))
+        im = Image.composite(Image.new("RGB", (W, H), "#0d0717"), im, shade)
+    d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, W, 10], fill="#ff1f8e"); d.rectangle([0, H - 10, W, H], fill="#00e5d2")
+    fb = ImageFont.truetype(FONT_H, 40)
+    d.text((60, 48), "VICE", font=fb, fill="#f4eefc"); d.text((60 + d.textlength("VICE ", font=fb), 48), "REPLAY", font=fb, fill="#00e5d2")
+    def fit(text, maxw, size):
+        while size > 40:
+            f = ImageFont.truetype(FONT_H, size)
+            if d.textlength(text, font=f) <= maxw: return f
+            size -= 4
+        return ImageFont.truetype(FONT_H, size)
+    f1 = fit(line1, 1080, 120); d.text((60, 200), line1, font=f1, fill="#ffffff")
+    y2 = 200 + f1.size + 48
+    f2 = fit(line2, 1040, 104); w2 = d.textlength(line2, font=f2)
+    d.rectangle([48, y2 - 6, 60 + w2 + 18, y2 + f2.size + 22], fill="#ff1f8e"); d.text((60, y2), line2, font=f2, fill="#ffffff")
+    d.text((60, H - 70), "vicereplay.com", font=ImageFont.truetype(FONT_B, 28), fill="#b7a9cf")
+    os.makedirs(os.path.join(SITE, "og"), exist_ok=True)
+    im.save(os.path.join(SITE, "og", name + ".jpg"), quality=85)
+    return f"{DOMAIN}/og/{name}.jpg"
+
+def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
     url = f"{DOMAIN}/{path}" if path else DOMAIN + "/"
+    image = image or f"{DOMAIN}/og/default.jpg"
+    alt = ""
+    if path in ALT:
+        en, es = (path, ALT[path]) if lang == "en" else (ALT[path], path)
+        alt = f'<link rel="alternate" hreflang="en" href="{DOMAIN}/{en}"><link rel="alternate" hreflang="es" href="{DOMAIN}/{es}"><link rel="alternate" hreflang="x-default" href="{DOMAIN}/{en}">'
+    ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in (jsonld or []))
+    if lang == "es":
+        menu = f'<a href="/es/">Guías</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
+        foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
+    else:
+        menu = f'<a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
+        foot = 'Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.'
     doc = f"""<!doctype html>
-<html lang="en">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
-<link rel="canonical" href="{url}">
-<meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}">
-<meta property="og:url" content="{url}"><meta property="og:site_name" content="Vice Replay"><meta name="theme-color" content="#0d0717">
+<link rel="canonical" href="{url}">{alt}
+<meta property="og:type" content="{'article' if 'guid' in path else 'website'}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}">
+<meta property="og:url" content="{url}"><meta property="og:site_name" content="Vice Replay"><meta property="og:image" content="{image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title)}"><meta name="twitter:description" content="{html.escape(desc)}"><meta name="twitter:image" content="{image}">
+<meta name="theme-color" content="#0d0717">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;700;800&display=swap">
-<style>{CSS}</style>
+<style>{CSS}</style>{ld}
 </head>
 <body>
 <div class="wrap">
-<nav><a class="brand" href="/">VICE <b>REPLAY</b></a><div class="menu"><a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a></div></nav>
+<nav><a class="brand" href="/">VICE <b>REPLAY</b></a><div class="menu">{menu}</div></nav>
 <main>
 {body}
 </main>
-<footer>Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.</footer>
+<footer>{foot}</footer>
 </div>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "4c4c637dcde8478da5fd7073dcde1b11"}}'></script><!-- End Cloudflare Web Analytics -->
 </body>
@@ -83,9 +138,63 @@ def watchmore(vid):
     return f'<div class="box"><h3>Watch more</h3><div class="btns"><a class="item" href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener">Watch this on YouTube<span aria-hidden="true">→</span></a><a class="item" href="{YT}?sub_confirmation=1" target="_blank" rel="noopener">Subscribe to Vice Replay<small>New GTA 6 news and Shorts every day</small><span aria-hidden="true">→</span></a></div></div>'
 
 GUIDES = []
-def guide(slug, title, desc, date, body):
-    GUIDES.append((slug, title, desc, date))
-    page(f"guides/{slug}/", f"{title} · Vice Replay", desc, body)
+CARDS = {}  # slug -> (line1, line2, screenshot in media/official)
+def faq_html(faq, lang="en"):
+    if not faq: return ""
+    return f'<h2>{"Quick answers" if lang == "en" else "Respuestas rápidas"}</h2>' + "".join(f'<div class="box"><h3>{html.escape(q)}</h3><p style="margin:0">{html.escape(a)}</p></div>' for q, a in faq)
+
+def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None):
+    faq = faq or FAQS.get(slug)
+    path = f"guides/{slug}/" if lang == "en" else f"es/guias/{slug}/"
+    l1, l2, shot = CARDS.get(slug, (title.split(":")[0][:28], "", None))
+    img = card(slug, l1, l2 or "On replay", shot)
+    if lang == "en": GUIDES.append((slug, title, desc, date))
+    else: GUIDES_ES.append((slug, title, desc, date))
+    ld = [{"@context": "https://schema.org", "@type": "Article", "headline": title[:110], "description": desc, "image": [img],
+           "datePublished": date, "dateModified": modified or date, "inLanguage": lang,
+           "author": {"@type": "Organization", "name": "Vice Replay", "url": YT},
+           "publisher": {"@type": "Organization", "name": "Vice Replay", "url": DOMAIN + "/", "logo": {"@type": "ImageObject", "url": DOMAIN + "/favicon.png"}},
+           "mainEntityOfPage": f"{DOMAIN}/{path}"}]
+    if faq:
+        ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
+    marker = '<div class="sources">'
+    body = body.replace(marker, faq_html(faq, lang) + marker, 1) if marker in body else body + faq_html(faq, lang)
+    page(path, f"{title} · Vice Replay", desc, body, image=img, jsonld=ld, lang=lang)
+GUIDES_ES = []
+
+CARDS.update({
+ "gta-6-unlock-time": ("GTA 6 UNLOCK TIME", "WHOSE MIDNIGHT?", "vice-city-05.jpg"),
+ "gta-6-new-zealand-trick": ("THE NEW ZEALAND TRICK", "WORTH THE RISK?", "leonida-keys-03.jpg"),
+ "gta-6-launch-checklist": ("GTA 6 LAUNCH", "CHECKLIST", "jason-and-lucia-05.jpg"),
+ "gta-6-map-leonida-places": ("BIGGER THAN", "VICE CITY", "mount-kalaga-02.jpg"),
+ "gta-6-storage": ("GTA 6 STORAGE FULL?", "FREE FIXES FIRST", "car-vapid-stanier-01.jpg"),
+ "gta-6-cheats": ("GTA 6 CHEAT CODES", "WHAT'S REAL?", "car-grotti-cheetah-01.jpg"),
+ "gta-6-pc-release-date": ("GTA 6 ON PC", "WHEN?", "port-gellhorn-02.jpg"),
+ "gta-6-launch-streams": ("LAUNCH NIGHT", "WHERE TO WATCH", "vice-city-13.jpg"),
+ "gta-6-reviews": ("GTA 6 REVIEWS", "THE SCORE TO BEAT", "jason-duval-05.jpg"),
+ "gta-6-game-awards-nominations": ("GAME OF THE YEAR", "8 NOMINATIONS", "lucia-caminos-10.jpg"),
+ "gta-6-launch-live": ("GTA 6 LAUNCH", "LIVE UPDATES", "vice-city-21.jpg"),
+ "trucos-gta-6": ("TRUCOS DE GTA 6", "¿CUÁLES SON REALES?", "car-grotti-cheetah-01.jpg"),
+ "espacio-gta-6": ("¿SIN ESPACIO?", "GTA 6 PESA 212 GB", "car-vapid-stanier-01.jpg"),
+ "hora-de-lanzamiento-gta-6": ("GTA 6: ¿A QUÉ HORA", "SE DESBLOQUEA?", "vice-city-05.jpg"),
+ "gta-6-pc": ("GTA 6 EN PC", "¿CUÁNDO?", "port-gellhorn-02.jpg"),
+ "gta-6-lanzamiento-en-vivo": ("LANZAMIENTO GTA 6", "EN VIVO", "vice-city-21.jpg"),
+})
+FAQS = {
+ "gta-6-cheats": [("Are there GTA 6 cheat codes?", "Not confirmed yet. Rockstar hasn't announced any GTA 6 cheats and hasn't ruled them out. Lists online before launch are mostly GTA 5 codes."),
+                  ("Is there a GTA 6 money cheat?", "None is confirmed, and GTA 5 never had one. Sites offering a 'money generator' are scams.")],
+ "gta-6-storage": [("How much space does GTA 6 need?", "Rockstar says up to 212 GB, depending on your console, plus some temporary space while it installs."),
+                   ("Can I play GTA 6 from a USB drive?", "No. On PS5 and Xbox Series X|S, current-gen games have to run from internal storage, a PS5 M.2 SSD or an Xbox storage expansion card. USB drives can only store them.")],
+ "gta-6-unlock-time": [("What time does GTA 6 unlock?", "At midnight local time on November 19, 2026, region by region. New Zealand is first, around 6 AM Eastern on November 18, according to PlayStation Store listings."),
+                       ("When does GTA 6 start on Xbox Cloud Gaming?", "At 1 AM Eastern on November 19, according to Forbes.")],
+ "gta-6-pc-release-date": [("Is GTA 6 on PC?", "Not at launch. GTA 6 launches November 19, 2026 on PS5 and Xbox Series X|S only."),
+                           ("When is the GTA 6 PC release date?", "There's no official date. A GamesBeat report says early 2027 (January to March), but Rockstar hasn't confirmed it.")],
+ "gta-6-reviews": [("When do GTA 6 reviews come out?", "The review embargo is reportedly November 18, 2026, one day before launch. Rockstar hasn't confirmed the date.")],
+ "gta-6-launch-checklist": [("How much is GTA 6?", "$79.99 for the standard edition and $99.99 for the Ultimate edition in the US."),
+                            ("Is GTA Online in GTA 6 at launch?", "No. The new GTA Online isn't there on day one; it's expected sometime in 2027.")],
+ "gta-6-new-zealand-trick": [("Does the New Zealand trick work for GTA 6?", "It's unconfirmed. Guides describe changing your Xbox region; on PS5 the store region is tied to your account. It can break platform rules, so it's a risk.")],
+}
 
 # 1. Unlock time
 guide("gta-6-unlock-time", "GTA 6 Unlock Time: When You Can Play in Every Time Zone",
@@ -271,11 +380,133 @@ guide("gta-6-game-awards-nominations", "GTA 6 at The Game Awards 2026: 8 Nominat
 <div class="box"><h3>Watch</h3><div class="btns"><a class="item" href="https://www.youtube.com/watch?v=xvudsg_o6ow" target="_blank" rel="noopener">GTA 6 just got nominated for Game of the Year<small>Vice Replay Short</small><span aria-hidden="true">→</span></a><a class="item" href="https://www.youtube.com/watch?v=_5ZWAUY75y4" target="_blank" rel="noopener">Lucia's actress is CONFIRMED<small>Vice Replay Short</small><span aria-hidden="true">→</span></a></div></div>
 {sources([("Insider Gaming: Lucia's actress revealed","https://insider-gaming.com/gta-6-lucia-actress-officially-revealed-during-2026-game-awards-nominations/"),("GamesRadar: Lucia actor revealed","https://www.gamesradar.com/games/grand-theft-auto/gta-6-lucia-actor-revealed-thanks-to-the-game-awards-best-performance-nomination-and-yes-its-exactly-who-everyone-expected/"),("Destructoid: TGA 2026 nominations","https://www.destructoid.com/gta-6-the-game-awards-tga-nominations-2026/"),("Forbes: Game of the Year nominees","https://www.forbes.com/sites/paultassi/2026/11/17/the-6-game-of-the-year-nominees-at-the-game-awards--did-gta-6-make-it/")])}""")
 
+# 11. Launch live hub (update the UPDATES list every day of launch week; newest first)
+UPDATES = [
+ ("Nov 17, 9 PM ET", "Cheat codes: still none confirmed. Lists going around are recycled GTA 5 codes. <a href=\"/guides/gta-6-cheats/\">Our cheats tracker</a>."),
+ ("Nov 17, 12 PM ET", "The Game Awards 2026 nominations: GTA 6 gets 8, including Game of the Year. Lucia's actress, Manni L. Perez, is nominated for Best Performance. <a href=\"/guides/gta-6-game-awards-nominations/\">Details</a>."),
+ ("Nov 17", "Reviews are reportedly due November 18, the day before launch (not confirmed by Rockstar). <a href=\"/guides/gta-6-reviews/\">The score to beat</a>."),
+ ("Nov 16", "Preload has been live since November 10: the install is up to 212 GB. <a href=\"/guides/gta-6-storage/\">Out of space?</a>"),
+]
+guide("gta-6-launch-live", "GTA 6 Launch: Live Updates, Times and Everything You Need Tonight",
+ "GTA 6 launch live updates: unlock times, YouTube's 24-hour stream, reviews, cheats, storage and PC news in one page, updated every day of launch week.",
+ "2026-11-17", f"""<h1>GTA 6 launch: <span>live updates</span></h1>
+<p class="meta">Last updated {UPDATES[0][0]} · Vice Replay · This page is updated every day of launch week</p>
+<p class="lede">GTA 6 comes out on <b>November 19, 2026</b> on PS5 and Xbox Series X|S. Everything you need for launch week is on this page, newest first.</p>
+<div class="box"><h3>Key times (Eastern)</h3><ul class="list" style="margin:0">
+<li><b>Nov 18, ~6 AM:</b> New Zealand unlocks first (PlayStation Store listings)</li>
+<li><b>Nov 18:</b> reviews reportedly go live (unconfirmed)</li>
+<li><b>Nov 18, 11 PM:</b> YouTube's launch pre-show with RDCWorld</li>
+<li><b>Nov 19, midnight local time:</b> GTA 6 unlocks where you are; YouTube's 24-hour stream starts</li>
+<li><b>Nov 19, 1 AM:</b> Xbox Cloud Gaming (Forbes)</li></ul></div>
+<h2>Latest updates</h2>
+{"".join(f'<div class="note"><b>{t}</b><br>{x}</div>' for t, x in UPDATES)}
+<h2>Before you play</h2>
+<ul class="list"><li><a href="/guides/gta-6-launch-checklist/">Launch checklist</a>: price, day-one patch, what's missing</li>
+<li><a href="/guides/gta-6-unlock-time/">Unlock time in every time zone</a></li>
+<li><a href="/guides/gta-6-storage/">Storage full? Free fixes first</a></li>
+<li><a href="/guides/gta-6-launch-streams/">Where to watch launch night</a></li>
+<li><a href="/guides/gta-6-pc-release-date/">GTA 6 on PC: when?</a></li></ul>
+{gearbox(GAME + STORAGE, "Getting the game or making room for the 212 GB install? Links go to the exact listings:")}
+{watchmore("pcoMWOraJA4")}""",
+ faq=[("When does GTA 6 come out?", "November 19, 2026, on PS5 and Xbox Series X|S. It unlocks at midnight local time in each region."),
+      ("Is GTA 6 on PC at launch?", "No. There's no official PC date; a report says early 2027, but Rockstar hasn't confirmed it.")],
+ modified="2026-11-18")
+
+# Spanish guides (es/guias/)
+guide("trucos-gta-6", "Trucos de GTA 6: lista confirmada (y los falsos)",
+ "¿Hay trucos en GTA 6? Todavía ninguno está confirmado. Qué es real, qué listas son falsas y nuestra lista que se actualiza cuando haya trucos verificados.",
+ "2026-11-18", f"""<h1>Trucos de GTA 6: <span>¿qué es real?</span></h1>
+<p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
+<p class="lede">Respuesta corta: <b>todavía no hay trucos confirmados para GTA 6.</b> Rockstar no ha anunciado ninguno, pero tampoco los ha descartado. El juego sale el 19 de noviembre de 2026.</p>
+<div class="box"><h3>Trucos confirmados</h3><p style="margin:0"><b>Ninguno todavía.</b> Actualizaremos esta lista en cuanto haya trucos probados en el juego.</p></div>
+<h2>Las listas que circulan son falsas</h2>
+<p>La mayoría de las listas de "trucos de GTA 6" son trucos de GTA 5 con otro nombre. Nadie fuera de Rockstar ha jugado la versión final, así que nadie ha podido probarlos.</p>
+<h2>¿Tendrá trucos GTA 6?</h2>
+<p>Probablemente. Todos los GTA principales desde GTA 3 han tenido trucos. Pero eso es historia, no una confirmación. Y no esperes un truco de dinero: GTA 5 nunca tuvo uno.</p>
+<h2>Cuidado con las estafas</h2>
+<p>Cualquier sitio que te pida tu cuenta de PlayStation o Xbox, o que ofrezca un "generador de dinero", es una estafa.</p>
+{gearbox(GAME + STORAGE, "¿Vas a comprar GTA 6 o necesitas espacio? Enlaces (en inglés, Amazon EE. UU.):")}
+{sources([("GTA BOOM","https://gtaboom.com/gta-6-cheats-9nd6"),("GTA Wiki","https://gta.fandom.com/wiki/Cheats_in_GTA_VI")])}""",
+ faq=[("¿Hay trucos en GTA 6?", "Todavía no hay trucos confirmados. Las listas que circulan antes del lanzamiento son en su mayoría trucos de GTA 5."),
+      ("¿Hay truco de dinero en GTA 6?", "No hay ninguno confirmado, y GTA 5 nunca tuvo uno. Los 'generadores de dinero' son estafas.")], lang="es")
+
+guide("espacio-gta-6", "¿Sin espacio para GTA 6? Cómo liberar espacio en PS5 y Xbox (212 GB)",
+ "GTA 6 necesita hasta 212 GB. Primero las soluciones gratis para liberar espacio en PS5 y Xbox Series X|S, y luego qué buscar si necesitas más almacenamiento.",
+ "2026-11-18", f"""<h1>¿Sin espacio? <span>Primero lo gratis</span></h1>
+<p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
+<p class="lede">Según Rockstar, GTA 6 ocupa <b>hasta 212 GB</b>, más un poco de espacio temporal durante la instalación. Prueba primero lo gratis.</p>
+<h2>1. Mira qué ocupa espacio</h2>
+<p><b>PS5:</b> Ajustes → Almacenamiento → Almacenamiento de la consola → Juegos y aplicaciones. <b>Xbox:</b> Mis juegos y aplicaciones → Administrar → Almacenamiento.</p>
+<h2>2. Borra sin perder nada</h2>
+<p>Con las partidas en la nube activadas, borrar un juego no borra tu progreso, y puedes volver a descargar los juegos que tienes.</p>
+<h2>3. Borra clips y capturas viejas</h2>
+<p>Los videos y capturas antiguas ocupan mucho más de lo que parece.</p>
+<h2>4. Guarda juegos en un disco USB</h2>
+<p>Ambas consolas pueden guardar juegos en un disco USB externo. Los juegos de PS5 y Xbox Series hay que pasarlos de vuelta para jugarlos, pero es más rápido que descargarlos otra vez.</p>
+<h2>Si aún necesitas espacio</h2>
+<p><b>PS5:</b> tiene una ranura para un SSD M.2 NVMe (PCIe Gen4); Sony recomienda uno con disipador. <b>Xbox Series X|S:</b> los juegos actuales solo funcionan desde el almacenamiento interno o una tarjeta de expansión oficial.</p>
+{gearbox(STORAGE, "Opciones y precios actuales (Amazon EE. UU.). Revisa la compatibilidad con tu consola antes de comprar:")}
+{sources([("PlayStation: SSD M.2 en PS5","https://www.playstation.com/es-mx/support/hardware/ps5-install-m2-ssd/"),("Xbox: almacenamiento Series X|S","https://support.xbox.com/es-MX/help/hardware-network/console/xbox-series-x-s-storage-options")])}""",
+ faq=[("¿Cuánto pesa GTA 6?", "Según Rockstar, hasta 212 GB según la consola, más espacio temporal durante la instalación.")], lang="es")
+
+guide("hora-de-lanzamiento-gta-6", "GTA 6: a qué hora se desbloquea en cada país",
+ "GTA 6 se desbloquea a la medianoche hora local el 19 de noviembre de 2026. Quién juega primero, la duda de EE. UU., Xbox Cloud Gaming y el truco de Nueva Zelanda.",
+ "2026-11-18", f"""<h1>GTA 6: <span>¿qué medianoche?</span></h1>
+<p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
+<p class="lede">GTA 6 sale el jueves 19 de noviembre de 2026 en PS5 y Xbox Series X|S, y se desbloquea a la <b>medianoche hora local</b> en cada región.</p>
+<h2>Quién juega primero</h2>
+<p>Nueva Zelanda llega primero a la medianoche: según las fichas de PlayStation Store, alrededor de las 6 AM hora del Este de EE. UU. del 18 de noviembre. Luego Australia, Japón, India, Europa y Reino Unido.</p>
+<h2>Latinoamérica y EE. UU.</h2>
+<p>Algunos reportes dicen que en América se desbloquea la noche del 18 de noviembre; otros esperan la medianoche de cada zona horaria. Lo más seguro: revisa la hora en la página de GTA 6 en la tienda de tu consola.</p>
+<h2>Xbox Cloud Gaming</h2>
+<p>Según Forbes, empieza a la <b>1 AM hora del Este</b>, no a la medianoche.</p>
+<h2>El truco de Nueva Zelanda</h2>
+<p>Cambiar la región de tu Xbox a Nueva Zelanda no está confirmado para GTA 6 y puede poner en riesgo tu cuenta. No vale la pena por unas horas.</p>
+{gearbox(STORAGE)}
+{sources([("Push Square","https://www.pushsquare.com/guides/gta-6-release-times-when-can-you-start-playing"),("Forbes: Xbox Cloud Gaming","https://www.forbes.com/sites/brianmazique/2026/11/16/xbox-just-revealed-the-exact-hour-gta-6-starts-streaming-and-it-isnt-midnight/")])}""",
+ faq=[("¿A qué hora sale GTA 6?", "A la medianoche hora local del 19 de noviembre de 2026, región por región. Revisa la hora exacta en la tienda de tu consola.")], lang="es")
+
+guide("gta-6-pc", "GTA 6 en PC: fecha de salida y lo que se sabe",
+ "GTA 6 sale solo en PS5 y Xbox Series X|S. Lo que dijo Take-Two sobre PC, la fecha reportada de principios de 2027 y lo que aún no está confirmado.",
+ "2026-11-18", f"""<h1>GTA 6 en PC: <span>¿cuándo?</span></h1>
+<p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
+<p class="lede">GTA 6 sale el 19 de noviembre de 2026 <b>solo en PS5 y Xbox Series X|S</b>. No hay fecha oficial para PC.</p>
+<h2>Lo oficial</h2><p>Take-Two solo anunció consolas. Su CEO, Strauss Zelnick, dijo que Rockstar "siempre empieza en consola".</p>
+<h2>Lo reportado: principios de 2027</h2><p>Según un reporte de GamesBeat con fuentes anónimas, la versión de PC apuntaría a <b>enero-marzo de 2027</b>. Rockstar no lo ha confirmado.</p>
+<h2>Cuidado</h2><p>No compres "claves de GTA 6 para PC": no existe esa versión, son estafas.</p>
+{gearbox(GAME + STORAGE, "¿Vas a jugar en consola? Enlaces (Amazon EE. UU.):")}
+{sources([("GodisaGeek","https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"),("tbreak","https://tbreak.com/gta-6-pc-release-delayed-console-first/")])}""",
+ faq=[("¿GTA 6 sale en PC?", "No en el lanzamiento. No hay fecha oficial; un reporte habla de principios de 2027, sin confirmar.")], lang="es")
+
+guide("gta-6-lanzamiento-en-vivo", "Lanzamiento de GTA 6: actualizaciones en vivo",
+ "Lanzamiento de GTA 6 en vivo: horarios, transmisión de 24 horas de YouTube, reseñas, trucos, espacio y PC, actualizado cada día de la semana de lanzamiento.",
+ "2026-11-18", f"""<h1>Lanzamiento de GTA 6: <span>en vivo</span></h1>
+<p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
+<p class="lede">GTA 6 sale el <b>19 de noviembre de 2026</b> en PS5 y Xbox Series X|S. Todo lo de la semana de lanzamiento, en una página.</p>
+<div class="box"><h3>Horarios clave (hora del Este de EE. UU.)</h3><ul class="list" style="margin:0">
+<li><b>18 nov, ~6 AM:</b> Nueva Zelanda desbloquea primero</li><li><b>18 nov:</b> reseñas (según reportes, sin confirmar)</li>
+<li><b>18 nov, 11 PM:</b> pre-show de YouTube con RDCWorld</li><li><b>19 nov, medianoche local:</b> GTA 6 se desbloquea; empieza la transmisión de 24 horas de YouTube</li>
+<li><b>19 nov, 1 AM:</b> Xbox Cloud Gaming</li></ul></div>
+<h2>Últimas noticias</h2>
+<div class="note"><b>17 nov</b><br>The Game Awards 2026: GTA 6 recibe 8 nominaciones, incluido Juego del Año. Manni L. Perez, la actriz de Lucía, está nominada a Mejor Actuación.</div>
+<div class="note"><b>17 nov</b><br>Trucos: ninguno confirmado. <a href="/es/guias/trucos-gta-6/">Nuestra lista</a>.</div>
+<h2>Antes de jugar</h2>
+<ul class="list"><li><a href="/es/guias/hora-de-lanzamiento-gta-6/">A qué hora se desbloquea</a></li><li><a href="/es/guias/espacio-gta-6/">¿Sin espacio? Primero lo gratis</a></li><li><a href="/es/guias/gta-6-pc/">GTA 6 en PC</a></li></ul>
+{gearbox(GAME + STORAGE, "Enlaces directos (Amazon EE. UU.):")}""",
+ faq=[("¿Cuándo sale GTA 6?", "El 19 de noviembre de 2026 en PS5 y Xbox Series X|S, a la medianoche hora local.")], lang="es")
+
+GUIDES_ES.sort(key=lambda g: g[3], reverse=True)
+page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en español: trucos, hora de lanzamiento, espacio y PC. Sin spoilers.",
+     '<h1>Guías de GTA 6 <span>en español</span></h1><p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="https://www.youtube.com/@vicereplaytv-q8s">Nuestros videos tienen subtítulos en español.</a></p><div class="cards">'
+     + "".join(f'<a class="card" href="/es/guias/{s}/"><b>{html.escape(t)}</b><small>{html.escape(d)}</small></a>' for s, t, d, _ in GUIDES_ES) + '</div>', lang="es")
+
 # guides index
-GUIDES.sort(key=lambda g: g[3], reverse=True)
+GUIDES.sort(key=lambda g: (g[0] != "gta-6-launch-live", g[3]), reverse=False)
+GUIDES[1:] = sorted(GUIDES[1:], key=lambda g: g[3], reverse=True)
+card("default", "GTA'S WILDEST MOMENTS.", "ON REPLAY.", "vice-city-11.jpg")
 cards = "".join(f'<a class="card" href="/guides/{s}/"><b>{html.escape(t)}</b><small>{html.escape(d)}</small></a>' for s, t, d, _ in GUIDES)
 page("guides/", "GTA 6 Guides · Vice Replay", "GTA 6 guides from Vice Replay: unlock times, download size, storage, the map and launch tips.",
-     f'<h1>GTA 6 <span>guides</span></h1><p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers.</p><div class="cards">{cards}</div>')
+     f'<h1>GTA 6 <span>guides</span></h1><p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers. <a href="/es/">En español</a></p><div class="cards">{cards}</div>')
 
 # links page
 latest = GUIDES[0]
@@ -300,7 +531,7 @@ page("contact/", "Work With Vice Replay", "Sponsorships, clipping campaigns and 
 <p>Include your brand or channel, what you have in mind, and your timing. We usually reply within 2 days.</p>""")
 
 open(os.path.join(SITE, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
-urls = [("", "2026-11-18"), ("guides/", "2026-11-18"), ("gear/", "2026-11-18"), ("links/", "2026-11-18"), ("contact/", "2026-11-18")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES]
+urls = [("", "2026-11-18"), ("guides/", "2026-11-18"), ("gear/", "2026-11-18"), ("links/", "2026-11-18"), ("contact/", "2026-11-18")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", "2026-11-18")] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
 open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
 print("ok", len(GUIDES))
