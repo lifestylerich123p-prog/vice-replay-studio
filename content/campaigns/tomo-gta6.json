@@ -71,5 +71,6 @@
     "Instagram Reels",
     "YouTube Shorts"
   ],
-  "engine_note": "YouTube can't be downloaded from the cloud workspace (blocked), so this campaign uses Everygen's download_video + editor. Show the credit cost and get the owner's yes before each batch. Find new Tomo GTA VI streams/videos with the YouTube Data API (channel @Tomovids)."
+  "engine_note": "YouTube can't be downloaded from the cloud workspace (blocked), so this campaign uses Everygen's download_video + editor. Show the credit cost and get the owner's yes before each batch. Find new Tomo GTA VI streams/videos with the YouTube Data API (channel @Tomovids).",
+  "payout_setup": "Owner joined the Clipping Nation Discord and connected socials in Whop (Nov 18)."
 }
