@@ -63,8 +63,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    uploaded, else null), card [line1, line2, screenshot from media/official], lede, 3-6 sections [heading, short HTML
    paragraphs/lists] rewritten from the script for reading, 1-3 faq, gear ["game","storage"] when it fits, sources).
    Also prepend 1-2 dated lines to `site/live.json` with today's biggest confirmed news (launch week; link our guide).
-   Same facts and rules as the video: sourced, rumors labeled, no spoilers. Scheduled runs can't push, so publish by
-   calling `fire_trigger` with trigger_id `trig_01XX9xXTp8xfb4i3yYUFP9uF` (it wakes the owner's main control session,
+   Same facts and rules as the video: sourced, rumors labeled, no spoilers. Scheduled runs CAN'T push to GitHub (403):
+   don't try git push or commit for these files. Publish ONLY by calling `fire_trigger` with trigger_id `trig_01XX9xXTp8xfb4i3yYUFP9uF` (it wakes the owner's main control session,
    which can push) and `text` = "FILES:" then each file path on its own line followed by its full contents. If
    fire_trigger isn't available or fails, say the website update is waiting and attach the JSON files with SendUserFile.
 3d. **TikTok chat**: `send_message` session `session_01CJRsWQ4prmRGdfaEyZXz7q` ("📱 Vice Replay TikTok") with, for every Short
@@ -75,8 +75,7 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    They are NOT uploaded to the main YouTube channel (keeps it English); the owner posts them by hand.
 4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), run
    `python -m studio.tidy`, then commit `episodes/<slug>.json`, `content/log.md` and `content/INDEX.md` and push to `main`. Videos are not committed.
-   If the push is refused, try once to attach the repo with push access (add_repo), push again, and if it is
-   still refused don't keep trying: send the episode JSON with SendUserFile and say the log wasn't saved.
+   Scheduled runs can't push (403), so don't try add_repo or retries: send the episode JSON with SendUserFile and say the log wasn't saved.
 5. **Campaign clips**: only for campaigns the owner approved (`owner_approved: true`); never start or join one
    yourself. For each `content/campaigns/*.json` with `owner_approved` true, `status` `active` and something in
    `source_queue`, follow `.claude/commands/campaign-clips.md` and deliver up to `max_clips_per_day` clips
