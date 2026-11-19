@@ -18,3 +18,4 @@
 | 2026-11-18 | gta6-storage-full | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade (+ Short) | Owner request (Amazon sales push); scheduled 10:30 PM Nov 18 (MIvka1jBpJ0) and Short 8:00 AM Nov 19 (Wl6K3f5FtVU) |
 | 2026-11-18 | gta6-metacritic-99 | GTA 6 just got a 99 on Metacritic (breaking Short) | Breaking-news standing approval, score 9/10 (Forbes, GameSpot, Kotaku, GamesRadar); published now (S5L5Mah6LIU) |
 | 2026-11-19 | gta6-streaming-record | 7 MILLION people watched GTA 6 at once (Short) | Overnight monitor under owner's tonight approval; Streams Charts + Insider Gaming; published 1:3x AM (6bPAn80dKno) |
+| 2026-11-19 | gta6-cheats-catch | GTA 6 cheats are real... but there's a catch (Short) | Overnight monitor under owner's tonight approval, score 9/10 (Polygon, GamesRadar, PC Gamer, Eurogamer testing); published now (vlPV5Yre8T8); cheats guide EN+ES rewritten |

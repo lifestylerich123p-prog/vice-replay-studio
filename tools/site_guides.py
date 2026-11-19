@@ -172,20 +172,21 @@ CARDS.update({
  "gta-6-launch-checklist": ("GTA 6 LAUNCH", "CHECKLIST", "jason-and-lucia-05.jpg"),
  "gta-6-map-leonida-places": ("BIGGER THAN", "VICE CITY", "mount-kalaga-02.jpg"),
  "gta-6-storage": ("GTA 6 STORAGE FULL?", "FREE FIXES FIRST", "car-vapid-stanier-01.jpg"),
- "gta-6-cheats": ("GTA 6 CHEAT CODES", "WHAT'S REAL?", "car-grotti-cheetah-01.jpg"),
+ "gta-6-cheats": ("GTA 6 CHEATS ARE REAL", "THE CATCH", "car-grotti-cheetah-01.jpg"),
  "gta-6-pc-release-date": ("GTA 6 ON PC", "WHEN?", "port-gellhorn-02.jpg"),
  "gta-6-launch-streams": ("LAUNCH NIGHT", "WHERE TO WATCH", "vice-city-13.jpg"),
  "gta-6-reviews": ("GTA 6 REVIEWS", "99 ON METACRITIC", "jason-and-lucia-03.jpg"),
  "gta-6-game-awards-nominations": ("GAME OF THE YEAR", "8 NOMINATIONS", "lucia-caminos-10.jpg"),
  "gta-6-launch-live": ("GTA 6 LAUNCH", "LIVE UPDATES", "vice-city-21.jpg"),
- "trucos-gta-6": ("TRUCOS DE GTA 6", "¿CUÁLES SON REALES?", "car-grotti-cheetah-01.jpg"),
+ "trucos-gta-6": ("TRUCOS DE GTA 6", "EXISTEN, CON TRAMPA", "car-grotti-cheetah-01.jpg"),
  "espacio-gta-6": ("¿SIN ESPACIO?", "GTA 6 PESA 212 GB", "car-vapid-stanier-01.jpg"),
  "hora-de-lanzamiento-gta-6": ("GTA 6: ¿A QUÉ HORA", "SE DESBLOQUEA?", "vice-city-05.jpg"),
  "gta-6-pc": ("GTA 6 EN PC", "¿CUÁNDO?", "port-gellhorn-02.jpg"),
  "gta-6-lanzamiento-en-vivo": ("LANZAMIENTO GTA 6", "EN VIVO", "vice-city-21.jpg"),
 })
 FAQS = {
- "gta-6-cheats": [("Are there GTA 6 cheat codes?", "Not confirmed yet. Rockstar hasn't announced any GTA 6 cheats and hasn't ruled them out. Lists online before launch are mostly GTA 5 codes."),
+ "gta-6-cheats": [("Are there GTA 6 cheat codes?", "Yes. Launch guides from Polygon, GamesRadar and PC Gamer confirm GTA 6 has cheats, but they only unlock after you finish the main story."),
+                  ("Do GTA 6 cheats disable trophies?", "Yes. While a cheat is on, saving is blocked and Trophies/Achievements are off for the rest of that session. Load a clean save to get them back."),
                   ("Is there a GTA 6 money cheat?", "None is confirmed, and GTA 5 never had one. Sites offering a 'money generator' are scams.")],
  "gta-6-storage": [("How much space does GTA 6 need?", "Rockstar says up to 212 GB, depending on your console, plus some temporary space while it installs."),
                    ("Can I play GTA 6 from a USB drive?", "No. On PS5 and Xbox Series X|S, current-gen games have to run from internal storage, a PS5 M.2 SSD or an Xbox storage expansion card. USB drives can only store them.")],
@@ -301,23 +302,23 @@ guide("gta-6-storage", "GTA 6 Storage Full? How to Make Room on PS5 and Xbox (21
 {sources([("Forbes: GTA 6 download size","https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/"),("PlayStation: how to add M.2 SSD storage to PS5","https://www.playstation.com/en-us/support/hardware/ps5-install-m2-ssd/"),("Xbox: storage options for Xbox Series X|S","https://support.xbox.com/en-US/help/hardware-network/console/xbox-series-x-s-storage-options")])}""")
 
 # 6. Cheats tracker
-guide("gta-6-cheats", "GTA 6 Cheat Codes: Confirmed List (and the Fake Ones)",
- "Are there GTA 6 cheat codes? None are confirmed yet. Here's what's real, which lists are fake, and our tracker that updates when codes are verified after launch.",
- "2026-11-18", f"""<h1>GTA 6 cheat codes: <span>what's real?</span></h1>
-<p class="meta">Updated November 18, 2026 · Vice Replay · We update this page when codes are verified</p>
-<p class="lede">Short answer: <b>no GTA 6 cheat codes are confirmed yet.</b> Rockstar hasn't announced any, and it hasn't ruled them out. The game comes out November 19, 2026, and we'll add real codes here once they're tested.</p>
-<div class="box"><h3>Confirmed GTA 6 cheats</h3><p style="margin:0"><b>None yet.</b> Check back after launch: this list gets updated as soon as codes are verified in the released game.</p></div>
-<h2>Those cheat lists online are fake</h2>
-<p>Most "GTA 6 cheat code" lists going around before launch are GTA 5 codes with a new name. Nobody outside Rockstar has played the final game, so nobody can have tested a code yet.</p>
-<h2>Will GTA 6 have cheats?</h2>
-<p>Probably. Every main GTA since GTA 3 has had cheats, typed as button combos or, in GTA 4 and GTA 5, phone numbers. But that's history, not a confirmation.</p>
-<h2>What not to expect</h2>
-<ul class="list"><li><b>A money cheat:</b> GTA 5 never had one, so don't count on it.</li><li><b>Cheats online:</b> GTA 5's cheats only work in story mode, and GTA Online for GTA 6 isn't expected until 2027.</li><li><b>Trophies and achievements:</b> in GTA 5, using a cheat disabled them for a while. Rockstar may do the same.</li></ul>
+guide("gta-6-cheats", "GTA 6 Cheat Codes: They're Real, But There's a Catch",
+ "GTA 6 has cheats, but they only unlock after you finish the main story, and using one turns off saving and trophies. How cheats work in GTA 6, and which code lists to trust.",
+ "2026-11-19", f"""<h1>GTA 6 cheat codes: <span>real, with a catch</span></h1>
+<p class="meta">Updated November 19, 2026, 3 AM ET · Vice Replay · We add codes once two sources agree on them</p>
+<p class="lede">Short answer: <b>yes, GTA 6 has cheats</b>, according to launch guides from Polygon, GamesRadar and PC Gamer. The catch: <b>they only unlock after you finish the main story</b>, and using one turns off saving and trophies for that session.</p>
+<div class="box"><h3>How GTA 6 cheats work</h3><ul class="list" style="margin:0"><li><b>Finish the story first:</b> cheats unlock after the main story is done (Eurogamer found the cheat menu appears after the credits). PC Gamer says the unlock only counts for that save file.</li><li><b>Earn each one:</b> many cheats also have their own unlock challenge, so knowing a code isn't enough.</li><li><b>No saves, no trophies:</b> while a cheat is on, saving is blocked and Trophies/Achievements are off for the rest of that session. Load a clean save to get them back.</li><li><b>Entering a code:</b> according to Screen Rant, open the phone (D-pad up), then hold L1 + R1 on PS5 (LB + RB on Xbox) and enter the code.</li></ul></div>
+<h2>Which cheat lists to trust</h2>
+<p>Launch-day guides list around 60 cheats, but they don't all agree on every code, and some codes are still marked "to be confirmed". Before launch, most "GTA 6 cheat" lists were GTA 5 codes with a new name. We only add a code here once two reliable guides agree on it.</p>
+<h2>Is there a money cheat?</h2>
+<p>None is confirmed, and GTA 5 never had one. Any site offering a GTA 6 "money generator" is a scam.</p>
+<h2>Trophy hunting? Do this</h2>
+<ul class="list"><li>Make a manual save before trying cheats.</li><li>Play with cheats, then quit and reload your clean save to keep earning trophies.</li><li>Cheats are a story-mode feature: GTA 5's never worked online, and GTA Online for GTA 6 isn't expected until 2027.</li></ul>
 <h2>Scam alert</h2>
 <p>Any site or video asking for your PlayStation or Xbox login, or offering a "money generator" download, is a scam. Never type your password anywhere except the official store or console.</p>
 {gearbox(GAME + STORAGE, "Getting GTA 6 or making room for the 212 GB install? These searches show current options and prices:")}
-{watchmore("pcoMWOraJA4")}
-{sources([("GTA BOOM: current GTA 6 cheat status","https://gtaboom.com/gta-6-cheats-9nd6"),("GTA BOSS: GTA 6 cheats","https://www.gtaboss.gg/gta-6/guides/gta-6-cheats"),("GTA Wiki: Cheats in GTA VI","https://gta.fandom.com/wiki/Cheats_in_GTA_VI"),("GTAVI.tips: confirmed vs fake","https://www.gtavi.tips/gta-6-cheats")])}""")
+{watchmore("vlPV5Yre8T8")}
+{sources([("GamesRadar: all GTA 6 cheats and how to unlock them","https://www.gamesradar.com/games/grand-theft-auto/gta-6-cheats/"),("PC Gamer: all GTA 6 cheats and how to unlock them","https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"),("Insider Gaming: all GTA 6 cheats","https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/"),("VGTimes on Eurogamer's testing: cheats locked behind the story","https://vgtimes.com/gaming-news/175043-gta-6-locks-cheats-behind-the-main-story-and-disables-saving.html"),("Screen Rant: GTA 6 cheats for PS5 and Xbox","https://screenrant.com/gta-6-cheats-ps5-xbox/")])}""")
 
 # 7-10. News articles (Nov 17)
 guide("gta-6-pc-release-date", "GTA 6 on PC: Release Date and What's Actually Reported",
@@ -411,21 +412,20 @@ guide("gta-6-launch-live", "GTA 6 Launch: Live Updates, Times and Everything You
  modified="2026-11-18")
 
 # Spanish guides (es/guias/)
-guide("trucos-gta-6", "Trucos de GTA 6: lista confirmada (y los falsos)",
- "¿Hay trucos en GTA 6? Todavía ninguno está confirmado. Qué es real, qué listas son falsas y nuestra lista que se actualiza cuando haya trucos verificados.",
- "2026-11-18", f"""<h1>Trucos de GTA 6: <span>¿qué es real?</span></h1>
-<p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
-<p class="lede">Respuesta corta: <b>todavía no hay trucos confirmados para GTA 6.</b> Rockstar no ha anunciado ninguno, pero tampoco los ha descartado. El juego sale el 19 de noviembre de 2026.</p>
-<div class="box"><h3>Trucos confirmados</h3><p style="margin:0"><b>Ninguno todavía.</b> Actualizaremos esta lista en cuanto haya trucos probados en el juego.</p></div>
-<h2>Las listas que circulan son falsas</h2>
-<p>La mayoría de las listas de "trucos de GTA 6" son trucos de GTA 5 con otro nombre. Nadie fuera de Rockstar ha jugado la versión final, así que nadie ha podido probarlos.</p>
-<h2>¿Tendrá trucos GTA 6?</h2>
-<p>Probablemente. Todos los GTA principales desde GTA 3 han tenido trucos. Pero eso es historia, no una confirmación. Y no esperes un truco de dinero: GTA 5 nunca tuvo uno.</p>
-<h2>Cuidado con las estafas</h2>
-<p>Cualquier sitio que te pida tu cuenta de PlayStation o Xbox, o que ofrezca un "generador de dinero", es una estafa.</p>
+guide("trucos-gta-6", "Trucos de GTA 6: existen, pero hay una trampa",
+ "GTA 6 tiene trucos, pero solo se desbloquean al terminar la historia principal, y usar uno desactiva el guardado y los trofeos. Cómo funcionan y qué listas creer.",
+ "2026-11-19", f"""<h1>Trucos de GTA 6: <span>existen, con trampa</span></h1>
+<p class="meta">Actualizado el 19 de noviembre de 2026 · Vice Replay</p>
+<p class="lede">Respuesta corta: <b>sí, GTA 6 tiene trucos</b>, según las guías de lanzamiento de Polygon, GamesRadar y PC Gamer. La trampa: <b>solo se desbloquean al terminar la historia principal</b>, y usar uno desactiva el guardado y los trofeos durante esa sesión.</p>
+<div class="box"><h3>Cómo funcionan</h3><ul class="list" style="margin:0"><li><b>Primero termina la historia:</b> los trucos se desbloquean al completar la historia principal (Eurogamer vio que el menú aparece después de los créditos), y solo en esa partida, según PC Gamer.</li><li><b>Gánate cada uno:</b> muchos trucos piden además su propio desafío.</li><li><b>Sin guardar ni trofeos:</b> con un truco activo no puedes guardar y los trofeos/logros se apagan el resto de esa sesión. Carga una partida limpia para recuperarlos.</li><li><b>Cómo se introducen:</b> según Screen Rant, abre el teléfono (cruceta arriba), mantén L1 + R1 en PS5 (LB + RB en Xbox) e introduce el código.</li></ul></div>
+<h2>¿Qué listas creer?</h2>
+<p>Las guías de lanzamiento hablan de unos 60 trucos, pero no coinciden en todos los códigos y algunos siguen "por confirmar". Solo añadiremos un código cuando dos guías fiables coincidan.</p>
+<h2>¿Truco de dinero?</h2>
+<p>No hay ninguno confirmado, y GTA 5 nunca tuvo uno. Cualquier sitio que te pida tu cuenta de PlayStation o Xbox, o que ofrezca un "generador de dinero", es una estafa.</p>
 {gearbox(GAME + STORAGE, "¿Vas a comprar GTA 6 o necesitas espacio? Enlaces (en inglés, Amazon EE. UU.):")}
-{sources([("GTA BOOM","https://gtaboom.com/gta-6-cheats-9nd6"),("GTA Wiki","https://gta.fandom.com/wiki/Cheats_in_GTA_VI")])}""",
- faq=[("¿Hay trucos en GTA 6?", "Todavía no hay trucos confirmados. Las listas que circulan antes del lanzamiento son en su mayoría trucos de GTA 5."),
+{sources([("GamesRadar","https://www.gamesradar.com/games/grand-theft-auto/gta-6-cheats/"),("PC Gamer","https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"),("Insider Gaming","https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/"),("VGTimes (pruebas de Eurogamer)","https://vgtimes.com/gaming-news/175043-gta-6-locks-cheats-behind-the-main-story-and-disables-saving.html")])}""",
+ faq=[("¿Hay trucos en GTA 6?", "Sí. Según Polygon, GamesRadar y PC Gamer, GTA 6 tiene trucos, pero solo se desbloquean al terminar la historia principal."),
+      ("¿Los trucos de GTA 6 desactivan los trofeos?", "Sí. Con un truco activo no puedes guardar y los trofeos/logros se apagan el resto de esa sesión. Carga una partida limpia para recuperarlos."),
       ("¿Hay truco de dinero en GTA 6?", "No hay ninguno confirmado, y GTA 5 nunca tuvo uno. Los 'generadores de dinero' son estafas.")], lang="es")
 
 guide("espacio-gta-6", "¿Sin espacio para GTA 6? Cómo liberar espacio en PS5 y Xbox (212 GB)",
@@ -487,7 +487,8 @@ guide("gta-6-lanzamiento-en-vivo", "Lanzamiento de GTA 6: actualizaciones en viv
 <li><b>19 nov, 1 AM:</b> Xbox Cloud Gaming</li></ul></div>
 <h2>Últimas noticias</h2>
 <div class="note"><b>17 nov</b><br>The Game Awards 2026: GTA 6 recibe 8 nominaciones, incluido Juego del Año. Manni L. Perez, la actriz de Lucía, está nominada a Mejor Actuación.</div>
-<div class="note"><b>17 nov</b><br>Trucos: ninguno confirmado. <a href="/es/guias/trucos-gta-6/">Nuestra lista</a>.</div>
+<div class="note"><b>19 nov, 3 AM</b><br>Los trucos existen, pero solo se desbloquean al terminar la historia, y desactivan el guardado y los trofeos durante la sesión. <a href="/es/guias/trucos-gta-6/">Cómo funcionan</a>.</div>
+<div class="note"><b>17 nov</b><br>Trucos: ninguno confirmado antes del lanzamiento. <a href="/es/guias/trucos-gta-6/">Nuestra lista</a>.</div>
 <h2>Antes de jugar</h2>
 <ul class="list"><li><a href="/es/guias/hora-de-lanzamiento-gta-6/">A qué hora se desbloquea</a></li><li><a href="/es/guias/espacio-gta-6/">¿Sin espacio? Primero lo gratis</a></li><li><a href="/es/guias/gta-6-pc/">GTA 6 en PC</a></li></ul>
 {gearbox(GAME + STORAGE, "Enlaces directos (Amazon EE. UU.):")}""",
@@ -533,7 +534,7 @@ page("links/", "Vice Replay Links", "Every Vice Replay link: YouTube, TikTok, GT
 <a class="item" href="{YT}?sub_confirmation=1" target="_blank" rel="noopener">YouTube<small>Daily GTA 6 news and Shorts</small><span aria-hidden="true">→</span></a>
 <a class="item" href="https://www.tiktok.com/@vicereplay00" target="_blank" rel="noopener">TikTok<small>@vicereplay00</small><span aria-hidden="true">→</span></a>
 <a class="item" href="https://www.instagram.com/vice.replaytv/" target="_blank" rel="noopener">Instagram<small>@vice.replaytv</small><span aria-hidden="true">→</span></a>
-<a class="item" href="/guides/gta-6-cheats/">GTA 6 cheat codes<small>Confirmed list (updated after launch)</small><span aria-hidden="true">→</span></a>
+<a class="item" href="/guides/gta-6-cheats/">GTA 6 cheat codes<small>They're real: how to unlock them</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/">GTA 6 guides<small>Unlock times, storage, the map</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/gear/">GTA 6 gear picks<small>Storage, controllers, capture (affiliate)</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/contact/">Work with us<small>contact@vicereplay.com</small><span aria-hidden="true">→</span></a>
