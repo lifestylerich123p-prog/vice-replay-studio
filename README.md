@@ -9,7 +9,9 @@ The video machine for **Vice Replay** (@ViceReplayTV-q8s), a GTA 6 fan channel, 
 | 5:13 AM | Daily run: learns from YouTube, pulls Drive gameplay, makes 1 video + Shorts (English + Spanish voice) + 3 thumbnails, writes the website guide, updates the review page | Phone notification |
 | Morning | [Review page](https://claude.ai/artifact/DWvVW2BQrHZP9Xfs5Ve17Q): watch, check titles and comment replies | Reply **"approve"** in that chat |
 | After approval | Uploads + schedules (main 3:30 PM, Shorts 6:00 / 8:30 PM weekdays), posts comment replies, posts pinned comments once live | Pin comments, "Related video" on Shorts, thumbnails B/C |
-| 12:23, 5:23, 9:23 PM (to Nov 30) | Breaking-news check; auto-posts only big, confirmed news | Nothing |
+| 8:23 AM-11:23 PM every 3 h (to Nov 30) | Breaking-news check; auto-posts only big, confirmed news | Nothing |
+| 1:13 PM, 9:13 PM | Auto-replies to new comments (skips trolls/spam) | Nothing |
+| 2:47 PM | Momentum check: a follow-up Short when one takes off | Approve it in the main chat |
 | Sundays | Main video = weekly recap; 11:37 AM upgrade scout + YouTube reconnect reminder | Reconnect YouTube |
 | Anytime | TikTok videos + captions go to the "📱 Vice Replay TikTok" chat | Post them by hand |
 

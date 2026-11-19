@@ -112,6 +112,10 @@ Also give the user 3 alternative titles (under 60 characters, the main keyword "
   time, and remind the owner to pin the comments (after they're posted), set "Related video" on the Shorts and add
   thumbnails B and C in Test & Compare.
   If the YT_* variables are missing, say so and list the manual upload steps instead.
+- Exception, comment replies: standing approval (content/owner.md, 2026-11-18) to reply to new comments twice a day via
+  `.claude/commands/auto-replies.md` (`python -m studio.replies list|post`), skipping spam, hate and trolls.
+- Momentum: `.claude/commands/momentum.md` runs every afternoon; when a Short takes off it prepares one follow-up with
+  something new (never a re-cut) and hands it to the main chat for the owner's approve.
 - Exception, breaking news: the owner gave standing approval (`content/owner.md`) to auto-publish breaking-news
   Shorts that pass every rule in `.claude/commands/breaking-news.md`. Only those; nothing else is auto-posted.
 - Campaigns need the owner's approval first: only clip campaigns whose file has `owner_approved: true`, which
