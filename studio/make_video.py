@@ -495,7 +495,7 @@ def main():
         pics = [str(base / th["image"])] if th.get("image") else []
         pics += [s["media"] for s in ep["segments"] if s.get("media") and Path(s["media"]).suffix.lower() in IMAGE_EXT]
         pics += [str(base / p) for p in th.get("images", [])]
-        pics = list(dict.fromkeys(pics))
+        pics = list(dict.fromkeys(str(Path(x).resolve()) for x in pics))  # same file, different spelling -> once
         backgrounds = (pics[:2] + [None]) if pics else [None]
         for label, bg in zip("abc", backgrounds):
             brand.thumbnail(th.get("line1", ep["title"]), th.get("line2", ""), th.get("tag", ""),

@@ -23,3 +23,9 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   47K views/h; "Deciding which game to delete", 141K/h). The New Zealand early-play trick is a proven hungry angle; we cover
   it with risks/PS5-vs-Xbox so it is not a copy of the unlock-time video.
 - 2026-11-17: Gameplay pull failed (proxy 403 on the Drive download host); today's run used official screenshots.
+- 2026-11-19: Launch-night breaking Shorts are our best ever per hour: cheats "real... but there's a catch" 125.6 views/h,
+  Metacritic 99 124.1/h, "7 MILLION watched" 115.2/h, "is OUT: do these 3 things" 98.2/h, NZ "(the catch)" 90.1/h.
+  All five lead with a hard number or a "catch"; keep that hook style. Shorts feed still brings ~92% of views (5,245 of ~5,576).
+- 2026-11-19: Market (last 48h): "ps5"/"pro" are among the top title words and the 30 FPS debate fills our own comments
+  (3 of the latest 8 mention 30fps). Players now want "what am I actually getting" performance/settings answers, plus
+  relatable POV launch moments and first-time gameplay (which we can't make until owner gameplay arrives).

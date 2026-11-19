@@ -1,0 +1,45 @@
+{
+  "title": "GTA 6 Already Made $1.65 Billion (Estimate)",
+  "slug": "gta6-17-million-sold",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "short_title": "GTA 6 already made $1.65 BILLION #GTA6 #Shorts",
+  "short_title_options": ["GTA 6 already made $1.65 BILLION #GTA6 #Shorts", "GTA 6 sold 17 MILLION copies already (estimate) #GTA6 #Shorts"],
+  "short_description": "GTA 6 has sold about 17 million digital copies, worth over $1.65 billion, according to Sensor Tower estimates reported by Reuters, Fox Business and Adweek. Around 3 in 4 were on PS5. These are third-party estimates: Rockstar and Take-Two haven't shared official numbers yet, but Take-Two's CEO said presales ran 'far in excess' of expectations (Variety). #ViceReplayBreaking",
+  "short_es": {
+    "title": "GTA 6 ya ganó 1.650 MILLONES de dólares #GTA6 #Shorts",
+    "description": "GTA 6 ha vendido unos 17 millones de copias digitales, por más de 1.650 millones de dólares, según estimaciones de Sensor Tower publicadas por Reuters, Fox Business y Adweek. Cerca de 3 de cada 4 en PS5. Son estimaciones: Rockstar y Take-Two aún no han dado cifras oficiales."
+  },
+  "short_playlist": "GTA 6 Streamer & Breaking News",
+  "pinned_comment": "Are you one of the 17 million? Reply DAY ONE or WAITING",
+  "tiktok_hashtags": ["#gta6", "#gtavi", "#rockstar", "#gaming", "#ps5"],
+  "sources": [
+    "Fox Business - Take-Two stock jumps as GTA VI arrives: https://www.foxbusiness.com/markets/take-two-stock-jumps-over-6-rockstars-long-awaited-gta-vi-arrives-after-13-year-wait",
+    "Adweek - 6 ways brands are capturing buzz around GTA 6's release: https://www.adweek.com/brand-marketing/6-ways-brands-are-capturing-buzz-around-gta-6s-release/",
+    "Time News - Sensor Tower estimates 17M sales: https://time.news/gta-vi-launches-globally-after-13-year-wait-sensor-tower-estimates-17m-sales/",
+    "Variety - GTA 6 presales far in excess of expectations, Take-Two CEO says: https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/",
+    "Reuters (via Hot 1009) - Sensor Tower estimate updated to about 17 million copies: https://hot1009.com/4493828/first-reviews-are-in-heres-what-critics-are-saying-about-gta-6/"
+  ],
+  "short": [
+    {"headline": "$1.65 BILLION", "headline_es": "1.650 MILLONES",
+     "text": "GTA 6 has already made over one point six billion dollars, and it only just came out.",
+     "text_es": "GTA 6 ya ganó más de mil seiscientos millones de dólares, y acaba de salir.",
+     "media": "../media/official/vice-city-21.jpg"},
+    {"headline": "17 MILLION COPIES", "headline_es": "17 MILLONES DE COPIAS",
+     "text": "Analytics firm Sensor Tower estimates about seventeen million copies sold, and that's digital only, no discs counted.",
+     "text_es": "La firma Sensor Tower estima unos diecisiete millones de copias vendidas, y solo digitales, sin contar las físicas.",
+     "media": "../media/trailer/launch-trailer-helicopter-city.mp4"},
+    {"headline": "3 IN 4 ON PS5", "headline_es": "3 DE CADA 4 EN PS5",
+     "text": "Around three out of four of those copies were on PS5, according to the same estimates.",
+     "text_es": "Cerca de tres de cada cuatro copias fueron en PS5, según las mismas estimaciones.",
+     "media": "../media/official/car-electric-fang-01.jpg"},
+    {"headline": "NOT OFFICIAL YET", "headline_es": "AÚN NO ES OFICIAL",
+     "text": "Rockstar hasn't shared official numbers yet, but Take-Two's boss said presales were far beyond expectations.",
+     "text_es": "Rockstar aún no da cifras oficiales, pero el jefe de Take-Two dijo que las preventas superaron por mucho lo esperado.",
+     "media": "../media/official/jason-and-lucia-05.jpg"},
+    {"headline": "ARE YOU ONE?", "headline_es": "¿ERES UNO?",
+     "text": "Are you one of the seventeen million? Tell me below, because",
+     "text_es": "¿Eres uno de los diecisiete millones? Dímelo abajo, porque",
+     "media": "../media/official/vice-city-05.jpg"}
+  ]
+}

@@ -19,3 +19,4 @@
 | 2026-11-18 | gta6-metacritic-99 | GTA 6 just got a 99 on Metacritic (breaking Short) | Breaking-news standing approval, score 9/10 (Forbes, GameSpot, Kotaku, GamesRadar); published now (S5L5Mah6LIU) |
 | 2026-11-19 | gta6-streaming-record | 7 MILLION people watched GTA 6 at once (Short) | Overnight monitor under owner's tonight approval; Streams Charts + Insider Gaming; published 1:3x AM (6bPAn80dKno) |
 | 2026-11-19 | gta6-cheats-catch | GTA 6 cheats are real... but there's a catch (Short) | Overnight monitor under owner's tonight approval, score 9/10 (Polygon, GamesRadar, PC Gamer, Eurogamer testing); published now (vlPV5Yre8T8); cheats guide EN+ES rewritten |
+| 2026-11-19 | gta6-17-million-sold | GTA 6 already made $1.65 BILLION (Short) | Launch-morning check under owner's tonight approval, score 9/10 (Sensor Tower estimate via Reuters, Fox Business, Adweek; labeled as estimate); published now (b4pWGuZNPJY) |

@@ -1,0 +1,298 @@
+{
+  "title": "GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings",
+  "slug": "gta6-launch-day-survival-guide",
+  "voice": "am_michael",
+  "rate": "+8%",
+  "description": "GTA 6 is out on PS5 and Xbox Series X|S. Here's your launch day survival guide: what to do if you can't connect, the PS5 system update, why every console runs at 30 FPS, what the PS5 Pro actually changes, and the first settings to change before you play. No story spoilers.",
+  "thumbnail": {
+    "line1": "IT'S OUT",
+    "line2": "DO THIS",
+    "tag": "NO SPOILERS",
+    "image": "../media/official/vice-city-09.jpg",
+    "images": [
+      "../media/official/car-grotti-cheetah-01.jpg"
+    ]
+  },
+  "tags": [
+    "GTA 6",
+    "GTA VI",
+    "GTA 6 launch day",
+    "GTA 6 survival guide",
+    "GTA 6 30 fps",
+    "GTA 6 PS5 Pro",
+    "GTA 6 best settings",
+    "GTA 6 PSN down",
+    "GTA 6 motion blur",
+    "GTA 6 tips",
+    "Vice City",
+    "Rockstar Games"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "ViceCity"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gta6tips",
+    "#ps5",
+    "#gaming"
+  ],
+  "affiliate": [
+    "storage",
+    "gear"
+  ],
+  "sources": [
+    "Axios - PlayStation outage hours before GTA 6 launch; Sony status page says resolved by 2:30 PM ET Nov 18: https://www.axios.com/2026/11/18/gta-6-playstation-psn-servers",
+    "Cybernews - PSN outage reports on GTA 6 launch day, cause not confirmed by Sony: https://cybernews.com/tech/playstation-outage-gta-6-release/",
+    "GGRecon - PS5 system update 14.23 pushed Nov 17, about 1.2 GB: https://www.ggrecon.com/articles/ps5-update-14-23-before-gta-6/",
+    "MP1st - PS5 update 26.07-14.23 mandatory for PSN/online features: https://mp1st.com/?p=318481",
+    "TechRadar - Rockstar confirms 30fps limit on consoles: https://techradar.com/gaming/analysts-say-getting-gta-6-to-run-at-60fps-is-extremely-unlikely-on-console-hardware-as-rockstar-confirms-30fps-limit",
+    "GTABoom - Digital Foundry: GTA 6 looks sharper and runs steadier on PS5 Pro: https://www.gtaboom.com/digital-foundry-finds-that-gta-6-indeed-runs-best-on-ps5-pro-b72f",
+    "Altchar - Digital Foundry: base PS5 dips as low as 23fps in heavy action: https://www.altchar.com/game-news/gta-vi-dips-as-low-as-23fps-on-base-ps5-in-heavy-action-digital-foundry-finds-aJybE7x7IsZa",
+    "Twisted Voxel - PS5 Pro vs PS5 analysis, 1440p internal, ray-traced shadows on Pro: https://twistedvoxel.com/gta-6-ps5-pro-vs-ps5-performance-analysis/",
+    "Archyde - Digital Foundry: PS5 Pro best, Series S struggles, all consoles locked at 30 FPS: https://www.archyde.com/digital-foundry-ps5-pro-best-for-gta-6-series-s-struggles-all-consoles-locked-at-30-fps/",
+    "Beebom - best PS5 settings for GTA 6 (HDR, display): https://beebom.com/gta-6-best-ps5-settings/",
+    "OutputLag - GTA 6 best settings and controls (motion blur, game mode): https://outputlag.com/guides/gta-6-best-settings-controls/"
+  ],
+  "outro_card": "Launch week coverage every day on Vice Replay",
+  "segments": [
+    {
+      "headline": "IT'S OUT",
+      "chapter": "The hook",
+      "text": "GTA 6 is finally out. Before you lose a whole night to Leonida, here's how to get in, what to expect from performance, and the settings to change first. No spoilers.",
+      "text_es": "GTA 6 por fin salió. Antes de perder toda la noche en Leonida, te explico cómo entrar, qué esperar del rendimiento y qué ajustes cambiar primero. Sin spoilers.",
+      "media": "../media/trailer/launch-trailer-marina-aerial.mp4"
+    },
+    {
+      "headline": "CAN'T CONNECT?",
+      "chapter": "Servers",
+      "text": "First, the servers. PlayStation Network had a big outage hours before launch, with thousands of reports on Downdetector. Sony's status page says it was fixed by the afternoon. If you can't sign in, check the official PSN or Xbox status page before you reset anything.",
+      "text_es": "Primero, los servidores. PlayStation Network tuvo una gran caída horas antes del lanzamiento, con miles de reportes en Downdetector. La página de estado de Sony dice que se arregló en la tarde. Si no puedes entrar, revisa la página oficial de estado de PSN o Xbox antes de reiniciar nada.",
+      "media": "../media/official/vice-city-09.jpg"
+    },
+    {
+      "headline": "UPDATE YOUR PS5",
+      "chapter": "System update",
+      "text": "On PS5, install the latest system update. Sony pushed version fourteen point two three right before launch, about one point two gigabytes, and outlets say it's required for online features. Go to Settings, System, System Software, and update.",
+      "text_es": "En PS5, instala la última actualización del sistema. Sony lanzó la versión catorce punto dos tres justo antes del lanzamiento, de unos uno punto dos gigas, y los medios dicen que es obligatoria para las funciones en línea. Ve a Ajustes, Sistema, Software del sistema, y actualiza.",
+      "media": "../media/official/vice-city-21.jpg"
+    },
+    {
+      "headline": "IT'S 30 FPS",
+      "chapter": "Frame rate",
+      "text": "Now the big question in our comments: frame rate. GTA 6 runs at thirty frames per second on every console. There's no performance mode to switch on. Rockstar confirmed the thirty F P S target, and Digital Foundry's testing backs it up.",
+      "text_es": "Ahora la gran pregunta en nuestros comentarios: los cuadros por segundo. GTA 6 corre a treinta cuadros por segundo en todas las consolas. No hay modo rendimiento para activar. Rockstar confirmó el objetivo de treinta F P S, y las pruebas de Digital Foundry lo respaldan.",
+      "media": "../media/trailer/launch-trailer-helicopter-city.mp4"
+    },
+    {
+      "headline": "WHAT PRO CHANGES",
+      "chapter": "PS5 Pro",
+      "text": "So what does the PS5 Pro get you? Not more frames. According to Digital Foundry, you get a sharper image with PSSR upscaling, ray traced shadows, and steadier performance. The base PS5 can dip into the low twenties in heavy action.",
+      "text_es": "Entonces, ¿qué te da la PS5 Pro? No más cuadros. Según Digital Foundry, tienes una imagen más nítida con el escalado PSSR, sombras con trazado de rayos y un rendimiento más estable. La PS5 normal puede bajar a poco más de veinte en la acción intensa.",
+      "media": "../media/official/car-grotti-cheetah-01.jpg"
+    },
+    {
+      "headline": "CHANGE THESE",
+      "chapter": "Settings",
+      "text": "Because it's thirty, these settings matter. Turn motion blur down to zero in the display menu. Calibrate HDR so the sky isn't blown out. And put your TV in game mode to cut input lag. Leave one twenty hertz on automatic.",
+      "text_es": "Como corre a treinta, estos ajustes importan. Baja el desenfoque de movimiento a cero en el menú de pantalla. Calibra el HDR para que el cielo no se vea quemado. Y pon tu tele en modo juego para reducir el retraso. Deja los ciento veinte hercios en automático.",
+      "media": "../media/official/leonida-keys-02.jpg"
+    },
+    {
+      "headline": "MY TAKE",
+      "chapter": "My take",
+      "text": "My take: thirty frames with this much detail is a trade, not a disaster. Fix the settings, take your time with the story, and stay off your feed if you hate spoilers. If you're short on space for the update, I put storage links in the description.",
+      "text_es": "Mi opinión: treinta cuadros con tanto detalle es un intercambio, no un desastre. Arregla los ajustes, tómate tu tiempo con la historia, y aléjate de las redes si odias los spoilers. Si te falta espacio para la actualización, dejé enlaces de almacenamiento en la descripción.",
+      "media": "../media/trailer/launch-trailer-swamp-sunset.mp4"
+    },
+    {
+      "headline": "YOUR CALL",
+      "chapter": "Comments",
+      "text": "So tell me in the comments: does thirty F P S bother you, yes or no? And what console are you playing on? Subscribe to Vice Replay for GTA 6 every day this launch week.",
+      "text_es": "Dímelo en los comentarios: ¿te molestan los treinta F P S, sí o no? ¿Y en qué consola juegas? Suscríbete a Vice Replay para GTA 6 todos los días en esta semana de lanzamiento.",
+      "media": "../media/official/jason-and-lucia-01.jpg"
+    }
+  ],
+  "short": [
+    {
+      "headline": "CAN'T GET IN?",
+      "headline_es": "¿NO PUEDES ENTRAR?",
+      "chapter": "Hook",
+      "text": "Can't get into GTA 6? Before you reset anything, check these two things.",
+      "text_es": "¿No puedes entrar a GTA 6? Antes de reiniciar nada, revisa estas dos cosas.",
+      "media": "../media/official/vice-city-09.jpg"
+    },
+    {
+      "headline": "CHECK PSN STATUS",
+      "headline_es": "REVISA PSN",
+      "chapter": "Servers",
+      "text": "One. PlayStation Network went down hours before launch. Check the official PSN or Xbox status page first. If it's down, it's not you.",
+      "text_es": "Uno. PlayStation Network se cayó horas antes del lanzamiento. Revisa primero la página oficial de estado de PSN o Xbox. Si está caída, no es tu culpa.",
+      "media": "../media/official/vice-city-21.jpg"
+    },
+    {
+      "headline": "UPDATE 14.23",
+      "headline_es": "ACTUALIZA 14.23",
+      "chapter": "Update",
+      "text": "Two. On PS5, install system update fourteen point two three. Outlets say it's required for online features. Settings, System, System Software.",
+      "text_es": "Dos. En PS5, instala la actualización del sistema catorce punto dos tres. Los medios dicen que es obligatoria para lo en línea. Ajustes, Sistema, Software del sistema.",
+      "media": "../media/official/leonida-keys-04.jpg"
+    },
+    {
+      "headline": "SAVE THIS",
+      "headline_es": "GUÁRDALO",
+      "chapter": "Loop",
+      "text": "Save this for the next time you're stuck at the title screen, because the next time you can't get into GTA 6...",
+      "text_es": "Guarda esto para la próxima vez que te quedes en la pantalla de inicio, porque la próxima vez que no puedas entrar a GTA 6...",
+      "media": "../media/trailer/launch-trailer-marina-aerial.mp4"
+    }
+  ],
+  "short_title": "Can't get into GTA 6? Check these 2 things #GTA6 #Shorts",
+  "short_title_options": [
+    "Can't get into GTA 6? Check these 2 things #GTA6 #Shorts",
+    "GTA 6 won't connect? Do this first #GTA6 #Shorts",
+    "PSN down on GTA 6 launch day? Here's the fix #GTA6 #Shorts"
+  ],
+  "short_description": "PSN went down before the GTA 6 launch. Check the status page and install PS5 update 14.23 before you reset anything. Full video on the channel ⬇️",
+  "short_es": {
+    "title": "¿No puedes entrar a GTA 6? Revisa esto #GTA6 #Shorts",
+    "description": "PSN se cayó antes del lanzamiento de GTA 6. Revisa la página de estado e instala la actualización 14.23 de PS5 antes de reiniciar nada. Video completo en el canal ⬇️"
+  },
+  "title_options": [
+    "GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings",
+    "GTA 6 Is Out: Do This Before You Play (No Spoilers)",
+    "GTA 6 Runs at 30 FPS: What PS5 Pro Changes + Best Settings"
+  ],
+  "pinned_comment": "Does 30 FPS bother you in GTA 6? Reply YES or NO, and tell us your console (PS5, PRO or XBOX)",
+  "comment_replies": [],
+  "es": {
+    "title": "GTA 6 ya salió: guía de supervivencia (servidores, 30 FPS y ajustes)",
+    "description": "GTA 6 ya está disponible en PS5 y Xbox Series X|S. Tu guía para el día del lanzamiento: qué hacer si no puedes conectarte, la actualización del sistema de PS5, por qué todas las consolas corren a 30 FPS, qué cambia en PS5 Pro y los primeros ajustes que debes cambiar. Sin spoilers."
+  },
+  "shorts": [
+    {
+      "id": "news",
+      "title": "GTA 6 on PS5 vs PS5 Pro: the verdict is in #GTA6 #Shorts",
+      "title_options": [
+        "GTA 6 on PS5 vs PS5 Pro: the verdict is in #GTA6 #Shorts",
+        "GTA 6 is 30 FPS on EVERY console #GTA6 #Shorts",
+        "Is PS5 Pro worth it for GTA 6? #GTA6 #Shorts"
+      ],
+      "description": "Digital Foundry tested GTA 6 on every console: 30 FPS everywhere, PS5 Pro is the best-looking and steadiest, and Xbox Series S struggles the most.",
+      "hashtags": [
+        "GTA6",
+        "PS5Pro",
+        "Shorts"
+      ],
+      "tiktok_hashtags": [
+        "#gta6",
+        "#ps5pro",
+        "#ps5",
+        "#xbox",
+        "#gaming"
+      ],
+      "pinned_comment": "Which console are you playing GTA 6 on? Reply PS5, PRO or XBOX",
+      "es": {
+        "title": "GTA 6 en PS5 vs PS5 Pro: ya hay veredicto #GTA6 #Shorts",
+        "description": "Digital Foundry probó GTA 6 en todas las consolas: 30 FPS en todas, la PS5 Pro se ve mejor y es la más estable, y Xbox Series S es la que más sufre."
+      },
+      "segments": [
+        {
+          "headline": "30 FPS EVERYWHERE",
+          "headline_es": "30 FPS EN TODAS",
+          "chapter": "Hook",
+          "text": "Thirty frames per second. On every console, even the PS5 Pro. Digital Foundry just tested GTA 6, and here's what you actually get.",
+          "text_es": "Treinta cuadros por segundo. En todas las consolas, incluso la PS5 Pro. Digital Foundry acaba de probar GTA 6, y esto es lo que obtienes de verdad.",
+          "media": "../media/official/vice-city-05.jpg"
+        },
+        {
+          "headline": "PRO = SHARPER",
+          "headline_es": "PRO = MÁS NÍTIDA",
+          "chapter": "PS5 Pro",
+          "text": "The PS5 Pro doesn't get more frames. It gets a sharper image that passes for 4K, ray traced shadows, and steadier performance. Digital Foundry calls it the best place to play.",
+          "text_es": "La PS5 Pro no tiene más cuadros. Tiene una imagen más nítida que pasa por 4K, sombras con trazado de rayos y un rendimiento más estable. Digital Foundry dice que es el mejor lugar para jugar.",
+          "media": "../media/official/car-electric-fang-01.jpg"
+        },
+        {
+          "headline": "BASE PS5 DIPS",
+          "headline_es": "LA PS5 BAJA",
+          "chapter": "Base PS5",
+          "text": "The base PS5 can drop into the low twenties in heavy action, and the Xbox Series S struggles the most. Their verdict: acceptable, but a little disappointing.",
+          "text_es": "La PS5 normal puede bajar a poco más de veinte en la acción intensa, y Xbox Series S es la que más sufre. Su veredicto: aceptable, pero un poco decepcionante.",
+          "media": "../media/official/vice-city-14.jpg"
+        },
+        {
+          "headline": "WHICH ONE?",
+          "headline_es": "¿CUÁL TIENES?",
+          "chapter": "Loop",
+          "text": "So which console are you on? Because no matter which one you picked, it's still...",
+          "text_es": "Entonces, ¿en qué consola juegas? Porque no importa cuál elegiste, igual son...",
+          "media": "../media/trailer/launch-trailer-helicopter-city.mp4"
+        }
+      ]
+    },
+    {
+      "id": "tips",
+      "title": "First 3 settings to change in GTA 6 #GTA6 #Shorts",
+      "title_options": [
+        "First 3 settings to change in GTA 6 #GTA6 #Shorts",
+        "Change these GTA 6 settings NOW #GTA6 #Shorts",
+        "GTA 6 looks blurry? Fix it in 30 seconds #GTA6 #Shorts"
+      ],
+      "description": "GTA 6 runs at 30 FPS on console, so these three settings make the biggest difference: motion blur, HDR and your TV's game mode. Settings guide: vicereplay.com/guides/gta-6-best-settings",
+      "hashtags": [
+        "GTA6",
+        "GTA6Tips",
+        "Shorts"
+      ],
+      "tiktok_hashtags": [
+        "#gta6",
+        "#gta6tips",
+        "#gamingtips",
+        "#ps5",
+        "#xbox"
+      ],
+      "pinned_comment": "Motion blur in GTA 6: ON or OFF? Reply ON or OFF",
+      "es": {
+        "title": "Los 3 primeros ajustes que debes cambiar en GTA 6 #GTA6 #Shorts",
+        "description": "GTA 6 corre a 30 FPS en consola, así que estos tres ajustes hacen la mayor diferencia: desenfoque de movimiento, HDR y el modo juego de tu tele."
+      },
+      "segments": [
+        {
+          "headline": "3 SETTINGS",
+          "headline_es": "3 AJUSTES",
+          "chapter": "Hook",
+          "text": "GTA 6 looking blurry? Change these three settings before you play another minute.",
+          "text_es": "¿GTA 6 se ve borroso? Cambia estos tres ajustes antes de jugar un minuto más.",
+          "media": "../media/official/leonida-keys-02.jpg"
+        },
+        {
+          "headline": "BLUR TO ZERO",
+          "headline_es": "DESENFOQUE A CERO",
+          "chapter": "Motion blur",
+          "text": "One. Motion blur. At thirty frames, it smears everything when you turn. Go to the display settings and drag motion blur down to zero.",
+          "text_es": "Uno. El desenfoque de movimiento. A treinta cuadros, todo se ve borroso al girar. Ve a los ajustes de pantalla y bájalo a cero.",
+          "media": "../media/official/car-vapid-stanier-01.jpg"
+        },
+        {
+          "headline": "CALIBRATE HDR",
+          "headline_es": "CALIBRA EL HDR",
+          "chapter": "HDR",
+          "text": "Two. Calibrate HDR in the game's menu, so the Vice City sun doesn't blow out the sky.",
+          "text_es": "Dos. Calibra el HDR en el menú del juego, para que el sol de Vice City no queme el cielo.",
+          "media": "../media/official/vice-city-01.jpg"
+        },
+        {
+          "headline": "TV GAME MODE",
+          "headline_es": "MODO JUEGO",
+          "chapter": "Loop",
+          "text": "Three. Turn on game mode on your TV to cut input lag. Now it looks sharper and feels faster. And if a friend says it's blurry, send them these three settings.",
+          "text_es": "Tres. Activa el modo juego en tu tele para reducir el retraso. Ahora se ve más nítido y se siente más rápido. Y si un amigo dice que se ve borroso, mándale estos tres ajustes.",
+          "media": "../media/trailer/launch-trailer-swamp-sunset.mp4"
+        }
+      ]
+    }
+  ]
+}
