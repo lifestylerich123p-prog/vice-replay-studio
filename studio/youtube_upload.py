@@ -97,6 +97,16 @@ def comment(tok, vid, text):
             {"snippet": {"videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}})
 
 
+def register_upload(slug, key, vid, title):
+    """Committed registry (content/learn/uploads.json): YouTube id -> episode slug + item, so scheduled runs
+    (title swaps, retention, dashboard) know which script made which video even without the output/ folder."""
+    reg_file = ROOT / "content" / "learn" / "uploads.json"
+    reg = json.loads(reg_file.read_text()) if reg_file.exists() else {}
+    reg[vid] = {"slug": slug, "item": key, "title": title, "uploaded": dt.datetime.now(dt.timezone.utc).isoformat()[:19]}
+    reg_file.parent.mkdir(parents=True, exist_ok=True)
+    reg_file.write_text(json.dumps(reg, indent=1, ensure_ascii=False))
+
+
 def reply(tok, parent_id, text):
     req("POST", "https://youtube.googleapis.com/youtube/v3/comments?part=snippet", tok,
         {"snippet": {"parentId": parent_id, "textOriginal": text}})
@@ -302,6 +312,7 @@ def main():
                      "scheduled_et": when if publish_at else "published now",
                      "privacy_returned": v.get("status", {}).get("privacyStatus")}
         done_file.write_text(json.dumps(done, indent=2))
+        register_upload(slug, key, vid, title)
         srt = spanish_srt(timings)
         steps = [("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb)),
                  ("spanish_subtitles", lambda: srt and upload_caption(tok, vid, srt)),

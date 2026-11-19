@@ -8,6 +8,8 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
      (a clip or screenshot path in `media/`; leave null for a generated neon background).
    - Segment 1 is the hook: state the payoff in the first 10 seconds. No "hey guys, welcome back".
    - The last segment asks a specific question for the comments, then asks people to subscribe.
+   - Title options for automatic swaps: `title_options` (3, main video), `short_title_options` (2-3, main Short) and
+     `title_options` (2-3) inside each `shorts` item. Option 1 is posted; option 2 is swapped in if it underperforms.
    - `short`: 3-5 segments, under 55 seconds of narration total: the Short cut from this video. Also set
      `short_title` (under 60 chars, ends with #GTA6 #Shorts) and `short_description` (1-2 sentences).
    - `shorts`: extra standalone Shorts, a list of `{"id", "title", "description", "hashtags", "segments"}`

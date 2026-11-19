@@ -41,3 +41,7 @@
   that is ready (including the launch-day morning episode when it arrives) and make + post new launch-night videos
   without asking, still following every channel rule (facts sourced, no spoilers, no licensed music, not affiliated).
   After 9:00 AM ET the normal approval rules apply again.
+
+- 2026-11-18: STANDING APPROVAL for title swaps ("All" to the upgrade list). Once per video, 24-96 h after posting, an
+  upload with views/hour below 40% of our recent median (and under 1,000 views) gets its title changed to title
+  option 2 (`python -m studio.title_swap`, run in the daily momentum check). Nothing else about the video changes.

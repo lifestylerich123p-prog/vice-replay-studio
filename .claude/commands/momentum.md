@@ -3,6 +3,8 @@ description: Afternoon momentum check - spot a Short that is taking off and prep
 ---
 Momentum run for Vice Replay. Nobody is watching live: don't ask questions. Read `content/INDEX.md` first.
 
+0. Run `python -m studio.title_swap` (owner's standing approval: swaps the title of uploads that underperform after
+   24-96 h to their option 2, once). Report any swap in the final message.
 1. Run `python -m studio.learn --mine` (our uploads with views per hour). From `content/learn/channel.json`, take our
    Shorts published in the last 48 hours and compute views per hour. A Short has MOMENTUM when its views/hour is at
    least 2x the median of our Shorts from the last 7 days AND it has 500+ views.

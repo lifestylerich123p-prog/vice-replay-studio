@@ -41,8 +41,8 @@ def episode_index():
             ep = json.loads(f.read_text())
         except ValueError:
             continue
-        up = ROOT / "output" / ep.get("slug", f.stem) / "uploaded.json"
-        done = json.loads(up.read_text()) if up.exists() else {}
+        reg = json.loads((ROOT / "content/learn/uploads.json").read_text()) if (ROOT / "content/learn/uploads.json").exists() else {}
+        done = {r["item"]: {"id": vid} for vid, r in reg.items() if r.get("slug") == ep.get("slug")}
         shorts = ([{"id": "", "segments": ep.get("short", []), "title": ep.get("short_title")}] if ep.get("short") else [])
         shorts += ep.get("shorts", [])
         for key, v in done.items():
