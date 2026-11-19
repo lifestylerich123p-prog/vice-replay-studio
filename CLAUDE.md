@@ -44,7 +44,8 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
   `python -m studio.ship episodes/<slug>.json --upload <all|main,short,news,tips,replies> [--title N]` (or
   `studio.youtube_upload` directly). Never upload campaign clips. Apply requested changes first. Scheduled videos are
   private until their time, so schedule the printed "COMMENTS TO POST" command with send_later for 10 minutes after
-  each time ("Post today's pinned comments now: <command>") and run it when it fires. Report links and times; remind
+  each time ("Post today's pinned comments now: <command>") and run it when it fires. Commit `content/learn/uploads.json` (the upload registry) after
+  uploading. Report links and times; remind
   the owner to pin comments, set "Related video" on Shorts, add thumbnails B/C (Test & Compare). Missing YT_* vars:
   say so and list manual steps.
 - **Standing approvals** (details and dates in `content/owner.md`): breaking-news Shorts that pass every rule in

@@ -4,13 +4,17 @@ description: The automated daily run - pick today's topic, make the video + Shor
 You are running the daily Vice Replay automation. Nobody is watching live, so don't ask questions:
 make sensible choices, finish the whole run, and explain your choices in the final report.
 
-0. **Gameplay**: if `content/owner.md` has a Google Drive folder link, run `python -m studio.gameplay` to pull
-   new recordings and cut highlights into `media/gameplay/` (used as backgrounds automatically; prefer
-   them over screenshots). If there's a great highlight (high score, something wild happens), make one
-   of today's Shorts a "wildest moment" Short around it: our voice explaining what happened, game sound
-   under it (set that segment's `media` to the clip). `media/gameplay/processed.json` gives each clip's
-   `category` from the Drive subfolder it was dropped in (Wildest moments, Chases & crashes, Funny & fails,
-   Glitches, Scenery & cars): use it for the Short's angle, e.g. a "funniest fail of the day" Short.
+0. **Gameplay + "Wildest Moment of the Day"**: run `python -m studio.gameplay` (pulls the owner's new recordings from
+   Drive and cuts highlights into `media/gameplay/`; `processed.json` lists each clip with its score and `category`
+   from the Drive subfolder: Wildest moments, Chases & crashes, Funny & fails, Glitches, Scenery & cars).
+   If it printed NEW highlight clips today, the `tips` Short becomes **"Wildest Moment of the Day"** (id `wild`, same
+   12:30 PM slot): pick the best new highlight (highest score; Funny & fails / Glitches / Wildest moments first), look
+   at 3 frames of it, and write 3-4 segments that tell what happens in the owner's own words-style ("watch what
+   happens when..."), with a hook in 2 seconds, a payoff, and the follow badge. Set `"keep_media": true` and that
+   clip as `media` on segments 2-4 (with `media_start` offsets so it plays through), but keep segment 1 calm (no
+   shooting/gore in the first 7 seconds: use a calm clip or official picture). Title like "Wildest GTA 6 moment
+   today: <what happened> #GTA6 #Shorts". Never a cutscene, ending or story moment; no in-game radio. Series name in
+   the description: "Wildest Moment of the Day #<n>" (count previous `wild` Shorts in content/learn/uploads.json + 1).
 0b. **Learn first**: run `python -m studio.learn` and `python -m studio.retention` (free; read `content/learn/retention.md`:
    which hooks/lengths/topics keep viewers, and write hooks like the best ones), (YouTube Data API; if it fails because there is no API key,
    say so in the report and continue). Then read `content/learn/channel.json` (our uploads with views/hour),
