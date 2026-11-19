@@ -21,7 +21,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    market's winners have in common (topics, title wording, length, Shorts vs long). Only claim what the
    numbers show. Use the lessons in every choice below: topic, hook, title options, thumbnail text, length.
    Learn from winning videos' patterns; never copy their titles, footage or thumbnails.
-1. **Pick the topic.** On Sundays the main video is the weekly recap, "GTA 6 This Week: <the week's biggest story>":
+1. **Pick the topic.** If today's plan row or a slow news day matches a ready-made file in `episodes/backlog/`
+   (see its README), use it: refresh the facts, then render. It saves research. On Sundays the main video is the weekly recap, "GTA 6 This Week: <the week's biggest story>":
    the 5-7 biggest confirmed stories of the past 7 days (use `content/log.md`, our Shorts and fresh searches), one segment
    each, with our take; the Short is the week's single biggest moment. (A plan row for that Sunday overrides this.)
    Otherwise: Today's date is in your context. Read `content/launch-plan.md` and use today's row.

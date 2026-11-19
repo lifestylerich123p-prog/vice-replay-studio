@@ -1,0 +1,37 @@
+{
+  "title": "GTA 6 vs GTA 5: The 6 Biggest Differences (No Spoilers)",
+  "slug": "gta6-vs-gta5",
+  "voice": "am_michael", "rate": "+8%",
+  "description": "GTA 6 vs GTA 5 with no story spoilers: a new state, two leads instead of three, a map about twice as big, a higher price, a 212 GB install, and no GTA Online or PC version at launch. Written guide: https://vicereplay.com/guides/gta-6-vs-gta-5/",
+  "thumbnail": {"line1": "GTA 6", "line2": "VS GTA 5", "tag": "6 BIG CHANGES", "image": "../media/official/vice-city-09.jpg"},
+  "tags": ["GTA 6", "GTA 6 vs GTA 5", "GTA 6 differences", "GTA 6 map size", "GTA 6 characters", "GTA 6 price", "Leonida", "Vice City", "GTA 5", "GTA 6 no spoilers"],
+  "hashtags": ["GTA6", "GTA5", "ViceCity"],
+  "affiliate": ["game", "storage"],
+  "sources": [
+    "Rockstar Games - GTA VI: https://www.rockstargames.com/VI",
+    "TweakTown - map roughly twice GTA 5: https://www.tweaktown.com/news/114382/gta-6s-map-is-roughly-twice-gta-5s-and-almost-as-big-as-gta-4-gta-5-and-rdr2-combined/index.html",
+    "Forbes - price, install size: https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/"
+  ],
+  "outro_card": "GTA 6 coverage every day on Vice Replay",
+  "pinned_comment": "Which change is the biggest upgrade? Map, two leads, or the setting?",
+  "title_options": ["GTA 6 vs GTA 5: The 6 Biggest Differences (No Spoilers)", "GTA 6 vs GTA 5: What Actually Changed", "GTA 6 vs GTA 5 in 2 Minutes"],
+  "es": {"title": "GTA 6 vs GTA 5: las 6 diferencias más grandes (sin spoilers)", "description": "GTA 6 contra GTA 5 sin spoilers: un nuevo estado, dos protagonistas en vez de tres, un mapa casi el doble de grande, un precio más alto, 212 GB, y sin GTA Online ni PC en el lanzamiento."},
+  "segments": [
+    {"headline": "13 YEARS LATER", "chapter": "Intro", "text": "Thirteen years separate GTA 5 and GTA 6. Here are the six biggest differences, with no story spoilers.", "text_es": "Trece años separan GTA 5 y GTA 6. Estas son las seis diferencias más grandes, sin spoilers de la historia.", "media": "../media/trailer/launch-trailer-helicopter-city.mp4"},
+    {"headline": "1. LEONIDA", "chapter": "Setting", "text": "One, the setting. GTA 5 was San Andreas and Los Santos. GTA 6 is Leonida, Rockstar's version of Florida, with a modern Vice City at its heart.", "text_es": "Uno, el lugar. GTA 5 era San Andreas y Los Santos. GTA 6 es Leonida, la versión de Florida de Rockstar, con una Vice City moderna en el centro.", "media": "../media/official/vice-city-10.jpg"},
+    {"headline": "2. TWO LEADS", "chapter": "Characters", "text": "Two, the characters. GTA 5 switched between Michael, Franklin and Trevor. GTA 6 has two leads: Jason Duval and Lucia Caminos.", "text_es": "Dos, los personajes. En GTA 5 cambiabas entre Michael, Franklin y Trevor. GTA 6 tiene dos protagonistas: Jason Duval y Lucia Caminos.", "media": "../media/official/jason-and-lucia-11.jpg"},
+    {"headline": "3. TWICE THE MAP", "chapter": "Map", "text": "Three, the map. Rockstar has said Leonida is about twice the size of GTA 5's map, and Vice City alone is reportedly about twice Los Santos.", "text_es": "Tres, el mapa. Rockstar ha dicho que Leonida es casi el doble del mapa de GTA 5, y que Vice City sola sería casi el doble de Los Santos.", "media": "../media/trailer/launch-trailer-marina-aerial.mp4"},
+    {"headline": "4. PRICE + SIZE", "chapter": "Price and size", "text": "Four, price and size. GTA 5 launched at fifty nine ninety nine. GTA 6 is seventy nine ninety nine, and the install is up to two hundred twelve gigabytes.", "text_es": "Cuatro, precio y tamaño. GTA 5 salió a cincuenta y nueve noventa y nueve. GTA 6 cuesta setenta y nueve noventa y nueve, y pesa hasta doscientos doce gigas.", "media": "../media/official/vice-city-27.jpg"},
+    {"headline": "5. NO ONLINE YET", "chapter": "Online and PC", "text": "Five, online and PC. GTA Online arrived two weeks after GTA 5. GTA 6's online mode is expected in 2027, and there's no PC version at launch either.", "text_es": "Cinco, online y PC. GTA Online llegó dos semanas después de GTA 5. El modo online de GTA 6 se espera para 2027, y tampoco hay versión de PC en el lanzamiento.", "media": "../media/trailer/launch-trailer-heist-explosion.mp4"},
+    {"headline": "6. CURRENT-GEN ONLY", "chapter": "Platforms", "text": "Six, platforms. GTA 6 is only on PS5 and Xbox Series X and S, no PS4 or Xbox One. So which change is the biggest upgrade for you? Tell me below, and subscribe for GTA 6 every day.", "text_es": "Seis, plataformas. GTA 6 solo está en PS5 y Xbox Series X y S, nada de PS4 ni Xbox One. ¿Cuál es el cambio más grande para ti? Dímelo abajo, y suscríbete para GTA 6 todos los días.", "media": "../media/trailer/launch-trailer-beach-plane.mp4"}
+  ],
+  "short_title": "GTA 6 vs GTA 5 in 30 seconds #GTA6 #Shorts",
+  "short_description": "GTA 6 vs GTA 5: Leonida, two leads, a map about twice as big, and no online at launch. Full video on the channel ⬇️",
+  "short_es": {"title": "GTA 6 vs GTA 5 en 30 segundos #GTA6 #Shorts", "description": "GTA 6 contra GTA 5: Leonida, dos protagonistas, un mapa casi el doble, y sin online en el lanzamiento. Video completo en el canal ⬇️"},
+  "short": [
+    {"headline": "GTA 6 VS GTA 5", "headline_es": "GTA 6 VS GTA 5", "text": "GTA 6 versus GTA 5, in thirty seconds.", "text_es": "GTA 6 contra GTA 5, en treinta segundos.", "media": "../media/trailer/launch-trailer-helicopter-city.mp4"},
+    {"headline": "TWICE THE MAP", "headline_es": "EL DOBLE DE MAPA", "text": "Leonida instead of Los Santos, and Rockstar says the map is about twice as big.", "text_es": "Leonida en vez de Los Santos, y Rockstar dice que el mapa es casi el doble.", "media": "../media/trailer/launch-trailer-marina-aerial.mp4"},
+    {"headline": "TWO LEADS", "headline_es": "DOS PROTAGONISTAS", "text": "Two leads instead of three: Jason and Lucia.", "text_es": "Dos protagonistas en vez de tres: Jason y Lucia.", "media": "../media/official/jason-and-lucia-11.jpg"},
+    {"headline": "NO ONLINE YET", "headline_es": "SIN ONLINE AÚN", "text": "And no online mode until 2027. That's GTA 6 versus GTA 5, and", "text_es": "Y sin modo online hasta 2027. Eso es GTA 6 contra GTA 5, y", "media": "../media/trailer/launch-trailer-heist-explosion.mp4"}
+  ]
+}
