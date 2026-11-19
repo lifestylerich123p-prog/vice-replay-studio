@@ -528,15 +528,17 @@ page("guides/", "GTA 6 Guides · Vice Replay", "GTA 6 guides from Vice Replay: u
 
 # links page
 latest = GUIDES[0]
-page("links/", "Vice Replay Links", "Every Vice Replay link: YouTube, TikTok, GTA 6 guides and gear.", f"""<h1>Vice Replay <span>links</span></h1>
+page("links/", "Vice Replay Links", "Every Vice Replay link: GTA 6 Black Friday deals, storage fixes, gear, YouTube, TikTok and Instagram.", f"""<h1>Vice Replay <span>links</span></h1>
 <p class="lede">GTA's wildest moments. On replay.</p>
 <div class="btns">
+<a class="item" href="/guides/gta-6-black-friday/">🔥 GTA 6 Black Friday deals<small>What's worth buying for GTA 6 this week</small><span aria-hidden="true">→</span></a>
+<a class="item" href="/guides/gta-6-storage/">💾 GTA 6 says "not enough space"?<small>Free fixes + the PS5 SSD that fits (212 GB)</small><span aria-hidden="true">→</span></a>
+<a class="item" href="/gear/">🎮 GTA 6 gear picks<small>Controllers, headsets, storage (affiliate)</small><span aria-hidden="true">→</span></a>
 <a class="item" href="{YT}?sub_confirmation=1" target="_blank" rel="noopener">YouTube<small>Daily GTA 6 news and Shorts</small><span aria-hidden="true">→</span></a>
 <a class="item" href="https://www.tiktok.com/@vicereplay00" target="_blank" rel="noopener">TikTok<small>@vicereplay00</small><span aria-hidden="true">→</span></a>
 <a class="item" href="https://www.instagram.com/vice.replaytv/" target="_blank" rel="noopener">Instagram<small>@vice.replaytv</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/gta-6-cheats/">GTA 6 cheat codes<small>They're real: how to unlock them</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/">GTA 6 guides<small>Unlock times, storage, the map</small><span aria-hidden="true">→</span></a>
-<a class="item" href="/gear/">GTA 6 gear picks<small>Storage, controllers, capture (affiliate)</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/contact/">Work with us<small>contact@vicereplay.com</small><span aria-hidden="true">→</span></a>
 </div>""")
 

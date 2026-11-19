@@ -43,6 +43,14 @@
   "posted_at": "2026-11-19 14:00"
  },
  {
+  "at": "2026-11-19 14:31",
+  "video": "output/clips/lacy-gta6/lacy-car-key.mp4",
+  "campaign": "LACY (Content Rewards)",
+  "caption": "Lacy can't steal cars in GTA 6 😭🔑\n\nGTA 6 won't let LACY just steal a car... he has to clone the key? Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy",
+  "posted": "https://www.instagram.com/reel/Df71grkjCg_/",
+  "posted_at": "2026-11-19 14:31"
+ },
+ {
   "at": "2026-11-19 15:30",
   "episode": "episodes/gta6-metacritic-99.json"
  },
@@ -88,11 +96,7 @@
   "note": "YouTube: no claim (owner checked); low reach likely duplicate-moment; pair with next Lacy clip"
  },
  {
-  "at": "2026-11-19 14:31",
-  "video": "output/clips/lacy-gta6/lacy-car-key.mp4",
-  "campaign": "LACY (Content Rewards)",
-  "caption": "Lacy can't steal cars in GTA 6 😭🔑\n\nGTA 6 won't let LACY just steal a car... he has to clone the key? Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy",
-  "posted": "https://www.instagram.com/reel/Df71grkjCg_/",
-  "posted_at": "2026-11-19 14:31"
+  "at": "2026-11-20 14:00",
+  "carousel": "content/carousels/gta6-not-enough-space.json"
  }
 ]
