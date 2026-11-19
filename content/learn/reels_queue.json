@@ -85,6 +85,10 @@
   "carousel": "content/carousels/gta6-not-enough-space.json"
  },
  {
+  "at": "2026-11-20 19:00",
+  "carousel": "content/carousels/gta6-cheat-codes.json"
+ },
+ {
   "at": "2026-12-31 23:59",
   "video": "output/clips/lacy-gta6/lacy-drive-thru.mp4",
   "campaign": "LACY (Content Rewards)",

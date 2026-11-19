@@ -3,7 +3,8 @@
     python -m studio.ig_cards content/carousels/<slug>.json      # -> output/carousels/<slug>/01.jpg ...
 
 Spec (JSON): {"slug", "caption", "first_comment", "cover": {"title", "subtitle", "bg"},
-              "tips": [{"title", "text", "bg"}...], "cta": {"title", "text", "bg"}}
+              "tips": [{"title", "text", "bg", "code"?}...], "cta": {"title", "text", "bg"}}
+code (optional) = a button sequence like "↑ → ↓ ←", drawn big in even cells under the title.
 bg = a file name in media/official/ (only official screenshots; keep the excluded shots in owner.md out).
 Only facts we already checked (episodes / site guides); label reports as reports.
 """
@@ -11,12 +12,13 @@ import json
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from . import brand
 
 ROOT = Path(__file__).resolve().parent.parent
 W, H = 1080, 1350
+ARROW_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"  # even ←↑→↓ for "code" rows
 
 
 def background(name):
@@ -80,6 +82,24 @@ def body(d, text, y, size=46, color=brand.WHITE):
     return y
 
 
+def code_row(d, code, y, max_w=W - 120):
+    """Button sequence (e.g. "↑ → ↓ ←") drawn arrow by arrow in even cells: the brand fonts draw arrows in uneven sizes."""
+    keys = code.split()
+    size = 96
+    while True:
+        f = ImageFont.truetype(ARROW_FONT, size)
+        cell = max(f.getlength(c) for c in keys) + size * 0.18
+        if cell * len(keys) + 60 <= max_w or size <= 40:
+            break
+        size -= 4
+    h = size + 50
+    d.rounded_rectangle([60, y, 60 + cell * len(keys) + 60, y + h], 28, fill=(13, 7, 23, 235), outline=brand.CYAN, width=4)
+    for i, c in enumerate(keys):
+        x = 90 + cell * i + (cell - f.getlength(c)) / 2
+        d.text((x, y + 25 - size * 0.12), c, font=f, fill=brand.CYAN)
+    return y + h
+
+
 def build(spec_path):
     spec = json.loads(Path(spec_path).read_text())
     out = ROOT / "output" / "carousels" / spec["slug"]
@@ -99,10 +119,13 @@ def build(spec_path):
             d.text((90, H - 206), t, font=f, fill=brand.NIGHT)
         elif kind == "tip":
             n = str(k - 1)
+            top = 400 if p.get("code") else 520  # cards with a code start higher to fit it
             f = brand.font(brand.HEADLINE_FONT, 150)
-            d.ellipse([60, 520, 260, 720], fill=brand.PINK)
-            d.text((160 - f.getlength(n) / 2, 527), n, font=f, fill=brand.WHITE)
-            y = boxed_title(d, p["title"], 770, 96, brand.NIGHT)
+            d.ellipse([60, top, 260, top + 200], fill=brand.PINK)
+            d.text((160 - f.getlength(n) / 2, top + 7), n, font=f, fill=brand.WHITE)
+            y = boxed_title(d, p["title"], top + 250, 96, brand.NIGHT)
+            if p.get("code"):
+                y = code_row(d, p["code"], y + 30)
             body(d, p["text"], y + 26)
             footer(d)
         else:
