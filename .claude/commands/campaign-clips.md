@@ -22,6 +22,9 @@ default `local`.
    a title + description (name + required hashtag + "Watch <streamer> live on Twitch"), and queue it for Instagram
    (two campaign clips per slot, `.claude/commands/instagram.md`). YouTube downloads of long VODs time out here:
    use Twitch clips instead. Check `get_credit_balance` before/after a batch and tell the owner the credits used.
+   What gets views (307 Lacy Shorts, Nov 19): 8-16 s beats 20-30 s by ~7x views/hour; simple title with the streamer
+   first + one emoji ("Lacy Arrested on Day 1 in GTA 6!! 💀"); "firsts" and funny discoveries; fresh moments.
+   Source tip: clippers' descriptions sometimes include the original clips.twitch.tv link (YouTube API, free).
 5. Owner posts on YouTube and sends the link: log it in tracker.md, schedule the 20-minute submit reminder.
    At ~2,000 views ask for the clip's country-breakdown screenshot (campaign audience rule).
 
