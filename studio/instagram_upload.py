@@ -2,6 +2,8 @@
 
     python -m studio.instagram_upload output/<slug>/<file>.mp4 --caption "..."        # post now
     python -m studio.instagram_upload --check                                          # test the connection
+    python -m studio.instagram_upload --episode episodes/<slug>.json [--item news]     # post an episode's Short
+    python -m studio.instagram_upload --queue        # post the next due Reel of content/learn/reels_queue.json
 
 Setup (once, owner): see content/instagram-setup.md. Needs:
 - env var IG_USER_ID (the Instagram account's numeric id; not secret),
@@ -51,6 +53,7 @@ def host_publicly(video):
     dest.parent.mkdir(exist_ok=True)
     shutil.copy(video, dest)
     git = ["git", "-C", str(SITE), "-c", "user.name=Vice Replay", "-c", "user.email=noreply@anthropic.com"]
+    subprocess.run(["git", "-C", str(SITE), "pull", "-q", "--rebase", "origin", "main"])
     subprocess.run(git + ["add", str(dest)], check=True)
     subprocess.run(git + ["commit", "-qm", "Temporary Reel upload"], check=True)
     subprocess.run(["git", "-C", str(SITE), "push", "-q", "origin", "HEAD"], check=True)
@@ -78,6 +81,9 @@ def main():
     ap.add_argument("video", nargs="?")
     ap.add_argument("--caption", default="")
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--episode", help="post this episode's Short (with --item news|tips for the extra Shorts)")
+    ap.add_argument("--item", default="short")
+    ap.add_argument("--queue", action="store_true", help="post the next due Reel from content/learn/reels_queue.json")
     a = ap.parse_args()
     uid = os.environ.get("IG_USER_ID")
     if a.check:
@@ -94,11 +100,19 @@ def main():
         return
     if not uid:
         sys.exit("IG_USER_ID is not set: Instagram isn't connected yet (content/instagram-setup.md).")
+    if a.queue:
+        return run_queue(uid)
+    if a.episode:
+        a.video, a.caption = episode_reel(a.episode, a.item)
     if not a.video:
         sys.exit("Give the video file.")
-    url, dest = host_publicly(a.video)
+    print(f"Posted Reel: {post_reel(uid, a.video, a.caption)}")
+
+
+def post_reel(uid, video, caption):
+    url, dest = host_publicly(video)
     try:
-        c = call("POST", f"{uid}/media", {"media_type": "REELS", "video_url": url, "caption": a.caption[:2200],
+        c = call("POST", f"{uid}/media", {"media_type": "REELS", "video_url": url, "caption": caption[:2200],
                                           "share_to_feed": "true"})
         cid = c["id"]
         for _ in range(60):
@@ -110,9 +124,56 @@ def main():
             time.sleep(10)
         pub = call("POST", f"{uid}/media_publish", {"creation_id": cid})
         info = call("GET", pub["id"], {"fields": "permalink"})
-        print(f"Posted Reel: {info.get('permalink', pub['id'])}")
+        return info.get("permalink", pub["id"])
     finally:
         unhost(dest)
+
+
+def episode_reel(path, item="short"):
+    """The English Short of an episode and an Instagram caption built from its title, description and hashtags."""
+    ep = json.loads(Path(path).read_text())
+    slug = ep["slug"]
+    if item in (None, "", "short"):
+        name, title, desc = f"{slug}-short", ep.get("short_title", ep["title"]), ep.get("short_description", "")
+    else:
+        sh = next(x for x in ep.get("shorts", []) if x.get("id") == item)
+        name, title, desc = f"{slug}-short-{item}", sh.get("title", ep["title"]), sh.get("description", "")
+    title = title.replace("#Shorts", "").strip()
+    tags = " ".join(dict.fromkeys(ep.get("tiktok_hashtags", ["#gta6", "#gtavi", "#gaming"]) + ["#gta6news"]))
+    caption = f"{title}\n\n{desc}\n\nFollow @vice.replaytv for GTA 6 every day.\n{tags}"
+    return str(ROOT / "output" / slug / f"{name}.mp4"), caption
+
+
+QUEUE = ROOT / "content" / "learn" / "reels_queue.json"
+
+
+def run_queue(uid):
+    """Post the first due, unposted item of content/learn/reels_queue.json (one per run keeps Reels spaced out).
+    Items: {"at": "2026-11-19 11:30" (ET), "video": path | "episode": path + "item", "caption": ..., "campaign": ...}."""
+    import datetime as dt
+    from zoneinfo import ZoneInfo
+    q = json.loads(QUEUE.read_text()) if QUEUE.exists() else []
+    now = dt.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M")
+    for it in q:
+        if it.get("posted") or it["at"] > now:
+            continue
+        video, caption = (episode_reel(it["episode"], it.get("item")) if it.get("episode")
+                          else (str(ROOT / it["video"]), it["caption"]))
+        if not Path(video).exists():
+            it["posted"] = "skipped: file missing"
+            continue
+        it["posted"] = post_reel(uid, video, caption)
+        it["posted_at"] = now
+        QUEUE.write_text(json.dumps(q, indent=1, ensure_ascii=False))
+        print(f"Posted Reel ({it.get('campaign') or 'Vice Replay'}): {it['posted']}")
+        if it.get("campaign"):
+            print(f"CAMPAIGN: submit this Reel on the {it['campaign']} page within 30 minutes.")
+        break
+    else:
+        print("No Reel due right now.")
+    left = [i for i in q if not i.get("posted")]
+    print(f"{len(left)} Reel(s) still queued" + (f"; next at {min(i['at'] for i in left)} ET" if left else ""))
+    QUEUE.write_text(json.dumps(q, indent=1, ensure_ascii=False))
 
 
 if __name__ == "__main__":

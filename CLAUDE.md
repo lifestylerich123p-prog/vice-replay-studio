@@ -54,6 +54,10 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
 - **Momentum** (`momentum.md`, daily): one follow-up Short with something new when a Short takes off; owner approves
   in the main chat. **Website**: daily guide (+ Spanish) via `site/` + `tools/site_guides.py`, published from the main
   chat (`/publish-site`); scheduled runs can't push, they hand files over with fire_trigger.
+- **Instagram Reels** (owner approved Nov 19): after uploading Shorts, add each English Short to
+  `content/learn/reels_queue.json` for 5 minutes after its YouTube time and send_later a wake-up that runs
+  `IG_USER_ID=... python -m studio.instagram_upload --queue` (one Reel per run, ~1-1.5 h apart). Campaign clips too
+  (the owner submits each Reel within 30 minutes).
 - **TikTok**: the owner posts by hand; Shorts go to the "📱 Vice Replay TikTok" chat (see owner.md;
   `studio.ship --tiktok` pushes them to the `tiktok-files` branch).
 - **Campaigns** (Whop/Content Rewards): only campaigns with `owner_approved: true` (set only when the owner approves
