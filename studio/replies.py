@@ -4,7 +4,8 @@
     python -m studio.replies post output/replies.json   # post the "reply" filled in for each item (skips empty)
 
 `list` writes [{"id", "video", "video_title", "author", "comment", "reply": ""}] for top-level comments from other
-people that have no reply from our channel yet. Fill in "reply" (leave it empty to skip spam, hate or trolls), then
+people that have no reply from our channel yet. Fill in "reply" (or set "skip": true for spam, hate or trolls so they never come back; an empty reply
+without skip just waits for a later run), then
 `post`. Posted ids are remembered in content/learn/replied.json so nothing is answered twice.
 """
 import json
@@ -57,7 +58,12 @@ def main():
     items = json.loads(Path(sys.argv[2] if len(sys.argv) > 2 else path).read_text())
     done = set(json.loads(DONE.read_text())) if DONE.exists() else set()
     n = 0
+    skipped = 0
     for o in items:
+        if o.get("skip") and o["id"] not in done:
+            done.add(o["id"])  # spam/troll/hate: remembered so it never shows up again
+            skipped += 1
+            continue
         if not o.get("reply", "").strip() or o["id"] in done:
             continue
         try:
@@ -69,7 +75,7 @@ def main():
             print(f"! reply to {o['author']} failed: {e}")
     DONE.parent.mkdir(parents=True, exist_ok=True)
     DONE.write_text(json.dumps(sorted(done), indent=1))
-    print(f"{n} repl{'y' if n == 1 else 'ies'} posted")
+    print(f"{n} repl{'y' if n == 1 else 'ies'} posted" + (f", {skipped} skipped for good" if skipped else ""))
 
 
 if __name__ == "__main__":

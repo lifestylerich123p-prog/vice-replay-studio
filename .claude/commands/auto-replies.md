@@ -7,7 +7,7 @@ comments without asking, twice a day. Nobody is watching: don't ask questions.
 1. `python -m studio.replies list` (unreplied comments on our videos -> output/replies.json).
 2. For each comment, write `reply` in output/replies.json, in the Vice Replay voice: short (1-2 sentences), friendly,
    hyped, about GTA 6, often ending with a quick question so they reply again; Spanish reply to a Spanish comment.
-   Answer real questions only with facts you're sure of (or say we'll cover it). Leave `reply` EMPTY (skip) for spam,
+   Answer real questions only with facts you're sure of (or say we'll cover it). Set `"skip": true` (and leave `reply` empty) for spam,
    hate, slurs, insults, trolls, sexual content, self-promo links, anything about real people's private lives, and
    anything you can't answer safely. Never add links except vicereplay.com/gear when someone asks about storage/gear.
    Never claim we tested a product, never argue, never promise uploads at a specific time.
