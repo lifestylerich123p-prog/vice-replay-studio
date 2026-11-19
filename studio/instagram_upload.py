@@ -253,6 +253,9 @@ def episode_reel(path, item="short"):
 QUEUE = ROOT / "content" / "learn" / "reels_queue.json"
 
 
+MAX_PER_DAY = int(os.environ.get("IG_MAX_PER_DAY", "4"))
+
+
 def run_queue(uid):
     """Post the first due, unposted item of content/learn/reels_queue.json (one per run keeps Reels spaced out).
     Items: {"at": "2026-11-19 11:30" (ET), "video": path | "episode": path + "item", "caption": ..., "campaign": ...},
@@ -261,6 +264,10 @@ def run_queue(uid):
     from zoneinfo import ZoneInfo
     q = json.loads(QUEUE.read_text()) if QUEUE.exists() else []
     now = dt.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M")
+    posted_today = sum(1 for i in q if str(i.get("posted_at", "")).startswith(now[:10]) and str(i.get("posted", "")).startswith("http"))
+    if posted_today >= MAX_PER_DAY:  # Nov 19: Meta restricted ads after 11 API posts on day one; new accounts go slow
+        print(f"Daily limit reached ({posted_today}/{MAX_PER_DAY} posts today): due items wait for the next run tomorrow.")
+        return
     done_at = None  # campaign clips sharing one time slot go out together (owner: "two at the time")
     for it in q:
         if it.get("posted") or it["at"] > now:

@@ -79,30 +79,35 @@
   "posted_at": "2026-11-19 17:07"
  },
  {
-  "at": "2026-11-19 18:05",
-  "episode": "episodes/gta6-launch-day-survival-guide.json",
-  "item": "short"
- },
- {
-  "at": "2026-11-19 19:30",
-  "episode": "episodes/gta6-streaming-record.json"
- },
- {
-  "at": "2026-11-19 20:35",
-  "episode": "episodes/gta6-launch-day-survival-guide.json",
-  "item": "news"
- },
- {
   "at": "2026-11-20 11:00",
   "episode": "episodes/gta6-storage-full.json"
  },
  {
   "at": "2026-11-20 14:00",
-  "carousel": "content/carousels/gta6-not-enough-space.json"
+  "episode": "episodes/gta6-launch-day-survival-guide.json",
+  "item": "short",
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day"
  },
  {
   "at": "2026-11-20 19:00",
-  "carousel": "content/carousels/gta6-cheat-codes.json"
+  "episode": "episodes/gta6-launch-day-survival-guide.json",
+  "item": "news",
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day"
+ },
+ {
+  "at": "2026-11-21 11:00",
+  "episode": "episodes/gta6-streaming-record.json",
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day"
+ },
+ {
+  "at": "2026-11-21 15:00",
+  "carousel": "content/carousels/gta6-not-enough-space.json",
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day"
+ },
+ {
+  "at": "2026-11-21 19:00",
+  "carousel": "content/carousels/gta6-cheat-codes.json",
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day"
  },
  {
   "at": "2026-12-31 23:59",

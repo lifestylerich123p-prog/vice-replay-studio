@@ -58,3 +58,7 @@
 - 2026-11-19 (later): Owner: "Ok just use Everygen but be careful with the credits": Everygen is back for campaign clips. Search at most 1 hour of a stream per batch, finish at most 2 clips, check the balance before/after and report the credits spent.
 - 2026-11-19: Instagram connected for Reels posting: @vice.replaytv (IG_USER_ID 17841454790873754, env var), Meta System User token for graph.facebook.com saved as a network secret (never expires; permissions instagram_basic, instagram_content_publish, instagram_manage_comments). Reels posting ON: owner said "ok aprove all post and add the ones in youtube or new ones" (Nov 19): every approved/auto-posted English Short also goes to Instagram Reels, plus campaign clips (LACY), spaced about 1-1.5 h apart via content/learn/reels_queue.json.
 - 2026-11-19: Owner: LACY (campaign) Reels go out two at a time, at times Claude picks, so one submit trip covers both.
+
+- 2026-11-19 5:49 PM: Meta emailed "Your professional ad account is restricted from advertising" for vice.replaytv
+  (can't create/run ads, can't use audiences; posting unaffected). Response: Instagram slowed to max 4 posts/day
+  (enforced in studio.instagram_upload), tonight's 3 Reels moved to Fri/Sat. No ad review requested (we run no ads).

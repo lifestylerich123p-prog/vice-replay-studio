@@ -5,6 +5,14 @@ Instagram is connected (content/owner.md: IG_USER_ID, Meta System User token for
 secret, never expires). Owner approval (Nov 19): every approved/auto-posted English Short also goes to Reels, plus
 campaign clips, plus about one carousel a day. All posts go through ONE queue: `content/learn/reels_queue.json`.
 
+## Pace (since Nov 19)
+Meta restricted ADS on @vice.replaytv on Nov 19 (can't run ads or use audiences; posting is NOT affected) after
+11 API posts on the account's first day. Rules from now on: **max 4 posts a day** (`--queue` enforces it:
+`IG_MAX_PER_DAY`, default 4; extra items wait for the next day), at least ~2.5 h apart, and no reposted streamer
+clips on this account (campaign clips stay held, see owner.md). Don't request an ad review unless the owner wants
+to run ads/boosts (a denied review can make it final). If the owner sends another Meta warning that is about
+posting/recommendations (Account Status), pause the queue and tell him first.
+
 ## How it runs
 - `python -m studio.ship ... --upload ...` adds each uploaded Short to the queue 5 min after its YouTube time and
   prints `REELS QUEUED: <times>`. Schedule a send_later wake-up at each time with the message
@@ -20,6 +28,7 @@ campaign clips, plus about one carousel a day. All posts go through ONE queue: `
 `{"at": "YYYY-MM-DD HH:MM" (ET), "episode": "episodes/x.json", "item": "short|news|tips"}`
 `{"at": ..., "video": "output/clips/<campaign>/<file>.mp4", "caption": "...", "campaign": "LACY (Content Rewards)"}`
 `{"at": ..., "carousel": "content/carousels/<slug>.json"}`
+`{"at": ..., "image": "output/ig-images/<slug>/<file>.jpg", "caption": "...", "comment": "..."}` (single image)
 
 ## Campaign clips (LACY etc.)
 After a campaign Reel posts (output says CAMPAIGN): send the owner the link(s) at once, schedule ONE send_later
