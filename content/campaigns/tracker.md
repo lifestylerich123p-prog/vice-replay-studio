@@ -10,3 +10,4 @@ Submit every clip on the campaign page within 30 minutes of posting it.
 | 2026-11-19 | lacy-gta6 | Lacy vs a GTA 6 shark (23 s, Everygen artifact cmwnmnr07002amj02xgjqliu2; source Twitch clip "lacy's kills a shark then runs"; 0 credits) | YouTube Shorts (Vice Replay) | https://youtube.com/shorts/c_l7udfLNnk | 9:16 AM ET | | | | |
 | 2026-11-19 | lacy-gta6 | Lacy vs a GTA 6 alligator (Instagram Reel) | Instagram (@vice.replaytv, auto) | https://www.instagram.com/reel/Df7hB2JjHNr/ | 11:34 AM ET | | | | |
 | 2026-11-19 | lacy-gta6 | Lacy found a shoe store in GTA 6 (Instagram Reel) | Instagram (@vice.replaytv, auto) | https://www.instagram.com/reel/Df7hM5CFI_a/ | 11:34 AM ET | | | | |
+| 2026-11-19 | lacy-gta6 | Lacy got tackled mid-robbery (17.6 s, Everygen artifact cmwntuta2006nnn02agcdpa6m; from find_clips on his "Playing GTA 6 For The FIRST Time!" video; ~2 credits) | | | | | | | |
