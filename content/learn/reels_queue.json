@@ -63,18 +63,6 @@
   "posted_at": "2026-11-19 16:15"
  },
  {
-  "at": "2026-11-19 17:00",
-  "video": "output/clips/lacy-gta6/lacy-drive-thru.mp4",
-  "campaign": "LACY (Content Rewards)",
-  "caption": "LACY tried to lose the cops in a drive-thru 🍔😭\n\nLACY's plan to escape the GTA 6 cops: order a double-double. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy"
- },
- {
-  "at": "2026-11-19 17:00",
-  "video": "output/clips/lacy-gta6/lacy-robbery.mp4",
-  "campaign": "LACY (Content Rewards)",
-  "caption": "LACY got tackled mid-robbery in GTA 6 😳😭\n\nLACY tried to rob a GTA 6 cash counter and got tackled from behind. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy"
- },
- {
   "at": "2026-11-19 18:05",
   "episode": "episodes/gta6-launch-day-survival-guide.json",
   "item": "short"
@@ -93,14 +81,29 @@
   "episode": "episodes/gta6-storage-full.json"
  },
  {
-  "at": "2026-11-20 12:00",
+  "at": "2026-11-20 14:00",
+  "carousel": "content/carousels/gta6-not-enough-space.json"
+ },
+ {
+  "at": "2026-12-31 23:59",
+  "video": "output/clips/lacy-gta6/lacy-drive-thru.mp4",
+  "campaign": "LACY (Content Rewards)",
+  "caption": "LACY tried to lose the cops in a drive-thru 🍔😭\n\nLACY's plan to escape the GTA 6 cops: order a double-double. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy",
+  "hold": "paused Nov 19 4:15 PM: Lacy clips stalled on YouTube (repetitive-content risk); waiting on owner"
+ },
+ {
+  "at": "2026-12-31 23:59",
+  "video": "output/clips/lacy-gta6/lacy-robbery.mp4",
+  "campaign": "LACY (Content Rewards)",
+  "caption": "LACY got tackled mid-robbery in GTA 6 😳😭\n\nLACY tried to rob a GTA 6 cash counter and got tackled from behind. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy",
+  "hold": "paused Nov 19 4:15 PM: Lacy clips stalled on YouTube (repetitive-content risk); waiting on owner"
+ },
+ {
+  "at": "2026-12-31 23:59",
   "video": "output/clips/lacy-gta6/lacy-shark.mp4",
   "campaign": "LACY (Content Rewards)",
   "caption": "LACY vs a GTA 6 shark 🦈😳\n\nA shark showed up during LACY's GTA 6 dive and he had to fight it off. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy",
-  "note": "YouTube: no claim (owner checked); low reach likely duplicate-moment; pair with next Lacy clip"
- },
- {
-  "at": "2026-11-20 14:00",
-  "carousel": "content/carousels/gta6-not-enough-space.json"
+  "note": "YouTube: no claim (owner checked); low reach likely duplicate-moment; pair with next Lacy clip",
+  "hold": "paused Nov 19 4:15 PM: Lacy clips stalled on YouTube (repetitive-content risk); waiting on owner"
  }
 ]
