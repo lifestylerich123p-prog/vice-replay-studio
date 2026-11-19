@@ -43,3 +43,13 @@ Be honest: free fixes first, upgrades second; never claim we tested a product.
 | Wed Nov 25 | Best GTA 6 Black Friday Deals: Storage, Controllers, the Game (affiliate ["storage","game","gear"]) | "GTA 6 is 212GB: the cheapest fix this Black Friday" |
 | Mon Nov 30 | Cyber Monday: last chance GTA 6 gear deals | "Last call: GTA 6 storage deal" |
 Only list deals you can verify on the day; say "check the price at the link" instead of quoting prices that change.
+
+## Amazon push for Black Friday (Nov 24-28) - planned Nov 19
+Shorts/Reels links aren't clickable: sales come from bio links (vicereplay.com/links leads with deals/storage/gear),
+long-video descriptions and website search traffic.
+- Mon Nov 24: main video "GTA 6 Black Friday: what's actually worth buying" (episodes/backlog gift guide) with gear
+  links in the description and pinned comment; Shorts say "deals: link in bio".
+- Daily Nov 24-28: refresh site/guides/gta-6-black-friday.json (only real, checked deals; no invented prices),
+  IndexNow ping; one Instagram carousel "GTA 6 Black Friday checklist" (link in bio).
+- Fri Nov 20: Instagram storage Reel 11 AM + "not enough space" carousel 2 PM (link in bio).
+- Owner: add vicereplay.com/links to the YouTube channel links; optional per-platform Amazon tracking IDs.
