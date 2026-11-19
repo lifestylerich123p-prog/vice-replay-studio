@@ -40,12 +40,16 @@
     "One strike and you're out: botting, AI-generated content or gaming the system. Real footage only, no AI voice/visuals.",
     "Reach recommends a dedicated LACY clipping account (e.g. LACYClips) unless the account is a relevant clip page with 100+ followers."
   ],
-  "source_footage": "Any stream, video or clip featuring Lacy during his GTA marathon (from Nov 18, 2026); footage links are in the rules page's Resources (owner to paste the 'Footage (stream + VODs)' link). His YouTube @Lacy is not his main channel.",
-  "source_queue": [],
+  "source_footage": "Lacy's GTA 6 marathon stream replays on his YouTube channel (UCeoZXkaJDtdTHafgoZeDcAA; he streams on twitch.tv/lacy), plus any stream/video/clip featuring Lacy during the marathon from Nov 18.",
+  "source_queue": [
+    "https://www.youtube.com/watch?v=5Oru4XpAYZw (GTA 6 MARATHON DAY 1, 9h39m, from the owner)",
+    "https://www.youtube.com/watch?v=mMtyL4AGIrk (GTA 6 MARATHON DAY 1, 11h08m)"
+  ],
   "max_clips_per_day": 2,
   "submit_within_minutes": 30,
-  "notes": "Crowded pool (Reach GTA 6 pools: 502 clippers). Low priority vs KreekCraft. No logos: don't add any Vice Replay branding to these clips. Everygen credits only after a cost estimate and the owner's yes.",
+  "notes": "Crowded pool (Reach GTA 6 pools: 502 clippers). Low priority vs KreekCraft. No logos: don't add any Vice Replay branding to these clips. Everygen credits only after a cost estimate and the owner's yes. Day 1 VODs are longer than Everygen find_clips' 8-hour limit: search one stretch (e.g. the first hour) instead. Pool needs 750K approved views across OUR clips to get any share: realistic only with a big account.",
   "priority": 2,
   "audience_min_tier1": "50% from USA, Canada, Australia, UK, New Zealand",
-  "no_logos": true
+  "no_logos": true,
+  "youtube_channel_id": "UCeoZXkaJDtdTHafgoZeDcAA"
 }

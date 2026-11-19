@@ -2,7 +2,7 @@
 
     python -m studio.campaign_sources            # print new GTA 6 videos/streams per active campaign
 
-For every content/campaigns/*.json with owner_approved true, a "youtube_handle" and a status that isn't paused or
+For every content/campaigns/*.json with owner_approved true, a "youtube_handle" or "youtube_channel_id" and a status that isn't paused or
 ended, lists that creator's latest uploads (live-stream replays appear there too) whose title says
 GTA 6, newest first, and marks the ones not yet in the campaign's "source_queue" or "used_sources".
 Writes output/campaign_sources.json. It never downloads, clips or posts anything.
@@ -29,14 +29,19 @@ def main():
     for f in sorted((ROOT / "content" / "campaigns").glob("*.json")):
         c = json.loads(f.read_text())
         status = str(c.get("status", "")).lower()
-        if not c.get("owner_approved") or not c.get("youtube_handle") or status.startswith(("paused", "ended")):
+        if not c.get("owner_approved") or status.startswith(("paused", "ended")):
             continue
-        ch, _ = req("GET", YT + f"channels?part=contentDetails&forHandle={c['youtube_handle']}", tok)
+        if c.get("youtube_channel_id"):
+            ch, _ = req("GET", YT + f"channels?part=contentDetails&id={c['youtube_channel_id']}", tok)
+        elif c.get("youtube_handle"):
+            ch, _ = req("GET", YT + f"channels?part=contentDetails&forHandle={c['youtube_handle']}", tok)
+        else:
+            continue
         up = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
         p, _ = req("GET", YT + f"playlistItems?part=snippet&maxResults=15&playlistId={up}", tok)
         ids = [i["snippet"]["resourceId"]["videoId"] for i in p.get("items", [])]
         v, _ = req("GET", YT + "videos?part=snippet,contentDetails,liveStreamingDetails&id=" + ",".join(ids), tok) if ids else ({}, None)
-        seen = set(c.get("source_queue", [])) | set(c.get("used_sources", []))
+        seen = {u.split()[0] for u in c.get("source_queue", []) + c.get("used_sources", [])}
         rows = []
         for x in v.get("items", []):
             s = x["snippet"]
@@ -47,7 +52,7 @@ def main():
                          "minutes": iso_minutes(x["contentDetails"].get("duration")),
                          "stream_replay": "liveStreamingDetails" in x, "new": url not in seen})
         report[f.stem] = rows
-        print(f"{f.stem} (@{c['youtube_handle']}): {len(rows)} GTA 6 video(s)"
+        print(f"{f.stem} ({c.get('youtube_handle') or c.get('youtube_channel_id')}): {len(rows)} GTA 6 video(s)"
               + "".join(f"\n  {'NEW ' if r['new'] else '    '}{r['published']} {r['minutes']:>4} min "
                         f"{'stream ' if r['stream_replay'] else ''}{r['title'][:60]}  {r['url']}" for r in rows[:6]))
     out = ROOT / "output" / "campaign_sources.json"
