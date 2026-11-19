@@ -498,8 +498,12 @@ guide("gta-6-lanzamiento-en-vivo", "Lanzamiento de GTA 6: actualizaciones en viv
 # {"slug","lang":"en|es","title","desc","date","video":"YouTube id or null","card":[line1,line2,"screenshot.jpg"],
 #  "lede","sections":[[heading, html]],"note","faq":[[q,a]],"gear":["game","storage"],"sources":[[name,url]]}
 import glob as _glob
-for _f in sorted(_glob.glob(os.path.join(STUDIO, "site/guides/*.json"))):
-    g = json.load(open(_f))
+_JSON = [json.load(open(_f)) for _f in sorted(_glob.glob(os.path.join(STUDIO, "site/guides/*.json")))]
+for _g in _JSON:  # "pair": slug of the same guide in the other language (EN guides/<slug>/ <-> ES es/guias/<slug>/)
+    if _g.get("pair") and _g.get("lang", "en") == "en":
+        ALT[f"guides/{_g['slug']}/"] = f"es/guias/{_g['pair']}/"
+        ALT[f"es/guias/{_g['pair']}/"] = f"guides/{_g['slug']}/"
+for g in _JSON:
     if g.get("card"): CARDS[g["slug"]] = tuple(g["card"])
     items = (GAME if "game" in g.get("gear", []) else []) + (STORAGE if "storage" in g.get("gear", []) else []) + (GEAR if "gear" in g.get("gear", []) else [])
     es = g.get("lang") == "es"
