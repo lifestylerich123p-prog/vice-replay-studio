@@ -29,3 +29,4 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - 2026-11-19: Market (last 48h): "ps5"/"pro" are among the top title words and the 30 FPS debate fills our own comments
   (3 of the latest 8 mention 30fps). Players now want "what am I actually getting" performance/settings answers, plus
   relatable POV launch moments and first-time gameplay (which we can't make until owner gameplay arrives).
+- 2026-11-19: Campaign clips: a Lacy moment many clippers already posted (the shark) got 1 view on YouTube with no claim (duplicate-content suppression), while less-posted moments (shoe store 4K+, alligator 1.6K) took off. Pick fresh moments (Twitch clips Top · Last 24 h) over the most-reposted ones.
