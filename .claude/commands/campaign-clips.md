@@ -8,7 +8,9 @@ Everygen credits; the ClipCircuit method from the owner's other channel). The ca
 default `local`.
 
 ## 0. Fast path that works (Nov 19, Everygen, about 1 credit per clip)
-1. Owner pastes Twitch clip links (twitch.tv/<streamer>/clip/...; "Top - Last 24 hours" = freshest moments).
+1. Source links: `python -m studio.twitch_clips --campaigns` (top clips of the last 24 h per approved campaign's
+   `twitch_login`, risky titles dropped; needs content/twitch-setup.md done), else the owner pastes Twitch clip links
+   (twitch.tv/<streamer>/clip/...; "Top - Last 24 hours" = freshest moments).
 2. `download_video` each link (free, seconds). `inspect_media` spread 6 on all of them (free) and judge:
    keep animals, cops, crashes, stores, food, funny reactions with the streamer's face reacting; DROP cutscenes,
    nudity/sexual scenes, violence against people/women, "murder", anything that makes the streamer look bad,

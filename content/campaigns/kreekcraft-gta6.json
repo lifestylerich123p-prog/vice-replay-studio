@@ -50,5 +50,6 @@
   ],
   "youtube_handle": "KreekCraft",
   "priority": 1,
-  "layout_note": "blur = whole stream frame on a blurred 9:16 background, so the streamer's camera and any required overlay stay visible."
+  "layout_note": "blur = whole stream frame on a blurred 9:16 background, so the streamer's camera and any required overlay stay visible.",
+  "twitch_login": "kreekcraft"
 }
