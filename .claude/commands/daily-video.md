@@ -34,8 +34,10 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    TWO standalone Shorts (owner asked for 3 Shorts a day in launch week): id `news` (posted 8:30 PM) and id `tips`
    (posted 12:30 PM: one quick, useful GTA 6 tip or fact players are searching today, different from the main video). For that news Short, prefer what big streamers and creators are
    doing with GTA 6 right now (launch marathons, records, viral moments, reactions), else the most-talked-
-   about GTA 6 news of the day; it must be a different story from the main video. Render the `--preview`,
-   check 3-4 frames, then render the final video and `--short` (renders both Shorts).
+   about GTA 6 news of the day; it must be a different story from the main video. Then ONE command renders
+   everything (gameplay pull, main video, all Shorts, Spanish-voice Shorts, check sheet): `python -m studio.ship
+   episodes/<slug>.json`. Read `output/<slug>/check.jpg` once (captions readable, headlines not clipped, no black
+   frames); fix the episode and re-run only if something is wrong.
 3. **Deliver for review**:
    - Put `title_options` (3 titles, best first) and `pinned_comment` in the episode JSON. From
      `content/learn/comments.json`, take up to 8 recent comments without a reply (skip spam/hate) and add
@@ -76,9 +78,9 @@ make sensible choices, finish the whole run, and explain your choices in the fin
 3d. **TikTok chat**: `send_message` session `session_01CJRsWQ4prmRGdfaEyZXz7q` ("📱 Vice Replay TikTok") with, for every Short
    (English and Spanish): its TikTok caption + hashtags and a posting time (after the YouTube version), and say the
    files are in today's daily-run chat. Treat it as a hand-off; don't wait for a reply.
-3c. **Spanish voice Shorts**: run `python -m studio.make_video episodes/<slug>.json --short --es` (free Spanish voice,
-   files end in `-es.mp4` with a Spanish .txt). Send them with SendUserFile too, labeled for TikTok/Instagram in Spanish.
-   They are NOT uploaded to the main YouTube channel (keeps it English); the owner posts them by hand.
+3c. **Spanish voice Shorts** are made by studio.ship (files end in `-es.mp4`). Send them with SendUserFile too, labeled
+   for TikTok/Instagram in Spanish. They are NOT uploaded to the main YouTube channel.
+
 4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), run
    `python -m studio.tidy`, then commit `episodes/<slug>.json`, `content/log.md` and `content/INDEX.md` and push to `main`. Videos are not committed.
    Scheduled runs can't push (403), so don't try add_repo or retries: send the episode JSON with SendUserFile and say the log wasn't saved.

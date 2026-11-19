@@ -11,7 +11,7 @@ Momentum run for Vice Replay. Nobody is watching live: don't ask questions. Read
    rumors). Write ONE follow-up Short in `episodes/<slug>-followup.json` (CLAUDE.md format, 3-4 segments, 20-40 s,
    hook in 2 seconds, `short_es` + `text_es`, `sources`, `pinned_comment`). It must add something new: the next fact,
    the answer to the top comment's question, or "part 2". Never a re-cut of the same video (mass-produced content
-   gets demonetized). Run `python -m studio.gameplay` first, then render `--short` and `--short --es`, check 3 frames.
+   gets demonetized). Render with `python -m studio.ship episodes/<slug>-followup.json` (gameplay + EN/ES Shorts) and read `output/<slug>-followup/check.jpg` once.
 4. Hand it to the main chat (it can upload; this run can't): call `fire_trigger` with trigger_id
    `trig_01XX9xXTp8xfb4i3yYUFP9uF` and `text` = "FILES:" then `episodes/<slug>-followup.json` and its full contents,
    plus a first line "MOMENTUM: <original Short title> is at <n> views/hour; follow-up ready, owner approves in main chat."

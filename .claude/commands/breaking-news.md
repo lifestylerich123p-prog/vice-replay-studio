@@ -30,7 +30,7 @@ doesn't pass every rule is NOT auto-posted.
 5. **Make the Short** following CLAUDE.md: episode JSON with `title`, `slug`, `short_title` (end with
    `#GTA6 #Shorts`), `short_description` (facts + sources, end with `#ViceReplayBreaking`), `pinned_comment`,
    `sources`, `short_es` {title, description} and `text_es` on each segment (Spanish), `short` (3-4 segments, 20-40 s, hook in the first 2 seconds, only confirmed facts, say "reportedly"
-   for anything not official). Render `python -m studio.make_video episodes/<slug>.json --short`, look at 3 frames.
+   for anything not official). Render with `python -m studio.ship episodes/<slug>.json` and read `output/<slug>/check.jpg` once.
 6. **Publish now**: `python -m studio.youtube_upload episodes/<slug>.json --approve short --now`. It goes public
    immediately, not made for kids, with the comment posted.
 7. **Tell the owner** (PushNotification if available, and a short final message): "Auto-posted breaking Short:

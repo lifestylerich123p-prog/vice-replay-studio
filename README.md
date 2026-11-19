@@ -21,11 +21,11 @@ Commands: `/new-video <topic>`, `/stats` (+ Studio screenshot), `/reply-comments
 ## Folders
 | Folder | What's in it |
 |---|---|
-| `studio/` | The machine: `tidy.py` (automatic cleaner + `content/INDEX.md` map), `make_video.py` (videos, Shorts, `--es` Spanish voice), `youtube_upload.py` (approved uploads, comments, replies), `learn.py`, `radar.py`, `review_page.py`, `gameplay.py`, `clip.py`, `channel_fix.py`, `sound.py`, `brand.py` |
+| `studio/` | The machine: `ship.py` (one command: render everything + check sheet + upload), `replies.py` (comment replies), `tidy.py` (automatic cleaner + `content/INDEX.md` map), `make_video.py` (videos, Shorts, `--es` Spanish voice), `youtube_upload.py` (approved uploads, comments, replies), `learn.py`, `radar.py`, `review_page.py`, `gameplay.py`, `clip.py`, `channel_fix.py`, `sound.py`, `brand.py` |
 | `episodes/` | One script per video (JSON) |
 | `site/` | Website data: `guides/*.json` (guide pages written by the daily run) and `live.json` (launch live updates) |
 | `tools/` | `site_guides.py` builds vicereplay.com into the sibling `vicereplay-site` repo; `youtube_auth.py` reconnects YouTube |
-| `content/` | The machine's memory: `owner.md` (settings, links, standing approvals), `launch-plan.md`, `log.md`, `performance.md`, `learn/`, `affiliate.json`, `campaigns/`; `archive/` holds finished one-off files |
+| `content/` | The machine's memory: `episode-format.md` (how to write an episode), `owner.md` (settings, links, standing approvals), `launch-plan.md`, `log.md`, `performance.md`, `learn/`, `affiliate.json`, `campaigns/`; `archive/` holds finished one-off files |
 | `media/official/` | 51 official GTA 6 screenshots (strip-club shots excluded); `media/gameplay/` is pulled from Drive, not committed |
 | `assets/` | Fonts, profile picture; voice model and music are generated/downloaded, not committed |
 | `.claude/commands/` | The routines behind each command and the daily run |
