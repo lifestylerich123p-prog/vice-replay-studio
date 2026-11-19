@@ -1,0 +1,39 @@
+{
+  "title": "GTA 6 Breaks Streaming Launch Records",
+  "slug": "gta6-streaming-record",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "short_title": "7 MILLION people watched GTA 6 at once #GTA6 #Shorts",
+  "short_title_options": ["7 MILLION people watched GTA 6 at once #GTA6 #Shorts", "GTA 6 just broke streaming records #GTA6 #Shorts"],
+  "short_description": "GTA 6 broke streaming launch records within minutes: over 7 million people watched at the same time across Twitch, Kick and YouTube, and Twitch alone peaked above 3 million (Streams Charts, Insider Gaming; preliminary numbers). #ViceReplayBreaking",
+  "short_es": {
+    "title": "7 MILLONES vieron GTA 6 al mismo tiempo #GTA6 #Shorts",
+    "description": "GTA 6 rompió récords de lanzamiento en streaming en minutos: más de 7 millones de personas lo vieron al mismo tiempo en Twitch, Kick y YouTube, y solo Twitch pasó los 3 millones (Streams Charts, Insider Gaming; cifras preliminares)."
+  },
+  "short_playlist": "GTA 6 Streamer & Breaking News",
+  "pinned_comment": "Were you watching streams or playing yourself? Reply WATCHING or PLAYING",
+  "tiktok_hashtags": ["#gta6", "#twitch", "#gtavi", "#streamers", "#gaming"],
+  "sources": [
+    "Streams Charts - GTA VI breaks streaming launch records: https://streamscharts.com/news/gta-vi-breaks-streaming-launch-records-within-minutes-its-release",
+    "Insider Gaming - streaming launch record: https://insider-gaming.com/gta-6-streaming-launch-record/",
+    "Streams Charts - GTA 6 live stats: https://streamscharts.com/specials/gta6"
+  ],
+  "short": [
+    {"headline": "7 MILLION WATCHING", "headline_es": "7 MILLONES VIENDO",
+     "text": "Over seven million people were watching GTA 6 streams at the same time last night.",
+     "text_es": "Más de siete millones de personas estaban viendo streams de GTA 6 al mismo tiempo anoche.",
+     "media": "../media/trailer/launch-trailer-helicopter-city.mp4"},
+    {"headline": "RECORD LAUNCH", "headline_es": "RÉCORD DE LANZAMIENTO",
+     "text": "According to Streams Charts, it broke streaming launch records within minutes, across Twitch, Kick and YouTube.",
+     "text_es": "Según Streams Charts, rompió récords de lanzamiento en streaming en minutos, entre Twitch, Kick y YouTube.",
+     "media": "../media/trailer/launch-trailer-motorbike.mp4"},
+    {"headline": "TWITCH: 3 MILLION+", "headline_es": "TWITCH: MÁS DE 3 MILLONES",
+     "text": "Twitch alone peaked above three million viewers, right next to its all time gaming record.",
+     "text_es": "Solo Twitch pasó los tres millones de espectadores, justo al lado de su récord histórico de juegos.",
+     "media": "../media/trailer/launch-trailer-marina-aerial.mp4"},
+    {"headline": "WATCHING OR PLAYING?", "headline_es": "¿MIRANDO O JUGANDO?",
+     "text": "So were you watching, or playing? Tell me below, because",
+     "text_es": "¿Estabas mirando o jugando? Dímelo abajo, porque",
+     "media": "../media/trailer/launch-trailer-beach-plane.mp4"}
+  ]
+}
