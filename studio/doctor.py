@@ -10,6 +10,7 @@ Checks:
 3. Website: home, gear, guides, live page and sitemap answer 200.
 4. Disk: free space for renders.
 5. Upload registry: content/learn/uploads.json exists and is current.
+6. Instagram: the Reels token works, the account answers, today's publishing quota, overdue queued Reels.
 """
 import argparse
 import datetime as dt
@@ -87,6 +88,27 @@ def main():
                 warn.append(f"No pinned comment on '{title[:50]}' ({vid})" + ("" if text else " and no text in its episode"))
         if not missing:
             ok.append("Every recent public upload has our comment")
+
+    # 2b. Instagram (Reels posting): token works, account answers, daily publishing quota
+    try:
+        from .instagram_upload import call as ig_call, ig_user_id
+        uid = ig_user_id()
+        if uid:
+            acct = ig_call("GET", uid, {"fields": "username,media_count,followers_count"})
+            lim = ig_call("GET", f"{uid}/content_publishing_limit", {"fields": "quota_usage,config"}).get("data", [{}])[0]
+            ok.append(f"Instagram @{acct.get('username')} works ({acct.get('media_count')} posts, "
+                      f"{acct.get('followers_count')} followers; {lim.get('quota_usage', '?')}/100 posts used today)")
+            qf = ROOT / "content" / "learn" / "reels_queue.json"
+            if qf.exists():
+                q = json.loads(qf.read_text())
+                from zoneinfo import ZoneInfo
+                et_now = dt.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M")
+                late = [i for i in q if not i.get("posted") and i["at"] < et_now]
+                if len(late) > 2:
+                    warn.append(f"{len(late)} Reels are overdue in reels_queue.json: run studio.instagram_upload --queue")
+    except SystemExit as e:
+        bad.append(f"Instagram connection FAILED: {str(e)[:160]} (token for graph.facebook.com in the environment's "
+                   "network secrets; see content/instagram-setup.md)")
 
     # 3. Website
     for path in ("", "gear/", "guides/", "guides/gta-6-launch-live/", "sitemap.xml"):

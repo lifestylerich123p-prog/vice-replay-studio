@@ -85,7 +85,7 @@ def main():
     ap.add_argument("--item", default="short")
     ap.add_argument("--queue", action="store_true", help="post the next due Reel from content/learn/reels_queue.json")
     a = ap.parse_args()
-    uid = os.environ.get("IG_USER_ID")
+    uid = ig_user_id()
     if a.check:
         print(json.dumps(call("GET", "me", {"fields": "id,name"}), indent=1))
         if "facebook" in API:  # list the Instagram business accounts this token can post to
@@ -106,10 +106,21 @@ def main():
         a.video, a.caption = episode_reel(a.episode, a.item)
     if not a.video:
         sys.exit("Give the video file.")
-    print(f"Posted Reel: {post_reel(uid, a.video, a.caption)}")
+    comment = episode_comment(a.episode, a.item) if a.episode else ""
+    print(f"Posted Reel: {post_reel(uid, a.video, a.caption, comment)}")
 
 
-def post_reel(uid, video, caption):
+def ig_user_id():
+    """IG_USER_ID from the environment, else the id recorded in content/owner.md (env vars load on session start)."""
+    import re
+    uid = os.environ.get("IG_USER_ID")
+    if not uid:
+        m = re.search(r"IG_USER_ID (\d{10,})", (ROOT / "content" / "owner.md").read_text())
+        uid = m.group(1) if m else None
+    return uid
+
+
+def post_reel(uid, video, caption, first_comment=""):
     url, dest = host_publicly(video)
     try:
         c = call("POST", f"{uid}/media", {"media_type": "REELS", "video_url": url, "caption": caption[:2200],
@@ -124,9 +135,21 @@ def post_reel(uid, video, caption):
             time.sleep(10)
         pub = call("POST", f"{uid}/media_publish", {"creation_id": cid})
         info = call("GET", pub["id"], {"fields": "permalink"})
+        if first_comment:  # same question we pin on YouTube, to start the comments
+            try:
+                call("POST", f"{pub['id']}/comments", {"message": first_comment[:2200]})
+            except SystemExit as e:
+                print(f"(first comment not posted: {e})")
         return info.get("permalink", pub["id"])
     finally:
         unhost(dest)
+
+
+def episode_comment(path, item="short"):
+    ep = json.loads(Path(path).read_text())
+    if item in (None, "", "short"):
+        return ep.get("pinned_comment", "")
+    return next((x.get("pinned_comment", "") for x in ep.get("shorts", []) if x.get("id") == item), "")
 
 
 def episode_reel(path, item="short"):
@@ -165,7 +188,8 @@ def run_queue(uid):
         if not Path(video).exists():
             it["posted"] = "skipped: file missing"
             continue
-        it["posted"] = post_reel(uid, video, caption)
+        comment = episode_comment(it["episode"], it.get("item")) if it.get("episode") else it.get("comment", "")
+        it["posted"] = post_reel(uid, video, caption, comment)
         it["posted_at"] = now
         QUEUE.write_text(json.dumps(q, indent=1, ensure_ascii=False))
         print(f"Posted Reel ({it.get('campaign') or 'Vice Replay'}): {it['posted']}")
