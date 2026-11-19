@@ -5,8 +5,9 @@
 
 Setup (once, owner): see content/instagram-setup.md. Needs:
 - env var IG_USER_ID (the Instagram account's numeric id; not secret),
-- an Instagram access token for graph.instagram.com saved as a network secret (Authorization: Bearer) via
-  request_credential, so it never appears in files or chat.
+- a System User access token (Meta app > Instagram > API setup with unified login) saved as a network secret for
+  graph.facebook.com (Authorization: Bearer) via request_credential, so it never appears in files or chat.
+  (Older Instagram-Login apps: token for graph.instagram.com and IG_GRAPH_HOST=graph.instagram.com.)
 Instagram fetches the video from a public URL, so the main chat puts the file on vicereplay.com/r/<random>.mp4
 (GitHub Pages) for a few minutes and removes it after publishing. Same approval rules as YouTube: only post what
 the owner approved (an approved Short may go to Reels too once the owner switched Reels posting on).
@@ -26,13 +27,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT.parent / "vicereplay-site"
-API = "https://graph.instagram.com/v21.0/"
+# Meta's newer apps use the unified login (Facebook Login for Business, System User token) on graph.facebook.com;
+# older "Instagram Login" apps use graph.instagram.com. IG_GRAPH_HOST picks one (default: the unified login).
+API = f"https://{os.environ.get('IG_GRAPH_HOST', 'graph.facebook.com')}/v21.0/"
 
 
 def call(method, path, params=None):
     data = urllib.parse.urlencode(params or {}).encode() if method == "POST" else None
     url = API + path + ("?" + urllib.parse.urlencode(params) if method == "GET" and params else "")
-    # The proxy injects "Authorization: Bearer <token>" for graph.instagram.com; a dummy keeps clients happy.
+    # The proxy injects "Authorization: Bearer <token>" for the Graph host; a dummy keeps clients happy.
     req = urllib.request.Request(url, data=data, method=method, headers={"Authorization": "Bearer proxy-injected"})
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
@@ -77,11 +80,20 @@ def main():
     ap.add_argument("--check", action="store_true")
     a = ap.parse_args()
     uid = os.environ.get("IG_USER_ID")
+    if a.check:
+        print(json.dumps(call("GET", "me", {"fields": "id,name"}), indent=1))
+        if "facebook" in API:  # list the Instagram business accounts this token can post to
+            pages = call("GET", "me/accounts", {"fields": "name,instagram_business_account{id,username}"})
+            for pg in pages.get("data", []):
+                ig = pg.get("instagram_business_account")
+                print(f"Page {pg.get('name')}: Instagram {ig.get('username') + ' id ' + ig.get('id') if ig else 'not linked'}")
+        if uid:
+            print(json.dumps(call("GET", uid, {"fields": "username,media_count"}), indent=1))
+        else:
+            print("Set IG_USER_ID to the Instagram id above.")
+        return
     if not uid:
         sys.exit("IG_USER_ID is not set: Instagram isn't connected yet (content/instagram-setup.md).")
-    if a.check:
-        print(json.dumps(call("GET", "me", {"fields": "user_id,username,account_type"}), indent=1))
-        return
     if not a.video:
         sys.exit("Give the video file.")
     url, dest = host_publicly(a.video)

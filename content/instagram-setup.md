@@ -16,3 +16,11 @@ Instagram lets apps post Reels for Professional accounts (unlike TikTok). Free. 
    - run `python -m studio.instagram_upload --check` to confirm.
 7. From then on, when you approve videos, approved Shorts can also go to Reels automatically (say "post Shorts to
    Reels too" once to switch it on). The token lasts 60 days; Claude reminds you to refresh it.
+
+## Update (Nov 19): Meta's newer apps only offer "API setup with unified login"
+4b. In the app: Instagram > API setup with unified login > **Create new settings**: login variation General, access
+    token **System User Access Token** (never expires), asset = the vice.replaytv Instagram account (Meta may ask to link
+    a Facebook Page), permissions instagram_basic + instagram_content_publish (+ instagram_manage_comments).
+    Redirect URL: https://vicereplay.com/ > Save. Then **2. Generate access tokens**.
+5b. Claude asks for the token with the secure form for **graph.facebook.com**, allows that host, runs
+    `python -m studio.instagram_upload --check` (lists the Instagram account id) and sets IG_USER_ID.
