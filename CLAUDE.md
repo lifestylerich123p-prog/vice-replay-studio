@@ -34,6 +34,10 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
 - **No official GTA 6 music** (radio, trailer songs, score): Content ID. Game sound only from the owner's gameplay
   recorded with radio/music off. Audio is our generated synthwave theme + SFX (`"music": "none"`, `"sfx": false`).
 - **Cheap**: free Kokoro voice (English `am_michael`, Spanish `em_alex`); no paid APIs unless the owner says so.
+- **Footage law** (details: `content/legal.md`): Rockstar's fan policy allows posting the owner's gameplay with real
+  commentary; monetization is tolerated, not licensed. Never post isolated cutscenes, endings/big story moments,
+  standalone in-game TV/comedy shows, or anything from leaked copies. YouTube ads: no graphic violence in the first
+  7 seconds (make_video keeps openings calm automatically) and no violence/gore montages as the focus.
 - **Not official**: no Rockstar logos; descriptions keep the "not affiliated" line. No story spoilers in titles or
   thumbnails. Every video needs a real angle; no near-identical/mass-produced videos (demonetization).
 - **Uploading needs the owner's approval in chat** ("approve", "approve the Shorts", "approve, use title 2"...): run

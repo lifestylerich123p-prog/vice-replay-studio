@@ -319,16 +319,33 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     # exist (newest first), unless a segment sets "keep_media": true or the episode sets "use_gameplay": false.
     gameplay = sorted((p for p in (ROOT / "media" / "gameplay").glob("*") if p.suffix.lower() in VIDEO_EXT),
                       key=lambda p: p.stat().st_mtime, reverse=True) if (ROOT / "media" / "gameplay").exists() else []
+    # YouTube limits ads on graphic violence in a video's first 7 seconds, so the opening segment only uses calm
+    # gameplay (Drive folders "Scenery & cars", "Funny & fails", "Glitches"); otherwise it keeps its own picture.
+    calm = set()
+    done_file = ROOT / "media" / "gameplay" / "processed.json"
+    if done_file.exists():
+        for hs in json.loads(done_file.read_text()).values():
+            for h in hs:
+                if h.get("category") in ("Scenery & cars", "Funny & fails", "Glitches"):
+                    calm.add(Path(h["file"]).name)
+    calm_clips = [p for p in gameplay if p.name in calm]
     if vertical and gameplay and ep.get("use_gameplay", True):
         g = 0
-        for s in segments:
-            if not s.get("keep_media") and s.get("media") != "none":
-                s["media"] = str(gameplay[g % len(gameplay)])
-                s["media_start"] = None
-                g += 1
-        print(f"  using {min(g, len(gameplay))} of the owner's gameplay clips as Short backgrounds")
+        for idx, s in enumerate(segments):
+            if s.get("keep_media") or s.get("media") == "none":
+                continue
+            if idx == 0:
+                if calm_clips:
+                    s["media"], s["media_start"] = str(calm_clips[0]), None
+                continue
+            s["media"] = str(gameplay[g % len(gameplay)])
+            s["media_start"] = None
+            g += 1
+        print(f"  using {min(g, len(gameplay))} of the owner's gameplay clips as Short backgrounds (opening kept calm)")
     elif gameplay:
-        library = gameplay + [p for p in library if p not in gameplay]
+        library = [p for p in gameplay if p not in calm_clips] + [p for p in library if p not in gameplay]
+        if segments and not segments[0].get("media") and calm_clips:
+            segments[0]["media"] = str(calm_clips[0])
     k = 0
     for s in segments:
         if s.get("media") == "none":
