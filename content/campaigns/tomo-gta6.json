@@ -52,7 +52,7 @@
   "source_footage": "youtube.com/@Tomovids: GTA VI livestreams (Live tab VODs) and GTA VI videos",
   "source_queue": [],
   "max_clips_per_day": 2,
-  "notes": "Joined Nov 18. Tomo streams GTA VI from launch day (Nov 19). Hook card + captions + end CTA 'Subscribe to Tomo on YouTube @Tomovids'. Owner must send analytics at 2,000 views per clip. Nov 19 scan: rate now $1.50/1K, $3.50 min (Content Rewards article); ~$127 used, 11 clippers on Nov 18.",
+  "notes": "Joined Nov 18. Tomo streams GTA VI from launch day (Nov 19). Hook card + captions + end CTA 'Subscribe to Tomo on YouTube @Tomovids'. Owner must send analytics at 2,000 views per clip. Nov 19 scan: rate now $1.50/1K, $3.50 min (Content Rewards article); ~$127 used, 11 clippers on Nov 18. Nov 19 6:15 AM: $235 of $1,000 left, 36 clippers; likely empty today.",
   "submit_within_minutes": 30,
   "min_payout_per_clip": 3.5,
   "max_payout_per_clip": 150.0,
@@ -72,5 +72,8 @@
     "YouTube Shorts"
   ],
   "engine_note": "YouTube can't be downloaded from the cloud workspace (blocked), so this campaign uses Everygen's download_video + editor. Show the credit cost and get the owner's yes before each batch. Find new Tomo GTA VI streams/videos with the YouTube Data API (channel @Tomovids).",
-  "payout_setup": "Owner joined the Clipping Nation Discord and connected socials in Whop (Nov 18)."
+  "payout_setup": "Owner joined the Clipping Nation Discord and connected socials in Whop (Nov 18).",
+  "budget_left": 235,
+  "clippers": 36,
+  "budget_checked": "2026-11-19 6:15 AM ET"
 }
