@@ -17,6 +17,8 @@ default `local`.
   them word for word into `rules`.
 
 ## 2. Footage (both engines)
+- Find new source videos first, free: `python -m studio.campaign_sources` (approved, non-paused campaigns with a
+  `youtube_handle`; marks videos not yet used). Put picks in the campaign's `source_queue`, used ones in `used_sources`.
 - Only from where the campaign says (`source_footage`), the source given here, else the next `source_queue` item.
   Real source footage only: never AI voice, AI video, generated footage or Vice Replay music on campaign clips; keep
   the original audio. If a host is blocked, say which one and stop.

@@ -5,7 +5,7 @@
   "platform": "Content Rewards",
   "campaign_url": "Content Rewards: TOMO GTA VI Clipping (joined Nov 18); rules on Notion (Clipping Nation)",
   "rate_per_1000_views": 1.5,
-  "status": "active",
+  "status": "paused (Nov 19: owner agreed to skip; $235 of $1,000 left with 36 clippers, budget likely gone before a clip reaches 2,333 views)",
   "engine": "everygen",
   "layout": "stacked",
   "facecam_box": [
@@ -75,5 +75,6 @@
   "payout_setup": "Owner joined the Clipping Nation Discord and connected socials in Whop (Nov 18).",
   "budget_left": 235,
   "clippers": 36,
-  "budget_checked": "2026-11-19 6:15 AM ET"
+  "budget_checked": "2026-11-19 6:15 AM ET",
+  "youtube_handle": "Tomovids"
 }

@@ -32,5 +32,6 @@
   "source_queue": [],
   "max_clips_per_day": 2,
   "submit_within_minutes": 30,
-  "notes": "Crowded: Reach's GTA 6 pools had 502 clippers and Lacy's clips 18.9M views by Nov 18. Low priority vs KreekCraft. Everygen credits only after a cost estimate and the owner's yes."
+  "notes": "Crowded: Reach's GTA 6 pools had 502 clippers and Lacy's clips 18.9M views by Nov 18. Low priority vs KreekCraft. Everygen credits only after a cost estimate and the owner's yes.",
+  "priority": 2
 }
