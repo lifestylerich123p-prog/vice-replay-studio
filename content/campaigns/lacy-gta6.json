@@ -15,7 +15,7 @@
     "YouTube Shorts",
     "X"
   ],
-  "engine": "local",
+  "engine": "everygen",
   "clip_seconds": 30,
   "captions": true,
   "on_screen_credit": "Lacy",
@@ -47,7 +47,7 @@
   ],
   "max_clips_per_day": 2,
   "submit_within_minutes": 30,
-  "notes": "Crowded pool (Reach GTA 6 pools: 502 clippers). Low priority vs KreekCraft. No logos: don't add any Vice Replay branding to these clips. Owner (Nov 19): no Everygen; free local engine only (footage via a Google Drive file link). Day 1 VODs are longer than Everygen find_clips' 8-hour limit: search one stretch (e.g. the first hour) instead. Pool needs 750K approved views across OUR clips to get any share: realistic only with a big account.",
+  "notes": "Crowded pool (Reach GTA 6 pools: 502 clippers). Low priority vs KreekCraft. No logos: don't add any Vice Replay branding to these clips. Owner (Nov 19): use Everygen but be careful with credits: search one stretch (max 1 hour), finish at most 2 clips per batch, report credits spent; the free Drive inbox (studio.campaign_inbox) stays as backup. Day 1 VODs are longer than Everygen find_clips' 8-hour limit: search one stretch (e.g. the first hour) instead. Pool needs 750K approved views across OUR clips to get any share: realistic only with a big account.",
   "priority": 2,
   "audience_min_tier1": "50% from USA, Canada, Australia, UK, New Zealand",
   "no_logos": true,

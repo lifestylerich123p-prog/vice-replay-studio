@@ -17,7 +17,8 @@ default `local`.
   them word for word into `rules`.
 
 ## 2. Footage (both engines)
-- Owner's choice (Nov 19): use the free `local` engine, not Everygen, unless the owner asks for Everygen again.
+- Owner's choice (Nov 19, final): Everygen, carefully: at most 1 hour searched and 2 clips finished per batch, balance
+  checked before/after and the credits spent reported. The free `local` engine + Drive inbox is the backup.
   YouTube/Twitch can't be downloaded here (blocked): the owner saves the stretch (2-5 min around the moment) to Google
   Drive, shares it "Anyone with the link", and `python -m studio.clip <drive file link> --campaign <name>` fetches it
   into output/campaign_footage/ (never media/).

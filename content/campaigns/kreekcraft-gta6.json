@@ -17,7 +17,7 @@
     "Instagram Reels",
     "YouTube Shorts"
   ],
-  "engine": "local",
+  "engine": "everygen",
   "layout": "blur",
   "clip_seconds": 30,
   "captions": true,
@@ -40,7 +40,7 @@
   "source_queue": [],
   "max_clips_per_day": 2,
   "submit_within_minutes": 30,
-  "notes": "No application needed. As of Nov 19 7 AM ET KreekCraft had not streamed GTA 6 yet (latest uploads Roblox): start when he does. His audience skews young: no graphic violence or crude moments. Owner (Nov 19): no Everygen; free local engine only (footage via a Google Drive file link).",
+  "notes": "No application needed. As of Nov 19 7 AM ET KreekCraft had not streamed GTA 6 yet (latest uploads Roblox): start when he does. His audience skews young: no graphic violence or crude moments. Owner (Nov 19): use Everygen but be careful with credits: search one stretch (max 1 hour), finish at most 2 clips per batch, report credits spent; the free Drive inbox (studio.campaign_inbox) stays as backup.",
   "owner_approved_on": "2026-11-19",
   "required_in_caption": "Watch KreekCraft on YouTube and Twitch",
   "required_hashtags": [
