@@ -1,0 +1,57 @@
+{
+  "title": "GTA 6 Scores 99 on Metacritic, Tied for Best Ever",
+  "slug": "gta6-metacritic-99",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "short_title": "GTA 6 just got a 99 on Metacritic #GTA6 #Shorts",
+  "short_description": "GTA 6 debuts with a 99 on Metacritic, tied with Zelda: Ocarina of Time for the highest score ever, with no mixed or negative reviews as of Nov 18. OpenCritic also shows 99. Sources: Forbes, GameSpot, Kotaku, GamesRadar. #ViceReplayBreaking",
+  "short_es": {
+    "title": "GTA 6 sacó un 99 en Metacritic #GTA6 #Shorts",
+    "description": "GTA 6 debuta con 99 en Metacritic, empatado con Zelda: Ocarina of Time como la nota más alta de la historia, sin reseñas mixtas ni negativas al 18 de noviembre. Fuentes: Forbes, GameSpot, Kotaku, GamesRadar."
+  },
+  "short_playlist": "GTA 6 Streamer & Breaking News",
+  "pinned_comment": "What would YOU give GTA 6 out of 10? Drop a number",
+  "tiktok_hashtags": [
+    "#gta6",
+    "#metacritic",
+    "#gtavi",
+    "#gaming",
+    "#vicecity"
+  ],
+  "sources": [
+    "Forbes: https://www.forbes.com/sites/paultassi/2026/11/18/the-gta-6-metacritic-review-score-is-in-and-ties-an-all-time-record/",
+    "GameSpot: https://www.gamespot.com/articles/gta-6-has-a-metacritic-score-so-high-its-only-happened-once-before/",
+    "Kotaku: https://kotaku.com/gta-6-review-scores-99-metacritic-rockstar-grand-theft-auto-vi-2000757999",
+    "GamesRadar: https://www.gamesradar.com/games/grand-theft-auto/gta-6-metacritic-score-makes-it-the-highest-rated-game-of-all-time-matching-the-og-zelda-ocarina-of-time/"
+  ],
+  "short": [
+    {
+      "headline": "99 ON METACRITIC",
+      "headline_es": "99 EN METACRITIC",
+      "text": "GTA 6 just got a ninety nine on Metacritic. That ties the highest score in the site's history.",
+      "text_es": "GTA 6 acaba de sacar un noventa y nueve en Metacritic. Eso empata la nota más alta de la historia del sitio.",
+      "media": "../media/trailer/launch-trailer-helicopter-city.mp4"
+    },
+    {
+      "headline": "TIED WITH ZELDA",
+      "headline_es": "EMPATE CON ZELDA",
+      "text": "The only other game with a ninety nine is Zelda: Ocarina of Time, from 1998. And GTA 6 has about five times as many reviews.",
+      "text_es": "El único otro juego con noventa y nueve es Zelda: Ocarina of Time, de 1998. Y GTA 6 tiene unas cinco veces más reseñas.",
+      "media": "../media/official/jason-and-lucia-03.jpg"
+    },
+    {
+      "headline": "ZERO BAD REVIEWS",
+      "headline_es": "CERO RESEÑAS MALAS",
+      "text": "As of tonight, there's not a single mixed or negative review on the site.",
+      "text_es": "Hasta esta noche, no hay ni una sola reseña mixta o negativa en el sitio.",
+      "media": "../media/trailer/launch-trailer-marina-aerial.mp4"
+    },
+    {
+      "headline": "THE ONE COMPLAINT",
+      "headline_es": "LA ÚNICA QUEJA",
+      "text": "The biggest complaint? It runs at thirty frames per second. So, is it a ten for you? Because",
+      "text_es": "¿La queja más común? Corre a treinta cuadros por segundo. Entonces, ¿para ti es un diez? Porque",
+      "media": "../media/trailer/launch-trailer-beach-plane.mp4"
+    }
+  ]
+}

@@ -16,3 +16,4 @@
 | 2026-11-18 | houser-launch-statement | Rockstar's boss just broke his silence on GTA 6 (Short) | Owner script + approval; published immediately (4EuMnzlLKTY); sources GameSpot, GamesRadar |
 | 2026-11-18 | gta6-out-in-new-zealand | GTA 6 is already OUT in New Zealand (the catch) (Short) | Owner approved; first video with new trailer clips; published now (DG_MpuSMDV8) |
 | 2026-11-18 | gta6-storage-full | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade (+ Short) | Owner request (Amazon sales push); scheduled 10:30 PM Nov 18 (MIvka1jBpJ0) and Short 8:00 AM Nov 19 (Wl6K3f5FtVU) |
+| 2026-11-18 | gta6-metacritic-99 | GTA 6 just got a 99 on Metacritic (breaking Short) | Breaking-news standing approval, score 9/10 (Forbes, GameSpot, Kotaku, GamesRadar); published now (S5L5Mah6LIU) |

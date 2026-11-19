@@ -18,6 +18,7 @@ Read this first instead of searching the repo.
 | 2026-11-18 | gta6-storage-full | video | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | main: MIvka1jBpJ0, short: Wl6K3f5FtVU |
 | 2026-11-18 | gta6-physical-edition-no-disc | video | GTA 6 Physical Edition Has No Disc: What You're Buying | main: RmONg7-uN4w, short: 9lTZNbwbSec, news: rhf1qryjRSM |
 | 2026-11-18 | gta6-out-in-new-zealand | Short | GTA 6 Is Already Out in New Zealand: The Catch | short: DG_MpuSMDV8 |
+| 2026-11-18 | gta6-metacritic-99 | Short | GTA 6 Scores 99 on Metacritic, Tied for Best Ever | short: S5L5Mah6LIU |
 | 2026-11-17 | lucia-actress-confirmed | Short | Lucia's Actress Confirmed Before GTA 6 Launch | - |
 | 2026-11-17 | gta6-unlock-time-every-time-zone | Short | GTA 6 Unlock Time in Every Time Zone (US, UK, EU, Australia) | - |
 | 2026-11-17 | gta6-new-zealand-trick | video | GTA 6 New Zealand Trick: Play Early or Risk Your Account? | - |
@@ -58,7 +59,7 @@ Read this first instead of searching the repo.
 | built-in | /guides/gta-6-cheats/ | GTA 6 Cheat Codes: Confirmed List (and the Fake Ones) |
 | built-in | /guides/gta-6-pc-release-date/ | GTA 6 on PC: Release Date and What's Actually Reported |
 | built-in | /guides/gta-6-launch-streams/ | GTA 6 Launch Streams: YouTube's 24-Hour Livestream and Kai Cenat's 100% Marathon |
-| built-in | /guides/gta-6-reviews/ | GTA 6 Reviews: When They Drop and the Score to Beat |
+| built-in | /guides/gta-6-reviews/ | GTA 6 Reviews: 99 on Metacritic, Tied for the Best Score Ever |
 | built-in | /guides/gta-6-game-awards-nominations/ | GTA 6 at The Game Awards 2026: 8 Nominations Including Game of the Year |
 | built-in | /guides/gta-6-launch-live/ | GTA 6 Launch: Live Updates, Times and Everything You Need Tonight |
 | built-in | /es/guias/trucos-gta-6/ | Trucos de GTA 6: lista confirmada (y los falsos) |

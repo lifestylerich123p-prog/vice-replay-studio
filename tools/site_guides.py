@@ -175,7 +175,7 @@ CARDS.update({
  "gta-6-cheats": ("GTA 6 CHEAT CODES", "WHAT'S REAL?", "car-grotti-cheetah-01.jpg"),
  "gta-6-pc-release-date": ("GTA 6 ON PC", "WHEN?", "port-gellhorn-02.jpg"),
  "gta-6-launch-streams": ("LAUNCH NIGHT", "WHERE TO WATCH", "vice-city-13.jpg"),
- "gta-6-reviews": ("GTA 6 REVIEWS", "THE SCORE TO BEAT", "jason-duval-05.jpg"),
+ "gta-6-reviews": ("GTA 6 REVIEWS", "99 ON METACRITIC", "jason-and-lucia-03.jpg"),
  "gta-6-game-awards-nominations": ("GAME OF THE YEAR", "8 NOMINATIONS", "lucia-caminos-10.jpg"),
  "gta-6-launch-live": ("GTA 6 LAUNCH", "LIVE UPDATES", "vice-city-21.jpg"),
  "trucos-gta-6": ("TRUCOS DE GTA 6", "¿CUÁLES SON REALES?", "car-grotti-cheetah-01.jpg"),
@@ -193,8 +193,7 @@ FAQS = {
                        ("When does GTA 6 start on Xbox Cloud Gaming?", "At 1 AM Eastern on November 19, according to Forbes.")],
  "gta-6-pc-release-date": [("Is GTA 6 on PC?", "Not at launch. GTA 6 launches November 19, 2026 on PS5 and Xbox Series X|S only."),
                            ("When is the GTA 6 PC release date?", "There's no official date. A GamesBeat report says early 2027 (January to March), but Rockstar hasn't confirmed it.")],
- "gta-6-reviews": [("When do GTA 6 reviews come out?", "The review embargo is reportedly November 18, 2026, one day before launch. Rockstar hasn't confirmed the date.")],
- "gta-6-launch-checklist": [("How much is GTA 6?", "$79.99 for the standard edition and $99.99 for the Ultimate edition in the US."),
+  "gta-6-launch-checklist": [("How much is GTA 6?", "$79.99 for the standard edition and $99.99 for the Ultimate edition in the US."),
                             ("Is GTA Online in GTA 6 at launch?", "No. The new GTA Online isn't there on day one; it's expected sometime in 2027.")],
  "gta-6-new-zealand-trick": [("Does the New Zealand trick work for GTA 6?", "It's unconfirmed. Guides describe changing your Xbox region; on PS5 the store region is tied to your account. It can break platform rules, so it's a risk.")],
 }
@@ -352,23 +351,24 @@ guide("gta-6-launch-streams", "GTA 6 Launch Streams: YouTube's 24-Hour Livestrea
 {watchmore("DIFRHVF6T0E")}
 {sources([("Notebookcheck: YouTube 24-hour GTA 6 livestream","https://www.notebookcheck.net/YouTube-to-host-24-hour-GTA-6-release-date-livestream-with-launch-day-gameplay.1449040.0.html"),("GTA BOOM: 24-hour livestream with 30+ creators","https://www.gtaboom.com/gta-6-is-getting-a-24-hour-youtube-livestream-with-more-than-30-creators-5ad2"),("Streams Charts: YouTube launch marathon","https://streamscharts.com/news/youtube-announces-24-hour-gta-6-launch-marathon-global-creators"),("Sportskeeda: Kai Cenat 100% marathon","https://sportskeeda.com/us/streamers/news-kai-cenat-hold-gta-6-100-playthrough-marathon-upon-game-s-release"),("GTA BOOM: Kai Cenat wants to 100% GTA 6","https://www.gtaboom.com/kai-cenat-wants-to-100-gta-6-in-one-nonstop-marathon-d0ed")])}""")
 
-guide("gta-6-reviews", "GTA 6 Reviews: When They Drop and the Score to Beat",
- "When do GTA 6 reviews come out? The embargo is reportedly November 18, the day before launch. Plus the Metacritic scores GTA 6 has to beat.",
- "2026-11-17", f"""<h1>GTA 6 reviews: <span>the score to beat</span></h1>
-<p class="meta">Updated November 17, 2026 · Vice Replay · We'll update this when reviews are out</p>
-<p class="lede">GTA 6 reviews are reportedly coming <b>November 18</b>, one day before launch. Here's what's known, and the scores Rockstar has to beat.</p>
-<h2>When are reviews out?</h2>
-<p>The review embargo is reportedly <b>November 18</b>. Leaker NateTheHate first pointed to that date and several outlets have repeated it, but Rockstar hasn't confirmed it. If it's right, critics' verdicts arrive the day before you can play.</p>
-<h2>Early PlayStation Store ratings? Ignore them</h2>
-<p>A handful of player ratings showed up on the PlayStation Store before launch. It's a tiny sample from people who can't have finished the game, so it says nothing about how good it is.</p>
-<h2>The scores to beat</h2>
-<ul class="list"><li><b>GTA 4:</b> 98 on Metacritic (Xbox 360)</li><li><b>GTA 3:</b> 97</li><li><b>GTA 5:</b> 97</li></ul>
-<p>Anything in the high 90s puts GTA 6 with the best-reviewed games ever. Anything lower will be big news.</p>
-<h2>Already in the awards race</h2>
-<p>GTA 6 got <a href="/guides/gta-6-game-awards-nominations/">8 nominations at The Game Awards 2026</a>, including Game of the Year, before reviews were even out.</p>
-{gearbox(GAME + STORAGE, "Buying GTA 6 or making room for it? These searches show current options and prices:")}
-{sources([("Insider Gaming: GTA 6 review embargo","https://insider-gaming.com/grand-theft-auto-6-review-embargo/"),("Dot Esports: review embargo date","https://dotesports.com/gta/news/gta-6-review-embargo-date"),("Notebookcheck: PS Store reviews before embargo","https://www.notebookcheck.net/GTA-6-PS5-reviews-already-live-on-PlayStation-Store-before-embargo-and-release-date.1447176.0.html")])}""")
-
+guide("gta-6-reviews", "GTA 6 Reviews: 99 on Metacritic, Tied for the Best Score Ever",
+ "GTA 6 reviews are in: 99 on Metacritic and OpenCritic, tied with Zelda: Ocarina of Time for the highest score ever, with no mixed or negative reviews. What critics loved and the one common complaint.",
+ "2026-11-18", f"""<h1>GTA 6 reviews: <span>99 on Metacritic</span></h1>
+<p class="meta">Updated November 18, 2026 · Vice Replay · Scores can still move as more reviews come in</p>
+<p class="lede">The reviews are in, and they're historic. GTA 6 debuted with a <b>99 on Metacritic</b>, tying <b>The Legend of Zelda: Ocarina of Time</b> (1998) for the highest score in the site's history.</p>
+<div class="box"><h3>The scores (as of November 18)</h3><ul class="list" style="margin:0"><li><b>Metacritic:</b> 99, with no mixed or negative reviews</li><li><b>OpenCritic:</b> 99, with 100% of critics recommending it</li><li><b>Reviews counted:</b> well over 100, about five times as many as Ocarina of Time had</li></ul></div>
+<h2>What critics loved</h2>
+<p>Reviewers praised the open world of Leonida, the story of Jason and Lucia, and how much there is to do. Several called it Rockstar's best game.</p>
+<h2>The one common complaint</h2>
+<p>It runs at <b>30 frames per second</b> on consoles, with no 60 fps mode, and some reviewers mention a learning curve on the controls. <a href="/guides/gta-6-best-settings/">Best settings for GTA 6</a>.</p>
+<h2>Where it ranks</h2>
+<p>Before GTA 6, no game had reached a 99 on Metacritic since 1998. For comparison, GTA 4 has a 98 and GTA 5 a 97.</p>
+{video("S5L5Mah6LIU","GTA 6 just got a 99 on Metacritic")}
+{gearbox(GAME + STORAGE, "Getting GTA 6 after the reviews? Links go to the exact listings:")}
+{sources([("Forbes: Metacritic score ties the all-time record","https://www.forbes.com/sites/paultassi/2026/11/18/the-gta-6-metacritic-review-score-is-in-and-ties-an-all-time-record/"),("GameSpot: a score so high it's only happened once","https://www.gamespot.com/articles/gta-6-has-a-metacritic-score-so-high-its-only-happened-once-before/"),("Kotaku: 99 Metacritic","https://kotaku.com/gta-6-review-scores-99-metacritic-rockstar-grand-theft-auto-vi-2000757999"),("GamesRadar: highest-rated game of all time","https://www.gamesradar.com/games/grand-theft-auto/gta-6-metacritic-score-makes-it-the-highest-rated-game-of-all-time-matching-the-og-zelda-ocarina-of-time/"),("Dot Esports: review roundup","https://dotesports.com/gta/news/gta-6-review-roundup")])}""",
+ faq=[("What is GTA 6's Metacritic score?", "99, tied with The Legend of Zelda: Ocarina of Time for the highest score in Metacritic's history (as of November 18, 2026)."),
+      ("Does GTA 6 have any bad reviews?", "As of November 18, 2026, there were no mixed or negative reviews on Metacritic.")],
+ modified="2026-11-18")
 guide("gta-6-game-awards-nominations", "GTA 6 at The Game Awards 2026: 8 Nominations Including Game of the Year",
  "GTA 6 earned 8 nominations at The Game Awards 2026, including Game of the Year and Best Performance for Lucia's actress Manni L. Perez, two days before launch.",
  "2026-11-17", f"""<h1>GTA 6 is up for <span>Game of the Year</span></h1>
