@@ -532,6 +532,7 @@ page("links/", "Vice Replay Links", "Every Vice Replay link: YouTube, TikTok, GT
 <div class="btns">
 <a class="item" href="{YT}?sub_confirmation=1" target="_blank" rel="noopener">YouTube<small>Daily GTA 6 news and Shorts</small><span aria-hidden="true">→</span></a>
 <a class="item" href="https://www.tiktok.com/@vicereplay00" target="_blank" rel="noopener">TikTok<small>@vicereplay00</small><span aria-hidden="true">→</span></a>
+<a class="item" href="https://www.instagram.com/vice.replaytv/" target="_blank" rel="noopener">Instagram<small>@vice.replaytv</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/gta-6-cheats/">GTA 6 cheat codes<small>Confirmed list (updated after launch)</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/">GTA 6 guides<small>Unlock times, storage, the map</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/gear/">GTA 6 gear picks<small>Storage, controllers, capture (affiliate)</small><span aria-hidden="true">→</span></a>

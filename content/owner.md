@@ -47,3 +47,6 @@
   option 2 (`python -m studio.title_swap`, run in the daily momentum check). Nothing else about the video changes.
 
 - Dashboard: https://claude.ai/artifact/UZSJWSBJbXBByZvWcxrxiF (refresh with /dashboard in the main chat after uploads).
+
+- Instagram: @vice.replaytv (https://www.instagram.com/vice.replaytv/), professional Creator account created Nov 18.
+  Reels auto-posting not connected yet (content/instagram-setup.md); until then the owner reposts Shorts by hand.
