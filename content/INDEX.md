@@ -14,10 +14,10 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| ? | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | - |
-| ? | gta6-17-million-sold | Short | GTA 6 Already Made $1.65 Billion (Estimate) | short: b4pWGuZNPJY |
 | 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | short: 6bPAn80dKno |
+| 2026-11-19 | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | main: 3T1de9Fnygg, short: RAs1Sx_7Zh8, news: Z8jQK8nZ1cQ, tips: 6QbWET74cQs |
 | 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | short: vlPV5Yre8T8 |
+| 2026-11-19 | gta6-17-million-sold | Short | GTA 6 Already Made $1.65 Billion (Estimate) | short: b4pWGuZNPJY |
 | 2026-11-18 | houser-launch-statement | Short | Rockstar's Sam Houser Breaks Silence as GTA 6 Launches | short: 4EuMnzlLKTY |
 | 2026-11-18 | gta6-storage-full | video | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | main: MIvka1jBpJ0, short: Wl6K3f5FtVU |
 | 2026-11-18 | gta6-physical-edition-no-disc | video | GTA 6 Physical Edition Has No Disc: What You're Buying | main: RmONg7-uN4w, short: 9lTZNbwbSec, news: rhf1qryjRSM |
