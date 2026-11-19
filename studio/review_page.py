@@ -22,8 +22,16 @@ SCHEDULE = {
 }
 
 
+# Third Short of the day (launch week, owner asked for 3 Shorts a day): lunch-time slot.
+EXTRA = {"weekday": "12:30 PM", 5: "11:00 AM", 6: "12:00 PM"}
+
+
 def times_for(day):
     return SCHEDULE.get(day.weekday(), SCHEDULE["weekday"])
+
+
+def extra_time(day):
+    return EXTRA.get(day.weekday(), EXTRA["weekday"])
 
 
 def esc(s):
@@ -109,7 +117,7 @@ def build(ep_path, day):
         blocks.append(copy_block("TikTok / Reels caption", f"{social} {tags}", f"s{k}-tiktok"))
         if sh.get("pinned_comment"):
             blocks.append(copy_block("Pinned comment", sh["pinned_comment"], f"s{k}-pin"))
-        when = t_short if k == 0 else t_news
+        when = t_short if k == 0 else t_news if k == 1 else extra_time(day)
         kind = "Short" if not sh.get("id") else f"Short: {sh['id']}"
         extra = '<p class="hint">Set "Related video" to the main video.</p>' if main else ""
         cards.append(card(f"short{k}", kind, when, title, vid, None, blocks, extra))

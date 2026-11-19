@@ -26,7 +26,7 @@ import urllib.request
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from .review_page import times_for
+from .review_page import extra_time, times_for
 
 ROOT = Path(__file__).resolve().parent.parent
 ET = ZoneInfo("America/New_York")
@@ -245,8 +245,9 @@ def main():
     out = ROOT / "output" / slug
     day = dt.date.fromisoformat(a.date) if a.date else dt.datetime.now(ET).date()
     t_main, t_short, t_news = times_for(day)
+    t_extra = extra_time(day)
     if a.at:
-        t_main = t_short = t_news = a.at
+        t_main = t_short = t_news = t_extra = a.at
     want = {x.strip() for x in a.approve.split(",")}
     allow = lambda key: "all" in want or key in want
     done_file = out / "uploaded.json"
@@ -282,7 +283,7 @@ def main():
         es = sh.get("es") or (ep.get("short_es") if not sh.get("id") else None)
         playlist = sh.get("playlist") or (PLAYLISTS["short"] if not sh.get("id") else PLAYLISTS["news"])
         jobs.append((key, out / f"{name}.mp4", title or sh.get("title") or ep["title"], desc, tags,
-                     t_short if k == 0 else t_news, None, sh.get("pinned_comment"), es, out / f"{name}.timings.json",
+                     (t_short if k == 0 else t_news if k == 1 else t_extra), None, sh.get("pinned_comment"), es, out / f"{name}.timings.json",
                      playlist))
 
     guide = ROOT / "site" / "guides" / f"{slug}.json"

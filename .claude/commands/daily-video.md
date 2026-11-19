@@ -31,7 +31,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    haven't covered, prefer it (with our own research and angle).
 2. **Make it** following CLAUDE.md: research with web search (facts from the last few days, keep source
    URLs), write `episodes/<slug>.json` with `segments`, `short` (cut from this video) and `shorts` holding
-   ONE standalone news Short (id `news`). For that news Short, prefer what big streamers and creators are
+   TWO standalone Shorts (owner asked for 3 Shorts a day in launch week): id `news` (posted 8:30 PM) and id `tips`
+   (posted 12:30 PM: one quick, useful GTA 6 tip or fact players are searching today, different from the main video). For that news Short, prefer what big streamers and creators are
    doing with GTA 6 right now (launch marathons, records, viral moments, reactions), else the most-talked-
    about GTA 6 news of the day; it must be a different story from the main video. Render the `--preview`,
    check 3-4 frames, then render the final video and `--short` (renders both Shorts).
