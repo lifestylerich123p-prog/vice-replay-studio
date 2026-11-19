@@ -35,3 +35,9 @@
 - 2026-11-18: STANDING APPROVAL for comment auto-replies. The owner (on Max) approved replying to new YouTube comments
   automatically twice a day (~1:13 PM and ~9:13 PM ET) via `.claude/commands/auto-replies.md` / `python -m studio.replies`,
   skipping spam, hate, trolls and anything unsafe. Also approved: Opus for the daily run, 3 Shorts a day in launch week.
+
+- 2026-11-18 ~10 PM ET: TONIGHT-ONLY approval (GTA 6 launch night). The owner said: "For tonight approve all and if
+  need make new video without my approval." Valid until 9:00 AM ET on 2026-11-19: the main chat may upload anything
+  that is ready (including the launch-day morning episode when it arrives) and make + post new launch-night videos
+  without asking, still following every channel rule (facts sourced, no spoilers, no licensed music, not affiliated).
+  After 9:00 AM ET the normal approval rules apply again.
