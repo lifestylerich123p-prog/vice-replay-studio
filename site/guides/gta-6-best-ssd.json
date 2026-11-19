@@ -1,0 +1,68 @@
+{
+ "slug": "gta-6-best-ssd",
+ "lang": "en",
+ "title": "Best SSD for GTA 6 on PS5 (212 GB): What to Buy and What to Skip",
+ "h1": "Best SSD for GTA 6: <span>the PS5 upgrade that fits</span>",
+ "desc": "GTA 6 needs up to 212 GB. Which PS5 SSD works (Gen4 NVMe, heatsink, 5,500 MB/s), what size to get, the Xbox option, and how to install it. Black Friday 2026 tips.",
+ "date": "2026-11-19",
+ "video": null,
+ "card": [
+  "BEST SSD FOR GTA 6",
+  "THE PS5 UPGRADE",
+  "car-vapid-stanier-01.jpg"
+ ],
+ "lede": "GTA 6 is up to 212 GB, so a lot of PS5 owners are seeing \"not enough space\" this week. Try the <a href=\"/guides/gta-6-storage/\">free fixes</a> first. If you still need room, this is the upgrade that actually works, straight from Sony's requirements.",
+ "sections": [
+  [
+   "What your PS5 needs (Sony's requirements)",
+   "<ul class=\"list\"><li><b>Type:</b> M.2 NVMe SSD, PCIe Gen4 x4.</li><li><b>Speed:</b> 5,500 MB/s sequential read or faster is recommended.</li><li><b>Cooling:</b> a heatsink (or heat-dissipating cover) is required.</li><li><b>Size:</b> 250 GB up to 8 TB; lengths from 2230 to 22110 fit.</li></ul><p>Works in the original PS5, PS5 Slim and PS5 Pro (all have the M.2 expansion slot).</p>"
+  ],
+  [
+   "What size to get",
+   "<ul class=\"list\"><li><b>1 TB:</b> GTA 6 plus a few big games.</li><li><b>2 TB:</b> the sweet spot for most people, GTA 6 and a full library.</li><li><b>4 TB:</b> if you never want to delete anything again.</li></ul>"
+  ],
+  [
+   "What to look for in the listing",
+   "<p>The listing should say <b>PCIe Gen4</b>, <b>NVMe</b>, <b>heatsink</b> and <b>PS5 compatible</b>. Skip Gen3 drives, SATA M.2 drives and drives without a heatsink. <a href=\"https://www.amazon.com/s?k=PS5+compatible+2TB+NVMe+SSD+with+heatsink&tag=vicereplay-20\" target=\"_blank\" rel=\"sponsored nofollow noopener\">See PS5-compatible 2 TB SSDs with a heatsink (affiliate)</a>.</p>"
+  ],
+  [
+   "On Xbox Series X|S",
+   "<p>Current-gen games have to run from internal storage or an <b>official Storage Expansion Card</b> that plugs into the back. A regular USB drive can store games but can't play them. <a href=\"https://www.amazon.com/s?k=Xbox+Series+X+storage+expansion+card&tag=vicereplay-20\" target=\"_blank\" rel=\"sponsored nofollow noopener\">See Xbox Storage Expansion Cards (affiliate)</a>.</p>"
+  ],
+  [
+   "Installing it (about 10 minutes)",
+   "<p>Turn the PS5 fully off and unplug it, remove the cover, open the M.2 slot, insert the SSD and screw it in, then format it when the console asks. Follow <a href=\"https://www.playstation.com/en-us/support/hardware/ps5-install-m2-ssd/\" target=\"_blank\" rel=\"noopener\">Sony's step-by-step guide</a>.</p>"
+  ],
+  [
+   "Black Friday tip",
+   "<p>Storage is one of the most discounted things on Black Friday (November 27, 2026). If you can wait a week, compare prices then. <a href=\"/guides/gta-6-black-friday/\">Our Black Friday page</a> is updated as deals go live.</p>"
+  ]
+ ],
+ "faq": [
+  [
+   "What SSD do I need for GTA 6 on PS5?",
+   "An M.2 NVMe PCIe Gen4 SSD with a heatsink; Sony recommends 5,500 MB/s read speed or faster. GTA 6 needs up to 212 GB."
+  ],
+  [
+   "Can I play GTA 6 from a USB drive?",
+   "No. On PS5 and Xbox Series X|S, current-gen games must run from internal storage, a PS5 M.2 SSD or an Xbox storage expansion card. USB drives can only store them."
+  ],
+  [
+   "Does the PS5 Pro have an SSD slot?",
+   "Yes. The PS5, PS5 Slim and PS5 Pro all have the M.2 expansion slot."
+  ]
+ ],
+ "gear": [
+  "storage"
+ ],
+ "sources": [
+  [
+   "PlayStation: how to add M.2 SSD storage to PS5",
+   "https://www.playstation.com/en-us/support/hardware/ps5-install-m2-ssd/"
+  ],
+  [
+   "Forbes: GTA 6 download size",
+   "https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/"
+  ]
+ ]
+}
