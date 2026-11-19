@@ -22,6 +22,18 @@ REPUTABLE = ["ign", "gamespot", "kotaku", "polygon", "forbes", "the verge", "eur
 STOP = set("gta grand theft auto vi 6 the a an and of to in for on with is are at as how what when why your you it its "
            "this that from new now here all about can will be after before by out up more just".split())
 FEEDS = ["GTA 6", "GTA VI", "Rockstar GTA 6"]
+# Topics that matter even when outlets word their headlines differently (launch week = hundreds of headlines).
+TOPICS = {
+    "review scores": ["metacritic", "opencritic", "review score", "reviews are in", "review roundup", "10/10", "perfect score"],
+    "sales / records": ["sales", "sold", "million copies", "record-breaking", "biggest launch", "concurrent", "peak viewers", "million players"],
+    "servers / outage": ["servers down", "server issues", "outage", "can't connect", "error code", "crashing"],
+    "patch / update": ["patch", "update", "hotfix", "day one", "day-one"],
+    "delay / refund": ["delay", "delayed", "refund", "recall"],
+    "bans": ["ban", "banned", "suspended", "suspension"],
+    "cheats": ["cheat", "cheats", "cheat code"],
+    "pc / online": ["pc version", "pc release", "gta online", "online mode"],
+    "rockstar statement": ["houser", "rockstar says", "rockstar confirms", "statement", "take-two", "zelnick"],
+}
 
 
 def fetch(q):
@@ -77,7 +89,24 @@ def main():
         lead = c["items"][0]
         print(f"- {len(c['reputable'])} reputable / {len(c['items'])} total: {lead['title']}  "
               f"[{', '.join(c['reputable'][:5]) or lead['source']}]  {lead['link']}")
+    # topic sweep: 3+ reputable outlets on the same topic counts as BIG even if headlines differ
+    topic_hits = []
+    for name, keys in TOPICS.items():
+        hit = [i for i in items if any(k in i["title"].lower() for k in keys)]
+        rep = sorted({i["source"] for i in hit if any(r in i["source"].lower() for r in REPUTABLE)})
+        if len(rep) >= 3:
+            topic_hits.append((len(rep), name, rep, hit))
+    topic_hits.sort(reverse=True)
+    for n, name, rep, hit in topic_hits[:3]:
+        print(f"- TOPIC '{name}': {n} reputable outlets, e.g. \"{hit[0]['title']}\" [{', '.join(rep[:5])}]")
     big = clusters[0] if len(clusters[0]["reputable"]) >= 3 else None
+    if not big and topic_hits:
+        n, name, rep, hit = topic_hits[0]
+        print(f"\nBIG: topic '{name}' is covered by {n} reputable outlets. Check it.")
+        sys.exit(0)
+    if not big and len(items) >= 120:
+        print(f"\nUNKNOWN: very busy news ({len(items)} headlines in 6 hours); do the full check.")
+        sys.exit(2)
     if big:
         print(f"\nBIG: \"{big['items'][0]['title']}\" is covered by {len(big['reputable'])} reputable outlets.")
         sys.exit(0)
