@@ -1,0 +1,36 @@
+{
+  "owner_approved": true,
+  "owner_approved_on": "2026-11-19",
+  "name": "$12,500 LACY GTA VI Marathon Pool Campaign (Reach)",
+  "platform": "Content Rewards",
+  "campaign_url": "https://contentrewards.com/c/campaigns/a5c63fad-cd53-4b81-9305-4a2d1696872a",
+  "rules_url": "https://reachclipping.com/LACYGTA (blocked from this workspace: owner screenshots needed)",
+  "status": "joined (owner screenshot in chat, Nov 19 7:09 AM)",
+  "pay_type": "pool",
+  "pool": 12500,
+  "pool_rule": "Split by each clipper's share of approved views when the marathon ends; 750K total views to share the pool (campaign page Nov 19; the Nov 12 article said 1M).",
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts",
+    "X"
+  ],
+  "engine": "everygen",
+  "clip_seconds": 30,
+  "captions": true,
+  "on_screen_credit": "Lacy",
+  "required_hashtags": [
+    "#LACY"
+  ],
+  "required_in_caption": "Lacy's name and #LACY",
+  "rules": [
+    "Clips from Lacy's GTA 6 marathon only; Lacy must be the main focus.",
+    "Caption must include Lacy's name and #LACY.",
+    "Full rules on reachclipping.com/LACYGTA: copy them here (owner screenshots) before making any clip."
+  ],
+  "source_footage": "Lacy's GTA 6 marathon stream VODs",
+  "source_queue": [],
+  "max_clips_per_day": 2,
+  "submit_within_minutes": 30,
+  "notes": "Crowded: Reach's GTA 6 pools had 502 clippers and Lacy's clips 18.9M views by Nov 18. Low priority vs KreekCraft. Everygen credits only after a cost estimate and the owner's yes."
+}

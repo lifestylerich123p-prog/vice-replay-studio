@@ -1,9 +1,9 @@
 {
-  "owner_approved": false,
+  "owner_approved": true,
   "name": "KreekCraft GTA 6 Clipping (ClipLaunch)",
   "platform": "Content Rewards",
   "campaign_url": "https://contentrewards.com/c/campaigns/2eaa14fb-6927-4136-897e-b096e0d907d6",
-  "status": "candidate (recommended Nov 19; owner must join on Content Rewards and say 'join KreekCraft')",
+  "status": "joined (owner joined on Content Rewards and shared the rules in chat, Nov 19 7:10 AM)",
   "rate_per_1000_views": 1.0,
   "min_payout_per_clip": 3.0,
   "max_payout_per_clip": 300.0,
@@ -12,21 +12,40 @@
   "budget_left": 6824,
   "clippers": 0,
   "budget_checked": "2026-11-19 6:15 AM ET",
-  "platforms": ["TikTok", "Instagram Reels", "YouTube Shorts"],
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts"
+  ],
   "engine": "everygen",
   "layout": "stacked",
   "clip_seconds": 30,
   "captions": true,
   "on_screen_credit": "@KreekCraft",
   "rules": [
-    "Clip KreekCraft's funniest, craziest and most viral GTA 6 livestream moments (reactions, gameplay, unexpected moments).",
-    "Every clip must include KreekCraft's stream overlay (don't crop it out).",
-    "Every clip must drive viewers back to his livestream (CTA like 'Watch KreekCraft live on YouTube').",
-    "Full rules unlock after joining: copy them here before making any clip."
+    "The official KreekCraft logo overlay must stay clearly visible for the ENTIRE clip (clips without it are rejected): never crop it out when reframing.",
+    "Only KreekCraft's official GTA 6 livestreams and stream replays: no other games, no other creators.",
+    "Every caption must include \"Watch KreekCraft on YouTube and Twitch\".",
+    "Every post must include #GTA6 #KreekCraft #GrandTheftAutoVI.",
+    "At least 40% of viewers from the US, UK, Canada or Australia.",
+    "At least 0.8% engagement rate; likes must stay publicly visible.",
+    "Entertaining, properly edited, strong hook in the first 1-2 seconds; no low-effort screen recordings or random gameplay.",
+    "Original edits only: no stolen clips, reuploads, fabricated context, fake reactions or misleading titles.",
+    "Don't post the same or nearly identical clip more than 5 times; no story boosting, artificial views or engagement manipulation.",
+    "Every clip stays public for at least 30 days.",
+    "Only TikTok, Instagram Reels and YouTube Shorts.",
+    "New accounts must follow ClipLaunch's warmup process; read their audience-targeting guide (owner)."
   ],
   "source_footage": "youtube.com/@KreekCraft: GTA 6 livestream VODs (none posted yet as of Nov 19 7 AM ET; his recent uploads are Roblox)",
   "source_queue": [],
   "max_clips_per_day": 2,
   "submit_within_minutes": 30,
-  "notes": "No application needed. Wait until KreekCraft streams GTA 6. His audience skews young: keep clips free of graphic violence and crude moments. Everygen credits only after a cost estimate and the owner's yes."
+  "notes": "No application needed. As of Nov 19 7 AM ET KreekCraft had not streamed GTA 6 yet (latest uploads Roblox): start when he does. His audience skews young: no graphic violence or crude moments. Everygen credits only after a cost estimate and the owner's yes.",
+  "owner_approved_on": "2026-11-19",
+  "required_in_caption": "Watch KreekCraft on YouTube and Twitch",
+  "required_hashtags": [
+    "#GTA6",
+    "#KreekCraft",
+    "#GrandTheftAutoVI"
+  ]
 }
