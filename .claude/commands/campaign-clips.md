@@ -7,6 +7,24 @@ Two editing engines: **local** (free: `studio/clip.py`) and **everygen** (better
 Everygen credits; the ClipCircuit method from the owner's other channel). The campaign file's `"engine"` picks one;
 default `local`.
 
+## 0. Fast path that works (Nov 19, Everygen, about 1 credit per clip)
+1. Owner pastes Twitch clip links (twitch.tv/<streamer>/clip/...; "Top - Last 24 hours" = freshest moments).
+2. `download_video` each link (free, seconds). `inspect_media` spread 6 on all of them (free) and judge:
+   keep animals, cops, crashes, stores, food, funny reactions with the streamer's face reacting; DROP cutscenes,
+   nudity/sexual scenes, violence against people/women, "murder", anything that makes the streamer look bad,
+   clips under ~8 s. `ask_video` (1 credit/min) only when the words matter for the hook or captions.
+3. One `edit_media` per clip: `reframe` 9:16 on the FULL clip first (it stacks the facecam on top; trimming first
+   can break the stack), then `trim` (ranges) if needed, `blur_region` x 0.95 y 0.40 w 0.05 h 0.14 (chat-platform
+   icons: "no logos" rules), `overlay_text` hook (3-5 words naming the streamer, top, margin 0.375, size m, box, 0-3 s);
+   timed caption lines with more `overlay_text` (bottom, margin 0.12) when the clip has no burned-in captions.
+   `inspect_media` 4 frames to check (face on top, text not clipped).
+4. `curl` the result URL (media.viewmax.io is allowed) to `output/clips/<campaign>/<name>.mp4`, SendUserFile it with
+   a title + description (name + required hashtag + "Watch <streamer> live on Twitch"), and queue it for Instagram
+   (two campaign clips per slot, `.claude/commands/instagram.md`). YouTube downloads of long VODs time out here:
+   use Twitch clips instead. Check `get_credit_balance` before/after a batch and tell the owner the credits used.
+5. Owner posts on YouTube and sends the link: log it in tracker.md, schedule the 20-minute submit reminder.
+   At ~2,000 views ask for the clip's country-breakdown screenshot (campaign audience rule).
+
 ## 1. The campaign (owner approval first)
 - Read `content/campaigns/<name>.json`. If it doesn't exist, ask the owner for the campaign page details and create it
   from `_example.json` with `owner_approved: false`. **Stop unless `owner_approved` is true.** Never set it yourself;

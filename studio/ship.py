@@ -73,6 +73,37 @@ def check_sheet(videos, dest):
         sheet.save(dest, quality=80)
 
 
+def queue_reels(ep_path, upload_txt, date=None):
+    """Every uploaded Short also goes to Instagram Reels (owner approved Nov 19): add it to
+    content/learn/reels_queue.json 5 minutes after its YouTube time and print the wake-ups to schedule."""
+    import datetime as dt
+    import json
+    import re
+    from zoneinfo import ZoneInfo
+    et = ZoneInfo("America/New_York")
+    day = dt.date.fromisoformat(date) if date else dt.datetime.now(et).date()
+    qf = ROOT / "content" / "learn" / "reels_queue.json"
+    q = json.loads(qf.read_text()) if qf.exists() else []
+    added = []
+    for m in re.finditer(r"uploading (\S+): .*?->\s+(now|\d{1,2}:\d{2} [AP]M)", upload_txt):
+        key, when = m.group(1), m.group(2)
+        if key in ("main", "replies"):
+            continue
+        if when == "now":
+            at = dt.datetime.now(et) + dt.timedelta(minutes=2)
+        else:
+            at = dt.datetime.combine(day, dt.datetime.strptime(when, "%I:%M %p").time(), et) + dt.timedelta(minutes=5)
+        item = {"at": at.strftime("%Y-%m-%d %H:%M"), "episode": str(Path(ep_path).relative_to(ROOT)), "item": key}
+        if not any(i.get("episode") == item["episode"] and i.get("item") == key for i in q):
+            q.append(item)
+            added.append(item["at"])
+    if added:
+        q.sort(key=lambda i: (i["at"], 0 if i.get("campaign") else 1))
+        qf.write_text(json.dumps(q, indent=1, ensure_ascii=False))
+        print("REELS QUEUED (schedule a send_later wake-up running `python -m studio.instagram_upload --queue` at each):",
+              ", ".join(sorted(added)))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("episode")
@@ -130,6 +161,7 @@ def main():
         print("\nUPLOAD:\n" + "\n".join(summary))
         if r.returncode:
             print(r.stderr[-1500:])
+        queue_reels(ep_path, txt, a.date)
 
     if a.tiktok:
         shorts = [v for v in videos if "-short" in v.name]

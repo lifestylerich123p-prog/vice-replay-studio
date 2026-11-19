@@ -59,6 +59,23 @@ def retire_stock(dry, gone):
             shutil.move(str(p), dest / p.name)
 
 
+def queued_files():
+    """Files the Instagram queue (content/learn/reels_queue.json) still has to post: never clean these."""
+    qf = ROOT / "content" / "learn" / "reels_queue.json"
+    keep = set()
+    if qf.exists():
+        for it in json.loads(qf.read_text()):
+            if it.get("posted"):
+                continue
+            if it.get("video"):
+                keep.add((ROOT / it["video"]).resolve())
+            elif it.get("episode"):
+                slug = Path(it["episode"]).stem
+                name = f"{slug}-short" + ("" if it.get("item") in (None, "short") else f"-{it['item']}")
+                keep.add((ROOT / "output" / slug / f"{name}.mp4").resolve())
+    return keep
+
+
 def clean(dry):
     gone, freed = [], 0
 
@@ -71,6 +88,7 @@ def clean(dry):
             shutil.rmtree(p) if p.is_dir() else p.unlink()
 
     out = ROOT / "output"
+    keep = queued_files()  # videos still waiting in the Instagram queue
     if out.exists():
         for d in out.iterdir():
             if not d.is_dir():
@@ -84,7 +102,7 @@ def clean(dry):
                 rm(w)
             uploaded = (d / "uploaded.json").exists()
             for f in d.rglob("*"):
-                if f.is_file() and f.name != "uploaded.json" and f.exists():
+                if f.is_file() and f.name != "uploaded.json" and f.exists() and f.resolve() not in keep:
                     if age_days(f) > 7 or (uploaded and age_days(f) > 2):
                         rm(f)
             for sub in sorted((p for p in d.rglob("*") if p.is_dir()), reverse=True):
@@ -169,6 +187,11 @@ def write_index():
              "- Routines: `.claude/commands/` · code: `studio/` · website: `site/` + `tools/site_guides.py` (repo vicereplay-site)",
              "- Screenshots: `media/official/` (names = place/character/car) · gameplay: `media/gameplay/` (+ processed.json)",
              "- Renders: `output/<slug>/` (videos auto-deleted 2 days after upload; `uploaded.json` kept)",
+             "- Live status: `content/learn/status.md` (`python -m studio.status`) · health: `content/learn/health.md`",
+             "- Instagram: queue `content/learn/reels_queue.json`, carousels `content/carousels/`, how-to "
+             "`.claude/commands/instagram.md`",
+             "- Campaigns: `content/campaigns/<name>.json` (approved = owner_approved), `tracker.md`, latest scan "
+             "`content/campaigns/scan-*.md`, how-to `.claude/commands/campaign-clips.md`",
              "- Finished one-off files: `content/archive/`", "",
              "## Episodes (newest first)", "| Date | Slug | Kind | Title | YouTube ids |", "|---|---|---|---|---|"]
     lines += [f"| {d} | {s} | {k} | {t} | {i} |" for d, s, k, t, i in episode_rows()]

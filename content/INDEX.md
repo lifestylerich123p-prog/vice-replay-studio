@@ -9,6 +9,9 @@ Read this first instead of searching the repo.
 - Routines: `.claude/commands/` · code: `studio/` · website: `site/` + `tools/site_guides.py` (repo vicereplay-site)
 - Screenshots: `media/official/` (names = place/character/car) · gameplay: `media/gameplay/` (+ processed.json)
 - Renders: `output/<slug>/` (videos auto-deleted 2 days after upload; `uploaded.json` kept)
+- Live status: `content/learn/status.md` (`python -m studio.status`) · health: `content/learn/health.md`
+- Instagram: queue `content/learn/reels_queue.json`, carousels `content/carousels/`, how-to `.claude/commands/instagram.md`
+- Campaigns: `content/campaigns/<name>.json` (approved = owner_approved), `tracker.md`, latest scan `content/campaigns/scan-*.md`, how-to `.claude/commands/campaign-clips.md`
 - Finished one-off files: `content/archive/`
 
 ## Episodes (newest first)

@@ -54,12 +54,8 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
 - **Momentum** (`momentum.md`, daily): one follow-up Short with something new when a Short takes off; owner approves
   in the main chat. **Website**: daily guide (+ Spanish) via `site/` + `tools/site_guides.py`, published from the main
   chat (`/publish-site`); scheduled runs can't push, they hand files over with fire_trigger.
-- **Instagram Reels** (owner approved Nov 19): after uploading Shorts, add each English Short to
-  `content/learn/reels_queue.json` for 5 minutes after its YouTube time and send_later a wake-up that runs
-  `IG_USER_ID=... python -m studio.instagram_upload --queue` (one Reel per run, ~1-1.5 h apart). Campaign clips too
-  (the owner submits each Reel within 30 minutes). Plus about one carousel a day (tips, fun facts, "by the numbers")
-  from `content/carousels/<slug>.json` via `studio.ig_cards` + `--carousel`/queue: only checked facts, official
-  screenshots; Everygen images (2 credits) allowed sparingly for covers (owner OK, Nov 19), never fake GTA art.
+- **Instagram** (@vice.replaytv, owner approved Nov 19): every uploaded Short, campaign clips (two per slot) and
+  about one carousel a day go out through `content/learn/reels_queue.json`; how: `.claude/commands/instagram.md`.
 - **TikTok**: the owner posts by hand; Shorts go to the "📱 Vice Replay TikTok" chat (see owner.md;
   `studio.ship --tiktok` pushes them to the `tiktok-files` branch).
 - **Campaigns** (Whop/Content Rewards): only campaigns with `owner_approved: true` (set only when the owner approves
@@ -73,6 +69,8 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
   approved campaigns); only what reliable sources say they said or did.
 - **Learning**: `python -m studio.learn` (our numbers + hottest GTA 6 videos; YouTube API key in the environment);
   lessons in `content/learn/lessons.md`. `/stats` logs Studio screenshots into `content/performance.md`.
+- **Status**: `python -m studio.status` = one screen (health, YouTube schedule + views, Instagram posted/next,
+  campaigns + clip views); use it for "how are we doing?".
 - **Health**: `python -m studio.doctor` (free) checks the YouTube connection and its 7-day expiry, missing pinned
   comments (`--fix` posts approved ones), the website and disk. After reconnecting YouTube, write today's date to
   `content/learn/youtube_connected.txt`.
