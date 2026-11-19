@@ -154,9 +154,12 @@ def run_queue(uid):
     from zoneinfo import ZoneInfo
     q = json.loads(QUEUE.read_text()) if QUEUE.exists() else []
     now = dt.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M")
+    done_at = None  # campaign clips sharing one time slot go out together (owner: "two at the time")
     for it in q:
         if it.get("posted") or it["at"] > now:
             continue
+        if done_at and (it["at"] != done_at or not it.get("campaign")):
+            break
         video, caption = (episode_reel(it["episode"], it.get("item")) if it.get("episode")
                           else (str(ROOT / it["video"]), it["caption"]))
         if not Path(video).exists():
@@ -168,8 +171,10 @@ def run_queue(uid):
         print(f"Posted Reel ({it.get('campaign') or 'Vice Replay'}): {it['posted']}")
         if it.get("campaign"):
             print(f"CAMPAIGN: submit this Reel on the {it['campaign']} page within 30 minutes.")
+            done_at = done_at or it["at"]
+            continue
         break
-    else:
+    if not any(i.get("posted_at") == now for i in q):
         print("No Reel due right now.")
     left = [i for i in q if not i.get("posted")]
     print(f"{len(left)} Reel(s) still queued" + (f"; next at {min(i['at'] for i in left)} ET" if left else ""))

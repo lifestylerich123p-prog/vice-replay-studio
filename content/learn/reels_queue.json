@@ -12,19 +12,23 @@
   "caption": "LACY tried to pet a GTA 6 alligator 🐊😭\n\nLACY took on a GTA 6 alligator during his GTA 6 marathon. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy"
  },
  {
+  "at": "2026-11-19 11:30",
+  "video": "output/clips/lacy-gta6/lacy-shoe-store.mp4",
+  "campaign": "LACY (Content Rewards)",
+  "caption": "LACY found a shoe store in GTA 6 👟😭\n\nLACY spotted a shoe store on the GTA 6 map and dropped everything. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy"
+ },
+ {
   "at": "2026-11-19 12:35",
   "episode": "episodes/gta6-launch-day-survival-guide.json",
   "item": "tips"
  },
  {
   "at": "2026-11-19 14:00",
-  "video": "output/clips/lacy-gta6/lacy-shoe-store.mp4",
-  "campaign": "LACY (Content Rewards)",
-  "caption": "LACY found a shoe store in GTA 6 👟😭\n\nLACY spotted a shoe store on the GTA 6 map and dropped everything. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy"
+  "episode": "episodes/gta6-cheats-catch.json"
  },
  {
   "at": "2026-11-19 15:30",
-  "episode": "episodes/gta6-cheats-catch.json"
+  "episode": "episodes/gta6-metacritic-99.json"
  },
  {
   "at": "2026-11-19 17:00",
@@ -33,15 +37,19 @@
   "caption": "LACY tried to lose the cops in a drive-thru 🍔😭\n\nLACY's plan to escape the GTA 6 cops: order a double-double. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy"
  },
  {
+  "at": "2026-11-19 17:00",
+  "video": "output/clips/lacy-gta6/lacy-shark.mp4",
+  "campaign": "LACY (Content Rewards)",
+  "caption": "LACY vs a GTA 6 shark 🦈😳\n\nA shark showed up during LACY's GTA 6 dive and he had to fight it off. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy"
+ },
+ {
   "at": "2026-11-19 18:05",
   "episode": "episodes/gta6-launch-day-survival-guide.json",
   "item": "short"
  },
  {
   "at": "2026-11-19 19:30",
-  "video": "output/clips/lacy-gta6/lacy-shark.mp4",
-  "campaign": "LACY (Content Rewards)",
-  "caption": "LACY vs a GTA 6 shark 🦈😳\n\nA shark showed up during LACY's GTA 6 dive and he had to fight it off. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy"
+  "episode": "episodes/gta6-streaming-record.json"
  },
  {
   "at": "2026-11-19 20:35",
@@ -50,14 +58,6 @@
  },
  {
   "at": "2026-11-20 11:00",
-  "episode": "episodes/gta6-metacritic-99.json"
- },
- {
-  "at": "2026-11-20 14:00",
   "episode": "episodes/gta6-storage-full.json"
- },
- {
-  "at": "2026-11-20 17:00",
-  "episode": "episodes/gta6-streaming-record.json"
  }
 ]
