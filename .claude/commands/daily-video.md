@@ -4,6 +4,8 @@ description: The automated daily run - pick today's topic, make the video + Shor
 You are running the daily Vice Replay automation. Nobody is watching live, so don't ask questions:
 make sensible choices, finish the whole run, and explain your choices in the final report.
 
+00. **Health first (free)**: `python -m studio.doctor --fix`. If it reports 🔴 (YouTube connection failing or about to
+   expire, website down), put that in bold at the very top of the final message with the fix.
 0. **Gameplay + "Wildest Moment of the Day"**: run `python -m studio.gameplay` (pulls the owner's new recordings from
    Drive and cuts highlights into `media/gameplay/`; `processed.json` lists each clip with its score and `category`
    from the Drive subfolder: Wildest moments, Chases & crashes, Funny & fails, Glitches, Scenery & cars).

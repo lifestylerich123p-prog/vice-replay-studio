@@ -67,6 +67,9 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
   approved campaigns); only what reliable sources say they said or did.
 - **Learning**: `python -m studio.learn` (our numbers + hottest GTA 6 videos; YouTube API key in the environment);
   lessons in `content/learn/lessons.md`. `/stats` logs Studio screenshots into `content/performance.md`.
+- **Health**: `python -m studio.doctor` (free) checks the YouTube connection and its 7-day expiry, missing pinned
+  comments (`--fix` posts approved ones), the website and disk. After reconnecting YouTube, write today's date to
+  `content/learn/youtube_connected.txt`.
 - **Lean runs**: `python -m studio.radar` (free) first in breaking-news runs (QUIET = stop). Don't re-read big files
   or re-render without a reason. End every run that changed anything with `python -m studio.tidy`. New files go where
   the README's table says; finished one-off files go to `content/archive/`.
