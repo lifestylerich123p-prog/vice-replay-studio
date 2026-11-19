@@ -11,7 +11,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    under it (set that segment's `media` to the clip). `media/gameplay/processed.json` gives each clip's
    `category` from the Drive subfolder it was dropped in (Wildest moments, Chases & crashes, Funny & fails,
    Glitches, Scenery & cars): use it for the Short's angle, e.g. a "funniest fail of the day" Short.
-0b. **Learn first**: run `python -m studio.learn` (YouTube Data API; if it fails because there is no API key,
+0b. **Learn first**: run `python -m studio.learn` and `python -m studio.retention` (free; read `content/learn/retention.md`:
+   which hooks/lengths/topics keep viewers, and write hooks like the best ones), (YouTube Data API; if it fails because there is no API key,
    say so in the report and continue). Then read `content/learn/channel.json` (our uploads with views/hour),
    today's `content/learn/market-<date>.md` (the hottest GTA 6 videos and Shorts on YouTube right now),
    `content/learn/patterns.md`, `content/learn/lessons.md`, and if present `content/learn/analytics.json`
