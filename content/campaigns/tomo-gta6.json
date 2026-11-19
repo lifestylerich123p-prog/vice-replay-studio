@@ -6,7 +6,7 @@
   "campaign_url": "Content Rewards: TOMO GTA VI Clipping (joined Nov 18); rules on Notion (Clipping Nation)",
   "rate_per_1000_views": 1.5,
   "status": "paused (Nov 19: owner agreed to skip; $235 of $1,000 left with 36 clippers, budget likely gone before a clip reaches 2,333 views)",
-  "engine": "everygen",
+  "engine": "local",
   "layout": "stacked",
   "facecam_box": [
     0.0,

@@ -17,8 +17,8 @@
     "Instagram Reels",
     "YouTube Shorts"
   ],
-  "engine": "everygen",
-  "layout": "stacked",
+  "engine": "local",
+  "layout": "blur",
   "clip_seconds": 30,
   "captions": true,
   "on_screen_credit": "@KreekCraft",
@@ -40,7 +40,7 @@
   "source_queue": [],
   "max_clips_per_day": 2,
   "submit_within_minutes": 30,
-  "notes": "No application needed. As of Nov 19 7 AM ET KreekCraft had not streamed GTA 6 yet (latest uploads Roblox): start when he does. His audience skews young: no graphic violence or crude moments. Everygen credits only after a cost estimate and the owner's yes.",
+  "notes": "No application needed. As of Nov 19 7 AM ET KreekCraft had not streamed GTA 6 yet (latest uploads Roblox): start when he does. His audience skews young: no graphic violence or crude moments. Owner (Nov 19): no Everygen; free local engine only (footage via a Google Drive file link).",
   "owner_approved_on": "2026-11-19",
   "required_in_caption": "Watch KreekCraft on YouTube and Twitch",
   "required_hashtags": [
@@ -49,5 +49,6 @@
     "#GrandTheftAutoVI"
   ],
   "youtube_handle": "KreekCraft",
-  "priority": 1
+  "priority": 1,
+  "layout_note": "blur = whole stream frame on a blurred 9:16 background, so the streamer's camera and any required overlay stay visible."
 }

@@ -53,3 +53,4 @@
 - 2026-11-18 11:55 PM ET: owner extended it: "Just continue to monitor thru the night post if needed without my
   approval." Overnight checks at 12:10 (comment), 1:15, 2:45, 4:45 and 6:45 AM; each may post one strong, confirmed
   (2+ reputable sources), uncovered story as a Short. Ends 9:00 AM ET Nov 19.
+- 2026-11-19: Owner said "If anything use something else not Everygen": campaign clips use the free local engine (studio/clip.py) with footage the owner puts in Google Drive. Don't use Everygen unless the owner asks again.

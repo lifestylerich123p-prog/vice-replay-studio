@@ -17,6 +17,10 @@ default `local`.
   them word for word into `rules`.
 
 ## 2. Footage (both engines)
+- Owner's choice (Nov 19): use the free `local` engine, not Everygen, unless the owner asks for Everygen again.
+  YouTube/Twitch can't be downloaded here (blocked): the owner saves the stretch (2-5 min around the moment) to Google
+  Drive, shares it "Anyone with the link", and `python -m studio.clip <drive file link> --campaign <name>` fetches it
+  into output/campaign_footage/ (never media/).
 - Find new source videos first, free: `python -m studio.campaign_sources` (approved, non-paused campaigns with a
   `youtube_handle`; marks videos not yet used). Put picks in the campaign's `source_queue`, used ones in `used_sources`.
 - Only from where the campaign says (`source_footage`), the source given here, else the next `source_queue` item.

@@ -197,6 +197,22 @@ def render(src, start, length, name, layout, cfg, sw, sh, out_dir, headline, tag
     return out, bool(words)
 
 
+def fetch(source):
+    """A local file, or a Google Drive file link (shared "Anyone with the link") downloaded to output/campaign_footage/
+    (never into media/, so streamer footage can't end up in our own videos)."""
+    if not source.startswith("http"):
+        return Path(source).resolve()
+    if "drive.google.com" not in source or "/folders/" in source:
+        sys.exit("Give a local file or ONE Google Drive file link (not a folder, not YouTube: YouTube is blocked here).")
+    import gdown
+    dest = ROOT / "output" / "campaign_footage"
+    dest.mkdir(parents=True, exist_ok=True)
+    path = gdown.download(url=source, output=str(dest) + "/", quiet=False, fuzzy=True, resume=True)
+    if not path:
+        sys.exit("Couldn't download that Drive file: share it as 'Anyone with the link can view'.")
+    return Path(path).resolve()
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("source")
@@ -208,7 +224,7 @@ def main():
     ap.add_argument("--headline", help="text shown for the first 2.5 s (the hook)")
     a = ap.parse_args()
 
-    src = Path(a.source).resolve()
+    src = fetch(a.source)
     cfg = {}
     if a.campaign:
         cfg = json.loads((ROOT / "content" / "campaigns" / f"{a.campaign}.json").read_text())
