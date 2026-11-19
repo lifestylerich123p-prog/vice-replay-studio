@@ -63,7 +63,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    loader in `tools/site_guides.py`: slug, lang "en", title (60-70 chars, keyword first), desc, date, video (YouTube id once
    uploaded, else null), card [line1, line2, screenshot from media/official], lede, 3-6 sections [heading, short HTML
    paragraphs/lists] rewritten from the script for reading, 1-3 faq, gear ["game","storage"] when it fits, sources).
-   Also prepend 1-2 dated lines to `site/live.json` with today's biggest confirmed news (launch week; link our guide).
+   Also write the Spanish version as `site/guides/<slug>-es.json` (lang "es", natural Latin American Spanish, same facts,
+   Spanish slug in `slug`, e.g. "gta-6-trucos-de-dinero"). Also prepend 1-2 dated lines to `site/live.json` with today's biggest confirmed news (launch week; link our guide).
    Same facts and rules as the video: sourced, rumors labeled, no spoilers. Scheduled runs CAN'T push to GitHub (403):
    don't try git push or commit for these files. Publish ONLY by calling `fire_trigger` with trigger_id `trig_01XX9xXTp8xfb4i3yYUFP9uF` (it wakes the owner's main control session,
    which can push) and `text` = "FILES:" then each file path on its own line followed by its full contents. ALWAYS
