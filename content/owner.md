@@ -45,3 +45,5 @@
 - 2026-11-18: STANDING APPROVAL for title swaps ("All" to the upgrade list). Once per video, 24-96 h after posting, an
   upload with views/hour below 40% of our recent median (and under 1,000 views) gets its title changed to title
   option 2 (`python -m studio.title_swap`, run in the daily momentum check). Nothing else about the video changes.
+
+- Dashboard: https://claude.ai/artifact/UZSJWSBJbXBByZvWcxrxiF (refresh with /dashboard in the main chat after uploads).
