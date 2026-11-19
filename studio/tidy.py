@@ -78,6 +78,9 @@ def clean(dry):
                     rm(d)
                 continue
             for w in d.glob("work*"):
+                # a render still running writes here: leave folders touched in the last hour alone
+                if any(age_days(f) < 1 / 24 for f in [w, *w.rglob("*")]):
+                    continue
                 rm(w)
             uploaded = (d / "uploaded.json").exists()
             for f in d.rglob("*"):
