@@ -1,0 +1,32 @@
+{
+  "owner_approved": false,
+  "name": "KreekCraft GTA 6 Clipping (ClipLaunch)",
+  "platform": "Content Rewards",
+  "campaign_url": "https://contentrewards.com/c/campaigns/2eaa14fb-6927-4136-897e-b096e0d907d6",
+  "status": "candidate (recommended Nov 19; owner must join on Content Rewards and say 'join KreekCraft')",
+  "rate_per_1000_views": 1.0,
+  "min_payout_per_clip": 3.0,
+  "max_payout_per_clip": 300.0,
+  "min_views_to_pay": 3000,
+  "budget": 6824,
+  "budget_left": 6824,
+  "clippers": 0,
+  "budget_checked": "2026-11-19 6:15 AM ET",
+  "platforms": ["TikTok", "Instagram Reels", "YouTube Shorts"],
+  "engine": "everygen",
+  "layout": "stacked",
+  "clip_seconds": 30,
+  "captions": true,
+  "on_screen_credit": "@KreekCraft",
+  "rules": [
+    "Clip KreekCraft's funniest, craziest and most viral GTA 6 livestream moments (reactions, gameplay, unexpected moments).",
+    "Every clip must include KreekCraft's stream overlay (don't crop it out).",
+    "Every clip must drive viewers back to his livestream (CTA like 'Watch KreekCraft live on YouTube').",
+    "Full rules unlock after joining: copy them here before making any clip."
+  ],
+  "source_footage": "youtube.com/@KreekCraft: GTA 6 livestream VODs (none posted yet as of Nov 19 7 AM ET; his recent uploads are Roblox)",
+  "source_queue": [],
+  "max_clips_per_day": 2,
+  "submit_within_minutes": 30,
+  "notes": "No application needed. Wait until KreekCraft streams GTA 6. His audience skews young: keep clips free of graphic violence and crude moments. Everygen credits only after a cost estimate and the owner's yes."
+}

@@ -296,8 +296,10 @@ def main():
                      (t_short if k == 0 else t_news if k == 1 else t_extra), None, sh.get("pinned_comment"), es, out / f"{name}.timings.json",
                      playlist))
 
-    guide = ROOT / "site" / "guides" / f"{slug}.json"
-    guide_url = f"https://vicereplay.com/guides/{slug}/" if guide.exists() else ""
+    # the site guide may spell the slug "gta-6-..." while the episode says "gta6-..."
+    gslug = next((g for g in (slug, slug.replace("gta6-", "gta-6-", 1))
+                  if (ROOT / "site" / "guides" / f"{g}.json").exists()), "")
+    guide_url = f"https://vicereplay.com/guides/{gslug}/" if gslug else ""
     for key, path, title, desc, tg, when, thumb, pin, es, timings, playlist in jobs:
         if guide_url and "vicereplay.com/guides" not in desc:
             desc = desc.rstrip() + f"\n\nGuide: {guide_url}"
