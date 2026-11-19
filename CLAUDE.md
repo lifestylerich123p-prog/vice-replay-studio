@@ -61,7 +61,7 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
   (length, credit, hashtags, platforms), original audio, no Vice Replay music, `max_clips_per_day`. Tools:
   `studio/clip.py` (free) or Everygen (paid; spend credits only after a cost estimate and the owner's yes). Every
   delivery says: submit each clip within 30 minutes of posting. When the owner says they posted one, schedule a
-  send_later reminder 25 minutes later ("Submit <clip> on the <campaign> page now: 5 minutes left in the 30-minute
+  send_later reminder 20 minutes later (reminders can arrive ~15 min late) ("Submit <clip> on the <campaign> page now: 5 minutes left in the 30-minute
   window") and log it in `content/campaigns/tracker.md`.
 - **Streamer/creator news** performs best: our voice, graphics and footage; never a streamer's footage (outside
   approved campaigns); only what reliable sources say they said or did.
