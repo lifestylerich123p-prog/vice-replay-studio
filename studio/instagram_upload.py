@@ -69,6 +69,61 @@ def host_publicly(video):
     sys.exit("The temporary video URL never went live on vicereplay.com.")
 
 
+def host_many(files):
+    """Copy several files to vicereplay.com/r/ in one commit; returns ([urls], [paths to remove later])."""
+    dests = []
+    for f in files:
+        d = SITE / "r" / (secrets.token_hex(8) + Path(f).suffix.lower())
+        d.parent.mkdir(exist_ok=True)
+        shutil.copy(f, d)
+        dests.append(d)
+    git = ["git", "-C", str(SITE), "-c", "user.name=Vice Replay", "-c", "user.email=noreply@anthropic.com"]
+    subprocess.run(["git", "-C", str(SITE), "pull", "-q", "--rebase", "origin", "main"])
+    subprocess.run(git + ["add"] + [str(d) for d in dests], check=True)
+    subprocess.run(git + ["commit", "-qm", "Temporary Instagram upload"], check=True)
+    subprocess.run(["git", "-C", str(SITE), "push", "-q", "origin", "HEAD"], check=True)
+    urls = [f"https://vicereplay.com/r/{d.name}" for d in dests]
+    for _ in range(60):
+        try:
+            if all(urllib.request.urlopen(urllib.request.Request(u, method="HEAD"), timeout=15).status == 200
+                   for u in urls):
+                return urls, dests
+        except urllib.error.URLError:
+            pass
+        time.sleep(5)
+    sys.exit("The temporary files never went live on vicereplay.com.")
+
+
+def unhost_many(dests):
+    git = ["git", "-C", str(SITE), "-c", "user.name=Vice Replay", "-c", "user.email=noreply@anthropic.com"]
+    subprocess.run(git + ["rm", "-q"] + [str(d) for d in dests])
+    subprocess.run(git + ["commit", "-qm", "Remove temporary Instagram upload"])
+    subprocess.run(["git", "-C", str(SITE), "push", "-q", "origin", "HEAD"])
+
+
+def post_carousel(uid, images, caption, first_comment=""):
+    """Post 2-10 JPEG cards as one carousel post; returns the permalink."""
+    urls, dests = host_many(images)
+    try:
+        kids = [call("POST", f"{uid}/media", {"image_url": u, "is_carousel_item": "true"})["id"] for u in urls]
+        c = call("POST", f"{uid}/media", {"media_type": "CAROUSEL", "children": ",".join(kids),
+                                          "caption": caption[:2200]})
+        for _ in range(30):
+            if call("GET", c["id"], {"fields": "status_code"}).get("status_code") == "FINISHED":
+                break
+            time.sleep(5)
+        pub = call("POST", f"{uid}/media_publish", {"creation_id": c["id"]})
+        info = call("GET", pub["id"], {"fields": "permalink"})
+        if first_comment:
+            try:
+                call("POST", f"{pub['id']}/comments", {"message": first_comment[:2200]})
+            except SystemExit as e:
+                print(f"(first comment not posted: {e})")
+        return info.get("permalink", pub["id"])
+    finally:
+        unhost_many(dests)
+
+
 def unhost(dest):
     git = ["git", "-C", str(SITE), "-c", "user.name=Vice Replay", "-c", "user.email=noreply@anthropic.com"]
     subprocess.run(git + ["rm", "-q", str(dest)])
@@ -84,6 +139,7 @@ def main():
     ap.add_argument("--episode", help="post this episode's Short (with --item news|tips for the extra Shorts)")
     ap.add_argument("--item", default="short")
     ap.add_argument("--queue", action="store_true", help="post the next due Reel from content/learn/reels_queue.json")
+    ap.add_argument("--carousel", help="post content/carousels/<slug>.json as a carousel (cards built by studio.ig_cards)")
     a = ap.parse_args()
     uid = ig_user_id()
     if a.check:
@@ -102,6 +158,12 @@ def main():
         sys.exit("IG_USER_ID is not set: Instagram isn't connected yet (content/instagram-setup.md).")
     if a.queue:
         return run_queue(uid)
+    if a.carousel:
+        from .ig_cards import build
+        spec = json.loads(Path(a.carousel).read_text())
+        cards = [str(f) for f in build(a.carousel)]
+        print(f"Posted carousel: {post_carousel(uid, cards, spec['caption'], spec.get('first_comment', ''))}")
+        return
     if a.episode:
         a.video, a.caption = episode_reel(a.episode, a.item)
     if not a.video:
@@ -182,6 +244,15 @@ def run_queue(uid):
         if it.get("posted") or it["at"] > now:
             continue
         if done_at and (it["at"] != done_at or not it.get("campaign")):
+            break
+        if it.get("carousel"):
+            from .ig_cards import build
+            spec = json.loads((ROOT / it["carousel"]).read_text())
+            cards = [str(f) for f in build(ROOT / it["carousel"])]
+            it["posted"] = post_carousel(uid, cards, spec["caption"], spec.get("first_comment", ""))
+            it["posted_at"] = now
+            QUEUE.write_text(json.dumps(q, indent=1, ensure_ascii=False))
+            print(f"Posted carousel: {it['posted']}")
             break
         video, caption = (episode_reel(it["episode"], it.get("item")) if it.get("episode")
                           else (str(ROOT / it["video"]), it["caption"]))

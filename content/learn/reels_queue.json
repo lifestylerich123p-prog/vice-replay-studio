@@ -6,6 +6,12 @@
   "posted_at": "2026-11-19 10:21"
  },
  {
+  "at": "2026-11-19 10:45",
+  "carousel": "content/carousels/gta6-first-things.json",
+  "posted": "https://www.instagram.com/p/Df7aYR2oeKM/",
+  "posted_at": "2026-11-19 10:45"
+ },
+ {
   "at": "2026-11-19 11:30",
   "video": "output/clips/lacy-gta6/lacy-alligator.mp4",
   "campaign": "LACY (Content Rewards)",
@@ -29,6 +35,10 @@
  {
   "at": "2026-11-19 15:30",
   "episode": "episodes/gta6-metacritic-99.json"
+ },
+ {
+  "at": "2026-11-19 16:15",
+  "carousel": "content/carousels/gta6-by-the-numbers.json"
  },
  {
   "at": "2026-11-19 17:00",

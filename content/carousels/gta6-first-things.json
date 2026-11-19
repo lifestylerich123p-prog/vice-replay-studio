@@ -1,0 +1,47 @@
+{
+ "slug": "gta6-first-things",
+ "caption": "GTA 6 is out 🎮 Do these first before you lose a whole night to Leonida (no spoilers). Save this for later 📌\n\nFull launch-day guide on vicereplay.com (link in bio)\n\n#gta6 #gtavi #gta6tips #ps5 #xbox #gaming #vicecity",
+ "first_comment": "Which one did you NOT know? Reply with the number 👇",
+ "cover": {
+  "title": "GTA 6: do these first",
+  "subtitle": "6 quick fixes before you play (no spoilers)",
+  "bg": "vice-city-09.jpg"
+ },
+ "tips": [
+  {
+   "title": "Can't sign in?",
+   "text": "PSN had a big outage hours before launch. Check the official PSN or Xbox status page before you reset anything.",
+   "bg": "vice-city-13.jpg"
+  },
+  {
+   "title": "Update your PS5",
+   "text": "Install system update 14.23: Settings > System > System Software. Reports say online features need it.",
+   "bg": "vice-city-14.jpg"
+  },
+  {
+   "title": "Motion blur to 0",
+   "text": "GTA 6 runs at 30 FPS on every console. Turning motion blur down keeps fast turns sharp.",
+   "bg": "car-grotti-cheetah-01.jpg"
+  },
+  {
+   "title": "Calibrate HDR",
+   "text": "Use the in-game HDR calibration so the Vice City sun doesn't blow out the sky.",
+   "bg": "leonida-keys-02.jpg"
+  },
+  {
+   "title": "TV Game Mode on",
+   "text": "Cuts input lag, so driving and aiming feel faster.",
+   "bg": "car-vapid-stanier-01.jpg"
+  },
+  {
+   "title": "Save before cheats",
+   "text": "Cheats unlock after the main story, and using one turns off saving and trophies for that session.",
+   "bg": "mount-kalaga-02.jpg"
+  }
+ ],
+ "cta": {
+  "title": "Follow @vice.replaytv",
+  "text": "GTA 6 news, tips and the wildest streamer moments every day.",
+  "bg": "vice-city-11.jpg"
+ }
+}
