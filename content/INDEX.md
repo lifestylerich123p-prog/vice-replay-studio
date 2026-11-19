@@ -18,6 +18,7 @@ Read this first instead of searching the repo.
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
 | ? | gta6-most-watched-streams | Short | The 5 Most-Watched GTA 6 Launch Streams on YouTube | - |
+| ? | gta6-cheat-codes-that-work | Short | GTA 6 Cheat Codes That Actually Work (Verified) | - |
 | 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | short: 6bPAn80dKno |
 | 2026-11-19 | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | main: 3T1de9Fnygg, short: RAs1Sx_7Zh8, news: Z8jQK8nZ1cQ, tips: 6QbWET74cQs |
 | 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | short: vlPV5Yre8T8 |
@@ -70,13 +71,13 @@ Read this first instead of searching the repo.
 | built-in | /guides/gta-6-launch-checklist/ | GTA 6 Launch Checklist: Download Size, Price and What's Missing on Day One |
 | built-in | /guides/gta-6-map-leonida-places/ | GTA 6 Map: 6 Places in Leonida You Need to Know |
 | built-in | /guides/gta-6-storage/ | GTA 6 Storage Full? How to Make Room on PS5 and Xbox (212 GB) |
-| built-in | /guides/gta-6-cheats/ | GTA 6 Cheat Codes: They're Real, But There's a Catch |
+| built-in | /guides/gta-6-cheats/ | GTA 6 Cheat Codes: Money, Armor, Ammo + How to Unlock |
 | built-in | /guides/gta-6-pc-release-date/ | GTA 6 on PC: Release Date and What's Actually Reported |
 | built-in | /guides/gta-6-launch-streams/ | GTA 6 Launch Streams: YouTube's 24-Hour Livestream and Kai Cenat's 100% Marathon |
 | built-in | /guides/gta-6-reviews/ | GTA 6 Reviews: 99 on Metacritic, Tied for the Best Score Ever |
 | built-in | /guides/gta-6-game-awards-nominations/ | GTA 6 at The Game Awards 2026: 8 Nominations Including Game of the Year |
 | built-in | /guides/gta-6-launch-live/ | GTA 6 Launch: Live Updates, Times and Everything You Need Tonight |
-| built-in | /es/guias/trucos-gta-6/ | Trucos de GTA 6: existen, pero hay una trampa |
+| built-in | /es/guias/trucos-gta-6/ | Trucos de GTA 6: dinero, chaleco, munición y cómo desbloquearlos |
 | built-in | /es/guias/espacio-gta-6/ | ¿Sin espacio para GTA 6? Cómo liberar espacio en PS5 y Xbox (212 GB) |
 | built-in | /es/guias/hora-de-lanzamiento-gta-6/ | GTA 6: a qué hora se desbloquea en cada país |
 | built-in | /es/guias/gta-6-pc/ | GTA 6 en PC: fecha de salida y lo que se sabe |
