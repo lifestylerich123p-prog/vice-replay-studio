@@ -50,3 +50,6 @@
 
 - Instagram: @vice.replaytv (https://www.instagram.com/vice.replaytv/), professional Creator account created Nov 18.
   Reels auto-posting not connected yet (content/instagram-setup.md); until then the owner reposts Shorts by hand.
+- 2026-11-18 11:55 PM ET: owner extended it: "Just continue to monitor thru the night post if needed without my
+  approval." Overnight checks at 12:10 (comment), 1:15, 2:45, 4:45 and 6:45 AM; each may post one strong, confirmed
+  (2+ reputable sources), uncovered story as a Short. Ends 9:00 AM ET Nov 19.
