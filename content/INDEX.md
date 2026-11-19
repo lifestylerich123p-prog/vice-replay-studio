@@ -14,6 +14,8 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| ? | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | - |
+| ? | gta6-17-million-sold | Short | GTA 6 Already Made $1.65 Billion (Estimate) | short: b4pWGuZNPJY |
 | 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | short: 6bPAn80dKno |
 | 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | short: vlPV5Yre8T8 |
 | 2026-11-18 | houser-launch-statement | Short | Rockstar's Sam Houser Breaks Silence as GTA 6 Launches | short: 4EuMnzlLKTY |
@@ -50,6 +52,8 @@ Read this first instead of searching the repo.
 | 2026-11-18 | /guides/gta-6-black-friday/ | GTA 6 Black Friday 2026: Storage, Controllers and the Game |
 | 2026-11-18 | /guides/gta-6-characters/ | Every GTA 6 Character Confirmed So Far (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-gift-guide/ | GTA 6 Gift Guide 2026: Best Gifts for a GTA 6 Fan (PS5 and Xbox) |
+| 2026-11-19 | /es/guias/guia-lanzamiento-gta-6/ | GTA 6 ya salió: guía de supervivencia (servidores, 30 FPS y ajustes) |
+| 2026-11-19 | /guides/gta-6-launch-day-survival-guide/ | GTA 6 Launch Day Survival Guide: Servers, 30 FPS and Settings |
 | 2026-11-18 | /guides/gta-6-map-size/ | How Big Is the GTA 6 Map? Leonida vs GTA 5 and Red Dead 2 |
 | 2026-11-18 | /guides/gta-6-physical-edition/ | GTA 6 Physical Edition: No Disc in the Box? What You're Actually Buying |
 | 2026-11-18 | /guides/gta-6-vs-gta-5/ | GTA 6 vs GTA 5: The Biggest Differences Explained |
