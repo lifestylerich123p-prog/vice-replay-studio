@@ -124,6 +124,27 @@ def post_carousel(uid, images, caption, first_comment=""):
         unhost_many(dests)
 
 
+def post_image(uid, image, caption, first_comment=""):
+    """Post one JPEG as a single-image post; returns the permalink."""
+    urls, dests = host_many([image])
+    try:
+        c = call("POST", f"{uid}/media", {"image_url": urls[0], "caption": caption[:2200]})
+        for _ in range(30):
+            if call("GET", c["id"], {"fields": "status_code"}).get("status_code") == "FINISHED":
+                break
+            time.sleep(5)
+        pub = call("POST", f"{uid}/media_publish", {"creation_id": c["id"]})
+        info = call("GET", pub["id"], {"fields": "permalink"})
+        if first_comment:
+            try:
+                call("POST", f"{pub['id']}/comments", {"message": first_comment[:2200]})
+            except SystemExit as e:
+                print(f"(first comment not posted: {e})")
+        return info.get("permalink", pub["id"])
+    finally:
+        unhost_many(dests)
+
+
 def unhost(dest):
     git = ["git", "-C", str(SITE), "-c", "user.name=Vice Replay", "-c", "user.email=noreply@anthropic.com"]
     subprocess.run(git + ["rm", "-q", str(dest)])
@@ -234,7 +255,8 @@ QUEUE = ROOT / "content" / "learn" / "reels_queue.json"
 
 def run_queue(uid):
     """Post the first due, unposted item of content/learn/reels_queue.json (one per run keeps Reels spaced out).
-    Items: {"at": "2026-11-19 11:30" (ET), "video": path | "episode": path + "item", "caption": ..., "campaign": ...}."""
+    Items: {"at": "2026-11-19 11:30" (ET), "video": path | "episode": path + "item", "caption": ..., "campaign": ...},
+    {"at", "carousel": spec path} or {"at", "image": jpg path, "caption", "comment"}."""
     import datetime as dt
     from zoneinfo import ZoneInfo
     q = json.loads(QUEUE.read_text()) if QUEUE.exists() else []
@@ -253,6 +275,12 @@ def run_queue(uid):
             it["posted_at"] = now
             QUEUE.write_text(json.dumps(q, indent=1, ensure_ascii=False))
             print(f"Posted carousel: {it['posted']}")
+            break
+        if it.get("image"):  # single-image post: {"image": path, "caption": ..., "comment": ...}
+            it["posted"] = post_image(uid, str(ROOT / it["image"]), it["caption"], it.get("comment", ""))
+            it["posted_at"] = now
+            QUEUE.write_text(json.dumps(q, indent=1, ensure_ascii=False))
+            print(f"Posted image: {it['posted']}")
             break
         video, caption = (episode_reel(it["episode"], it.get("item")) if it.get("episode")
                           else (str(ROOT / it["video"]), it["caption"]))
