@@ -54,9 +54,9 @@
  },
  {
   "at": "2026-11-19 17:00",
-  "video": "output/clips/lacy-gta6/lacy-shark.mp4",
+  "video": "output/clips/lacy-gta6/lacy-robbery.mp4",
   "campaign": "LACY (Content Rewards)",
-  "caption": "LACY vs a GTA 6 shark 🦈😳\n\nA shark showed up during LACY's GTA 6 dive and he had to fight it off. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy"
+  "caption": "LACY got tackled mid-robbery in GTA 6 😳😭\n\nLACY tried to rob a GTA 6 cash counter and got tackled from behind. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy"
  },
  {
   "at": "2026-11-19 18:05",
@@ -75,5 +75,12 @@
  {
   "at": "2026-11-20 11:00",
   "episode": "episodes/gta6-storage-full.json"
+ },
+ {
+  "at": "2026-11-21 23:59",
+  "video": "output/clips/lacy-gta6/lacy-shark.mp4",
+  "campaign": "LACY (Content Rewards)",
+  "caption": "LACY vs a GTA 6 shark 🦈😳\n\nA shark showed up during LACY's GTA 6 dive and he had to fight it off. Watch LACY live on Twitch: twitch.tv/lacy\n\n#LACY #GTA6 #GTAVI #gaming #lacy",
+  "hold": "possible copyright claim on YouTube (1 view); owner to check Studio restrictions"
  }
 ]
