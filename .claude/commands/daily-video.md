@@ -76,8 +76,9 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    paragraphs/lists] rewritten from the script for reading, 1-3 faq, gear ["game","storage"] when it fits, sources).
    Also write the Spanish version as `site/guides/<slug>-es.json` (lang "es", natural Latin American Spanish, same facts,
    Spanish slug in `slug`, e.g. "gta-6-trucos-de-dinero"). Also prepend 1-2 dated lines to `site/live.json` with today's biggest confirmed news (launch week; link our guide).
-   Same facts and rules as the video: sourced, rumors labeled, no spoilers. Scheduled runs CAN'T push to GitHub (403):
-   don't try git push or commit for these files. Publish ONLY by calling `fire_trigger` with trigger_id `trig_01XX9xXTp8xfb4i3yYUFP9uF` (it wakes the owner's main control session,
+   Same facts and rules as the video: sourced, rumors labeled, no spoilers. First try to save directly: if the repos were attached with push access and `git push` works, commit +
+   push these files yourself and publish the site per publish-site.md. If push is refused (403), don't retry:
+   publish by calling `fire_trigger` with trigger_id `trig_01XX9xXTp8xfb4i3yYUFP9uF` (it wakes the owner's main control session,
    which can push) and `text` = "FILES:" then each file path on its own line followed by its full contents. ALWAYS
    include `episodes/<slug>.json` and the new `content/log.md` line too: the main chat saves them, and because this
    scheduled chat can't upload, the owner approves in the main chat ("🎬 Vice Replay Studio (main control)"), which
@@ -91,7 +92,7 @@ make sensible choices, finish the whole run, and explain your choices in the fin
 
 4. **Save the record**: add a line to `content/log.md` (date, slug, title, topic choice reason), run
    `python -m studio.tidy`, then commit `episodes/<slug>.json`, `content/log.md` and `content/INDEX.md` and push to `main`. Videos are not committed.
-   Scheduled runs can't push (403), so don't try add_repo or retries: send the episode JSON with SendUserFile and say the log wasn't saved.
+   If push is refused (403), don't retry: send the episode JSON with SendUserFile and say the log wasn't saved.
 5. **Campaign clips**: only for campaigns the owner approved (`owner_approved: true`); never start or join one
    yourself. For each `content/campaigns/*.json` with `owner_approved` true, `status` `active` and something in
    `source_queue`, follow `.claude/commands/campaign-clips.md` and deliver up to `max_clips_per_day` clips
