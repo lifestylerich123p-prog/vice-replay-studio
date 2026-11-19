@@ -15,6 +15,7 @@ Read this first instead of searching the repo.
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
 | 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | short: 6bPAn80dKno |
+| 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | short: vlPV5Yre8T8 |
 | 2026-11-18 | houser-launch-statement | Short | Rockstar's Sam Houser Breaks Silence as GTA 6 Launches | short: 4EuMnzlLKTY |
 | 2026-11-18 | gta6-storage-full | video | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | main: MIvka1jBpJ0, short: Wl6K3f5FtVU |
 | 2026-11-18 | gta6-physical-edition-no-disc | video | GTA 6 Physical Edition Has No Disc: What You're Buying | main: RmONg7-uN4w, short: 9lTZNbwbSec, news: rhf1qryjRSM |
@@ -57,13 +58,13 @@ Read this first instead of searching the repo.
 | built-in | /guides/gta-6-launch-checklist/ | GTA 6 Launch Checklist: Download Size, Price and What's Missing on Day One |
 | built-in | /guides/gta-6-map-leonida-places/ | GTA 6 Map: 6 Places in Leonida You Need to Know |
 | built-in | /guides/gta-6-storage/ | GTA 6 Storage Full? How to Make Room on PS5 and Xbox (212 GB) |
-| built-in | /guides/gta-6-cheats/ | GTA 6 Cheat Codes: Confirmed List (and the Fake Ones) |
+| built-in | /guides/gta-6-cheats/ | GTA 6 Cheat Codes: They're Real, But There's a Catch |
 | built-in | /guides/gta-6-pc-release-date/ | GTA 6 on PC: Release Date and What's Actually Reported |
 | built-in | /guides/gta-6-launch-streams/ | GTA 6 Launch Streams: YouTube's 24-Hour Livestream and Kai Cenat's 100% Marathon |
 | built-in | /guides/gta-6-reviews/ | GTA 6 Reviews: 99 on Metacritic, Tied for the Best Score Ever |
 | built-in | /guides/gta-6-game-awards-nominations/ | GTA 6 at The Game Awards 2026: 8 Nominations Including Game of the Year |
 | built-in | /guides/gta-6-launch-live/ | GTA 6 Launch: Live Updates, Times and Everything You Need Tonight |
-| built-in | /es/guias/trucos-gta-6/ | Trucos de GTA 6: lista confirmada (y los falsos) |
+| built-in | /es/guias/trucos-gta-6/ | Trucos de GTA 6: existen, pero hay una trampa |
 | built-in | /es/guias/espacio-gta-6/ | ¿Sin espacio para GTA 6? Cómo liberar espacio en PS5 y Xbox (212 GB) |
 | built-in | /es/guias/hora-de-lanzamiento-gta-6/ | GTA 6: a qué hora se desbloquea en cada país |
 | built-in | /es/guias/gta-6-pc/ | GTA 6 en PC: fecha de salida y lo que se sabe |
