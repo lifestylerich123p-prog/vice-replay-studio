@@ -21,6 +21,8 @@ default `local`.
   YouTube/Twitch can't be downloaded here (blocked): the owner saves the stretch (2-5 min around the moment) to Google
   Drive, shares it "Anyone with the link", and `python -m studio.clip <drive file link> --campaign <name>` fetches it
   into output/campaign_footage/ (never media/).
+- Easiest: the owner drops screen recordings into the Drive "Campaign clips folder" (owner.md), subfolder per campaign;
+  `python -m studio.campaign_inbox` downloads the new ones and cuts 2 clips each.
 - Find new source videos first, free: `python -m studio.campaign_sources` (approved, non-paused campaigns with a
   `youtube_handle`; marks videos not yet used). Put picks in the campaign's `source_queue`, used ones in `used_sources`.
 - Only from where the campaign says (`source_footage`), the source given here, else the next `source_queue` item.
