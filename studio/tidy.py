@@ -192,6 +192,10 @@ def write_index():
              "`.claude/commands/instagram.md`",
              "- Campaigns: `content/campaigns/<name>.json` (approved = owner_approved), `tracker.md`, latest scan "
              "`content/campaigns/scan-*.md`, how-to `.claude/commands/campaign-clips.md`",
+             "- Channels (Vice Replay / ClipCircuit / What If Arena, who does what): `content/channels.md` (Drive copy: Creator HQ)",
+             "- Learning: `content/learn/scorecard.md` (fair 24 h numbers, DO MORE / DO LESS), `content/learn/ideas.md` (researched next topics), "
+             "`history.jsonl` (view snapshots) · fresh streamer moments: `python -m studio.moments <name>`",
+             "- Reference pack (playbooks, hooks, topic bank): `resources/README.md` (channel rules win over it)",
              "- Finished one-off files: `content/archive/`", "",
              "## Episodes (newest first)", "| Date | Slug | Kind | Title | YouTube ids |", "|---|---|---|---|---|"]
     lines += [f"| {d} | {s} | {k} | {t} | {i} |" for d, s, k, t, i in episode_rows()]

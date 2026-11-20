@@ -12,18 +12,20 @@ Read this first instead of searching the repo.
 - Live status: `content/learn/status.md` (`python -m studio.status`) · health: `content/learn/health.md`
 - Instagram: queue `content/learn/reels_queue.json`, carousels `content/carousels/`, how-to `.claude/commands/instagram.md`
 - Campaigns: `content/campaigns/<name>.json` (approved = owner_approved), `tracker.md`, latest scan `content/campaigns/scan-*.md`, how-to `.claude/commands/campaign-clips.md`
+- Channels (Vice Replay / ClipCircuit / What If Arena, who does what): `content/channels.md` (Drive copy: Creator HQ)
+- Learning: `content/learn/scorecard.md` (fair 24 h numbers, DO MORE / DO LESS), `content/learn/ideas.md` (researched next topics), `history.jsonl` (view snapshots) · fresh streamer moments: `python -m studio.moments <name>`
+- Reference pack (playbooks, hooks, topic bank): `resources/README.md` (channel rules win over it)
 - Finished one-off files: `content/archive/`
 
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| ? | gta6-most-watched-streams | Short | The 5 Most-Watched GTA 6 Launch Streams on YouTube | - |
-| ? | gta6-cheat-codes-that-work | Short | GTA 6 Cheat Codes That Actually Work (Verified) | short: acNIOalmWzM |
-| ? | gta6-chapter-1-money-catch | Short | Don't Grind Money in GTA 6 Chapter 1 (The Catch) | short: UbRSdarrTQ4 |
-| ? | gta6-black-friday-catch | Short | GTA 6 Black Friday Deals Have a Catch | short: oNwtReI03YU |
 | 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | short: 6bPAn80dKno |
 | 2026-11-19 | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | main: 3T1de9Fnygg, short: RAs1Sx_7Zh8, news: Z8jQK8nZ1cQ, tips: 6QbWET74cQs |
 | 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | short: vlPV5Yre8T8 |
+| 2026-11-19 | gta6-cheat-codes-that-work | Short | GTA 6 Cheat Codes That Actually Work (Verified) | short: acNIOalmWzM |
+| 2026-11-19 | gta6-chapter-1-money-catch | Short | Don't Grind Money in GTA 6 Chapter 1 (The Catch) | short: UbRSdarrTQ4 |
+| 2026-11-19 | gta6-black-friday-catch | Short | GTA 6 Black Friday Deals Have a Catch | short: oNwtReI03YU |
 | 2026-11-19 | gta6-17-million-sold | Short | GTA 6 Already Made $1.65 Billion (Estimate) | short: b4pWGuZNPJY |
 | 2026-11-18 | houser-launch-statement | Short | Rockstar's Sam Houser Breaks Silence as GTA 6 Launches | short: 4EuMnzlLKTY |
 | 2026-11-18 | gta6-storage-full | video | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | main: MIvka1jBpJ0, short: Wl6K3f5FtVU |
@@ -41,41 +43,42 @@ Read this first instead of searching the repo.
 ## Channel uploads (from the last learn run)
 | YouTube id | Title | Views |
 |---|---|---|
-| aYBokm3TIYE | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts | 6932 |
-| ty0KP7MLaKU | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts | 1691 |
-| b4pWGuZNPJY | GTA 6 already made $1.65 BILLION #GTA6 #Shorts | 1303 |
-| Eikozi0uFec | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 #shorts | 1003 |
-| Wl6K3f5FtVU | GTA 6 says NOT ENOUGH SPACE? Do this first #GTA6 #Shorts | 919 |
-| vlPV5Yre8T8 | GTA 6 cheats are real... but there's a catch #GTA6 #Shorts | 1127 |
-| DG_MpuSMDV8 | GTA 6 is already OUT in New Zealand (the catch) #GTA6 #Shorts | 1305 |
+| aYBokm3TIYE | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts | 7583 |
+| Z8jQK8nZ1cQ | GTA 6 on PS5 vs PS5 Pro: the verdict is in #GTA6 #Shorts | 328 |
+| ty0KP7MLaKU | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts | 1806 |
+| b4pWGuZNPJY | GTA 6 already made $1.65 BILLION #GTA6 #Shorts | 1319 |
+| Eikozi0uFec | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 #shorts | 1004 |
+| Wl6K3f5FtVU | GTA 6 says NOT ENOUGH SPACE? Do this first #GTA6 #Shorts | 947 |
+| vlPV5Yre8T8 | GTA 6 cheats are real... but there's a catch #GTA6 #Shorts | 1166 |
+| DG_MpuSMDV8 | GTA 6 is already OUT in New Zealand (the catch) #GTA6 #Shorts | 1307 |
+| oYqPC06109w | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy | 5247 |
 | S5L5Mah6LIU | GTA 6 just got a 99 on Metacritic #GTA6 #Shorts | 945 |
-| oYqPC06109w | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy | 5238 |
-| 6bPAn80dKno | 7 MILLION people watched GTA 6 at once #GTA6 #Shorts | 680 |
-| DBlAdqc1orw | GTA 6 is OUT: do these 3 things first #GTA6 #Shorts | 690 |
-| YKR0s2dWJ8o | GTA 6 NZ trick: 18 hours early? #GTA6 #Shorts | 1351 |
-| _5ZWAUY75y4 | Lucia's actress is CONFIRMED before launch #GTA6 #Shorts | 1216 |
-| gvIH1aLtJuc | IShowSpeed heads to New Zealand for GTA 6? #GTA6 #Shorts | 1007 |
+| 6bPAn80dKno | 7 MILLION people watched GTA 6 at once #GTA6 #Shorts | 684 |
+| DBlAdqc1orw | GTA 6 is OUT: do these 3 things first #GTA6 #Shorts | 720 |
+| YKR0s2dWJ8o | GTA 6 NZ trick: 18 hours early? #GTA6 #Shorts | 1345 |
+| _5ZWAUY75y4 | Lucia's actress is CONFIRMED before launch #GTA6 #Shorts | 1214 |
+| gvIH1aLtJuc | IShowSpeed heads to New Zealand for GTA 6? #GTA6 #Shorts | 1008 |
 | Y4AT3Y4kcmg | GTA 6 at 9 PM the night before? #GTA6 #Shorts | 811 |
-| 9lTZNbwbSec | GTA 6 physical edition has NO DISC #GTA6 #Shorts | 367 |
+| 9lTZNbwbSec | GTA 6 physical edition has NO DISC #GTA6 #Shorts | 368 |
 | 4EuMnzlLKTY | Rockstar's boss just broke his silence on GTA 6 #GTA6 #Shorts | 301 |
 | xvudsg_o6ow | GTA 6 just got nominated for GAME OF THE YEAR #GTA6 #Shorts | 355 |
 | ZUcedkldfsE | Kai Cenat's 130 HOUR GTA warm-up is over #GTA6 #Shorts | 279 |
-| pcoMWOraJA4 | GTA 6 Unlock Time in Every Time Zone (US, UK, EU, Australia) | 293 |
-| yKISW4fJj3Y | Those GTA 6 cheat codes are FAKE #GTA6 #Shorts | 243 |
+| pcoMWOraJA4 | GTA 6 Unlock Time in Every Time Zone (US, UK, EU, Australia) | 294 |
 | wPPhLBHS7-M | GTA 6 in 3 days: what you need to know #GTA6 #Shorts | 382 |
+| yKISW4fJj3Y | Those GTA 6 cheat codes are FAKE #GTA6 #Shorts | 243 |
+| RAs1Sx_7Zh8 | Can't get into GTA 6? Check these 2 things #GTA6 #Shorts | 16 |
 | DIFRHVF6T0E | YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts | 250 |
-| RAs1Sx_7Zh8 | Can't get into GTA 6? Check these 2 things #GTA6 #Shorts | 4 |
-| rhf1qryjRSM | Rockstar sent GTA 6 packages to streamers #GTA6 #Shorts | 52 |
+| rhf1qryjRSM | Rockstar sent GTA 6 packages to streamers #GTA6 #Shorts | 55 |
 | -C9KX5Afwgw | GTA 6 New Zealand Trick: Play Early or Risk Your Account? | 108 |
-| kLxIVUzSOaI | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore | 172 |
-| acNIOalmWzM | GTA 6 cheat codes that actually work (screenshot this) #GTA6 #Shorts | 2 |
-| 9QNojUuqHtc | Lacy can't steal cars in GTA 6 😭🔑 #LACY #GTA6 #Shorts | 3 |
+| kLxIVUzSOaI | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore | 173 |
+| acNIOalmWzM | GTA 6 cheat codes that actually work (screenshot this) #GTA6 #Shorts | 3 |
+| 9QNojUuqHtc | Lacy can't steal cars in GTA 6 😭🔑 #LACY #GTA6 #Shorts | 4 |
+| c_l7udfLNnk | LACY vs a GTA 6 shark 🦈😳 #LACY #GTA6 #shortsyoutube | 7 |
 | 6QbWET74cQs | First 3 settings to change in GTA 6 #GTA6 #Shorts | 4 |
-| c_l7udfLNnk | LACY vs a GTA 6 shark 🦈😳 #LACY #GTA6 #shortsyoutube | 5 |
-| x8C9oncanac | LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #Shorts | 2 |
-| RmONg7-uN4w | GTA 6 Physical Edition Has No Disc: What You're Buying | 7 |
+| RmONg7-uN4w | GTA 6 Physical Edition Has No Disc: What You're Buying | 8 |
 | 2MOr9zSDyfM | GTA 6 Chaos Is Coming 🌴 | Vice Replay | 41 |
-| MIvka1jBpJ0 | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | 4 |
+| x8C9oncanac | LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #Shorts | 2 |
+| MIvka1jBpJ0 | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | 6 |
 | vJDnv7_7Hcs | GTA 6 in 3 Days: Exact Unlock Time & 212GB Download | 5 |
 | GjhaJdjHR4Q | GTA 6 Is Bigger Than Vice City: 6 Places to Know | 15 |
 | YqnShunG7WY | GTA 6 Survival Guide: 7 Things to Do Before You Play | 14 |

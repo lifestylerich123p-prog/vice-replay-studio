@@ -56,8 +56,9 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
 - **Momentum** (`momentum.md`, daily): one follow-up Short with something new when a Short takes off; owner approves
   in the main chat. **Website**: daily guide (+ Spanish) via `site/` + `tools/site_guides.py`, published from the main
   chat (`/publish-site`); scheduled runs can't push, they hand files over with fire_trigger.
-- **Instagram** (@vice.replaytv, owner approved Nov 19): every uploaded Short, campaign clips (two per slot) and
-  about one carousel a day go out through `content/learn/reels_queue.json`; how: `.claude/commands/instagram.md`.
+- **Instagram** (@vice.replaytv, owner approved Nov 19): every uploaded Short and about one carousel/image a day go
+  out through `content/learn/reels_queue.json` (max 4 posts/day; campaign clips paused since Meta's Nov 19 ad flag);
+  how: `.claude/commands/instagram.md`.
 - **TikTok**: the owner posts by hand; Shorts go to the "📱 Vice Replay: TikTok files" chat (see owner.md;
   `studio.ship --tiktok` pushes them to the `tiktok-files` branch).
 - **Campaigns** (Whop/Content Rewards): only campaigns with `owner_approved: true` (set only when the owner approves
