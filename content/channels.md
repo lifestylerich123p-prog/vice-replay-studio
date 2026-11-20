@@ -50,7 +50,12 @@ Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map"
 - 8-16 s clips get ~7x the views per hour of 20-30 s clips (307 Lacy GTA 6 Shorts, Nov 18-19).
 - Fresh moments win: the shark clip every clipper posted got 1 view; the less-posted shoe store got 6.6K.
 - Hooks with a hard number or a "catch" are Vice Replay's best Shorts (~120 views/hour on launch night).
-- Instagram is the strongest platform for top earners on Content Rewards (ClipCircuit research).
+- Instagram is the strongest platform for top earners on Content Rewards (ClipCircuit research), BUT an Instagram
+  account whose posts are mostly reposts loses recommendations: keep campaign clips off accounts that need reach.
+- Pool campaigns (Lacy: $12,500 split, 750K-1M approved views to qualify, hundreds of clippers) are a long shot for
+  small channels; per-view campaigns ($1-2 per 1K views, $3 minimum) pay from the first few thousand views.
+  Vendor data: clippers average ~$0.39 per 1K views after fees.
+- Before cutting a streamer clip, check what's already clipped (Vice Replay: `python -m studio.moments <name>`).
 
 ## Campaign inbox
 | Campaign | Channel | Status |
@@ -61,6 +66,7 @@ Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map"
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-19 · Vice Replay · New scorecard: campaign clips 41.8 views/h median vs 5.6 for own Shorts; 16-30 s best, 60 s+ dead.
 - 2026-11-19 · Vice Replay · Owner rule: GTA 6 clipping stays with Vice Replay, every other clipping goes to ClipCircuit.
 - 2026-11-19 · Vice Replay · Everygen: 2 credits for one AI background image (cheat-sheet post); balance was 989 before.
 - 2026-11-19 · Vice Replay · Meta restricted ads on @vice.replaytv (posting not affected); slowed to 4 posts/day.
