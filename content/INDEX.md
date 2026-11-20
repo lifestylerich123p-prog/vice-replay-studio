@@ -20,6 +20,7 @@ Read this first instead of searching the repo.
 | ? | gta6-most-watched-streams | Short | The 5 Most-Watched GTA 6 Launch Streams on YouTube | - |
 | ? | gta6-cheat-codes-that-work | Short | GTA 6 Cheat Codes That Actually Work (Verified) | short: acNIOalmWzM |
 | ? | gta6-chapter-1-money-catch | Short | Don't Grind Money in GTA 6 Chapter 1 (The Catch) | short: UbRSdarrTQ4 |
+| ? | gta6-black-friday-catch | Short | GTA 6 Black Friday Deals Have a Catch | - |
 | 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | short: 6bPAn80dKno |
 | 2026-11-19 | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | main: 3T1de9Fnygg, short: RAs1Sx_7Zh8, news: Z8jQK8nZ1cQ, tips: 6QbWET74cQs |
 | 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | short: vlPV5Yre8T8 |
@@ -56,7 +57,7 @@ Read this first instead of searching the repo.
 |---|---|---|
 | 2026-11-18 | /guides/gta-6-best-settings/ | Best TV and Console Settings for GTA 6 (PS5 and Xbox) |
 | 2026-11-19 | /guides/gta-6-best-ssd/ | Best SSD for GTA 6 on PS5 (212 GB): What to Buy and What to Skip |
-| 2026-11-19 | /guides/gta-6-black-friday/ | GTA 6 Black Friday 2026: Storage, Controllers and the Game |
+| 2026-11-19 | /guides/gta-6-black-friday/ | GTA 6 Black Friday 2026: Live Deals on Controllers, Storage and the Game |
 | 2026-11-18 | /guides/gta-6-characters/ | Every GTA 6 Character Confirmed So Far (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-gift-guide/ | GTA 6 Gift Guide 2026: Best Gifts for a GTA 6 Fan (PS5 and Xbox) |
 | 2026-11-19 | /es/guias/guia-lanzamiento-gta-6/ | GTA 6 ya salió: guía de supervivencia (servidores, 30 FPS y ajustes) |
