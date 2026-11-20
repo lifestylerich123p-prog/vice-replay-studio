@@ -432,6 +432,40 @@ def render_card(name, img, dur, work, enc, w, h):
     return out
 
 
+STING = ROOT / "assets" / "intro" / "sting.mp4"  # AI-made neon flythrough (Everygen, Nov 20): graphics only, no text
+
+
+def intro_overlay(title, w, h, path):
+    """Wordmark + title on a transparent layer, for the animated intro."""
+    img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    img.alpha_composite(Image.new("RGBA", (w, h), (0, 0, 0, 70)))
+    wm = brand.wordmark(int(h * 0.13))
+    img.alpha_composite(wm, ((w - wm.width) // 2, int(h * 0.26)))
+    f, lines = brand.fit_lines(title.upper(), brand.HEADLINE_FONT, int(w * 0.85), int(h * 0.06), 30)
+    d = ImageDraw.Draw(img)
+    y = int(h * 0.26) + wm.height + int(h * 0.04)
+    for ln in lines:
+        d.text(((w - f.getlength(ln)) / 2, y), ln, font=f, fill=brand.WHITE, stroke_width=5, stroke_fill=brand.NIGHT)
+        y += int(f.size * 1.15)
+    img.save(path)
+    return path
+
+
+def render_intro(title, work, enc, w, h, dur=3.0):
+    """Long-video intro: the animated neon sting under the wordmark and title (falls back to the still card)."""
+    if not STING.exists():
+        return render_card("intro", intro_image(title, w, h, work / "intro.png"), 2.6, work, enc, w, h)
+    ov = intro_overlay(title, w, h, work / "intro_overlay.png")
+    out = work / "intro.mp4"
+    run(["ffmpeg", "-y", "-v", "error", "-i", str(STING), "-loop", "1", "-t", str(dur), "-i", str(ov),
+         "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-filter_complex",
+         f"[0:v]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},setsar=1,fps={FPS}[bg];"
+         f"[1:v]format=rgba,fade=t=in:st=0.35:d=0.45:alpha=1[o];[bg][o]overlay=0:0:eof_action=pass,"
+         f"fade=t=out:st={dur - 0.35}:d=0.35[v]",
+         "-map", "[v]", "-map", "2:a", "-t", str(dur), *enc, str(out)])
+    return out
+
+
 def intro_image(title, w, h, path):
     img = brand.neon_background(w, h, seed=7).convert("RGBA")
     shade = Image.new("RGBA", (w, h), (0, 0, 0, 110))
@@ -558,7 +592,7 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     parts, chapters, t = [], [], 0.0
     cuts, impacts, timings = [], [0.0], []  # sound effects: impact on the hook, whoosh on every cut
     if not vertical:
-        intro = render_card("intro", intro_image(ep["title"], w, h, work / "intro.png"), 2.6, work, enc, w, h)
+        intro = render_intro(ep["title"], work, enc, w, h)
         parts.append(intro)
         t += duration(intro)
     for i, seg in enumerate(segments):

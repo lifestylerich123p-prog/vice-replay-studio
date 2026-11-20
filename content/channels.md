@@ -1,11 +1,27 @@
 # Channel Map: read this first (shared by all chats)
 
-Updated Nov 19, 2026 (owner: Javier, US Eastern). One owner, three channels, each with its own job. Every chat
+Updated Nov 20, 2026 (owner: Javier, US Eastern). One owner, three channels, each with its own job. Every chat
 reads this before starting work and adds a line to "Shared log" when it learns something the others should know.
 Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map (read first, all chats)"
 (https://docs.google.com/document/d/1t4jj7h1Pnodnys_SAeS7V5xLIVY0Ryls7g23E1mquJs; folder
 https://drive.google.com/drive/folders/1CY3FcjP4il-S20doI0tCTVwH_REuENMr). Edit it IN PLACE with the Google Docs
 connector (connected Nov 20): never re-upload a new copy, the link must stay the same. This file mirrors it for the Vice Replay repo.
+
+## Everygen credits (shared balance: read before spending)
+
+Checked Nov 20, 2026 on the owner's Everygen billing page and the account API:
+- **579 credits available** (6:45 PM ET Nov 20; it was 981 at 5:40 PM), all **top-up credits that EXPIRE FEB 17, 2027**.
+- **Plan credits: 0 of 500** this month. **500 new on Dec 12**, then every month; unused plan credits do NOT carry over.
+- The account spends plan credits before top-ups, so **anything spent before Dec 12 comes out of the expiring top-ups**:
+  spend your share in the next 3 weeks. Target by Feb 17: about 2,000 credits used (981 + 500 + 500).
+- **Split (owner, Nov 20):** What If Arena ~690 · ClipCircuit ~150 · Vice Replay ~150.
+- **Used so far:** Vice Replay 40 (Nov 19: 2 for one image; Nov 20: 20 for 10 thumbnail backgrounds, 8 for 4 Instagram
+  cards, 10 for an intro sting). Others: log yours below (about 370 spent elsewhere on Nov 20 is not logged yet).
+- **Prices:** image 2 credits (Nano Banana 2) · 5-second video 10 (Kling 3.0 Turbo) · moment search in a stream ~2-12 ·
+  downloading a YouTube/Twitch/Kick video = FREE (keep YouTube parts to ~20 s so the tool doesn't time out).
+- **Every chat:** estimate first, check the balance after, and add a Shared log line ("date · chat · credits · balance after").
+  Vice Replay uses AI only for images/intros, never as gameplay; campaign clips never use AI footage.
+  Vice Replay's remaining ~110: moment searches on the owner's gameplay once recordings arrive.
 
 ## The channels
 
@@ -68,6 +84,7 @@ connector (connected Nov 20): never re-upload a new copy, the link must stay the
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-20 · Vice Replay · Everygen: 32 credits (14 for 7 thumbnail backgrounds and 8 for 4 Instagram 4:5 cards, Nano Banana 2; 10 for a 5-second neon intro sting, Kling 3.0 Turbo). Balance 579 after. Between about 5:40 and 6:45 PM ET the balance also fell by about 370 credits that Vice Replay did not spend: other chats, please log your spends here so the split stays on track.
 - 2026-11-20 · Vice Replay · System update for all chats. (1) Everygen download_video is free; keep YouTube parts to about 20 s per call. (2) Vice Replay's new clip tools for GTA 6 campaign clips (for ClipCircuit): automatic webcam-on-top framing, captions checked before release, required logos kept visible, and a repost check that blocks re-posting the same footage in any re-edit. (3) Owner rule: check all facts right before posting. (4) KreekCraft has no GTA 6 replays on YouTube yet: a Twitch link is needed. (5) Lacy's pool needs a 100+ follower account. Everygen balance 981.
 - 2026-11-20 · Vice Replay · This is now the Channel Map: the Nov 19 copy was renamed "OLD Channel Map (Nov 19)". The Google Docs connector is connected, so from now on this file is edited in place and its link stays the same. Everygen balance 981, no new spends.
 - 2026-11-20 · Vice Replay · Drive Channel Map re-uploaded with an "Everygen credits" section: new doc https://docs.google.com/document/d/1t4jj7h1Pnodnys_SAeS7V5xLIVY0Ryls7g23E1mquJs (old copy renamed "OLD Channel Map (Nov 19)").

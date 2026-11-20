@@ -71,3 +71,11 @@ blurred weapon wheel), so the renderer warns "crosses a shot change": fix it wit
 A "real life matches" line is welcome when it's sourced (2+ reliable sources, exact wording: "in two years", not a
 looser "in the last two years"). Captions are timed to the narration automatically (speech-aligned).
 Before delivering or uploading: `python -m studio.vice publish episodes/<slug>.json` must show no blockers.
+
+AI graphics (Everygen, cleared in `rights/registry.json` as `ai-backgrounds`, Vice Replay only, never on campaign clips):
+- `assets/ai-backgrounds/*.jpg` (16:9): thumbnail/card backgrounds by theme: news-skyline, rankings-podium, money-cash,
+  racing-night-street, police-wanted, tested-lab, details-magnifier, deals-gear, swamp-nature, night-streets. Use them
+  as a thumbnail `image` or a segment `media` only for graphics (lists, prices, rankings), never as "gameplay".
+- `assets/ai-backgrounds/ig/*-4x5.jpg` (1080x1350): Instagram carousel/image post backgrounds.
+- `assets/intro/sting.mp4`: the long video's 3-second intro (neon flythrough + wordmark + title, made automatically;
+  falls back to the still card if the file is missing). Shorts have no intro: they open on the hook.
