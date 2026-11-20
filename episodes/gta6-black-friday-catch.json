@@ -1,0 +1,44 @@
+{
+  "title": "GTA 6 Black Friday Deals Have a Catch",
+  "slug": "gta6-black-friday-catch",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "short_title": "GTA 6 Black Friday deals have a catch #GTA6 #Shorts",
+  "short_title_options": ["GTA 6 Black Friday deals have a catch #GTA6 #Shorts", "Don't buy the GTA 6 controller this week #GTA6 #Shorts"],
+  "short_description": "GTA 6 Black Friday (prices reported by deal sites on Nov 19; they change fast): GTA 6 itself isn't discounted at US stores yet ($79.99), the GTA 6 Edition DualSense isn't on sale (about $85), but the regular PS5 DualSense is $54 (usually $74) at Amazon and PlayStation Direct. Amazon's Black Friday Week runs Nov 19-30. Live list (affiliate links): vicereplay.com/guides/gta-6-black-friday/",
+  "short_es": {
+    "title": "Las ofertas de Black Friday de GTA 6 tienen trampa #GTA6 #Shorts",
+    "description": "Black Friday de GTA 6 (precios del 19 de nov., cambian rápido): GTA 6 no tiene descuento en tiendas de EE. UU. (79,99 $), el mando DualSense edición GTA 6 tampoco (unos 85 $), pero el DualSense normal está a 54 $ (antes 74 $) en Amazon y PlayStation Direct. Lista: vicereplay.com/guides/gta-6-black-friday/"
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "What are you buying this Black Friday: CONTROLLER, SSD or NOTHING? 👇 Live deals: vicereplay.com/guides/gta-6-black-friday/",
+  "tiktok_hashtags": ["#gta6", "#blackfriday", "#ps5", "#gaming", "#gtavi"],
+  "sources": [
+    "Tom's Guide - GTA 6 Black Friday deals live: https://www.tomsguide.com/live/news/gta-6-black-friday-deals-november-17-2026",
+    "GamingBible - PS5 & Xbox controllers at their cheapest prices all year: https://www.gamingbible.com/news/ps5-xbox-controllers-new-cheap-gta-6-prices-171493-20261119",
+    "TechRadar - Where to buy GTA 6 for the best price: https://www.techradar.com/gaming/where-to-buy-grand-theft-auto-6-for-the-best-price-all-the-best-ps5-and-xbox-deals-on-rockstars-upcoming-blockbuster",
+    "Fox News - Amazon Black Friday dates: https://www.foxnews.com/deals/amazon-black-friday-cyber-monday-2026-announcement.amp"
+  ],
+  "short": [
+    {"headline": "BLACK FRIDAY CATCH", "headline_es": "LA TRAMPA DEL BLACK FRIDAY",
+     "text": "GTA 6 Black Friday deals have a catch.",
+     "text_es": "Las ofertas de Black Friday de GTA 6 tienen trampa.",
+     "media": "../media/official/vice-city-14.jpg"},
+    {"headline": "GTA 6: NO DISCOUNT", "headline_es": "GTA 6: SIN DESCUENTO",
+     "text": "The game itself isn't discounted at US stores yet. Deal trackers still see full price.",
+     "text_es": "El juego no tiene descuento en tiendas de Estados Unidos. Sigue a precio completo.",
+     "media": "../media/official/jason-and-lucia-07.jpg"},
+    {"headline": "GTA 6 CONTROLLER: FULL PRICE", "headline_es": "MANDO GTA 6: PRECIO COMPLETO",
+     "text": "The GTA 6 controller isn't on sale either. About eighty five dollars.",
+     "text_es": "El mando de GTA 6 tampoco está de oferta. Unos ochenta y cinco dólares.",
+     "media": "../media/official/lucia-caminos-05.jpg"},
+    {"headline": "DUALSENSE: $54", "headline_es": "DUALSENSE: 54 $",
+     "text": "But the regular DualSense is fifty four dollars, down from seventy four, at Amazon and PlayStation Direct.",
+     "text_es": "Pero el DualSense normal está a cincuenta y cuatro dólares, antes setenta y cuatro, en Amazon y PlayStation Direct.",
+     "media": "../media/official/car-squalo-01.jpg"},
+    {"headline": "LIVE LIST: LINK IN BIO", "headline_es": "LISTA: ENLACE EN EL PERFIL",
+     "text": "The live list is on vicereplay dot com. Save this, because",
+     "text_es": "La lista está en vicereplay punto com. Guarda esto, porque",
+     "media": "../media/official/vice-city-16.jpg"}
+  ]
+}

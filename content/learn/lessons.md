@@ -32,3 +32,12 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - 2026-11-19: Campaign clips: a Lacy moment many clippers already posted (the shark) got 1 view on YouTube with no claim (duplicate-content suppression), while less-posted moments (shoe store 4K+, alligator 1.6K) took off. Pick fresh moments (Twitch clips Top · Last 24 h) over the most-reposted ones.
 - 2026-11-19: 307 Lacy GTA 6 Shorts (Nov 18-19): the top 20% by views/hour have a median length of 14 s (rest 24 s) and get ~1,350 views/h vs ~190. Winners are short "firsts" with a simple title, name first: "Lacy Arrested on Day 1 in GTA 6!! 💀", "Lacy meets a dog in GTA VI 🥹", "Lacy's first crash out in GTA 6". ALL-CAPS titles, #core tags and credit lines made no difference. Our best (shoe store, 15 s) fits this. Keep campaign clips 8-16 s, post fast after the moment, avoid moments 5+ accounts already posted.
 - 2026-11-19: After 3 Lacy clips took off on Vice Replay (5.2K/1.7K/1K), the next 3 posted the same day got 1-3 views each (no claims): likely YouTube repetitive-content limiting from 6 near-identical streamer clips in one day. Campaign clips belong on a separate clips channel, not the main channel.
+- 2026-11-19: Instagram: a day-one account posting 11 times through the API got its ADS restricted by Meta (posting
+  still fine). New accounts go slow: max 4 posts a day (`studio.instagram_upload` enforces it), ~2.5 h apart.
+- 2026-11-19: Give every Short its own pinned comment that matches what the Short says (the 6 PM "Can't get into
+  GTA 6?" Short reused the episode's 30 FPS question, which didn't fit).
+- 2026-11-19: Text/codes on AI images: AI garbles letters and arrows, so generate the background with NO text
+  (Everygen Nano Banana 2, 2 credits, 4:5) and draw the exact text ourselves (cheat-sheet post). DejaVu Sans Bold
+  draws even ←↑→↓; Anton/Montserrat arrows are uneven.
+- 2026-11-19: Black Friday: Amazon's Black Friday Week runs Nov 19-30. GTA 6 and its controller aren't discounted;
+  the regular DualSense ($54) is the deal that sends clicks. Lead with "the catch", link the live deals page.
