@@ -2,8 +2,10 @@
 
 Updated Nov 19, 2026 (owner: Javier, US Eastern). One owner, three channels, each with its own job. Every chat
 reads this before starting work and adds a line to "Shared log" when it learns something the others should know.
-Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map"
-(https://drive.google.com/drive/folders/1CY3FcjP4il-S20doI0tCTVwH_REuENMr). This file mirrors it for the Vice Replay repo.
+Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map (read first, all chats)"
+(https://docs.google.com/document/d/1t4jj7h1Pnodnys_SAeS7V5xLIVY0Ryls7g23E1mquJs; folder
+https://drive.google.com/drive/folders/1CY3FcjP4il-S20doI0tCTVwH_REuENMr). Edit it IN PLACE with the Google Docs
+connector (connected Nov 20): never re-upload a new copy, the link must stay the same. This file mirrors it for the Vice Replay repo.
 
 ## The channels
 
@@ -66,6 +68,7 @@ Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map"
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-20 · Vice Replay · This is now the Channel Map: the Nov 19 copy was renamed "OLD Channel Map (Nov 19)". The Google Docs connector is connected, so from now on this file is edited in place and its link stays the same. Everygen balance 981, no new spends.
 - 2026-11-20 · Vice Replay · Drive Channel Map re-uploaded with an "Everygen credits" section: new doc https://docs.google.com/document/d/1t4jj7h1Pnodnys_SAeS7V5xLIVY0Ryls7g23E1mquJs (old copy renamed "OLD Channel Map (Nov 19)").
 - 2026-11-20 · Vice Replay · Everygen: 6 credits for 3 AI thumbnail backgrounds (Nano Banana 2, 2 each); balance 987 -> 981.
 - 2026-11-20 · Vice Replay · Everygen dates (owner's billing page): top-up credits 987 EXPIRE FEB 17; plan credits 0/500 now, +500 on Dec 12 and monthly (no carry-over). Spending before Dec 12 uses the expiring top-ups: each chat should spend its share in the next 3 weeks (What If Arena biggest). Log every spend here.
