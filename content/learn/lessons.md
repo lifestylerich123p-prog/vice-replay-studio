@@ -49,3 +49,12 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - 2026-11-19 (night): First scorecard (studio.scorecard): campaign clips median 41.8 v/h vs 5.6 for our own Shorts;
   16-30 s Shorts win, 60+ s Shorts are dead (0.2 v/h); morning posts beat afternoon (launch-week data, so re-check
   as the 24 h numbers fill in). Instagram: accounts whose posts are mostly reposts lose recommendations.
+- 2026-11-20: Scorecard: "catch" hooks are our best own-Short hook so far (median 39.1 v/h and 1,236 first-24 h views,
+  n=2) against 4.8 v/h for number and statement hooks. Morning posts (before noon ET) have a median of 44.6 v/h against
+  1.0 for 12-5 PM (n=16), so the afternoon main/tips slots are our weakest. Shorts of 16-30 s have a median of 25.1 v/h
+  against 4.9 for 31-60 s. Keep Shorts under 30 s with a catch or hard-number hook.
+- 2026-11-20: Retention: Shorts that open with a number are watched 58.1% on average against 52.2% without one (6 vs 3 Shorts).
+- 2026-11-20: Market (last 48 h): winners moved from launch news to in-game discoveries and "do this first" help:
+  a rescue-dog Short (335K views/h, 21 s), "What happens if you reach the N" (115K/h), "Stealing a jet" (148K/h),
+  "Five things you NEED to do first" (32K/h, main). Discoveries plus beginner tips are the hungry angles now. Without
+  owner gameplay we cover them with our own research and official screenshots, never other creators' clips.

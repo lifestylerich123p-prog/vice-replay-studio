@@ -20,6 +20,7 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| 2026-11-20 | gta6-beginner-tips-nobody-tells-you | video | GTA 6 Beginner Tips Nobody Tells You (No Spoilers) | - |
 | 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | short: 6bPAn80dKno |
 | 2026-11-19 | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | main: 3T1de9Fnygg, short: RAs1Sx_7Zh8, news: Z8jQK8nZ1cQ, tips: 6QbWET74cQs |
 | 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | short: vlPV5Yre8T8 |
@@ -87,6 +88,8 @@ Read this first instead of searching the repo.
 ## Website guides
 | Date | Page | Title |
 |---|---|---|
+| 2026-11-20 | /es/guias/consejos-gta-6-principiantes/ | Consejos de GTA 6 para principiantes: 6 cosas que el juego no te dice |
+| 2026-11-20 | /guides/gta-6-beginner-tips/ | GTA 6 Beginner Tips: 6 Things the Game Doesn't Tell You (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-best-settings/ | Best TV and Console Settings for GTA 6 (PS5 and Xbox) |
 | 2026-11-19 | /guides/gta-6-best-ssd/ | Best SSD for GTA 6 on PS5 (212 GB): What to Buy and What to Skip |
 | 2026-11-19 | /guides/gta-6-black-friday/ | GTA 6 Black Friday 2026: Live Deals on Controllers, Storage and the Game |
