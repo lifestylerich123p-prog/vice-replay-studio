@@ -113,9 +113,9 @@
   "item": "short"
  },
  {
-  "at": "2026-11-21 15:00",
-  "carousel": "content/carousels/gta6-not-enough-space.json",
-  "note": "moved: Meta ad restriction, slowing to max 4 posts/day"
+  "at": "2026-11-21 13:35",
+  "episode": "episodes/gta6-took-away-gta5.json",
+  "item": "short"
  },
  {
   "at": "2026-11-21 19:00",
@@ -137,6 +137,11 @@
   "at": "2026-11-22 18:00",
   "episode": "episodes/gta6-storage-full.json",
   "note": "moved to Sun for the IShowSpeed Reel (4/day cap)"
+ },
+ {
+  "at": "2026-11-23 14:00",
+  "carousel": "content/carousels/gta6-not-enough-space.json",
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Mon: Sat now has BF 11:05 + comparison 13:35"
  },
  {
   "at": "2026-12-31 23:59",
