@@ -86,6 +86,13 @@
   "posted_at": "2026-11-20 09:29"
  },
  {
+  "at": "2026-11-20 10:22",
+  "carousel": "content/carousels/gta6-black-friday-deals.json",
+  "note": "owner asked for an Instagram post with links to buy (Nov 20)",
+  "posted": "https://www.instagram.com/p/Df9-Es2D_dU/",
+  "posted_at": "2026-11-20 10:22"
+ },
+ {
   "at": "2026-11-20 12:35",
   "episode": "episodes/gta6-chapter-1-money-catch.json",
   "item": "short"
@@ -103,11 +110,6 @@
   "item": "short"
  },
  {
-  "at": "2026-11-20 20:35",
-  "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
-  "item": "news"
- },
- {
   "at": "2026-11-21 11:05",
   "episode": "episodes/gta6-black-friday-catch.json",
   "item": "short"
@@ -119,7 +121,9 @@
  },
  {
   "at": "2026-11-21 16:30",
-  "carousel": "content/carousels/gta6-black-friday-deals.json"
+  "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
+  "item": "news",
+  "note": "moved to Sat 4:30 PM: today's slot went to the deals carousel"
  },
  {
   "at": "2026-11-21 19:00",
