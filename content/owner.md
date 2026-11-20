@@ -56,6 +56,13 @@
 - 2026-11-19: Owner said "If anything use something else not Everygen": campaign clips use the free local engine (studio/clip.py) with footage the owner puts in Google Drive. Don't use Everygen unless the owner asks again.
 - Campaign clips folder: https://drive.google.com/drive/folders/1kuRRXtAaLCs28N3w8tnlEW_Q5gQ6ZIpv (subfolders Lacy, KreekCraft; owner shares it once as 'Anyone with the link can view'; `python -m studio.campaign_inbox` cuts new recordings)
 - 2026-11-19 (later): Owner: "Ok just use Everygen but be careful with the credits": Everygen is back for campaign clips. Search at most 1 hour of a stream per batch, finish at most 2 clips, check the balance before/after and report the credits spent.
+- 2026-11-20: Owner: "remember we have to use all everygen credits before it restarts or we lose them". Account
+  (Nov 20 22:40 UTC): plan pro_l_yearly, period ends 2027-11-13; subscription allowance 500/500 already USED (0 left);
+  the 987 remaining are PURCHASED credits. Everygen's expiry rule for purchased credits isn't public/visible from here
+  (everygen.ai is blocked; searches found nothing): get the real expiry date from the Everygen billing page and plan
+  spend to finish before it. Still: estimate first, check balance before/after, log every spend in content/channels.md.
+  Downloads (download_video) cost 0 credits (tested 3x Nov 20). Prices: image 2, 5-s Kling 3.0 Turbo video 10,
+  find_clips on a stream ~2-12. Vice Replay may use AI only for images/intros, never as gameplay footage.
 - 2026-11-19: Instagram connected for Reels posting: @vice.replaytv (IG_USER_ID 17841454790873754, env var), Meta System User token for graph.facebook.com saved as a network secret (never expires; permissions instagram_basic, instagram_content_publish, instagram_manage_comments). Reels posting ON: owner said "ok aprove all post and add the ones in youtube or new ones" (Nov 19): every approved/auto-posted English Short also goes to Instagram Reels, plus campaign clips (LACY), spaced about 1-1.5 h apart via content/learn/reels_queue.json.
 - 2026-11-19: Owner: LACY (campaign) Reels go out two at a time, at times Claude picks, so one submit trip covers both.
 
