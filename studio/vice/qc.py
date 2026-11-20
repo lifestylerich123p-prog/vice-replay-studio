@@ -211,8 +211,15 @@ def check(path, episode=None, dest="vice-replay", script_key="short", project=No
     vh = dedupe.video_hash(path)
     me = str(path.resolve().relative_to(db.ROOT)) if path.resolve().is_relative_to(db.ROOT) else str(path)
     others = [(dedupe.overlap(vh, r["phash"]), r) for r in db.rows(con, "SELECT * FROM used_footage") if r["source"] != me]
-    dup = [r for o, r in others if o >= 0.7]
+    msig = dedupe.motion_sig(path) if any(o >= 0.7 for o, _ in others) else None
+    dup, look_alike = [], []
+    for o, r in others:
+        if o >= 0.7:
+            (dup if dedupe.is_repost(vh, r["phash"], msig, r.get("msig")) else look_alike).append(r)
     shared = [(o, r) for o, r in others if 0.35 <= o < 0.7]
+    if look_alike:
+        add("look-alike", "info", "same layout/webcam as " + ", ".join(sorted({r["video_id"] or r["source"] for r in look_alike})[:4])
+            + " but different gameplay: not a repost")
     add("duplicate footage", "fail" if dup else "pass",
         "same footage as " + ", ".join(sorted({d["video_id"] or d["source"] for d in dup})) if dup else "not a repost",
         "pick a different moment: reposting the same footage gets suppressed" if dup else None)

@@ -171,3 +171,24 @@ def test_control_allowlist_and_recovery():
     assert control.recover() == 1
     assert control.con().execute("SELECT status FROM jobs WHERE id=?", (jid,)).fetchone()["status"] == "queued"
     assert "Vice Replay Control" in control.page()
+
+
+def _webcam_stream(path, src):
+    """Top 40%: the same still 'webcam room' in every clip; bottom: moving gameplay from `src`."""
+    subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "lavfi", "-i", "smptehdbars=size=1080x768:rate=30",
+                    "-f", "lavfi", "-i", f"{src}=size=1080x1152:rate=30", "-filter_complex", "[0:v][1:v]vstack=2[v]",
+                    "-map", "[v]", "-t", "8", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(path)], check=True)
+    return path
+
+
+def test_same_webcam_different_gameplay_is_not_a_repost(tmp_path):
+    from studio.vice import dedupe
+    a = _webcam_stream(tmp_path / "a.mp4", "testsrc2")
+    b = _webcam_stream(tmp_path / "b.mp4", "mandelbrot")
+    a2 = tmp_path / "a2.mp4"  # same footage, re-encoded smaller with a brightness tweak = a repost
+    subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", str(a), "-vf", "scale=720:1280,eq=brightness=0.03",
+                    "-c:v", "libx264", "-crf", "30", str(a2)], check=True)
+    ha, hb, ha2 = (dedupe.video_hash(x) for x in (a, b, a2))
+    sa, sb, sa2 = (dedupe.motion_sig(x) for x in (a, b, a2))
+    assert dedupe.is_repost(ha, ha2, sa, sa2)
+    assert not dedupe.is_repost(ha, hb, sa, sb)

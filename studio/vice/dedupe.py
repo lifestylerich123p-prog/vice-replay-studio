@@ -56,10 +56,13 @@ def dhash_image(img, size=8):
     return f"{bits:016x}"
 
 
-def video_hash(path, every=1.0, max_frames=60):
-    """dHash of one frame per `every` seconds (one ffmpeg call, 9x8 grey frames), joined with '-'."""
+def video_hash(path, every=1.0, max_frames=60, region=(0.0, 0.0, 1.0, 1.0)):
+    """dHash of one frame per `every` seconds (one ffmpeg call, 9x8 grey frames), joined with '-'.
+    Full frame by default: catches re-uploads, re-encodes and re-captioned copies (a re-edit matched 100%)."""
+    x, y, w, h = region
     raw = subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-i", str(path), "-vf",
-                          f"fps=1/{every},scale=9:8:flags=area,format=gray", "-frames:v", str(max_frames),
+                          f"fps=1/{every},crop=iw*{w}:ih*{h}:iw*{x}:ih*{y},scale=9:8:flags=area,format=gray",
+                          "-frames:v", str(max_frames),
                           "-f", "rawvideo", "-"], capture_output=True).stdout
     hashes = []
     for k in range(0, len(raw) - 71, 72):
@@ -92,3 +95,53 @@ def overlap(vh1, vh2, max_bits=18):
 def same_footage(vh1, vh2, threshold=0.7):
     """Repost: most frames of one video appear in the other (re-encoded, re-captioned, trimmed or extended)."""
     return overlap(vh1, vh2) >= threshold
+
+
+SIG_W, SIG_H = 32, 48
+
+
+def motion_sig(path, every=1.0, max_frames=60):
+    """Small grey frames (32x48, one per second), compressed: lets two videos be compared on what MOVES only."""
+    import base64
+    import zlib
+    raw = subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-i", str(path), "-vf",
+                          f"fps=1/{every},scale={SIG_W}:{SIG_H}:flags=area,format=gray", "-frames:v", str(max_frames),
+                          "-f", "rawvideo", "-"], capture_output=True).stdout
+    n = len(raw) // (SIG_W * SIG_H)
+    return f"m1:{n}:" + base64.b64encode(zlib.compress(raw[:n * SIG_W * SIG_H], 9)).decode()
+
+
+def _frames(sig):
+    import base64
+    import zlib
+    import numpy as np
+    _, n, data = sig.split(":", 2)
+    return np.frombuffer(zlib.decompress(base64.b64decode(data)), np.uint8).reshape(int(n), SIG_H, SIG_W).astype(np.float32)
+
+
+def motion_distance(sig1, sig2, static=6.0):
+    """Median distance between each frame and its closest match in the other video, using only pixels that move in
+    both. Pixels that never change (a streamer's webcam room, fixed overlays) are ignored, so two clips of the same
+    streamer with different gameplay no longer look alike. Calibrated Nov 20: same footage re-edited 29, same Short
+    in another language 14; different Lacy clips 37-73."""
+    import numpy as np
+    A, B = _frames(sig1), _frames(sig2)
+    if not len(A) or not len(B):
+        return 999.0
+    if len(A) > len(B):
+        A, B = B, A
+    M = (A.std(axis=0) > static) & (B.std(axis=0) > static)
+    if M.sum() < 0.1 * M.size:
+        M = np.ones_like(M)
+    a, b = A[:, M], B[:, M]
+    a = a - a.mean(axis=1, keepdims=True)
+    b = b - b.mean(axis=1, keepdims=True)
+    d = np.abs(a[:, None, :] - b[None, :, :]).mean(axis=2)
+    return float(np.median(d.min(axis=1)))
+
+
+def is_repost(vh1, vh2, sig1=None, sig2=None, threshold=0.7, max_motion=32.0):
+    """Same footage: full-frame fingerprints match AND (when both motion signatures exist) the moving parts match."""
+    if overlap(vh1, vh2) < threshold:
+        return False
+    return not (sig1 and sig2) or motion_distance(sig1, sig2) < max_motion

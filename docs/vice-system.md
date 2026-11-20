@@ -131,3 +131,22 @@ stable-ts (archived May 2026), ctc-forced-aligner (default model non-commercial)
 pyautoflip default face model (InsightFace weights non-commercial), arnndn denoise models (GitHub download blocked here).
 YouTube facts that matter: custom Shorts thumbnails are only for Partner Program channels (so the first frame stays the
 cover); "Related video" has no API field; since Oct 1 2026 Shorts recommendations favour originals over re-uploads.
+
+### Tested on real stream footage (Nov 20, late)
+
+- **Everygen downloads are free**: three download calls, balance 987 credits before and after. A YouTube part of up
+  to ~20 s comes back within the tool's 60 s limit (a 60 s part takes ~2 min and times out, though it isn't charged).
+  Campaign footage is saved in `media/campaign/<campaign>/` (git-ignored) and registered with `add-source --rights campaign`.
+- **KreekCraft**: no GTA 6 stream replays on his YouTube channel (last 50 uploads and recent streams are Roblox); his
+  GTA 6 streams are presumably on Twitch, which this environment can't list. No KreekCraft clip possible from here yet.
+- **Webcam detection on a real Lacy stream** first failed (the box snapped to his head: he barely moves, so his outline
+  looked like a border; the real webcam touches the frame edges). New primary method: a webcam is a region that stays
+  still while gameplay changes (pixel std 2.4 inside vs 40.7 outside); grow from the face while the strip outside is
+  still. Result: IoU 0.97 with the hand-measured webcam; mock streams still 0.98 / 0.96 (edge method as fallback).
+- **Repost check**: on real clips, full-frame fingerprints called every Lacy clip "the same footage" because his
+  webcam room fills the top of every frame. Now a repost needs BOTH full-frame match AND a match of the moving pixels
+  only (static pixels ignored): the re-edited car-key clip is still blocked, a new moment from another minute is not.
+- **Loudness**: clip renders now use two-pass loudnorm (one pass left a stream clip at -17.6 LUFS; now -14.8).
+- **Known gap**: the full-height action-tracking crop centres on the frame when the whole picture moves (camera moving),
+  which can cut off a third-person character standing left of centre. OpenCV 5 dropped its built-in person detector;
+  `auto` therefore prefers the webcam-on-top layout, which handled this footage well.

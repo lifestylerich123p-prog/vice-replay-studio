@@ -1,0 +1,17 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,78,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,7,2,2,60,60,518,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.60,Cap,,0,0,0,,{\c&HD2E500&}YEAH,{\c&HFFFFFF&} DAMN! PRESS
+Dialogue: 0,0:00:01.60,0:00:04.50,Cap,,0,0,0,,YEAH, {\c&HD2E500&}DAMN!{\c&HFFFFFF&} PRESS
+Dialogue: 0,0:00:04.50,0:00:05.34,Cap,,0,0,0,,YEAH, DAMN! {\c&HD2E500&}PRESS{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.34,0:00:05.88,Cap,,0,0,0,,{\c&HD2E500&}L3{\c&HFFFFFF&} TO RUN.
+Dialogue: 0,0:00:05.88,0:00:06.00,Cap,,0,0,0,,L3 {\c&HD2E500&}TO{\c&HFFFFFF&} RUN.
+Dialogue: 0,0:00:06.00,0:00:06.38,Cap,,0,0,0,,L3 TO {\c&HD2E500&}RUN.{\c&HFFFFFF&}

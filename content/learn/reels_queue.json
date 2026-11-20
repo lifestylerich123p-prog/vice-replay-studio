@@ -143,9 +143,10 @@
   "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Sun for today's fresh Reels"
  },
  {
-  "at": "2026-11-22 18:00",
-  "episode": "episodes/gta6-storage-full.json",
-  "note": "moved to Sun for the IShowSpeed Reel (4/day cap)"
+  "at": "2026-11-22 17:30",
+  "episode": "episodes/gta6-race-hud-details.json",
+  "item": "short",
+  "note": "17:30 keeps Sunday's posts 2.5 h+ apart"
  },
  {
   "at": "2026-11-22 20:30",
@@ -154,9 +155,19 @@
   "note": "moved to Sun 8:30 PM: Sat 4:05 PM went to the 'has anyone finished' Reel (4/day cap, 2.5 h apart)"
  },
  {
-  "at": "2026-11-23 14:00",
+  "at": "2026-11-23 12:35",
+  "episode": "episodes/gta6-ranking-rides.json",
+  "item": "short"
+ },
+ {
+  "at": "2026-11-23 15:05",
   "carousel": "content/carousels/gta6-not-enough-space.json",
-  "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Mon: Sat now has BF 11:05 + comparison 13:35"
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Mon: Sat now has BF 11:05 + comparison 13:35; 15:05 keeps 2.5 h after the 12:35 ranking Reel"
+ },
+ {
+  "at": "2026-11-24 12:00",
+  "episode": "episodes/gta6-storage-full.json",
+  "note": "moved to Tue: Sunday has 4 posts (4/day cap)"
  },
  {
   "at": "2026-12-31 23:59",

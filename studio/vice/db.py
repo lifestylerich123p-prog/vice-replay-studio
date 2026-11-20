@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS costs (
 CREATE TABLE IF NOT EXISTS ideas (
   id TEXT PRIMARY KEY, day INTEGER, date TEXT, slot TEXT, series TEXT, topic TEXT, data TEXT, status TEXT);
 CREATE TABLE IF NOT EXISTS used_footage (
-  phash TEXT, source TEXT, video_id TEXT, project TEXT, at TEXT);
+  phash TEXT, source TEXT, video_id TEXT, project TEXT, at TEXT, msig TEXT);
 """
 
 
@@ -67,6 +67,10 @@ def connect(path=None):
     con = sqlite3.connect(p)
     con.row_factory = sqlite3.Row
     con.executescript(SCHEMA)
+    cols = {r[1] for r in con.execute("PRAGMA table_info(used_footage)")}
+    if "msig" not in cols:  # migration (Nov 20): motion signature for repost checks
+        con.execute("ALTER TABLE used_footage ADD COLUMN msig TEXT")
+        con.commit()
     return con
 
 

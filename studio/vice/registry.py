@@ -40,7 +40,8 @@ def fingerprint_all():
         src = str(f.relative_to(ROOT))
         if src in known:
             continue
-        con.execute("INSERT INTO used_footage VALUES (?,?,?,?,?)", (dedupe.video_hash(f), src, vid, None, db.now()))
+        con.execute("INSERT INTO used_footage (phash, source, video_id, project, at, msig) VALUES (?,?,?,?,?,?)",
+                    (dedupe.video_hash(f), src, vid, None, db.now(), dedupe.motion_sig(f)))
         added += 1
     con.commit()
     return added
@@ -48,6 +49,6 @@ def fingerprint_all():
 
 def remember(path, video_id, project_id=None):
     con = db.connect()
-    con.execute("INSERT INTO used_footage VALUES (?,?,?,?,?)",
-                (dedupe.video_hash(path), str(path), video_id, project_id, db.now()))
+    con.execute("INSERT INTO used_footage (phash, source, video_id, project, at, msig) VALUES (?,?,?,?,?,?)",
+                (dedupe.video_hash(path), str(path), video_id, project_id, db.now(), dedupe.motion_sig(path)))
     con.commit()

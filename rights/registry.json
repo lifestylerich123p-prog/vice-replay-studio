@@ -145,7 +145,8 @@
    "https://www.youtube.com/channel/UCeoZXkaJDtdTHafgoZeDcAA*",
    "https://twitch.tv/lacy*",
    "https://www.twitch.tv/lacy*",
-   "output/clips/lacy-gta6/*"
+   "output/clips/lacy-gta6/*",
+   "media/campaign/lacy-gta6/*"
   ],
   "owner": "Lacy (streamer)",
   "permission": "Campaign terms: $12,500 LACY GTA VI Marathon Pool (Reach, Content Rewards)",
@@ -174,7 +175,8 @@
   "asset_class": "streamer footage via campaign",
   "match": [
    "campaign:kreekcraft-gta6",
-   "output/clips/kreekcraft-gta6/*"
+   "output/clips/kreekcraft-gta6/*",
+   "media/campaign/kreekcraft-gta6/*"
   ],
   "owner": "KreekCraft (streamer)",
   "permission": "Campaign terms: KreekCraft GTA 6 Clipping (ClipLaunch, Content Rewards)",

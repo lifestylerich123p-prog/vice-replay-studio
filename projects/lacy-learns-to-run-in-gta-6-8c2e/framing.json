@@ -1,0 +1,46 @@
+{
+ "layout": "stack",
+ "source": [
+  1920,
+  1080
+ ],
+ "cam": [
+  0.0,
+  0.0,
+  0.2562,
+  0.2556
+ ],
+ "game": null,
+ "keep": [],
+ "webcam_excluded": true,
+ "cam_box": [
+  0.027,
+  0.0,
+  0.2022,
+  0.2556
+ ],
+ "game_box": [
+  0.2562,
+  0.0,
+  0.5273,
+  1.0
+ ],
+ "layout_used": "stack",
+ "detection": {
+  "box": [
+   0.0,
+   0.0,
+   0.2562,
+   0.2556
+  ],
+  "face": [
+   0.1355,
+   0.1516
+  ],
+  "frames_with_face": 12,
+  "frames": 12,
+  "edges_snapped": 4,
+  "method": "stillness",
+  "confidence": 1.0
+ }
+}

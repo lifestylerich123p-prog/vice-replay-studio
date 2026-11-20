@@ -1,0 +1,33 @@
+{
+ "project": "lacy-learns-to-run-in-gta-6-8c2e",
+ "destination": "clipcircuit",
+ "channel_check": {
+  "ok": true,
+  "problems": [],
+  "notes": [
+   "ClipCircuit is posted by the owner (owner-by-hand): we prepare a hand-off package, never upload"
+  ],
+  "mode": "owner-by-hand",
+  "channel": "ClipCircuit"
+ },
+ "video": "/home/user/vice-replay-studio/projects/lacy-learns-to-run-in-gta-6-8c2e/lacy-learns-to-run-in-gta-6-8c2e.mp4",
+ "cover": "/home/user/vice-replay-studio/projects/lacy-learns-to-run-in-gta-6-8c2e/cover.jpg",
+ "title_options": [],
+ "caption": "",
+ "platforms": [
+  "TikTok",
+  "Instagram Reels",
+  "YouTube Shorts",
+  "X"
+ ],
+ "campaign": "lacy-gta6",
+ "status": "BLOCKED",
+ "blockers": [
+  "QC: disclosure: campaign hashtag #LACY",
+  "captions not reviewed yet: check captions_review.md, then approve-captions"
+ ],
+ "after_posting": [
+  "Submit on the campaign page within 30 minutes of posting"
+ ],
+ "human_review": "required"
+}

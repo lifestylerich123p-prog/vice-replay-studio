@@ -69,6 +69,36 @@ def _persistent_gradients(frames):
     return np.min(gxs, axis=0), np.min(gys, axis=0)  # an edge counts only if it is in every frame
 
 
+def _webcam_from_stillness(frames, cx, cy, fw, fh):
+    """A webcam is a region that barely changes while the gameplay around it changes all the time (measured on a
+    real Lacy stream: pixel std 2.4 inside the webcam vs 40.7 in gameplay). Grow a box from the face while the
+    strip just outside it stays still; stop where gameplay starts or at the frame edge. Returns None if implausible."""
+    g = np.stack([f.mean(axis=2) for f in frames[:12]]).astype(np.float32)
+    sd = g.std(axis=0)
+    h, w = sd.shape
+    thr = 0.45 * float(np.median(sd))
+    if thr < 4:  # the whole picture is nearly static (menu, paused game): stillness can't separate the webcam
+        return None
+    x0, x1 = max(0, int((cx - fw / 2) * w)), min(w - 1, int((cx + fw / 2) * w))
+    y0, y1 = max(0, int((cy - fh / 2) * h)), min(h - 1, int((cy + fh / 2) * h))
+    for _ in range(2 * (w + h)):
+        grew = False
+        if x0 > 0 and sd[y0:y1 + 1, x0 - 1].mean() < thr:
+            x0 -= 1; grew = True
+        if x1 < w - 1 and sd[y0:y1 + 1, x1 + 1].mean() < thr:
+            x1 += 1; grew = True
+        if y0 > 0 and sd[y0 - 1, x0:x1 + 1].mean() < thr:
+            y0 -= 1; grew = True
+        if y1 < h - 1 and sd[y1 + 1, x0:x1 + 1].mean() < thr:
+            y1 += 1; grew = True
+        if not grew:
+            break
+    bw, bh = (x1 - x0 + 1) / w, (y1 - y0 + 1) / h
+    if bw * bh < 2.5 * fw * fh or bw * bh > 0.45 or bw < 1.2 * fw or bh < 1.2 * fh:
+        return None
+    return (x0 / w, y0 / h, bw, bh)
+
+
 def _webcam_from_face(frames, cx, cy, fw, fh):
     """From the face, search outward on each side for the nearest strong PERSISTENT border (webcam overlays have
     one; gameplay edges move). Sides without a border fall back to head-and-shoulders proportions."""
@@ -115,9 +145,14 @@ def detect_facecam(src, n=12, start=0.0, end=None):
     if len(members) < max(3, int(0.5 * len(frames))):
         return None
     cx, cy, fw, fh = np.median(members, axis=0)
-    box, snapped = _webcam_from_face(frames, cx, cy, fw, fh)
-    return {"box": [round(v, 4) for v in box], "face": [round(float(cx), 4), round(float(cy), 4)],
-            "frames_with_face": int(len(members)), "frames": len(frames), "edges_snapped": snapped,
+    still = _webcam_from_stillness(frames, cx, cy, fw, fh)
+    if still:
+        box, snapped, method = still, 4, "stillness"
+    else:
+        box, snapped = _webcam_from_face(frames, cx, cy, fw, fh)
+        method = "edges"
+    return {"box": [round(float(v), 4) for v in box], "face": [round(float(cx), 4), round(float(cy), 4)],
+            "frames_with_face": int(len(members)), "frames": len(frames), "edges_snapped": snapped, "method": method,
             "confidence": round(len(members) / len(frames), 2)}
 
 
@@ -141,6 +176,8 @@ def action_track(src, exclude=None, n=24, start=0.0, end=None, crop_w=0.5625):
         win = max(3, int(crop_w * sh / sw * w))  # crop window width in sample pixels
         energy = np.convolve(col, np.ones(win), mode="valid")
         cx = (int(np.argmax(energy)) + win / 2) / w if energy.size else 0.5
+        if energy.size and energy.max() < 1.15 * energy.mean():  # motion everywhere (camera moving): no clear
+            cx = 0.5                                               # subject, so stay centred instead of chasing texture
         t = (end - start) * i / (len(frames) - 1)
         pts.append((t, cx))
     smooth, prev = [], pts[0][1]

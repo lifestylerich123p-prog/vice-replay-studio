@@ -1,0 +1,147 @@
+{
+ "video": "/home/user/vice-replay-studio/projects/lacy-learns-to-run-in-gta-6-8c2e/lacy-learns-to-run-in-gta-6-8c2e.mp4",
+ "duration": 18.1,
+ "destination": "clipcircuit",
+ "passed": false,
+ "fails": 1,
+ "warns": 1,
+ "checks": [
+  {
+   "check": "format",
+   "status": "pass",
+   "detail": "1080x1920 h264 30 fps, 18.1 s",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "audio stream",
+   "status": "pass",
+   "detail": "aac 48000 Hz, 2 ch",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "length",
+   "status": "pass",
+   "detail": "18.1 s",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "decode",
+   "status": "pass",
+   "detail": "decodes cleanly",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "black frames",
+   "status": "pass",
+   "detail": "none",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "frozen picture",
+   "status": "pass",
+   "detail": "picture keeps moving",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "black bars",
+   "status": "pass",
+   "detail": "active picture 1080x1920 of 1080x1920",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "loudness",
+   "status": "pass",
+   "detail": "-14.8 LUFS integrated (target -14.0)",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "true peak",
+   "status": "pass",
+   "detail": "-1.0 dBFS peak",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "opening",
+   "status": "pass",
+   "detail": "first second is picture + sound",
+   "at": 0.0,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "captions",
+   "status": "pass",
+   "detail": "captions come from the word-level transcript of this audio (faster-whisper)",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "look-alike",
+   "status": "info",
+   "detail": "same layout/webcam as https://youtu.be/Eikozi0uFec, https://youtu.be/x8C9oncanac, https://youtube.com/shorts/c_l7udfLNnk but different gameplay: not a repost",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "duplicate footage",
+   "status": "pass",
+   "detail": "not a repost",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "footage reuse",
+   "status": "warn",
+   "detail": "shares 44% of its shots with https://youtube.com/shorts/ty0KP7MLaKU",
+   "at": null,
+   "segment": null,
+   "fix": "rotate to clips not used recently (repetitive-content risk)"
+  },
+  {
+   "check": "rights",
+   "status": "pass",
+   "detail": "/home/user/vice-replay-studio/media/campaign/lacy-gta6/lacy-first-time-300-320.mp4: source:1 (campaign)",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "disclosure",
+   "status": "fail",
+   "detail": "campaign hashtag #LACY",
+   "at": null,
+   "segment": null,
+   "fix": "add #LACY to the caption"
+  },
+  {
+   "check": "human review",
+   "status": "pending",
+   "detail": "owner approval in chat required before publishing",
+   "at": null,
+   "segment": null,
+   "fix": null
+  }
+ ],
+ "hash": "5548687f1f030747-5548685fcf86038f-5548689e9f9e5e4e-5448689e0f8fcf07-444868cc1f0f0f8f-4550646c8f8f0f0f-5550646e8f0f0f1f-55486cfe3f9f9d9b-55486cfe6bdf8f8d-55486c3f5f8acf8f-54486ceec5decf06-54486ceee496cfcf-55486c7b7b1b078b-5548687b7bda879a-5548687c734c5f5c-544868c48ccd4c0f-544868c8e4266113-544868c079e97b3e"
+}

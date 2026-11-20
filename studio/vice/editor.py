@@ -105,6 +105,21 @@ def punch_in(at, to=1.12, ramp=0.3, w=W, h=H):
     return f"scale=w='trunc({w}*{z}/2)*2':h='trunc({h}*{z}/2)*2':eval=frame,crop={w}:{h}"
 
 
+def loudnorm_2pass(media, target=-14.0, tp=-1.5, lra=11):
+    """Two-pass loudness: measure first, then normalize linearly (one pass undershoots short clips: -17.6 LUFS
+    measured on a stream clip). Returns the second-pass filter."""
+    r = subprocess.run(["ffmpeg", "-nostdin", "-hide_banner", "-i", str(media), "-af",
+                        f"loudnorm=I={target}:TP={tp}:LRA={lra}:print_format=json", "-f", "null", "-"],
+                       capture_output=True, text=True)
+    try:
+        m = json.loads(r.stderr[r.stderr.rindex("{"):r.stderr.rindex("}") + 1])
+        return (f"loudnorm=I={target}:TP={tp}:LRA={lra}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+                f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:"
+                f"linear=true,aresample=48000")
+    except (ValueError, KeyError):
+        return f"loudnorm=I={target}:TP={tp}:LRA={lra},aresample=48000"
+
+
 def frame_graph(src, pr, out_label="fr"):
     """filter_complex from [0:v] to [out_label]: vertical sources are just scaled; 16:9 streams go through the
     framing engine (stack = webcam on top, pip, fill = action-tracked crop, blur = whole frame; auto = detect)."""
@@ -225,7 +240,7 @@ def build(pid, params, rerun=()):
             joined = out / "joined.mp4"
             run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", joined])
             run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", joined, "-c:v", "copy", "-af",
-                 "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000", "-c:a", "aac", "-b:a", "192k",
+                 loudnorm_2pass(joined), "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
                  "-movflags", "+faststart", final])
             p = db.step_done(con, p, "render", video=final)
         cover = out / "cover.jpg"

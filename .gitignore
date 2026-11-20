@@ -18,3 +18,6 @@ projects/*/*.mp4
 projects/*/*.wav
 reports/exports/
 reports/jobs/
+
+# campaign stream footage (streamer's content; used only for that campaign, never committed)
+media/campaign/
