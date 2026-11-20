@@ -28,7 +28,7 @@ Read this first instead of searching the repo.
 | 2026-11-19 | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | main: 3T1de9Fnygg, short: RAs1Sx_7Zh8, news: Z8jQK8nZ1cQ, tips: 6QbWET74cQs |
 | 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | short: vlPV5Yre8T8 |
 | 2026-11-19 | gta6-cheat-codes-that-work | Short | GTA 6 Cheat Codes That Actually Work (Verified) | short: acNIOalmWzM |
-| 2026-11-19 | gta6-chapter-1-money-catch | Short | Don't Grind Money in GTA 6 Chapter 1 (The Catch) | short: UbRSdarrTQ4 |
+| 2026-11-19 | gta6-chapter-1-money-catch | Short | Don't Grind Money in GTA 6 Chapter 1 (The Catch) | short_old_stills_version: UbRSdarrTQ4, short: vkvg5KPqb70 |
 | 2026-11-19 | gta6-black-friday-catch | Short | GTA 6 Black Friday Deals Have a Catch | short_old_stills_version: oNwtReI03YU, short: zfjEiiiQdJk |
 | 2026-11-19 | gta6-17-million-sold | Short | GTA 6 Already Made $1.65 Billion (Estimate) | short: b4pWGuZNPJY |
 | 2026-11-18 | houser-launch-statement | Short | Rockstar's Sam Houser Breaks Silence as GTA 6 Launches | short: 4EuMnzlLKTY |
