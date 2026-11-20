@@ -110,6 +110,34 @@
   "notes": "Never on campaign clips (campaign rules: original audio only)."
  },
  {
+  "id": "ai-backgrounds",
+  "asset_class": "AI-generated illustration (thumbnail/card backgrounds)",
+  "match": [
+   "assets/ai-backgrounds/*"
+  ],
+  "owner": "Vice Replay (generated with Everygen, Nano Banana 2)",
+  "permission": "generated for the channel on the owner's paid Everygen plan",
+  "license_url": null,
+  "commercial_use": "yes, per the generator's terms for paid plans (verify on Everygen's terms page)",
+  "creator_restrictions": "graphics only: never shown or described as GTA 6 gameplay; no game characters, logos or real brands in them",
+  "music_rights": "n/a",
+  "campaign": null,
+  "attribution": null,
+  "expires": null,
+  "content_id_risk": "none",
+  "platforms_allowed": [
+   "YouTube",
+   "Instagram",
+   "TikTok",
+   "vicereplay.com"
+  ],
+  "destinations_allowed": [
+   "vice-replay"
+  ],
+  "status": "conditional",
+  "notes": "Never on campaign clips (campaigns ban AI content). Game imagery in thumbnails stays official Rockstar screenshots."
+ },
+ {
   "id": "kokoro-voice",
   "asset_class": "AI narration voice",
   "match": [

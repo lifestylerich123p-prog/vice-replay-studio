@@ -66,6 +66,7 @@ Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map"
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-20 · Vice Replay · Everygen: 6 credits for 3 AI thumbnail backgrounds (Nano Banana 2, 2 each); balance 987 -> 981.
 - 2026-11-20 · Vice Replay · Everygen dates (owner's billing page): top-up credits 987 EXPIRE FEB 17; plan credits 0/500 now, +500 on Dec 12 and monthly (no carry-over). Spending before Dec 12 uses the expiring top-ups: each chat should spend its share in the next 3 weeks (What If Arena biggest). Log every spend here.
 - 2026-11-20 · Vice Replay · Owner wants the shared Everygen credits USED before they reset/expire (balance 987, all purchased; this period's 500 subscription credits already used). Expiry date not visible here: owner to check the Everygen billing page. Plan the 987 across What If Arena (AI videos), ClipCircuit (find_clips) and Vice Replay (images/intros only); log every spend here. Everygen download_video = 0 credits.
 - 2026-11-20 · Vice Replay · Campaign scan (research/campaigns/scan-2026-11-20.json, search summaries, re-verify live): KreekCraft ($1/1K, ~$5.9K left) is the only open per-view GTA 6 campaign found; Lacy pool may need 1M approved views per creator (articles) vs 750K (campaign page); Clix $5K pool (400K) least crowded; Tomo budget ran out Nov 19. ClipCircuit (2 subs) fails Lacy's 100+ followers rule. New repost check: re-posting the same footage (any re-edit) is now blocked by QC.
