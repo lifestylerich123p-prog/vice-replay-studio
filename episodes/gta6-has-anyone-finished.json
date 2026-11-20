@@ -1,0 +1,45 @@
+{
+  "title": "Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch)",
+  "slug": "gta6-has-anyone-finished",
+  "voice": "am_michael",
+  "rate": "+15%",
+  "format": "search-answer",
+  "short_title": "Has anyone finished GTA 6 yet? (the 7-hour catch) #GTA6 #Shorts",
+  "short_title_options": ["Has anyone finished GTA 6 yet? (the 7-hour catch) #GTA6 #Shorts", "Did N3on really beat GTA 6 in 7 hours? #GTA6 #Shorts"],
+  "short_description": "Has anyone finished GTA 6 yet? Streamer N3on reportedly reached the end on stream in about 7 hours, but that claim is disputed (some posts say it was only the first chapter). A public completion tracker lists its first finisher at 21h 21m and says positions are still provisional. Reviewers who played the story report about 40-60 hours. Nothing official from Rockstar on the fastest finish. No story spoilers. Footage: official Rockstar gameplay.",
+  "short_es": {
+    "title": "¿Alguien ya terminó GTA 6? (la trampa de las 7 horas) #GTA6 #Shorts",
+    "description": "¿Alguien terminó GTA 6? El streamer N3on dijo que llegó al final en unas 7 horas, pero está en duda. Un rastreador público pone al primero en 21 h 21 min (provisional). Los reviewers hablan de 40 a 60 horas. Sin spoilers."
+  },
+  "short_playlist": "GTA 6 Streamer & Breaking News",
+  "pinned_comment": "How many hours have you played so far? Reply with your number 👇",
+  "tiktok_hashtags": ["#gta6", "#n3on", "#gtavi", "#gaming", "#speedrun"],
+  "sources": [
+    "TalkEsport - N3on becomes first player to finish GTA 6 story mode in 7 hours: https://www.talkesport.com/news/n3on-first-finish-gta-6-story-7-hours/",
+    "Who Finished - Who finished GTA VI first (provisional tracker): https://whofinished.com/en/gta-6/first-to-finish",
+    "GameRiv - GTA 6 how long to beat: https://gameriv.com/gta-6-how-long-to-beat/",
+    "Nacionale - Has anyone finished GTA 6? Reviewers have: https://www.nacionale.com/en/articles/has-anyone-finished-gta-6-how-many-chapters-missions-five-chapters-credits"
+  ],
+  "short": [
+    {"headline": "FINISHED IN 7 HOURS?", "headline_es": "¿TERMINADO EN 7 HORAS?",
+     "text": "Has anyone finished GTA 6 yet? One streamer says he did it in seven hours.",
+     "text_es": "¿Alguien ya terminó GTA 6? Un streamer dice que lo hizo en siete horas.",
+     "media": "../media/trailer/extended-look-avenue-skyline.mp4"},
+    {"headline": "N3ON: 7 HOURS?", "headline_es": "N3ON: ¿7 HORAS?",
+     "text": "N3on reportedly reached the end on stream in about seven hours. Some posts say it was only the first chapter.",
+     "text_es": "N3on dijo que llegó al final en unas siete horas. Otros dicen que fue solo el primer capítulo.",
+     "media": "../media/trailer/extended-look-red-convertible-city.mp4"},
+    {"headline": "TRACKER: 21 HOURS", "headline_es": "RASTREADOR: 21 HORAS",
+     "text": "A completion tracker lists its first finisher at twenty one hours, and calls that provisional.",
+     "text_es": "Un rastreador público pone al primero en veintiuna horas, y dice que es provisional.",
+     "media": "../media/trailer/extended-look-swamp-airboat.mp4"},
+    {"headline": "REVIEWERS: 40-60 HOURS", "headline_es": "REVIEWERS: 40-60 HORAS",
+     "text": "Reviewers who played the story took around forty to sixty hours.",
+     "text_es": "Los reviewers tardaron entre cuarenta y sesenta horas en la historia.",
+     "media": "../media/trailer/extended-look-highway-palms.mp4"},
+    {"headline": "HOW FAR ARE YOU?", "headline_es": "¿CUÁNTO LLEVAS?",
+     "text": "So nobody's confirmed it yet. How far are you? Tell me below, because",
+     "text_es": "Así que nadie lo ha confirmado. ¿Cuánto llevas tú? Dímelo abajo, porque",
+     "media": "../media/trailer/extended-look-skydive-city.mp4"}
+  ]
+}
