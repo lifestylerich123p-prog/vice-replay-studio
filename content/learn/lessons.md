@@ -60,3 +60,14 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   owner gameplay we cover them with our own research and official screenshots, never other creators' clips.
 - 2026-11-20: Official gameplay clips (extended-look-*) make Shorts look like real gameplay. Review every new clip at
   full size: a 'city drive' thumbnail hid a drive-by with guns (removed). Never show a storefront while naming a different shop.
+- 2026-11-20 (market + research): Top 432 GTA 6 Shorts of 72 h: 127 came from channels under 20K subs with 500K-10M
+  views, so size isn't the limit; format is. Typical views by format: GTA 5 vs GTA 6 comparison ~940K, streamer
+  moments ~760K, real gameplay ~520K, memes/POV ~400K, news/facts ~290K (our main format). Duval Desk (started Nov 16,
+  faceless, 5-6 Shorts/day): baseline 1-12K, breakout 606K with "7 Things GTA 6 Lets You Do That GTA 5 Never Did".
+  Winning titles create curiosity ("...Will Shock You", "Still Think It's Small?"), not headlines.
+- 2026-11-20 (YouTube policy): Oct 1, 2026 "Prioritizing original content on Shorts" cuts reach for reused footage
+  with narration that only describes it; July 2026 "generic or repetitive" (same template across uploads) loses
+  monetization; frequency is not a ranking factor (YouTube). Official trailer/Extended Look footage has been seen by
+  31M+ (weak swipe-stop). Fixes: owner gameplay first, narration that adds facts/opinion, fewer and more varied
+  Shorts, and keep reposted streamer clips a small share of the main channel (aggregator risk). vidIQ: 300-1,300
+  views is normal for a channel's first weeks; the best of a new channel's first 10 Shorts has a median of ~1.9K.

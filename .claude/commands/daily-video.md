@@ -29,6 +29,26 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    market's winners have in common (topics, title wording, length, Shorts vs long). Only claim what the
    numbers show. Use the lessons in every choice below: topic, hook, title options, thumbnail text, length.
    Learn from winning videos' patterns; never copy their titles, footage or thumbnails.
+**NEW FORMAT MIX (owner approved Nov 20: "let's start right now"; overrides the old main video + 3 Shorts plan).**
+Our news/facts Shorts get 300-1,300 views while launch-week winners from tiny channels get 500K-10M. YouTube's
+Oct 2026 update favors ORIGINAL Shorts and cuts reach for reused footage + narration that only describes it, and
+its "generic or repetitive" rule hits same-template channels. So, every day:
+- **11:00 AM: one GTA 6 vs GTA 5 comparison Short** (best format this week: ~940K typical among the top Shorts).
+  Angles: things GTA 6 removed / added, cops, car theft, physics, water, map, money. Use `python -m studio.compare
+  gta5.mp4 gta6.mp4 -o media/compare/<name>.mp4` for a split screen when owner footage of BOTH games exists;
+  otherwise official gameplay clips (`media/trailer/extended-look-*`) with clear GTA 5 vs GTA 6 headlines.
+- **6:00 PM: one streamer-moment OR search-answer Short.** Streamer news told in our voice with our footage
+  (never theirs), or an answer to what people are searching TODAY (Google Trends / "how old is Jason", "is Niko in
+  GTA 6"...), with a specific in-game answer.
+- **8:30 PM: only for big confirmed news** (e.g. Take-Two's official sales). No filler.
+- **No daily long main video** (ours get ~0 views); the website guide stays (Google + Amazon).
+- **Title = curiosity or comparison, never a plain headline**: "GTA 6 took away 4 things GTA 5 gave you", "...Will
+  Shock You", "Still think it's small?". 15-30 s. First frame = MOTION (a clip, not a still) + the payoff as text.
+- **Narration must add something** (a fact, a comparison, an opinion), never just describe the picture.
+- **Owner gameplay first**: when `media/gameplay/` has highlights, build the Short around the best one.
+- Set `"format"` in each episode (comparison / streamer / search-answer / discovery / news) so the scorecard
+  compares formats. Check `content/learn/scorecard.md` "By format" and drop formats that keep losing.
+
 1. **Pick the topic.** If today's plan row or a slow news day matches a ready-made file in `episodes/backlog/`
    (see its README), use it: refresh the facts, then render. It saves research. On Sundays the main video is the weekly recap, "GTA 6 This Week: <the week's biggest story>":
    the 5-7 biggest confirmed stories of the past 7 days (use `content/log.md`, our Shorts and fresh searches), one segment

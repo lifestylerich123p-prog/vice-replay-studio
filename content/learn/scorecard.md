@@ -4,6 +4,16 @@ Fair numbers: **24 h views** = views in each Short's first 24 hours (from histor
 Short has been tracked across its first day). **v/h** = lifetime views per hour. **watched** = average %
 of the Short watched (YouTube Analytics, a few days behind). Medians per group; n = number of Shorts.
 
+## By format
+
+| Group | n | median v/h | median 24 h views | median watched |
+|---|---|---|---|---|
+| comparison | 1 | 145.0 | - | - |
+| campaign clip | 7 | 40.8 | - | 92.0% |
+| news/facts | 20 | 5.7 | 334.0 | 56.9% |
+| streamer | 3 | 5.6 | 52 | 46.2% |
+| tips/discovery | 8 | 2.7 | - | 50.8% |
+
 ## By kind
 
 | Group | n | median v/h | median 24 h views | median watched |
@@ -56,6 +66,8 @@ of the Short watched (YouTube Analytics, a few days behind). Medians per group; 
 
 ## Auto advice
 
+- DO MORE: format = campaign clip (median 40.8 v/h vs 5.6 overall, n=7)
+- DO LESS: format = tips/discovery (median 2.7 v/h vs 5.6 overall, n=8)
 - DO MORE: kind = campaign clip (median 40.8 v/h vs 5.6 overall, n=7)
 - DO MORE: hook = question (median 11.0 v/h vs 5.6 overall, n=4)
 - DO MORE: length = 16-30 s (median 31.6 v/h vs 5.6 overall, n=17)

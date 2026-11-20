@@ -66,6 +66,12 @@ def tags(v):
     t = v["title"]
     base = re.sub(r"#\w+|\bGTA\s?(6|VI)\b|\bGTA6\b", "", t, flags=re.I)  # "GTA 6" is in every title
     out = {"kind": "campaign clip" if re.search(r"\blacy\b|kreek", t, re.I) else "own Short"}
+    low = base.lower()
+    out["format"] = ("campaign clip" if out["kind"] == "campaign clip" else
+                     "comparison" if re.search(r"gta ?5|gta v\b| vs |took away|never did|difference", t, re.I) else
+                     "streamer" if re.search(r"speed|kai|lacy|jynxzi|clix|streamer|tgg|kreek", low) else
+                     "tips/discovery" if re.search(r"tip|how to|money|cheat|save|secret|hidden|first|setting|grind|replay", low) else
+                     "news/facts")
     if re.search(r"catch", base, re.I):
         hook = "catch"
     elif re.search(r"\d|\$", base):
@@ -110,7 +116,7 @@ def build():
              "of the Short watched (YouTube Analytics, a few days behind). Medians per group; n = number of Shorts.", ""]
     overall = med([r["views_per_hour"] for r in rows])
     advice = []
-    for key in ("kind", "hook", "length", "slot (ET)"):
+    for key in ("format", "kind", "hook", "length", "slot (ET)"):
         groups = {}
         for r in rows:
             groups.setdefault(r[key], []).append(r)
