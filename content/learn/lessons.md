@@ -58,3 +58,5 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   a rescue-dog Short (335K views/h, 21 s), "What happens if you reach the N" (115K/h), "Stealing a jet" (148K/h),
   "Five things you NEED to do first" (32K/h, main). Discoveries plus beginner tips are the hungry angles now. Without
   owner gameplay we cover them with our own research and official screenshots, never other creators' clips.
+- 2026-11-20: Official gameplay clips (extended-look-*) make Shorts look like real gameplay. Review every new clip at
+  full size: a 'city drive' thumbnail hid a drive-by with guns (removed). Never show a storefront while naming a different shop.

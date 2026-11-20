@@ -79,8 +79,11 @@
   "posted_at": "2026-11-19 17:07"
  },
  {
-  "at": "2026-11-20 11:00",
-  "episode": "episodes/gta6-storage-full.json"
+  "at": "2026-11-20 09:29",
+  "episode": "episodes/gta6-ishowspeed-watkins.json",
+  "item": "short",
+  "posted": "https://www.instagram.com/reel/Df936UskiW2/",
+  "posted_at": "2026-11-20 09:29"
  },
  {
   "at": "2026-11-20 12:35",
@@ -129,6 +132,11 @@
   "episode": "episodes/gta6-launch-day-survival-guide.json",
   "item": "news",
   "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Sun for today's fresh Reels"
+ },
+ {
+  "at": "2026-11-22 18:00",
+  "episode": "episodes/gta6-storage-full.json",
+  "note": "moved to Sun for the IShowSpeed Reel (4/day cap)"
  },
  {
   "at": "2026-12-31 23:59",
