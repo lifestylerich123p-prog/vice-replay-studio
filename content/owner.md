@@ -62,3 +62,9 @@
 - 2026-11-19 5:49 PM: Meta emailed "Your professional ad account is restricted from advertising" for vice.replaytv
   (can't create/run ads, can't use audiences; posting unaffected). Response: Instagram slowed to max 4 posts/day
   (enforced in studio.instagram_upload), tonight's 3 Reels moved to Fri/Sat. No ad review requested (we run no ads).
+
+- 2026-11-20: Added 11 silent clips `media/trailer/extended-look-*` (6 s, 1080p) cut from Rockstar's official
+  "GTA VI: An Extended Look" (rockstargames.com/VI/downloads), each reviewed second by second: driving, skyline, swamp
+  airboat, skydive, night drive. Left out: shootings/robbery/heist, drug lab, swimsuit/club shots, a bloody close-up,
+  the VI logo. "GTA VI Out Now" skipped (logos and club shots). Gameplay Drive pull fixed: files now download
+  through drive.usercontent.google.com (the doc-*.googleusercontent hosts are blocked by the cloud proxy).

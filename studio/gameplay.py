@@ -29,13 +29,44 @@ def drive_link_from_owner():
     return m.group(0).rstrip(").,") if m else None
 
 
+DIRECT = "https://drive.usercontent.google.com/download?id={}&export=download&confirm=t"
+
+
+def fetch(file_id, dest):
+    """Download one Drive file through drive.usercontent.google.com (a fixed host the cloud proxy allows;
+    gdown's own downloads redirect to doc-*.googleusercontent.com hosts, which the proxy blocks)."""
+    import requests
+    dest = Path(dest)
+    if dest.exists() and dest.stat().st_size > 0:
+        return dest
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    tmp = dest.with_suffix(dest.suffix + ".part")
+    with requests.get(DIRECT.format(file_id), stream=True, timeout=120) as r:
+        r.raise_for_status()
+        if "text/html" in r.headers.get("Content-Type", ""):
+            raise RuntimeError(f"Drive returned a web page for {dest.name}: is the folder shared 'Anyone with the link'?")
+        with open(tmp, "wb") as f:
+            for chunk in r.iter_content(1 << 20):
+                f.write(chunk)
+    tmp.rename(dest)
+    print(f"  downloaded {dest.relative_to(RAW)} ({dest.stat().st_size / 1e6:.1f} MB)")
+    return dest
+
+
 def download(link):
     import gdown
     RAW.mkdir(parents=True, exist_ok=True)
-    if "/folders/" in link:
-        gdown.download_folder(url=link, output=str(RAW), quiet=False, resume=True, retries=2)
+    if "/folders/" in link:  # gdown only lists the folder; files come through fetch()
+        for f in gdown.download_folder(url=link, output=str(RAW), quiet=True, skip_download=True) or []:
+            if Path(f.local_path).suffix.lower() in VIDEO_EXT | {".png", ".jpg"}:
+                try:
+                    fetch(f.id, f.local_path)
+                except Exception as e:  # one bad file shouldn't stop the rest
+                    print(f"  skipped {Path(f.local_path).name}: {e}")
     else:
-        gdown.download(url=link, output=str(RAW) + "/", quiet=False, fuzzy=True, resume=True)
+        m = re.search(r"/d/([\w-]+)|id=([\w-]+)", link)
+        fid = next(g for g in m.groups() if g) if m else link
+        fetch(fid, RAW / f"{fid}.mp4")
 
 
 CATEGORIES = {"wild": "Wildest moments", "chase": "Chases & crashes", "funny": "Funny & fails",

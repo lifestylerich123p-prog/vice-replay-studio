@@ -24,8 +24,8 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
 
 ## Rules for this channel
 - **Footage**: everything in `media/` is used as backgrounds. Allowed: official Rockstar screenshots
-  (`media/official/`, 137, named by place/character/car, incl. vintage-*), silent official trailer clips
-  (`media/trailer/launch-trailer-*`), and the owner's own gameplay (`media/gameplay/`, pulled from the Drive folder in
+  (`media/official/`, 137, named by place/character/car, incl. vintage-*), silent official clips
+  (`media/trailer/launch-trailer-*` and `extended-look-*`: real gameplay from Rockstar's "An Extended Look"), and the owner's own gameplay (`media/gameplay/`, pulled from the Drive folder in
   `content/owner.md` by `python -m studio.gameplay`, not committed). Never other creators' videos, never a whole
   trailer, clip audio always dropped; narration adds real commentary. Pick `media` per segment by filename and rotate.
   Keep strip-club or sexualized images out (list of excluded shots in owner.md). New official media:
