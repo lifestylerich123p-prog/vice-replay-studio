@@ -71,3 +71,9 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   31M+ (weak swipe-stop). Fixes: owner gameplay first, narration that adds facts/opinion, fewer and more varied
   Shorts, and keep reposted streamer clips a small share of the main channel (aggregator risk). vidIQ: 300-1,300
   views is normal for a channel's first weeks; the best of a new channel's first 10 Shorts has a median of ~1.9K.
+- 2026-11-20 (growth research): Links in Shorts aren't clickable: Amazon buyers come through the bio link, the
+  website and long videos set as a Short's "Related video". Amazon pays ~1-2% on games but flat bounties for Prime
+  trials (tag them). OneLink covers CA/UK/ES/DE/FR/IT (not Mexico). TikTok Creator Rewards needs 1-min+ videos.
+  YPP for new channels doubles on Feb 1, 2027; the expanded tier (500 subs + 3M Shorts views/90 days) is the
+  near-term target. FAQ rich results stopped May 2026: use Article/Breadcrumb schema; Discover wants 1200px images
+  and max-image-preview:large (added). Facebook Page Reels API: 30/day, needs a Page + pages_manage_posts.

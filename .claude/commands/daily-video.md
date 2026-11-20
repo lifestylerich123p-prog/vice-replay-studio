@@ -46,6 +46,15 @@ its "generic or repetitive" rule hits same-template channels. So, every day:
   Shock You", "Still think it's small?". 15-30 s. First frame = MOTION (a clip, not a still) + the payoff as text.
 - **Narration must add something** (a fact, a comparison, an opinion), never just describe the picture.
 - **Owner gameplay first**: when `media/gameplay/` has highlights, build the Short around the best one.
+- **Demand check first (free):** web-search what GTA 6 players are asking TODAY (Google Trends "GTA 6" related
+  queries, top questions on news sites); prefer topics with clear search demand. The owner checks YouTube Studio
+  Research / Ask Studio on his phone and may send topics: those win.
+- **Website guide: only when there's a real search question** (editions/price, money, cheats, map regions, PC status,
+  "how old is Jason"...), and each guide must add something original (a checked comparison table, our own take,
+  sources). No filler pages: Google's Aug 2026 spam update targets scaled automated content. Skip the guide on days
+  with nothing new.
+- **Goal:** YouTube's expanded Partner tier (500 subscribers + 3M Shorts views in 90 days) during the launch window;
+  from Feb 1, 2027 the full-YPP bar for new channels doubles (20M Shorts views or 8,000 hours).
 - Set `"format"` in each episode (comparison / streamer / search-answer / discovery / news) so the scorecard
   compares formats. Check `content/learn/scorecard.md` "By format" and drop formats that keep losing.
 

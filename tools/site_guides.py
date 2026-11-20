@@ -107,7 +107,14 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
     if path in ALT:
         en, es = (path, ALT[path]) if lang == "en" else (ALT[path], path)
         alt = f'<link rel="alternate" hreflang="en" href="{DOMAIN}/{en}"><link rel="alternate" hreflang="es" href="{DOMAIN}/{es}"><link rel="alternate" hreflang="x-default" href="{DOMAIN}/{en}">'
-    ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in (jsonld or []))
+    jsonld = list(jsonld or [])
+    if path.startswith(("guides/", "es/guias/")) and path not in ("guides/", "es/guias/"):  # breadcrumbs for guide pages
+        hub = ("Guías", f"{DOMAIN}/es/") if lang == "es" else ("Guides", f"{DOMAIN}/guides/")
+        jsonld.append({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Vice Replay", "item": DOMAIN + "/"},
+            {"@type": "ListItem", "position": 2, "name": hub[0], "item": hub[1]},
+            {"@type": "ListItem", "position": 3, "name": title, "item": url}]})
+    ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in jsonld)
     if lang == "es":
         menu = f'<a href="/es/">Guías</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
         foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
@@ -122,6 +129,7 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{url}">{alt}
+<meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="{'article' if 'guid' in path else 'website'}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{url}"><meta property="og:site_name" content="Vice Replay"><meta property="og:image" content="{image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title)}"><meta name="twitter:description" content="{html.escape(desc)}"><meta name="twitter:image" content="{image}">
