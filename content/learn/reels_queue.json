@@ -165,6 +165,12 @@
   "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Mon: Sat now has BF 11:05 + comparison 13:35; 15:05 keeps 2.5 h after the 12:35 ranking Reel"
  },
  {
+  "at": "2026-11-23 17:35",
+  "episode": "episodes/gta6-video-store-closing.json",
+  "item": "short",
+  "note": "moved to Mon 5:35 PM: Nov 20 already had 4 posts (cap); 2.5 h after the 15:05 carousel"
+ },
+ {
   "at": "2026-11-24 12:00",
   "episode": "episodes/gta6-storage-full.json",
   "note": "moved to Tue: Sunday has 4 posts (4/day cap)"

@@ -1,0 +1,148 @@
+{
+  "title": "GTA 6 Has a Video Game Store, and It's Closing",
+  "slug": "gta6-video-store-closing",
+  "series": "C: Details",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "format": "details",
+  "use_gameplay": false,
+  "short_title": "GTA 6 has a video game store... and it's closing #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 has a video game store... and it's closing #GTA6 #Shorts",
+    "GTA 6 details: the video game store going bust #GTA6 #Shorts",
+    "GTA 6: Rockstar's dying video game store #GTA6 #Shorts"
+  ],
+  "short_description": "Vice Replay Details: in Rockstar's own GTA 6 gameplay (\"GTA VI: An Extended Look\"), a strip mall has a video game store called Video Forever (\"rent, buy, sell, trade, video games, snacks\") with STORE CLOSING and BANK OWNED signs in the window. Every sign in this Short is read straight off the footage. Real life matches: GameStop closed 590 US stores in fiscal 2024 and 727 in fiscal 2025, according to its annual SEC filings. And GTA 6's physical edition is a download code in the box, with no disc (Amazon listing, Guru3D, ChannelNews). No story spoilers. Footage: official Rockstar gameplay, original audio removed.",
+  "short_es": {
+    "title": "GTA 6 tiene una tienda de videojuegos... y está cerrando #GTA6 #Shorts",
+    "description": "Vice Replay Detalles: en el gameplay oficial de GTA 6 hay una tienda de videojuegos, Video Forever, con carteles de CIERRE y BANK OWNED. En la vida real, GameStop cerró 590 tiendas en EE. UU. en su año fiscal 2024 y 727 en 2025 (informes ante la SEC). Y la edición física de GTA 6 es solo un código en la caja, sin disco. Sin spoilers."
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "What's the best hidden detail you've found in GTA 6 so far? 👇",
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gaming",
+    "#gta6details",
+    "#rockstargames"
+  ],
+  "sources": [
+    "Rockstar Games - Grand Theft Auto VI: An Extended Look (official gameplay; store signs read frame by frame at 1920x1080): https://www.rockstargames.com/VI/downloads",
+    "Guru3D - GTA 6 physical edition ships without a disc, download code only: https://guru3d.com/story/gta-6-physical-edition-ships-without-disc-includes-download-code-only/",
+    "Amazon - Grand Theft Auto VI (PS5) listing, Code in Box: https://www.amazon.com/dp/B0H6K928WL",
+    "ChannelNews - GTA 6 physical edition drops the disc: https://www.channelnews.com.au/gta-6-physical-edition-drops-the-disc-in-digital-only-retail-shift/",
+    "Retail Dive - GameStop closed 727 US stores in fiscal 2025 (10-K): https://www.retaildive.com/news/gamestop-closed-seven-hundred-stores-2025/815827/",
+    "PYMNTS - GameStop 10-K: 590 US stores closed in fiscal 2024: https://www.pymnts.com/?p=2520377",
+    "Fox Business - GameStop shutters more stores: https://www.foxbusiness.com/lifestyle/gamestop-shutters-more-stores-retail-apocalypse-continues-devastate-gaming-industry",
+    "Video Games Chronicle - Rockstar confirms no disc version of GTA 6 at launch: https://videogameschronicle.com/news/rockstar-confirms-there-will-be-no-disc-version-of-gta6-at-launch/",
+    "Kotaku - physical copies of GTA 6 are a code in a box, no disc at launch: https://kotaku.com/physical-copies-of-gta-6-will-just-be-a-code-in-a-box-with-no-disc-at-launch-2000709919"
+  ],
+  "short": [
+    {
+      "headline": "LOOK AT THIS STORE",
+      "headline_es": "MIRA ESTA TIENDA",
+      "text": "Look at the store on the left in Rockstar's own GTA 6 gameplay.",
+      "text_es": "Mira la tienda de la izquierda en el gameplay oficial de GTA 6.",
+      "media": "../media/trailer/extended-look-strip-mall-parking.mp4",
+      "media_start": 2.9,
+      "speed": 0.6,
+      "focus": 0.03,
+      "keep_media": true
+    },
+    {
+      "headline": "A VIDEO GAME STORE",
+      "headline_es": "UNA TIENDA DE VIDEOJUEGOS",
+      "text": "It's a video game store. Video Forever: rent, buy, sell, trade, video games.",
+      "text_es": "Es una tienda de videojuegos. Video Forever: alquila, compra, vende, cambia videojuegos.",
+      "media": "../media/trailer/extended-look-strip-mall-parking.mp4",
+      "media_start": 3.0,
+      "keep_media": true,
+      "speed": 1.0,
+      "freeze": {
+        "at": 0.05
+      },
+      "magnify": {
+        "box": [
+          0.065,
+          0.12,
+          0.285,
+          0.24
+        ],
+        "width": 0.86,
+        "y": 0.34
+      }
+    },
+    {
+      "headline": "AND IT'S CLOSING",
+      "headline_es": "Y ESTÁ CERRANDO",
+      "text": "And under the sign: store closing, bank owned. The game store is going out of business, inside a video game.",
+      "text_es": "Y debajo del cartel: cierre del local, propiedad del banco. La tienda de videojuegos está quebrando, dentro de un videojuego.",
+      "media": "../media/trailer/extended-look-strip-mall-parking.mp4",
+      "media_start": 3.0,
+      "keep_media": true,
+      "speed": 1.0,
+      "freeze": {
+        "at": 0.05
+      },
+      "magnify": {
+        "box": [
+          0.06,
+          0.35,
+          0.36,
+          0.52
+        ],
+        "width": 0.86,
+        "y": 0.33
+      }
+    },
+    {
+      "headline": "REAL LIFE: SAME STORY",
+      "headline_es": "EN LA VIDA REAL, IGUAL",
+      "text": "And real life matches. GameStop closed more than thirteen hundred US stores in two years, according to its own filings.",
+      "text_es": "Y la vida real coincide. GameStop cerró más de mil trescientas tiendas en Estados Unidos en dos años, según sus propios informes.",
+      "media": "../media/trailer/extended-look-strip-mall-parking.mp4",
+      "media_start": 2.95,
+      "speed": 0.5,
+      "focus": 0.03,
+      "zoom": {
+        "x": 0.68,
+        "y": 0.38,
+        "to": 1.5,
+        "at": 0.4,
+        "dur": 1.4
+      },
+      "keep_media": true,
+      "freeze": {
+        "at": 2.95
+      }
+    },
+    {
+      "headline": "NO DISC EITHER",
+      "headline_es": "Y SIN DISCO",
+      "text": "Plus, GTA 6's own physical edition is just a code in the box. No disc.",
+      "text_es": "Además, la edición física de GTA 6 es solo un código en la caja. Sin disco.",
+      "media": "../media/trailer/extended-look-strip-mall-parking.mp4",
+      "media_start": 2.95,
+      "speed": 0.5,
+      "focus": 0.35,
+      "keep_media": true
+    },
+    {
+      "headline": "SPOT ANY DETAILS?",
+      "headline_es": "¿VISTE ALGÚN DETALLE?",
+      "text": "What other detail did you spot in GTA 6? Tell me below, because",
+      "text_es": "¿Qué otro detalle viste en GTA 6? Dímelo abajo, porque",
+      "keep_media": true,
+      "shots": [
+        {
+          "media": "../media/trailer/extended-look-convertible-waterfront.mp4",
+          "start": 0.5
+        },
+        {
+          "media": "../media/trailer/extended-look-avenue-skyline.mp4",
+          "start": 0.5
+        }
+      ]
+    }
+  ]
+}
