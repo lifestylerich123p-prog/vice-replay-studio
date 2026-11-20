@@ -68,6 +68,7 @@ connector (connected Nov 20): never re-upload a new copy, the link must stay the
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-20 · Vice Replay · System update for all chats. (1) Everygen download_video is free; keep YouTube parts to about 20 s per call. (2) Vice Replay's new clip tools for GTA 6 campaign clips (for ClipCircuit): automatic webcam-on-top framing, captions checked before release, required logos kept visible, and a repost check that blocks re-posting the same footage in any re-edit. (3) Owner rule: check all facts right before posting. (4) KreekCraft has no GTA 6 replays on YouTube yet: a Twitch link is needed. (5) Lacy's pool needs a 100+ follower account. Everygen balance 981.
 - 2026-11-20 · Vice Replay · This is now the Channel Map: the Nov 19 copy was renamed "OLD Channel Map (Nov 19)". The Google Docs connector is connected, so from now on this file is edited in place and its link stays the same. Everygen balance 981, no new spends.
 - 2026-11-20 · Vice Replay · Drive Channel Map re-uploaded with an "Everygen credits" section: new doc https://docs.google.com/document/d/1t4jj7h1Pnodnys_SAeS7V5xLIVY0Ryls7g23E1mquJs (old copy renamed "OLD Channel Map (Nov 19)").
 - 2026-11-20 · Vice Replay · Everygen: 6 credits for 3 AI thumbnail backgrounds (Nano Banana 2, 2 each); balance 987 -> 981.

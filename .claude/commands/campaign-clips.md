@@ -27,14 +27,30 @@ default `local`.
    timed caption lines with more `overlay_text` (bottom, margin 0.12) when the clip has no burned-in captions.
    `inspect_media` 4 frames to check (face on top, text not clipped).
 4. `curl` the result URL (media.viewmax.io is allowed) to `output/clips/<campaign>/<name>.mp4`, SendUserFile it with
-   a title + description (name + required hashtag + "Watch <streamer> live on Twitch"), and queue it for Instagram
-   (two campaign clips per slot, `.claude/commands/instagram.md`). YouTube downloads of long VODs time out here:
+   a title + description (name + required hashtag + "Watch <streamer> live on Twitch"). No campaign clips on Vice
+   Replay's Instagram (Meta ad flag, Nov 19); the owner posts them on ClipCircuit. YouTube downloads of long VODs time out here:
    use Twitch clips instead. Check `get_credit_balance` before/after a batch and tell the owner the credits used.
    What gets views (307 Lacy Shorts, Nov 19): 8-16 s beats 20-30 s by ~7x views/hour; simple title with the streamer
    first + one emoji ("Lacy Arrested on Day 1 in GTA 6!! 💀"); "firsts" and funny discoveries; fresh moments.
    Source tip: clippers' descriptions sometimes include the original clips.twitch.tv link (YouTube API, free).
 5. Owner posts on YouTube and sends the link: log it in tracker.md, schedule the 20-minute submit reminder.
    At ~2,000 views ask for the clip's country-breakdown screenshot (campaign audience rule).
+
+## 0b. Free local path with the new system (Nov 20)
+1. Footage: Everygen `download_video` is FREE (balance unchanged over 3 calls). YouTube parts: keep `from`/`to` to
+   ~20 s or the tool times out at 60 s (a 60 s part takes ~2 min). Twitch clip links download whole. Save to
+   `media/campaign/<campaign>/` (git-ignored; never committed).
+2. `python -m studio.vice add-source --file F --creator <streamer> --url "<source url + timestamp>" --rights campaign
+   --campaign <name> --dest clipcircuit --commercial-use --youtube-allowed` (file hash + campaign proof recorded).
+3. `add-candidate --source-id N --title ... --start --end` + 0-10 scores, `rank`, `create-project --candidate-id ...
+   --headline "<STREAMER> ..."`.
+4. `render --project-id P --layout auto` detects the webcam (a still region around a face; IoU 0.97 on a real Lacy
+   stream) and stacks it over the gameplay. `--keep x y w h` keeps a required overlay visible (KreekCraft's logo);
+   `--punch t` and `--replay a b` for the payoff. Campaign clips get no Vice Replay branding and no AI voice.
+5. Read `projects/P/captions_review.md`, fix `captions.srt` if needed, `approve-captions P`, then `package
+   --project-id P`. QC blocks reposts (same footage in any re-edit) and missing hashtags/credit.
+Status Nov 20: Lacy pool needs a 100+ follower account and 750K-1M approved views (ClipCircuit YouTube has 2 subs);
+KreekCraft has no GTA 6 replays on his YouTube channel: ask the owner for a KreekCraft GTA 6 Twitch link.
 
 ## 1. The campaign (owner approval first)
 - Read `content/campaigns/<name>.json`. If it doesn't exist, ask the owner for the campaign page details and create it

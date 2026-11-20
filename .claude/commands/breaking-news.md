@@ -37,3 +37,8 @@ doesn't pass every rule is NOT auto-posted.
    <title> <link>. Score <n>/10 because <one line>. Sources: <links>. Pin the comment; delete it in YouTube
    Studio if you don't want it." Also send the video with SendUserFile so they can repost it on TikTok/Instagram.
 8. If anything fails (render, upload), don't retry endlessly: report what happened.
+
+**QC gate (Nov 20):** after rendering and before uploading, run `python -m studio.vice publish episodes/<slug>.json`;
+upload only if it reports no blockers (rights, facts, black frames, captions vs speech, channel/token check). If push
+to main is refused, also send the episode JSON + the log line to the main chat (fire_trigger trig_01XX9xXTp8xfb4i3yYUFP9uF)
+so the repo log stays complete.

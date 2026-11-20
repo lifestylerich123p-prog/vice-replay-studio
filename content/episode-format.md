@@ -45,3 +45,29 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
      Streamer & Breaking News"); set `playlist` on an item only to override.
    - Write narration for the ear: short sentences, spell numbers the way they should be spoken
      when it matters ("212 gigabytes"), no emoji, no markdown.
+
+## Formats and editing tools (added Nov 20)
+
+Formats that work (scorecard + competitor research): `"format"` = `news`, `tips/discovery`, `comparison` (GTA 5 vs 6),
+`search-answer` (answer a question people search), `details` (a detail read off official/owner footage, magnified),
+`ranking` (our own countdown of things shown in authorized footage: rankings are a confirmed trend on 7 of 11
+competitor channels). Add `"series"` ("A: Moments", "B: Rankings", "C: Details"/"C: Tested", "Explained") for the scorecard.
+
+Per-segment keys (all optional) in `short` / `segments`:
+- `media_start` (s) and `keep_media: true` (keep this picture even when owner gameplay exists); `"use_gameplay": false`
+  on the episode keeps every chosen picture.
+- `focus`: 0 (left) .. 1 (right), or [x, y]: which part of a 16:9 clip the vertical crop keeps.
+- `speed`: 0.5-0.8 honest slow motion for short clips.
+- `freeze`: {"at": s} plays to that point (seconds after media_start, before speed) and holds the frame.
+- `magnify`: {"box": [x0, y0, x1, y1], "width": 0.6-0.86, "y": 0.30-0.34} shows that box of the full-resolution frame
+  large over the blurred shot (HUD, signs, small details). Keep it between the headline (top 30%) and captions (62%+).
+- `callout`: {"x", "y", "r", "at", "label"?} a pink/cyan ring on screen (output coordinates 0-1).
+- `zoom`: {"x", "y", "to": 1.3-1.6, "at", "dur"} smooth punch-in toward a point.
+- `shots`: [{"media", "start", "speed"?, "focus"?, "dur"?}, ...] cuts between several clips inside one segment (pacing).
+
+Footage rules learned Nov 20: read every sign/number/HUD value at FULL resolution before writing it (a thumbnail showed
+"5/9" where the frame said "5/6"); official clips contain internal cuts and UI moments (the strip-mall clip opens on a
+blurred weapon wheel), so the renderer warns "crosses a shot change": fix it with media_start/speed/freeze/shots.
+A "real life matches" line is welcome when it's sourced (2+ reliable sources, exact wording: "in two years", not a
+looser "in the last two years"). Captions are timed to the narration automatically (speech-aligned).
+Before delivering or uploading: `python -m studio.vice publish episodes/<slug>.json` must show no blockers.

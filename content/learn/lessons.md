@@ -81,3 +81,18 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   angle) got 167 views in its first 1.3 h (~129/h), while tips Shorts on still screenshots got 3-16 views in ~17 h
   (cheat codes 50 s, "Can't get into GTA 6?", "First 3 settings"). Every Short now uses moving clips, never stills
   as the first frame; today's 12:30 / 6 PM / 8:30 PM Shorts were re-made and swapped (old versions left private).
+- 2026-11-20 (audit with real YouTube Analytics, `python -m studio.vice audit`): Shorts are ~97% of views. Campaign
+  streamer clips have the best median (1,009 views, 50% stayed to watch) but repeats of a crowded moment got 2-8 views;
+  own news Shorts median 572 (818 in 24 h, 43% stayed); tips 248; long videos ~15. Best own Shorts today: streamer news
+  (IShowSpeed, ~137 views/h) and "the catch" money hook (~68/h).
+- 2026-11-20 (competitors, `studio.vice discover`, 11 channels): "ranking" titles are a confirmed trend (7 channels,
+  breakouts 0.7-3.8M); "versus/tested" titles: 0 of 11 channels (an open lane to test, not proven). Videos weren't
+  watched (youtube.com is blocked here), so no claims about their editing.
+- 2026-11-20 (footage): read signs/HUD at full resolution (a thumbnail read "5/9", the frame said "5/6"); official clips
+  have internal cuts and UI moments (blurred weapon wheel at the start of the strip-mall clip): heed the renderer's
+  "crosses a shot change" warning. A sourced real-life match ("GameStop closed 1,300+ US stores in two years") makes a
+  detail Short stronger.
+- 2026-11-20 (system): webcam detection works on real streams by finding the still region around a face (IoU 0.97);
+  the repost check needs full-frame AND moving-pixel matches (a streamer's identical webcam room fooled the first
+  version); clip loudness uses two-pass loudnorm (one pass left -17.6 LUFS). Everygen downloads are free (YouTube parts
+  ~20 s max per call). Instagram insights aren't readable with the current token (needs the insights permission).

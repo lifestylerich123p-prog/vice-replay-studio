@@ -83,6 +83,16 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
   or re-render without a reason. End every run that changed anything with `python -m studio.tidy`. New files go where
   the README's table says; finished one-off files go to `content/archive/`.
 
+## System upgrades (Nov 20; details in docs/vice-system.md)
+- `python -m studio.vice <audit|discover|scan|publish|...>`: rights gate (default deny, `rights/registry.json`), QC
+  (black/frozen frames, loudness, captions vs speech, repost fingerprints, facts), channel/token check, 14-day plan
+  (`content/vice-calendar.json`). **Run `studio.vice publish episodes/<slug>.json` before any upload; it must show no
+  blockers.** Owner rule: check all facts right before posting.
+- New formats/effects (details, ranking, magnifier, callouts, zoom, freeze, shots) are in `content/episode-format.md`.
+- Shared Channel Map (all chats): https://docs.google.com/document/d/1t4jj7h1Pnodnys_SAeS7V5xLIVY0Ryls7g23E1mquJs
+  edited in place (Google Docs connector). Everygen: 981 top-up credits expire Feb 17; 500 plan credits reset monthly
+  (next Dec 12); split What If Arena ~690 / ClipCircuit ~150 / Vice Replay ~150; log every spend there.
+
 ## Reference pack
 Before writing an episode, read `resources/shorts-tiktok-playbook.md` and `resources/hooks-and-titles.md`.
 When no topic is planned, pick an angle from `resources/topic-bank.md` and research it fresh.

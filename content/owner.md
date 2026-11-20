@@ -85,3 +85,11 @@
   convertible-waterfront, downtown-highway, van-residential, aerial-bay, dirt-bike-trail (2.8 s), night-street-race
   (2.8 s), sunset-skyline (2 s). Each checked first/middle/last frame at full size and trimmed off the next scene
   (club, gym, the bloody close-up, Rockstar title card). Rotate clips so no two Shorts in a day open the same way.
+- 2026-11-20: Google Docs connector connected: the shared Channel Map
+  (https://docs.google.com/document/d/1t4jj7h1Pnodnys_SAeS7V5xLIVY0Ryls7g23E1mquJs) is edited IN PLACE from now on;
+  the Nov 19 copy is renamed "OLD Channel Map (Nov 19)". Never re-upload a new copy.
+- 2026-11-20: Owner asked "check all facts before posting" (applies to every video): verify each claim against 2+
+  reliable sources (or read it off the footage at full size) right before upload, and fix loose wording.
+- 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
+  routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
+  next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.

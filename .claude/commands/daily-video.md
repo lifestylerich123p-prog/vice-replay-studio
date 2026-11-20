@@ -136,3 +136,8 @@ its "generic or repetitive" rule hits same-template channels. So, every day:
    in the same report, with a posting time from the schedule and the reminder to submit each clip on the
    campaign page within 30 minutes of it going live.
 6. If something fails (render error, no reliable news), still report what happened and what you made.
+
+**New tools (Nov 20):** formats `details` / `ranking` / `search-answer` and the editing keys (focus, speed, freeze,
+magnify, callout, zoom, shots) are in `content/episode-format.md`. Read footage at full resolution before writing any
+on-screen fact; fix every "crosses a shot change" warning; run `python -m studio.vice publish` and report its QC line
+with the delivery. `python -m studio.vice dashboard` is the owner's local control panel (no upload button).
