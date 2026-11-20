@@ -118,6 +118,10 @@
   "item": "short"
  },
  {
+  "at": "2026-11-21 16:30",
+  "carousel": "content/carousels/gta6-black-friday-deals.json"
+ },
+ {
   "at": "2026-11-21 19:00",
   "carousel": "content/carousels/gta6-cheat-codes.json",
   "note": "moved: Meta ad restriction, slowing to max 4 posts/day"
