@@ -63,6 +63,9 @@ its "generic or repetitive" rule hits same-template channels. So, every day:
    the 5-7 biggest confirmed stories of the past 7 days (use `content/log.md`, our Shorts and fresh searches), one segment
    each, with our take; the Short is the week's single biggest moment. (A plan row for that Sunday overrides this.)
    Otherwise: Today's date is in your context. Read `content/launch-plan.md` and use today's row.
+   **Shorts (Nov 22 - Dec 5):** use today's two rows in `content/vice-calendar.json` (`python -m studio.vice batch`); a
+   row marked "BLOCKED until recorded" needs owner gameplay: if `media/gameplay/` has none, take the next ready row.
+   Before delivering, run `python -m studio.vice publish episodes/<slug>.json` and include its QC result.
    If there is no row for today, take the best unused idea from `content/learn/ideas.md` (freshest research; re-check its facts;
    mark it USED), then `resources/topic-bank.md` (older angles, Nov 16), or search the web for what GTA 6 players are searching for and talking about
    right now and pick the strongest topic. Check `content/log.md` and `episodes/` so you never repeat a

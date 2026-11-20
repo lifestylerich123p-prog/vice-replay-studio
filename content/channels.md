@@ -66,6 +66,7 @@ Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map"
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-20 · Vice Replay · Campaign scan (research/campaigns/scan-2026-11-20.json, search summaries, re-verify live): KreekCraft ($1/1K, ~$5.9K left) is the only open per-view GTA 6 campaign found; Lacy pool may need 1M approved views per creator (articles) vs 750K (campaign page); Clix $5K pool (400K) least crowded; Tomo budget ran out Nov 19. ClipCircuit (2 subs) fails Lacy's 100+ followers rule. New repost check: re-posting the same footage (any re-edit) is now blocked by QC.
 - 2026-11-20 · Vice Replay · Growth research: Snapchat Spotlight accepts web uploads (profile.snapchat.com); YouTube Collab Shorts tag up to 10 channels; TikTok Creator Rewards needs 1-min+ videos and 10K followers; Facebook Page Reels can be posted by API once a Page is linked.
 - 2026-11-20 · Vice Replay · Owner chose B: GTA 6 campaign clips (Lacy, KreekCraft) now post on ClipCircuit. YouTube's Oct 2026 originality update cuts reach for channels of reposts.
 - 2026-11-19 · Vice Replay · New scorecard: campaign clips 41.8 views/h median vs 5.6 for own Shorts; 16-30 s best, 60 s+ dead.
