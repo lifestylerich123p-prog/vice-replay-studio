@@ -122,10 +122,9 @@
   "item": "short"
  },
  {
-  "at": "2026-11-21 16:30",
-  "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
-  "item": "news",
-  "note": "moved to Sat 4:30 PM: today's slot went to the deals carousel"
+  "at": "2026-11-21 16:05",
+  "episode": "episodes/gta6-has-anyone-finished.json",
+  "item": "short"
  },
  {
   "at": "2026-11-21 19:00",
@@ -147,6 +146,12 @@
   "at": "2026-11-22 18:00",
   "episode": "episodes/gta6-storage-full.json",
   "note": "moved to Sun for the IShowSpeed Reel (4/day cap)"
+ },
+ {
+  "at": "2026-11-22 20:30",
+  "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
+  "item": "news",
+  "note": "moved to Sun 8:30 PM: Sat 4:05 PM went to the 'has anyone finished' Reel (4/day cap, 2.5 h apart)"
  },
  {
   "at": "2026-11-23 14:00",
