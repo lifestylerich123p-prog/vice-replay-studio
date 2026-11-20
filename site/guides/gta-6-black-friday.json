@@ -1,9 +1,9 @@
 {
  "slug": "gta-6-black-friday",
  "lang": "en",
- "title": "GTA 6 Black Friday 2026: Storage, Controllers and the Game",
- "h1": "GTA 6 Black Friday: <span>what to watch</span>",
- "desc": "GTA 6 Black Friday 2026 guide: what's worth buying for a 212 GB game (PS5 SSD, Xbox expansion card, controllers), what to skip, and how to spot a real deal.",
+ "title": "GTA 6 Black Friday 2026: Live Deals on Controllers, Storage and the Game",
+ "h1": "GTA 6 Black Friday: <span>live deals</span>",
+ "desc": "GTA 6 Black Friday 2026 deals, checked November 19: the PS5 DualSense is $54 (was $74), the GTA 6 Edition controller isn't discounted, GTA 6 itself isn't on sale in the US yet, and what to buy for the 212 GB install.",
  "date": "2026-11-19",
  "video": null,
  "card": [
@@ -11,8 +11,12 @@
   "BLACK FRIDAY",
   "car-electric-fang-01.jpg"
  ],
- "lede": "GTA 6 launches a week before Black Friday (November 27, 2026) and Cyber Monday (November 30). If you're shopping for it, this is what's worth watching. We'll update this page with the best deals we can verify.",
+ "lede": "Amazon's Black Friday Week is already on: it runs <b>November 19 to 30</b> (Black Friday is November 27, Cyber Monday November 30). Here's what's actually on sale for GTA 6 players right now, checked against deal reports from Tom's Guide, GamesRadar and others. Prices change fast, so check the price on the store page before you buy.",
  "sections": [
+  [
+   "On sale right now",
+   "<div class=\"box\"><h3>Live deals (checked Nov 19, 8 PM ET)</h3><ul class=\"list\" style=\"margin:0\"><li><b>PS5 DualSense controller: $54</b> (usually $74) at Amazon and PlayStation Direct, reported by several deal sites. The best GTA 6 buy this week: one controller charges while you play. <a href=\"https://www.amazon.com/s?k=PS5+DualSense+wireless+controller&tag=vicereplay-20\" target=\"_blank\" rel=\"sponsored noopener\">See it on Amazon</a></li><li><b>GTA 6 Edition DualSense: about $85, not discounted.</b> It isn't part of Sony's sale. Buy it for the look, not the price. <a href=\"https://www.amazon.com/s?k=GTA+6+DualSense+controller&tag=vicereplay-20\" target=\"_blank\" rel=\"sponsored noopener\">Check stock</a></li><li><b>GTA 6 itself: no US discount yet.</b> Deal trackers found it at full price ($79.99) at US stores; new games rarely drop in launch week. If you see it cheaper, check the console and edition.</li><li><b>2 TB PS5 SSD:</b> the big early deal (a 2 TB heatsink SSD for about $300 at Best Buy) ended on November 15. Watch for it to come back on Black Friday; in the meantime, try the <a href=\"/guides/gta-6-storage/\">free space fixes</a>. <a href=\"https://www.amazon.com/s?k=PS5+compatible+2TB+NVMe+SSD+with+heatsink&tag=vicereplay-20\" target=\"_blank\" rel=\"sponsored noopener\">Current 2 TB SSD prices</a></li></ul><p class=\"sources\" style=\"margin:10px 0 0\">Affiliate links: as an Amazon Associate we earn from qualifying purchases, at no extra cost to you. Prices are what deal sites reported on Nov 19 and can change at any time.</p></div>"
+  ],
   [
    "Worth watching: storage",
    "<p>GTA 6 is up to 212 GB. A <b>2 TB PS5 SSD with a heatsink</b> or an <b>Xbox storage expansion card</b> are the upgrades that actually fix \"storage full\". Try the <a href=\"/guides/gta-6-storage/\">free fixes</a> first.</p>"
@@ -37,7 +41,15 @@
  "faq": [
   [
    "When is Black Friday 2026?",
-   "Friday, November 27, 2026. Cyber Monday is November 30."
+   "Friday, November 27, 2026. Amazon's Black Friday Week runs November 19 to 30, and Cyber Monday is November 30."
+  ],
+  [
+   "Is GTA 6 on sale for Black Friday?",
+   "Not in the US as of November 19: deal trackers found it at full price ($79.99). New games rarely get discounts in launch week."
+  ],
+  [
+   "What's the best Black Friday deal for GTA 6 players?",
+   "The standard PS5 DualSense at $54 (usually $74) and, if your console is full, a 2 TB PS5 SSD with a heatsink when it drops in price again."
   ]
  ],
  "gear": [
@@ -53,6 +65,26 @@
   [
    "Xbox: storage options",
    "https://support.xbox.com/en-US/help/hardware-network/console/xbox-series-x-s-storage-options"
+  ],
+  [
+   "Tom's Guide: GTA 6 Black Friday deals live",
+   "https://www.tomsguide.com/live/news/gta-6-black-friday-deals-november-17-2026"
+  ],
+  [
+   "GamingBible: PS5 and Xbox controllers at their cheapest prices all year",
+   "https://www.gamingbible.com/news/ps5-xbox-controllers-new-cheap-gta-6-prices-171493-20261119"
+  ],
+  [
+   "TechRadar: where to buy GTA 6 for the best price",
+   "https://www.techradar.com/gaming/where-to-buy-grand-theft-auto-6-for-the-best-price-all-the-best-ps5-and-xbox-deals-on-rockstars-upcoming-blockbuster"
+  ],
+  [
+   "9to5Toys: WD Black SN850P 2TB doorbuster (ended Nov 15)",
+   "https://9to5toys.com/2026/11/13/best-buy-early-black-friday-doorbuster-wd-black-sn850p-2tb-ps5-ssd/"
+  ],
+  [
+   "Fox News: Amazon Black Friday dates (Nov 19-30)",
+   "https://www.foxnews.com/deals/amazon-black-friday-cyber-monday-2026-announcement.amp"
   ]
  ]
 }
