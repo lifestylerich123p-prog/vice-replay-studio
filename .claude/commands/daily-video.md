@@ -40,7 +40,10 @@ make sensible choices, finish the whole run, and explain your choices in the fin
 2. **Make it** following CLAUDE.md: research with web search (facts from the last few days, keep source
    URLs), write `episodes/<slug>.json` with `segments`, `short` (cut from this video) and `shorts` holding
    TWO standalone Shorts (owner asked for 3 Shorts a day in launch week): id `news` (posted 8:30 PM) and id `tips`
-   (posted 12:30 PM: one quick, useful GTA 6 tip or fact players are searching today, different from the main video). For that news Short, prefer what big streamers and creators are
+   (posted 12:30 PM: one quick, useful GTA 6 tip or fact players are searching today, different from the main video).
+   **First run `python -m studio.status`**: any slot already shown with ⏰ today is TAKEN (the main chat may have
+   scheduled a Short there); leave that Short out of `shorts` and don't upload into a taken slot. Also skip topics
+   those scheduled videos already cover (e.g. Fri Nov 20 12:30 PM = "Don't grind money in Chapter 1"). For that news Short, prefer what big streamers and creators are
    doing with GTA 6 right now (launch marathons, records, viral moments, reactions), else the most-talked-
    about GTA 6 news of the day; it must be a different story from the main video. Then ONE command renders
    everything (gameplay pull, main video, all Shorts, Spanish-voice Shorts, check sheet): `python -m studio.ship
