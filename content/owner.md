@@ -63,6 +63,10 @@
   spend to finish before it. Still: estimate first, check balance before/after, log every spend in content/channels.md.
   Downloads (download_video) cost 0 credits (tested 3x Nov 20). Prices: image 2, 5-s Kling 3.0 Turbo video 10,
   find_clips on a stream ~2-12. Vice Replay may use AI only for images/intros, never as gameplay footage.
+  Owner's billing page (screenshot, Nov 20): Pro plan renews Nov 13 2027; plan credits 0/500, RESET Dec 12 (monthly,
+  unused don't carry over); top-up credits 987, NEXT EXPIRY FEB 17. The account spent plan credits before top-ups, so:
+  every credit spent before Dec 12 comes from the expiring 987. Target: use most of the 987 by Dec 12, then each month's
+  500 plan credits within that month, and whatever top-up is left before Feb 17 (~2,000 credits total by Feb 17).
 - 2026-11-19: Instagram connected for Reels posting: @vice.replaytv (IG_USER_ID 17841454790873754, env var), Meta System User token for graph.facebook.com saved as a network secret (never expires; permissions instagram_basic, instagram_content_publish, instagram_manage_comments). Reels posting ON: owner said "ok aprove all post and add the ones in youtube or new ones" (Nov 19): every approved/auto-posted English Short also goes to Instagram Reels, plus campaign clips (LACY), spaced about 1-1.5 h apart via content/learn/reels_queue.json.
 - 2026-11-19: Owner: LACY (campaign) Reels go out two at a time, at times Claude picks, so one submit trip covers both.
 
