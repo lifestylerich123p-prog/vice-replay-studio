@@ -7,7 +7,7 @@ Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map"
 
 ## The channels
 
-### Vice Replay: GTA 6 channel + ALL GTA 6 clipping
+### Vice Replay: GTA 6 channel + makes all GTA 6 campaign clips (posted on ClipCircuit)
 - What: GTA 6 news, guides and tips (Shorts + long videos), website vicereplay.com (EN/ES guides), Amazon
   Associates (tag vicereplay-20), and every GTA 6 clipping campaign (Lacy, KreekCraft, any GTA 6 campaign).
 - Where: YouTube @ViceReplayTV-q8s · Instagram @vice.replaytv · TikTok (owner posts by hand) · vicereplay.com.
@@ -16,7 +16,7 @@ Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map"
 - Data: repo `content/` (campaigns/tracker.md, learn/), Drive folders "Vice Replay Gameplay" and
   "Vice Replay Campaign Clips".
 
-### ClipCircuit: all clipping that is NOT GTA 6
+### ClipCircuit: posts ALL campaign clips (GTA 6 ones come from the Vice Replay chat)
 - What: faceless Shorts channel paid by clipping campaigns on Content Rewards (podcasts, streamers, anything else).
 - Where: YouTube @ClipCircuit-m5f (plus its TikTok/Instagram).
 - Chat: the ClipCircuit chat (claude.ai, `clipcircuit-clipping` skill).
@@ -28,10 +28,10 @@ Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map"
 - Handle: (owner: add the YouTube handle here).
 
 ## Routing (who does what)
-- Clipping campaign about GTA 6 → Vice Replay. Any other clipping campaign → ClipCircuit.
-  Never join or post the same campaign from two channels.
+- GTA 6 campaign → the Vice Replay chat MAKES the clips; they are POSTED on ClipCircuit's accounts (owner, Nov 20),
+  never on Vice Replay. Any other campaign → ClipCircuit does it all. Never post one campaign from two channels.
 - GTA 6 news/guides → Vice Replay only. What-if / AI stories → What If Arena only.
-- ClipCircuit never posts GTA 6. Vice Replay never posts non-GTA clips. What If Arena never posts real creators' clips.
+- Vice Replay never posts campaign clips (aggregator risk on the main channel). What If Arena never posts real creators' clips.
 - A chat that finds a campaign for another channel adds it to "Campaign inbox" with the right owner and tells the owner.
 
 ## Shared rules
@@ -66,6 +66,7 @@ Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map"
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-20 · Vice Replay · Owner chose B: GTA 6 campaign clips (Lacy, KreekCraft) now post on ClipCircuit. YouTube's Oct 2026 originality update cuts reach for channels of reposts.
 - 2026-11-19 · Vice Replay · New scorecard: campaign clips 41.8 views/h median vs 5.6 for own Shorts; 16-30 s best, 60 s+ dead.
 - 2026-11-19 · Vice Replay · Owner rule: GTA 6 clipping stays with Vice Replay, every other clipping goes to ClipCircuit.
 - 2026-11-19 · Vice Replay · Everygen: 2 credits for one AI background image (cheat-sheet post); balance was 989 before.

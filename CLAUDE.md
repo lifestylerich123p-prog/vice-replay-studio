@@ -4,7 +4,9 @@ Video machine for the YouTube channel **Vice Replay** (@ViceReplayTV-q8s), a GTA
 vicereplay.com. Tagline: "GTA's wildest moments. On replay." Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2
 on deep purple/black, Anton headlines. Start every run with `content/INDEX.md` (map of everything) instead of searching.
 Owner runs 3 channels with separate jobs (`content/channels.md`, shared copy in Drive "Creator HQ"): Vice Replay =
-GTA 6 + ALL GTA 6 clipping; ClipCircuit (@ClipCircuit-m5f) = every non-GTA clipping campaign; What If Arena = AI videos.
+GTA 6 channel + makes ALL GTA 6 campaign clips, which are POSTED ON CLIPCIRCUIT (@ClipCircuit-m5f), never on
+Vice Replay (owner, Nov 20: reposted clips can mark the main channel an aggregator); ClipCircuit also does every
+non-GTA campaign; What If Arena = AI videos.
 
 ## How a video gets made
 1. **Research** with web search: check `content/learn/scorecard.md`, `ideas.md`, `lessons.md`, `content/performance.md` and the latest

@@ -4,7 +4,8 @@ argument-hint: <campaign short-name> [source video link or file]
 ---
 Make clips for the campaign `$ARGUMENTS` following CLAUDE.md and `content/campaigns/README.md`.
 GTA 6 campaigns only. A non-GTA campaign belongs to ClipCircuit (`content/channels.md`): add it to its Campaign inbox,
-tell the owner, and stop. Max 2 campaign clips a day on Vice Replay YouTube, fresh moments only.
+tell the owner, and stop. **GTA 6 campaign clips are POSTED ON CLIPCIRCUIT (@ClipCircuit-m5f) by the owner,
+never on Vice Replay** (owner, Nov 20). Fresh moments only; max 2 a day per ClipCircuit account.
 **Pick the moment first (free):** `python -m studio.moments <streamer> --hours 12` lists what's already clipped
 (TAKEN words) and the winning length; choose a moment NOT on that list. No campaign clips on Instagram (Meta
 de-ranks accounts that mostly repost; Nov 19 ad flag).
