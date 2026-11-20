@@ -1,0 +1,34 @@
+{
+  "source": "vidIQ public channel audit and public outlier results",
+  "observed_date": "2026-11-20",
+  "data_kind": "historical public snapshot; not live analytics",
+  "channel": {
+    "candidate_id": "UCzk9Wts3WFynOHZQJRWOQIw",
+    "name": "Vice Replay",
+    "requested_handle": "@ViceReplayTV-q8s",
+    "exact_handle_verified": false,
+    "ownership_private_analytics_authorized": false,
+    "subscribers": 16,
+    "total_views_approx": 28842,
+    "videos": 42
+  },
+  "channel_examples": [
+    {"video_id": "aYBokm3TIYE", "title": "LACY found a shoe store in GTA 6", "views": 8657, "duration_seconds": 16},
+    {"video_id": "oYqPC06109w", "title": "Lacy's INSANE GTA 6 Marathon Plan", "views": 5277, "duration_seconds": 19},
+    {"video_id": "ty0KP7MLaKU", "title": "LACY tried to pet a GTA 6 alligator", "views": 1846, "duration_seconds": 22},
+    {"video_id": "Z8jQK8nZ1cQ", "title": "GTA 6 on PS5 vs PS5 Pro", "views": 1191, "duration_seconds": 40}
+  ],
+  "competitor_examples": [
+    {"channel": "GTA by Sam", "video_id": "SUiwFz6SQtU", "title": "Don't miss the TOP GTA 6 MOMENTS", "views": 3400000, "duration_seconds": 80},
+    {"channel": "GamingLife", "video_id": "VZ5TZfzGNMQ", "title": "Ranking Funniest GTA 6 Moments", "views": 648700, "duration_seconds": 66},
+    {"channel": "xQc Daily | Fan Page", "video_id": "_WNJQFnWiGk", "title": "POV: first 10 seconds playing GTA 6", "views": 268900, "duration_seconds": 8},
+    {"channel": "StreamingJoe", "video_id": "KRpMIW0uaEg", "title": "Ranking Lacy Funniest GTA 6 Moments", "views": 81400, "duration_seconds": 42},
+    {"channel": "ViralOnly", "video_id": "WbVEIA8sUXw", "title": "Ranking Insane GTA 6 Clips", "views": 26600, "duration_seconds": 70}
+  ],
+  "limitations": [
+    "No private retention/CTR/swipe-away analytics were available.",
+    "Public views and channel-relative outlier scores do not establish causal reasons for performance.",
+    "Editing of competitor videos was not individually watched or verified.",
+    "The original handle was not independently resolved via vidIQ; channel ID needs user verification."
+  ]
+}

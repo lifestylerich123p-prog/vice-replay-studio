@@ -134,8 +134,68 @@ def ass_time(t):
     return f"{h}:{m:02d}:{s:05.2f}"
 
 
-def caption_file(text, start, total, out, w, h, vertical):
-    """Burned-in captions, 3-5 words at a time, timed by character count."""
+_WHISPER = {}
+
+
+def _norm_word(w):
+    return re.sub(r"[^\w']", "", w.lower()).strip("'")
+
+
+def align_words(text, audio, lang="en"):
+    """Real word timings for our own narration: faster-whisper word timestamps on the TTS audio, matched to the
+    script words (difflib). Unmatched script words are interpolated between matched neighbours. Returns a list of
+    (start, end) per script word, or None when the match is too weak (then captions fall back to estimates)."""
+    try:
+        import difflib
+        import numpy as np
+        from faster_whisper import WhisperModel
+    except ImportError:
+        return None
+    try:
+        raw = subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-i", str(audio), "-f", "s16le", "-ac", "1", "-ar",
+                              "16000", "-"], capture_output=True).stdout
+        pcm = np.frombuffer(raw, np.int16).astype(np.float32) / 32768.0
+        if "m" not in _WHISPER:
+            _WHISPER["m"] = WhisperModel("base", device="cpu", compute_type="int8")
+        segs, _ = _WHISPER["m"].transcribe(pcm, language=lang, word_timestamps=True, vad_filter=False)
+        heard = [(w.word, w.start, w.end) for sg in segs for w in (sg.words or [])]
+    except Exception as e:  # model download blocked, decode error...
+        print(f"  (caption alignment skipped: {type(e).__name__})")
+        return None
+    script = text.split()
+    a = [_norm_word(x) for x in script]
+    b = [_norm_word(x[0]) for x in heard]
+    times = [None] * len(script)
+    for blk in difflib.SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks():
+        for k in range(blk.size):
+            times[blk.a + k] = (heard[blk.b + k][1], heard[blk.b + k][2])
+    matched = sum(t is not None for t in times)
+    if not script or matched / len(script) < 0.6:
+        return None
+    total = len(pcm) / 16000
+    i = 0
+    while i < len(times):  # fill gaps: spread unmatched words between the matched neighbours by length
+        if times[i] is None:
+            j = i
+            while j < len(times) and times[j] is None:
+                j += 1
+            t0 = times[i - 1][1] if i > 0 else 0.0
+            t1 = times[j][0] if j < len(times) else total
+            lens = [len(script[k]) + 1 for k in range(i, j)]
+            acc = t0
+            for k, ln in zip(range(i, j), lens):
+                d = (t1 - t0) * ln / sum(lens)
+                times[k] = (acc, acc + d)
+                acc += d
+            i = j
+        else:
+            i += 1
+    return times
+
+
+def caption_file(text, start, total, out, w, h, vertical, times=None):
+    """Burned-in captions, 3-5 words at a time. Timed to the real speech when `times` (one (start, end) per word,
+    from align_words) is given; otherwise estimated from character counts."""
     words = text.split()
     chunks, cur = [], []
     for wd in words:
@@ -157,6 +217,20 @@ def caption_file(text, start, total, out, w, h, vertical):
         "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
     # word-by-word: the whole chunk stays on screen, the word being spoken pops in cyan and slightly bigger
+    if times and len(times) == len(words):
+        k = 0
+        for c in chunks:
+            words_c = c.upper().split()
+            for j in range(len(words_c)):
+                s0 = start + times[k + j][0]
+                s1 = start + (times[k + j + 1][0] if j + 1 < len(words_c) and k + j + 1 < len(times) else times[k + j][1] + 0.12)
+                shown = " ".join(
+                    (r"{\c&HD2E500&\fscx112\fscy112}" + x + r"{\c&HFFFFFF&\fscx100\fscy100}") if q == j else x
+                    for q, x in enumerate(words_c))
+                lines.append(f"Dialogue: 0,{ass_time(s0)},{ass_time(max(s1, s0 + 0.06))},Cap,,0,0,0,,{shown}")
+            k += len(words_c)
+        out.write_text("\n".join(lines), encoding="utf-8")
+        return out
     t = start
     for c, wt in zip(chunks, weights):
         d = span * wt / sum(weights)
@@ -255,9 +329,70 @@ def seg_effects(seg, vf, w, h, dur):
     return vf
 
 
+def shots_background(i, seg, dur, w, h, work, base):
+    """Pacing: a segment with "shots" ([{"media", "start", "focus"?}, ...]) gets a background that cuts between
+    them, evenly across the narration (or by each shot's "dur"). Silent; clip audio is never used."""
+    shots = seg["shots"]
+    fixed = sum(x.get("dur", 0) for x in shots)
+    free = [x for x in shots if not x.get("dur")]
+    each = max(0.6, (dur + 0.3 - fixed) / max(1, len(free)))
+    parts = []
+    for k, sh in enumerate(shots):
+        d = sh.get("dur") or each
+        m = Path(sh["media"])
+        m = m if m.is_absolute() else (base / m).resolve()
+        fx = sh.get("focus", seg.get("focus", 0.5))
+        sp = sh.get("speed", 1.0)
+        st = sh.get("start", 0)
+        cut = [c for c in scene_cuts(str(m)) if st + 0.05 < c < st + d * sp]
+        if cut or any(abs(c - st) < 0.05 for c in scene_cuts(str(m))):
+            print(f"  ! segment {i} shot {k}: {m.name} changes shot at {(cut or [st])[0]:.1f}s inside this shot; "
+                  f"check the picture matches the narration")
+        out = work / f"shot_{i}_{k}.mp4"
+        run(["ffmpeg", "-y", "-v", "error", "-ss", f"{sh.get('start', 0):.2f}", "-stream_loop", "-1", "-i", str(m),
+             "-vf", f"setpts=PTS/{sp},scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}:x=(iw-ow)*{fx}:y=(ih-oh)/2,"
+                    f"eq=brightness=-0.04:saturation=1.15,setsar=1,fps={FPS}",
+             "-t", f"{d:.2f}", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", str(out)])
+        parts.append(out)
+    lst = work / f"shots_{i}.txt"
+    lst.write_text("".join(f"file '{x}'\n" for x in parts))
+    bg = work / f"shots_{i}.mp4"
+    run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(bg)])
+    return bg
+
+
+_CUTS = {}
+
+
+def scene_cuts(media):
+    """Times (s) where a source clip cuts to a different shot (cached)."""
+    if media not in _CUTS:
+        r = subprocess.run(["ffmpeg", "-nostdin", "-v", "info", "-i", str(media), "-vf", "select='gt(scene,0.3)',showinfo",
+                            "-f", "null", "-"], capture_output=True, text=True)
+        _CUTS[media] = [float(x) for x in re.findall(r"pts_time:([\d.]+)", r.stderr)]
+    return _CUTS[media]
+
+
+def warn_scene_cut(i, seg, dur):
+    """A background that runs past a cut inside its clip can show something the narration isn't about."""
+    m = seg.get("media")
+    if not m or Path(m).suffix.lower() not in VIDEO_EXT or seg.get("freeze") or not Path(m).exists():
+        return
+    st = seg.get("media_start") or 0
+    span = dur * seg.get("speed", 1.0)
+    hit = [c for c in scene_cuts(m) if st + 0.3 < c < st + span]
+    if hit:
+        print(f"  ! segment {i}: background crosses a shot change in {Path(m).name} at {hit[0]:.1f}s; "
+              f"check it still shows what the narration says (or use shots/speed)")
+
+
 def render_segment(i, seg, audio, w, h, vertical, work, enc):
     voice_dur = duration(audio)
     dur = round(voice_dur + 0.45, 2)
+    warn_scene_cut(i, seg, dur)
+    if seg.get("shots"):
+        seg = dict(seg, media=str(shots_background(i, seg, dur, w, h, work, Path(seg.get("_base", ".")))),
+                   media_start=0, focus=None)
     media = seg.get("media")
     if media and not Path(media).exists():
         print(f"  ! media not found, using generated background: {media}")
@@ -266,7 +401,10 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     vf = seg_effects(seg, vf, w, h, dur)
     ov = work / f"ov_{i}.png"
     brand.headline_card(seg.get("headline", ""), w, h, vertical, seg.get("cta")).save(ov)
-    subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical)
+    lang = seg.get("_lang", "en")
+    times = align_words(seg["text"], audio, lang) if seg.get("_align", True) else None
+    seg["_aligned"] = bool(times)
+    subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical, times=times)
     out = work / f"seg_{i:02d}.mp4"
     fade_in = "" if (vertical and i == 0) else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
     extra, co = [], ""
@@ -404,6 +542,7 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
             segments[0]["media"] = str(calm_clips[0])
     k = 0
     for s in segments:
+        s["_base"] = str(base)
         if s.get("media") == "none":
             s["media"] = None
         elif s.get("media"):
@@ -523,7 +662,8 @@ def main():
                 if not all(x.get("text_es") for x in sh["segments"]):
                     print(f"skip Spanish {sh.get('id') or 'short'}: a segment has no text_es")
                     continue
-                segs = [dict(x, text=x["text_es"], headline=x.get("headline_es") or x.get("headline")) for x in sh["segments"]]
+                segs = [dict(x, text=x["text_es"], headline=x.get("headline_es") or x.get("headline"), _lang="es")
+                        for x in sh["segments"]]
                 es_shorts.append(dict(sh, segments=segs, title=es.get("title") or sh.get("title"),
                                       description=es.get("description") or sh.get("description"), lang_suffix="-es"))
             shorts = es_shorts

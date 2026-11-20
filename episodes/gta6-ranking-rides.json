@@ -1,0 +1,142 @@
+{
+  "title": "Ranking the 6 Rides in Rockstar's GTA 6 Gameplay",
+  "slug": "gta6-ranking-rides",
+  "series": "B: Rankings",
+  "voice": "am_michael",
+  "rate": "+12%",
+  "format": "ranking",
+  "use_gameplay": false,
+  "short_title": "GTA 6: I ranked 6 rides from Rockstar's gameplay #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6: I ranked 6 rides from Rockstar's gameplay #GTA6 #Shorts",
+    "GTA 6 rides ranked: #1 isn't the convertible #GTA6 #Shorts",
+    "GTA 6: the best ride in Rockstar's footage #GTA6 #Shorts"
+  ],
+  "short_description": "Vice Replay Rankings: 6 rides seen in Rockstar's own GTA 6 gameplay (\"GTA VI: An Extended Look\"), ranked by us. The ranking is our opinion; what each clip shows is described as it appears on screen (the street race HUD shows 6 racers, the dirt-bike race shows 12 riders). No story spoilers. Footage: official Rockstar gameplay, original audio removed.",
+  "short_es": {
+    "title": "GTA 6: clasifiqué 6 vehículos del gameplay de Rockstar #GTA6 #Shorts",
+    "description": "Vice Replay Rankings: 6 vehículos del gameplay oficial de GTA 6, clasificados por nosotros (es nuestra opinión). Sin spoilers."
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Which ride are you taking first? Reply with its number (1-6) 👇",
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gaming",
+    "#cars",
+    "#ranking"
+  ],
+  "sources": [
+    "Rockstar Games - Grand Theft Auto VI: An Extended Look (official gameplay; each clip reviewed at full size, HUD read frame by frame): https://www.rockstargames.com/VI/downloads"
+  ],
+  "short": [
+    {
+      "headline": "6 RIDES, RANKED",
+      "headline_es": "6 VEHÍCULOS, CLASIFICADOS",
+      "text": "I ranked the six rides in Rockstar's own GTA 6 gameplay. Number one isn't the convertible.",
+      "text_es": "Clasifiqué los seis vehículos del gameplay oficial de GTA 6. El número uno no es el descapotable.",
+      "keep_media": true,
+      "shots": [
+        {
+          "media": "../media/trailer/extended-look-convertible-overpass.mp4",
+          "start": 0.5
+        },
+        {
+          "media": "../media/trailer/extended-look-swamp-airboat.mp4",
+          "start": 0.4
+        },
+        {
+          "media": "../media/trailer/extended-look-night-street-race.mp4",
+          "start": 0.2,
+          "speed": 0.7
+        }
+      ]
+    },
+    {
+      "headline": "#6 THE VAN",
+      "headline_es": "#6 LA FURGONETA",
+      "text": "Number six, the van. It cruises a quiet street. Practical, not exciting.",
+      "text_es": "Número seis, la furgoneta. Pasea por una calle tranquila. Práctica, no emocionante.",
+      "media": "../media/trailer/extended-look-van-residential.mp4",
+      "media_start": 0,
+      "keep_media": true
+    },
+    {
+      "headline": "#5 THE SEDAN",
+      "headline_es": "#5 EL SEDÁN",
+      "text": "Five, the dark sedan on the highway at sunset. The everyday ride.",
+      "text_es": "Cinco, el sedán oscuro en la autopista al atardecer. El de todos los días.",
+      "keep_media": true,
+      "shots": [
+        {
+          "media": "../media/trailer/extended-look-highway-palms.mp4",
+          "start": 0.3
+        },
+        {
+          "media": "../media/trailer/extended-look-downtown-highway.mp4",
+          "start": 0.3
+        }
+      ]
+    },
+    {
+      "headline": "#4 THE CONVERTIBLE",
+      "headline_es": "#4 EL DESCAPOTABLE",
+      "text": "Four, the red convertible. Top down through the palm streets.",
+      "text_es": "Cuatro, el descapotable rojo. Sin techo entre las palmeras.",
+      "keep_media": true,
+      "shots": [
+        {
+          "media": "../media/trailer/extended-look-convertible-palm-street.mp4",
+          "start": 0.4
+        },
+        {
+          "media": "../media/trailer/extended-look-convertible-waterfront.mp4",
+          "start": 0.4
+        }
+      ]
+    },
+    {
+      "headline": "#3 THE DIRT BIKE",
+      "headline_es": "#3 LA MOTO DE CROSS",
+      "text": "Three, the dirt bike. A twelve rider race up a canyon trail.",
+      "text_es": "Tres, la moto de cross. Una carrera de doce pilotos por un cañón.",
+      "media": "../media/trailer/extended-look-dirt-bike-trail.mp4",
+      "media_start": 0,
+      "speed": 0.7,
+      "keep_media": true
+    },
+    {
+      "headline": "#2 THE AIRBOAT",
+      "headline_es": "#2 EL AERODESLIZADOR",
+      "text": "Two, the airboat, flying across the swamp. Nothing else in the footage looks like it.",
+      "text_es": "Dos, el aerodeslizador, volando sobre el pantano. Nada más en el gameplay se le parece.",
+      "keep_media": true,
+      "shots": [
+        {
+          "media": "../media/trailer/extended-look-swamp-airboat.mp4",
+          "start": 0.95,
+          "speed": 0.6
+        }
+      ]
+    },
+    {
+      "headline": "#1 THE STREET RACER",
+      "headline_es": "#1 EL COCHE DE CARRERAS",
+      "text": "And number one, the neon street racer, in a six car race at night.",
+      "text_es": "Y el número uno, el coche de carreras con neón, en una carrera nocturna de seis coches.",
+      "media": "../media/trailer/extended-look-night-street-race.mp4",
+      "media_start": 0,
+      "speed": 0.55,
+      "keep_media": true
+    },
+    {
+      "headline": "WHICH ONE FIRST?",
+      "headline_es": "¿CUÁL PRIMERO?",
+      "text": "Which one are you driving first? Tell me below, because",
+      "text_es": "¿Cuál vas a manejar primero? Dímelo abajo, porque",
+      "media": "../media/trailer/extended-look-aerial-bay.mp4",
+      "media_start": 0,
+      "keep_media": true
+    }
+  ]
+}

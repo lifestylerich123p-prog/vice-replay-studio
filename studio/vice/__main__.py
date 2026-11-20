@@ -87,6 +87,52 @@ def publish_draft(episode, dest):
     print(json.dumps(draft, indent=1, ensure_ascii=False))
 
 
+def _workflow(x, workflow, srcmod):
+    """Starter-kit commands. Returns True when handled."""
+    from . import editor
+    if x.cmd == "add-source":
+        sid = srcmod.add(x.file, x.creator, x.url, x.rights, proof_path=x.proof, commercial=x.commercial_use,
+                         youtube=x.youtube_allowed, confirm_owned=x.confirm_owned, destinations=x.dest,
+                         campaign=x.campaign, attribution=x.attribution, notes=x.notes)
+        print(f"Source ID: {sid}. Registration is not a publishing approval; `rank` shows the rights result.")
+    elif x.cmd == "add-candidate":
+        cid, total = workflow.add_candidate(x.source_id, x.title, x.start, x.end,
+                                            {k: getattr(x, k) for k in ("curiosity", "payoff", "context", "audio",
+                                                                        "visuals", "originality")})
+        print(f"Candidate ID: {cid}, editorial score {total}/100 (a production priority, not a view prediction)")
+    elif x.cmd == "rank" and not x.topic:  # no topic: rank the scored candidates (starter behaviour)
+        print(json.dumps(workflow.rank(), indent=1))
+    elif x.cmd == "create-project":
+        pid = workflow.create_project(x.candidate_id, headline=x.headline, destination=x.dest)
+        print(f"Project ID: {pid}\nFolder: projects/{pid}/")
+    elif x.cmd == "render":
+        p, params = workflow.project_params(x.project_id)
+        for k in ("layout", "cam", "game", "keep", "punch", "replay", "headline"):
+            if getattr(x, k) is not None:
+                params[k] = getattr(x, k)
+        p = editor.build(x.project_id, params, rerun=("render", "cover", "qc", "draft"))
+        print(f"{x.project_id}: {p['status']}  video: projects/{x.project_id}/{x.project_id}.mp4")
+    elif x.cmd == "qc":
+        print((db.ROOT / "projects" / x.project_id / f"{x.project_id}.qc.md").read_text())
+    elif x.cmd == "package":
+        print((db.ROOT / "projects" / x.project_id / "draft.json").read_text())
+    elif x.cmd == "approve-captions":
+        p = workflow.approve_captions(x.project_id)
+        print(f"{x.project_id}: captions approved, re-rendered; status {p['status']}")
+    elif x.cmd == "status":
+        print(json.dumps(workflow.status(), indent=1, default=str))
+    elif x.cmd == "frame":
+        from . import framing
+        out = x.out or str(Path(x.file).with_suffix("")) + f".{x.layout}.mp4"
+        print(json.dumps(framing.render(x.file, out, layout=x.layout), indent=1, default=float))
+    elif x.cmd == "dashboard":
+        from . import control
+        control.serve(x.port)
+    else:
+        return False
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -106,7 +152,7 @@ def main():
     c.add_argument("--title", action="append", default=[])
     for name in ("rank", "create"):
         s = sub.add_parser(name)
-        s.add_argument("topic")
+        s.add_argument("topic", nargs="?" if name == "rank" else None)
     a = sub.add_parser("analyze")
     a.add_argument("video")
     a.add_argument("--episode")
@@ -120,7 +166,58 @@ def main():
     r = sub.add_parser("rights")
     r.add_argument("asset", nargs="?")
     r.add_argument("--dest", default="vice-replay")
+    s = sub.add_parser("add-source", help="register a LOCAL file and its rights (starter workflow)")
+    s.add_argument("--file", required=True)
+    s.add_argument("--creator", required=True)
+    s.add_argument("--url", required=True)
+    s.add_argument("--rights", required=True, choices=("owned", "permission", "licensed", "campaign", "policy", "unknown", "denied"))
+    s.add_argument("--proof", default="")
+    s.add_argument("--campaign")
+    s.add_argument("--dest", action="append", help="allowed destination (repeatable); default vice-replay")
+    s.add_argument("--commercial-use", action="store_true")
+    s.add_argument("--youtube-allowed", action="store_true")
+    s.add_argument("--confirm-owned", action="store_true")
+    s.add_argument("--attribution", default="")
+    s.add_argument("--notes", default="")
+    s = sub.add_parser("add-candidate")
+    s.add_argument("--source-id", type=int, required=True)
+    s.add_argument("--title", required=True)
+    s.add_argument("--start", type=float, required=True)
+    s.add_argument("--end", type=float, required=True)
+    for f in ("curiosity", "payoff", "context", "audio", "visuals", "originality"):
+        s.add_argument("--" + f, type=int, required=True)
+    s = sub.add_parser("create-project")
+    s.add_argument("--candidate-id", required=True)
+    s.add_argument("--headline")
+    s.add_argument("--dest")
+    s = sub.add_parser("render")
+    s.add_argument("--project-id", required=True)
+    s.add_argument("--layout", choices=("auto", "stack", "pip", "fill", "blur"))
+    s.add_argument("--cam", type=float, nargs=4, metavar=("X", "Y", "W", "H"))
+    s.add_argument("--game", type=float, nargs=4, metavar=("X", "Y", "W", "H"))
+    s.add_argument("--keep", type=float, nargs=4, action="append", metavar=("X", "Y", "W", "H"))
+    s.add_argument("--punch", type=float)
+    s.add_argument("--replay", type=float, nargs=2)
+    s.add_argument("--headline")
+    for name in ("qc", "package"):
+        s = sub.add_parser(name)
+        s.add_argument("--project-id", required=True)
+    s = sub.add_parser("approve-captions")
+    s.add_argument("project_id")
+    sub.add_parser("status")
+    s = sub.add_parser("frame", help="preview the framing engine on a local 16:9 file")
+    s.add_argument("file")
+    s.add_argument("--layout", default="auto", choices=("auto", "stack", "pip", "fill", "blur"))
+    s.add_argument("--out", default=None)
+    s = sub.add_parser("dashboard", help="local control dashboard on http://127.0.0.1:8765")
+    s.add_argument("--port", type=int, default=8765)
     x = ap.parse_args()
+    from . import workflow, sources as srcmod
+    try:
+        if _workflow(x, workflow, srcmod):
+            return
+    except srcmod.RightsError as e:
+        sys.exit(f"ERROR: {e}")
 
     if x.cmd == "audit":
         from . import analytics

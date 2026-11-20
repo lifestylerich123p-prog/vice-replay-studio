@@ -80,7 +80,8 @@ def transcribe(path):
     audio = np.frombuffer(raw, np.int16).astype(np.float32) / 32768.0
     model = WhisperModel("base", device="cpu", compute_type="int8", cpu_threads=4)
     segs, _ = model.transcribe(audio, language="en", word_timestamps=True, vad_filter=False)
-    return [{"w": w.word.strip(), "s": round(w.start, 2), "e": round(w.end, 2)} for s in segs for w in (s.words or [])]
+    return [{"w": w.word.strip(), "s": round(w.start, 2), "e": round(w.end, 2), "p": round(w.probability, 2)}
+            for s in segs for w in (s.words or [])]
 
 
 def norm_words(text):

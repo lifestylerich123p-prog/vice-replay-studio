@@ -5,3 +5,5 @@ edge-tts>=7
 faster-whisper>=1.1
 gdown>=5
 pytest>=8
+opencv-python-headless>=4.9  # webcam detection (YuNet model in assets/models)
+numpy>=1.26

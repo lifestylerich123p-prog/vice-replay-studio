@@ -85,3 +85,49 @@ Missing / blocked:
    Rockstar's gameplay read frame by frame (5/6 -> 3/6, PROGRESS %, LAP 1/2, 10/12). Magnifier freeze frames,
    callout rings, honest slow motion, Kokoro narration, Spanish version. Rendered in ~3 min, $0. QC passed
    (1 warning: 53% of its shots also appear in earlier Shorts). Awaiting the owner's approval.
+
+## Stage 2 (Nov 20, evening): starter kit merged + next-stage features
+
+**Architecture decision.** The owner's starter kit (`starter/vice_replay_starter/`, kept unchanged with its 8 passing
+tests) is a clean, standard-library scaffold: per-file rights with proof files, explicit commercial/YouTube flags,
+candidate scoring, fit/fill render, QC, draft packages. The main repo already had far more (narrated renders, Spanish
+voice, uploads with approval, learning, Instagram, the rights gate and QC from stage 1). Running two systems would split
+data and rules, so the starter's model was ported INTO `studio.vice` and extended, and its command names work there:
+
+| Starter | Now | Why it's better |
+|---|---|---|
+| `sources` table, proof file, flags | `studio/vice/sources.py`: same fail-closed rules + SHA-256 of the file and the proof (a swapped or edited file is blocked), a destination scope per source, `campaign`/`policy` statuses tied to the campaign files and the class registry | provenance you can audit; channel separation enforced per file |
+| (none) | `rights_audit`: every rights decision, append-only (SQLite triggers refuse UPDATE/DELETE) | "auditable rights source" success criterion |
+| `render --layout fit/fill` | `studio/vice/framing.py`: `stack` (webcam on top, gameplay below, webcam kept out of the gameplay panel), `pip`, `fill` (crop that follows the action, smoothed), `blur` (whole frame over a blurred fill: no empty bars), `auto` (detects the webcam) | facecam and action both visible; `fit` left half the screen empty |
+| manual crop coordinates | `--cam/--game x y w h` first; otherwise YuNet face detection (OpenCV, MIT model, 232 KB) on 12 frames: a face that stays put = the webcam, then its borders are found as edges present in EVERY frame | measured on mock streams: IoU 0.98 and 0.96 with the true webcam box; no false webcam on plain gameplay |
+| (none) | `keep` boxes: a campaign's required overlay (e.g. KreekCraft's logo) stays visible: the crop slides a little to include it, else it's composited back as an inset | campaign compliance by construction |
+| `add-captions` (manual SRT) | local faster-whisper transcript -> `captions.srt` (editable) + `captions_review.md` listing words under 60% confidence; the publication draft stays BLOCKED until `approve-captions` (which rebuilds the captions from the edited SRT) | accurate, editable, reviewed before release |
+| QC (vertical? duration?) | full inspector (black/frozen/bars/silence/loudness/decode/caption WER/repost fingerprints/rights/facts) | catches what actually breaks videos |
+| `package` | `package` / `publish`: draft with channel + token check | never uploads; destination verified by channel ID |
+| status (JSON) | `status` + the local control dashboard | one place to run and watch jobs |
+
+**Narrated Shorts (studio/make_video.py).**
+- Captions are timed to the real speech: faster-whisper word timestamps on the narration, matched to the script with
+  difflib; unmatched words are interpolated; weak matches fall back to the old estimate. Measured on the race-HUD Short:
+  the old character-count timing was off by 0.23 s on average and up to 0.86 s; aligned captions follow the voice.
+  Works for the Spanish voice too.
+- Pacing: a segment can list `shots` (media/start/speed/focus/dur) and the background cuts between them.
+- Scene-cut guard: a warning when a segment's background runs past a shot change inside its source clip (that's how
+  the ranking Short briefly showed a man on a porch over "the airboat" before the fix).
+- Already present and kept: sidechain ducking of music under the voice, -14 LUFS loudness.
+
+**Control dashboard.** `python -m studio.vice dashboard` -> http://127.0.0.1:8765 (localhost only). Channel numbers,
+the 14-day queue (Create buttons for ready ideas), episodes (Render, QC + draft), clip projects (Resume, Approve
+captions), jobs with logs, rights decisions, campaigns, costs. Jobs run one at a time from an allowlist; a per-session
+token blocks other websites from triggering jobs; interrupted jobs are re-queued on restart. No upload button.
+
+**New tests:** `tests/test_next_stage.py` (framing accuracy, webcam exclusion, no empty bars, provenance + hash
+tampering, proof changes, append-only audit, the starter workflow end to end on the new engine, caption alignment,
+dashboard allowlist + recovery). Run everything: `python -m pytest tests -q` and
+`cd starter/vice_replay_starter && python -m unittest discover -s tests`.
+
+**Researched, not adopted:** WhisperX (heavy torch install; faster-whisper alignment is enough for our own narration),
+stable-ts (archived May 2026), ctc-forced-aligner (default model non-commercial), Ultralytics webcam models (AGPL),
+pyautoflip default face model (InsightFace weights non-commercial), arnndn denoise models (GitHub download blocked here).
+YouTube facts that matter: custom Shorts thumbnails are only for Partner Program channels (so the first frame stays the
+cover); "Related video" has no API field; since Oct 1 2026 Shorts recommendations favour originals over re-uploads.

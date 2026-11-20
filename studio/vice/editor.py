@@ -105,6 +105,25 @@ def punch_in(at, to=1.12, ramp=0.3, w=W, h=H):
     return f"scale=w='trunc({w}*{z}/2)*2':h='trunc({h}*{z}/2)*2':eval=frame,crop={w}:{h}"
 
 
+def frame_graph(src, pr, out_label="fr"):
+    """filter_complex from [0:v] to [out_label]: vertical sources are just scaled; 16:9 streams go through the
+    framing engine (stack = webcam on top, pip, fill = action-tracked crop, blur = whole frame; auto = detect)."""
+    from . import framing
+    sw, sh, _ = framing.probe(src)
+    if sh > sw:
+        return f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}[{out_label}]", {"layout": "vertical source"}
+    layout, cam = pr.get("layout", "auto"), pr.get("cam")
+    det = None
+    if layout in ("auto", "stack", "pip") and not cam:
+        det = framing.detect_facecam(src)
+        cam = det and det["box"]
+    if layout == "auto":
+        layout = "stack" if cam else "blur"
+    fc, info = framing.build(src, layout, cam=cam, game=pr.get("game"), keep=pr.get("keep") or ())
+    info["detection"] = det
+    return fc.replace("[vout]", f"[{out_label}]"), info
+
+
 def layout_vf(sw, sh):
     if sh > sw:  # already vertical (e.g. a stacked webcam/gameplay export): keep the frame
         return f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}"
@@ -122,6 +141,9 @@ def new_project(pid, source, start, end, campaign=None, dest="clipcircuit", head
                                             "headline": headline, "punch": punch, "replay": replay,
                                             "title_options": title_options or [], "caption": caption}})
     db.project_save(con, p)
+    pdir = db.ROOT / "projects" / pid
+    pdir.mkdir(parents=True, exist_ok=True)
+    (pdir / "project.json").write_text(json.dumps({"id": pid, **p["params"]}, indent=1))
     return p
 
 
@@ -160,6 +182,13 @@ def build(pid, params, rerun=()):
             words_f.write_text(json.dumps(words, indent=0))
             write_srt(words, out / "captions.srt")
             write_ass(words, out / "captions.ass")
+            unsure = [w for w in words if w.get("p", 1) < 0.6]
+            (out / "captions_review.md").write_text(
+                f"# Caption review: {pid}\n\nEdit captions.srt if anything is wrong, then run "
+                f"`python -m studio.vice approve-captions {pid}` (re-renders with your edits).\n\n"
+                f"Uncertain words (model confidence under 60%): {len(unsure)} of {len(words)}\n\n"
+                + "".join(f"- {w['s']:.2f} s: \"{w['w']}\" ({int(100 * w['p'])}%)\n" for w in unsure))
+            p["captions_reviewed"] = False
             p = db.step_done(con, p, "transcribe", words=words_f, srt=out / "captions.srt")
         final = out / f"{pid}.mp4"
         if todo("render"):
@@ -168,11 +197,11 @@ def build(pid, params, rerun=()):
             dur, sw, sh = probe(cut)
             enc = ["-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", "-r", FPS,
                    "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2"]
-            vf = layout_vf(sw, sh)
-            if pr.get("punch") is not None:  # subtle punch-in (1.0 -> 1.12) at the payoff, centered
-                vf += "," + punch_in(pr["punch"])
+            graph, finfo = frame_graph(cut, pr)
+            (out / "framing.json").write_text(json.dumps(finfo, indent=1, default=float))
+            post = punch_in(pr["punch"]) + "," if pr.get("punch") is not None else ""
             hl = headline_png(pr["headline"], out / "headline.png", branding) if pr.get("headline") else None
-            fc = f"[0:v]{vf},setsar=1,fps={FPS}[v0];"
+            fc = f"{graph};[fr]{post}setsar=1,fps={FPS}[v0];"
             last = "v0"
             if hl:
                 fc += "[v0][1:v]overlay=0:0:eof_action=pass[v1];"
@@ -188,7 +217,7 @@ def build(pid, params, rerun=()):
                 part_b = out / "part_replay.mp4"
                 run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", r0, "-to", r1, "-i", cut,
                      "-loop", "1", "-t", round((r1 - r0) / 0.75, 2), "-i", tag, "-filter_complex",
-                     f"[0:v]{layout_vf(sw, sh)},setsar=1,setpts=PTS/0.75,fps={FPS}[r];[r][1:v]overlay=0:0:eof_action=pass[vout];"
+                     f"{frame_graph(cut, {**pr, 'cam': (finfo.get('cam') or pr.get('cam'))})[0]};[fr]setsar=1,setpts=PTS/0.75,fps={FPS}[r];[r][1:v]overlay=0:0:eof_action=pass[vout];"
                      f"[0:a]atempo=0.75[aout]", "-map", "[vout]", "-map", "[aout]", "-t", round((r1 - r0) / 0.75, 3), *enc, part_b])
                 parts.append(part_b)
             lst = out / "parts.txt"
@@ -215,6 +244,8 @@ def build(pid, params, rerun=()):
             val = channels.validate(dest, ctype, check_token=False)
             qcj = json.loads((out / f"{pid}.qc.json").read_text())
             blockers = [f"QC: {c['check']}: {c['detail']}" for c in qcj["checks"] if c["status"] == "fail"] + val["problems"]
+            if not (out / "captions.approved").exists():
+                blockers.append("captions not reviewed yet: check captions_review.md, then approve-captions")
             draft = {"project": pid, "destination": dest, "channel_check": val, "video": str(final), "cover": str(cover),
                      "title_options": pr.get("title_options", []), "caption": pr.get("caption", ""),
                      "platforms": cfg.get("platforms", ["YouTube Shorts"]),

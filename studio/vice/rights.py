@@ -143,8 +143,26 @@ def find(asset, records=None):
     return None
 
 
-def check(asset, destination, ai_voice=False, branding=False, platform="YouTube", today=None):
-    """Rights gate for one asset. Returns {"ok", "record", "reasons", "conditions"}; ok=False blocks publishing."""
+def check(asset, destination, ai_voice=False, branding=False, platform="YouTube", today=None, log=True, registered=True):
+    """Rights gate for one asset. Returns {"ok", "record", "reasons", "conditions"}; ok=False blocks publishing.
+    A file registered with `add-source` is judged by its own record (sources.strict_check); everything else by the
+    class registry. Every decision is appended to the rights_audit table."""
+    if registered and not str(asset).startswith(("campaign:", "voice:", "music:", "http")):
+        from . import sources
+        con = sources.connect()
+        src = sources.by_path(con, db.ROOT / _norm(asset) if not Path(str(asset)).is_absolute() else asset)
+        if src:
+            ok, reasons = sources.strict_check(src, destination, ai_voice=ai_voice, branding=branding, con=con if log else None)
+            return {"ok": ok, "asset": _norm(asset), "record": f"source:{src['id']} ({src['rights_status']})",
+                    "reasons": reasons, "conditions": [src["notes"]] if src["notes"] else []}
+    res = _class_check(asset, destination, ai_voice, branding, platform, today)
+    if log:
+        from . import sources
+        sources.audit(sources.connect(), res["asset"], destination, res["ok"], res["reasons"], "rights.check")
+    return res
+
+
+def _class_check(asset, destination, ai_voice=False, branding=False, platform="YouTube", today=None):
     rec = find(asset)
     reasons, conditions = [], []
     if not rec:

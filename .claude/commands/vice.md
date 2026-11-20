@@ -16,5 +16,9 @@ Map the request to one command (`python -m studio.vice <command>`, details in `d
 - report -> `report` (+ CSV/JSON exports)
 - publish -> `publish episodes/<slug>.json` builds the draft (QC + rights + channel check). Uploading still needs
   the owner's "approve" in chat, then `python -m studio.ship ... --upload` per CLAUDE.md.
+- Own/licensed footage (starter workflow): `add-source` -> `add-candidate` -> `rank` -> `create-project` ->
+  `render --project-id P [--layout auto|stack|pip|fill|blur] [--cam x y w h] [--keep x y w h]` -> review
+  `projects/P/captions_review.md` -> `approve-captions P` -> `package --project-id P`
+- dashboard -> `dashboard` (local control panel on 127.0.0.1:8765; jobs queue; no upload button)
 Rules: CLAUDE.md wins. Never spend Everygen credits without an estimate and the owner's yes. Report what ran,
 the files written, and any blocker in plain words.
