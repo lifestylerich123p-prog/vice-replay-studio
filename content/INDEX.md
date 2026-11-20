@@ -20,7 +20,7 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| ? | gta6-took-away-gta5 | Short | GTA 6 Took Away 4 Things GTA 5 Gave You | - |
+| ? | gta6-took-away-gta5 | Short | GTA 6 Took Away 4 Things GTA 5 Gave You | short: uvWNXugdvSo |
 | 2026-11-20 | gta6-ishowspeed-watkins | Short | IShowSpeed Teared Up Over His Family's Name in GTA 6 | short: uCNHbnOqgs0 |
 | 2026-11-20 | gta6-beginner-tips-nobody-tells-you | video | GTA 6 Beginner Tips Nobody Tells You (No Spoilers) | main: PJgR2lmq_Nc, short: 0Eme-O7jAj0, news: _LVtHaU0YfM |
 | 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | short: 6bPAn80dKno |
