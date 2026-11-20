@@ -1,0 +1,52 @@
+{
+  "title": "GTA 6 Took Away 4 Things GTA 5 Gave You",
+  "slug": "gta6-took-away-gta5",
+  "voice": "am_michael",
+  "rate": "+12%",
+  "format": "comparison",
+  "short_title": "GTA 6 took away 4 things GTA 5 gave you #GTA6 #Shorts",
+  "short_title_options": ["GTA 6 took away 4 things GTA 5 gave you #GTA6 #Shorts", "4 things GTA 5 had that GTA 6 doesn't #GTA6 #Shorts"],
+  "short_description": "GTA 6 vs GTA 5: four things GTA 5 gave you that GTA 6 took away. 1) Mission replay: GTA 6 has no replay menu (GTAboom, Insider Gaming). 2) A full first-person mode: not at launch, Rockstar says; it only switches when you aim (TweakTown, Insider Gaming). 3) Carrying every gun: GTA 6 limits what you carry and keeps the rest in your vehicle (Rockstar's Rob Nelson, via GTABase). 4) Safe cash: in GTA 5 dying cost a small hospital bill; in GTA 6, Rockstar says the cash you carry disappears if you die before depositing it (TweakTown, GTA Intel). Footage: official Rockstar gameplay. Which one hurts most?",
+  "short_es": {
+    "title": "GTA 6 te quitó 4 cosas que GTA 5 te daba #GTA6 #Shorts",
+    "description": "GTA 6 vs GTA 5: cuatro cosas que GTA 6 quitó. 1) Repetir misiones. 2) Modo primera persona completo (no al lanzamiento, según Rockstar). 3) Llevar todas las armas: ahora llevas pocas y el resto queda en tu coche. 4) Dinero seguro: en GTA 6 el efectivo que llevas desaparece si mueres sin depositarlo."
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Which one hurts most? Reply 1, 2, 3 or 4 👇",
+  "tiktok_hashtags": ["#gta6", "#gta5", "#gta6vsgta5", "#gtavi", "#gaming"],
+  "sources": [
+    "GTAboom - GTA 6 has a new save system and won't let you replay story missions: https://www.gtaboom.com/gta-6-has-a-new-save-system-and-will-not-let-you-replay-story-missions-fa48",
+    "Insider Gaming - GTA 6 doesn't allow you to replay story missions: https://insider-gaming.com/gta-6-doesnt-allow-you-to-replay-story-missions/",
+    "TweakTown - Rockstar confirms GTA 6 will skip a dedicated first-person mode at launch: https://www.tweaktown.com/news/113322/rockstar-confirms-gta-6-will-skip-a-dedicated-first-person-mode-at-launch/index.html",
+    "Insider Gaming - GTA 6 drops first-person mode at launch: https://insider-gaming.com/gta-6-drops-first-person-mode-at-launch/",
+    "GTABase - GTA 6 adds realistic inventory management for weapons: https://www.gtabase.com/articles/gta-6/gta-6-adds-realistic-inventory-management-for-weapons",
+    "TweakTown - GTA 6's criminal economy and money explained by Rockstar: https://www.tweaktown.com/news/113368/gta-6s-illicit-criminal-economy-robberies-and-money-explained-by-rockstar/index.html",
+    "GTA Intel - GTA 6's money has real stakes: https://gtaintel.com/news/gta-6-money-system-explained"
+  ],
+  "short": [
+    {"headline": "GTA 6 TOOK THESE AWAY", "headline_es": "GTA 6 TE QUITÓ ESTO",
+     "text": "GTA 6 took away four things GTA 5 gave you.",
+     "text_es": "GTA 6 te quitó cuatro cosas que GTA 5 te daba.",
+     "media": "../media/trailer/extended-look-highway-palms.mp4"},
+    {"headline": "1. MISSION REPLAY: GONE", "headline_es": "1. REPETIR MISIONES: NO",
+     "text": "One. Mission replay. GTA 5 let you replay any mission. GTA 6 has no replay menu.",
+     "text_es": "Uno. Repetir misiones. GTA 5 te dejaba repetir cualquier misión. GTA 6 no tiene ese menú.",
+     "media": "../media/trailer/extended-look-convertible-palm-street.mp4"},
+    {"headline": "2. FIRST PERSON: GONE", "headline_es": "2. PRIMERA PERSONA: NO",
+     "text": "Two. First person. In GTA 5 you could play the whole game that way. GTA 6 only switches when you aim, at least at launch.",
+     "text_es": "Dos. Primera persona. En GTA 5 podías jugar todo así. GTA 6 solo cambia al apuntar, al menos al lanzamiento.",
+     "media": "../media/trailer/extended-look-skydive-city.mp4"},
+    {"headline": "3. EVERY GUN ON YOU: GONE", "headline_es": "3. TODAS LAS ARMAS: NO",
+     "text": "Three. Your whole arsenal. GTA 6 lets you carry just a few guns. The rest stay in your car.",
+     "text_es": "Tres. Tu arsenal. En GTA 6 llevas pocas armas. El resto se queda en tu coche.",
+     "media": "../media/trailer/extended-look-red-convertible-city.mp4"},
+    {"headline": "4. SAFE CASH: GONE", "headline_es": "4. DINERO SEGURO: NO",
+     "text": "Four. Safe cash. Dying in GTA 5 cost a small hospital bill. In GTA 6, Rockstar says the cash you carry disappears.",
+     "text_es": "Cuatro. Dinero seguro. Morir en GTA 5 costaba poco. En GTA 6, Rockstar dice que el efectivo que llevas desaparece.",
+     "media": "../media/trailer/extended-look-avenue-skyline.mp4"},
+    {"headline": "WHICH HURTS MOST?", "headline_es": "¿CUÁL DUELE MÁS?",
+     "text": "Which one hurts most? Reply one to four, because",
+     "text_es": "¿Cuál duele más? Responde del uno al cuatro, porque",
+     "media": "../media/trailer/extended-look-night-drive-skyline.mp4"}
+  ]
+}
