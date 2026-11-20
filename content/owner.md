@@ -70,3 +70,7 @@
   through drive.usercontent.google.com (the doc-*.googleusercontent hosts are blocked by the cloud proxy).
 - 2026-11-20: Removed extended-look-city-drive-sedan: a full-size check showed two people leaning out of the car
   with guns (getaway scene). Lesson: review new clips at full size (360 px+), not thumbnails.
+- 2026-11-20: Added 8 more official gameplay clips from "An Extended Look" (18 total): convertible-overpass,
+  convertible-waterfront, downtown-highway, van-residential, aerial-bay, dirt-bike-trail (2.8 s), night-street-race
+  (2.8 s), sunset-skyline (2 s). Each checked first/middle/last frame at full size and trimmed off the next scene
+  (club, gym, the bloody close-up, Rockstar title card). Rotate clips so no two Shorts in a day open the same way.
