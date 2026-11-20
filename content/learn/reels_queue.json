@@ -91,13 +91,18 @@
   "at": "2026-11-20 14:00",
   "episode": "episodes/gta6-launch-day-survival-guide.json",
   "item": "short",
-  "note": "moved: Meta ad restriction, slowing to max 4 posts/day"
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day",
+  "posted": "skipped: stale launch-day login tips (Nov 20), made room for fresh Reels under the 4/day cap"
  },
  {
-  "at": "2026-11-20 19:00",
-  "episode": "episodes/gta6-launch-day-survival-guide.json",
-  "item": "news",
-  "note": "moved: Meta ad restriction, slowing to max 4 posts/day"
+  "at": "2026-11-20 18:05",
+  "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
+  "item": "short"
+ },
+ {
+  "at": "2026-11-20 20:35",
+  "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
+  "item": "news"
  },
  {
   "at": "2026-11-21 11:05",
@@ -118,6 +123,12 @@
   "at": "2026-11-22 12:00",
   "episode": "episodes/gta6-streaming-record.json",
   "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Sun so Sat's BF Reel isn't 5 min after it"
+ },
+ {
+  "at": "2026-11-22 15:00",
+  "episode": "episodes/gta6-launch-day-survival-guide.json",
+  "item": "news",
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Sun for today's fresh Reels"
  },
  {
   "at": "2026-12-31 23:59",

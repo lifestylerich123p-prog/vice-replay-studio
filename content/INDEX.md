@@ -20,7 +20,7 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| 2026-11-20 | gta6-beginner-tips-nobody-tells-you | video | GTA 6 Beginner Tips Nobody Tells You (No Spoilers) | - |
+| 2026-11-20 | gta6-beginner-tips-nobody-tells-you | video | GTA 6 Beginner Tips Nobody Tells You (No Spoilers) | main: PJgR2lmq_Nc, short: 0Eme-O7jAj0, news: _LVtHaU0YfM |
 | 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | short: 6bPAn80dKno |
 | 2026-11-19 | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | main: 3T1de9Fnygg, short: RAs1Sx_7Zh8, news: Z8jQK8nZ1cQ, tips: 6QbWET74cQs |
 | 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | short: vlPV5Yre8T8 |
