@@ -34,8 +34,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    the 5-7 biggest confirmed stories of the past 7 days (use `content/log.md`, our Shorts and fresh searches), one segment
    each, with our take; the Short is the week's single biggest moment. (A plan row for that Sunday overrides this.)
    Otherwise: Today's date is in your context. Read `content/launch-plan.md` and use today's row.
-   If there is no row for today, take the best unused idea from `content/learn/ideas.md` (re-check its facts; mark it
-   USED), or search the web for what GTA 6 players are searching for and talking about
+   If there is no row for today, take the best unused idea from `content/learn/ideas.md` (freshest research; re-check its facts;
+   mark it USED), then `resources/topic-bank.md` (older angles, Nov 16), or search the web for what GTA 6 players are searching for and talking about
    right now and pick the strongest topic. Check `content/log.md` and `episodes/` so you never repeat a
    topic that was already made. If a market winner shows a GTA 6 story or angle people are hungry for that we
    haven't covered, prefer it (with our own research and angle).
