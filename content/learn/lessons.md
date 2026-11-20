@@ -77,3 +77,7 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   YPP for new channels doubles on Feb 1, 2027; the expanded tier (500 subs + 3M Shorts views/90 days) is the
   near-term target. FAQ rich results stopped May 2026: use Article/Breadcrumb schema; Discover wants 1200px images
   and max-image-preview:large (added). Facebook Page Reels API: 30/day, needs a Page + pages_manage_posts.
+- 2026-11-20: First test of moving gameplay backgrounds: the IShowSpeed Short (official gameplay clips, streamer
+  angle) got 167 views in its first 1.3 h (~129/h), while tips Shorts on still screenshots got 3-16 views in ~17 h
+  (cheat codes 50 s, "Can't get into GTA 6?", "First 3 settings"). Every Short now uses moving clips, never stills
+  as the first frame; today's 12:30 / 6 PM / 8:30 PM Shorts were re-made and swapped (old versions left private).
