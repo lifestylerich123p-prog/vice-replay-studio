@@ -79,3 +79,8 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
 - **Lean runs**: `python -m studio.radar` (free) first in breaking-news runs (QUIET = stop). Don't re-read big files
   or re-render without a reason. End every run that changed anything with `python -m studio.tidy`. New files go where
   the README's table says; finished one-off files go to `content/archive/`.
+
+## Reference pack
+Before writing an episode, read `resources/shorts-tiktok-playbook.md` and `resources/hooks-and-titles.md`.
+When no topic is planned, pick an angle from `resources/topic-bank.md` and research it fresh.
+The channel rules in this file win over anything in `resources/`.
