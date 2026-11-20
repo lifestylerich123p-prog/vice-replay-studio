@@ -1,0 +1,48 @@
+{
+  "_note": "Where footage may come from. Anything not listed here is blocked by the rights checker.",
+  "authorized": [
+    {
+      "id": "rockstar-official",
+      "what": "Official Rockstar screenshots and Extended Look gameplay clips",
+      "where": [
+        "media/official/",
+        "media/trailer/"
+      ],
+      "rights": "rockstar-fan-policy"
+    },
+    {
+      "id": "owner-gameplay",
+      "what": "Owner's own GTA 6 recordings (radio/music off)",
+      "where": [
+        "media/gameplay/"
+      ],
+      "drive_folder": "see content/owner.md",
+      "rights": "owner-gameplay"
+    },
+    {
+      "id": "campaign-lacy-gta6",
+      "what": "Lacy GTA 6 marathon streams from Nov 18 (campaign grants clipping)",
+      "youtube_channel_id": "UCeoZXkaJDtdTHafgoZeDcAA",
+      "twitch": "lacy",
+      "rights": "campaign:lacy-gta6"
+    },
+    {
+      "id": "campaign-kreekcraft-gta6",
+      "what": "KreekCraft official GTA 6 livestreams and replays",
+      "rights": "campaign:kreekcraft-gta6"
+    },
+    {
+      "id": "rockstar-newswire",
+      "what": "Official announcements (facts only, no footage download)",
+      "url": "https://www.rockstargames.com/newswire"
+    }
+  ],
+  "blocked": [
+    "other creators' videos or clips (no permission)",
+    "whole trailers",
+    "official music/radio",
+    "leaked footage",
+    "isolated cutscenes/endings",
+    "AI footage presented as gameplay"
+  ]
+}

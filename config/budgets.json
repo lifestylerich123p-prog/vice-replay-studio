@@ -1,0 +1,21 @@
+{
+  "_note": "Spending guard. studio.vice refuses paid steps above these without an explicit owner override.",
+  "everygen_credits_per_run_without_owner_yes": 0,
+  "everygen_note": "Owner rule: estimate first, check balance before and after, log every spend in content/channels.md Shared log.",
+  "youtube_quota_per_day": 10000,
+  "youtube_quota_reserved_for_uploads": 6400,
+  "quota_units": {
+    "search": 100,
+    "videos.list": 1,
+    "channels.list": 1,
+    "playlistItems.list": 1,
+    "upload": 1600
+  },
+  "local": {
+    "max_parallel_renders": 1,
+    "max_parallel_transcribe": 1,
+    "whisper_model": "base",
+    "target_machine": "MacBook Air M-series, 16 GB"
+  },
+  "paid_apis_allowed": false
+}

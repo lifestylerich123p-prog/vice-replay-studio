@@ -1,0 +1,2 @@
+file '/home/user/vice-replay-studio/projects/test1-lacy-car-key/part_main.mp4'
+file '/home/user/vice-replay-studio/projects/test1-lacy-car-key/part_replay.mp4'

@@ -1,0 +1,54 @@
+{
+ "project": "test1-lacy-car-key",
+ "destination": "clipcircuit",
+ "channel_check": {
+  "ok": true,
+  "problems": [],
+  "notes": [
+   "ClipCircuit is posted by the owner (owner-by-hand): we prepare a hand-off package, never upload"
+  ],
+  "mode": "owner-by-hand",
+  "channel": "ClipCircuit"
+ },
+ "video": "/home/user/vice-replay-studio/projects/test1-lacy-car-key/test1-lacy-car-key.mp4",
+ "cover": "/home/user/vice-replay-studio/projects/test1-lacy-car-key/cover.jpg",
+ "title_options": [
+  "LACY can't steal this GTA 6 car 😭 #LACY #GTA6",
+  "GTA 6 cars have security now? LACY found out #LACY",
+  "LACY vs a GTA 6 key clone 😭 #LACY #GTA6"
+ ],
+ "caption": "LACY tried to steal a car in GTA 6 and the game made him clone the key 😭 Watch LACY live: twitch.tv/lacy #LACY #GTA6",
+ "platforms": [
+  "TikTok",
+  "Instagram Reels",
+  "YouTube Shorts",
+  "X"
+ ],
+ "campaign": "lacy-gta6",
+ "status": "BLOCKED",
+ "blockers": [
+  "QC: duplicate footage: same footage as https://youtube.com/shorts/9QNojUuqHtc",
+  "Visual review: double captions. The only authorized Lacy footage on disk is an already-finished Everygen clip with burned-in captions ('CLONE THE KEY?!'); a publishable clip must be cut from the raw stream."
+ ],
+ "after_posting": [
+  "Submit on the campaign page within 30 minutes of posting"
+ ],
+ "human_review": "required",
+ "next_step": "Fresh moment from Lacy's own stream replay (Day 2/3, see reports/scan-2026-11-20.md 'fresh' rows): Everygen find_clips on a 1-hour stretch (~2-12 credits, needs the owner's yes) or the free Drive campaign inbox (owner drops a recording).",
+ "opportunity_score": {
+  "scores": {
+   "curiosity": 7,
+   "payoff": 6,
+   "context": 7,
+   "audio": 8,
+   "visual": 6,
+   "contribution": 3
+  },
+  "total": 64,
+  "gate": "BLOCKED",
+  "reasons": [
+   "already used (same footage or same event): reposting gets suppressed and breaks campaign rules"
+  ],
+  "note": "editorial scores by Claude after watching the clip; production priority, not a view prediction"
+ }
+}

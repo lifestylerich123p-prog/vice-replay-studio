@@ -12,3 +12,8 @@ assets/voice/
 
 # gameplay pulled from Google Drive each run (too big for git)
 media/gameplay/
+
+# vice system: rendered project media and regenerable exports stay local
+projects/*/*.mp4
+projects/*/*.wav
+reports/exports/

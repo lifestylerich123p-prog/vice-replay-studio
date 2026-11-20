@@ -1,0 +1,122 @@
+{
+  "title": "GTA 6 Races: Look at the Corner of the Screen",
+  "slug": "gta6-race-hud-details",
+  "series": "C: Details",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "format": "details",
+  "use_gameplay": false,
+  "short_title": "GTA 6 races: look at the corner of the screen #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 races: look at the corner of the screen #GTA6 #Shorts",
+    "GTA 6 race HUD: progress bar vs laps #GTA6 #Shorts",
+    "GTA 6 street race: 5th to 3rd in 2 seconds #GTA6 #Shorts"
+  ],
+  "short_description": "Vice Replay Details: what the race HUD shows in Rockstar's own GTA 6 gameplay (\"GTA VI: An Extended Look\"). Night street race: 6 racers, a PROGRESS bar (6% to 9%) and a race timer; the driver moves from 5th to 3rd between 00:05.52 and 00:07.44. Dirt-bike race: 12 riders and a lap counter (LAP 1/2). Every number here is read straight off the footage. No story spoilers. Footage: official Rockstar gameplay, original audio removed.",
+  "short_es": {
+    "title": "Carreras de GTA 6: mira la esquina de la pantalla #GTA6 #Shorts",
+    "description": "Vice Replay Detalles: lo que muestra el HUD de carreras en el gameplay oficial de Rockstar. Carrera callejera: 6 pilotos, barra de progreso y cronómetro; pasa del 5.º al 3.º en menos de dos segundos. Carrera de motos: 12 pilotos y contador de vueltas (VUELTA 1/2). Sin spoilers."
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Sprint or laps: which GTA 6 race are you doing first? Reply SPRINT or LAPS 👇",
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gaming",
+    "#racing",
+    "#gta6details"
+  ],
+  "sources": [
+    "Rockstar Games - Grand Theft Auto VI: An Extended Look (official gameplay; HUD values read frame by frame at 1920x1080): https://www.rockstargames.com/VI/downloads"
+  ],
+  "short": [
+    {
+      "headline": "LOOK AT THE CORNER",
+      "headline_es": "MIRA LA ESQUINA",
+      "text": "Look at the corner of this GTA 6 street race. This is Rockstar's own gameplay.",
+      "text_es": "Mira la esquina de esta carrera callejera de GTA 6. Es el gameplay oficial de Rockstar.",
+      "media": "../media/trailer/extended-look-night-street-race.mp4",
+      "media_start": 0,
+      "speed": 0.6,
+      "keep_media": true
+    },
+    {
+      "headline": "5TH TO 3RD",
+      "headline_es": "DEL 5.º AL 3.º",
+      "text": "Six racers. The driver jumps from fifth to third in under two seconds, and the progress bar keeps climbing.",
+      "text_es": "Seis pilotos. Pasa del quinto al tercero en menos de dos segundos, y la barra de progreso sigue subiendo.",
+      "media": "../media/trailer/extended-look-night-street-race.mp4",
+      "media_start": 0,
+      "keep_media": true,
+      "speed": 0.75,
+      "freeze": {
+        "at": 2.75
+      },
+      "magnify": {
+        "box": [
+          0.86,
+          0.79,
+          0.995,
+          0.98
+        ],
+        "width": 0.7,
+        "y": 0.31
+      },
+      "callout": {
+        "x": 0.668,
+        "y": 0.455,
+        "r": 0.15,
+        "at": 3.6
+      }
+    },
+    {
+      "headline": "THIS ONE HAS LAPS",
+      "headline_es": "ESTA TIENE VUELTAS",
+      "text": "The dirt bike race is different: twelve riders, and a lap counter instead of a progress bar.",
+      "text_es": "La carrera de motos es distinta: doce pilotos y un contador de vueltas en vez de barra de progreso.",
+      "media": "../media/trailer/extended-look-dirt-bike-trail.mp4",
+      "media_start": 0,
+      "keep_media": true,
+      "speed": 0.75,
+      "freeze": {
+        "at": 2.75
+      },
+      "magnify": {
+        "box": [
+          0.885,
+          0.78,
+          0.995,
+          0.98
+        ],
+        "width": 0.58,
+        "y": 0.3
+      },
+      "callout": {
+        "x": 0.56,
+        "y": 0.362,
+        "r": 0.13,
+        "at": 1.0
+      }
+    },
+    {
+      "headline": "PROGRESS BAR OR LAPS",
+      "headline_es": "PROGRESO O VUELTAS",
+      "text": "So Rockstar's footage shows two race styles: one with a progress bar, one with laps.",
+      "text_es": "O sea, el gameplay de Rockstar muestra dos estilos: uno con barra de progreso y otro con vueltas.",
+      "media": "../media/trailer/extended-look-dirt-bike-trail.mp4",
+      "media_start": 0,
+      "keep_media": true,
+      "speed": 0.6,
+      "focus": 0.6
+    },
+    {
+      "headline": "WHICH ONE FIRST?",
+      "headline_es": "¿CUÁL PRIMERO?",
+      "text": "Which one are you racing first? Tell me below, because",
+      "text_es": "¿Cuál vas a correr primero? Dímelo abajo, porque",
+      "media": "../media/trailer/extended-look-aerial-bay.mp4",
+      "media_start": 0,
+      "keep_media": true
+    }
+  ]
+}

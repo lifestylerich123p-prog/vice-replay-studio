@@ -1,0 +1,969 @@
+{
+ "taken": "2026-11-20T20:31:46Z",
+ "seeds": [
+  {
+   "video": {
+    "id": "SUiwFz6SQtU",
+    "title": "Don't miss the TOP GTA 6 MOMENTS... \ud83d\ude02 #gta6 #gtavi",
+    "channel": "GTA by Sam",
+    "published": "2026-11-18T21:34:47Z",
+    "seconds": 80,
+    "type": "Short",
+    "views": 3431913,
+    "likes": 83500,
+    "comments": 588,
+    "views_per_hour": 73099.8,
+    "url": "https://www.youtube.com/watch?v=SUiwFz6SQtU"
+   },
+   "label": "GTA by Sam - Top GTA 6 Moments",
+   "channel_id": "UC8nIJ_e-4MU27gTrZz57EOQ"
+  },
+  {
+   "video": {
+    "id": "VZ5TZfzGNMQ",
+    "title": "This Game Is Insane!\ud83e\udd23 Ranking Funniest GTA 6 Moments! #gta #gta6 #gtaclips #funny",
+    "channel": "GamingLife",
+    "published": "2026-11-18T19:50:11Z",
+    "seconds": 66,
+    "type": "Short",
+    "views": 657951,
+    "likes": 14326,
+    "comments": 102,
+    "views_per_hour": 13512.6,
+    "url": "https://www.youtube.com/watch?v=VZ5TZfzGNMQ"
+   },
+   "label": "GamingLife - Ranking Funniest GTA 6 Moments",
+   "channel_id": "UCqIb0qeIHVCCy24Pz1fE60w"
+  },
+  {
+   "video": {
+    "id": "_WNJQFnWiGk",
+    "title": "POV: it's your first 10 seconds playing GTA6 \ud83d\ude2d\ud83d\ude2d\ud83d\udc80#xqc #gta6 #meme",
+    "channel": "xQc Daily | Fan Page",
+    "published": "2026-11-18T13:03:46Z",
+    "seconds": 8,
+    "type": "Short",
+    "views": 277554,
+    "likes": 3412,
+    "comments": 41,
+    "views_per_hour": 5004.1,
+    "url": "https://www.youtube.com/watch?v=_WNJQFnWiGk"
+   },
+   "label": "xQc Daily Fan Page - First 10 Seconds Playing GTA 6",
+   "channel_id": "UCxgyVxrx1P8JwP5wxXJbDIw"
+  },
+  {
+   "video": {
+    "id": "KRpMIW0uaEg",
+    "title": "Ranking Lacy Funniest GTA 6 Moments\ud83d\ude4f\ud83d\ude2d #lacy #gta6 #viral #shorts",
+    "channel": "StreamingJoe",
+    "published": "2026-11-19T14:33:08Z",
+    "seconds": 42,
+    "type": "Short",
+    "views": 82872,
+    "likes": 1839,
+    "comments": 5,
+    "views_per_hour": 2764.6,
+    "url": "https://www.youtube.com/watch?v=KRpMIW0uaEg"
+   },
+   "label": "StreamingJoe - Ranking Lacy's Funniest GTA 6 Moments",
+   "channel_id": "UCvp9fhftuASdA9gIpAp4zRQ"
+  },
+  {
+   "video": {
+    "id": "WbVEIA8sUXw",
+    "title": "Ranking Insane GTA 6 Clips",
+    "channel": "ViralOnly",
+    "published": "2026-11-18T21:29:31Z",
+    "seconds": 70,
+    "type": "Short",
+    "views": 26635,
+    "likes": 803,
+    "comments": 13,
+    "views_per_hour": 566.3,
+    "url": "https://www.youtube.com/watch?v=WbVEIA8sUXw"
+   },
+   "label": "ViralOnly - Ranking Insane GTA 6 Clips",
+   "channel_id": "UCzCczpYfLHl12nVYvku9hbg"
+  }
+ ],
+ "profiles": [
+  {
+   "channel_id": "UC8nIJ_e-4MU27gTrZz57EOQ",
+   "title": "GTA by Sam",
+   "handle": "@gtabysam",
+   "created": "2011-12-04",
+   "subs": 26400,
+   "views": 4494872,
+   "videos": 154,
+   "fetched_at": "2026-11-20T20:31:41Z",
+   "sample": 50,
+   "sample_days": 40.0,
+   "uploads_last_7d": 11,
+   "uploads_per_day_7d": 1.6,
+   "median_views": 4639,
+   "max_views": 3431913,
+   "breakouts": [
+    {
+     "id": "SUiwFz6SQtU",
+     "title": "Don't miss the TOP GTA 6 MOMENTS... \ud83d\ude02 #gta6 #gtavi",
+     "views": 3431913,
+     "x_median": 739.8
+    },
+    {
+     "id": "cKfjWi_c3Mw",
+     "title": "Don't miss the TOP GTA MOMENTS before GTA 6... \ud83d\ude02",
+     "views": 1100075,
+     "x_median": 237.1
+    },
+    {
+     "id": "wdnLiPCm6q0",
+     "title": "Don't miss the TOP GTA MOMENTS before GTA 6... \ud83d\ude02",
+     "views": 350596,
+     "x_median": 75.6
+    },
+    {
+     "id": "dk2wsGXFIoI",
+     "title": "Don't miss the TOP GTA MOMENTS before GTA 6... \ud83d\ude02",
+     "views": 326646,
+     "x_median": 70.4
+    },
+    {
+     "id": "3_NGLiBFzYc",
+     "title": "Don't miss the TOP GTA MOMENTS before GTA 6... \ud83d\ude02",
+     "views": 229143,
+     "x_median": 49.4
+    }
+   ],
+   "median_seconds": 58,
+   "length_mix": {
+    "60s+": 23,
+    "31-60s": 18,
+    "16-30s": 7,
+    "<=15s": 2
+   },
+   "gta6_share": 0.68,
+   "like_rate_pct": 2.81,
+   "comment_rate_pct": 0.015,
+   "title_patterns": {
+    "ranking": 0.06,
+    "top-N / best": 0.4,
+    "first-time / POV": 0.0,
+    "streamer name": 0.0,
+    "funny / insane": 0.04,
+    "question": 0.04,
+    "number": 0.86,
+    "versus / tested": 0.02,
+    "emoji": 0.74
+   },
+   "top_titles": [
+    "Don't miss the TOP GTA 6 MOMENTS... \ud83d\ude02 #gta6 #gtavi",
+    "Don't miss the TOP GTA MOMENTS before GTA 6... \ud83d\ude02",
+    "Don't miss the TOP GTA MOMENTS before GTA 6... \ud83d\ude02",
+    "Don't miss the TOP GTA MOMENTS before GTA 6... \ud83d\ude02",
+    "Don't miss the TOP GTA MOMENTS before GTA 6... \ud83d\ude02"
+   ]
+  },
+  {
+   "channel_id": "UCqIb0qeIHVCCy24Pz1fE60w",
+   "title": "GamingLife",
+   "handle": "@gaminglifecz",
+   "created": "2026-10-09",
+   "subs": 6530,
+   "views": 5736677,
+   "videos": 66,
+   "fetched_at": "2026-11-20T20:31:41Z",
+   "sample": 50,
+   "sample_days": 33.0,
+   "uploads_last_7d": 8,
+   "uploads_per_day_7d": 1.1,
+   "median_views": 20118,
+   "max_views": 3698491,
+   "breakouts": [
+    {
+     "id": "hyE_zV-VDC4",
+     "title": "Ranking Funniest Horror Games Moments 2\ud83e\udd23 #fyp #horror #viral #gaming",
+     "views": 3698491,
+     "x_median": 183.8
+    },
+    {
+     "id": "VZ5TZfzGNMQ",
+     "title": "This Game Is Insane!\ud83e\udd23 Ranking Funniest GTA 6 Moments! #gta #gta6 #gtaclips #funny",
+     "views": 657951,
+     "x_median": 32.7
+    },
+    {
+     "id": "SF8Y8OOaWt0",
+     "title": "Ranking Funniest Backrooms Moments 2\ud83e\udd23 #gaming #backrooms #viral #horror",
+     "views": 444919,
+     "x_median": 22.1
+    },
+    {
+     "id": "xZtGr8wm3dE",
+     "title": "Ranking Funniest Horror Games Moments 4\ud83e\udd23 #horror #gaming #fyp #viral",
+     "views": 341540,
+     "x_median": 17.0
+    },
+    {
+     "id": "6XfddiIZe6A",
+     "title": "Ranking Best and Funniest HORROR GAMES Moments Ever!\ud83d\ude02\ud83d\udd25",
+     "views": 223939,
+     "x_median": 11.1
+    }
+   ],
+   "median_seconds": 58,
+   "length_mix": {
+    "60s+": 23,
+    "31-60s": 24,
+    "<=15s": 1,
+    "16-30s": 2
+   },
+   "gta6_share": 0.1,
+   "like_rate_pct": 4.0,
+   "comment_rate_pct": 0.013,
+   "title_patterns": {
+    "ranking": 0.86,
+    "top-N / best": 0.3,
+    "first-time / POV": 0.0,
+    "streamer name": 0.0,
+    "funny / insane": 0.76,
+    "question": 0.0,
+    "number": 0.44,
+    "versus / tested": 0.0,
+    "emoji": 0.96
+   },
+   "top_titles": [
+    "Ranking Funniest Horror Games Moments 2\ud83e\udd23 #fyp #horror #viral #gaming",
+    "This Game Is Insane!\ud83e\udd23 Ranking Funniest GTA 6 Moments! #gta #gta6 #gtaclips #funny",
+    "Ranking Funniest Backrooms Moments 2\ud83e\udd23 #gaming #backrooms #viral #horror",
+    "Ranking Funniest Horror Games Moments 4\ud83e\udd23 #horror #gaming #fyp #viral",
+    "Ranking Best and Funniest HORROR GAMES Moments Ever!\ud83d\ude02\ud83d\udd25"
+   ]
+  },
+  {
+   "channel_id": "UCxgyVxrx1P8JwP5wxXJbDIw",
+   "title": "xQc Daily | Fan Page",
+   "handle": "@xqc_daily_2",
+   "created": "2025-09-09",
+   "subs": 23500,
+   "views": 154121628,
+   "videos": 622,
+   "fetched_at": "2026-11-20T20:31:42Z",
+   "sample": 50,
+   "sample_days": 140.9,
+   "uploads_last_7d": 3,
+   "uploads_per_day_7d": 0.4,
+   "median_views": 21975,
+   "max_views": 3247536,
+   "breakouts": [
+    {
+     "id": "RX1AIh_zyH8",
+     "title": "xQc Was SHOCKED After Kai Cenat Chose THIS Professor For Streamer Univeristy \ud83d\ude2d\ud83d\ude2d",
+     "views": 3247536,
+     "x_median": 147.8
+    },
+    {
+     "id": "20jAxJUNy3k",
+     "title": "xQc Reacts To \"xQc Has His Own Language\" \ud83d\ude2d\ud83d\ude2d #xqc",
+     "views": 1388689,
+     "x_median": 63.2
+    },
+    {
+     "id": "_WNJQFnWiGk",
+     "title": "POV: it's your first 10 seconds playing GTA6 \ud83d\ude2d\ud83d\ude2d\ud83d\udc80#xqc #gta6 #meme",
+     "views": 277554,
+     "x_median": 12.6
+    },
+    {
+     "id": "7zYl1sKSXEQ",
+     "title": "\"Can You Say That Slower?\" \ud83d\udc80\ud83d\ude2d\ud83e\udd40  #xqc",
+     "views": 167618,
+     "x_median": 7.6
+    }
+   ],
+   "median_seconds": 27,
+   "length_mix": {
+    "31-60s": 17,
+    "16-30s": 18,
+    "<=15s": 11,
+    "60s+": 4
+   },
+   "gta6_share": 0.08,
+   "like_rate_pct": 1.93,
+   "comment_rate_pct": 0.016,
+   "title_patterns": {
+    "ranking": 0.0,
+    "top-N / best": 0.04,
+    "first-time / POV": 0.06,
+    "streamer name": 1.0,
+    "funny / insane": 0.04,
+    "question": 0.04,
+    "number": 0.3,
+    "versus / tested": 0.02,
+    "emoji": 0.98
+   },
+   "top_titles": [
+    "xQc Was SHOCKED After Kai Cenat Chose THIS Professor For Streamer Univeristy \ud83d\ude2d\ud83d\ude2d",
+    "xQc Reacts To \"xQc Has His Own Language\" \ud83d\ude2d\ud83d\ude2d #xqc",
+    "POV: it's your first 10 seconds playing GTA6 \ud83d\ude2d\ud83d\ude2d\ud83d\udc80#xqc #gta6 #meme",
+    "\"Can You Say That Slower?\" \ud83d\udc80\ud83d\ude2d\ud83e\udd40  #xqc",
+    "Slowing It Down Made It 100x Worse \ud83d\udc80\ud83d\ude2d #xqc"
+   ]
+  },
+  {
+   "channel_id": "UCvp9fhftuASdA9gIpAp4zRQ",
+   "title": "StreamingJoe",
+   "handle": "@streamingjoe",
+   "created": "2020-08-27",
+   "subs": 3280,
+   "views": 12963359,
+   "videos": 145,
+   "fetched_at": "2026-11-20T20:31:43Z",
+   "sample": 50,
+   "sample_days": 144.3,
+   "uploads_last_7d": 7,
+   "uploads_per_day_7d": 1.0,
+   "median_views": 25876,
+   "max_views": 339469,
+   "breakouts": [
+    {
+     "id": "5mEuk0L1It0",
+     "title": "Top 5 Streamer University Funniest Moments (day 1)\ud83d\ude02 #streamer #streameruniversity #kaicenat #shorts",
+     "views": 339469,
+     "x_median": 13.1
+    },
+    {
+     "id": "654XL0ZRwsw",
+     "title": "Top 5 Funniest Core X Sidemen Moments\ud83d\ude02 #coreboys #sidemen #streamer #usa #viral #shortsfeed #shorts",
+     "views": 249999,
+     "x_median": 9.7
+    },
+    {
+     "id": "S3dpW0zvlk4",
+     "title": "Ranking Funniest CORE Streamer Awards Moments (stable Ronaldo, Marlon, Lacy, Jasontheween)",
+     "views": 184728,
+     "x_median": 7.1
+    }
+   ],
+   "median_seconds": 58,
+   "length_mix": {
+    "31-60s": 35,
+    "60s+": 15
+   },
+   "gta6_share": 0.04,
+   "like_rate_pct": 2.94,
+   "comment_rate_pct": 0.013,
+   "title_patterns": {
+    "ranking": 0.2,
+    "top-N / best": 0.66,
+    "first-time / POV": 0.0,
+    "streamer name": 0.42,
+    "funny / insane": 0.84,
+    "question": 0.0,
+    "number": 0.7,
+    "versus / tested": 0.0,
+    "emoji": 0.98
+   },
+   "top_titles": [
+    "Top 5 Streamer University Funniest Moments (day 1)\ud83d\ude02 #streamer #streameruniversity #kaicenat #shorts",
+    "Top 5 Funniest Core X Sidemen Moments\ud83d\ude02 #coreboys #sidemen #streamer #usa #viral #shortsfeed #shorts",
+    "Ranking Funniest CORE Streamer Awards Moments (stable Ronaldo, Marlon, Lacy, Jasontheween)",
+    "Top 5 Funniest Core X Sidemen Moments (pt 2)\ud83d\ude02 #coreboys #sidemen #streamer #usa #viral #shorts",
+    "Ranking Lacy Funniest GTA 6 Moments\ud83d\ude4f\ud83d\ude2d #lacy #gta6 #viral #shorts"
+   ]
+  },
+  {
+   "channel_id": "UCzCczpYfLHl12nVYvku9hbg",
+   "title": "ViralOnly",
+   "handle": "@viralonly8",
+   "created": "2025-11-18",
+   "subs": 2630,
+   "views": 1073167,
+   "videos": 76,
+   "fetched_at": "2026-11-20T20:31:43Z",
+   "sample": 50,
+   "sample_days": 331.6,
+   "uploads_last_7d": 9,
+   "uploads_per_day_7d": 1.3,
+   "median_views": 5652,
+   "max_views": 270564,
+   "breakouts": [
+    {
+     "id": "MkuyWb3Abuw",
+     "title": "Ranking Funniest AI Ronaldo Clips!",
+     "views": 270564,
+     "x_median": 47.9
+    },
+    {
+     "id": "J5ojhjlACzw",
+     "title": "Ranking Cringiest Chloe Kelly Moments!",
+     "views": 35846,
+     "x_median": 6.3
+    },
+    {
+     "id": "Hdi5ldYbsPw",
+     "title": "Ranking Funniest Sculpture Moments!!",
+     "views": 31229,
+     "x_median": 5.5
+    },
+    {
+     "id": "uEstmTo-XY0",
+     "title": "Ranking Funniest Blob Moments!!",
+     "views": 31072,
+     "x_median": 5.5
+    },
+    {
+     "id": "t0iaohZs5NA",
+     "title": "Ranking Funniest Trampoline Moments!!",
+     "views": 29896,
+     "x_median": 5.3
+    }
+   ],
+   "median_seconds": 38,
+   "length_mix": {
+    "31-60s": 32,
+    "16-30s": 15,
+    "60s+": 3
+   },
+   "gta6_share": 0.08,
+   "like_rate_pct": 1.08,
+   "comment_rate_pct": 0.021,
+   "title_patterns": {
+    "ranking": 0.7,
+    "top-N / best": 0.22,
+    "first-time / POV": 0.02,
+    "streamer name": 0.02,
+    "funny / insane": 0.44,
+    "question": 0.0,
+    "number": 0.12,
+    "versus / tested": 0.0,
+    "emoji": 0.04
+   },
+   "top_titles": [
+    "Ranking Funniest AI Ronaldo Clips!",
+    "Ranking Cringiest Chloe Kelly Moments!",
+    "Ranking Funniest Sculpture Moments!!",
+    "Ranking Funniest Blob Moments!!",
+    "Ranking Funniest Trampoline Moments!!"
+   ]
+  },
+  {
+   "channel_id": "UCy7HKuTUcSRRFAU1HL6G7nQ",
+   "title": "7When",
+   "handle": "@7when",
+   "created": "2025-12-15",
+   "subs": 75000,
+   "views": 108447872,
+   "videos": 222,
+   "fetched_at": "2026-11-20T20:31:44Z",
+   "sample": 50,
+   "sample_days": 23.0,
+   "uploads_last_7d": 17,
+   "uploads_per_day_7d": 2.4,
+   "median_views": 358202,
+   "max_views": 3851239,
+   "breakouts": [
+    {
+     "id": "LWDD83zULMc",
+     "title": "Ranking the Best Call of Duty Edits Part 3",
+     "views": 3851239,
+     "x_median": 10.8
+    },
+    {
+     "id": "6WWdUjvGZ0s",
+     "title": "Ranking the Best Call of Duty Edits Part 15",
+     "views": 3584538,
+     "x_median": 10.0
+    },
+    {
+     "id": "kVkpIlcs8Zg",
+     "title": "Ranking the Best Fortnite Edits Part 4",
+     "views": 3124238,
+     "x_median": 8.7
+    },
+    {
+     "id": "PvWmT8T2rPs",
+     "title": "Ranking The Best Xbox One Edits Part 4",
+     "views": 2677403,
+     "x_median": 7.5
+    },
+    {
+     "id": "tEqAZqKgSSo",
+     "title": "Ranking the Best Call of Duty Edits Part 6",
+     "views": 2497676,
+     "x_median": 7.0
+    }
+   ],
+   "median_seconds": 26,
+   "length_mix": {
+    "16-30s": 49,
+    "31-60s": 1
+   },
+   "gta6_share": 0.1,
+   "like_rate_pct": 1.77,
+   "comment_rate_pct": 0.018,
+   "title_patterns": {
+    "ranking": 1.0,
+    "top-N / best": 1.0,
+    "first-time / POV": 0.0,
+    "streamer name": 0.0,
+    "funny / insane": 0.0,
+    "question": 0.0,
+    "number": 0.82,
+    "versus / tested": 0.0,
+    "emoji": 0.0
+   },
+   "top_titles": [
+    "Ranking the Best Call of Duty Edits Part 3",
+    "Ranking the Best Call of Duty Edits Part 15",
+    "Ranking the Best Fortnite Edits Part 4",
+    "Ranking The Best Xbox One Edits Part 4",
+    "Ranking the Best Call of Duty Edits Part 6"
+   ]
+  },
+  {
+   "channel_id": "UCfLylqssF6t1OGL4JwKjOlA",
+   "title": "Rankzy",
+   "handle": "@therankzy",
+   "created": "2026-10-30",
+   "subs": 793,
+   "views": 978243,
+   "videos": 11,
+   "fetched_at": "2026-11-20T20:31:45Z",
+   "sample": 11,
+   "sample_days": 11.0,
+   "uploads_last_7d": 7,
+   "uploads_per_day_7d": 1.0,
+   "median_views": 27383,
+   "max_views": 1167219,
+   "breakouts": [
+    {
+     "id": "WmxwV9m6k5I",
+     "title": "DON'T check the sound!\ud83e\udd2b\u274c Ranking Funniest GTA 6 Launch Fails (Part 1) \ud83d\ude02\ud83c\udfae #shorts #gta6 #gtavi #gta",
+     "views": 1167219,
+     "x_median": 42.6
+    }
+   ],
+   "median_seconds": 20,
+   "length_mix": {
+    "31-60s": 1,
+    "16-30s": 10
+   },
+   "gta6_share": 0.18,
+   "like_rate_pct": 1.03,
+   "comment_rate_pct": 0.004,
+   "title_patterns": {
+    "ranking": 1.0,
+    "top-N / best": 0.0,
+    "first-time / POV": 0.0,
+    "streamer name": 0.0,
+    "funny / insane": 1.0,
+    "question": 0.0,
+    "number": 1.0,
+    "versus / tested": 0.0,
+    "emoji": 1.0
+   },
+   "top_titles": [
+    "DON'T check the sound!\ud83e\udd2b\u274c Ranking Funniest GTA 6 Launch Fails (Part 1) \ud83d\ude02\ud83c\udfae #shorts #gta6 #gtavi #gta",
+    "DON'T check the sound!\ud83e\udd2b\u274c Ranking Funniest Chicken Screaming (Part 05)\ud83d\ude02 #shorts #funny #chickenscream",
+    "DON'T check the sound!\ud83e\udd2b\u274c Ranking Funniest Chicken Screaming (Part 04)\ud83d\ude02 #shorts #funny #chickenscream",
+    "DON'T check the sound!\ud83e\udd2b Ranking Funniest Chicken Screaming (Part 07)\ud83d\ude02 #shorts #funny  #chicken",
+    "DON'T check the sound!\ud83e\udd2b\u274c Ranking Funniest Chicken Screaming (Part 06)\ud83d\ude02 #shorts #funny #chickenscream"
+   ]
+  },
+  {
+   "channel_id": "UCQHHjyyHiZ_T8nSpO5j4JZA",
+   "title": "Brenzzo",
+   "handle": "@brenzzo",
+   "created": "2018-12-21",
+   "subs": 6480,
+   "views": 14046689,
+   "videos": 143,
+   "fetched_at": "2026-11-20T20:31:45Z",
+   "sample": 50,
+   "sample_days": 168.4,
+   "uploads_last_7d": 4,
+   "uploads_per_day_7d": 0.6,
+   "median_views": 31588,
+   "max_views": 1302055,
+   "breakouts": [
+    {
+     "id": "65jfU-JwIZs",
+     "title": "Ranking the Best GTA 5 Stunt Racing Moments",
+     "views": 1302055,
+     "x_median": 41.2
+    },
+    {
+     "id": "kC0LEUsyWpM",
+     "title": "Ranking the Best GTA 5 Stunt Racing Moments",
+     "views": 953650,
+     "x_median": 30.2
+    },
+    {
+     "id": "W9CagOxbNs4",
+     "title": "Ranking GTA VI Day One Glitches and Funniest Moments \ud83d\ude02",
+     "views": 711176,
+     "x_median": 22.5
+    },
+    {
+     "id": "kB4T_SWB3Hk",
+     "title": "Ranking GTA VI Glitches and Funniest Moments \ud83d\ude02",
+     "views": 472201,
+     "x_median": 14.9
+    },
+    {
+     "id": "kOT43K2axf8",
+     "title": "Ranking the Best GTA 5 Stunt Racing Moments",
+     "views": 395454,
+     "x_median": 12.5
+    }
+   ],
+   "median_seconds": 38,
+   "length_mix": {
+    "16-30s": 8,
+    "31-60s": 38,
+    "60s+": 2,
+    "<=15s": 2
+   },
+   "gta6_share": 0.14,
+   "like_rate_pct": 2.78,
+   "comment_rate_pct": 0.022,
+   "title_patterns": {
+    "ranking": 0.84,
+    "top-N / best": 0.42,
+    "first-time / POV": 0.0,
+    "streamer name": 0.0,
+    "funny / insane": 0.36,
+    "question": 0.04,
+    "number": 0.86,
+    "versus / tested": 0.0,
+    "emoji": 0.12
+   },
+   "top_titles": [
+    "Ranking the Best GTA 5 Stunt Racing Moments",
+    "Ranking the Best GTA 5 Stunt Racing Moments",
+    "Ranking GTA VI Day One Glitches and Funniest Moments \ud83d\ude02",
+    "Ranking GTA VI Glitches and Funniest Moments \ud83d\ude02",
+    "Ranking the Best GTA 5 Stunt Racing Moments"
+   ]
+  },
+  {
+   "channel_id": "UCgXC5R3-Mqc4PyXK5uBTxOQ",
+   "title": "Deviluke",
+   "handle": "@phrdeviluke",
+   "created": "2022-04-08",
+   "subs": 19300,
+   "views": 22905475,
+   "videos": 69,
+   "fetched_at": "2026-11-20T20:31:45Z",
+   "sample": 50,
+   "sample_days": 51.2,
+   "uploads_last_7d": 7,
+   "uploads_per_day_7d": 1.0,
+   "median_views": 143788,
+   "max_views": 3834280,
+   "breakouts": [
+    {
+     "id": "X12iujU3QBI",
+     "title": "Top 5 Best Moments Horror Roblox Games #shorts #roblox",
+     "views": 3834280,
+     "x_median": 26.7
+    },
+    {
+     "id": "oyaCSoDP4QY",
+     "title": "Top 5 Best Moments Minecraft Horror #shorts #minecraft",
+     "views": 3093875,
+     "x_median": 21.5
+    },
+    {
+     "id": "yQSXAqDeuDo",
+     "title": "Top 5 Best Moments Roblox #shorts #roblox",
+     "views": 1576243,
+     "x_median": 11.0
+    },
+    {
+     "id": "KO8swDvANgI",
+     "title": "Top 5 Best Moments Minecraft Horror #shorts #minecraft",
+     "views": 1310583,
+     "x_median": 9.1
+    },
+    {
+     "id": "i8_NCkK_nPw",
+     "title": "Top 5 Best Moments Horror Roblox Games #shorts #roblox",
+     "views": 1177110,
+     "x_median": 8.2
+    }
+   ],
+   "median_seconds": 77,
+   "length_mix": {
+    "60s+": 46,
+    "31-60s": 4
+   },
+   "gta6_share": 0.04,
+   "like_rate_pct": 4.69,
+   "comment_rate_pct": 0.035,
+   "title_patterns": {
+    "ranking": 0.12,
+    "top-N / best": 0.88,
+    "first-time / POV": 0.0,
+    "streamer name": 0.0,
+    "funny / insane": 0.12,
+    "question": 0.0,
+    "number": 0.92,
+    "versus / tested": 0.0,
+    "emoji": 0.0
+   },
+   "top_titles": [
+    "Top 5 Best Moments Horror Roblox Games #shorts #roblox",
+    "Top 5 Best Moments Minecraft Horror #shorts #minecraft",
+    "Top 5 Best Moments Roblox #shorts #roblox",
+    "Top 5 Best Moments Minecraft Horror #shorts #minecraft",
+    "Top 5 Best Moments Horror Roblox Games #shorts #roblox"
+   ]
+  },
+  {
+   "channel_id": "UCK4vuzS4fX8qxWi5Ik7XQYA",
+   "title": "Davy Jones GTA 6",
+   "handle": "@davyjonesgta6",
+   "created": "2026-08-18",
+   "subs": 193000,
+   "views": 38099268,
+   "videos": 173,
+   "fetched_at": "2026-11-20T20:31:46Z",
+   "sample": 50,
+   "sample_days": 16.2,
+   "uploads_last_7d": 33,
+   "uploads_per_day_7d": 4.7,
+   "median_views": 68942,
+   "max_views": 1085322,
+   "breakouts": [
+    {
+     "id": "8L2Kx1RVzvI",
+     "title": "COMO DAVA ARRUMA TEMPO PRA JOGAR?? \ud83d\ude31\ud83d\ude31\ud83d\ude31",
+     "views": 1085322,
+     "x_median": 15.7
+    },
+    {
+     "id": "fXByfNhkYDQ",
+     "title": "OBJETIVOS DE RELACIONAMENTO COM O GTA 6",
+     "views": 969514,
+     "x_median": 14.1
+    },
+    {
+     "id": "Xmr46_GgFMY",
+     "title": "QUANDO O DAVY VAI RECEBER O GTA? \ud83d\ude31\ud83d\ude31\ud83d\ude31",
+     "views": 929502,
+     "x_median": 13.5
+    },
+    {
+     "id": "QV7S1fpjh-s",
+     "title": "SE ESTIVER JOGANDO GTA 6 D\u00c1 UMA RISADINHA \ud83d\ude02\ud83d\ude02\ud83d\ude02",
+     "views": 878720,
+     "x_median": 12.7
+    },
+    {
+     "id": "NO-GF7xs_Ss",
+     "title": "UNBOXING DECEPCIONANTE DE GTA 6",
+     "views": 615543,
+     "x_median": 8.9
+    }
+   ],
+   "median_seconds": 540,
+   "length_mix": {
+    "16-30s": 4,
+    "60s+": 30,
+    "31-60s": 14,
+    "<=15s": 2
+   },
+   "gta6_share": 0.82,
+   "like_rate_pct": 3.73,
+   "comment_rate_pct": 0.061,
+   "title_patterns": {
+    "ranking": 0.0,
+    "top-N / best": 0.0,
+    "first-time / POV": 0.0,
+    "streamer name": 0.0,
+    "funny / insane": 0.0,
+    "question": 0.22,
+    "number": 0.84,
+    "versus / tested": 0.0,
+    "emoji": 0.38
+   },
+   "top_titles": [
+    "COMO DAVA ARRUMA TEMPO PRA JOGAR?? \ud83d\ude31\ud83d\ude31\ud83d\ude31",
+    "OBJETIVOS DE RELACIONAMENTO COM O GTA 6",
+    "QUANDO O DAVY VAI RECEBER O GTA? \ud83d\ude31\ud83d\ude31\ud83d\ude31",
+    "SE ESTIVER JOGANDO GTA 6 D\u00c1 UMA RISADINHA \ud83d\ude02\ud83d\ude02\ud83d\ude02",
+    "UNBOXING DECEPCIONANTE DE GTA 6"
+   ]
+  },
+  {
+   "channel_id": "UCw93oEw0dLKMVUVpcXahcEA",
+   "title": "LolRanks",
+   "handle": "@lol-rankst",
+   "created": "2025-06-25",
+   "subs": 19900,
+   "views": 12455166,
+   "videos": 87,
+   "fetched_at": "2026-11-20T20:31:46Z",
+   "sample": 50,
+   "sample_days": 89.0,
+   "uploads_last_7d": 7,
+   "uploads_per_day_7d": 1.0,
+   "median_views": 55906,
+   "max_views": 2283078,
+   "breakouts": [
+    {
+     "id": "g7Nt0QgW7FI",
+     "title": "Ranking the best Boeshi moments pt 3 #funny #shorts #viral",
+     "views": 2283078,
+     "x_median": 40.8
+    },
+    {
+     "id": "XuBT_JJOxV8",
+     "title": "Ranking The best Boeshi Moments pt 2 #shorts #funny",
+     "views": 1199505,
+     "x_median": 21.5
+    },
+    {
+     "id": "KMPLFSntUMY",
+     "title": "Ranking Best Boeshi Funniest Moments i could not stop laughing #shorts #funny #viral",
+     "views": 1127326,
+     "x_median": 20.2
+    },
+    {
+     "id": "K2M9HNBES5U",
+     "title": "Ranking Boeshi's Funniest Moments Part 18 #boeshi #funny #shorts",
+     "views": 935516,
+     "x_median": 16.7
+    },
+    {
+     "id": "LPjoXgNvZCM",
+     "title": "I Ranked Boeshi's Funniest Moments So You Don't Have To #boeshi #humor",
+     "views": 578500,
+     "x_median": 10.3
+    }
+   ],
+   "median_seconds": 70,
+   "length_mix": {
+    "60s+": 41,
+    "31-60s": 9
+   },
+   "gta6_share": 0.08,
+   "like_rate_pct": 1.76,
+   "comment_rate_pct": 0.005,
+   "title_patterns": {
+    "ranking": 0.94,
+    "top-N / best": 0.7,
+    "first-time / POV": 0.0,
+    "streamer name": 0.02,
+    "funny / insane": 0.92,
+    "question": 0.0,
+    "number": 0.52,
+    "versus / tested": 0.0,
+    "emoji": 0.26
+   },
+   "top_titles": [
+    "Ranking the best Boeshi moments pt 3 #funny #shorts #viral",
+    "Ranking The best Boeshi Moments pt 2 #shorts #funny",
+    "Ranking Best Boeshi Funniest Moments i could not stop laughing #shorts #funny #viral",
+    "Ranking Boeshi's Funniest Moments Part 18 #boeshi #funny #shorts",
+    "I Ranked Boeshi's Funniest Moments So You Don't Have To #boeshi #humor"
+   ]
+  }
+ ],
+ "discovered": [
+  "UCy7HKuTUcSRRFAU1HL6G7nQ",
+  "UCfLylqssF6t1OGL4JwKjOlA",
+  "UCQHHjyyHiZ_T8nSpO5j4JZA",
+  "UCgXC5R3-Mqc4PyXK5uBTxOQ",
+  "UCK4vuzS4fX8qxWi5Ik7XQYA",
+  "UCw93oEw0dLKMVUVpcXahcEA"
+ ],
+ "title_trends": {
+  "ranking": {
+   "channels": [
+    "GamingLife",
+    "StreamingJoe",
+    "ViralOnly",
+    "7When",
+    "Rankzy",
+    "Brenzzo",
+    "LolRanks"
+   ],
+   "trend": true
+  },
+  "top-N / best": {
+   "channels": [
+    "GTA by Sam",
+    "GamingLife",
+    "StreamingJoe",
+    "ViralOnly",
+    "7When",
+    "Brenzzo",
+    "Deviluke",
+    "LolRanks"
+   ],
+   "trend": true
+  },
+  "first-time / POV": {
+   "channels": [],
+   "trend": false
+  },
+  "streamer name": {
+   "channels": [
+    "xQc Daily | Fan Page",
+    "StreamingJoe"
+   ],
+   "trend": false
+  },
+  "funny / insane": {
+   "channels": [
+    "GamingLife",
+    "StreamingJoe",
+    "ViralOnly",
+    "Rankzy",
+    "Brenzzo",
+    "LolRanks"
+   ],
+   "trend": true
+  },
+  "question": {
+   "channels": [
+    "Davy Jones GTA 6"
+   ],
+   "trend": false
+  },
+  "number": {
+   "channels": [
+    "GTA by Sam",
+    "GamingLife",
+    "xQc Daily | Fan Page",
+    "StreamingJoe",
+    "7When",
+    "Rankzy",
+    "Brenzzo",
+    "Deviluke",
+    "Davy Jones GTA 6",
+    "LolRanks"
+   ],
+   "trend": true
+  },
+  "versus / tested": {
+   "channels": [],
+   "trend": false
+  },
+  "emoji": {
+   "channels": [
+    "GTA by Sam",
+    "GamingLife",
+    "xQc Daily | Fan Page",
+    "StreamingJoe",
+    "Rankzy",
+    "Davy Jones GTA 6",
+    "LolRanks"
+   ],
+   "trend": true
+  }
+ }
+}

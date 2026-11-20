@@ -1,0 +1,72 @@
+{
+  "_note": "Which integrations exist, what they cost, and whether they work from the cloud session (checked 2026-11-20).",
+  "youtube_data_api": {
+    "use": "public stats, competitor research, search",
+    "cost": "free, 10,000 quota units/day",
+    "status": "works (key added by the network proxy)"
+  },
+  "youtube_analytics_api": {
+    "use": "views, engaged views, % viewed, avg duration, subs, shares, traffic sources, retention curve",
+    "cost": "free",
+    "status": "works (owner OAuth, Vice Replay only)"
+  },
+  "youtube_upload": {
+    "use": "publish approved videos",
+    "cost": "free (1,600 units per upload)",
+    "status": "works; token expires every 7 days until the Google app is published"
+  },
+  "ffmpeg": {
+    "use": "all editing, QC filters",
+    "cost": "free",
+    "status": "installed"
+  },
+  "faster_whisper": {
+    "use": "word-accurate subtitles, caption QC",
+    "cost": "free, local (model 'base' int8, ~1 GB RAM)",
+    "status": "installed"
+  },
+  "kokoro": {
+    "use": "narration voice am_michael / em_alex",
+    "cost": "free, local",
+    "status": "installed"
+  },
+  "remotion": {
+    "use": "optional motion graphics",
+    "cost": "free for individuals",
+    "status": "not used: ffmpeg covers punch-in, freeze, callouts, captions with less RAM"
+  },
+  "everygen": {
+    "use": "find moments in long streams, cut/caption clips",
+    "cost": "paid credits (shared balance with ClipCircuit and What If Arena)",
+    "status": "works via MCP; spend only after an estimate and the owner's yes"
+  },
+  "vidiq": {
+    "use": "outliers, keywords, title/thumbnail scores",
+    "cost": "plan credits",
+    "status": "NOT connected in this session; the owner's vidIQ login authorizes What If Arena only"
+  },
+  "twitch_api": {
+    "use": "streamer clip discovery",
+    "cost": "free",
+    "status": "blocked: no TWITCH_CLIENT_ID/SECRET and twitch.tv is not on the network allowlist"
+  },
+  "kick": {
+    "use": "streamer VODs",
+    "status": "blocked by network policy"
+  },
+  "youtube_video_download": {
+    "use": "authorized campaign VODs",
+    "status": "blocked by network policy (youtube.com); use Everygen or the owner's Drive inbox"
+  },
+  "content_rewards": {
+    "use": "campaign pages",
+    "status": "public pages reachable; joining/submitting is the owner's job"
+  },
+  "whop": {
+    "status": "blocked by network policy"
+  },
+  "instagram_graph": {
+    "use": "Reels/carousels",
+    "status": "works (IG_USER_ID); max 4 posts/day"
+  }
+}

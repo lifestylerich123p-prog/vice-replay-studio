@@ -26,6 +26,15 @@ Commands: `/new-video <topic>`, `/stats` (+ Studio screenshot), `/reply-comments
 |---|---|
 | `studio/` | The machine: `ship.py` (one command: render everything + check sheet + upload), `replies.py` (comment replies), `scorecard.py` (what works, fair 24 h numbers), `moments.py` (which streamer moments are taken), `tidy.py` (automatic cleaner + `content/INDEX.md` map), `make_video.py` (videos, Shorts, `--es` Spanish voice), `youtube_upload.py` (approved uploads, comments, replies), `learn.py`, `radar.py`, `review_page.py`, `gameplay.py`, `clip.py`, `channel_fix.py`, `sound.py`, `brand.py`; `status.py` (one-screen status), `doctor.py` (health), `instagram_upload.py` (Reels/carousels + queue), `ig_cards.py` (carousel cards), `campaign_sources.py` (new footage for approved campaigns), `campaign_inbox.py` (free Drive clip inbox), `twitch_clips.py` (top Twitch clips per campaign streamer), `dashboard.py`, `retention.py`, `title_swap.py` |
 | `episodes/` | One script per video (JSON) |
+| `studio/vice/` | The research-to-video system (`python -m studio.vice <command>`): audit, discover, scan, clip, rank, create, batch, analyze, campaigns, report, publish, rights. See `docs/vice-system.md` |
+| `config/` | `channel.json` (destinations + channel separation), `providers.json` (what's connected), `budgets.json` (spend + quota guard), `sources.json` (authorized footage) |
+| `rights/` | `registry.json`: one rights record per source class; anything unmatched is blocked |
+| `research/` | `competitors/` (competitor research), `campaigns/` (campaign scans + registry); cached results |
+| `projects/` | Clip projects (rights, transcript, captions, QC report, publication draft; media not committed) |
+| `database/` | `vice.db` (SQLite): snapshots, candidates, projects, QC, costs, payouts, ideas, fingerprints |
+| `reports/` | Audit, scan, report, 14-day calendar (`calendar.md/.csv`); `exports/` CSV/JSON (not committed) |
+| `tests/` | `python -m pytest tests -q` |
+| `docs/` | `vice-system.md`: how the system works, what's connected, limits |
 | `site/` | Website data: `guides/*.json` (guide pages written by the daily run) and `live.json` (launch live updates) |
 | `tools/` | `site_guides.py` builds vicereplay.com into the sibling `vicereplay-site` repo; `youtube_auth.py` reconnects YouTube |
 | `content/` | The machine's memory: `episode-format.md` (how to write an episode), `owner.md` (settings, links, standing approvals), `launch-plan.md`, `log.md`, `performance.md`, `learn/` (incl. `reels_queue.json`, `status.md`, `health.md`, `uploads.json`), `affiliate.json`, `campaigns/` (one JSON per campaign, `tracker.md`, scans), `carousels/` (Instagram carousel specs); `archive/` holds finished one-off files |

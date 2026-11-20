@@ -1,0 +1,131 @@
+{
+ "video": "/home/user/vice-replay-studio/projects/test1-lacy-car-key/test1-lacy-car-key.mp4",
+ "duration": 18.56,
+ "destination": "clipcircuit",
+ "passed": false,
+ "fails": 1,
+ "warns": 0,
+ "checks": [
+  {
+   "check": "format",
+   "status": "pass",
+   "detail": "1080x1920 h264 30 fps, 18.6 s",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "audio stream",
+   "status": "pass",
+   "detail": "aac 48000 Hz, 2 ch",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "length",
+   "status": "pass",
+   "detail": "18.6 s",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "decode",
+   "status": "pass",
+   "detail": "decodes cleanly",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "black frames",
+   "status": "pass",
+   "detail": "none",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "frozen picture",
+   "status": "pass",
+   "detail": "picture keeps moving",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "black bars",
+   "status": "pass",
+   "detail": "active picture 1080x1920 of 1080x1920",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "loudness",
+   "status": "pass",
+   "detail": "-14.6 LUFS integrated (target -14.0)",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "true peak",
+   "status": "pass",
+   "detail": "-1.5 dBFS peak",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "opening",
+   "status": "pass",
+   "detail": "first second is picture + sound",
+   "at": 0.0,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "captions",
+   "status": "pass",
+   "detail": "captions come from the word-level transcript of this audio (faster-whisper)",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "duplicate footage",
+   "status": "fail",
+   "detail": "same footage as https://youtube.com/shorts/9QNojUuqHtc",
+   "at": null,
+   "segment": null,
+   "fix": "pick a different moment: reposting the same footage gets suppressed"
+  },
+  {
+   "check": "rights",
+   "status": "pass",
+   "detail": "output/clips/lacy-gta6/lacy-car-key.mp4: campaign:lacy-gta6",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "disclosure",
+   "status": "pass",
+   "detail": "campaign hashtag #LACY",
+   "at": null,
+   "segment": null,
+   "fix": null
+  },
+  {
+   "check": "human review",
+   "status": "pending",
+   "detail": "owner approval in chat required before publishing",
+   "at": null,
+   "segment": null,
+   "fix": null
+  }
+ ],
+ "hash": "5024203356c89ac2-1224203396e3cee6-32343037a7e08ecc-333430b32328a8e4-7132b011c0f09982-7132b011a80e899b-3132b095c7ef99cc-7132b0b1b16391d3-71323091c70656b5-7132303150f2f0b1-713230198f67f7b1-7132b091158f93b3-71323011341f9bab-3334303386e08ee6-3334303394e38ee0-3334307526208ae0-3334b0723e909eb0-33343098a2321ece"
+}

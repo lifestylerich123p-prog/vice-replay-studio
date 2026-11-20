@@ -1,0 +1,63 @@
+{
+  "_note": "Destination registry. studio.vice.channels.validate() checks every publication draft against this file and the account the upload token belongs to. Channels share tools, never destinations, branding, analytics or history.",
+  "default": "vice-replay",
+  "channels": {
+    "vice-replay": {
+      "name": "Vice Replay",
+      "channel_id": "UCzk9Wts3WFynOHZQJRWOQIw",
+      "handle": "@ViceReplayTV-q8s",
+      "url": "https://www.youtube.com/channel/UCzk9Wts3WFynOHZQJRWOQIw",
+      "created": "2026-11-13",
+      "upload": "api",
+      "token_env": "YT_REFRESH_TOKEN",
+      "branding": "vice-replay",
+      "accepts": [
+        "original-narrated",
+        "owner-gameplay",
+        "official-footage-commentary",
+        "rankings-original",
+        "news",
+        "guides"
+      ],
+      "refuses": [
+        "campaign-clip",
+        "streamer-footage",
+        "ai-what-if"
+      ],
+      "instagram": "@vice.replaytv",
+      "tiktok": "owner posts by hand",
+      "site": "vicereplay.com"
+    },
+    "clipcircuit": {
+      "name": "ClipCircuit",
+      "channel_id": "UCgmVgDyZV-XuHmFl99zDnkw",
+      "handle": "@ClipCircuit-m5f",
+      "upload": "owner-by-hand",
+      "branding": "none (campaign rules forbid logos)",
+      "accepts": [
+        "campaign-clip"
+      ],
+      "refuses": [
+        "original-narrated",
+        "ai-what-if"
+      ],
+      "note": "Posts ALL campaign clips, including GTA 6 ones made in the Vice Replay chat (owner, Nov 20)."
+    },
+    "what-if-arena": {
+      "name": "What If Arena",
+      "channel_id": null,
+      "handle": null,
+      "upload": "separate pipeline (owner's Mac)",
+      "branding": "what-if-arena",
+      "accepts": [
+        "ai-what-if"
+      ],
+      "refuses": [
+        "campaign-clip",
+        "streamer-footage",
+        "original-narrated"
+      ],
+      "note": "Separate project. The connected vidIQ account belongs to this channel: never use it for Vice Replay analytics."
+    }
+  }
+}

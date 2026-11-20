@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,78,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,7,2,2,60,60,518,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.54,Cap,,0,0,0,,{\c&HD2E500&}STILL{\c&HFFFFFF&} THE CAR
+Dialogue: 0,0:00:00.54,0:00:00.70,Cap,,0,0,0,,STILL {\c&HD2E500&}THE{\c&HFFFFFF&} CAR
+Dialogue: 0,0:00:00.70,0:00:01.04,Cap,,0,0,0,,STILL THE {\c&HD2E500&}CAR{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.04,0:00:01.30,Cap,,0,0,0,,{\c&HD2E500&}GOT{\c&HFFFFFF&} TO CLONE
+Dialogue: 0,0:00:01.30,0:00:01.50,Cap,,0,0,0,,GOT {\c&HD2E500&}TO{\c&HFFFFFF&} CLONE
+Dialogue: 0,0:00:01.50,0:00:02.08,Cap,,0,0,0,,GOT TO {\c&HD2E500&}CLONE{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.08,0:00:02.34,Cap,,0,0,0,,{\c&HD2E500&}THE{\c&HFFFFFF&} KEY. WHAT
+Dialogue: 0,0:00:02.34,0:00:03.40,Cap,,0,0,0,,THE {\c&HD2E500&}KEY.{\c&HFFFFFF&} WHAT
+Dialogue: 0,0:00:03.40,0:00:04.20,Cap,,0,0,0,,THE KEY. {\c&HD2E500&}WHAT{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.20,0:00:04.36,Cap,,0,0,0,,{\c&HD2E500&}DOES{\c&HFFFFFF&} THAT EVEN
+Dialogue: 0,0:00:04.36,0:00:04.52,Cap,,0,0,0,,DOES {\c&HD2E500&}THAT{\c&HFFFFFF&} EVEN
+Dialogue: 0,0:00:04.52,0:00:04.86,Cap,,0,0,0,,DOES THAT {\c&HD2E500&}EVEN{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.86,0:00:05.54,Cap,,0,0,0,,{\c&HD2E500&}MEAN,{\c&HFFFFFF&} BRO? SOME
+Dialogue: 0,0:00:05.54,0:00:10.98,Cap,,0,0,0,,MEAN, {\c&HD2E500&}BRO?{\c&HFFFFFF&} SOME
+Dialogue: 0,0:00:10.98,0:00:11.78,Cap,,0,0,0,,MEAN, BRO? {\c&HD2E500&}SOME{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.78,0:00:12.22,Cap,,0,0,0,,{\c&HD2E500&}CARS{\c&HFFFFFF&} HAVE SECURITY
+Dialogue: 0,0:00:12.22,0:00:12.44,Cap,,0,0,0,,CARS {\c&HD2E500&}HAVE{\c&HFFFFFF&} SECURITY
+Dialogue: 0,0:00:12.44,0:00:13.16,Cap,,0,0,0,,CARS HAVE {\c&HD2E500&}SECURITY{\c&HFFFFFF&}

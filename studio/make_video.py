@@ -205,6 +205,56 @@ ENC = ["-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420
        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2"]
 
 
+def callout_png(c, w, h, path):
+    """Ring + label marking one detail on screen (Details/Tested formats). c: x, y, r (0-1 of width), label."""
+    img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    cx, cy, r = c["x"] * w, c["y"] * h, c.get("r", 0.08) * w
+    for grow, col, wid in ((10, brand.CYAN + (110,), 18), (0, brand.PINK + (255,), 10)):
+        d.ellipse([cx - r - grow, cy - r - grow, cx + r + grow, cy + r + grow], outline=col, width=wid)
+    if c.get("label"):
+        f = brand.font(brand.HEADLINE_FONT, int(w * 0.075))
+        tw = f.getlength(c["label"])
+        tx = min(max(24, cx - tw / 2), w - tw - 24)
+        above = cy - r - w * 0.13 > h * 0.30 and not c.get("label_below")
+        ty = cy - r - int(w * 0.13) if above else cy + r + int(w * 0.03)
+        d.text((tx, ty), c["label"], font=f, fill=brand.WHITE + (255,), stroke_width=6, stroke_fill=brand.NIGHT + (255,))
+    img.save(path)
+    return path
+
+
+def seg_effects(seg, vf, w, h, dur):
+    """Optional per-segment editing: smart crop ("focus"), freeze frame ("freeze"), punch-in ("zoom")."""
+    focus = seg.get("focus")
+    if focus is not None and f"crop={w}:{h}" in vf:  # which part of a wide shot a vertical frame keeps (0 left .. 1 right)
+        fx, fy = (focus, 0.5) if isinstance(focus, (int, float)) else (focus[0], focus[1])
+        vf = vf.replace(f"crop={w}:{h}", f"crop={w}:{h}:x=(iw-ow)*{fx}:y=(ih-oh)*{fy}", 1)
+    pre = ""
+    fz = seg.get("freeze")
+    if fz:  # play up to `at` seconds (source time), then hold that frame
+        pre += f"trim=end={fz['at']},setpts=PTS-STARTPTS,"
+    if seg.get("speed"):  # honest slow motion for very short clips (0.5-0.8)
+        pre += f"setpts=PTS/{seg['speed']},"
+    if fz:
+        pre += f"tpad=stop_mode=clone:stop_duration={dur + 1},"
+    m = seg.get("magnify")
+    if m:  # "magnifier": a box of the full-resolution frame shown large over the blurred, darkened shot
+        x0, y0, x1, y1 = m["box"]
+        mw = int(w * m.get("width", 0.7)) // 2 * 2
+        my = int(h * m.get("y", 0.31))
+        vf = (f"split=2[ma][mb];[ma]{vf},boxblur=16:2,eq=brightness=-0.22[mbg];"
+              f"[mb]crop=iw*{x1 - x0}:ih*{y1 - y0}:iw*{x0}:ih*{y0},scale={mw}:-2:flags=lanczos,"
+              f"drawbox=x=0:y=0:w=iw:h=ih:color=0xFF1F8E@1:t=8[mz];[mbg][mz]overlay=(W-w)/2:{my}")
+    vf = pre + vf
+    z = seg.get("zoom")
+    if z:  # smooth punch-in toward (x, y) starting at `at`
+        at, ramp, to = z.get("at", 0), max(0.1, z.get("dur", 0.5)), z.get("to", 1.4)
+        ze = f"if(lt(t,{at}),1,min({to},1+({to}-1)*(t-{at})/{ramp}))"  # per-frame scale + crop (zoompan buffered)
+        vf += (f",scale=w='trunc({w}*{ze}/2)*2':h='trunc({h}*{ze}/2)*2':eval=frame,"
+               f"crop={w}:{h}:x='max(0,min(iw-{w},{z['x']}*iw-{w}/2))':y='max(0,min(ih-{h},{z['y']}*ih-{h}/2))'")
+    return vf
+
+
 def render_segment(i, seg, audio, w, h, vertical, work, enc):
     voice_dur = duration(audio)
     dur = round(voice_dur + 0.45, 2)
@@ -213,16 +263,22 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
         print(f"  ! media not found, using generated background: {media}")
         media = None
     vin, vf = visual_input(media, dur, w, h, i, work, seg.get("media_start"))
+    vf = seg_effects(seg, vf, w, h, dur)
     ov = work / f"ov_{i}.png"
     brand.headline_card(seg.get("headline", ""), w, h, vertical, seg.get("cta")).save(ov)
     subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical)
     out = work / f"seg_{i:02d}.mp4"
     fade_in = "" if (vertical and i == 0) else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
-    fc = (f"[0:v]{vf},setsar=1,fps={FPS}[bg];[bg][1:v]overlay=0:0,"
+    extra, co = [], ""
+    if seg.get("callout"):
+        c = seg["callout"]
+        extra = ["-loop", "1", "-i", str(callout_png(c, w, h, work / f"callout_{i}.png"))]
+        co = f"[c0];[c0][3:v]overlay=0:0:enable='gte(t,{c.get('at', 0)})'"
+    fc = (f"[0:v]{vf},setsar=1,fps={FPS}[bg];[bg][1:v]overlay=0:0{co},"
           f"subtitles='{subs}':fontsdir='{brand.FONTS}',"
           f"{fade_in}fade=t=out:st={dur - 0.25}:d=0.25[v];"
           f"[2:a]adelay=200|200,apad,atrim=0:{dur},aformat=sample_rates=48000:channel_layouts=stereo[a]")
-    run(["ffmpeg", "-y", "-v", "error", *vin, "-loop", "1", "-i", str(ov), "-i", str(audio),
+    run(["ffmpeg", "-y", "-v", "error", *vin, "-loop", "1", "-i", str(ov), "-i", str(audio), *extra,
          "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-t", str(dur), *enc, str(out)])
     return out, dur
 
