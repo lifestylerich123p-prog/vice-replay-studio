@@ -79,3 +79,6 @@ AI graphics (Everygen, cleared in `rights/registry.json` as `ai-backgrounds`, Vi
 - `assets/ai-backgrounds/ig/*-4x5.jpg` (1080x1350): Instagram carousel/image post backgrounds.
 - `assets/intro/sting.mp4`: the long video's 3-second intro (neon flythrough + wordmark + title, made automatically;
   falls back to the still card if the file is missing). Shorts have no intro: they open on the hook.
+- vicereplay.com uses them too (built by `tools/site_guides.py`): homepage hero = the sting (plays once, then holds;
+  skipped for reduced-motion/data-saver), banners on /guides/ (news-skyline), /es/ (swamp-nature), /links/
+  (night-streets) and /gear/ (deals-gear), and picture cards from each guide's share image (og/t/).

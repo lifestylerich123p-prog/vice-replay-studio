@@ -57,7 +57,15 @@ a{color:var(--cyan)}p{margin:0 0 14px}ul.list{padding-left:22px}ul.list li{margi
 .cards{display:grid;gap:12px}.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--fg);text-decoration:none}
 .card:hover{border-color:var(--pink)}.card b{font-size:18px;display:block;line-height:1.3}.card small{color:var(--muted)}
 .sources{font-size:14px;color:var(--muted)}.sources a{word-break:break-word}
-footer{margin-top:44px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px}"""
+footer{margin-top:44px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+.banner{position:relative;display:flex;align-items:flex-end;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--line);margin:0 0 16px;background:var(--panel)}
+.banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center}
+.banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,7,23,.88) 0%,rgba(13,7,23,.5) 42%,rgba(13,7,23,0) 72%)}
+.banner h1{position:relative;z-index:1;margin:0;padding:18px 20px;max-width:68%}
+.card.pic{display:grid;grid-template-columns:128px 1fr;gap:14px;align-items:start;padding:12px}
+.card.pic img{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:8px;background:var(--panel-2)}
+.card.pic b{font-size:16px}.card.pic small{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-top:4px}
+@media(min-width:600px){.banner{aspect-ratio:21/9}.card.pic{grid-template-columns:200px 1fr;gap:16px}.card.pic b{font-size:18px}}"""
 
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 STUDIO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -98,7 +106,40 @@ def card(name, line1, line2, shot=None):
     d.text((60, H - 70), "vicereplay.com", font=ImageFont.truetype(FONT_B, 28), fill="#b7a9cf")
     os.makedirs(os.path.join(SITE, "og"), exist_ok=True)
     im.save(os.path.join(SITE, "og", name + ".jpg"), quality=85)
+    os.makedirs(os.path.join(SITE, "og", "t"), exist_ok=True)  # small copy for the picture cards on the guide lists
+    im.resize((480, 252), Image.LANCZOS).save(os.path.join(SITE, "og", "t", name + ".webp"), quality=78, method=6)
     return f"{DOMAIN}/og/{name}.jpg"
+
+AI_BG = os.path.join(STUDIO, "assets/ai-backgrounds")  # AI illustrations, cleared for vicereplay.com (rights: ai-backgrounds)
+def banner_img(name):
+    """assets/ai-backgrounds/<name>.jpg -> /img/<name>-720.webp + -1440.webp. Returns the <img> tag."""
+    os.makedirs(os.path.join(SITE, "img"), exist_ok=True)
+    src = Image.open(os.path.join(AI_BG, name + ".jpg")).convert("RGB")
+    for w in (720, 1440):
+        out = os.path.join(SITE, "img", f"{name}-{w}.webp")
+        if not os.path.exists(out) or os.path.getmtime(out) < os.path.getmtime(os.path.join(AI_BG, name + ".jpg")):
+            src.resize((w, round(w * src.height / src.width)), Image.LANCZOS).save(out, quality=80, method=6)
+    return (f'<img src="/img/{name}-720.webp" srcset="/img/{name}-720.webp 720w, /img/{name}-1440.webp 1440w" '
+            f'sizes="(min-width: 760px) 720px, 100vw" width="1440" height="810" alt="" fetchpriority="high">')
+
+def banner(h1_html, name):
+    """Page header: the h1 over a neon illustration (dark left side, art on the right)."""
+    return f'<div class="banner">{banner_img(name)}<h1>{h1_html}</h1></div>'
+
+def hero_media():
+    """Homepage hero: assets/intro/sting.mp4 -> /img/hero.mp4 (silent, 960x540) + /img/hero-poster.webp (first frame)."""
+    import shutil, subprocess
+    sting = os.path.join(STUDIO, "assets/intro/sting.mp4"); os.makedirs(os.path.join(SITE, "img"), exist_ok=True)
+    mp4, poster = os.path.join(SITE, "img", "hero.mp4"), os.path.join(SITE, "img", "hero-poster.webp")
+    if not os.path.exists(sting) or not shutil.which("ffmpeg"): return
+    if os.path.exists(mp4) and os.path.getmtime(mp4) >= os.path.getmtime(sting): return
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", sting, "-an", "-vf", "scale=960:540", "-c:v", "libx264", "-crf", "27",
+                    "-preset", "slow", "-pix_fmt", "yuv420p", "-movflags", "+faststart", mp4], check=True)
+    tmp = os.path.join(SITE, "img", "_poster.png")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", sting, "-frames:v", "1", "-vf", "scale=1280:720", tmp], check=True)
+    Image.open(tmp).convert("RGB").save(poster, quality=80, method=6); os.remove(tmp)
+hero_media()
+banner_img("deals-gear")  # used by the hand-written gear/ page
 
 def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
     url = f"{DOMAIN}/{path}" if path else DOMAIN + "/"
@@ -576,20 +617,20 @@ for g in _JSON:
 
 GUIDES_ES.sort(key=lambda g: g[3], reverse=True)
 page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en español: trucos, hora de lanzamiento, espacio y PC. Sin spoilers.",
-     '<h1>Guías de GTA 6 <span>en español</span></h1><p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="https://www.youtube.com/@vicereplaytv-q8s">Nuestros videos tienen subtítulos en español.</a></p><div class="cards">'
-     + "".join(f'<a class="card" href="/es/guias/{s}/"><b>{html.escape(t)}</b><small>{html.escape(d)}</small></a>' for s, t, d, _ in GUIDES_ES) + '</div>', lang="es")
+     banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="https://www.youtube.com/@vicereplaytv-q8s">Nuestros videos tienen subtítulos en español.</a></p><div class="cards">'
+     + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>', lang="es")
 
 # guides index
 GUIDES.sort(key=lambda g: (g[0] != "gta-6-launch-live", g[3]), reverse=False)
 GUIDES[1:] = sorted(GUIDES[1:], key=lambda g: g[3], reverse=True)
 card("default", "GTA'S WILDEST MOMENTS.", "ON REPLAY.", "vice-city-11.jpg")
-cards = "".join(f'<a class="card" href="/guides/{s}/"><b>{html.escape(t)}</b><small>{html.escape(d)}</small></a>' for s, t, d, _ in GUIDES)
+cards = "".join(f'<a class="card pic" href="/guides/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES)
 page("guides/", "GTA 6 Guides · Vice Replay", "GTA 6 guides from Vice Replay: unlock times, download size, storage, the map and launch tips.",
-     f'<h1>GTA 6 <span>guides</span></h1><p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers. <a href="/es/">En español</a></p><div class="cards">{cards}</div>')
+     banner('GTA&nbsp;6 <span>guides</span>', 'news-skyline') + f'<p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers. <a href="/es/">En español</a></p><div class="cards">{cards}</div>')
 
 # links page
 latest = GUIDES[0]
-page("links/", "Vice Replay Links", "Every Vice Replay link: GTA 6 Black Friday deals, storage fixes, gear, YouTube, TikTok and Instagram.", f"""<h1>Vice Replay <span>links</span></h1>
+page("links/", "Vice Replay Links", "Every Vice Replay link: GTA 6 Black Friday deals, storage fixes, gear, YouTube, TikTok and Instagram.", f"""{banner('Vice Replay <span>links</span>', 'night-streets')}
 <p class="lede">GTA's wildest moments. On replay.</p>
 {deals_html()}
 <div class="btns">
