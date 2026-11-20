@@ -5,6 +5,32 @@ SITE = os.environ.get("VICEREPLAY_SITE") or os.path.join(os.path.dirname(os.path
 DOMAIN = "https://vicereplay.com"
 TAG = "vicereplay-20"
 YT = "https://www.youtube.com/@vicereplaytv-q8s"
+import re as _re
+# Deals shown as direct Amazon buttons on the links page (bio link) and the homepage. Update prices here when they
+# change (checked Nov 20, 2026: Kotaku/Gizmodo DualSense $54; TechRadar/Shattered Pulse Elite ~$110).
+DEALS_CHECKED = "Nov 20"
+DEALS = [("🎮 PS5 DualSense controller: $54", "usually $74 · the best GTA 6 deal this week", "PS5 DualSense wireless controller"),
+         ("🎧 PlayStation Pulse Elite headset: ~$110", "usually $150", "PlayStation Pulse Elite wireless headset"),
+         ("💾 2 TB PS5 SSD with heatsink", "GTA 6 is 212 GB: the upgrade that fits", "PS5 compatible 2TB NVMe SSD with heatsink"),
+         ("🌴 GTA 6 for PS5", "full price at US stores right now", "https://www.amazon.com/dp/B0H6K928WL"),
+         ("📦 Free 30-day Amazon Prime trial", "fast delivery on all of the above", "https://www.amazon.com/tryprimefree")]
+
+
+def deals_html(heading="🔥 Black Friday deals on Amazon"):
+    items = "".join(f'<a class="item" href="{amz(q)}" target="_blank" rel="sponsored noopener">{html.escape(t)}<small>{html.escape(sub)}</small><span aria-hidden="true">→</span></a>' for t, sub, q in DEALS)
+    return (f'<div class="box"><h3>{heading}</h3><div class="btns">{items}</div><p class="sources" style="margin:10px 0 0">'
+            f'Prices checked {DEALS_CHECKED} and they change fast. Affiliate links: as an Amazon Associate we earn from qualifying '
+            f'purchases, at no extra cost to you. <a href="/guides/gta-6-black-friday/">All GTA 6 Black Friday deals</a></p></div>')
+
+
+def tag_amazon(doc):
+    """Safety net: every amazon.com link on every page carries our Associates tag (Prime trial links too: they pay a bounty)."""
+    def fix(m):
+        u = m.group(1)
+        return m.group(0) if "tag=" in u else f'href="{u}{"&" if "?" in u else "?"}tag={TAG}"'
+    return _re.sub(r'href="(https://www\.amazon\.com/[^"]*)"', fix, doc)
+
+
 def amz(q): return f"{q}?tag={TAG}" if q.startswith("http") else f"https://www.amazon.com/s?k={q.replace(' ','+')}&tag={TAG}"
 
 CSS = """:root{--bg:#0d0717;--panel:#170d26;--panel-2:#21123a;--line:#3a2357;--fg:#f4eefc;--muted:#b7a9cf;--pink:#ff1f8e;--cyan:#00e5d2;
@@ -118,7 +144,7 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
 """
     d = os.path.join(SITE, path)
     os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, "index.html"), "w").write(doc)
+    open(os.path.join(d, "index.html"), "w").write(tag_amazon(doc))
 
 def video(vid, title):
     return f'<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{vid}" title="{html.escape(title)}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>'
@@ -557,6 +583,7 @@ page("guides/", "GTA 6 Guides · Vice Replay", "GTA 6 guides from Vice Replay: u
 latest = GUIDES[0]
 page("links/", "Vice Replay Links", "Every Vice Replay link: GTA 6 Black Friday deals, storage fixes, gear, YouTube, TikTok and Instagram.", f"""<h1>Vice Replay <span>links</span></h1>
 <p class="lede">GTA's wildest moments. On replay.</p>
+{deals_html()}
 <div class="btns">
 <a class="item" href="/guides/gta-6-black-friday/">🔥 GTA 6 Black Friday deals<small>What's worth buying for GTA 6 this week</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/gta-6-storage/">💾 GTA 6 says "not enough space"?<small>Free fixes + the PS5 SSD that fits (212 GB)</small><span aria-hidden="true">→</span></a>
