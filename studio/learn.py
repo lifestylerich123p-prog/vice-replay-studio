@@ -226,6 +226,9 @@ def main():
         except SystemExit as e:
             print(f"Comments skipped: {e}")
         analytics({v["id"]: v["title"] for v in snap["videos"]})
+        from . import scorecard  # fair 24 h numbers + what-works groups -> content/learn/scorecard.md
+        scorecard.append_history(snap)
+        scorecard.build()
     if a.market or both:
         market()
 

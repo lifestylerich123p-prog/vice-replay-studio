@@ -41,3 +41,11 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   draws even ←↑→↓; Anton/Montserrat arrows are uneven.
 - 2026-11-19: Black Friday: Amazon's Black Friday Week runs Nov 19-30. GTA 6 and its controller aren't discounted;
   the regular DualSense ($54) is the deal that sends clicks. Lead with "the catch", link the live deals page.
+- 2026-11-19 (night): Clipping math. Lacy is a POOL ($12,500 split by approved views; 750K-1M approved views needed
+  to share). Our 7 Lacy clips have ~10K views total, while 226 Lacy Shorts went up in 9 hours on Day 2 and 67
+  clippers had 18.9M views by Nov 18 (Reach). Pools are a long shot for a small channel; per-view campaigns
+  (KreekCraft $1/1K, $3 min; Tomo $1.50/1K) pay from the first few thousand views. Vendor data: clippers average
+  ~$0.39 per 1K views after fees. Use `studio.moments` before every clip; skip TAKEN moments.
+- 2026-11-19 (night): First scorecard (studio.scorecard): campaign clips median 41.8 v/h vs 5.6 for our own Shorts;
+  16-30 s Shorts win, 60+ s Shorts are dead (0.2 v/h); morning posts beat afternoon (launch-week data, so re-check
+  as the 24 h numbers fill in). Instagram: accounts whose posts are mostly reposts lose recommendations.

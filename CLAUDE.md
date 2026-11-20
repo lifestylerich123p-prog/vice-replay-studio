@@ -7,7 +7,7 @@ Owner runs 3 channels with separate jobs (`content/channels.md`, shared copy in 
 GTA 6 + ALL GTA 6 clipping; ClipCircuit (@ClipCircuit-m5f) = every non-GTA clipping campaign; What If Arena = AI videos.
 
 ## How a video gets made
-1. **Research** with web search: check `content/learn/lessons.md`, `content/performance.md` and the latest
+1. **Research** with web search: check `content/learn/scorecard.md`, `ideas.md`, `lessons.md`, `content/performance.md` and the latest
    `content/learn/market-*.md` first and lean toward what works. Use only facts from today/recent days, keep source
    URLs for `sources`, and label rumors/leaks ("reportedly", "according to leaks").
 2. **Write** `episodes/<slug>.json` exactly as `content/episode-format.md` says (read it first: segments, hook in the

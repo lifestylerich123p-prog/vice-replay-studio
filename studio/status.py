@@ -53,6 +53,15 @@ def main():
             pub = dt.datetime.fromisoformat(sn["publishedAt"].replace("Z", "+00:00")).astimezone(ET)
             if now - pub < dt.timedelta(hours=24) and vid not in clip_ids:
                 recent.append((int(x["statistics"].get("viewCount", 0)), sn["title"]))
+    try:  # extra snapshot for the scorecard's fair "first 24 h views" (studio.scorecard)
+        from .scorecard import HIST
+        pub_views = {vid: int(x["statistics"].get("viewCount", 0)) for vid, x in vids.items()
+                     if x["status"].get("privacyStatus") == "public"}
+        with HIST.open("a") as f:
+            f.write(json.dumps({"t": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
+                                "views": pub_views}, separators=(",", ":")) + "\n")
+    except OSError:
+        pass
     L.append("## YouTube")
     L += [f"- ⏰ {t:%a %-I:%M %p}: {title[:60]}" for t, title in sorted(sched)] or ["- nothing scheduled"]
     L += [f"- {v:,} views: {title[:60]}" for v, title in sorted(recent, reverse=True)[:6]]

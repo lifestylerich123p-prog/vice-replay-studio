@@ -21,6 +21,7 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    which hooks/lengths/topics keep viewers, and write hooks like the best ones), (YouTube Data API; if it fails because there is no API key,
    say so in the report and continue). Then read `content/learn/channel.json` (our uploads with views/hour),
    today's `content/learn/market-<date>.md` (the hottest GTA 6 videos and Shorts on YouTube right now),
+   `content/learn/scorecard.md` (fair first-24 h numbers per hook/length/slot/kind + DO MORE / DO LESS: follow it),
    `content/learn/patterns.md`, `content/learn/lessons.md`, and if present `content/learn/analytics.json`
    (private numbers: % of each video watched, seconds watched, subscribers gained, where views come from;
    these beat view counts for judging hooks and length) and `content/learn/comments.json`. Write 1-3 new dated lessons to `lessons.md`:
@@ -33,7 +34,8 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    the 5-7 biggest confirmed stories of the past 7 days (use `content/log.md`, our Shorts and fresh searches), one segment
    each, with our take; the Short is the week's single biggest moment. (A plan row for that Sunday overrides this.)
    Otherwise: Today's date is in your context. Read `content/launch-plan.md` and use today's row.
-   If there is no row for today, search the web for what GTA 6 players are searching for and talking about
+   If there is no row for today, take the best unused idea from `content/learn/ideas.md` (re-check its facts; mark it
+   USED), or search the web for what GTA 6 players are searching for and talking about
    right now and pick the strongest topic. Check `content/log.md` and `episodes/` so you never repeat a
    topic that was already made. If a market winner shows a GTA 6 story or angle people are hungry for that we
    haven't covered, prefer it (with our own research and angle).

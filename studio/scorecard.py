@@ -1,0 +1,139 @@
+"""Scorecard: turn raw YouTube numbers into "what works for US" (run automatically at the end of studio.learn).
+
+    python -m studio.scorecard        # rebuild from content/learn/channel.json (+ analytics.json, history.jsonl)
+
+Why: "views per hour since posting" flatters brand-new videos. Every learn run appends a snapshot to
+content/learn/history.jsonl, so each upload gets a fair "views in its first 24 h" number. Each Short is tagged by
+what we control (our own vs campaign clip, hook style, length, posting slot), and groups are compared by median.
+Writes content/learn/scorecard.md (the daily run reads it before picking a topic): group table, best/worst
+uploads, and auto "do more / do less" lines (only for groups with 3+ uploads, so one fluke doesn't steer us).
+"""
+import datetime as dt
+import json
+import re
+import statistics
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+ROOT = Path(__file__).resolve().parent.parent
+LEARN = ROOT / "content" / "learn"
+HIST = LEARN / "history.jsonl"
+ET = ZoneInfo("America/New_York")
+
+
+def ts(s):
+    return dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
+
+
+def append_history(snap):
+    line = {"t": snap["checked"], "views": {v["id"]: v["views"] for v in snap["videos"]}}
+    with HIST.open("a") as f:
+        f.write(json.dumps(line, separators=(",", ":")) + "\n")
+
+
+def load_history():
+    if not HIST.exists():
+        return []
+    out = []
+    for line in HIST.read_text().splitlines():
+        try:
+            h = json.loads(line)
+            out.append((ts(h["t"]), h["views"]))
+        except (ValueError, KeyError):
+            continue
+    return sorted(out, key=lambda x: x[0])
+
+
+def views_at(hist, vid, published, hours=24, slack=13):
+    """Views at `hours` after publishing, interpolated between the two snapshots around it (None if no data)."""
+    target = published + dt.timedelta(hours=hours)
+    pts = [(t, v[vid]) for t, v in hist if vid in v]
+    before = [p for p in pts if p[0] <= target]
+    after = [p for p in pts if p[0] >= target]
+    if before and after:
+        (t0, v0), (t1, v1) = before[-1], after[0]
+        if t1 == t0:
+            return v0
+        if (t1 - t0) > dt.timedelta(hours=2 * slack):
+            return None
+        return round(v0 + (v1 - v0) * (target - t0) / (t1 - t0))
+    if after and after[0][0] - target <= dt.timedelta(hours=slack):  # first check came a little late: close enough
+        return after[0][1]
+    return None
+
+
+def tags(v):
+    t = v["title"]
+    base = re.sub(r"#\w+|\bGTA\s?(6|VI)\b|\bGTA6\b", "", t, flags=re.I)  # "GTA 6" is in every title
+    out = {"kind": "campaign clip" if re.search(r"\blacy\b|kreek", t, re.I) else "own Short"}
+    if re.search(r"catch", base, re.I):
+        hook = "catch"
+    elif re.search(r"\d|\$", base):
+        hook = "number"
+    elif "?" in base:
+        hook = "question"
+    else:
+        hook = "statement"
+    out["hook"] = hook
+    s = v.get("seconds") or 0
+    out["length"] = "<=15 s" if s <= 15 else "16-30 s" if s <= 30 else "31-60 s" if s <= 60 else "60+ s"
+    h = ts(v["published"]).astimezone(ET).hour
+    out["slot (ET)"] = "morning <12" if h < 12 else "afternoon 12-17" if h < 17 else "evening 17-21" if h < 21 else "late 21+"
+    return out
+
+
+def med(xs):
+    xs = [x for x in xs if x is not None]
+    return round(statistics.median(xs), 1) if xs else None
+
+
+def build():
+    snap = json.loads((LEARN / "channel.json").read_text())
+    ana = {}
+    if (LEARN / "analytics.json").exists():
+        ana = {r["video"]: r for r in json.loads((LEARN / "analytics.json").read_text()).get("videos", [])}
+    hist = load_history()
+    now = ts(snap["checked"])
+    rows = []
+    for v in snap["videos"]:
+        if v["type"] != "Short":
+            continue
+        pub = ts(v["published"])
+        age = (now - pub).total_seconds() / 3600
+        r = {**v, **tags(v), "age_h": round(age, 1),
+             "v24": views_at(hist, v["id"], pub) if age >= 24 else None,
+             "pct": ana.get(v["id"], {}).get("averageViewPercentage")}
+        rows.append(r)
+    lines = [f"# Scorecard (auto, {snap['checked'][:16]} UTC): what works for Vice Replay", "",
+             "Fair numbers: **24 h views** = views in each Short's first 24 hours (from history snapshots; empty until a",
+             "Short has been tracked across its first day). **v/h** = lifetime views per hour. **watched** = average %",
+             "of the Short watched (YouTube Analytics, a few days behind). Medians per group; n = number of Shorts.", ""]
+    overall = med([r["views_per_hour"] for r in rows])
+    advice = []
+    for key in ("kind", "hook", "length", "slot (ET)"):
+        groups = {}
+        for r in rows:
+            groups.setdefault(r[key], []).append(r)
+        lines += [f"## By {key}", "", "| Group | n | median v/h | median 24 h views | median watched |", "|---|---|---|---|---|"]
+        for g, rs in sorted(groups.items(), key=lambda kv: -(med([r["views_per_hour"] for r in kv[1]]) or 0)):
+            m = med([r["views_per_hour"] for r in rs])
+            lines.append(f"| {g} | {len(rs)} | {m} | {med([r['v24'] for r in rs]) or '-'} | "
+                         f"{(str(med([r['pct'] for r in rs])) + '%') if med([r['pct'] for r in rs]) else '-'} |")
+            if len(rs) >= 3 and overall and m is not None:
+                if m >= 1.5 * overall:
+                    advice.append(f"DO MORE: {key} = {g} (median {m} v/h vs {overall} overall, n={len(rs)})")
+                elif m <= 0.5 * overall:
+                    advice.append(f"DO LESS: {key} = {g} (median {m} v/h vs {overall} overall, n={len(rs)})")
+        lines.append("")
+    best = sorted(rows, key=lambda r: -r["views_per_hour"])
+    fmt = lambda r: (f"- {r['views_per_hour']} v/h, {r['views']:,} views, 24 h: {r['v24'] if r['v24'] is not None else '-'}"
+                     f" · {r['kind']}, {r['hook']}, {r['length']} · {r['title'][:70]}")
+    lines += ["## Best 5", ""] + [fmt(r) for r in best[:5]] + ["", "## Worst 5 (older than 24 h)", ""]
+    lines += [fmt(r) for r in [r for r in best if r["age_h"] >= 24][-5:]] + [""]
+    lines += ["## Auto advice", ""] + ([f"- {a}" for a in advice] or ["- Not enough Shorts per group yet."]) + [""]
+    (LEARN / "scorecard.md").write_text("\n".join(lines))
+    print("Scorecard: content/learn/scorecard.md" + ("".join(f"\n  {a}" for a in advice)))
+
+
+if __name__ == "__main__":
+    build()
