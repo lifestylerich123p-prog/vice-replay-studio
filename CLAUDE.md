@@ -3,6 +3,8 @@
 Video machine for the YouTube channel **Vice Replay** (@ViceReplayTV-q8s), a GTA 6 fan channel, and builder of
 vicereplay.com. Tagline: "GTA's wildest moments. On replay." Brand: neon synthwave, hot pink #FF1F8E + cyan #00E5D2
 on deep purple/black, Anton headlines. Start every run with `content/INDEX.md` (map of everything) instead of searching.
+Owner runs 3 channels with separate jobs (`content/channels.md`, shared copy in Drive "Creator HQ"): Vice Replay =
+GTA 6 + ALL GTA 6 clipping; ClipCircuit (@ClipCircuit-m5f) = every non-GTA clipping campaign; What If Arena = AI videos.
 
 ## How a video gets made
 1. **Research** with web search: check `content/learn/lessons.md`, `content/performance.md` and the latest
@@ -56,10 +58,10 @@ Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in 
   chat (`/publish-site`); scheduled runs can't push, they hand files over with fire_trigger.
 - **Instagram** (@vice.replaytv, owner approved Nov 19): every uploaded Short, campaign clips (two per slot) and
   about one carousel a day go out through `content/learn/reels_queue.json`; how: `.claude/commands/instagram.md`.
-- **TikTok**: the owner posts by hand; Shorts go to the "📱 Vice Replay TikTok" chat (see owner.md;
+- **TikTok**: the owner posts by hand; Shorts go to the "📱 Vice Replay: TikTok files" chat (see owner.md;
   `studio.ship --tiktok` pushes them to the `tiktok-files` branch).
 - **Campaigns** (Whop/Content Rewards): only campaigns with `owner_approved: true` (set only when the owner approves
-  in chat), only GTA 6, only footage from where the campaign says, every rule in `content/campaigns/<name>.json`
+  in chat), only GTA 6 (any other campaign goes to ClipCircuit: add it to the Campaign inbox in content/channels.md), only footage from where the campaign says, every rule in `content/campaigns/<name>.json`
   (length, credit, hashtags, platforms), original audio, no Vice Replay music, `max_clips_per_day`. Tools:
   `studio/clip.py` (free) or Everygen (paid; spend credits only after a cost estimate and the owner's yes). Every
   delivery says: submit each clip within 30 minutes of posting. When the owner says they posted one, schedule a

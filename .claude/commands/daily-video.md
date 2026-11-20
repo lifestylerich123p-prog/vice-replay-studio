@@ -84,7 +84,7 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    scheduled chat can't upload, the owner approves in the main chat ("🎬 Vice Replay Studio (main control)"), which
    re-renders from the episode file and uploads. Say that in the final message: "Reply approve in the main chat". If
    fire_trigger isn't available or fails, say the website update is waiting and attach the JSON files with SendUserFile.
-3d. **TikTok chat**: `send_message` session `session_01CJRsWQ4prmRGdfaEyZXz7q` ("📱 Vice Replay TikTok") with, for every Short
+3d. **TikTok chat**: `send_message` session `session_01CJRsWQ4prmRGdfaEyZXz7q` ("📱 Vice Replay: TikTok files") with, for every Short
    (English and Spanish): its TikTok caption + hashtags and a posting time (after the YouTube version), and say the
    files are in today's daily-run chat. Treat it as a hand-off; don't wait for a reply.
 3c. **Spanish voice Shorts** are made by studio.ship (files end in `-es.mp4`). Send them with SendUserFile too, labeled

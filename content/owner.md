@@ -19,7 +19,7 @@
   Spanish guides under /es/guias/ (ALT dict pairs EN<->ES). Each guide gets a share image in /og/ (CARDS) and FAQ (FAQS).
   New guide = add a guide() call in tools/site_guides.py, run it, push vicereplay-site. Scheduled runs can't push: do it in chat. . Use this link in banners, bios and replies; it's listed in Amazon Associates.
 
-- TikTok chat: "📱 Vice Replay TikTok" (session_01CJRsWQ4prmRGdfaEyZXz7q). The owner wants every TikTok video sent there with its
+- TikTok chat: "📱 Vice Replay: TikTok files" (session_01CJRsWQ4prmRGdfaEyZXz7q). The owner wants every TikTok video sent there with its
   caption and posting time. From the main control session: push the .mp4s to a temporary branch `tiktok-files` (folder v/)
   and send_message that session to fetch them and SendUserFile them. Daily runs can't push: they send_message the captions,
   times and the name of the run's chat where the files are.
@@ -49,7 +49,7 @@
 - Dashboard: https://claude.ai/artifact/UZSJWSBJbXBByZvWcxrxiF (refresh with /dashboard in the main chat after uploads).
 
 - Instagram: @vice.replaytv (https://www.instagram.com/vice.replaytv/), professional Creator account created Nov 18.
-  Reels auto-posting not connected yet (content/instagram-setup.md); until then the owner reposts Shorts by hand.
+  Reels auto-posting not connected yet (content/archive/instagram-setup-2026-11-19.md); until then the owner reposts Shorts by hand.
 - 2026-11-18 11:55 PM ET: owner extended it: "Just continue to monitor thru the night post if needed without my
   approval." Overnight checks at 12:10 (comment), 1:15, 2:45, 4:45 and 6:45 AM; each may post one strong, confirmed
   (2+ reputable sources), uncovered story as a Short. Ends 9:00 AM ET Nov 19.

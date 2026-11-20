@@ -5,7 +5,7 @@
     python -m studio.instagram_upload --episode episodes/<slug>.json [--item news]     # post an episode's Short
     python -m studio.instagram_upload --queue        # post the next due Reel of content/learn/reels_queue.json
 
-Setup (once, owner): see content/instagram-setup.md. Needs:
+Setup (once, owner): see content/archive/instagram-setup-2026-11-19.md. Needs:
 - env var IG_USER_ID (the Instagram account's numeric id; not secret),
 - a System User access token (Meta app > Instagram > API setup with unified login) saved as a network secret for
   graph.facebook.com (Authorization: Bearer) via request_credential, so it never appears in files or chat.
@@ -176,7 +176,7 @@ def main():
             print("Set IG_USER_ID to the Instagram id above.")
         return
     if not uid:
-        sys.exit("IG_USER_ID is not set: Instagram isn't connected yet (content/instagram-setup.md).")
+        sys.exit("IG_USER_ID is not set: Instagram isn't connected yet (content/archive/instagram-setup-2026-11-19.md).")
     if a.queue:
         return run_queue(uid)
     if a.carousel:

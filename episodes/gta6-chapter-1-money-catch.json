@@ -1,0 +1,44 @@
+{
+  "title": "Don't Grind Money in GTA 6 Chapter 1 (The Catch)",
+  "slug": "gta6-chapter-1-money-catch",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "short_title": "Don't grind money in GTA 6 Chapter 1 (here's the catch) #GTA6 #Shorts",
+  "short_title_options": ["Don't grind money in GTA 6 Chapter 1 (here's the catch) #GTA6 #Shorts", "GTA 6 money tip: Chapter 1 cash doesn't carry over #GTA6 #Shorts"],
+  "short_description": "GTA 6 money tip: according to money guides from PowerPyx, GTAboom and others, the cash you farm in Chapter 1 doesn't carry into Chapter 2, so don't grind early. Play the story instead: in Chapter 2 you can sell stolen cars (cars without trackers, about $1,000+ each per guides), and the big money is bank vaults near the end of Chapter 4 (guides list up to $205,000 per vault). Payout numbers vary between guides. No story spoilers. More GTA 6 guides: vicereplay.com",
+  "short_es": {
+    "title": "No farmees dinero en el Capítulo 1 de GTA 6 (la trampa) #GTA6 #Shorts",
+    "description": "Consejo de dinero en GTA 6: según guías como PowerPyx y GTAboom, el dinero que juntas en el Capítulo 1 no pasa al Capítulo 2. Sigue la historia: en el Capítulo 2 puedes vender coches robados (sin rastreador, unos 1.000 $ o más según las guías) y el gran dinero llega con las cámaras acorazadas al final del Capítulo 4 (hasta 205.000 $ según las guías)."
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "How much cash did you have when Chapter 1 ended? Reply with your number 👇",
+  "tiktok_hashtags": ["#gta6", "#gta6tips", "#gtavi", "#gaming", "#ps5"],
+  "sources": [
+    "PowerPyx - GTA 6 Money Guide: https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "GTAboom - How to Make Money Fast and Early in GTA 6: https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "Forbes - The best ways to earn money in GTA 6: https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
+    "T-Minus Countdown - GTA 6 Get Rich: The Chapter 1 Trap: https://www.t-minuscountdown.com/gta-6-get-rich/"
+  ],
+  "short": [
+    {"headline": "DON'T GRIND CHAPTER 1", "headline_es": "NO FARMEES EN EL CAP. 1",
+     "text": "Stop grinding money in GTA 6 Chapter 1. You're going to lose it.",
+     "text_es": "Deja de farmear dinero en el Capítulo 1 de GTA 6. Lo vas a perder.",
+     "media": "../media/official/jason-and-lucia-05.jpg"},
+    {"headline": "IT DOESN'T CARRY OVER", "headline_es": "NO PASA AL CAP. 2",
+     "text": "Money guides agree: the cash you farm in Chapter 1 doesn't carry into Chapter 2.",
+     "text_es": "Las guías coinciden: el dinero que juntas en el Capítulo 1 no pasa al Capítulo 2.",
+     "media": "../media/official/lucia-caminos-02.jpg"},
+    {"headline": "CHAPTER 2: SELL CARS", "headline_es": "CAP. 2: VENDE COCHES",
+     "text": "So play the story. In Chapter 2 you can sell stolen cars without trackers, about a thousand dollars and up each.",
+     "text_es": "Así que sigue la historia. En el Capítulo 2 puedes vender coches robados sin rastreador, unos mil dólares o más cada uno.",
+     "media": "../media/official/port-gellhorn-01.jpg"},
+    {"headline": "BANK VAULTS: UP TO $205K", "headline_es": "CÁMARAS: HASTA 205.000 $",
+     "text": "The big money is bank vaults near the end of Chapter 4. Guides list up to two hundred five thousand per vault.",
+     "text_es": "El gran dinero son las cámaras acorazadas al final del Capítulo 4. Las guías hablan de hasta doscientos cinco mil por cámara.",
+     "media": "../media/official/vice-city-10.jpg"},
+    {"headline": "SAVE THIS", "headline_es": "GUARDA ESTO",
+     "text": "Save this, and tell me how much you lost below, because",
+     "text_es": "Guarda esto y dime abajo cuánto perdiste, porque",
+     "media": "../media/official/jason-duval-07.jpg"}
+  ]
+}

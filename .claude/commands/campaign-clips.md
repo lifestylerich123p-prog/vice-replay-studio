@@ -3,6 +3,8 @@ description: Make clips for a paid clipping campaign (Whop / Content Rewards etc
 argument-hint: <campaign short-name> [source video link or file]
 ---
 Make clips for the campaign `$ARGUMENTS` following CLAUDE.md and `content/campaigns/README.md`.
+GTA 6 campaigns only. A non-GTA campaign belongs to ClipCircuit (`content/channels.md`): add it to its Campaign inbox,
+tell the owner, and stop. Max 2 campaign clips a day on Vice Replay YouTube, fresh moments only.
 Two editing engines: **local** (free: `studio/clip.py`) and **everygen** (better edits, but uses the owner's paid
 Everygen credits; the ClipCircuit method from the owner's other channel). The campaign file's `"engine"` picks one;
 default `local`.

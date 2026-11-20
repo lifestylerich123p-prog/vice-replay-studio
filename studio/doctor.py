@@ -108,7 +108,7 @@ def main():
                     warn.append(f"{len(late)} Reels are overdue in reels_queue.json: run studio.instagram_upload --queue")
     except SystemExit as e:
         bad.append(f"Instagram connection FAILED: {str(e)[:160]} (token for graph.facebook.com in the environment's "
-                   "network secrets; see content/instagram-setup.md)")
+                   "network secrets; see content/archive/instagram-setup-2026-11-19.md)")
 
     # 3. Website
     for path in ("", "gear/", "guides/", "guides/gta-6-launch-live/", "sitemap.xml"):
