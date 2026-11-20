@@ -1,4 +1,4 @@
-# Vice Replay status (Thu Nov 19, 7:32 PM ET, `python -m studio.status`)
+# Vice Replay status (Thu Nov 19, 8:16 PM ET, `python -m studio.status`)
 
 ## Health
 Last check (2026-11-19 15:27 UTC, `python -m studio.doctor`)
@@ -39,7 +39,7 @@ Last check (2026-11-19 15:27 UTC, `python -m studio.doctor`)
 - $12,500 LACY GTA VI Marathon Pool Campaign (Reach): joined (owner screenshot in chat, Nov 19 7:09 AM)
 - Tomo GTA VI Clipping (Clipping Nation): paused (Nov 19: owner agreed to skip; $235 of $1,000 left with 36 clip
   - 1,691 views: LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Sho
-  - 6,935 views: LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts
+  - 7,148 views: LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts
   - 1,003 views: LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #G
   - 5 views: LACY vs a GTA 6 shark 🦈😳 #LACY #GTA6 #shortsyoutube
   - 2 views: LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #S
