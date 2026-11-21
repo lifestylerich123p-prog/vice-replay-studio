@@ -20,11 +20,12 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| ? | gta6-ultimate-edition-shops | Short | GTA 6 Locks 5 Shops Behind the $100 Edition | - |
 | ? | gta6-ranking-rides | Short | Ranking the 6 Rides in Rockstar's GTA 6 Gameplay | short: QzFhpT4dNVQ |
 | ? | gta6-race-hud-details | Short | GTA 6 Races: Look at the Corner of the Screen | short: sP1fq11WMmw |
 | ? | gta6-has-anyone-finished | Short | Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch) | short: WsJ96ZkU2do |
 | ? | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | - |
-| 2026-11-21 | gta6-how-long-to-beat | video | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | - |
+| 2026-11-21 | gta6-how-long-to-beat | video | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | short: bVoHzywwvgc |
 | 2026-11-20 | gta6-video-store-closing | Short | GTA 6 Has a Video Game Store, and It's Closing | short: Rt18FhG-DYk |
 | 2026-11-20 | gta6-took-away-gta5 | Short | GTA 6 Took Away 4 Things GTA 5 Gave You | short: uvWNXugdvSo |
 | 2026-11-20 | gta6-ishowspeed-watkins | Short | IShowSpeed Teared Up Over His Family's Name in GTA 6 | short: uCNHbnOqgs0 |
@@ -118,6 +119,7 @@ Read this first instead of searching the repo.
 | 2026-11-18 | /guides/gta-6-map-size/ | How Big Is the GTA 6 Map? Leonida vs GTA 5 and Red Dead 2 |
 | 2026-11-18 | /guides/gta-6-physical-edition/ | GTA 6 Physical Edition: No Disc in the Box? What You're Actually Buying |
 | 2026-11-19 | /guides/gta-6-ps5-pro-worth-it/ | Is PS5 Pro Worth It for GTA 6? 30 FPS, PSSR and What You Actually Get |
+| 2026-11-21 | /guides/gta-6-ultimate-edition/ | Is GTA 6 Ultimate Edition Worth It? The 5 Shops Only It Unlocks (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-vs-gta-5/ | GTA 6 vs GTA 5: The Biggest Differences Explained |
 | 2026-11-19 | /es/guias/mejor-ssd-gta-6/ | Mejor SSD para GTA 6 en PS5 (212 GB): qué comprar y qué evitar |
 | 2026-11-19 | /es/guias/ps5-pro-gta-6-vale-la-pena/ | ¿Vale la pena la PS5 Pro para GTA 6? 30 FPS, PSSR y lo que realmente cambia |
@@ -139,4 +141,4 @@ Read this first instead of searching the repo.
 | built-in | /es/guias/gta-6-lanzamiento-en-vivo/ | Lanzamiento de GTA 6: actualizaciones en vivo |
 
 ## Screenshot groups in media/official/
-ambrosia, boobie-ike, brian-heder, cal-hampton, car-electric-fang, car-grotti-cheetah, car-squalo, car-vapid-stanier, drequan-priest, grassrivers, jason-and-lucia, jason-duval, leonida-keys, leonida-map-poster, lucia-caminos, mount-kalaga, port-gellhorn, raul-bautista, real-dimez, vice-city, vintage-vice-city-pack, vintage-vice-city-pack-exclusive-looks, vintage-vice-city-pack-vapid-stanier, vintage-vice-city-weapon-pattern
+ambrosia, boobie-ike, brian-heder, cal-hampton, car-canis-one-eyed-willie, car-electric-fang, car-grotti-cheetah, car-squalo, car-vapid-buggy, car-vapid-ganado, car-vapid-stanier, drequan-priest, electric-fang-tattoo, goodtime-gear, grassrivers, jason-and-lucia, jason-and-lucia-ultimate, jason-duval, leonida-keys, leonida-map-poster, lucia-caminos, mount-kalaga, port-gellhorn, raul-bautista, real-dimez, rideout-customs, safehouse-vehicles, saras-salon, stock-305, vice-city, vice-city-style, vintage-vice-city-pack, vintage-vice-city-pack-exclusive-looks, vintage-vice-city-pack-vapid-stanier, vintage-vice-city-weapon-pattern, wyman-car-collection

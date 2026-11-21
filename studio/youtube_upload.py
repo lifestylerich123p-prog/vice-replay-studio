@@ -62,7 +62,15 @@ def req(method, url, tok, body=None, ctype="application/json", headers=None):
         sys.exit(f"YouTube error {e.code} on {method} {url.split('?')[0]}: {e.read().decode(errors='ignore')[:600]}")
 
 
+def yt_safe(text):
+    """YouTube rejects titles/descriptions containing < or > (400 invalidDescription, Nov 21: "Settings > Gameplay")."""
+    return (text or "").replace(">", "→").replace("<", "‹")
+
+
 def upload(tok, path, title, description, tags, publish_at=None, privacy="public", es=None):
+    title, description = yt_safe(title), yt_safe(description)
+    if es:
+        es = {k: yt_safe(v) if isinstance(v, str) else v for k, v in es.items()}
     status = {"selfDeclaredMadeForKids": False, "embeddable": True}
     if publish_at:
         status.update(privacyStatus="private", publishAt=publish_at)
