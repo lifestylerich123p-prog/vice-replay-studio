@@ -115,3 +115,6 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - 2026-11-21 (fact check): never trust one search summary for a number in a script. Eurogamer 65 h, IGN 115 h, Pure
   Xbox 42 h could not be confirmed and were cut; IShowSpeed's crash hour is reported as 40-43, so "around hour 43";
   quotes from streams are "reportedly". Most coverage of IShowSpeed's reaction to the ending spoils it: use times only.
+- 2026-11-21 (early slot check, 1:40 PM ET): IShowSpeed 52 h Short (9:30 AM) 208 views in ~4 h (~50 v/h); Black
+  Friday catch Short (11 AM) 69 in ~2.7 h; first GTA 5 vs 6 comparison (1:30 PM) 0 at 10 min. Re-check at 24 h
+  (scorecard "24 h views") before moving more slots; so far the morning slot is beating the last two days' afternoons.
