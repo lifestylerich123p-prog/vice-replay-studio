@@ -139,9 +139,19 @@ def post_replies(tok, ep, done, done_file):
 
 def spanish_srt(timings_file):
     """Spanish subtitles from the episode's per-segment Spanish text, timed to the narration."""
-    if not Path(timings_file).exists():
+    return srt_from_timings(timings_file, "text_es")
+
+
+def english_srt(timings_file):
+    """English subtitles from the exact narration script. YouTube's auto-captions mangle names (BrycexD, Squalo,
+    Leonida); captions are indexed for Shorts search, so our own track makes each Short findable by its real words."""
+    return srt_from_timings(timings_file, "text")
+
+
+def srt_from_timings(timings_file, key):
+    if not timings_file or not Path(timings_file).exists():
         return None
-    segs = [x for x in json.loads(Path(timings_file).read_text()) if x.get("text_es")]
+    segs = [x for x in json.loads(Path(timings_file).read_text()) if x.get(key)]
     if not segs:
         return None
 
@@ -150,7 +160,7 @@ def spanish_srt(timings_file):
         return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
     cues, n = [], 0
     for sg in segs:
-        words = sg["text_es"].split()
+        words = sg[key].split()
         k = max(1, -(-len(words) // 8))  # number of lines, then split the words evenly across them
         size = -(-len(words) // k)
         chunks = [" ".join(words[i:i + size]) for i in range(0, len(words), size)]
@@ -231,8 +241,27 @@ def main():
     ap.add_argument("--test", action="store_true", help="upload a 5-second private test video and report its status")
     ap.add_argument("--comment", nargs=2, metavar=("VIDEO_ID", "TEXT"), action="append",
                     help="post TEXT as a comment on VIDEO_ID (repeatable); use once the video is public")
+    ap.add_argument("--captions-backfill", action="store_true",
+                    help="add the English subtitle track to uploads in output/*/uploaded.json that don't have one yet")
     a = ap.parse_args()
     tok = token()
+
+    if a.captions_backfill:
+        for f in sorted((ROOT / "output").glob("*/uploaded.json")):
+            for key, rec in json.loads(f.read_text()).items():
+                if not isinstance(rec, dict) or not rec.get("id"):
+                    continue
+                slug = f.parent.name
+                name = f"{slug}" if key == "main" else f"{slug}-short" + ("" if key == "short" else f"-{key}")
+                en = english_srt(f.parent / f"{name}.timings.json")
+                if not en:
+                    continue
+                have, _ = req("GET", f"https://youtube.googleapis.com/youtube/v3/captions?part=snippet&videoId={rec['id']}", tok)
+                if any(c["snippet"].get("language") == "en" and c["snippet"].get("trackKind") != "asr" for c in have.get("items", [])):
+                    continue
+                upload_caption(tok, rec["id"], en, lang="en", name="English")
+                print(f"English subtitles added: {rec['id']} ({slug} {key})")
+        return
 
     if a.comment:
         for vid, text in a.comment:
@@ -324,8 +353,9 @@ def main():
                      "privacy_returned": v.get("status", {}).get("privacyStatus")}
         done_file.write_text(json.dumps(done, indent=2))
         register_upload(slug, key, vid, title)
-        srt = spanish_srt(timings)
+        srt, en_srt = spanish_srt(timings), english_srt(timings)
         steps = [("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb)),
+                 ("english_subtitles", lambda: en_srt and upload_caption(tok, vid, en_srt, lang="en", name="English")),
                  ("spanish_subtitles", lambda: srt and upload_caption(tok, vid, srt)),
                  ("playlist", lambda: add_to_playlist(tok, vid, playlist))]
         done[key]["spanish_title"] = "yes" if es and es.get("title") else "no (episode has no 'es')"
