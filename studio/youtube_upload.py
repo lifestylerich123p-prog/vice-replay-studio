@@ -35,13 +35,14 @@ ROOT = Path(__file__).resolve().parent.parent
 ET = ZoneInfo("America/New_York")
 
 
-def token():
-    need = ["YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"]
+def token(refresh_env="YT_REFRESH_TOKEN"):
+    """Access token for the channel whose refresh token is in `refresh_env` (YT_ES_REFRESH_TOKEN = the Spanish channel)."""
+    need = ["YT_CLIENT_ID", "YT_CLIENT_SECRET", refresh_env]
     missing = [k for k in need if not os.environ.get(k)]
     if missing:
         sys.exit("Missing " + ", ".join(missing) + ": add them in the environment's settings (see tools/youtube_auth.py).")
     data = urllib.parse.urlencode({"client_id": os.environ["YT_CLIENT_ID"], "client_secret": os.environ["YT_CLIENT_SECRET"],
-                                   "refresh_token": os.environ["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"}).encode()
+                                   "refresh_token": os.environ[refresh_env], "grant_type": "refresh_token"}).encode()
     try:
         with urllib.request.urlopen(urllib.request.Request("https://oauth2.googleapis.com/token", data=data), timeout=30) as r:
             return json.load(r)["access_token"]
@@ -78,7 +79,7 @@ def yt_safe(text):
     return (text or "").replace(">", "→").replace("<", "‹")
 
 
-def upload(tok, path, title, description, tags, publish_at=None, privacy="public", es=None):
+def upload(tok, path, title, description, tags, publish_at=None, privacy="public", es=None, lang="en"):
     title, description = yt_safe(title), yt_safe(description)
     if es:
         es = {k: yt_safe(v) if isinstance(v, str) else v for k, v in es.items()}
@@ -88,7 +89,7 @@ def upload(tok, path, title, description, tags, publish_at=None, privacy="public
     else:
         status["privacyStatus"] = privacy
     meta = {"snippet": {"title": title[:100], "description": description[:4900], "tags": tags[:30],
-                        "categoryId": "20", "defaultLanguage": "en", "defaultAudioLanguage": "en"},
+                        "categoryId": "20", "defaultLanguage": lang, "defaultAudioLanguage": lang},
             "status": status}
     parts = "snippet,status"
     if es and es.get("title"):

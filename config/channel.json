@@ -58,6 +58,26 @@
         "original-narrated"
       ],
       "note": "Separate project. The connected vidIQ account belongs to this channel: never use it for Vice Replay analytics."
+    },
+    "vice-replay-es": {
+      "name": "Vice Replay en Español",
+      "channel_id": "",
+      "handle": "",
+      "status": "not created yet (owner decision)",
+      "upload": "api",
+      "token_env": "YT_ES_REFRESH_TOKEN",
+      "branding": "vice-replay",
+      "accepts": [
+        "original-narrated",
+        "official-footage-commentary",
+        "news"
+      ],
+      "refuses": [
+        "campaign-clip",
+        "streamer-footage",
+        "ai-what-if"
+      ],
+      "note": "Spanish-voice versions of Vice Replay Shorts (rendered every day by studio.ship). Upload: python -m studio.youtube_es. channel_id is filled in after the owner creates the channel and `youtube_es whoami` shows it."
     }
   },
   "caption_style": "animated"

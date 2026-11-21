@@ -117,6 +117,13 @@
   Popular uploads, News & Guides), searchable playlist descriptions; title swaps run on 3 underperformers.
 - 2026-11-21 (5:50 PM ET): channel trailer for non-subscribers set to the how-long video rHaMTePDRUQ ("GTA 6 Is Almost
   Twice as Long as GTA 5 (No Spoilers)"); there was none before. Swap it for a better long video when one exists.
+- Spanish channel (ready to switch on, Nov 21): every Short already gets a Spanish-voice version (`<name>-es.mp4`)
+  that was never posted. To start "Vice Replay en Español": (1) YouTube -> your profile -> Settings -> Add or manage
+  channels -> Create a channel (name it "Vice Replay en Español"); (2) on the Mac run tools/youtube_auth.py and pick
+  the NEW channel on Google's screen; (3) save the printed refresh token as YT_ES_REFRESH_TOKEN in the environment
+  settings; (4) tell the main chat "Spanish channel connected": it runs `python -m studio.youtube_es whoami`, puts the
+  id in config/channel.json, then posts approved Shorts with `python -m studio.youtube_es episodes/<slug>.json
+  --approve short,news`. It refuses to post if the token belongs to the English channel.
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.
