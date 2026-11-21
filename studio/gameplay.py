@@ -53,16 +53,35 @@ def fetch(file_id, dest):
     return dest
 
 
+def list_folder(folder_id, rel="", depth=0):
+    """[(file id, relative path)] of a shared Drive folder and its subfolders, from Drive's public folder view.
+    (Nov 21, 2026: gdown's lister tried to export the Google Doc shot list in the drop zone through a blocked host
+    and crashed before reaching any video, so the drop zone could never be pulled.)"""
+    import html
+    import requests
+    r = requests.get(f"https://drive.google.com/embeddedfolderview?id={folder_id}", timeout=60)
+    r.raise_for_status()
+    out = []
+    for m in re.finditer(r'id="entry-([\w-]+)".*?href="([^"]+)".*?flip-entry-title">([^<]*)', r.text, re.S):
+        fid, href, title = m.group(1), m.group(2), html.unescape(m.group(3)).strip()
+        if "/folders/" in href:
+            if depth < 3:
+                out += list_folder(fid, f"{rel}{title}/", depth + 1)
+        elif "/file/d/" in href:  # real files; Google Docs/Sheets (docs.google.com links) are skipped
+            out.append((fid, f"{rel}{title}"))
+    return out
+
+
 def download(link):
-    import gdown
     RAW.mkdir(parents=True, exist_ok=True)
-    if "/folders/" in link:  # gdown only lists the folder; files come through fetch()
-        for f in gdown.download_folder(url=link, output=str(RAW), quiet=True, skip_download=True) or []:
-            if Path(f.local_path).suffix.lower() in VIDEO_EXT | {".png", ".jpg"}:
+    if "/folders/" in link:
+        folder = re.search(r"/folders/([\w-]+)", link).group(1)
+        for fid, rel in list_folder(folder):
+            if Path(rel).suffix.lower() in VIDEO_EXT | {".png", ".jpg"}:
                 try:
-                    fetch(f.id, f.local_path)
+                    fetch(fid, RAW / rel)
                 except Exception as e:  # one bad file shouldn't stop the rest
-                    print(f"  skipped {Path(f.local_path).name}: {e}")
+                    print(f"  skipped {rel}: {e}")
     else:
         m = re.search(r"/d/([\w-]+)|id=([\w-]+)", link)
         fid = next(g for g in m.groups() if g) if m else link
