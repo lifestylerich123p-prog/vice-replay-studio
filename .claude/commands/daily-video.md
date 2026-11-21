@@ -111,8 +111,9 @@ its "generic or repetitive" rule hits same-template channels. So, every day:
    **First run `python -m studio.status`**: any slot already shown with ⏰ today is TAKEN (the main chat may have
    scheduled a Short there); leave that Short out of `shorts` and don't upload into a taken slot. Its "Free slot"
    lines (from `python -m studio.quota`) list the open slots for 3 days and how many uploads today's YouTube quota
-   still fits: propose a time for every Short in a FREE slot (today first, then tomorrow morning: 9:30/10 AM Shorts do
-   ~30x the afternoon), so the owner's quota is used on new posts, not left empty. Also skip topics
+   still fits: propose DAYTIME free slots only (9:30/10 AM first, then 12:30 PM; evening slots only for big confirmed
+   news: since launch, posts after 7 PM got 0-30 views). More narrated Shorts in bad slots don't add views and make
+   the channel look mass-produced; owner gameplay or a real angle does. Also skip topics
    those scheduled videos already cover (e.g. Fri Nov 20 12:30 PM = "Don't grind money in Chapter 1"). For that news Short, prefer what big streamers and creators are
    doing with GTA 6 right now (launch marathons, records, viral moments, reactions), else the most-talked-
    about GTA 6 news of the day; it must be a different story from the main video. Then ONE command renders
