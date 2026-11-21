@@ -192,3 +192,21 @@ def test_same_webcam_different_gameplay_is_not_a_repost(tmp_path):
     sa, sb, sa2 = (dedupe.motion_sig(x) for x in (a, b, a2))
     assert dedupe.is_repost(ha, ha2, sa, sa2)
     assert not dedupe.is_repost(ha, hb, sa, sb)
+
+
+def test_still_image_shot_finishes_and_pans(tmp_path):
+    """Nov 21 regression: a .jpg inside "shots" used -stream_loop, whose timestamps never advance, so ffmpeg ran
+    forever. Stills must render to the requested length quickly, and drift (not sit frozen)."""
+    import numpy as np
+    from PIL import Image
+    from studio import make_video as mv
+    img = tmp_path / "still.jpg"
+    Image.fromarray((np.random.default_rng(1).random((360, 640, 3)) * 255).astype("uint8")).save(img)
+    seg = {"shots": [{"media": str(img), "focus": 0.5, "dur": 1.5}]}
+    out = mv.shots_background(0, seg, 1.2, 270, 480, tmp_path, tmp_path)
+    assert abs(mv.duration(out) - 1.5) < 0.2
+    f = [tmp_path / f"f{n}.png" for n in (1, 40)]
+    for n, p in zip((1, 40), f):
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(out), "-vf", f"select=eq(n\\,{n})", "-frames:v", "1", str(p)], check=True)
+    a, b = (np.asarray(Image.open(p).convert("L"), dtype=float) for p in f)
+    assert np.abs(a - b).mean() > 1.0  # the picture moved

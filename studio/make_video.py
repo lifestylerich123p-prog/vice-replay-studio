@@ -349,8 +349,14 @@ def shots_background(i, seg, dur, w, h, work, base):
             print(f"  ! segment {i} shot {k}: {m.name} changes shot at {(cut or [st])[0]:.1f}s inside this shot; "
                   f"check the picture matches the narration")
         out = work / f"shot_{i}_{k}.mp4"
-        run(["ffmpeg", "-y", "-v", "error", "-ss", f"{sh.get('start', 0):.2f}", "-stream_loop", "-1", "-i", str(m),
-             "-vf", f"setpts=PTS/{sp},scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}:x=(iw-ow)*{fx}:y=(ih-oh)/2,"
+        # a still loops with -loop 1 and a finite -t (with -stream_loop its timestamps never advance and ffmpeg never ends)
+        src = (["-loop", "1", "-framerate", str(FPS), "-t", f"{d + 0.5:.2f}", "-i", str(m)] if m.suffix.lower() in IMAGE_EXT
+               else ["-ss", f"{sh.get('start', 0):.2f}", "-stream_loop", "-1", "-i", str(m)])
+        still = m.suffix.lower() in IMAGE_EXT
+        # stills drift sideways (~60 px over the shot) so every shot moves, like the single-image Ken Burns
+        cx = f"'clip((iw-ow)*{fx}-30+60*t/{d:.2f},0,iw-ow)'" if still else f"(iw-ow)*{fx}"
+        run(["ffmpeg", "-y", "-v", "error", *src,
+             "-vf", f"setpts=PTS/{sp},scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}:x={cx}:y=(ih-oh)/2,"
                     f"eq=brightness=-0.04:saturation=1.15,setsar=1,fps={FPS}",
              "-t", f"{d:.2f}", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", str(out)])
         parts.append(out)
