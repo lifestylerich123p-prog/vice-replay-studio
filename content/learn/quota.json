@@ -1,10 +1,12 @@
 {
  "2026-11-21": {
-  "used": 20,
+  "used": 72,
   "calls": {
    "GET channels": 6,
    "GET playlistItems": 7,
-   "GET videos": 7
+   "GET videos": 8,
+   "GET commentThreads": 1,
+   "POST commentThreads": 1
   },
   "registry_est": 17500
  }
