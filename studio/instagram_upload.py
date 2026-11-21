@@ -262,9 +262,13 @@ def run_queue(uid):
     {"at", "carousel": spec path} or {"at", "image": jpg path, "caption", "comment"}."""
     import datetime as dt
     from zoneinfo import ZoneInfo
+    from . import postguard
     q = json.loads(QUEUE.read_text()) if QUEUE.exists() else []
     now = dt.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M")
     posted_today = sum(1 for i in q if str(i.get("posted_at", "")).startswith(now[:10]) and str(i.get("posted", "")).startswith("http"))
+    # another chat may have posted from its own copy of the queue: count and compare against the real account
+    recent = postguard.instagram_recent(call, uid)
+    posted_today = max(posted_today, postguard.instagram_posted_today(recent))
     if posted_today >= MAX_PER_DAY:  # Nov 19: Meta restricted ads after 11 API posts on day one; new accounts go slow
         print(f"Daily limit reached ({posted_today}/{MAX_PER_DAY} posts today): due items wait for the next run tomorrow.")
         return
@@ -273,6 +277,18 @@ def run_queue(uid):
         if it.get("posted") or it["at"] > now:
             continue
         if done_at and (it["at"] != done_at or not it.get("campaign")):
+            break
+        if it.get("carousel"):
+            cap = json.loads((ROOT / it["carousel"]).read_text()).get("caption", "")
+        elif it.get("episode"):
+            cap = episode_reel(it["episode"], it.get("item"))[1]
+        else:
+            cap = it.get("caption", "")
+        dup = postguard.instagram_duplicate(cap, recent)
+        if dup:  # posted by another chat/run whose queue file we don't have
+            it["posted"], it["posted_at"] = dup, now + " (found on Instagram: posted by another run)"
+            QUEUE.write_text(json.dumps(q, indent=1, ensure_ascii=False))
+            print(f"Already on Instagram (another chat or run posted it): {dup}. Marked as posted, nothing re-posted.")
             break
         if it.get("carousel"):
             from .ig_cards import build

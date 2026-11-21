@@ -24,6 +24,20 @@
   and send_message that session to fetch them and SendUserFile them. Daily runs can't push: they send_message the captions,
   times and the name of the run's chat where the files are.
 
+- Several Vice Replay chats at once (checked Nov 21, 2026, when the owner opened "YouTube Shorts tools evaluation",
+  session_01CJRsWREDSmYU9Rbr46SGyX, next to the main control chat session_01CJRsWP9GjYTirqgQXefGyG). Rules so one chat
+  never damages another:
+  1. Only the MAIN CONTROL chat posts: YouTube uploads/comments/title swaps, Instagram, website pushes, send_later
+     reminders. Helper chats research, test and build; they don't post (even with an "approve" typed there, they hand
+     the command to the main chat) and they don't edit the same file the main chat is changing that day.
+  2. Helper chats commit to their own `claude/...` branch, never straight to main. The main chat merges a branch
+     when the owner says so ("merge it"), after the tests pass. The daily run pushes to main.
+  3. Everyone runs `git pull --rebase origin main` before committing, so nobody overwrites anyone.
+  4. Safety net (studio/postguard.py): before any YouTube upload the uploader checks the registry on EVERY GitHub
+     branch and the channel's real video list (scheduled ones too); the Instagram queue checks the account's latest
+     posts and counts today's real posts for the 4-a-day limit. A second chat therefore skips what another posted.
+  Each chat has its own container: its files, installs and scratch work don't touch the other chat's copy.
+
 - Impact.com (Best Buy / Walmart / Newegg affiliate): marketplace application DECLINED on Nov 18, 2026 (new site, no traffic
   yet). Site verified with Impact's meta tag (keep it on the home page). Reapply in ~30-60 days once vicereplay.com has
   steady visitors (Cloudflare Web Analytics) and the channel has more subscribers.

@@ -55,6 +55,9 @@ as soon as it's ready. Upload early, scheduled.
   dashboard (`/dashboard`) after uploading. Report links and times; remind
   the owner to pin comments, set "Related video" on Shorts, add thumbnails B/C (Test & Compare). Missing YT_* vars:
   say so and list manual steps.
+- **Several chats**: only the main control chat posts (YouTube, Instagram, comments, site); helper chats work on
+  their own `claude/...` branch and never post. `git pull --rebase origin main` before every commit. Details and the
+  duplicate-post guard (studio/postguard.py): `content/owner.md`.
 - **Standing approvals** (details and dates in `content/owner.md`): breaking-news Shorts that pass every rule in
   `.claude/commands/breaking-news.md`; comment auto-replies (`auto-replies.md`, `python -m studio.replies`); any
   time-limited approval written there. Nothing else is posted without asking.

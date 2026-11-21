@@ -12,7 +12,9 @@ What it sets: title, description, tags, Gaming category, not made for kids, sche
 (status.publishAt, US Eastern posting schedule), custom thumbnail A on the main video, and the pinned-comment
 text posted as the first comment (pinning is manual: YouTube's API can't pin). Not possible through the API:
 Test & Compare thumbnails, "Related video" on Shorts, pinning. Results go to output/<slug>/uploaded.json, and a
-second run skips anything already uploaded.
+second run skips anything already uploaded. Other chats/runs have their own output/ folder, so before each
+upload studio/postguard.py also checks the registry on every GitHub branch and the channel's own video list
+(scheduled ones included); --force overrides it for an intentional re-upload.
 """
 import argparse
 import datetime as dt
@@ -26,6 +28,7 @@ import urllib.request
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from . import postguard
 from .review_page import extra_time, times_for
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -223,6 +226,17 @@ def slot(day, hhmm):
     return when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+def title_candidates(ep, key, title):
+    """The title being posted plus every title option of that item (a swap may have renamed the live one)."""
+    if key == "main":
+        opts = ep.get("title_options") or [ep.get("title")]
+    elif key == "short":
+        opts = ep.get("short_title_options") or [ep.get("short_title")]
+    else:
+        opts = next((s.get("title_options") or [s.get("title")] for s in ep.get("shorts", []) if s.get("id") == key), [])
+    return [title] + [o for o in opts if o]
+
+
 def parse_short_txt(p):
     txt = Path(p).read_text() if Path(p).exists() else ""
     title = txt.split("TITLE\n", 1)[-1].split("\n", 1)[0].strip() if "TITLE" in txt else ""
@@ -243,6 +257,8 @@ def main():
                     help="post TEXT as a comment on VIDEO_ID (repeatable); use once the video is public")
     ap.add_argument("--captions-backfill", action="store_true",
                     help="add the English subtitle track to uploads in output/*/uploaded.json that don't have one yet")
+    ap.add_argument("--force", action="store_true",
+                    help="upload even if another chat/run already posted this item (registry or same title on the channel)")
     a = ap.parse_args()
     tok = token()
 
@@ -338,12 +354,20 @@ def main():
     gslug = next((g for g in (slug, slug.replace("gta6-", "gta-6-", 1))
                   if (ROOT / "site" / "guides" / f"{g}.json").exists()), "")
     guide_url = f"https://vicereplay.com/guides/{gslug}/" if gslug else ""
+    guard = None
     for key, path, title, desc, tg, when, thumb, pin, es, timings, playlist in jobs:
         if guide_url and "vicereplay.com/guides" not in desc:
             desc = desc.rstrip() + f"\n\nGuide: {guide_url}"
         if key in done:
             print(f"skip {key}: already uploaded ({done[key]['url']})")
             continue
+        if not a.force:  # other chats/runs have their own output/ folder: ask GitHub and the channel itself
+            if guard is None:
+                guard = (postguard.registry_entries(), postguard.channel_titles(tok, req))
+            why = postguard.youtube_duplicate(slug, key, title_candidates(ep, key, title), *guard)
+            if why:
+                print(f"skip {key}: {why}. Another chat or run already posted it; --force uploads anyway.")
+                continue
         publish_at = None if a.now else slot(day, when)
         print(f"uploading {key}: {title}  ->  {'now' if not publish_at else when + ' ET'}")
         v = upload(tok, path, title, desc, tg, publish_at, es=es)
