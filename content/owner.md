@@ -115,6 +115,8 @@
   keywords (daily morning news, streamer stories, quizzes, map comparisons; not-affiliated line kept; old text in
   content/archive/channel-profile-before-2026-11-21.json), homepage sections added (Streamer & Breaking News, Shorts,
   Popular uploads, News & Guides), searchable playlist descriptions; title swaps run on 3 underperformers.
+- 2026-11-21 (5:50 PM ET): channel trailer for non-subscribers set to the how-long video rHaMTePDRUQ ("GTA 6 Is Almost
+  Twice as Long as GTA 5 (No Spoilers)"); there was none before. Swap it for a better long video when one exists.
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.
