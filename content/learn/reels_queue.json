@@ -193,6 +193,18 @@
   "note": "easy-mode Short, moved from Mon 20:05; 2.5 h after Tue 12:00"
  },
  {
+  "at": "2026-11-24 17:00",
+  "episode": "episodes/gta6-guess-the-ride.json",
+  "item": "short",
+  "note": "quiz Short (YouTube Mon 11 AM); Mon IG was full"
+ },
+ {
+  "at": "2026-11-24 19:30",
+  "episode": "episodes/gta6-map-is-florida.json",
+  "item": "short",
+  "note": "map vs Florida Short (YouTube Tue 11 AM)"
+ },
+ {
   "at": "2026-12-31 23:59",
   "video": "output/clips/lacy-gta6/lacy-drive-thru.mp4",
   "campaign": "LACY (Content Rewards)",
