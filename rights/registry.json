@@ -111,10 +111,11 @@
  },
  {
   "id": "ai-backgrounds",
-  "asset_class": "AI-generated illustration (thumbnail/card backgrounds, Instagram 4:5 cards, video intro sting)",
+  "asset_class": "AI-generated illustration (thumbnail/card backgrounds, Instagram 4:5 cards, video intro sting); channel banner and profile picture (built from the intro sting + our replay logo)",
   "match": [
    "assets/ai-backgrounds/*",
-   "assets/intro/*"
+   "assets/intro/*",
+   "assets/brand/*"
   ],
   "owner": "Vice Replay (generated with Everygen: Nano Banana 2 images, Kling 3.0 Turbo intro sting)",
   "permission": "generated for the channel on the owner's paid Everygen plan",
