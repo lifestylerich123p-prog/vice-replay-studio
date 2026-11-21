@@ -143,9 +143,9 @@
  },
  {
   "at": "2026-11-22 15:00",
-  "episode": "episodes/gta6-launch-day-survival-guide.json",
-  "item": "news",
-  "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Sun for today's fresh Reels"
+  "episode": "episodes/gta6-first-to-finish.json",
+  "item": "short",
+  "note": "replaced the stale launch-day survival-guide Reel (servers/settings, launch was Nov 19) with the BrycexD Short"
  },
  {
   "at": "2026-11-22 17:30",
@@ -177,14 +177,20 @@
  },
  {
   "at": "2026-11-23 20:05",
-  "episode": "episodes/gta6-how-long-to-beat.json",
-  "item": "tips",
-  "note": "easy-mode Short; Mon is the first day with a free 4th slot (2.5 h after 17:35)"
+  "episode": "episodes/gta6-ultimate-edition-shops.json",
+  "item": "short",
+  "note": "Black Friday week: the Ultimate Edition Short is timelier than the easy-mode one"
  },
  {
   "at": "2026-11-24 12:00",
   "episode": "episodes/gta6-storage-full.json",
   "note": "moved to Tue: Sunday has 4 posts (4/day cap)"
+ },
+ {
+  "at": "2026-11-24 14:30",
+  "episode": "episodes/gta6-how-long-to-beat.json",
+  "item": "tips",
+  "note": "easy-mode Short, moved from Mon 20:05; 2.5 h after Tue 12:00"
  },
  {
   "at": "2026-12-31 23:59",
