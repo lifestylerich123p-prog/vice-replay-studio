@@ -15,6 +15,7 @@ Spanish channel ("Vice Replay en Español"): add --es, pick the Spanish channel 
 as YT_ES_REFRESH_TOKEN instead (the client ID and secret stay the same):
 
     python3 youtube_auth.py client_secret_XXXX.json --es
+    python3 youtube_auth.py --es          (asks you to paste the client ID and secret)
 
 Never paste them into a chat. Uses only Python's standard library.
 """
@@ -42,10 +43,19 @@ def main():
         client_id, client_secret = cfg["client_id"], cfg["client_secret"]
     elif len(sys.argv) == 3:
         client_id, client_secret = sys.argv[1], sys.argv[2]
+    elif len(sys.argv) == 1:  # no arguments: ask for the two values (easiest: copy them from the environment settings)
+        print("Paste the two values from the Claude environment settings (YT_CLIENT_ID and YT_CLIENT_SECRET).")
+        client_id = input("Client ID (the part after YT_CLIENT_ID=), then Enter: ").strip()
+        client_secret = input("Client secret (the part after YT_CLIENT_SECRET=), then Enter: ").strip()
+        if not client_id or not client_secret:
+            sys.exit("Both values are needed. Run it again.")
     else:
         sys.exit(__doc__)
-    print("Client ID (put this in YT_CLIENT_ID):\n" + client_id + "\n")
-    print("Client secret (put this in YT_CLIENT_SECRET):\n" + client_secret + "\n")
+    if not SPANISH:
+        print("Client ID (put this in YT_CLIENT_ID):\n" + client_id + "\n")
+        print("Client secret (put this in YT_CLIENT_SECRET):\n" + client_secret + "\n")
+    else:
+        print("Now your browser opens: sign in and pick the Spanish channel (Vice Replay en Español).\n")
     state = secrets.token_urlsafe(16)
     result = {}
 
