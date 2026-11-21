@@ -24,9 +24,17 @@ def main():
     ch, _ = req("GET", YT + "channels?part=contentDetails,statistics&mine=true", tok)
     c = ch["items"][0]
     up = c["contentDetails"]["relatedPlaylists"]["uploads"]
-    r, _ = req("GET", YT + f"playlistItems?part=contentDetails&maxResults=50&playlistId={up}", tok)
-    ids = [i["contentDetails"]["videoId"] for i in r.get("items", [])]
-    v, _ = req("GET", YT + "videos?part=snippet,statistics,status,contentDetails&id=" + ",".join(ids), tok)
+    ids, page = [], ""
+    while True:  # every upload, not just the newest 50 (the channel passed 50 on Nov 21 and old videos fell off)
+        r, _ = req("GET", YT + f"playlistItems?part=contentDetails&maxResults=50&playlistId={up}" + (f"&pageToken={page}" if page else ""), tok)
+        ids += [i["contentDetails"]["videoId"] for i in r.get("items", [])]
+        page = r.get("nextPageToken")
+        if not page:
+            break
+    v = {"items": []}
+    for k in range(0, len(ids), 50):
+        part, _ = req("GET", YT + "videos?part=snippet,statistics,status,contentDetails&id=" + ",".join(ids[k:k + 50]), tok)
+        v["items"] += part.get("items", [])
     now = dt.datetime.now(dt.timezone.utc)
     uploads, schedule = [], []
     for x in v.get("items", []):
