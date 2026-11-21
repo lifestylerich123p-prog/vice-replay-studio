@@ -119,3 +119,9 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   Friday catch Short (11 AM) 69 in ~2.7 h; first GTA 5 vs 6 comparison (1:30 PM) 0 at 10 min. Re-check at 24 h
   (scorecard "24 h views") before moving more slots; so far the morning slot is beating the last two days' afternoons.
 - 2026-11-21 (voice test): Pocket TTS vs current Kokoro (am_michael), same 3 lines from a Short: Pocket runs 1-3 s longer per line and ~2-3 dB quieter. Kept Kokoro. Pocket's weights are gated on Hugging Face (license not confirmed) and Spanish is untested. Re-test only if the license is confirmed and a need comes up.
+- 2026-11-21 (evening, our post-launch Shorts): opening on a moving clip = median 92 views (8 Shorts) vs 18 for a still
+  (4). Winners: streamer stories + number verdicts (IShowSpeed family name 1,188; PS5 vs Pro 1,200; money catch 559).
+  Dead: plain tips (settings 5, cheat list 8, won't connect 27, dog 32), mostly 79-117 words; anything after 7 PM
+  (0-30); every long video (0-25). Real gameplay is the step change: the Lacy campaign clips on this channel on Nov 19
+  got 9,393 / 1,863 / 1,011. `studio.vice publish` now enforces a moving first frame and warns on tips/long scripts
+  (studio/vice/viewcheck.py).

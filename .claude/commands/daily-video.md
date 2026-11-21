@@ -58,6 +58,9 @@ streamer stories (IShowSpeed family name: 1,179 views, posted 9:28 AM), number/c
   Check every magnify box by cropping it from the image first (labels must be inside the box). For quizzes,
   `studio.vice publish` OCR-reads each guess (zoomed crop + rendered frame) and BLOCKS if the answer is readable
   (Nov 21: the Cheetah badge and the blurred 'Squalo' lettering); still look at the frames yourself.
+- **Views check** (`studio.vice publish`, Nov 21): BLOCKS a Short whose first segment is a still with no zoom/magnify
+  (moving first frame: median 92 views vs 18 since launch) and warns on plain tips and scripts over 85 words. Fix the
+  Short instead of overriding: segment 1 = a media/trailer clip or `shots`, payoff in line two, 75 words or fewer.
 - **Footage**: QC warns when 50%+ of shots repeat recent Shorts. Rotate: least-used clips first (launch-trailer-*
   calm shots, out-now-*, extended-look-convertible-overpass/van-residential/sunset-skyline), and the map poster.
   Owner gameplay (Drive drop zone) beats everything: when it exists, build the Short around it.

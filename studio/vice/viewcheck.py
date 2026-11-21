@@ -1,0 +1,56 @@
+"""Views check before publishing (Nov 21, 2026): rules from our own post-launch Shorts, so a Short that looks like the
+ones that died never goes out unnoticed.
+
+Data (public Shorts posted after launch, Nov 19-21, views by Nov 21 evening):
+- opening on a moving clip: median 91.5 views (8 Shorts); opening on a still picture: median 17.5 (4 Shorts);
+- winners were streamer stories and number "verdicts" (IShowSpeed family name 1,188; PS5 vs PS5 Pro 1,200; Chapter 1
+  money catch 559); plain tips died (settings 5, money cheat list 8, won't connect 27, lifeguard dog 32);
+- the dead ones ran 79-117 words; the winners 63-96 with a number or a name up front.
+Small samples, so most rules are warnings; only a still first frame with no motion at all blocks.
+"""
+import re
+
+STILL = (".jpg", ".jpeg", ".png", ".webp")
+TIPS = re.compile(r"\b(settings?|tips?|how to|won'?t connect|cheat codes?|codes|do this first|beginner)\b", re.I)
+
+
+def _shorts(ep):
+    out = []
+    if ep.get("short"):
+        out.append(("short", ep.get("short_title") or ep.get("title", ""), ep["short"]))
+    for sh in ep.get("shorts", []):
+        out.append((sh.get("id", "?"), sh.get("title", ""), sh.get("segments", [])))
+    return out
+
+
+def _moves(seg):
+    """Does the first picture move? A clip, cuts between clips, or an animated zoom/magnifier on a still."""
+    media = (seg.get("media") or "").lower()
+    if seg.get("shots") or (media and not media.endswith(STILL)):
+        return True
+    return bool(seg.get("magnify") or seg.get("zoom"))
+
+
+def check(ep, gameplay_available=False):
+    """(blockers, warnings) for every Short in an episode. With owner gameplay highlights available, Shorts swap them in
+    for segments without `keep_media` (unless the episode sets `"use_gameplay": false`)."""
+    blockers, warnings = [], []
+    for key, title, segs in _shorts(ep):
+        if not segs:
+            continue
+        first = segs[0]
+        swapped = gameplay_available and ep.get("use_gameplay", True) is not False and not first.get("keep_media")
+        if not swapped and not _moves(first):
+            blockers.append(f"views: Short '{key}' opens on a still picture with no zoom/magnifier. Since launch, Shorts "
+                            f"that open on a moving clip got ~5x the views (median 92 vs 18): use a media/trailer clip "
+                            f"or `shots` for segment 1, or add a `zoom`")
+        words = sum(len((s.get("text") or "").split()) for s in segs)
+        if words > 85:
+            warnings.append(f"views: Short '{key}' is {words} words (~{round(words / 2.6)} s). The dead Shorts ran 79-117 "
+                            f"words; aim for 75 or fewer, one idea, payoff in the second line")
+        text = f"{title} {first.get('headline', '')} {ep.get('format', '')}"
+        if TIPS.search(text) and not re.search(r"\d", first.get("headline", "")):
+            warnings.append(f"views: Short '{key}' reads like a plain tip ({TIPS.search(text).group(0)!r}). Tips Shorts got "
+                            f"5-27 views since launch; lead with a number, a streamer or a catch, or move the tip to the "
+                            f"website guide")
+    return blockers, warnings

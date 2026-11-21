@@ -72,6 +72,10 @@ def publish_draft(episode, dest):
     blockers = [f"QC {c['check']}: {c['detail']}" for c in rep["checks"] if c["status"] == "fail"] + val["problems"]
     from . import quizcheck  # quiz Shorts: the zoomed "guess" must not show its own answer
     blockers += quizcheck.problems(ep, episode, video, tf)
+    from . import viewcheck  # rules from our own post-launch Shorts (moving first frame, short scripts, no plain tips)
+    gp = any((db.ROOT / "media" / "gameplay").glob("*.mp4"))
+    vb, advice = viewcheck.check(ep, gameplay_available=gp)
+    blockers += vb
     cover = out / "cover.jpg"
     if tf.exists() and len(ep.get("short", [])) > 1:  # cover = the payoff segment's middle frame
         t = json.loads(tf.read_text())[1]
@@ -83,7 +87,7 @@ def publish_draft(episode, dest):
              "title_options": ep.get("short_title_options") or [ep.get("short_title")],
              "description": ep.get("short_description"), "pinned_comment": ep.get("pinned_comment"),
              "qc_report": str(md.relative_to(db.ROOT)), "rights": rights.check_episode(ep, dest)["ok"],
-             "status": "BLOCKED" if blockers else "awaiting owner approval", "blockers": blockers,
+             "status": "BLOCKED" if blockers else "awaiting owner approval", "blockers": blockers, "advice": advice,
              "upload_command_after_approval": f"python -m studio.ship {episode} --upload short --title N"}
     (out / "draft.json").write_text(json.dumps(draft, indent=1, ensure_ascii=False))
     print(json.dumps(draft, indent=1, ensure_ascii=False))
