@@ -109,7 +109,10 @@ its "generic or repetitive" rule hits same-template channels. So, every day:
    TWO standalone Shorts (owner asked for 3 Shorts a day in launch week): id `news` (posted 8:30 PM) and id `tips`
    (posted 12:30 PM: one quick, useful GTA 6 tip or fact players are searching today, different from the main video).
    **First run `python -m studio.status`**: any slot already shown with ⏰ today is TAKEN (the main chat may have
-   scheduled a Short there); leave that Short out of `shorts` and don't upload into a taken slot. Also skip topics
+   scheduled a Short there); leave that Short out of `shorts` and don't upload into a taken slot. Its "Free slot"
+   lines (from `python -m studio.quota`) list the open slots for 3 days and how many uploads today's YouTube quota
+   still fits: propose a time for every Short in a FREE slot (today first, then tomorrow morning: 9:30/10 AM Shorts do
+   ~30x the afternoon), so the owner's quota is used on new posts, not left empty. Also skip topics
    those scheduled videos already cover (e.g. Fri Nov 20 12:30 PM = "Don't grind money in Chapter 1"). For that news Short, prefer what big streamers and creators are
    doing with GTA 6 right now (launch marathons, records, viral moments, reactions), else the most-talked-
    about GTA 6 news of the day; it must be a different story from the main video. Then ONE command renders

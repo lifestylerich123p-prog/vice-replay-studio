@@ -65,6 +65,17 @@ def main():
     L.append("## YouTube")
     L += [f"- ⏰ {t:%a %-I:%M %p}: {title[:60]}" for t, title in sorted(sched)] or ["- nothing scheduled"]
     L += [f"- {v:,} views: {title[:60]}" for v, title in sorted(recent, reverse=True)[:6]]
+    try:  # quota + free slots: what's still possible to post (python -m studio.quota for details)
+        from . import quota
+        by_day = {}
+        for t, _ in sched:
+            by_day.setdefault(t.date(), []).append(t)
+        free = [(d, f) for d, f in quota.free_slots(by_day) if f]
+        L.append(f"- Quota: ~{quota.left_today():,} units usable today (~{quota.left_today() // quota.UPLOAD} uploads), "
+                 f"resets 3 AM ET")
+        L += [f"- Free slot {d:%a}: {', '.join(f)}" for d, f in free]
+    except Exception:  # noqa: BLE001 - the status screen must never fail on this
+        pass
     L.append("")
 
     qf = LEARN / "reels_queue.json"

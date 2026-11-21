@@ -57,12 +57,20 @@ def token():
 def req(method, url, tok, body=None, ctype="application/json", headers=None):
     data = json.dumps(body).encode() if isinstance(body, (dict, list)) else body
     h = {"Authorization": f"Bearer {tok}", **({"Content-Type": ctype} if data is not None else {}), **(headers or {})}
+    from . import quota
     try:
         with urllib.request.urlopen(urllib.request.Request(url, data=data, method=method, headers=h), timeout=600) as r:
             raw = r.read()
+            quota.spend(method, url)
             return (json.loads(raw) if raw else {}), r.headers
     except urllib.error.HTTPError as e:
-        sys.exit(f"YouTube error {e.code} on {method} {url.split('?')[0]}: {e.read().decode(errors='ignore')[:600]}")
+        body = e.read().decode(errors="ignore")
+        if e.code == 403 and ("quotaExceeded" in body or "dailyLimitExceeded" in body):
+            quota.mark_exhausted()
+            sys.exit(f"YOUTUBE DAILY QUOTA USED UP ({method} {url.split('?')[0].rsplit('/', 1)[-1]}): nothing was posted. "
+                     f"It resets in {quota.reset_in()}; run the same command again after that.")
+        quota.spend(method, url)  # YouTube charges failed calls too
+        sys.exit(f"YouTube error {e.code} on {method} {url.split('?')[0]}: {body[:600]}")
 
 
 def yt_safe(text):
@@ -274,10 +282,18 @@ def main():
             for key, rec in json.loads(f.read_text()).items():
                 if isinstance(rec, dict) and rec.get("id"):
                     todo.append((when.get(rec["id"], ""), f, key, rec))
+        from . import quota
+        try:  # new uploads in today's free slots come first; the backfill only gets what's left after them
+            free_today = len(quota.free_slots(quota.scheduled(tok), 1)[0][1])
+        except SystemExit:
+            free_today = 2
+        limit = min(a.backfill_limit, quota.spare_units(free_today) // 450)
+        print(f"Backfill budget: {limit} video(s) (quota left ~{quota.left_today():,}; {free_today} free slot(s) today "
+              f"keep ~{free_today * quota.UPLOAD:,} for uploads).")
         added = 0
         for _, f, key, rec in sorted(todo, key=lambda t: t[0], reverse=True):
-            if added >= a.backfill_limit:
-                print(f"Stopped at {a.backfill_limit} today to save quota; run again tomorrow for the rest.")
+            if added >= limit:
+                print(f"Stopped at {limit} today to keep quota for uploads; run again tomorrow for the rest.")
                 break
             slug = f.parent.name
             name = f"{slug}" if key == "main" else f"{slug}-short" + ("" if key == "short" else f"-{key}")

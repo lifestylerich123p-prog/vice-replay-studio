@@ -1,0 +1,11 @@
+{
+ "2026-11-21": {
+  "used": 4,
+  "calls": {
+   "GET channels": 1,
+   "GET playlistItems": 1,
+   "GET videos": 2
+  },
+  "registry_est": 17500
+ }
+}
