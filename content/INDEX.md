@@ -20,12 +20,14 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| ? | gta6-ultimate-edition-shops | Short | GTA 6 Locks 5 Shops Behind the $100 Edition | - |
+| ? | gta6-ultimate-edition-shops | Short | GTA 6 Locks 5 Shops Behind the $100 Edition | short: xvA4O2ytSnE |
 | ? | gta6-ranking-rides | Short | Ranking the 6 Rides in Rockstar's GTA 6 Gameplay | short: QzFhpT4dNVQ |
 | ? | gta6-race-hud-details | Short | GTA 6 Races: Look at the Corner of the Screen | short: sP1fq11WMmw |
+| ? | gta6-map-is-florida | Short | GTA 6's Official Map Is Florida: 4 Matches and 1 Fake | - |
 | ? | gta6-has-anyone-finished | Short | Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch) | short: WsJ96ZkU2do |
-| ? | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | - |
-| 2026-11-21 | gta6-how-long-to-beat | video | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | short: bVoHzywwvgc |
+| ? | gta6-guess-the-ride | Short | Guess the GTA 6 Ride From One Detail | - |
+| ? | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | short: Egb3otGWJIg |
+| 2026-11-21 | gta6-how-long-to-beat | video | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | short: bVoHzywwvgc, main: rHaMTePDRUQ, tips: M7oKevOPY08 |
 | 2026-11-20 | gta6-video-store-closing | Short | GTA 6 Has a Video Game Store, and It's Closing | short: Rt18FhG-DYk |
 | 2026-11-20 | gta6-took-away-gta5 | Short | GTA 6 Took Away 4 Things GTA 5 Gave You | short: uvWNXugdvSo |
 | 2026-11-20 | gta6-ishowspeed-watkins | Short | IShowSpeed Teared Up Over His Family's Name in GTA 6 | short: uCNHbnOqgs0 |

@@ -119,18 +119,18 @@
       "headline_es": "ADIVINA #4",
       "text": "Number four: this one floats.",
       "text_es": "Número cuatro: este flota.",
-      "media": "../media/official/car-squalo-02.jpg",
-      "focus": 0.95,
+      "media": "../media/official/car-squalo-03.jpg",
+      "focus": 0.5,
       "keep_media": true,
       "magnify": {
         "box": [
-          0.32,
-          0.28,
-          0.6,
-          0.5
+          0.42,
+          0.3,
+          0.58,
+          0.58
         ],
-        "width": 0.84,
-        "y": 0.33
+        "width": 0.8,
+        "y": 0.32
       }
     },
     {
@@ -138,8 +138,8 @@
       "headline_es": "SHITZU SQUALO",
       "text": "The Shitzu Squalo boat.",
       "text_es": "La lancha Shitzu Squalo.",
-      "media": "../media/official/car-squalo-03.jpg",
-      "focus": 0.5,
+      "media": "../media/official/car-squalo-02.jpg",
+      "focus": 0.4,
       "keep_media": true
     },
     {
