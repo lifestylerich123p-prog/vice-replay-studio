@@ -48,7 +48,7 @@ def same_event(c1, c2, threshold=0.5, days=3):
 
 def dhash_image(img, size=8):
     g = img.convert("L").resize((size + 1, size), Image.LANCZOS)
-    px = list(g.getdata())
+    px = list(g.tobytes())  # mode L = 1 byte per pixel (getdata is deprecated and goes away in Pillow 14)
     bits = 0
     for r in range(size):
         for c in range(size):
