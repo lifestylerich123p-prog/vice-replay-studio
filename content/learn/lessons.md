@@ -118,3 +118,4 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - 2026-11-21 (early slot check, 1:40 PM ET): IShowSpeed 52 h Short (9:30 AM) 208 views in ~4 h (~50 v/h); Black
   Friday catch Short (11 AM) 69 in ~2.7 h; first GTA 5 vs 6 comparison (1:30 PM) 0 at 10 min. Re-check at 24 h
   (scorecard "24 h views") before moving more slots; so far the morning slot is beating the last two days' afternoons.
+- 2026-11-21 (voice test): Pocket TTS vs current Kokoro (am_michael), same 3 lines from a Short: Pocket runs 1-3 s longer per line and ~2-3 dB quieter. Kept Kokoro. Pocket's weights are gated on Hugging Face (license not confirmed) and Spanish is untested. Re-test only if the license is confirmed and a need comes up.
