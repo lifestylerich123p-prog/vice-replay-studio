@@ -257,3 +257,10 @@ def test_animated_captions_never_overlap(tmp_path, monkeypatch):
     assert all(a[1] <= b[0] + 1e-6 for a, b in zip(spans, spans[1:]))
     body = f.read_text()
     assert "52" in body and "&H8E1FFF&" in body and _re.search(r"\\t\(0,80", body)
+
+
+def test_spanish_captions_keep_number_words():
+    from studio.make_video import display_tokens
+    es = [t[0] for t in display_tokens("Ten cuidado con GTA 6, tiene cincuenta y dos horas.".split(), "es")]
+    assert es[0] == "Ten" and "GTA 6," in es and "10" not in es
+    assert [t[0] for t in display_tokens("ten hours".split())] == ["10", "hours"]

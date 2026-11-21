@@ -72,7 +72,10 @@ Footage rules learned Nov 20: read every sign/number/HUD value at FULL resolutio
 "5/9" where the frame said "5/6"); official clips contain internal cuts and UI moments (the strip-mall clip opens on a
 blurred weapon wheel), so the renderer warns "crosses a shot change": fix it with media_start/speed/freeze/shots.
 A "real life matches" line is welcome when it's sourced (2+ reliable sources, exact wording: "in two years", not a
-looser "in the last two years"). Captions are timed to the narration automatically (speech-aligned).
+looser "in the last two years"). Captions are timed to the narration automatically (speech-aligned). Caption style "animated" (owner approved
+Nov 21; config/channel.json `caption_style`): groups of 3 words pop in, the spoken word bounces in cyan, and English
+number words show as pink digits ("fifty two hours" -> 52 HOURS, "ninety eight percent" -> 98%), so keep writing
+numbers as words for the voice. Spanish captions keep their words as written.
 Before delivering or uploading: `python -m studio.vice publish episodes/<slug>.json` must show no blockers.
 
 AI graphics (Everygen, cleared in `rights/registry.json` as `ai-backgrounds`, Vice Replay only, never on campaign clips):

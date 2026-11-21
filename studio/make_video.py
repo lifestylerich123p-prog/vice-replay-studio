@@ -218,12 +218,13 @@ def _num_value(run):
     return total + cur
 
 
-def display_tokens(words):
+def display_tokens(words, lang="en"):
     """Caption tokens: runs of spoken number words become digits ("fifty two" -> "52", "ninety eight percent" ->
     "98%"), only when it's clearly a number (2+ words, 10 or more, or followed by a unit), so "number one" and
-    "this one floats" stay words. Returns [(text, first_word_index, last_word_index, is_number)]."""
+    "this one floats" stay words. English only: in Spanish "ten cuidado" must not become "10 cuidado".
+    Returns [(text, first_word_index, last_word_index, is_number)]."""
     out, i, low = [], 0, [re.sub(r"[^\w]", "", w.lower()) for w in words]
-    numw = set(_ONES) | set(_TENS) | {"hundred"} | set(_SCALES)
+    numw = (set(_ONES) | set(_TENS) | {"hundred"} | set(_SCALES)) if lang == "en" else set()
     while i < len(words):
         j = i
         while j < len(words) and low[j] in numw and not re.search(r"[.,!?;:]$", words[j][:-1] if j > i else ""):
@@ -253,7 +254,7 @@ def display_tokens(words):
 
 def caption_style():
     """"animated" (pop-in groups, bouncing spoken word, numbers as pink digits) or "classic". Set in
-    config/channel.json "caption_style" (default classic until the owner approves the new look); the env var
+    config/channel.json "caption_style" ("animated" since the owner approved it on Nov 21, 2026); the env var
     VR_CAPTIONS overrides it for one render."""
     import os
     if os.environ.get("VR_CAPTIONS"):
@@ -264,14 +265,14 @@ def caption_style():
         return "classic"
 
 
-def caption_file(text, start, total, out, w, h, vertical, times=None):
+def caption_file(text, start, total, out, w, h, vertical, times=None, lang="en"):
     """Burned-in animated captions, 3 (Shorts) or 5 tokens at a time. Each group pops in (85% -> 100%), the token
     being spoken bounces (124% -> 112%) in cyan, and numbers show as digits in hot pink ("52 HOURS", "98%").
     Timed to the real speech when `times` (one (start, end) per script word, from align_words) is given;
     otherwise estimated from character counts."""
     words = text.split()
     animated = caption_style() == "animated"
-    toks = display_tokens(words) if animated else [(wd, k, k, False) for k, wd in enumerate(words)]
+    toks = display_tokens(words, lang) if animated else [(wd, k, k, False) for k, wd in enumerate(words)]
     groups, cur = [], []
     for tk in toks:
         cur.append(tk)
@@ -498,7 +499,7 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     lang = seg.get("_lang", "en")
     times = align_words(seg["text"], audio, lang) if seg.get("_align", True) else None
     seg["_aligned"] = bool(times)
-    subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical, times=times)
+    subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical, times=times, lang=lang)
     out = work / f"seg_{i:02d}.mp4"
     fade_in = "" if (vertical and i == 0) else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
     extra, co = [], ""
