@@ -1,0 +1,82 @@
+{
+  "title": "GTA 6 Locks 5 Shops Behind the $100 Edition",
+  "slug": "gta6-ultimate-edition-shops",
+  "series": "Money",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "format": "news",
+  "use_gameplay": false,
+  "short_title": "GTA 6 locks 5 shops behind the $100 edition #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 locks 5 shops behind the $100 edition #GTA6 #Shorts",
+    "5 GTA 6 shops only open if you paid $100 #GTA6 #Shorts",
+    "GTA 6's $100 edition has a catch #GTA6 #Shorts"
+  ],
+  "short_description": "Rockstar's own Ultimate Edition page lists five places that are \"only open for business with the Ultimate Edition\": Rideout Customs and One-Eyed Willie's (mod shops), Sara's Unisex Salon, Electric Fang Tattoo and the Stock 305 clothing store. Standard is $79.99, Ultimate $99.99 (Tom's Guide, Shacknews). No story spoilers. Footage: official Rockstar screenshots.",
+  "short_es": {
+    "title": "GTA 6 bloquea 5 tiendas tras la edición de 100 dólares #GTA6 #Shorts",
+    "description": "La página oficial de Rockstar dice que cinco lugares solo abren con la Ultimate Edition: Rideout Customs y One-Eyed Willie's (talleres), Sara's Unisex Salon, Electric Fang Tattoo y la tienda de ropa Stock 305. La Standard cuesta 79,99 dólares y la Ultimate 99,99. Sin spoilers."
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Did you get Standard or Ultimate? Reply STANDARD or ULTIMATE 👇",
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gaming",
+    "#gta6ultimate",
+    "#rockstargames"
+  ],
+  "sources": [
+    "Rockstar Games - GTA VI Ultimate Edition (each of the five: \"Only open for business with the Ultimate Edition\"): https://www.rockstargames.com/VI/ultimate-edition",
+    "Rockstar Games - GTA VI editions: https://www.rockstargames.com/VI/editions",
+    "Tom's Guide - GTA 6's Ultimate Edition costs $100: https://www.tomsguide.com/gaming/gta-6s-ultimate-edition-is-the-real-full-game-and-the-rumors-of-it-costing-usd100-were-true-after-all",
+    "Shacknews - GTA 6 price starts at $80 (Standard $79.99, Ultimate $99.99): https://www.shacknews.com/article/149778/grand-theft-auto-6-price-standard-ultimate-gta-6",
+    "Notebookcheck - Everything GTA 6's $100 Ultimate Edition locks behind a paywall: https://notebookcheck.net/Here-s-everything-GTA-6-s-100-Ultimate-Edition-locks-behind-a-paywall.1328736.0.html"
+  ],
+  "short": [
+    {
+      "headline": "5 SHOPS LOCKED",
+      "headline_es": "5 TIENDAS BLOQUEADAS",
+      "text": "GTA 6 has five shops you can't use unless you bought the hundred dollar edition.",
+      "text_es": "GTA 6 tiene cinco tiendas que no puedes usar si no compraste la edición de cien dólares.",
+      "keep_media": true,
+      "shots": [
+        {"media": "../media/trailer/out-now-night-drive-ocean-drive.mp4", "start": 0.0, "dur": 1.1},
+        {"media": "../media/official/rideout-customs-01.jpg", "focus": 0.45}
+      ]
+    },
+    {
+      "headline": "2 MOD SHOPS",
+      "headline_es": "2 TALLERES",
+      "text": "Rideout Customs and One-Eyed Willie's are mod shops. Rockstar's own words: only open for business with the Ultimate Edition.",
+      "text_es": "Rideout Customs y One-Eyed Willie's son talleres. Palabras de Rockstar: solo abren con la Ultimate Edition.",
+      "keep_media": true,
+      "shots": [
+        {"media": "../media/official/rideout-customs-03.jpg", "focus": 0.55},
+        {"media": "../media/official/car-canis-one-eyed-willie-03.jpg", "focus": 0.55},
+        {"media": "../media/official/rideout-customs-02.jpg", "focus": 0.5}
+      ]
+    },
+    {
+      "headline": "SALON, INK, CLOTHES",
+      "headline_es": "SALÓN, TATUAJES, ROPA",
+      "text": "Same for Sara's Unisex Salon, the Electric Fang tattoo shop, and the Stock 305 clothing store.",
+      "text_es": "Igual con Sara's Unisex Salon, el estudio de tatuajes Electric Fang y la tienda de ropa Stock 305.",
+      "keep_media": true,
+      "shots": [
+        {"media": "../media/official/saras-salon-02.jpg", "focus": 0.42},
+        {"media": "../media/official/electric-fang-tattoo-01.jpg", "focus": 0.5},
+        {"media": "../media/official/stock-305-03.jpg", "focus": 0.6}
+      ]
+    },
+    {
+      "headline": "WORTH $20 MORE?",
+      "headline_es": "¿VALE 20 MÁS?",
+      "text": "Standard is about eighty dollars, Ultimate about a hundred. Worth twenty more? Tell me below, because",
+      "text_es": "La Standard cuesta unos ochenta dólares y la Ultimate unos cien. ¿Vale veinte más? Dímelo abajo, porque",
+      "media": "../media/official/car-grotti-cheetah-02.jpg",
+      "focus": 0.45,
+      "keep_media": true
+    }
+  ]
+}
