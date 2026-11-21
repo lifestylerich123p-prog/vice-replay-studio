@@ -1,4 +1,4 @@
-# Scorecard (auto, 2026-11-20T03:46 UTC): what works for Vice Replay
+# Scorecard (auto, 2026-11-21T13:13 UTC): what works for Vice Replay
 
 Fair numbers: **24 h views** = views in each Short's first 24 hours (from history snapshots; empty until a
 Short has been tracked across its first day). **v/h** = lifetime views per hour. **watched** = average %
@@ -8,70 +8,71 @@ of the Short watched (YouTube Analytics, a few days behind). Medians per group; 
 
 | Group | n | median v/h | median 24 h views | median watched |
 |---|---|---|---|---|
-| comparison | 1 | 145.0 | - | - |
-| campaign clip | 7 | 40.8 | - | 92.0% |
-| news/facts | 20 | 5.7 | 334.0 | 56.9% |
-| streamer | 3 | 5.6 | 52 | 46.2% |
-| tips/discovery | 8 | 2.7 | - | 50.8% |
+| comparison | 1 | 33.6 | 1195 | - |
+| campaign clip | 7 | 21.4 | 508.0 | 91.9% |
+| streamer | 4 | 7.6 | 52 | 38.9% |
+| news/facts | 22 | 4.1 | 367 | 58.2% |
+| tips/discovery | 12 | 2.1 | 360.0 | 50.2% |
 
 ## By kind
 
 | Group | n | median v/h | median 24 h views | median watched |
 |---|---|---|---|---|
-| campaign clip | 7 | 40.8 | - | 92.0% |
-| own Short | 32 | 5.4 | 301 | 53.0% |
+| campaign clip | 7 | 21.4 | 508.0 | 91.9% |
+| own Short | 39 | 3.7 | 367 | 48.8% |
 
 ## By hook
 
 | Group | n | median v/h | median 24 h views | median watched |
 |---|---|---|---|---|
-| catch | 2 | 49.7 | 1305 | - |
-| question | 4 | 11.0 | 7 | 50.0% |
-| statement | 17 | 5.3 | 176.5 | 50.9% |
-| number | 16 | 5.3 | 945 | 59.4% |
+| catch | 3 | 22.0 | 1236.5 | 33.1% |
+| question | 4 | 6.5 | 481.0 | 48.2% |
+| number | 16 | 6.4 | 715 | 61.5% |
+| statement | 23 | 3.3 | 30.0 | 44.7% |
 
 ## By length
 
 | Group | n | median v/h | median 24 h views | median watched |
 |---|---|---|---|---|
-| 16-30 s | 17 | 31.6 | 367 | 62.0% |
-| 31-60 s | 13 | 5.6 | 678.5 | 51.1% |
-| <=15 s | 2 | 0.4 | - | 56.3% |
-| 60+ s | 7 | 0.2 | 7.0 | 35.6% |
+| 16-30 s | 22 | 13.8 | 830.0 | 60.7% |
+| 31-60 s | 14 | 3.5 | 52 | 51.5% |
+| <=15 s | 2 | 0.2 | 4 | 56.3% |
+| 60+ s | 8 | 0.1 | 7 | 29.4% |
 
 ## By slot (ET)
 
 | Group | n | median v/h | median 24 h views | median watched |
 |---|---|---|---|---|
-| morning <12 | 10 | 61.3 | - | 65.9% |
-| evening 17-21 | 10 | 9.2 | 209.5 | 54.9% |
-| late 21+ | 3 | 4.9 | 476.0 | 45.2% |
-| afternoon 12-17 | 16 | 1.2 | 301 | 51.7% |
+| morning <12 | 11 | 21.4 | 1008 | 63.5% |
+| evening 17-21 | 14 | 4.1 | 209.5 | 53.5% |
+| late 21+ | 3 | 2.9 | 476.0 | 48.2% |
+| afternoon 12-17 | 18 | 0.7 | 4.5 | 44.9% |
 
 ## Best 5
 
-- 513.7 v/h, 7,583 views, 24 h: - · campaign clip, statement, 16-30 s · LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts
-- 145.0 v/h, 328 views, 24 h: - · own Short, number, 31-60 s · GTA 6 on PS5 vs PS5 Pro: the verdict is in #GTA6 #Shorts
-- 120.7 v/h, 1,806 views, 24 h: - · campaign clip, statement, 16-30 s · LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts
-- 83.3 v/h, 1,319 views, 24 h: - · own Short, number, 31-60 s · GTA 6 already made $1.65 BILLION #GTA6 #Shorts
-- 72.6 v/h, 1,004 views, 24 h: - · campaign clip, statement, 16-30 s · LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 #shorts
+- 193.5 v/h, 9,329 views, 24 h: 8195 · campaign clip, statement, 16-30 s · LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts
+- 51.8 v/h, 1,179 views, 24 h: - · own Short, statement, 16-30 s · IShowSpeed teared up over his family's name in GTA 6 #GTA6 #Shorts
+- 38.5 v/h, 1,862 views, 24 h: 1826 · campaign clip, statement, 16-30 s · LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts
+- 33.6 v/h, 1,199 views, 24 h: 1195 · own Short, number, 31-60 s · GTA 6 on PS5 vs PS5 Pro: the verdict is in #GTA6 #Shorts
+- 32.7 v/h, 5,301 views, 24 h: - · campaign clip, statement, 16-30 s · Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy
 
 ## Worst 5 (older than 24 h)
 
-- 0.3 v/h, 8 views, 24 h: 7 · own Short, statement, 60+ s · GTA 6 Physical Edition Has No Disc: What You're Buying
-- 0.3 v/h, 41 views, 24 h: - · own Short, statement, <=15 s · GTA 6 Chaos Is Coming 🌴 | Vice Replay
-- 0.2 v/h, 6 views, 24 h: 7 · own Short, question, 60+ s · GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade
-- 0.1 v/h, 5 views, 24 h: - · own Short, number, 60+ s · GTA 6 in 3 Days: Exact Unlock Time & 212GB Download
-- 0.1 v/h, 15 views, 24 h: - · own Short, number, 60+ s · GTA 6 Is Bigger Than Vice City: 6 Places to Know
+- 0.1 v/h, 8 views, 24 h: 7 · own Short, statement, 60+ s · GTA 6 Physical Edition Has No Disc: What You're Buying
+- 0.1 v/h, 16 views, 24 h: - · own Short, number, 60+ s · GTA 6 Is Bigger Than Vice City: 6 Places to Know
+- 0.0 v/h, 0 views, 24 h: 0 · own Short, number, 60+ s · GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings
+- 0.0 v/h, 2 views, 24 h: 2 · campaign clip, statement, 16-30 s · LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #Shorts
+- 0.0 v/h, 5 views, 24 h: - · own Short, number, 60+ s · GTA 6 in 3 Days: Exact Unlock Time & 212GB Download
 
 ## Auto advice
 
-- DO MORE: format = campaign clip (median 40.8 v/h vs 5.6 overall, n=7)
-- DO LESS: format = tips/discovery (median 2.7 v/h vs 5.6 overall, n=8)
-- DO MORE: kind = campaign clip (median 40.8 v/h vs 5.6 overall, n=7)
-- DO MORE: hook = question (median 11.0 v/h vs 5.6 overall, n=4)
-- DO MORE: length = 16-30 s (median 31.6 v/h vs 5.6 overall, n=17)
-- DO LESS: length = 60+ s (median 0.2 v/h vs 5.6 overall, n=7)
-- DO MORE: slot (ET) = morning <12 (median 61.3 v/h vs 5.6 overall, n=10)
-- DO MORE: slot (ET) = evening 17-21 (median 9.2 v/h vs 5.6 overall, n=10)
-- DO LESS: slot (ET) = afternoon 12-17 (median 1.2 v/h vs 5.6 overall, n=16)
+- DO MORE: format = campaign clip (median 21.4 v/h vs 3.8 overall, n=7)
+- DO MORE: format = streamer (median 7.6 v/h vs 3.8 overall, n=4)
+- DO MORE: kind = campaign clip (median 21.4 v/h vs 3.8 overall, n=7)
+- DO MORE: hook = catch (median 22.0 v/h vs 3.8 overall, n=3)
+- DO MORE: hook = question (median 6.5 v/h vs 3.8 overall, n=4)
+- DO MORE: hook = number (median 6.4 v/h vs 3.8 overall, n=16)
+- DO MORE: length = 16-30 s (median 13.8 v/h vs 3.8 overall, n=22)
+- DO LESS: length = 60+ s (median 0.1 v/h vs 3.8 overall, n=8)
+- DO MORE: slot (ET) = morning <12 (median 21.4 v/h vs 3.8 overall, n=11)
+- DO LESS: slot (ET) = afternoon 12-17 (median 0.7 v/h vs 3.8 overall, n=18)

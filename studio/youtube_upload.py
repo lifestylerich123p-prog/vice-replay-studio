@@ -282,7 +282,8 @@ def main():
         jobs.append(("main", out / f"{slug}.mp4", title, (out / "description.txt").read_text(), tags, t_main,
                      out / "thumbnail-a.jpg", pin_main, ep.get("es"), out / f"{slug}.timings.json",
                      ep.get("playlist") or PLAYLISTS["main"]))
-    shorts = ([{"id": "", "pinned_comment": ep.get("pinned_comment"), "playlist": ep.get("short_playlist")}]
+    shorts = ([{"id": "", "pinned_comment": ep.get("short_pinned_comment") or ep.get("pinned_comment"),
+                "playlist": ep.get("short_playlist")}]
               if ep.get("short") else []) + ep.get("shorts", [])
     for k, sh in enumerate(shorts):
         key = "short" if not sh.get("id") else sh["id"]

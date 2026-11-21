@@ -105,3 +105,13 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   the English winners are question/curiosity titles ("5 Things You Didn't Know", "How Long Can You Survive 6 Stars",
   "Why Everyone Keeps JUMPING") and ending/spoiler long videos (off-limits for us). Streamer finishes (IShowSpeed
   52 h) are the story of the day in news; no top-50 video covers finish times as a search answer yet.
+- 2026-11-21 (main chat, post-launch breakdown of our 33 own Shorts): before launch, news Shorts often hit ~1,000
+  views; since Nov 19 noon only streamer stories (IShowSpeed family name 1,179, posted 9:28 AM) and number/catch hooks
+  on money or hardware (PS5 vs Pro 1,199; Chapter 1 money 496; $3.79B 185) work. Tips/search-answer Shorts died
+  (5-60 views): players have the game now and our trailer footage is old to them. Action: main Short moved to 9:30 AM
+  (weekends 10 AM), tutorials go to the website, max 3 own Shorts/day, rotate footage (new: out-now-* clips + the
+  official Leonida map poster). The real unlock is owner gameplay (needs a console; GTA 6 cloud play is Xbox-console
+  only, no phone/PC browser: Windows Central, GamingBolt).
+- 2026-11-21 (fact check): never trust one search summary for a number in a script. Eurogamer 65 h, IGN 115 h, Pure
+  Xbox 42 h could not be confirmed and were cut; IShowSpeed's crash hour is reported as 40-43, so "around hour 43";
+  quotes from streams are "reportedly". Most coverage of IShowSpeed's reaction to the ending spoils it: use times only.

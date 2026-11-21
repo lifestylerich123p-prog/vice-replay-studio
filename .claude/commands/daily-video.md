@@ -29,6 +29,27 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    market's winners have in common (topics, title wording, length, Shorts vs long). Only claim what the
    numbers show. Use the lessons in every choice below: topic, hook, title options, thumbnail text, length.
    Learn from winning videos' patterns; never copy their titles, footage or thumbnails.
+**NOV 21 PLAN (owner: "use data to find a plan of action and implement"; overrides the slots and mix below).**
+Since launch, people play the game themselves and our trailer-footage Shorts mostly die (Nov 19 noon to Nov 20:
+tips/search-answer Shorts got 5-60 views; settings 7, cheat list 5, no-mission-replay 53). What still works:
+streamer stories (IShowSpeed family name: 1,179 views, posted 9:28 AM), number/catch hooks on money and hardware
+(PS5 vs Pro 1,199; Chapter 1 money catch 496; $3.79B 185), 16-30 s, and MORNING posts (before noon median 21 v/h,
+12-5 PM 0.7 v/h). So, every day:
+- **9:30 AM (weekends 10 AM): the day's best Short** = streamer/finisher news or a hard-number fact with a catch
+  ("The first person to finish GTA 6 wasn't IShowSpeed", "Only 1 in 5 players finished Chapter 1 (trackers)", "61
+  cheats unlock after the credits"). Facts from people who finished: only times, records, trophy-tracker %,
+  what unlocks after the credits. NEVER the ending, who lives/dies, reactions to the ending (most coverage of
+  IShowSpeed's reaction spoils it), late chapters or story beats.
+- **12:30 PM: one comparison or money/"catch" Short** (GTA 6 vs 5, prices, records). No plain tips Shorts.
+- **8:30 PM: only big confirmed news.** Max 3 own Shorts a day; one strong Short beats three weak ones.
+- **Tutorials / how-to / "where is X" go to the WEBSITE guide** (Google search demand: saving, bank account,
+  money, lose the cops, easy mode, settings) and to the long video, not to Shorts, until owner gameplay exists
+  (a tutorial needs the real menus and map). Use `media/official/leonida-map-poster.jpg` with `magnify`/`zoom`
+  for map answers.
+- **Footage**: QC warns when 50%+ of shots repeat recent Shorts. Rotate: least-used clips first (launch-trailer-*
+  calm shots, out-now-*, extended-look-convertible-overpass/van-residential/sunset-skyline), and the map poster.
+  Owner gameplay (Drive drop zone) beats everything: when it exists, build the Short around it.
+
 **NEW FORMAT MIX (owner approved Nov 20: "let's start right now"; overrides the old main video + 3 Shorts plan).**
 Our news/facts Shorts get 300-1,300 views while launch-week winners from tiny channels get 500K-10M. YouTube's
 Oct 2026 update favors ORIGINAL Shorts and cuts reach for reused footage + narration that only describes it, and

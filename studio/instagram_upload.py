@@ -231,7 +231,7 @@ def post_reel(uid, video, caption, first_comment=""):
 def episode_comment(path, item="short"):
     ep = json.loads(Path(path).read_text())
     if item in (None, "", "short"):
-        return ep.get("pinned_comment", "")
+        return ep.get("short_pinned_comment") or ep.get("pinned_comment", "")
     return next((x.get("pinned_comment", "") for x in ep.get("shorts", []) if x.get("id") == item), "")
 
 

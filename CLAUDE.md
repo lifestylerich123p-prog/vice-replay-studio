@@ -21,13 +21,16 @@ non-GTA campaign; What If Arena = AI videos.
 4. Report the output paths and 3 alternative titles (under 60 characters, "GTA 6" first).
 
 ## Posting schedule (US Eastern; adjust from analytics)
-Weekdays: main 3:30 PM, Short 6 PM, news Short 8:30 PM, tips Short 12:30 PM. Saturday: 1:30/4/8 PM + 11 AM.
-Sunday: 2:30/5/7:30 PM + 12 PM. Big news: post as soon as it's ready. Upload in the morning, scheduled.
+Weekdays: main Short 9:30 AM, tips Short 12:30 PM, main 3:30 PM, news Short 8:30 PM. Saturday: 10 AM, 12:30, 1:30,
+8 PM. Sunday: 10 AM, 12:30, 2:30, 7:30 PM (Nov 21 data: morning Shorts ~21 views/h vs 0.7 for 12-5 PM). Big news: post
+as soon as it's ready. Upload early, scheduled.
 
 ## Rules for this channel
 - **Footage**: everything in `media/` is used as backgrounds. Allowed: official Rockstar screenshots
-  (`media/official/`, 137, named by place/character/car, incl. vintage-*), silent official clips
-  (`media/trailer/launch-trailer-*` and `extended-look-*`: real gameplay from Rockstar's "An Extended Look"), and the owner's own gameplay (`media/gameplay/`, pulled from the Drive folder in
+  (`media/official/`, 138, named by place/character/car, incl. vintage-* and `leonida-map-poster.jpg`, Rockstar's
+  official map: use `magnify`/`zoom` for "where is X" Shorts), silent official clips (`media/trailer/launch-trailer-*`,
+  `extended-look-*`: real gameplay from Rockstar's "An Extended Look", and `out-now-*`: 3 short clean shots from the
+  Nov 19 "Out Now" video; its club/close-up/logo shots are excluded), and the owner's own gameplay (`media/gameplay/`, pulled from the Drive folder in
   `content/owner.md` by `python -m studio.gameplay`, not committed). Never other creators' videos, never a whole
   trailer, clip audio always dropped; narration adds real commentary. Pick `media` per segment by filename and rotate.
   Keep strip-club or sexualized images out (list of excluded shots in owner.md). New official media:

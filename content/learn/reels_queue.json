@@ -125,8 +125,9 @@
  },
  {
   "at": "2026-11-21 16:05",
-  "episode": "episodes/gta6-has-anyone-finished.json",
-  "item": "short"
+  "episode": "episodes/gta6-how-long-to-beat.json",
+  "item": "short",
+  "note": "swapped Nov 21: the 'has anyone finished' Short went out of date (IShowSpeed finished in 52 h); his Short replaces it"
  },
  {
   "at": "2026-11-21 19:00",
@@ -171,6 +172,12 @@
   "episode": "episodes/gta6-video-store-closing.json",
   "item": "short",
   "note": "moved to Mon 5:35 PM: Nov 20 already had 4 posts (cap); 2.5 h after the 15:05 carousel"
+ },
+ {
+  "at": "2026-11-23 20:05",
+  "episode": "episodes/gta6-how-long-to-beat.json",
+  "item": "tips",
+  "note": "easy-mode Short; Mon is the first day with a free 4th slot (2.5 h after 17:35)"
  },
  {
   "at": "2026-11-24 12:00",

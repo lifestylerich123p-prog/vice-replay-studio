@@ -1,0 +1,87 @@
+{
+  "title": "The First Person to Finish GTA 6 Wasn't IShowSpeed",
+  "slug": "gta6-first-to-finish",
+  "series": "Streamer news",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "format": "news",
+  "use_gameplay": false,
+  "short_title": "The first person to finish GTA 6 wasn't IShowSpeed #GTA6 #Shorts",
+  "short_title_options": [
+    "The first person to finish GTA 6 wasn't IShowSpeed #GTA6 #Shorts",
+    "GTA 6 was finished in 39 HOURS (not by Speed) #GTA6 #Shorts",
+    "Who finished GTA 6 first? It wasn't Speed #GTA6 #Shorts"
+  ],
+  "short_description": "BrycexD, a streamer in New Zealand (where GTA 6 unlocked first), says he reached the credits in 39 hours 38 minutes with no breaks (GamesRadar, PowerUp Gaming). IShowSpeed needed 52 h 31 min (Dexerto, Men's Journal). Not verified on a speedrun board yet. No story spoilers. Footage: official Rockstar media, original audio removed.",
+  "short_es": {
+    "title": "La primera persona en terminar GTA 6 no fue IShowSpeed #GTA6 #Shorts",
+    "description": "BrycexD, un streamer de Nueva Zelanda (donde GTA 6 se desbloqueó primero), dice que llegó a los créditos en 39 horas y 38 minutos sin descansos (GamesRadar, PowerUp Gaming). IShowSpeed necesitó 52 h 31 min. Aún no está verificado en una tabla de speedrun. Sin spoilers."
+  },
+  "short_playlist": "GTA 6 Streamer & Breaking News",
+  "pinned_comment": "Rush it like BrycexD or take your time? Reply RUSH or SLOW 👇",
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gaming",
+    "#ishowspeed",
+    "#gta6news"
+  ],
+  "sources": [
+    "GamesRadar - The first GTA 6 speedrun is less than 40 hours, with no breaks: https://www.gamesradar.com/games/grand-theft-auto/the-first-gta-6-speedrun-is-less-than-40-hours-with-no-breaks-from-a-streamer-who-stayed-up-for-50-plus-hours/",
+    "PowerUp Gaming - BrycexD and IShowSpeed become the first streamers to complete GTA 6: https://powerupgaming.co.uk/2026/11/20/brycexd-and-ishowspeed-become-the-first-streamers-to-complete-gta-6/",
+    "Wisevoter - IShowSpeed completes GTA VI livestream (BrycexD 39 h 38 min): https://wisevoter.com/world/2026/11/21/ishowspeed-completes-gta-vi-livestream",
+    "Dexerto - IShowSpeed finishes GTA 6 in 52 hours without sleeping: https://www.dexerto.com/youtube/ishowspeed-breaks-down-in-tears-after-finishing-gta-6-in-52-hours-without-sleeping-3430267/",
+    "Men's Journal - IShowSpeed finishes GTA VI after 52-hour marathon: https://www.mensjournal.com/entertainment/ishowspeed-finishes-gta-vi-after-52-hour-marathon-with-no-sleep",
+    "Push Square - GTA 6 release times (New Zealand first): https://www.pushsquare.com/guides/gta-6-release-times-when-can-you-start-playing"
+  ],
+  "short": [
+    {
+      "headline": "IT WASN'T SPEED",
+      "headline_es": "NO FUE SPEED",
+      "text": "The first person to finish GTA 6 wasn't IShowSpeed.",
+      "text_es": "La primera persona en terminar GTA 6 no fue IShowSpeed.",
+      "keep_media": true,
+      "shots": [
+        {"media": "../media/trailer/out-now-night-drive-ocean-drive.mp4", "start": 0.0, "dur": 1.1},
+        {"media": "../media/trailer/launch-trailer-helicopter-city.mp4", "start": 0.3}
+      ]
+    },
+    {
+      "headline": "39 HOURS, 38 MIN",
+      "headline_es": "39 HORAS, 38 MIN",
+      "text": "It was BrycexD, a streamer in New Zealand, where the game unlocked first. He says he hit the credits in thirty nine hours and thirty eight minutes, with no breaks.",
+      "text_es": "Fue BrycexD, un streamer de Nueva Zelanda, donde el juego se desbloqueó primero. Dice que llegó a los créditos en treinta y nueve horas y treinta y ocho minutos, sin descansos.",
+      "keep_media": true,
+      "shots": [
+        {"media": "../media/trailer/out-now-yacht-bay.mp4", "start": 0.0, "dur": 1.3},
+        {"media": "../media/trailer/launch-trailer-marina-aerial.mp4", "start": 0.0},
+        {"media": "../media/trailer/out-now-marina-ferris-wheel.mp4", "start": 0.0, "dur": 1.4},
+        {"media": "../media/trailer/extended-look-convertible-overpass.mp4", "start": 0.5}
+      ]
+    },
+    {
+      "headline": "SPEED: 52 HOURS",
+      "headline_es": "SPEED: 52 HORAS",
+      "text": "IShowSpeed needed fifty two and a half hours, live, without sleeping. That's almost thirteen hours slower.",
+      "text_es": "IShowSpeed necesitó cincuenta y dos horas y media, en vivo, sin dormir. Casi trece horas más lento.",
+      "keep_media": true,
+      "shots": [
+        {"media": "../media/trailer/launch-trailer-motorbike.mp4", "start": 0.0},
+        {"media": "../media/trailer/extended-look-sunset-skyline.mp4", "start": 0.0, "dur": 2.0}
+      ]
+    },
+    {
+      "headline": "RUSH OR SLOW?",
+      "headline_es": "¿RÁPIDO O LENTO?",
+      "text": "It's not verified on a speedrun board yet. Would you rush it, or take your time? Tell me below, because",
+      "text_es": "Todavía no está verificado en una tabla de speedrun. ¿Lo jugarías rápido o con calma? Dímelo abajo, porque",
+      "keep_media": true,
+      "shots": [
+        {"media": "../media/trailer/launch-trailer-beach-plane.mp4", "start": 0.0, "dur": 1.5},
+        {"media": "../media/trailer/launch-trailer-swamp-sunset.mp4", "start": 0.0, "dur": 1.25},
+        {"media": "../media/trailer/launch-trailer-boatyard.mp4", "start": 0.0, "dur": 1.55},
+        {"media": "../media/trailer/extended-look-convertible-overpass.mp4", "start": 3.0}
+      ]
+    }
+  ]
+}

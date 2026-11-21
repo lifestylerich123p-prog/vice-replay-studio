@@ -15,15 +15,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 # Posting schedule, US Eastern (CLAUDE.md). Index: Monday=0 ... Sunday=6
+# (main video, main Short, news Short). Nov 21 analytics: Shorts posted before noon ET median 21.4 views/h (n=11) vs
+# 0.7 for 12-5 PM (n=18); our best post-launch Short went out at 9:28 AM. So the day's main Short goes out in the morning.
 SCHEDULE = {
-    "weekday": ("3:30 PM", "6:00 PM", "8:30 PM"),
-    5: ("1:30 PM", "4:00 PM", "8:00 PM"),
-    6: ("2:30 PM", "5:00 PM", "7:30 PM"),
+    "weekday": ("3:30 PM", "9:30 AM", "8:30 PM"),
+    5: ("1:30 PM", "10:00 AM", "8:00 PM"),
+    6: ("2:30 PM", "10:00 AM", "7:30 PM"),
 }
 
 
-# Third Short of the day (launch week, owner asked for 3 Shorts a day): lunch-time slot.
-EXTRA = {"weekday": "12:30 PM", 5: "11:00 AM", 6: "12:00 PM"}
+# Third Short of the day: lunch-time slot (12:30 PM did 25 views/h on Nov 20, the best non-morning slot).
+EXTRA = {"weekday": "12:30 PM", 5: "12:30 PM", 6: "12:30 PM"}
 
 
 def times_for(day):
@@ -100,7 +102,7 @@ def build(ep_path, day):
         cards.append(card("main", "Main video", t_main, titles[0], main, thumbs[0] if thumbs else None, blocks, thumbs_html))
         n += 1
     # shorts
-    shorts = ([{"id": "", "title": ep.get("short_title"), "pinned_comment": ep.get("pinned_comment")}] if ep.get("short") else []) \
+    shorts = ([{"id": "", "title": ep.get("short_title"), "pinned_comment": ep.get("short_pinned_comment") or ep.get("pinned_comment")}] if ep.get("short") else []) \
         + ep.get("shorts", [])
     for k, sh in enumerate(shorts):
         name = f"{slug}-short" + (f"-{sh['id']}" if sh.get("id") else "")
