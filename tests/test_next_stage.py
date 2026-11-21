@@ -210,3 +210,23 @@ def test_still_image_shot_finishes_and_pans(tmp_path):
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(out), "-vf", f"select=eq(n\\,{n})", "-frames:v", "1", str(p)], check=True)
     a, b = (np.asarray(Image.open(p).convert("L"), dtype=float) for p in f)
     assert np.abs(a - b).mean() > 1.0  # the picture moved
+
+
+def test_quiz_giveaway_is_blocked(tmp_path):
+    """Nov 21 regression: a quiz 'guess' zoom that shows the answer word (the 'Cheetah' badge) must block publishing."""
+    pytest.importorskip("rapidocr")
+    from PIL import Image, ImageDraw, ImageFont
+    from studio.vice import quizcheck
+    img = Image.new("RGB", (1600, 900), (230, 230, 235))
+    d = ImageDraw.Draw(img)
+    d.text((420, 330), "CHEETAH", font=ImageFont.truetype("assets/fonts/Anton.ttf", 170), fill=(20, 20, 20))
+    img.save(tmp_path / "car.jpg")
+    ep = {"format": "quiz", "short": [
+        {"headline": "GUESS #1", "text": "Number one: a famous badge.", "media": "car.jpg",
+         "magnify": {"box": [0.2, 0.3, 0.8, 0.65]}},
+        {"headline": "GROTTI CHEETAH", "text": "The Grotti Cheetah.", "media": "car.jpg"}]}
+    (tmp_path / "ep.json").write_text(json.dumps(ep))
+    found = quizcheck.problems(ep, tmp_path / "ep.json", tmp_path / "none.mp4", None)
+    assert found and "cheetah" in found[0]
+    ep["short"][0]["magnify"]["box"] = [0.0, 0.7, 0.2, 0.95]  # an empty corner: nothing to read
+    assert quizcheck.problems(ep, tmp_path / "ep.json", tmp_path / "none.mp4", None) == []

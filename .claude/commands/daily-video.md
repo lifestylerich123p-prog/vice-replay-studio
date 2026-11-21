@@ -55,7 +55,9 @@ streamer stories (IShowSpeed family name: 1,179 views, posted 9:28 AM), number/c
      map (`media/official/leonida-map-poster.jpg`) with `magnify` boxes on labels + a sourced real-place match, and
      one twist (e.g. Florida's highest point is 345 ft, so Mount Kalaga is invented).
   3. **Streamer/finisher news** and **money catches** (above), and **rankings** of things in official media.
-  Check every magnify box by cropping it from the image first (labels must be inside the box).
+  Check every magnify box by cropping it from the image first (labels must be inside the box). For quizzes,
+  `studio.vice publish` OCR-reads each guess (zoomed crop + rendered frame) and BLOCKS if the answer is readable
+  (Nov 21: the Cheetah badge and the blurred 'Squalo' lettering); still look at the frames yourself.
 - **Footage**: QC warns when 50%+ of shots repeat recent Shorts. Rotate: least-used clips first (launch-trailer-*
   calm shots, out-now-*, extended-look-convertible-overpass/van-residential/sunset-skyline), and the map poster.
   Owner gameplay (Drive drop zone) beats everything: when it exists, build the Short around it.

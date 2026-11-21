@@ -70,6 +70,8 @@ def publish_draft(episode, dest):
     ctype = "official-footage-commentary" if ep.get("use_gameplay") is False else "original-narrated"
     val = channels.validate(dest, ctype)
     blockers = [f"QC {c['check']}: {c['detail']}" for c in rep["checks"] if c["status"] == "fail"] + val["problems"]
+    from . import quizcheck  # quiz Shorts: the zoomed "guess" must not show its own answer
+    blockers += quizcheck.problems(ep, episode, video, tf)
     cover = out / "cover.jpg"
     if tf.exists() and len(ep.get("short", [])) > 1:  # cover = the payoff segment's middle frame
         t = json.loads(tf.read_text())[1]
