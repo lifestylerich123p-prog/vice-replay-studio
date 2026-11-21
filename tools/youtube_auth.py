@@ -11,6 +11,11 @@ and it prints a REFRESH TOKEN. Put these three values in the Claude environment 
     YT_CLIENT_SECRET  = the client secret
     YT_REFRESH_TOKEN  = the refresh token this prints
 
+Spanish channel ("Vice Replay en Español"): add --es, pick the Spanish channel on Google's screen, and save the token
+as YT_ES_REFRESH_TOKEN instead (the client ID and secret stay the same):
+
+    python3 youtube_auth.py client_secret_XXXX.json --es
+
 Never paste them into a chat. Uses only Python's standard library.
 """
 import http.server
@@ -21,6 +26,10 @@ import threading
 import urllib.parse
 import urllib.request
 import webbrowser
+
+SPANISH = "--es" in sys.argv  # token for the Spanish channel: saved as YT_ES_REFRESH_TOKEN
+if SPANISH:
+    sys.argv.remove("--es")
 
 SCOPES = ("https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.force-ssl "
           "https://www.googleapis.com/auth/yt-analytics.readonly")
@@ -83,7 +92,17 @@ def main():
         print(f"  {'YES' if scope in granted else 'NO '}  {name}")
     if "yt-analytics.readonly" not in granted:
         print("\nAnalytics was NOT granted. Run this again and tick every box on Google's permission screen.\n")
-    print("Success! Put this in the environment settings as YT_REFRESH_TOKEN (don't share it):\n")
+    try:  # show which channel this token belongs to, so the right one gets saved under the right name
+        rq = urllib.request.Request("https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true",
+                                    headers={"Authorization": f"Bearer {tok['access_token']}"})
+        with urllib.request.urlopen(rq, timeout=30) as r:
+            ch = (json.load(r).get("items") or [{}])[0]
+        print(f"\nThis token belongs to the channel: {ch.get('snippet', {}).get('title')} ({ch.get('id')})")
+    except Exception as e:  # noqa: BLE001 - only informational
+        print(f"(couldn't read the channel name: {e})")
+    name = "YT_ES_REFRESH_TOKEN" if SPANISH else "YT_REFRESH_TOKEN"
+    which = "the SPANISH channel (Vice Replay en Español)" if SPANISH else "the English channel (Vice Replay)"
+    print(f"\nIf that is {which}, put this in the environment settings as {name} (don't share it):\n")
     print(tok["refresh_token"])
 
 

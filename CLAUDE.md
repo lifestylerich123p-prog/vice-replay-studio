@@ -68,7 +68,8 @@ as soon as it's ready. Upload early, scheduled.
   out through `content/learn/reels_queue.json` (max 4 posts/day; campaign clips paused since Meta's Nov 19 ad flag);
   how: `.claude/commands/instagram.md`.
 - **Spanish channel** ("Vice Replay en Español", ready, not created yet): `python -m studio.youtube_es` posts the
-  `-es` Shorts after the owner's approval; setup steps in `content/owner.md`; registry `content/learn/uploads-es.json`.
+  `-es` Shorts after the owner's approval; setup steps in `content/owner.md`; channel kit + first uploads in `content/spanish-channel.md`; registry
+  `content/learn/uploads-es.json`.
 - **TikTok**: the owner posts by hand; Shorts go to the "📱 Vice Replay: TikTok files" chat (see owner.md;
   `studio.ship --tiktok` pushes them to the `tiktok-files` branch).
 - **Campaigns** (Whop/Content Rewards): only campaigns with `owner_approved: true` (set only when the owner approves

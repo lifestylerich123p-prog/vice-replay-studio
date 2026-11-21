@@ -272,6 +272,14 @@ def main():
                     help="upload even if another chat/run already posted this item (registry or same title on the channel)")
     a = ap.parse_args()
     tok = token()
+    if not a.test:  # never post with a token that belongs to another channel (e.g. the Spanish one saved by mistake)
+        mine, _ = req("GET", "https://youtube.googleapis.com/youtube/v3/channels?part=id&mine=true", tok)
+        want = json.loads((ROOT / "config" / "channel.json").read_text())["channels"]["vice-replay"]["channel_id"]
+        got = (mine.get("items") or [{}])[0].get("id")
+        if got != want:
+            sys.exit(f"YT_REFRESH_TOKEN belongs to channel {got}, not Vice Replay ({want}). Nothing was posted. "
+                     f"The Spanish channel's token goes in YT_ES_REFRESH_TOKEN; reconnect Vice Replay with "
+                     f"tools/youtube_auth.py (no --es).")
 
     if a.captions_backfill:
         # YouTube gives 10,000 quota units a day; each video here costs ~450 (list 50 + insert 400). Newest first and
