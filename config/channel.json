@@ -59,5 +59,6 @@
       ],
       "note": "Separate project. The connected vidIQ account belongs to this channel: never use it for Vice Replay analytics."
     }
-  }
+  },
+  "caption_style": "classic"
 }

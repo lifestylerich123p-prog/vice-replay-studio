@@ -193,20 +193,92 @@ def align_words(text, audio, lang="en"):
     return times
 
 
+_ONES = {w: i for i, w in enumerate("zero one two three four five six seven eight nine ten eleven twelve thirteen "
+                                       "fourteen fifteen sixteen seventeen eighteen nineteen".split())}
+_TENS = {w: 10 * i for i, w in enumerate("_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()) if w != "_"}
+_SCALES = {"hundred": 100, "thousand": 1000, "million": 1_000_000, "billion": 1_000_000_000}
+_UNITS = {"hours", "hour", "minutes", "minute", "seconds", "percent", "feet", "dollars", "dollar", "million", "billion",
+          "thousand", "players", "views", "days", "years", "credits", "fps", "gigabytes", "gb", "cheats", "stars"}
+
+
+def _num_value(run):
+    """Value of a run of English number words ("fifty two", "two hundred fifty thousand"), or None."""
+    total, cur = 0, 0
+    for w in run:
+        if w in _ONES:
+            cur += _ONES[w]
+        elif w in _TENS:
+            cur += _TENS[w]
+        elif w == "hundred":
+            cur = max(cur, 1) * 100
+        elif w in _SCALES:
+            total += max(cur, 1) * _SCALES[w]; cur = 0
+        else:
+            return None
+    return total + cur
+
+
+def display_tokens(words):
+    """Caption tokens: runs of spoken number words become digits ("fifty two" -> "52", "ninety eight percent" ->
+    "98%"), only when it's clearly a number (2+ words, 10 or more, or followed by a unit), so "number one" and
+    "this one floats" stay words. Returns [(text, first_word_index, last_word_index, is_number)]."""
+    out, i, low = [], 0, [re.sub(r"[^\w]", "", w.lower()) for w in words]
+    numw = set(_ONES) | set(_TENS) | {"hundred"} | set(_SCALES)
+    while i < len(words):
+        j = i
+        while j < len(words) and low[j] in numw and not re.search(r"[.,!?;:]$", words[j][:-1] if j > i else ""):
+            j += 1
+            if re.search(r"[.,!?;:]$", words[j - 1]):
+                break
+        run = low[i:j]
+        val = _num_value(run) if run else None
+        nxt = low[j] if j < len(words) else ""
+        if val is not None and (len(run) >= 2 or val >= 10 or nxt in _UNITS) and not (len(run) == 1 and run[0] in _SCALES):
+            tail = re.search(r"[.,!?;:]+$", words[j - 1])
+            txt = f"{val:,}"
+            if nxt == "percent":
+                txt += "%"; j += 1
+                tail = re.search(r"[.,!?;:]+$", words[j - 1])
+            out.append((txt + (tail.group(0) if tail else ""), i, j - 1, True))
+            i = j
+            continue
+        if low[i] == "gta" and i + 1 < len(words) and re.fullmatch(r"(5|6|v|vi)s?", low[i + 1]):  # "GTA 6" never splits
+            out.append((f"{words[i]} {words[i + 1]}", i, i + 1, False))
+            i += 2
+            continue
+        out.append((words[i], i, i, bool(re.search(r"\d|\$|%", words[i]))))
+        i += 1
+    return out
+
+
+def caption_style():
+    """"animated" (pop-in groups, bouncing spoken word, numbers as pink digits) or "classic". Set in
+    config/channel.json "caption_style" (default classic until the owner approves the new look); the env var
+    VR_CAPTIONS overrides it for one render."""
+    import os
+    if os.environ.get("VR_CAPTIONS"):
+        return os.environ["VR_CAPTIONS"]
+    try:
+        return json.loads((ROOT / "config" / "channel.json").read_text()).get("caption_style", "classic")
+    except Exception:  # noqa: BLE001
+        return "classic"
+
+
 def caption_file(text, start, total, out, w, h, vertical, times=None):
-    """Burned-in captions, 3-5 words at a time. Timed to the real speech when `times` (one (start, end) per word,
-    from align_words) is given; otherwise estimated from character counts."""
+    """Burned-in animated captions, 3 (Shorts) or 5 tokens at a time. Each group pops in (85% -> 100%), the token
+    being spoken bounces (124% -> 112%) in cyan, and numbers show as digits in hot pink ("52 HOURS", "98%").
+    Timed to the real speech when `times` (one (start, end) per script word, from align_words) is given;
+    otherwise estimated from character counts."""
     words = text.split()
-    chunks, cur = [], []
-    for wd in words:
-        cur.append(wd)
-        if len(cur) >= (3 if vertical else 5) or re.search(r"[.,!?;:]$", wd):
-            chunks.append(" ".join(cur))
-            cur = []
+    animated = caption_style() == "animated"
+    toks = display_tokens(words) if animated else [(wd, k, k, False) for k, wd in enumerate(words)]
+    groups, cur = [], []
+    for tk in toks:
+        cur.append(tk)
+        if len(cur) >= (3 if vertical else 5) or re.search(r"[.,!?;:]$", tk[0]):
+            groups.append(cur); cur = []
     if cur:
-        chunks.append(" ".join(cur))
-    weights = [len(c) + 4 for c in chunks]
-    span = total - start - 0.15
+        groups.append(cur)
     size = int(h * (0.052 if vertical else 0.058))
     margin_v = int(h * (0.30 if vertical else 0.08))
     lines = [
@@ -216,33 +288,49 @@ def caption_file(text, start, total, out, w, h, vertical, times=None):
         f"Style: Cap,Montserrat ExtraBold,{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H8C1F00FF,1,0,0,0,100,100,0,0,1,{max(4, size // 10)},3,2,60,60,{margin_v},1",
         "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
-    # word-by-word: the whole chunk stays on screen, the word being spoken pops in cyan and slightly bigger
+    PINK, CYAN, WHITE = r"&H8E1FFF&", r"&HD2E500&", r"&HFFFFFF&"
+
+    def render(group, j, first):
+        # every token carries its own colour + scale tags, so the group pop-in (85% -> 100%) and the spoken token's
+        # bounce (-> 124% -> 112%) don't cancel each other
+        if not animated:  # classic look: the spoken word in cyan, a little bigger, no motion
+            return " ".join((rf"{{\c{CYAN}\fscx112\fscy112}}{tx.upper()}{{\c{WHITE}\fscx100\fscy100}}" if q == j else tx.upper())
+                            for q, (tx, _, _, _) in enumerate(group))
+        start_scale = r"\fscx85\fscy85" if first else r"\fscx100\fscy100"
+        parts = []
+        for q, (tx, _, _, is_num) in enumerate(group):
+            if q == j:
+                hi = PINK if is_num else CYAN
+                parts.append(rf"{{\c{hi}{start_scale}\t(0,80,\fscx124\fscy124)\t(80,160,\fscx112\fscy112)}}{tx.upper()}")
+            else:
+                col = PINK if is_num else WHITE
+                grow = r"\t(0,90,\fscx100\fscy100)" if first else ""
+                parts.append(rf"{{\c{col}{start_scale}{grow}}}{tx.upper()}")
+        return " ".join(parts)
+
     if times and len(times) == len(words):
-        k = 0
-        for c in chunks:
-            words_c = c.upper().split()
-            for j in range(len(words_c)):
-                s0 = start + times[k + j][0]
-                s1 = start + (times[k + j + 1][0] if j + 1 < len(words_c) and k + j + 1 < len(times) else times[k + j][1] + 0.12)
-                shown = " ".join(
-                    (r"{\c&HD2E500&\fscx112\fscy112}" + x + r"{\c&HFFFFFF&\fscx100\fscy100}") if q == j else x
-                    for q, x in enumerate(words_c))
-                lines.append(f"Dialogue: 0,{ass_time(s0)},{ass_time(max(s1, s0 + 0.06))},Cap,,0,0,0,,{shown}")
-            k += len(words_c)
+        ev = []
+        for g in groups:
+            for j, (_, i0, i1, _) in enumerate(g):
+                s0 = start + times[i0][0]
+                nxt = g[j + 1][1] if j + 1 < len(g) else None
+                s1 = start + (times[nxt][0] if nxt is not None else times[i1][1] + 0.12)
+                ev.append([s0, max(s1, s0 + 0.06), render(g, j, j == 0)])
+        for a, b in zip(ev, ev[1:]):  # never two groups on screen at once (they'd overlap)
+            a[1] = max(a[0] + 0.04, min(a[1], b[0]))
+        lines += [f"Dialogue: 0,{ass_time(a)},{ass_time(b)},Cap,,0,0,0,,{txt}" for a, b, txt in ev]
         out.write_text("\n".join(lines), encoding="utf-8")
         return out
+    span = total - start - 0.15
+    weights = [sum(len(t[0]) + 2 for t in g) + 4 for g in groups]
     t = start
-    for c, wt in zip(chunks, weights):
+    for g, wt in zip(groups, weights):
         d = span * wt / sum(weights)
-        words_c = c.upper().split()
-        ww = [len(x) + 2 for x in words_c]
+        ww = [len(x[0]) + 2 for x in g]
         wt0 = t
         for j, word_len in enumerate(ww):
             wd = d * word_len / sum(ww)
-            shown = " ".join(
-                (r"{\c&HD2E500&\fscx112\fscy112}" + x + r"{\c&HFFFFFF&\fscx100\fscy100}") if k == j else x
-                for k, x in enumerate(words_c))
-            lines.append(f"Dialogue: 0,{ass_time(wt0)},{ass_time(wt0 + wd)},Cap,,0,0,0,,{shown}")
+            lines.append(f"Dialogue: 0,{ass_time(wt0)},{ass_time(wt0 + wd)},Cap,,0,0,0,,{render(g, j, j == 0)}")
             wt0 += wd
         t += d
     out.write_text("\n".join(lines), encoding="utf-8")

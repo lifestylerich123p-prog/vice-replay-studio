@@ -230,3 +230,30 @@ def test_quiz_giveaway_is_blocked(tmp_path):
     assert found and "cheetah" in found[0]
     ep["short"][0]["magnify"]["box"] = [0.0, 0.7, 0.2, 0.95]  # an empty corner: nothing to read
     assert quizcheck.problems(ep, tmp_path / "ep.json", tmp_path / "none.mp4", None) == []
+
+
+def test_caption_numbers_become_digits_only_when_clearly_numbers():
+    from studio.make_video import display_tokens
+    show = lambda t: " | ".join(x[0] for x in display_tokens(t.split()))
+    assert show("IShowSpeed beat GTA 6 in one stream. Fifty two hours.") == "IShowSpeed | beat | GTA 6 | in | one | stream. | 52 | hours."
+    assert show("his ninety eight percent save") == "his | 98% | save"
+    assert show("Number four: this one floats.") == "Number | four: | this | one | floats."
+    assert show("only three hundred forty five feet.") == "only | 345 | feet."
+    assert show("GTA 5 vs GTA 6") == "GTA 5 | vs | GTA 6"
+
+
+def test_animated_captions_never_overlap(tmp_path, monkeypatch):
+    import re as _re
+    from studio import make_video as mv
+    monkeypatch.setenv("VR_CAPTIONS", "animated")
+    text = "IShowSpeed beat GTA 6 in one stream. Fifty two hours and thirty one minutes, live."
+    words = text.split()
+    times = [(0.1 + i * 0.3, 0.1 + i * 0.3 + 0.45) for i in range(len(words))]  # deliberately overlapping words
+    f = mv.caption_file(text, 0.2, 6, tmp_path / "c.ass", 1080, 1920, True, times=times)
+    ev = [l.split(",", 3) for l in f.read_text().splitlines() if l.startswith("Dialogue:")]
+    def secs(t):
+        h, m, s = t.split(":"); return int(h) * 3600 + int(m) * 60 + float(s)
+    spans = [(secs(e[1]), secs(e[2])) for e in ev]
+    assert all(a[1] <= b[0] + 1e-6 for a, b in zip(spans, spans[1:]))
+    body = f.read_text()
+    assert "52" in body and "&H8E1FFF&" in body and _re.search(r"\\t\(0,80", body)
