@@ -1,6 +1,6 @@
 # Channel Map: read this first (shared by all chats)
 
-Updated Nov 20, 2026 (owner: Javier, US Eastern). One owner, three channels, each with its own job. Every chat
+Updated Nov 20, 2026 (US Eastern). One owner, three channels, each with its own job. Every chat
 reads this before starting work and adds a line to "Shared log" when it learns something the others should know.
 Shared copy: Google Drive > "Creator HQ (shared by all chats)" > "Channel Map (read first, all chats)"
 (https://docs.google.com/document/d/1t4jj7h1Pnodnys_SAeS7V5xLIVY0Ryls7g23E1mquJs; folder
