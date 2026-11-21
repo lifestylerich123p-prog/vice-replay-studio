@@ -5,7 +5,7 @@ Read this first instead of searching the repo.
 ## Where things live
 - Rules: `CLAUDE.md` · settings, links, approvals, chats: `content/owner.md` · plan: `content/launch-plan.md`
 - What was made: `content/log.md` · numbers: `content/performance.md`, `content/learn/channel.json`, `content/learn/analytics.json` · lessons: `content/learn/lessons.md`, `content/learn/patterns.md`
-- Latest market report: `content/learn/market-2026-11-20.md`
+- Latest market report: `content/learn/market-2026-11-21.md`
 - Routines: `.claude/commands/` · code: `studio/` · website: `site/` + `tools/site_guides.py` (repo vicereplay-site)
 - Screenshots: `media/official/` (names = place/character/car) · gameplay: `media/gameplay/` (+ processed.json)
 - Renders: `output/<slug>/` (videos auto-deleted 2 days after upload; `uploaded.json` kept)
@@ -23,6 +23,8 @@ Read this first instead of searching the repo.
 | ? | gta6-ranking-rides | Short | Ranking the 6 Rides in Rockstar's GTA 6 Gameplay | short: QzFhpT4dNVQ |
 | ? | gta6-race-hud-details | Short | GTA 6 Races: Look at the Corner of the Screen | short: sP1fq11WMmw |
 | ? | gta6-has-anyone-finished | Short | Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch) | short: WsJ96ZkU2do |
+| ? | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | - |
+| 2026-11-21 | gta6-how-long-to-beat | video | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | - |
 | 2026-11-20 | gta6-video-store-closing | Short | GTA 6 Has a Video Game Store, and It's Closing | short: Rt18FhG-DYk |
 | 2026-11-20 | gta6-took-away-gta5 | Short | GTA 6 Took Away 4 Things GTA 5 Gave You | short: uvWNXugdvSo |
 | 2026-11-20 | gta6-ishowspeed-watkins | Short | IShowSpeed Teared Up Over His Family's Name in GTA 6 | short: uCNHbnOqgs0 |
@@ -51,57 +53,66 @@ Read this first instead of searching the repo.
 ## Channel uploads (from the last learn run)
 | YouTube id | Title | Views |
 |---|---|---|
-| aYBokm3TIYE | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts | 7583 |
-| Z8jQK8nZ1cQ | GTA 6 on PS5 vs PS5 Pro: the verdict is in #GTA6 #Shorts | 328 |
-| ty0KP7MLaKU | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts | 1806 |
-| b4pWGuZNPJY | GTA 6 already made $1.65 BILLION #GTA6 #Shorts | 1319 |
-| Eikozi0uFec | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 #shorts | 1004 |
-| Wl6K3f5FtVU | GTA 6 says NOT ENOUGH SPACE? Do this first #GTA6 #Shorts | 947 |
-| vlPV5Yre8T8 | GTA 6 cheats are real... but there's a catch #GTA6 #Shorts | 1166 |
-| DG_MpuSMDV8 | GTA 6 is already OUT in New Zealand (the catch) #GTA6 #Shorts | 1307 |
-| oYqPC06109w | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy | 5247 |
-| S5L5Mah6LIU | GTA 6 just got a 99 on Metacritic #GTA6 #Shorts | 945 |
-| 6bPAn80dKno | 7 MILLION people watched GTA 6 at once #GTA6 #Shorts | 684 |
-| DBlAdqc1orw | GTA 6 is OUT: do these 3 things first #GTA6 #Shorts | 720 |
-| YKR0s2dWJ8o | GTA 6 NZ trick: 18 hours early? #GTA6 #Shorts | 1345 |
-| _5ZWAUY75y4 | Lucia's actress is CONFIRMED before launch #GTA6 #Shorts | 1214 |
-| gvIH1aLtJuc | IShowSpeed heads to New Zealand for GTA 6? #GTA6 #Shorts | 1008 |
-| Y4AT3Y4kcmg | GTA 6 at 9 PM the night before? #GTA6 #Shorts | 811 |
-| 9lTZNbwbSec | GTA 6 physical edition has NO DISC #GTA6 #Shorts | 368 |
-| 4EuMnzlLKTY | Rockstar's boss just broke his silence on GTA 6 #GTA6 #Shorts | 301 |
-| xvudsg_o6ow | GTA 6 just got nominated for GAME OF THE YEAR #GTA6 #Shorts | 355 |
-| ZUcedkldfsE | Kai Cenat's 130 HOUR GTA warm-up is over #GTA6 #Shorts | 279 |
-| pcoMWOraJA4 | GTA 6 Unlock Time in Every Time Zone (US, UK, EU, Australia) | 294 |
-| wPPhLBHS7-M | GTA 6 in 3 days: what you need to know #GTA6 #Shorts | 382 |
-| yKISW4fJj3Y | Those GTA 6 cheat codes are FAKE #GTA6 #Shorts | 243 |
-| RAs1Sx_7Zh8 | Can't get into GTA 6? Check these 2 things #GTA6 #Shorts | 16 |
-| DIFRHVF6T0E | YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts | 250 |
-| rhf1qryjRSM | Rockstar sent GTA 6 packages to streamers #GTA6 #Shorts | 55 |
-| -C9KX5Afwgw | GTA 6 New Zealand Trick: Play Early or Risk Your Account? | 108 |
-| kLxIVUzSOaI | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore | 173 |
-| acNIOalmWzM | GTA 6 cheat codes that actually work (screenshot this) #GTA6 #Shorts | 3 |
-| 9QNojUuqHtc | Lacy can't steal cars in GTA 6 😭🔑 #LACY #GTA6 #Shorts | 4 |
-| c_l7udfLNnk | LACY vs a GTA 6 shark 🦈😳 #LACY #GTA6 #shortsyoutube | 7 |
-| 6QbWET74cQs | First 3 settings to change in GTA 6 #GTA6 #Shorts | 4 |
+| aYBokm3TIYE | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts | 9329 |
+| uCNHbnOqgs0 | IShowSpeed teared up over his family's name in GTA 6 #GTA6 #Shorts | 1179 |
+| ty0KP7MLaKU | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts | 1862 |
+| Z8jQK8nZ1cQ | GTA 6 on PS5 vs PS5 Pro: the verdict is in #GTA6 #Shorts | 1199 |
+| oYqPC06109w | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy | 5301 |
+| b4pWGuZNPJY | GTA 6 already made $1.65 BILLION #GTA6 #Shorts | 1375 |
+| vkvg5KPqb70 | Don't grind money in GTA 6 Chapter 1 (here's the catch) #GTA6 #Shorts | 496 |
+| vlPV5Yre8T8 | GTA 6 cheats are real... but there's a catch #GTA6 #Shorts | 1175 |
+| Eikozi0uFec | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 #shorts | 1010 |
+| Wl6K3f5FtVU | GTA 6 says NOT ENOUGH SPACE? Do this first #GTA6 #Shorts | 970 |
+| DG_MpuSMDV8 | GTA 6 is already OUT in New Zealand (the catch) #GTA6 #Shorts | 1303 |
+| S5L5Mah6LIU | GTA 6 just got a 99 on Metacritic #GTA6 #Shorts | 1078 |
+| YKR0s2dWJ8o | GTA 6 NZ trick: 18 hours early? #GTA6 #Shorts | 1344 |
+| DBlAdqc1orw | GTA 6 is OUT: do these 3 things first #GTA6 #Shorts | 839 |
+| 6bPAn80dKno | 7 MILLION people watched GTA 6 at once #GTA6 #Shorts | 778 |
+| _5ZWAUY75y4 | Lucia's actress is CONFIRMED before launch #GTA6 #Shorts | 1220 |
+| KlelqBLnEUI | GTA 6 made $3.79 BILLION in ONE day (official) #GTA6 #Shorts | 185 |
+| gvIH1aLtJuc | IShowSpeed heads to New Zealand for GTA 6? #GTA6 #Shorts | 1000 |
+| Y4AT3Y4kcmg | GTA 6 at 9 PM the night before? #GTA6 #Shorts | 798 |
+| 9lTZNbwbSec | GTA 6 physical edition has NO DISC #GTA6 #Shorts | 410 |
+| 4EuMnzlLKTY | Rockstar's boss just broke his silence on GTA 6 #GTA6 #Shorts | 372 |
+| Rt18FhG-DYk | GTA 6 has a video game store... and it's closing #GTA6 #Shorts | 60 |
+| xvudsg_o6ow | GTA 6 just got nominated for GAME OF THE YEAR #GTA6 #Shorts | 353 |
+| yU-xKsoUdbM | GTA 6 has NO mission replay (save like this) #GTA6 #Shorts | 53 |
+| wPPhLBHS7-M | GTA 6 in 3 days: what you need to know #GTA6 #Shorts | 379 |
+| ZUcedkldfsE | Kai Cenat's 130 HOUR GTA warm-up is over #GTA6 #Shorts | 277 |
+| pcoMWOraJA4 | GTA 6 Unlock Time in Every Time Zone (US, UK, EU, Australia) | 296 |
+| yKISW4fJj3Y | Those GTA 6 cheat codes are FAKE #GTA6 #Shorts | 237 |
+| DIFRHVF6T0E | YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts | 252 |
+| rhf1qryjRSM | Rockstar sent GTA 6 packages to streamers #GTA6 #Shorts | 98 |
+| LHTxGyakWyI | GTA 6 has a dog that saves you at sea 🐶 #GTA6 #Shorts | 16 |
+| -C9KX5Afwgw | GTA 6 New Zealand Trick: Play Early or Risk Your Account? | 106 |
+| kLxIVUzSOaI | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore | 175 |
+| RAs1Sx_7Zh8 | Can't get into GTA 6? Check these 2 things #GTA6 #Shorts | 24 |
+| MIvka1jBpJ0 | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | 24 |
+| 6QbWET74cQs | Change these GTA 6 settings NOW #GTA6 #Shorts | 7 |
+| c_l7udfLNnk | LACY vs a GTA 6 shark 🦈😳 #LACY #GTA6 #shortsyoutube | 8 |
+| 2MOr9zSDyfM | GTA 6 Chaos Is Coming 🌴 | Vice Replay | 42 |
+| PJgR2lmq_Nc | GTA 6 Beginner Tips Nobody Tells You (No Spoilers) | 2 |
+| acNIOalmWzM | GTA 6 cheat codes that actually work (screenshot this) #GTA6 #Shorts | 5 |
+| 9QNojUuqHtc | Lacy can't steal cars in GTA 6 😭🔑 #LACY #GTA6 #Shorts | 6 |
 | RmONg7-uN4w | GTA 6 Physical Edition Has No Disc: What You're Buying | 8 |
-| 2MOr9zSDyfM | GTA 6 Chaos Is Coming 🌴 | Vice Replay | 41 |
-| x8C9oncanac | LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #Shorts | 2 |
-| MIvka1jBpJ0 | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | 6 |
-| vJDnv7_7Hcs | GTA 6 in 3 Days: Exact Unlock Time & 212GB Download | 5 |
-| GjhaJdjHR4Q | GTA 6 Is Bigger Than Vice City: 6 Places to Know | 15 |
+| GjhaJdjHR4Q | GTA 6 Is Bigger Than Vice City: 6 Places to Know | 16 |
 | YqnShunG7WY | GTA 6 Survival Guide: 7 Things to Do Before You Play | 14 |
 | 3T1de9Fnygg | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | 0 |
+| x8C9oncanac | LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #Shorts | 2 |
+| vJDnv7_7Hcs | GTA 6 in 3 Days: Exact Unlock Time & 212GB Download | 5 |
 
 ## Website guides
 | Date | Page | Title |
 |---|---|---|
 | 2026-11-20 | /es/guias/consejos-gta-6-principiantes/ | Consejos de GTA 6 para principiantes: 6 cosas que el juego no te dice |
+| 2026-11-21 | /es/guias/cuanto-dura-gta-6/ | ¿Cuánto dura GTA 6? Horas de la historia, tiempos reales y el 100% (sin spoilers) |
 | 2026-11-20 | /guides/gta-6-beginner-tips/ | GTA 6 Beginner Tips: 6 Things the Game Doesn't Tell You (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-best-settings/ | Best TV and Console Settings for GTA 6 (PS5 and Xbox) |
 | 2026-11-19 | /guides/gta-6-best-ssd/ | Best SSD for GTA 6 on PS5 (212 GB): What to Buy and What to Skip |
 | 2026-11-19 | /guides/gta-6-black-friday/ | GTA 6 Black Friday 2026: Live Deals on Controllers, Storage and the Game |
 | 2026-11-18 | /guides/gta-6-characters/ | Every GTA 6 Character Confirmed So Far (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-gift-guide/ | GTA 6 Gift Guide 2026: Best Gifts for a GTA 6 Fan (PS5 and Xbox) |
+| 2026-11-21 | /guides/gta-6-how-long-to-beat/ | How Long Is GTA 6? Story Length, Real Finish Times and 100% (No Spoilers) |
 | 2026-11-19 | /es/guias/guia-lanzamiento-gta-6/ | GTA 6 ya salió: guía de supervivencia (servidores, 30 FPS y ajustes) |
 | 2026-11-19 | /guides/gta-6-launch-day-survival-guide/ | GTA 6 Launch Day Survival Guide: Servers, 30 FPS and Settings |
 | 2026-11-18 | /guides/gta-6-map-size/ | How Big Is the GTA 6 Map? Leonida vs GTA 5 and Red Dead 2 |
@@ -128,4 +139,4 @@ Read this first instead of searching the repo.
 | built-in | /es/guias/gta-6-lanzamiento-en-vivo/ | Lanzamiento de GTA 6: actualizaciones en vivo |
 
 ## Screenshot groups in media/official/
-ambrosia, boobie-ike, brian-heder, cal-hampton, car-electric-fang, car-grotti-cheetah, car-squalo, car-vapid-stanier, drequan-priest, grassrivers, jason-and-lucia, jason-duval, leonida-keys, lucia-caminos, mount-kalaga, port-gellhorn, raul-bautista, real-dimez, vice-city, vintage-vice-city-pack, vintage-vice-city-pack-exclusive-looks, vintage-vice-city-pack-vapid-stanier, vintage-vice-city-weapon-pattern
+ambrosia, boobie-ike, brian-heder, cal-hampton, car-electric-fang, car-grotti-cheetah, car-squalo, car-vapid-stanier, drequan-priest, grassrivers, jason-and-lucia, jason-duval, leonida-keys, leonida-map-poster, lucia-caminos, mount-kalaga, port-gellhorn, raul-bautista, real-dimez, vice-city, vintage-vice-city-pack, vintage-vice-city-pack-exclusive-looks, vintage-vice-city-pack-vapid-stanier, vintage-vice-city-weapon-pattern

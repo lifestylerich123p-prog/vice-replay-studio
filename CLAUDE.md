@@ -27,7 +27,7 @@ as soon as it's ready. Upload early, scheduled.
 
 ## Rules for this channel
 - **Footage**: everything in `media/` is used as backgrounds. Allowed: official Rockstar screenshots
-  (`media/official/`, 138, named by place/character/car, incl. vintage-* and `leonida-map-poster.jpg`, Rockstar's
+  (`media/official/`, 176 incl. 38 Ultimate Edition shots of cars/shops/style, named by place/character/car, incl. vintage-* and `leonida-map-poster.jpg`, Rockstar's
   official map: use `magnify`/`zoom` for "where is X" Shorts), silent official clips (`media/trailer/launch-trailer-*`,
   `extended-look-*`: real gameplay from Rockstar's "An Extended Look", and `out-now-*`: 3 short clean shots from the
   Nov 19 "Out Now" video; its club/close-up/logo shots are excluded), and the owner's own gameplay (`media/gameplay/`, pulled from the Drive folder in

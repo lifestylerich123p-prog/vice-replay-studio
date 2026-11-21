@@ -90,6 +90,13 @@
   the Nov 19 copy is renamed "OLD Channel Map (Nov 19)". Never re-upload a new copy.
 - 2026-11-20: Owner asked "check all facts before posting" (applies to every video): verify each claim against 2+
   reliable sources (or read it off the footage at full size) right before upload, and fix loose wording.
+- 2026-11-21: New official media (rockstargames.com/VI/media, each viewed first): 3 clean shots from the Nov 19
+  "Out Now" video (`media/trailer/out-now-marina-ferris-wheel`, `-yacht-bay`, `-night-drive-ocean-drive`; left out: Rockstar
+  and GTA logos, "Play/Out Now" cards, club dancing, a close-up of a woman's body, a pink-lit room, character close-ups),
+  the official Leonida map poster (`media/official/leonida-map-poster.jpg`) and 38 Ultimate Edition screenshots (cars,
+  boats, Rideout Customs, Sara's Salon, Stock 305, Wyman car collection, Vice City style). EXCLUDED Ultimate Edition
+  shots: both revolver shots, weapon variants, the PTT store (man holding a gun), two Electric Fang tattoo-parlor
+  shots (balaclava pose, bat/pipe), the Squalo swimwear shot, Stock 305 #4 and Vice City Style #3/#5 (revealing poses).
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.

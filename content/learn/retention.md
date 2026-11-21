@@ -3,19 +3,27 @@
 Use these when writing hooks and choosing length. Only trust a comparison with 3+ videos on each side.
 
 ## What keeps viewers (Shorts)
-- Average Short: 59.0% viewed, 115% still watching at the hook (~10% in; over 100 = people rewatch).
+- Hook with a number: number 54.6% viewed (10 Shorts) vs no number 50.3% (7)
+- Topic: news/breaking 47.1% viewed (8 Shorts) vs other 57.8% (9)
+- Average Short: 52.8% viewed, 111.2% still watching at the hook (~10% in; over 100 = people rewatch).
 
 ## Best and worst Shorts by % viewed
 | % viewed | at hook (100 = all) | views | subs | hook |
 |---|---|---|---|---|
-| 66% | 125% | 189 | 0 | YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts |
-| 52% | 105% | 115 | 0 | GTA 6 in 3 days: what you need to know #GTA6 #Shorts |
+| 82% | 130% | 1350 | 0 | 18 HOURS EARLY? |
+| 68% | 116% | 408 | 0 | GTA 6 IS OUT |
+| 67% | 114% | 929 | 1 | 99 ON METACRITIC |
+| 66% | 111% | 1301 | 0 | Already out in NZ |
+| 65% | 118% | 382 | 1 | GTA 6 in 3 days |
+| 39% | 102% | 279 | 0 | Kai Cenat's 130 HOUR GTA warm-up is over #GTA6 #Shorts |
+| 32% | -% | 40 | 0 | STREAMERS GOT BOXES |
+| 0% | -% | 0 | 0 | GTA 6 CHEATS ARE REAL |
 
 ## Long videos
 | % viewed | avg seconds | views | title |
 |---|---|---|---|
-| 92% | 17 | 5071 | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy |
-| 66% | 19 | 159 | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore |
-| 56% | 6 | 34 | GTA 6 Chaos Is Coming 🌴 | Vice Replay |
-| 27% | 60 | 8 | GTA 6 Survival Guide: 7 Things to Do Before You Play |
-| 26% | 31 | 14 | GTA 6 Is Bigger Than Vice City: 6 Places to Know |
+| 92% | 17 | 5208 | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy |
+| 66% | 19 | 167 | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore |
+| 56% | 6 | 41 | GTA 6 Chaos Is Coming 🌴 | Vice Replay |
+| 48% | 56 | 3 | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade |
+| 45% | 45 | 107 | GTA 6 New Zealand Trick: Play Early or Risk Your Account? |
