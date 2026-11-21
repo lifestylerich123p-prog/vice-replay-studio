@@ -19,6 +19,20 @@ Use these when writing hooks and choosing length. Only trust a comparison with 3
 | 32% | -% | 40 | 0 | STREAMERS GOT BOXES |
 | 0% | -% | 0 | 0 | GTA 6 CHEATS ARE REAL |
 
+## Where Shorts lose viewers (per second; the biggest drop is where to fix the hook or cut)
+Median still watching: 108% at 3 s, 101% at 5 s (15 Shorts with curves).
+
+| % viewed | at 3 s | at 5 s | biggest drop | hook |
+|---|---|---|---|---|
+| 82% | 130% | 120% | 0:06 (-14 pts) | 18 HOURS EARLY? |
+| 68% | 116% | 102% | 0:02 (-18 pts) | GTA 6 IS OUT |
+| 67% | 114% | 105% | 0:02 (-12 pts) | 99 ON METACRITIC |
+| 66% | 112% | 107% | 0:08 (-9 pts) | Already out in NZ |
+| 65% | 118% | 102% | 0:05 (-12 pts) | GTA 6 in 3 days |
+| 61% | 121% | 110% | 0:06 (-11 pts) | 24 hours of GTA 6 |
+| 61% | 107% | 93% | 0:05 (-12 pts) | 7 MILLION WATCHING |
+| 58% | 108% | 96% | 0:05 (-9 pts) | Lucia's actress confirmed |
+
 ## Long videos
 | % viewed | avg seconds | views | title |
 |---|---|---|---|

@@ -60,17 +60,42 @@ def episode_index():
     return out
 
 
-def curve_points(tok, vid):
+def curve(tok, vid):
+    """Watch ratio along one video: sorted [(elapsed ratio 0..1, watch ratio)], or None if unavailable."""
     try:
         rows = report(tok, metrics="audienceWatchRatio", dimensions="elapsedVideoTimeRatio", filters=f"video=={vid}")
     except urllib.error.HTTPError:
-        return None, None
+        return None
     if not rows:
-        return None, None
-    pts = sorted((r["elapsedVideoTimeRatio"], r["audienceWatchRatio"]) for r in rows)
+        return None
+    return sorted((r["elapsedVideoTimeRatio"], r["audienceWatchRatio"]) for r in rows)
+
+
+def curve_points(pts):
     hook = min(pts, key=lambda p: abs(p[0] - 0.1))[1]
     end = pts[-1][1]
     return round(hook * 100), round(end * 100)
+
+
+def per_second(pts, length):
+    """% still watching at each whole second 0..length, read from the nearest sampled point of the curve."""
+    out = []
+    for s in range(int(length) + 1):
+        ratio = s / length
+        near = min(pts, key=lambda p: abs(p[0] - ratio))
+        out.append(round(near[1] * 100))
+    return out
+
+
+def avg_med(xs):
+    return round(statistics.median(xs)) if xs else "-"
+
+
+def drop_summary(secs):
+    """Second with the biggest one-second drop (never second 0), and how many points were lost there."""
+    drops = [(secs[s - 1] - secs[s], s) for s in range(1, len(secs))]
+    loss, s = max(drops)
+    return s, loss
 
 
 def main():
@@ -90,14 +115,17 @@ def main():
         e = ours.get(vid, {})
         title = meta.get("title", "")
         kind = e.get("kind") or ("short" if "#shorts" in title.lower() else "long")
-        hook_pct, end_pct = curve_points(tok, vid) if r.get("views", 0) >= 30 else (None, None)
+        pts = curve(tok, vid) if r.get("views", 0) >= 30 else None
+        hook_pct, end_pct = curve_points(pts) if pts else (None, None)
+        length = meta.get("duration_sec") or meta.get("seconds")
+        secs = per_second(pts, float(length)) if pts and length and kind == "short" else None
         hook_text = e.get("hook") or title
         data.append({"id": vid, "title": title, "kind": kind, "views": r.get("views", 0),
                      "avg_pct": r.get("averageViewPercentage"), "avg_sec": r.get("averageViewDuration"),
                      "subs": r.get("subscribersGained", 0), "hook_kept_pct": hook_pct, "end_kept_pct": end_pct,
                      "hook": hook_text, "first_line": e.get("first_line", ""), "topic": e.get("topic", ""),
                      "hook_has_number": bool(re.search(r"\d", hook_text)),
-                     "length_sec": meta.get("duration_sec") or meta.get("seconds")})
+                     "length_sec": length, "per_second": secs})
     LEARN.mkdir(parents=True, exist_ok=True)
     (LEARN / "retention.json").write_text(json.dumps(data, indent=2, ensure_ascii=False))
 
@@ -125,6 +153,17 @@ def main():
         for d in ranked[:5] + (ranked[-3:] if len(ranked) > 8 else []):
             lines.append(f"| {d['avg_pct']:.0f}% | {d['hook_kept_pct'] if d['hook_kept_pct'] is not None else '-'}% | "
                          f"{d['views']} | {d['subs']} | {d['hook'][:60]} |")
+    timed = [d for d in shorts if d["per_second"]]
+    if timed:
+        at3 = [d["per_second"][3] for d in timed if len(d["per_second"]) > 3]
+        at5 = [d["per_second"][5] for d in timed if len(d["per_second"]) > 5]
+        lines += ["", "## Where Shorts lose viewers (per second; the biggest drop is where to fix the hook or cut)",
+                  f"Median still watching: {avg_med(at3)}% at 3 s, {avg_med(at5)}% at 5 s ({len(timed)} Shorts with curves).",
+                  "", "| % viewed | at 3 s | at 5 s | biggest drop | hook |", "|---|---|---|---|---|"]
+        for d in sorted(timed, key=lambda d: d["avg_pct"], reverse=True)[:8]:
+            s, loss = drop_summary(d["per_second"])
+            at = lambda i: d["per_second"][i] if len(d["per_second"]) > i else "-"
+            lines.append(f"| {d['avg_pct']:.0f}% | {at(3)}% | {at(5)}% | 0:{s:02d} (-{loss} pts) | {d['hook'][:60]} |")
     longs = [d for d in data if d["kind"] == "long" and d["avg_pct"] is not None]
     if longs:
         lines += ["", "## Long videos", "| % viewed | avg seconds | views | title |", "|---|---|---|---|"]
