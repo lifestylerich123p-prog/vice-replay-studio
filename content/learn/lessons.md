@@ -96,3 +96,12 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   the repost check needs full-frame AND moving-pixel matches (a streamer's identical webcam room fooled the first
   version); clip loudness uses two-pass loudnorm (one pass left -17.6 LUFS). Everygen downloads are free (YouTube parts
   ~20 s max per call). Instagram insights aren't readable with the current token (needs the insights permission).
+- 2026-11-21 (scorecard, 46 Shorts): slot matters more than we thought: Shorts posted before noon ET have a median
+  22.8 views/h (n=11) vs 0.7 for 12-5 PM (n=18) and 4.5 for 5-9 PM (n=14). Length too: 16-30 s median 15.2 v/h
+  (n=22) vs 60+ s 0.1 (n=8). The "catch" hook gets the most views/h (23.3, n=3) but the lowest % watched (33%);
+  "number" hooks keep people best (61.5% watched, n=16). Today's Shorts use a number hook, 20-30 s. Suggest the
+  owner test a morning slot for the next streamer Short instead of 6 PM.
+- 2026-11-21 (market, 48 h): 7 of the top 10 GTA 6 videos are non-English Shorts (comedy skits, "POV", reactions);
+  the English winners are question/curiosity titles ("5 Things You Didn't Know", "How Long Can You Survive 6 Stars",
+  "Why Everyone Keeps JUMPING") and ending/spoiler long videos (off-limits for us). Streamer finishes (IShowSpeed
+  52 h) are the story of the day in news; no top-50 video covers finish times as a search answer yet.

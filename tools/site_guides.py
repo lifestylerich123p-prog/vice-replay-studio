@@ -142,6 +142,7 @@ hero_media()
 banner_img("deals-gear")  # used by the hand-written gear/ page
 
 def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
+    body = __import__("re").sub(r"<h1>(.*?)</h1>", lambda m: "<h1>" + m.group(1).replace("GTA 6", "GTA&nbsp;6") + "</h1>", body, flags=16)  # never split "GTA 6" (16 = re.S)
     url = f"{DOMAIN}/{path}" if path else DOMAIN + "/"
     image = image or f"{DOMAIN}/og/default.jpg"
     alt = ""
