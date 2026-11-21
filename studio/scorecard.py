@@ -68,7 +68,8 @@ def tags(v):
     out = {"kind": "campaign clip" if re.search(r"\blacy\b|kreek", t, re.I) else "own Short"}
     low = base.lower()
     out["format"] = ("campaign clip" if out["kind"] == "campaign clip" else
-                     "comparison" if re.search(r"gta ?5|gta v\b| vs |took away|never did|difference", t, re.I) else
+                     "quiz" if re.search(r"guess|quiz|only real|\b\d/\d\b|can you name", t, re.I) else
+                     "comparison" if re.search(r"gta ?5|gta v\b| vs |took away|never did|difference|\bmap\b.*\b(florida|real)", t, re.I) else
                      "streamer" if re.search(r"speed|kai|lacy|jynxzi|clix|streamer|tgg|kreek", low) else
                      "tips/discovery" if re.search(r"tip|how to|money|cheat|save|secret|hidden|first|setting|grind|replay", low) else
                      "news/facts")

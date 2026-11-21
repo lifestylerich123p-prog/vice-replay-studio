@@ -1,0 +1,152 @@
+{
+  "title": "GTA 6's Official Map Is Florida: 4 Matches and 1 Fake",
+  "slug": "gta6-map-is-florida",
+  "series": "C: Details",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "format": "comparison",
+  "use_gameplay": false,
+  "short_title": "GTA 6's map is Florida... except this #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6's map is Florida... except this #GTA6 #Shorts",
+    "GTA 6 map vs real Florida: 4 matches #GTA6 #Shorts",
+    "Rockstar's GTA 6 map has one fake place #GTA6 #Shorts"
+  ],
+  "short_description": "On Rockstar's official Leonida map (free download, rockstargames.com/VI): Vice City is Miami, the Leonida Keys are the Florida Keys (Key Lento = Key Largo), Grassrivers is the Everglades, and Lake Leonida sits where Lake Okeechobee is, next to Ambrosia's sugar country (GTABase, allthings.how, PC Gamer). But Mount Kalaga can't exist: Florida's highest point, Britton Hill, is 345 feet (Visit Florida). Footage: Rockstar's official map poster.",
+  "short_es": {
+    "title": "El mapa de GTA 6 es Florida... menos esto #GTA6 #Shorts",
+    "description": "En el mapa oficial de Leonida: Vice City es Miami, los Leonida Keys son los Cayos de Florida (Key Lento = Key Largo), Grassrivers son los Everglades y el lago Leonida está donde el lago Okeechobee. Pero el monte Kalaga no puede existir: el punto más alto de Florida mide 105 metros."
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Which real Florida place should be in GTA 6 next? 👇",
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gaming",
+    "#gta6map",
+    "#florida"
+  ],
+  "sources": [
+    "Rockstar Games - official Leonida map poster (free download): https://www.rockstargames.com/VI/media",
+    "GTABase - How GTA 6's Leonida compares to real-life Florida locations: https://www.gtabase.com/articles/gta-6/how-gta-6-s-leonida-compares-to-real-life-florida-locations",
+    "allthings.how - What the GTA 6 map is based on: https://allthings.how/what-the-gta-6-map-is-based-on-vice-city-and-the-state-of-leonida/",
+    "PC Gamer - Charting the GTA 6 map: https://www.pcgamer.com/games/grand-theft-auto/gta6-map",
+    "Visit Florida - Britton Hill, Florida's highest point (345 ft): https://www.visitflorida.com/en-us/things-to-do/arts-history/britton-hill-highest-point-florida.html",
+    "Wikipedia - Britton Hill: https://en.wikipedia.org/wiki/Britton_Hill"
+  ],
+  "short": [
+    {
+      "headline": "IT'S FLORIDA",
+      "headline_es": "ES FLORIDA",
+      "text": "Rockstar's official GTA 6 map is basically Florida. Four matches, and one fake.",
+      "text_es": "El mapa oficial de GTA 6 es básicamente Florida. Cuatro coincidencias y una falsa.",
+      "media": "../media/official/leonida-map-poster.jpg",
+      "keep_media": true,
+      "zoom": {
+        "x": 0.62,
+        "y": 0.5,
+        "to": 1.35,
+        "at": 0.2,
+        "dur": 2.4
+      }
+    },
+    {
+      "headline": "VICE CITY = MIAMI",
+      "headline_es": "VICE CITY = MIAMI",
+      "text": "Vice City is Miami.",
+      "text_es": "Vice City es Miami.",
+      "media": "../media/official/leonida-map-poster.jpg",
+      "keep_media": true,
+      "magnify": {
+        "box": [
+          0.55,
+          0.44,
+          0.88,
+          0.62
+        ],
+        "width": 0.86,
+        "y": 0.33
+      }
+    },
+    {
+      "headline": "KEY LENTO = KEY LARGO",
+      "headline_es": "KEY LENTO = KEY LARGO",
+      "text": "The Leonida Keys are the Florida Keys. Key Lento is a play on Key Largo.",
+      "text_es": "Los Leonida Keys son los Cayos de Florida. Key Lento es un juego con Key Largo.",
+      "media": "../media/official/leonida-map-poster.jpg",
+      "keep_media": true,
+      "magnify": {
+        "box": [
+          0.22,
+          0.76,
+          0.66,
+          0.93
+        ],
+        "width": 0.86,
+        "y": 0.33
+      }
+    },
+    {
+      "headline": "GRASSRIVERS = EVERGLADES",
+      "headline_es": "GRASSRIVERS = EVERGLADES",
+      "text": "Grassrivers is the Everglades.",
+      "text_es": "Grassrivers son los Everglades.",
+      "media": "../media/official/leonida-map-poster.jpg",
+      "keep_media": true,
+      "magnify": {
+        "box": [
+          0.32,
+          0.6,
+          0.62,
+          0.75
+        ],
+        "width": 0.86,
+        "y": 0.33
+      }
+    },
+    {
+      "headline": "LAKE = OKEECHOBEE",
+      "headline_es": "LAGO = OKEECHOBEE",
+      "text": "And Lake Leonida sits where Lake Okeechobee is, next to Ambrosia's sugar country.",
+      "text_es": "Y el lago Leonida está donde el lago Okeechobee, junto a la zona azucarera de Ambrosia.",
+      "media": "../media/official/leonida-map-poster.jpg",
+      "keep_media": true,
+      "magnify": {
+        "box": [
+          0.44,
+          0.26,
+          0.78,
+          0.42
+        ],
+        "width": 0.86,
+        "y": 0.33
+      }
+    },
+    {
+      "headline": "THE FAKE ONE",
+      "headline_es": "LA FALSA",
+      "text": "The fake? Mount Kalaga. Florida's highest point is only three hundred forty five feet.",
+      "text_es": "¿La falsa? El monte Kalaga. El punto más alto de Florida mide solo ciento cinco metros.",
+      "media": "../media/official/leonida-map-poster.jpg",
+      "keep_media": true,
+      "magnify": {
+        "box": [
+          0.3,
+          0.12,
+          0.7,
+          0.3
+        ],
+        "width": 0.86,
+        "y": 0.33
+      }
+    },
+    {
+      "headline": "WHAT'S NEXT?",
+      "headline_es": "¿QUÉ SIGUE?",
+      "text": "Which real place should Rockstar add next? Tell me below, because",
+      "text_es": "¿Qué lugar real debería agregar Rockstar? Dímelo abajo, porque",
+      "media": "../media/trailer/launch-trailer-marina-aerial.mp4",
+      "keep_media": true
+    }
+  ]
+}

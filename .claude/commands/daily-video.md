@@ -46,6 +46,16 @@ streamer stories (IShowSpeed family name: 1,179 views, posted 9:28 AM), number/c
   money, lose the cops, easy mode, settings) and to the long video, not to Shorts, until owner gameplay exists
   (a tutorial needs the real menus and map). Use `media/official/leonida-map-poster.jpg` with `magnify`/`zoom`
   for map answers.
+- **Formats that need no gameplay (Nov 21, owner: "get views without the live videos")**: YouTube's Oct 2026
+  originality update favors Shorts that ADD something, not narration over reused clips. Rotate:
+  1. **Quiz** (`"format": "quiz"`, e.g. episodes/gta6-guess-the-ride.json): "Only real GTA 6 fans get 4/4": a
+     `magnify` detail of an official screenshot, then the reveal with the name as headline; 4 items, loop ending
+     "Tell me your score below, because". Answers only from Rockstar's own pages (vehicle/place names).
+  2. **Map vs real life** (`"format": "comparison"`, e.g. episodes/gta6-map-is-florida.json): Rockstar's official
+     map (`media/official/leonida-map-poster.jpg`) with `magnify` boxes on labels + a sourced real-place match, and
+     one twist (e.g. Florida's highest point is 345 ft, so Mount Kalaga is invented).
+  3. **Streamer/finisher news** and **money catches** (above), and **rankings** of things in official media.
+  Check every magnify box by cropping it from the image first (labels must be inside the box).
 - **Footage**: QC warns when 50%+ of shots repeat recent Shorts. Rotate: least-used clips first (launch-trailer-*
   calm shots, out-now-*, extended-look-convertible-overpass/van-residential/sunset-skyline), and the map poster.
   Owner gameplay (Drive drop zone) beats everything: when it exists, build the Short around it.

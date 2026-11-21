@@ -51,7 +51,10 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
 Formats that work (scorecard + competitor research): `"format"` = `news`, `tips/discovery`, `comparison` (GTA 5 vs 6),
 `search-answer` (answer a question people search), `details` (a detail read off official/owner footage, magnified),
 `ranking` (our own countdown of things shown in authorized footage: rankings are a confirmed trend on 7 of 11
-competitor channels). Add `"series"` ("A: Moments", "B: Rankings", "C: Details"/"C: Tested", "Explained") for the scorecard.
+competitor channels), `quiz` (guess from a magnified detail, then reveal; answers from Rockstar's pages; see
+episodes/gta6-guess-the-ride.json) and map comparisons (`comparison` on the official Leonida map, see
+episodes/gta6-map-is-florida.json). Add `"series"` ("A: Moments", "B: Rankings", "C: Details"/"C: Tested",
+"Explained", "Quiz") for the scorecard.
 
 Per-segment keys (all optional) in `short` / `segments`:
 - `media_start` (s) and `keep_media: true` (keep this picture even when owner gameplay exists); `"use_gameplay": false`

@@ -3,6 +3,21 @@
 Rules: re-check every fact on the day you use it (2+ sources), label estimates/reports, no story spoilers, no
 isolated cutscenes. Mark an idea USED (date + slug) when it ships. Researched by the main chat; sources inline.
 
+## Researched Nov 21, 2026 (main chat: formats that need no gameplay)
+1. **Quiz: guess the GTA 6 place from the official map** (`quiz`). Magnify a map label area with the name blurred
+   or cropped out, then reveal: Key Lento, Lake Leonida, Mount Kalaga National Park, Port Gellhorn, Vice Beach. Map:
+   media/official/leonida-map-poster.jpg (Rockstar's free poster). Template: episodes/gta6-guess-the-ride.json.
+2. **Quiz: guess the shop** (Rideout Customs, Sara's Unisex Salon, Stock 305, One-Eyed Willie's) from one detail of
+   the official Ultimate Edition screenshots (names on rockstargames.com/VI/ultimate-edition).
+3. **"Only 1 in 5 players finished Chapter 1"**: trophy trackers (Exophase ~18% of 54K tracked, Leonida Verse 5.6%
+   on Nov 21; both under 20%). Re-check both on the day (numbers move daily); say "according to trophy trackers".
+4. **Streamer records**: IShowSpeed's GTA 6 stream peaked around 372-392K viewers, a channel record (Streams Charts,
+   passionategeekz); 7.9M peak viewers across platforms on launch day (Streams Charts). Re-verify the day you use it.
+5. **"GTA 6 has 61 cheats... but you have to finish the story"** (TweakTown, Player.One, Esquire India). Only after
+   3+ days without a cheats Short (we've posted 3; don't repeat the "catch" angle as-is).
+6. **Ranking: the 5 best Ultimate Edition rides** from Rockstar's own list (Cheetah, Dominator Buggy, Squalo, Dinka
+   Enduro, Ganado retro build), our own picks with one reason each.
+
 ## Researched Nov 19, 2026 (night)
 1. USED 2026-11-20 (gta6-beginner-tips-nobody-tells-you, main Short) **GTA 6 has no mission replay (save like this)**. Hook: "No mission replay. 15 save slots." 15 manual slots +
    1 autosave; loading an old save overwrites the autosave.
