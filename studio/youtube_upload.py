@@ -257,26 +257,40 @@ def main():
                     help="post TEXT as a comment on VIDEO_ID (repeatable); use once the video is public")
     ap.add_argument("--captions-backfill", action="store_true",
                     help="add the English subtitle track to uploads in output/*/uploaded.json that don't have one yet")
+    ap.add_argument("--backfill-limit", type=int, default=10,
+                    help="max videos per --captions-backfill run (~450 quota units each; YouTube allows 10,000 a day)")
     ap.add_argument("--force", action="store_true",
                     help="upload even if another chat/run already posted this item (registry or same title on the channel)")
     a = ap.parse_args()
     tok = token()
 
     if a.captions_backfill:
+        # YouTube gives 10,000 quota units a day; each video here costs ~450 (list 50 + insert 400). Newest first and
+        # at most --backfill-limit per day, so the day's uploads and pinned comments (50 each) still have quota.
+        reg_file = ROOT / "content" / "learn" / "uploads.json"
+        when = {vid: r.get("uploaded", "") for vid, r in (json.loads(reg_file.read_text()) if reg_file.exists() else {}).items()}
+        todo = []
         for f in sorted((ROOT / "output").glob("*/uploaded.json")):
             for key, rec in json.loads(f.read_text()).items():
-                if not isinstance(rec, dict) or not rec.get("id"):
-                    continue
-                slug = f.parent.name
-                name = f"{slug}" if key == "main" else f"{slug}-short" + ("" if key == "short" else f"-{key}")
-                en = english_srt(f.parent / f"{name}.timings.json")
-                if not en:
-                    continue
-                have, _ = req("GET", f"https://youtube.googleapis.com/youtube/v3/captions?part=snippet&videoId={rec['id']}", tok)
-                if any(c["snippet"].get("language") == "en" and c["snippet"].get("trackKind") != "asr" for c in have.get("items", [])):
-                    continue
-                upload_caption(tok, rec["id"], en, lang="en", name="English")
-                print(f"English subtitles added: {rec['id']} ({slug} {key})")
+                if isinstance(rec, dict) and rec.get("id"):
+                    todo.append((when.get(rec["id"], ""), f, key, rec))
+        added = 0
+        for _, f, key, rec in sorted(todo, key=lambda t: t[0], reverse=True):
+            if added >= a.backfill_limit:
+                print(f"Stopped at {a.backfill_limit} today to save quota; run again tomorrow for the rest.")
+                break
+            slug = f.parent.name
+            name = f"{slug}" if key == "main" else f"{slug}-short" + ("" if key == "short" else f"-{key}")
+            en = english_srt(f.parent / f"{name}.timings.json")
+            if not en:
+                continue
+            have, _ = req("GET", f"https://youtube.googleapis.com/youtube/v3/captions?part=snippet&videoId={rec['id']}", tok)
+            if any(c["snippet"].get("language") == "en" and c["snippet"].get("trackKind") != "asr" for c in have.get("items", [])):
+                continue
+            upload_caption(tok, rec["id"], en, lang="en", name="English")
+            added += 1
+            print(f"English subtitles added: {rec['id']} ({slug} {key})")
+        print(f"{added} English subtitle track(s) added.")
         return
 
     if a.comment:
