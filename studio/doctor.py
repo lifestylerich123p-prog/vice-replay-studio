@@ -121,6 +121,25 @@ def main():
     if not any("vicereplay.com" in b for b in bad):
         ok.append("Website is up")
 
+    # 3b. Did today's 5 AM daily run save its work? (Nov 21: its push got a 403 and nobody noticed for hours)
+    try:
+        import subprocess
+        from zoneinfo import ZoneInfo
+        et = dt.datetime.now(ZoneInfo("America/New_York"))
+        if et.hour >= 7:
+            subprocess.run(["git", "fetch", "-q", "origin", "main"], cwd=ROOT, timeout=60, capture_output=True)
+            since = et.replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
+            log = subprocess.run(["git", "log", "origin/main", f"--since={since}", "--grep=Daily run", "--format=%h"],
+                                 cwd=ROOT, capture_output=True, text=True, timeout=60).stdout.strip()
+            if log:
+                ok.append("Today's daily run is saved on GitHub")
+            else:
+                warn.append("No 'Daily run' commit on GitHub today: the 5 AM run may have failed to push. Recover it from "
+                            "its log (publish-site.md, 'If the daily run's hand-off never arrives') and check GitHub "
+                            "access at claude.ai/connect-github")
+    except Exception as e:  # noqa: BLE001 - a git problem must not stop the health check
+        warn.append(f"Couldn't check today's daily run on GitHub ({type(e).__name__})")
+
     # 4. Disk
     free_gb = shutil.disk_usage(ROOT).free / 1e9
     (bad if free_gb < 2 else warn if free_gb < 5 else ok).append(f"Disk: {free_gb:.1f} GB free")

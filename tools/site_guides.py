@@ -660,7 +660,8 @@ page("contact/", "Work With Vice Replay", "Sponsorships, clipping campaigns and 
 INDEXNOW_KEY = "42ea7b879d668a2c990cad4a77c32361"  # public by design: proves to Bing/IndexNow that we own the site
 open(os.path.join(SITE, f"{INDEXNOW_KEY}.txt"), "w").write(INDEXNOW_KEY)
 open(os.path.join(SITE, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
-urls = [("", "2026-11-18"), ("guides/", "2026-11-18"), ("gear/", "2026-11-18"), ("links/", "2026-11-18"), ("contact/", "2026-11-18")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", "2026-11-18")] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
+_newest = max([d for *_, d in GUIDES] + ["2026-11-18"]); _newest_es = max([d for *_, d in GUIDES_ES] + ["2026-11-18"])  # hubs change whenever a guide is added
+urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
 open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
 print("ok", len(GUIDES))

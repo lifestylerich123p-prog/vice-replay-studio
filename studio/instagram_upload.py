@@ -291,6 +291,12 @@ def run_queue(uid):
             break
         video, caption = (episode_reel(it["episode"], it.get("item")) if it.get("episode")
                           else (str(ROOT / it["video"]), it["caption"]))
+        if not Path(video).exists() and it.get("episode") and (ROOT / it["episode"]).exists():
+            # output/ isn't committed: after a fresh container the Short is gone, so render it again from its episode
+            print(f"{Path(video).name} is missing (new container?): rendering it again from {it['episode']}")
+            import subprocess, sys as _sys
+            subprocess.run([_sys.executable, "-m", "studio.make_video", str(ROOT / it["episode"]), "--short"],
+                           cwd=ROOT, timeout=2400)
         if not Path(video).exists():
             it["posted"] = "skipped: file missing"
             continue
