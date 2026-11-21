@@ -731,7 +731,8 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     mix_audio(raw, music if music and Path(music).exists() else None, sfx, mixed, ["-c:a", "aac", "-b:a", "192k"])
     # YouTube plays back at about -14 LUFS; normalize so the voice isn't quiet next to other videos
     run(["ffmpeg", "-y", "-v", "error", "-i", str(mixed), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
-         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(final)])
+         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+         "-movflags", "+faststart", str(final)])  # index at the front: phones and in-app previews open it at once
     # segment timings, so subtitles in other languages can be lined up with the narration
     (out_dir / f"{name}.timings.json").write_text(json.dumps(timings, indent=2))
     return final, chapters, used_footage

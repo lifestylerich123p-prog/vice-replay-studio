@@ -193,7 +193,7 @@ def render(src, start, length, name, layout, cfg, sw, sh, out_dir, headline, tag
     run(["ffmpeg", "-y", "-v", "error", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "0:a?",
          "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-t", f"{length:.2f}", "-r", str(FPS),
          "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
-         "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(out)])
+         "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", str(out)])
     return out, bool(words)
 
 
