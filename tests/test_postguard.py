@@ -18,9 +18,13 @@ def test_live_title_match_ignores_case_hashtags_and_safe_arrows():
 
 def test_instagram_duplicate_and_daily_count():
     today = dt.datetime.now(postguard.ET).replace(hour=12).strftime("%Y-%m-%dT%H:%M:%S%z")
-    recent = [(postguard.norm("Only real GTA 6 fans get 4/4 #GTA6"), "https://instagram.com/p/x", today),
-              (postguard.norm("Old post"), "https://instagram.com/p/y", "2026-01-01T12:00:00+0000")]
-    assert postguard.instagram_duplicate("Only real GTA 6 fans get 4/4\n\nbody #gta6", recent) == "https://instagram.com/p/x"
+    posted = "Only real GTA 6 fans get 4/4\n\nFour rides, one detail each. What did you score?\n#gta6"
+    recent = [(postguard.caption_key(posted), "https://instagram.com/p/x", today),
+              (postguard.caption_key("Old post"), "https://instagram.com/p/y", "2026-01-01T12:00:00+0000")]
+    assert postguard.instagram_duplicate(posted.replace("#gta6", "#gta6 #quiz"), recent) == "https://instagram.com/p/x"
+    # same first line, different post: must NOT count as a duplicate
+    assert postguard.instagram_duplicate("Only real GTA 6 fans get 4/4\n\nRound two: four new rides.", recent) is None
     assert postguard.instagram_duplicate("Something new\n\nbody", recent) is None
+    assert postguard.instagram_duplicate("Old post", recent) == "https://instagram.com/p/y"
     assert postguard.instagram_duplicate("", recent) is None
     assert postguard.instagram_posted_today(recent) == 1

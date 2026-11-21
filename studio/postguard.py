@@ -79,21 +79,31 @@ def youtube_duplicate(slug, key, titles, reg, live):
     return None
 
 
+CAPTION_KEY = 120  # normalized characters compared: the title plus the start of the description
+
+
+def caption_key(caption):
+    """The whole caption, normalized, cut to CAPTION_KEY characters. Not just the first line: two different posts
+    can open with the same line ("GTA 6 is out now." / "GTA 6 is out now. Day two: ...")."""
+    return norm((caption or "")[:2200])[:CAPTION_KEY]
+
+
 def instagram_recent(call, uid, limit=40):
-    """[(first caption line normalized, permalink, timestamp)] of the account's latest posts."""
+    """[(caption key, permalink, timestamp)] of the account's latest posts."""
     r = call("GET", f"{uid}/media", {"fields": "caption,permalink,timestamp", "limit": str(limit)})
-    out = []
-    for m in r.get("data", []):
-        first = (m.get("caption") or "").strip().splitlines()[0] if m.get("caption") else ""
-        out.append((norm(first), m.get("permalink", ""), m.get("timestamp", "")))
-    return out
+    return [(caption_key(m.get("caption")), m.get("permalink", ""), m.get("timestamp", "")) for m in r.get("data", [])]
 
 
 def instagram_duplicate(caption, recent):
-    first = norm((caption or "").strip().splitlines()[0] if caption and caption.strip() else "")
-    if not first:
+    """Permalink of an existing post with the same caption (same first 120 normalized characters), else None.
+    Short captions (under 40 characters) must match completely."""
+    key = caption_key(caption)
+    if not key:
         return None
-    return next((link or "already posted" for f, link, _ in recent if f == first), None)
+    for k, link, _ in recent:
+        if k == key and (len(key) >= 40 or norm(caption) == k):
+            return link or "already posted"
+    return None
 
 
 def instagram_posted_today(recent):

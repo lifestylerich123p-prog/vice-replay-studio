@@ -285,11 +285,11 @@ def run_queue(uid):
         else:
             cap = it.get("caption", "")
         dup = postguard.instagram_duplicate(cap, recent)
-        if dup:  # posted by another chat/run whose queue file we don't have
-            it["posted"], it["posted_at"] = dup, now + " (found on Instagram: posted by another run)"
+        if dup:  # the same caption is already on the account: another chat/run posted it from its own queue copy
+            it["posted"], it["found_on_instagram"] = dup, now
             QUEUE.write_text(json.dumps(q, indent=1, ensure_ascii=False))
-            print(f"Already on Instagram (another chat or run posted it): {dup}. Marked as posted, nothing re-posted.")
-            break
+            print(f"Already on Instagram (same caption, posted by another chat or run): {dup}. Not re-posted.")
+            continue  # nothing was posted by this run, so the next due item may still go
         if it.get("carousel"):
             from .ig_cards import build
             spec = json.loads((ROOT / it["carousel"]).read_text())
