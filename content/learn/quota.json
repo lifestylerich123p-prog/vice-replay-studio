@@ -1,12 +1,12 @@
 {
  "2026-11-21": {
-  "used": 15123,
+  "used": 15175,
   "calls": {
-   "GET channels": 28,
+   "GET channels": 29,
    "GET playlistItems": 21,
-   "GET videos": 16,
+   "GET videos": 17,
    "GET commentThreads": 1,
-   "POST commentThreads": 2,
+   "POST commentThreads": 3,
    "PUT channels": 2,
    "GET search": 3,
    "POST channelBanners/insert": 1,
