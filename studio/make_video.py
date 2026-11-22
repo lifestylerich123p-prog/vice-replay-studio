@@ -489,6 +489,10 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     # long videos keep 0.45 s and the soft dip between segments. A segment can still set either key itself.
     dur = round(voice_dur + float(seg.get("pad", 0.2 if vertical else 0.45)), 2)
     warn_scene_cut(i, seg, dur)
+    if seg.get("chart"):  # our own animated graphic (studio/charts.py): original visuals, not reused footage
+        from . import charts
+        seg = dict(seg, media=str(charts.render(seg["chart"], dur + 0.5, w, h, work / f"chart_{i}.mp4", seed=i)),
+                   media_start=0, focus=None)
     if seg.get("shots"):
         seg = dict(seg, media=str(shots_background(i, seg, dur, w, h, work, Path(seg.get("_base", ".")))),
                    media_start=0, focus=None)

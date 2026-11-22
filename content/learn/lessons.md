@@ -157,3 +157,8 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - 2026-11-22 (main chat): every Short rendered before today has a ~0.1 s black flash at each cut (segment fade out +
   fade in) plus a 0.45 s pause after each line. New default for Shorts: 0.2 s pause + hard cuts (same Dexter script:
   20.4 s -> 19.3 s, 3 black flashes -> 0). Long videos keep the soft dip.
+- 2026-11-22 (main chat, owner "something is not working, check online"): YouTube's Oct 1, 2026 Shorts update ranks
+  original videos higher; YouTube's Creator Liaison reportedly said voice-over on reused footage doesn't make a clip
+  original (Mark Studios, OutlierKit, Relevant Audience). Our narrated trailer-footage Shorts: median 366 views; real
+  gameplay moments (the LACY clips): 1K-9.4K. Fixes: studio/charts.py (our own animated leaderboards/counters as the main
+  picture, trailer as cutaways); owner gameplay is still the biggest missing lever.

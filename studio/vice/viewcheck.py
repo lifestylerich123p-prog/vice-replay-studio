@@ -26,7 +26,7 @@ def _shorts(ep):
 def _moves(seg):
     """Does the first picture move? A clip, cuts between clips, or an animated zoom/magnifier on a still."""
     media = (seg.get("media") or "").lower()
-    if seg.get("shots") or (media and not media.endswith(STILL)):
+    if seg.get("chart") or seg.get("shots") or (media and not media.endswith(STILL)):  # charts are animated
         return True
     return bool(seg.get("magnify") or seg.get("zoom"))
 

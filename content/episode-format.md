@@ -78,6 +78,13 @@ Per-segment keys (all optional) in `short` / `segments`:
 - `callout`: {"x", "y", "r", "at", "label"?} a pink/cyan ring on screen (output coordinates 0-1).
 - `zoom`: {"x", "y", "to": 1.3-1.6, "at", "dur"} smooth punch-in toward a point.
 - `shots`: [{"media", "start", "speed"?, "focus"?, "dur"?}, ...] cuts between several clips inside one segment (pacing).
+- `chart` (Nov 22): our own animated graphic as the segment's picture (studio/charts.py), e.g.
+  `{"type": "bars", "items": [["IShowSpeed, launch", 68.7], ["CarryMinati", 18.1]], "unit": "M", "highlight": 0,
+  "note": "YouTube view counts, Nov 22"}` (a leaderboard that grows, max 6 rows) or `{"type": "counter", "value": 3.79,
+  "prefix": "$", "unit": "B", "label": "...", "vs": {...}}` (a number that counts up, optionally VS a second one).
+  YouTube's Oct 2026 update ranks ORIGINAL Shorts higher and says narration over reused footage isn't original:
+  build the Short around our charts/data and use trailer footage as 1-2 s cutaways, not the whole video.
+  Write the number the way the chart shows it ("sixty eight point seven million" for 68.7M).
 
 Footage rules learned Nov 20: read every sign/number/HUD value at FULL resolution before writing it (a thumbnail showed
 "5/9" where the frame said "5/6"); official clips contain internal cuts and UI moments (the strip-mall clip opens on a

@@ -61,6 +61,10 @@ and our numbers agree (narrated Shorts ~57% viewed, 40% stayed to watch; real mo
   characters before "#GTA6 #Shorts". **Tags**: `tags` (8-15 phrases for THIS Short) and `short_es.tags` / `es.tags` in
   Spanish; the views check warns when they're missing.
 - **Don't repeat a topic** we posted in the last 4 days (the $3.79B was made 3 times: the 3rd went Spanish-only).
+- **Original first** (Oct 2026 YouTube update: narration over reused footage isn't original, and that was most of our
+  Shorts): every narrated Short has at least one `chart` segment (leaderboard / counter / VS) built from numbers WE
+  checked (YouTube API counts, official figures), and trailer clips are cutaways. Demo: the chart segments in
+  content/episode-format.md. Best fits: streamer leaderboards, money/records, "X vs Y" comparisons, our quiz scores.
 
 **NOV 21 PLAN (owner: "use data to find a plan of action and implement"; overrides the slots and mix below).**
 Since launch, people play the game themselves and our trailer-footage Shorts mostly die (Nov 19 noon to Nov 20:

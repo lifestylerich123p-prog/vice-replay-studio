@@ -194,10 +194,13 @@ def _class_check(asset, destination, ai_voice=False, branding=False, platform="Y
 def check_episode(ep, destination="vice-replay"):
     """Every media file an episode uses, plus the narration voice and music, through the gate."""
     assets = []
-    for key in ("segments", "short", "news_short", "tips_short"):
-        for s in ep.get(key) or []:
+    groups = [ep.get(k) or [] for k in ("segments", "short", "news_short", "tips_short")]
+    groups += [sh.get("segments") or [] for sh in ep.get("shorts") or []]  # Nov 22: multi-Short episodes and
+    for segs in groups:                                                     # pictures inside "shots" were unchecked
+        for s in segs:
             if s.get("media"):
                 assets.append(s["media"])
+            assets += [x["media"] for x in s.get("shots") or [] if x.get("media")]
     thumb = (ep.get("thumbnail") or {}).get("image")
     if thumb:
         assets.append(thumb)
