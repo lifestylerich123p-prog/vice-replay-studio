@@ -171,8 +171,20 @@ def thumbnail(line1, line2, tag, out, bg_image=None, w=1280, h=720):
     wm = wordmark(56)
     img.alpha_composite(wm, (30, 24))
     max_w = int(w * 0.62)
-    f1, l1 = fit_lines(line1.upper(), HEADLINE_FONT, max_w, 170, 60)
-    f2, l2 = fit_lines(line2.upper(), HEADLINE_FONT, max_w, 210, 60)
+
+    def text_bottom(f1, l1, f2, l2):
+        hgt = lambda f, ln, s: f.getbbox(ln, stroke_width=s)[3] - f.getbbox(ln, stroke_width=s)[1]
+        return (120 + sum(hgt(f1, ln, 8) + 22 for ln in l1) + 18 + sum(hgt(f2, ln, 6) + 40 for ln in l2))
+
+    # Fit the height too (Nov 22: "BY THE NUMBERS" wrapped to 3 lines and ran under the tag): shrink both lines
+    # until the text ends above the tag (or the bottom edge).
+    s1, s2 = 170, 210
+    while True:
+        f1, l1 = fit_lines(line1.upper(), HEADLINE_FONT, max_w, s1, 60)
+        f2, l2 = fit_lines(line2.upper(), HEADLINE_FONT, max_w, s2, 60)
+        if text_bottom(f1, l1, f2, l2) <= h - (84 if tag else 20) or s2 <= 72:
+            break
+        s1, s2 = s1 - 8, s2 - 10
     def put(y, ln, f, stroke, slab=False):
         # place by real glyph box so lines never overlap
         l, t, r, b = f.getbbox(ln, stroke_width=stroke)
