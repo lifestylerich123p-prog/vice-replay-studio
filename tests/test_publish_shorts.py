@@ -163,3 +163,48 @@ def test_single_short_episode_draft_is_unchanged(studio):
     assert draft["title_options"] == ["T1", "T2"]
     assert draft["status"] == "BLOCKED" and draft["blockers"][0].startswith("views: Short 'short' opens on a still")
     assert draft["upload_command_after_approval"] == f"python -m studio.ship {episode} --upload short --title N"
+
+
+def test_main_video_text_and_footage_checked_once_as_main(studio):
+    root, heard = studio
+    news = short("news")
+    episode = write_episode(root, shorts=[news], segments=[
+        {"headline": "PC", "text": "According to leaks, Rockstar confirmed a PC date", "media": CLIP_A},
+        {"headline": "THEIRS", "text": "a clip from another creator", "media": "../media/other-creator/their-clip.mp4"}])
+    render(root, heard, f"{SLUG}-short-news", news["segments"])
+
+    draft = publish_draft(episode, "vice-replay")
+
+    assert draft["status"] == "BLOCKED"
+    main = [b for b in draft["blockers"] if b.startswith("main: ")]
+    assert any(b.startswith("main: rights: media/other-creator/their-clip.mp4") for b in main)
+    assert any(b.startswith("main: facts: segments[0]") for b in main)
+    assert draft["main"]["rights"] is False and draft["main"]["blockers"] == [b[len("main: "):] for b in main]
+    assert draft["shorts"][0]["status"] == "awaiting owner approval"  # the Short itself is clean
+    assert not any("their-clip" in b or "PC date" in b for b in draft["blockers"] if not b.startswith("main: "))
+
+
+def test_main_video_findings_not_repeated_under_legacy_short(studio):
+    root, heard = studio
+    news = short("news")
+    episode = write_episode(root, short=segs("main cut"), short_title="GTA 6 main cut #Shorts", shorts=[news],
+                            segments=[{"headline": "THEIRS", "text": "a clip", "media": "../media/other-creator/their-clip.mp4"}])
+    render(root, heard, f"{SLUG}-short", segs("main cut"))
+    render(root, heard, f"{SLUG}-short-news", news["segments"])
+
+    draft = publish_draft(episode, "vice-replay")
+
+    assert [b for b in draft["blockers"] if "their-clip" in b] == [
+        next(b for b in draft["blockers"] if b.startswith("main: rights: media/other-creator/their-clip.mp4"))]
+    assert [s["status"] for s in draft["shorts"]] == ["awaiting owner approval"] * 2
+
+
+def test_shorts_episode_without_main_segments_has_no_main_check(studio):
+    root, heard = studio
+    news = short("news")
+    episode = write_episode(root, shorts=[news], segments=[])
+    render(root, heard, f"{SLUG}-short-news", news["segments"])
+
+    draft = publish_draft(episode, "vice-replay")
+
+    assert "main" not in draft and draft["status"] == "awaiting owner approval"

@@ -57,14 +57,17 @@ SHORT_FIELDS = ("segments", "short", "shorts", "news_short", "tips_short", "thum
 
 
 def _short_units(ep):
-    """(id, render name, single-Short episode view) for every Short of a "shorts" episode. A legacy "short" next to them
-    keeps today's whole-episode view (id "short"); each "shorts" entry gets only its own segments, title, description and
-    pinned comment, so main-video findings aren't repeated once per Short."""
+    """(id, render name, single-Short episode view) for every Short of a "shorts" episode, the legacy "short" (id
+    "short") included. Each view has only that Short's segments, title, description and pinned comment; the main video
+    is checked once on its own (_main_checks), so its findings aren't repeated once per Short."""
     slug = ep["slug"]
+    base = {k: v for k, v in ep.items() if k not in SHORT_FIELDS}
     units = []
     if ep.get("short"):
-        units.append(("short", f"{slug}-short", {k: v for k, v in ep.items() if k != "shorts"}))
-    base = {k: v for k, v in ep.items() if k not in SHORT_FIELDS}
+        units.append(("short", f"{slug}-short", dict(
+            base, short=ep["short"], short_title=ep.get("short_title") or ep.get("title", ""),
+            short_title_options=ep.get("short_title_options") or [], short_description=ep.get("short_description"),
+            pinned_comment=ep.get("pinned_comment"))))
     for sh in ep["shorts"]:
         view = dict(base, short=sh.get("segments", []), short_title=sh.get("title") or ep.get("title", ""),
                     short_title_options=sh.get("title_options") or [], short_description=sh.get("description"),
@@ -73,6 +76,20 @@ def _short_units(ep):
             view["format"] = sh["format"]
         units.append((sh["id"], f"{slug}-short-{sh['id']}", view))
     return units
+
+
+def _main_checks(ep, dest):
+    """Rights + facts for the main video of a "shorts" episode (its segments, title, description, thumbnail), once.
+    Text and files only: no render needed. Facts that fail block; warnings are advice; the full list is kept."""
+    from . import factcheck, rights
+    view = {k: v for k, v in ep.items() if k not in SHORT_FIELDS or k in ("segments", "title", "description", "thumbnail")}
+    rc = rights.check_episode(view, dest)
+    facts = factcheck.check_episode(view)
+    blockers = [f"rights: {c['asset']}: {c['record'] or 'no record'} ({'; '.join(c['reasons'])})"
+                for c in rc["checks"] if not c["ok"]]
+    blockers += [f"facts: {x['where']}: {x['text'][:140]} ({x['fix']})" for x in facts if x["level"] == "fail"]
+    advice = [f"facts: {x['where']}: {x['text'][:140]} ({x['fix']})" for x in facts if x["level"] == "warn"]
+    return {"rights": rc["ok"], "blockers": blockers, "advice": advice, "facts": facts}
 
 
 def _gate(episode, ep, video, dest, key, gameplay, val, cover):
@@ -103,8 +120,9 @@ def _gate(episode, ep, video, dest, key, gameplay, val, cover):
 
 def publish_draft(episode, dest):
     """Publication draft: QC + rights + channel + views + facts on the rendered Short(s), written to draft.json.
-    An episode with "shorts" is gated once per Short and gets one combined result (blockers/advice prefixed with the
-    Short id); a single-"short" episode gets the one-Short draft."""
+    An episode with "shorts" is gated once per Short, plus one rights/facts check of its main video ("main"), and gets
+    one combined result (blockers/advice prefixed with the Short id or "main"); a single-"short" episode gets the
+    one-Short draft."""
     from . import channels
     ep = json.loads(Path(episode).read_text())
     slug = ep["slug"]
@@ -139,6 +157,10 @@ def publish_draft(episode, dest):
             sys.exit("Render first: " + "; ".join(f"Short '{sid}' has no output/{slug}/{name}.mp4" for sid, name in missing)
                      + f". Run: python -m studio.ship {episode}")
         shorts, blockers, advice = [], [], []
+        main = _main_checks(ep, dest) if ep.get("segments") else None
+        if main:
+            blockers += [f"main: {b}" for b in main["blockers"]]
+            advice += [f"main: {a}" for a in main["advice"]]
         for sid, name, view in units:
             video, val = out / f"{name}.mp4", channel_check(view)
             cover = out / ("cover.jpg" if sid == "short" else f"cover-{sid}.jpg")
@@ -152,9 +174,10 @@ def publish_draft(episode, dest):
                            "status": "BLOCKED" if g["blockers"] else "awaiting owner approval",
                            "blockers": g["blockers"], "advice": g["advice"],
                            "upload_command_after_approval": f"python -m studio.ship {episode} --upload {sid} --title N"})
-        draft = {"episode": episode, "destination": dest, "rights": all(s["rights"] for s in shorts),
+        draft = {"episode": episode, "destination": dest,
+                 "rights": all(s["rights"] for s in shorts) and (main is None or main["rights"]),
                  "status": "BLOCKED" if blockers else "awaiting owner approval", "blockers": blockers, "advice": advice,
-                 "shorts": shorts,
+                 **({"main": main} if main else {}), "shorts": shorts,
                  "upload_command_after_approval": f"python -m studio.ship {episode} --upload {','.join(s['id'] for s in shorts)}"}
     (out / "draft.json").write_text(json.dumps(draft, indent=1, ensure_ascii=False))
     print(json.dumps(draft, indent=1, ensure_ascii=False))
