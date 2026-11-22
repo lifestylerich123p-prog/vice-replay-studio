@@ -185,17 +185,22 @@
       "text": "Does it deserve the ninety nine? Tell me, because",
       "text_es": "¿Merece el noventa y nueve? Dime, porque",
       "keep_media": true,
-      "shots": [
-        {
-          "media": "../media/trailer/extended-look-skyline-blimp.mp4",
-          "start": 0.0,
-          "dur": 1.0
-        },
-        {
-          "media": "../media/trailer/out-now-night-drive-ocean-drive.mp4",
-          "start": 0.0
-        }
-      ]
+      "chart": {
+        "type": "text",
+        "text": "Does GTA 6 deserve the 99?",
+        "pink": [
+          "99?"
+        ],
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "¿GTA 6 merece el 99?",
+        "pink": [
+          "99?"
+        ],
+        "seed": 3
+      }
     }
   ]
 }

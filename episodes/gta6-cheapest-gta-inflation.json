@@ -194,17 +194,22 @@
       "text": "Bargain, or still too much? Tell me, because",
       "text_es": "¿Ganga, o todavía muy caro? Dime, porque",
       "keep_media": true,
-      "shots": [
-        {
-          "media": "../media/trailer/extended-look-convertible-waterfront.mp4",
-          "start": 0.0,
-          "dur": 1.0
-        },
-        {
-          "media": "../media/trailer/extended-look-highway-palms.mp4",
-          "start": 0.0
-        }
-      ]
+      "chart": {
+        "type": "text",
+        "text": "Bargain, or still too much?",
+        "pink": [
+          "Bargain,"
+        ],
+        "seed": 9
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "¿Ganga, o todavía muy caro?",
+        "pink": [
+          "Ganga,"
+        ],
+        "seed": 9
+      }
     }
   ]
 }

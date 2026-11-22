@@ -96,6 +96,17 @@ Per-segment keys (all optional) in `short` / `segments`:
   (Nov 22): a quote card. The words appear one by one, `pink` words light up, then who said it. Use it for Rockstar
   interviews and streamer stories (what a streamer SAID, from a reliable source), where there are no numbers to chart
   and the streamer's footage is off-limits. Quote exactly and briefly (one or two sentences); name the outlet.
+  - **FACTS ONLY (owner, Nov 22 evening: "not the ones with footage, facts with a strong hook")**: a Short is built
+    only from our own cards; no trailer clips or official screenshots, not even as cutaways (`studio.vice publish`
+    blocks them; owner gameplay is fine; Lucia and top-3 rides were approved before this rule). Cards:
+    `bars`, `counter`, `line`, `quote`, plus `{"type": "text", "text": "Darts, or a better game?", "pink": [...],
+    "sub": "..."}` (a big statement: the hook or the closing question), `{"type": "list", "title": "IN GTA 6?",
+    "items": [["Pool", "IN"], ["Darts", "CUT"]]}` (a checklist; IN/YES/SÍ/REAL tags cyan, the rest pink) and
+    `{"type": "quiz", "tag": "1/3", "q": "Who voiced Tommy Vercetti?", "options": ["Al Pacino", "Ray Liotta", "Robert De
+    Niro"], "answer": 1}` (the question with a countdown; repeat it with `"reveal": true` in the next segment for the
+    answer). Formats: fun facts, GTA history, "how much do you know" quizzes (see episodes/gta-history-quiz.json),
+    numbers, Rockstar/streamer quotes. Quiz rules: every answer checked in 2+ sources, wrong options plausible but
+    invented, never a real alternative title; vary which letter is right.
   - **Spanish chart text** (Nov 22): a chart with a `label`, `note` or VS label needs `chart_es` on the same segment (the
     same chart with Spanish words); Spanish renders switch numbers to 3.790,5 style by themselves. Without it the
     Spanish Short shows English words (the publish check warns).

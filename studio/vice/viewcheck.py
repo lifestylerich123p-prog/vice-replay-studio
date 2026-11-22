@@ -148,6 +148,20 @@ def check_short(ep, key, title, segs, gameplay_available=False):
         blockers.append(f"originality: Short '{key}' is narration over trailer footage only. Add a `chart` segment "
                         f"(leaderboard / counter / VS of numbers we checked, studio/charts.py) or owner gameplay; "
                         f"trailer clips only as cutaways")
+    # Facts only (owner, Nov 22 evening: "we're doing the other type of Shorts now, not the ones with footage, facts
+    # with a strong hook"): no trailer clips or official screenshots in a Short, not even as cutaways. Our own charts
+    # and cards (bars, counter, line, quote, list, text) or the owner's gameplay only; an owner-approved
+    # `originality` note (Lucia montage, top-3 rides, approved before this rule) still waives it.
+    if not ep.get("originality"):
+        for k, x in enumerate(segs):
+            if x.get("chart"):
+                continue
+            files = [x.get("media")] + [y.get("media") for y in x.get("shots") or []]
+            stock = [f for f in files if f and "media/gameplay" not in str(f)]
+            if stock:
+                blockers.append(f"footage: Short '{key}' segment {k + 1} uses {str(stock[0]).rsplit('/', 1)[-1]}. Shorts are "
+                                f"facts only now (owner, Nov 22 evening): make it a chart or a `text` / `list` / `quote` "
+                                f"card, or use owner gameplay")
     if segs:
         # Hook (Nov 22, owner: "research hooks to get the viewers' attention"): our 20 Shorts with retention data:
         # a question as the first sentence kept 35% (median 130 views) vs 60% for a statement (858). Best openers state
@@ -183,7 +197,7 @@ def check_short(ep, key, title, segs, gameplay_available=False):
         for k, x in enumerate(segs):  # Nov 22: Spanish Shorts showed the English chart labels and notes
             c = x.get("chart") or {}
             words = [y for y in (c.get("label"), c.get("note"), (c.get("vs") or {}).get("label"), c.get("text"),
-                                 c.get("who")) if y]
+                                 c.get("who"), c.get("q"), c.get("title"), c.get("sub")) if y]
             if x.get("text_es") and words and not x.get("chart_es") and c.get("locale") != "es":
                 warnings.append(f"spanish: Short '{key}' segment {k + 1} chart shows English text in the Spanish "
                                 f"version ({words[0]!r}...): add `chart_es` with Spanish label/note")

@@ -176,17 +176,23 @@
       "text": "Which one did you watch the most? Tell me, because",
       "text_es": "¿Cuál viste más? Dime, porque",
       "keep_media": true,
-      "shots": [
-        {
-          "media": "../media/trailer/launch-trailer-beach-plane.mp4",
-          "start": 0.0,
-          "dur": 1.0
-        },
-        {
-          "media": "../media/trailer/extended-look-avenue-skyline.mp4",
-          "start": 0.0
-        }
-      ]
+      "chart": {
+        "type": "text",
+        "text": "Which trailer did you watch the most?",
+        "pink": [
+          "the",
+          "most?"
+        ],
+        "seed": 5
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "¿Qué tráiler viste más?",
+        "pink": [
+          "más?"
+        ],
+        "seed": 5
+      }
     }
   ]
 }

@@ -1,0 +1,309 @@
+{
+  "title": "GTA History Quiz: Only Real Fans Get 3/3",
+  "slug": "gta-history-quiz",
+  "series": "Quiz",
+  "format": "quiz",
+  "mood": "bright",
+  "use_gameplay": false,
+  "short_title": "GTA history quiz: only real fans get 3/3 #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA history quiz: only real fans get 3/3 #GTA6 #Shorts",
+    "3 GTA history questions before GTA 6 #GTA6 #Shorts",
+    "GTA's first name wasn't GTA (quiz) #GTA6 #Shorts"
+  ],
+  "short_description": "Three GTA history questions. 1: Grand Theft Auto started at DMA Design as \"Race'n'Chase\". 2: Vice City first appeared in the original GTA (1997), next to Liberty City and San Andreas. 3: Ray Liotta voiced Tommy Vercetti in GTA Vice City (2002). Comment your score!\n\nSources: GamesRadar (The making of Grand Theft Auto), Escapist, Engadget (Race'n'Chase design docs), GameSpot (The History of Grand Theft Auto), Wikipedia, IMDb.",
+  "short_es": {
+    "title": "Quiz de historia de GTA: ¿sacas 3/3? 🧠 #GTA6 #Shorts",
+    "description": "Tres preguntas de historia de GTA. 1: Grand Theft Auto empezó en DMA Design como \"Race'n'Chase\". 2: Vice City apareció por primera vez en el GTA original (1997), junto a Liberty City y San Andreas. 3: Ray Liotta le dio voz a Tommy Vercetti en GTA Vice City (2002). ¡Comenta tu puntaje!",
+    "tags": [
+      "quiz GTA",
+      "historia de GTA",
+      "GTA trivia",
+      "GTA Vice City",
+      "Tommy Vercetti",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Your score? Reply 0, 1, 2 or 3 👇",
+  "short_pinned_comment_es": "¿Tu puntaje? Responde 0, 1, 2 o 3 👇",
+  "tags": [
+    "GTA quiz",
+    "GTA history",
+    "GTA trivia",
+    "GTA history quiz",
+    "Race n Chase",
+    "GTA Vice City",
+    "Tommy Vercetti",
+    "Ray Liotta",
+    "GTA 1",
+    "GTA 6",
+    "GTA VI",
+    "Grand Theft Auto"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gta",
+    "#quiz",
+    "#gtavicecity"
+  ],
+  "sources": [
+    "GamesRadar - The making of Grand Theft Auto, from Race 'n' Chase to GTA: https://www.gamesradar.com/making-of-grand-theft-auto/",
+    "Escapist - Grand Theft Auto originally titled Race 'n' Chase: https://www.escapistmagazine.com/grand-theft-auto-originally-titled-race-n-chase/",
+    "Engadget - Race'n'Chase: original GTA design docs posted: https://www.engadget.com/2011/03/22/race-n-chase-original-gta-design-docs-posted/",
+    "GameSpot - The History of Grand Theft Auto (GTA 1: Liberty City, San Andreas, Vice City): https://www.gamespot.com/articles/the-history-of-grand-theft-auto/1100-6111834",
+    "Wikipedia - Grand Theft Auto (1997 game): https://en.wikipedia.org/wiki/Grand_Theft_Auto_(video_game)",
+    "Wikipedia - Tommy Vercetti (voiced by Ray Liotta): https://en.wikipedia.org/wiki/Tommy_Vercetti",
+    "IMDb - Grand Theft Auto: Vice City (2002), Ray Liotta as Tommy Vercetti: https://m.imdb.com/title/tt0314123/characters/nm0000501"
+  ],
+  "short": [
+    {
+      "headline": "GTA HISTORY QUIZ",
+      "headline_es": "QUIZ DE HISTORIA GTA",
+      "text": "Only real GTA fans get all three.",
+      "text_es": "Solo los verdaderos fans de GTA sacan las tres.",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "Only real GTA fans get 3/3",
+        "pink": [
+          "3/3"
+        ],
+        "sub": "Keep score",
+        "seed": 21
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "Solo los verdaderos fans sacan 3/3",
+        "pink": [
+          "3/3"
+        ],
+        "sub": "Lleva la cuenta",
+        "seed": 21
+      }
+    },
+    {
+      "headline": "QUESTION 1",
+      "headline_es": "PREGUNTA 1",
+      "text": "One: what was GTA called before it was GTA?",
+      "text_es": "Una: ¿cómo se llamaba GTA antes de ser GTA?",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "1/3",
+        "q": "What was GTA called before it was GTA?",
+        "options": [
+          "Car Thief",
+          "Race'n'Chase",
+          "Getaway City"
+        ],
+        "answer": 1,
+        "seed": 21
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "1/3",
+        "q": "¿Cómo se llamaba GTA antes de ser GTA?",
+        "options": [
+          "Car Thief",
+          "Race'n'Chase",
+          "Getaway City"
+        ],
+        "answer": 1,
+        "seed": 21
+      }
+    },
+    {
+      "headline": "RACE'N'CHASE",
+      "headline_es": "RACE'N'CHASE",
+      "text": "Race and Chase.",
+      "text_es": "Race and Chase.",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "1/3",
+        "q": "What was GTA called before it was GTA?",
+        "options": [
+          "Car Thief",
+          "Race'n'Chase",
+          "Getaway City"
+        ],
+        "answer": 1,
+        "seed": 21,
+        "reveal": true
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "1/3",
+        "q": "¿Cómo se llamaba GTA antes de ser GTA?",
+        "options": [
+          "Car Thief",
+          "Race'n'Chase",
+          "Getaway City"
+        ],
+        "answer": 1,
+        "seed": 21,
+        "reveal": true
+      }
+    },
+    {
+      "headline": "QUESTION 2",
+      "headline_es": "PREGUNTA 2",
+      "text": "Two: which game went to Vice City first?",
+      "text_es": "Dos: ¿qué juego fue a Vice City primero?",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "2/3",
+        "q": "Which game went to Vice City first?",
+        "options": [
+          "GTA Vice City (2002)",
+          "GTA 2 (1999)",
+          "GTA 1 (1997)"
+        ],
+        "answer": 2,
+        "seed": 21
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "2/3",
+        "q": "¿Qué juego fue a Vice City primero?",
+        "options": [
+          "GTA Vice City (2002)",
+          "GTA 2 (1999)",
+          "GTA 1 (1997)"
+        ],
+        "answer": 2,
+        "seed": 21
+      }
+    },
+    {
+      "headline": "GTA 1, 1997",
+      "headline_es": "GTA 1, 1997",
+      "text": "The very first GTA, in nineteen ninety seven.",
+      "text_es": "El primer GTA, en mil novecientos noventa y siete.",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "2/3",
+        "q": "Which game went to Vice City first?",
+        "options": [
+          "GTA Vice City (2002)",
+          "GTA 2 (1999)",
+          "GTA 1 (1997)"
+        ],
+        "answer": 2,
+        "seed": 21,
+        "reveal": true
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "2/3",
+        "q": "¿Qué juego fue a Vice City primero?",
+        "options": [
+          "GTA Vice City (2002)",
+          "GTA 2 (1999)",
+          "GTA 1 (1997)"
+        ],
+        "answer": 2,
+        "seed": 21,
+        "reveal": true
+      }
+    },
+    {
+      "headline": "QUESTION 3",
+      "headline_es": "PREGUNTA 3",
+      "text": "Three: who voiced Tommy Vercetti?",
+      "text_es": "Tres: ¿quién le dio voz a Tommy Vercetti?",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "3/3",
+        "q": "Who voiced Tommy Vercetti?",
+        "options": [
+          "Al Pacino",
+          "Ray Liotta",
+          "Robert De Niro"
+        ],
+        "answer": 1,
+        "seed": 21
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "3/3",
+        "q": "¿Quién le dio voz a Tommy Vercetti?",
+        "options": [
+          "Al Pacino",
+          "Ray Liotta",
+          "Robert De Niro"
+        ],
+        "answer": 1,
+        "seed": 21
+      }
+    },
+    {
+      "headline": "RAY LIOTTA",
+      "headline_es": "RAY LIOTTA",
+      "text": "Ray Liotta.",
+      "text_es": "Ray Liotta.",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "3/3",
+        "q": "Who voiced Tommy Vercetti?",
+        "options": [
+          "Al Pacino",
+          "Ray Liotta",
+          "Robert De Niro"
+        ],
+        "answer": 1,
+        "seed": 21,
+        "reveal": true
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "3/3",
+        "q": "¿Quién le dio voz a Tommy Vercetti?",
+        "options": [
+          "Al Pacino",
+          "Ray Liotta",
+          "Robert De Niro"
+        ],
+        "answer": 1,
+        "seed": 21,
+        "reveal": true
+      }
+    },
+    {
+      "headline": "YOUR SCORE?",
+      "headline_es": "¿TU PUNTAJE?",
+      "text": "What did you get? Tell me, because",
+      "text_es": "¿Cuántas sacaste? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "0, 1, 2 or 3?",
+        "pink": [
+          "3?"
+        ],
+        "sub": "Comment your score",
+        "seed": 21
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "¿0, 1, 2 o 3?",
+        "pink": [
+          "3?"
+        ],
+        "sub": "Comenta tu puntaje",
+        "seed": 21
+      }
+    }
+  ]
+}

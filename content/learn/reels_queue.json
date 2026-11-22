@@ -199,6 +199,11 @@
   "posted": "skipped: YouTube Short unscheduled Nov 22 (owner: replace weak ones with graph/evidence Shorts)"
  },
  {
+  "at": "2026-11-24 14:30",
+  "carousel": "content/carousels/gta-quiz-5.json",
+  "note": "GTA knowledge quiz carousel (owner Nov 22 evening: quiz posts that test knowledge); fires with the Tue 2:30 PM IG reminder"
+ },
+ {
   "at": "2026-11-24 17:00",
   "episode": "episodes/gta6-guess-the-ride.json",
   "item": "short",

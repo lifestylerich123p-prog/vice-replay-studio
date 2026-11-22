@@ -21,6 +21,17 @@ put the source in the chart `note`, and label estimates.
 | Player counts or search interest over days | line | Google Trends (relative), official numbers |
 | Hours to beat vs GTA 5 / RDR2 | bars | HowLongToBeat |
 
+## Fun facts, GTA history and quizzes (Nov 22 evening, owner: "fun facts or history, how much do you know")
+Cards only (quiz / text / list / counter). Every fact checked in 2+ sources; no spoilers.
+- "How much do you know" quiz Shorts: 3 questions, question card then reveal (template: episodes/gta-history-quiz.json).
+  Themes: GTA history (titles, cities, voice actors, release years), GTA 6 launch numbers, Leonida vs real Florida,
+  "which GTA came first".
+- Fun-fact Shorts: one surprising fact as a `text` card + the proof as a `list` or `counter` ("Vice City was in the
+  first GTA, 1997").
+- GTA history in numbers: release years on a `line`, sales or review scores as `bars`.
+- Instagram knowledge-test carousel (about weekly): cover, 5 questions one per slide (options on their own lines),
+  answers on the last slide, "comment your score" (content/carousels/gta-quiz-5.json).
+
 ## Guides (steady search traffic; website guides, not Shorts: tips Shorts died, median 237 views)
 
 - First settings to change (camera, controls, audio, accessibility)

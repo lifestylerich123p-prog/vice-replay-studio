@@ -209,4 +209,13 @@
   is void; new one Wed 11:10). Website: /guides/gta-6-darts/ and /es/guias/dardos-gta-6/ published. Randy's Wish
   List guide held until sources agree on the car count (16-22). Uploader: the key check now retries brief network
   errors (2 of 6 checks had failed with "no saved key belongs to channel").
+- 2026-11-22 (7:30 PM ET, owner: "remember we're doing the other type of Shorts now, not the ones with footage but facts
+  with a strong hook" + "fun facts or history, how much you know questions, Instagram posts testing knowledge, use all
+  available plugins"): Shorts are FACTS ONLY from now on (our cards, no trailer clips/screenshots; the publish check
+  blocks footage unless owner gameplay or an earlier owner waiver: Lucia and top-3 rides keep theirs). New cards: `text`,
+  `list`, `quiz` (+ `quote`). Converted to cards only and re-rendered EN + ES: money-chart-es, darts, 99 club,
+  trailer views, inflation, Jason. New: `gta-history-quiz` (3 questions, waiting for approval) and the Instagram quiz
+  carousel `gta-quiz-5` (queued Tue Nov 24 2:30 PM under the IG standing approval). Plugins: social-media-skills
+  interactive-content (quiz rules), vidIQ checked (10 credits left until Dec 15, saved), Everygen not used (needs a
+  cost estimate + owner yes).
 

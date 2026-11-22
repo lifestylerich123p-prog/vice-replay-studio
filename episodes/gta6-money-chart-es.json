@@ -81,17 +81,52 @@
       "text": "The catch: GTA 6's number counts every preorder, and the game costs eighty dollars, not sixty.",
       "text_es": "La trampa: cuenta todas las preventas, y el juego cuesta ochenta dólares, no sesenta.",
       "keep_media": true,
-      "shots": [
-        {
-          "media": "../media/trailer/out-now-night-drive-ocean-drive.mp4",
-          "start": 0.0,
-          "dur": 1.1
-        },
-        {
-          "media": "../media/trailer/extended-look-red-convertible-city.mp4",
-          "start": 0.0
-        }
-      ]
+      "chart": {
+        "type": "list",
+        "title": "LA TRAMPA",
+        "items": [
+          [
+            "Cuenta las preventas",
+            "SÍ"
+          ],
+          [
+            "Precio de GTA 6",
+            "$80"
+          ],
+          [
+            "Precio de GTA 5 (2013)",
+            "$60"
+          ]
+        ],
+        "good": [
+          "sí"
+        ],
+        "locale": "es",
+        "seed": 7
+      },
+      "chart_es": {
+        "type": "list",
+        "title": "LA TRAMPA",
+        "items": [
+          [
+            "Cuenta las preventas",
+            "SÍ"
+          ],
+          [
+            "Precio de GTA 6",
+            "$80"
+          ],
+          [
+            "Precio de GTA 5 (2013)",
+            "$60"
+          ]
+        ],
+        "good": [
+          "sí"
+        ],
+        "locale": "es",
+        "seed": 7
+      }
     },
     {
       "headline": "STILL 2X",

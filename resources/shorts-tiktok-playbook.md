@@ -30,9 +30,10 @@ How the `short` block of an episode should be written and posted. Rewritten Nov 
 
 ## Visuals
 
+- **Facts only** (owner, Nov 22 evening): no game footage in Shorts at all. Our cards carry the whole Short: charts,
+  quote, list, text and quiz cards (content/episode-format.md). Owner gameplay is the one exception.
 - **Original first** (YouTube's Oct 1, 2026 Shorts update ranks original videos higher; narration over reused footage
-  isn't original). Build the Short on our own `chart` graphics or the owner's gameplay. Official trailer clips and
-  screenshots (allowed by CLAUDE.md) are 1-2 s cutaways, never the whole Short. The publish check blocks a
+  isn't original). Build the Short on our own cards or the owner's gameplay. The publish check blocks a
   trailer-only Short unless the owner approved an `originality` note.
 - Vary the layout: don't post three Shorts in a row that go counter > bars > counter > clip. Use a `line` chart for
   anything over time, open on bars sometimes, put a clip cutaway in the middle.

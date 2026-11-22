@@ -71,14 +71,18 @@
       "chart": {
         "type": "quote",
         "text": "The darts one is a contentious one",
-        "pink": ["darts"],
+        "pink": [
+          "darts"
+        ],
         "who": "Rob Nelson, Rockstar North, to VGC (Nov 19)",
         "seed": 11
       },
       "chart_es": {
         "type": "quote",
         "text": "Lo de los dardos es un tema polémico",
-        "pink": ["dardos"],
+        "pink": [
+          "dardos"
+        ],
         "who": "Rob Nelson, Rockstar North, a VGC (traducido)",
         "seed": 11
       }
@@ -92,14 +96,20 @@
       "chart": {
         "type": "quote",
         "text": "you hear they have unlimited money or unlimited time, even we do not",
-        "pink": ["unlimited", "even we do not"],
+        "pink": [
+          "unlimited",
+          "even we do not"
+        ],
         "who": "Rob Nelson, Rockstar North, to VGC (Nov 19)",
         "seed": 11
       },
       "chart_es": {
         "type": "quote",
         "text": "se oye que tienen dinero ilimitado o tiempo ilimitado; ni siquiera nosotros",
-        "pink": ["ilimitado", "ni siquiera nosotros"],
+        "pink": [
+          "ilimitado",
+          "ni siquiera nosotros"
+        ],
         "who": "Rob Nelson, Rockstar North, a VGC (traducido)",
         "seed": 11
       }
@@ -110,10 +120,44 @@
       "text": "Pool made it in. Darts and bowling didn't.",
       "text_es": "El billar sí llegó. Los dardos y los bolos no.",
       "keep_media": true,
-      "shots": [
-        {"media": "../media/trailer/out-now-night-drive-ocean-drive.mp4", "start": 0.0, "dur": 1.2},
-        {"media": "../media/trailer/extended-look-avenue-skyline.mp4", "start": 0.0}
-      ]
+      "chart": {
+        "type": "list",
+        "title": "IN GTA 6?",
+        "items": [
+          [
+            "Pool",
+            "IN"
+          ],
+          [
+            "Darts",
+            "CUT"
+          ],
+          [
+            "Bowling",
+            "CUT"
+          ]
+        ],
+        "seed": 11
+      },
+      "chart_es": {
+        "type": "list",
+        "title": "¿EN GTA 6?",
+        "items": [
+          [
+            "Billar",
+            "SÍ"
+          ],
+          [
+            "Dardos",
+            "NO"
+          ],
+          [
+            "Bolos",
+            "NO"
+          ]
+        ],
+        "seed": 11
+      }
     },
     {
       "headline": "DARTS OR A BETTER GAME?",
@@ -121,10 +165,24 @@
       "text": "Darts, or a better game? Tell me, because",
       "text_es": "¿Dardos, o un mejor juego? Dime, porque",
       "keep_media": true,
-      "shots": [
-        {"media": "../media/trailer/launch-trailer-jason-lucia-car.mp4", "start": 0.0, "dur": 1.0, "focus": 0.56},
-        {"media": "../media/trailer/extended-look-sunset-skyline.mp4", "start": 0.0}
-      ]
+      "chart": {
+        "type": "text",
+        "text": "Darts, or a better game?",
+        "pink": [
+          "better",
+          "game?"
+        ],
+        "seed": 11
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "¿Dardos, o un mejor juego?",
+        "pink": [
+          "mejor",
+          "juego?"
+        ],
+        "seed": 11
+      }
     }
   ]
 }

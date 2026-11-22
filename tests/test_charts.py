@@ -109,3 +109,25 @@ def test_quote_card_reveals_words_then_speaker():
     assert charts.DRAW["quote"] is charts.quote_frame
     ep = {"short": [{"text": "x", "text_es": "y", "chart": q}]}
     assert any(w.startswith("spanish:") for w in viewcheck.check(ep, recent=[])[1])
+
+
+def test_list_and_text_cards_and_no_footage_rule():
+    base = charts._backdrop(108, 192, 5)
+    lst = {"type": "list", "items": [["Pool", "IN"], ["Darts", "CUT"]]}
+    assert charts.list_frame(base, lst, 0.1, 108, 192).tobytes() != charts.list_frame(base, lst, 3, 108, 192).tobytes()
+    assert charts.text_frame(base, {"type": "text", "text": "Darts or a better game?"}, 3, 108, 192).size == (108, 192)
+    ep = {"short": [{"text": "GTA 6 has no darts.", "chart": lst},
+                    {"text": "Tell me.", "shots": [{"media": "../media/trailer/x.mp4"}]}]}
+    assert any(b.startswith("footage:") for b in viewcheck.check(ep, recent=[])[0])
+    ep["short"][1] = {"text": "Tell me.", "chart": {"type": "text", "text": "Darts or a better game?"}}
+    assert not any(b.startswith("footage:") for b in viewcheck.check(ep, recent=[])[0])
+
+
+def test_quiz_card_counts_down_then_reveals():
+    base = charts._backdrop(108, 192, 9)
+    q = {"type": "quiz", "tag": "1/3", "q": "Who voiced Tommy Vercetti?", "options": ["A", "B", "C"], "answer": 1}
+    asked, later = charts.quiz_frame(base, q, 0.8, 108, 192), charts.quiz_frame(base, q, 2.5, 108, 192)
+    shown = charts.quiz_frame(base, dict(q, reveal=True), 0.5, 108, 192)
+    assert asked.tobytes() != later.tobytes() != shown.tobytes()
+    ep = {"short": [{"text": "x", "text_es": "y", "chart": q}]}
+    assert any(w.startswith("spanish:") for w in viewcheck.check(ep, recent=[])[1])

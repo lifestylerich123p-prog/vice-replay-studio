@@ -37,6 +37,9 @@ only for big news or long videos (`studio.quota` lists daytime first).
   trailer, clip audio always dropped; narration adds real commentary. Pick `media` per segment by filename and rotate.
   Keep strip-club or sexualized images out (list of excluded shots in owner.md). New official media:
   rockstargames.com/VI/downloads, add only after viewing each.
+- **Shorts are FACTS ONLY** (owner, Nov 22 evening): our own cards (charts, quote, list, text, quiz: fun facts, GTA
+  history, "how much do you know" quizzes, numbers, quotes) with a strong statement hook; no trailer clips or
+  screenshots in Shorts (`studio.vice publish` blocks them). Official media stays for thumbnails, site cards and IG.
 - **Owner gameplay first**: Shorts automatically use the newest gameplay highlights when they exist (`"keep_media":
   true` keeps a segment's own picture; `"use_gameplay": false` turns it off); at 30+ highlights `studio.tidy`
   retires most stock footage (keeps a core for site cards, thumbnails, character news).

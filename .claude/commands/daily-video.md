@@ -58,6 +58,9 @@ scripts of 76+ words median 404 vs 56-75 words 836. So:
 - Hide (private, never delete) any Short under 50 views after 48 h, and add its pattern to content/learn/lessons.md:
   run `python -m studio.flops` (lists them; changes nothing) and put its list in the report; the main chat runs
   `--apply`. Before picking today's layout, read the scorecard's "By picture" / "By opener" tables.
+- **FACTS ONLY** (owner, Nov 22 evening): no game footage in Shorts; cards only (charts, quote, list, text, quiz).
+  Rotate the day's Shorts between numbers, quotes, fun facts / GTA history and a "how much do you know" quiz; queue an
+  Instagram quiz carousel about once a week (content/carousels/gta-quiz-5.json is the template).
 - **Vary the graph layout** (Nov 22): bars, counter and `line` charts in a different order than the last uploads
   (the publish check warns on a repeat); every chart with words gets `chart_es` for the Spanish version.
 - **Hook**: first sentence = the surprising result as a statement (3-10 words), never a question (35% vs 60% of

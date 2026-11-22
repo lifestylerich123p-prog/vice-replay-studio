@@ -66,13 +66,25 @@
       "text": "GTA 6's Jason is quiet on purpose.",
       "text_es": "El Jason de GTA 6 es callado a propósito.",
       "keep_media": true,
-      "shots": [
-        {
-          "media": "../media/trailer/launch-trailer-jason-phone.mp4",
-          "start": 0.3,
-          "focus": 0.72
-        }
-      ]
+      "chart": {
+        "type": "text",
+        "text": "Jason barely talks. On purpose.",
+        "pink": [
+          "On",
+          "purpose."
+        ],
+        "seed": 13,
+        "sub": "Rockstar explains why"
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "Jason casi no habla. A propósito.",
+        "pink": [
+          "propósito."
+        ],
+        "seed": 13,
+        "sub": "Rockstar explica por qué"
+      }
     },
     {
       "headline": "THE STEVE McQUEEN RULE",
@@ -130,18 +142,24 @@
       "text": "Quiet hero, or loud like Trevor? Tell me, because",
       "text_es": "¿Héroe callado, o ruidoso como Trevor? Dime, porque",
       "keep_media": true,
-      "shots": [
-        {
-          "media": "../media/trailer/launch-trailer-jason-lucia-car.mp4",
-          "start": 0.0,
-          "dur": 1.2,
-          "focus": 0.56
-        },
-        {
-          "media": "../media/trailer/extended-look-walk-to-car-palms.mp4",
-          "start": 0.0
-        }
-      ]
+      "chart": {
+        "type": "text",
+        "text": "Quiet Jason or loud Trevor?",
+        "pink": [
+          "Jason",
+          "Trevor?"
+        ],
+        "seed": 13
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "¿Jason callado o Trevor ruidoso?",
+        "pink": [
+          "Jason",
+          "Trevor"
+        ],
+        "seed": 13
+      }
     }
   ]
 }

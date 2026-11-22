@@ -38,15 +38,19 @@ def background(name):
 
 
 def wrap(text, fnt, max_w):
-    lines, cur = [], ""
-    for wd in text.split():
-        t = (cur + " " + wd).strip()
-        if fnt.getlength(t) <= max_w:
-            cur = t
-        else:
-            lines.append(cur)
-            cur = wd
-    return lines + [cur]
+    """Word-wrap to max_w; a "\n" in the text starts a new line (Nov 22: quiz options one per line)."""
+    out = []
+    for para in str(text).split("\n"):
+        lines, cur = [], ""
+        for wd in para.split():
+            t = (cur + " " + wd).strip()
+            if fnt.getlength(t) <= max_w:
+                cur = t
+            else:
+                lines.append(cur)
+                cur = wd
+        out += lines + [cur]
+    return out
 
 
 def header(im, page, total):

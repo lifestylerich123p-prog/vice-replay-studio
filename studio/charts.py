@@ -256,7 +256,8 @@ def quote_frame(base, spec, t, w, h):
         size -= 2
     block = len(lines) * lh + (who_font.getbbox("Ay")[3] * 1.6 if spec.get("who") else 0)
     top = max(top, y0 + ((y1 - y0) - block) / 2)  # centre the quote in the panel when it's short
-    d.text((x0, y0 - int((y1 - y0) * 0.06)), "“", font=mark_font, fill=brand.PINK)
+    if spec.get("mark", True):
+        d.text((x0, y0 - int((y1 - y0) * 0.06)), "“", font=mark_font, fill=brand.PINK)
     shown = len(words) * _ease((t - 0.15) / max(0.6, len(words) / 8))
     k = 0
     for row, line in enumerate(lines):
@@ -277,7 +278,114 @@ def quote_frame(base, spec, t, w, h):
     return img.convert("RGB")
 
 
-DRAW = {"bars": bars_frame, "counter": counter_frame, "line": line_frame, "quote": quote_frame}
+GOOD = {"in", "yes", "sí", "si", "real", "true", "✓"}
+
+
+def list_frame(base, spec, t, w, h):
+    """A checklist: rows pop in one after another, each with a tag on the right (IN / CUT, YES / NO, REAL / FAKE).
+    Tags in GOOD (or spec["good"]) are cyan, the rest pink. Nov 22 evening (owner: facts only, no footage)."""
+    img = base.copy().convert("RGBA")
+    x0, y0, x1, y1 = _region(w, h)
+    _panel(img, (x0, y0, x1, y1))
+    d = ImageDraw.Draw(img)
+    items = spec["items"][:6]
+    good = {str(g).lower() for g in spec.get("good", [])} or GOOD
+    note_h = int(h * 0.028) if spec.get("note") else 0
+    title_h = 0
+    if spec.get("title"):
+        ft = brand.font(brand.HEADLINE_FONT, int(w * 0.05))
+        d.text(((x0 + x1) / 2 - ft.getlength(spec["title"]) / 2, y0), spec["title"], font=ft, fill=brand.WHITE)
+        title_h = int(ft.getbbox("A")[3] * 1.5)
+    row = (y1 - y0 - note_h - title_h) / max(1, len(items))
+    fl = brand.font(brand.BODY_FONT, max(int(w * 0.04), min(int(row * 0.42), int(w * 0.065))))
+    fg = brand.font(brand.HEADLINE_FONT, max(int(w * 0.04), min(int(row * 0.46), int(w * 0.07))))
+    for k, (label, tag) in enumerate(items):
+        p = _ease((t - 0.15 - 0.4 * k) / 0.35)
+        if p <= 0:
+            continue
+        cy = y0 + title_h + k * row + row / 2
+        shift = (1 - p) * w * 0.08
+        lab = str(label)
+        d.text((x0 + shift, cy - fl.getbbox("Ay")[3] / 2), lab, font=fl, fill=brand.WHITE)
+        tg = str(tag)
+        col = brand.CYAN if tg.lower() in good else brand.PINK
+        tw = fg.getlength(tg)
+        pad = int(w * 0.018)
+        bh = fg.getbbox("A")[3] + pad * 2
+        bx1 = x1 - shift * 0.5
+        bw = max(tw + pad * 3, bh * 1.6)
+        d.rounded_rectangle([bx1 - bw, cy - bh / 2, bx1, cy + bh / 2], radius=int(bh / 2), fill=col)
+        d.text((bx1 - bw / 2 - tw / 2, cy - bh / 2 + pad * 0.7), tg, font=fg, fill=(13, 7, 23))
+    _note(d, spec, x0, x1, y1 - note_h + 4, h)
+    return img.convert("RGB")
+
+
+def text_frame(base, spec, t, w, h):
+    """A big statement card (a hook or the closing question): the words appear one by one, `pink` words light up,
+    optional `sub` line under it. Same engine as the quote card, without quote marks."""
+    return quote_frame(base, {**spec, "mark": False, "who": spec.get("sub")}, t, w, h)
+
+
+def quiz_frame(base, spec, t, w, h):
+    """A quiz question (Nov 22 evening, owner: "how much do you know" Shorts): `q` on top, `options` as A/B/C rows
+    popping in, a countdown bar while the viewer guesses. With `"reveal": true` (the answer segment) the right option
+    (`answer`, 0-based) turns cyan with a check and the others fade. Optional `tag` ("1/3") top-left."""
+    img = base.copy().convert("RGBA")
+    x0, y0, x1, y1 = _region(w, h)
+    _panel(img, (x0, y0, x1, y1))
+    d = ImageDraw.Draw(img)
+    opts = [str(o) for o in spec["options"][:4]]
+    ans, reveal = spec.get("answer", 0), bool(spec.get("reveal"))
+    if spec.get("tag"):
+        ftag = brand.font(brand.HEADLINE_FONT, int(w * 0.04))
+        d.text((x0, y0 - int(h * 0.004)), str(spec["tag"]), font=ftag, fill=brand.CYAN)
+    qsize = int(w * 0.058)
+    while True:
+        fq = brand.font(brand.BODY_FONT, qsize)
+        lines = _wrap(str(spec["q"]).split(), fq, (x1 - x0) * 0.94)
+        if len(lines) <= 2 or qsize <= int(w * 0.04):
+            break
+        qsize -= 2
+    lh = fq.getbbox("Ay")[3] * 1.18
+    qy = y0 + int(h * 0.03)
+    for k, line in enumerate(lines):
+        txt = " ".join(line)
+        d.text(((x0 + x1) / 2 - fq.getlength(txt) / 2, qy + k * lh), txt, font=fq, fill=brand.WHITE)
+    top = qy + len(lines) * lh + int(h * 0.018)
+    bottom = y1 - int(h * 0.03)
+    row = (bottom - top) / max(1, len(opts))
+    fo = brand.font(brand.BODY_FONT, max(int(w * 0.04), min(int(row * 0.40), int(w * 0.055))))
+    fl = brand.font(brand.HEADLINE_FONT, max(int(w * 0.04), min(int(row * 0.42), int(w * 0.06))))
+    for k, o in enumerate(opts):
+        p = 1.0 if reveal else _ease((t - 0.1 - 0.18 * k) / 0.3)
+        if p <= 0:
+            continue
+        cy = top + k * row + row / 2
+        right = reveal and k == ans
+        faded = reveal and k != ans
+        fill = brand.CYAN if right else ((60, 44, 82) if faded else (40, 24, 66))
+        d.rounded_rectangle([x0, cy - row * 0.38, x1, cy + row * 0.38], radius=int(row * 0.2), fill=fill,
+                            outline=None if right else brand.PINK + (90,), width=2)
+        letter = "ABCD"[k]
+        d.text((x0 + int(w * 0.025), cy - fl.getbbox("A")[3] / 2 - 2), letter, font=fl,
+               fill=(13, 7, 23) if right else (brand.PINK if not faded else (110, 80, 120)))
+        tx = x0 + int(w * 0.10)
+        d.text((tx, cy - fo.getbbox("Ay")[3] / 2), o, font=fo,
+               fill=(13, 7, 23) if right else ((130, 110, 150) if faded else brand.WHITE))
+        if right:  # a drawn check mark (the brand fonts have no check glyph)
+            cx, sz = tx + fo.getlength(o) + int(w * 0.035), int(row * 0.16)
+            d.line([(cx, cy), (cx + sz * 0.8, cy + sz * 0.8), (cx + sz * 2.2, cy - sz * 0.9)], fill=(13, 7, 23),
+                   width=max(4, int(w * 0.008)), joint="curve")
+    if not reveal:  # countdown bar while the viewer guesses
+        frac = max(0.0, 1 - max(0.0, t - 0.6) / max(0.5, spec.get("think", 2.5)))
+        bw = (x1 - x0) * frac
+        d.rounded_rectangle([x0, y1 - int(h * 0.016), x0 + max(int(h * 0.01), bw), y1 - int(h * 0.006)],
+                            radius=int(h * 0.005), fill=brand.PINK)
+    return img.convert("RGB")
+
+
+DRAW = {"bars": bars_frame, "counter": counter_frame, "line": line_frame, "quote": quote_frame, "list": list_frame,
+        "text": text_frame, "quiz": quiz_frame}
 
 
 def render(spec, dur, w, h, out, seed=0):
