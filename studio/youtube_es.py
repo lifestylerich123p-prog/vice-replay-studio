@@ -26,8 +26,8 @@ from pathlib import Path
 
 from . import postguard
 from .review_page import extra_time, times_for
-from .youtube_upload import (ET, ROOT, add_to_playlist, comment, req, slot, srt_from_timings, token, token_for, upload,
-                             upload_caption, yt_safe)
+from .youtube_upload import (ET, ROOT, add_to_playlist, clean_tags, comment, req, slot, srt_from_timings, token,
+                             token_for, upload, upload_caption, yt_safe)
 
 import os
 
@@ -36,6 +36,7 @@ import os
 ENV = "YT_SPANISH_REFRESH_TOKEN" if os.environ.get("YT_SPANISH_REFRESH_TOKEN") else "YT_ES_REFRESH_TOKEN"
 REGISTRY = ROOT / "content" / "learn" / "uploads-es.json"
 PLAYLIST = "GTA 6 en Español"
+TAGS_ES = ["GTA 6", "GTA 6 español", "GTA 6 en español", "noticias GTA 6", "GTA VI", "Grand Theft Auto VI", "Vice City"]
 NOT_AFFILIATED = "Canal de fans: no afiliado a Rockstar Games ni a Take-Two Interactive."
 
 
@@ -169,7 +170,9 @@ def main():
         when = a.at or (short_t if key == "short" else news_t if key == "news" else extra_time(day))
         publish_at = slot(day, when)
         desc = yt_safe((es.get("description") or "").strip() + f"\n\n{NOT_AFFILIATED}")
-        tags = ["GTA 6", "GTA VI", "GTA 6 español", "Grand Theft Auto VI", "Vice City", "Leonida"]
+        # the topic's own Spanish tags first (es.tags / tags_es), then the channel basics (Nov 22: every Spanish
+        # upload had the same 6 generic tags)
+        tags = clean_tags(es.get("tags") or ep.get("tags_es"), base=TAGS_ES)
         print(f"uploading {key} (es): {title} -> {'now' if not publish_at else when + ' ET'}")
         v = upload(tok, video, title, desc, tags, publish_at, lang="es")
         vid = v["id"]

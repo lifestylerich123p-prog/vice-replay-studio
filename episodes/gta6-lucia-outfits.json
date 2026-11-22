@@ -1,0 +1,301 @@
+{
+  "title": "GTA 6: Lucia's 8 Outfits (One You Can't Get Now)",
+  "slug": "gta6-lucia-outfits",
+  "series": "C: Details",
+  "voice": "am_michael",
+  "rate": "+12%",
+  "format": "details",
+  "use_gameplay": false,
+  "short_title": "GTA 6: Lucia's 8 outfits... #8 you can't get now #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6: Lucia's 8 outfits... #8 you can't get now #GTA6 #Shorts",
+    "GTA 6 Lucia: pick your outfit 1-8 (one is gone) #GTA6 #Shorts",
+    "GTA 6: every Lucia outfit Rockstar showed, 1-8 #GTA6 #Shorts"
+  ],
+  "short_description": "Eight Lucia outfits from Rockstar's official trailer and screenshots. Which number is yours?\n\n#7 is from the Ultimate Edition's Vice City Style shots. #8 is from the Vintage Vice City Pack: its outfits and hairstyles for Jason and Lucia came with GTA 6 copies bought before November 20, 2026 (digital; physical pre-orders while supplies lasted). Rockstar hasn't said if it's coming back. No story spoilers.\n\nSources: PC Gamer, Dexerto, Destructoid, Dot Esports, PlayStation Store, Red Bull (Nov 2026). Footage: Rockstar Games' official screenshots and launch trailer.",
+  "short_es": {
+    "title": "Los 8 OUTFITS de Lucia en GTA 6... el #8 ya no se consigue 😳 #GTA6 #Shorts",
+    "description": "Ocho outfits de Lucia de las capturas y el tráiler oficiales de Rockstar. ¿Cuál es el tuyo?\n\nEl #7 es de las capturas Vice City Style de la Ultimate Edition. El #8 es del Vintage Vice City Pack: sus outfits y peinados para Jason y Lucia venían con las copias de GTA 6 compradas antes del 20 de noviembre de 2026 (digital; preventas físicas hasta agotar existencias). Rockstar no ha dicho si volverá. Sin spoilers.",
+    "tags": [
+      "GTA 6",
+      "GTA 6 Lucia",
+      "Lucia GTA 6",
+      "outfits de Lucia",
+      "ropa GTA 6",
+      "GTA 6 outfits",
+      "GTA 6 español",
+      "Vintage Vice City Pack",
+      "GTA 6 Ultimate Edition",
+      "GTA VI",
+      "Grand Theft Auto VI",
+      "Lucia Caminos"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Which number is yours? 1-8 👇",
+  "short_pinned_comment_es": "¿Cuál es tu número? Del 1 al 8 👇",
+  "tags": [
+    "GTA 6",
+    "GTA 6 Lucia",
+    "Lucia GTA 6",
+    "GTA 6 outfits",
+    "GTA 6 Lucia outfits",
+    "Lucia outfits",
+    "GTA 6 clothes",
+    "Vintage Vice City Pack",
+    "GTA 6 Vintage Vice City Pack",
+    "GTA 6 Ultimate Edition",
+    "Lucia Caminos",
+    "GTA VI",
+    "Grand Theft Auto VI",
+    "GTA 6 Shorts"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Lucia",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#lucia",
+    "#gta6lucia",
+    "#outfits"
+  ],
+  "sources": [
+    "PC Gamer - How to collect the Vintage Vice City Pack pre-order bonus in GTA 6: https://www.pcgamer.com/games/grand-theft-auto/gta-6-pre-order-bonus-vintage-vice-city-pack/",
+    "Dexerto - GTA 6: how to get pre-order bonuses: https://www.dexerto.com/wikis/gta-6/how-to-get-pre-order-bonuses/",
+    "Destructoid - With GTA 6 prices out, here's how you can secure a vintage 80s look: https://www.destructoid.com/with-gta-6-prices-out-heres-how-you-can-secure-a-vintage-80s-look/",
+    "Dot Esports - GTA 6 editions and pre-order bonuses: https://dotesports.com/gta/guides/gta-6-editions-pre-order-bonuses",
+    "PlayStation Store - Grand Theft Auto VI: Ultimate Edition Upgrade (Vice City Style): https://store.playstation.com/en-us/product/EP1004-PPSA01547_00-ULTEDTIONUPGRADE",
+    "Red Bull - GTA 6 Ultimate Edition bonuses: https://www.redbull.com/gb-en/gta-6-ultimate-edition-bonuses",
+    "Rockstar Games - official GTA VI screenshots: https://www.rockstargames.com/VI/downloads/screenshots"
+  ],
+  "short": [
+    {
+      "headline": "8 LUCIA OUTFITS",
+      "headline_es": "8 OUTFITS DE LUCIA",
+      "text": "Eight Lucia outfits. Pick one. One: denim.",
+      "text_es": "Ocho outfits de Lucia. Elige uno. Uno: mezclilla.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/trailer/launch-trailer-jason-lucia-car.mp4",
+          "start": 0.0,
+          "dur": 0.8,
+          "speed": 0.6,
+          "focus": 0.56
+        },
+        {
+          "media": "../media/official/lucia-caminos-05.jpg",
+          "focus": 0.62,
+          "dur": 0.25
+        },
+        {
+          "media": "../media/official/lucia-caminos-10.jpg",
+          "focus": 0.46,
+          "dur": 0.25
+        },
+        {
+          "media": "../media/official/vintage-vice-city-pack-exclusive-looks-02.jpg",
+          "focus": 0.5,
+          "dur": 0.25
+        },
+        {
+          "media": "../media/official/lucia-caminos-03.jpg",
+          "focus": 0.25,
+          "gamma": 1.35,
+          "dur": 0.25
+        },
+        {
+          "media": "../media/trailer/launch-trailer-jason-lucia-car.mp4",
+          "start": 0.5,
+          "speed": 0.6,
+          "focus": 0.56
+        }
+      ]
+    },
+    {
+      "headline": "#2",
+      "headline_es": "#2",
+      "text": "Two: prison orange.",
+      "text_es": "Dos: naranja de prisión.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/official/lucia-caminos-05.jpg",
+          "focus": 0.62
+        }
+      ]
+    },
+    {
+      "headline": "#3",
+      "headline_es": "#3",
+      "text": "Three: gym day.",
+      "text_es": "Tres: día de gym.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/official/lucia-caminos-09.jpg",
+          "focus": 0.5
+        }
+      ]
+    },
+    {
+      "headline": "#4",
+      "headline_es": "#4",
+      "text": "Four: road trip.",
+      "text_es": "Cuatro: de viaje.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/official/jason-and-lucia-03.jpg",
+          "focus": 0.2
+        }
+      ]
+    },
+    {
+      "headline": "#5",
+      "headline_es": "#5",
+      "text": "Five: night out.",
+      "text_es": "Cinco: de noche.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/official/lucia-caminos-10.jpg",
+          "focus": 0.46
+        }
+      ]
+    },
+    {
+      "headline": "#6",
+      "headline_es": "#6",
+      "text": "Six: the glasses.",
+      "text_es": "Seis: los lentes.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/official/jason-and-lucia-ultimate-01.jpg",
+          "focus": 0.2
+        }
+      ]
+    },
+    {
+      "headline": "#7",
+      "headline_es": "#7",
+      "text": "Seven: leather jacket.",
+      "text_es": "Siete: chaqueta de cuero.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/official/lucia-caminos-03.jpg",
+          "focus": 0.25,
+          "gamma": 1.35
+        }
+      ]
+    },
+    {
+      "headline": "#8: TOO LATE?",
+      "headline_es": "#8: ¿YA NO?",
+      "text": "And eight: the vintage look.",
+      "text_es": "Y ocho: el look vintage.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/official/vintage-vice-city-pack-exclusive-looks-02.jpg",
+          "focus": 0.5
+        }
+      ]
+    },
+    {
+      "headline": "#8: TOO LATE?",
+      "headline_es": "#8: ¿YA NO?",
+      "text": "It only came with copies bought before November twentieth.",
+      "text_es": "Solo venía con copias compradas antes del veinte de noviembre.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/official/vintage-vice-city-pack-exclusive-looks-02.jpg",
+          "focus": 0.5,
+          "dur": 1.5
+        },
+        {
+          "media": "../media/official/vintage-vice-city-pack-exclusive-looks-05.jpg",
+          "focus": 0.5
+        }
+      ]
+    },
+    {
+      "headline": "PICK 1-8",
+      "headline_es": "ELIGE 1-8",
+      "text": "Which one's yours? Tell me, because",
+      "text_es": "¿Cuál es el tuyo? Dime, porque",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/trailer/launch-trailer-jason-lucia-car.mp4",
+          "start": 0.6,
+          "focus": 0.56,
+          "dur": 0.3
+        },
+        {
+          "media": "../media/official/lucia-caminos-05.jpg",
+          "focus": 0.62,
+          "dur": 0.3
+        },
+        {
+          "media": "../media/official/lucia-caminos-09.jpg",
+          "focus": 0.5,
+          "dur": 0.3
+        },
+        {
+          "media": "../media/official/jason-and-lucia-03.jpg",
+          "focus": 0.2,
+          "dur": 0.3
+        },
+        {
+          "media": "../media/official/lucia-caminos-10.jpg",
+          "focus": 0.46,
+          "dur": 0.3
+        },
+        {
+          "media": "../media/official/jason-and-lucia-ultimate-01.jpg",
+          "focus": 0.2,
+          "dur": 0.3
+        },
+        {
+          "media": "../media/official/lucia-caminos-03.jpg",
+          "focus": 0.25,
+          "dur": 0.3,
+          "gamma": 1.35
+        },
+        {
+          "media": "../media/official/vintage-vice-city-pack-exclusive-looks-02.jpg",
+          "focus": 0.5,
+          "dur": 0.3
+        }
+      ]
+    }
+  ]
+}

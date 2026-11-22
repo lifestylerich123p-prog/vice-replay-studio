@@ -147,3 +147,10 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - 2026-11-22 (main chat, pre-upload fact check): a YouTube search for "GTA 6" missed CarryMinati's "GTA VI" stream
   (18.1M), so the draft named Mythpat (17.9M) as the biggest non-Speed stream. For any "most-viewed" ranking, search
   "GTA 6", "GTA VI" and "Grand Theft Auto VI" and merge before naming a #1.
+- 2026-11-22 (main chat, market scan 48 h, YouTube API): top GTA 6 Shorts are skits (can't do: real actors), streamer
+  endings (spoilers) and gameplay stunts (need owner gameplay). The format we CAN do: the fast "every look" montage
+  (DjMaRiiO "LOS OUTFITS DE LUCIA EN GTA VI" 4.5M at ~120K v/h, 9 s; "todos los cortes de pelo" 2.2M). Built
+  gta6-lucia-outfits on it: 8 numbered outfits, ~1.4 s per cut, 5-outfit flash in the first 1.75 s, recap flash at
+  the end that loops, the catch (#8 Vintage Vice City Pack, only with copies bought before Nov 20). Renderer: segment
+  `pad` 0.1 + `hard_cut` (the default 0.45 s pad + fade to black between segments made v1 feel slow: 23 s -> 19 s).
+  Title words people search: "Lucia" and "outfits" (not "looks").
