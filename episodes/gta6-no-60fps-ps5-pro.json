@@ -1,0 +1,69 @@
+{
+  "title": "GTA 6 Has No 60 FPS Mode, Not Even on PS5 Pro",
+  "slug": "gta6-no-60fps-ps5-pro",
+  "series": "Explained",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "format": "news",
+  "use_gameplay": false,
+  "short_title": "GTA 6 has no 60 FPS mode. Not even PS5 Pro #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 has no 60 FPS mode. Not even PS5 Pro #GTA6 #Shorts",
+    "Why GTA 6 can't run 60 FPS on PS5 Pro #GTA6 #Shorts",
+    "PS5 Pro owners, GTA 6 has bad news for you #GTA6 #Shorts"
+  ],
+  "short_description": "Rockstar's technology production director Marc Chambers told Kotaku the PS5 Pro's processor \"is not powerful enough to run the game's complex simulation at higher framerates\". GTA 6 targets 30 FPS on PS5, PS5 Pro and Xbox Series X|S; 40 and 60 FPS modes are ruled out on current consoles. PS5 Pro adds ray-traced shadows and PSSR for a sharper image. Sources: PC Gamer, Beebom, Wccftech, Insider Gaming (Nov 2026). Footage: official Rockstar trailers.",
+  "short_es": {
+    "title": "GTA 6 NO tiene 60 FPS... ni en PS5 Pro 😬 #GTA6 #Shorts",
+    "description": "Marc Chambers, director de producción tecnológica de Rockstar, dijo a Kotaku que el procesador de la PS5 Pro no es lo bastante potente para la simulación del juego a más fotogramas. GTA 6 va a 30 FPS en PS5, PS5 Pro y Xbox Series X|S; no habrá modos de 40 ni 60 FPS en las consolas actuales. La PS5 Pro suma sombras con trazado de rayos y una imagen más nítida."
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Is 30 FPS enough for you? YES or NO 👇",
+  "short_pinned_comment_es": "¿Te alcanzan 30 FPS? SÍ o NO 👇",
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#ps5pro",
+    "#gaming"
+  ],
+  "sources": [
+    "PC Gamer: https://www.pcgamer.com/games/grand-theft-auto/rockstar-says-a-ps5-pro-is-simply-not-powerful-enough-for-60-fps-gta-6-as-i-crack-a-smile-at-my-5090/",
+    "Beebom: https://beebom.com/ps5-pro-not-powerful-enough-to-handle-gta-6-at-60-fps/",
+    "Wccftech: https://wccftech.com/rockstar-ps5-pro-cpu-not-powerful-grand-theft-auto-vi-complex-simulation-60-fps-hopes/",
+    "Insider Gaming: https://insider-gaming.com/ps5-pros-cpu-upgrade-is-not-enough-for-gta-6-at-60-fps/"
+  ],
+  "short": [
+    {
+      "headline": "NO 60 FPS",
+      "headline_es": "SIN 60 FPS",
+      "text": "GTA 6 has no 60 FPS mode. Not even on PS5 Pro.",
+      "text_es": "GTA 6 no tiene modo de 60 FPS. Ni siquiera en PS5 Pro.",
+      "media": "../media/trailer/extended-look-convertible-overpass.mp4",
+      "keep_media": true
+    },
+    {
+      "headline": "ROCKSTAR: THE CPU",
+      "headline_es": "ROCKSTAR: EL CPU",
+      "text": "Rockstar told Kotaku the Pro's processor isn't powerful enough for the game's simulation. Forty FPS is ruled out too.",
+      "text_es": "Rockstar le dijo a Kotaku que el procesador de la Pro no alcanza para la simulación del juego. Cuarenta FPS, tampoco.",
+      "media": "../media/trailer/extended-look-downtown-highway.mp4",
+      "keep_media": true
+    },
+    {
+      "headline": "SHARPER, NOT SMOOTHER",
+      "headline_es": "MÁS NÍTIDO, NO MÁS FLUIDO",
+      "text": "Pro gets ray-traced shadows and a sharper picture. So the Pro buys you sharper, not smoother.",
+      "text_es": "La Pro suma sombras con trazado de rayos y una imagen más nítida. Compras nitidez, no fluidez.",
+      "media": "../media/trailer/extended-look-night-drive-skyline.mp4",
+      "keep_media": true
+    },
+    {
+      "headline": "IS 30 ENOUGH?",
+      "headline_es": "¿TE ALCANZAN 30?",
+      "text": "Is thirty enough for you? Yes or no.",
+      "text_es": "¿Te alcanzan treinta? Sí o no.",
+      "media": "../media/trailer/extended-look-sunset-skyline.mp4",
+      "keep_media": true
+    }
+  ]
+}
