@@ -203,4 +203,10 @@
   series (YPP only) and image carousels in the Shorts feed (owner posts from the phone); (3) news leads: Rockstar
   interviews (IGN) and Randy's Wish List car locations (content/learn/ideas.md). Built: `quote` chart type (animated
   quote card) so interview and streamer-quote Shorts are original without footage. No unmerged work on other branches.
+- 2026-11-22 (6:45 PM ET, owner "do what you think" to my option 1 for the darts Short): `gta6-no-darts` (quote cards:
+  Rob Nelson / Rockstar North to VGC, darts and bowling cut, pool in) uploads Mon 3:40 AM for **Mon Nov 23 11:00 AM
+  EN + ES**; the quiz Short I2VEKQUia8w moved from Mon 11:00 to **Wed Nov 25 11:00 AM** (its Mon 11:10 comment reminder
+  is void; new one Wed 11:10). Website: /guides/gta-6-darts/ and /es/guias/dardos-gta-6/ published. Randy's Wish
+  List guide held until sources agree on the car count (16-22). Uploader: the key check now retries brief network
+  errors (2 of 6 checks had failed with "no saved key belongs to channel").
 

@@ -66,13 +66,19 @@ def token_for(channel_id, prefer="YT_REFRESH_TOKEN"):
     for n in names:
         if not os.environ.get(n):
             continue
-        try:
-            acc = token(n)
-            owner = _owner_of(acc)
-        except SystemExit as e:
-            first_error = first_error or e
-            continue
-        except (urllib.error.URLError, OSError):
+        owner = None
+        for attempt in range(4):  # Nov 22: 2 of 6 checks hit a brief network error and reported "no key belongs"
+            try:
+                acc = token(n)
+                owner = _owner_of(acc)
+                break
+            except SystemExit as e:
+                first_error = first_error or e
+                break
+            except (urllib.error.URLError, OSError):
+                import time
+                time.sleep(2 * (attempt + 1))
+        if owner is None:
             continue
         if owner == channel_id:
             if n != prefer:
