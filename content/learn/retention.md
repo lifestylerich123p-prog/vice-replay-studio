@@ -3,41 +3,56 @@
 Use these when writing hooks and choosing length. Only trust a comparison with 3+ videos on each side.
 
 ## What keeps viewers (Shorts)
-- Hook with a number: number 54.6% viewed (10 Shorts) vs no number 50.3% (7)
-- Topic: news/breaking 47.1% viewed (8 Shorts) vs other 57.8% (9)
-- Average Short: 52.8% viewed, 111.2% still watching at the hook (~10% in; over 100 = people rewatch).
+- Hook with a number: number 67.2% viewed (20 Shorts) vs no number 48.6% (9)
+- Topic: news/breaking 57.4% viewed (10 Shorts) vs other 63.6% (19)
+- Average Short: 61.4% viewed, 117.4% still watching at the hook (~10% in; over 100 = people rewatch).
 
 ## Best and worst Shorts by % viewed
 | % viewed | at hook (100 = all) | views | subs | hook |
 |---|---|---|---|---|
+| 193% | 237% | 1005 | 1 | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 # |
+| 96% | -% | 4 | 0 | Lacy can't steal cars in GTA 6 😭🔑 #LACY #GTA6 #Shorts |
+| 89% | 122% | 1829 | 0 | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts |
+| 86% | 129% | 8126 | 2 | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts |
 | 82% | 130% | 1350 | 0 | 18 HOURS EARLY? |
-| 68% | 116% | 408 | 0 | GTA 6 IS OUT |
-| 67% | 114% | 929 | 1 | 99 ON METACRITIC |
-| 66% | 111% | 1301 | 0 | Already out in NZ |
-| 65% | 118% | 382 | 1 | GTA 6 in 3 days |
-| 39% | 102% | 279 | 0 | Kai Cenat's 130 HOUR GTA warm-up is over #GTA6 #Shorts |
-| 32% | -% | 40 | 0 | STREAMERS GOT BOXES |
-| 0% | -% | 0 | 0 | GTA 6 CHEATS ARE REAL |
+| 26% | -% | 4 | 0 | 3 SETTINGS |
+| 25% | -% | 16 | 0 | CAN'T GET IN? |
+| 0% | -% | 1 | 0 | LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #Shorts |
 
 ## Where Shorts lose viewers (per second; the biggest drop is where to fix the hook or cut)
-Median still watching: 108% at 3 s, 101% at 5 s (15 Shorts with curves).
+Median still watching: 111% at 3 s, 102% at 5 s (23 Shorts with curves).
 
 | % viewed | at 3 s | at 5 s | biggest drop | hook |
 |---|---|---|---|---|
+| 193% | 229% | 221% | 0:19 (-145 pts) | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 # |
+| 89% | 117% | 110% | 0:22 (-30 pts) | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts |
+| 86% | 111% | 101% | 0:02 (-21 pts) | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts |
 | 82% | 130% | 120% | 0:06 (-14 pts) | 18 HOURS EARLY? |
-| 68% | 116% | 102% | 0:02 (-18 pts) | GTA 6 IS OUT |
-| 67% | 114% | 105% | 0:02 (-12 pts) | 99 ON METACRITIC |
+| 75% | 113% | 104% | 0:27 (-15 pts) | GTA 6 CHEATS ARE REAL |
+| 69% | 115% | 104% | 0:02 (-18 pts) | GTA 6 IS OUT |
 | 66% | 112% | 107% | 0:08 (-9 pts) | Already out in NZ |
-| 65% | 118% | 102% | 0:05 (-12 pts) | GTA 6 in 3 days |
-| 61% | 121% | 110% | 0:06 (-11 pts) | 24 hours of GTA 6 |
-| 61% | 107% | 93% | 0:05 (-12 pts) | 7 MILLION WATCHING |
-| 58% | 108% | 96% | 0:05 (-9 pts) | Lucia's actress confirmed |
+| 66% | 113% | 105% | 0:02 (-12 pts) | 99 ON METACRITIC |
+
+## Stayed to watch (engaged views / views; beat our own median, not a magic number)
+Median 40% over 23 Shorts with 30+ views; 1.5 likes per 100 views.
+
+| stayed | vs median | % viewed | views | hook |
+|---|---|---|---|---|
+| 55% | +15 | 59% | 1126 | 30 FPS EVERYWHERE |
+| 50% | +10 | 57% | 1329 | $1.65 BILLION |
+| 50% | +10 | 66% | 1309 | Already out in NZ |
+| 49% | +9 | 89% | 1829 | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts |
+| 48% | +8 | 52% | 949 | NOT ENOUGH SPACE? |
+| 46% | +6 | 82% | 1350 | 18 HOURS EARLY? |
+| 29% | -11 | 49% | 1005 | SPEED TO NZ |
+| 29% | -11 | 40% | 59 | STREAMERS GOT BOXES |
+| 30% | -10 | 57% | 373 | NO GAME DISC |
 
 ## Long videos
 | % viewed | avg seconds | views | title |
 |---|---|---|---|
-| 92% | 17 | 5208 | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy |
-| 66% | 19 | 167 | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore |
+| 92% | 17 | 5265 | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy |
+| 66% | 19 | 174 | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore |
 | 56% | 6 | 41 | GTA 6 Chaos Is Coming 🌴 | Vice Replay |
-| 48% | 56 | 3 | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade |
-| 45% | 45 | 107 | GTA 6 New Zealand Trick: Play Early or Risk Your Account? |
+| 45% | 45 | 109 | GTA 6 New Zealand Trick: Play Early or Risk Your Account? |
+| 40% | 46 | 13 | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade |
