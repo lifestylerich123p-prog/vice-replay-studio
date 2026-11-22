@@ -69,7 +69,7 @@ def decode_errors(path):
     return [l for l in err.splitlines() if l.strip()][:5]
 
 
-def transcribe(path):
+def transcribe(path, lang="en"):
     try:
         from faster_whisper import WhisperModel
     except ImportError:
@@ -79,7 +79,7 @@ def transcribe(path):
                          capture_output=True).stdout  # decode with ffmpeg (faster-whisper's PyAV path breaks on new av)
     audio = np.frombuffer(raw, np.int16).astype(np.float32) / 32768.0
     model = WhisperModel("base", device="cpu", compute_type="int8", cpu_threads=4)
-    segs, _ = model.transcribe(audio, language="en", word_timestamps=True, vad_filter=False)
+    segs, _ = model.transcribe(audio, language=lang, word_timestamps=True, vad_filter=False)
     return [{"w": w.word.strip(), "s": round(w.start, 2), "e": round(w.end, 2), "p": round(w.probability, 2)}
             for s in segs for w in (s.words or [])]
 
@@ -130,6 +130,33 @@ def spoken(words):
     out = []
     for w in words:
         out += _say(int(w)) if w.isdigit() and len(w) < 7 else [NUM.get(w, w)]
+    return out
+
+
+_ES_U = ("cero uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince dieciséis "
+         "diecisiete dieciocho diecinueve veinte veintiuno veintidós veintitrés veinticuatro veinticinco veintiséis "
+         "veintisiete veintiocho veintinueve").split()
+_ES_T = {3: "treinta", 4: "cuarenta", 5: "cincuenta", 6: "sesenta", 7: "setenta", 8: "ochenta", 9: "noventa"}
+_ES_H = {1: "ciento", 2: "doscientos", 3: "trescientos", 4: "cuatrocientos", 5: "quinientos", 6: "seiscientos",
+         7: "setecientos", 8: "ochocientos", 9: "novecientos"}
+
+
+def _say_es(n):
+    """Spanish number words for 0..999999 (what the Spanish voice says for a numeral Whisper writes as digits)."""
+    if n < 30:
+        return [_ES_U[n]]
+    if n < 100:
+        return [_ES_T[n // 10]] + (["y", _ES_U[n % 10]] if n % 10 else [])
+    if n < 1000:
+        return (["cien"] if n == 100 else [_ES_H[n // 100]]) + (_say_es(n % 100) if n % 100 else [])
+    return ([] if n // 1000 == 1 else _say_es(n // 1000)) + ["mil"] + (_say_es(n % 1000) if n % 1000 else [])
+
+
+def spoken_es(words):
+    """Spanish counterpart of spoken(): digits -> words, 'percent' (from norm_words' %) -> 'por ciento'."""
+    out = []
+    for w in words:
+        out += _say_es(int(w)) if w.isdigit() and len(w) < 7 else ["por", "ciento"] if w == "percent" else [w]
     return out
 
 
@@ -215,13 +242,15 @@ def check(path, episode=None, dest="vice-replay", script_key="short", project=No
     # captions: what is said vs the script we captioned
     if use_whisper and ep and (ep.get(script_key) or ep.get("segments")):
         segs = ep.get(script_key) or ep.get("segments")
-        script = norm_words(" ".join(s.get("text", "") for s in segs))
-        words = transcribe(path)
+        es = Path(str(path)).stem.endswith("-es")  # Spanish-voice render: Spanish speech vs text_es
+        script = norm_words(" ".join((s.get("text_es") if es else None) or s.get("text", "") for s in segs))
+        words = transcribe(path, lang="es" if es else "en")
         if words is None:
             add("captions", "warn", "faster-whisper not installed: caption accuracy not measured", "pip install faster-whisper")
         else:
             heard = norm_words(" ".join(w["w"] for w in words))
-            e = wer(spoken(script), spoken(heard))
+            say = spoken_es if es else spoken
+            e = wer(say(script), say(heard))
             add("captions", "pass" if e <= 0.12 else "warn" if e <= 0.25 else "fail",
                 f"speech matches the captioned script with {round(100 * e)}% word error ({len(heard)} words heard)",
                 None if e <= 0.12 else "re-voice the segment or fix the caption text so they match")
