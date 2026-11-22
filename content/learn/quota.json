@@ -18,5 +18,13 @@
    "PUT videos": 3
   },
   "registry_est": 17500
+ },
+ "2026-11-22": {
+  "used": 52,
+  "calls": {
+   "GET channels": 1,
+   "GET videos": 1,
+   "POST commentThreads": 1
+  }
  }
 }
