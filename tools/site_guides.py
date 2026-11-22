@@ -5,6 +5,7 @@ SITE = os.environ.get("VICEREPLAY_SITE") or os.path.join(os.path.dirname(os.path
 DOMAIN = "https://vicereplay.com"
 TAG = "vicereplay-20"
 YT = "https://www.youtube.com/@vicereplaytv-q8s"
+YT_ES = "https://www.youtube.com/channel/UCWPnqYqYu9_CLsJ8Bk1MPgQ"  # Vice Replay en Español
 import re as _re
 # Deals shown as direct Amazon buttons on the links page (bio link) and the homepage. Update prices here when they
 # change (checked Nov 20, 2026: Kotaku/Gizmodo DualSense $54; TechRadar/Shattered Pulse Elite ~$110).
@@ -158,7 +159,7 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
             {"@type": "ListItem", "position": 3, "name": title, "item": url}]})
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in jsonld)
     if lang == "es":
-        menu = f'<a href="/es/">Guías</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
+        menu = f'<a href="/es/">Guías</a><a href="/es/equipo/">Equipo</a><a href="{YT_ES}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
         foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
     else:
         menu = f'<a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
@@ -621,6 +622,25 @@ page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en es
      banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="https://www.youtube.com/@vicereplaytv-q8s">Nuestros videos tienen subtítulos en español.</a></p><div class="cards">'
      + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>', lang="es")
 
+# Spanish gear page (Nov 22, 2026): the Amazon link for Vice Replay en Español (channel links, descriptions, comments)
+ALT.update({"es/equipo/": "gear/"})
+ES_GEAR = [("Más espacio para PS5: SSD NVMe de 2 TB con disipador", "PS5 compatible 2TB NVMe SSD with heatsink"),
+           ("Tarjeta de expansión para Xbox Series X|S", "Xbox Series X S storage expansion card 2TB"),
+           ("Control DualSense de PS5", "PS5 DualSense controller"),
+           ("Audífonos gamer (PS5 / Xbox)", "gaming headset PS5 Xbox"),
+           ("GTA 6 para PS5", GAME[0][1]), ("GTA 6 para Xbox Series X|S", GAME[1][1]),
+           ("Capturadora para grabar tu gameplay", "capture card 4K60 PS5"),
+           ("Prueba gratis de Amazon Prime (30 días)", "https://www.amazon.com/tryprimefree")]
+_es_items = "".join(f'<a class="item" href="{amz(q)}" target="_blank" rel="sponsored noopener">{html.escape(label)}<span aria-hidden="true">→</span></a>' for label, q in ES_GEAR)
+page("es/equipo/", "Equipo para GTA 6 (Amazon) · Vice Replay", "Equipo para GTA 6: espacio para PS5 y Xbox, control, audífonos y el juego. Enlaces de Amazon.",
+     banner('Equipo para <span>GTA&nbsp;6</span>', 'deals-gear')
+     + '<p class="lede">Lo que más nos preguntan: espacio para instalar GTA 6, control, audífonos y el juego. Los botones buscan en Amazon.com con precios actuales.</p>'
+     + f'<div class="box"><h3>Equipo para GTA 6 (enlaces de afiliado)</h3><div class="btns">{_es_items}</div>'
+     + '<p class="sources" style="margin:10px 0 0">Enlaces de afiliado: como Afiliado de Amazon gano con las compras que califican, sin costo extra para ti. '
+       'No hemos probado estos productos: revisa reseñas y compatibilidad antes de comprar. Los enlaces llevan a Amazon.com (Estados Unidos); '
+       'desde México u otros países revisa el envío y el precio final.</p></div>'
+     + '<p>¿Sin espacio para GTA 6? Antes de comprar, prueba lo gratis: <a href="/es/guias/espacio-gta-6/">nuestra guía de espacio</a>.</p>', lang="es")
+
 # guides index
 GUIDES.sort(key=lambda g: (g[0] != "gta-6-launch-live", g[3]), reverse=False)
 GUIDES[1:] = sorted(GUIDES[1:], key=lambda g: g[3], reverse=True)
@@ -661,7 +681,7 @@ INDEXNOW_KEY = "42ea7b879d668a2c990cad4a77c32361"  # public by design: proves to
 open(os.path.join(SITE, f"{INDEXNOW_KEY}.txt"), "w").write(INDEXNOW_KEY)
 open(os.path.join(SITE, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
 _newest = max([d for *_, d in GUIDES] + ["2026-11-18"]); _newest_es = max([d for *_, d in GUIDES_ES] + ["2026-11-18"])  # hubs change whenever a guide is added
-urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
+urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18"), ("es/equipo/", "2026-11-22")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
 open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
 print("ok", len(GUIDES))
