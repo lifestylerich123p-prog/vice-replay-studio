@@ -124,6 +124,9 @@
   settings; (4) tell the main chat "Spanish channel connected": it runs `python -m studio.youtube_es whoami`, puts the
   id in config/channel.json, then posts approved Shorts with `python -m studio.youtube_es episodes/<slug>.json
   --approve short,news`. It refuses to post if the token belongs to the English channel.
+- 2026-11-21 (night): owner created "Vice Replay en Español" and saved YT_ES_REFRESH_TOKEN in the vice-replay-studio
+  environment (sign-in script with --es; first try hit invalid_client from a pasted client ID, fixed by putting the
+  ID in the command). Next: `studio.youtube_es whoami` -> channel_id in config, then the Day 1 Spanish Shorts.
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.
