@@ -8,6 +8,10 @@ isolated cutscenes. Mark an idea USED (date + slug) when it ships. Researched by
    ClaroSports so far (clarosports.com/us/tendencias-us/illojuan-ya-dejo-uno-de-los-clips-del-ano-borro-gta-6-por-error-ante-medio-millon-de-espectadores/):
    needs a 2nd reliable source before use. Our voice + official footage only.
 2. **IlloJuan's 233,520-viewer record** was the Aug 2026 GTA VI presentation (Streams Charts via LevelUp), not launch.
+3. **Rubius played early via a New Zealand region switch** (Azteca Jalisco only; another report says base PS5 and
+   Notebookcheck says he only watched gameplay at Rockstar North): conflicting, don't use until 2 outlets agree.
+4. Spanish-speaking launch rankings: IlloJuan, Rubius and AuronPlay were the biggest Spanish streams of the first
+   24 h (streamer.guide, one source): a "top 3 streamers hispanos" Short once Streams Charts confirms the numbers.
 
 ## Researched Nov 21, 2026 (main chat: formats that need no gameplay)
 1. **Quiz: guess the GTA 6 place from the official map** (`quiz`). Magnify a map label area with the name blurred
