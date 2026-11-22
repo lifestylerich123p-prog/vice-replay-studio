@@ -81,10 +81,42 @@
       "keep_media": true,
       "pad": 0.1,
       "hard_cut": true,
-      "media": "../media/trailer/launch-trailer-jason-lucia-car.mp4",
-      "media_start": 0.0,
-      "speed": 0.6,
-      "focus": 0.56
+      "shots": [
+        {
+          "media": "../media/trailer/launch-trailer-jason-lucia-car.mp4",
+          "start": 0.0,
+          "dur": 0.8,
+          "speed": 0.6,
+          "focus": 0.56
+        },
+        {
+          "media": "../media/official/lucia-caminos-05.jpg",
+          "focus": 0.62,
+          "dur": 0.25
+        },
+        {
+          "media": "../media/official/lucia-caminos-10.jpg",
+          "focus": 0.46,
+          "dur": 0.25
+        },
+        {
+          "media": "../media/official/vintage-vice-city-pack-exclusive-looks-02.jpg",
+          "focus": 0.5,
+          "dur": 0.25
+        },
+        {
+          "media": "../media/official/lucia-caminos-03.jpg",
+          "focus": 0.25,
+          "gamma": 1.35,
+          "dur": 0.25
+        },
+        {
+          "media": "../media/trailer/launch-trailer-jason-lucia-car.mp4",
+          "start": 0.5,
+          "speed": 0.6,
+          "focus": 0.56
+        }
+      ]
     },
     {
       "headline": "#2",
@@ -164,15 +196,16 @@
     {
       "headline": "#7",
       "headline_es": "#7",
-      "text": "Seven: the brown dress.",
-      "text_es": "Siete: el vestido café.",
+      "text": "Seven: leather jacket.",
+      "text_es": "Siete: chaqueta de cuero.",
       "keep_media": true,
       "pad": 0.1,
       "hard_cut": true,
       "shots": [
         {
-          "media": "../media/official/jason-and-lucia-ultimate-02.jpg",
-          "focus": 0.05
+          "media": "../media/official/lucia-caminos-03.jpg",
+          "focus": 0.25,
+          "gamma": 1.35
         }
       ]
     },
@@ -252,9 +285,10 @@
           "dur": 0.3
         },
         {
-          "media": "../media/official/jason-and-lucia-ultimate-02.jpg",
-          "focus": 0.05,
-          "dur": 0.3
+          "media": "../media/official/lucia-caminos-03.jpg",
+          "focus": 0.25,
+          "dur": 0.3,
+          "gamma": 1.35
         },
         {
           "media": "../media/official/vintage-vice-city-pack-exclusive-looks-02.jpg",

@@ -111,6 +111,8 @@
   boats, Rideout Customs, Sara's Salon, Stock 305, Wyman car collection, Vice City style). EXCLUDED Ultimate Edition
   shots: both revolver shots, weapon variants, the PTT store (man holding a gun), two Electric Fang tattoo-parlor
   shots (balaclava pose, bat/pipe), the Squalo swimwear shot, Stock 305 #4 and Vice City Style #3/#5 (revealing poses).
+  Nov 22: `jason-and-lucia-ultimate-02.jpg` (Lucia on the green car holding a revolver at her hip) had slipped into
+  media/official; removed (found while checking the Lucia outfits Short at full resolution).
 - 2026-11-21: Channel profile improved (owner: "continue to do improvement to the channel"): new description and
   keywords (daily morning news, streamer stories, quizzes, map comparisons; not-affiliated line kept; old text in
   content/archive/channel-profile-before-2026-11-21.json), homepage sections added (Streamer & Breaking News, Shorts,

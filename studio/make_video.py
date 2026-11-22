@@ -419,7 +419,7 @@ def seg_effects(seg, vf, w, h, dur):
 
 
 def shots_background(i, seg, dur, w, h, work, base):
-    """Pacing: a segment with "shots" ([{"media", "start", "focus"?}, ...]) gets a background that cuts between
+    """Pacing: a segment with "shots" ([{"media", "start", "focus"?, "gamma"?}, ...]) gets a background that cuts between
     them, evenly across the narration (or by each shot's "dur"). Silent; clip audio is never used."""
     shots = seg["shots"]
     fixed = sum(x.get("dur", 0) for x in shots)
@@ -446,7 +446,7 @@ def shots_background(i, seg, dur, w, h, work, base):
         cx = f"'clip((iw-ow)*{fx}-30+60*t/{d:.2f},0,iw-ow)'" if still else f"(iw-ow)*{fx}"
         run(["ffmpeg", "-y", "-v", "error", *src,
              "-vf", f"setpts=PTS/{sp},scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}:x={cx}:y=(ih-oh)/2,"
-                    f"eq=brightness=-0.04:saturation=1.15,setsar=1,fps={FPS}",
+                    f"eq=brightness=-0.04:saturation=1.15:gamma={sh.get('gamma', 1.0)},setsar=1,fps={FPS}",
              "-t", f"{d:.2f}", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", str(out)])
         parts.append(out)
     lst = work / f"shots_{i}.txt"
