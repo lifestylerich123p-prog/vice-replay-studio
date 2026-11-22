@@ -45,6 +45,23 @@ and our numbers agree (narrated Shorts ~57% viewed, 40% stayed to watch; real mo
 - **Never delete a flop** (YouTube: deleting cuts the audience link); unlist at most, and make a new angle instead.
 - Judge each Short against our own median in content/learn/retention.md ("Stayed to watch"), not a magic number.
 
+**NOV 22 BLUEPRINT RULES (owner: "match the energy", "titles and tags perfect"; apply to every Short).**
+- **Market scan first**: YouTube API search (`order=viewCount`, last 48 h, `videoDuration=short`) for "GTA 6" AND "GTA VI"
+  AND "Grand Theft Auto VI", merged (a "GTA 6"-only search missed CarryMinati's 18.1M "GTA VI" stream). Copy the
+  winning FORMAT we can legally make (e.g. the "every look" montage), never their footage, skits or endings.
+- **Energy**: Shorts now default to 0.2 s gaps and hard cuts (no dip to black). Segment 1 = `shots` with 3-5 quick cuts
+  (0.25-0.3 s each) that show the payoff in the first 2 s, then the hook clip; a cut every ~1-1.5 s; end on a
+  0.3 s-per-shot recap flash that loops into the first line. Examples: episodes/gta6-lucia-outfits.json,
+  episodes/gta6-top-3-rides.json.
+- **Look at every picture at FULL resolution** before using it: thumbnails hid a pistol (lucia-caminos-08) and a
+  revolver (an Ultimate shot, now removed). No weapons in hand, nothing revealing, no near-black frames (brighten a
+  dark still with the shot key `"gamma": 1.3`).
+- **No two picks of the same thing** in a list/montage (two Ultimate shots were the same outfit).
+- **Titles**: the words people search first ("GTA 6" + subject: "Lucia", "outfits", a streamer's name), under 60
+  characters before "#GTA6 #Shorts". **Tags**: `tags` (8-15 phrases for THIS Short) and `short_es.tags` / `es.tags` in
+  Spanish; the views check warns when they're missing.
+- **Don't repeat a topic** we posted in the last 4 days (the $3.79B was made 3 times: the 3rd went Spanish-only).
+
 **NOV 21 PLAN (owner: "use data to find a plan of action and implement"; overrides the slots and mix below).**
 Since launch, people play the game themselves and our trailer-footage Shorts mostly die (Nov 19 noon to Nov 20:
 tips/search-answer Shorts got 5-60 views; settings 7, cheat list 5, no-mission-replay 53). What still works:
