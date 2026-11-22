@@ -677,11 +677,40 @@ page("contact/", "Work With Vice Replay", "Sponsorships, clipping campaigns and 
 <ul class="list"><li>Fake reviews or claims that we used a product we haven't.</li><li>Gambling, account selling, "money generators" or anything that breaks Rockstar's or YouTube's rules.</li><li>Hidden ads: every paid placement is disclosed.</li></ul>
 <p>Include your brand or channel, what you have in mind, and your timing. We usually reply within 2 days.</p>""")
 
+# Privacy policy + terms (Nov 22, 2026): Google needs both links on its Branding page before the YouTube upload app
+# ("Creator HQ", shared by Vice Replay, What If Arena and ClipCircuit) can be published, and YouTube API Services require the privacy wording below.
+page("privacy/", "Privacy Policy · Vice Replay", "How vicereplay.com and the Creator HQ YouTube tool (Vice Replay, What If Arena, ClipCircuit) handle data.", f"""<h1>Privacy <span>policy</span></h1>
+<p class="lede">Last updated November 22, 2026. Vice Replay is a fan channel and website about GTA 6. We collect as little as possible.</p>
+<h2>This website</h2>
+<ul class="list"><li><b>No accounts, no sign-ups.</b> We don't ask for your name, email or anything else to read the site.</li>
+<li><b>Analytics:</b> we use Cloudflare Web Analytics, which counts visits without cookies and without tracking you across sites.</li>
+<li><b>Amazon links:</b> some links are Amazon affiliate links (tag vicereplay-20). If you click one, Amazon may use cookies under
+<a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ">Amazon's privacy notice</a>, and we may earn a commission.</li>
+<li><b>Embedded YouTube videos</b> are served by YouTube under Google's privacy policy.</li></ul>
+<h2>Creator HQ (our YouTube tool)</h2>
+<p>Creator HQ is a private tool that uploads and manages videos on <b>the owner's own</b> YouTube channels (Vice Replay, Vice Replay en Español, What If Arena and ClipCircuit) through the <b>YouTube API Services</b>.
+It is used only by the channel owner. When the owner signs in with Google, the tool receives access to those channels to upload videos, add subtitles, playlists and the owner's own comments, and read those channels' statistics.</p>
+<ul class="list"><li>We do not collect, sell or share data from any other YouTube user.</li>
+<li>The access key is stored privately in our own production environment and used only for our channels.</li>
+<li>By using features built on YouTube, you are also subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+<li>Access can be revoked at any time on the <a href="https://myaccount.google.com/permissions">Google security settings page</a>.</li></ul>
+<h2>Children</h2><p>This site and our channels are not directed to children under 13.</p>
+<h2>Contact</h2><p>Questions about privacy: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a>.</p>""")
+
+page("terms/", "Terms of Use · Vice Replay", "Terms of use for vicereplay.com and Vice Replay.", f"""<h1>Terms <span>of use</span></h1>
+<p class="lede">Last updated November 22, 2026.</p>
+<h2>Fan site</h2><p>Vice Replay is a fan channel and website. It is <b>not affiliated with Rockstar Games or Take-Two Interactive</b>. Grand Theft Auto, GTA and related names and images belong to their owners and are used here for news, commentary and guides.</p>
+<h2>Content</h2><p>Guides and news are for information and entertainment. We check facts against sources and date our pages, but games and prices change: always check the official source before you buy or rely on something.</p>
+<h2>Affiliate links</h2><p>Some links are affiliate links (Amazon Associates, tag vicereplay-20). We may earn a commission at no extra cost to you, and we disclose it where it applies.</p>
+<h2>YouTube</h2><p>Our videos are on YouTube and follow the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+<h2>No warranty</h2><p>The site is provided as is. We aren't responsible for third-party sites we link to.</p>
+<h2>Contact</h2><p><a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a></p>""")
+
 INDEXNOW_KEY = "42ea7b879d668a2c990cad4a77c32361"  # public by design: proves to Bing/IndexNow that we own the site
 open(os.path.join(SITE, f"{INDEXNOW_KEY}.txt"), "w").write(INDEXNOW_KEY)
 open(os.path.join(SITE, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
 _newest = max([d for *_, d in GUIDES] + ["2026-11-18"]); _newest_es = max([d for *_, d in GUIDES_ES] + ["2026-11-18"])  # hubs change whenever a guide is added
-urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18"), ("es/equipo/", "2026-11-22")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
+urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18"), ("privacy/", "2026-11-22"), ("terms/", "2026-11-22"), ("es/equipo/", "2026-11-22")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
 open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
 print("ok", len(GUIDES))
