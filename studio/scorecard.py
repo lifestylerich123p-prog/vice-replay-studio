@@ -89,6 +89,27 @@ def tags(v):
     return out
 
 
+def script_tags(vid, ups):
+    """What the episode file says about a Short we made (Nov 22): its picture (our own `chart` graphics, owner
+    gameplay, or trailer/screenshot footage only) and whether its first sentence is a question. This is the test of the
+    Nov 22 switch to graph Shorts (YouTube's Oct 2026 originality update) and of the "statement, not question" hook."""
+    u = ups.get(vid) or {}
+    try:
+        ep = json.loads((ROOT / "episodes" / f"{u['slug']}.json").read_text())
+    except (OSError, ValueError, KeyError):
+        return {}
+    item = u.get("item")
+    segs = ep.get("short") if item == "short" else next(
+        (x.get("segments") for x in ep.get("shorts", []) if x.get("id") == item), None)
+    if not segs:
+        return {}
+    media = json.dumps(segs)
+    pic = ("graph (our charts)" if any(x.get("chart") for x in segs) else
+           "owner gameplay" if "media/gameplay" in media else "trailer/screenshots")
+    first = re.split(r"(?<=[.?!])\s", (segs[0].get("text") or "").strip())[0]
+    return {"picture": pic, "opener": "question" if first.endswith("?") else "statement"}
+
+
 def med(xs):
     xs = [x for x in xs if x is not None]
     return round(statistics.median(xs), 1) if xs else None
@@ -100,6 +121,10 @@ def build():
     if (LEARN / "analytics.json").exists():
         ana = {r["video"]: r for r in json.loads((LEARN / "analytics.json").read_text()).get("videos", [])}
     hist = load_history()
+    try:
+        ups = json.loads((LEARN / "uploads.json").read_text())
+    except (OSError, ValueError):
+        ups = {}
     now = ts(snap["checked"])
     rows = []
     for v in snap["videos"]:
@@ -107,7 +132,9 @@ def build():
             continue
         pub = ts(v["published"])
         age = (now - pub).total_seconds() / 3600
-        r = {**v, **tags(v), "age_h": round(age, 1),
+        extra = script_tags(v["id"], ups) if "campaign" not in tags(v)["kind"] else {}
+        r = {**v, **tags(v), "picture": extra.get("picture", "-"), "opener": extra.get("opener", "-"),
+             "age_h": round(age, 1),
              "v24": views_at(hist, v["id"], pub) if age >= 24 else None,
              "pct": ana.get(v["id"], {}).get("averageViewPercentage")}
         rows.append(r)
@@ -117,9 +144,11 @@ def build():
              "of the Short watched (YouTube Analytics, a few days behind). Medians per group; n = number of Shorts.", ""]
     overall = med([r["views_per_hour"] for r in rows])
     advice = []
-    for key in ("format", "kind", "hook", "length", "slot (ET)"):
+    for key in ("format", "kind", "picture", "opener", "hook", "length", "slot (ET)"):
         groups = {}
         for r in rows:
+            if r[key] == "-":  # campaign clips / Shorts without an episode file: no picture/opener tag
+                continue
             groups.setdefault(r[key], []).append(r)
         lines += [f"## By {key}", "", "| Group | n | median v/h | median 24 h views | median watched |", "|---|---|---|---|---|"]
         for g, rs in sorted(groups.items(), key=lambda kv: -(med([r["views_per_hour"] for r in kv[1]]) or 0)):

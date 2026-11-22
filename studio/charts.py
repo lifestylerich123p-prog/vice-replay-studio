@@ -9,6 +9,8 @@ Segment key (episodes/<slug>.json, Shorts or main video):
               "unit": "M", "highlight": 0, "note": "YouTube view counts, Nov 22"}   (+ "floor": 90 to start bars at 90)
     "chart": {"type": "counter", "value": 3.79, "prefix": "$", "unit": "B", "label": "preorders + day one",
               "vs": {"value": 0.8, "prefix": "$", "unit": "B", "label": "GTA 5, day one"}}
+    "chart": {"type": "line", "items": [["2008", 59.99], ["2013", 59.99], ["2026", 79.99]], "prefix": "$",
+              "highlight": 2, "note": "Launch price, standard edition"}   (a trend over time, max 8 points)
 Bars grow one after another (ease-out) while the numbers count up; the highlighted bar is pink, the rest cyan. Everything
 is drawn between the headline (top 30%) and the captions (bottom 38%) on Shorts.
 """
@@ -76,6 +78,18 @@ def _panel(img, box):
     img.alpha_composite(over)
 
 
+def _note(d, spec, x0, x1, y, h):
+    """The source line under a chart, shrunk to fit the panel (Nov 22: a long note ran off the right edge)."""
+    if not spec.get("note"):
+        return
+    size = int(h * 0.018)
+    fn = brand.font(brand.BODY_FONT, size)
+    while fn.getlength(spec["note"]) > (x1 - x0) and size > int(h * 0.011):
+        size -= 1
+        fn = brand.font(brand.BODY_FONT, size)
+    d.text((x0, y), spec["note"], font=fn, fill=(183, 169, 207))
+
+
 def bars_frame(base, spec, t, w, h):
     img = base.copy().convert("RGBA")
     x0, y0, x1, y1 = _region(w, h)
@@ -107,9 +121,7 @@ def bars_frame(base, spec, t, w, h):
             d.rounded_rectangle([x0, by, x0 + max(bar_h, full * p), by + bar_h], radius=bar_h // 2, fill=col)
             txt = _fmt(v * p, dec, spec.get("prefix", ""), spec.get("unit", ""), spec.get("locale", "en"))
             d.text((x0 + max(bar_h, full * p) + int(w * 0.015), by - int(bar_h * 0.35)), txt, font=fv, fill=brand.WHITE)
-    if spec.get("note"):
-        fn = brand.font(brand.BODY_FONT, int(h * 0.018))
-        d.text((x0, y1 - note_h + 4), spec["note"], font=fn, fill=(183, 169, 207))
+    _note(d, spec, x0, x1, y1 - note_h + 4, h)
     return img.convert("RGB")
 
 
@@ -151,11 +163,73 @@ def counter_frame(base, spec, t, w, h):
     return img.convert("RGB")
 
 
+def line_frame(base, spec, t, w, h):
+    """A trend that draws itself left to right (prices over the years, views per day...). Each point's value appears
+    when the line reaches it; the highlighted point (default: the last) is pink. Added Nov 22 so graph Shorts don't
+    all look like the same leaderboard (YouTube's repetitive-content checks look at the whole channel)."""
+    img = base.copy().convert("RGBA")
+    x0, y0, x1, y1 = _region(w, h)
+    _panel(img, (x0, y0, x1, y1))
+    d = ImageDraw.Draw(img)
+    items = spec["items"][:8]
+    n = len(items)
+    loc, pre, unit = spec.get("locale", "en"), spec.get("prefix", ""), spec.get("unit", "")
+    dec = _decimals([v for _, v in items])
+    hl = spec.get("highlight", n - 1)
+    note_h = int(h * 0.028) if spec.get("note") else 0
+    fv = brand.font(brand.HEADLINE_FONT, max(int(w * 0.036), int(w * 0.05 * min(1.0, 5 / max(n, 1)))))
+    vh = fv.getbbox("0")[3]
+    px0, px1 = x0 + int((x1 - x0) * 0.08), x1 - int((x1 - x0) * 0.08)
+    # labels may have two lines ("GTA 3\n2001"); shrink them until the widest fits the space between points
+    labels = [str(lab).split("\n") for lab, _ in items]
+    gap = (px1 - px0) / max(1, n - 1) if n > 1 else (px1 - px0)
+    ls = max(int(w * 0.030), int(w * 0.036 * min(1.0, 6 / max(n, 1))))
+    fl = brand.font(brand.BODY_FONT, ls)
+    while ls > int(w * 0.024) and max(fl.getlength(x) for lab in labels for x in lab) > gap * 0.94:
+        ls -= 2
+        fl = brand.font(brand.BODY_FONT, ls)
+    lh = fl.getbbox("Ay")[3]
+    nl = max(len(lab) for lab in labels)
+    py0, py1 = y0 + int(vh * 1.6), y1 - note_h - int(lh * (0.9 + 1.15 * nl))
+    floor = spec.get("floor", 0)  # start the axis above 0 only when the note says so (honest charts)
+    vmax = max(v for _, v in items)
+    span = max(1e-9, vmax - floor)
+    pts = [(px0 + (px1 - px0) * (k / max(1, n - 1)), py1 - (py1 - py0) * max(0.0, v - floor) / span)
+           for k, (_, v) in enumerate(items)]
+    d.line([(px0, py1), (px1, py1)], fill=(183, 169, 207), width=max(2, w // 360))  # baseline
+    reach = _ease((t - 0.15) / 1.8) * (n - 1)  # how far along the line has drawn, in points
+    lw = max(4, int(w * 0.009))
+    for k in range(n - 1):
+        part = max(0.0, min(1.0, reach - k))
+        if part <= 0:
+            break
+        (ax, ay), (bx, by) = pts[k], pts[k + 1]
+        d.line([(ax, ay), (ax + (bx - ax) * part, ay + (by - ay) * part)], fill=brand.CYAN, width=lw)
+    for k, ((_, v), (px, py)) in enumerate(zip(items, pts)):
+        for j, part_txt in enumerate(labels[k]):
+            d.text((px - fl.getlength(part_txt) / 2, py1 + int(lh * (0.45 + 1.15 * j))), part_txt, font=fl,
+                   fill=brand.WHITE if j == 0 else (183, 169, 207))
+        p = max(0.0, min(1.0, (reach - k + 0.6) / 0.6)) if n > 1 else _ease(t / 0.6)
+        if p <= 0:
+            continue
+        col = brand.PINK if k == hl else brand.CYAN
+        r = int(lw * (1.9 if k == hl else 1.3))
+        d.ellipse([px - r, py - r, px + r, py + r], fill=col, outline=brand.WHITE, width=max(2, lw // 3))
+        txt = _fmt(v * _ease(p), dec, pre, unit, loc)
+        tx = min(max(px - fv.getlength(txt) / 2, x0), x1 - fv.getlength(txt))
+        d.text((tx, py - r - vh * 1.35), txt, font=fv, fill=brand.PINK if k == hl else brand.WHITE)
+    _note(d, spec, x0, x1, y1 - note_h + 4, h)
+    return img.convert("RGB")
+
+
+DRAW = {"bars": bars_frame, "counter": counter_frame, "line": line_frame}
+
+
 def render(spec, dur, w, h, out, seed=0):
     """Write an mp4 (no audio) of the animated chart, dur seconds long; returns its path."""
     out = Path(out)
     base = _backdrop(w, h, seed=spec.get("seed", seed))
-    draw = counter_frame if spec.get("type") == "counter" else bars_frame
+    draw = DRAW.get(spec.get("type"), bars_frame)
     proc = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}",
                              "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
                              "-pix_fmt", "yuv420p", str(out)], stdin=subprocess.PIPE)

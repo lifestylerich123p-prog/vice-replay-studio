@@ -87,10 +87,12 @@ only for big news or long videos (`studio.quota` lists daytime first).
   approved campaigns); only what reliable sources say they said or did.
 - **Learning**: `python -m studio.learn` (our numbers + hottest GTA 6 videos; YouTube API key in the environment);
   lessons in `content/learn/lessons.md`. `/stats` logs Studio screenshots into `content/performance.md`.
+  `python -m studio.flops` = 48 h flop review (Shorts under 50 views: main chat sets them private, never deletes).
 - **Status**: `python -m studio.status` = one screen (health, YouTube schedule + views, free slots + quota, Instagram
   posted/next, campaigns + clip views); use it for "how are we doing?". `python -m studio.quota`: YouTube units left
   today (learned limit, resets 3 AM ET) and free posting slots for 3 days; fill DAYTIME free slots before extras.
-- **Health**: `python -m studio.doctor` (free) checks the YouTube connection and its 7-day expiry, missing pinned
+- **Health**: `python -m studio.doctor` (free) checks the YouTube connection (no 7-day expiry since the Google app was
+  published Nov 22), missing pinned
   comments (`--fix` posts approved ones), the website and disk. After reconnecting YouTube, write today's date to
   `content/learn/youtube_connected.txt`.
 - **Lean runs**: `python -m studio.radar` (free) first in breaking-news runs (QUIET = stop). Don't re-read big files

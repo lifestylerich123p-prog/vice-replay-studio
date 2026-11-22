@@ -73,6 +73,13 @@
         "prefix": "$",
         "label": "GTA 6, standard edition",
         "seed": 9
+      },
+      "chart_es": {
+        "type": "counter",
+        "value": 79.99,
+        "prefix": "$",
+        "label": "GTA 6, edición estándar",
+        "seed": 9
       }
     },
     {
@@ -82,37 +89,71 @@
       "text_es": "GTA 3 y GTA 4 costaron unos noventa y cuatro dólares de hoy. GTA 5, unos ochenta y seis.",
       "keep_media": true,
       "chart": {
-        "type": "bars",
+        "type": "line",
         "items": [
           [
-            "GTA III (2001)",
+            "GTA 3\n2001",
             95
           ],
           [
-            "GTA IV (2008)",
-            94
-          ],
-          [
-            "Vice City (2002)",
+            "Vice City\n2002",
             93
           ],
           [
-            "San Andreas (2004)",
+            "GTA SA\n2004",
             88
           ],
           [
-            "GTA V (2013)",
+            "GTA 4\n2008",
+            94
+          ],
+          [
+            "GTA 5\n2013",
             86
           ],
           [
-            "GTA 6 (2026)",
+            "GTA 6\n2026",
             80
           ]
         ],
         "prefix": "$",
         "highlight": 5,
-        "floor": 60,
-        "note": "Launch price in Oct 2026 dollars (BLS CPI-U)",
+        "floor": 70,
+        "note": "Launch price in Oct 2026 dollars (BLS CPI-U); axis starts at $70",
+        "seed": 9
+      },
+      "chart_es": {
+        "type": "line",
+        "items": [
+          [
+            "GTA 3\n2001",
+            95
+          ],
+          [
+            "Vice City\n2002",
+            93
+          ],
+          [
+            "GTA SA\n2004",
+            88
+          ],
+          [
+            "GTA 4\n2008",
+            94
+          ],
+          [
+            "GTA 5\n2013",
+            86
+          ],
+          [
+            "GTA 6\n2026",
+            80
+          ]
+        ],
+        "prefix": "$",
+        "highlight": 5,
+        "floor": 70,
+        "note": "Precio de lanzamiento en dólares de oct. 2026 (IPC de EE. UU.); el eje empieza en $70",
         "seed": 9
       }
     },
@@ -127,6 +168,18 @@
         "value": 86,
         "prefix": "$",
         "label": "GTA V in 2026 dollars",
+        "seed": 9,
+        "vs": {
+          "value": 79.99,
+          "prefix": "$",
+          "label": "GTA 6"
+        }
+      },
+      "chart_es": {
+        "type": "counter",
+        "value": 86,
+        "prefix": "$",
+        "label": "GTA V en dólares de 2026",
         "seed": 9,
         "vs": {
           "value": 79.99,

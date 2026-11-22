@@ -48,3 +48,54 @@ def test_own_chart_frames_never_count_as_repost():
     assert dedupe.overlap(same, same, own=set(range(8))) == 0.2  # 8 of 10 frames are our charts
     assert not dedupe.is_repost(same, same, own=set(range(8)))
     assert dedupe.is_repost(same, same)
+
+
+LINE = {"type": "line", "items": [["GTA 3\n2001", 95], ["GTA 5\n2013", 86], ["GTA 6\n2026", 80]], "prefix": "$",
+        "floor": 70, "note": "Launch price in Oct 2026 dollars; axis starts at $70"}
+
+
+def test_line_chart_draws_itself():
+    base = charts._backdrop(108, 192, 2)
+    early, done = charts.line_frame(base, LINE, 0.2, 108, 192), charts.line_frame(base, LINE, 3.0, 108, 192)
+    assert early.size == done.size == (108, 192)
+    assert early.tobytes() != done.tobytes()
+    assert charts.DRAW["line"] is charts.line_frame
+
+
+def test_spanish_chart_text_and_layout_repeat_warnings():
+    seg = {"headline": "99", "text": "Only two games scored ninety nine.", "text_es": "Solo dos juegos.",
+           "chart": {"type": "counter", "value": 99, "label": "GTA 6 on Metacritic"}}
+    ep = {"short": [seg]}
+    warns = viewcheck.check(ep, recent=[("other-short", ("counter",))])[1]
+    assert any(w.startswith("spanish:") for w in warns)
+    assert any(w.startswith("layout:") for w in warns)
+    seg["chart_es"] = dict(seg["chart"], label="GTA 6 en Metacritic")
+    warns = viewcheck.check(ep, recent=[("other-short", ("bars",))])[1]
+    assert not any(w.startswith(("spanish:", "layout:")) for w in warns)
+
+
+def test_flop_review_skips_campaign_clips_and_young_shorts():
+    import datetime as dt
+    from studio import flops
+    now = dt.datetime(2026, 11, 24, 12, tzinfo=dt.timezone.utc)
+    vids = [{"id": "a", "title": "GTA 6 tip #GTA6 #Shorts", "published": "2026-11-21T12:00:00Z", "views": 12,
+             "seconds": 20, "short": True, "status": {}},
+            {"id": "b", "title": "LACY vs a shark #LACY #GTA6", "published": "2026-11-21T12:00:00Z", "views": 3,
+             "seconds": 15, "short": True, "status": {}},
+            {"id": "c", "title": "GTA 6 new #GTA6 #Shorts", "published": "2026-11-23T12:00:00Z", "views": 4,
+             "seconds": 15, "short": True, "status": {}},
+            {"id": "d", "title": "GTA 6 hit #GTA6 #Shorts", "published": "2026-11-21T12:00:00Z", "views": 900,
+             "seconds": 15, "short": True, "status": {}}]
+    found, kept = flops.review(vids, {}, now=now)
+    assert [f["id"] for f in found] == ["a"]
+    assert [v["id"] for v, _ in kept] == ["b"]
+
+
+def test_stale_chart_note_dates():
+    import datetime as dt
+    ep = {"short": [{"text": "x", "chart": {"type": "bars", "items": [["a", 1]], "note": "YouTube counts, Nov 22"},
+                     "chart_es": {"type": "bars", "items": [["a", 1]], "note": "Vistas, 22 de nov."}}]}
+    assert viewcheck.stale_charts(ep, today=dt.date(2026, 11, 23)) == []
+    warns = viewcheck.stale_charts(ep, today=dt.date(2026, 11, 25))
+    assert len(warns) == 1 and "Nov 22" in warns[0]
+    assert viewcheck.note_dates("Metascore, bars start at 90", dt.date(2026, 11, 25)) == []

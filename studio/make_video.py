@@ -494,6 +494,11 @@ def warn_scene_cut(i, seg, dur):
               f"check it still shows what the narration says (or use shots/speed)")
 
 
+def chart_words(chart):
+    """The words a chart shows besides names and numbers (label, note, the VS label): what needs a Spanish `chart_es`."""
+    return [x for x in (chart.get("label"), chart.get("note"), (chart.get("vs") or {}).get("label")) if x]
+
+
 def render_segment(i, seg, audio, w, h, vertical, work, enc):
     voice_dur = duration(audio)
     # "pad": seconds held after the line (default 0.45); "hard_cut": no dip to black between segments. Montage Shorts
@@ -504,7 +509,14 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     warn_scene_cut(i, seg, dur)
     if seg.get("chart"):  # our own animated graphic (studio/charts.py): original visuals, not reused footage
         from . import charts
-        seg = dict(seg, media=str(charts.render(seg["chart"], dur + 0.5, w, h, work / f"chart_{i}.mp4", seed=i)),
+        chart = seg["chart"]
+        if seg.get("_lang") == "es":  # Nov 22: Spanish Shorts showed the English labels/notes and 3,790.5-style numbers
+            chart = dict(seg.get("chart_es") or chart)
+            chart.setdefault("locale", "es")
+            if not seg.get("chart_es") and chart_words(chart) and chart.get("locale") == "es" and \
+                    not seg["chart"].get("locale") == "es":
+                print(f"  ! segment {i}: Spanish render shows the English chart text {chart_words(chart)}; add `chart_es`")
+        seg = dict(seg, media=str(charts.render(chart, dur + 0.5, w, h, work / f"chart_{i}.mp4", seed=i)),
                    media_start=0, focus=None)
     if seg.get("shots"):
         seg = dict(seg, media=str(shots_background(i, seg, dur, w, h, work, Path(seg.get("_base", ".")))),

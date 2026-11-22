@@ -88,6 +88,16 @@ Per-segment keys (all optional) in `short` / `segments`:
   YouTube's Oct 2026 update ranks ORIGINAL Shorts higher and says narration over reused footage isn't original:
   build the Short around our charts/data and use trailer footage as 1-2 s cutaways, not the whole video.
   Write the number the way the chart shows it ("sixty eight point seven million" for 68.7M).
+  `{"type": "line", "items": [["GTA 3\n2001", 95], ["GTA 5\n2013", 86], ["GTA 6\n2026", 80]], "prefix": "$",
+  "floor": 70, "note": "...; axis starts at $70"}` (Nov 22): a trend that draws itself left to right, max 8 points, a
+  second label line (year) after "\n"; use it for anything over time (prices, views per day, player counts).
+  `floor` starts the bars/axis above 0: say so in the `note`. Long notes shrink to fit.
+  - **Spanish chart text** (Nov 22): a chart with a `label`, `note` or VS label needs `chart_es` on the same segment (the
+    same chart with Spanish words); Spanish renders switch numbers to 3.790,5 style by themselves. Without it the
+    Spanish Short shows English words (the publish check warns).
+  - **Vary the layout** (Nov 22): the first four graph Shorts were all counter > bars > counter > clip. Mix the order
+    (open on bars or a line, a clip cutaway in the middle); the publish check warns when a Short repeats the picture
+    order of one of the last 4 uploads.
 
 Footage rules learned Nov 20: read every sign/number/HUD value at FULL resolution before writing it (a thumbnail showed
 "5/9" where the frame said "5/6"); official clips contain internal cuts and UI moments (the strip-mall clip opens on a

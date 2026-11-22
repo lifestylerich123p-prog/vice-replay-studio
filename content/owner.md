@@ -169,7 +169,8 @@
   inflation, our BLS CPI math): **Tue Nov 24 11:00 AM EN, Wed Nov 25 11:00 AM ES** (upload Tue 3:20 AM). System:
   studio/vice/viewcheck.py now BLOCKS a Short that is narration over trailer footage only (needs a `chart` or owner
   gameplay; an owner-approved `originality` note waives it, e.g. Lucia montage, top-3 rides).
-- 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
+- 2026-11-20 open owner items: ~~publish the Google OAuth app + reconnect YouTube before ~Nov 24~~ (DONE Nov 22 for Vice
+  Replay EN + ES; What If Arena still to reconnect in its own chat); add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.
 - 2026-11-22 (11 AM ET, owner: "start deleting videos that don't have the needed views and learn from it" -> "OK do it as
@@ -184,3 +185,15 @@
   vicereplay.com/, /privacy/ and /terms/) is now PUBLISHED ("In production"): new refresh tokens no longer expire after
   7 days. Keys made while it was in Testing still expire (~Nov 24): reconnect Vice Replay (English + Spanish) and What
   If Arena once, then write the date to content/learn/youtube_connected.txt.
+- 2026-11-22 (afternoon, owner: "update all our info with the ideas we came up with today and continue to think of how to
+  improve them"): (1) the new keys are loaded in the main chat (YT_REFRESH_TOKEN = English, YT_SPANISH_REFRESH_TOKEN =
+  Spanish; YT_ES_REFRESH_TOKEN is gone); both verified. (2) Title fixes, no other change: top-3 rides is now "GTA 6 top 3
+  rides: No. 1 isn't the convertible" and trailer views "GTA 6's first trailer STILL wins (309M views)" / ES "El PRIMER
+  tráiler de GTA 6 sigue ganando (309 M) 🎬": their "#1" would have become a hashtag and the publish check would have
+  stopped Monday's and Tuesday's uploads. (3) The inflation Short's middle chart is now a LINE (GTA 3 2001 -> GTA 6 2026,
+  same numbers, axis from $70 stated), so the four graph Shorts don't share one layout; re-rendered EN + ES. (4) Spanish
+  versions of 99 club, trailer views and inflation now show Spanish chart words (`chart_es`); re-rendered. (5) New:
+  `python -m studio.flops` (48 h flop review, list first; `--apply` in the main chat), scorecard groups by picture and
+  opener, publish-check warnings for repeated layouts, English chart words in Spanish versions and chart dates 3+ days
+  old. Docs updated: README, INDEX, episode-format, playbook, topic bank, ideas (next graph Shorts + unbuilt ideas),
+  docs/vice-system.md, Channel Map.

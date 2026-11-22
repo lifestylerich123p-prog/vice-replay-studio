@@ -1,20 +1,20 @@
 {
-  "title": "GTA 6's First Trailer Is Still #1 (309M Views)",
+  "title": "GTA 6's First Trailer Is Still No. 1 (309M Views)",
   "slug": "gta6-trailer-views",
   "series": "C: Tested",
   "voice": "am_michael",
   "rate": "+12%",
   "format": "news",
   "use_gameplay": false,
-  "short_title": "GTA 6's first trailer is STILL #1 (309M views) #GTA6 #Shorts",
+  "short_title": "GTA 6's first trailer STILL wins (309M views) #GTA6 #Shorts",
   "short_title_options": [
-    "GTA 6's first trailer is STILL #1 (309M views) #GTA6 #Shorts",
+    "GTA 6's first trailer STILL wins (309M views) #GTA6 #Shorts",
     "GTA 6 Trailer 1 beats Trailer 2 + the launch trailer #GTA6 #Shorts",
     "GTA 6 trailers ranked by views (Rockstar's own count) #GTA6 #Shorts"
   ],
   "short_description": "Rockstar's GTA 6 videos on YouTube, by views (YouTube's public counters, Nov 22, 2026): Trailer 1 (Dec 2023) 309.8M, Trailer 2 (May 2025) 193.1M, Launch Trailer (Oct 2026) 86.9M, An Extended Look (Aug 2026) 39.8M, Out Now (Nov 2026) 20.6M. Trailer 1 has more views than Trailer 2 and the Launch Trailer combined (280.0M). Counts keep growing. No story spoilers.",
   "short_es": {
-    "title": "El PRIMER tráiler de GTA 6 sigue siendo el #1 (309 M) 🎬 #GTA6 #Shorts",
+    "title": "El PRIMER tráiler de GTA 6 sigue ganando (309 M) 🎬 #GTA6 #Shorts",
     "description": "Los videos de GTA 6 de Rockstar en YouTube por vistas (contadores públicos, 22 nov 2026): Tráiler 1 309,8 M, Tráiler 2 193,1 M, Tráiler de lanzamiento 86,9 M, An Extended Look 39,8 M, Out Now 20,6 M. El Tráiler 1 tiene más vistas que el Tráiler 2 y el de lanzamiento juntos. Sin spoilers.",
     "tags": [
       "GTA 6 tráiler",
@@ -66,6 +66,12 @@
         "value": 309793377,
         "label": "views on GTA 6 Trailer 1",
         "seed": 5
+      },
+      "chart_es": {
+        "type": "counter",
+        "value": 309793377,
+        "label": "vistas del tráiler 1 de GTA 6",
+        "seed": 5
       }
     },
     {
@@ -102,6 +108,35 @@
         "highlight": 0,
         "note": "Rockstar Games' YouTube view counts, Nov 22",
         "seed": 5
+      },
+      "chart_es": {
+        "type": "bars",
+        "items": [
+          [
+            "Tráiler 1 (2023)",
+            309.8
+          ],
+          [
+            "Tráiler 2 (2025)",
+            193.1
+          ],
+          [
+            "Tráiler de lanzamiento",
+            86.9
+          ],
+          [
+            "An Extended Look",
+            39.8
+          ],
+          [
+            "Out Now",
+            20.6
+          ]
+        ],
+        "unit": " M",
+        "highlight": 0,
+        "note": "Vistas en el canal de YouTube de Rockstar Games, 22 de nov.",
+        "seed": 5
       }
     },
     {
@@ -119,6 +154,18 @@
           "value": 280.0,
           "unit": "M",
           "label": "Trailer 2 + Launch Trailer"
+        },
+        "seed": 5
+      },
+      "chart_es": {
+        "type": "counter",
+        "value": 309.8,
+        "unit": " M",
+        "label": "Tráiler 1",
+        "vs": {
+          "value": 280.0,
+          "unit": " M",
+          "label": "Tráiler 2 + lanzamiento"
         },
         "seed": 5
       }

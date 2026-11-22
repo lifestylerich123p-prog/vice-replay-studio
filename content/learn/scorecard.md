@@ -21,6 +21,19 @@ of the Short watched (YouTube Analytics, a few days behind). Medians per group; 
 | campaign clip | 7 | 21.4 | 508.0 | 91.9% |
 | own Short | 39 | 3.7 | 367 | 48.8% |
 
+## By picture
+
+| Group | n | median v/h | median 24 h views | median watched |
+|---|---|---|---|---|
+| trailer/screenshots | 25 | 11.9 | 703.0 | 59.5% |
+
+## By opener
+
+| Group | n | median v/h | median 24 h views | median watched |
+|---|---|---|---|---|
+| statement | 21 | 13.3 | 715 | 60.7% |
+| question | 4 | 1.8 | 22 | 44.1% |
+
 ## By hook
 
 | Group | n | median v/h | median 24 h views | median watched |
@@ -69,6 +82,9 @@ of the Short watched (YouTube Analytics, a few days behind). Medians per group; 
 - DO MORE: format = campaign clip (median 21.4 v/h vs 3.8 overall, n=7)
 - DO MORE: format = streamer (median 7.6 v/h vs 3.8 overall, n=4)
 - DO MORE: kind = campaign clip (median 21.4 v/h vs 3.8 overall, n=7)
+- DO MORE: picture = trailer/screenshots (median 11.9 v/h vs 3.8 overall, n=25)
+- DO MORE: opener = statement (median 13.3 v/h vs 3.8 overall, n=21)
+- DO LESS: opener = question (median 1.8 v/h vs 3.8 overall, n=4)
 - DO MORE: hook = catch (median 22.0 v/h vs 3.8 overall, n=3)
 - DO MORE: hook = question (median 6.5 v/h vs 3.8 overall, n=4)
 - DO MORE: hook = number (median 6.4 v/h vs 3.8 overall, n=16)
@@ -76,11 +92,3 @@ of the Short watched (YouTube Analytics, a few days behind). Medians per group; 
 - DO LESS: length = 60+ s (median 0.1 v/h vs 3.8 overall, n=8)
 - DO MORE: slot (ET) = morning <12 (median 21.4 v/h vs 3.8 overall, n=11)
 - DO LESS: slot (ET) = afternoon 12-17 (median 0.7 v/h vs 3.8 overall, n=18)
-- 2026-11-22 (first hours): "The first person to finish GTA 6 wasn't IShowSpeed" (Egb3otGWJIg, Sun 10 AM, streamer
-  follow-up, trailer narration): 0 public views at +70 min (counter may lag; re-check at the 11:15 check). Spanish
-  "NO farmees dinero..." (awRrpVjLzvE, Sun 9:30 AM): 2 views + 1 comment at +100 min, the Spanish channel's first views.
-- 2026-11-22 11:15 AM ET (first-hour check): "first to finish wasn't IShowSpeed" (Egb3otGWJIg, trailer narration, 29 s)
-  0 public views at +1.3 h (status clean: processed/public/not for kids). Older Shorts nearly flat over the last ~10 h
-  (IShowSpeed 52 h 255 -> 255; Black Friday 151 -> 153; took away 81 -> 84). Spanish: 2 views total (0 on the two
-  Saturday-night Shorts). Nothing 2x above median: no momentum follow-up. Consistent with the Oct 2026 originality
-  update hitting trailer-narration Shorts; the graph Shorts (Mon-Wed) are the test.

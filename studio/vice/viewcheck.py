@@ -8,8 +8,12 @@ Data (public Shorts posted after launch, Nov 19-21, views by Nov 21 evening):
 - the dead ones ran 79-117 words; the winners 63-96 with a number or a name up front.
 Small samples, so most rules are warnings; only a still first frame with no motion at all blocks.
 """
+import datetime as dt
+import json
 import re
+from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[2]
 STILL = (".jpg", ".jpeg", ".png", ".webp")
 TIPS = re.compile(r"\b(settings?|tips?|how to|won'?t connect|cheat codes?|codes|do this first|beginner)\b", re.I)
 
@@ -31,14 +35,92 @@ def _moves(seg):
     return bool(seg.get("magnify") or seg.get("zoom"))
 
 
-def check(ep, gameplay_available=False):
+MONTHS = {m: k + 1 for k, m in enumerate(("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov",
+                                          "dec"))}
+MESES = {"ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6, "jul": 7, "ago": 8, "sep": 9, "oct": 10, "nov": 11,
+         "dic": 12}
+
+
+def note_dates(text, today):
+    """Dates a chart note states ("Nov 22", "22 de nov."), as dates in today's year (or last year if in the future)."""
+    out = []
+    for mon, day in re.findall(r"\b([A-Z][a-z]{2})[a-z]*\.? (\d{1,2})\b", text or ""):
+        if mon.lower() in MONTHS:
+            out.append((MONTHS[mon.lower()], int(day)))
+    for day, mes in re.findall(r"\b(\d{1,2}) de ([a-z]{3})", (text or "").lower()):
+        if mes in MESES:
+            out.append((MESES[mes], int(day)))
+    dates = []
+    for m, d in out:
+        try:
+            x = dt.date(today.year, m, d)
+        except ValueError:
+            continue
+        dates.append(x if x <= today else x.replace(year=today.year - 1))
+    return dates
+
+
+def stale_charts(ep, today=None, days=3):
+    """Warnings for chart notes dated `days`+ days ago (Nov 22: "view counts, Nov 22" on a Short posting Nov 25)."""
+    today = today or dt.date.today()
+    warns = []
+    for key, _title, segs in _shorts(ep):
+        for k, x in enumerate(segs):
+            for c in (x.get("chart"), x.get("chart_es")):
+                for d in note_dates((c or {}).get("note"), today):
+                    if (today - d).days >= days:
+                        warns.append(f"facts: Short '{key}' segment {k + 1} chart says {d:%b %d} ({(today - d).days} days "
+                                     f"ago): re-read the numbers and update the note before posting")
+                        break
+    return sorted(set(warns), key=warns.index)
+
+
+def layout(segs):
+    """The picture order of a Short: chart types, 'clip' for anything else (e.g. counter > bars > counter > clip)."""
+    return tuple(x["chart"].get("type", "bars") if x.get("chart") else "clip" for x in segs)
+
+
+def _recent_layouts(slug, n=4):
+    """Layouts of the last n uploaded Shorts (content/learn/uploads.json, newest last), skipping this episode and
+    retired/hidden uploads."""
+    try:
+        ups = json.loads((ROOT / "content" / "learn" / "uploads.json").read_text())
+    except (OSError, ValueError):
+        return []
+    out = []
+    for u in reversed(list(ups.values())):
+        if u.get("slug") == slug or u.get("item") == "main" or u.get("retired") or u.get("hidden"):
+            continue
+        try:
+            other = json.loads((ROOT / "episodes" / f"{u['slug']}.json").read_text())
+        except (OSError, ValueError, KeyError):
+            continue
+        segs = other.get("short") if u.get("item") == "short" else next(
+            (x.get("segments") for x in other.get("shorts", []) if x.get("id") == u.get("item")), None)
+        if segs:
+            out.append((u["slug"], layout(segs)))
+        if len(out) >= n:
+            break
+    return out
+
+
+def check(ep, gameplay_available=False, recent=None):
     """(blockers, warnings) for every Short in an episode. With owner gameplay highlights available, Shorts swap them in
-    for segments without `keep_media` (unless the episode sets `"use_gameplay": false`)."""
+    for segments without `keep_media` (unless the episode sets `"use_gameplay": false`). `recent`: [(slug, layout)] of
+    the last uploaded Shorts (read from uploads.json when None)."""
     blockers, warnings = [], []
+    recent = _recent_layouts(ep.get("slug")) if recent is None else recent
     for key, title, segs in _shorts(ep):
         b, w = check_short(ep, key, title, segs, gameplay_available)
         blockers += b
         warnings += w
+        # Nov 22: the first four graph Shorts were all counter > bars > counter > clip. YouTube's repetitive-content
+        # checks look at the whole channel, and one template can't tell us which layout works: vary it.
+        mine = layout(segs)
+        same = [slug for slug, lay in recent if lay == mine and any(t != "clip" for t in mine)]
+        if same:
+            warnings.append(f"layout: Short '{key}' has the same picture order as {', '.join(same)} "
+                            f"({' > '.join(mine)}). Vary it: a `line` chart for trends, bars first, a clip in the middle")
     # "#8" in a title becomes a clickable YouTube hashtag (Nov 22: the Lucia title had "#8 you can't get now")
     titles = [ep.get("short_title"), *(ep.get("short_title_options") or []), (ep.get("short_es") or {}).get("title")]
     for sh in ep.get("shorts") or []:
@@ -46,7 +128,7 @@ def check(ep, gameplay_available=False):
     for t in filter(None, titles):
         if re.search(r"#\d", t):
             blockers.append(f"title: {t!r} has '#' + a number, which YouTube turns into a hashtag; write 'No. 8' or reword")
-    return blockers, warnings + check_tags(ep)
+    return blockers, warnings + check_tags(ep) + stale_charts(ep)
 
 
 def _uses_gameplay(segs):
@@ -98,6 +180,12 @@ def check_short(ep, key, title, segs, gameplay_available=False):
         elif words > 55:
             warnings.append(f"views: Short '{key}' is {words} words (~{secs} s); target 13-20 s (35-55 words), payoff as the "
                             f"last line, last line loops into the first")
+        for k, x in enumerate(segs):  # Nov 22: Spanish Shorts showed the English chart labels and notes
+            c = x.get("chart") or {}
+            words = [y for y in (c.get("label"), c.get("note"), (c.get("vs") or {}).get("label")) if y]
+            if x.get("text_es") and words and not x.get("chart_es") and c.get("locale") != "es":
+                warnings.append(f"spanish: Short '{key}' segment {k + 1} chart shows English text in the Spanish "
+                                f"version ({words[0]!r}...): add `chart_es` with Spanish label/note")
         text = f"{title} {first.get('headline', '')} {ep.get('format', '')}"
         if TIPS.search(text) and not re.search(r"\d", first.get("headline", "")):
             warnings.append(f"views: Short '{key}' reads like a plain tip ({TIPS.search(text).group(0)!r}). Tips Shorts got "

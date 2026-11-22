@@ -55,7 +55,11 @@ scripts of 76+ words median 404 vs 56-75 words 836. So:
 - **No tips/how-to Shorts at all** (settings, fixes, cheat lists, beginner tips, "do this first"): website guides only.
 - **Every Short is a catch, a number/verdict or a streamer story**, built on a `chart` (or owner gameplay), 56-75 words
   max (`studio.vice publish` blocks 76+), posted 9:30 / 11:00 / 12:30.
-- Hide (private, never delete) any Short under 50 views after 48 h, and add its pattern to content/learn/lessons.md.
+- Hide (private, never delete) any Short under 50 views after 48 h, and add its pattern to content/learn/lessons.md:
+  run `python -m studio.flops` (lists them; changes nothing) and put its list in the report; the main chat runs
+  `--apply`. Before picking today's layout, read the scorecard's "By picture" / "By opener" tables.
+- **Vary the graph layout** (Nov 22): bars, counter and `line` charts in a different order than the last uploads
+  (the publish check warns on a repeat); every chart with words gets `chart_es` for the Spanish version.
 - **Hook**: first sentence = the surprising result as a statement (3-10 words), never a question (35% vs 60% of
   viewers kept); templates with our numbers in resources/hooks-and-titles.md.
 

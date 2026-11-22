@@ -73,6 +73,12 @@
         "value": 99,
         "label": "GTA 6 on Metacritic",
         "seed": 3
+      },
+      "chart_es": {
+        "type": "counter",
+        "value": 99,
+        "label": "GTA 6 en Metacritic",
+        "seed": 3
       }
     },
     {
@@ -96,6 +102,23 @@
         "highlight": 1,
         "floor": 90,
         "note": "Metascore, bars start at 90",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "bars",
+        "items": [
+          [
+            "Zelda: Ocarina of Time (1998)",
+            99
+          ],
+          [
+            "GTA 6 (2026)",
+            99
+          ]
+        ],
+        "highlight": 1,
+        "floor": 90,
+        "note": "Metascore; las barras empiezan en 90",
         "seed": 3
       }
     },
@@ -128,6 +151,31 @@
         "highlight": 0,
         "floor": 90,
         "note": "Metascore, bars start at 90",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "bars",
+        "items": [
+          [
+            "GTA 6",
+            99
+          ],
+          [
+            "GTA IV",
+            98
+          ],
+          [
+            "GTA V",
+            97
+          ],
+          [
+            "Red Dead Redemption 2",
+            97
+          ]
+        ],
+        "highlight": 0,
+        "floor": 90,
+        "note": "Metascore; las barras empiezan en 90",
         "seed": 3
       }
     },

@@ -150,3 +150,31 @@ cover); "Related video" has no API field; since Oct 1 2026 Shorts recommendation
 - **Known gap**: the full-height action-tracking crop centres on the frame when the whole picture moves (camera moving),
   which can cut off a third-person character standing left of centre. OpenCV 5 dropped its built-in person detector;
   `auto` therefore prefers the webcam-on-top layout, which handled this footage well.
+
+## Stage 3 (Nov 22): original-first Shorts and the views check
+
+Why: YouTube's Oct 1, 2026 Shorts update ranks original Shorts higher and says narration over reused footage isn't
+original; our own data (content/learn/hooks-2026-11-22.md) showed which hooks, lengths and slots work.
+
+- **Our own graphics** (`studio/charts.py`): `chart` segments render bars (a leaderboard that grows), counters (one
+  number or two with VS) and lines (a trend that draws itself), each on its own gradient so chart videos don't
+  fingerprint alike. `chart_es` gives the Spanish render Spanish words; Spanish renders format numbers 3.790,5.
+- **Views check** (`studio/vice/viewcheck.py`, part of `publish`). Blocks: a Short that is narration over trailer
+  footage only (no chart, no owner gameplay, no owner-approved `originality` note); a question as the first sentence;
+  76+ words; a still first picture with no motion; "#" + a number in any title (YouTube makes it a hashtag). Warns: no
+  number in the first headline, a title core over 45 characters, an opener over 14 words, 56-75 words, a plain tip, no
+  tags (EN/ES), English chart words in the Spanish version, the same picture order as one of the last 4 uploads, and a
+  chart note dated 3+ days ago.
+- **Repost check and our charts**: frames from our own chart segments count as "never a match", so a graph Short is
+  never called a repost of an old title card (`dedupe.overlap(..., own=...)`); retired uploads aren't compared.
+- **Scorecard** (`studio/scorecard.py`): Shorts are also grouped by picture (graph / owner gameplay / trailer and
+  screenshots, read from the episode file via content/learn/uploads.json) and by opener (statement / question), so the
+  graph-Short switch is measured with the same DO MORE / DO LESS rule (3+ Shorts per group).
+- **Flop review** (`python -m studio.flops`): public Shorts under 50 views 48 h after going public; `--apply` (main chat)
+  sets them private (never deleted), marks uploads.json `hidden` and logs their pattern in lessons.md. Campaign clips,
+  website embeds and the Spanish channel are never touched.
+- **Schedule** (`studio/quota.py`): daytime slots 9:30 / 11:00 / 12:30 ET first; evening only for big news or the recap.
+- **Tags** (`studio/youtube_upload.clean_tags`, `studio/retag.py`): 8-15 topic tags per upload within YouTube's 500
+  characters; `retag` fixes videos already up.
+- **Both channels** (`studio/youtube_es.py`, `studio/channel_layout.py`): every approved Short also posts on Vice Replay
+  en Español; each channel's home page links the other.

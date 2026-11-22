@@ -14,6 +14,8 @@ Read this first instead of searching the repo.
 - Campaigns: `content/campaigns/<name>.json` (approved = owner_approved), `tracker.md`, latest scan `content/campaigns/scan-*.md`, how-to `.claude/commands/campaign-clips.md`
 - Channels (Vice Replay / ClipCircuit / What If Arena, who does what): `content/channels.md` (Drive copy: Creator HQ)
 - Learning: `content/learn/scorecard.md` (fair 24 h numbers, DO MORE / DO LESS), `content/learn/ideas.md` (researched next topics), `history.jsonl` (view snapshots) · fresh streamer moments: `python -m studio.moments <name>`
+- How a Short is built (Nov 22): own `chart` graphics (`studio/charts.py`: bars, counter, line) or owner gameplay, statement hook, 35-55 words: `content/episode-format.md` · hook data `content/learn/hooks-2026-11-22.md` · pre-upload check `python -m studio.vice publish` · 48 h flop review `python -m studio.flops`
+- Spanish channel (Vice Replay en Español): `content/spanish-channel.md`, registry `content/learn/uploads-es.json`, `studio/youtube_es.py` · both home pages: `python -m studio.channel_layout` · tags on old videos: `python -m studio.retag`
 - Reference pack (playbooks, hooks, topic bank): `resources/README.md` (channel rules win over it)
 - Finished one-off files: `content/archive/`
 
@@ -21,7 +23,7 @@ Read this first instead of searching the repo.
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
 | ? | gta6-ultimate-edition-shops | Short | GTA 6 Locks 5 Shops Behind the $100 Edition | short: xvA4O2ytSnE |
-| ? | gta6-trailer-views | Short | GTA 6's First Trailer Is Still #1 (309M Views) | - |
+| ? | gta6-trailer-views | Short | GTA 6's First Trailer Is Still No. 1 (309M Views) | - |
 | ? | gta6-top-3-rides | Short | GTA 6: The Top 3 Rides in Rockstar's Gameplay | - |
 | ? | gta6-ranking-rides | Short | Ranking the 6 Rides in Rockstar's GTA 6 Gameplay | short: QzFhpT4dNVQ |
 | ? | gta6-race-hud-details | Short | GTA 6 Races: Look at the Corner of the Screen | short: sP1fq11WMmw |

@@ -3,6 +3,35 @@
 Rules: re-check every fact on the day you use it (2+ sources), label estimates/reports, no story spoilers, no
 isolated cutscenes. Mark an idea USED (date + slug) when it ships. Researched by the main chat; sources inline.
 
+## Graph Shorts to make next (Nov 22, afternoon; numbers NOT checked yet: research each on the day, 2+ sources)
+Built on today's rules: statement hook with the number, 35-55 words, our own chart, vary the layout (see the chart
+column), English + Spanish (`chart_es`). Used so far: money (counter VS + bars), 99 club (counter + bars), trailer
+views (counter + bars), inflation (counter + LINE).
+1. **"Only 1 in 5 finished Chapter 1"**: counter (18%) then bars per tracker (Exophase, Leonida Verse...). Open on
+   the counter, no clip until the end. Say "according to trophy trackers"; numbers move daily.
+2. **GTA 6 is X hours longer than GTA 5**: bars (GTA 5, RDR2, GTA 6 main story, HowLongToBeat). The long video on
+   this (rHaMTePDRUQ) got 0 views; the same fact as a 15 s graph Short is the fair test. Open on BARS this time.
+3. **Trailer 1's record, day by day**: line chart of Trailer 1 milestones (24 h record, 1 week, 1 year, today) from
+   news reports of each milestone + the API count today. Layout: line first, counter last.
+4. **IShowSpeed's record vs every GTA 6 streamer**: bars of peak live viewers (Streams Charts; label it "peak
+   viewers", not views). Streamer stories are our best format with zero flops.
+5. **212 GB: GTA 6 vs the biggest games**: bars of download sizes (PlayStation Store pages). Ties into the storage
+   guide (affiliate) on the website, not in the Short.
+6. **Spanish first: top 3 streamers hispanos** (IlloJuan, Rubius, AuronPlay) once Streams Charts confirms: bars,
+   Spanish-only like gta6-money-chart-es.
+
+## System ideas not built yet (Nov 22; ranked by views per effort)
+1. **Owner gameplay** stays the biggest lever (originality + "demand moved to gameplay"): 15-30 s moments recorded
+   with the radio off; `studio.gameplay` already pulls them and Shorts use them first.
+2. **First-hour check**: 90 min after a Short goes public, compare its views with our median at 90 min; if it's in the
+   bottom quarter, swap to title option 2 (`studio.title_swap` exists; wire it to a send_later after each upload).
+3. BUILT Nov 22 (viewcheck.stale_charts): the publish check warns when a chart `note` says a date 3+ days before the
+   upload day (trailer views says "Nov 22" and posts Nov 25: re-read the counts, update the note, re-render).
+4. **Count-up from a head start**: a counter starts at 0, so the very first frame shows "$0". Try `"from": 0.7` (start at
+   70% of the value) on one Short and compare viewed-vs-swiped with a 0-start one.
+5. **Comment-picked topics**: the pinned questions' answers (YES/NO, 1-2-3) are free data; tally them in the daily run
+   and turn the winner into the next graph ("72% of you said...") once a Short gets 20+ answers.
+
 ## Spanish channel (researched Nov 22, 2026)
 1. **IlloJuan borró GTA 6 por error en directo** (~500K viewers, launch night in Spain; AuronPlay reacted). Only
    ClaroSports so far (clarosports.com/us/tendencias-us/illojuan-ya-dejo-uno-de-los-clips-del-ano-borro-gta-6-por-error-ante-medio-millon-de-espectadores/):
