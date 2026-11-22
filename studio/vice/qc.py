@@ -163,7 +163,8 @@ def spoken_es(words):
 def check(path, episode=None, dest="vice-replay", script_key="short", project=None, intended_freezes=(),
           campaign=None, use_whisper=True):
     path = Path(path)
-    ep = json.loads(Path(episode).read_text()) if episode else None
+    # episode: a path to the JSON, or an already-loaded dict (publish passes one single-Short view per Short)
+    ep = episode if isinstance(episode, dict) else json.loads(Path(episode).read_text()) if episode else None
     timings_f = path.with_suffix(".timings.json")
     timings = json.loads(timings_f.read_text()) if timings_f.exists() else None
     if isinstance(timings, dict):

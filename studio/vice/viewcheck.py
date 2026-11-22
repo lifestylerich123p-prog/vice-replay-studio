@@ -36,8 +36,16 @@ def check(ep, gameplay_available=False):
     for segments without `keep_media` (unless the episode sets `"use_gameplay": false`)."""
     blockers, warnings = [], []
     for key, title, segs in _shorts(ep):
-        if not segs:
-            continue
+        b, w = check_short(ep, key, title, segs, gameplay_available)
+        blockers += b
+        warnings += w
+    return blockers, warnings + check_tags(ep)
+
+
+def check_short(ep, key, title, segs, gameplay_available=False):
+    """(blockers, warnings) for one Short: `key` names it in the messages; `ep` gives `use_gameplay` and `format`."""
+    blockers, warnings = [], []
+    if segs:
         first = segs[0]
         swapped = gameplay_available and ep.get("use_gameplay", True) is not False and not first.get("keep_media")
         if not swapped and not _moves(first):
@@ -57,6 +65,12 @@ def check(ep, gameplay_available=False):
             warnings.append(f"views: Short '{key}' reads like a plain tip ({TIPS.search(text).group(0)!r}). Tips Shorts got "
                             f"5-27 views since launch; lead with a number, a streamer or a catch, or move the tip to the "
                             f"website guide")
+    return blockers, warnings
+
+
+def check_tags(ep):
+    """Title/tag warnings for the whole episode: once per episode, not once per Short."""
+    warnings = []
     # Nov 22 (owner: "check titles and tags are perfect"): Short-only episodes had uploaded with no tags at all
     if _shorts(ep) and not ep.get("tags") and not all(sh.get("tags") for sh in ep.get("shorts", [])):
         warnings.append("titles/tags: no `tags` in the episode: add 8-15 search phrases people type (\"GTA 6 Lucia\", "
@@ -66,4 +80,4 @@ def check(ep, gameplay_available=False):
             m.get("tags") for m in es_meta if m.get("title")):
         warnings.append("titles/tags: Spanish versions have no tags (`short_es.tags` / each Short's `es.tags`): add the "
                         "Spanish search phrases (\"GTA 6 español\", \"outfits de Lucia\"...)")
-    return blockers, warnings
+    return warnings

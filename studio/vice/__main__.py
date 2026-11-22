@@ -10,7 +10,7 @@
     python -m studio.vice analyze VIDEO [--episode E] [--dest vice-replay]
     python -m studio.vice campaigns                 # registry, eligibility, payout math
     python -m studio.vice report                    # one-page report + CSV/JSON exports
-    python -m studio.vice publish episodes/<slug>.json   # publication draft (QC + rights + channel check)
+    python -m studio.vice publish episodes/<slug>.json   # publication draft (QC + rights + channel check), every Short
     python -m studio.vice rights [ASSET --dest D] | fingerprint | calendar
 
 Nothing here uploads. Publishing stays: owner says "approve" in chat -> studio.ship --upload (CLAUDE.md).
@@ -51,46 +51,139 @@ def skeleton(topic, fmt):
     print("Next: research fresh facts (2+ sources), fill every TODO + sources, then `python -m studio.ship " + str(p.relative_to(db.ROOT)) + "`")
 
 
-def publish_draft(episode, dest):
-    from . import channels, qc, rights
-    ep = json.loads(Path(episode).read_text())
+# fields that belong to the main video or to one Short; a "shorts" entry's view keeps only its own
+SHORT_FIELDS = ("segments", "short", "shorts", "news_short", "tips_short", "thumbnail", "title", "title_options",
+                "description", "short_title", "short_title_options", "short_description", "short_es", "pinned_comment")
+
+
+def _short_units(ep):
+    """(id, render name, single-Short episode view) for every Short of a "shorts" episode, the legacy "short" (id
+    "short") included. Each view has only that Short's segments, title, description and pinned comment; the main video
+    is checked once on its own (_main_checks), so its findings aren't repeated once per Short."""
     slug = ep["slug"]
-    out = db.ROOT / "output" / slug
-    video = out / f"{slug}-short.mp4"
-    if not video.exists():
-        sys.exit(f"Render first: python -m studio.ship {episode}")
+    base = {k: v for k, v in ep.items() if k not in SHORT_FIELDS}
+    units = []
+    if ep.get("short"):
+        units.append(("short", f"{slug}-short", dict(
+            base, short=ep["short"], short_title=ep.get("short_title") or ep.get("title", ""),
+            short_title_options=ep.get("short_title_options") or [], short_description=ep.get("short_description"),
+            pinned_comment=ep.get("pinned_comment"))))
+    for sh in ep["shorts"]:
+        view = dict(base, short=sh.get("segments", []), short_title=sh.get("title") or ep.get("title", ""),
+                    short_title_options=sh.get("title_options") or [], short_description=sh.get("description"),
+                    pinned_comment=sh.get("pinned_comment"))
+        if sh.get("format"):
+            view["format"] = sh["format"]
+        units.append((sh["id"], f"{slug}-short-{sh['id']}", view))
+    return units
+
+
+def _main_checks(ep, dest):
+    """Rights + facts for the main video of a "shorts" episode (its segments, title, description, thumbnail), once.
+    Text and files only: no render needed. Facts that fail block; warnings are advice; the full list is kept."""
+    from . import factcheck, rights
+    view = {k: v for k, v in ep.items() if k not in SHORT_FIELDS or k in ("segments", "title", "description", "thumbnail")}
+    rc = rights.check_episode(view, dest)
+    facts = factcheck.check_episode(view)
+    blockers = [f"rights: {c['asset']}: {c['record'] or 'no record'} ({'; '.join(c['reasons'])})"
+                for c in rc["checks"] if not c["ok"]]
+    blockers += [f"facts: {x['where']}: {x['text'][:140]} ({x['fix']})" for x in facts if x["level"] == "fail"]
+    advice = [f"facts: {x['where']}: {x['text'][:140]} ({x['fix']})" for x in facts if x["level"] == "warn"]
+    return {"rights": rc["ok"], "blockers": blockers, "advice": advice, "facts": facts}
+
+
+def _gate(episode, ep, video, dest, key, gameplay, val, cover):
+    """Every pre-publish check on one rendered Short. `ep` is the single-Short episode it was rendered from; `val` the
+    channel check. Returns the QC report path, blockers, advice and rights result."""
+    from . import qc, quizcheck, rights, viewcheck
     freezes = []
     tf = video.with_suffix(".timings.json")
     if tf.exists():
         for t, s in zip(json.loads(tf.read_text()), ep.get("short", [])):
             if s.get("freeze"):
                 freezes.append(t["start"] + s["freeze"]["at"] / s.get("speed", 1))
-    rep = qc.check(video, episode=episode, dest=dest, intended_freezes=freezes)
-    md = qc.write(rep, out, slug)
-    ctype = "official-footage-commentary" if ep.get("use_gameplay") is False else "original-narrated"
-    val = channels.validate(dest, ctype)
+    rep = qc.check(video, episode=ep, dest=dest, intended_freezes=freezes)
+    md = qc.write(rep, video.parent, ep["slug"])
     blockers = [f"QC {c['check']}: {c['detail']}" for c in rep["checks"] if c["status"] == "fail"] + val["problems"]
-    from . import quizcheck  # quiz Shorts: the zoomed "guess" must not show its own answer
-    blockers += quizcheck.problems(ep, episode, video, tf)
-    from . import viewcheck  # rules from our own post-launch Shorts (moving first frame, short scripts, no plain tips)
-    gp = any((db.ROOT / "media" / "gameplay").glob("*.mp4"))
-    vb, advice = viewcheck.check(ep, gameplay_available=gp)
+    blockers += quizcheck.problems(ep, episode, video, tf)  # quiz Shorts: the zoomed "guess" must not show its own answer
+    # rules from our own post-launch Shorts (moving first frame, short scripts, no plain tips)
+    vb, advice = viewcheck.check_short(ep, key, ep.get("short_title") or ep.get("title", ""), ep.get("short", []),
+                                       gameplay_available=gameplay)
     blockers += vb
-    cover = out / "cover.jpg"
     if tf.exists() and len(ep.get("short", [])) > 1:  # cover = the payoff segment's middle frame
         t = json.loads(tf.read_text())[1]
         import subprocess
         subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", f"{(t['start'] + t['end']) / 2 + 1:.2f}", "-i",
                         str(video), "-frames:v", "1", "-q:v", "3", str(cover)])
-    draft = {"episode": episode, "destination": dest, "channel_check": val, "video": str(video.relative_to(db.ROOT)),
-             "spanish_video": f"output/{slug}/{slug}-short-es.mp4", "cover": str(cover.relative_to(db.ROOT)),
-             "title_options": ep.get("short_title_options") or [ep.get("short_title")],
-             "description": ep.get("short_description"), "pinned_comment": ep.get("pinned_comment"),
-             "qc_report": str(md.relative_to(db.ROOT)), "rights": rights.check_episode(ep, dest)["ok"],
-             "status": "BLOCKED" if blockers else "awaiting owner approval", "blockers": blockers, "advice": advice,
-             "upload_command_after_approval": f"python -m studio.ship {episode} --upload short --title N"}
+    return {"qc_report": md, "blockers": blockers, "advice": advice, "rights": rights.check_episode(ep, dest)["ok"]}
+
+
+def publish_draft(episode, dest):
+    """Publication draft: QC + rights + channel + views + facts on the rendered Short(s), written to draft.json.
+    An episode with "shorts" is gated once per Short, plus one rights/facts check of its main video ("main"), and gets
+    one combined result (blockers/advice prefixed with the Short id or "main"); a single-"short" episode gets the
+    one-Short draft."""
+    from . import channels, viewcheck
+    ep = json.loads(Path(episode).read_text())
+    slug = ep["slug"]
+    out = db.ROOT / "output" / slug
+    rel = lambda p: str(p.relative_to(db.ROOT))  # noqa: E731
+    gameplay = any((db.ROOT / "media" / "gameplay").glob("*.mp4"))
+    vals = {}
+
+    def channel_check(view):  # once per content type (it costs a YouTube token call), not once per Short
+        ctype = "official-footage-commentary" if view.get("use_gameplay") is False else "original-narrated"
+        if ctype not in vals:
+            vals[ctype] = channels.validate(dest, ctype)
+        return vals[ctype]
+
+    if not ep.get("shorts"):
+        video = out / f"{slug}-short.mp4"
+        if not video.exists():
+            sys.exit(f"Render first: python -m studio.ship {episode}")
+        val, cover = channel_check(ep), out / "cover.jpg"
+        g = _gate(episode, ep, video, dest, "short", gameplay, val, cover)
+        g["advice"] += viewcheck.check_tags(ep)  # same advice as viewcheck.check(ep)
+        draft = {"episode": episode, "destination": dest, "channel_check": val, "video": rel(video),
+                 "spanish_video": f"output/{slug}/{slug}-short-es.mp4", "cover": rel(cover),
+                 "title_options": ep.get("short_title_options") or [ep.get("short_title")],
+                 "description": ep.get("short_description"), "pinned_comment": ep.get("pinned_comment"),
+                 "qc_report": rel(g["qc_report"]), "rights": g["rights"],
+                 "status": "BLOCKED" if g["blockers"] else "awaiting owner approval", "blockers": g["blockers"],
+                 "advice": g["advice"], "upload_command_after_approval": f"python -m studio.ship {episode} --upload short --title N"}
+    else:
+        units = _short_units(ep)
+        missing = [(sid, name) for sid, name, _ in units if not (out / f"{name}.mp4").exists()]
+        if missing:
+            sys.exit("Render first: " + "; ".join(f"Short '{sid}' has no output/{slug}/{name}.mp4" for sid, name in missing)
+                     + f". Run: python -m studio.ship {episode}")
+        shorts, blockers, advice = [], [], []
+        main = _main_checks(ep, dest) if ep.get("segments") else None
+        if main:
+            blockers += [f"main: {b}" for b in main["blockers"]]
+            advice += [f"main: {a}" for a in main["advice"]]
+        for sid, name, view in units:
+            video, val = out / f"{name}.mp4", channel_check(view)
+            cover = out / ("cover.jpg" if sid == "short" else f"cover-{sid}.jpg")
+            g = _gate(episode, view, video, dest, sid, gameplay, val, cover)
+            blockers += [f"{sid}: {b}" for b in g["blockers"]]
+            advice += [f"{sid}: {a}" for a in g["advice"]]
+            shorts.append({"id": sid, "channel_check": val, "video": rel(video), "spanish_video": f"output/{slug}/{name}-es.mp4",
+                           "cover": rel(cover), "title_options": view.get("short_title_options") or [view.get("short_title")],
+                           "description": view.get("short_description"), "pinned_comment": view.get("pinned_comment"),
+                           "qc_report": rel(g["qc_report"]), "rights": g["rights"],
+                           "status": "BLOCKED" if g["blockers"] else "awaiting owner approval",
+                           "blockers": g["blockers"], "advice": g["advice"],
+                           "upload_command_after_approval": f"python -m studio.ship {episode} --upload {sid} --title N"})
+        advice += [f"episode: {w}" for w in viewcheck.check_tags(ep)]  # titles/tags: once for the whole episode
+        draft = {"episode": episode, "destination": dest,
+                 "rights": all(s["rights"] for s in shorts) and (main is None or main["rights"]),
+                 "status": "BLOCKED" if blockers else "awaiting owner approval", "blockers": blockers, "advice": advice,
+                 **({"main": main} if main else {}), "shorts": shorts,
+                 "upload_command_after_approval": f"python -m studio.ship {episode} --upload {','.join(s['id'] for s in shorts)}"}
     (out / "draft.json").write_text(json.dumps(draft, indent=1, ensure_ascii=False))
     print(json.dumps(draft, indent=1, ensure_ascii=False))
+    return draft
 
 
 def _workflow(x, workflow, srcmod):
