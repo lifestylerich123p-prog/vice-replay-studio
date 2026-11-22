@@ -29,7 +29,11 @@ from .review_page import extra_time, times_for
 from .youtube_upload import (ET, ROOT, add_to_playlist, comment, req, slot, srt_from_timings, token, upload,
                              upload_caption, yt_safe)
 
-ENV = "YT_ES_REFRESH_TOKEN"
+import os
+
+# YT_SPANISH_REFRESH_TOKEN wins when set (Nov 22: the settings page wouldn't take a second YT_ES_REFRESH_TOKEN line
+# while the first one still held the English key from a wrong pick on Google's screen).
+ENV = "YT_SPANISH_REFRESH_TOKEN" if os.environ.get("YT_SPANISH_REFRESH_TOKEN") else "YT_ES_REFRESH_TOKEN"
 REGISTRY = ROOT / "content" / "learn" / "uploads-es.json"
 PLAYLIST = "GTA 6 en Español"
 NOT_AFFILIATED = "Canal de fans: no afiliado a Rockstar Games ni a Take-Two Interactive."
