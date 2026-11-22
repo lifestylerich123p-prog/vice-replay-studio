@@ -123,7 +123,7 @@ def publish_draft(episode, dest):
     An episode with "shorts" is gated once per Short, plus one rights/facts check of its main video ("main"), and gets
     one combined result (blockers/advice prefixed with the Short id or "main"); a single-"short" episode gets the
     one-Short draft."""
-    from . import channels
+    from . import channels, viewcheck
     ep = json.loads(Path(episode).read_text())
     slug = ep["slug"]
     out = db.ROOT / "output" / slug
@@ -143,6 +143,7 @@ def publish_draft(episode, dest):
             sys.exit(f"Render first: python -m studio.ship {episode}")
         val, cover = channel_check(ep), out / "cover.jpg"
         g = _gate(episode, ep, video, dest, "short", gameplay, val, cover)
+        g["advice"] += viewcheck.check_tags(ep)  # same advice as viewcheck.check(ep)
         draft = {"episode": episode, "destination": dest, "channel_check": val, "video": rel(video),
                  "spanish_video": f"output/{slug}/{slug}-short-es.mp4", "cover": rel(cover),
                  "title_options": ep.get("short_title_options") or [ep.get("short_title")],
@@ -174,6 +175,7 @@ def publish_draft(episode, dest):
                            "status": "BLOCKED" if g["blockers"] else "awaiting owner approval",
                            "blockers": g["blockers"], "advice": g["advice"],
                            "upload_command_after_approval": f"python -m studio.ship {episode} --upload {sid} --title N"})
+        advice += [f"episode: {w}" for w in viewcheck.check_tags(ep)]  # titles/tags: once for the whole episode
         draft = {"episode": episode, "destination": dest,
                  "rights": all(s["rights"] for s in shorts) and (main is None or main["rights"]),
                  "status": "BLOCKED" if blockers else "awaiting owner approval", "blockers": blockers, "advice": advice,

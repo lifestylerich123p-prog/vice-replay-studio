@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pytest
 
-from studio.vice import channels, db, qc
+from studio.vice import channels, db, qc, viewcheck
 from studio.vice.__main__ import publish_draft
 
 SLUG = "gta6-test-week"
@@ -113,6 +113,8 @@ def test_all_shorts_clean_awaits_owner_approval(studio):
 
     assert draft["blockers"] == []
     assert draft["status"] == "awaiting owner approval"
+    tags = [a for a in draft["advice"] if "titles/tags" in a]  # episode-level advice: once, not once per Short
+    assert len(tags) == 1 and tags[0].startswith("episode: titles/tags: no `tags`")
 
 
 def test_short_without_render_says_render_first_and_names_it(studio):
@@ -150,7 +152,8 @@ def test_legacy_short_next_to_shorts_is_gated_too(studio):
 def test_single_short_episode_draft_is_unchanged(studio):
     root, heard = studio
     episode = write_episode(root, short=segs("main cut", first_media=STILL), short_title="GTA 6 main cut #Shorts",
-                            short_title_options=["T1", "T2"], short_description="d", pinned_comment="p")
+                            short_title_options=["T1", "T2"], short_description="d", pinned_comment="p",
+                            short_es={"title": "GTA 6 CORTE 🔥"})
     render(root, heard, f"{SLUG}-short", segs("main cut"))
 
     publish_draft(episode, "vice-replay")
@@ -163,6 +166,9 @@ def test_single_short_episode_draft_is_unchanged(studio):
     assert draft["title_options"] == ["T1", "T2"]
     assert draft["status"] == "BLOCKED" and draft["blockers"][0].startswith("views: Short 'short' opens on a still")
     assert draft["upload_command_after_approval"] == f"python -m studio.ship {episode} --upload short --title N"
+    ep = json.loads(Path(episode).read_text())
+    assert draft["advice"] == viewcheck.check(ep)[1]  # same views + titles/tags advice viewcheck gives the episode
+    assert any(a.startswith("titles/tags: Spanish versions have no tags") for a in draft["advice"])
 
 
 def test_main_video_text_and_footage_checked_once_as_main(studio):

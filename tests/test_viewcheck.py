@@ -30,3 +30,14 @@ def test_long_scripts_and_plain_tips_warn():
     assert any("plain tip" in x for x in w)
     _, w = viewcheck.check(ep({"media": "a.mp4"}, title="GTA 6 settings: 3 that cost you 20 FPS", headline="20 FPS"))
     assert not any("plain tip" in x for x in w)  # a number up front turns a tip into a verdict
+
+
+def test_missing_tags_warn_once_per_episode_not_per_short():
+    two = {"shorts": [{"id": "news", "title": "GTA 6 52 HOURS", "es": {"title": "GTA 6 52 HORAS"},
+                       "segments": [{"headline": "52", "text": "x", "media": "a.mp4"}]},
+                      {"id": "tips", "title": "GTA 6 20 FPS", "es": {"title": "GTA 6 20 FPS"},
+                       "segments": [{"headline": "20", "text": "x", "media": "a.mp4"}]}]}
+    _, w = viewcheck.check(two)
+    assert sum("no `tags`" in x for x in w) == 1
+    assert sum("Spanish versions have no tags" in x for x in w) == 1
+    assert viewcheck.check_tags(dict(two, tags=["GTA 6 hours"], tags_es=["GTA 6 horas"])) == []
