@@ -485,7 +485,9 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     voice_dur = duration(audio)
     # "pad": seconds held after the line (default 0.45); "hard_cut": no dip to black between segments. Montage Shorts
     # (Nov 22, "match the energy" of the top GTA 6 montages) use pad ~0.1 + hard cuts so the pictures change on the beat.
-    dur = round(voice_dur + float(seg.get("pad", 0.45)), 2)
+    # Shorts default to the montage energy (Nov 22, owner: "match the energy"): 0.2 s after each line and hard cuts;
+    # long videos keep 0.45 s and the soft dip between segments. A segment can still set either key itself.
+    dur = round(voice_dur + float(seg.get("pad", 0.2 if vertical else 0.45)), 2)
     warn_scene_cut(i, seg, dur)
     if seg.get("shots"):
         seg = dict(seg, media=str(shots_background(i, seg, dur, w, h, work, Path(seg.get("_base", ".")))),
@@ -503,7 +505,7 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     seg["_aligned"] = bool(times)
     subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical, times=times, lang=lang)
     out = work / f"seg_{i:02d}.mp4"
-    hard = bool(seg.get("hard_cut"))
+    hard = bool(seg.get("hard_cut", vertical))
     fade_in = "" if (vertical and i == 0) or hard else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
     fade_out = "null" if hard else f"fade=t=out:st={dur - 0.25}:d=0.25"
     extra, co = [], ""
@@ -810,6 +812,9 @@ def main():
             if used:
                 lines += ["Imágenes de GTA VI: Rockstar Games, usadas para noticias y comentario." if a.es else
                           "GTA VI footage/screenshots: Rockstar Games, used for news and commentary.", ""]
+            # cross-promotion (Nov 22): every English Short points Spanish speakers to the sister channel
+            lines += ["🇺🇸 Vice Replay in English: https://www.youtube.com/@ViceReplayTV-q8s" if a.es else
+                      "🇪🇸 Vice Replay en Español: https://www.youtube.com/channel/UCWPnqYqYu9_CLsJ8Bk1MPgQ", ""]
             lines += ["Vice Replay es un canal de fans, no afiliado con Rockstar Games." if a.es else
                       "Vice Replay is a fan channel, not affiliated with Rockstar Games.", "", tags]
             (out_dir / f"{name}.txt").write_text("\n".join(lines))

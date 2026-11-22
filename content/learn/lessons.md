@@ -154,3 +154,6 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   the end that loops, the catch (#8 Vintage Vice City Pack, only with copies bought before Nov 20). Renderer: segment
   `pad` 0.1 + `hard_cut` (the default 0.45 s pad + fade to black between segments made v1 feel slow: 23 s -> 19 s).
   Title words people search: "Lucia" and "outfits" (not "looks").
+- 2026-11-22 (main chat): every Short rendered before today has a ~0.1 s black flash at each cut (segment fade out +
+  fade in) plus a 0.45 s pause after each line. New default for Shorts: 0.2 s pause + hard cuts (same Dexter script:
+  20.4 s -> 19.3 s, 3 black flashes -> 0). Long videos keep the soft dip.
