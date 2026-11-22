@@ -22,10 +22,12 @@
    "vicereplay.com"
   ],
   "destinations_allowed": [
-   "vice-replay"
+   "vice-replay",
+   "vice-replay-es"
   ],
   "status": "conditional",
-  "notes": "Backgrounds only, under our own commentary."
+  "notes": "Backgrounds only, under our own commentary.",
+  "es_note": "vice-replay-es added Nov 22, 2026 (main chat): Spanish-voice versions of Vice Replay Shorts on the owner's Spanish channel; owner approval in content/owner.md (2026-11-22); same conditions apply"
  },
  {
   "id": "rockstar-official-gameplay",
@@ -49,10 +51,12 @@
    "TikTok"
   ],
   "destinations_allowed": [
-   "vice-replay"
+   "vice-replay",
+   "vice-replay-es"
   ],
   "status": "conditional",
-  "notes": "Each clip was reviewed at full size before it was added (content/owner.md)."
+  "notes": "Each clip was reviewed at full size before it was added (content/owner.md).",
+  "es_note": "vice-replay-es added Nov 22, 2026 (main chat): Spanish-voice versions of Vice Replay Shorts on the owner's Spanish channel; owner approval in content/owner.md (2026-11-22); same conditions apply"
  },
  {
   "id": "owner-gameplay",
@@ -77,10 +81,12 @@
    "vicereplay.com"
   ],
   "destinations_allowed": [
-   "vice-replay"
+   "vice-replay",
+   "vice-replay-es"
   ],
   "status": "cleared",
-  "notes": "Most original source we have. Folder is empty as of Nov 20: owner still needs to record."
+  "notes": "Most original source we have. Folder is empty as of Nov 20: owner still needs to record.",
+  "es_note": "vice-replay-es added Nov 22, 2026 (main chat): Spanish-voice versions of Vice Replay Shorts on the owner's Spanish channel; owner approval in content/owner.md (2026-11-22); same conditions apply"
  },
  {
   "id": "vice-replay-theme",
@@ -104,10 +110,12 @@
    "TikTok"
   ],
   "destinations_allowed": [
-   "vice-replay"
+   "vice-replay",
+   "vice-replay-es"
   ],
   "status": "cleared",
-  "notes": "Never on campaign clips (campaign rules: original audio only)."
+  "notes": "Never on campaign clips (campaign rules: original audio only).",
+  "es_note": "vice-replay-es added Nov 22, 2026 (main chat): Spanish-voice versions of Vice Replay Shorts on the owner's Spanish channel; owner approval in content/owner.md (2026-11-22); same conditions apply"
  },
  {
   "id": "ai-backgrounds",
@@ -134,10 +142,12 @@
    "vicereplay.com"
   ],
   "destinations_allowed": [
-   "vice-replay"
+   "vice-replay",
+   "vice-replay-es"
   ],
   "status": "conditional",
-  "notes": "Never on campaign clips (campaigns ban AI content). Game imagery in thumbnails stays official Rockstar screenshots."
+  "notes": "Never on campaign clips (campaigns ban AI content). Game imagery in thumbnails stays official Rockstar screenshots.",
+  "es_note": "vice-replay-es added Nov 22, 2026 (main chat): Spanish-voice versions of Vice Replay Shorts on the owner's Spanish channel; owner approval in content/owner.md (2026-11-22); same conditions apply"
  },
  {
   "id": "kokoro-voice",
@@ -162,10 +172,12 @@
    "TikTok"
   ],
   "destinations_allowed": [
-   "vice-replay"
+   "vice-replay",
+   "vice-replay-es"
   ],
   "status": "cleared",
-  "notes": "Disclose AI voice if YouTube's altered-content question applies (it doesn't for narration)."
+  "notes": "Disclose AI voice if YouTube's altered-content question applies (it doesn't for narration).",
+  "es_note": "vice-replay-es added Nov 22, 2026 (main chat): Spanish-voice versions of Vice Replay Shorts on the owner's Spanish channel; owner approval in content/owner.md (2026-11-22); same conditions apply"
  },
  {
   "id": "campaign:lacy-gta6",
