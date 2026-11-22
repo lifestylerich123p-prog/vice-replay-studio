@@ -120,6 +120,7 @@ def own_gameplay():
 
 
 def save(con, cands, used):
+    con.commit()  # rights.check opens its own connection; an open write here locks it
     for c in cands:
         chk = rights.check(c["rights_source"], "clipcircuit" if c["rights_source"].startswith("campaign:") else "vice-replay")
         is_used = any(dedupe.same_event(u, c) for u in used)
@@ -131,7 +132,7 @@ def save(con, cands, used):
                     (c["id"], c["creator"], c["source_url"], c["published"], c["ts_start"], c["ts_end"], c["description"],
                      c["views"], c["duration"], c["category"], chk["record"], c["rights_status"], c["restrictions"],
                      c["used"], dedupe.event_key(c["creator"], c["description"]), c["origin"], db.now()))
-    con.commit()
+        con.commit()
 
 
 def run(signals=True):

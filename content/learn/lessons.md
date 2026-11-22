@@ -133,3 +133,17 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   update de-ranks voice-overs that only describe the footage; short (13-20 s) real moments win; never delete flops;
   owner gameplay is the biggest lever. Rules now in the daily run and the views check.
 
+- 2026-11-22 (daily run, channel.json): same topic, different slot: "$1.65 BILLION" (posted 6:56 AM ET) 19.6 v/h vs
+  "$3.79 BILLION" (5:30 PM) 5.6 v/h, ~3.5x. Nov 21's Shorts in slot order: IShowSpeed 52 h (9:30 AM, streamer +
+  number) 12.9 v/h, Black Friday catch (11 AM) 8.2, first GTA 5 vs 6 comparison (1:30 PM) 5.1. Morning streamer +
+  number keeps winning; the comparison format (DO MORE, n=3) has only been tested in the afternoon so far.
+- 2026-11-22 (market, 48 h): the top English Short is a money comparison ("$1 v $1,000,000 Car In GTA 6", MrBeast
+  Gaming, ~290K v/h); streamer-pair Shorts are next but built on the ending (off-limits). 7 of the top 10 are
+  non-English skits/POV. Today: a money comparison with a catch + a streamer ranking built on numbers we checked
+  ourselves (YouTube Data API view counts of finished GTA 6 streams: original data, no streamer footage).
+- 2026-11-22 (status): the three newest Lacy campaign clips on this channel got 2-8 views vs 1,011-9,439 for the first
+  three (Nov 19). Campaign clips aren't automatic wins once a moment is crowded; the owner's Nov 20 rule already
+  moves them to ClipCircuit.
+- 2026-11-22 (main chat, pre-upload fact check): a YouTube search for "GTA 6" missed CarryMinati's "GTA VI" stream
+  (18.1M), so the draft named Mythpat (17.9M) as the biggest non-Speed stream. For any "most-viewed" ranking, search
+  "GTA 6", "GTA VI" and "Grand Theft Auto VI" and merge before naming a #1.
