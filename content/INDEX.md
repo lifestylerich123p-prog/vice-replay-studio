@@ -25,6 +25,7 @@ Read this first instead of searching the repo.
 | ? | gta6-race-hud-details | Short | GTA 6 Races: Look at the Corner of the Screen | short: sP1fq11WMmw |
 | ? | gta6-no-60fps-ps5-pro | Short | GTA 6 Has No 60 FPS Mode, Not Even on PS5 Pro | short: 6p9VtX-UaVU |
 | ? | gta6-map-is-florida | Short | GTA 6's Official Map Is Florida: 4 Matches and 1 Fake | short: 9ZmygQdJRBA |
+| ? | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | - |
 | ? | gta6-has-anyone-finished | Short | Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch) | short: WsJ96ZkU2do |
 | ? | gta6-guess-the-ride | Short | Guess the GTA 6 Ride From One Detail | short: I2VEKQUia8w |
 | ? | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | short: Egb3otGWJIg |
