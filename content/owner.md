@@ -145,6 +145,13 @@
   English, YT_SPANISH_REFRESH_TOKEN = Spanish). Since commit 7434d93 every tool picks the key by the channel it
   belongs to, so it works anyway; the health check shows a 🟡 until the settings are tidied (owner, when awake:
   English key in YT_REFRESH_TOKEN, Spanish key in YT_SPANISH_REFRESH_TOKEN, delete YT_ES_REFRESH_TOKEN).
+- 2026-11-22 (8 AM ET, owner "Ok" to the schedule review): (1) Lucia outfits Short moves up from Wed 9:30 AM to
+  **Mon Nov 23 12:30 PM (English)** and **Mon 8:30 PM (Spanish**: the Spanish 12:30 slot has the map Short); (2) the
+  39 s ranking Short QzFhpT4dNVQ is unscheduled (private, kept) and its IG Reel skipped; the re-cut
+  `episodes/gta6-top-3-rides.json` (~17 s, top 3) takes **Wed Nov 25 9:30 AM** (EN + ES); (3) the GTA 5 money Short
+  (gta6-this-week-launch `tips`, `es_only` in the episode) goes to the **Spanish channel only**, Mon 3:30 PM. The
+  Mon 3:12 / 3:20 AM reminders were written before this: follow this entry. The Mon 12:40 PM ranking-comment
+  reminder is void (that video won't be public).
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.

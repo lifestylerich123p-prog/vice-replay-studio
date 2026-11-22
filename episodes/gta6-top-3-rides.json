@@ -1,0 +1,165 @@
+{
+  "title": "GTA 6: The Top 3 Rides in Rockstar's Gameplay",
+  "slug": "gta6-top-3-rides",
+  "series": "B: Rankings",
+  "voice": "am_michael",
+  "rate": "+12%",
+  "format": "ranking",
+  "use_gameplay": false,
+  "short_title": "GTA 6: top 3 rides... #1 isn't the convertible #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6: top 3 rides... #1 isn't the convertible #GTA6 #Shorts",
+    "GTA 6's best ride in Rockstar's gameplay (top 3) #GTA6 #Shorts",
+    "GTA 6: I ranked the top 3 rides from the gameplay #GTA6 #Shorts"
+  ],
+  "short_description": "Vice Replay Rankings: the top 3 rides seen in Rockstar's own GTA 6 gameplay (\"GTA VI: An Extended Look\"), ranked by us. The ranking is our opinion; what each clip shows is described as it appears on screen (the dirt-bike race shows 12 riders, the street race HUD shows 6 racers). No story spoilers. Footage: official Rockstar gameplay, original audio removed.",
+  "short_es": {
+    "title": "El MEJOR vehículo del gameplay de GTA 6 (top 3) 🏁 #GTA6 #Shorts",
+    "description": "Vice Replay: el top 3 de vehículos del gameplay oficial de GTA 6, clasificado por nosotros (es nuestra opinión). Sin spoilers.",
+    "tags": [
+      "GTA 6 autos",
+      "GTA 6 carros",
+      "GTA 6 vehículos",
+      "GTA 6 mejores autos",
+      "GTA 6 aerodeslizador",
+      "GTA 6 carreras",
+      "GTA 6 gameplay"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Which ride are you taking first? 1, 2 or 3 👇",
+  "short_pinned_comment_es": "¿Cuál manejas primero? 1, 2 o 3 👇",
+  "tags": [
+    "GTA 6 cars",
+    "GTA 6 best cars",
+    "GTA 6 vehicles",
+    "GTA 6 airboat",
+    "GTA 6 dirt bike",
+    "GTA 6 street racing",
+    "GTA 6 ranking",
+    "GTA 6 gameplay",
+    "GTA 6 Extended Look"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gaming",
+    "#cars",
+    "#ranking"
+  ],
+  "sources": [
+    "Rockstar Games - Grand Theft Auto VI: An Extended Look (official gameplay; each clip reviewed at full size, HUD read frame by frame): https://www.rockstargames.com/VI/downloads"
+  ],
+  "short": [
+    {
+      "headline": "TOP 3 RIDES",
+      "headline_es": "TOP 3 VEHÍCULOS",
+      "text": "The three best rides in Rockstar's own GTA 6 gameplay. Number one isn't the convertible.",
+      "text_es": "Los tres mejores vehículos del gameplay oficial de GTA 6. El número uno no es el descapotable.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/trailer/extended-look-convertible-overpass.mp4",
+          "start": 0.5,
+          "dur": 1.2
+        },
+        {
+          "media": "../media/trailer/extended-look-night-street-race.mp4",
+          "start": 0.0,
+          "dur": 0.3
+        },
+        {
+          "media": "../media/trailer/extended-look-swamp-airboat.mp4",
+          "start": 0.95,
+          "dur": 0.3
+        },
+        {
+          "media": "../media/trailer/extended-look-dirt-bike-trail.mp4",
+          "start": 0.0,
+          "dur": 0.3
+        },
+        {
+          "media": "../media/trailer/extended-look-convertible-palm-street.mp4",
+          "start": 0.4
+        }
+      ]
+    },
+    {
+      "headline": "#3 THE DIRT BIKE",
+      "headline_es": "#3 LA MOTO DE CROSS",
+      "text": "Three: the dirt bike. A twelve rider race up a canyon.",
+      "text_es": "Tres: la moto de cross. Una carrera de doce pilotos por un cañón.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "media": "../media/trailer/extended-look-dirt-bike-trail.mp4",
+      "media_start": 0,
+      "speed": 0.7
+    },
+    {
+      "headline": "#2 THE AIRBOAT",
+      "headline_es": "#2 EL AERODESLIZADOR",
+      "text": "Two: the airboat, flying across the swamp.",
+      "text_es": "Dos: el aerodeslizador, volando sobre el pantano.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/trailer/extended-look-swamp-airboat.mp4",
+          "start": 0.95,
+          "speed": 0.6
+        }
+      ]
+    },
+    {
+      "headline": "#1 STREET RACER",
+      "headline_es": "#1 COCHE DE CARRERAS",
+      "text": "One: the neon street racer, six cars at night.",
+      "text_es": "Uno: el coche de carreras neón, seis autos de noche.",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "media": "../media/trailer/extended-look-night-street-race.mp4",
+      "media_start": 0,
+      "speed": 0.55
+    },
+    {
+      "headline": "WHICH ONE FIRST?",
+      "headline_es": "¿CUÁL PRIMERO?",
+      "text": "Which are you driving first? Tell me, because",
+      "text_es": "¿Cuál manejas primero? Dime, porque",
+      "keep_media": true,
+      "pad": 0.1,
+      "hard_cut": true,
+      "shots": [
+        {
+          "media": "../media/trailer/extended-look-night-street-race.mp4",
+          "start": 0.3,
+          "dur": 0.35
+        },
+        {
+          "media": "../media/trailer/extended-look-swamp-airboat.mp4",
+          "start": 1.0,
+          "dur": 0.35
+        },
+        {
+          "media": "../media/trailer/extended-look-dirt-bike-trail.mp4",
+          "start": 0.4,
+          "dur": 0.35
+        },
+        {
+          "media": "../media/trailer/extended-look-aerial-bay.mp4",
+          "start": 0
+        }
+      ]
+    }
+  ]
+}

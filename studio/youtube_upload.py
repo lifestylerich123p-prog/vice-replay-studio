@@ -467,6 +467,9 @@ def main():
         name = f"{slug}-short" + (f"-{sh['id']}" if sh.get("id") else "")
         if not allow(key) or not (out / f"{name}.mp4").exists():
             continue
+        if sh.get("es_only"):  # owner's call per Short (Nov 22: the GTA 5 money Short goes to the Spanish channel only)
+            print(f"skip {key}: Spanish channel only ({sh['es_only'] if isinstance(sh['es_only'], str) else 'es_only'})")
+            continue
         title, desc = parse_short_txt(out / f"{name}.txt")
         es = sh.get("es") or (ep.get("short_es") if not sh.get("id") else None)
         playlist = sh.get("playlist") or (PLAYLISTS["short"] if not sh.get("id") else PLAYLISTS["news"])
