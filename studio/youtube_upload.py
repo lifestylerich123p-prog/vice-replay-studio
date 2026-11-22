@@ -76,8 +76,8 @@ def token_for(channel_id, prefer="YT_REFRESH_TOKEN"):
             continue
         if owner == channel_id:
             if n != prefer:
-                print(f"(note: {prefer} holds another channel's key; using {n}, which belongs to {channel_id})",
-                      file=sys.stderr)
+                why = "holds another channel's key" if os.environ.get(prefer) else "isn't set in this session"
+                print(f"(note: {prefer} {why}; using {n}, which belongs to {channel_id})", file=sys.stderr)
             _BY_CHANNEL[channel_id] = acc
             return acc
     if first_error:
@@ -270,7 +270,10 @@ def add_to_playlist(tok, vid, title):
                    {"snippet": {"title": title, "description": f"{title} from Vice Replay: GTA's wildest moments. On replay.",
                                 "defaultLanguage": "en"}, "status": {"privacyStatus": "public"}})
         _playlist_cache[title] = r["id"]
-    existing, _ = req("GET", yt + f"playlistItems?part=id&playlistId={_playlist_cache[title]}&videoId={vid}", tok)
+    try:  # a playlist created a moment ago can answer 404 here for a little while: treat it as empty
+        existing, _ = req("GET", yt + f"playlistItems?part=id&playlistId={_playlist_cache[title]}&videoId={vid}", tok)
+    except SystemExit:
+        existing = {}
     if existing.get("items"):
         return  # already in this playlist
     # a brand-new playlist (or video) can briefly return 409/503; wait and retry a few times
