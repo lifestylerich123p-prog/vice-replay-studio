@@ -36,8 +36,16 @@ def check(ep, gameplay_available=False):
     for segments without `keep_media` (unless the episode sets `"use_gameplay": false`)."""
     blockers, warnings = [], []
     for key, title, segs in _shorts(ep):
-        if not segs:
-            continue
+        b, w = check_short(ep, key, title, segs, gameplay_available)
+        blockers += b
+        warnings += w
+    return blockers, warnings
+
+
+def check_short(ep, key, title, segs, gameplay_available=False):
+    """(blockers, warnings) for one Short: `key` names it in the messages; `ep` gives `use_gameplay` and `format`."""
+    blockers, warnings = [], []
+    if segs:
         first = segs[0]
         swapped = gameplay_available and ep.get("use_gameplay", True) is not False and not first.get("keep_media")
         if not swapped and not _moves(first):

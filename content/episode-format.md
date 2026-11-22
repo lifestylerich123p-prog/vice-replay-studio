@@ -81,6 +81,8 @@ Nov 21; config/channel.json `caption_style`): groups of 3 words pop in, the spok
 number words show as pink digits ("fifty two hours" -> 52 HOURS, "ninety eight percent" -> 98%), so keep writing
 numbers as words for the voice. Spanish captions keep their words as written.
 Before delivering or uploading: `python -m studio.vice publish episodes/<slug>.json` must show no blockers.
+With `"shorts"` it gates every Short (and a legacy `"short"`) on its own render and text in one run, with blockers
+prefixed by the Short id (`news: ...`); no temporary single-Short episodes needed.
 
 AI graphics (Everygen, cleared in `rights/registry.json` as `ai-backgrounds`, Vice Replay only, never on campaign clips):
 - `assets/ai-backgrounds/*.jpg` (16:9): thumbnail/card backgrounds by theme: news-skyline, rankings-podium, money-cash,
