@@ -20,11 +20,11 @@
   "registry_est": 17500
  },
  "2026-11-22": {
-  "used": 52,
+  "used": 104,
   "calls": {
-   "GET channels": 1,
-   "GET videos": 1,
-   "POST commentThreads": 1
+   "GET channels": 2,
+   "GET videos": 2,
+   "POST commentThreads": 2
   }
  }
 }
