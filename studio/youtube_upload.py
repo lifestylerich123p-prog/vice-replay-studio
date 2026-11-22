@@ -467,6 +467,9 @@ def main():
         name = f"{slug}-short" + (f"-{sh['id']}" if sh.get("id") else "")
         if not allow(key) or not (out / f"{name}.mp4").exists():
             continue
+        if sh.get("replaced_by"):  # a newer version of this Short is its own episode (Nov 22: graph/evidence remakes)
+            print(f"skip {key}: replaced by {sh['replaced_by']}")
+            continue
         if sh.get("es_only"):  # owner's call per Short (Nov 22: the GTA 5 money Short goes to the Spanish channel only)
             print(f"skip {key}: Spanish channel only ({sh['es_only'] if isinstance(sh['es_only'], str) else 'es_only'})")
             continue

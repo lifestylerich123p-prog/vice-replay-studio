@@ -205,7 +205,11 @@ def _num_value(run):
     """Value of a run of English number words ("fifty two", "two hundred fifty thousand"), or None."""
     total, cur = 0, 0
     for w in run:
-        if w in _ONES:
+        # spoken years: "nineteen ninety eight" = 19|98, "twenty thirteen" = 20|13 (a tens word or a teen after a
+        # number already in progress starts the next two digits; Nov 22 a caption showed "FROM 117" for 1998)
+        if cur % 100 and ((w in _TENS) or (w in _ONES and _ONES[w] >= 10)):
+            cur = cur * 100 + (_TENS.get(w) or _ONES[w])
+        elif w in _ONES:
             cur += _ONES[w]
         elif w in _TENS:
             cur += _TENS[w]
@@ -236,7 +240,8 @@ def display_tokens(words, lang="en"):
         nxt = low[j] if j < len(words) else ""
         if val is not None and (len(run) >= 2 or val >= 10 or nxt in _UNITS) and not (len(run) == 1 and run[0] in _SCALES):
             tail = re.search(r"[.,!?;:]+$", words[j - 1])
-            txt = f"{val:,}"
+            year = 1900 <= val <= 2100 or (1000 <= val < 1900 and not any(w in _SCALES for w in run))
+            txt = f"{val}" if year else f"{val:,}"  # 1998, not 1,998
             if nxt == "percent":
                 txt += "%"; j += 1
                 tail = re.search(r"[.,!?;:]+$", words[j - 1])

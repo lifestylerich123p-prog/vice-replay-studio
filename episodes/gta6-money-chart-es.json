@@ -1,0 +1,127 @@
+{
+  "title": "GTA 6 hizo 5 VECES el lanzamiento de GTA 5... con trampa",
+  "slug": "gta6-money-chart-es",
+  "series": "C: Tested",
+  "voice": "am_michael",
+  "rate": "+12%",
+  "format": "comparison",
+  "use_gameplay": false,
+  "es_only": true,
+  "short_title": "GTA 6 made 5X GTA 5's launch... with a catch #GTA6 #Shorts",
+  "short_description": "Spanish channel only.",
+  "short_es": {
+    "title": "GTA 6 hizo 5 VECES el lanzamiento de GTA 5... con trampa 💰 #GTA6 #Shorts",
+    "description": "Take-Two dice que GTA 6 hizo 3.790 millones de dólares entre preventas y primer día (20 nov 2026). GTA 5 hizo más de 800 millones en su primer día en 2013 (Take-Two). La trampa: la cifra de GTA 6 incluye todas las preventas y el juego cuesta 80 dólares, no 60. Una estimación independiente (Sensor Tower: 1.840 millones al día del lanzamiento) sigue siendo más del doble. Sin spoilers.",
+    "tags": [
+      "GTA 6 vs GTA 5",
+      "GTA 6 ventas",
+      "GTA 6 dinero",
+      "GTA 6 récord",
+      "GTA 6 3790 millones",
+      "GTA 5",
+      "GTA 6 noticias",
+      "GTA 6 español"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Fair comparison or not? Reply FAIR or NOT FAIR 👇",
+  "short_pinned_comment_es": "¿Comparación justa o no? Responde JUSTA o NO 👇",
+  "tags": [
+    "GTA 6 vs GTA 5",
+    "GTA 6 sales"
+  ],
+  "sources": [
+    "Take-Two press release filed with the SEC (8-K exhibit 99.1, Nov 20, 2026) - GTA VI $3.79 billion: https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm",
+    "Variety - GTA 6 sales: $3.79 billion in first day sales (Take-Two, Nov 20, 2026): https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/",
+    "Fox 5 - GTA VI pulls in estimated $1.84 billion by release day, more than double GTA V's launch record (Sensor Tower): https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record",
+    "Take-Two 8-K (Sept 18, 2013) - GTA V first-day sell-through over $800 million: https://www.sec.gov/Archives/edgar/data/0000946581/000110465913070819/a13-20938_1ex99d1.htm",
+    "Engadget - Grand Theft Auto 5 makes off with over $800 million on day one: https://www.engadget.com/2013-09-18-grand-theft-auto-5-makes-off-with-over-800-million-on-day-one.html"
+  ],
+  "short": [
+    {
+      "headline": "5X GTA 5?",
+      "headline_es": "¿5 VECES GTA 5?",
+      "text": "GTA 6 made almost five times GTA 5's launch. But there's a catch.",
+      "text_es": "GTA 6 hizo casi cinco veces el lanzamiento de GTA 5. Pero hay trampa.",
+      "keep_media": true,
+      "chart": {
+        "type": "counter",
+        "value": 4.7,
+        "unit": "X",
+        "label": "GTA 6 vs. el primer día de GTA 5",
+        "locale": "es",
+        "seed": 7
+      }
+    },
+    {
+      "headline": "$3.79B VS $800M",
+      "headline_es": "3.790 M VS 800 M",
+      "text": "Take-Two says three point seven nine billion. GTA 5 made eight hundred million on day one in 2013.",
+      "text_es": "Take-Two dice tres mil setecientos noventa millones de dólares. GTA 5 hizo ochocientos millones en su primer día, en dos mil trece.",
+      "keep_media": true,
+      "chart": {
+        "type": "counter",
+        "value": 3790,
+        "prefix": "$",
+        "unit": " M",
+        "label": "GTA 6: preventas + primer día",
+        "locale": "es",
+        "seed": 7,
+        "vs": {
+          "value": 800,
+          "prefix": "$",
+          "unit": " M",
+          "label": "GTA 5: primer día (2013)"
+        }
+      }
+    },
+    {
+      "headline": "THE CATCH",
+      "headline_es": "LA TRAMPA",
+      "text": "The catch: GTA 6's number counts every preorder, and the game costs eighty dollars, not sixty.",
+      "text_es": "La trampa: el número de GTA 6 cuenta todas las preventas, y el juego cuesta ochenta dólares, no sesenta.",
+      "keep_media": true,
+      "shots": [
+        {
+          "media": "../media/trailer/out-now-night-drive-ocean-drive.mp4",
+          "start": 0.0,
+          "dur": 1.1
+        },
+        {
+          "media": "../media/trailer/extended-look-red-convertible-city.mp4",
+          "start": 0.0
+        }
+      ]
+    },
+    {
+      "headline": "STILL 2X",
+      "headline_es": "AÚN EL DOBLE",
+      "text": "Even an independent estimate says more than double. Fair fight or not? Tell me below, because",
+      "text_es": "Incluso una estimación independiente dice más del doble. ¿Pelea justa o no? Dímelo abajo, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "bars",
+        "items": [
+          [
+            "GTA 6 (Take-Two, oficial)",
+            3790
+          ],
+          [
+            "GTA 6 (Sensor Tower, estimación)",
+            1840
+          ],
+          [
+            "GTA 5 (primer día, 2013)",
+            800
+          ]
+        ],
+        "prefix": "$",
+        "unit": " M",
+        "highlight": 0,
+        "locale": "es",
+        "note": "Millones de dólares",
+        "seed": 7
+      }
+    }
+  ]
+}

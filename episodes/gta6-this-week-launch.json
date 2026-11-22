@@ -409,7 +409,8 @@
         "Take-Two GTA 6",
         "GTA 6 news"
       ],
-      "es_only": "owner OK Nov 22: a 3rd English video on the $3.79B in 4 days is too repetitive; the Spanish channel hasn't covered it"
+      "es_only": "owner OK Nov 22: a 3rd English video on the $3.79B in 4 days is too repetitive; the Spanish channel hasn't covered it",
+      "replaced_by": "gta6-money-chart-es (graph version, owner Nov 22)"
     }
   ],
   "guide": "gta-6-launch-week-numbers"

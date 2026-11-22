@@ -106,6 +106,9 @@ def jobs(ep, approved):
         key = sh.get("id") or "short"
         if "all" not in approved and key not in approved:
             continue
+        if sh.get("replaced_by"):
+            print(f"skip {key}: replaced by {sh['replaced_by']}")
+            continue
         es = sh.get("es") or {}
         if not es.get("title"):
             print(f"skip {key}: no Spanish title in the episode (`short_es` / `es`)")

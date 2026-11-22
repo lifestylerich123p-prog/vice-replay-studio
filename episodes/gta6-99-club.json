@@ -1,0 +1,153 @@
+{
+  "title": "GTA 6's 99 on Metacritic: Only ONE Other Game Has It",
+  "slug": "gta6-99-club",
+  "series": "C: Tested",
+  "voice": "am_michael",
+  "rate": "+12%",
+  "format": "news",
+  "use_gameplay": false,
+  "short_title": "GTA 6's 99 on Metacritic: only ONE other game has it #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6's 99 on Metacritic: only ONE other game has it #GTA6 #Shorts",
+    "GTA 6 beat every Rockstar game's review score #GTA6 #Shorts",
+    "GTA 6 vs GTA 5 vs Red Dead 2: the review scores #GTA6 #Shorts"
+  ],
+  "short_description": "Only two games have ever scored 99 on Metacritic: The Legend of Zelda: Ocarina of Time (1998) and GTA 6 (Nov 2026). GTA 6 also beat every Rockstar game before it: GTA IV 98, GTA V 97, Red Dead Redemption 2 97 (Metascores). Bars start at 90 so the differences are visible. Scores can move as more reviews come in. Sources: Guinness World Records, Dexerto, Notebookcheck, GameSpot, Metacritic. No story spoilers.",
+  "short_es": {
+    "title": "GTA 6 es el SEGUNDO juego de la historia en sacar 99 😳 #GTA6 #Shorts",
+    "description": "Solo dos juegos han sacado 99 en Metacritic: The Legend of Zelda: Ocarina of Time (1998) y GTA 6 (nov 2026). GTA 6 también superó a todos los juegos de Rockstar: GTA IV 98, GTA V 97, Red Dead Redemption 2 97. Las barras empiezan en 90. Sin spoilers.",
+    "tags": [
+      "GTA 6 Metacritic",
+      "GTA 6 99",
+      "GTA 6 reseñas",
+      "GTA 6 nota",
+      "juegos mejor valorados",
+      "GTA 6 vs GTA 5",
+      "Ocarina of Time",
+      "GTA 6 español"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Does GTA 6 deserve the 99? YES or NO 👇",
+  "short_pinned_comment_es": "¿GTA 6 merece el 99? SÍ o NO 👇",
+  "tags": [
+    "GTA 6 Metacritic",
+    "GTA 6 99",
+    "GTA 6 review score",
+    "GTA 6 reviews",
+    "highest rated games of all time",
+    "Ocarina of Time 99",
+    "GTA 6 vs GTA 5",
+    "Rockstar games ranked",
+    "GTA 4 Metacritic",
+    "Red Dead Redemption 2"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#metacritic",
+    "#gaming"
+  ],
+  "sources": [
+    "Guinness World Records - only videogame with a Metascore of 99 (Ocarina of Time, as of 2020): https://www.guinnessworldrecords.com/records/partners/organisations/metacritic",
+    "Dexerto - GTA 6 is the joint best reviewed game of all time: https://www.dexerto.com/gta/gta-6-is-the-joint-best-reviewed-game-of-the-all-time-3429300/",
+    "Notebookcheck - GTA 6 reviews award 99 Metacritic score, topping GTA 4 to become Rockstar's top rated: https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html",
+    "GameSpot - The best video games of all time according to Metacritic (GTA V 97, RDR2 97): https://gamespot.com/articles/the-best-video-games-of-all-time-according-to-metacritic/1100-6501371/",
+    "Guinness World Records - most critically acclaimed PS4 game (GTA V 97, equalled by RDR2 97): https://www.guinnessworldrecords.com/world-records/397539-most-critically-acclaimed-playstation-4-videogame",
+    "Insider Gaming - 5 highest rated video games of all time (GTA IV 98): https://insider-gaming.com/5-highest-rated-video-games-of-all-time/"
+  ],
+  "short": [
+    {
+      "headline": "ONLY 2 GAMES EVER",
+      "headline_es": "SOLO 2 JUEGOS",
+      "text": "Only two games ever scored ninety nine on Metacritic. GTA 6 is the second.",
+      "text_es": "Solo dos juegos han sacado noventa y nueve en Metacritic. GTA 6 es el segundo.",
+      "keep_media": true,
+      "chart": {
+        "type": "counter",
+        "value": 99,
+        "label": "GTA 6 on Metacritic",
+        "seed": 3
+      }
+    },
+    {
+      "headline": "THE 99 CLUB",
+      "headline_es": "EL CLUB DEL 99",
+      "text": "The other one is Zelda: Ocarina of Time, from nineteen ninety eight.",
+      "text_es": "El otro es Zelda: Ocarina of Time, de mil novecientos noventa y ocho.",
+      "keep_media": true,
+      "chart": {
+        "type": "bars",
+        "items": [
+          [
+            "Zelda: Ocarina of Time (1998)",
+            99
+          ],
+          [
+            "GTA 6 (2026)",
+            99
+          ]
+        ],
+        "highlight": 1,
+        "floor": 90,
+        "note": "Metascore, bars start at 90",
+        "seed": 3
+      }
+    },
+    {
+      "headline": "BEAT EVERY ROCKSTAR GAME",
+      "headline_es": "SUPERÓ A ROCKSTAR",
+      "text": "It also beat every Rockstar game: GTA 4 got ninety eight, GTA 5 and Red Dead 2, ninety seven.",
+      "text_es": "Y superó a todos los de Rockstar: GTA 4 sacó noventa y ocho, GTA 5 y Red Dead 2, noventa y siete.",
+      "keep_media": true,
+      "chart": {
+        "type": "bars",
+        "items": [
+          [
+            "GTA 6",
+            99
+          ],
+          [
+            "GTA IV",
+            98
+          ],
+          [
+            "GTA V",
+            97
+          ],
+          [
+            "Red Dead Redemption 2",
+            97
+          ]
+        ],
+        "highlight": 0,
+        "floor": 90,
+        "note": "Metascore, bars start at 90",
+        "seed": 3
+      }
+    },
+    {
+      "headline": "DESERVED?",
+      "headline_es": "¿LO MERECE?",
+      "text": "Does it deserve the ninety nine? Tell me, because",
+      "text_es": "¿Merece el noventa y nueve? Dime, porque",
+      "keep_media": true,
+      "shots": [
+        {
+          "media": "../media/trailer/extended-look-skyline-blimp.mp4",
+          "start": 0.0,
+          "dur": 1.0
+        },
+        {
+          "media": "../media/trailer/out-now-night-drive-ocean-drive.mp4",
+          "start": 0.0
+        }
+      ]
+    }
+  ]
+}

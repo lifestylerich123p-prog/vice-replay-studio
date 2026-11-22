@@ -6,7 +6,7 @@ ours. Use trailer footage as short cutaways around it, not as the whole video.
 
 Segment key (episodes/<slug>.json, Shorts or main video):
     "chart": {"type": "bars", "items": [["IShowSpeed, launch", 68.7], ["CarryMinati", 18.1]], "prefix": "",
-              "unit": "M", "highlight": 0, "note": "YouTube view counts, Nov 22"}
+              "unit": "M", "highlight": 0, "note": "YouTube view counts, Nov 22"}   (+ "floor": 90 to start bars at 90)
     "chart": {"type": "counter", "value": 3.79, "prefix": "$", "unit": "B", "label": "preorders + day one",
               "vs": {"value": 0.8, "prefix": "$", "unit": "B", "label": "GTA 5, day one"}}
 Bars grow one after another (ease-out) while the numbers count up; the highlighted bar is pink, the rest cyan. Everything
@@ -31,8 +31,10 @@ def _decimals(values):
     return max((len(str(v).split(".")[1]) if "." in str(v) else 0) for v in values) if values else 0
 
 
-def _fmt(v, dec, prefix="", unit=""):
+def _fmt(v, dec, prefix="", unit="", locale="en"):
     s = f"{v:,.{dec}f}" if dec else f"{round(v):,}"
+    if locale == "es":  # 3.790,5 (Spanish: dot for thousands, comma for decimals)
+        s = s.replace(",", "\0").replace(".", ",").replace("\0", ".")
     return f"{prefix}{s}{unit}"
 
 
@@ -67,6 +69,7 @@ def bars_frame(base, spec, t, w, h):
     items = spec["items"][:6]
     n = len(items)
     vmax = max(v for _, v in items) or 1
+    floor = spec.get("floor", 0)  # e.g. 90 for review scores (99 vs 97 would look identical from 0); stated in "note"
     dec = _decimals([v for _, v in items])
     hl = spec.get("highlight", 0)
     note_h = int(h * 0.028) if spec.get("note") else 0
@@ -79,11 +82,11 @@ def bars_frame(base, spec, t, w, h):
         top = int(y0 + k * row)
         d.text((x0, top), str(label), font=fl, fill=brand.WHITE)
         by = top + int(row * 0.42)
-        full = (x1 - x0) * 0.74 * (v / vmax)
+        full = (x1 - x0) * 0.74 * (max(0.0, v - floor) / max(1e-9, vmax - floor))
         col = brand.PINK if k == hl else brand.CYAN
         if p > 0:
             d.rounded_rectangle([x0, by, x0 + max(bar_h, full * p), by + bar_h], radius=bar_h // 2, fill=col)
-            txt = _fmt(v * p, dec, spec.get("prefix", ""), spec.get("unit", ""))
+            txt = _fmt(v * p, dec, spec.get("prefix", ""), spec.get("unit", ""), spec.get("locale", "en"))
             d.text((x0 + max(bar_h, full * p) + int(w * 0.015), by - int(bar_h * 0.35)), txt, font=fv, fill=brand.WHITE)
     if spec.get("note"):
         fn = brand.font(brand.BODY_FONT, int(h * 0.018))
@@ -103,8 +106,9 @@ def counter_frame(base, spec, t, w, h):
     for k, s in enumerate(sides):
         p = _ease((t - 0.1 - 0.45 * k) / 1.0)
         dec = _decimals([s["value"]])
-        txt = _fmt(s["value"] * p, dec, s.get("prefix", ""), s.get("unit", ""))
-        final = _fmt(s["value"], dec, s.get("prefix", ""), s.get("unit", ""))
+        loc = spec.get("locale", "en")
+        txt = _fmt(s["value"] * p, dec, s.get("prefix", ""), s.get("unit", ""), loc)
+        final = _fmt(s["value"], dec, s.get("prefix", ""), s.get("unit", ""), loc)
         size = int(rh * (0.55 if rows == 2 else 0.5))
         fv = brand.font(brand.HEADLINE_FONT, size)
         while fv.getlength(final) > (x1 - x0) * 0.9 and size > 30:
