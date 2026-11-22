@@ -125,3 +125,8 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   (0-30); every long video (0-25). Real gameplay is the step change: the Lacy campaign clips on this channel on Nov 19
   got 9,393 / 1,863 / 1,011. `studio.vice publish` now enforces a moving first frame and warns on tips/long scripts
   (studio/vice/viewcheck.py).
+- 2026-11-22 (YouTube Analytics Nov 13-20, lag 1-2 days): real-gameplay Lacy clips held 86-92% average viewed
+  (13-17 s watched); our narrated ~30 s Shorts average ~57% (44-75%), i.e. half the viewers leave. Channel-wide on
+  Shorts with 50+ views: 1.4 likes per 100 views, 0.6 subs per 1,000 views, engaged views = 44% of views (most
+  viewers swipe in the first seconds). Short real moments get finished; narrated explainers don't.
+
