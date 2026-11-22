@@ -43,10 +43,13 @@ def main():
     stamp = LEARN / "youtube_connected.txt"
     if stamp.exists():
         try:
-            last = dt.date.fromisoformat(stamp.read_text().strip()[:10])
+            text = stamp.read_text().strip()
+            last = dt.date.fromisoformat(text[:10])
             days = (dt.date.today() - last).days
             due = last + dt.timedelta(days=7)
-            if days >= 6:
+            if "production" in text:  # Nov 22: the Google app is published, so keys no longer expire after 7 days
+                ok.append(f"YouTube keys from {last:%b %-d} (Google app in production: no 7-day expiry)")
+            elif days >= 6:
                 bad.append(f"YouTube connection expires around {due:%a %b %-d} ({days} days since reconnect): "
                            "reconnect today or uploads stop.")
             elif days >= 5:
