@@ -154,6 +154,14 @@
   reminder is void (that video won't be public).
 - 2026-11-22 (8:40 AM ET, owner "find upgrades"): races Short sP1fq11WMmw moved from Sun 5 PM to **Thu Nov 26 11:00 AM**
   (2-6 PM posts: median 2.7 views/h vs 16 for 6-11 AM); its IG Reel moved to Thu 11:05; Sun 5:10 PM comment reminder void.
+- 2026-11-22 (9:15 AM ET, owner: "I want to try making videos like that from now on... graph, real evidence based.
+  Start taking off the ones not going to get views and changing them for this"): from now on Shorts are built on
+  our own graphs of checked numbers (studio/charts.py), trailer footage only as cutaways. Unscheduled (private, kept):
+  M7oKevOPY08 "hidden EASY MODE" (Tue 12:30) and sP1fq11WMmw "races" (Thu 11 AM); their IG Reels and comment
+  reminders are void. Replacements: `gta6-99-club` (Metacritic graph) **Tue Nov 24 12:30 PM EN / 11:00 AM ES**;
+  `gta6-trailer-views` (Rockstar trailer view counts) **Wed Nov 25 12:30 PM EN + ES**; the Spanish money Short is now
+  `gta6-money-chart-es` (es_only, Mon 3:30 PM ES) and gta6-this-week-launch `tips` is `replaced_by` it. Uploads: Mon
+  3:07 AM (money ES) and Tue 3:10 AM (99 club + trailers), after each day's quota reset.
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.

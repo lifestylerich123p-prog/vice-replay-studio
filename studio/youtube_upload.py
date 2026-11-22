@@ -427,6 +427,10 @@ def main():
     if not a.episode or not a.approve:
         sys.exit("Give the episode and --approve (only after the owner approved in chat).")
     ep = json.loads(Path(a.episode).read_text())
+    if ep.get("es_only"):  # Nov 22: a whole episode made for the Spanish channel (e.g. gta6-money-chart-es)
+        print(f"{ep['slug']}: Spanish channel only; nothing to upload on the English channel "
+              f"(python -m studio.youtube_es {a.episode} --approve short ...)")
+        return
     slug = ep["slug"]
     out = ROOT / "output" / slug
     day = dt.date.fromisoformat(a.date) if a.date else dt.datetime.now(ET).date()
