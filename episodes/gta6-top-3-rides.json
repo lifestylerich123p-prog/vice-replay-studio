@@ -59,8 +59,8 @@
     {
       "headline": "TOP 3 RIDES",
       "headline_es": "TOP 3 VEHÍCULOS",
-      "text": "The three best rides in Rockstar's own GTA 6 gameplay. Number one isn't the convertible.",
-      "text_es": "Los tres mejores vehículos del gameplay oficial de GTA 6. El número uno no es el descapotable.",
+      "text": "Top three rides in GTA 6's gameplay. Number one? Not the convertible.",
+      "text_es": "Top tres vehículos del gameplay de GTA 6. ¿El número uno? No es el descapotable.",
       "keep_media": true,
       "pad": 0.1,
       "hard_cut": true,
@@ -68,7 +68,7 @@
         {
           "media": "../media/trailer/extended-look-convertible-overpass.mp4",
           "start": 0.5,
-          "dur": 1.2
+          "dur": 0.9
         },
         {
           "media": "../media/trailer/extended-look-night-street-race.mp4",
