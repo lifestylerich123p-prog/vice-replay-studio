@@ -18,9 +18,11 @@ from .youtube_es import TAGS_ES, config
 
 REG = ROOT / "content" / "learn" / "retag.json"
 KEEP = ("title", "description", "categoryId", "defaultLanguage", "defaultAudioLanguage")
+SITE_LINK_EN = "More GTA 6 guides: https://vicereplay.com/guides/"
+SITE_LINK_ES = "🌴 Guías de GTA 6 en español: https://vicereplay.com/es/"
 
 
-def set_tags(tok, vid, tags, channel_id):
+def set_tags(tok, vid, tags, channel_id, site_es=False):
     v, _ = req("GET", f"https://youtube.googleapis.com/youtube/v3/videos?part=snippet,status&id={vid}", tok)
     items = v.get("items") or []
     if not items:
@@ -30,6 +32,11 @@ def set_tags(tok, vid, tags, channel_id):
         return "belongs to another channel: skipped"
     snip = {k: it["snippet"][k] for k in KEEP if k in it["snippet"]}
     snip["tags"] = tags
+    # same call, no extra quota: older videos never linked the website (Nov 22)
+    desc = snip.get("description", "")
+    if "vicereplay.com" not in desc:
+        link = SITE_LINK_ES if site_es else SITE_LINK_EN
+        snip["description"] = (desc.rstrip() + "\n\n" + link)[:4900]
     req("PUT", "https://youtube.googleapis.com/youtube/v3/videos?part=snippet", tok, {"id": vid, "snippet": snip})
     return "ok"
 
@@ -51,7 +58,7 @@ def main():
             continue
         ch = e["channel"]
         tags = clean_tags(e["tags"], base=TAGS_ES) if ch == "es" else clean_tags(e["tags"])
-        res = set_tags(toks[ch], vid, tags, ids[ch])
+        res = set_tags(toks[ch], vid, tags, ids[ch], site_es=(ch == "es"))
         print(f"{vid} ({ch}): {res} ({len(tags)} tags)")
         if res == "ok":
             e["done"] = dt.datetime.now(dt.timezone.utc).isoformat()[:19]
