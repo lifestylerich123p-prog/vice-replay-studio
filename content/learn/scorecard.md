@@ -79,3 +79,8 @@ of the Short watched (YouTube Analytics, a few days behind). Medians per group; 
 - 2026-11-22 (first hours): "The first person to finish GTA 6 wasn't IShowSpeed" (Egb3otGWJIg, Sun 10 AM, streamer
   follow-up, trailer narration): 0 public views at +70 min (counter may lag; re-check at the 11:15 check). Spanish
   "NO farmees dinero..." (awRrpVjLzvE, Sun 9:30 AM): 2 views + 1 comment at +100 min, the Spanish channel's first views.
+- 2026-11-22 11:15 AM ET (first-hour check): "first to finish wasn't IShowSpeed" (Egb3otGWJIg, trailer narration, 29 s)
+  0 public views at +1.3 h (status clean: processed/public/not for kids). Older Shorts nearly flat over the last ~10 h
+  (IShowSpeed 52 h 255 -> 255; Black Friday 151 -> 153; took away 81 -> 84). Spanish: 2 views total (0 on the two
+  Saturday-night Shorts). Nothing 2x above median: no momentum follow-up. Consistent with the Oct 2026 originality
+  update hitting trailer-narration Shorts; the graph Shorts (Mon-Wed) are the test.
