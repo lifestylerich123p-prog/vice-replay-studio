@@ -21,6 +21,7 @@ Never paste them into a chat. Uses only Python's standard library.
 """
 import http.server
 import json
+import re
 import secrets
 import sys
 import threading
@@ -36,6 +37,14 @@ SCOPES = ("https://www.googleapis.com/auth/youtube.upload https://www.googleapis
           "https://www.googleapis.com/auth/yt-analytics.readonly")
 
 
+def clean(value, name):
+    """Fix common paste slips: spaces, quotes, or the NAME= part copied along with the value."""
+    v = (value or "").strip().strip("'\"").strip()
+    if v.startswith(name + "="):
+        v = v[len(name) + 1:].strip().strip("'\"")
+    return v
+
+
 def main():
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         cfg = json.load(open(sys.argv[1]))
@@ -43,14 +52,21 @@ def main():
         client_id, client_secret = cfg["client_id"], cfg["client_secret"]
     elif len(sys.argv) == 3:
         client_id, client_secret = sys.argv[1], sys.argv[2]
+    elif len(sys.argv) == 2:  # client ID given, ask for the secret
+        client_id = sys.argv[1]
+        client_secret = input("Paste the Client secret (the part after YT_CLIENT_SECRET=), then press Enter: ")
     elif len(sys.argv) == 1:  # no arguments: ask for the two values (easiest: copy them from the environment settings)
         print("Paste the two values from the Claude environment settings (YT_CLIENT_ID and YT_CLIENT_SECRET).")
-        client_id = input("Client ID (the part after YT_CLIENT_ID=), then Enter: ").strip()
-        client_secret = input("Client secret (the part after YT_CLIENT_SECRET=), then Enter: ").strip()
-        if not client_id or not client_secret:
-            sys.exit("Both values are needed. Run it again.")
+        client_id = input("Client ID (the part after YT_CLIENT_ID=), then Enter: ")
+        client_secret = input("Client secret (the part after YT_CLIENT_SECRET=), then Enter: ")
     else:
         sys.exit(__doc__)
+    client_id, client_secret = clean(client_id, "YT_CLIENT_ID"), clean(client_secret, "YT_CLIENT_SECRET")
+    if not re.fullmatch(r"\d+-[a-z0-9]+\.apps\.googleusercontent\.com", client_id):
+        sys.exit(f"That Client ID doesn't look right ({len(client_id)} characters). It is about 72 characters: digits, "
+                 "a dash, letters/numbers, and it ends with .apps.googleusercontent.com. Copy it again and rerun.")
+    if not client_secret or " " in client_secret:
+        sys.exit("The Client secret is missing or has spaces in it (it usually starts with GOCSPX-). Copy it again and rerun.")
     if not SPANISH:
         print("Client ID (put this in YT_CLIENT_ID):\n" + client_id + "\n")
         print("Client secret (put this in YT_CLIENT_SECRET):\n" + client_secret + "\n")
