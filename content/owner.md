@@ -131,6 +131,10 @@
   the new upgrades just the best not the old"): post the 7 Spanish launch Shorts in content/spanish-channel.md
   ("Launch lineup") on Vice Replay en Español, re-rendered with animated captions, 2-3 a day in the morning slots,
   Nov 22-24. Anything else on that channel still needs an "approve".
+- 2026-11-22 (owner: "do it now"): the main chat started helper session_01CJRsWNc23ARSJyE58DXbiL "🇪🇸 Vice Replay en
+  Español: launch" because only a new session sees YT_ES_REFRESH_TOKEN. Exception to "helpers never post": it may
+  post ONLY the 7 approved Spanish launch Shorts + their pinned questions on the Spanish channel, commits to
+  claude/spanish-launch, and reports back. Once the main chat's container reloads, Spanish posting returns here.
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.
