@@ -195,7 +195,7 @@ def write_index():
              "- Channels (Vice Replay / ClipCircuit / What If Arena, who does what): `content/channels.md` (Drive copy: Creator HQ)",
              "- Learning: `content/learn/scorecard.md` (fair 24 h numbers, DO MORE / DO LESS), `content/learn/ideas.md` (researched next topics), "
              "`history.jsonl` (view snapshots) · fresh streamer moments: `python -m studio.moments <name>`",
-             "- How a Short is built (Nov 22): own `chart` graphics (`studio/charts.py`: bars, counter, line) or owner gameplay, "
+             "- How a Short is built (Nov 22): own `chart` graphics (`studio/charts.py`: bars, counter, line, quote) or owner gameplay, "
              "statement hook, 35-55 words: `content/episode-format.md` · hook data `content/learn/hooks-2026-11-22.md` · "
              "pre-upload check `python -m studio.vice publish` · 48 h flop review `python -m studio.flops`",
              "- Spanish channel (Vice Replay en Español): `content/spanish-channel.md`, registry `content/learn/uploads-es.json`, "

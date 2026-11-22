@@ -496,7 +496,8 @@ def warn_scene_cut(i, seg, dur):
 
 def chart_words(chart):
     """The words a chart shows besides names and numbers (label, note, the VS label): what needs a Spanish `chart_es`."""
-    return [x for x in (chart.get("label"), chart.get("note"), (chart.get("vs") or {}).get("label")) if x]
+    return [x for x in (chart.get("label"), chart.get("note"), (chart.get("vs") or {}).get("label"),
+                        chart.get("text"), chart.get("who")) if x]
 
 
 def render_segment(i, seg, audio, w, h, vertical, work, enc):

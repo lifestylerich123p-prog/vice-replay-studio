@@ -222,7 +222,62 @@ def line_frame(base, spec, t, w, h):
     return img.convert("RGB")
 
 
-DRAW = {"bars": bars_frame, "counter": counter_frame, "line": line_frame}
+def _wrap(text_words, font, width):
+    lines, cur = [], []
+    for wd in text_words:
+        if cur and font.getlength(" ".join(cur + [wd])) > width:
+            lines.append(cur)
+            cur = []
+        cur.append(wd)
+    return lines + ([cur] if cur else [])
+
+
+def quote_frame(base, spec, t, w, h):
+    """A quote card: the exact words someone said appear word by word (~8 words/s), words listed in `pink` light up,
+    then who said it and where. Nov 22: Rockstar interviews and streamer stories have no numbers to chart, and a
+    trailer clip under our voice isn't original; their own words in our typography is (keep quotes short and exact)."""
+    img = base.copy().convert("RGBA")
+    x0, y0, x1, y1 = _region(w, h)
+    _panel(img, (x0, y0, x1, y1))
+    d = ImageDraw.Draw(img)
+    words = str(spec["text"]).split()
+    pink = {p.lower().strip(".,!?\"'") for p in spec.get("pink", []) for p in str(p).split()}
+    who_font = brand.font(brand.BODY_FONT, max(int(w * 0.032), int((y1 - y0) * 0.065)))
+    mark_font = brand.font(brand.HEADLINE_FONT, int((y1 - y0) * 0.30))
+    top = y0 + int((y1 - y0) * 0.17)
+    room = (y1 - y0) * 0.80 - (top - y0) - who_font.getbbox("Ay")[3] * 1.6
+    size = int(w * 0.075)
+    while True:
+        f = brand.font(brand.BODY_FONT, size)
+        lines = _wrap(words, f, (x1 - x0) * 0.92)
+        lh = f.getbbox("Ay")[3] * 1.22
+        if len(lines) * lh <= room or size <= int(w * 0.034):
+            break
+        size -= 2
+    block = len(lines) * lh + (who_font.getbbox("Ay")[3] * 1.6 if spec.get("who") else 0)
+    top = max(top, y0 + ((y1 - y0) - block) / 2)  # centre the quote in the panel when it's short
+    d.text((x0, y0 - int((y1 - y0) * 0.06)), "“", font=mark_font, fill=brand.PINK)
+    shown = len(words) * _ease((t - 0.15) / max(0.6, len(words) / 8))
+    k = 0
+    for row, line in enumerate(lines):
+        x = x0 + ((x1 - x0) - f.getlength(" ".join(line))) / 2
+        y = top + row * lh
+        for wd in line:
+            on = k < shown
+            key = wd.lower().strip(".,!?\"'")
+            col = (brand.PINK if key in pink else brand.WHITE) if on else (70, 52, 92)
+            d.text((x, y), wd, font=f, fill=col)
+            x += f.getlength(wd + " ")
+            k += 1
+    if spec.get("who") and shown >= len(words):
+        who = str(spec["who"])
+        d.text(((x0 + x1) / 2 - who_font.getlength(who) / 2, top + len(lines) * lh + lh * 0.35), who, font=who_font,
+               fill=brand.CYAN)
+    _note(d, spec, x0, x1, y1 - int(h * 0.028) + 4, h)
+    return img.convert("RGB")
+
+
+DRAW = {"bars": bars_frame, "counter": counter_frame, "line": line_frame, "quote": quote_frame}
 
 
 def render(spec, dur, w, h, out, seed=0):

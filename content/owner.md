@@ -197,3 +197,10 @@
   opener, publish-check warnings for repeated layouts, English chart words in Spanish versions and chart dates 3+ days
   old. Docs updated: README, INDEX, episode-format, playbook, topic bank, ideas (next graph Shorts + unbuilt ideas),
   docs/vice-system.md, Channel Map.
+- 2026-11-22 (6:30 PM ET, owner: "check for updates or new system upgrades or anything new that could help"): found
+  (1) YouTube Partner Program entry bar doubles for new channels on Feb 1, 2027 (1,000 subs + 8,000 h or 20M Shorts
+  views in 90 days; details in content/learn/lessons.md), shared in the Channel Map for all 3 channels; (2) Shorts
+  series (YPP only) and image carousels in the Shorts feed (owner posts from the phone); (3) news leads: Rockstar
+  interviews (IGN) and Randy's Wish List car locations (content/learn/ideas.md). Built: `quote` chart type (animated
+  quote card) so interview and streamer-quote Shorts are original without footage. No unmerged work on other branches.
+

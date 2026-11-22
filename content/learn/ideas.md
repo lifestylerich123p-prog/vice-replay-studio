@@ -20,6 +20,17 @@ views (counter + bars), inflation (counter + LINE).
 6. **Spanish first: top 3 streamers hispanos** (IlloJuan, Rubius, AuronPlay) once Streams Charts confirms: bars,
    Spanish-only like gta6-money-chart-es.
 
+## New leads (Nov 22, 6:30 PM ET; from the news radar: verify each on the day, 2+ sources)
+1. **Rockstar interviews (IGN, Nov 22)**: Jason's personality comes from Steve McQueen and real veterans; darts were
+   cut because Rockstar didn't have "unlimited money or time" to make them feel right. Quote-card Shorts (new
+   `quote` chart): the exact line, who said it, one sentence of our take. No spoilers; check the quote in the original.
+2. **Randy's Wish List vehicle locations** (IGN guide, Push Square, Insider Gaming): a collect-them-all car list is a
+   search magnet. Website guide first (EN + ES); a Short only with a number ("X cars, here's the rarest").
+3. **YouTube image carousels in the Shorts feed** (Made on YouTube, Sep 2026; rolling out): our Instagram carousels
+   (4:5 cards) could also go out as YouTube image posts, 100% original. No API for it: the owner posts from the phone.
+4. **Shorts series** (seasons/episodes with sequential playback): YouTube Partner Program channels only, so not yet.
+   When we're in YPP: group the graph Shorts as a series ("GTA 6 by the numbers").
+
 ## System ideas not built yet (Nov 22; ranked by views per effort)
 1. **Owner gameplay** stays the biggest lever (originality + "demand moved to gameplay"): 15-30 s moments recorded
    with the radio off; `studio.gameplay` already pulls them and Shorts use them first.

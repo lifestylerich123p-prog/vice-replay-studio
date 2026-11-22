@@ -92,6 +92,10 @@ Per-segment keys (all optional) in `short` / `segments`:
   "floor": 70, "note": "...; axis starts at $70"}` (Nov 22): a trend that draws itself left to right, max 8 points, a
   second label line (year) after "\n"; use it for anything over time (prices, views per day, player counts).
   `floor` starts the bars/axis above 0: say so in the `note`. Long notes shrink to fit.
+  `{"type": "quote", "text": "exact words, short", "pink": ["key words"], "who": "Rockstar, to IGN (Nov 22)"}`
+  (Nov 22): a quote card. The words appear one by one, `pink` words light up, then who said it. Use it for Rockstar
+  interviews and streamer stories (what a streamer SAID, from a reliable source), where there are no numbers to chart
+  and the streamer's footage is off-limits. Quote exactly and briefly (one or two sentences); name the outlet.
   - **Spanish chart text** (Nov 22): a chart with a `label`, `note` or VS label needs `chart_es` on the same segment (the
     same chart with Spanish words); Spanish renders switch numbers to 3.790,5 style by themselves. Without it the
     Spanish Short shows English words (the publish check warns).

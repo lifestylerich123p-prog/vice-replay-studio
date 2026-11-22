@@ -175,3 +175,13 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - 2026-11-22 (hook investigation, content/learn/hooks-2026-11-22.md): a number in the first on-screen headline kept 65%
   vs 49%; real gameplay moments 89% vs 58% narrated; top market Shorts with titles of 40 characters or less 95K v/h vs
   70K; "when..."/POV titles 2x (needs gameplay). "#8" in a title became a hashtag (caught in the Lucia title, now blocked).
+
+## 2026-11-22 (evening): YouTube Partner Program bar doubles on Feb 1, 2027
+- YouTube's help page "Changes to the YouTube Partner Program" (support.google.com/youtube/answer/12843009) plus
+  Search Engine Journal, Basic Tutorials and others: from Feb 1, 2027, NEW channels need 1,000 subscribers AND 8,000
+  watch hours in 365 days OR 20 million Shorts views in 90 days (today: 4,000 hours or 10 million). Channels already
+  in YPP keep their status (activity rules apply). Vice Replay is at 15 subscribers and ~36K lifetime views (Nov 22),
+  so joining before Feb 1 is a long shot; plan for the new bar. What follows: subscribers are the first gate either
+  way (follow badge, pinned questions, a series viewers want to binge), and Shorts views are the realistic path (our
+  long videos get a median of 14 views).
+

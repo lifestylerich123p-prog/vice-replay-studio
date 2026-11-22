@@ -99,3 +99,13 @@ def test_stale_chart_note_dates():
     warns = viewcheck.stale_charts(ep, today=dt.date(2026, 11, 25))
     assert len(warns) == 1 and "Nov 22" in warns[0]
     assert viewcheck.note_dates("Metascore, bars start at 90", dt.date(2026, 11, 25)) == []
+
+
+def test_quote_card_reveals_words_then_speaker():
+    q = {"type": "quote", "text": "We did not have unlimited money or time", "pink": ["unlimited"], "who": "Someone"}
+    base = charts._backdrop(108, 192, 3)
+    early, done = charts.quote_frame(base, q, 0.3, 108, 192), charts.quote_frame(base, q, 3.0, 108, 192)
+    assert early.size == done.size == (108, 192) and early.tobytes() != done.tobytes()
+    assert charts.DRAW["quote"] is charts.quote_frame
+    ep = {"short": [{"text": "x", "text_es": "y", "chart": q}]}
+    assert any(w.startswith("spanish:") for w in viewcheck.check(ep, recent=[])[1])

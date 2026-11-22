@@ -56,7 +56,7 @@ To change it: edit `site/` or `tools/site_guides.py`, run `python tools/site_gui
 
 ## How a Short is built now (Nov 22 data; details in `content/episode-format.md`)
 - **Original first**: YouTube's Oct 2026 update ranks original Shorts higher and says narration over reused footage
-  isn't original. Every Short is built on our own `chart` graphics (bars, counter, line) of numbers we checked, or the
+  isn't original. Every Short is built on our own `chart` graphics (bars, counter, line, quote card) of numbers and words we checked, or the
   owner's gameplay; trailer clips only as 1-2 s cutaways. `studio.vice publish` blocks a trailer-only Short.
 - **Hook**: the first sentence states the surprising result (3-10 words), never a question (statement openers kept 60%
   of viewers vs 35%); a number in the first headline; 35-55 words (13-20 s), never 76+.

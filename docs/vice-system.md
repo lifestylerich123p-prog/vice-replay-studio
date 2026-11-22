@@ -157,7 +157,8 @@ Why: YouTube's Oct 1, 2026 Shorts update ranks original Shorts higher and says n
 original; our own data (content/learn/hooks-2026-11-22.md) showed which hooks, lengths and slots work.
 
 - **Our own graphics** (`studio/charts.py`): `chart` segments render bars (a leaderboard that grows), counters (one
-  number or two with VS) and lines (a trend that draws itself), each on its own gradient so chart videos don't
+  number or two with VS), lines (a trend that draws itself) and quote cards (exact words, word by word, then who
+  said them), each on its own gradient so chart videos don't
   fingerprint alike. `chart_es` gives the Spanish render Spanish words; Spanish renders format numbers 3.790,5.
 - **Views check** (`studio/vice/viewcheck.py`, part of `publish`). Blocks: a Short that is narration over trailer
   footage only (no chart, no owner gameplay, no owner-approved `originality` note); a question as the first sentence;

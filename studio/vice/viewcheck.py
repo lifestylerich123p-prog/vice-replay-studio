@@ -182,7 +182,8 @@ def check_short(ep, key, title, segs, gameplay_available=False):
                             f"last line, last line loops into the first")
         for k, x in enumerate(segs):  # Nov 22: Spanish Shorts showed the English chart labels and notes
             c = x.get("chart") or {}
-            words = [y for y in (c.get("label"), c.get("note"), (c.get("vs") or {}).get("label")) if y]
+            words = [y for y in (c.get("label"), c.get("note"), (c.get("vs") or {}).get("label"), c.get("text"),
+                                 c.get("who")) if y]
             if x.get("text_es") and words and not x.get("chart_es") and c.get("locale") != "es":
                 warnings.append(f"spanish: Short '{key}' segment {k + 1} chart shows English text in the Spanish "
                                 f"version ({words[0]!r}...): add `chart_es` with Spanish label/note")
