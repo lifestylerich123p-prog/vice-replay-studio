@@ -180,3 +180,7 @@
   (submitted to the campaign) and 3 long videos the website embeds (vJDnv7_7Hcs launch checklist, YqnShunG7WY best
   settings, GjhaJdjHR4Q map size). Lessons -> .claude/commands/daily-video.md "NOV 22 FLOP REVIEW".
 
+- 2026-11-22 (owner): the shared Google Cloud project "What If Arena" (OAuth app, renamed "Creator HQ"; Branding uses
+  vicereplay.com/, /privacy/ and /terms/) is now PUBLISHED ("In production"): new refresh tokens no longer expire after
+  7 days. Keys made while it was in Testing still expire (~Nov 24): reconnect Vice Replay (English + Spanish) and What
+  If Arena once, then write the date to content/learn/youtube_connected.txt.
