@@ -139,6 +139,10 @@
   (UCWPnqYqYu9_CLsJ8Bk1MPgQ) is connected. From now on an owner "approve" for an episode's Shorts also posts their
   Spanish versions on the Spanish channel, same slots (`studio.ship --upload` does it; `--no-es-upload` skips).
   Long videos stay English-only. Spanish key: YT_SPANISH_REFRESH_TOKEN (wins) or YT_ES_REFRESH_TOKEN.
+- 2026-11-22 (1 AM ET): the saved keys were swapped (YT_REFRESH_TOKEN = Spanish channel, YT_ES_REFRESH_TOKEN =
+  English, YT_SPANISH_REFRESH_TOKEN = Spanish). Since commit 7434d93 every tool picks the key by the channel it
+  belongs to, so it works anyway; the health check shows a 🟡 until the settings are tidied (owner, when awake:
+  English key in YT_REFRESH_TOKEN, Spanish key in YT_SPANISH_REFRESH_TOKEN, delete YT_ES_REFRESH_TOKEN).
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.
