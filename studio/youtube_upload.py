@@ -449,7 +449,11 @@ def main():
         es = sh.get("es") or (ep.get("short_es") if not sh.get("id") else None)
         playlist = sh.get("playlist") or (PLAYLISTS["short"] if not sh.get("id") else PLAYLISTS["news"])
         jobs.append((key, out / f"{name}.mp4", title or sh.get("title") or ep["title"], desc, tags,
-                     (t_short if k == 0 else t_news if k == 1 else t_extra), None, sh.get("pinned_comment"), es, out / f"{name}.timings.json",
+                     # by name first, like studio.youtube_es (Nov 22: a "news" Short listed first landed on the
+                     # 10 AM slot next to another IShowSpeed Short); position only for other ids
+                     {"short": t_short, "news": t_news, "tips": t_extra}.get(
+                         key, t_short if k == 0 else t_news if k == 1 else t_extra),
+                     None, sh.get("pinned_comment"), es, out / f"{name}.timings.json",
                      playlist))
 
     # the site guide may spell the slug "gta-6-..." while the episode says "gta6-..."

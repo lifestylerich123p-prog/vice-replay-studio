@@ -161,9 +161,9 @@
  },
  {
   "at": "2026-11-22 20:30",
-  "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
+  "episode": "episodes/gta6-this-week-launch.json",
   "item": "news",
-  "note": "moved to Sun 8:30 PM: Sat 4:05 PM went to the 'has anyone finished' Reel (4/day cap, 2.5 h apart)"
+  "note": "IShowSpeed top-3 streams Reel (YouTube Sun 7:30 PM); took Sunday's 8:30 PM slot (4/day cap): fresher numbers than the tips Reel"
  },
  {
   "at": "2026-11-23 12:35",
@@ -219,6 +219,12 @@
   "at": "2026-11-25 15:00",
   "episode": "episodes/gta6-no-60fps-ps5-pro.json",
   "item": "short"
+ },
+ {
+  "at": "2026-11-25 17:30",
+  "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
+  "item": "news",
+  "note": "moved to Wed 5:30 PM: Sunday 8:30 PM went to the IShowSpeed top-3 Reel (4/day cap)"
  },
  {
   "at": "2026-12-31 23:59",
