@@ -57,4 +57,13 @@ def check(ep, gameplay_available=False):
             warnings.append(f"views: Short '{key}' reads like a plain tip ({TIPS.search(text).group(0)!r}). Tips Shorts got "
                             f"5-27 views since launch; lead with a number, a streamer or a catch, or move the tip to the "
                             f"website guide")
+    # Nov 22 (owner: "check titles and tags are perfect"): Short-only episodes had uploaded with no tags at all
+    if _shorts(ep) and not ep.get("tags") and not all(sh.get("tags") for sh in ep.get("shorts", [])):
+        warnings.append("titles/tags: no `tags` in the episode: add 8-15 search phrases people type (\"GTA 6 Lucia\", "
+                        "\"GTA 6 outfits\"...), topic first; uploads otherwise get only the 4 channel basics")
+    es_meta = [ep.get("short_es") or {}] + [sh.get("es") or {} for sh in ep.get("shorts", [])]
+    if any(m.get("title") for m in es_meta) and not ep.get("tags_es") and not all(
+            m.get("tags") for m in es_meta if m.get("title")):
+        warnings.append("titles/tags: Spanish versions have no tags (`short_es.tags` / each Short's `es.tags`): add the "
+                        "Spanish search phrases (\"GTA 6 español\", \"outfits de Lucia\"...)")
     return blockers, warnings

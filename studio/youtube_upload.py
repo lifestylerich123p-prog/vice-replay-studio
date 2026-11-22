@@ -139,6 +139,27 @@ def yt_safe(text):
     return (text or "").replace(">", "→").replace("<", "‹")
 
 
+BASE_TAGS = ["GTA 6", "GTA VI", "Grand Theft Auto VI", "GTA 6 Shorts"]
+
+
+def clean_tags(tags, base=BASE_TAGS):
+    """Tags for one video: the topic's own tags first, then the channel basics; no duplicates (any case), no < > #,
+    within YouTube's 500-character budget (a tag with spaces counts 2 more for its quotes, plus 1 per comma).
+    Nov 22: Shorts from Short-only episodes had gone up with no tags at all (tags.txt is written for main videos only)."""
+    out, seen, total = [], set(), 0
+    for t in list(tags or []) + list(base or []):
+        t = " ".join(str(t).replace("<", "").replace(">", "").replace("#", "").split())
+        if not t or t.lower() in seen:
+            continue
+        cost = len(t) + (2 if " " in t else 0) + (1 if out else 0)
+        if total + cost > 500:
+            continue
+        out.append(t)
+        seen.add(t.lower())
+        total += cost
+    return out
+
+
 def upload(tok, path, title, description, tags, publish_at=None, privacy="public", es=None, lang="en"):
     title, description = yt_safe(title), yt_safe(description)
     if es:
@@ -434,7 +455,8 @@ def main():
             if first:
                 url = first[1] + ("&" if "?" in first[1] else "?") + "tag=" + cfg["tag"]
                 pin_main = f"{pin_main}\n\n{first[0]}: {url} (affiliate link)"
-        jobs.append(("main", out / f"{slug}.mp4", title, (out / "description.txt").read_text(), tags, t_main,
+        jobs.append(("main", out / f"{slug}.mp4", title, (out / "description.txt").read_text(),
+                     clean_tags(tags or ep.get("tags")), t_main,
                      out / "thumbnail-a.jpg", pin_main, ep.get("es"), out / f"{slug}.timings.json",
                      ep.get("playlist") or PLAYLISTS["main"]))
     shorts = ([{"id": "", "pinned_comment": ep.get("short_pinned_comment") or ep.get("pinned_comment"),
@@ -448,7 +470,8 @@ def main():
         title, desc = parse_short_txt(out / f"{name}.txt")
         es = sh.get("es") or (ep.get("short_es") if not sh.get("id") else None)
         playlist = sh.get("playlist") or (PLAYLISTS["short"] if not sh.get("id") else PLAYLISTS["news"])
-        jobs.append((key, out / f"{name}.mp4", title or sh.get("title") or ep["title"], desc, tags,
+        jobs.append((key, out / f"{name}.mp4", title or sh.get("title") or ep["title"], desc,
+                     clean_tags(sh.get("tags") or ep.get("tags") or tags),
                      # by name first, like studio.youtube_es (Nov 22: a "news" Short listed first landed on the
                      # 10 AM slot next to another IShowSpeed Short); position only for other ids
                      {"short": t_short, "news": t_news, "tips": t_extra}.get(

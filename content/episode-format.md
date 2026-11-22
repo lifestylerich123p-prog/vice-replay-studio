@@ -30,6 +30,13 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
      style (one key word in CAPS + one emoji, e.g. "El PRIMERO en terminar GTA 6 NO fue IShowSpeed 😳 #GTA6 #Shorts"),
      plus `short_pinned_comment_es` (and `pinned_comment_es` inside `shorts` items): an easy Spanish question.
      For Spanish streamer stories (IlloJuan, Rubius, TheGrefg, Ibai...) see content/learn/market-es-*.md.
+   - Titles and tags (Nov 22, owner: "check titles and tags are perfect"): the title leads with the words people
+     search ("GTA 6" + the subject: "GTA 6: Lucia's 8 outfits...", a streamer's name first for streamer stories),
+     under 60 characters before "#GTA6 #Shorts". `tags`: 8-15 search phrases for THIS topic, most specific first
+     ("GTA 6 Lucia", "GTA 6 outfits", "Vintage Vice City Pack"), on the episode or per item in `shorts`; Spanish ones
+     in `short_es.tags` / each Short's `es.tags` ("outfits de Lucia", "GTA 6 español"). The uploaders add the channel
+     basics themselves (studio.youtube_upload.clean_tags, 500-character limit). Before Nov 22, Short-only episodes
+     uploaded with NO tags; `python -m studio.retag` fixes videos already up (content/learn/retag.json).
    - Spanish (free extra audience): every segment (main and Shorts) also gets `text_es` (natural Latin American
      Spanish, same meaning, similar length; keep names like GTA 6, Vice City, Kai Cenat as they are). Add `es`
      {`title`, `description`} for the main video, `short_es` for the main Short, and `es` inside each `shorts`

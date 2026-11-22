@@ -483,7 +483,9 @@ def warn_scene_cut(i, seg, dur):
 
 def render_segment(i, seg, audio, w, h, vertical, work, enc):
     voice_dur = duration(audio)
-    dur = round(voice_dur + 0.45, 2)
+    # "pad": seconds held after the line (default 0.45); "hard_cut": no dip to black between segments. Montage Shorts
+    # (Nov 22, "match the energy" of the top GTA 6 montages) use pad ~0.1 + hard cuts so the pictures change on the beat.
+    dur = round(voice_dur + float(seg.get("pad", 0.45)), 2)
     warn_scene_cut(i, seg, dur)
     if seg.get("shots"):
         seg = dict(seg, media=str(shots_background(i, seg, dur, w, h, work, Path(seg.get("_base", ".")))),
@@ -501,7 +503,9 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     seg["_aligned"] = bool(times)
     subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical, times=times, lang=lang)
     out = work / f"seg_{i:02d}.mp4"
-    fade_in = "" if (vertical and i == 0) else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
+    hard = bool(seg.get("hard_cut"))
+    fade_in = "" if (vertical and i == 0) or hard else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
+    fade_out = "null" if hard else f"fade=t=out:st={dur - 0.25}:d=0.25"
     extra, co = [], ""
     if seg.get("callout"):
         c = seg["callout"]
@@ -509,7 +513,7 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
         co = f"[c0];[c0][3:v]overlay=0:0:enable='gte(t,{c.get('at', 0)})'"
     fc = (f"[0:v]{vf},setsar=1,fps={FPS}[bg];[bg][1:v]overlay=0:0{co},"
           f"subtitles='{subs}':fontsdir='{brand.FONTS}',"
-          f"{fade_in}fade=t=out:st={dur - 0.25}:d=0.25[v];"
+          f"{fade_in}{fade_out}[v];"
           f"[2:a]adelay=200|200,apad,atrim=0:{dur},aformat=sample_rates=48000:channel_layouts=stereo[a]")
     run(["ffmpeg", "-y", "-v", "error", *vin, "-loop", "1", "-i", str(ov), "-i", str(audio), *extra,
          "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-t", str(dur), *enc, str(out)])
