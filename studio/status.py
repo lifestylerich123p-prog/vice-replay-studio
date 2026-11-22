@@ -27,6 +27,39 @@ def yt_videos(ids):
     return out
 
 
+def spanish_section(now):
+    """Vice Replay en Español: subscribers, scheduled Shorts and views (needs its token in this session)."""
+    import os
+    L = ["## Vice Replay en Español"]
+    try:
+        from . import youtube_es
+        from .youtube_upload import req, token
+        if not (os.environ.get("YT_SPANISH_REFRESH_TOKEN") or os.environ.get("YT_ES_REFRESH_TOKEN")):
+            return L + ["- token not loaded in this session", ""]
+        tok = token(youtube_es.ENV)
+        try:  # never show another channel's numbers under this heading
+            youtube_es.check_channel(tok)
+        except SystemExit as e:
+            return L + [f"- not shown: {str(e)[:140]}", ""]
+        ch, _ = req("GET", YT + "channels?part=statistics&mine=true", tok)
+        st = ch["items"][0]["statistics"]
+        L.append(f"- {st.get('subscriberCount', '?')} subscribers, {st.get('viewCount', '?')} views, {st.get('videoCount', '?')} videos")
+        reg = json.loads(youtube_es.REGISTRY.read_text()) if youtube_es.REGISTRY.exists() else {}
+        ids = list(reg)[-30:]
+        if ids:
+            v, _ = req("GET", YT + "videos?part=snippet,statistics,status&id=" + ",".join(ids), tok)
+            for x in sorted(v.get("items", []), key=lambda x: x["status"].get("publishAt") or x["snippet"]["publishedAt"]):
+                stt, sn = x["status"], x["snippet"]
+                if stt.get("privacyStatus") == "private" and stt.get("publishAt"):
+                    t = dt.datetime.fromisoformat(stt["publishAt"].replace("Z", "+00:00")).astimezone(ET)
+                    L.append(f"- ⏰ {t:%a %-I:%M %p}: {sn['title'][:60]}")
+                elif stt.get("privacyStatus") == "public":
+                    L.append(f"- {int(x['statistics'].get('viewCount', 0)):,} views: {sn['title'][:60]}")
+    except (SystemExit, Exception) as e:  # noqa: BLE001 - the status screen must never fail on this
+        L.append(f"- couldn't read it: {str(e)[:100]}")
+    return L + [""]
+
+
 def main():
     now = dt.datetime.now(ET)
     L = [f"# Vice Replay status ({now:%a %b %-d, %-I:%M %p} ET, `python -m studio.status`)", ""]
@@ -77,6 +110,8 @@ def main():
     except Exception:  # noqa: BLE001 - the status screen must never fail on this
         pass
     L.append("")
+
+    L += spanish_section(now)
 
     qf = LEARN / "reels_queue.json"
     q = json.loads(qf.read_text()) if qf.exists() else []
