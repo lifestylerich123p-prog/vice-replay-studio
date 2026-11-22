@@ -172,3 +172,11 @@
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.
+- 2026-11-22 (11 AM ET, owner: "start deleting videos that don't have the needed views and learn from it" -> "OK do it as
+  you say, don't delete"): set PRIVATE (not deleted, reversible in Studio): 3T1de9Fnygg (Is Out: Do This Before You
+  Play, 0), PJgR2lmq_Nc (Beginner Tips long, 2), RmONg7-uN4w (Physical Edition long, 8), MIvka1jBpJ0 (Not Enough Space
+  long, 25), 6QbWET74cQs (settings, 5), acNIOalmWzM (money cheat, 9), RAs1Sx_7Zh8 (won't connect, 28), LHTxGyakWyI
+  (dog, 33), 2MOr9zSDyfM (Chaos Is Coming, 43). Kept public on purpose: the 3 LACY campaign clips under 50 views
+  (submitted to the campaign) and 3 long videos the website embeds (vJDnv7_7Hcs launch checklist, YqnShunG7WY best
+  settings, GjhaJdjHR4Q map size). Lessons -> .claude/commands/daily-video.md "NOV 22 FLOP REVIEW".
+

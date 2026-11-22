@@ -45,6 +45,18 @@ and our numbers agree (narrated Shorts ~57% viewed, 40% stayed to watch; real mo
 - **Never delete a flop** (YouTube: deleting cuts the audience link); unlist at most, and make a new angle instead.
 - Judge each Short against our own median in content/learn/retention.md ("Stayed to watch"), not a magic number.
 
+**NOV 22 FLOP REVIEW (owner: "hide the videos that don't get views and learn from it"; overrides older plans).**
+9 videos under 50 views after 36 h+ were set PRIVATE (not deleted; list in content/owner.md). What the numbers say
+(all our videos 36 h+ old): long videos median 14 views (7 of 9 under 50); tips/how-to Shorts median 237 (3 of 7 under
+50); catch 1,174, number/verdict 928, streamer 638 with zero flops; Shorts posted 6-11 AM median 1,084 vs 2-6 PM 199;
+scripts of 76+ words median 404 vs 56-75 words 836. So:
+- **No daily long video.** The only long video is Sunday's weekly recap; every other day is Shorts only (saves ~2,500
+  YouTube units a day for Shorts). Long guides belong on the website.
+- **No tips/how-to Shorts at all** (settings, fixes, cheat lists, beginner tips, "do this first"): website guides only.
+- **Every Short is a catch, a number/verdict or a streamer story**, built on a `chart` (or owner gameplay), 56-75 words
+  max (`studio.vice publish` blocks 76+), posted 9:30 / 11:00 / 12:30.
+- Hide (private, never delete) any Short under 50 views after 48 h, and add its pattern to content/learn/lessons.md.
+
 **NOV 22 BLUEPRINT RULES (owner: "match the energy", "titles and tags perfect"; apply to every Short).**
 - **Market scan first**: YouTube API search (`order=viewCount`, last 48 h, `videoDuration=short`) for "GTA 6" AND "GTA VI"
   AND "Grand Theft Auto VI", merged (a "GTA 6"-only search missed CarryMinati's 18.1M "GTA VI" stream). Copy the

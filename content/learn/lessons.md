@@ -162,3 +162,7 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   original (Mark Studios, OutlierKit, Relevant Audience). Our narrated trailer-footage Shorts: median 366 views; real
   gameplay moments (the LACY clips): 1K-9.4K. Fixes: studio/charts.py (our own animated leaderboards/counters as the main
   picture, trailer as cutaways); owner gameplay is still the biggest missing lever.
+- 2026-11-22 (flop review, all videos 36 h+ old): long videos median 14 views (7/9 under 50) -> no daily long video,
+  only Sunday's recap; tips/how-to Shorts median 237 (3/7 under 50) -> website only; catch 1,174, number/verdict 928,
+  streamer 638 (0 flops); Shorts at 6-11 AM median 1,084 vs 2-6 PM 199; 76+ word scripts median 404 vs 56-75 words 836
+  (block now at 76). 9 flops set private (not deleted).

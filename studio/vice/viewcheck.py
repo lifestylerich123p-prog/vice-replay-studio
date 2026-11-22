@@ -68,7 +68,7 @@ def check_short(ep, key, title, segs, gameplay_available=False):
                             f"or `shots` for segment 1, or add a `zoom`")
         words = sum(len((s.get("text") or "").split()) for s in segs)
         secs = round(words / 2.7)
-        if words > 80:  # Nov 22 research: 11-20 s Shorts have the best median views (Quso, 108k Shorts); ours lose half by 30 s
+        if words > 75:  # Nov 22: our Shorts with 76+ words: median 404 views, 3/10 under 50; 56-75 words: median 836, 1/14
             blockers.append(f"views: Short '{key}' is {words} words (~{secs} s). Cut it to one fact in 13-20 s (about 35-55 "
                             f"words): our real-moment clips held 86-92% at 13-17 s, our ~30 s explainers ~57%")
         elif words > 55:
