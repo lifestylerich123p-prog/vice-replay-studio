@@ -1,44 +1,52 @@
-# Vice Replay status (Sat Nov 21, 8:00 PM ET, `python -m studio.status`)
+# Vice Replay status (Sun Nov 22, 11:25 AM ET, `python -m studio.status`)
 
 ## Health
-Last check (2026-11-21 21:04 UTC, `python -m studio.doctor`)
+Last check (2026-11-22 16:25 UTC, `python -m studio.doctor`)
 - 🟢 all good
 
 ## YouTube
-- nothing scheduled
-- 254 views: IShowSpeed beat GTA 6 in 52 HOURS... then lost his save #GTA
-- 131 views: GTA 6 Black Friday deals have a catch #GTA6 #Shorts
-- 69 views: GTA 6 took away 4 things GTA 5 gave you #GTA6 #Shorts
-- 32 views: GTA 6 has a dog that saves you at sea 🐶 #GTA6 #Shorts
+- ⏰ Sun 12:30 PM: GTA 6 locks 5 shops behind the $100 edition #GTA6 #Shorts
+- ⏰ Sun 2:30 PM: GTA 6 This Week: $3.79 Billion, a 99 and 68M Views
+- ⏰ Sun 7:30 PM: IShowSpeed owns the TOP 3 GTA 6 streams #GTA6 #Shorts
+- ⏰ Mon 9:30 AM: Players found Dexter's apartment in GTA 6 #GTA6 #Shorts
+- ⏰ Mon 11:00 AM: Only real GTA 6 fans get 4/4 #GTA6 #Shorts
+- ⏰ Tue 9:30 AM: GTA 6 has no 60 FPS mode. Not even PS5 Pro #GTA6 #Shorts
+- 84 views: GTA 6 took away 4 things GTA 5 gave you #GTA6 #Shorts
+- 0 views: The first person to finish GTA 6 wasn't IShowSpeed #GTA6 #Sh
 - 0 views: GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers)
-- 0 views: GTA 6 Black Friday: What's Actually Worth Buying
-- Quota: ~0 units usable today (~0 uploads), resets 3 AM ET
-- Free slot Sun: 10:00 AM, 12:30 PM, 2:30 PM, 7:30 PM
-- Free slot Mon: 9:30 AM, 12:30 PM, 3:30 PM, 8:30 PM
+- Quota: ~2,445 units usable today (~0 uploads), resets 3 AM ET
+- Free slot Mon: 12:30 PM, 3:30 PM, 8:30 PM
+- Free slot Tue: 11:00 AM, 12:30 PM, 3:30 PM, 8:30 PM
 
 ## Vice Replay en Español
-- not shown: YT_ES_REFRESH_TOKEN belongs to the ENGLISH channel (Vice Replay). Reconnect and pick the Spanish channel on Google's screen.
+- 0 subscribers, 0 views, 3 videos
+- 0 views: IShowSpeed terminó GTA 6 en 52 HORAS... y PERDIÓ su partida 
+- 0 views: El PRIMERO en terminar GTA 6 NO fue IShowSpeed 😳 #GTA6 #Shor
+- 2 views: NO farmees dinero en el Capítulo 1 de GTA 6 (la trampa) 💸 #G
+- ⏰ Sun 12:30 PM: IShowSpeed se EMOCIONÓ con el apellido de su familia en GTA 
+- ⏰ Sun 3:30 PM: GTA 6 BLOQUEA 5 tiendas tras la edición de 100 dólares 💰 #GT
+- ⏰ Sun 7:30 PM: IShowSpeed tiene los 3 directos MÁS vistos de GTA 6 😳 #GTA6 
+- ⏰ Mon 9:30 AM: Solo los VERDADEROS fans de GTA 6 sacan 4/4 🧠 #GTA6 #Shorts
+- ⏰ Mon 12:30 PM: El mapa de GTA 6 es Florida... MENOS esto 🌴 #GTA6 #Shorts
+- ⏰ Tue 9:30 AM: Encontraron el DEPARTAMENTO de Dexter en GTA 6 🔪 #GTA6 #Shor
+- ⏰ Tue 12:30 PM: GTA 6 NO tiene 60 FPS... ni en PS5 Pro 😬 #GTA6 #Shorts
 
 ## Instagram
-- Posted today: 4
-  - gta6-black-friday-catch: https://www.instagram.com/reel/DgAoVRHGVd9/
-  - gta6-took-away-gta5: https://www.instagram.com/reel/DgA5nS4kZld/
-  - gta6-how-long-to-beat: https://www.instagram.com/reel/DgBKmkpira2/
-  - gta6-cheat-codes: https://www.instagram.com/p/DgBeIHDlJq6/
+- Posted today: 0
 - Next 11-22 12:00: gta6-streaming-record
 - Next 11-22 15:00: gta6-first-to-finish
-- Next 11-22 17:30: gta6-race-hud-details
-- Next 11-22 20:30: gta6-beginner-tips-nobody-tells-you (news)
-- Next 11-23 12:35: gta6-ranking-rides
+- Next 11-22 20:30: gta6-this-week-launch (news)
+- Next 11-23 15:05: gta6-not-enough-space
+- Next 11-23 17:35: gta6-video-store-closing
 
 ## Campaigns
 - KreekCraft GTA 6 Clipping (ClipLaunch): joined (owner joined on Content Rewards and shared the rules in chat, 
 - $12,500 LACY GTA VI Marathon Pool Campaign (Reach): joined (owner screenshot in chat, Nov 19 7:09 AM)
 - Tomo GTA VI Clipping (Clipping Nation): paused (Nov 19: owner agreed to skip; $235 of $1,000 left with 36 clip
-  - 1,863 views: LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Sho
-  - 9,416 views: LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts
+  - 1,865 views: LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Sho
+  - 9,444 views: LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts
   - 1,011 views: LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #G
   - 8 views: LACY vs a GTA 6 shark 🦈😳 #LACY #GTA6 #shortsyoutube
-  - 1 views: LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #S
+  - 2 views: LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #S
   - 7 views: Lacy can't steal cars in GTA 6 😭🔑 #LACY #GTA6 #Shorts
 
