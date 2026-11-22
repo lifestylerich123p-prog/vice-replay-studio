@@ -61,9 +61,9 @@
     },
     "vice-replay-es": {
       "name": "Vice Replay en Español",
-      "channel_id": "",
+      "channel_id": "UCWPnqYqYu9_CLsJ8Bk1MPgQ",
       "handle": "",
-      "status": "created by the owner Nov 21; YT_ES_REFRESH_TOKEN saved; channel_id pending whoami",
+      "status": "connected",
       "upload": "api",
       "token_env": "YT_ES_REFRESH_TOKEN",
       "branding": "vice-replay",
