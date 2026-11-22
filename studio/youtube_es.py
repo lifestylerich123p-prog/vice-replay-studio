@@ -2,6 +2,7 @@
 
     python -m studio.youtube_es whoami                                   # which channel YT_ES_REFRESH_TOKEN belongs to
     python -m studio.youtube_es brand                                    # Spanish description, keywords, banner
+    python -m studio.youtube_es comment VIDEO_ID "texto"                 # pinned question, once the Short is public
     python -m studio.youtube_es episodes/<slug>.json --approve short,news [--date YYYY-MM-DD] [--at "9:30 AM"]
 
 studio.ship already renders `<name>-es.mp4` for every Short (Kokoro em_alex + text_es), and they were never posted.
@@ -108,7 +109,8 @@ def jobs(ep, approved):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("episode", help="episodes/<slug>.json, 'whoami' or 'brand'")
+    ap.add_argument("episode", help="episodes/<slug>.json, 'whoami', 'brand' or 'comment'")
+    ap.add_argument("rest", nargs="*", help="for comment: VIDEO_ID TEXT")
     ap.add_argument("--approve", default="", help="short, news, ... or all (owner approval in chat only)")
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
     ap.add_argument("--at", help='posting time for every item, e.g. "9:30 AM" (ET)')
@@ -121,6 +123,17 @@ def main():
     cid = check_channel(tok)
     if a.episode == "brand":
         brand(tok, cid)
+        return
+    if a.episode == "comment":  # python -m studio.youtube_es comment VIDEO_ID "texto" (as the Spanish channel)
+        vid, text = a.rest[0], a.rest[1]
+        v, _ = req("GET", f"https://youtube.googleapis.com/youtube/v3/videos?part=status,snippet&id={vid}", tok)
+        it = (v.get("items") or [{}])[0]
+        if it.get("snippet", {}).get("channelId") != cid:
+            sys.exit(f"{vid} is not a video of the Spanish channel: no comment posted.")
+        if it.get("status", {}).get("privacyStatus") != "public":
+            sys.exit(f"{vid} isn't public yet: post the comment after it goes live.")
+        comment(tok, vid, text)
+        print(f"commented on {vid} (Spanish channel)")
         return
     ep = json.loads(Path(a.episode).read_text())
     slug, out = ep["slug"], ROOT / "output" / ep["slug"]
