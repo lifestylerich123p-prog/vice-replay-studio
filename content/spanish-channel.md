@@ -31,27 +31,22 @@ GTA 6, GTA VI, GTA 6 español, noticias GTA 6, GTA 6 en español, Grand Theft Au
 - Links on the channel: vicereplay.com/es/ ("Guías en español").
 - Playlist "GTA 6 en Español" is created automatically by the first upload.
 
-## First uploads (already rendered, Spanish voice + Spanish titles)
-Post 2-3 a day in the morning (9:30 AM ET = 8:30 AM Mexico City), strongest first. Each needs the owner's
-"approve" like the English channel.
+## Launch lineup (owner approved Nov 22: "just the best, with all the new upgrades")
+Re-rendered Nov 22 with the animated captions; every one passes the views check (moving first frame, short script).
+Titles in the Spanish-market style (one CAPS word + one emoji), each with a Spanish pinned question.
 
-| Day | Short (episode, item) | Spanish title |
+| When (ET) | Episode | Spanish title |
 |---|---|---|
-| 1 | gta6-how-long-to-beat, short | IShowSpeed terminó GTA 6 en 52 HORAS... y perdió su partida |
-| 1 | gta6-first-to-finish, short | La primera persona en terminar GTA 6 no fue IShowSpeed |
-| 1 | gta6-chapter-1-money-catch, short | No farmees dinero en el Capítulo 1 de GTA 6 (la trampa) |
-| 2 | gta6-ishowspeed-watkins, short | IShowSpeed se emocionó con el apellido de su familia en GTA 6 |
-| 2 | gta6-ultimate-edition-shops, short | GTA 6 bloquea 5 tiendas tras la edición de 100 dólares |
-| 2 | gta6-guess-the-ride, short | Solo los fans reales de GTA 6 sacan 4/4 |
-| 3 | gta6-map-is-florida, short | El mapa de GTA 6 es Florida... menos esto |
-| 3 | gta6-took-away-gta5, short | GTA 6 te quitó 4 cosas que GTA 5 te daba |
-| 3 | gta6-race-hud-details, short | Carreras de GTA 6: mira la esquina de la pantalla |
-| 4 | gta6-black-friday-catch, short | Las ofertas de Black Friday de GTA 6 tienen trampa (before Nov 27) |
-| 4 | gta6-how-long-to-beat, tips | GTA 6 tiene un MODO FÁCIL escondido (2 ajustes) |
-| 4 | gta6-ranking-rides, short | GTA 6: clasifiqué 6 vehículos del gameplay de Rockstar |
+| Sun 9:30 AM | gta6-how-long-to-beat (short) | IShowSpeed terminó GTA 6 en 52 HORAS... y PERDIÓ su partida 😭 |
+| Sun 12:30 PM | gta6-first-to-finish (short) | El PRIMERO en terminar GTA 6 NO fue IShowSpeed 😳 |
+| Sun 3:30 PM | gta6-chapter-1-money-catch (short) | NO farmees dinero en el Capítulo 1 de GTA 6 (la trampa) 💸 |
+| Mon 9:30 AM | gta6-ishowspeed-watkins (short) | IShowSpeed se EMOCIONÓ con el apellido de su familia en GTA 6 🥹 |
+| Mon 12:30 PM | gta6-ultimate-edition-shops (short) | GTA 6 BLOQUEA 5 tiendas tras la edición de 100 dólares 💰 |
+| Tue 9:30 AM | gta6-guess-the-ride (short) | Solo los VERDADEROS fans de GTA 6 sacan 4/4 🧠 |
+| Tue 12:30 PM | gta6-map-is-florida (short) | El mapa de GTA 6 es Florida... MENOS esto 🌴 |
 
-Skipped: "¿Alguien ya terminó GTA 6?" (out of date), the tips and dog Shorts (the English ones flopped).
-From then on, every new episode's Spanish version goes out the same day as the English one.
+Left out on purpose: old renders, tips Shorts, the dog, the video store, "GTA 6 took away" (weak in English).
+After launch: Spanish-streamer stories (see content/learn/ideas.md and content/learn/market-es-2026-11-22.md).
 
 ## Quota
 Both channels use the same Google project, so their uploads share one daily YouTube allowance

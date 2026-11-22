@@ -14,7 +14,7 @@
   ],
   "short_description": "Rockstar's own Ultimate Edition page lists five places that are \"only open for business with the Ultimate Edition\": Rideout Customs and One-Eyed Willie's (mod shops), Sara's Unisex Salon, Electric Fang Tattoo and the Stock 305 clothing store. Standard is $79.99, Ultimate $99.99 (Tom's Guide, Shacknews). No story spoilers. Footage: official Rockstar screenshots.",
   "short_es": {
-    "title": "GTA 6 bloquea 5 tiendas tras la edición de 100 dólares #GTA6 #Shorts",
+    "title": "GTA 6 BLOQUEA 5 tiendas tras la edición de 100 dólares 💰 #GTA6 #Shorts",
     "description": "La página oficial de Rockstar dice que cinco lugares solo abren con la Ultimate Edition: Rideout Customs y One-Eyed Willie's (talleres), Sara's Unisex Salon, Electric Fang Tattoo y la tienda de ropa Stock 305. La Standard cuesta 79,99 dólares y la Ultimate 99,99. Sin spoilers."
   },
   "short_playlist": "GTA 6 Shorts",
@@ -41,8 +41,15 @@
       "text_es": "GTA 6 tiene cinco tiendas que no puedes usar si no compraste la edición de cien dólares.",
       "keep_media": true,
       "shots": [
-        {"media": "../media/trailer/out-now-night-drive-ocean-drive.mp4", "start": 0.0, "dur": 1.1},
-        {"media": "../media/official/rideout-customs-01.jpg", "focus": 0.45}
+        {
+          "media": "../media/trailer/out-now-night-drive-ocean-drive.mp4",
+          "start": 0.0,
+          "dur": 1.1
+        },
+        {
+          "media": "../media/official/rideout-customs-01.jpg",
+          "focus": 0.45
+        }
       ]
     },
     {
@@ -52,9 +59,18 @@
       "text_es": "Rideout Customs y One-Eyed Willie's son talleres. Palabras de Rockstar: solo abren con la Ultimate Edition.",
       "keep_media": true,
       "shots": [
-        {"media": "../media/official/rideout-customs-03.jpg", "focus": 0.55},
-        {"media": "../media/official/car-canis-one-eyed-willie-03.jpg", "focus": 0.55},
-        {"media": "../media/official/rideout-customs-02.jpg", "focus": 0.5}
+        {
+          "media": "../media/official/rideout-customs-03.jpg",
+          "focus": 0.55
+        },
+        {
+          "media": "../media/official/car-canis-one-eyed-willie-03.jpg",
+          "focus": 0.55
+        },
+        {
+          "media": "../media/official/rideout-customs-02.jpg",
+          "focus": 0.5
+        }
       ]
     },
     {
@@ -64,9 +80,18 @@
       "text_es": "Igual con Sara's Unisex Salon, el estudio de tatuajes Electric Fang y la tienda de ropa Stock 305.",
       "keep_media": true,
       "shots": [
-        {"media": "../media/official/saras-salon-02.jpg", "focus": 0.42},
-        {"media": "../media/official/electric-fang-tattoo-01.jpg", "focus": 0.5},
-        {"media": "../media/official/stock-305-03.jpg", "focus": 0.6}
+        {
+          "media": "../media/official/saras-salon-02.jpg",
+          "focus": 0.42
+        },
+        {
+          "media": "../media/official/electric-fang-tattoo-01.jpg",
+          "focus": 0.5
+        },
+        {
+          "media": "../media/official/stock-305-03.jpg",
+          "focus": 0.6
+        }
       ]
     },
     {
@@ -78,5 +103,6 @@
       "focus": 0.45,
       "keep_media": true
     }
-  ]
+  ],
+  "short_pinned_comment_es": "¿Compraste la Standard o la Ultimate? 👇"
 }

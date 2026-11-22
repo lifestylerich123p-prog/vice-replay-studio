@@ -14,7 +14,7 @@
   ],
   "short_description": "Vice Replay quiz: four GTA 6 rides, one detail each. Every answer is named on Rockstar's official Ultimate Edition page: the '95 Grotti Cheetah, the '67 Vapid Dominator Buggy, Jason's Dinka Enduro and the Shitzu Squalo. What did you score? Footage: official Rockstar screenshots.",
   "short_es": {
-    "title": "Solo los fans reales de GTA 6 sacan 4/4 #GTA6 #Shorts",
+    "title": "Solo los VERDADEROS fans de GTA 6 sacan 4/4 🧠 #GTA6 #Shorts",
     "description": "Quiz de Vice Replay: cuatro vehículos de GTA 6, un detalle cada uno. Todas las respuestas salen en la página oficial de la Ultimate Edition de Rockstar. ¿Cuántas acertaste?"
   },
   "short_playlist": "GTA 6 Shorts",
@@ -151,5 +151,6 @@
       "focus": 0.4,
       "keep_media": true
     }
-  ]
+  ],
+  "short_pinned_comment_es": "¿Cuántas acertaste? Responde 0, 1, 2, 3 o 4 👇"
 }

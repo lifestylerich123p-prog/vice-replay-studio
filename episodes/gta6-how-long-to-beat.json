@@ -168,7 +168,7 @@
   ],
   "short_description": "IShowSpeed finished GTA 6's story in one 52-hour, 31-minute stream (no spoilers here). A crash around hour 43 sent him back to an 88% save, and after the credits he overwrote his 98% save by accident. Reports: Men's Journal, Win.gg, VGTimes. Full video on the channel ⬇️",
   "short_es": {
-    "title": "IShowSpeed terminó GTA 6 en 52 HORAS... y perdió su partida #GTA6 #Shorts",
+    "title": "IShowSpeed terminó GTA 6 en 52 HORAS... y PERDIÓ su partida 😭 #GTA6 #Shorts",
     "description": "IShowSpeed terminó la historia de GTA 6 en un directo de 52 horas y 31 minutos (sin spoilers). Un crash cerca de la hora 43 lo regresó a un guardado del 88%, y después de los créditos sobrescribió sin querer su guardado del 98%. Video completo en el canal ⬇️"
   },
   "short_pinned_comment": "Could you play GTA 6 for 52 hours straight? YES or NO 😭",
@@ -265,5 +265,6 @@
         }
       ]
     }
-  ]
+  ],
+  "short_pinned_comment_es": "¿Cuántas horas llevas en GTA 6? Escribe el número 👇 (sin spoilers)"
 }

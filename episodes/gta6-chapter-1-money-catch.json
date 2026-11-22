@@ -10,7 +10,7 @@
   ],
   "short_description": "GTA 6 money tip: according to money guides from PowerPyx, GTAboom and others, the cash you farm in Chapter 1 doesn't carry into Chapter 2, so don't grind early. Play the story instead: in Chapter 2 you can sell stolen cars (cars without trackers, about $1,000+ each per guides), and the big money is bank vaults near the end of Chapter 4 (guides list up to $205,000 per vault). Payout numbers vary between guides. No story spoilers. More GTA 6 guides: vicereplay.com",
   "short_es": {
-    "title": "No farmees dinero en el Capítulo 1 de GTA 6 (la trampa) #GTA6 #Shorts",
+    "title": "NO farmees dinero en el Capítulo 1 de GTA 6 (la trampa) 💸 #GTA6 #Shorts",
     "description": "Consejo de dinero en GTA 6: según guías como PowerPyx y GTAboom, el dinero que juntas en el Capítulo 1 no pasa al Capítulo 2. Sigue la historia: en el Capítulo 2 puedes vender coches robados (sin rastreador, unos 1.000 $ o más según las guías) y el gran dinero llega con las cámaras acorazadas al final del Capítulo 4 (hasta 205.000 $ según las guías)."
   },
   "short_playlist": "GTA 6 Shorts",
@@ -65,5 +65,6 @@
       "media": "../media/trailer/extended-look-walk-to-car-palms.mp4"
     }
   ],
-  "format": "tips/discovery"
+  "format": "tips/discovery",
+  "short_pinned_comment_es": "¿Ya intentaste hacer dinero en el Capítulo 1? SÍ o NO 👇"
 }

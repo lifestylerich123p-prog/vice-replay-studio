@@ -1,6 +1,7 @@
 """Spanish channel: post the Spanish-voice versions of our Shorts to "Vice Replay en Español" (Nov 21, 2026).
 
     python -m studio.youtube_es whoami                                   # which channel YT_ES_REFRESH_TOKEN belongs to
+    python -m studio.youtube_es brand                                    # Spanish description, keywords, banner
     python -m studio.youtube_es episodes/<slug>.json --approve short,news [--date YYYY-MM-DD] [--at "9:30 AM"]
 
 studio.ship already renders `<name>-es.mp4` for every Short (Kokoro em_alex + text_es), and they were never posted.
@@ -31,6 +32,35 @@ ENV = "YT_ES_REFRESH_TOKEN"
 REGISTRY = ROOT / "content" / "learn" / "uploads-es.json"
 PLAYLIST = "GTA 6 en Español"
 NOT_AFFILIATED = "Canal de fans: no afiliado a Rockstar Games ni a Take-Two Interactive."
+
+
+DESCRIPTION = (
+    "Vice Replay en Español: noticias de GTA 6 cada mañana, en español. Streamers, récords, quizzes, el mapa de Leonida "
+    "contra la vida real y los detalles que casi nadie ve. Sin spoilers de la historia.\n\n"
+    "Shorts nuevos todos los días. Suscríbete para no perderte nada de Vice City.\n\n"
+    "🌴 Guías en español: vicereplay.com/es/\n📩 Contacto: vicereplay.com/contact/\n\n"
+    "Canal de fans: no afiliado a Rockstar Games ni a Take-Two Interactive. Las imágenes oficiales pertenecen a sus "
+    "dueños y las usamos con comentario propio.")
+KEYWORDS = ['GTA 6', 'GTA VI', 'GTA 6 español', 'noticias GTA 6', 'GTA 6 en español', 'Grand Theft Auto VI', 'Vice City',
+            'Leonida', 'Lucia', 'Jason', 'Rockstar Games', 'GTA 6 Shorts']
+BANNER = ROOT / "assets" / "brand" / "youtube-banner-es-2560x1440.jpg"
+
+
+def brand(tok, cid):
+    """Description, keywords, language and banner for the Spanish channel (the profile picture is set by hand in
+    Studio: the API can't change it)."""
+    ch, _ = req("GET", "https://youtube.googleapis.com/youtube/v3/channels?part=brandingSettings&mine=true", tok)
+    bs = ch["items"][0]["brandingSettings"]
+    bs.setdefault("channel", {}).update(
+        description=DESCRIPTION, defaultLanguage="es",
+        keywords=" ".join(f'"{k}"' if " " in k else k for k in KEYWORDS))
+    up, _ = req("POST", "https://www.googleapis.com/upload/youtube/v3/channelBanners/insert?uploadType=media", tok,
+                BANNER.read_bytes(), ctype="image/jpeg")
+    bs["image"] = {"bannerExternalUrl": up["url"]}
+    r, _ = req("PUT", "https://youtube.googleapis.com/youtube/v3/channels?part=brandingSettings", tok,
+               {"id": cid, "brandingSettings": {"channel": bs["channel"], "image": bs["image"]}})
+    c = r["brandingSettings"]["channel"]
+    print(f"Spanish channel branded: description {len(c.get('description', ''))} chars, keywords set, banner set.")
 
 
 def config():
@@ -78,7 +108,7 @@ def jobs(ep, approved):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("episode", help="episodes/<slug>.json, or 'whoami'")
+    ap.add_argument("episode", help="episodes/<slug>.json, 'whoami' or 'brand'")
     ap.add_argument("--approve", default="", help="short, news, ... or all (owner approval in chat only)")
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
     ap.add_argument("--at", help='posting time for every item, e.g. "9:30 AM" (ET)')
@@ -88,7 +118,10 @@ def main():
         cid, title = whoami(tok)
         print(f"{ENV} belongs to: {title} ({cid})")
         return
-    check_channel(tok)
+    cid = check_channel(tok)
+    if a.episode == "brand":
+        brand(tok, cid)
+        return
     ep = json.loads(Path(a.episode).read_text())
     slug, out = ep["slug"], ROOT / "output" / ep["slug"]
     day = dt.date.fromisoformat(a.date) if a.date else dt.datetime.now(ET).date()

@@ -14,7 +14,7 @@
   ],
   "short_description": "On Rockstar's official Leonida map (free download, rockstargames.com/VI): Vice City is Miami, the Leonida Keys are the Florida Keys (Key Lento = Key Largo), Grassrivers is the Everglades, and Lake Leonida sits where Lake Okeechobee is, next to Ambrosia's sugar country (GTABase, allthings.how, PC Gamer). But Mount Kalaga can't exist: Florida's highest point, Britton Hill, is 345 feet (Visit Florida). Footage: Rockstar's official map poster.",
   "short_es": {
-    "title": "El mapa de GTA 6 es Florida... menos esto #GTA6 #Shorts",
+    "title": "El mapa de GTA 6 es Florida... MENOS esto 🌴 #GTA6 #Shorts",
     "description": "En el mapa oficial de Leonida: Vice City es Miami, los Leonida Keys son los Cayos de Florida (Key Lento = Key Largo), Grassrivers son los Everglades y el lago Leonida está donde el lago Okeechobee. Pero el monte Kalaga no puede existir: el punto más alto de Florida mide 105 metros."
   },
   "short_playlist": "GTA 6 Shorts",
@@ -148,5 +148,6 @@
       "media": "../media/trailer/launch-trailer-marina-aerial.mp4",
       "keep_media": true
     }
-  ]
+  ],
+  "short_pinned_comment_es": "¿Qué lugar real de Florida debería estar en GTA 6? 👇"
 }

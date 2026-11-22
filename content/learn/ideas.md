@@ -3,6 +3,12 @@
 Rules: re-check every fact on the day you use it (2+ sources), label estimates/reports, no story spoilers, no
 isolated cutscenes. Mark an idea USED (date + slug) when it ships. Researched by the main chat; sources inline.
 
+## Spanish channel (researched Nov 22, 2026)
+1. **IlloJuan borró GTA 6 por error en directo** (~500K viewers, launch night in Spain; AuronPlay reacted). Only
+   ClaroSports so far (clarosports.com/us/tendencias-us/illojuan-ya-dejo-uno-de-los-clips-del-ano-borro-gta-6-por-error-ante-medio-millon-de-espectadores/):
+   needs a 2nd reliable source before use. Our voice + official footage only.
+2. **IlloJuan's 233,520-viewer record** was the Aug 2026 GTA VI presentation (Streams Charts via LevelUp), not launch.
+
 ## Researched Nov 21, 2026 (main chat: formats that need no gameplay)
 1. **Quiz: guess the GTA 6 place from the official map** (`quiz`). Magnify a map label area with the name blurred
    or cropped out, then reveal: Key Lento, Lake Leonida, Mount Kalaga National Park, Port Gellhorn, Vice Beach. Map:
