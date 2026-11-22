@@ -23,7 +23,9 @@ from .youtube_upload import channel_ids, req, token
 
 ROOT = Path(__file__).resolve().parent.parent
 LEARN = ROOT / "content" / "learn"
-API = "https://www.googleapis.com/youtube/v3/"
+# youtube.googleapis.com, not www.googleapis.com: this environment adds its read-only API key to www.googleapis.com
+# requests, which then see public videos only (Nov 22: private videos looked "deleted" through it)
+API = "https://youtube.googleapis.com/youtube/v3/"
 MIN_VIEWS, MIN_HOURS = 50, 48
 # owner.md 2026-11-22 11 AM: kept public on purpose (the website embeds them)
 KEEP = {"vJDnv7_7Hcs": "website embed (launch checklist)", "YqnShunG7WY": "website embed (best settings)",
