@@ -1,4 +1,4 @@
-# Vice Replay status (Sun Nov 22, 5:33 PM ET, `python -m studio.status`)
+# Vice Replay status (Sun Nov 22, 6:13 PM ET, `python -m studio.status`)
 
 ## Health
 Last check (2026-11-22 16:25 UTC, `python -m studio.doctor`)
@@ -12,7 +12,7 @@ Last check (2026-11-22 16:25 UTC, `python -m studio.doctor`)
 - 124 views: The first person to finish GTA 6 wasn't IShowSpeed #GTA6 #Sh
 - 49 views: GTA 6 locks 5 shops behind the $100 edition #GTA6 #Shorts
 - 0 views: GTA 6 This Week: $3.79 Billion, a 99 and 68M Views
-- Quota: ~2,306 units usable today (~0 uploads), resets 3 AM ET
+- Quota: ~2,294 units usable today (~0 uploads), resets 3 AM ET
 - Free slot Mon: 12:30 PM, 3:30 PM, 8:30 PM
 - Free slot Tue: 11:00 AM, 12:30 PM, 3:30 PM, 8:30 PM
 
@@ -44,7 +44,7 @@ Last check (2026-11-22 16:25 UTC, `python -m studio.doctor`)
 - $12,500 LACY GTA VI Marathon Pool Campaign (Reach): joined (owner screenshot in chat, Nov 19 7:09 AM)
 - Tomo GTA VI Clipping (Clipping Nation): paused (Nov 19: owner agreed to skip; $235 of $1,000 left with 36 clip
   - 1,865 views: LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Sho
-  - 9,473 views: LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts
+  - 9,467 views: LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts
   - 1,007 views: LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #G
   - 8 views: LACY vs a GTA 6 shark 🦈😳 #LACY #GTA6 #shortsyoutube
   - 2 views: LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #S
