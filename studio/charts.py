@@ -118,7 +118,7 @@ def counter_frame(base, spec, t, w, h):
         cx = (x0 + x1) / 2
         d.text((cx - fv.getlength(txt) / 2, top), txt, font=fv, fill=brand.PINK if k == 0 else brand.CYAN)
         if s.get("label"):
-            ls = max(26, int(rh * 0.15))
+            ls = max(int(w * 0.034), int(rh * 0.15))  # >= 36 px on a Short
             fl = brand.font(brand.BODY_FONT, ls)
             while fl.getlength(s["label"]) > (x1 - x0) * 0.9 and ls > 22:
                 ls -= 2
