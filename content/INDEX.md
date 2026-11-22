@@ -32,6 +32,7 @@ Read this first instead of searching the repo.
 | ? | gta6-guess-the-ride | Short | Guess the GTA 6 Ride From One Detail | short: I2VEKQUia8w |
 | ? | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | short: Egb3otGWJIg |
 | ? | gta6-dexter-apartment | Short | Players Found Dexter's Apartment in GTA 6 | short: dOv6212lgj4 |
+| ? | gta6-cheapest-gta-inflation | Short | GTA 6 Is the CHEAPEST GTA Ever (After Inflation) | - |
 | ? | gta6-99-club | Short | GTA 6's 99 on Metacritic: Only ONE Other Game Has It | - |
 | 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 |
 | 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | - |
