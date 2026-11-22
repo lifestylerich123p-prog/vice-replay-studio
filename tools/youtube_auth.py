@@ -12,7 +12,7 @@ and it prints a REFRESH TOKEN. Put these three values in the Claude environment 
     YT_REFRESH_TOKEN  = the refresh token this prints
 
 Spanish channel ("Vice Replay en Español"): add --es, pick the Spanish channel on Google's screen, and save the token
-as YT_ES_REFRESH_TOKEN instead (the client ID and secret stay the same):
+as YT_SPANISH_REFRESH_TOKEN instead (the client ID and secret stay the same):
 
     python3 youtube_auth.py client_secret_XXXX.json --es
     python3 youtube_auth.py --es          (asks you to paste the client ID and secret)
@@ -29,7 +29,7 @@ import urllib.parse
 import urllib.request
 import webbrowser
 
-SPANISH = "--es" in sys.argv  # token for the Spanish channel: saved as YT_ES_REFRESH_TOKEN
+SPANISH = "--es" in sys.argv  # token for the Spanish channel: saved as YT_SPANISH_REFRESH_TOKEN
 if SPANISH:
     sys.argv.remove("--es")
 
@@ -126,7 +126,7 @@ def main():
         print(f"\nThis token belongs to the channel: {ch.get('snippet', {}).get('title')} ({ch.get('id')})")
     except Exception as e:  # noqa: BLE001 - only informational
         print(f"(couldn't read the channel name: {e})")
-    name = "YT_ES_REFRESH_TOKEN" if SPANISH else "YT_REFRESH_TOKEN"
+    name = "YT_SPANISH_REFRESH_TOKEN" if SPANISH else "YT_REFRESH_TOKEN"  # Nov 22: YT_ES_* is retired
     which = "the SPANISH channel (Vice Replay en Español)" if SPANISH else "the English channel (Vice Replay)"
     print(f"\nIf that is {which}, put this in the environment settings as {name} (don't share it):\n")
     print(tok["refresh_token"])
