@@ -26,7 +26,7 @@ from pathlib import Path
 
 from . import postguard
 from .review_page import extra_time, times_for
-from .youtube_upload import (ET, ROOT, add_to_playlist, comment, req, slot, srt_from_timings, token, upload,
+from .youtube_upload import (ET, ROOT, add_to_playlist, comment, req, slot, srt_from_timings, token, token_for, upload,
                              upload_caption, yt_safe)
 
 import os
@@ -119,7 +119,12 @@ def main():
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
     ap.add_argument("--at", help='posting time for every item, e.g. "9:30 AM" (ET)')
     a = ap.parse_args()
-    tok = token(ENV)
+    if a.episode == "whoami":  # what the preferred setting holds, exactly
+        cid, title = whoami(token(ENV))
+        print(f"{ENV} belongs to: {title} ({cid})")
+        return
+    es_id = config().get("vice-replay-es", {}).get("channel_id")
+    tok = token_for(es_id, ENV) if es_id else token(ENV)
     if a.episode == "whoami":
         cid, title = whoami(tok)
         print(f"{ENV} belongs to: {title} ({cid})")

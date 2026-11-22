@@ -5,7 +5,7 @@ Read this first instead of searching the repo.
 ## Where things live
 - Rules: `CLAUDE.md` · settings, links, approvals, chats: `content/owner.md` · plan: `content/launch-plan.md`
 - What was made: `content/log.md` · numbers: `content/performance.md`, `content/learn/channel.json`, `content/learn/analytics.json` · lessons: `content/learn/lessons.md`, `content/learn/patterns.md`
-- Latest market report: `content/learn/market-2026-11-21.md`
+- Latest market report: `content/learn/market-es-2026-11-22.md`
 - Routines: `.claude/commands/` · code: `studio/` · website: `site/` + `tools/site_guides.py` (repo vicereplay-site)
 - Screenshots: `media/official/` (names = place/character/car) · gameplay: `media/gameplay/` (+ processed.json)
 - Renders: `output/<slug>/` (videos auto-deleted 2 days after upload; `uploaded.json` kept)

@@ -15,6 +15,7 @@ Checks:
 import argparse
 import datetime as dt
 import json
+import os
 import shutil
 import urllib.request
 from pathlib import Path
@@ -57,12 +58,21 @@ def main():
     else:
         warn.append("Unknown last YouTube reconnect date (write it to content/learn/youtube_connected.txt)")
 
+    # 1a. Keys saved under the right names? (they're picked by channel, so a swap still works, but tidy it)
+    try:
+        from .youtube_upload import _owner_of, channel_ids
+        if os.environ.get("YT_REFRESH_TOKEN") and _owner_of(token("YT_REFRESH_TOKEN")) != channel_ids()["en"]:
+            warn.append("YT_REFRESH_TOKEN holds the Spanish channel's key (still works: keys are picked by channel). "
+                        "Tidy the settings: English key in YT_REFRESH_TOKEN, Spanish key in YT_SPANISH_REFRESH_TOKEN.")
+    except (SystemExit, Exception):  # noqa: BLE001 - informational only
+        pass
+
     # 1b. Spanish channel (Vice Replay en Español): its own token, same 7-day expiry while the Google app is in Testing
-    import os
     if os.environ.get("YT_SPANISH_REFRESH_TOKEN") or os.environ.get("YT_ES_REFRESH_TOKEN"):
         try:
             from . import youtube_es
-            youtube_es.check_channel(token(youtube_es.ENV))
+            from .youtube_upload import channel_ids, token_for
+            youtube_es.check_channel(token_for(channel_ids()["es"], youtube_es.ENV))
             ok.append("Spanish channel (Vice Replay en Español) connection works")
         except SystemExit as e:
             bad.append(f"Spanish channel connection FAILED: {str(e)[:160]}")

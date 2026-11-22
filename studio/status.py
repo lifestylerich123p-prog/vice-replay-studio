@@ -36,7 +36,8 @@ def spanish_section(now):
         from .youtube_upload import req, token
         if not (os.environ.get("YT_SPANISH_REFRESH_TOKEN") or os.environ.get("YT_ES_REFRESH_TOKEN")):
             return L + ["- token not loaded in this session", ""]
-        tok = token(youtube_es.ENV)
+        from .youtube_upload import channel_ids, token_for
+        tok = token_for(channel_ids()["es"], youtube_es.ENV)
         try:  # never show another channel's numbers under this heading
             youtube_es.check_channel(tok)
         except SystemExit as e:

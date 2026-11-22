@@ -21,6 +21,7 @@ import datetime as dt
 import json
 from urllib.parse import parse_qs, urlparse
 import os
+import re
 import sys
 import urllib.error
 import urllib.parse
@@ -35,8 +36,67 @@ ROOT = Path(__file__).resolve().parent.parent
 ET = ZoneInfo("America/New_York")
 
 
-def token(refresh_env="YT_REFRESH_TOKEN"):
-    """Access token for the channel whose refresh token is in `refresh_env` (YT_ES_REFRESH_TOKEN = the Spanish channel)."""
+_BY_CHANNEL = {}
+
+
+def channel_ids():
+    """{"en": Vice Replay id, "es": Vice Replay en Español id} from config/channel.json."""
+    ch = json.loads((ROOT / "config" / "channel.json").read_text())["channels"]
+    return {"en": ch["vice-replay"]["channel_id"], "es": ch.get("vice-replay-es", {}).get("channel_id", "")}
+
+
+def _owner_of(access):
+    """Channel id an access token belongs to (1 quota unit)."""
+    rq = urllib.request.Request("https://youtube.googleapis.com/youtube/v3/channels?part=id&mine=true",
+                                headers={"Authorization": f"Bearer {access}"})
+    with urllib.request.urlopen(rq, timeout=30) as r:
+        items = json.load(r).get("items") or [{}]
+    from . import quota
+    quota.spend("GET", "https://youtube.googleapis.com/youtube/v3/channels")
+    return items[0].get("id")
+
+
+def token_for(channel_id, prefer="YT_REFRESH_TOKEN"):
+    """Access token for a given channel, whichever YT_*REFRESH_TOKEN setting holds it (Nov 22: the owner's settings
+    ended up with the English and Spanish keys swapped; picking by channel, not by name, makes that harmless)."""
+    if channel_id in _BY_CHANNEL:
+        return _BY_CHANNEL[channel_id]
+    names = [prefer] + sorted(n for n in os.environ if re.fullmatch(r"YT_\w*REFRESH_TOKEN", n) and n != prefer)
+    first_error = None
+    for n in names:
+        if not os.environ.get(n):
+            continue
+        try:
+            acc = token(n)
+            owner = _owner_of(acc)
+        except SystemExit as e:
+            first_error = first_error or e
+            continue
+        except (urllib.error.URLError, OSError):
+            continue
+        if owner == channel_id:
+            if n != prefer:
+                print(f"(note: {prefer} holds another channel's key; using {n}, which belongs to {channel_id})",
+                      file=sys.stderr)
+            _BY_CHANNEL[channel_id] = acc
+            return acc
+    if first_error:
+        raise first_error
+    sys.exit(f"No saved YouTube key (YT_*REFRESH_TOKEN) belongs to channel {channel_id}. Reconnect it with "
+             "tools/youtube_auth.py and save the key in the environment settings.")
+
+
+def token(refresh_env=None):
+    """Access token. With no argument: the English channel's key, found by channel (see token_for). With a setting
+    name: exactly that setting's key (used to diagnose which channel a setting holds)."""
+    if refresh_env is None:
+        try:
+            ids = channel_ids()
+        except (OSError, ValueError, KeyError):
+            ids = {}
+        if ids.get("en"):
+            return token_for(ids["en"], "YT_REFRESH_TOKEN")
+        refresh_env = "YT_REFRESH_TOKEN"
     need = ["YT_CLIENT_ID", "YT_CLIENT_SECRET", refresh_env]
     missing = [k for k in need if not os.environ.get(k)]
     if missing:
