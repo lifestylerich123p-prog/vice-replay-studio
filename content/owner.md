@@ -152,6 +152,8 @@
   (gta6-this-week-launch `tips`, `es_only` in the episode) goes to the **Spanish channel only**, Mon 3:30 PM. The
   Mon 3:12 / 3:20 AM reminders were written before this: follow this entry. The Mon 12:40 PM ranking-comment
   reminder is void (that video won't be public).
+- 2026-11-22 (8:40 AM ET, owner "find upgrades"): races Short sP1fq11WMmw moved from Sun 5 PM to **Thu Nov 26 11:00 AM**
+  (2-6 PM posts: median 2.7 views/h vs 16 for 6-11 AM); its IG Reel moved to Thu 11:05; Sun 5:10 PM comment reminder void.
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.

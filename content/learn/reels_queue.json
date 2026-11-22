@@ -154,12 +154,6 @@
   "note": "replaced the stale launch-day survival-guide Reel (servers/settings, launch was Nov 19) with the BrycexD Short"
  },
  {
-  "at": "2026-11-22 17:30",
-  "episode": "episodes/gta6-race-hud-details.json",
-  "item": "short",
-  "note": "17:30 keeps Sunday's posts 2.5 h+ apart"
- },
- {
   "at": "2026-11-22 20:30",
   "episode": "episodes/gta6-this-week-launch.json",
   "item": "news",
@@ -226,6 +220,12 @@
   "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
   "item": "news",
   "note": "moved to Wed 5:30 PM: Sunday 8:30 PM went to the IShowSpeed top-3 Reel (4/day cap)"
+ },
+ {
+  "at": "2026-11-26 11:05",
+  "episode": "episodes/gta6-race-hud-details.json",
+  "item": "short",
+  "note": "17:30 keeps Sunday's posts 2.5 h+ apart | moved Nov 22 to Thu 11:05 AM with the YouTube Short (5 PM slot data: 2-6 PM median 2.7 v/h vs 6-11 AM 16)"
  },
  {
   "at": "2026-12-31 23:59",

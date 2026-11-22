@@ -23,7 +23,9 @@ non-GTA campaign; What If Arena = AI videos.
 ## Posting schedule (US Eastern; adjust from analytics)
 Weekdays: main Short 9:30 AM, tips Short 12:30 PM, main 3:30 PM, news Short 8:30 PM. Saturday: 10 AM, 12:30, 1:30,
 8 PM. Sunday: 10 AM, 12:30, 2:30, 7:30 PM (Nov 21 data: morning Shorts ~21 views/h vs 0.7 for 12-5 PM). Big news: post
-as soon as it's ready. Upload early, scheduled.
+as soon as it's ready. Upload early, scheduled. Nov 22 data (21 Shorts since launch, median views/h by ET post time):
+6-11 AM 16, 11 AM-2 PM 10, 2-6 PM 2.7, 6 PM-6 AM 1.9: Shorts go in the daytime slots (9:30, 11:00, 12:30); 3:30/8:30 PM
+only for big news or long videos (`studio.quota` lists daytime first).
 
 ## Rules for this channel
 - **Footage**: everything in `media/` is used as backgrounds. Allowed: official Rockstar screenshots
