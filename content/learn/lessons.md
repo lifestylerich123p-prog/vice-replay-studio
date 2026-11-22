@@ -166,3 +166,12 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   only Sunday's recap; tips/how-to Shorts median 237 (3/7 under 50) -> website only; catch 1,174, number/verdict 928,
   streamer 638 (0 flops); Shorts at 6-11 AM median 1,084 vs 2-6 PM 199; 76+ word scripts median 404 vs 56-75 words 836
   (block now at 76). 9 flops set private (not deleted).
+- 2026-11-22 (hook research): our 20 Shorts with retention data: question as the first sentence 35% viewed (median 130
+  views, n=4) vs statement 60% (858, n=16). Best: the surprising result at once ("Eighteen hours early." 82%, "GTA 6
+  cheats are real, but there's a catch nobody expected." 75%, "GTA 6 just got a ninety nine on Metacritic." 66%).
+  Worst: questions ("Can't get into GTA 6?" 25%, "GTA 6 looking blurry?" 26%) and setups ("Rockstar's boss almost
+  never speaks in public." 47%). Outside research (vendor blogs, inconsistent numbers) agrees: claim first, no intro,
+  curiosity gap + fast payoff. Now enforced: studio.vice publish blocks a question opener.
+- 2026-11-22 (hook investigation, content/learn/hooks-2026-11-22.md): a number in the first on-screen headline kept 65%
+  vs 49%; real gameplay moments 89% vs 58% narrated; top market Shorts with titles of 40 characters or less 95K v/h vs
+  70K; "when..."/POV titles 2x (needs gameplay). "#8" in a title became a hashtag (caught in the Lucia title, now blocked).

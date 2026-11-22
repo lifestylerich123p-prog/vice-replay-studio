@@ -7,9 +7,9 @@
   "format": "comparison",
   "mood": "bright",
   "use_gameplay": false,
-  "short_title": "GTA 6 is the CHEAPEST GTA ever (after inflation) #GTA6 #Shorts",
+  "short_title": "GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Shorts",
   "short_title_options": [
-    "GTA 6 is the CHEAPEST GTA ever (after inflation) #GTA6 #Shorts",
+    "GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Shorts",
     "GTA 6 costs less than GTA 5 did (inflation math) #GTA6 #Shorts",
     "GTA 6's $80 vs every GTA in today's money #GTA6 #Shorts"
   ],
@@ -62,10 +62,10 @@
   ],
   "short": [
     {
-      "headline": "CHEAPEST GTA EVER?",
-      "headline_es": "¿EL MÁS BARATO?",
-      "text": "GTA 6 costs eighty dollars. After inflation, that's the cheapest GTA ever.",
-      "text_es": "GTA 6 cuesta ochenta dólares. Con la inflación, es el GTA más barato de la historia.",
+      "headline": "CHEAPEST GTA EVER",
+      "headline_es": "EL GTA MÁS BARATO",
+      "text": "GTA 6 is the cheapest GTA ever, after inflation.",
+      "text_es": "GTA 6 es el GTA más barato de la historia, con la inflación.",
       "keep_media": true,
       "chart": {
         "type": "counter",
@@ -78,7 +78,7 @@
     {
       "headline": "IN TODAY'S MONEY",
       "headline_es": "EN DINERO DE HOY",
-      "text": "GTA 3 and GTA 4 cost about ninety four dollars in today's money. GTA 5, about eighty six.",
+      "text": "GTA 3 and 4 cost about ninety four dollars in today's money. GTA 5, about eighty six.",
       "text_es": "GTA 3 y GTA 4 costaron unos noventa y cuatro dólares de hoy. GTA 5, unos ochenta y seis.",
       "keep_media": true,
       "chart": {

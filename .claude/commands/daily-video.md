@@ -56,6 +56,8 @@ scripts of 76+ words median 404 vs 56-75 words 836. So:
 - **Every Short is a catch, a number/verdict or a streamer story**, built on a `chart` (or owner gameplay), 56-75 words
   max (`studio.vice publish` blocks 76+), posted 9:30 / 11:00 / 12:30.
 - Hide (private, never delete) any Short under 50 views after 48 h, and add its pattern to content/learn/lessons.md.
+- **Hook**: first sentence = the surprising result as a statement (3-10 words), never a question (35% vs 60% of
+  viewers kept); templates with our numbers in resources/hooks-and-titles.md.
 
 **NOV 22 BLUEPRINT RULES (owner: "match the energy", "titles and tags perfect"; apply to every Short).**
 - **Market scan first**: YouTube API search (`order=viewCount`, last 48 h, `videoDuration=short`) for "GTA 6" AND "GTA VI"

@@ -39,6 +39,13 @@ def check(ep, gameplay_available=False):
         b, w = check_short(ep, key, title, segs, gameplay_available)
         blockers += b
         warnings += w
+    # "#8" in a title becomes a clickable YouTube hashtag (Nov 22: the Lucia title had "#8 you can't get now")
+    titles = [ep.get("short_title"), *(ep.get("short_title_options") or []), (ep.get("short_es") or {}).get("title")]
+    for sh in ep.get("shorts") or []:
+        titles += [sh.get("title"), *(sh.get("title_options") or []), (sh.get("es") or {}).get("title")]
+    for t in filter(None, titles):
+        if re.search(r"#\d", t):
+            blockers.append(f"title: {t!r} has '#' + a number, which YouTube turns into a hashtag; write 'No. 8' or reword")
     return blockers, warnings + check_tags(ep)
 
 
@@ -60,6 +67,23 @@ def check_short(ep, key, title, segs, gameplay_available=False):
                         f"(leaderboard / counter / VS of numbers we checked, studio/charts.py) or owner gameplay; "
                         f"trailer clips only as cutaways")
     if segs:
+        # Hook (Nov 22, owner: "research hooks to get the viewers' attention"): our 20 Shorts with retention data:
+        # a question as the first sentence kept 35% (median 130 views) vs 60% for a statement (858). Best openers state
+        # the surprising result at once ("Eighteen hours early." 82%; "GTA 6 cheats are real, but there's a catch" 75%).
+        opener = re.split(r"(?<=[.?!])\s", (segs[0].get("text") or "").strip())[0]
+        if opener.endswith("?"):
+            blockers.append(f"hook: Short '{key}' opens with a question ({opener!r}). Questions first kept 35% of viewers "
+                            f"vs 60% for a statement: open with the surprising result itself, then the catch")
+        if not re.search(r"\d", segs[0].get("headline") or "") and not segs[0].get("chart"):
+            warnings.append(f"hook: Short '{key}' opens without a number on screen; our Shorts with a number in the first "
+                            f"headline kept 65% of viewers vs 49% (put the number in the headline or open on a `chart`)")
+        core = re.sub(r"#\S+", "", title or "").strip()
+        if len(core) > 45:
+            warnings.append(f"title: '{core}' is {len(core)} characters; the top GTA 6 Shorts with titles of 40 or less "
+                            f"averaged 95K views/h vs 70K for longer ones")
+        if len(opener.split()) > 14:
+            warnings.append(f"hook: Short '{key}' first sentence is {len(opener.split())} words; the best openers say "
+                            f"the result in 3-10 words")
         first = segs[0]
         swapped = gameplay_available and ep.get("use_gameplay", True) is not False and not first.get("keep_media")
         if not swapped and not _moves(first):

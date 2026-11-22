@@ -53,3 +53,18 @@ def test_trailer_only_shorts_need_a_chart_or_gameplay():
     assert not any(x.startswith("originality") for x in viewcheck.check(gameplay)[0])
     waived = dict(plain, originality="owner-approved montage")
     assert not any(x.startswith("originality") for x in viewcheck.check(waived)[0])
+
+
+def test_question_hooks_block():
+    q = {"originality": "test", "short": [{"headline": "BLURRY?", "text": "GTA 6 looking blurry? Change this.", "media": "a.mp4"}]}
+    assert any(x.startswith("hook") for x in viewcheck.check(q)[0])
+    ok = {"originality": "test", "short": [{"headline": "18 HOURS EARLY", "text": "Eighteen hours early. Here's how.", "media": "a.mp4"}]}
+    assert not any(x.startswith("hook") for x in viewcheck.check(ok)[0])
+
+
+def test_hash_number_in_title_blocks():
+    ep = {"originality": "test", "short_title": "GTA 6: #8 you can't get #GTA6 #Shorts",
+          "short": [{"headline": "8 LOOKS", "text": "Eight looks.", "media": "a.mp4"}]}
+    assert any(x.startswith("title") for x in viewcheck.check(ep)[0])
+    ep["short_title"] = "GTA 6 Lucia: 8 outfits #GTA6 #Shorts"
+    assert not any(x.startswith("title") for x in viewcheck.check(ep)[0])
