@@ -1,20 +1,20 @@
 {
  "2026-11-21": {
-  "used": 11013,
+  "used": 15123,
   "calls": {
-   "GET channels": 24,
-   "GET playlistItems": 17,
+   "GET channels": 28,
+   "GET playlistItems": 21,
    "GET videos": 16,
    "GET commentThreads": 1,
    "POST commentThreads": 2,
    "PUT channels": 2,
    "GET search": 3,
    "POST channelBanners/insert": 1,
-   "POST videos": 5,
-   "POST captions": 5,
-   "GET playlists": 5,
+   "POST videos": 7,
+   "POST captions": 7,
+   "GET playlists": 7,
    "POST playlists": 1,
-   "POST playlistItems": 4,
+   "POST playlistItems": 6,
    "PUT videos": 3
   },
   "registry_est": 17500
