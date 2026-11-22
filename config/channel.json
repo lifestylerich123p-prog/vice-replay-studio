@@ -80,5 +80,8 @@
       "note": "Spanish-voice versions of Vice Replay Shorts (rendered every day by studio.ship). Upload: python -m studio.youtube_es. channel_id is filled in after the owner creates the channel and `youtube_es whoami` shows it."
     }
   },
-  "caption_style": "animated"
+  "caption_style": "animated",
+  "voice": "af_heart",
+  "voice_es": "em_alex",
+  "_voice_note": "Nov 22 owner: \"use the best voice rated\" -> Kokoro af_heart (grade A; am_michael was C+). Kokoro grades no Spanish voice, so Spanish stays em_alex until the owner picks."
 }

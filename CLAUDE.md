@@ -42,7 +42,8 @@ only for big news or long videos (`studio.quota` lists daytime first).
   retires most stock footage (keeps a core for site cards, thumbnails, character news).
 - **No official GTA 6 music** (radio, trailer songs, score): Content ID. Game sound only from the owner's gameplay
   recorded with radio/music off. Audio is our generated synthwave theme + SFX (`"music": "none"`, `"sfx": false`).
-- **Cheap**: free Kokoro voice (English `am_michael`, Spanish `em_alex`); no paid APIs unless the owner says so.
+- **Cheap**: free Kokoro voice (English `af_heart`, grade A, owner Nov 22; Spanish `em_alex`; set in config/channel.json
+  `voice`/`voice_es`); no paid APIs unless the owner says so.
 - **Footage law** (details: `content/legal.md`): Rockstar's fan policy allows posting the owner's gameplay with real
   commentary; monetization is tolerated, not licensed. Never post isolated cutscenes, endings/big story moments,
   standalone in-game TV/comedy shows, or anything from leaked copies. YouTube ads: no graphic violence in the first

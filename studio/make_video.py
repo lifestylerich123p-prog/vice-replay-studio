@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 FPS = 30
 VIDEO_EXT = {".mp4", ".mov", ".mkv", ".webm", ".m4v"}
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".webp"}
-DEFAULT_VOICE = "am_michael"
+DEFAULT_VOICE = "af_heart"  # Kokoro grade A (am_michael is C+); config/channel.json "voice" overrides
 
 
 def run(cmd):
@@ -104,7 +104,7 @@ def tts(text, voice, rate, out_base):
             return premium_tts(text, voice, out_base)
         except Exception as e:
             print(f"  ! {voice.split(':')[0]} voice failed ({type(e).__name__}: {e}); using free Kokoro voice")
-            voice = "am_michael"
+            voice = channel_setting("voice") or DEFAULT_VOICE
     if not voice.endswith("Neural"):
         try:
             speed = 1 + int(rate.strip("%+")) / 100 if rate.strip("%+-").isdigit() else 1.08
@@ -255,6 +255,14 @@ def display_tokens(words, lang="en"):
         out.append((words[i], i, i, bool(re.search(r"\d|\$|%", words[i]))))
         i += 1
     return out
+
+
+def channel_setting(key, default=None):
+    """A channel-wide setting from config/channel.json (e.g. "voice", "voice_es", "caption_style")."""
+    try:
+        return json.loads((ROOT / "config" / "channel.json").read_text()).get(key, default)
+    except Exception:  # noqa: BLE001
+        return default
 
 
 def caption_style():
@@ -800,7 +808,9 @@ def main():
     if a.preview:
         w, h = w // 2, h // 2
     enc = ENC + (["-preset", "veryfast", "-crf", "28"] if a.preview else [])
-    voice = a.voice or ep.get("voice", DEFAULT_VOICE)
+    # Channel voice (config/channel.json "voice", owner Nov 22: "use the best voice rated" = Kokoro af_heart, grade A)
+    # wins over the episode's own "voice" (39 old episodes say am_michael, grade C+) unless it sets "voice_override".
+    voice = a.voice or ep.get("voice_override") or channel_setting("voice") or ep.get("voice", DEFAULT_VOICE)
     rate = ep.get("rate", "+8%")
 
     out_dir = ROOT / "output" / slug
@@ -811,7 +821,7 @@ def main():
         if not shorts:
             sys.exit("No 'short' or 'shorts' in this episode.")
         if a.es:
-            voice = a.voice or ep.get("voice_es", "em_alex")
+            voice = a.voice or ep.get("voice_es") or channel_setting("voice_es") or "em_alex"
             es_shorts = []
             for k, sh in enumerate(shorts):
                 es = sh.get("es") or (ep.get("short_es") if k == 0 and not sh.get("id") else None) or {}

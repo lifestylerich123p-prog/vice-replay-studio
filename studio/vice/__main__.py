@@ -41,7 +41,7 @@ def skeleton(topic, fmt):
     segs.append({"headline": "TELL ME BELOW", "headline_es": "", "text": "TODO: loop line ending with 'because'",
                  "text_es": "", "media": f"../media/trailer/{clips[-1].name}"})
     ep = {"title": f"GTA 6: {topic}", "slug": slug, "format": fmt, "series": "B: Rankings" if fmt == "ranking" else "C: Explained",
-          "voice": "am_michael", "rate": "+10%", "use_gameplay": True, "short_title": f"GTA 6: {topic} #GTA6 #Shorts",
+          "voice": "af_heart", "rate": "+10%", "use_gameplay": True, "short_title": f"GTA 6: {topic} #GTA6 #Shorts",
           "short_title_options": [], "short_description": "TODO", "short_es": {"title": "", "description": ""},
           "pinned_comment": "TODO", "tiktok_hashtags": ["#gta6", "#gtavi", "#gaming"], "sources": [], "short": segs}
     p.write_text(json.dumps(ep, indent=2, ensure_ascii=False) + "\n")
