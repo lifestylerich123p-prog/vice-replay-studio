@@ -45,10 +45,25 @@ def _region(w, h):
     return int(w * 0.08), int(h * 0.24), int(w * 0.92), int(h * 0.80)
 
 
+PALETTES = [((255, 31, 142), (40, 10, 90)), ((0, 229, 210), (30, 12, 80)), ((120, 40, 200), (255, 31, 142)),
+            ((255, 140, 60), (60, 10, 90)), ((0, 150, 255), (90, 20, 120)), ((255, 31, 142), (0, 120, 160))]
+
+
 def _backdrop(w, h, seed):
-    bg = brand.neon_background(w, h, seed=seed).convert("RGB").filter(ImageFilter.GaussianBlur(6))
-    shade = Image.new("RGB", (w, h), brand.NIGHT)
-    return Image.blend(bg, shade, 0.45)
+    """A gradient at its own angle and colors per chart video (seed), with faint synthwave lines. Nov 22: one shared
+    dark neon backdrop made every chart video fingerprint like our old title cards (and like each other)."""
+    import math
+
+    import numpy as np
+    c1, c2 = PALETTES[seed % len(PALETTES)]
+    ang = math.radians((seed * 67) % 360)
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    t = ((xx / w - 0.5) * math.cos(ang) + (yy / h - 0.5) * math.sin(ang)) + 0.5
+    t = np.clip(t, 0, 1)[..., None]
+    img = (np.array(c1, np.float32) * (1 - t) + np.array(c2, np.float32) * t) * 0.55
+    lines = (((xx * math.cos(ang + 1.2) + yy * math.sin(ang + 1.2)) // (h * 0.045)) % 2 == 0)[..., None]
+    img = img * np.where(lines, 1.0, 0.86)
+    return Image.fromarray(img.clip(0, 255).astype(np.uint8), "RGB")
 
 
 def _panel(img, box):
@@ -82,7 +97,11 @@ def bars_frame(base, spec, t, w, h):
         top = int(y0 + k * row)
         d.text((x0, top), str(label), font=fl, fill=brand.WHITE)
         by = top + int(row * 0.42)
-        full = (x1 - x0) * 0.74 * (max(0.0, v - floor) / max(1e-9, vmax - floor))
+        # leave room for the longest value label at the end of the longest bar (Nov 22: "$3.790 M" ran off the panel)
+        widest = max(fv.getlength(_fmt(x, dec, spec.get("prefix", ""), spec.get("unit", ""), spec.get("locale", "en")))
+                     for _, x in items)
+        span = min((x1 - x0) * 0.74, (x1 - x0) - widest - w * 0.03)
+        full = span * (max(0.0, v - floor) / max(1e-9, vmax - floor))
         col = brand.PINK if k == hl else brand.CYAN
         if p > 0:
             d.rounded_rectangle([x0, by, x0 + max(bar_h, full * p), by + bar_h], radius=bar_h // 2, fill=col)

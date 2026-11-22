@@ -138,7 +138,7 @@ def publish_draft(episode, dest):
         return vals[ctype]
 
     if not ep.get("shorts"):
-        video = out / f"{slug}-short.mp4"
+        video = out / (f"{slug}-short-es.mp4" if ep.get("es_only") else f"{slug}-short.mp4")  # es_only: Spanish file
         if not video.exists():
             sys.exit(f"Render first: python -m studio.ship {episode}")
         val, cover = channel_check(ep), out / "cover.jpg"
