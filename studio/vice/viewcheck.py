@@ -42,9 +42,23 @@ def check(ep, gameplay_available=False):
     return blockers, warnings + check_tags(ep)
 
 
+def _uses_gameplay(segs):
+    return any("media/gameplay" in str(x.get("media") or "") or any("media/gameplay" in str(y.get("media") or "")
+               for y in x.get("shots") or []) for x in segs)
+
+
 def check_short(ep, key, title, segs, gameplay_available=False):
     """(blockers, warnings) for one Short: `key` names it in the messages; `ep` gives `use_gameplay` and `format`."""
     blockers, warnings = [], []
+    # Original first (owner Nov 22: "graph, real evidence based... change the system to match"). YouTube's Oct 2026
+    # update ranks original Shorts higher; narration over reused trailer footage doesn't count. A Short needs at least
+    # one `chart` segment (our graphic of checked numbers) or owner gameplay, unless the episode carries an
+    # owner-approved "originality" note (e.g. the curated Lucia outfit montage).
+    gameplay = _uses_gameplay(segs) or (gameplay_available and ep.get("use_gameplay", True) is not False)
+    if segs and not any(x.get("chart") for x in segs) and not gameplay and not ep.get("originality"):
+        blockers.append(f"originality: Short '{key}' is narration over trailer footage only. Add a `chart` segment "
+                        f"(leaderboard / counter / VS of numbers we checked, studio/charts.py) or owner gameplay; "
+                        f"trailer clips only as cutaways")
     if segs:
         first = segs[0]
         swapped = gameplay_available and ep.get("use_gameplay", True) is not False and not first.get("keep_media")

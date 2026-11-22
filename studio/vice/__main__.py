@@ -38,6 +38,9 @@ def skeleton(topic, fmt):
     heads = ["NUMBER 3", "NUMBER 2", "NUMBER 1"] if fmt == "ranking" else ["HOOK", "POINT 1", "POINT 2"]
     segs = [{"headline": h, "headline_es": "", "text": "TODO: one sourced sentence", "text_es": "",
              "media": f"../media/trailer/{clips[i % len(clips)].name}"} for i, h in enumerate(["HOOK"] + heads[:n - 2])]
+    # original first (Nov 22): the hook is our own graphic of a checked number (studio/charts.py)
+    segs[0] = {"headline": "HOOK", "headline_es": "", "text": "TODO: the checked number, said as words", "text_es": "",
+               "chart": {"type": "counter", "value": 0, "label": "TODO: what the number counts", "seed": 1}}
     segs.append({"headline": "TELL ME BELOW", "headline_es": "", "text": "TODO: loop line ending with 'because'",
                  "text_es": "", "media": f"../media/trailer/{clips[-1].name}"})
     ep = {"title": f"GTA 6: {topic}", "slug": slug, "format": fmt, "series": "B: Rankings" if fmt == "ranking" else "C: Explained",

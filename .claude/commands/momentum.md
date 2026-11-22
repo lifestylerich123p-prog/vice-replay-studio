@@ -19,3 +19,6 @@ Momentum run for Vice Replay. Nobody is watching live: don't ask questions. Read
    plus a first line "MOMENTUM: <original Short title> is at <n> views/hour; follow-up ready, owner approves in main chat."
    Also send the .mp4 files with SendUserFile and finish with: **Reply "approve" in the main chat to post the follow-up.**
 5. Don't upload anything, don't push, don't make more than one follow-up per run.
+
+**Nov 22 (owner): original first.** A follow-up Short is built around a `chart` of new checked numbers (or owner
+gameplay); trailer-only narration is blocked by `studio.vice publish`.

@@ -1,0 +1,157 @@
+{
+  "title": "GTA 6 Is the CHEAPEST GTA Ever (After Inflation)",
+  "slug": "gta6-cheapest-gta-inflation",
+  "series": "C: Tested",
+  "voice": "af_heart",
+  "rate": "+12%",
+  "format": "comparison",
+  "mood": "bright",
+  "use_gameplay": false,
+  "short_title": "GTA 6 is the CHEAPEST GTA ever (after inflation) #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 is the CHEAPEST GTA ever (after inflation) #GTA6 #Shorts",
+    "GTA 6 costs less than GTA 5 did (inflation math) #GTA6 #Shorts",
+    "GTA 6's $80 vs every GTA in today's money #GTA6 #Shorts"
+  ],
+  "short_description": "Every main GTA's US launch price, in October 2026 dollars (BLS CPI-U, our math): GTA III (2001) $49.99 = about $95; GTA IV (2008) $59.99 = about $94; Vice City (2002) $49.99 = about $93; San Andreas (2004) $49.99 = about $88; GTA V (2013) $59.99 = about $86; GTA 6 standard edition $79.99. The Ultimate Edition ($99.99) is not the cheapest. Inflation isn't the same as what wages buy, so it can still feel expensive. Sources: Take-Two/Rockstar price announcement (TechRadar, Windows Central), BLS CPI, OpenCritic, Tech4Gamers. No spoilers.",
+  "short_es": {
+    "title": "GTA 6 es el GTA más BARATO de la historia (con inflación) 💸 #GTA6 #Shorts",
+    "description": "El precio de lanzamiento de cada GTA en dólares de octubre de 2026 (IPC de EE. UU., cálculo nuestro): GTA III unos 95, GTA IV unos 94, Vice City unos 93, San Andreas unos 88, GTA V unos 86. GTA 6 edición estándar: 79,99. La Ultimate (99,99) no es la más barata. Sin spoilers.",
+    "tags": [
+      "GTA 6 precio",
+      "GTA 6 80 dólares",
+      "GTA 6 barato",
+      "GTA 6 inflación",
+      "precio GTA 5",
+      "GTA 6 vale la pena",
+      "GTA 6 español"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Bargain or too expensive? Reply BARGAIN or TOO MUCH 👇",
+  "short_pinned_comment_es": "¿Ganga o muy caro? Responde GANGA o CARO 👇",
+  "tags": [
+    "GTA 6 price",
+    "GTA 6 $80",
+    "GTA 6 cheapest GTA",
+    "GTA 6 inflation",
+    "GTA 5 price",
+    "GTA 6 worth it",
+    "GTA 6 cost",
+    "GTA 6 standard edition",
+    "GTA price history"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gaming",
+    "#price"
+  ],
+  "sources": [
+    "TechRadar - official GTA 6 price ($79.99 standard, $99.99 Ultimate): https://www.techradar.com/gaming/we-finally-know-the-official-gta-6-price-its-expensive-but-not-too-bad",
+    "Windows Central - GTA VI price confirmed at $79.99: https://windowscentral.com/gaming/grand-theft-auto-vi-price-confirmed-at-usd79-99-with-a-feature-locking-ultimate-edition-at-usd99-99-and-the-physical-edition-is-just-a-code-in-a-box",
+    "BLS - CPI-U October 2026 (337.511), released Nov 10, 2026: https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+    "Our math: launch price x CPI-U Oct 2026 / CPI-U of the launch month (Oct 2001 177.7, Oct 2002 181.3, Oct 2004 190.9, Apr 2008 214.823, Sep 2013 234.149)",
+    "OpenCritic - GTA 6 is actually the cheapest game in the series when adjusted for inflation: https://opencritic.com/news/33766/gta-6-is-actually-the-cheapest-game-in-the-series-when-adjusted-for-inflation-as-if-that-even-counts",
+    "Tech4Gamers - adjusted for inflation, GTA 6 is the cheapest installment: https://tech4gamers.com/inflation-gta-6-cheapest-installment/"
+  ],
+  "short": [
+    {
+      "headline": "CHEAPEST GTA EVER?",
+      "headline_es": "¿EL MÁS BARATO?",
+      "text": "GTA 6 costs eighty dollars. After inflation, that's the cheapest GTA ever.",
+      "text_es": "GTA 6 cuesta ochenta dólares. Con la inflación, es el GTA más barato de la historia.",
+      "keep_media": true,
+      "chart": {
+        "type": "counter",
+        "value": 79.99,
+        "prefix": "$",
+        "label": "GTA 6, standard edition",
+        "seed": 9
+      }
+    },
+    {
+      "headline": "IN TODAY'S MONEY",
+      "headline_es": "EN DINERO DE HOY",
+      "text": "GTA 3 and GTA 4 cost about ninety four dollars in today's money. GTA 5, about eighty six.",
+      "text_es": "GTA 3 y GTA 4 costaron unos noventa y cuatro dólares de hoy. GTA 5, unos ochenta y seis.",
+      "keep_media": true,
+      "chart": {
+        "type": "bars",
+        "items": [
+          [
+            "GTA III (2001)",
+            95
+          ],
+          [
+            "GTA IV (2008)",
+            94
+          ],
+          [
+            "Vice City (2002)",
+            93
+          ],
+          [
+            "San Andreas (2004)",
+            88
+          ],
+          [
+            "GTA V (2013)",
+            86
+          ],
+          [
+            "GTA 6 (2026)",
+            80
+          ]
+        ],
+        "prefix": "$",
+        "highlight": 5,
+        "floor": 60,
+        "note": "Launch price in Oct 2026 dollars (BLS CPI-U)",
+        "seed": 9
+      }
+    },
+    {
+      "headline": "$86 VS $80",
+      "headline_es": "86 VS 80",
+      "text": "So GTA 6 is about six dollars cheaper than GTA 5 was.",
+      "text_es": "O sea, GTA 6 es unos seis dólares más barato que GTA 5.",
+      "keep_media": true,
+      "chart": {
+        "type": "counter",
+        "value": 86,
+        "prefix": "$",
+        "label": "GTA V in 2026 dollars",
+        "seed": 9,
+        "vs": {
+          "value": 79.99,
+          "prefix": "$",
+          "label": "GTA 6"
+        }
+      }
+    },
+    {
+      "headline": "BARGAIN?",
+      "headline_es": "¿GANGA?",
+      "text": "Bargain, or still too much? Tell me, because",
+      "text_es": "¿Ganga, o todavía muy caro? Dime, porque",
+      "keep_media": true,
+      "shots": [
+        {
+          "media": "../media/trailer/extended-look-convertible-waterfront.mp4",
+          "start": 0.0,
+          "dur": 1.0
+        },
+        {
+          "media": "../media/trailer/out-now-yacht-bay.mp4",
+          "start": 0.0
+        }
+      ]
+    }
+  ]
+}

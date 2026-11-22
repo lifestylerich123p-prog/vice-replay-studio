@@ -162,6 +162,13 @@
   `gta6-trailer-views` (Rockstar trailer view counts) **Wed Nov 25 12:30 PM EN + ES**; the Spanish money Short is now
   `gta6-money-chart-es` (es_only, Mon 3:30 PM ES) and gta6-this-week-launch `tips` is `replaced_by` it. Uploads: Mon
   3:07 AM (money ES) and Tue 3:10 AM (99 club + trailers), after each day's quota reset.
+- 2026-11-22 (10 AM ET, owner: "change the video for the ones that will have more views and start changing the system
+  to match"; "use the best voice rated"): voice -> Kokoro af_heart (grade A) in config/channel.json for every new
+  render (Spanish stays em_alex); Lucia, top-3 rides, 99 club and trailer views re-rendered with it. The 33 s map Short
+  9ZmygQdJRBA (Tue 11 AM) is unscheduled and replaced by `gta6-cheapest-gta-inflation` (GTA 6 is the cheapest GTA after
+  inflation, our BLS CPI math): **Tue Nov 24 11:00 AM EN, Wed Nov 25 11:00 AM ES** (upload Tue 3:20 AM). System:
+  studio/vice/viewcheck.py now BLOCKS a Short that is narration over trailer footage only (needs a `chart` or owner
+  gameplay; an owner-approved `originality` note waives it, e.g. Lucia montage, top-3 rides).
 - 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.

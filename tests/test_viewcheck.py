@@ -4,7 +4,7 @@ from studio.vice import viewcheck
 
 def ep(first, words=40, title="GTA 6 just did 52 HOURS", headline="52 HOURS", **kw):
     seg1 = {"headline": headline, "text": "word " * words, **first}
-    return {"short_title": title, "short": [seg1, {"headline": "B", "text": "x"}], **kw}
+    return {"short_title": title, "short": [seg1, {"headline": "B", "text": "x"}], "originality": "test", **kw}
 
 
 def test_still_first_frame_blocks_unless_it_moves():
@@ -41,3 +41,15 @@ def test_missing_tags_warn_once_per_episode_not_per_short():
     assert sum("no `tags`" in x for x in w) == 1
     assert sum("Spanish versions have no tags" in x for x in w) == 1
     assert viewcheck.check_tags(dict(two, tags=["GTA 6 hours"], tags_es=["GTA 6 horas"])) == []
+
+
+def test_trailer_only_shorts_need_a_chart_or_gameplay():
+    plain = {"short": [{"headline": "52", "text": "x", "media": "../media/trailer/a.mp4"}]}
+    b, _ = viewcheck.check(plain)
+    assert any(x.startswith("originality") for x in b)
+    with_chart = {"short": [{"headline": "52", "text": "x", "chart": {"type": "counter", "value": 52}}]}
+    assert not any(x.startswith("originality") for x in viewcheck.check(with_chart)[0])
+    gameplay = {"short": [{"headline": "52", "text": "x", "media": "../media/gameplay/clip.mp4"}]}
+    assert not any(x.startswith("originality") for x in viewcheck.check(gameplay)[0])
+    waived = dict(plain, originality="owner-approved montage")
+    assert not any(x.startswith("originality") for x in viewcheck.check(waived)[0])

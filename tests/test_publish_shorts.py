@@ -42,7 +42,7 @@ def short(sid, first_media=CLIP_A, **kw):
 
 
 def write_episode(root, **ep):
-    ep = {"title": "GTA 6: test week", "slug": SLUG, "music": "none",
+    ep = {"title": "GTA 6: test week", "slug": SLUG, "music": "none", "originality": "test fixture (rules tested elsewhere)",
           "sources": ["https://www.rockstargames.com/newswire"],
           "segments": [{"headline": "MAIN", "text": "the main video", "media": CLIP_A}], **ep}
     p = root / "episodes" / f"{SLUG}.json"

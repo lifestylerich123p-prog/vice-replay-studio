@@ -42,3 +42,7 @@ doesn't pass every rule is NOT auto-posted.
 upload only if it reports no blockers (rights, facts, black frames, captions vs speech, channel/token check). If push
 to main is refused, also send the episode JSON + the log line to the main chat (fire_trigger trig_01XX9xXTp8xfb4i3yYUFP9uF)
 so the repo log stays complete.
+
+**Nov 22 (owner): original first.** Even breaking news needs at least one `chart` segment with the key checked number
+(e.g. a `counter` of the record, a `bars` leaderboard) — `studio.vice publish` blocks trailer-only narration. Voice: the
+channel voice in config/channel.json (af_heart). Trailer clips only as 1-2 s cutaways.
