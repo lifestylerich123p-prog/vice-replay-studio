@@ -211,6 +211,16 @@
   "note": "map vs Florida Short (YouTube Tue 11 AM)"
  },
  {
+  "at": "2026-11-25 12:00",
+  "episode": "episodes/gta6-dexter-apartment.json",
+  "item": "short"
+ },
+ {
+  "at": "2026-11-25 15:00",
+  "episode": "episodes/gta6-no-60fps-ps5-pro.json",
+  "item": "short"
+ },
+ {
   "at": "2026-12-31 23:59",
   "video": "output/clips/lacy-gta6/lacy-drive-thru.mp4",
   "campaign": "LACY (Content Rewards)",
