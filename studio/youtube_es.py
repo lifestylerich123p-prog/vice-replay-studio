@@ -43,7 +43,8 @@ DESCRIPTION = (
     "Vice Replay en Español: noticias de GTA 6 cada mañana, en español. Streamers, récords, quizzes, el mapa de Leonida "
     "contra la vida real y los detalles que casi nadie ve. Sin spoilers de la historia.\n\n"
     "Shorts nuevos todos los días. Suscríbete para no perderte nada de Vice City.\n\n"
-    "🌴 Guías en español: vicereplay.com/es/\n📩 Contacto: vicereplay.com/contact/\n\n"
+    "🌴 Guías en español: vicereplay.com/es/\n🎮 Equipo para GTA 6 (Amazon): vicereplay.com/es/equipo/\n"
+    "📩 Contacto: vicereplay.com/contact/\n\n"
     "Canal de fans: no afiliado a Rockstar Games ni a Take-Two Interactive. Las imágenes oficiales pertenecen a sus "
     "dueños y las usamos con comentario propio.")
 KEYWORDS = ['GTA 6', 'GTA VI', 'GTA 6 español', 'noticias GTA 6', 'GTA 6 en español', 'Grand Theft Auto VI', 'Vice City',

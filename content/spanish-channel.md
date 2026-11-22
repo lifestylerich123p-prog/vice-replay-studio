@@ -18,6 +18,7 @@ Vice Replay en Español: noticias de GTA 6 cada mañana, en español. Streamers,
 Shorts nuevos todos los días. Suscríbete para no perderte nada de Vice City.
 
 🌴 Guías en español: vicereplay.com/es/
+🎮 Equipo para GTA 6 (Amazon): vicereplay.com/es/equipo/
 📩 Contacto: vicereplay.com/contact/
 
 Canal de fans: no afiliado a Rockstar Games ni a Take-Two Interactive. Las imágenes oficiales pertenecen a sus dueños y las usamos con comentario propio.
@@ -28,7 +29,8 @@ GTA 6, GTA VI, GTA 6 español, noticias GTA 6, GTA 6 en español, Grand Theft Au
 ## Settings
 - Country: the owner's country of residence (it's a tax/payments field, not the audience).
 - Default upload settings: category Gaming, language Spanish, "No, it's not made for kids".
-- Links on the channel: vicereplay.com/es/ ("Guías en español").
+- Links on the channel: vicereplay.com/es/ ("Guías en español") and vicereplay.com/es/equipo/ ("Equipo para GTA 6",
+  the Spanish Amazon page; affiliate disclosure on the page).
 - Playlist "GTA 6 en Español" is created automatically by the first upload.
 
 ## Launch lineup (owner approved Nov 22: "just the best, with all the new upgrades")
