@@ -262,12 +262,22 @@ def check(path, episode=None, dest="vice-replay", script_key="short", project=No
     con = db.connect()
     vh = dedupe.video_hash(path)
     me = str(path.resolve().relative_to(db.ROOT)) if path.resolve().is_relative_to(db.ROOT) else str(path)
-    others = [(dedupe.overlap(vh, r["phash"]), r) for r in db.rows(con, "SELECT * FROM used_footage") if r["source"] != me]
+    # frames inside our own chart segments (studio/charts.py) are original graphics, never "the same footage"
+    segs = (ep.get(script_key) or ep.get("short") or []) if ep else []
+    own = set()
+    if timings and any(isinstance(x, dict) and x.get("chart") for x in segs):
+        starts = [max(0.0, float(t.get("start", 0)) - 0.2) for t in timings if isinstance(t, dict)]
+        for i, x in enumerate(segs[:len(starts)]):
+            if isinstance(x, dict) and x.get("chart"):
+                end = starts[i + 1] if i + 1 < len(starts) else dur
+                own |= {k for k in range(int(dur) + 1) if starts[i] <= k < end}
+    others = [(dedupe.overlap(vh, r["phash"], own=own or None), r) for r in db.rows(con, "SELECT * FROM used_footage")
+              if r["source"] != me]
     msig = dedupe.motion_sig(path) if any(o >= 0.7 for o, _ in others) else None
     dup, look_alike = [], []
     for o, r in others:
         if o >= 0.7:
-            (dup if dedupe.is_repost(vh, r["phash"], msig, r.get("msig")) else look_alike).append(r)
+            (dup if dedupe.is_repost(vh, r["phash"], msig, r.get("msig"), own=own or None) else look_alike).append(r)
     shared = [(o, r) for o, r in others if 0.35 <= o < 0.7]
     if look_alike:
         add("look-alike", "info", "same layout/webcam as " + ", ".join(sorted({r["video_id"] or r["source"] for r in look_alike})[:4])

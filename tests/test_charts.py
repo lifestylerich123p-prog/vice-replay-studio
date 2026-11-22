@@ -39,3 +39,12 @@ def test_rights_gate_sees_shots_and_multi_short_episodes():
     ep = {"shorts": [{"id": "news", "segments": [{"text": "x", "shots": [{"media": "../media/not-registered.mp4"}]}]}]}
     checked = json.dumps(rights.check_episode(ep))
     assert "not-registered" in checked
+
+
+def test_own_chart_frames_never_count_as_repost():
+    from studio.vice import dedupe
+    same = "-".join(["0f0f0f0f0f0f0f0f"] * 10)
+    assert dedupe.overlap(same, same) == 1.0  # a real repost still matches fully
+    assert dedupe.overlap(same, same, own=set(range(8))) == 0.2  # 8 of 10 frames are our charts
+    assert not dedupe.is_repost(same, same, own=set(range(8)))
+    assert dedupe.is_repost(same, same)

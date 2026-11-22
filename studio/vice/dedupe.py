@@ -79,14 +79,22 @@ def hamming(h1, h2):
     return bin(int(h1, 16) ^ int(h2, 16)).count("1")
 
 
-def overlap(vh1, vh2, max_bits=18):
-    """Share of the shorter video's sampled frames that have a near-identical frame in the other video."""
+def overlap(vh1, vh2, max_bits=18, own=None):
+    """Share of the shorter video's sampled frames that have a near-identical frame in the other video.
+    own: indices of vh1's sampled frames that are our own generated graphics (chart segments, Nov 22): they can't be
+    "the same footage" as anything, so they count as not matching (and vh1 stays the base, whatever its length)."""
     if not vh1 or not vh2:
         return 0.0
     a, b = vh1.split("-"), vh2.split("-")
+    flat = ("0000000000000000", "ffffffffffffffff")  # flat/black frames match anything
+    if own:
+        idx = [k for k, x in enumerate(a) if x not in flat]
+        if not idx:
+            return 0.0
+        return sum(1 for k in idx if k not in own and any(hamming(a[k], y) <= max_bits for y in b)) / len(idx)
     if len(a) > len(b):
         a, b = b, a
-    a = [x for x in a if x not in ("0000000000000000", "ffffffffffffffff")]  # flat/black frames match anything
+    a = [x for x in a if x not in flat]
     if not a:
         return 0.0
     return sum(1 for x in a if any(hamming(x, y) <= max_bits for y in b)) / len(a)
@@ -140,8 +148,8 @@ def motion_distance(sig1, sig2, static=6.0):
     return float(np.median(d.min(axis=1)))
 
 
-def is_repost(vh1, vh2, sig1=None, sig2=None, threshold=0.7, max_motion=32.0):
+def is_repost(vh1, vh2, sig1=None, sig2=None, threshold=0.7, max_motion=32.0, own=None):
     """Same footage: full-frame fingerprints match AND (when both motion signatures exist) the moving parts match."""
-    if overlap(vh1, vh2) < threshold:
+    if overlap(vh1, vh2, own=own) < threshold:
         return False
     return not (sig1 and sig2) or motion_distance(sig1, sig2) < max_motion
