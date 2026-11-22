@@ -129,4 +129,7 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   (13-17 s watched); our narrated ~30 s Shorts average ~57% (44-75%), i.e. half the viewers leave. Channel-wide on
   Shorts with 50+ views: 1.4 likes per 100 views, 0.6 subs per 1,000 views, engaged views = 44% of views (most
   viewers swipe in the first seconds). Short real moments get finished; narrated explainers don't.
+- 2026-11-22 (web investigation, see content/learn/growth-plan-2026-11-22.md): YouTube's Oct 2026 Shorts originality
+  update de-ranks voice-overs that only describe the footage; short (13-20 s) real moments win; never delete flops;
+  owner gameplay is the biggest lever. Rules now in the daily run and the views check.
 

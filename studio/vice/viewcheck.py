@@ -45,9 +45,13 @@ def check(ep, gameplay_available=False):
                             f"that open on a moving clip got ~5x the views (median 92 vs 18): use a media/trailer clip "
                             f"or `shots` for segment 1, or add a `zoom`")
         words = sum(len((s.get("text") or "").split()) for s in segs)
-        if words > 85:
-            warnings.append(f"views: Short '{key}' is {words} words (~{round(words / 2.6)} s). The dead Shorts ran 79-117 "
-                            f"words; aim for 75 or fewer, one idea, payoff in the second line")
+        secs = round(words / 2.7)
+        if words > 80:  # Nov 22 research: 11-20 s Shorts have the best median views (Quso, 108k Shorts); ours lose half by 30 s
+            blockers.append(f"views: Short '{key}' is {words} words (~{secs} s). Cut it to one fact in 13-20 s (about 35-55 "
+                            f"words): our real-moment clips held 86-92% at 13-17 s, our ~30 s explainers ~57%")
+        elif words > 55:
+            warnings.append(f"views: Short '{key}' is {words} words (~{secs} s); target 13-20 s (35-55 words), payoff as the "
+                            f"last line, last line loops into the first")
         text = f"{title} {first.get('headline', '')} {ep.get('format', '')}"
         if TIPS.search(text) and not re.search(r"\d", first.get("headline", "")):
             warnings.append(f"views: Short '{key}' reads like a plain tip ({TIPS.search(text).group(0)!r}). Tips Shorts got "

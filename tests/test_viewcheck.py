@@ -22,8 +22,10 @@ def test_owner_gameplay_counts_as_motion_unless_kept_picture():
 
 
 def test_long_scripts_and_plain_tips_warn():
-    _, w = viewcheck.check(ep({"media": "a.mp4"}, words=100))
-    assert any("words" in x for x in w)
+    b, _ = viewcheck.check(ep({"media": "a.mp4"}, words=100))
+    assert any("words" in x for x in b)  # over ~30 s blocks
+    _, w = viewcheck.check(ep({"media": "a.mp4"}, words=60))
+    assert any("words" in x for x in w)  # 20-30 s warns
     _, w = viewcheck.check(ep({"media": "a.mp4"}, title="Change these GTA 6 settings NOW", headline="SETTINGS"))
     assert any("plain tip" in x for x in w)
     _, w = viewcheck.check(ep({"media": "a.mp4"}, title="GTA 6 settings: 3 that cost you 20 FPS", headline="20 FPS"))

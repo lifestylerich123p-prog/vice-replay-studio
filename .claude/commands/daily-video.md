@@ -29,6 +29,22 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    market's winners have in common (topics, title wording, length, Shorts vs long). Only claim what the
    numbers show. Use the lessons in every choice below: topic, hook, title options, thumbnail text, length.
    Learn from winning videos' patterns; never copy their titles, footage or thumbnails.
+**NOV 22 RESEARCH PLAN (owner: "full investigation"; overrides the plans below where they differ; sources in
+content/learn/growth-plan-2026-11-22.md).** YouTube's Oct 1, 2026 Shorts update cuts reach for footage that only gets
+"VO descriptions of what's happening on screen" (YouTube's Creator Liaison), which is close to our trailer-narration style,
+and our numbers agree (narrated Shorts ~57% viewed, 40% stayed to watch; real moments 86-92%). So:
+- **Max 2 narrated Shorts a day** until owner gameplay exists (more volume of the same template looks mass-produced).
+- **13-20 s, one fact** (35-55 words; `studio.vice publish` blocks over ~30 s). Concrete number or catch in the FIRST line
+  and on screen (our best openers: "30 FPS EVERYWHERE", "$1.65 BILLION": 50-55% stayed; vague teasers: 29%).
+- **Commentary, not description**: every Short needs a claim, a verdict or a test ("it works / it doesn't / here's the
+  catch"). Never narrate what the picture shows. Prefer our own graphics (magnifier, map, numbers, comparisons) over
+  plain trailer clips.
+- **Formats, in order**: streamer news with a number (Spanish channel: Spanish-speaking streamers, 2 sources); "how to
+  find it" for this week's community discoveries told on the official map (never their footage); quiz/map; big
+  confirmed news. Evergreen how-tos go to the website guides (Shorts fade after ~30 days).
+- **Never delete a flop** (YouTube: deleting cuts the audience link); unlist at most, and make a new angle instead.
+- Judge each Short against our own median in content/learn/retention.md ("Stayed to watch"), not a magic number.
+
 **NOV 21 PLAN (owner: "use data to find a plan of action and implement"; overrides the slots and mix below).**
 Since launch, people play the game themselves and our trailer-footage Shorts mostly die (Nov 19 noon to Nov 20:
 tips/search-answer Shorts got 5-60 views; settings 7, cheat list 5, no-mission-replay 53). What still works:
