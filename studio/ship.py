@@ -104,6 +104,35 @@ def queue_reels(ep_path, upload_txt, date=None):
               ", ".join(sorted(added)))
 
 
+def spanish_ready():
+    """Vice Replay en Español is connected (config) and its token is loaded in this session."""
+    import os
+    cfg = json.loads((ROOT / "config" / "channel.json").read_text())["channels"].get("vice-replay-es", {})
+    have = os.environ.get("YT_SPANISH_REFRESH_TOKEN") or os.environ.get("YT_ES_REFRESH_TOKEN")
+    return cfg.get("status") == "connected" and cfg.get("channel_id") and have
+
+
+def upload_spanish(ep_path, a):
+    """Owner, Nov 22: "manage both channels" -> one approval also posts the Spanish versions of the approved Shorts
+    (same slots) on Vice Replay en Español. Long videos stay English-only."""
+    items = [x.strip() for x in a.upload.split(",") if x.strip() and x.strip() not in ("main", "replies")]
+    if a.no_es_upload or not items:
+        return
+    if not spanish_ready():
+        print("SPANISH: not posted (Spanish channel token not loaded in this session); run "
+              f"python -m studio.youtube_es {ep_path} --approve {','.join(items)} later.")
+        return
+    cmd = [PY, "-m", "studio.youtube_es", str(ep_path), "--approve", ",".join(items)]
+    for flag, val in (("--date", a.date), ("--at", a.at)):
+        if val:
+            cmd += [flag, str(val)]
+    r = run(cmd)
+    lines = [l for l in r.stdout.splitlines() if any(k in l for k in ("uploading", "skip", '"url"', "scheduled_et", "QUOTA"))]
+    print("\nSPANISH UPLOAD:\n" + "\n".join(lines))
+    if r.returncode:
+        print(r.stderr[-1000:])
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("episode")
@@ -113,6 +142,7 @@ def main():
     ap.add_argument("--at")
     ap.add_argument("--title", type=int)
     ap.add_argument("--no-es", action="store_true", help="skip the Spanish-voice Shorts")
+    ap.add_argument("--no-es-upload", action="store_true", help="with --upload: don't post the Spanish versions")
     ap.add_argument("--tiktok", action="store_true", help="push the Shorts to the tiktok-files branch (main chat)")
     a = ap.parse_args()
     ep_path = (ROOT / a.episode).resolve() if not Path(a.episode).is_absolute() else Path(a.episode)
@@ -162,6 +192,7 @@ def main():
         if r.returncode:
             print(r.stderr[-1500:])
         queue_reels(ep_path, txt, a.date)
+        upload_spanish(ep_path, a)
 
     if a.tiktok:
         shorts = [v for v in videos if "-short" in v.name]

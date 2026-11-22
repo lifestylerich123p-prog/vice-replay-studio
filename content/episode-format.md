@@ -26,6 +26,10 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
      the hook starts with the reason), so replays count as extra watch time.
    - `pinned_comment`: one question for the comments that's easy to answer (pick-one or a number), posted and
      pinned by the owner right after upload.
+   - Spanish channel (Vice Replay en Español, Nov 22): `short_es.title` / each Short's `es.title` in the Spanish-market
+     style (one key word in CAPS + one emoji, e.g. "El PRIMERO en terminar GTA 6 NO fue IShowSpeed 😳 #GTA6 #Shorts"),
+     plus `short_pinned_comment_es` (and `pinned_comment_es` inside `shorts` items): an easy Spanish question.
+     For Spanish streamer stories (IlloJuan, Rubius, TheGrefg, Ibai...) see content/learn/market-es-*.md.
    - Spanish (free extra audience): every segment (main and Shorts) also gets `text_es` (natural Latin American
      Spanish, same meaning, similar length; keep names like GTA 6, Vice City, Kai Cenat as they are). Add `es`
      {`title`, `description`} for the main video, `short_es` for the main Short, and `es` inside each `shorts`

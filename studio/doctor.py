@@ -57,6 +57,18 @@ def main():
     else:
         warn.append("Unknown last YouTube reconnect date (write it to content/learn/youtube_connected.txt)")
 
+    # 1b. Spanish channel (Vice Replay en Español): its own token, same 7-day expiry while the Google app is in Testing
+    import os
+    if os.environ.get("YT_SPANISH_REFRESH_TOKEN") or os.environ.get("YT_ES_REFRESH_TOKEN"):
+        try:
+            from . import youtube_es
+            youtube_es.check_channel(token(youtube_es.ENV))
+            ok.append("Spanish channel (Vice Replay en Español) connection works")
+        except SystemExit as e:
+            bad.append(f"Spanish channel connection FAILED: {str(e)[:160]}")
+    else:
+        warn.append("Spanish channel token not loaded in this session (it loads when a session starts)")
+
     # 2. Pinned comments on recent public uploads
     if tok:
         reg = json.loads((LEARN / "uploads.json").read_text()) if (LEARN / "uploads.json").exists() else {}
