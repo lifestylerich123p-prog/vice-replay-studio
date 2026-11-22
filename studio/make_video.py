@@ -737,8 +737,19 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     elif music:
         music = base / music
     else:
-        lib = sorted(p for p in (ROOT / "assets" / "music").glob("*") if p.suffix.lower() in {".mp3", ".wav", ".m4a"})
-        music = lib[0] if lib else sound.theme(ROOT / "assets" / "music" / "vice-replay-theme.wav")
+        # Nov 22 (owner: "better audio that connects"): a track per mood instead of one song on every video.
+        # "mood" on the episode, else by format; our own generated synthwave, so no Content ID risk.
+        mood = ep.get("mood") or {"news": "hype", "comparison": "tension", "ranking": "tension", "quiz": "bright",
+                                  "details": "bright"}.get(ep.get("format"), "night")
+        lib_dir = ROOT / "assets" / "music"
+        if mood == "night" or mood not in sound.MOODS:
+            music = lib_dir / "vice-replay-theme.wav"
+            if not music.exists():
+                music = sound.theme(music)
+        else:
+            music = next((p for p in (lib_dir / f"vr-{mood}.m4a", lib_dir / f"vr-{mood}.wav") if p.exists()), None) \
+                or sound.theme(lib_dir / f"vr-{mood}.wav", loops=3, seed=11, mood=mood)
+        print(f"music: {Path(music).name} (mood {mood})")
     sfx = None
     if ep.get("sfx", True):
         sfx = sound.sfx_track(work / "sfx.wav", duration(raw), cuts, impacts)
