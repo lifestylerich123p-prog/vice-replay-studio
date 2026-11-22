@@ -76,3 +76,6 @@ of the Short watched (YouTube Analytics, a few days behind). Medians per group; 
 - DO LESS: length = 60+ s (median 0.1 v/h vs 3.8 overall, n=8)
 - DO MORE: slot (ET) = morning <12 (median 21.4 v/h vs 3.8 overall, n=11)
 - DO LESS: slot (ET) = afternoon 12-17 (median 0.7 v/h vs 3.8 overall, n=18)
+- 2026-11-22 (first hours): "The first person to finish GTA 6 wasn't IShowSpeed" (Egb3otGWJIg, Sun 10 AM, streamer
+  follow-up, trailer narration): 0 public views at +70 min (counter may lag; re-check at the 11:15 check). Spanish
+  "NO farmees dinero..." (awRrpVjLzvE, Sun 9:30 AM): 2 views + 1 comment at +100 min, the Spanish channel's first views.
