@@ -39,6 +39,7 @@ PLAYLIST = "GTA 6 en Español"
 TAGS_ES = ["GTA 6", "GTA 6 español", "GTA 6 en español", "noticias GTA 6", "GTA VI", "Grand Theft Auto VI", "Vice City"]
 NOT_AFFILIATED = "Canal de fans: no afiliado a Rockstar Games ni a Take-Two Interactive."
 EN_LINK = "🇺🇸 Vice Replay en inglés: https://www.youtube.com/@ViceReplayTV-q8s"
+SITE_ES = "🌴 Guías de GTA 6 en español: https://vicereplay.com/es/"
 
 
 DESCRIPTION = (
@@ -170,7 +171,7 @@ def main():
             continue
         when = a.at or (short_t if key == "short" else news_t if key == "news" else extra_time(day))
         publish_at = slot(day, when)
-        desc = yt_safe((es.get("description") or "").strip() + f"\n\n{EN_LINK}\n\n{NOT_AFFILIATED}")
+        desc = yt_safe((es.get("description") or "").strip() + f"\n\n{SITE_ES}\n{EN_LINK}\n\n{NOT_AFFILIATED}")
         # the topic's own Spanish tags first (es.tags / tags_es), then the channel basics (Nov 22: every Spanish
         # upload had the same 6 generic tags)
         tags = clean_tags(es.get("tags") or ep.get("tags_es"), base=TAGS_ES)

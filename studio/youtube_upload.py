@@ -483,13 +483,15 @@ def main():
                      playlist))
 
     # the site guide may spell the slug "gta-6-..." while the episode says "gta6-..."
-    gslug = next((g for g in (slug, slug.replace("gta6-", "gta-6-", 1))
-                  if (ROOT / "site" / "guides" / f"{g}.json").exists()), "")
-    guide_url = f"https://vicereplay.com/guides/{gslug}/" if gslug else ""
+    # Nov 22: only exact slug matches got a link, so almost no video sent viewers to the site. Now: the episode's own
+    # "guide" (site/guides/<slug>.json), else a same-name guide, else the guides index.
+    gslug = next((g for g in (ep.get("guide"), slug, slug.replace("gta6-", "gta-6-", 1))
+                  if g and (ROOT / "site" / "guides" / f"{g}.json").exists()), "")
+    guide_url = f"https://vicereplay.com/guides/{gslug}/" if gslug else "https://vicereplay.com/guides/"
     guard = None
     for key, path, title, desc, tg, when, thumb, pin, es, timings, playlist in jobs:
         if guide_url and "vicereplay.com/guides" not in desc:
-            desc = desc.rstrip() + f"\n\nGuide: {guide_url}"
+            desc = desc.rstrip() + (f"\n\nFull guide: {guide_url}" if gslug else f"\n\nMore GTA 6 guides: {guide_url}")
         if key in done:
             print(f"skip {key}: already uploaded ({done[key]['url']})")
             continue
