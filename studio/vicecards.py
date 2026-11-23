@@ -252,15 +252,20 @@ def kinetic_frame(base, spec, t, w, h):
     for k, t0 in enumerate(times):
         if t >= t0:
             ox, oy = _shake(t, t0, w)
+    cover = spec.get("cover")  # a Short's first segment: its first frame is the cover, so every line shows at once
     for k, (line, t0) in enumerate(zip(lines, times)):
         p = (t - t0) / 0.22
-        if p <= 0:
+        if p <= 0 and not cover:
             continue
         pink = _is_pink(line, spec)
         spr = lettering(line.upper(), size, int((x1 - x0) * 0.98), *((YELLOW, brand.PINK, brand.CYAN) if pink else
                                                                     (brand.WHITE, brand.CYAN, brand.PINK)))
         cy = y0 + slot * (k + 0.5) + (y1 - y0 - slot * n) / 2
-        place(img, spr, (x0 + x1) / 2 + ox, cy + oy, scale=1.0 + 0.45 * (1 - _back(p)), alpha=min(1.0, p * 1.6))
+        if cover:  # visible from frame one; each line still pulses on its beat
+            pulse = 0.14 * (1 - _ease((t - t0) / 0.25)) if t >= t0 else 0.0
+            place(img, spr, (x0 + x1) / 2 + ox, cy + oy, scale=1.0 + pulse)
+        else:
+            place(img, spr, (x0 + x1) / 2 + ox, cy + oy, scale=1.0 + 0.45 * (1 - _back(p)), alpha=min(1.0, p * 1.6))
     if spec.get("sub") and t > times[-1] + 0.2:
         d = ImageDraw.Draw(img)
         _small(d, str(spec["sub"]), (x0 + x1) / 2, y1 + int(h * 0.004), int(w * 0.04), fill=(230, 220, 245),
@@ -456,6 +461,29 @@ def headline_frame(base, spec, t, w, h):
                                    font=ft, fill=(13, 7, 23))
         img.alpha_composite(strip, (int(band[0]), int(band[1])))
     return img.convert("RGB")
+
+
+def hits(spec, dur):
+    """When each word, number or item lands on the card (seconds into the segment): the renderer puts a soft pop
+    there. A cover segment (first frame shows everything) skips the first beat, which the hook impact covers."""
+    kind = spec.get("type")
+    if kind == "kinetic":
+        lines = spec.get("lines") or str(spec.get("text", "")).split("|")
+        out = [t0 + 0.12 for t0 in _times(len(lines[:4]), dur)]
+        return out[1:] if spec.get("cover") else out
+    if kind == "countdown":
+        return [0.2, 0.52]
+    if kind == "versus":
+        return [0.3, 0.6, 0.85] + ([dur * 0.6] if spec.get("winner") else [])
+    if kind == "tier":
+        static = {str(x) for x in spec.get("static") or []}
+        n = sum(len(r[1]) if isinstance(r[1], list) else 1 for r in spec.get("rows") or []
+                if len(r) > 1 and str(r[0]) not in static)
+        return [t0 + 0.2 for t0 in _times(n, dur, first=0.25)]
+    if kind == "headline":
+        return [0.1] + [t0 + 0.15 for t0 in _times(min(3, max(1, len(str(spec.get("text", "")).split()) // 3)),
+                                                    dur * 0.6, first=0.15, last_gap=0.0)]
+    return []
 
 
 DRAW = {"kinetic": kinetic_frame, "countdown": countdown_frame, "versus": versus_frame, "tier": tier_frame,

@@ -151,10 +151,24 @@ def impact(dur=0.9, seed=2):
     return boom + _lowpass_fast(click, 3000)
 
 
-def sfx_track(path, total, whooshes, impacts):
-    """One stereo track with whooshes centred on segment cuts and impacts on the hook."""
+def pop(dur=0.16, seed=3):
+    """A short, soft synth pop for a word or number landing on a lettering card (Nov 23)."""
+    rng = np.random.default_rng(seed)
+    t = np.arange(int(dur * SR)) / SR
+    tone = np.sin(2 * np.pi * (520 + 700 * np.exp(-t * 40)) * t) * np.exp(-t * 28)
+    tick = rng.standard_normal(len(t)) * np.exp(-t * 220) * 0.35
+    return tone + _lowpass_fast(tick, 5000)
+
+
+def sfx_track(path, total, whooshes, impacts, pops=()):
+    """One stereo track with whooshes centred on segment cuts, impacts on the hook and soft pops where the lettering
+    cards land a word or number (studio/vicecards.py `hits`)."""
     out = np.zeros(int(total * SR) + SR)
-    w, im = whoosh(), impact()
+    w, im, pp = whoosh(), impact(), pop()
+    for tm in pops:
+        s = max(0, int(tm * SR))
+        seg = pp[: len(out) - s]
+        out[s:s + len(seg)] += 0.32 * seg / (np.max(np.abs(pp)) or 1)
     for tm in whooshes:
         s = max(0, int((tm - 0.28) * SR))
         seg = w[: len(out) - s]

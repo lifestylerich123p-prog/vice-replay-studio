@@ -403,13 +403,17 @@ def render(spec, dur, w, h, out, seed=0):
     else:
         base = _backdrop(w, h, seed=sd)
     spec = dict(spec, _dur=dur)
+    shift = 5.0 if spec.get("cover") and kind != "kinetic" else 0.0  # cover: show the finished card from frame one
     proc = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}",
                              "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
                              "-pix_fmt", "yuv420p", str(out)], stdin=subprocess.PIPE)
     for f in range(max(1, int(round(dur * FPS)))):
         t = f / FPS
         bg = vicecards.frame_bg(still, horizon, t, w, h) if vice else base
-        proc.stdin.write(draw(bg, spec, t, w, h).tobytes())
+        proc.stdin.write(draw(bg, spec, t + shift, w, h).tobytes())
     proc.stdin.close()
     proc.wait()
+    if kind in vicecards.DRAW and not shift:  # where the lettering lands, for the renderer's sound effects
+        import json
+        out.with_suffix(".hits.json").write_text(json.dumps([round(x, 3) for x in vicecards.hits(spec, dur)]))
     return out

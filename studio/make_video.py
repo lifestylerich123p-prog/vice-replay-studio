@@ -540,6 +540,8 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
             if not seg.get("chart_es") and chart_words(chart) and chart.get("locale") == "es" and \
                     not seg["chart"].get("locale") == "es":
                 print(f"  ! segment {i}: Spanish render shows the English chart text {chart_words(chart)}; add `chart_es`")
+        if vertical and i == 0:  # a Short's first frame is its cover: show the whole hook card at once
+            chart = dict(chart, cover=True)
         seg = dict(seg, media=str(charts.render(chart, dur + 0.5, w, h, work / f"chart_{i}.mp4", seed=i)),
                    media_start=0, focus=None)
     if seg.get("shots"):
@@ -745,6 +747,7 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
 
     parts, chapters, t = [], [], 0.0
     cuts, impacts, timings = [], [0.0], []  # sound effects: impact on the hook, whoosh on every cut
+    pops = []  # soft pops where a lettering card lands a word or number (studio/vicecards.py)
     if not vertical:
         intro = render_intro(ep["title"], work, enc, w, h)
         parts.append(intro)
@@ -759,6 +762,10 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
         else:
             audio = tts(seg["text"], voice, rate, work / f"vo_{i:02d}")
         clip, d = render_segment(i, seg, audio, w, h, vertical, work, enc)
+        hits_file = work / f"chart_{i}.hits.json"
+        if seg.get("chart") and hits_file.exists():
+            pops += [t + x for x in json.loads(hits_file.read_text()) if x < d - 0.1]
+            hits_file.unlink()
         if seg.get("chapter") or seg.get("headline"):
             chapters.append((0.0 if i == 0 and vertical else t, seg.get("chapter") or seg["headline"]))
         if t > 0:
@@ -802,7 +809,7 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
         print(f"music: {Path(music).name} (mood {mood})")
     sfx = None
     if ep.get("sfx", True):
-        sfx = sound.sfx_track(work / "sfx.wav", duration(raw), cuts, impacts)
+        sfx = sound.sfx_track(work / "sfx.wav", duration(raw), cuts, impacts, pops)
     mixed = work / "mixed.mp4"
     mix_audio(raw, music if music and Path(music).exists() else None, sfx, mixed, ["-c:a", "aac", "-b:a", "192k"])
     # YouTube plays back at about -14 LUFS; normalize so the voice isn't quiet next to other videos

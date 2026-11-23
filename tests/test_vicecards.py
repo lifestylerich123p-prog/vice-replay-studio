@@ -45,3 +45,24 @@ def test_spanish_check_sees_the_new_card_words():
     words = chart_words({"type": "versus", "a": ["GTA 5", "32"], "b": ["GTA 6", "80"], "lines": ["WHICH ONE"],
                          "kicker": "PLAYERS REPORT"})
     assert "WHICH ONE" in words and "PLAYERS REPORT" in words and "GTA 5" in words
+
+
+def test_cover_shows_the_whole_hook_on_frame_one():
+    spec = {"type": "kinetic", "lines": ["VICE CITY", "IS B TIER"]}
+    plain, cover = _frame(spec, 0.0), _frame(dict(spec, cover=True), 0.0)
+    still, hz = vicecards.sky(W, H, 0)
+    empty = vicecards.frame_bg(still, hz, 0.0, W, H)
+    assert plain.tobytes() == empty.tobytes()      # without cover: nothing has landed yet
+    assert cover.tobytes() != empty.tobytes()      # with cover: the hook is on the first frame
+
+
+def test_pops_follow_the_lettering():
+    k = vicecards.hits({"type": "kinetic", "lines": ["A", "B", "C"]}, 3.0)
+    assert len(k) == 3 and k == sorted(k)
+    assert len(vicecards.hits({"type": "kinetic", "lines": ["A", "B", "C"], "cover": True}, 3.0)) == 2
+    tier = {"type": "tier", "rows": [["S", ["x", "y"]], ["A", "z"]], "static": ["A"]}
+    assert len(vicecards.hits(tier, 3.0)) == 2
+    from studio import sound
+    import tempfile, pathlib
+    out = sound.sfx_track(pathlib.Path(tempfile.mkdtemp()) / "s.wav", 2.0, [1.0], [0.0], pops=[0.5, 1.5])
+    assert pathlib.Path(out).exists()
