@@ -43,12 +43,12 @@
   "limit_seen": 17285
  },
  "2026-11-23": {
-  "used": 16452,
+  "used": 16507,
   "calls": {
-   "GET channels": 163,
-   "GET videos": 111,
-   "GET commentThreads": 36,
-   "POST commentThreads": 7,
+   "GET channels": 165,
+   "GET videos": 113,
+   "GET commentThreads": 37,
+   "POST commentThreads": 8,
    "GET playlistItems": 30,
    "POST videos": 8,
    "GET playlists": 8,
