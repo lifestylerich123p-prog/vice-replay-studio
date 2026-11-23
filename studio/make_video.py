@@ -494,6 +494,26 @@ def warn_scene_cut(i, seg, dur):
               f"check it still shows what the narration says (or use shots/speed)")
 
 
+def fix_timestamps(path):
+    """Nov 22: a card-only Short decoded with "non monotonically increasing dts" (30 fps cards in a 29.97 fps video;
+    two frames rounded to the same time) and failed QC's decode check. If the finished file has any decode error,
+    re-encode it once at a steady 29.97 fps (same length, audio copied)."""
+    path = Path(path)
+    err = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-f", "null", "-"], capture_output=True, text=True).stderr
+    if not err.strip():
+        return False
+    tmp = path.with_name(path.stem + ".fix.mp4")
+    r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-vf", "fps=30000/1001", "-c:v", "libx264",
+                        "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags",
+                        "+faststart", str(tmp)], capture_output=True, text=True)
+    if r.returncode == 0 and tmp.exists():
+        tmp.replace(path)
+        print(f"  (fixed timestamps in {path.name}: {err.strip().splitlines()[0][:90]})")
+        return True
+    tmp.unlink(missing_ok=True)
+    return False
+
+
 def chart_words(chart):
     """The words a chart shows besides names and numbers (label, note, the VS label): what needs a Spanish `chart_es`."""
     return [x for x in (chart.get("label"), chart.get("note"), (chart.get("vs") or {}).get("label"),
@@ -861,6 +881,7 @@ def main():
             lines += ["Vice Replay es un canal de fans, no afiliado con Rockstar Games." if a.es else
                       "Vice Replay is a fan channel, not affiliated with Rockstar Games.", "", tags]
             (out_dir / f"{name}.txt").write_text("\n".join(lines))
+            fix_timestamps(final)
             print(f"Done: {final}  ({fmt_ts(duration(final))})")
         return
     final, chapters, used_footage = build(ep, base, slug, ep["segments"], False, a.preview, enc, w, h, voice,
