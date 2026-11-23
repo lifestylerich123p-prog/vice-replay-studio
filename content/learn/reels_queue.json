@@ -309,6 +309,11 @@
   "note": "Nov 23: teaser for the Sunday hub video (GTA 6 in 10 Numbers, 3:30 PM): post only once that video is public"
  },
  {
+  "at": "2026-12-06 16:00",
+  "carousel": "content/carousels/gta6-game-awards-odds.json",
+  "note": "Nov 23: odds carousel for the Game Awards long video (3:30 PM): post only once that video is public"
+ },
+ {
   "at": "2026-12-31 23:59",
   "video": "output/clips/lacy-gta6/lacy-drive-thru.mp4",
   "campaign": "LACY (Content Rewards)",
