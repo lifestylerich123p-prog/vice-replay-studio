@@ -516,8 +516,11 @@ def fix_timestamps(path):
 
 def chart_words(chart):
     """The words a chart shows besides names and numbers (label, note, the VS label): what needs a Spanish `chart_es`."""
-    return [x for x in (chart.get("label"), chart.get("note"), (chart.get("vs") or {}).get("label"),
-                        chart.get("text"), chart.get("who"), chart.get("q"), chart.get("title"), chart.get("sub")) if x]
+    words = [chart.get("label"), chart.get("note"), (chart.get("vs") or {}).get("label"), chart.get("text"),
+             chart.get("who"), chart.get("q"), chart.get("title"), chart.get("sub"), chart.get("kicker"),
+             chart.get("ticker"), *(chart.get("lines") or []),
+             *[(chart.get(k) or [None, None])[0] for k in ("a", "b")]]
+    return [x for x in words if x and isinstance(x, str) and not x.replace(" ", "").replace(".", "").isdigit()]
 
 
 def render_segment(i, seg, audio, w, h, vertical, work, enc):

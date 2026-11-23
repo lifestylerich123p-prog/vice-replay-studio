@@ -98,7 +98,7 @@ Per-segment keys (all optional) in `short` / `segments`:
   and the streamer's footage is off-limits. Quote exactly and briefly (one or two sentences); name the outlet.
   - **FACTS ONLY (owner, Nov 22 evening: "not the ones with footage, facts with a strong hook")**: a Short is built
     only from our own cards; no trailer clips or official screenshots, not even as cutaways (`studio.vice publish`
-    blocks them; owner gameplay is fine; Lucia and top-3 rides were approved before this rule). Cards:
+    blocks them; owner gameplay is fine; since Nov 23 no waivers and no trailer images in long videos either). Cards:
     `bars`, `counter`, `line`, `quote`, plus `{"type": "text", "text": "Darts, or a better game?", "pink": [...],
     "sub": "..."}` (a big statement: the hook or the closing question), `{"type": "list", "title": "IN GTA 6?",
     "items": [["Pool", "IN"], ["Darts", "CUT"]]}` (a checklist; IN/YES/SÍ/REAL tags cyan, the rest pink) and
@@ -107,6 +107,19 @@ Per-segment keys (all optional) in `short` / `segments`:
     answer). Formats: fun facts, GTA history, "how much do you know" quizzes (see episodes/gta-history-quiz.json),
     numbers, Rockstar/streamer quotes. Quiz rules: every answer checked in 2+ sources, wrong options plausible but
     invented, never a real alternative title; vary which letter is right.
+  - **GTA 6-style lettering cards** (owner Nov 23: "lettering and more modern style ... GTA 6 style";
+    studio/vicecards.py): they play on our animated Vice City set (sunset sky, striped sun, palm silhouettes, a neon
+    grid floor that scrolls), with neon chrome lettering that punches in. Lead new Shorts with these:
+    `{"type": "kinetic", "lines": ["VICE CITY", "IS B TIER"], "pink": ["B TIER"], "sub": "..."}` (1-4 big lines, one at a
+    time: the hook and the closing question), `{"type": "countdown", "n": 2, "of": 4, "label": "Bigfoot is real",
+    "sub": "..."}` (listicle items: "4 secrets", "5 things"), `{"type": "versus", "a": ["GTA 5", "32 HOURS"], "b":
+    ["GTA 6", "80 HOURS"], "winner": "b"}` (VS / this-or-that; the winner lights up at 60%), `{"type": "tier", "title":
+    "...", "rows": [["S", ["GTA 6 · 99"]], ["A", []]], "static": ["B"]}` (fill one row per segment; `static` rows were
+    filled earlier) and `{"type": "headline", "kicker": "PLAYERS REPORT", "text": "...", "ticker": "..."}` (news; put
+    REPORTEDLY / LEAK in the kicker for anything unconfirmed). Use one `seed` per Short (same sky in every segment).
+    Any older chart can add `"bg": "vice"`. Research behind it (Nov 23): animate only the key words, change the card
+    every 2-4 s, tier lists / countdown listicles / quizzes / VS drive comments (examples: episodes/
+    gta6-tier-list-critics.json, gta6-4-secrets.json).
   - **Spanish chart text** (Nov 22): a chart with a `label`, `note` or VS label needs `chart_es` on the same segment (the
     same chart with Spanish words); Spanish renders switch numbers to 3.790,5 style by themselves. Without it the
     Spanish Short shows English words (the publish check warns).

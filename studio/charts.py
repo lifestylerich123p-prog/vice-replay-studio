@@ -389,15 +389,27 @@ DRAW = {"bars": bars_frame, "counter": counter_frame, "line": line_frame, "quote
 
 
 def render(spec, dur, w, h, out, seed=0):
-    """Write an mp4 (no audio) of the animated chart, dur seconds long; returns its path."""
+    """Write an mp4 (no audio) of the animated chart, dur seconds long; returns its path. The GTA 6-style cards
+    (studio/vicecards.py: kinetic, countdown, versus, tier, headline) and any chart with "bg": "vice" play on the
+    animated Vice City set (sunset, palms, scrolling neon grid); the rest keep the gradient backdrop."""
+    from . import vicecards
     out = Path(out)
-    base = _backdrop(w, h, seed=spec.get("seed", seed))
-    draw = DRAW.get(spec.get("type"), bars_frame)
+    kind = spec.get("type")
+    draw = vicecards.DRAW.get(kind) or DRAW.get(kind, bars_frame)
+    vice = spec.get("bg", "vice" if kind in vicecards.DRAW else "gradient") == "vice"
+    sd = spec.get("seed", seed)
+    if vice:
+        still, horizon = vicecards.sky(w, h, sd)
+    else:
+        base = _backdrop(w, h, seed=sd)
+    spec = dict(spec, _dur=dur)
     proc = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}",
                              "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
                              "-pix_fmt", "yuv420p", str(out)], stdin=subprocess.PIPE)
     for f in range(max(1, int(round(dur * FPS)))):
-        proc.stdin.write(draw(base, spec, f / FPS, w, h).tobytes())
+        t = f / FPS
+        bg = vicecards.frame_bg(still, horizon, t, w, h) if vice else base
+        proc.stdin.write(draw(bg, spec, t, w, h).tobytes())
     proc.stdin.close()
     proc.wait()
     return out

@@ -1,0 +1,316 @@
+{
+  "title": "GTA 6 Tier List: Every GTA Ranked by Critics",
+  "slug": "gta6-tier-list-critics",
+  "series": "Explained",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_title": "GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts",
+    "GTA 6 beat every GTA on Metacritic (tier list) #GTA6 #Shorts",
+    "GTA 6 vs every GTA: the critics' tier list #GTA6 #Shorts"
+  ],
+  "short_description": "Every main 3D-era GTA ranked by its Metacritic critic score (PlayStation versions): GTA 6 99 (tied with Ocarina of Time for the highest ever), GTA IV 98, GTA III 97, GTA V 97, Vice City 95, San Andreas 95. S tier = 98+, A = 97, B = 95. Which one is ranked too low?\n\nSources: Metacritic, VGC, Notebookcheck, Insider Gaming, Sportskeeda.",
+  "short_es": {
+    "title": "GTA 6: Vice City es solo TIER B según la crítica 😳 #GTA6 #Shorts",
+    "description": "Cada GTA principal de la era 3D según su nota de la crítica en Metacritic (versiones de PlayStation): GTA 6 99 (empatado con Ocarina of Time, la nota más alta de la historia), GTA IV 98, GTA III 97, GTA V 97, Vice City 95, San Andreas 95. Tier S = 98+, A = 97, B = 95. ¿Cuál está muy abajo?",
+    "tags": [
+      "GTA 6 tier list",
+      "GTA 6 Metacritic",
+      "GTA tier list",
+      "mejor GTA",
+      "GTA Vice City",
+      "GTA San Andreas",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Which GTA is ranked too low? 👇",
+  "short_pinned_comment_es": "¿Qué GTA está muy abajo? 👇",
+  "tags": [
+    "GTA 6 tier list",
+    "GTA tier list",
+    "GTA 6 Metacritic",
+    "every GTA ranked",
+    "best GTA game",
+    "GTA Vice City",
+    "GTA San Andreas",
+    "GTA 4",
+    "GTA 5",
+    "GTA 3",
+    "GTA 6",
+    "GTA VI",
+    "Grand Theft Auto VI"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#tierlist",
+    "#gaming"
+  ],
+  "sources": [
+    "VGC - Grand Theft Auto 6 is currently the highest scoring video game of all time, according to Metacritic: https://www.videogameschronicle.com/news/grand-theft-auto-6-is-currently-the-highest-scoring-video-game-of-all-time-according-to-metacritic/",
+    "Notebookcheck - GTA 6 reviews award 99 on Metacritic, topping GTA 4 (98); GTA 5 and RDR2 at 97: https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html",
+    "Metacritic - Grand Theft Auto III (PS2) critic reviews, Metascore 97: https://legacy.prod.metacritic.com/game/playstation-2/grand-theft-auto-iii/critic-reviews",
+    "Insider Gaming - best PlayStation 2 game ever (GTA III 97; San Andreas 95): https://insider-gaming.com/what-was-the-best-playstation-2-game-ever/",
+    "Sportskeeda - Top 5 GTA games by Metacritic (GTA IV 98, GTA III 97, GTA V 97, Vice City 95, San Andreas 95): https://sportskeeda.com/gta/top-5-gta-games-based-average-critic-reviews-metacritic",
+    "Metacritic - Grand Theft Auto: Vice City: https://www.metacritic.com/game/grand-theft-auto-vice-city"
+  ],
+  "short": [
+    {
+      "headline": "CRITICS' TIER LIST",
+      "headline_es": "TIER LIST DE LA CRÍTICA",
+      "text": "By critic scores, Vice City is only B tier.",
+      "text_es": "Según la crítica, Vice City es solo tier B.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "VICE CITY",
+          "IS B TIER"
+        ],
+        "pink": [
+          "B TIER"
+        ],
+        "sub": "by Metacritic scores",
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "VICE CITY",
+          "ES TIER B"
+        ],
+        "pink": [
+          "TIER B"
+        ],
+        "sub": "según Metacritic",
+        "seed": 2
+      }
+    },
+    {
+      "headline": "B TIER: 95",
+      "headline_es": "TIER B: 95",
+      "text": "Vice City and San Andreas: ninety five on Metacritic.",
+      "text_es": "Vice City y San Andreas: noventa y cinco en Metacritic.",
+      "keep_media": true,
+      "chart": {
+        "type": "tier",
+        "title": "EVERY GTA ON METACRITIC",
+        "rows": [
+          [
+            "S",
+            []
+          ],
+          [
+            "A",
+            []
+          ],
+          [
+            "B",
+            [
+              "Vice City · 95",
+              "San Andreas · 95"
+            ]
+          ]
+        ],
+        "static": [],
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "tier",
+        "title": "GTA EN METACRITIC",
+        "rows": [
+          [
+            "S",
+            []
+          ],
+          [
+            "A",
+            []
+          ],
+          [
+            "B",
+            [
+              "Vice City · 95",
+              "San Andreas · 95"
+            ]
+          ]
+        ],
+        "static": [],
+        "seed": 2
+      }
+    },
+    {
+      "headline": "A TIER: 97",
+      "headline_es": "TIER A: 97",
+      "text": "GTA 3 and GTA 5: ninety seven. A tier.",
+      "text_es": "GTA 3 y GTA 5: noventa y siete. Tier A.",
+      "keep_media": true,
+      "chart": {
+        "type": "tier",
+        "title": "EVERY GTA ON METACRITIC",
+        "rows": [
+          [
+            "S",
+            []
+          ],
+          [
+            "A",
+            [
+              "GTA III · 97",
+              "GTA V · 97"
+            ]
+          ],
+          [
+            "B",
+            [
+              "Vice City · 95",
+              "San Andreas · 95"
+            ]
+          ]
+        ],
+        "static": [
+          "B"
+        ],
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "tier",
+        "title": "GTA EN METACRITIC",
+        "rows": [
+          [
+            "S",
+            []
+          ],
+          [
+            "A",
+            [
+              "GTA III · 97",
+              "GTA V · 97"
+            ]
+          ],
+          [
+            "B",
+            [
+              "Vice City · 95",
+              "San Andreas · 95"
+            ]
+          ]
+        ],
+        "static": [
+          "B"
+        ],
+        "seed": 2
+      }
+    },
+    {
+      "headline": "S TIER: 98+",
+      "headline_es": "TIER S: 98+",
+      "text": "GTA 4 hit ninety eight. GTA 6 beat them all: ninety nine.",
+      "text_es": "GTA 4 sacó noventa y ocho. GTA 6 les ganó a todos: noventa y nueve.",
+      "keep_media": true,
+      "chart": {
+        "type": "tier",
+        "title": "EVERY GTA ON METACRITIC",
+        "rows": [
+          [
+            "S",
+            [
+              "GTA IV · 98",
+              "GTA 6 · 99"
+            ]
+          ],
+          [
+            "A",
+            [
+              "GTA III · 97",
+              "GTA V · 97"
+            ]
+          ],
+          [
+            "B",
+            [
+              "Vice City · 95",
+              "San Andreas · 95"
+            ]
+          ]
+        ],
+        "static": [
+          "B",
+          "A"
+        ],
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "tier",
+        "title": "GTA EN METACRITIC",
+        "rows": [
+          [
+            "S",
+            [
+              "GTA IV · 98",
+              "GTA 6 · 99"
+            ]
+          ],
+          [
+            "A",
+            [
+              "GTA III · 97",
+              "GTA V · 97"
+            ]
+          ],
+          [
+            "B",
+            [
+              "Vice City · 95",
+              "San Andreas · 95"
+            ]
+          ]
+        ],
+        "static": [
+          "B",
+          "A"
+        ],
+        "seed": 2
+      }
+    },
+    {
+      "headline": "TOO LOW?",
+      "headline_es": "¿MUY ABAJO?",
+      "text": "Which one is ranked too low? Tell me, because",
+      "text_es": "¿Cuál está muy abajo? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "WHICH ONE",
+          "IS TOO LOW?"
+        ],
+        "pink": [
+          "TOO LOW?"
+        ],
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿CUÁL ESTÁ",
+          "MUY ABAJO?"
+        ],
+        "pink": [
+          "MUY ABAJO?"
+        ],
+        "seed": 2
+      }
+    }
+  ]
+}

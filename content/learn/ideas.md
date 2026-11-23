@@ -108,3 +108,16 @@ views (counter + bars), inflation (counter + LINE).
    PS5 Pro guide (affiliate). Verify with a 2nd outlet first.
 7. **19 million copies on day one?** Sensor Tower ESTIMATE: 19.1M copies, ~$1.84B (Globe and Mail, Men's Journal).
    Take-Two's official numbers are expected by Nov 23: make it a breaking-news Short when they land.
+
+## GTA 6-style lettering Shorts (owner Nov 23: no trailer images; "lettering and more modern style")
+Research (Nov 23, web: FluxNote, Influencers-Time, AIR Media-Tech, YouTube's own blog on tier lists): text-on-screen is
+the standard for faceless Shorts; animate only the key words; change the picture every 2-4 s (8-12 scenes per 30 s);
+tier lists (a gaming-born format, S = "super"), countdown listicles (4-6 s per item), quizzes with a timer and VS /
+"this or that" drive comments. Our own data: statement hooks beat questions; "catch" and "vs GTA 5" work.
+Next ideas on the new cards (facts checked before writing):
+1. **Tier list: every GTA by critics** (built: gta6-tier-list-critics, "Vice City is only B tier").
+2. **4 secrets as a countdown** (re-made Nov 23 in the new style; awaiting approval).
+3. **VS: GTA 6 vs GTA 5 in 4 numbers** (price $80 vs $60, 80 h vs 32 h, $3.79B vs $800M day one, 99 vs 97): one VS
+   card per number, the winner lights up.
+4. **Tier list: GTA 6 radio stations by what the comments pick** (needs our comment data first).
+5. **Breaking-news card** for any confirmed update/patch (kicker CONFIRMED / REPORTEDLY).
