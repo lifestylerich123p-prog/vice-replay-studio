@@ -233,4 +233,6 @@
   Auth Platform published, Desktop client JSON downloaded on the Mac). Pending: the What If Arena chat reconnects with
   it and logs it in the Channel Map. Vice Replay's EN + ES keys checked after the change: both still valid on the old
   project (project number 662880770567, ID what-if-arena; now effectively Vice Replay's; renaming it is optional).
-
+- 2026-11-22 (night): DONE. What If Arena reconnected on its own project "What If Arena API" (its chat confirmed the login;
+  its Docs connector can't edit the Channel Map, so Vice Replay logged it there). Vice Replay now has the old project's
+  daily quota to itself.

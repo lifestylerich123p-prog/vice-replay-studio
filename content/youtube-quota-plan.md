@@ -5,7 +5,7 @@ OAuth app "Creator HQ"), so they share one daily YouTube quota. On Nov 22 it ran
 A Short costs about 2,000-2,500 units (upload 1,600 + subtitles 400 + playlist, comment, thumbnail ~150). Already
 done (free): English Shorts no longer upload a Spanish subtitle track (saves 400 per Short).
 
-## Fix 1 (free, ~15 minutes, biggest): give What If Arena its own Google Cloud project
+## Fix 1 (free, ~15 minutes, biggest): give What If Arena its own Google Cloud project: DONE Nov 22 (night)
 Each project gets its own daily quota (10,000 units by default). Moving What If Arena OUT keeps Vice Replay's keys as
 they are (no reconnect for the two Vice Replay channels). Do this on the computer where the What If Arena chat runs.
 

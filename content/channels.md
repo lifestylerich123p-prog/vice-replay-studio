@@ -70,7 +70,8 @@ Checked Nov 20, 2026 on the owner's Everygen billing page and the account API:
   vicereplay.com/terms/). The app is PUBLISHED (In production), so new keys don't expire after 7 days. Keys made while it
   was in Testing still expire around Nov 24: Vice Replay reconnected both channels Nov 22; What If Arena must reconnect
   once in its own chat. Each channel's key lives only in its own chat's environment settings. Daily quota is per
-  project, so a big upload day on one channel leaves fewer units for the others.
+  project, so a big upload day on one channel leaves fewer units for the others. Update (Nov 22, night): What If
+  Arena moved to its own project "What If Arena API"; the old project (ID what-if-arena) is now Vice Replay's (EN + ES).
 
 ## What works (shared lessons)
 - 8-16 s clips get ~7x the views per hour of 20-30 s clips (307 Lacy GTA 6 Shorts, Nov 18-19).
@@ -103,6 +104,7 @@ Checked Nov 20, 2026 on the owner's Everygen billing page and the account API:
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-22 (night) · What If Arena (logged by Vice Replay; WIA's Docs connector can't edit the shared doc) · YouTube reconnected for What If Arena on its own project "What If Arena API"; login confirmed; old client/token backed up in its secrets folder. Quotas are now separate.
 - 2026-11-22 (night) · Vice Replay · Owner created the Cloud project "What If Arena API" (API on, app published, Desktop client downloaded). What If Arena chat: reconnect with that client file and log it here. Vice Replay keys checked: still fine on the old project.
 - 2026-11-22 · Vice Replay · YouTube quota ran out at 7:02 PM ET (one Cloud project for all 3 channels). Plan: What If Arena gets its OWN Cloud project (steps: content/youtube-quota-plan.md); Vice Replay keeps the old one. Spanish subtitle track dropped on English Shorts (saves 400 units each).
 - 2026-11-22 · Vice Replay · YouTube Partner Program bar doubles for NEW channels on Feb 1, 2027 (1,000 subs + 8,000 watch hours in 365 days or 20M Shorts views in 90 days). Already in YPP = unaffected. Each channel close to today's bar should push to qualify before Feb 1.
