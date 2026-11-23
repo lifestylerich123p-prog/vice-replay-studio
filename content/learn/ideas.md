@@ -3,6 +3,13 @@
 Rules: re-check every fact on the day you use it (2+ sources), label estimates/reports, no story spoilers, no
 isolated cutscenes. Mark an idea USED (date + slug) when it ships. Researched by the main chat; sources inline.
 
+## Week of Nov 30 (main chat, Nov 23; plan in content/week-2026-11-30.md)
+Made and waiting for approval: gta6-top-3-rides (remade as cards), gta6-vs-red-dead-2 (VS), gta-tier-list-sales
+(Tier List #2), gta-cities-quiz (Quiz #3). For the daily run: Fri countdown "old GTA brands back in GTA 6" (Sprunk,
+eCola, Fleeca, Gruppe Sechs: Kotaku's extended-look details; find a 2nd source each), Sat Spanish special (top
+Spanish-speaking streamers, only if Streams Charts numbers agree in 2 sources; IlloJuan "562K" conflicted Nov 23),
+Sun Dec 6 long video "GTA 6 at The Game Awards 2026: all 8 nominations explained".
+
 ## From the Nov 23 investigation (content/learn/market-2026-11-23.md)
 1. BUILT: `gta6-5-things` (facts-only "5 things you didn't know", the week's #1 breakout format). Next: a Part 2 with 5
    NEW checked facts, and with owner gameplay a "hidden details" version.
