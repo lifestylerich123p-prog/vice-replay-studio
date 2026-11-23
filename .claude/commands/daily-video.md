@@ -24,7 +24,9 @@ make sensible choices, finish the whole run, and explain your choices in the fin
 7. **Weekly card series** (owner Nov 23; one recognizable format per weekday, different card mix every day, so
    YouTube sees variety, not a template): **Mon** news card (`headline` + kinetic: the week's biggest confirmed update);
    **Tue** VS day (`versus`: GTA 6 vs GTA 5, edition vs edition, record vs record); **Wed** tier list (`tier`: rank
-   something with checked numbers or owner/comment votes); **Thu** quiz (`quiz` cards with a timer, "only real fans get
+   something with checked numbers or owner/comment votes; **Nov 23: tier lists won big (506 views in 3 h vs a
+   219 median), so a 2nd tier list every Saturday 10 AM in English**, data-backed or a clearly labeled opinion ranking
+   with a contrarian hook, e.g. "CJ isn't S tier"); **Thu** quiz (`quiz` cards with a timer, "only real fans get
    3/3"); **Fri** countdown ("N things", `countdown` cards); **Sat** Spanish special (a Spanish-only angle on the Spanish
    channel: local prices, Latin American interest, regional slang/style); **Sun** the long hub video (16:9 lettering,
    episodes/gta6-10-numbers.json style) at 3:30 PM + a meter/kinetic Short. Series name in each description, e.g.
