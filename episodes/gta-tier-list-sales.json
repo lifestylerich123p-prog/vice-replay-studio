@@ -1,316 +1,321 @@
 {
- "format": "news",
- "mood": "hype",
- "use_gameplay": false,
- "style": "vice (GTA 6-style lettering cards, Nov 23)",
- "short_playlist": "GTA 6 Shorts",
- "hashtags": [
-  "GTA6",
-  "GTAVI",
-  "Shorts"
- ],
- "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short); generate after approval",
- "series": "Tier List",
- "title": "Every GTA Ranked by Sales: GTA 5 Gets Its Own Tier",
- "slug": "gta-tier-list-sales",
- "short_title": "Every GTA ranked by sales: GTA 5 is alone #GTA6 #Shorts",
- "short_title_options": [
-  "Every GTA ranked by sales: GTA 5 is alone #GTA6 #Shorts",
-  "GTA sales tier list: where will GTA 6 land? #GTA6 #Shorts",
-  "GTA 5 sold more than you think #GTA6 #Shorts"
- ],
- "short_description": "Vice Replay Tier List #2: every 3D-era GTA ranked by its last reported sales. B: GTA III (14.5 million) and Vice City (17.5 million), both as of March 2008 (Take-Two). A: GTA IV (25 million+) and San Andreas (27.5 million). S, alone: GTA V, over 230 million (Take-Two). GTA 6 is too new for a unit count: Take-Two has only reported $3.79 billion in pre-orders plus day one. Where will it land?\n\nSources: Take-Two, PC Gamer, Statista, Wikipedia, Sportskeeda, Twinfinite.",
- "short_es": {
-  "title": "Cada GTA por ventas: GTA 5 está SOLO 👑 #GTA6 #Shorts",
-  "description": "Vice Replay Tier List: cada GTA de la era 3D según sus últimas ventas reportadas. B: GTA III (14,5 millones) y Vice City (17,5 millones), datos de marzo de 2008 (Take-Two). A: GTA IV (más de 25 millones) y San Andreas (27,5 millones). S, solo: GTA V, más de 230 millones (Take-Two). GTA 6 es muy nuevo para tener unidades vendidas. ¿Dónde va a quedar?",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_playlist": "GTA 6 Shorts",
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)",
+  "series": "Tier List",
+  "title": "Every GTA Ranked by Sales: GTA 5 Gets Its Own Tier",
+  "slug": "gta-tier-list-sales",
+  "short_title": "Every GTA ranked by sales: GTA 5 is alone #GTA6 #Shorts",
+  "short_title_options": [
+    "Every GTA ranked by sales: GTA 5 is alone #GTA6 #Shorts",
+    "GTA sales tier list: where will GTA 6 land? #GTA6 #Shorts",
+    "GTA 5 sold more than you think #GTA6 #Shorts"
+  ],
+  "short_description": "Vice Replay Tier List #2: every 3D-era GTA ranked by its last reported sales. B: GTA III (14.5 million) and Vice City (17.5 million), both as of March 2008 (Take-Two). A: GTA IV (25 million+) and San Andreas (27.5 million). S, alone: GTA V, over 230 million (Take-Two). GTA 6 is too new for a unit count: Take-Two has only reported $3.79 billion in pre-orders plus day one. Where will it land?\n\nSources: Take-Two, PC Gamer, Statista, Wikipedia, Sportskeeda, Twinfinite.",
+  "short_es": {
+    "title": "Cada GTA por ventas: GTA 5 está SOLO 👑 #GTA6 #Shorts",
+    "description": "Vice Replay Tier List: cada GTA de la era 3D según sus últimas ventas reportadas. B: GTA III (14,5 millones) y Vice City (17,5 millones), datos de marzo de 2008 (Take-Two). A: GTA IV (más de 25 millones) y San Andreas (27,5 millones). S, solo: GTA V, más de 230 millones (Take-Two). GTA 6 es muy nuevo para tener unidades vendidas. ¿Dónde va a quedar?",
+    "tags": [
+      "GTA ventas",
+      "GTA 5 ventas",
+      "GTA tier list",
+      "GTA 6 español",
+      "GTA San Andreas",
+      "GTA Vice City",
+      "GTA VI"
+    ]
+  },
+  "pinned_comment": "Where does GTA 6 land: S, A or B? 👇",
+  "short_pinned_comment_es": "¿Dónde queda GTA 6: S, A o B? 👇",
   "tags": [
-   "GTA ventas",
-   "GTA 5 ventas",
-   "GTA tier list",
-   "GTA 6 español",
-   "GTA San Andreas",
-   "GTA Vice City",
-   "GTA VI"
+    "GTA sales",
+    "GTA 5 sales",
+    "GTA tier list",
+    "best selling GTA",
+    "GTA San Andreas sales",
+    "GTA Vice City",
+    "GTA 6",
+    "GTA VI"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gta5",
+    "#gtasanandreas",
+    "#tierlist"
+  ],
+  "sources": [
+    "PC Gamer - GTA 5: 230 million copies since 2013: https://www.pcgamer.com/gaming-industry/grand-theft-auto-5-averages-more-copies-sold-per-year-than-most-megahits-manage-in-their-entire-lifetime-with-a-total-of-230-million-since-2013/",
+    "Statista - GTA V unit sales (215 million+, Aug 2025): https://www.statista.com/statistics/1247955/grand-theft-auto-v-unit-sales/",
+    "Wikipedia - Grand Theft Auto: Vice City (17.5 million as of March 2008, Take-Two): https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
+    "iGrandTheftAuto - Vice City sells 17.5 million: https://www.igrandtheftauto.com/gtavc/news/vice-city-sells-17-5-million",
+    "Sportskeeda - The 5 best-selling GTA games (San Andreas 27.5M, GTA III 14.5M): https://www.sportskeeda.com/gta/the-5-best-selling-gta-games-time",
+    "Twinfinite - GTA V sales vs other games (GTA IV 25 million): https://twinfinite.net/features/gta-v-sales-versus-other-popular-games/",
+    "Take-Two 8-K exhibit 99.1 (Nov 20, 2026): https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm"
+  ],
+  "short": [
+    {
+      "headline": "GTA 5 IS ALONE",
+      "headline_es": "GTA 5 ESTÁ SOLO",
+      "text": "Rank every GTA by sales, and GTA 5 gets its own tier.",
+      "text_es": "Ordena cada GTA por ventas, y GTA cinco tiene su propio nivel.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "GTA 5 IS IN",
+          "ITS OWN TIER"
+        ],
+        "pink": [
+          "ITS OWN TIER"
+        ],
+        "sub": "every GTA ranked by sales",
+        "seed": 7
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "GTA 5 TIENE",
+          "SU PROPIO NIVEL"
+        ],
+        "pink": [
+          "SU PROPIO NIVEL"
+        ],
+        "sub": "cada GTA por ventas",
+        "seed": 7
+      },
+      "audio_es": "media/voice/gta-tier-list-sales/es/seg1.wav"
+    },
+    {
+      "headline": "B TIER",
+      "headline_es": "NIVEL B",
+      "text": "B tier: GTA 3 and Vice City, under twenty million each.",
+      "text_es": "Nivel B: GTA tres y Vice City, menos de veinte millones cada uno.",
+      "keep_media": true,
+      "chart": {
+        "type": "tier",
+        "title": "EVERY GTA BY SALES",
+        "rows": [
+          [
+            "S",
+            []
+          ],
+          [
+            "A",
+            []
+          ],
+          [
+            "B",
+            [
+              "GTA III · 14.5M",
+              "Vice City · 17.5M"
+            ]
+          ]
+        ],
+        "static": [],
+        "src": "last reported: Take-Two · Rockstar",
+        "seed": 7
+      },
+      "chart_es": {
+        "type": "tier",
+        "title": "CADA GTA POR VENTAS",
+        "rows": [
+          [
+            "S",
+            []
+          ],
+          [
+            "A",
+            []
+          ],
+          [
+            "B",
+            [
+              "GTA III · 14.5M",
+              "Vice City · 17.5M"
+            ]
+          ]
+        ],
+        "static": [],
+        "src": "último dato: Take-Two · Rockstar",
+        "seed": 7
+      },
+      "audio_es": "media/voice/gta-tier-list-sales/es/seg2.wav"
+    },
+    {
+      "headline": "A TIER",
+      "headline_es": "NIVEL A",
+      "text": "A tier: GTA 4 and San Andreas, about twenty five million.",
+      "text_es": "Nivel A: GTA cuatro y San Andreas, unos veinticinco millones.",
+      "keep_media": true,
+      "chart": {
+        "type": "tier",
+        "title": "EVERY GTA BY SALES",
+        "rows": [
+          [
+            "S",
+            []
+          ],
+          [
+            "A",
+            [
+              "GTA IV · 25M",
+              "San Andreas · 27.5M"
+            ]
+          ],
+          [
+            "B",
+            [
+              "GTA III · 14.5M",
+              "Vice City · 17.5M"
+            ]
+          ]
+        ],
+        "static": [
+          "B"
+        ],
+        "src": "last reported: Take-Two · Rockstar",
+        "seed": 7
+      },
+      "chart_es": {
+        "type": "tier",
+        "title": "CADA GTA POR VENTAS",
+        "rows": [
+          [
+            "S",
+            []
+          ],
+          [
+            "A",
+            [
+              "GTA IV · 25M",
+              "San Andreas · 27.5M"
+            ]
+          ],
+          [
+            "B",
+            [
+              "GTA III · 14.5M",
+              "Vice City · 17.5M"
+            ]
+          ]
+        ],
+        "static": [
+          "B"
+        ],
+        "src": "último dato: Take-Two · Rockstar",
+        "seed": 7
+      },
+      "audio_es": "media/voice/gta-tier-list-sales/es/seg3.wav"
+    },
+    {
+      "headline": "S TIER",
+      "headline_es": "NIVEL S",
+      "text": "S tier, alone: GTA 5, over two hundred thirty million.",
+      "text_es": "Nivel S, solo: GTA cinco, más de doscientos treinta millones.",
+      "keep_media": true,
+      "chart": {
+        "type": "tier",
+        "title": "EVERY GTA BY SALES",
+        "rows": [
+          [
+            "S",
+            [
+              "GTA V · 230M+"
+            ]
+          ],
+          [
+            "A",
+            [
+              "GTA IV · 25M",
+              "San Andreas · 27.5M"
+            ]
+          ],
+          [
+            "B",
+            [
+              "GTA III · 14.5M",
+              "Vice City · 17.5M"
+            ]
+          ]
+        ],
+        "static": [
+          "B",
+          "A"
+        ],
+        "src": "last reported: Take-Two · Rockstar",
+        "seed": 7
+      },
+      "chart_es": {
+        "type": "tier",
+        "title": "CADA GTA POR VENTAS",
+        "rows": [
+          [
+            "S",
+            [
+              "GTA V · 230M+"
+            ]
+          ],
+          [
+            "A",
+            [
+              "GTA IV · 25M",
+              "San Andreas · 27.5M"
+            ]
+          ],
+          [
+            "B",
+            [
+              "GTA III · 14.5M",
+              "Vice City · 17.5M"
+            ]
+          ]
+        ],
+        "static": [
+          "B",
+          "A"
+        ],
+        "src": "último dato: Take-Two · Rockstar",
+        "seed": 7
+      },
+      "audio_es": "media/voice/gta-tier-list-sales/es/seg4.wav"
+    },
+    {
+      "headline": "WHERE'S GTA 6?",
+      "headline_es": "¿Y GTA 6?",
+      "text": "Where will GTA 6 land? Tell me, because",
+      "text_es": "¿Dónde va a quedar GTA seis? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "WHERE WILL",
+          "GTA 6 LAND?"
+        ],
+        "pink": [
+          "GTA 6 LAND?"
+        ],
+        "seed": 7
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿DÓNDE QUEDA",
+          "GTA 6?"
+        ],
+        "pink": [
+          "GTA 6?"
+        ],
+        "seed": 7
+      },
+      "audio_es": "media/voice/gta-tier-list-sales/es/seg5.wav"
+    }
   ]
- },
- "pinned_comment": "Where does GTA 6 land: S, A or B? 👇",
- "short_pinned_comment_es": "¿Dónde queda GTA 6: S, A o B? 👇",
- "tags": [
-  "GTA sales",
-  "GTA 5 sales",
-  "GTA tier list",
-  "best selling GTA",
-  "GTA San Andreas sales",
-  "GTA Vice City",
-  "GTA 6",
-  "GTA VI"
- ],
- "tiktok_hashtags": [
-  "#gta6",
-  "#gta5",
-  "#gtasanandreas",
-  "#tierlist"
- ],
- "sources": [
-  "PC Gamer - GTA 5: 230 million copies since 2013: https://www.pcgamer.com/gaming-industry/grand-theft-auto-5-averages-more-copies-sold-per-year-than-most-megahits-manage-in-their-entire-lifetime-with-a-total-of-230-million-since-2013/",
-  "Statista - GTA V unit sales (215 million+, Aug 2025): https://www.statista.com/statistics/1247955/grand-theft-auto-v-unit-sales/",
-  "Wikipedia - Grand Theft Auto: Vice City (17.5 million as of March 2008, Take-Two): https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
-  "iGrandTheftAuto - Vice City sells 17.5 million: https://www.igrandtheftauto.com/gtavc/news/vice-city-sells-17-5-million",
-  "Sportskeeda - The 5 best-selling GTA games (San Andreas 27.5M, GTA III 14.5M): https://www.sportskeeda.com/gta/the-5-best-selling-gta-games-time",
-  "Twinfinite - GTA V sales vs other games (GTA IV 25 million): https://twinfinite.net/features/gta-v-sales-versus-other-popular-games/",
-  "Take-Two 8-K exhibit 99.1 (Nov 20, 2026): https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm"
- ],
- "short": [
-  {
-   "headline": "GTA 5 IS ALONE",
-   "headline_es": "GTA 5 ESTÁ SOLO",
-   "text": "Rank every GTA by sales, and GTA 5 gets its own tier.",
-   "text_es": "Ordena cada GTA por ventas, y GTA cinco tiene su propio nivel.",
-   "keep_media": true,
-   "chart": {
-    "type": "kinetic",
-    "lines": [
-     "GTA 5 IS IN",
-     "ITS OWN TIER"
-    ],
-    "pink": [
-     "ITS OWN TIER"
-    ],
-    "sub": "every GTA ranked by sales",
-    "seed": 7
-   },
-   "chart_es": {
-    "type": "kinetic",
-    "lines": [
-     "GTA 5 TIENE",
-     "SU PROPIO NIVEL"
-    ],
-    "pink": [
-     "SU PROPIO NIVEL"
-    ],
-    "sub": "cada GTA por ventas",
-    "seed": 7
-   }
-  },
-  {
-   "headline": "B TIER",
-   "headline_es": "NIVEL B",
-   "text": "B tier: GTA 3 and Vice City, under twenty million each.",
-   "text_es": "Nivel B: GTA tres y Vice City, menos de veinte millones cada uno.",
-   "keep_media": true,
-   "chart": {
-    "type": "tier",
-    "title": "EVERY GTA BY SALES",
-    "rows": [
-     [
-      "S",
-      []
-     ],
-     [
-      "A",
-      []
-     ],
-     [
-      "B",
-      [
-       "GTA III · 14.5M",
-       "Vice City · 17.5M"
-      ]
-     ]
-    ],
-    "static": [],
-    "src": "last reported: Take-Two · Rockstar",
-    "seed": 7
-   },
-   "chart_es": {
-    "type": "tier",
-    "title": "CADA GTA POR VENTAS",
-    "rows": [
-     [
-      "S",
-      []
-     ],
-     [
-      "A",
-      []
-     ],
-     [
-      "B",
-      [
-       "GTA III · 14.5M",
-       "Vice City · 17.5M"
-      ]
-     ]
-    ],
-    "static": [],
-    "src": "último dato: Take-Two · Rockstar",
-    "seed": 7
-   }
-  },
-  {
-   "headline": "A TIER",
-   "headline_es": "NIVEL A",
-   "text": "A tier: GTA 4 and San Andreas, about twenty five million.",
-   "text_es": "Nivel A: GTA cuatro y San Andreas, unos veinticinco millones.",
-   "keep_media": true,
-   "chart": {
-    "type": "tier",
-    "title": "EVERY GTA BY SALES",
-    "rows": [
-     [
-      "S",
-      []
-     ],
-     [
-      "A",
-      [
-       "GTA IV · 25M",
-       "San Andreas · 27.5M"
-      ]
-     ],
-     [
-      "B",
-      [
-       "GTA III · 14.5M",
-       "Vice City · 17.5M"
-      ]
-     ]
-    ],
-    "static": [
-     "B"
-    ],
-    "src": "last reported: Take-Two · Rockstar",
-    "seed": 7
-   },
-   "chart_es": {
-    "type": "tier",
-    "title": "CADA GTA POR VENTAS",
-    "rows": [
-     [
-      "S",
-      []
-     ],
-     [
-      "A",
-      [
-       "GTA IV · 25M",
-       "San Andreas · 27.5M"
-      ]
-     ],
-     [
-      "B",
-      [
-       "GTA III · 14.5M",
-       "Vice City · 17.5M"
-      ]
-     ]
-    ],
-    "static": [
-     "B"
-    ],
-    "src": "último dato: Take-Two · Rockstar",
-    "seed": 7
-   }
-  },
-  {
-   "headline": "S TIER",
-   "headline_es": "NIVEL S",
-   "text": "S tier, alone: GTA 5, over two hundred thirty million.",
-   "text_es": "Nivel S, solo: GTA cinco, más de doscientos treinta millones.",
-   "keep_media": true,
-   "chart": {
-    "type": "tier",
-    "title": "EVERY GTA BY SALES",
-    "rows": [
-     [
-      "S",
-      [
-       "GTA V · 230M+"
-      ]
-     ],
-     [
-      "A",
-      [
-       "GTA IV · 25M",
-       "San Andreas · 27.5M"
-      ]
-     ],
-     [
-      "B",
-      [
-       "GTA III · 14.5M",
-       "Vice City · 17.5M"
-      ]
-     ]
-    ],
-    "static": [
-     "B",
-     "A"
-    ],
-    "src": "last reported: Take-Two · Rockstar",
-    "seed": 7
-   },
-   "chart_es": {
-    "type": "tier",
-    "title": "CADA GTA POR VENTAS",
-    "rows": [
-     [
-      "S",
-      [
-       "GTA V · 230M+"
-      ]
-     ],
-     [
-      "A",
-      [
-       "GTA IV · 25M",
-       "San Andreas · 27.5M"
-      ]
-     ],
-     [
-      "B",
-      [
-       "GTA III · 14.5M",
-       "Vice City · 17.5M"
-      ]
-     ]
-    ],
-    "static": [
-     "B",
-     "A"
-    ],
-    "src": "último dato: Take-Two · Rockstar",
-    "seed": 7
-   }
-  },
-  {
-   "headline": "WHERE'S GTA 6?",
-   "headline_es": "¿Y GTA 6?",
-   "text": "Where will GTA 6 land? Tell me, because",
-   "text_es": "¿Dónde va a quedar GTA seis? Dime, porque",
-   "keep_media": true,
-   "chart": {
-    "type": "kinetic",
-    "lines": [
-     "WHERE WILL",
-     "GTA 6 LAND?"
-    ],
-    "pink": [
-     "GTA 6 LAND?"
-    ],
-    "seed": 7
-   },
-   "chart_es": {
-    "type": "kinetic",
-    "lines": [
-     "¿DÓNDE QUEDA",
-     "GTA 6?"
-    ],
-    "pink": [
-     "GTA 6?"
-    ],
-    "seed": 7
-   }
-  }
- ]
 }

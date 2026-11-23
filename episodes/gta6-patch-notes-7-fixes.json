@@ -1,268 +1,273 @@
 {
- "series": "News",
- "format": "news",
- "mood": "hype",
- "use_gameplay": false,
- "style": "vice (GTA 6-style lettering cards, Nov 23)",
- "short_playlist": "GTA 6 Shorts",
- "hashtags": [
-  "GTA6",
-  "GTAVI",
-  "Shorts"
- ],
- "title": "Rockstar Finally Posted GTA 6 Patch Notes: 7 Fixes",
- "slug": "gta6-patch-notes-7-fixes",
- "short_title": "GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts",
- "short_title_options": [
-  "GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts",
-  "GTA 6 update 1.002.002: every fix #GTA6 #Shorts",
-  "Rockstar finally explained a GTA 6 update #GTA6 #Shorts"
- ],
- "short_description": "Rockstar has published patch notes for GTA 6 update 1.002.002 (Nov 23, 2026), the first notes after two silent updates. The 7 fixes: crashes; weather staying the same for too long; autosaves not working; phone calls not triggering (including ones needed to advance the story); not being able to lose a wanted level; the gym deadlift bar; partners not handing over bags to sell to fences. About 604 MB on PS5, up to 1.6 GB on Xbox Series X|S. What should Rockstar fix next?\n\nSources: VICE, Dot Esports, Comicbook, RockstarINTEL, GameNewsPlus, Wccftech.",
- "short_es": {
-  "title": "GTA 6 por FIN tiene notas del parche: 7 arreglos 🛠️ #GTA6 #Shorts",
-  "description": "Rockstar publicó las notas de la actualización 1.002.002 de GTA 6 (23 de noviembre de 2026), las primeras después de dos actualizaciones sin notas. Los 7 arreglos: cierres del juego; el clima que no cambiaba; el autoguardado; llamadas que no llegaban (incluidas las que hacen avanzar la historia); no poder perder el nivel de búsqueda; la barra de peso muerto del gimnasio; compañeros que no entregaban bolsas para vender. ¿Qué debería arreglar Rockstar ahora?",
+  "series": "News",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_playlist": "GTA 6 Shorts",
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "title": "Rockstar Finally Posted GTA 6 Patch Notes: 7 Fixes",
+  "slug": "gta6-patch-notes-7-fixes",
+  "short_title": "GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts",
+    "GTA 6 update 1.002.002: every fix #GTA6 #Shorts",
+    "Rockstar finally explained a GTA 6 update #GTA6 #Shorts"
+  ],
+  "short_description": "Rockstar has published patch notes for GTA 6 update 1.002.002 (Nov 23, 2026), the first notes after two silent updates. The 7 fixes: crashes; weather staying the same for too long; autosaves not working; phone calls not triggering (including ones needed to advance the story); not being able to lose a wanted level; the gym deadlift bar; partners not handing over bags to sell to fences. About 604 MB on PS5, up to 1.6 GB on Xbox Series X|S. What should Rockstar fix next?\n\nSources: VICE, Dot Esports, Comicbook, RockstarINTEL, GameNewsPlus, Wccftech.",
+  "short_es": {
+    "title": "GTA 6 por FIN tiene notas del parche: 7 arreglos 🛠️ #GTA6 #Shorts",
+    "description": "Rockstar publicó las notas de la actualización 1.002.002 de GTA 6 (23 de noviembre de 2026), las primeras después de dos actualizaciones sin notas. Los 7 arreglos: cierres del juego; el clima que no cambiaba; el autoguardado; llamadas que no llegaban (incluidas las que hacen avanzar la historia); no poder perder el nivel de búsqueda; la barra de peso muerto del gimnasio; compañeros que no entregaban bolsas para vender. ¿Qué debería arreglar Rockstar ahora?",
+    "tags": [
+      "GTA 6 actualización",
+      "GTA 6 notas del parche",
+      "GTA 6 parche",
+      "GTA 6 1.002.002",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "pinned_comment": "What should Rockstar fix next? 👇",
+  "short_pinned_comment_es": "¿Qué debería arreglar Rockstar ahora? 👇",
   "tags": [
-   "GTA 6 actualización",
-   "GTA 6 notas del parche",
-   "GTA 6 parche",
-   "GTA 6 1.002.002",
-   "GTA 6 español",
-   "GTA VI"
-  ]
- },
- "pinned_comment": "What should Rockstar fix next? 👇",
- "short_pinned_comment_es": "¿Qué debería arreglar Rockstar ahora? 👇",
- "tags": [
-  "GTA 6 patch notes",
-  "GTA 6 update",
-  "GTA 6 1.002.002",
-  "GTA 6 fixes",
-  "GTA 6 autosave",
-  "GTA 6 crash fix",
-  "GTA 6",
-  "GTA VI"
- ],
- "tiktok_hashtags": [
-  "#gta6",
-  "#gtavi",
-  "#gta6update",
-  "#patchnotes"
- ],
- "sources": [
-  "VICE - GTA 6 update 01.002.002 patch notes: https://www.vice.com/en/article/gta-6-update-01-002-002-patch-notes/",
-  "Dot Esports - GTA 6 patch 1.002.002: weather, autosave and more fixed: https://dotesports.com/gta/news/gta-6-patch-note-fix-change-weather-autosave-wanted-level",
-  "Comicbook - GTA 6 first update after release, full patch notes: https://comicbook.com/gaming/news/gta-6-grand-theft-auto-vi-update-patch-notes-ps5-xbox-november-23/",
-  "RockstarINTEL - GTA VI update 01.002.002 patch notes released: https://rockstarintel.com/new-gta-vi-update-01-002-002-patch-notes-released/",
-  "GameNewsPlus - GTA 6 update 01.002.002: Rockstar confirms 7 fixes: https://gamenewsplus.net/news/gta-6-update-01-002-002-patch-notes-rockstar-confirms-7-fixes-40140/",
-  "Wccftech - GTA VI 01.002.002 bug fix update rolling out: https://wccftech.com/grand-theft-auto-vi-01-002-002-update/"
- ],
- "short": [
-  {
-   "headline": "FINALLY",
-   "headline_es": "POR FIN",
-   "text": "Rockstar finally posted GTA 6 patch notes.",
-   "text_es": "Rockstar por fin publicó notas del parche de GTA seis.",
-   "keep_media": true,
-   "chart": {
-    "type": "kinetic",
-    "lines": [
-     "GTA 6 FINALLY HAS",
-     "PATCH NOTES"
-    ],
-    "pink": [
-     "PATCH NOTES"
-    ],
-    "sub": "update 1.002.002",
-    "seed": 9
-   },
-   "chart_es": {
-    "type": "kinetic",
-    "lines": [
-     "GTA 6 POR FIN TIENE",
-     "NOTAS DEL PARCHE"
-    ],
-    "pink": [
-     "NOTAS DEL PARCHE"
-    ],
-    "sub": "actualización 1.002.002",
-    "seed": 9
-   }
-  },
-  {
-   "headline": "7 FIXES",
-   "headline_es": "7 ARREGLOS",
-   "text": "Update three fixes seven things.",
-   "text_es": "La tercera actualización arregla siete cosas.",
-   "keep_media": true,
-   "chart": {
-    "type": "meter",
-    "value": 7,
-    "max": 7,
-    "label": "fixes",
-    "sub": "after 2 updates with no notes",
-    "src": "VICE · Dot Esports · Comicbook",
-    "seed": 9
-   },
-   "chart_es": {
-    "type": "meter",
-    "value": 7,
-    "max": 7,
-    "label": "arreglos",
-    "sub": "tras 2 actualizaciones sin notas",
-    "src": "VICE · Dot Esports · Comicbook",
-    "seed": 9
-   }
-  },
-  {
-   "headline": "THE BIG ONES",
-   "headline_es": "LOS GRANDES",
-   "text": "Crashes, broken autosaves, phone calls that wouldn't trigger, and a wanted level you couldn't lose.",
-   "text_es": "Cierres del juego, autoguardado roto, llamadas que no llegaban y un nivel de búsqueda imposible de perder.",
-   "keep_media": true,
-   "chart": {
-    "type": "list",
-    "bg": "vice",
-    "title": "FIXED IN 1.002.002",
-    "items": [
-     [
-      "Crashes",
-      "FIXED"
-     ],
-     [
-      "Autosave",
-      "FIXED"
-     ],
-     [
-      "Phone calls",
-      "FIXED"
-     ],
-     [
-      "Wanted level",
-      "FIXED"
-     ]
-    ],
-    "good": [
-     "fixed"
-    ],
-    "src": "VICE · Dot Esports · Comicbook",
-    "seed": 9
-   },
-   "chart_es": {
-    "type": "list",
-    "bg": "vice",
-    "title": "ARREGLADO EN 1.002.002",
-    "locale": "es",
-    "items": [
-     [
-      "Cierres",
-      "LISTO"
-     ],
-     [
-      "Autoguardado",
-      "LISTO"
-     ],
-     [
-      "Llamadas",
-      "LISTO"
-     ],
-     [
-      "Nivel de búsqueda",
-      "LISTO"
-     ]
-    ],
-    "good": [
-     "listo"
-    ],
-    "src": "VICE · Dot Esports · Comicbook",
-    "seed": 9
-   }
-  },
-  {
-   "headline": "PLUS 3 MORE",
-   "headline_es": "Y 3 MÁS",
-   "text": "Plus stuck weather, the gym deadlift, and fences.",
-   "text_es": "Y además: el clima trabado, el peso muerto del gimnasio y las bolsas para vender.",
-   "keep_media": true,
-   "chart": {
-    "type": "list",
-    "bg": "vice",
-    "title": "ALSO FIXED",
-    "items": [
-     [
-      "Weather stuck",
-      "FIXED"
-     ],
-     [
-      "Gym deadlift",
-      "FIXED"
-     ],
-     [
-      "Fences (bags)",
-      "FIXED"
-     ]
-    ],
-    "good": [
-     "fixed"
-    ],
-    "src": "VICE · Dot Esports · Comicbook",
-    "seed": 9
-   },
-   "chart_es": {
-    "type": "list",
-    "bg": "vice",
-    "title": "TAMBIÉN",
-    "locale": "es",
-    "items": [
-     [
-      "Clima trabado",
-      "LISTO"
-     ],
-     [
-      "Peso muerto",
-      "LISTO"
-     ],
-     [
-      "Bolsas para vender",
-      "LISTO"
-     ]
-    ],
-    "good": [
-     "listo"
-    ],
-    "src": "VICE · Dot Esports · Comicbook",
-    "seed": 9
-   }
-  },
-  {
-   "headline": "FIX IT NEXT",
-   "headline_es": "¿Y AHORA?",
-   "text": "What should they fix next? Tell me, because",
-   "text_es": "¿Qué deberían arreglar ahora? Dime, porque",
-   "keep_media": true,
-   "chart": {
-    "type": "kinetic",
-    "lines": [
-     "WHAT SHOULD",
-     "THEY FIX NEXT?"
-    ],
-    "pink": [
-     "FIX NEXT?"
-    ],
-    "seed": 9
-   },
-   "chart_es": {
-    "type": "kinetic",
-    "lines": [
-     "¿QUÉ DEBEN",
-     "ARREGLAR AHORA?"
-    ],
-    "pink": [
-     "ARREGLAR AHORA?"
-    ],
-    "seed": 9
-   }
-  }
- ],
- "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short); generate after approval"
+    "GTA 6 patch notes",
+    "GTA 6 update",
+    "GTA 6 1.002.002",
+    "GTA 6 fixes",
+    "GTA 6 autosave",
+    "GTA 6 crash fix",
+    "GTA 6",
+    "GTA VI"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gta6update",
+    "#patchnotes"
+  ],
+  "sources": [
+    "VICE - GTA 6 update 01.002.002 patch notes: https://www.vice.com/en/article/gta-6-update-01-002-002-patch-notes/",
+    "Dot Esports - GTA 6 patch 1.002.002: weather, autosave and more fixed: https://dotesports.com/gta/news/gta-6-patch-note-fix-change-weather-autosave-wanted-level",
+    "Comicbook - GTA 6 first update after release, full patch notes: https://comicbook.com/gaming/news/gta-6-grand-theft-auto-vi-update-patch-notes-ps5-xbox-november-23/",
+    "RockstarINTEL - GTA VI update 01.002.002 patch notes released: https://rockstarintel.com/new-gta-vi-update-01-002-002-patch-notes-released/",
+    "GameNewsPlus - GTA 6 update 01.002.002: Rockstar confirms 7 fixes: https://gamenewsplus.net/news/gta-6-update-01-002-002-patch-notes-rockstar-confirms-7-fixes-40140/",
+    "Wccftech - GTA VI 01.002.002 bug fix update rolling out: https://wccftech.com/grand-theft-auto-vi-01-002-002-update/"
+  ],
+  "short": [
+    {
+      "headline": "FINALLY",
+      "headline_es": "POR FIN",
+      "text": "Rockstar finally posted GTA 6 patch notes.",
+      "text_es": "Rockstar por fin publicó notas del parche de GTA seis.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "GTA 6 FINALLY HAS",
+          "PATCH NOTES"
+        ],
+        "pink": [
+          "PATCH NOTES"
+        ],
+        "sub": "update 1.002.002",
+        "seed": 9
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "GTA 6 POR FIN TIENE",
+          "NOTAS DEL PARCHE"
+        ],
+        "pink": [
+          "NOTAS DEL PARCHE"
+        ],
+        "sub": "actualización 1.002.002",
+        "seed": 9
+      },
+      "audio_es": "media/voice/gta6-patch-notes-7-fixes/es/seg1.wav"
+    },
+    {
+      "headline": "7 FIXES",
+      "headline_es": "7 ARREGLOS",
+      "text": "Update three fixes seven things.",
+      "text_es": "La tercera actualización arregla siete cosas.",
+      "keep_media": true,
+      "chart": {
+        "type": "meter",
+        "value": 7,
+        "max": 7,
+        "label": "fixes",
+        "sub": "after 2 updates with no notes",
+        "src": "VICE · Dot Esports · Comicbook",
+        "seed": 9
+      },
+      "chart_es": {
+        "type": "meter",
+        "value": 7,
+        "max": 7,
+        "label": "arreglos",
+        "sub": "tras 2 actualizaciones sin notas",
+        "src": "VICE · Dot Esports · Comicbook",
+        "seed": 9
+      },
+      "audio_es": "media/voice/gta6-patch-notes-7-fixes/es/seg2.wav"
+    },
+    {
+      "headline": "THE BIG ONES",
+      "headline_es": "LOS GRANDES",
+      "text": "Crashes, broken autosaves, phone calls that wouldn't trigger, and a wanted level you couldn't lose.",
+      "text_es": "Cierres del juego, autoguardado roto, llamadas que no llegaban y un nivel de búsqueda imposible de perder.",
+      "keep_media": true,
+      "chart": {
+        "type": "list",
+        "bg": "vice",
+        "title": "FIXED IN 1.002.002",
+        "items": [
+          [
+            "Crashes",
+            "FIXED"
+          ],
+          [
+            "Autosave",
+            "FIXED"
+          ],
+          [
+            "Phone calls",
+            "FIXED"
+          ],
+          [
+            "Wanted level",
+            "FIXED"
+          ]
+        ],
+        "good": [
+          "fixed"
+        ],
+        "src": "VICE · Dot Esports · Comicbook",
+        "seed": 9
+      },
+      "chart_es": {
+        "type": "list",
+        "bg": "vice",
+        "title": "ARREGLADO EN 1.002.002",
+        "locale": "es",
+        "items": [
+          [
+            "Cierres",
+            "LISTO"
+          ],
+          [
+            "Autoguardado",
+            "LISTO"
+          ],
+          [
+            "Llamadas",
+            "LISTO"
+          ],
+          [
+            "Nivel de búsqueda",
+            "LISTO"
+          ]
+        ],
+        "good": [
+          "listo"
+        ],
+        "src": "VICE · Dot Esports · Comicbook",
+        "seed": 9
+      },
+      "audio_es": "media/voice/gta6-patch-notes-7-fixes/es/seg3.wav"
+    },
+    {
+      "headline": "PLUS 3 MORE",
+      "headline_es": "Y 3 MÁS",
+      "text": "Plus stuck weather, the gym deadlift, and fences.",
+      "text_es": "Y además: el clima trabado, el peso muerto del gimnasio y las bolsas para vender.",
+      "keep_media": true,
+      "chart": {
+        "type": "list",
+        "bg": "vice",
+        "title": "ALSO FIXED",
+        "items": [
+          [
+            "Weather stuck",
+            "FIXED"
+          ],
+          [
+            "Gym deadlift",
+            "FIXED"
+          ],
+          [
+            "Fences (bags)",
+            "FIXED"
+          ]
+        ],
+        "good": [
+          "fixed"
+        ],
+        "src": "VICE · Dot Esports · Comicbook",
+        "seed": 9
+      },
+      "chart_es": {
+        "type": "list",
+        "bg": "vice",
+        "title": "TAMBIÉN",
+        "locale": "es",
+        "items": [
+          [
+            "Clima trabado",
+            "LISTO"
+          ],
+          [
+            "Peso muerto",
+            "LISTO"
+          ],
+          [
+            "Bolsas para vender",
+            "LISTO"
+          ]
+        ],
+        "good": [
+          "listo"
+        ],
+        "src": "VICE · Dot Esports · Comicbook",
+        "seed": 9
+      },
+      "audio_es": "media/voice/gta6-patch-notes-7-fixes/es/seg4.wav"
+    },
+    {
+      "headline": "FIX IT NEXT",
+      "headline_es": "¿Y AHORA?",
+      "text": "What should they fix next? Tell me, because",
+      "text_es": "¿Qué deberían arreglar ahora? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "WHAT SHOULD",
+          "THEY FIX NEXT?"
+        ],
+        "pink": [
+          "FIX NEXT?"
+        ],
+        "seed": 9
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿QUÉ DEBEN",
+          "ARREGLAR AHORA?"
+        ],
+        "pink": [
+          "ARREGLAR AHORA?"
+        ],
+        "seed": 9
+      },
+      "audio_es": "media/voice/gta6-patch-notes-7-fixes/es/seg5.wav"
+    }
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }

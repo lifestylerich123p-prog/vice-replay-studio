@@ -155,14 +155,15 @@
    "slug": "gta6-4-secrets",
    "item": "short",
    "en": [
-    "2026-11-24",
+    "2026-12-04",
     "9:30 AM"
    ],
    "es": [
-    "2026-11-24",
+    "2026-12-04",
     "9:30 AM"
    ],
-   "approved": "Nov 23 6:45 AM (APPROVE; GTA 6-style countdown cards)"
+   "approved": "Nov 23 6:45 AM (APPROVE; GTA 6-style countdown cards)",
+   "moved": "Nov 23 (approved plan): Tue Nov 24 9:30 went to the momentum follow-up (Tier List #2); Fri Dec 4 = countdown day"
   },
   {
    "slug": "gta6-vs-gta5-fps",
@@ -262,23 +263,90 @@
     "1:30 PM"
    ],
    "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
-  }
- ],
- "paused": [
+  },
+  {
+   "slug": "gta6-patch-notes-7-fixes",
+   "item": "short",
+   "en": [
+    "2026-11-24",
+    "8:00 AM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): news follow-up; replaces the outdated zero-patch-notes Short",
+   "split": "Nov 23: EN and ES split so Tuesday's English slot never waits on the Spanish upload's quota"
+  },
+  {
+   "slug": "gta6-patch-notes-7-fixes",
+   "item": "short",
+   "es": [
+    "2026-11-24",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): news follow-up; replaces the outdated zero-patch-notes Short",
+   "es_only": true,
+   "split": "Nov 23: EN and ES split so Tuesday's English slot never waits on the Spanish upload's quota"
+  },
+  {
+   "slug": "gta-tier-list-sales",
+   "item": "short",
+   "en": [
+    "2026-11-24",
+    "9:30 AM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): momentum follow-up to the tier list (506 views in 2.5 h)",
+   "split": "Nov 23: EN and ES split so Tuesday's English slot never waits on the Spanish upload's quota"
+  },
+  {
+   "slug": "gta-tier-list-sales",
+   "item": "short",
+   "es": [
+    "2026-12-02",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): momentum follow-up to the tier list (506 views in 2.5 h)",
+   "es_only": true,
+   "split": "Nov 23: EN and ES split so Tuesday's English slot never waits on the Spanish upload's quota"
+  },
   {
    "slug": "gta6-top-3-rides",
    "item": "short",
    "en": [
-    "2026-11-25",
+    "2026-11-30",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-30",
+    "1:30 PM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): remade as lettering cards"
+  },
+  {
+   "slug": "gta6-vs-red-dead-2",
+   "item": "short",
+   "en": [
+    "2026-12-01",
     "9:30 AM"
    ],
    "es": [
-    "2026-11-25",
+    "2026-12-01",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): Tuesday VS"
+  },
+  {
+   "slug": "gta-cities-quiz",
+   "item": "short",
+   "en": [
+    "2026-12-03",
     "9:30 AM"
    ],
-   "approved": "Nov 22 8 AM (Ok)",
-   "paused": "2026-11-23: trailer images (owner: lettering/modern cards only); remake as cards to post"
-  },
+   "es": [
+    "2026-12-03",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): Thursday quiz"
+  }
+ ],
+ "paused": [
   {
    "slug": "gta6-update-no-patch-notes",
    "item": "short",
