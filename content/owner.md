@@ -266,3 +266,7 @@
   (rides taken out of approved_queue.json, Wed batch updated); 8 Instagram Reels of footage Shorts skipped; viewcheck now
   blocks footage in long videos too and counts auto-picked stock footage; the Instagram queue skips footage Reels.
   Still scheduled: darts EN+ES (11 AM) and the Spanish money chart (3:30 PM), all cards.
+- 2026-11-23 (6:45 AM, owner "APPROVE AND CONTINUE TO DO RESEARCH ... TAKE YOUR TIME"): approved the first GTA 6-style
+  lettering Shorts. Tier list `gta6-tier-list-critics` uploaded for today 12:30 PM (EN jQbv5GPR3dk, ES dKw9tqx_TNg);
+  `gta6-4-secrets` (countdown cards) added to approved_queue.json for Tue Nov 24 9:30 AM EN + ES (uploads after the
+  3 AM quota reset).
