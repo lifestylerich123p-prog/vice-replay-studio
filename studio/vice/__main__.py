@@ -140,7 +140,26 @@ def publish_draft(episode, dest):
             vals[ctype] = channels.validate(dest, ctype)
         return vals[ctype]
 
-    if not ep.get("shorts"):
+    if ep.get("segments") and not ep.get("short") and not ep.get("shorts"):
+        # a long video with no Short (Nov 23: the Sunday hub, e.g. gta6-10-numbers)
+        from . import qc
+        video = out / f"{slug}.mp4"
+        if not video.exists():
+            sys.exit(f"Render first: python -m studio.make_video {episode}")
+        val, main = channel_check(ep), _main_checks(ep, dest)
+        rep = qc.check(video, episode=ep, dest=dest)
+        qc_md = qc.write(rep, out, slug)
+        vb, vw = viewcheck.check(ep, recent=[])
+        blockers = ([f"QC {c['check']}: {c['detail']}" for c in rep["checks"] if c["status"] == "fail"] + val["problems"]
+                    + [f"main: {b}" for b in main["blockers"]] + vb)
+        advice = [f"main: {a}" for a in main["advice"]] + vw
+        draft = {"episode": episode, "destination": dest, "channel_check": val, "video": rel(video),
+                 "thumbnail": rel(out / "thumbnail.jpg"), "title_options": ep.get("title_options") or [ep.get("title")],
+                 "description": ep.get("description"), "pinned_comment": ep.get("pinned_comment"), "qc_report": rel(qc_md),
+                 "rights": main["rights"], "status": "BLOCKED" if blockers else "awaiting owner approval",
+                 "blockers": blockers, "advice": advice,
+                 "upload_command_after_approval": f"python -m studio.ship {episode} --upload main --title N"}
+    elif not ep.get("shorts"):
         video = out / (f"{slug}-short-es.mp4" if ep.get("es_only") else f"{slug}-short.mp4")  # es_only: Spanish file
         if not video.exists():
             sys.exit(f"Render first: python -m studio.ship {episode}")
