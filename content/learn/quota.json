@@ -41,5 +41,14 @@
   "registry_est": 7500,
   "exhausted_at_et": "20:09",
   "limit_seen": 17285
+ },
+ "2026-11-23": {
+  "used": 112,
+  "calls": {
+   "GET channels": 6,
+   "GET videos": 4,
+   "GET commentThreads": 2,
+   "POST commentThreads": 2
+  }
  }
 }
