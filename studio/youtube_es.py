@@ -118,6 +118,22 @@ def jobs(ep, approved):
     return out
 
 
+def spanish_waits(ep_path):
+    """True when the winners-only rule holds this episode's Spanish version back (Spanish-only Shorts and English
+    Shorts already marked winners in content/learn/approved_queue.json go ahead)."""
+    from . import spend
+    if not spend.winners_rule():
+        return False
+    import json as _json
+    from pathlib import Path as _P
+    slug = _P(ep_path).stem
+    try:
+        items = [i for i in _json.loads(spend.QUEUE.read_text())["items"] if i.get("slug") == slug]
+    except (OSError, ValueError, KeyError):
+        items = []
+    return not items or all(spend.es_waits(i) for i in items)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("episode", help="episodes/<slug>.json, 'whoami', 'brand' or 'comment'")
@@ -125,7 +141,13 @@ def main():
     ap.add_argument("--approve", default="", help="short, news, ... or all (owner approval in chat only)")
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
     ap.add_argument("--at", help='posting time for every item, e.g. "9:30 AM" (ET)')
+    ap.add_argument("--force-es", action="store_true", help="post even if the winners-only rule says wait (owner asks)")
     a = ap.parse_args()
+    if a.approve and a.episode.endswith(".json") and not a.force_es and spanish_waits(a.episode):
+        print(f"SPANISH WAITS: {a.episode}: winners-only rule (owner Nov 23, config/channel.json spanish_winners_only). "
+              "studio.spend books the Spanish version only if the English Short does well in its first 24 h. "
+              "Nothing uploaded (add --force-es only if the owner asks for this one).")
+        return
     if a.episode == "whoami":  # what the preferred setting holds, exactly
         cid, title = whoami(token(ENV))
         print(f"{ENV} belongs to: {title} ({cid})")

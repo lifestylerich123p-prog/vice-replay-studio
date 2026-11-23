@@ -267,44 +267,28 @@
   {
    "slug": "gta6-patch-notes-7-fixes",
    "item": "short",
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): news follow-up; replaces the outdated zero-patch-notes Short",
    "en": [
     "2026-11-24",
     "8:00 AM"
    ],
-   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): news follow-up; replaces the outdated zero-patch-notes Short",
-   "split": "Nov 23: EN and ES split so Tuesday's English slot never waits on the Spanish upload's quota"
-  },
-  {
-   "slug": "gta6-patch-notes-7-fixes",
-   "item": "short",
    "es": [
     "2026-11-24",
     "12:30 PM"
-   ],
-   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): news follow-up; replaces the outdated zero-patch-notes Short",
-   "es_only": true,
-   "split": "Nov 23: EN and ES split so Tuesday's English slot never waits on the Spanish upload's quota"
+   ]
   },
   {
    "slug": "gta-tier-list-sales",
    "item": "short",
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): momentum follow-up to the tier list (506 views in 2.5 h)",
    "en": [
     "2026-11-24",
     "9:30 AM"
    ],
-   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): momentum follow-up to the tier list (506 views in 2.5 h)",
-   "split": "Nov 23: EN and ES split so Tuesday's English slot never waits on the Spanish upload's quota"
-  },
-  {
-   "slug": "gta-tier-list-sales",
-   "item": "short",
    "es": [
     "2026-12-02",
     "12:30 PM"
-   ],
-   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): momentum follow-up to the tier list (506 views in 2.5 h)",
-   "es_only": true,
-   "split": "Nov 23: EN and ES split so Tuesday's English slot never waits on the Spanish upload's quota"
+   ]
   },
   {
    "slug": "gta6-top-3-rides",

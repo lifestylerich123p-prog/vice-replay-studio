@@ -292,3 +292,8 @@
   12:30. Viral Adam ES voices: 29 lines (~29 credits). Same message: "auto approve the everygen for now" =
   mcp__Everygen allowed in .claude/settings.local.json (not committed; delete it to turn the auto-approve off). Paid
   image/video generations still get a cost estimate and the owner's yes first.
+- 2026-11-23 ~6:20 PM ET, owner "Approve next steps": (1) Spanish WINNERS-ONLY: until Vice Replay en Español has an
+  audience, a Spanish version of an English Short is uploaded only if the English Short did well in its first 24 h
+  (views >= max(150, median 24 h views of our last 7 days)); studio.spend books winners in the next 12:30-1:30 PM
+  Spanish slot and logs the rest as skipped; Spanish-only Shorts (es_only) unchanged; config/channel.json
+  `spanish_winners_only.on=false` turns it off. (2) Tier lists twice a week: Tier List #3 for Wed Dec 2 9:30 AM.
