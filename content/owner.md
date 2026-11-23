@@ -229,4 +229,8 @@
   upload a Spanish subtitle track (the Spanish channel covers it). QC fix: all-card Shorts' dark backgrounds no longer
   fail "black bars"; a used-up quota is no longer reported as an expired key. All 7 queued Shorts pass QC (blocked only
   by the quota until 3 AM). Owner options: separate Cloud project for What If Arena; YouTube quota extension form.
+- 2026-11-22 (night): owner created the Google Cloud project "What If Arena API" (YouTube Data API v3 enabled, Google
+  Auth Platform published, Desktop client JSON downloaded on the Mac). Pending: the What If Arena chat reconnects with
+  it and logs it in the Channel Map. Vice Replay's EN + ES keys checked after the change: both still valid on the old
+  project (project number 662880770567, ID what-if-arena; now effectively Vice Replay's; renaming it is optional).
 
