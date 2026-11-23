@@ -1,0 +1,201 @@
+{
+  "title": "GTA 6 tiene su Pequeña Habana: Little Cuba",
+  "slug": "gta6-little-cuba-es",
+  "series": "Explained",
+  "format": "details",
+  "mood": "bright",
+  "use_gameplay": false,
+  "es_only": true,
+  "short_title": "GTA 6 has its own Little Havana #GTA6 #Shorts",
+  "short_description": "Spanish-channel-only Short (Cuban style).",
+  "short_es": {
+    "title": "GTA 6 tiene su Pequeña HABANA, asere 🇨🇺 #GTA6 #Shorts",
+    "description": "Asere, ¿qué bolá? Rockstar llama Little Cuba a este barrio de Vice City y lo describe con sus \"bustling panaderías\" (página oficial Only in Leonida, mayo de 2025). Medios lo comparan con la Pequeña Habana de Miami; Rockstar no lo dice. Y no es nueva: en GTA Vice City (2002) la Pequeña Habana era el barrio de los Cubanos, con Umberto Robina, al que le dio voz Danny Trejo. ¿Ya fuiste? Sin spoilers.\n\nFuentes: Rockstar Games (Only in Leonida), GTA Base, Grand Theft Wiki, GTA Fandom, Periódico Cubano.",
+    "tags": [
+      "GTA 6 cubano",
+      "Little Cuba GTA 6",
+      "Pequeña Habana GTA 6",
+      "GTA 6 Miami",
+      "cubanos GTA",
+      "Vice City cubanos",
+      "Umberto Robina",
+      "Danny Trejo GTA",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "short_pinned_comment_es": "¿Qué bolá? ¿Ya fuiste a Little Cuba? SÍ o NO 👇",
+  "pinned_comment": "Have you been to Little Cuba yet? YES or NO 👇",
+  "tags": [
+    "GTA 6 Little Cuba",
+    "GTA 6 Little Havana",
+    "GTA 6 Cuban",
+    "GTA 6 Miami",
+    "GTA VI"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#cubanos",
+    "#miami",
+    "#littlehavana"
+  ],
+  "sources": [
+    "Rockstar Games - Only in Leonida (Vice City: Little Cuba, \"bustling panaderías\", May 6, 2025), as quoted by GTA 6 Life: https://gta6-life.com/en/database/gta-6-little-cuba/",
+    "GTA Hype - Vice City in GTA 6, every confirmed neighbourhood: https://www.gta6hype.com/map/vice-city/",
+    "Periódico Cubano - GTA VI se estrena con una Florida ficticia y su propia Pequeña Habana: https://www.periodicocubano.com/tras-13-anos-de-espera-se-estrena-gta-vi-con-una-florida-ficticia-y-su-propia-pequena-habana/",
+    "GTA Base - Cubans (GTA Vice City), led by Umberto Robina: https://www.gtabase.com/gta-vice-city/gangs/cubans",
+    "Grand Theft Wiki - Umberto Robina (voiced by Danny Trejo): https://www.grandtheftwiki.com/Umberto_Robina",
+    "GTA Fandom - Little Havana (Vice City, 2002): https://gta.fandom.com/wiki/Little_Havana"
+  ],
+  "short": [
+    {
+      "headline": "LITTLE CUBA 🇨🇺",
+      "headline_es": "LITTLE CUBA 🇨🇺",
+      "text": "GTA 6 has its own Little Havana, buddy.",
+      "text_es": "Asere, GTA 6 tiene su propia Pequeña Habana.",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "GTA 6 tiene su Pequeña Habana",
+        "pink": [
+          "Pequeña",
+          "Habana"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "y se llama Little Cuba"
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "GTA 6 tiene su Pequeña Habana",
+        "pink": [
+          "Pequeña",
+          "Habana"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "y se llama Little Cuba"
+      }
+    },
+    {
+      "headline": "NOMBRE OFICIAL",
+      "headline_es": "NOMBRE OFICIAL",
+      "text": "Rockstar calls it Little Cuba, full of bakeries.",
+      "text_es": "Rockstar la llama Little Cuba, llena de panaderías.",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "Nombre oficial: Little Cuba",
+        "pink": [
+          "Little",
+          "Cuba"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "Rockstar presume sus panaderías"
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "Nombre oficial: Little Cuba",
+        "pink": [
+          "Little",
+          "Cuba"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "Rockstar presume sus panaderías"
+      }
+    },
+    {
+      "headline": "NO ES NUEVA",
+      "headline_es": "NO ES NUEVA",
+      "text": "And it's not new: Vice City had its Little Havana in two thousand two.",
+      "text_es": "Y no es nueva: Vice City ya tenía su Pequeña Habana en dos mil dos.",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "Vice City, 2002: la Pequeña Habana",
+        "pink": [
+          "2002"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "el barrio de los Cubanos"
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "Vice City, 2002: la Pequeña Habana",
+        "pink": [
+          "2002"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "el barrio de los Cubanos"
+      }
+    },
+    {
+      "headline": "DANNY TREJO",
+      "headline_es": "DANNY TREJO",
+      "text": "Its boss, Umberto, had Danny Trejo's voice. Amazing.",
+      "text_es": "Y su jefe, Umberto, tenía la voz de Danny Trejo. Tremendo.",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "Umberto Robina: voz de Danny Trejo",
+        "pink": [
+          "Danny",
+          "Trejo"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "el jefe de los Cubanos en Vice City"
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "Umberto Robina: voz de Danny Trejo",
+        "pink": [
+          "Danny",
+          "Trejo"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "el jefe de los Cubanos en Vice City"
+      }
+    },
+    {
+      "headline": "¿YA FUISTE?",
+      "headline_es": "¿YA FUISTE?",
+      "text": "Have you been yet? Tell me, because",
+      "text_es": "¿Qué bolá, ya fuiste a Little Cuba? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "¿Ya fuiste a Little Cuba?",
+        "pink": [
+          "Little",
+          "Cuba?"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "SÍ o NO, en los comentarios"
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "¿Ya fuiste a Little Cuba?",
+        "pink": [
+          "Little",
+          "Cuba?"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "SÍ o NO, en los comentarios"
+      }
+    }
+  ]
+}
