@@ -1,6 +1,10 @@
 # YouTube upload quota: free fixes (Nov 22, 2026)
 
-**Why:** Vice Replay, Vice Replay en Español and What If Arena share ONE Google Cloud project (named "What If Arena",
+**Status (Nov 22, night): Fix 1 done.** What If Arena has its own project ("What If Arena API"); the old project was
+renamed **"Vice Replay"** (ID what-if-arena, number 662880770567), so its quota is Vice Replay's alone. Fix 2 (the form) is
+still open.
+
+**Why (before the fix):** Vice Replay, Vice Replay en Español and What If Arena shared ONE Google Cloud project (named "What If Arena",
 OAuth app "Creator HQ"), so they share one daily YouTube quota. On Nov 22 it ran out at 7:02 PM ET after 6 uploads.
 A Short costs about 2,000-2,500 units (upload 1,600 + subtitles 400 + playlist, comment, thumbnail ~150). Already
 done (free): English Shorts no longer upload a Spanish subtitle track (saves 400 per Short).

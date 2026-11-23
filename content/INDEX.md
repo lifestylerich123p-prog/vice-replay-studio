@@ -27,15 +27,18 @@ Read this first instead of searching the repo.
 | ? | gta6-top-3-rides | Short | GTA 6: The Top 3 Rides in Rockstar's Gameplay | - |
 | ? | gta6-ranking-rides | Short | Ranking the 6 Rides in Rockstar's GTA 6 Gameplay | short: QzFhpT4dNVQ |
 | ? | gta6-race-hud-details | Short | GTA 6 Races: Look at the Corner of the Screen | short: sP1fq11WMmw |
+| ? | gta6-no-darts | Short | GTA 6 Has No Darts. Rockstar Says Why | - |
 | ? | gta6-no-60fps-ps5-pro | Short | GTA 6 Has No 60 FPS Mode, Not Even on PS5 Pro | short: 6p9VtX-UaVU |
 | ? | gta6-money-chart-es | Short | GTA 6 hizo 5 VECES el lanzamiento de GTA 5... con trampa | - |
 | ? | gta6-map-is-florida | Short | GTA 6's Official Map Is Florida: 4 Matches and 1 Fake | short: 9ZmygQdJRBA |
+| ? | gta6-jason-quiet | Short | GTA 6's Jason Barely Talks. Rockstar Says Why | - |
 | ? | gta6-has-anyone-finished | Short | Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch) | short: WsJ96ZkU2do |
 | ? | gta6-guess-the-ride | Short | Guess the GTA 6 Ride From One Detail | short: I2VEKQUia8w |
 | ? | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | short: Egb3otGWJIg |
 | ? | gta6-dexter-apartment | Short | Players Found Dexter's Apartment in GTA 6 | short: dOv6212lgj4 |
 | ? | gta6-cheapest-gta-inflation | Short | GTA 6 Is the CHEAPEST GTA Ever (After Inflation) | - |
 | ? | gta6-99-club | Short | GTA 6's 99 on Metacritic: Only ONE Other Game Has It | - |
+| ? | gta-history-quiz | Short | GTA History Quiz: Only Real Fans Get 3/3 | - |
 | 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 |
 | 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | - |
 | 2026-11-21 | gta6-how-long-to-beat | video | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | short: bVoHzywwvgc, main: rHaMTePDRUQ, tips: M7oKevOPY08 |
@@ -120,12 +123,14 @@ Read this first instead of searching the repo.
 |---|---|---|
 | 2026-11-20 | /es/guias/consejos-gta-6-principiantes/ | Consejos de GTA 6 para principiantes: 6 cosas que el juego no te dice |
 | 2026-11-21 | /es/guias/cuanto-dura-gta-6/ | ¿Cuánto dura GTA 6? Horas de la historia, tiempos reales y el 100% (sin spoilers) |
+| 2026-11-22 | /es/guias/dardos-gta-6/ | ¿GTA 6 tiene dardos? No, y Rockstar explica por qué (el billar sí está) |
 | 2026-11-20 | /guides/gta-6-beginner-tips/ | GTA 6 Beginner Tips: 6 Things the Game Doesn't Tell You (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-best-settings/ | Best TV and Console Settings for GTA 6 (PS5 and Xbox) |
 | 2026-11-19 | /guides/gta-6-best-ssd/ | Best SSD for GTA 6 on PS5 (212 GB): What to Buy and What to Skip |
 | 2026-11-19 | /guides/gta-6-black-friday/ | GTA 6 Black Friday 2026: Live Deals on Controllers, Storage and the Game |
 | 2026-11-18 | /guides/gta-6-characters/ | Every GTA 6 Character Confirmed So Far (No Spoilers) |
 | 2026-11-22 | /es/guias/gta-6-cifras-semana-lanzamiento/ | Ventas y récords de GTA 6: todas las cifras del lanzamiento vs GTA 5 |
+| 2026-11-22 | /guides/gta-6-darts/ | Does GTA 6 Have Darts? No, and Rockstar Explains Why (Pool Is In) |
 | 2026-11-18 | /guides/gta-6-gift-guide/ | GTA 6 Gift Guide 2026: Best Gifts for a GTA 6 Fan (PS5 and Xbox) |
 | 2026-11-21 | /guides/gta-6-how-long-to-beat/ | How Long Is GTA 6? Story Length, Real Finish Times and 100% (No Spoilers) |
 | 2026-11-19 | /es/guias/guia-lanzamiento-gta-6/ | GTA 6 ya salió: guía de supervivencia (servidores, 30 FPS y ajustes) |

@@ -236,3 +236,7 @@
 - 2026-11-22 (night): DONE. What If Arena reconnected on its own project "What If Arena API" (its chat confirmed the login;
   its Docs connector can't edit the Channel Map, so Vice Replay logged it there). Vice Replay now has the old project's
   daily quota to itself.
+- 2026-11-22 (night): owner renamed the old Cloud project from "What If Arena" to **"Vice Replay"** (ID what-if-arena
+  unchanged). Keys re-checked after the rename: EN + ES OK. Don't delete the OAuth client "Vice Replay uploader"
+  (662880770567-coc1..., used by both Vice Replay channels); the other client there (…-pcng…) is probably What If Arena's
+  old one: keep about a week as a backup, then the owner may delete it.

@@ -51,7 +51,7 @@ Pages: home, `/gear/` (affiliate), `/guides/` (English guides incl. launch live)
 To change it: edit `site/` or `tools/site_guides.py`, run `python tools/site_guides.py`, push both repos.
 
 ## Settings (cloud environment `vice-replay-studio`)
-- Network secret for `www.googleapis.com` (read-only YouTube key) and `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` (English uploads), `YT_SPANISH_REFRESH_TOKEN` (Vice Replay en Español). The Google app ("Creator HQ", shared with What If Arena) is published since Nov 22, so keys don't expire after 7 days; `tools/youtube_auth.py` only if a key is revoked.
+- Network secret for `www.googleapis.com` (read-only YouTube key) and `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` (English uploads), `YT_SPANISH_REFRESH_TOKEN` (Vice Replay en Español). Google Cloud project **"Vice Replay"** (ID `what-if-arena`, number 662880770567; renamed Nov 22) with the OAuth app "Creator HQ", client "Vice Replay uploader": published, so keys don't expire after 7 days; `tools/youtube_auth.py` only if a key is revoked. What If Arena has its own project ("What If Arena API") since Nov 22, so the daily YouTube quota is Vice Replay's alone (English + Spanish channels share it). Quota plan: `content/youtube-quota-plan.md`.
 - Allowed hosts: Google/YouTube APIs, Google Drive, Hugging Face, Rockstar's site, vicereplay.com, plugin servers.
 
 ## How a Short is built now (Nov 22 data; details in `content/episode-format.md`)

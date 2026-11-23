@@ -51,7 +51,7 @@ def validate(destination, content_type, check_token=True, token_channel=None):
     if mode == "api" and check_token:
         tok_ch = token_channel if token_channel is not None else authenticated_channel_id()
         if tok_ch == "quota":
-            problems.append("YouTube daily quota used up (resets 3 AM ET; shared with What If Arena): the connection is "
+            problems.append("YouTube daily quota used up (resets 3 AM ET): the connection is "
                             "fine and nothing else is wrong; run publish again after the reset")
         elif tok_ch is None:
             problems.append("upload token unavailable or expired: reconnect YouTube (tools/youtube_auth.py)")
