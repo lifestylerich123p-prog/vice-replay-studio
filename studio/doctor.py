@@ -40,6 +40,19 @@ def main():
     except SystemExit as e:
         bad.append(f"YouTube connection FAILED: {str(e)[:160]}. Reconnect: tools/youtube_auth.py, then update "
                    "YT_REFRESH_TOKEN in the environment settings.")
+    # 1b. The learner (Nov 23: it went 2 days without a refresh when the daily runs couldn't push)
+    snap = LEARN / "channel.json"
+    if snap.exists():
+        try:
+            checked = dt.datetime.fromisoformat(json.loads(snap.read_text())["checked"].replace("Z", "+00:00"))
+            hrs = (dt.datetime.now(dt.timezone.utc) - checked).total_seconds() / 3600
+            if hrs > 36:
+                warn.append(f"Learner is {hrs / 24:.1f} days old (last refresh {checked:%b %-d}): run python -m "
+                            f"studio.learn --mine so the scorecard sees the new Shorts")
+            else:
+                ok.append(f"Learner fresh ({hrs:.0f} h old)")
+        except (ValueError, KeyError, OSError):
+            warn.append("content/learn/channel.json can't be read: run python -m studio.learn --mine")
     stamp = LEARN / "youtube_connected.txt"
     if stamp.exists():
         try:

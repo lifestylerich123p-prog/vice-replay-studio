@@ -61,6 +61,19 @@ def spanish_section(now):
     return L + [""]
 
 
+def momentum_lines(vph):
+    """🔥 lines for Shorts that are taking off (Nov 23; .claude/commands/momentum.md rule): published in the last
+    48 h, views/hour at least 2x the median of our last-7-days Shorts, and 500+ views. vph = [(age, v/h, views, title)]."""
+    week = [r for r in vph if r[0] < dt.timedelta(days=7)]
+    if len(week) < 3:
+        return []
+    import statistics
+    base = statistics.median(r[1] for r in week)
+    hot = [r for r in week if r[0] < dt.timedelta(hours=48) and r[2] >= 500 and r[1] >= 2 * base]
+    return [f"- 🔥 TAKING OFF: {title[:55]} ({views:,} views, {rate:.0f}/h vs {base:.0f}/h median): make a follow-up "
+            f"(.claude/commands/momentum.md)" for _, rate, views, title in sorted(hot, key=lambda r: -r[1])]
+
+
 def main():
     now = dt.datetime.now(ET)
     L = [f"# Vice Replay status ({now:%a %b %-d, %-I:%M %p} ET, `python -m studio.status`)", ""]
@@ -76,7 +89,7 @@ def main():
     clip_ids = re.findall(r"(?:shorts/|youtu\.be/)([\w-]{11})", tracker)
     vids = yt_videos(list(reg)[-30:] + clip_ids)
 
-    sched, recent = [], []
+    sched, recent, vph = [], [], []
     for vid, x in vids.items():
         st, sn = x["status"], x["snippet"]
         if st.get("privacyStatus") == "private" and st.get("publishAt"):
@@ -87,6 +100,10 @@ def main():
             pub = dt.datetime.fromisoformat(sn["publishedAt"].replace("Z", "+00:00")).astimezone(ET)
             if now - pub < dt.timedelta(hours=24) and vid not in clip_ids:
                 recent.append((int(x["statistics"].get("viewCount", 0)), sn["title"]))
+            if vid not in clip_ids:
+                age_h = max((now - pub).total_seconds() / 3600, 0.25)
+                vph.append((now - pub, int(x["statistics"].get("viewCount", 0)) / age_h,
+                            int(x["statistics"].get("viewCount", 0)), sn["title"]))
     try:  # extra snapshot for the scorecard's fair "first 24 h views" (studio.scorecard)
         from .scorecard import HIST
         pub_views = {vid: int(x["statistics"].get("viewCount", 0)) for vid, x in vids.items()
@@ -99,6 +116,7 @@ def main():
     L.append("## YouTube")
     L += [f"- ⏰ {t:%a %-I:%M %p}: {title[:60]}" for t, title in sorted(sched)] or ["- nothing scheduled"]
     L += [f"- {v:,} views: {title[:60]}" for v, title in sorted(recent, reverse=True)[:6]]
+    L += momentum_lines(vph)
     try:  # quota + free slots: what's still possible to post (python -m studio.quota for details)
         from . import quota
         by_day = {}

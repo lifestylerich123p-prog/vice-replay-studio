@@ -18,6 +18,11 @@ STILL = (".jpg", ".jpeg", ".png", ".webp")
 TIPS = re.compile(r"\b(settings?|tips?|how to|won'?t connect|cheat codes?|codes|do this first|beginner)\b", re.I)
 
 
+# "Nothing yet" claims age fastest (Nov 23): zero/no X yet, still no, hasn't (said|released|confirmed)...
+VOLATILE = re.compile(r"\b(zero|no|0) (patch notes|update|news|word|announcement|date|trailer)s?\b|\bstill no\b|"
+                      r"\bnot yet\b|\bhasn'?t (said|released|confirmed|explained|announced|published)\b|"
+                      r"\bno (one|body) knows\b", re.I)
+
 def _shorts(ep):
     out = []
     if ep.get("short"):
@@ -219,6 +224,11 @@ def check_short(ep, key, title, segs, gameplay_available=False):
         if not re.search(r"\d", segs[0].get("headline") or "") and not segs[0].get("chart"):
             warnings.append(f"hook: Short '{key}' opens without a number on screen; our Shorts with a number in the first "
                             f"headline kept 65% of viewers vs 49% (put the number in the headline or open on a `chart`)")
+        claim_text = " ".join([title or ""] + [x.get("text") or "" for x in segs])
+        if VOLATILE.search(claim_text):
+            warnings.append(f"facts: Short '{key}' makes a 'nothing yet' claim ({VOLATILE.search(claim_text).group(0)!r}) "
+                            f"that can stop being true within hours (Nov 23: 'zero patch notes' was outdated the same "
+                            f"afternoon). Re-check it within 2 h of the slot, or say it as a dated fact (\"3 updates in 10 days\")")
         core = re.sub(r"#\S+", "", title or "").strip()
         if len(core) > 45:
             warnings.append(f"title: '{core}' is {len(core)} characters; the top GTA 6 Shorts with titles of 40 or less "
