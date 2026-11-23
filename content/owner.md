@@ -270,3 +270,6 @@
   lettering Shorts. Tier list `gta6-tier-list-critics` uploaded for today 12:30 PM (EN jQbv5GPR3dk, ES dKw9tqx_TNg);
   `gta6-4-secrets` (countdown cards) added to approved_queue.json for Tue Nov 24 9:30 AM EN + ES (uploads after the
   3 AM quota reset).
+- 2026-11-23 (6:55 AM, owner "APPROVE"): approved `gta6-update-no-patch-notes` (EN today 9:30 AM; ES Tue 12:30 PM after
+  the quota reset) and `gta6-vs-gta5-fps` (Wed Nov 25 9:30 AM EN + ES), both GTA 6-style lettering Shorts; added to
+  approved_queue.json.

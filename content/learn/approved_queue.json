@@ -163,6 +163,32 @@
     "9:30 AM"
    ],
    "approved": "Nov 23 6:45 AM (APPROVE; GTA 6-style countdown cards)"
+  },
+  {
+   "slug": "gta6-update-no-patch-notes",
+   "item": "short",
+   "en": [
+    "2026-11-23",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-24",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 6:55 AM (APPROVE; lettering, today's update news)"
+  },
+  {
+   "slug": "gta6-vs-gta5-fps",
+   "item": "short",
+   "en": [
+    "2026-11-25",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-25",
+    "9:30 AM"
+   ],
+   "approved": "Nov 23 6:55 AM (APPROVE; lettering VS card)"
   }
  ],
  "paused": [
