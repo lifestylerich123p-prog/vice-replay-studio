@@ -5,6 +5,7 @@ validate() refuses a draft when the content type isn't accepted by the destinati
 uploaded by hand (we only prepare a hand-off), or when the upload token belongs to a different channel.
 """
 import json
+import urllib.error
 import urllib.request
 
 from . import db
@@ -26,7 +27,12 @@ def authenticated_channel_id():
         with urllib.request.urlopen(req, timeout=30) as r:
             items = json.load(r).get("items", [])
         return items[0]["id"] if items else None
-    except (SystemExit, Exception):
+    except urllib.error.HTTPError as e:  # Nov 22: a used-up quota was reported as "token expired"
+        body = e.read().decode(errors="ignore")
+        return "quota" if e.code == 403 and ("quotaExceeded" in body or "dailyLimitExceeded" in body) else None
+    except SystemExit as e:
+        return "quota" if "QUOTA" in str(e) else None
+    except Exception:
         return None
 
 
@@ -44,7 +50,10 @@ def validate(destination, content_type, check_token=True, token_channel=None):
     mode = ch.get("upload")
     if mode == "api" and check_token:
         tok_ch = token_channel if token_channel is not None else authenticated_channel_id()
-        if tok_ch is None:
+        if tok_ch == "quota":
+            problems.append("YouTube daily quota used up (resets 3 AM ET; shared with What If Arena): the connection is "
+                            "fine and nothing else is wrong; run publish again after the reset")
+        elif tok_ch is None:
             problems.append("upload token unavailable or expired: reconnect YouTube (tools/youtube_auth.py)")
         elif tok_ch != ch["channel_id"]:
             problems.append(f"upload token belongs to {tok_ch}, not {ch['name']} ({ch['channel_id']})")

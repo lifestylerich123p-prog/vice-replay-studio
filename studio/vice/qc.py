@@ -218,7 +218,13 @@ def check(path, episode=None, dest="vice-replay", script_key="short", project=No
             "use a moving clip or add motion (punch-in/pan) here", at=s)
     if not f["freezes"]:
         add("frozen picture", "pass", "picture keeps moving")
-    if v and f["crop"]:
+    card_segs = (ep.get(script_key) or ep.get("short") or []) if ep else []
+    all_cards = bool(card_segs) and all(isinstance(x, dict) and x.get("chart") for x in card_segs)
+    if v and f["crop"] and all_cards and ((v["width"] - f["crop"][0] > 16) or (v["height"] - f["crop"][1] > 16)):
+        # Nov 22: facts-only Shorts are 100% our cards on a dark gradient; cropdetect reads the dark edges as bars
+        add("black bars", "pass", f"active picture {f['crop'][0]}x{f['crop'][1]}: dark card backgrounds (every segment "
+            "is our own graphic), not letterboxing")
+    elif v and f["crop"]:
         cw, ch_, cx, cy = f["crop"]
         bars = (v["width"] - cw > 16) or (v["height"] - ch_ > 16)
         add("black bars", "fail" if bars else "pass",

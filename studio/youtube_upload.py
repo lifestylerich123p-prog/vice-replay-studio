@@ -75,6 +75,14 @@ def token_for(channel_id, prefer="YT_REFRESH_TOKEN"):
             except SystemExit as e:
                 first_error = first_error or e
                 break
+            except urllib.error.HTTPError as e:
+                body = e.read().decode(errors="ignore")
+                if e.code == 403 and ("quotaExceeded" in body or "dailyLimitExceeded" in body):
+                    from . import quota
+                    sys.exit(f"YOUTUBE DAILY QUOTA USED UP: the key is fine; it resets in {quota.reset_in()} "
+                             "(midnight Pacific = 3 AM ET). Run the same command again after that.")
+                import time
+                time.sleep(2 * (attempt + 1))
             except (urllib.error.URLError, OSError):
                 import time
                 time.sleep(2 * (attempt + 1))
