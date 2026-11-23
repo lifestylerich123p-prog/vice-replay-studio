@@ -45,6 +45,7 @@ Read this first instead of searching the repo.
 | ? | gta6-has-anyone-finished | Short | Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch) | short: WsJ96ZkU2do |
 | ? | gta6-guess-the-ride | Short | Guess the GTA 6 Ride From One Detail | short: I2VEKQUia8w |
 | ? | gta6-game-awards-record | Short | GTA 6 Can't Break the Game Awards Record | - |
+| ? | gta6-game-awards-explained | video | GTA 6 at The Game Awards 2026: All 8 Nominations Explained | - |
 | ? | gta6-game-awards-8-noms | Short | GTA 6 Has the Most Game Awards Nominations: 8 | - |
 | ? | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | short: Egb3otGWJIg |
 | ? | gta6-dexter-apartment | Short | Players Found Dexter's Apartment in GTA 6 | short: dOv6212lgj4 |
@@ -59,6 +60,7 @@ Read this first instead of searching the repo.
 | ? | gta6-10-numbers | video | GTA 6 in 10 Numbers: The First Week, Explained | - |
 | ? | gta-tier-list-sales | Short | Every GTA Ranked by Sales: GTA 5 Gets Its Own Tier | - |
 | ? | gta-tier-list-protagonists | Short | Every GTA Protagonist Ranked: CJ Isn't S Tier | - |
+| ? | gta-tier-list-maps | Short | Every GTA Map Ranked: Los Santos Is Only B Tier | - |
 | ? | gta-history-quiz | Short | GTA History Quiz: Only Real Fans Get 3/3 | - |
 | ? | gta-cities-quiz | Short | GTA Cities Quiz: Only Real Fans Get 3/3 | - |
 | 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 |
