@@ -1,0 +1,184 @@
+{
+  "series": "Explained",
+  "format": "countdown",
+  "mood": "hype",
+  "use_gameplay": false,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_playlist": "GTA 6 Shorts",
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "title": "GTA 6 Broke 3 Records in One Week",
+  "slug": "gta6-3-records",
+  "short_title": "GTA 6 broke 3 records in one week #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 broke 3 records in one week #GTA6 #Shorts",
+    "GTA 6: 3 records nobody saw coming #GTA6 #Shorts",
+    "GTA 6's first week: 3 all-time records #GTA6 #Shorts"
+  ],
+  "short_description": "Three records from GTA 6's first week: the biggest entertainment launch ever ($3.79 billion in pre-orders plus day one, per Take-Two; Forbes called it the largest entertainment launch ever); the highest Metacritic score ever (99, tied with Zelda: Ocarina of Time); and the biggest Twitch peak for a single game (about 3.3 million viewers, beating League of Legends' 3.11 million). Which record falls next?\n\nSources: Take-Two 8-K, Forbes, Hungarian Conservative, VGC, Notebookcheck, Dot Esports, Insider Gaming, Wccftech.",
+  "pinned_comment": "Which GTA 6 record is the craziest? 1, 2 or 3 👇",
+  "tags": [
+    "GTA 6 records",
+    "GTA 6 biggest launch",
+    "GTA 6 Metacritic 99",
+    "GTA 6 Twitch record",
+    "GTA 6 sales",
+    "GTA 6 first week",
+    "GTA 6",
+    "GTA VI",
+    "Grand Theft Auto VI"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#records"
+  ],
+  "sources": [
+    "Take-Two 8-K exhibit 99.1 (Nov 20, 2026): https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm",
+    "Forbes - GTA 6 raked in $3.8 billion on its first day, the largest entertainment launch ever: https://www.forbes.com/sites/antoniopequenoiv/2026/11/20/gta-6-raked-in-38-billion-sales-on-first-day-the-largest-entertainment-launch-ever/",
+    "Hungarian Conservative - GTA 6 becomes biggest entertainment launch in history: https://www.hungarianconservative.com/?p=89160",
+    "VGC - GTA 6 is currently the highest scoring video game of all time on Metacritic: https://www.videogameschronicle.com/news/grand-theft-auto-6-is-currently-the-highest-scoring-video-game-of-all-time-according-to-metacritic/",
+    "Notebookcheck - GTA 6 reviews award 99 on Metacritic: https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html",
+    "Dot Esports - GTA 6 Twitch viewership record: https://dotesports.com/gta/news/gta-6-twitch-viewership-record",
+    "Insider Gaming - GTA 6 streaming launch record: https://insider-gaming.com/gta-6-streaming-launch-record/",
+    "Wccftech - GTA VI Twitch viewers record beats League of Legends: https://wccftech.com/grand-theft-auto-vi-twitch-viewers-record-league-of-legends/"
+  ],
+  "short": [
+    {
+      "headline": "3 RECORDS",
+      "headline_es": "3 RECORDS",
+      "text": "GTA 6 broke three records in its first week.",
+      "text_es": "GTA 6 rompió tres récords en su primera semana.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "3 RECORDS",
+          "IN 1 WEEK"
+        ],
+        "pink": [
+          "3 RECORDS"
+        ],
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "3 RECORDS",
+          "IN 1 WEEK"
+        ],
+        "pink": [
+          "3 RECORDS"
+        ],
+        "seed": 3
+      }
+    },
+    {
+      "headline": "NO. 1: THE LAUNCH",
+      "headline_es": "NO. 1: THE LAUNCH",
+      "text": "One: the biggest entertainment launch ever. Three point seven nine billion, pre-orders plus day one.",
+      "text_es": "Uno: el lanzamiento más grande del entretenimiento.",
+      "keep_media": true,
+      "chart": {
+        "type": "countdown",
+        "n": 1,
+        "of": 3,
+        "label": "BIGGEST LAUNCH EVER",
+        "sub": "$3.79B: pre-orders + day one",
+        "src": "Take-Two · Forbes",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "countdown",
+        "n": 1,
+        "of": 3,
+        "label": "BIGGEST LAUNCH EVER",
+        "sub": "$3.79B: pre-orders + day one",
+        "src": "Take-Two · Forbes",
+        "seed": 3
+      }
+    },
+    {
+      "headline": "NO. 2: THE SCORE",
+      "headline_es": "NO. 2: THE SCORE",
+      "text": "Two: the highest Metacritic score ever. Ninety nine, tied with Ocarina of Time.",
+      "text_es": "Dos: la nota más alta de Metacritic.",
+      "keep_media": true,
+      "chart": {
+        "type": "countdown",
+        "n": 2,
+        "of": 3,
+        "label": "99 ON METACRITIC",
+        "sub": "tied for the highest ever",
+        "src": "VGC · Notebookcheck",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "countdown",
+        "n": 2,
+        "of": 3,
+        "label": "99 ON METACRITIC",
+        "sub": "tied for the highest ever",
+        "src": "VGC · Notebookcheck",
+        "seed": 3
+      }
+    },
+    {
+      "headline": "NO. 3: TWITCH",
+      "headline_es": "NO. 3: TWITCH",
+      "text": "Three: three point three million watching at once on Twitch. A record for one game.",
+      "text_es": "Tres: el récord de Twitch.",
+      "keep_media": true,
+      "chart": {
+        "type": "countdown",
+        "n": 3,
+        "of": 3,
+        "label": "3.3M ON TWITCH",
+        "sub": "beat League of Legends' 3.11M",
+        "src": "Dot Esports · Insider Gaming · Wccftech",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "countdown",
+        "n": 3,
+        "of": 3,
+        "label": "3.3M ON TWITCH",
+        "sub": "beat League of Legends' 3.11M",
+        "src": "Dot Esports · Insider Gaming · Wccftech",
+        "seed": 3
+      }
+    },
+    {
+      "headline": "WHAT'S NEXT?",
+      "headline_es": "WHAT'S NEXT?",
+      "text": "Which record falls next? Tell me, because",
+      "text_es": "¿Qué récord cae después? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "WHICH RECORD",
+          "FALLS NEXT?"
+        ],
+        "pink": [
+          "FALLS NEXT?"
+        ],
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "WHICH RECORD",
+          "FALLS NEXT?"
+        ],
+        "pink": [
+          "FALLS NEXT?"
+        ],
+        "seed": 3
+      }
+    }
+  ]
+}

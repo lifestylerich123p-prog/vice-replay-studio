@@ -234,6 +234,47 @@
     "3:30 PM"
    ],
    "approved": "Nov 23 (owner \"all\": Sunday long-video slot, starting with GTA 6 in 10 Numbers)"
+  },
+  {
+   "slug": "gta6-ultimate-vs-standard",
+   "item": "short",
+   "en": [
+    "2026-11-26",
+    "11:00 AM"
+   ],
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
+  },
+  {
+   "slug": "gta6-3-records",
+   "item": "short",
+   "en": [
+    "2026-11-27",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
+  },
+  {
+   "slug": "gta6-launch-quiz",
+   "item": "short",
+   "en": [
+    "2026-11-28",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-29",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
+  },
+  {
+   "slug": "gta6-sin-doblaje-es",
+   "item": "short",
+   "es_only": true,
+   "es": [
+    "2026-11-28",
+    "1:30 PM"
+   ],
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
   }
  ],
  "paused": [

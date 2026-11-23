@@ -1,0 +1,204 @@
+{
+  "series": "Explained",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_playlist": "GTA 6 Shorts",
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "title": "GTA 6 no tiene doblaje al español",
+  "slug": "gta6-sin-doblaje-es",
+  "es_only": true,
+  "short_title": "GTA 6 has no Spanish dub, on purpose #GTA6 #Shorts",
+  "short_description": "Spanish-channel-only Short (Spanish special).",
+  "short_es": {
+    "title": "GTA 6 NO tiene doblaje al español... y es a propósito 🎙️ #GTA6 #Shorts",
+    "description": "GTA 6 llegó con voces solo en inglés y textos en español (de España y de México): Rockstar lo confirmó meses antes del lanzamiento y es su tradición, como en GTA 5 y Red Dead Redemption 2. Hubo un doblaje hecho por fans, pero no es oficial. Nuestra opinión: en inglés suena mejor. ¿Tú lo prefieres doblado?\n\nFuentes: Vandal, Microsoft Store (idiomas de GTA VI), C5N, VidaExtra.",
+    "tags": [
+      "GTA 6 doblaje",
+      "GTA 6 en español",
+      "GTA 6 voces",
+      "GTA 6 subtítulos",
+      "GTA 6 idiomas",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "short_pinned_comment_es": "¿Doblado o en inglés? 👇",
+  "pinned_comment": "Dubbed or original voices? 👇",
+  "tags": [
+    "GTA 6 doblaje",
+    "GTA VI"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gta6español"
+  ],
+  "sources": [
+    "Vandal - Sin doblaje español: GTA 6 confirma que mantiene la tradición y solo llegará con voces en inglés: https://vandal.elespanol.com/noticia/1350791241/sin-doblaje-espanol-gta-6-confirma-que-mantiene-la-tradicion-y-solo-llegara-con-voces-en-ingles/",
+    "Foro3D - GTA 6 confirma voces solo en inglés, textos en español: https://foro3d.com/2026/junio/gta-6-confirma-voces-solo-en-ingles-textos-en-espanol-sin-cambios.html",
+    "C5N - Confirmado: GTA VI se podrá jugar en español y otros 12 idiomas desde el primer día: https://www.c5n.com/tecnologia/confirmado-gta-vi-se-podra-jugar-espanol-y-otros-12-idiomas-el-primer-dia-n249239",
+    "VidaExtra - Jason y Lucía con las voces de Claudio Serrano y Cristinini (vídeo de fans, no oficial): https://www.vidaextra.com/accion/gta-6-debe-hablarse-espanol-claudio-serrano-cristinini-le-han-dado-voz-sus-protagonistas-brutal"
+  ],
+  "short": [
+    {
+      "headline": "SIN DOBLAJE",
+      "headline_es": "SIN DOBLAJE",
+      "text": "GTA 6 has no Spanish voices. And it's not a mistake.",
+      "text_es": "GTA 6 no tiene voces en español. Y no es un error.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "GTA 6",
+          "NO TIENE DOBLAJE"
+        ],
+        "pink": [
+          "NO TIENE DOBLAJE"
+        ],
+        "locale": "es",
+        "seed": 0
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "GTA 6",
+          "NO TIENE DOBLAJE"
+        ],
+        "pink": [
+          "NO TIENE DOBLAJE"
+        ],
+        "locale": "es",
+        "seed": 0
+      },
+      "audio_es": "media/voice/gta6-sin-doblaje-es/es/seg1.wav"
+    },
+    {
+      "headline": "VOCES Y TEXTOS",
+      "headline_es": "VOCES Y TEXTOS",
+      "text": "Voices are English only. The text is in Spanish, from Spain and from Mexico.",
+      "text_es": "Las voces son solo en inglés. Los textos sí vienen en español, de España y de México.",
+      "keep_media": true,
+      "chart": {
+        "type": "list",
+        "bg": "vice",
+        "title": "GTA 6 EN ESPAÑOL",
+        "locale": "es",
+        "seed": 0,
+        "good": [
+          "sí"
+        ],
+        "src": "Vandal · Microsoft Store · C5N",
+        "items": [
+          [
+            "Voces en español",
+            "NO"
+          ],
+          [
+            "Textos en español",
+            "SÍ"
+          ],
+          [
+            "España y México",
+            "SÍ"
+          ]
+        ]
+      },
+      "chart_es": {
+        "type": "list",
+        "bg": "vice",
+        "title": "GTA 6 EN ESPAÑOL",
+        "locale": "es",
+        "seed": 0,
+        "good": [
+          "sí"
+        ],
+        "src": "Vandal · Microsoft Store · C5N",
+        "items": [
+          [
+            "Voces en español",
+            "NO"
+          ],
+          [
+            "Textos en español",
+            "SÍ"
+          ],
+          [
+            "España y México",
+            "SÍ"
+          ]
+        ]
+      },
+      "audio_es": "media/voice/gta6-sin-doblaje-es/es/seg2.wav"
+    },
+    {
+      "headline": "TRADICIÓN",
+      "headline_es": "TRADICIÓN",
+      "text": "It's a Rockstar tradition: GTA 5 and Red Dead 2 had no Spanish dub either.",
+      "text_es": "Es tradición de Rockstar: ni GTA cinco ni Red Dead dos tuvieron doblaje.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "TRADICIÓN DE ROCKSTAR",
+        "text": "Red Dead 2 tampoco",
+        "pink": [
+          "TAMPOCO"
+        ],
+        "ticker": "GTA 5 · Red Dead Redemption · Red Dead Redemption 2 · voces solo en inglés",
+        "locale": "es",
+        "src": "Vandal",
+        "seed": 0
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "TRADICIÓN DE ROCKSTAR",
+        "text": "Red Dead 2 tampoco",
+        "pink": [
+          "TAMPOCO"
+        ],
+        "ticker": "GTA 5 · Red Dead Redemption · Red Dead Redemption 2 · voces solo en inglés",
+        "locale": "es",
+        "src": "Vandal",
+        "seed": 0
+      },
+      "audio_es": "media/voice/gta6-sin-doblaje-es/es/seg3.wav"
+    },
+    {
+      "headline": "¿DOBLADO?",
+      "headline_es": "¿DOBLADO?",
+      "text": "Our take: it sounds better in English. Would you rather have it dubbed? Tell me, because",
+      "text_es": "Nuestra opinión: en inglés suena mejor. ¿Tú lo prefieres doblado? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "¿DOBLADO",
+          "O EN INGLÉS?"
+        ],
+        "pink": [
+          "O EN INGLÉS?"
+        ],
+        "locale": "es",
+        "seed": 0
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿DOBLADO",
+          "O EN INGLÉS?"
+        ],
+        "pink": [
+          "O EN INGLÉS?"
+        ],
+        "locale": "es",
+        "seed": 0
+      },
+      "audio_es": "media/voice/gta6-sin-doblaje-es/es/seg4.wav"
+    }
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
+}
