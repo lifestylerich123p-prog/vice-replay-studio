@@ -87,9 +87,11 @@ def renders_needed(it, ne, ns):
     """Short videos the upload needs that aren't on disk (output/ isn't committed; a fresh container has none).
     Everything to rebuild them is committed: the episode, its cards and any voice files in media/voice/."""
     slug, key = it["slug"], it.get("item", "short")
+    out = ROOT / "output" / slug
+    if key == "main":  # the weekly hub video (Nov 23)
+        return [] if (out / f"{slug}.mp4").exists() else [["python", "-m", "studio.make_video", f"episodes/{slug}.json"]]
     if key != "short":
         return []
-    out = ROOT / "output" / slug
     need = []
     if ne and not (out / f"{slug}-short.mp4").exists():
         need.append(["python", "-m", "studio.make_video", f"episodes/{slug}.json", "--short"])

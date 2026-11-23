@@ -277,3 +277,9 @@
   `gta6-game-awards-8-noms` (EN Fri Nov 27 11 AM, ES Sat 12:30 PM) and the Spanish-only `gta6-precio-por-pais-es` (Fri
   12:30 PM); all in approved_queue.json, uploaded by the post-reset runs. Also taken as a go-ahead to BUILD the long
   "GTA 6 in numbers" hub video (posting it still needs its own approval).
+- 2026-11-23 (owner "all" to the posting-process upgrades): (1) fill the open daytime slots with ~6 more lettering
+  Shorts; (2) a Sunday 3:30 PM long-video slot, starting with `gta6-10-numbers` (Sun Nov 29, in approved_queue.json as
+  item "main"); every Short's Related video then points to the newest hub; (3) one daily 1 PM checklist message (pins,
+  Related video, TikTok files); (4) Everygen's Viral Adam voice for every Spanish Short (~1 credit per line, ~5 per
+  Short, logged in the Channel Map); (5) the weekly card series (Mon news, Tue VS, Wed tier list, Thu quiz, Fri
+  countdown, Sat Spanish special, Sun hub).
