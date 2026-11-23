@@ -55,8 +55,8 @@
   ],
   "short": [
     {
-      "headline": "LITTLE CUBA 🇨🇺",
-      "headline_es": "LITTLE CUBA 🇨🇺",
+      "headline": "LITTLE CUBA",
+      "headline_es": "LITTLE CUBA",
       "text": "GTA 6 has its own Little Havana, buddy.",
       "text_es": "Asere, GTA 6 tiene su propia Pequeña Habana.",
       "keep_media": true,
@@ -197,5 +197,6 @@
         "sub": "SÍ o NO, en los comentarios"
       }
     }
-  ]
+  ],
+  "voice_note": "Owner Nov 22: wants a Cuban voice. Waiting for the free Azure Speech key (es-CU-ManuelNeural); the Kokoro em_alex render garbled the names (caption check 35% word error)."
 }
