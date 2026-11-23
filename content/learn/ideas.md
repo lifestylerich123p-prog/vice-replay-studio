@@ -31,6 +31,20 @@ views (counter + bars), inflation (counter + LINE).
 4. **Shorts series** (seasons/episodes with sequential playback): YouTube Partner Program channels only, so not yet.
    When we're in YPP: group the graph Shorts as a series ("GTA 6 by the numbers").
 
+## Upgrades found online, Nov 22 night (ranked; owner action marked)
+1. **Quota is the bottleneck** (ran out at ~7 PM Nov 22 after 6 uploads; Vice Replay, the Spanish channel and What If
+   Arena share ONE Google Cloud project = one daily quota). Built: no Spanish subtitle track on English Shorts
+   (saves 400 units per Short). OWNER: give What If Arena its own Google Cloud project (own 10,000+ units a day), and/or
+   send YouTube's free "Audit and Quota Extension Form" (support.google.com/youtube/contact/yt_api_form; needs a
+   compliance audit; no published timeline).
+2. **Instagram Trial Reels through the API** (`trial_params`, graduation MANUAL or SS_PERFORMANCE, since Dec 2025):
+   shows a Reel to non-followers first. Eligibility reportedly needs a professional account with 200-1,000+
+   followers (we have 14): add when eligible.
+3. **TikTok Content Posting API**: unaudited apps can only post PRIVATE videos (max 5 users/day), so automatic
+   TikTok posting needs TikTok's app audit; the owner keeps posting by hand (or a paid audited tool).
+4. **Quiz / trivia Shorts**: vendors say quiz channels grow fast, with no hard data; our own test is the history quiz
+   (Thu Nov 26) vs the facts-only Shorts.
+
 ## System ideas not built yet (Nov 22; ranked by views per effort)
 1. **Owner gameplay** stays the biggest lever (originality + "demand moved to gameplay"): 15-30 s moments recorded
    with the radio off; `studio.gameplay` already pulls them and Shorts use them first.

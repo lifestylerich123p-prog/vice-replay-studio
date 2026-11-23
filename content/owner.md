@@ -224,4 +224,9 @@
   **Mon 3 AM batch = money ES, darts EN + ES, Lucia EN + ES, retag, channel layout; SKIP the top-3 rides step of the
   3:08 AM plan** (moved to the Wed 3:10 AM batch to stay under quota). Wed 3:10 AM batch: rides (Wed 9:30 AM), Jason
   (Thu Nov 26 9:30 AM), history quiz (Thu 12:30 PM), all EN + ES.
+- 2026-11-22 (8:30 PM ET, owner: "check the complete system and find any upgrade"): quota used Nov 22: 6 uploads ~9,600
+  units, 13 subtitle uploads ~5,200 (30%), the rest reads/updates; ran out at 7:02 PM. Built: English Shorts no longer
+  upload a Spanish subtitle track (the Spanish channel covers it). QC fix: all-card Shorts' dark backgrounds no longer
+  fail "black bars"; a used-up quota is no longer reported as an expired key. All 7 queued Shorts pass QC (blocked only
+  by the quota until 3 AM). Owner options: separate Cloud project for What If Arena; YouTube quota extension form.
 

@@ -535,7 +535,11 @@ def main():
         srt, en_srt = spanish_srt(timings), english_srt(timings)
         steps = [("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb)),
                  ("english_subtitles", lambda: en_srt and upload_caption(tok, vid, en_srt, lang="en", name="English")),
-                 ("spanish_subtitles", lambda: srt and upload_caption(tok, vid, srt)),
+                 # Nov 22: Shorts also post on Vice Replay en Español, so the Spanish track on the English Short is
+                 # redundant (400 quota units each; 13 caption uploads were ~30% of the day that ran out). Long videos
+                 # stay English-only on YouTube, so they keep their Spanish subtitles.
+                 ("spanish_subtitles", lambda: srt and not (key != "main" and channel_ids().get("es"))
+                  and upload_caption(tok, vid, srt)),
                  ("playlist", lambda: add_to_playlist(tok, vid, playlist))]
         done[key]["spanish_title"] = "yes" if es and es.get("title") else "no (episode has no 'es')"
         if publish_at:
