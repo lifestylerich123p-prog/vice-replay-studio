@@ -56,8 +56,8 @@
     {
       "headline": "$3.79B VS $800M",
       "headline_es": "3.790 M VS 800 M",
-      "text": "Take-Two says three point seven nine billion. GTA 5 made eight hundred million on day one in 2013.",
-      "text_es": "Take-Two dice tres mil setecientos noventa millones. GTA 5 hizo ochocientos en su primer día, en dos mil trece.",
+      "text": "Take-Two says three thousand seven hundred ninety million. GTA 5 made eight hundred on day one.",
+      "text_es": "Take-Two dice tres mil setecientos noventa millones. GTA 5 hizo ochocientos su primer día.",
       "keep_media": true,
       "chart": {
         "type": "counter",
@@ -78,8 +78,8 @@
     {
       "headline": "THE CATCH",
       "headline_es": "LA TRAMPA",
-      "text": "The catch: GTA 6's number counts every preorder, and the game costs eighty dollars, not sixty.",
-      "text_es": "La trampa: cuenta todas las preventas, y el juego cuesta ochenta dólares, no sesenta.",
+      "text": "The catch: it counts preorders, and it costs eighty dollars, not sixty.",
+      "text_es": "La trampa: cuenta las preventas, y cuesta ochenta dólares, no sesenta.",
       "keep_media": true,
       "chart": {
         "type": "list",
@@ -131,8 +131,8 @@
     {
       "headline": "STILL 2X",
       "headline_es": "AÚN EL DOBLE",
-      "text": "Even an independent estimate says more than double. Fair fight or not? Tell me below, because",
-      "text_es": "Una estimación independiente aún dice más del doble. ¿Pelea justa? Dímelo abajo, porque",
+      "text": "Still, an independent estimate says more than double. Fair? Tell me, because",
+      "text_es": "Aun así, una estimación independiente dice más del doble. ¿Justo? Dime, porque",
       "keep_media": true,
       "chart": {
         "type": "bars",

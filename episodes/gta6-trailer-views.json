@@ -56,10 +56,10 @@
   ],
   "short": [
     {
-      "headline": "STILL #1",
-      "headline_es": "SIGUE SIENDO #1",
-      "text": "GTA 6's first trailer has three hundred nine million views. No GTA 6 video since has caught it.",
-      "text_es": "El primer tráiler de GTA 6 tiene trescientos nueve millones de vistas. Ningún video de GTA 6 lo ha alcanzado.",
+      "headline": "TRAILER 1 STILL WINS",
+      "headline_es": "EL TRÁILER 1 SIGUE GANANDO",
+      "text": "GTA 6's first trailer still beats the next two combined.",
+      "text_es": "El primer tráiler de GTA 6 todavía le gana a los dos siguientes juntos.",
       "keep_media": true,
       "chart": {
         "type": "counter",
@@ -77,8 +77,8 @@
     {
       "headline": "ROCKSTAR'S TOP 5",
       "headline_es": "TOP 5 DE ROCKSTAR",
-      "text": "Trailer 2 has a hundred ninety three million. The launch trailer, eighty seven.",
-      "text_es": "El tráiler 2 tiene ciento noventa y tres millones. El de lanzamiento, ochenta y siete.",
+      "text": "Trailer 1: three hundred nine million views. Trailer 2: a hundred ninety three million. The launch trailer: eighty seven.",
+      "text_es": "Tráiler 1: trescientos nueve millones de vistas. Tráiler 2: ciento noventa y tres millones. El de lanzamiento: ochenta y siete.",
       "keep_media": true,
       "chart": {
         "type": "bars",
@@ -140,10 +140,10 @@
       }
     },
     {
-      "headline": "1 VS 2 COMBINED",
-      "headline_es": "1 VS 2 JUNTOS",
-      "text": "Trailer 1 still beats Trailer 2 and the launch trailer combined.",
-      "text_es": "El tráiler 1 todavía le gana al tráiler 2 y al de lanzamiento juntos.",
+      "headline": "2 TRAILERS COMBINED: STILL BEHIND",
+      "headline_es": "DOS JUNTOS: SIGUEN ATRÁS",
+      "text": "Add those two up, and they're still behind.",
+      "text_es": "Súmalos, y aun así se quedan atrás.",
       "keep_media": true,
       "chart": {
         "type": "counter",

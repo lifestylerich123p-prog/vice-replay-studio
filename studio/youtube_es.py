@@ -27,7 +27,7 @@ from pathlib import Path
 from . import postguard
 from .review_page import extra_time, times_for
 from .youtube_upload import (ET, ROOT, add_to_playlist, clean_tags, comment, req, slot, srt_from_timings, token,
-                             token_for, upload, upload_caption, yt_safe)
+                             shorts_subtitles, token_for, upload, upload_caption, yt_safe)
 
 import os
 
@@ -187,7 +187,8 @@ def main():
         reg[vid] = {"slug": slug, "item": key, "title": title, "uploaded": dt.datetime.now(dt.timezone.utc).isoformat()[:19]}
         REGISTRY.write_text(json.dumps(reg, indent=1, ensure_ascii=False))
         srt = srt_from_timings(out / f"{name}.timings.json", "text")
-        for step, fn in (("subtitles", lambda: srt and upload_caption(tok, vid, srt, lang="es", name="Español")),
+        for step, fn in (("subtitles", lambda: srt and shorts_subtitles() and upload_caption(tok, vid, srt, lang="es",
+                                                                                         name="Español")),
                          ("playlist", lambda: add_to_playlist(tok, vid, PLAYLIST)),
                          ("comment", lambda: pin and not publish_at and comment(tok, vid, pin))):
             try:

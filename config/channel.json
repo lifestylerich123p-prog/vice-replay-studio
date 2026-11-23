@@ -83,5 +83,7 @@
   "caption_style": "animated",
   "voice": "af_heart",
   "voice_es": "em_alex",
-  "_voice_note": "Nov 22 owner: \"use the best voice rated\" -> Kokoro af_heart (grade A; am_michael was C+). Kokoro grades no Spanish voice, so Spanish stays em_alex until the owner picks."
+  "_voice_note": "Nov 22 owner: \"use the best voice rated\" -> Kokoro af_heart (grade A; am_michael was C+). Kokoro grades no Spanish voice, so Spanish stays em_alex until the owner picks.",
+  "shorts_subtitles": false,
+  "_shorts_subtitles_note": "Nov 22 night, owner: \"every posting credit must be used posting or answering comments\". Subtitle files cost 400 quota units each and Shorts already have burned-in captions; set true to upload subtitle tracks on Shorts again (long videos always get them)."
 }

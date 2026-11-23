@@ -11,6 +11,7 @@ The video machine for **Vice Replay** (@ViceReplayTV-q8s), a GTA 6 fan channel, 
 | After approval | Uploads + schedules on Vice Replay AND Vice Replay en Español (Shorts in the daytime slots 9:30 / 11:00 / 12:30; 3:30 / 8:30 PM only for big news or the Sunday recap), posts comment replies, posts pinned comments once live | Pin comments, "Related video" on Shorts, thumbnails B/C |
 | 8:23 AM-11:23 PM every 3 h (to Nov 30) | Breaking-news check; auto-posts only big, confirmed news | Nothing |
 | 1:13 PM, 9:13 PM | Auto-replies to new comments (skips trolls/spam) | Nothing |
+| 2:04 AM | Uses the rest of the day's YouTube quota before the 3 AM reset: uploads approved Shorts early (scheduled for their slots) and answers every comment on both channels (`python -m studio.spend`) | Nothing |
 | 2:47 PM | Momentum check: a follow-up Short when one takes off | Approve it in the main chat |
 | Sundays | Main video = weekly recap; 11:37 AM upgrade scout (its "reconnect YouTube" line is out of date: the Google app is published, keys no longer expire) | Nothing |
 | Up to 4 times a day | Instagram @vice.replaytv: each uploaded Short as a Reel and ~1 carousel or image post a day (max 4 posts/day, ~2.5 h apart; no campaign clips after Meta's Nov 19 ad flag) | Nothing |

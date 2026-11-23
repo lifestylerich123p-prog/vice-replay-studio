@@ -91,6 +91,11 @@ only for big news or long videos (`studio.quota` lists daytime first).
 - **Learning**: `python -m studio.learn` (our numbers + hottest GTA 6 videos; YouTube API key in the environment);
   lessons in `content/learn/lessons.md`. `/stats` logs Studio screenshots into `content/performance.md`.
   `python -m studio.flops` = 48 h flop review (Shorts under 50 views: main chat sets them private, never deletes).
+- **Quota = posting + replies** (owner, Nov 22 night: "every posting credit must be used posting or answering
+  comments"): no subtitle files on Shorts (`shorts_subtitles` in config/channel.json), keep reads lean, and every
+  night at 2:04 AM ET the main chat runs `python -m studio.spend` (+ `upload`): approved Shorts from
+  `content/learn/approved_queue.json` go up early, scheduled for their slots, then every open comment on both
+  channels gets an answer (`studio.replies list` / `list --es`). Add each newly approved Short to approved_queue.json.
 - **Status**: `python -m studio.status` = one screen (health, YouTube schedule + views, free slots + quota, Instagram
   posted/next, campaigns + clip views); use it for "how are we doing?". `python -m studio.quota`: YouTube units left
   today (learned limit, resets 3 AM ET) and free posting slots for 3 days; fill DAYTIME free slots before extras.

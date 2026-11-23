@@ -65,25 +65,27 @@
     {
       "headline": "NO DARTS IN GTA 6",
       "headline_es": "SIN DARDOS EN GTA 6",
-      "text": "GTA 6 has no darts. Rockstar says why.",
-      "text_es": "GTA 6 no tiene dardos. Rockstar explica por qué.",
+      "text": "Rockstar cut darts from GTA 6, and admitted why.",
+      "text_es": "Rockstar quitó los dardos de GTA 6, y admitió por qué.",
       "keep_media": true,
       "chart": {
-        "type": "quote",
-        "text": "The darts one is a contentious one",
+        "type": "text",
+        "text": "Rockstar CUT darts from GTA 6",
         "pink": [
+          "CUT",
           "darts"
         ],
-        "who": "Rob Nelson, Rockstar North, to VGC (Nov 19)",
+        "sub": "and admitted why",
         "seed": 11
       },
       "chart_es": {
-        "type": "quote",
-        "text": "Lo de los dardos es un tema polémico",
+        "type": "text",
+        "text": "Rockstar QUITÓ los dardos de GTA 6",
         "pink": [
+          "QUITÓ",
           "dardos"
         ],
-        "who": "Rob Nelson, Rockstar North, a VGC (traducido)",
+        "sub": "y admitió por qué",
         "seed": 11
       }
     },

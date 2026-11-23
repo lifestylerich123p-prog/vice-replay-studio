@@ -56,6 +56,15 @@ def _owner_of(access):
     return items[0].get("id")
 
 
+def shorts_subtitles():
+    """Upload subtitle files on Shorts? (config/channel.json `shorts_subtitles`; off since Nov 22: owner wants every quota
+    unit spent on posting or answering comments, and Shorts have burned-in captions.)"""
+    try:
+        return bool(json.loads((ROOT / "config" / "channel.json").read_text()).get("shorts_subtitles", True))
+    except (OSError, ValueError):
+        return True
+
+
 def token_for(channel_id, prefer="YT_REFRESH_TOKEN"):
     """Access token for a given channel, whichever YT_*REFRESH_TOKEN setting holds it (Nov 22: the owner's settings
     ended up with the English and Spanish keys swapped; picking by channel, not by name, makes that harmless)."""
@@ -534,11 +543,13 @@ def main():
         register_upload(slug, key, vid, title)
         srt, en_srt = spanish_srt(timings), english_srt(timings)
         steps = [("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb)),
-                 ("english_subtitles", lambda: en_srt and upload_caption(tok, vid, en_srt, lang="en", name="English")),
+                 ("english_subtitles", lambda: en_srt and (key == "main" or shorts_subtitles())
+                  and upload_caption(tok, vid, en_srt, lang="en", name="English")),
                  # Nov 22: Shorts also post on Vice Replay en Español, so the Spanish track on the English Short is
                  # redundant (400 quota units each; 13 caption uploads were ~30% of the day that ran out). Long videos
                  # stay English-only on YouTube, so they keep their Spanish subtitles.
-                 ("spanish_subtitles", lambda: srt and not (key != "main" and channel_ids().get("es"))
+                 ("spanish_subtitles", lambda: srt and not (key != "main" and (channel_ids().get("es")
+                                                                              or not shorts_subtitles()))
                   and upload_caption(tok, vid, srt)),
                  ("playlist", lambda: add_to_playlist(tok, vid, playlist))]
         done[key]["spanish_title"] = "yes" if es and es.get("title") else "no (episode has no 'es')"

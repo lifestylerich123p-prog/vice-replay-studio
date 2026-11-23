@@ -240,3 +240,12 @@
   unchanged). Keys re-checked after the rename: EN + ES OK. Don't delete the OAuth client "Vice Replay uploader"
   (662880770567-coc1..., used by both Vice Replay channels); the other client there (…-pcng…) is probably What If Arena's
   old one: keep about a week as a backup, then the owner may delete it.
+- 2026-11-22 (9:15 PM ET, owner: "now every posting credit must be used posting or answering comments" + "recheck
+  everything; if the hook isn't strong or it doesn't bring entertainment, redo"): (1) quota rule: subtitle files off on
+  Shorts (config `shorts_subtitles: false`, ~400 units each saved), comment replies now cover the Spanish channel
+  (`studio.replies ... --es`), new `studio.spend` + `content/learn/approved_queue.json` + a nightly 2:04 AM ET task
+  that uploads approved Shorts early and answers every comment with what's left. (2) Hook re-check of the 9 queued
+  Shorts: kept 99 club, inflation, history quiz, Lucia, rides; REDONE: darts (opens on "Rockstar CUT darts from GTA 6,
+  and admitted why"), trailer views (opens on "still beats the next two combined"), Jason (opens on "inspired by Steve
+  McQueen", new title), Spanish money (trimmed 63 -> 51 words); re-rendered EN + ES.
+

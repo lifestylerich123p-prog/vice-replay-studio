@@ -1,0 +1,119 @@
+{
+ "_note": "Approved Shorts not yet uploaded (owner approvals in content/owner.md). studio.spend uploads the earliest ones early, scheduled for these slots, whenever the day's quota has room; studio.ship's duplicate guard skips anything already up. Dates/times are US Eastern.",
+ "items": [
+  {
+   "slug": "gta6-money-chart-es",
+   "item": "short",
+   "es_only": true,
+   "es": [
+    "2026-11-23",
+    "3:30 PM"
+   ],
+   "approved": "Nov 22 9:15 AM (graph Shorts)"
+  },
+  {
+   "slug": "gta6-no-darts",
+   "item": "short",
+   "en": [
+    "2026-11-23",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-23",
+    "11:00 AM"
+   ],
+   "approved": "Nov 22 6:45 PM (do what you think)"
+  },
+  {
+   "slug": "gta6-lucia-outfits",
+   "item": "short",
+   "en": [
+    "2026-11-23",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-23",
+    "8:30 PM"
+   ],
+   "approved": "Nov 22 (Approve)"
+  },
+  {
+   "slug": "gta6-cheapest-gta-inflation",
+   "item": "short",
+   "en": [
+    "2026-11-24",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-25",
+    "11:00 AM"
+   ],
+   "approved": "Nov 22 10 AM"
+  },
+  {
+   "slug": "gta6-99-club",
+   "item": "short",
+   "en": [
+    "2026-11-24",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-24",
+    "11:00 AM"
+   ],
+   "approved": "Nov 22 9:15 AM"
+  },
+  {
+   "slug": "gta6-top-3-rides",
+   "item": "short",
+   "en": [
+    "2026-11-25",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-25",
+    "9:30 AM"
+   ],
+   "approved": "Nov 22 8 AM (Ok)"
+  },
+  {
+   "slug": "gta6-trailer-views",
+   "item": "short",
+   "en": [
+    "2026-11-25",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-25",
+    "12:30 PM"
+   ],
+   "approved": "Nov 22 9:15 AM"
+  },
+  {
+   "slug": "gta6-jason-quiet",
+   "item": "short",
+   "en": [
+    "2026-11-26",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-26",
+    "9:30 AM"
+   ],
+   "approved": "Nov 22 7 PM (ok approve and post)"
+  },
+  {
+   "slug": "gta-history-quiz",
+   "item": "short",
+   "en": [
+    "2026-11-26",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-26",
+    "12:30 PM"
+   ],
+   "approved": "Nov 22 7 PM (ok approve and post)"
+  }
+ ]
+}

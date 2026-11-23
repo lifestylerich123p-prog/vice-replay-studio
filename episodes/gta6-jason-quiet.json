@@ -1,19 +1,19 @@
 {
-  "title": "GTA 6's Jason Barely Talks. Rockstar Says Why",
+  "title": "GTA 6's Jason Was Inspired by Steve McQueen",
   "slug": "gta6-jason-quiet",
   "series": "Explained",
   "format": "news",
   "mood": "night",
   "use_gameplay": false,
-  "short_title": "GTA 6's Jason barely talks. Here's why #GTA6 #Shorts",
+  "short_title": "GTA 6's Jason was inspired by Steve McQueen #GTA6 #Shorts",
   "short_title_options": [
+    "GTA 6's Jason was inspired by Steve McQueen #GTA6 #Shorts",
     "GTA 6's Jason barely talks. Here's why #GTA6 #Shorts",
-    "GTA 6's Jason was built on Steve McQueen #GTA6 #Shorts",
     "Why GTA 6's Jason is so quiet (Rockstar) #GTA6 #Shorts"
   ],
   "short_description": "Rockstar's senior vice president of narrative, Rupert Humphries, told Destructoid that Jason's quiet style comes from Steve McQueen in Sam Peckinpah's 1972 film The Getaway (McQueen \"was famous for pulling lines out of scripts and saying things with his presence alone\") and from research into Army veterans: \"These guys typically aren't running their mouths.\" No story spoilers.\n\nSources: Destructoid, GamesRadar, PC Gamer (Nov 2026).",
   "short_es": {
-    "title": "Jason de GTA 6 casi NO habla... y es a propósito 🤫 #GTA6 #Shorts",
+    "title": "El Jason de GTA 6 está inspirado en STEVE McQUEEN 🎬 #GTA6 #Shorts",
     "description": "Rupert Humphries, vicepresidente de narrativa de Rockstar, le dijo a Destructoid que el estilo callado de Jason viene de Steve McQueen en The Getaway (1972), \"famoso por quitar líneas de los guiones y decir las cosas solo con su presencia\", y de investigar a veteranos del ejército: \"estos tipos normalmente no andan hablando de más\" (traducido). Sin spoilers.",
     "tags": [
       "GTA 6 Jason",
@@ -61,36 +61,37 @@
   ],
   "short": [
     {
-      "headline": "BUILT ON A 1972 MOVIE",
-      "headline_es": "BASADO EN UNA PELI DE 1972",
-      "text": "GTA 6's Jason is quiet on purpose.",
-      "text_es": "El Jason de GTA 6 es callado a propósito.",
+      "headline": "JASON'S SECRET: McQUEEN",
+      "headline_es": "EL SECRETO DE JASON",
+      "text": "GTA 6's Jason was inspired by Steve McQueen.",
+      "text_es": "El Jason de GTA 6 está inspirado en Steve McQueen.",
       "keep_media": true,
       "chart": {
         "type": "text",
-        "text": "Jason barely talks. On purpose.",
+        "text": "Jason was inspired by Steve McQueen",
         "pink": [
-          "On",
-          "purpose."
+          "Steve",
+          "McQueen"
         ],
-        "seed": 13,
-        "sub": "Rockstar explains why"
+        "sub": "Rockstar says so",
+        "seed": 13
       },
       "chart_es": {
         "type": "text",
-        "text": "Jason casi no habla. A propósito.",
+        "text": "Jason está inspirado en Steve McQueen",
         "pink": [
-          "propósito."
+          "Steve",
+          "McQueen"
         ],
-        "seed": 13,
-        "sub": "Rockstar explica por qué"
+        "sub": "lo dice Rockstar",
+        "seed": 13
       }
     },
     {
-      "headline": "THE STEVE McQUEEN RULE",
-      "headline_es": "LA REGLA STEVE McQUEEN",
-      "text": "Rockstar's Rupert Humphries says they studied Steve McQueen in The Getaway, from nineteen seventy two.",
-      "text_es": "Rupert Humphries, de Rockstar, dice que estudiaron a Steve McQueen en la película The Getaway, de mil novecientos setenta y dos.",
+      "headline": "1972: THE GETAWAY",
+      "headline_es": "1972: THE GETAWAY",
+      "text": "Rockstar's narrative boss says they studied his nineteen seventy two movie, The Getaway.",
+      "text_es": "El jefe de narrativa de Rockstar dice que estudiaron su película de mil novecientos setenta y dos, The Getaway.",
       "keep_media": true,
       "chart": {
         "type": "quote",
@@ -114,8 +115,8 @@
     {
       "headline": "+ REAL ARMY VETERANS",
       "headline_es": "+ VETERANOS REALES",
-      "text": "And real Army veterans.",
-      "text_es": "Y a veteranos reales del ejército.",
+      "text": "And real Army veterans. That's why Jason barely talks.",
+      "text_es": "Y a veteranos reales del ejército. Por eso Jason casi no habla.",
       "keep_media": true,
       "chart": {
         "type": "quote",
