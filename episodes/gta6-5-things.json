@@ -100,13 +100,15 @@
         "type": "counter",
         "value": 99,
         "label": "Only Zelda: Ocarina of Time also has a 99",
-        "seed": 41
+        "seed": 41,
+        "src": "VGC · Notebookcheck"
       },
       "chart_es": {
         "type": "counter",
         "value": 99,
         "label": "Solo Zelda: Ocarina of Time también tiene 99",
-        "seed": 41
+        "seed": 41,
+        "src": "VGC · Notebookcheck"
       },
       "audio_es": "media/voice/gta6-5-things/es/seg2.wav"
     },
@@ -133,7 +135,8 @@
             "CUT"
           ]
         ],
-        "seed": 41
+        "seed": 41,
+        "src": "VGC · GGRecon"
       },
       "chart_es": {
         "type": "list",
@@ -152,7 +155,8 @@
             "NO"
           ]
         ],
-        "seed": 41
+        "seed": 41,
+        "src": "VGC · GGRecon"
       },
       "audio_es": "media/voice/gta6-5-things/es/seg3.wav"
     },
@@ -170,7 +174,8 @@
           "McQueen"
         ],
         "seed": 41,
-        "sub": "Rockstar says so"
+        "sub": "Rockstar says so",
+        "src": "Destructoid · PC Gamer"
       },
       "chart_es": {
         "type": "text",
@@ -180,7 +185,8 @@
           "McQueen"
         ],
         "seed": 41,
-        "sub": "lo dice Rockstar"
+        "sub": "lo dice Rockstar",
+        "src": "Destructoid · PC Gamer"
       },
       "audio_es": "media/voice/gta6-5-things/es/seg4.wav"
     },
@@ -200,7 +206,8 @@
           "unit": "M",
           "label": "Trailer 2 + launch trailer"
         },
-        "seed": 41
+        "seed": 41,
+        "src": "Rockstar's YouTube counts, Nov 22"
       },
       "chart_es": {
         "type": "counter",
@@ -212,7 +219,8 @@
           "unit": " M",
           "label": "Tráiler 2 + lanzamiento"
         },
-        "seed": 41
+        "seed": 41,
+        "src": "Rockstar's YouTube counts, Nov 22"
       },
       "audio_es": "media/voice/gta6-5-things/es/seg5.wav"
     },
@@ -232,7 +240,8 @@
           "prefix": "$",
           "label": "GTA 5 in today's dollars"
         },
-        "seed": 41
+        "seed": 41,
+        "src": "BLS CPI-U"
       },
       "chart_es": {
         "type": "counter",
@@ -244,7 +253,8 @@
           "prefix": "$",
           "label": "GTA 5 en dólares de hoy"
         },
-        "seed": 41
+        "seed": 41,
+        "src": "BLS CPI-U"
       },
       "audio_es": "media/voice/gta6-5-things/es/seg6.wav"
     },

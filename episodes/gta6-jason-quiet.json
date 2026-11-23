@@ -101,7 +101,8 @@
           "presence alone"
         ],
         "who": "Rupert Humphries, Rockstar, on Steve McQueen (to Destructoid)",
-        "seed": 13
+        "seed": 13,
+        "src": "Destructoid · GamesRadar · PC Gamer"
       },
       "chart_es": {
         "type": "quote",
@@ -110,7 +111,8 @@
           "presencia"
         ],
         "who": "Rupert Humphries, Rockstar, sobre Steve McQueen (traducido)",
-        "seed": 13
+        "seed": 13,
+        "src": "Destructoid · GamesRadar · PC Gamer"
       },
       "audio_es": "media/voice/gta6-jason-quiet/es/seg2.wav"
     },
@@ -127,7 +129,8 @@
           "aren't running their mouths"
         ],
         "who": "Rupert Humphries, Rockstar, to Destructoid",
-        "seed": 13
+        "seed": 13,
+        "src": "Destructoid · PC Gamer"
       },
       "chart_es": {
         "type": "quote",
@@ -136,7 +139,8 @@
           "hablando de más"
         ],
         "who": "Rupert Humphries, Rockstar (traducido)",
-        "seed": 13
+        "seed": 13,
+        "src": "Destructoid · PC Gamer"
       },
       "audio_es": "media/voice/gta6-jason-quiet/es/seg3.wav"
     },

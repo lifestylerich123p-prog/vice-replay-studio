@@ -138,7 +138,8 @@
         ],
         "answer": 1,
         "seed": 21,
-        "reveal": true
+        "reveal": true,
+        "src": "GamesRadar · The Escapist"
       },
       "chart_es": {
         "type": "quiz",
@@ -151,7 +152,8 @@
         ],
         "answer": 1,
         "seed": 21,
-        "reveal": true
+        "reveal": true,
+        "src": "GamesRadar · The Escapist"
       },
       "audio_es": "media/voice/gta-history-quiz/es/seg3.wav"
     },
@@ -204,7 +206,8 @@
         ],
         "answer": 2,
         "seed": 21,
-        "reveal": true
+        "reveal": true,
+        "src": "GameSpot"
       },
       "chart_es": {
         "type": "quiz",
@@ -217,7 +220,8 @@
         ],
         "answer": 2,
         "seed": 21,
-        "reveal": true
+        "reveal": true,
+        "src": "GameSpot"
       },
       "audio_es": "media/voice/gta-history-quiz/es/seg5.wav"
     },
@@ -270,7 +274,8 @@
         ],
         "answer": 1,
         "seed": 21,
-        "reveal": true
+        "reveal": true,
+        "src": "Wikipedia · IMDb"
       },
       "chart_es": {
         "type": "quiz",
@@ -283,7 +288,8 @@
         ],
         "answer": 1,
         "seed": 21,
-        "reveal": true
+        "reveal": true,
+        "src": "Wikipedia · IMDb"
       },
       "audio_es": "media/voice/gta-history-quiz/es/seg7.wav"
     },
