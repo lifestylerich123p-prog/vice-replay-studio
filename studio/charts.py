@@ -394,7 +394,7 @@ def _source_line(img, spec, w, h):
     d = ImageDraw.Draw(img)
     x0, y0, x1, y1 = _region(w, h)
     label = ("Fuente: " if spec.get("locale") == "es" else "Source: ") + str(spec["src"])
-    size = int(h * 0.0145)
+    size = int(min(w, h) * 0.026)
     fn = brand.font(brand.BODY_FONT, size)
     while fn.getlength(label) > (x1 - x0) and size > 12:
         size -= 1

@@ -50,7 +50,7 @@ def region(w, h):
     """The card area between the headline (top) and the captions (bottom), same as studio.charts._region."""
     if h > w:
         return int(w * 0.06), int(h * 0.30), int(w * 0.94), int(h * 0.60)
-    return int(w * 0.08), int(h * 0.24), int(w * 0.92), int(h * 0.80)
+    return int(w * 0.08), int(h * 0.27), int(w * 0.92), int(h * 0.80)
 
 
 # ---------- the Vice City set ----------
@@ -286,7 +286,7 @@ def countdown_frame(base, spec, t, w, h):
         gap = r * 4
         sx = (x0 + x1) / 2 - gap * (total - 1) / 2
         for k in range(total):
-            lit = (total - k) == n
+            lit = ((total - k) == n) if spec.get("descending") else (k + 1 == n)  # our lists count up (1, 2, 3...)
             c = brand.PINK if lit else (90, 60, 120)
             cx = sx + gap * k
             d.ellipse([cx - r, y0 - r, cx + r, y0 + r], fill=c)
@@ -316,15 +316,23 @@ def versus_frame(base, spec, t, w, h):
     dur = spec.get("_dur", 3.0)
     win = spec.get("winner")
     decided = win and t > dur * 0.6
-    half = (y1 - y0) * 0.44
+    wide = w > h  # 16:9 (long videos): the two cards sit side by side
+    half = (y1 - y0) * (0.80 if wide else 0.44)
+    bw = (x1 - x0) * 0.42
     for k, key in enumerate(("a", "b")):
         label, value = (list(spec.get(key) or ["", ""]) + [""])[:2]
         p = _ease((t - 0.05 - 0.3 * k) / 0.35)
         if p <= 0:
             continue
-        dx = (1 - p) * w * (-1 if k == 0 else 1)
-        top = y0 + (0 if k == 0 else (y1 - y0) - half)
-        box = [x0 + dx, top, x1 + dx, top + half]
+        if wide:
+            dy = (1 - p) * h * (1 if k == 0 else -1) * 0.5
+            top = y0 + (y1 - y0 - half) / 2 + dy
+            left = x0 if k == 0 else x1 - bw
+            box = [left, top, left + bw, top + half]
+        else:
+            dx = (1 - p) * w * (-1 if k == 0 else 1)
+            top = y0 + (0 if k == 0 else (y1 - y0) - half)
+            box = [x0 + dx, top, x1 + dx, top + half]
         lit = decided and win == key
         dim = decided and win != key
         over = Image.new("RGBA", img.size, (0, 0, 0, 0))
@@ -337,10 +345,11 @@ def versus_frame(base, spec, t, w, h):
                              outline=(brand.PINK if lit else brand.CYAN) + (255 if not dim else 110,), width=6 if lit else 3)
         img.alpha_composite(over)
         d = ImageDraw.Draw(img)
-        lh = _small(d, str(label).upper(), (box[0] + box[2]) / 2, top + half * 0.08, int(w * 0.052),
-                    fill=(brand.WHITE if lit else brand.CYAN) if not dim else (120, 110, 140), max_w=x1 - x0 - w * 0.06,
+        lh = _small(d, str(label).upper(), (box[0] + box[2]) / 2, top + half * 0.08, int(min(w, h) * 0.052),
+                    fill=(brand.WHITE if lit else brand.CYAN) if not dim else (120, 110, 140),
+                    max_w=(box[2] - box[0]) - w * 0.04,
                     font=brand.HEADLINE_FONT)
-        spr = lettering(str(value).upper(), int(half * 0.58), int((x1 - x0) * 0.9),
+        spr = lettering(str(value).upper(), int(half * (0.40 if wide else 0.58)), int((box[2] - box[0]) * 0.9),
                         *((YELLOW, brand.PINK, brand.CYAN) if lit else (brand.WHITE, brand.CYAN, brand.PINK)))
         place(img, spr, (box[0] + box[2]) / 2, top + half * 0.08 + lh + (half * 0.92 - lh) / 2,
               alpha=0.6 if dim else 1.0)
@@ -418,7 +427,7 @@ def headline_frame(base, spec, t, w, h):
     img.alpha_composite(over)
     d = ImageDraw.Draw(img)
     kick = str(spec.get("kicker", "BREAKING")).upper()
-    fk = brand.font(brand.HEADLINE_FONT, int(w * 0.05))
+    fk = brand.font(brand.HEADLINE_FONT, int(min(w, h) * 0.05))
     kw = fk.getlength(kick) + w * 0.05
     flash = 1.0 if (t * 2.2) % 1 < 0.7 else 0.55
     d.rectangle([x0 + w * 0.03, y0 + h * 0.018, x0 + w * 0.03 + kw, y0 + h * 0.018 + fk.getbbox("A")[3] * 1.5],
@@ -426,7 +435,7 @@ def headline_frame(base, spec, t, w, h):
     d.text((x0 + w * 0.055, y0 + h * 0.018 + fk.getbbox("A")[3] * 0.18), kick, font=fk, fill=brand.WHITE)
     words = str(spec.get("text", "")).upper().split()
     lines, cur = [], []
-    fsize = int(w * 0.11)
+    fsize = int(min(w, h) * 0.11)
     test = brand.font(brand.HEADLINE_FONT, fsize)
     for wd in words:
         if cur and test.getlength(" ".join(cur + [wd])) > (x1 - x0) * 0.9:
@@ -437,7 +446,8 @@ def headline_frame(base, spec, t, w, h):
         lines.append(" ".join(cur))
     lines = lines[:3]
     times = _times(len(lines), spec.get("_dur", 3.0) * 0.6, first=0.15, last_gap=0.0)
-    area_top, area_bot = y0 + h * 0.075, y1 - h * 0.055
+    area_top = y0 + h * 0.018 + fk.getbbox("A")[3] * 1.9
+    area_bot = y1 - h * (0.055 if h > w else 0.08)
     lh = (area_bot - area_top) / max(1, len(lines))
     for k, (line, t0) in enumerate(zip(lines, times)):
         p = (t - t0) / 0.22
