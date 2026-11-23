@@ -53,14 +53,17 @@
     "#didyouknow"
   ],
   "sources": [
-    "Metacritic / 99 club sources in episodes/gta6-99-club.json",
     "VGC - Rockstar explains why you can't play darts in GTA 6: https://www.videogameschronicle.com/news/rockstar-explains-why-you-cant-play-darts-in-gta-6-we-dont-have-unlimited-time/",
     "GGRecon - darts and bowling cut, pool in: https://www.ggrecon.com/articles/gta-6-no-darts-rockstar-explains/",
     "Destructoid - Jason inspired by The Getaway (Steve McQueen): https://www.destructoid.com/gta-6-jason-nonchalant-1970s-heist-movie-inspiration/",
     "GamesRadar - Jason's demeanor inspired by a 1972 crime movie: https://www.gamesradar.com/games/grand-theft-auto/gta-6s-narrative-lead-says-jasons-reserved-demeanor-was-inspired-by-a-1972-crime-movie-and-research-we-were-doing-around-veterans/",
-    "Rockstar Games YouTube view counts (API), Nov 22, 2026: see episodes/gta6-trailer-views.json",
-    "BLS CPI-U + launch prices: see episodes/gta6-cheapest-gta-inflation.json",
-    "OpenCritic - GTA 6 is the cheapest game in the series adjusted for inflation: https://opencritic.com/news/33766/"
+    "OpenCritic - GTA 6 is the cheapest game in the series adjusted for inflation: https://opencritic.com/news/33766/",
+    "Guinness World Records - only videogame with a Metascore of 99 (Ocarina of Time, as of 2020): https://www.guinnessworldrecords.com/records/partners/organisations/metacritic",
+    "Dexerto - GTA 6 is the joint best reviewed game of all time: https://www.dexerto.com/gta/gta-6-is-the-joint-best-reviewed-game-of-the-all-time-3429300/",
+    "Notebookcheck - GTA 6 reviews award 99 Metacritic score, topping GTA 4 to become Rockstar's top rated: https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html",
+    "TechRadar - official GTA 6 price ($79.99 standard, $99.99 Ultimate): https://www.techradar.com/gaming/we-finally-know-the-official-gta-6-price-its-expensive-but-not-too-bad",
+    "Windows Central - GTA VI price confirmed at $79.99: https://windowscentral.com/gaming/grand-theft-auto-vi-price-confirmed-at-usd79-99-with-a-feature-locking-ultimate-edition-at-usd99-99-and-the-physical-edition-is-just-a-code-in-a-box",
+    "BLS - CPI-U October 2026 (337.511), released Nov 10, 2026: https://www.bls.gov/news.release/archives/cpi_11102026.htm"
   ],
   "short": [
     {
