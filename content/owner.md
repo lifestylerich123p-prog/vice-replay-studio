@@ -248,4 +248,8 @@
   Shorts: kept 99 club, inflation, history quiz, Lucia, rides; REDONE: darts (opens on "Rockstar CUT darts from GTA 6,
   and admitted why"), trailer views (opens on "still beats the next two combined"), Jason (opens on "inspired by Steve
   McQueen", new title), Spanish money (trimmed 63 -> 51 words); re-rendered EN + ES.
+- 2026-11-22 (10 PM ET, owner "approve"): approved `gta6-13-years` (Fri Nov 27 9:30 AM), `gta6-80-hours` (Sat Nov 28
+  10 AM) and `gta6-5-things` (Sun Nov 29 10 AM), all EN + ES, added to content/learn/approved_queue.json. The nightly
+  2:04 AM quota run uploads them when there's room (Thursday has no 3 AM batch, so the Fri 2:04 AM run has a full
+  day's quota for them at the latest).
 

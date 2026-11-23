@@ -114,6 +114,45 @@
     "12:30 PM"
    ],
    "approved": "Nov 22 7 PM (ok approve and post)"
+  },
+  {
+   "slug": "gta6-13-years",
+   "item": "short",
+   "en": [
+    "2026-11-27",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-27",
+    "9:30 AM"
+   ],
+   "approved": "Nov 22 10 PM (approve)"
+  },
+  {
+   "slug": "gta6-80-hours",
+   "item": "short",
+   "en": [
+    "2026-11-28",
+    "10:00 AM"
+   ],
+   "es": [
+    "2026-11-28",
+    "10:00 AM"
+   ],
+   "approved": "Nov 22 10 PM (approve)"
+  },
+  {
+   "slug": "gta6-5-things",
+   "item": "short",
+   "en": [
+    "2026-11-29",
+    "10:00 AM"
+   ],
+   "es": [
+    "2026-11-29",
+    "10:00 AM"
+   ],
+   "approved": "Nov 22 10 PM (approve)"
   }
  ]
 }
