@@ -388,6 +388,22 @@ DRAW = {"bars": bars_frame, "counter": counter_frame, "line": line_frame, "quote
         "text": text_frame, "quiz": quiz_frame}
 
 
+def _source_line(img, spec, w, h):
+    """A small on-screen source under the card ("src": "Metacritic · VGC"): YouTube's July 2026 originality guidance
+    rewards visible research; viewers see where a number comes from (owner rule: facts checked in 2+ sources)."""
+    d = ImageDraw.Draw(img)
+    x0, y0, x1, y1 = _region(w, h)
+    label = ("Fuente: " if spec.get("locale") == "es" else "Source: ") + str(spec["src"])
+    size = int(h * 0.0145)
+    fn = brand.font(brand.BODY_FONT, size)
+    while fn.getlength(label) > (x1 - x0) and size > 12:
+        size -= 1
+        fn = brand.font(brand.BODY_FONT, size)
+    y = y1 + int(h * (0.012 if h > w else 0.02))
+    d.text(((x0 + x1) / 2 - fn.getlength(label) / 2, y), label, font=fn, fill=(200, 190, 220))
+    return img
+
+
 def render(spec, dur, w, h, out, seed=0):
     """Write an mp4 (no audio) of the animated chart, dur seconds long; returns its path. The GTA 6-style cards
     (studio/vicecards.py: kinetic, countdown, versus, tier, headline) and any chart with "bg": "vice" play on the
@@ -410,7 +426,10 @@ def render(spec, dur, w, h, out, seed=0):
     for f in range(max(1, int(round(dur * FPS)))):
         t = f / FPS
         bg = vicecards.frame_bg(still, horizon, t, w, h) if vice else base
-        proc.stdin.write(draw(bg, spec, t + shift, w, h).tobytes())
+        frame = draw(bg, spec, t + shift, w, h)
+        if spec.get("src"):
+            frame = _source_line(frame, spec, w, h)
+        proc.stdin.write(frame.tobytes())
     proc.stdin.close()
     proc.wait()
     if kind in vicecards.DRAW and not shift:  # where the lettering lands, for the renderer's sound effects

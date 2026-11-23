@@ -1,0 +1,209 @@
+{
+  "series": "Explained",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_playlist": "GTA 6 Shorts",
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "title": "GTA 6 Black Friday: Take-Two Says No Discount",
+  "slug": "gta6-black-friday-no-discount",
+  "short_title": "GTA 6 Black Friday: Take-Two says no discount #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 Black Friday: Take-Two says no discount #GTA6 #Shorts",
+    "GTA 6 isn't in PlayStation's Black Friday sale #GTA6 #Shorts",
+    "GTA 6: don't wait for a Black Friday deal #GTA6 #Shorts"
+  ],
+  "short_description": "Take-Two CEO Strauss Zelnick told CNBC there are no plans to discount GTA 6 for the holidays (stores can still set their own prices). GTA 6 is $79.99, or $99.99 for the Ultimate Edition, and it isn't in PlayStation's Black Friday sale. What is: the DualSense controller at $54 (normally $74); no PS5 console discount. Our take: if you want it, don't wait for a deal.\n\nSources: Beebom, IBTimes, GamingBolt, MP1st (Zelnick/CNBC); Digital Citizen, Push Square (PlayStation Black Friday); Game Rant, Nacionale (price).",
+  "short_es": {
+    "title": "GTA 6: Take-Two dice NO al descuento de Black Friday 💸 #GTA6 #Shorts",
+    "description": "El CEO de Take-Two, Strauss Zelnick, le dijo a CNBC que no planean descontar GTA 6 en las fiestas (las tiendas aún pueden poner sus propios precios). GTA 6 cuesta 79,99 dólares, o 99,99 la Ultimate, y no está en la oferta de Black Friday de PlayStation. Lo que sí: el control DualSense a 54 dólares (normalmente 74); sin descuento en la consola PS5. Nuestra opinión: si lo quieres, no esperes una oferta.",
+    "tags": [
+      "GTA 6 Black Friday",
+      "GTA 6 descuento",
+      "GTA 6 precio",
+      "GTA 6 oferta",
+      "DualSense Black Friday",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "pinned_comment": "Did you pay full price? YES or NO 👇",
+  "short_pinned_comment_es": "¿Lo pagaste a precio completo? SÍ o NO 👇",
+  "tags": [
+    "GTA 6 Black Friday",
+    "GTA 6 discount",
+    "GTA 6 sale",
+    "GTA 6 price",
+    "GTA 6 deal",
+    "Black Friday PS5",
+    "DualSense Black Friday",
+    "Strauss Zelnick",
+    "GTA 6",
+    "GTA VI"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#blackfriday",
+    "#ps5"
+  ],
+  "sources": [
+    "Beebom - GTA 6 likely won't get a Christmas discount, says Take-Two CEO: https://beebom.com/gta-6-likely-wont-get-a-christmas-discount-says-take-two-ceo/",
+    "IBTimes - No GTA 6 Christmas discount planned despite record preorders: https://www.ibtimes.co.uk/gta-6-preorders-exceed-expectations-no-holiday-discounts-1813575",
+    "GamingBolt - GTA 6 won't see discounts or price cuts for a while after release: https://gamingbolt.com/grand-theft-auto-6-wont-see-discounts-or-price-cuts-for-a-while-after-release-says-take-two-ceo",
+    "MP1st - More people pre-ordered the $100 edition, don't expect a Christmas discount: https://mp1st.com/news/gta-6-more-people-pre-ordered-100-edition-dont-expect-christmas-discount",
+    "Digital Citizen - Sony's Black Friday deals: DualSense to $54, but not the PS5: https://www.digitalcitizen.life/playstation-black-friday-2026-ps-plus-premium-dualsense-54-no-ps5-discount/",
+    "Push Square - PlayStation Black Friday sale is live: https://www.pushsquare.com/news/2026/11/playstation-black-friday-sale-is-live-now-knocks-up-to-usd100-off-ps5-accessories-psvr2",
+    "Nacionale - How much is GTA 6? $79.99, or $99.99 for the Ultimate Edition, with no Black Friday cut: https://www.nacionale.com/en/articles/will-gta-6-be-on-sale-black-friday-price-79-99-ultimate-edition-deals"
+  ],
+  "short": [
+    {
+      "headline": "NO DISCOUNT",
+      "headline_es": "SIN DESCUENTO",
+      "text": "There's no GTA 6 holiday discount coming from Take-Two. Its boss said so.",
+      "text_es": "Take-Two no va a hacer descuento de GTA 6 en las fiestas. Lo dijo su jefe.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "TAKE-TWO CEO",
+        "text": "No holiday discount for GTA 6",
+        "pink": [
+          "DISCOUNT"
+        ],
+        "ticker": "Strauss Zelnick to CNBC · stores can still set their own prices",
+        "src": "Beebom · IBTimes · GamingBolt",
+        "seed": 0
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "CEO DE TAKE-TWO",
+        "text": "Sin descuento navideño para GTA 6",
+        "pink": [
+          "DESCUENTO"
+        ],
+        "ticker": "Strauss Zelnick a CNBC · las tiendas pueden poner sus propios precios",
+        "src": "Beebom · IBTimes · GamingBolt",
+        "seed": 0
+      }
+    },
+    {
+      "headline": "STILL $79.99",
+      "headline_es": "SIGUE EN $79.99",
+      "text": "It stays seventy nine ninety nine. Only stores could cut their own price.",
+      "text_es": "Sigue en setenta y nueve noventa y nueve dólares. Solo las tiendas podrían bajarlo.",
+      "keep_media": true,
+      "chart": {
+        "type": "list",
+        "title": "GTA 6 PRICE (US)",
+        "bg": "vice",
+        "seed": 0,
+        "src": "Nacionale · MP1st",
+        "items": [
+          [
+            "Standard",
+            "$79.99"
+          ],
+          [
+            "Ultimate",
+            "$99.99"
+          ],
+          [
+            "Black Friday cut",
+            "NONE"
+          ]
+        ]
+      },
+      "chart_es": {
+        "type": "list",
+        "title": "PRECIO DE GTA 6 (EE. UU.)",
+        "bg": "vice",
+        "seed": 0,
+        "locale": "es",
+        "src": "Nacionale · MP1st",
+        "items": [
+          [
+            "Estándar",
+            "$79,99"
+          ],
+          [
+            "Ultimate",
+            "$99,99"
+          ],
+          [
+            "Descuento Black Friday",
+            "NO"
+          ]
+        ]
+      }
+    },
+    {
+      "headline": "WHAT IS ON SALE",
+      "headline_es": "LO QUE SÍ BAJA",
+      "text": "What is on sale? The PS5 controller: fifty four dollars, down from seventy four.",
+      "text_es": "¿Qué sí está en oferta? El control de PS5: cincuenta y cuatro dólares, antes setenta y cuatro.",
+      "keep_media": true,
+      "chart": {
+        "type": "versus",
+        "a": [
+          "DUALSENSE · BEFORE",
+          "$74"
+        ],
+        "b": [
+          "DUALSENSE · BLACK FRIDAY",
+          "$54"
+        ],
+        "winner": "b",
+        "src": "Digital Citizen · Push Square",
+        "seed": 0
+      },
+      "chart_es": {
+        "type": "versus",
+        "a": [
+          "DUALSENSE · ANTES",
+          "$74"
+        ],
+        "b": [
+          "DUALSENSE · BLACK FRIDAY",
+          "$54"
+        ],
+        "winner": "b",
+        "src": "Digital Citizen · Push Square",
+        "seed": 0
+      }
+    },
+    {
+      "headline": "OUR TAKE",
+      "headline_es": "NUESTRA OPINIÓN",
+      "text": "Our take: don't wait for a deal. Did you pay full price? Tell me, because",
+      "text_es": "Nuestra opinión: no esperes una oferta. ¿Lo pagaste completo? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "DON'T WAIT",
+          "FOR A DEAL"
+        ],
+        "pink": [
+          "DON'T WAIT"
+        ],
+        "seed": 0
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "NO ESPERES",
+          "UNA OFERTA"
+        ],
+        "pink": [
+          "NO ESPERES"
+        ],
+        "seed": 0
+      }
+    }
+  ]
+}

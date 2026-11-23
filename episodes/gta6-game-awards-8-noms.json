@@ -1,0 +1,177 @@
+{
+  "series": "Explained",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_playlist": "GTA 6 Shorts",
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "title": "GTA 6 Has the Most Game Awards Nominations: 8",
+  "slug": "gta6-game-awards-8-noms",
+  "short_title": "GTA 6 has the most Game Awards nominations: 8 #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 has the most Game Awards nominations: 8 #GTA6 #Shorts",
+    "GTA 6 is up for Game of the Year. Will it win? #GTA6 #Shorts",
+    "GTA 6 vs a Zelda remake for Game of the Year #GTA6 #Shorts"
+  ],
+  "short_description": "GTA VI leads The Game Awards 2026 with 8 nominations, the most of any game, including Game of the Year and Best Game Direction. The Game of the Year nominees: 007 First Light, Control Resonant, Grand Theft Auto VI, Phantom Blade Zero, Resident Evil Requiem and The Legend of Zelda: Ocarina of Time Remake. Winners are announced December 10 in Los Angeles. Our call: GTA 6 wins it. Yours?\n\nSources: VGC, Gematsu, GosuGamers, Wccftech, Exputer.",
+  "short_es": {
+    "title": "GTA 6 arrasa: 8 NOMINACIONES en The Game Awards 🏆 #GTA6 #Shorts",
+    "description": "GTA VI lidera The Game Awards 2026 con 8 nominaciones, más que ningún otro juego, incluyendo Juego del Año y Mejor Dirección. Los nominados a Juego del Año: 007 First Light, Control Resonant, Grand Theft Auto VI, Phantom Blade Zero, Resident Evil Requiem y The Legend of Zelda: Ocarina of Time Remake. Los ganadores se anuncian el 10 de diciembre en Los Ángeles. Nuestra apuesta: gana GTA 6. ¿Y la tuya?",
+    "tags": [
+      "GTA 6 Game Awards",
+      "The Game Awards 2026",
+      "GTA 6 juego del año",
+      "GOTY 2026",
+      "GTA 6 nominaciones",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "pinned_comment": "Will GTA 6 win Game of the Year? YES or NO 👇",
+  "short_pinned_comment_es": "¿GTA 6 gana Juego del Año? SÍ o NO 👇",
+  "tags": [
+    "GTA 6 Game Awards",
+    "The Game Awards 2026",
+    "GTA 6 Game of the Year",
+    "GOTY 2026",
+    "Game Awards nominations",
+    "GTA 6 nominations",
+    "GTA 6",
+    "GTA VI",
+    "Grand Theft Auto VI"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#thegameawards",
+    "#goty"
+  ],
+  "sources": [
+    "VGC - GTA 6 is the most nominated game at The Game Awards 2026: https://www.videogameschronicle.com/news/gta-6-is-the-most-nominated-game-at-the-game-awards-2026/",
+    "Gematsu - The Game Awards 2026 nominees announced: https://www.gematsu.com/2026/11/the-game-awards-2026-nominees-announced",
+    "GosuGamers - The Game Awards 2026 nominees revealed, GTA VI leads with eight nominations: https://www.gosugamers.net/entertainment/news/79505-the-game-awards-2026-nominees-revealed-gta-vi-leads-with-eight-nominations",
+    "Wccftech - Grand Theft Auto VI's Game Awards 2026 nominations: https://wccftech.com/grand-theft-auto-vi-the-game-awards-2026-nominations-clair-obscur-record/",
+    "Exputer - The Game Awards 2026 nominees revealed, GTA 6 leads with 8 nominations: https://exputer.com/?p=446421"
+  ],
+  "short": [
+    {
+      "headline": "8 NOMINATIONS",
+      "headline_es": "8 NOMINACIONES",
+      "text": "GTA 6 got eight Game Awards nominations. That's the most of any game.",
+      "text_es": "GTA 6 recibió ocho nominaciones en The Game Awards. Más que ningún otro juego.",
+      "keep_media": true,
+      "chart": {
+        "type": "meter",
+        "value": 8,
+        "max": 8,
+        "label": "nominations",
+        "sub": "the most of any game in 2026",
+        "src": "VGC · Gematsu · GosuGamers",
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "meter",
+        "value": 8,
+        "max": 8,
+        "label": "nominaciones",
+        "sub": "más que cualquier juego en 2026",
+        "src": "VGC · Gematsu · GosuGamers",
+        "seed": 2
+      }
+    },
+    {
+      "headline": "GAME OF THE YEAR",
+      "headline_es": "JUEGO DEL AÑO",
+      "text": "It's up for Game of the Year against five others, including a Zelda remake.",
+      "text_es": "Compite por Juego del Año contra otros cinco, incluido un remake de Zelda.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "GAME OF THE YEAR",
+        "text": "6 games, 1 winner",
+        "pink": [
+          "1 WINNER"
+        ],
+        "ticker": "007 First Light · Control Resonant · GTA VI · Phantom Blade Zero · Resident Evil Requiem · Ocarina of Time Remake",
+        "src": "The Game Awards via VGC · Gematsu",
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "JUEGO DEL AÑO",
+        "text": "6 juegos, 1 ganador",
+        "pink": [
+          "1 GANADOR"
+        ],
+        "ticker": "007 First Light · Control Resonant · GTA VI · Phantom Blade Zero · Resident Evil Requiem · Ocarina of Time Remake",
+        "src": "The Game Awards vía VGC · Gematsu",
+        "seed": 2
+      }
+    },
+    {
+      "headline": "DECEMBER 10",
+      "headline_es": "10 DE DICIEMBRE",
+      "text": "Winners are announced December tenth, in Los Angeles.",
+      "text_es": "Los ganadores se anuncian el diez de diciembre, en Los Ángeles.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "WINNERS:",
+          "DECEMBER 10"
+        ],
+        "pink": [
+          "DECEMBER 10"
+        ],
+        "sub": "Los Angeles",
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "GANADORES:",
+          "10 DE DICIEMBRE"
+        ],
+        "pink": [
+          "10 DE DICIEMBRE"
+        ],
+        "sub": "Los Ángeles",
+        "seed": 2
+      }
+    },
+    {
+      "headline": "OUR CALL",
+      "headline_es": "NUESTRA APUESTA",
+      "text": "Our call: GTA 6 wins it. Agree? Tell me, because",
+      "text_es": "Nuestra apuesta: gana GTA 6. ¿De acuerdo? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "OUR CALL:",
+          "IT WINS GOTY"
+        ],
+        "pink": [
+          "IT WINS GOTY"
+        ],
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "NUESTRA APUESTA:",
+          "GANA GTA 6"
+        ],
+        "pink": [
+          "GANA GTA 6"
+        ],
+        "seed": 2
+      }
+    }
+  ]
+}

@@ -105,7 +105,8 @@
           "1.002.002"
         ],
         "ticker": "PS5 · about 600 MB · rolling out now · no patch notes",
-        "seed": 1
+        "seed": 1,
+        "src": "MP1st · PlayStation LifeStyle"
       },
       "chart_es": {
         "type": "headline",
@@ -115,7 +116,8 @@
           "1.002.002"
         ],
         "ticker": "PS5 · unos 600 MB · ya disponible · sin notas",
-        "seed": 1
+        "seed": 1,
+        "src": "MP1st · PlayStation LifeStyle"
       }
     },
     {
@@ -142,7 +144,8 @@
             "Nov 23 · 1.002.002",
             "~600 MB"
           ]
-        ]
+        ],
+        "src": "Sportskeeda · GGRecon · Of Zen and Computing"
       },
       "chart_es": {
         "type": "list",
@@ -163,7 +166,8 @@
             "23 nov · 1.002.002",
             "~600 MB"
           ]
-        ]
+        ],
+        "src": "Sportskeeda · GGRecon · Of Zen and Computing"
       }
     },
     {

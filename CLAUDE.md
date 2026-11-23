@@ -62,7 +62,7 @@ only for big news or long videos (`studio.quota` lists daytime first).
   private until their time, so schedule the printed "COMMENTS TO POST" command with send_later for 10 minutes after
   each time ("Post today's pinned comments now: <command>") and run it when it fires. Commit `content/learn/uploads.json` (the upload registry) and refresh the
   dashboard (`/dashboard`) after uploading. Report links and times; remind
-  the owner to pin comments, set "Related video" on Shorts, add thumbnails B/C (Test & Compare). Missing YT_* vars:
+  the owner to pin comments, set "Related video" on Shorts, add thumbnails B/C (Test & Compare: long videos only, not Shorts). Missing YT_* vars:
   say so and list manual steps.
 - **Several chats**: only the main control chat posts (YouTube, Instagram, comments, site); helper chats work on
   their own `claude/...` branch and never post. `git pull --rebase origin main` before every commit. Details and the

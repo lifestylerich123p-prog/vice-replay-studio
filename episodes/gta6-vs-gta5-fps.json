@@ -79,7 +79,8 @@
           "30 FPS"
         ],
         "winner": "a",
-        "seed": 3
+        "seed": 3,
+        "src": "GameSpot · PC Gamer"
       },
       "chart_es": {
         "type": "versus",
@@ -92,7 +93,8 @@
           "30 FPS"
         ],
         "winner": "a",
-        "seed": 3
+        "seed": 3,
+        "src": "GameSpot · PC Gamer"
       }
     },
     {
@@ -109,7 +111,8 @@
           "30 FPS"
         ],
         "ticker": "the CPU isn't powerful enough for the simulation · 40 FPS ruled out too",
-        "seed": 3
+        "seed": 3,
+        "src": "PC Gamer · Wccftech · Insider Gaming"
       },
       "chart_es": {
         "type": "headline",
@@ -119,7 +122,8 @@
           "30 FPS"
         ],
         "ticker": "el procesador no alcanza para la simulación · 40 FPS también descartado",
-        "seed": 3
+        "seed": 3,
+        "src": "PC Gamer · Wccftech · Insider Gaming"
       }
     },
     {
@@ -149,7 +153,8 @@
         ],
         "good": [
           "yes"
-        ]
+        ],
+        "src": "Wccftech · Beebom"
       },
       "chart_es": {
         "type": "list",
@@ -173,7 +178,8 @@
         ],
         "good": [
           "sí"
-        ]
+        ],
+        "src": "Wccftech · Beebom"
       }
     },
     {

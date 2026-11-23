@@ -179,6 +179,12 @@ def check_short(ep, key, title, segs, gameplay_available=False):
         blockers.append(f"footage: Short '{key}' segment {k + 1} uses {what}. No trailer images in our videos "
                         f"(owner, Nov 22 + Nov 23: lettering and modern cards only): make it a chart or a `text` / "
                         f"`list` / `quote` / `quiz` card, or use owner gameplay")
+    # Nov 23 research: YouTube (Halprin, July 2026) won't pay for "generic, repetitive content easily made with ...
+    # templates, with little variation"; a visible source and a verdict make a card Short read as research
+    if segs and any(x.get("chart") for x in segs) and not any((x.get("chart") or {}).get("src") or
+                                                             (x.get("chart") or {}).get("note") for x in segs):
+        warnings.append(f"originality: Short '{key}' shows no source on screen; add \"src\": \"VGC · Metacritic\" to "
+                        f"the card with the main fact (and say your verdict in the script)")
     # Nov 23: on the GTA 6-style lettering cards a headline that wraps to 2 lines runs into the big lettering
     from .. import vicecards
     for k, x in enumerate(segs):

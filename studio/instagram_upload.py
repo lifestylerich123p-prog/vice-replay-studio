@@ -246,7 +246,10 @@ def episode_reel(path, item="short"):
         name, title, desc = f"{slug}-short-{item}", sh.get("title", ep["title"]), sh.get("description", "")
     title = title.replace("#Shorts", "").strip()
     tags = " ".join(dict.fromkeys(ep.get("tiktok_hashtags", ["#gta6", "#gtavi", "#gaming"]) + ["#gta6news"]))
-    caption = f"{title}\n\n{desc}\n\nFollow @vice.replaytv for GTA 6 every day.\n{tags}"
+    # Meta (help.instagram.com/761121959519495): realistic AI-made audio, e.g. an AI voiceover, must be disclosed; the
+    # API can't set the "AI info" label, so the caption says it (Nov 23 research)
+    caption = (f"{title}\n\n{desc}\n\n🎙️ AI narration · our own graphics and research\n"
+               f"Follow @vice.replaytv for GTA 6 every day.\n{tags}")
     return str(ROOT / "output" / slug / f"{name}.mp4"), caption
 
 

@@ -316,7 +316,7 @@ def versus_frame(base, spec, t, w, h):
     dur = spec.get("_dur", 3.0)
     win = spec.get("winner")
     decided = win and t > dur * 0.6
-    half = (y1 - y0) * 0.40
+    half = (y1 - y0) * 0.44
     for k, key in enumerate(("a", "b")):
         label, value = (list(spec.get(key) or ["", ""]) + [""])[:2]
         p = _ease((t - 0.05 - 0.3 * k) / 0.35)
@@ -337,12 +337,12 @@ def versus_frame(base, spec, t, w, h):
                              outline=(brand.PINK if lit else brand.CYAN) + (255 if not dim else 110,), width=6 if lit else 3)
         img.alpha_composite(over)
         d = ImageDraw.Draw(img)
-        lh = _small(d, str(label).upper(), (box[0] + box[2]) / 2, top + half * 0.10, int(w * 0.045),
+        lh = _small(d, str(label).upper(), (box[0] + box[2]) / 2, top + half * 0.08, int(w * 0.052),
                     fill=(brand.WHITE if lit else brand.CYAN) if not dim else (120, 110, 140), max_w=x1 - x0 - w * 0.06,
                     font=brand.HEADLINE_FONT)
-        spr = lettering(str(value).upper(), int(half * 0.46), int((x1 - x0) * 0.9),
+        spr = lettering(str(value).upper(), int(half * 0.58), int((x1 - x0) * 0.9),
                         *((YELLOW, brand.PINK, brand.CYAN) if lit else (brand.WHITE, brand.CYAN, brand.PINK)))
-        place(img, spr, (box[0] + box[2]) / 2, top + half * 0.10 + lh + (half * 0.9 - lh) / 2,
+        place(img, spr, (box[0] + box[2]) / 2, top + half * 0.08 + lh + (half * 0.92 - lh) / 2,
               alpha=0.6 if dim else 1.0)
     pv = (t - 0.7) / 0.22
     if pv > 0:
