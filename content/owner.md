@@ -283,3 +283,12 @@
   Related video, TikTok files); (4) Everygen's Viral Adam voice for every Spanish Short (~1 credit per line, ~5 per
   Short, logged in the Channel Map); (5) the weekly card series (Mon news, Tue VS, Wed tier list, Thu quiz, Fri
   countdown, Sat Spanish special, Sun hub).
+- 2026-11-23 ~3:45 PM ET, owner "approve" (the plan proposed after "do what you think best"): (1) the outdated
+  "zero patch notes" Short KI-6wP_Jhik set PRIVATE (Rockstar published notes for 1.002.002 that afternoon); (2)
+  `gta6-patch-notes-7-fixes` Tue Nov 24 8:00 AM EN + 12:30 PM ES (no Instagram Reel: the Wed 3 PM carousel covers it);
+  (3) momentum follow-up `gta-tier-list-sales` (Tier List #2) Tue Nov 24 9:30 AM EN, ES Wed Dec 2 12:30 PM; (4)
+  `gta6-4-secrets` moved to Fri Dec 4 9:30 AM (countdown day); (5) next week: `gta6-top-3-rides` (remade as cards) Mon
+  Nov 30 12:30 / ES 1:30 PM, `gta6-vs-red-dead-2` Tue Dec 1 9:30 / ES 12:30, `gta-cities-quiz` Thu Dec 3 9:30 / ES
+  12:30. Viral Adam ES voices: 29 lines (~29 credits). Same message: "auto approve the everygen for now" =
+  mcp__Everygen allowed in .claude/settings.local.json (not committed; delete it to turn the auto-approve off). Paid
+  image/video generations still get a cost estimate and the owner's yes first.
