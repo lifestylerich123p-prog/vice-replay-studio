@@ -1,32 +1,32 @@
 {
-  "title": "GTA 6 tiene su Pequeña Habana: Little Cuba",
+  "title": "GTA 6 está lleno de Cuba",
   "slug": "gta6-little-cuba-es",
   "series": "Explained",
   "format": "details",
   "mood": "bright",
   "use_gameplay": false,
   "es_only": true,
-  "short_title": "GTA 6 has its own Little Havana #GTA6 #Shorts",
+  "short_title": "GTA 6 is full of Cuba #GTA6 #Shorts",
   "short_description": "Spanish-channel-only Short (Cuban style).",
   "short_es": {
-    "title": "GTA 6 tiene su Pequeña HABANA, asere 🇨🇺 #GTA6 #Shorts",
-    "description": "Asere, ¿qué bolá? Rockstar llama Little Cuba a este barrio de Vice City y lo describe con sus \"bustling panaderías\" (página oficial Only in Leonida, mayo de 2025). Medios lo comparan con la Pequeña Habana de Miami; Rockstar no lo dice. Y no es nueva: en GTA Vice City (2002) la Pequeña Habana era el barrio de los Cubanos, con Umberto Robina, al que le dio voz Danny Trejo. ¿Ya fuiste? Sin spoilers.\n\nFuentes: Rockstar Games (Only in Leonida), GTA Base, Grand Theft Wiki, GTA Fandom, Periódico Cubano.",
+    "title": "GTA 6 está LLENO de Cuba, asere 🇨🇺 #GTA6 #Shorts",
+    "description": "Asere, ¿qué bolá? GTA 6 está lleno de Cuba: Rockstar le puso Little Cuba a su barrio inspirado en la Pequeña Habana (página oficial Only in Leonida: \"bustling panaderías\"); en Radio La Ola, la emisora de Gloria y Emilio Estefan, suenan Celia Cruz, Benny Moré, Gloria Estefan y Cachao; y los tatuajes de la ciudad son del artista cubano Robertiko Ramos. ¿Está en talla o no? Sin spoilers.\n\nFuentes: Rockstar Games (Only in Leonida), Consequence, NME, RouteNote, CiberCuba, Periódico Cubano.",
     "tags": [
       "GTA 6 cubano",
+      "Cuba en GTA 6",
       "Little Cuba GTA 6",
       "Pequeña Habana GTA 6",
+      "Radio La Ola GTA 6",
+      "Celia Cruz GTA 6",
+      "Gloria Estefan GTA 6",
       "GTA 6 Miami",
-      "cubanos GTA",
-      "Vice City cubanos",
-      "Umberto Robina",
-      "Danny Trejo GTA",
       "GTA 6 español",
       "GTA VI"
     ]
   },
   "short_playlist": "GTA 6 Shorts",
-  "short_pinned_comment_es": "¿Qué bolá? ¿Ya fuiste a Little Cuba? SÍ o NO 👇",
-  "pinned_comment": "Have you been to Little Cuba yet? YES or NO 👇",
+  "short_pinned_comment_es": "¿Qué es lo más cubano de GTA 6? 👇",
+  "pinned_comment": "What's the most Cuban thing in GTA 6? 👇",
   "tags": [
     "GTA 6 Little Cuba",
     "GTA 6 Little Havana",
@@ -46,48 +46,49 @@
     "#littlehavana"
   ],
   "sources": [
-    "Rockstar Games - Only in Leonida (Vice City: Little Cuba, \"bustling panaderías\", May 6, 2025), as quoted by GTA 6 Life: https://gta6-life.com/en/database/gta-6-little-cuba/",
-    "GTA Hype - Vice City in GTA 6, every confirmed neighbourhood: https://www.gta6hype.com/map/vice-city/",
-    "Periódico Cubano - GTA VI se estrena con una Florida ficticia y su propia Pequeña Habana: https://www.periodicocubano.com/tras-13-anos-de-espera-se-estrena-gta-vi-con-una-florida-ficticia-y-su-propia-pequena-habana/",
-    "GTA Base - Cubans (GTA Vice City), led by Umberto Robina: https://www.gtabase.com/gta-vice-city/gangs/cubans",
-    "Grand Theft Wiki - Umberto Robina (voiced by Danny Trejo): https://www.grandtheftwiki.com/Umberto_Robina",
-    "GTA Fandom - Little Havana (Vice City, 2002): https://gta.fandom.com/wiki/Little_Havana"
+    "Rockstar Games - Only in Leonida (Little Cuba, \"bustling panaderías\"), as quoted by GTA 6 Life: https://gta6-life.com/en/database/gta-6-little-cuba/",
+    "GTA Hype - Vice City neighbourhoods: https://www.gta6hype.com/map/vice-city/",
+    "Consequence - GTA 6 radio stations, full song list: https://consequence.net/2026/11/gta-6-radio-stations-songs-soundtrack/",
+    "Consequence - GTA 6 radio DJs include Gloria Estefan: https://consequence.net/2026/11/gta-6-radio-djs-keith-richards-bad-bunny-gloria-estefan/",
+    "NME - every song on the GTA 6 soundtrack: https://www.nme.com/guides/gaming-guides/grand-theft-auto-6-soundtrack-every-confirmed-song-artist-so-far-3973760",
+    "RouteNote - Radio La Ola tracklist: https://routenote.com/radar/gta-6-radio-la-ola-tracklist-every-song-on-gloria-estefans-station/",
+    "CiberCuba - Emilio and Gloria Estefan, Celia Cruz, Benny Moré and Willy Chirino bring Cuban flavor to GTA VI: https://en.cibercuba.com/noticias/2026-11-21-u208487-e208487-s27065-nid346272-emilio-gloria-estefan-celia-cruz-benny-more",
+    "CiberCuba - the tattoos of a Cuban artist appear in GTA VI: https://en.cibercuba.com/noticias/2026-11-20-u208487-e208487-s27065-nid346237-estoy-gta-vi-tatuajes-artista-cubano-aparecen",
+    "Periódico Cubano - Robertiko Ramos's tattoos reach Vice City: https://www.periodicocubano.com/talento-cubano-en-gta-vi-los-tatuajes-de-robertiko-ramos-llegan-a-vice-city/"
   ],
   "short": [
     {
+      "headline": "CUBA EN GTA 6",
+      "headline_es": "CUBA EN GTA 6",
+      "text": "Buddy, GTA 6 is full of Cuba.",
+      "text_es": "Asere, GTA 6 está lleno de Cuba.",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "GTA 6 está lleno de Cuba",
+        "pink": [
+          "Cuba"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "y Rockstar no lo esconde"
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "GTA 6 está lleno de Cuba",
+        "pink": [
+          "Cuba"
+        ],
+        "seed": 61,
+        "locale": "es",
+        "sub": "y Rockstar no lo esconde"
+      }
+    },
+    {
       "headline": "LITTLE CUBA",
       "headline_es": "LITTLE CUBA",
-      "text": "GTA 6 has its own Little Havana, buddy.",
-      "text_es": "Asere, GTA 6 tiene su propia Pequeña Habana.",
-      "keep_media": true,
-      "chart": {
-        "type": "text",
-        "text": "GTA 6 tiene su Pequeña Habana",
-        "pink": [
-          "Pequeña",
-          "Habana"
-        ],
-        "seed": 61,
-        "locale": "es",
-        "sub": "y se llama Little Cuba"
-      },
-      "chart_es": {
-        "type": "text",
-        "text": "GTA 6 tiene su Pequeña Habana",
-        "pink": [
-          "Pequeña",
-          "Habana"
-        ],
-        "seed": 61,
-        "locale": "es",
-        "sub": "y se llama Little Cuba"
-      }
-    },
-    {
-      "headline": "NOMBRE OFICIAL",
-      "headline_es": "NOMBRE OFICIAL",
-      "text": "Rockstar calls it Little Cuba, full of bakeries.",
-      "text_es": "Rockstar la llama Little Cuba, llena de panaderías.",
+      "text": "Rockstar named its Little Havana Little Cuba. Bakeries and all.",
+      "text_es": "Rockstar le puso Little Cuba a su Pequeña Habana. Con panaderías y todo.",
       "keep_media": true,
       "chart": {
         "type": "text",
@@ -98,7 +99,7 @@
         ],
         "seed": 61,
         "locale": "es",
-        "sub": "Rockstar presume sus panaderías"
+        "sub": "con sus panaderías"
       },
       "chart_es": {
         "type": "text",
@@ -109,77 +110,96 @@
         ],
         "seed": 61,
         "locale": "es",
-        "sub": "Rockstar presume sus panaderías"
+        "sub": "con sus panaderías"
       }
     },
     {
-      "headline": "NO ES NUEVA",
-      "headline_es": "NO ES NUEVA",
-      "text": "And it's not new: Vice City had its Little Havana in two thousand two.",
-      "text_es": "Y no es nueva: Vice City ya tenía su Pequeña Habana en dos mil dos.",
+      "headline": "RADIO LA OLA",
+      "headline_es": "RADIO LA OLA",
+      "text": "On the radio: Celia Cruz, Benny Moré and Gloria Estefan. Sugar!",
+      "text_es": "En la radio, Celia Cruz, Benny Moré y Gloria Estefan. ¡Azúcar!",
+      "keep_media": true,
+      "chart": {
+        "type": "list",
+        "title": "RADIO LA OLA",
+        "items": [
+          [
+            "Celia Cruz",
+            "SÍ"
+          ],
+          [
+            "Benny Moré",
+            "SÍ"
+          ],
+          [
+            "Gloria Estefan",
+            "SÍ"
+          ]
+        ],
+        "locale": "es",
+        "seed": 61
+      },
+      "chart_es": {
+        "type": "list",
+        "title": "RADIO LA OLA",
+        "items": [
+          [
+            "Celia Cruz",
+            "SÍ"
+          ],
+          [
+            "Benny Moré",
+            "SÍ"
+          ],
+          [
+            "Gloria Estefan",
+            "SÍ"
+          ]
+        ],
+        "locale": "es",
+        "seed": 61
+      }
+    },
+    {
+      "headline": "TATUAJES CUBANOS",
+      "headline_es": "TATUAJES CUBANOS",
+      "text": "And the tattoos are by Cuban artist Robertiko Ramos.",
+      "text_es": "Y los tatuajes son del cubano Robertiko Ramos.",
       "keep_media": true,
       "chart": {
         "type": "text",
-        "text": "Vice City, 2002: la Pequeña Habana",
+        "text": "Tatuajes de un cubano: Robertiko Ramos",
         "pink": [
-          "2002"
+          "Robertiko",
+          "Ramos"
         ],
         "seed": 61,
         "locale": "es",
-        "sub": "el barrio de los Cubanos"
+        "sub": "sus diseños están en Vice City"
       },
       "chart_es": {
         "type": "text",
-        "text": "Vice City, 2002: la Pequeña Habana",
+        "text": "Tatuajes de un cubano: Robertiko Ramos",
         "pink": [
-          "2002"
+          "Robertiko",
+          "Ramos"
         ],
         "seed": 61,
         "locale": "es",
-        "sub": "el barrio de los Cubanos"
+        "sub": "sus diseños están en Vice City"
       }
     },
     {
-      "headline": "DANNY TREJO",
-      "headline_es": "DANNY TREJO",
-      "text": "Its boss, Umberto, had Danny Trejo's voice. Amazing.",
-      "text_es": "Y su jefe, Umberto, tenía la voz de Danny Trejo. Tremendo.",
+      "headline": "¿ESTÁ EN TALLA?",
+      "headline_es": "¿ESTÁ EN TALLA?",
+      "text": "Pretty great, right, my friend? Tell me, because",
+      "text_es": "Está en talla, ¿o no, consorte? Dime, porque",
       "keep_media": true,
       "chart": {
         "type": "text",
-        "text": "Umberto Robina: voz de Danny Trejo",
+        "text": "¿Está en talla o no?",
         "pink": [
-          "Danny",
-          "Trejo"
-        ],
-        "seed": 61,
-        "locale": "es",
-        "sub": "el jefe de los Cubanos en Vice City"
-      },
-      "chart_es": {
-        "type": "text",
-        "text": "Umberto Robina: voz de Danny Trejo",
-        "pink": [
-          "Danny",
-          "Trejo"
-        ],
-        "seed": 61,
-        "locale": "es",
-        "sub": "el jefe de los Cubanos en Vice City"
-      }
-    },
-    {
-      "headline": "¿YA FUISTE?",
-      "headline_es": "¿YA FUISTE?",
-      "text": "Have you been yet? Tell me, because",
-      "text_es": "¿Qué bolá, ya fuiste a Little Cuba? Dime, porque",
-      "keep_media": true,
-      "chart": {
-        "type": "text",
-        "text": "¿Ya fuiste a Little Cuba?",
-        "pink": [
-          "Little",
-          "Cuba?"
+          "talla"
         ],
         "seed": 61,
         "locale": "es",
@@ -187,10 +207,9 @@
       },
       "chart_es": {
         "type": "text",
-        "text": "¿Ya fuiste a Little Cuba?",
+        "text": "¿Está en talla o no?",
         "pink": [
-          "Little",
-          "Cuba?"
+          "talla"
         ],
         "seed": 61,
         "locale": "es",
@@ -198,5 +217,5 @@
       }
     }
   ],
-  "voice_note": "Owner Nov 22: wants a Cuban voice. Waiting for the free Azure Speech key (es-CU-ManuelNeural); the Kokoro em_alex render garbled the names (caption check 35% word error)."
+  "voice_note": "Owner Nov 22: 100% Cuban + use Everygen for the voice (owner picks the voice in the Everygen picker)."
 }

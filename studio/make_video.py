@@ -748,7 +748,13 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
         t += duration(intro)
     for i, seg in enumerate(segments):
         print(f"[{i + 1}/{len(segments)}] {seg.get('headline') or seg['text'][:40]}")
-        audio = tts(seg["text"], voice, rate, work / f"vo_{i:02d}")
+        # a ready-made voice file (e.g. an Everygen voiceover) wins over TTS: "audio" (English) / "audio_es"
+        vo_file = seg.get("audio_es") if seg.get("_lang") == "es" else seg.get("audio")
+        if vo_file and (ROOT / vo_file).exists():
+            audio = work / f"vo_{i:02d}{Path(vo_file).suffix}"
+            shutil.copy(ROOT / vo_file, audio)
+        else:
+            audio = tts(seg["text"], voice, rate, work / f"vo_{i:02d}")
         clip, d = render_segment(i, seg, audio, w, h, vertical, work, enc)
         if seg.get("chapter") or seg.get("headline"):
             chapters.append((0.0 if i == 0 and vertical else t, seg.get("chapter") or seg["headline"]))
