@@ -165,19 +165,6 @@
    "approved": "Nov 23 6:45 AM (APPROVE; GTA 6-style countdown cards)"
   },
   {
-   "slug": "gta6-update-no-patch-notes",
-   "item": "short",
-   "en": [
-    "2026-11-23",
-    "9:30 AM"
-   ],
-   "es": [
-    "2026-11-24",
-    "12:30 PM"
-   ],
-   "approved": "Nov 23 6:55 AM (APPROVE; lettering, today's update news)"
-  },
-  {
    "slug": "gta6-vs-gta5-fps",
    "item": "short",
    "en": [
@@ -291,6 +278,20 @@
    ],
    "approved": "Nov 22 8 AM (Ok)",
    "paused": "2026-11-23: trailer images (owner: lettering/modern cards only); remake as cards to post"
+  },
+  {
+   "slug": "gta6-update-no-patch-notes",
+   "item": "short",
+   "en": [
+    "2026-11-23",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-24",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 6:55 AM (APPROVE; lettering, today's update news)",
+   "paused": "2026-11-23 afternoon: Rockstar published patch notes for 1.002.002 (7 fixes; VICE, Dot Esports, Comicbook, RockstarINTEL), so 'zero patch notes' is outdated. Spanish upload cancelled; English Short got a correction."
   }
  ]
 }

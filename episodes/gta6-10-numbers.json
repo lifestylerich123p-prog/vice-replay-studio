@@ -11,7 +11,7 @@
   "GTA 6 After One Week: 10 Numbers That Explain It",
   "GTA 6 by the Numbers: Sales, Reviews, FPS and More"
  ],
- "description": "GTA 6's first week in ten numbers, every one checked in at least two sources, no story spoilers: $3.79 billion (and the catch), $79.99 (the cheapest GTA ever after inflation), 99 on Metacritic, 80 hours, 30 FPS (even on PS5 Pro), 3.3 million Twitch viewers, 309 million trailer views, 4 secrets players found, 0 patch notes and 8 Game Awards nominations. Which number surprised you most?",
+ "description": "GTA 6's first week in ten numbers, every one checked in at least two sources, no story spoilers: $3.79 billion (and the catch), $79.99 (the cheapest GTA ever after inflation), 99 on Metacritic, 80 hours, 30 FPS (even on PS5 Pro), 3.3 million Twitch viewers, 309 million trailer views, 4 secrets players found, 7 fixes in the first patch notes and 8 Game Awards nominations. Which number surprised you most?",
  "thumbnail": {
   "line1": "GTA 6 made",
   "line2": "$3.79 billion",
@@ -84,7 +84,11 @@
   "VGC - Rockstar explains why you can't play darts in GTA 6: https://www.videogameschronicle.com/news/rockstar-explains-why-you-cant-play-darts-in-gta-6-we-dont-have-unlimited-time/",
   "Variety - GTA 6 sales: $3.79 billion: https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198",
   "Wccftech - GTA VI Twitch viewers record beats League of Legends: https://wccftech.com/grand-theft-auto-vi-twitch-viewers-record-league-of-legends/",
-  "Wccftech - PS5 Pro CPU not powerful enough for GTA VI at 60 FPS: https://wccftech.com/rockstar-ps5-pro-cpu-not-powerful-grand-theft-auto-vi-complex-simulation-60-fps-hopes/"
+  "Wccftech - PS5 Pro CPU not powerful enough for GTA VI at 60 FPS: https://wccftech.com/rockstar-ps5-pro-cpu-not-powerful-grand-theft-auto-vi-complex-simulation-60-fps-hopes/",
+  "VICE - GTA 6 update 01.002.002 patch notes: https://www.vice.com/en/article/gta-6-update-01-002-002-patch-notes/",
+  "Dot Esports - GTA 6 patch 1.002.002: weather, autosave and more fixed: https://dotesports.com/gta/news/gta-6-patch-note-fix-change-weather-autosave-wanted-level",
+  "Comicbook - GTA 6 first update after release, full patch notes: https://comicbook.com/gaming/news/gta-6-grand-theft-auto-vi-update-patch-notes-ps5-xbox-november-23/",
+  "RockstarINTEL - GTA VI update 01.002.002 patch notes released: https://rockstarintel.com/new-gta-vi-update-01-002-002-patch-notes-released/"
  ],
  "segments": [
   {
@@ -628,42 +632,57 @@
   },
   {
    "headline": "NUMBER 9",
-   "text": "Number nine: zero. Patch notes for GTA 6's three updates so far.",
+   "text": "Number nine: seven. The fixes in the first patch notes Rockstar has published, for update three.",
    "keep_media": true,
    "chart": {
     "type": "countdown",
     "n": 9,
     "of": 10,
-    "label": "0 PATCH NOTES",
-    "sub": "for 3 updates",
+    "label": "7 FIXES",
+    "sub": "the first patch notes",
     "prefix": true,
     "seed": 0
    },
-   "chapter": "9. 0 patch notes"
+   "chapter": "9. 7 fixes"
   },
   {
-   "headline": "THREE UPDATES",
-   "text": "November thirteenth, sixteenth, and twenty third. Rockstar hasn't said what any of them changed. So for now, nobody outside Rockstar knows what's being fixed.",
+   "headline": "PATCH 1.002.002",
+   "text": "Crashes, autosaves, phone calls that wouldn't trigger, and a wanted level you couldn't lose. The first two updates came out with no notes at all.",
    "keep_media": true,
    "chart": {
     "type": "list",
     "bg": "vice",
-    "title": "GTA 6 UPDATES ON PS5",
+    "title": "UPDATE 1.002.002 FIXES",
     "items": [
      [
-      "Nov 13 · 1.002.000",
-      "1.07 GB"
+      "Crashes",
+      "FIXED"
      ],
      [
-      "Nov 16 · 1.002.001",
-      "602 MB"
+      "Autosave",
+      "FIXED"
      ],
      [
-      "Nov 23 · 1.002.002",
-      "~600 MB"
+      "Phone calls",
+      "FIXED"
+     ],
+     [
+      "Wanted level",
+      "FIXED"
+     ],
+     [
+      "Weather stuck",
+      "FIXED"
+     ],
+     [
+      "Gym + fences",
+      "FIXED"
      ]
     ],
-    "src": "MP1st · PlayStation LifeStyle · Sportskeeda",
+    "good": [
+     "fixed"
+    ],
+    "src": "VICE · Dot Esports · Comicbook · RockstarINTEL",
     "seed": 0
    }
   },
@@ -700,7 +719,7 @@
   },
   {
    "headline": "OUR TAKE",
-   "text": "Our take after week one: the big numbers aren't hype. The real open questions are frame rate and patch notes.",
+   "text": "Our take after week one: the big numbers aren't hype. The real open question now is frame rate.",
    "keep_media": true,
    "chart": {
     "type": "kinetic",
@@ -711,7 +730,7 @@
     "pink": [
      "NOT HYPE"
     ],
-    "sub": "open questions: frame rate, patch notes",
+    "sub": "open question: 30 FPS",
     "seed": 0
    },
    "chapter": "Our take"
@@ -732,5 +751,6 @@
     "seed": 0
    }
   }
- ]
+ ],
+ "fact_update": "2026-11-23 afternoon: Rockstar published notes for 1.002.002 (7 fixes); number 9 changed from '0 patch notes' to '7 fixes'"
 }
