@@ -9,6 +9,9 @@ What it does:
 - media/gameplay/raw/: removes downloaded recordings older than 14 days (their highlights stay in media/gameplay/).
 - content/learn/market-*.md: keeps the newest 14, moves older ones to content/archive/learn/.
 - site/live.json: keeps the newest 40 updates.
+- YouTube API data about other channels (market-*.md, research/competitors/, competitor tables + API cache in
+  database/vice.db) is deleted after 30 days (YouTube API Services Developer Policies: refresh or delete
+  non-authorized data within 30 days). Our own channels' numbers are kept.
 - __pycache__ folders and stray .DS_Store files.
 - Footage: once the owner's own gameplay reaches GAMEPLAY_TARGET highlights in media/gameplay/, retires the stock
   library: trailer clips and screenshots go to media/_retired/ (not committed; re-downloadable from
@@ -33,6 +36,45 @@ def age_days(p):
 
 
 GAMEPLAY_TARGET = 30
+
+
+RETENTION_DAYS = 30  # YouTube API Services Developer Policies: other channels' data is refreshed or deleted within 30 days
+
+
+def youtube_retention(dry, gone, today=None):
+    """Delete YouTube API data about OTHER channels older than 30 days (Nov 23, before the quota-extension audit):
+    dated research files (market-*.md, market-es-*.md, research/competitors/*-YYYY-MM-DD.*, their archive copies)
+    and the competitor/API-cache rows in database/vice.db. Our own channels' data (authorized) is not touched."""
+    import datetime as dt
+    import re
+    import sqlite3
+    today = today or dt.date.today()
+    cutoff = today - dt.timedelta(days=RETENTION_DAYS)
+    files = []
+    for folder, pat in ((ROOT / "content" / "learn", "market-*.md"), (ROOT / "content" / "archive" / "learn", "market-*.md"),
+                        (ROOT / "research" / "competitors", "*")):
+        files += [f for f in folder.glob(pat) if f.is_file()] if folder.exists() else []
+    for f in files:
+        m = re.search(r"(\d{4}-\d{2}-\d{2})", f.name)
+        if m and dt.date.fromisoformat(m.group(1)) < cutoff:
+            gone.append(f"{f.relative_to(ROOT)} (other channels' YouTube data, over {RETENTION_DAYS} days)")
+            if not dry:
+                f.unlink()
+    db = ROOT / "database" / "vice.db"
+    if db.exists():
+        con = sqlite3.connect(db)
+        stamp = cutoff.isoformat()
+        for table in ("competitor_videos", "competitor_channels", "cache"):
+            try:
+                n = con.execute(f"SELECT COUNT(*) FROM {table} WHERE fetched_at < ?", (stamp,)).fetchone()[0]
+            except sqlite3.OperationalError:
+                continue
+            if n:
+                gone.append(f"database/vice.db {table}: {n} rows over {RETENTION_DAYS} days")
+                if not dry:
+                    con.execute(f"DELETE FROM {table} WHERE fetched_at < ?", (stamp,))
+        con.commit()
+        con.close()
 
 
 def retire_stock(dry, gone):
@@ -128,6 +170,7 @@ def clean(dry):
             gone.append(f"site/live.json: {len(items) - 40} old updates")
             if not dry:
                 live.write_text(json.dumps(items[:40], ensure_ascii=False, indent=1))
+    youtube_retention(dry, gone)
     retire_stock(dry, gone)
     for p in list(ROOT.rglob("__pycache__")) + list(ROOT.rglob(".DS_Store")):
         if ".git" not in p.parts and p.exists():

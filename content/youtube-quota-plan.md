@@ -27,26 +27,43 @@ they are (no reconnect for the two Vice Replay channels). Do this on the compute
 8. Optional, once What If Arena works on its new project: in the old project, rename it to `Vice Replay` (top project
    menu > the project > Settings). The name is only a label; nothing for Vice Replay changes.
 
-## Fix 2 (free, slower): ask YouTube for more quota
-Form: https://support.google.com/youtube/contact/yt_api_form (YouTube API Services - Audit and Quota Extension Form).
-YouTube first checks that the app follows its API rules; there's no published waiting time. Use the old project
-(Vice Replay's) for this. Draft answers below; fill in the parts in [brackets] yourself (never share them in chat).
+## Fix 2 (free, slower): ask YouTube for more quota (answers refreshed Nov 23)
+**Before you submit (done Nov 23):** the audit checks that the app follows the YouTube API Services Developer
+Policies. Two gaps are fixed: `studio.tidy` now deletes other channels' public data (trend research) after 30 days,
+and vicereplay.com/privacy/ now says what the tool reads, that it's deleted within 30 days, how to revoke access
+(security.google.com/settings/security/permissions) and how to ask for deletion.
+
+Form: https://support.google.com/youtube/contact/yt_api_form (YouTube API Services - Audit and Quota Extension
+Form). Submit it from the Google account that owns the **Vice Replay** Cloud project (ID what-if-arena, number
+662880770567). There's no published waiting time; YouTube may email follow-up questions (answer them yourself, or
+paste the question in the main chat for a draft). Fill in the [brackets] yourself; never share them in chat.
 
 - **Organization / developer name:** [your name or business name]
+- **Address / country:** [yours]
 - **Website:** https://vicereplay.com/
 - **Contact email:** [your email]
-- **Google Cloud project number:** [Cloud console > the project > Dashboard > "Project number"]
-- **API client name:** Creator HQ (Vice Replay uploader)
-- **What the client does:** A private tool used only by the channel owner to upload and schedule his own YouTube
-  Shorts to his own two channels (Vice Replay, @ViceReplayTV-q8s, and Vice Replay en Español), add them to his own
-  playlists, upload his own subtitle files, post his own pinned question comments and read his own channels' public
-  statistics to decide what to make next. No other users, no data sold or shared, no downloading of YouTube videos.
+- **Google Cloud project number:** 662880770567 (check: Cloud console > the project > Dashboard)
+- **Current daily limit:** [Cloud console > APIs & Services > YouTube Data API v3 > Quotas & system limits: "Queries per day"]
+- **API client name:** Creator HQ (Vice Replay uploader). Internal tool, not public, no other users.
+- **What the client does:** A private command-line tool used only by the channel owner to manage his own two
+  YouTube channels, Vice Replay (@ViceReplayTV-q8s) and Vice Replay en Español. It uploads and schedules his own
+  original videos (Shorts and one long video a week), adds them to his own playlists, posts one question comment on
+  each of his own videos and replies to viewers' comments on his own videos, and reads his own channels' statistics
+  to decide what to make next. It also runs a few public searches a day (search.list, videos.list) for popular
+  GTA 6 videos to see which topics are trending; that public data stays inside the tool, is never published or
+  shared, and is deleted within 30 days. No downloading of YouTube videos, no data sold or shared.
 - **Who uses it:** 1 person (the owner), 2 of his own channels.
-- **Privacy policy / Terms:** https://vicereplay.com/privacy/ and https://vicereplay.com/terms/ (link to the YouTube
-  Terms of Service and the Google Privacy Policy).
+- **Privacy policy / Terms:** https://vicereplay.com/privacy/ and https://vicereplay.com/terms/ (they link the
+  YouTube Terms of Service and the Google Privacy Policy).
 - **Quota requested:** 30,000 units per day.
-- **Why:** About 10 Shorts a day across both channels (English + Spanish version of each). Each upload is
-  videos.insert (1,600) + captions.insert (400) + playlistItems.insert (50) + commentThreads.insert (50) + reads,
-  about 2,150 units, so ~21,500 a day plus ~1,500 for reading our own statistics. Our current limit ran out on
-  Nov 22, 2026 after 6 uploads.
-- **Data handling:** Only our own channels' data; stored in our private project files to plan content; not shared.
+- **Why (our real numbers):** Each upload costs about 1,750 units: videos.insert (1,600) + playlistItems.insert (50)
+  + commentThreads.insert (50) + reads (we already stopped uploading caption files on Shorts to save 400 per video).
+  A normal day is 3 Shorts in English + 3 in Spanish (about 10,500 units), plus up to ~40 replies to viewers' comments
+  (about 2,000), schedule/title updates (about 1,000) and statistics reads (about 1,500): about 15,000 a day. Our
+  limit ran out on Nov 21 (9:14 PM ET) and Nov 22 (8:09 PM ET), and on Nov 23 was used up by 10 AM ET, so approved
+  videos wait a day and comments go unanswered. Event days (for example The Game Awards on Dec 10) need room for
+  news videos on both channels. 30,000 covers a normal day with room for those.
+- **Data handling:** Our own channels' data is kept in our private project files to plan content. Other channels'
+  public data is used only for trend research and deleted within 30 days. Nothing is shared, sold or shown publicly.
+- **If they ask for screenshots/screencast:** a screen recording of the terminal running `python -m studio.status`
+  and an upload (`python -m studio.ship ... --upload`) is enough to show what it does; don't show keys or the .env file.

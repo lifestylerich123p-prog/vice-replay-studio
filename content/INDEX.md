@@ -24,28 +24,37 @@ Read this first instead of searching the repo.
 |---|---|---|---|---|
 | ? | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | - |
 | ? | gta6-update-no-patch-notes | Short | GTA 6 Got 3 Updates and Zero Patch Notes | short: KI-6wP_Jhik |
+| ? | gta6-ultimate-vs-standard | Short | GTA 6: The $100 Edition Beat the $80 One | - |
 | ? | gta6-ultimate-edition-shops | Short | GTA 6 Locks 5 Shops Behind the $100 Edition | short: xvA4O2ytSnE |
 | ? | gta6-trailer-views | Short | GTA 6's First Trailer Is Still No. 1 (309M Views) | - |
 | ? | gta6-top-3-rides | Short | GTA 6: The Top 3 Rides in Rockstar's Gameplay | - |
 | ? | gta6-tier-list-critics | Short | GTA 6 Tier List: Every GTA Ranked by Critics | short: jQbv5GPR3dk |
+| ? | gta6-sin-doblaje-es | Short | GTA 6 no tiene doblaje al español | - |
 | ? | gta6-ranking-rides | Short | Ranking the 6 Rides in Rockstar's GTA 6 Gameplay | short: QzFhpT4dNVQ |
 | ? | gta6-race-hud-details | Short | GTA 6 Races: Look at the Corner of the Screen | short: sP1fq11WMmw |
+| ? | gta6-precio-por-pais-es | Short | GTA 6: cuánto cuesta en cada país | - |
 | ? | gta6-no-darts | Short | GTA 6 Has No Darts. Rockstar Says Why | short: JYYfpuj-jwQ |
 | ? | gta6-no-60fps-ps5-pro | Short | GTA 6 Has No 60 FPS Mode, Not Even on PS5 Pro | short: 6p9VtX-UaVU |
 | ? | gta6-money-chart-es | Short | GTA 6 hizo 5 VECES el lanzamiento de GTA 5... con trampa | - |
 | ? | gta6-map-is-florida | Short | GTA 6's Official Map Is Florida: 4 Matches and 1 Fake | short: 9ZmygQdJRBA |
 | ? | gta6-little-cuba-es | Short | GTA 6 está lleno de Cuba | - |
+| ? | gta6-launch-quiz | Short | GTA 6 Launch Quiz: Only Real Fans Get 3/3 | - |
 | ? | gta6-jason-quiet | Short | GTA 6's Jason Was Inspired by Steve McQueen | - |
 | ? | gta6-has-anyone-finished | Short | Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch) | short: WsJ96ZkU2do |
 | ? | gta6-guess-the-ride | Short | Guess the GTA 6 Ride From One Detail | short: I2VEKQUia8w |
+| ? | gta6-game-awards-record | Short | GTA 6 Can't Break the Game Awards Record | - |
+| ? | gta6-game-awards-8-noms | Short | GTA 6 Has the Most Game Awards Nominations: 8 | - |
 | ? | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | short: Egb3otGWJIg |
 | ? | gta6-dexter-apartment | Short | Players Found Dexter's Apartment in GTA 6 | short: dOv6212lgj4 |
 | ? | gta6-cheapest-gta-inflation | Short | GTA 6 Is the CHEAPEST GTA Ever (After Inflation) | - |
+| ? | gta6-black-friday-no-discount | Short | GTA 6 Black Friday: Take-Two Says No Discount | - |
 | ? | gta6-99-club | Short | GTA 6's 99 on Metacritic: Only ONE Other Game Has It | - |
 | ? | gta6-80-hours | Short | GTA 6 Is Rockstar's Longest Story Ever: About 80 Hours | - |
 | ? | gta6-5-things | Short | GTA 6: 5 Things You Didn't Know (All Checked) | - |
 | ? | gta6-4-secrets | Short | 4 Secrets Players Just Found in GTA 6 | - |
+| ? | gta6-3-records | Short | GTA 6 Broke 3 Records in One Week | - |
 | ? | gta6-13-years | Short | GTA 6 Took 13 Years. No Other GTA Took Even 6 | - |
+| ? | gta6-10-numbers | video | GTA 6 in 10 Numbers: The First Week, Explained | - |
 | ? | gta-history-quiz | Short | GTA History Quiz: Only Real Fans Get 3/3 | - |
 | 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 |
 | 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | short: y4jQTwLJwP4 |
