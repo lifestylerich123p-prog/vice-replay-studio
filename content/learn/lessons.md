@@ -216,3 +216,9 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - **News ages fast**: the 9 AM "zero patch notes" Short was outdated by the afternoon (Rockstar published notes for
   1.002.002). For "no news yet" angles, re-check right before the slot, and prefer framings that stay true ("3 updates
   in 10 days") over "zero X".
+- **Spanish channel diagnosis (Nov 23 evening)**: settings are right (channel + every video: language es, audio es,
+  Gaming, not made for kids, 12-15 tags), yet 0 total views after 9 videos. Likely causes: a 1-day-old channel with
+  0 subscribers, and Shorts that repeat the English cards (same layout and order, Spanish text) from a second channel
+  of the same owner, which YouTube can treat as repeated content. Response: winners-only (fewer, proven Spanish
+  versions) + Spanish-only originals (Cuba, prices by country, no dubbing). If a Spanish version goes up, change its
+  hook card (a Spanish-specific opener) so it isn't a 1:1 copy of the English Short.
