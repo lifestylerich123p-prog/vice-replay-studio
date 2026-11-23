@@ -205,3 +205,14 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - Captions turned spoken decimals into nonsense ("one point eight four billion" -> "one point 12,000,000,000";
   "sixty eight point seven million" -> "68 point 7,000,000"), on every video before Nov 23. Fixed in
   make_video.display_tokens: decimals show as "1.84 billion" / "68.7 million", round numbers as "800 million".
+
+## 2026-11-23 afternoon (main chat): first lettering Shorts, first results
+- **Tier list took off**: "GTA 6 tier list: Vice City is only B tier" (tier cards, 18 s, statement hook that picks a
+  fight) had 506 views ~2.5 h after its 12:30 PM slot, about 2x our best Short at the same age (258 at 3 h). Same day,
+  same style: darts quote card 16 views at ~5 h, patch-notes news card 8 at ~6 h. Lesson: rankings with a contrarian
+  verdict beat plain news/quote cards; follow up with Tier List #2 (sales) while it's hot.
+- **Spanish channel gets ~0 distribution so far** (0 subscribers; the Spanish tier list had 0 views at 2.5 h while the
+  English one had 506). Same video, so it's the channel, not the format: keep Spanish uploads lean until it has a base.
+- **News ages fast**: the 9 AM "zero patch notes" Short was outdated by the afternoon (Rockstar published notes for
+  1.002.002). For "no news yet" angles, re-check right before the slot, and prefer framings that stay true ("3 updates
+  in 10 days") over "zero X".
