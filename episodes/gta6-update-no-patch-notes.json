@@ -89,13 +89,14 @@
           "0 NOTAS"
         ],
         "seed": 1
-      }
+      },
+      "audio_es": "media/voice/gta6-update-no-patch-notes/es/seg1.wav"
     },
     {
       "headline": "NEW TODAY",
-      "headline_es": "NUEVO HOY",
+      "headline_es": "LA MÁS NUEVA",
       "text": "The new one is rolling out today: about six hundred megabytes on PS5.",
-      "text_es": "La nueva sale hoy: unos seiscientos megas en PS5.",
+      "text_es": "La nueva salió el veintitrés de noviembre: unos seiscientos megas en PS5.",
       "keep_media": true,
       "chart": {
         "type": "headline",
@@ -110,15 +111,16 @@
       },
       "chart_es": {
         "type": "headline",
-        "kicker": "NUEVO HOY",
+        "kicker": "23 DE NOVIEMBRE",
         "text": "Update 1.002.002 de GTA 6",
         "pink": [
           "1.002.002"
         ],
-        "ticker": "PS5 · unos 600 MB · ya disponible · sin notas",
+        "ticker": "PS5 · unos 600 MB · sin notas de Rockstar",
         "seed": 1,
         "src": "MP1st · PlayStation LifeStyle"
-      }
+      },
+      "audio_es": "media/voice/gta6-update-no-patch-notes/es/seg2.wav"
     },
     {
       "headline": "EVERY UPDATE",
@@ -168,7 +170,8 @@
           ]
         ],
         "src": "Sportskeeda · GGRecon · Of Zen and Computing"
-      }
+      },
+      "audio_es": "media/voice/gta6-update-no-patch-notes/es/seg3.wav"
     },
     {
       "headline": "WHAT DID IT FIX?",
@@ -197,7 +200,9 @@
           "ARREGLÓ?"
         ],
         "seed": 1
-      }
+      },
+      "audio_es": "media/voice/gta6-update-no-patch-notes/es/seg4.wav"
     }
-  ]
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }

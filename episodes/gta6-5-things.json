@@ -87,7 +87,8 @@
           "5"
         ],
         "seed": 41
-      }
+      },
+      "audio_es": "media/voice/gta6-5-things/es/seg1.wav"
     },
     {
       "headline": "1: THE 99 CLUB",
@@ -106,7 +107,8 @@
         "value": 99,
         "label": "Solo Zelda: Ocarina of Time también tiene 99",
         "seed": 41
-      }
+      },
+      "audio_es": "media/voice/gta6-5-things/es/seg2.wav"
     },
     {
       "headline": "2: CUT FROM GTA 6",
@@ -151,7 +153,8 @@
           ]
         ],
         "seed": 41
-      }
+      },
+      "audio_es": "media/voice/gta6-5-things/es/seg3.wav"
     },
     {
       "headline": "3: JASON'S SECRET",
@@ -178,7 +181,8 @@
         ],
         "seed": 41,
         "sub": "lo dice Rockstar"
-      }
+      },
+      "audio_es": "media/voice/gta6-5-things/es/seg4.wav"
     },
     {
       "headline": "4: TRAILER 1 STILL WINS",
@@ -209,7 +213,8 @@
           "label": "Tráiler 2 + lanzamiento"
         },
         "seed": 41
-      }
+      },
+      "audio_es": "media/voice/gta6-5-things/es/seg5.wav"
     },
     {
       "headline": "5: CHEAPEST GTA EVER",
@@ -240,7 +245,8 @@
           "label": "GTA 5 en dólares de hoy"
         },
         "seed": 41
-      }
+      },
+      "audio_es": "media/voice/gta6-5-things/es/seg6.wav"
     },
     {
       "headline": "WHICH ONE SURPRISED YOU?",
@@ -265,7 +271,9 @@
         ],
         "seed": 41,
         "sub": "1, 2, 3, 4 o 5"
-      }
+      },
+      "audio_es": "media/voice/gta6-5-things/es/seg7.wav"
     }
-  ]
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }

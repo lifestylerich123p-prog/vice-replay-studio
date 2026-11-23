@@ -84,7 +84,8 @@
         ],
         "locale": "es",
         "seed": 3
-      }
+      },
+      "audio_es": "media/voice/gta6-precio-por-pais-es/es/seg1.wav"
     },
     {
       "headline": "EDICIÓN ESTÁNDAR",
@@ -135,7 +136,8 @@
             "339.900 COP"
           ]
         ]
-      }
+      },
+      "audio_es": "media/voice/gta6-precio-por-pais-es/es/seg2.wav"
     },
     {
       "headline": "ARGENTINA",
@@ -166,7 +168,8 @@
         "locale": "es",
         "src": "Perfil · iProUP · El Sol",
         "seed": 3
-      }
+      },
+      "audio_es": "media/voice/gta6-precio-por-pais-es/es/seg3.wav"
     },
     {
       "headline": "¿CUÁNTO TE COSTÓ?",
@@ -199,7 +202,9 @@
         "sub": "di tu país",
         "locale": "es",
         "seed": 3
-      }
+      },
+      "audio_es": "media/voice/gta6-precio-por-pais-es/es/seg4.wav"
     }
-  ]
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }

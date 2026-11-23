@@ -79,7 +79,8 @@
         "value": 99,
         "label": "GTA 6 en Metacritic",
         "seed": 3
-      }
+      },
+      "audio_es": "media/voice/gta6-99-club/es/seg1.wav"
     },
     {
       "headline": "THE 99 CLUB",
@@ -120,7 +121,8 @@
         "floor": 90,
         "note": "Metascore; las barras empiezan en 90",
         "seed": 3
-      }
+      },
+      "audio_es": "media/voice/gta6-99-club/es/seg2.wav"
     },
     {
       "headline": "BEAT EVERY ROCKSTAR GAME",
@@ -177,7 +179,8 @@
         "floor": 90,
         "note": "Metascore; las barras empiezan en 90",
         "seed": 3
-      }
+      },
+      "audio_es": "media/voice/gta6-99-club/es/seg3.wav"
     },
     {
       "headline": "DESERVED?",
@@ -200,7 +203,9 @@
           "99?"
         ],
         "seed": 3
-      }
+      },
+      "audio_es": "media/voice/gta6-99-club/es/seg4.wav"
     }
-  ]
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }

@@ -95,7 +95,8 @@
         "winner": "a",
         "seed": 3,
         "src": "GameSpot · PC Gamer"
-      }
+      },
+      "audio_es": "media/voice/gta6-vs-gta5-fps/es/seg1.wav"
     },
     {
       "headline": "NOT EVEN PS5 PRO",
@@ -124,7 +125,8 @@
         "ticker": "el procesador no alcanza para la simulación · 40 FPS también descartado",
         "seed": 3,
         "src": "PC Gamer · Wccftech · Insider Gaming"
-      }
+      },
+      "audio_es": "media/voice/gta6-vs-gta5-fps/es/seg2.wav"
     },
     {
       "headline": "WHAT PRO GETS",
@@ -180,7 +182,8 @@
           "sí"
         ],
         "src": "Wccftech · Beebom"
-      }
+      },
+      "audio_es": "media/voice/gta6-vs-gta5-fps/es/seg3.wav"
     },
     {
       "headline": "IS 30 ENOUGH?",
@@ -209,7 +212,9 @@
           "30 FPS?"
         ],
         "seed": 3
-      }
+      },
+      "audio_es": "media/voice/gta6-vs-gta5-fps/es/seg4.wav"
     }
-  ]
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }

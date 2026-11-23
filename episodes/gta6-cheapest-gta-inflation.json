@@ -80,7 +80,8 @@
         "prefix": "$",
         "label": "GTA 6, edición estándar",
         "seed": 9
-      }
+      },
+      "audio_es": "media/voice/gta6-cheapest-gta-inflation/es/seg1.wav"
     },
     {
       "headline": "IN TODAY'S MONEY",
@@ -155,7 +156,8 @@
         "floor": 70,
         "note": "Precio de lanzamiento en dólares de oct. 2026 (IPC de EE. UU.); el eje empieza en $70",
         "seed": 9
-      }
+      },
+      "audio_es": "media/voice/gta6-cheapest-gta-inflation/es/seg2.wav"
     },
     {
       "headline": "$86 VS $80",
@@ -186,7 +188,8 @@
           "prefix": "$",
           "label": "GTA 6"
         }
-      }
+      },
+      "audio_es": "media/voice/gta6-cheapest-gta-inflation/es/seg3.wav"
     },
     {
       "headline": "BARGAIN?",
@@ -209,7 +212,9 @@
           "Ganga,"
         ],
         "seed": 9
-      }
+      },
+      "audio_es": "media/voice/gta6-cheapest-gta-inflation/es/seg4.wav"
     }
-  ]
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }

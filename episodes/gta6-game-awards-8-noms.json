@@ -82,7 +82,8 @@
         "sub": "más que cualquier juego en 2026",
         "src": "VGC · Gematsu · GosuGamers",
         "seed": 2
-      }
+      },
+      "audio_es": "media/voice/gta6-game-awards-8-noms/es/seg1.wav"
     },
     {
       "headline": "GAME OF THE YEAR",
@@ -111,7 +112,8 @@
         "ticker": "007 First Light · Control Resonant · GTA VI · Phantom Blade Zero · Resident Evil Requiem · Ocarina of Time Remake",
         "src": "The Game Awards vía VGC · Gematsu",
         "seed": 2
-      }
+      },
+      "audio_es": "media/voice/gta6-game-awards-8-noms/es/seg2.wav"
     },
     {
       "headline": "DECEMBER 10",
@@ -142,7 +144,8 @@
         ],
         "sub": "Los Ángeles",
         "seed": 2
-      }
+      },
+      "audio_es": "media/voice/gta6-game-awards-8-noms/es/seg3.wav"
     },
     {
       "headline": "OUR CALL",
@@ -171,7 +174,9 @@
           "GANA GTA 6"
         ],
         "seed": 2
-      }
+      },
+      "audio_es": "media/voice/gta6-game-awards-8-noms/es/seg4.wav"
     }
-  ]
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }

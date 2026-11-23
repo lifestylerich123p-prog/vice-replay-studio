@@ -89,7 +89,8 @@
         "ticker": "Strauss Zelnick a CNBC · las tiendas pueden poner sus propios precios",
         "src": "Beebom · IBTimes · GamingBolt",
         "seed": 0
-      }
+      },
+      "audio_es": "media/voice/gta6-black-friday-no-discount/es/seg1.wav"
     },
     {
       "headline": "STILL $79.99",
@@ -139,7 +140,8 @@
             "NO"
           ]
         ]
-      }
+      },
+      "audio_es": "media/voice/gta6-black-friday-no-discount/es/seg2.wav"
     },
     {
       "headline": "WHAT IS ON SALE",
@@ -174,7 +176,8 @@
         "winner": "b",
         "src": "Digital Citizen · Push Square",
         "seed": 0
-      }
+      },
+      "audio_es": "media/voice/gta6-black-friday-no-discount/es/seg3.wav"
     },
     {
       "headline": "OUR TAKE",
@@ -203,7 +206,9 @@
           "NO ESPERES"
         ],
         "seed": 0
-      }
+      },
+      "audio_es": "media/voice/gta6-black-friday-no-discount/es/seg4.wav"
     }
-  ]
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }

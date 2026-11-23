@@ -72,7 +72,8 @@
         "value": 309793377,
         "label": "vistas del tráiler 1 de GTA 6",
         "seed": 5
-      }
+      },
+      "audio_es": "media/voice/gta6-trailer-views/es/seg1.wav"
     },
     {
       "headline": "ROCKSTAR'S TOP 5",
@@ -137,7 +138,8 @@
         "highlight": 0,
         "note": "Vistas en el canal de YouTube de Rockstar Games, 22 de nov.",
         "seed": 5
-      }
+      },
+      "audio_es": "media/voice/gta6-trailer-views/es/seg2.wav"
     },
     {
       "headline": "2 TRAILERS COMBINED: STILL BEHIND",
@@ -168,7 +170,8 @@
           "label": "Tráiler 2 + lanzamiento"
         },
         "seed": 5
-      }
+      },
+      "audio_es": "media/voice/gta6-trailer-views/es/seg3.wav"
     },
     {
       "headline": "YOUR FAVORITE?",
@@ -192,7 +195,9 @@
           "más?"
         ],
         "seed": 5
-      }
+      },
+      "audio_es": "media/voice/gta6-trailer-views/es/seg4.wav"
     }
-  ]
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }

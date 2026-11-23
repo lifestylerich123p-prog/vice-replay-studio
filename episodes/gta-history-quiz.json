@@ -86,7 +86,8 @@
         ],
         "sub": "Lleva la cuenta",
         "seed": 21
-      }
+      },
+      "audio_es": "media/voice/gta-history-quiz/es/seg1.wav"
     },
     {
       "headline": "QUESTION 1",
@@ -117,7 +118,8 @@
         ],
         "answer": 1,
         "seed": 21
-      }
+      },
+      "audio_es": "media/voice/gta-history-quiz/es/seg2.wav"
     },
     {
       "headline": "RACE'N'CHASE",
@@ -150,7 +152,8 @@
         "answer": 1,
         "seed": 21,
         "reveal": true
-      }
+      },
+      "audio_es": "media/voice/gta-history-quiz/es/seg3.wav"
     },
     {
       "headline": "QUESTION 2",
@@ -181,7 +184,8 @@
         ],
         "answer": 2,
         "seed": 21
-      }
+      },
+      "audio_es": "media/voice/gta-history-quiz/es/seg4.wav"
     },
     {
       "headline": "GTA 1, 1997",
@@ -214,7 +218,8 @@
         "answer": 2,
         "seed": 21,
         "reveal": true
-      }
+      },
+      "audio_es": "media/voice/gta-history-quiz/es/seg5.wav"
     },
     {
       "headline": "QUESTION 3",
@@ -245,7 +250,8 @@
         ],
         "answer": 1,
         "seed": 21
-      }
+      },
+      "audio_es": "media/voice/gta-history-quiz/es/seg6.wav"
     },
     {
       "headline": "RAY LIOTTA",
@@ -278,7 +284,8 @@
         "answer": 1,
         "seed": 21,
         "reveal": true
-      }
+      },
+      "audio_es": "media/voice/gta-history-quiz/es/seg7.wav"
     },
     {
       "headline": "YOUR SCORE?",
@@ -303,7 +310,9 @@
         ],
         "sub": "Comenta tu puntaje",
         "seed": 21
-      }
+      },
+      "audio_es": "media/voice/gta-history-quiz/es/seg8.wav"
     }
-  ]
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
 }
