@@ -766,7 +766,9 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
         if seg.get("chart") and hits_file.exists():
             pops += [t + x for x in json.loads(hits_file.read_text()) if x < d - 0.1]
             hits_file.unlink()
-        if seg.get("chapter") or seg.get("headline"):
+        # long card videos (Nov 23) mark only section starts with "chapter"; then headlines don't make chapters
+        only_marked = any(x.get("chapter") for x in segments) and len(segments) > 12
+        if seg.get("chapter") or (seg.get("headline") and not only_marked):
             chapters.append((0.0 if i == 0 and vertical else t, seg.get("chapter") or seg["headline"]))
         if t > 0:
             cuts.append(t)
