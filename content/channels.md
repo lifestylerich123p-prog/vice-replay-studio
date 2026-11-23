@@ -103,6 +103,7 @@ Checked Nov 20, 2026 on the owner's Everygen billing page and the account API:
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-22 · Vice Replay · YouTube quota ran out at 7:02 PM ET (one Cloud project for all 3 channels). Plan: What If Arena gets its OWN Cloud project (steps: content/youtube-quota-plan.md); Vice Replay keeps the old one. Spanish subtitle track dropped on English Shorts (saves 400 units each).
 - 2026-11-22 · Vice Replay · YouTube Partner Program bar doubles for NEW channels on Feb 1, 2027 (1,000 subs + 8,000 watch hours in 365 days or 20M Shorts views in 90 days). Already in YPP = unaffected. Each channel close to today's bar should push to qualify before Feb 1.
 - 2026-11-22 · Vice Replay · Google app "Creator HQ" (shared Cloud project "What If Arena") is published: keys no longer expire after 7 days; What If Arena: reconnect once (Testing-era key expires ~Nov 24). Shared lessons added (originality update, statement hooks, morning posts, hide-not-delete, no "#1" in titles). Vice Replay en Español launched. No Everygen spends.
 - 2026-11-20 · Vice Replay · Everygen: 32 credits (14 for 7 thumbnail backgrounds and 8 for 4 Instagram 4:5 cards, Nano Banana 2; 10 for a 5-second neon intro sting, Kling 3.0 Turbo). Balance 579 after. Between about 5:40 and 6:45 PM ET the balance also fell by about 370 credits that Vice Replay did not spend: other chats, please log your spends here so the split stays on track.
