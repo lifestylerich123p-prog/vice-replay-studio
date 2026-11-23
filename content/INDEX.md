@@ -158,6 +158,8 @@ Read this first instead of searching the repo.
 | 2026-11-19 | /guides/gta-6-launch-day-survival-guide/ | GTA 6 Launch Day Survival Guide: Servers, 30 FPS and Settings |
 | 2026-11-22 | /guides/gta-6-launch-week-numbers/ | GTA 6 Sales and Records: Every Launch Week Number vs GTA 5 (Checked) |
 | 2026-11-18 | /guides/gta-6-map-size/ | How Big Is the GTA 6 Map? Leonida vs GTA 5 and Red Dead 2 |
+| 2026-11-23 | /es/guias/gta-6-notas-del-parche/ | GTA 6 actualización 1.002.002: notas del parche y los 7 arreglos |
+| 2026-11-23 | /guides/gta-6-patch-notes/ | GTA 6 Update 1.002.002 Patch Notes: All 7 Fixes (Nov 23, 2026) |
 | 2026-11-18 | /guides/gta-6-physical-edition/ | GTA 6 Physical Edition: No Disc in the Box? What You're Actually Buying |
 | 2026-11-19 | /guides/gta-6-ps5-pro-worth-it/ | Is PS5 Pro Worth It for GTA 6? 30 FPS, PSSR and What You Actually Get |
 | 2026-11-21 | /guides/gta-6-ultimate-edition/ | Is GTA 6 Ultimate Edition Worth It? The 5 Shops Only It Unlocks (No Spoilers) |
