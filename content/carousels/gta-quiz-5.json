@@ -38,5 +38,7 @@
   "title": "Answers",
   "text": "1 B, Race'n'Chase\n2 C, GTA 1 (1997)\n3 B, Ray Liotta\n4 C, 99\n5 C, $3.79 billion (Take-Two)\nComment your score: 0 to 5",
   "bg": "vice-city-15.jpg"
- }
+ },
+ "style": "vice",
+ "seed": 2
 }

@@ -272,9 +272,19 @@
   "posted": "skipped: YouTube Short unscheduled Nov 22 (owner: replace weak ones with graph/evidence Shorts)"
  },
  {
-  "at": "2026-11-27 12:00",
+  "at": "2026-11-27 15:00",
   "carousel": "content/carousels/goodbye-gta-5.json",
-  "note": "Goodbye GTA 5: 13 years in numbers (farewell-to-GTA-5 trend; pairs with the 13-years Short at 9:30 AM)"
+  "note": "Goodbye GTA 5: 13 years in numbers (farewell-to-GTA-5 trend; pairs with the 13-years Short at 9:30 AM) | moved Nov 23 to 3 PM: Friday's 9:35/11:05/12:35 Reels left no room at noon"
+ },
+ {
+  "at": "2026-11-28 15:00",
+  "carousel": "content/carousels/gta-tier-list-critics.json",
+  "note": "Nov 23 (owner \"1,2,4\": carousels in the new lettering style): every GTA ranked by Metacritic; 5 days after the tier-list Reel"
+ },
+ {
+  "at": "2026-11-29 16:00",
+  "carousel": "content/carousels/gta6-week-one-numbers.json",
+  "note": "Nov 23: teaser for the Sunday hub video (GTA 6 in 10 Numbers, 3:30 PM): post only once that video is public"
  },
  {
   "at": "2026-12-31 23:59",

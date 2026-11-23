@@ -5,7 +5,8 @@
 Spec (JSON): {"slug", "caption", "first_comment", "cover": {"title", "subtitle", "bg"},
               "tips": [{"title", "text", "bg", "code"?}...], "cta": {"title", "text", "bg"}}
 code (optional) = a button sequence like "↑ → ↓ ←", drawn big in even cells under the title.
-bg = a file name in media/official/ (only official screenshots; keep the excluded shots in owner.md out).
+bg = a file name in media/official/ (only official screenshots; keep the excluded shots in owner.md out), or set
+"style": "vice" (+ "seed") on the spec for our own Vice City backdrop on every card (the default since Nov 23).
 Only facts we already checked (episodes / site guides); label reports as reports.
 """
 import json
@@ -22,6 +23,16 @@ ARROW_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"  # even ←�
 
 
 def background(name):
+    if str(name).startswith("vice"):  # Nov 23: our own animated Vice City set (no Rockstar images), "vice" or "vice:2"
+        from . import vicecards
+        seed = int(str(name).split(":")[1]) if ":" in str(name) else 0
+        still, hz = vicecards.sky(W, H, seed)
+        im = vicecards.frame_bg(still, hz, 0.3, W, H).convert("RGB")
+        shade = Image.new("L", (W, H))
+        sd = ImageDraw.Draw(shade)
+        for yy in range(H):  # a lighter darkening than on photos: the set is already dark at the bottom
+            sd.line([(0, yy), (W, yy)], fill=int(40 + 110 * (yy / H) ** 1.6))
+        return Image.composite(Image.new("RGB", (W, H), brand.NIGHT), im, shade)
     p = ROOT / "media" / "official" / name
     im = Image.open(p).convert("RGB") if p.exists() else brand.neon_background(W, H).convert("RGB")
     s = max(W / im.width, H / im.height)
@@ -111,7 +122,8 @@ def build(spec_path):
     pages = [("cover", spec["cover"])] + [("tip", t) for t in spec["tips"]] + [("cta", spec["cta"])]
     files = []
     for k, (kind, p) in enumerate(pages, 1):
-        im = background(p.get("bg", "vice-city-05.jpg"))
+        # "style": "vice" (Nov 23, owner: lettering and a modern style; Instagram cuts reach for reposted images)
+        im = background(f"vice:{spec.get('seed', 0)}" if spec.get("style") == "vice" else p.get("bg", "vice-city-05.jpg"))
         header(im, k, len(pages))
         d = ImageDraw.Draw(im)
         if kind == "cover":
@@ -122,7 +134,7 @@ def build(spec_path):
             d.rounded_rectangle([60, H - 210, 60 + f.getlength(t) + 60, H - 130], 40, fill=brand.CYAN)
             d.text((90, H - 206), t, font=f, fill=brand.NIGHT)
         elif kind == "tip":
-            n = str(k - 1)
+            n = str(p.get("badge", k - 1))  # "badge": "S" for tier-list slides (Nov 23)
             top = 400 if p.get("code") else 520  # cards with a code start higher to fit it
             f = brand.font(brand.HEADLINE_FONT, 150)
             d.ellipse([60, top, 260, top + 200], fill=brand.PINK)

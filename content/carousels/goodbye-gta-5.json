@@ -38,5 +38,7 @@
   "title": "Who will you miss most?",
   "text": "Michael, Franklin or Trevor?\nComment below. Follow @vice.replaytv for GTA 6 every day.",
   "bg": "vice-city-15.jpg"
- }
+ },
+ "style": "vice",
+ "seed": 1
 }
