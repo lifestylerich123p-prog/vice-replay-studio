@@ -172,6 +172,11 @@
   "posted": "skipped: YouTube Short unscheduled Nov 22 (39 s; owner OK to re-cut ~18 s); Lucia outfits Reel takes Mon 12:35"
  },
  {
+  "at": "2026-11-23 12:35",
+  "episode": "episodes/gta6-lucia-outfits.json",
+  "item": "short"
+ },
+ {
   "at": "2026-11-23 15:05",
   "carousel": "content/carousels/gta6-not-enough-space.json",
   "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Mon: Sat now has BF 11:05 + comparison 13:35; 15:05 keeps 2.5 h after the 12:35 ranking Reel"

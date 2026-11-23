@@ -45,7 +45,7 @@ Read this first instead of searching the repo.
 | ? | gta6-13-years | Short | GTA 6 Took 13 Years. No Other GTA Took Even 6 | - |
 | ? | gta-history-quiz | Short | GTA History Quiz: Only Real Fans Get 3/3 | - |
 | 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 |
-| 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | - |
+| 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | short: y4jQTwLJwP4 |
 | 2026-11-21 | gta6-how-long-to-beat | video | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | short: bVoHzywwvgc, main: rHaMTePDRUQ, tips: M7oKevOPY08 |
 | 2026-11-20 | gta6-video-store-closing | Short | GTA 6 Has a Video Game Store, and It's Closing | short: Rt18FhG-DYk |
 | 2026-11-20 | gta6-took-away-gta5 | Short | GTA 6 Took Away 4 Things GTA 5 Gave You | short: uvWNXugdvSo |
