@@ -1,0 +1,205 @@
+{
+  "title": "GTA 6: cuánto cuesta en cada país",
+  "slug": "gta6-precio-por-pais-es",
+  "series": "Explained",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "es_only": true,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_title": "GTA 6: what it costs in each Spanish-speaking country #GTA6 #Shorts",
+  "short_description": "Spanish-channel-only Short (research Nov 23: Spanish-only angles instead of 1:1 copies).",
+  "short_es": {
+    "title": "GTA 6: cuánto CUESTA en cada país 💸 #GTA6 #Shorts",
+    "description": "GTA 6 no cuesta lo mismo en todos lados. Edición estándar: España 79,99 €; México 1.499 pesos en la tienda de Xbox; Colombia desde 339.900 pesos. En Argentina se cobra en dólares más el IVA digital, y quedó entre los países donde más caro sale. Precios de lanzamiento; pueden cambiar según la tienda y el tipo de cambio. ¿Cuánto te costó a ti? Di tu país.\n\nFuentes: Vandal, El Output, Xataka México, Publimetro, Grupo Animal, Portafolio, Perfil, iProUP, El Sol.",
+    "tags": [
+      "GTA 6 precio",
+      "GTA 6 precio México",
+      "GTA 6 precio Argentina",
+      "GTA 6 precio Colombia",
+      "GTA 6 precio España",
+      "cuánto cuesta GTA 6",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "short_pinned_comment_es": "¿Cuánto te costó GTA 6? Di tu país 👇",
+  "pinned_comment": "What did GTA 6 cost in your country? 👇",
+  "tags": [
+    "GTA 6 precio",
+    "GTA 6 price",
+    "GTA VI"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gta6español"
+  ],
+  "sources": [
+    "Vandal - Guía de reserva de GTA 6: precio en España (79,99 € / 99,99 €): https://vandal.elespanol.com/noticia/1350791112/guia-de-reserva-de-gta-6-precio-hora-ediciones-y-todas-las-novedades-confirmadas-por-rockstar/",
+    "El Output - GTA 6 pre-orders in Spain: official prices: https://en.eloutput.com/news/video-game/reservas-de-gta-6-en-espana-ediciones-precios-oficiales-y-la-polemica-del-formato-fisico/",
+    "Xataka México - GTA 6 ya tiene precio en México (Xbox 1,499 / 1,879 pesos): https://www.xataka.com.mx/videojuegos/gta-6-tiene-precio-mexico-esto-que-deberas-pagar-para-tener-juego-esperado-historia",
+    "Publimetro - Cuánto costará GTA VI en México (Nov 18, 2026): https://www.publimetro.com.mx/entretenimiento/2026/11/18/cuanto-costara-gta-vi-en-mexico-estos-son-los-precios-para-playstation-5-y-xbox/",
+    "Grupo Animal - GTA 6: guía de lanzamiento en México, precios: https://grupoanimal.mx/tecnologia/gta-6-guia-definitiva-lanzamiento-mexico-precios-ediciones-espacio",
+    "Portafolio - GTA 6 ya salió: precios en Colombia desde $339.900: https://www.portafolio.co/economia/gta-6-ya-salio-precios-en-colombia-desde-339-900-y-donde-comprarlo-506650",
+    "Perfil - Polémica por los precios de GTA VI: Argentina, cuarto país donde más caro costará: https://perfil.com/economia/polemica-por-los-precios-de-gta-vi-cuanto-cuesta-en-argentina-y-por-que-es-cuarto-pais-donde-mas-caro-costara-a5AHF4Q4LbmI",
+    "iProUP - GTA VI ubica a la Argentina entre los países más caros del mundo: https://www.iproup.com/coffee-break/73278-gta-vi-ubica-a-la-argentina-entre-los-paises-mas-caros-del-mundo",
+    "El Sol - Por qué Argentina figura entre los países más caros para comprar GTA 6: https://www.elsol.com.ar/de-revista/polemica-por-gta-6-por-que-argentina-figura-entre-los-paises-mas-caros-del-mundo-para-comprarlo/"
+  ],
+  "short": [
+    {
+      "headline": "NO CUESTA LO MISMO",
+      "headline_es": "NO CUESTA LO MISMO",
+      "text": "GTA 6 doesn't cost the same everywhere.",
+      "text_es": "GTA 6 no cuesta lo mismo en todos lados.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "NO CUESTA",
+          "LO MISMO",
+          "EN TODOS LADOS"
+        ],
+        "pink": [
+          "EN TODOS LADOS"
+        ],
+        "locale": "es",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "NO CUESTA",
+          "LO MISMO",
+          "EN TODOS LADOS"
+        ],
+        "pink": [
+          "EN TODOS LADOS"
+        ],
+        "locale": "es",
+        "seed": 3
+      }
+    },
+    {
+      "headline": "EDICIÓN ESTÁNDAR",
+      "headline_es": "EDICIÓN ESTÁNDAR",
+      "text": "In Spain, 79.99 euros. In Mexico, 1,499 pesos on Xbox. In Colombia, from 339,900 pesos.",
+      "text_es": "En España, setenta y nueve noventa y nueve euros. En México, mil cuatrocientos noventa y nueve pesos en Xbox. En Colombia, desde trescientos treinta y nueve mil pesos.",
+      "keep_media": true,
+      "chart": {
+        "type": "list",
+        "title": "EDICIÓN ESTÁNDAR",
+        "bg": "vice",
+        "locale": "es",
+        "seed": 3,
+        "src": "Vandal · Xataka MX · Publimetro · Portafolio",
+        "items": [
+          [
+            "España",
+            "79,99 €"
+          ],
+          [
+            "México (Xbox)",
+            "1.499 MXN"
+          ],
+          [
+            "Colombia",
+            "339.900 COP"
+          ]
+        ]
+      },
+      "chart_es": {
+        "type": "list",
+        "title": "EDICIÓN ESTÁNDAR",
+        "bg": "vice",
+        "locale": "es",
+        "seed": 3,
+        "src": "Vandal · Xataka MX · Publimetro · Portafolio",
+        "items": [
+          [
+            "España",
+            "79,99 €"
+          ],
+          [
+            "México (Xbox)",
+            "1.499 MXN"
+          ],
+          [
+            "Colombia",
+            "339.900 COP"
+          ]
+        ]
+      }
+    },
+    {
+      "headline": "ARGENTINA",
+      "headline_es": "ARGENTINA",
+      "text": "And in Argentina, with taxes, it's among the most expensive in the world.",
+      "text_es": "Y en Argentina, con los impuestos, está entre los más caros del mundo.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "ARGENTINA",
+        "text": "Entre los más caros del mundo",
+        "pink": [
+          "MÁS CAROS"
+        ],
+        "ticker": "precio en dólares · IVA digital del 21% · depende del tipo de cambio",
+        "locale": "es",
+        "src": "Perfil · iProUP · El Sol",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "ARGENTINA",
+        "text": "Entre los más caros del mundo",
+        "pink": [
+          "MÁS CAROS"
+        ],
+        "ticker": "precio en dólares · IVA digital del 21% · depende del tipo de cambio",
+        "locale": "es",
+        "src": "Perfil · iProUP · El Sol",
+        "seed": 3
+      }
+    },
+    {
+      "headline": "¿CUÁNTO TE COSTÓ?",
+      "headline_es": "¿CUÁNTO TE COSTÓ?",
+      "text": "What did it cost you? Tell me your country, because",
+      "text_es": "¿Cuánto te costó a ti? Dime tu país, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "¿CUÁNTO",
+          "TE COSTÓ?"
+        ],
+        "pink": [
+          "TE COSTÓ?"
+        ],
+        "sub": "di tu país",
+        "locale": "es",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿CUÁNTO",
+          "TE COSTÓ?"
+        ],
+        "pink": [
+          "TE COSTÓ?"
+        ],
+        "sub": "di tu país",
+        "locale": "es",
+        "seed": 3
+      }
+    }
+  ]
+}
