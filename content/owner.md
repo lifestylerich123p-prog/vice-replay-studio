@@ -273,3 +273,7 @@
 - 2026-11-23 (6:55 AM, owner "APPROVE"): approved `gta6-update-no-patch-notes` (EN today 9:30 AM; ES Tue 12:30 PM after
   the quota reset) and `gta6-vs-gta5-fps` (Wed Nov 25 9:30 AM EN + ES), both GTA 6-style lettering Shorts; added to
   approved_queue.json.
+- 2026-11-23 (~7:40 AM, owner "APPROVE"): approved `gta6-black-friday-no-discount` (EN Wed Nov 25 11 AM, ES Thu 11 AM),
+  `gta6-game-awards-8-noms` (EN Fri Nov 27 11 AM, ES Sat 12:30 PM) and the Spanish-only `gta6-precio-por-pais-es` (Fri
+  12:30 PM); all in approved_queue.json, uploaded by the post-reset runs. Also taken as a go-ahead to BUILD the long
+  "GTA 6 in numbers" hub video (posting it still needs its own approval).

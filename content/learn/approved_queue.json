@@ -189,6 +189,42 @@
     "9:30 AM"
    ],
    "approved": "Nov 23 6:55 AM (APPROVE; lettering VS card)"
+  },
+  {
+   "slug": "gta6-black-friday-no-discount",
+   "item": "short",
+   "en": [
+    "2026-11-25",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-26",
+    "11:00 AM"
+   ],
+   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)"
+  },
+  {
+   "slug": "gta6-game-awards-8-noms",
+   "item": "short",
+   "en": [
+    "2026-11-27",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-28",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)"
+  },
+  {
+   "slug": "gta6-precio-por-pais-es",
+   "item": "short",
+   "es_only": true,
+   "es": [
+    "2026-11-27",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)"
   }
  ],
  "paused": [
