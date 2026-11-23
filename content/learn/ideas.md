@@ -121,3 +121,8 @@ Next ideas on the new cards (facts checked before writing):
    card per number, the winner lights up.
 4. **Tier list: GTA 6 radio stations by what the comments pick** (needs our comment data first).
 5. **Breaking-news card** for any confirmed update/patch (kicker CONFIRMED / REPORTEDLY).
+
+## Weekly card series (owner approved Nov 23, "all")
+Mon news card · Tue VS · Wed tier list · Thu quiz · Fri countdown · Sat Spanish special · Sun long hub (3:30 PM) +
+meter Short. Details in .claude/commands/daily-video.md rule 7. Number each series in the description ("Vice Replay
+Tier List #2") so returning viewers recognize it.

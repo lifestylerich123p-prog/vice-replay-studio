@@ -21,6 +21,14 @@ make sensible choices, finish the whole run, and explain your choices in the fin
 5. **Long videos:** only the weekly hub (Sunday, 16:9 lettering cards like episodes/gta6-10-numbers.json); no daily long
    video. The "Wildest Moment" gameplay Short stays when the owner uploads gameplay (segment 1 = a kinetic card).
 6. Instagram captions say "AI narration" automatically; remind the owner to switch on TikTok's AI label.
+7. **Weekly card series** (owner Nov 23; one recognizable format per weekday, different card mix every day, so
+   YouTube sees variety, not a template): **Mon** news card (`headline` + kinetic: the week's biggest confirmed update);
+   **Tue** VS day (`versus`: GTA 6 vs GTA 5, edition vs edition, record vs record); **Wed** tier list (`tier`: rank
+   something with checked numbers or owner/comment votes); **Thu** quiz (`quiz` cards with a timer, "only real fans get
+   3/3"); **Fri** countdown ("N things", `countdown` cards); **Sat** Spanish special (a Spanish-only angle on the Spanish
+   channel: local prices, Latin American interest, regional slang/style); **Sun** the long hub video (16:9 lettering,
+   episodes/gta6-10-numbers.json style) at 3:30 PM + a meter/kinetic Short. Series name in each description, e.g.
+   "Vice Replay Tier List #2". The other daily Shorts stay free-form (news, catches, streamers).
 
 00. **Health first (free)**: `python -m studio.doctor --fix`. If it reports 🔴 (YouTube connection failing or about to
    expire, website down), put that in bold at the very top of the final message with the fix.
