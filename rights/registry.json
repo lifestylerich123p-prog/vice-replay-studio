@@ -180,6 +180,35 @@
   "es_note": "vice-replay-es added Nov 22, 2026 (main chat): Spanish-voice versions of Vice Replay Shorts on the owner's Spanish channel; owner approval in content/owner.md (2026-11-22); same conditions apply"
  },
  {
+  "id": "everygen-voice",
+  "asset_class": "AI narration voice",
+  "match": [
+   "media/voice/*"
+  ],
+  "owner": "Everygen (owner's paid plan)",
+  "permission": "voiceovers generated on the owner's own Everygen account with built-in voices",
+  "license_url": "https://everygen.ai",
+  "commercial_use": "yes",
+  "creator_restrictions": "not allowed on campaigns that ban AI content (Lacy)",
+  "music_rights": "n/a",
+  "campaign": null,
+  "attribution": null,
+  "expires": null,
+  "content_id_risk": "none",
+  "platforms_allowed": [
+   "YouTube",
+   "Instagram",
+   "TikTok"
+  ],
+  "destinations_allowed": [
+   "vice-replay",
+   "vice-replay-es"
+  ],
+  "status": "cleared",
+  "notes": "Added Nov 23, 2026 (owner: \"use everygen\" for a Cuban-style Spanish voice). Per-segment voice files live in media/voice/<slug>/; never on campaigns that ban AI content.",
+  "es_note": "vice-replay-es added Nov 22, 2026 (main chat): Spanish-voice versions of Vice Replay Shorts on the owner's Spanish channel; owner approval in content/owner.md (2026-11-22); same conditions apply"
+ },
+ {
   "id": "campaign:lacy-gta6",
   "asset_class": "streamer footage via campaign",
   "match": [

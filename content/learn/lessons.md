@@ -185,3 +185,11 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   way (follow badge, pinned questions, a series viewers want to binge), and Shorts views are the realistic path (our
   long videos get a median of 14 views).
 
+
+## Nov 23, 2026: Everygen voices for Spanish (Cuban Short)
+- Everygen voiceovers cost about 1 credit per line (up to ~70 characters): cheap for voices Kokoro lacks.
+- In Spanish, **Viral Adam** sounds native and passes the caption check (Whisper hears the script); **Pham** has a
+  foreign accent (51% word error: "GTS es esta leno"). Owner picked Viral Adam. Test any new voice with the caption
+  check before using it.
+- Put per-segment voice files in `media/voice/<slug>/` and point `audio_es` (or `audio`) at them; the renderer uses them
+  instead of Kokoro and the rights gate checks them (`everygen-voice` in rights/registry.json).

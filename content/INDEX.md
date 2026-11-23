@@ -31,13 +31,18 @@ Read this first instead of searching the repo.
 | ? | gta6-no-60fps-ps5-pro | Short | GTA 6 Has No 60 FPS Mode, Not Even on PS5 Pro | short: 6p9VtX-UaVU |
 | ? | gta6-money-chart-es | Short | GTA 6 hizo 5 VECES el lanzamiento de GTA 5... con trampa | - |
 | ? | gta6-map-is-florida | Short | GTA 6's Official Map Is Florida: 4 Matches and 1 Fake | short: 9ZmygQdJRBA |
-| ? | gta6-jason-quiet | Short | GTA 6's Jason Barely Talks. Rockstar Says Why | - |
+| ? | gta6-little-cuba-es | Short | GTA 6 está lleno de Cuba | - |
+| ? | gta6-jason-quiet | Short | GTA 6's Jason Was Inspired by Steve McQueen | - |
 | ? | gta6-has-anyone-finished | Short | Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch) | short: WsJ96ZkU2do |
 | ? | gta6-guess-the-ride | Short | Guess the GTA 6 Ride From One Detail | short: I2VEKQUia8w |
 | ? | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | short: Egb3otGWJIg |
 | ? | gta6-dexter-apartment | Short | Players Found Dexter's Apartment in GTA 6 | short: dOv6212lgj4 |
 | ? | gta6-cheapest-gta-inflation | Short | GTA 6 Is the CHEAPEST GTA Ever (After Inflation) | - |
 | ? | gta6-99-club | Short | GTA 6's 99 on Metacritic: Only ONE Other Game Has It | - |
+| ? | gta6-80-hours | Short | GTA 6 Is Rockstar's Longest Story Ever: About 80 Hours | - |
+| ? | gta6-5-things | Short | GTA 6: 5 Things You Didn't Know (All Checked) | - |
+| ? | gta6-4-secrets | Short | 4 Secrets Players Just Found in GTA 6 | - |
+| ? | gta6-13-years | Short | GTA 6 Took 13 Years. No Other GTA Took Even 6 | - |
 | ? | gta-history-quiz | Short | GTA History Quiz: Only Real Fans Get 3/3 | - |
 | 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 |
 | 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | - |

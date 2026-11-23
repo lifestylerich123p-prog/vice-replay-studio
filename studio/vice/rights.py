@@ -200,12 +200,14 @@ def check_episode(ep, destination="vice-replay"):
         for s in segs:
             if s.get("media"):
                 assets.append(s["media"])
+            assets += [s[k] for k in ("audio", "audio_es") if s.get(k)]  # ready-made voice files (Everygen)
             assets += [x["media"] for x in s.get("shots") or [] if x.get("media")]
     thumb = (ep.get("thumbnail") or {}).get("image")
     if thumb:
         assets.append(thumb)
     results = [check(a, destination) for a in dict.fromkeys(assets)]
-    results.append(check("voice:kokoro", destination))
+    if any(not (s.get("audio") or s.get("audio_es")) for segs in groups for s in segs):
+        results.append(check("voice:kokoro", destination))
     if ep.get("music", "theme") not in ("none", None):
         results.append(check("assets/music/vice-replay-theme.wav", destination))
     return {"ok": all(r["ok"] for r in results), "checks": results}
