@@ -22,9 +22,9 @@
   "limit_seen": 20000
  },
  "2026-11-22": {
-  "used": 17284,
+  "used": 17285,
   "calls": {
-   "GET channels": 203,
+   "GET channels": 204,
    "GET playlistItems": 33,
    "POST videos": 6,
    "POST captions": 13,
@@ -38,6 +38,8 @@
    "GET commentThreads": 64,
    "POST commentThreads": 3
   },
-  "registry_est": 7500
+  "registry_est": 7500,
+  "exhausted_at_et": "19:02",
+  "limit_seen": 17285
  }
 }

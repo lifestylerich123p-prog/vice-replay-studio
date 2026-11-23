@@ -218,4 +218,10 @@
   carousel `gta-quiz-5` (queued Tue Nov 24 2:30 PM under the IG standing approval). Plugins: social-media-skills
   interactive-content (quiz rules), vidIQ checked (10 credits left until Dec 15, saved), Everygen not used (needs a
   cost estimate + owner yes).
+- 2026-11-22 (7 PM ET, owner "ok approve and post"): approved `gta6-jason-quiet` and `gta-history-quiz` (EN + ES). The
+  YouTube quota ran out at ~7 PM (shared Cloud project with What If Arena; ~17.3K logged by us), so nothing can post
+  until 3 AM. Plan: IShowSpeed comments at Mon 3:02 AM (the 7:40 PM reminder will fail and can be ignored).
+  **Mon 3 AM batch = money ES, darts EN + ES, Lucia EN + ES, retag, channel layout; SKIP the top-3 rides step of the
+  3:08 AM plan** (moved to the Wed 3:10 AM batch to stay under quota). Wed 3:10 AM batch: rides (Wed 9:30 AM), Jason
+  (Thu Nov 26 9:30 AM), history quiz (Thu 12:30 PM), all EN + ES.
 
