@@ -17,5 +17,5 @@ def test_ordinary_numbers_unchanged():
     assert shown("eighty seven") == ["87"]
     assert shown("one hundred twenty") == ["120"]
     assert shown("ninety eight percent") == ["98%"]
-    assert shown("three hundred nine million") == ["309,000,000"]
+    assert shown("three hundred nine million") == ["309 million"]
     assert shown("number one") == []

@@ -202,3 +202,6 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   keep card text out of the bottom ~8% of the card area.
 - 16:9 long videos: the VS card goes side by side; size lettering by the short side of the frame.
 - Headlines over 19 characters wrap and hit the lettering (warned). One `seed` per Short keeps the same sky.
+- Captions turned spoken decimals into nonsense ("one point eight four billion" -> "one point 12,000,000,000";
+  "sixty eight point seven million" -> "68 point 7,000,000"), on every video before Nov 23. Fixed in
+  make_video.display_tokens: decimals show as "1.84 billion" / "68.7 million", round numbers as "800 million".

@@ -222,6 +222,32 @@ def _num_value(run):
     return total + cur
 
 
+def _decimal_at(words, low, i):
+    """A spoken decimal starting at word i: "<number words> point <digit words> [million|billion|thousand|percent]".
+    Returns (caption text, index of its last word) or None."""
+    ends = lambda k: bool(re.search(r"[.,!?;:]$", words[k]))
+    j = i
+    while j < len(low) and (low[j] in _ONES or low[j] in _TENS or low[j] == "hundred") and not (j > i and ends(j - 1)):
+        j += 1
+    if j == i or j >= len(low) or low[j] != "point" or ends(j - 1):
+        return None
+    whole = _num_value(low[i:j])
+    k, digits = j + 1, ""
+    while k < len(low) and low[k] in _ONES and _ONES[low[k]] <= 9:
+        digits += str(_ONES[low[k]])
+        k += 1
+        if ends(k - 1):
+            break
+    if whole is None or not digits:
+        return None
+    txt, last = f"{whole}.{digits}", k - 1
+    if not ends(last) and k < len(low) and low[k] in ("million", "billion", "thousand", "percent"):
+        txt += "%" if low[k] == "percent" else f" {low[k]}"
+        last = k
+    tail = re.search(r"[.,!?;:]+$", words[last])
+    return txt + (tail.group(0) if tail else ""), last
+
+
 def display_tokens(words, lang="en"):
     """Caption tokens: runs of spoken number words become digits ("fifty two" -> "52", "ninety eight percent" ->
     "98%"), only when it's clearly a number (2+ words, 10 or more, or followed by a unit), so "number one" and
@@ -230,6 +256,12 @@ def display_tokens(words, lang="en"):
     out, i, low = [], 0, [re.sub(r"[^\w]", "", w.lower()) for w in words]
     numw = (set(_ONES) | set(_TENS) | {"hundred"} | set(_SCALES)) if lang == "en" else set()
     while i < len(words):
+        dec = _decimal_at(words, low, i) if lang == "en" else None
+        if dec:  # "one point eight four billion" -> "1.84 billion" (Nov 23: it showed "one point 12,000,000,000")
+            txt, last = dec
+            out.append((txt, i, last, True))
+            i = last + 1
+            continue
         j = i
         while j < len(words) and low[j] in numw and not re.search(r"[.,!?;:]$", words[j][:-1] if j > i else ""):
             j += 1
@@ -242,6 +274,8 @@ def display_tokens(words, lang="en"):
             tail = re.search(r"[.,!?;:]+$", words[j - 1])
             year = 1900 <= val <= 2100 or (1000 <= val < 1900 and not any(w in _SCALES for w in run))
             txt = f"{val}" if year else f"{val:,}"  # 1998, not 1,998
+            if run[-1] in ("million", "billion") and val % _SCALES[run[-1]] == 0:  # "800 million", not 800,000,000
+                txt = f"{val // _SCALES[run[-1]]:,} {run[-1]}"
             if nxt == "percent":
                 txt += "%"; j += 1
                 tail = re.search(r"[.,!?;:]+$", words[j - 1])

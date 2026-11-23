@@ -77,3 +77,13 @@ def test_year_like_prices_are_flagged():
     assert not flag("It came out in nineteen ninety eight.")
     assert not flag("It stays at seventy nine dollars and ninety nine cents.")
     assert not flag("In Spain, 79.99 euros.")
+
+
+def test_spoken_decimals_caption_as_digits():
+    from studio.make_video import display_tokens
+    cap = lambda t: " ".join(x[0] for x in display_tokens(t.split()))
+    assert cap("one point eight four billion by release day.") == "1.84 billion by release day."
+    assert cap("sixty eight point seven million views.") == "68.7 million views."
+    assert cap("three point one one.") == "3.11."
+    assert cap("It came out in nineteen ninety eight.") == "It came out in 1998."
+    assert cap("the point is fifty two players") == "the point is 52 players"
