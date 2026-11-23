@@ -179,6 +179,14 @@ def check_short(ep, key, title, segs, gameplay_available=False):
         blockers.append(f"footage: Short '{key}' segment {k + 1} uses {what}. No trailer images in our videos "
                         f"(owner, Nov 22 + Nov 23: lettering and modern cards only): make it a chart or a `text` / "
                         f"`list` / `quote` / `quiz` card, or use owner gameplay")
+    # Nov 23: on the GTA 6-style lettering cards a headline that wraps to 2 lines runs into the big lettering
+    from .. import vicecards
+    for k, x in enumerate(segs):
+        if (x.get("chart") or {}).get("type") in vicecards.DRAW:
+            for lab, hl in (("", x.get("headline")), (" (Spanish)", x.get("headline_es"))):
+                if hl and len(hl) > 19:
+                    warnings.append(f"headline: Short '{key}' segment {k + 1}{lab} headline '{hl}' wraps to 2 lines and "
+                                    f"runs into the lettering card; keep it to 19 characters")
     if segs:
         # Hook (Nov 22, owner: "research hooks to get the viewers' attention"): our 20 Shorts with retention data:
         # a question as the first sentence kept 35% (median 130 views) vs 60% for a statement (858). Best openers state
