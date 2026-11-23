@@ -114,6 +114,13 @@ def es_review(fetch=None, now=None):
             it["es"], it["es_status"] = slot, f"winner: {views} views at {int((now - pub).total_seconds() // 3600)} h (bar {bar})"
             taken.add(tuple(slot))
             notes.append(f"ES winner: {it['slug']} -> {slot[0]} {slot[1]} ({views} views, bar {bar})")
+            try:
+                segs = json.loads((ROOT / "episodes" / f"{it['slug']}.json").read_text()).get("short") or []
+                if segs and not all(x.get("audio_es") for x in segs):
+                    notes.append(f"  needs the Viral Adam Spanish voice first: one line per segment (CLAUDE.md), then "
+                                 f"python -m studio.make_video episodes/{it['slug']}.json --short --es")
+            except (OSError, ValueError):
+                pass
         else:
             it["es_status"] = f"skipped: {views} views at {int((now - pub).total_seconds() // 3600)} h (bar {bar})"
             notes.append(f"ES skipped: {it['slug']} ({views} views < {bar})")
