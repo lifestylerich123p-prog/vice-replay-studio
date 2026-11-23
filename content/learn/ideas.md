@@ -3,6 +3,14 @@
 Rules: re-check every fact on the day you use it (2+ sources), label estimates/reports, no story spoilers, no
 isolated cutscenes. Mark an idea USED (date + slug) when it ships. Researched by the main chat; sources inline.
 
+## From the Nov 23 investigation (content/learn/market-2026-11-23.md)
+1. BUILT: `gta6-5-things` (facts-only "5 things you didn't know", the week's #1 breakout format). Next: a Part 2 with 5
+   NEW checked facts, and with owner gameplay a "hidden details" version.
+2. **"GTA 6 has 61 cheats, but there's a catch"** (validated: a 31-subscriber channel got 30.8K with it). Re-check the
+   count and the catch (cheats unlock after the story?) with 2+ sources; list card of the catch.
+3. **IG carousel "Goodbye GTA 5: 13 years in numbers"** (rides the farewell-to-GTA-5 trend) next to the 13-years Short.
+4. Titles: lead with "GTA 6 vs GTA 5" wherever the Short is a comparison.
+
 ## Graph Shorts to make next (Nov 22, afternoon; numbers NOT checked yet: research each on the day, 2+ sources)
 Built on today's rules: statement hook with the number, 35-55 words, our own chart, vary the layout (see the chart
 column), English + Spanish (`chart_es`). Used so far: money (counter VS + bars), 99 club (counter + bars), trailer
