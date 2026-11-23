@@ -258,3 +258,11 @@
   channel **Fri Nov 27 11:00 AM**, added to content/learn/approved_queue.json. Owner asked for it "100% Cuban": the
   script uses Cuban slang (asere, ¡Azúcar!, está en talla, consorte) and the titles use real Cuban customs. The
   nightly run now re-renders any queued Short whose video is missing (studio/spend.py `renders_needed`).
+- 2026-11-23 (owner: "stop posting the video with trailer imaging, we're moving to the ones with lettering and more
+  modern style"): no trailer clips or official screenshots in ANY video (Shorts, long videos, Reels); cards/lettering
+  or owner gameplay only. Done: 9 scheduled footage uploads unscheduled and kept private, NOT deleted (EN guess-the-ride
+  I2VEKQUia8w, Dexter dOv6212lgj4, 60 FPS 6p9VtX-UaVU, Lucia y4jQTwLJwP4; ES guess-the-ride tAFvDxAzXIo, map-is-florida
+  WKYAhjMTLAs, Dexter vuOrdppswjY, 60 FPS n2kWpaarjxo, Lucia Q5mOKpMIgVY); the Lucia and top-3 rides waivers revoked
+  (rides taken out of approved_queue.json, Wed batch updated); 8 Instagram Reels of footage Shorts skipped; viewcheck now
+  blocks footage in long videos too and counts auto-picked stock footage; the Instagram queue skips footage Reels.
+  Still scheduled: darts EN+ES (11 AM) and the Spanish money chart (3:30 PM), all cards.

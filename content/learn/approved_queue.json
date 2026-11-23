@@ -64,19 +64,6 @@
    "approved": "Nov 22 9:15 AM"
   },
   {
-   "slug": "gta6-top-3-rides",
-   "item": "short",
-   "en": [
-    "2026-11-25",
-    "9:30 AM"
-   ],
-   "es": [
-    "2026-11-25",
-    "9:30 AM"
-   ],
-   "approved": "Nov 22 8 AM (Ok)"
-  },
-  {
    "slug": "gta6-trailer-views",
    "item": "short",
    "en": [
@@ -163,6 +150,22 @@
     "11:00 AM"
    ],
    "approved": "Nov 23 (APPROVE, title 1: ¿qué BOLÁ asere?; Everygen Viral Adam voice)"
+  }
+ ],
+ "paused": [
+  {
+   "slug": "gta6-top-3-rides",
+   "item": "short",
+   "en": [
+    "2026-11-25",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-25",
+    "9:30 AM"
+   ],
+   "approved": "Nov 22 8 AM (Ok)",
+   "paused": "2026-11-23: trailer images (owner: lettering/modern cards only); remake as cards to post"
   }
  ]
 }

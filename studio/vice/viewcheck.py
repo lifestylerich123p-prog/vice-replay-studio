@@ -121,6 +121,10 @@ def check(ep, gameplay_available=False, recent=None):
         if same:
             warnings.append(f"layout: Short '{key}' has the same picture order as {', '.join(same)} "
                             f"({' > '.join(mine)}). Vary it: a `line` chart for trends, bars first, a clip in the middle")
+    # long videos follow the same no-trailer-images rule (owner Nov 23: "stop posting the video with trailer imaging")
+    for k, what in footage_segments(ep, ep.get("segments"), gameplay_available):
+        blockers.append(f"footage: main video segment {k + 1} uses {what}. No trailer images in our videos (owner, "
+                        f"Nov 23): use chart / text / list / quote / quiz cards or owner gameplay")
     # "#8" in a title becomes a clickable YouTube hashtag (Nov 22: the Lucia title had "#8 you can't get now")
     titles = [ep.get("short_title"), *(ep.get("short_title_options") or []), (ep.get("short_es") or {}).get("title")]
     for sh in ep.get("shorts") or []:
@@ -134,6 +138,25 @@ def check(ep, gameplay_available=False, recent=None):
 def _uses_gameplay(segs):
     return any("media/gameplay" in str(x.get("media") or "") or any("media/gameplay" in str(y.get("media") or "")
                for y in x.get("shots") or []) for x in segs)
+
+
+def footage_segments(ep, segs, gameplay_available=False):
+    """[(index, what)] for segments that would show trailer clips or official screenshots: no `chart` card and no owner
+    gameplay. A segment with no media named still counts (the renderer picks stock footage for it). Owner, Nov 23:
+    "stop posting the video with trailer imaging, we're moving to the ones with lettering and more modern style"; an
+    episode `originality` note waives it only with the owner's new, explicit approval (none since Nov 23)."""
+    if ep.get("originality"):
+        return []
+    swap = gameplay_available and ep.get("use_gameplay", True) is not False
+    out = []
+    for k, x in enumerate(segs or []):
+        if x.get("chart"):
+            continue
+        files = [f for f in [x.get("media")] + [y.get("media") for y in x.get("shots") or []] if f]
+        if any("media/gameplay" in str(f) for f in files) or (swap and not x.get("keep_media")):
+            continue
+        out.append((k, str(files[0]).rsplit("/", 1)[-1] if files else "stock footage the renderer picks itself"))
+    return out
 
 
 def check_short(ep, key, title, segs, gameplay_available=False):
@@ -152,16 +175,10 @@ def check_short(ep, key, title, segs, gameplay_available=False):
     # with a strong hook"): no trailer clips or official screenshots in a Short, not even as cutaways. Our own charts
     # and cards (bars, counter, line, quote, list, text) or the owner's gameplay only; an owner-approved
     # `originality` note (Lucia montage, top-3 rides, approved before this rule) still waives it.
-    if not ep.get("originality"):
-        for k, x in enumerate(segs):
-            if x.get("chart"):
-                continue
-            files = [x.get("media")] + [y.get("media") for y in x.get("shots") or []]
-            stock = [f for f in files if f and "media/gameplay" not in str(f)]
-            if stock:
-                blockers.append(f"footage: Short '{key}' segment {k + 1} uses {str(stock[0]).rsplit('/', 1)[-1]}. Shorts are "
-                                f"facts only now (owner, Nov 22 evening): make it a chart or a `text` / `list` / `quote` "
-                                f"card, or use owner gameplay")
+    for k, what in footage_segments(ep, segs, gameplay_available):
+        blockers.append(f"footage: Short '{key}' segment {k + 1} uses {what}. No trailer images in our videos "
+                        f"(owner, Nov 22 + Nov 23: lettering and modern cards only): make it a chart or a `text` / "
+                        f"`list` / `quote` / `quiz` card, or use owner gameplay")
     if segs:
         # Hook (Nov 22, owner: "research hooks to get the viewers' attention"): our 20 Shorts with retention data:
         # a question as the first sentence kept 35% (median 130 views) vs 60% for a statement (858). Best openers state

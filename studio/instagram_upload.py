@@ -281,6 +281,16 @@ def run_queue(uid):
         if it.get("carousel"):
             cap = json.loads((ROOT / it["carousel"]).read_text()).get("caption", "")
         elif it.get("episode"):
+            from .vice import viewcheck
+            ep = json.loads((ROOT / it["episode"]).read_text())
+            item = it.get("item") or "short"
+            segs = ep.get("short") if item == "short" else next(
+                (x.get("segments") for x in ep.get("shorts", []) if x.get("id") == item), [])
+            if viewcheck.footage_segments(ep, segs) or ep.get("paused"):
+                it["posted"] = "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
+                QUEUE.write_text(json.dumps(q, indent=1, ensure_ascii=False))
+                print(f"skip {it['episode']}: trailer images (owner Nov 23 rule)")
+                continue
             cap = episode_reel(it["episode"], it.get("item"))[1]
         else:
             cap = it.get("caption", "")
