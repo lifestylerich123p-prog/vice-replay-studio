@@ -1,0 +1,209 @@
+{
+  "series": "Explained",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_playlist": "GTA 6 Shorts",
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "title": "GTA 6 vs GTA 5 on PS5: 30 FPS vs 60",
+  "slug": "gta6-vs-gta5-fps",
+  "short_title": "GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 #GTA6 #Shorts",
+    "GTA 6 is 30 FPS even on PS5 Pro. GTA 5 hits 60 #GTA6 #Shorts",
+    "GTA 6 runs at half the FPS of GTA 5 on PS5 #GTA6 #Shorts"
+  ],
+  "short_description": "GTA 5's PS5 version (Expanded & Enhanced, 2022) has a Performance mode that targets 60 FPS. GTA 6 runs at 30 FPS, even on PS5 Pro: Rockstar told Kotaku the Pro's CPU isn't powerful enough for the game's simulation, and 40 FPS is ruled out too. The Pro gets ray-traced shadows and a sharper picture instead. Is 30 enough for you?\n\nSources: PC Gamer, Wccftech, Insider Gaming, Beebom (GTA 6); GameSpot, Wccftech, Game Informer (GTA 5 on PS5).",
+  "short_es": {
+    "title": "GTA 6 corre a la MITAD de FPS que GTA 5 en PS5 😳 #GTA6 #Shorts",
+    "description": "La versión de GTA 5 para PS5 (Expanded & Enhanced, 2022) tiene un modo Rendimiento que apunta a 60 FPS. GTA 6 corre a 30 FPS, incluso en PS5 Pro: Rockstar le dijo a Kotaku que el procesador del Pro no alcanza para la simulación del juego, y 40 FPS también está descartado. El Pro trae sombras con ray tracing y una imagen más nítida. ¿Te alcanzan 30?",
+    "tags": [
+      "GTA 6 FPS",
+      "GTA 6 30 FPS",
+      "GTA 6 PS5 Pro",
+      "GTA 6 vs GTA 5",
+      "GTA 6 60 FPS",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "pinned_comment": "Is 30 FPS enough for you? YES or NO 👇",
+  "short_pinned_comment_es": "¿Te alcanzan 30 FPS? SÍ o NO 👇",
+  "tags": [
+    "GTA 6 FPS",
+    "GTA 6 30 FPS",
+    "GTA 6 60 FPS",
+    "GTA 6 PS5 Pro",
+    "GTA 6 vs GTA 5",
+    "GTA 5 PS5 60 FPS",
+    "GTA 6 performance mode",
+    "GTA 6",
+    "GTA VI",
+    "Grand Theft Auto VI"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#ps5pro",
+    "#gaming"
+  ],
+  "sources": [
+    "PC Gamer - Rockstar says a PS5 Pro is simply not powerful enough for 60 FPS GTA 6: https://www.pcgamer.com/games/grand-theft-auto/rockstar-says-a-ps5-pro-is-simply-not-powerful-enough-for-60-fps-gta-6-as-i-crack-a-smile-at-my-5090/",
+    "Wccftech - Rockstar: PS5 Pro CPU not powerful enough for GTA VI's complex simulation at 60 FPS: https://wccftech.com/rockstar-ps5-pro-cpu-not-powerful-grand-theft-auto-vi-complex-simulation-60-fps-hopes/",
+    "Insider Gaming - PS5 Pro's CPU upgrade is not enough for GTA 6 at 60 FPS: https://insider-gaming.com/ps5-pros-cpu-upgrade-is-not-enough-for-gta-6-at-60-fps/",
+    "Beebom - PS5 Pro not powerful enough to handle GTA 6 at 60 FPS: https://beebom.com/ps5-pro-not-powerful-enough-to-handle-gta-6-at-60-fps/",
+    "GameSpot - GTA 5 and GTA Online for PS5 and Xbox Series X|S graphics modes (Performance mode targets 60 FPS): https://www.gamespot.com/articles/new-gta-5-and-gta-online-for-ps5-and-xbox-series-x-s-details-screenshots-revealed/1100-6501259/",
+    "Wccftech - Grand Theft Auto V PS5/XSX display modes include Performance RT: https://wccftech.com/grand-theft-auto-v-ps5-xsx-performance-rt/",
+    "Game Informer - GTA 5 on PS5 will run at 4K and 60 FPS: https://www.gameinformer.com/2021/08/10/gta-5-on-ps5-will-run-at-4k-and-60-fps"
+  ],
+  "short": [
+    {
+      "headline": "60 VS 30",
+      "headline_es": "60 VS 30",
+      "text": "On PS5, GTA 5 runs at sixty FPS. GTA 6 runs at thirty.",
+      "text_es": "En PS5, GTA 5 corre a sesenta FPS. GTA 6, a treinta.",
+      "keep_media": true,
+      "chart": {
+        "type": "versus",
+        "a": [
+          "GTA 5 · PS5",
+          "60 FPS"
+        ],
+        "b": [
+          "GTA 6 · PS5",
+          "30 FPS"
+        ],
+        "winner": "a",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "versus",
+        "a": [
+          "GTA 5 · PS5",
+          "60 FPS"
+        ],
+        "b": [
+          "GTA 6 · PS5",
+          "30 FPS"
+        ],
+        "winner": "a",
+        "seed": 3
+      }
+    },
+    {
+      "headline": "NOT EVEN PS5 PRO",
+      "headline_es": "NI EN PS5 PRO",
+      "text": "Not even on PS5 Pro. Rockstar told Kotaku its processor can't handle the simulation.",
+      "text_es": "Ni siquiera en PS5 Pro. Rockstar le dijo a Kotaku que su procesador no alcanza para la simulación.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "ROCKSTAR TO KOTAKU",
+        "text": "PS5 Pro: still 30 FPS",
+        "pink": [
+          "30 FPS"
+        ],
+        "ticker": "the CPU isn't powerful enough for the simulation · 40 FPS ruled out too",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "ROCKSTAR A KOTAKU",
+        "text": "PS5 Pro: sigue en 30 FPS",
+        "pink": [
+          "30 FPS"
+        ],
+        "ticker": "el procesador no alcanza para la simulación · 40 FPS también descartado",
+        "seed": 3
+      }
+    },
+    {
+      "headline": "WHAT PRO GETS",
+      "headline_es": "LO QUE DA EL PRO",
+      "text": "The Pro looks sharper, not smoother: ray-traced shadows and a cleaner picture.",
+      "text_es": "El Pro se ve mejor, pero no más fluido: sombras con ray tracing y más nitidez.",
+      "keep_media": true,
+      "chart": {
+        "type": "list",
+        "title": "PS5 PRO IN GTA 6",
+        "bg": "vice",
+        "seed": 3,
+        "items": [
+          [
+            "Ray-traced shadows",
+            "YES"
+          ],
+          [
+            "Sharper picture",
+            "YES"
+          ],
+          [
+            "60 FPS",
+            "NO"
+          ]
+        ],
+        "good": [
+          "yes"
+        ]
+      },
+      "chart_es": {
+        "type": "list",
+        "title": "PS5 PRO EN GTA 6",
+        "bg": "vice",
+        "seed": 3,
+        "locale": "es",
+        "items": [
+          [
+            "Sombras con ray tracing",
+            "SÍ"
+          ],
+          [
+            "Imagen más nítida",
+            "SÍ"
+          ],
+          [
+            "60 FPS",
+            "NO"
+          ]
+        ],
+        "good": [
+          "sí"
+        ]
+      }
+    },
+    {
+      "headline": "IS 30 ENOUGH?",
+      "headline_es": "¿TE ALCANZAN 30?",
+      "text": "Is thirty enough for you? Tell me, because",
+      "text_es": "¿Te alcanzan treinta? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "IS 30 FPS",
+          "ENOUGH?"
+        ],
+        "pink": [
+          "ENOUGH?"
+        ],
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿TE ALCANZAN",
+          "30 FPS?"
+        ],
+        "pink": [
+          "30 FPS?"
+        ],
+        "seed": 3
+      }
+    }
+  ]
+}

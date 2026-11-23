@@ -463,6 +463,46 @@ def headline_frame(base, spec, t, w, h):
     return img.convert("RGB")
 
 
+def meter_frame(base, spec, t, w, h):
+    """A gauge: a half-circle track fills (pink to cyan) up to `value` of `max` while the number counts up, then the
+    label lands under it. For scores, percentages, "hype meters". {"value": 99, "max": 100, "label": "METACRITIC"}."""
+    img = base.copy().convert("RGBA")
+    x0, y0, x1, y1 = region(w, h)
+    d = ImageDraw.Draw(img)
+    vmax = float(spec.get("max", 100)) or 100.0
+    val = float(spec.get("value", 0))
+    p = _ease((t - 0.1) / 1.2)
+    r = min((x1 - x0) * 0.42, (y1 - y0) * 0.62)
+    cx, cy = (x0 + x1) / 2, y0 + (y1 - y0) * 0.70
+    box = [cx - r, cy - r, cx + r, cy + r]
+    width = max(8, int(r * 0.17))
+    d.arc(box, 180, 360, fill=(40, 22, 66), width=width)
+    frac = max(0.0, min(1.0, val / vmax)) * p
+    steps = max(1, int(60 * frac))
+    for k in range(steps):  # colored fill, pink on the left to cyan on the right
+        a0 = 180 + 180 * frac * k / steps
+        a1 = 180 + 180 * frac * (k + 1) / steps + 0.6
+        m = (a0 - 180) / 180
+        c = tuple(int(brand.PINK[i] + (brand.CYAN[i] - brand.PINK[i]) * m) for i in range(3))
+        d.arc(box, a0, a1, fill=c, width=width)
+    ang = math.radians(180 + 180 * frac)
+    tip = (cx + math.cos(ang) * r * 0.82, cy + math.sin(ang) * r * 0.82)
+    d.line([(cx, cy), tip], fill=brand.WHITE, width=max(4, int(r * 0.035)))
+    d.ellipse([cx - r * 0.06, cy - r * 0.06, cx + r * 0.06, cy + r * 0.06], fill=brand.WHITE)
+    dec = 1 if (val % 1) else 0
+    shown = f"{val * p:.{dec}f}" + str(spec.get("unit", ""))
+    num = lettering(shown, int(r * 0.42), int(r * 1.5), YELLOW, brand.PINK, brand.CYAN)
+    place(img, num, cx, cy - r * 0.38)
+    pl = (t - 1.2) / 0.25
+    if pl > 0 and spec.get("label"):
+        lab = lettering(str(spec["label"]).upper(), int((y1 - y0) * 0.11), int((x1 - x0) * 0.95))
+        place(img, lab, cx, cy + r * 0.20, scale=1 + 0.3 * (1 - _back(pl)), alpha=min(1.0, pl * 1.6))
+    if spec.get("sub") and t > 1.5:
+        _small(ImageDraw.Draw(img), str(spec["sub"]), cx, y1 - (y1 - y0) * 0.04, int(w * 0.038),
+               fill=(230, 220, 245), max_w=x1 - x0)
+    return img.convert("RGB")
+
+
 def hits(spec, dur):
     """When each word, number or item lands on the card (seconds into the segment): the renderer puts a soft pop
     there. A cover segment (first frame shows everything) skips the first beat, which the hook impact covers."""
@@ -473,6 +513,8 @@ def hits(spec, dur):
         return out[1:] if spec.get("cover") else out
     if kind == "countdown":
         return [0.2, 0.52]
+    if kind == "meter":
+        return [1.3, 1.45]
     if kind == "versus":
         return [0.3, 0.6, 0.85] + ([dur * 0.6] if spec.get("winner") else [])
     if kind == "tier":
@@ -486,5 +528,5 @@ def hits(spec, dur):
     return []
 
 
-DRAW = {"kinetic": kinetic_frame, "countdown": countdown_frame, "versus": versus_frame, "tier": tier_frame,
+DRAW = {"kinetic": kinetic_frame, "countdown": countdown_frame, "meter": meter_frame, "versus": versus_frame, "tier": tier_frame,
         "headline": headline_frame}

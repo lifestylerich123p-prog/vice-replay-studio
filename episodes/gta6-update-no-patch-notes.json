@@ -1,0 +1,199 @@
+{
+  "series": "Explained",
+  "format": "news",
+  "mood": "news",
+  "use_gameplay": false,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_playlist": "GTA 6 Shorts",
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "title": "GTA 6 Got 3 Updates and Zero Patch Notes",
+  "slug": "gta6-update-no-patch-notes",
+  "short_title": "GTA 6 got 3 updates and zero patch notes #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 got 3 updates and zero patch notes #GTA6 #Shorts",
+    "GTA 6 update today: Rockstar won't say what changed #GTA6 #Shorts",
+    "GTA 6's new update has no patch notes (again) #GTA6 #Shorts"
+  ],
+  "short_description": "GTA 6 update 1.002.002 started rolling out on Nov 23, 2026 (about 600 MB on PS5; Xbox players report 1.2-1.6 GB). It's the third update after 1.002.000 (Nov 13, about 1.07 GB on PS5) and 1.002.001 (Nov 16, about 602 MB), and Rockstar hasn't published patch notes for any of them. What do you think it fixed?\n\nSources: MP1st, PlayStation LifeStyle, Sportskeeda, GGRecon, Of Zen and Computing, Forbes.",
+  "short_es": {
+    "title": "GTA 6 recibió 3 updates... y CERO notas 🤐 #GTA6 #Shorts",
+    "description": "La actualización 1.002.002 de GTA 6 empezó a salir el 23 de noviembre de 2026 (unos 600 MB en PS5; en Xbox reportan 1,2-1,6 GB). Es la tercera, después de la 1.002.000 (13 de nov., unos 1,07 GB en PS5) y la 1.002.001 (16 de nov., unos 602 MB), y Rockstar no ha publicado notas de ninguna. ¿Qué crees que arregló?",
+    "tags": [
+      "GTA 6 update",
+      "GTA 6 actualización",
+      "GTA 6 parche",
+      "GTA 6 1.002.002",
+      "GTA 6 PS5",
+      "GTA 6 noticias",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "pinned_comment": "What do you think the update fixed? 👇",
+  "short_pinned_comment_es": "¿Qué crees que arregló el update? 👇",
+  "tags": [
+    "GTA 6 update",
+    "GTA 6 patch notes",
+    "GTA 6 1.002.002",
+    "GTA 6 new update",
+    "GTA 6 PS5 update",
+    "GTA 6 news",
+    "GTA 6",
+    "GTA VI",
+    "Grand Theft Auto VI",
+    "Rockstar Games"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gta6news",
+    "#rockstar"
+  ],
+  "sources": [
+    "MP1st - GTA 6 update 1.002.002 released on November 23: https://mp1st.com/title-updates-and-patches/gta-6-first-update-1-002-002-released-on-november-23",
+    "PlayStation LifeStyle - GTA 6 PS5 update 1.002.002 rolling out now (Nov 23, 2026): https://www.playstationlifestyle.net/2026/11/23/gta-6-update-1002002-november-23-2026-patch-notes",
+    "Sportskeeda - GTA 6 new update today (November 23): patch notes? download size: https://www.sportskeeda.com/esports/news-gta-6-new-update-today-november-23-are-patch-notes-download-size",
+    "GGRecon - GTA 6 gets a 1GB update days before launch (1.002.000): https://www.ggrecon.com/articles/gta-6-update-1-002-before-launch/",
+    "Of Zen and Computing - GTA 6 patch notes and updates tracker (1.002.001, 602.5 MB on PS5): https://www.ofzenandcomputing.com/gta-6-patch-notes-and-updates-tracker/",
+    "Forbes - GTA 6 just got a second update and Rockstar still isn't saying what it changes: https://www.forbes.com/sites/brianmazique/2026/11/17/gta-6-just-got-a-second-update-before-anyone-can-play-it-and-rockstar-still-isnt-saying-what-it-changes/"
+  ],
+  "short": [
+    {
+      "headline": "3 UPDATES, 0 NOTES",
+      "headline_es": "3 UPDATES, 0 NOTAS",
+      "text": "GTA 6 just got its third update. Still zero patch notes.",
+      "text_es": "GTA 6 acaba de recibir su tercera actualización. Y sigue sin notas.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "3 UPDATES",
+          "0 PATCH NOTES"
+        ],
+        "pink": [
+          "0 PATCH NOTES"
+        ],
+        "seed": 1
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "3 UPDATES",
+          "0 NOTAS"
+        ],
+        "pink": [
+          "0 NOTAS"
+        ],
+        "seed": 1
+      }
+    },
+    {
+      "headline": "NEW TODAY",
+      "headline_es": "NUEVO HOY",
+      "text": "The new one is rolling out today: about six hundred megabytes on PS5.",
+      "text_es": "La nueva sale hoy: unos seiscientos megas en PS5.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "NEW TODAY",
+        "text": "GTA 6 update 1.002.002",
+        "pink": [
+          "1.002.002"
+        ],
+        "ticker": "PS5 · about 600 MB · rolling out now · no patch notes",
+        "seed": 1
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "NUEVO HOY",
+        "text": "Update 1.002.002 de GTA 6",
+        "pink": [
+          "1.002.002"
+        ],
+        "ticker": "PS5 · unos 600 MB · ya disponible · sin notas",
+        "seed": 1
+      }
+    },
+    {
+      "headline": "EVERY UPDATE",
+      "headline_es": "CADA UPDATE",
+      "text": "That's three since November thirteenth, and Rockstar hasn't explained one.",
+      "text_es": "Son tres desde el trece de noviembre, y Rockstar no ha explicado ninguna.",
+      "keep_media": true,
+      "chart": {
+        "type": "list",
+        "title": "GTA 6 UPDATES ON PS5",
+        "bg": "vice",
+        "seed": 1,
+        "items": [
+          [
+            "Nov 13 · 1.002.000",
+            "1.07 GB"
+          ],
+          [
+            "Nov 16 · 1.002.001",
+            "602 MB"
+          ],
+          [
+            "Nov 23 · 1.002.002",
+            "~600 MB"
+          ]
+        ]
+      },
+      "chart_es": {
+        "type": "list",
+        "title": "UPDATES DE GTA 6 EN PS5",
+        "bg": "vice",
+        "seed": 1,
+        "locale": "es",
+        "items": [
+          [
+            "13 nov · 1.002.000",
+            "1,07 GB"
+          ],
+          [
+            "16 nov · 1.002.001",
+            "602 MB"
+          ],
+          [
+            "23 nov · 1.002.002",
+            "~600 MB"
+          ]
+        ]
+      }
+    },
+    {
+      "headline": "WHAT DID IT FIX?",
+      "headline_es": "¿QUÉ ARREGLÓ?",
+      "text": "What do you think it fixed? Tell me, because",
+      "text_es": "¿Qué crees que arregló? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "WHAT DID",
+          "IT FIX?"
+        ],
+        "pink": [
+          "IT FIX?"
+        ],
+        "seed": 1
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿QUÉ",
+          "ARREGLÓ?"
+        ],
+        "pink": [
+          "ARREGLÓ?"
+        ],
+        "seed": 1
+      }
+    }
+  ]
+}

@@ -115,7 +115,8 @@ Per-segment keys (all optional) in `short` / `segments`:
     "sub": "..."}` (listicle items: "4 secrets", "5 things"), `{"type": "versus", "a": ["GTA 5", "32 HOURS"], "b":
     ["GTA 6", "80 HOURS"], "winner": "b"}` (VS / this-or-that; the winner lights up at 60%), `{"type": "tier", "title":
     "...", "rows": [["S", ["GTA 6 · 99"]], ["A", []]], "static": ["B"]}` (fill one row per segment; `static` rows were
-    filled earlier) and `{"type": "headline", "kicker": "PLAYERS REPORT", "text": "...", "ticker": "..."}` (news; put
+    filled earlier), `{"type": "meter", "value": 99, "max": 100, "label": "Metacritic", "sub": "..."}` (a gauge
+    that fills while the number counts up: scores, percentages) and `{"type": "headline", "kicker": "PLAYERS REPORT", "text": "...", "ticker": "..."}` (news; put
     REPORTEDLY / LEAK in the kicker for anything unconfirmed). Use one `seed` per Short (same sky in every segment).
     Any older chart can add `"bg": "vice"`. Research behind it (Nov 23): animate only the key words, change the card
     every 2-4 s, tier lists / countdown listicles / quizzes / VS drive comments (examples: episodes/

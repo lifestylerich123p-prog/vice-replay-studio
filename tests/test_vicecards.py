@@ -15,7 +15,8 @@ def test_every_card_draws_a_full_frame():
              {"type": "countdown", "n": 2, "of": 4, "label": "Bigfoot is real", "sub": "the Skunk Ape"},
              {"type": "versus", "a": ["GTA 5", "32 H"], "b": ["GTA 6", "80 H"], "winner": "b"},
              {"type": "tier", "title": "T", "rows": [["S", ["a", "b"]], ["A", "c"], ["B", []]], "static": ["A"]},
-             {"type": "headline", "kicker": "PLAYERS REPORT", "text": "A real Easter egg", "ticker": "tower"}]
+             {"type": "headline", "kicker": "PLAYERS REPORT", "text": "A real Easter egg", "ticker": "tower"},
+             {"type": "meter", "value": 99, "max": 100, "label": "Metacritic", "sub": "tied for the highest"}]
     for spec in specs:
         for t in (0.0, 1.0, 2.8):
             im = _frame(spec, t)
