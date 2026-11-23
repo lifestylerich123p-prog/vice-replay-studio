@@ -70,8 +70,8 @@
       "keep_media": true,
       "chart": {
         "type": "headline",
-        "kicker": "TAKE-TWO CEO",
-        "text": "No holiday discount for GTA 6",
+        "kicker": "TAKE-TWO CEO ON GTA 6",
+        "text": "No holiday discount",
         "pink": [
           "DISCOUNT"
         ],
@@ -82,7 +82,7 @@
       "chart_es": {
         "type": "headline",
         "kicker": "CEO DE TAKE-TWO",
-        "text": "Sin descuento navideño para GTA 6",
+        "text": "Sin descuento navideño",
         "pink": [
           "DESCUENTO"
         ],
@@ -94,7 +94,7 @@
     {
       "headline": "STILL $79.99",
       "headline_es": "SIGUE EN $79.99",
-      "text": "It stays seventy nine ninety nine. Only stores could cut their own price.",
+      "text": "It stays at seventy nine dollars and ninety nine cents. Only stores could cut their own price.",
       "text_es": "Sigue en setenta y nueve noventa y nueve dólares. Solo las tiendas podrían bajarlo.",
       "keep_media": true,
       "chart": {

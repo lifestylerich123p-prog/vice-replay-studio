@@ -399,7 +399,8 @@ def _source_line(img, spec, w, h):
     while fn.getlength(label) > (x1 - x0) and size > 12:
         size -= 1
         fn = brand.font(brand.BODY_FONT, size)
-    y = y1 + int(h * (0.012 if h > w else 0.02))
+    # vertical: above the card (two-line captions reach up to ~60% of the height); 16:9: under it
+    y = y0 - int(size * 1.55) if h > w else y1 + int(h * 0.02)
     d.text(((x0 + x1) / 2 - fn.getlength(label) / 2, y), label, font=fn, fill=(200, 190, 220))
     return img
 

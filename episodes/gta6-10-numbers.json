@@ -170,14 +170,14 @@
     },
     {
       "headline": "NUMBER 2",
-      "text": "Number two: seventy nine ninety nine. The standard price. Ultimate is ninety nine ninety nine.",
+      "text": "Number two: seventy nine dollars and ninety nine cents. That's the standard price. Ultimate costs twenty more.",
       "keep_media": true,
       "chart": {
         "type": "countdown",
         "n": 2,
         "of": 10,
         "label": "$79.99",
-        "sub": "standard · Ultimate $99.99",
+        "sub": "standard · Ultimate is $20 more",
         "prefix": true,
         "seed": 0
       },

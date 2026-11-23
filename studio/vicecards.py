@@ -483,7 +483,7 @@ def meter_frame(base, spec, t, w, h):
     val = float(spec.get("value", 0))
     p = _ease((t - 0.1) / 1.2)
     r = min((x1 - x0) * 0.42, (y1 - y0) * 0.62)
-    cx, cy = (x0 + x1) / 2, y0 + (y1 - y0) * 0.70
+    cx, cy = (x0 + x1) / 2, y0 + (y1 - y0) * 0.64
     box = [cx - r, cy - r, cx + r, cy + r]
     width = max(8, int(r * 0.17))
     d.arc(box, 180, 360, fill=(40, 22, 66), width=width)
@@ -508,7 +508,7 @@ def meter_frame(base, spec, t, w, h):
         lab = lettering(str(spec["label"]).upper(), int((y1 - y0) * 0.11), int((x1 - x0) * 0.95))
         place(img, lab, cx, cy + r * 0.20, scale=1 + 0.3 * (1 - _back(pl)), alpha=min(1.0, pl * 1.6))
     if spec.get("sub") and t > 1.5:
-        _small(ImageDraw.Draw(img), str(spec["sub"]), cx, y1 - (y1 - y0) * 0.04, int(w * 0.038),
+        _small(ImageDraw.Draw(img), str(spec["sub"]), cx, cy + r * 0.20 + (y1 - y0) * 0.14, int(min(w, h) * 0.038),
                fill=(230, 220, 245), max_w=x1 - x0)
     return img.convert("RGB")
 
