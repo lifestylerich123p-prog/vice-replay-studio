@@ -4,6 +4,24 @@ description: The automated daily run - pick today's topic, make the video + Shor
 You are running the daily Vice Replay automation. Nobody is watching live, so don't ask questions:
 make sensible choices, finish the whole run, and explain your choices in the final report.
 
+**NOV 23 RULES (owner; these win over anything below that conflicts):**
+1. **No trailer clips or official screenshots in ANY video** (Shorts, long videos, Reels). Pictures are our GTA 6-style
+   lettering cards (`studio/vicecards.py`: kinetic, countdown, versus, tier, meter, headline, plus charts with
+   `"bg": "vice"`; see content/episode-format.md and episodes/gta6-tier-list-critics.json) or the owner's gameplay. The
+   publish check blocks footage. Official images stay only for thumbnails, site cards and IG carousels.
+2. **Every Short:** a statement hook on a kinetic card (the first frame is the cover), a `src` on the card with the main
+   fact, one verdict line ("our take: ..."), a card mix that differs from the last uploads, headlines of 19 characters
+   or less, one `seed` per Short, prices spoken as "seventy nine dollars and ninety nine cents". Facts in 2+ sources.
+   YouTube (July 2026) doesn't pay "generic, repetitive content easily made with templates": vary formats and angles.
+3. **Slots:** 9:30 / 11:00 / 12:30 PM ET on both channels (evenings only for big news). `python -m studio.quota` counts
+   the approved queue as booked. Deliver for approval; once the owner approves in the main chat, the Short goes into
+   content/learn/approved_queue.json and the daily 3:45 AM run uploads it after the quota reset.
+4. **Spanish channel:** at least one Spanish-only angle a day (local prices, Latin American interest, Cuban/Mexican
+   style), not only translations; Spanish slots lean 12:30 PM ET (lunch in Mexico, evening in Spain).
+5. **Long videos:** only the weekly hub (Sunday, 16:9 lettering cards like episodes/gta6-10-numbers.json); no daily long
+   video. The "Wildest Moment" gameplay Short stays when the owner uploads gameplay (segment 1 = a kinetic card).
+6. Instagram captions say "AI narration" automatically; remind the owner to switch on TikTok's AI label.
+
 00. **Health first (free)**: `python -m studio.doctor --fix`. If it reports 🔴 (YouTube connection failing or about to
    expire, website down), put that in bold at the very top of the final message with the fix.
 0. **Gameplay + "Wildest Moment of the Day"**: run `python -m studio.gameplay` (pulls the owner's new recordings from
@@ -14,7 +32,7 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    at 3 frames of it, and write 3-4 segments that tell what happens in the owner's own words-style ("watch what
    happens when..."), with a hook in 2 seconds, a payoff, and the follow badge. Set `"keep_media": true` and that
    clip as `media` on segments 2-4 (with `media_start` offsets so it plays through), but keep segment 1 calm (no
-   shooting/gore in the first 7 seconds: use a calm clip or official picture). Title like "Wildest GTA 6 moment
+   shooting/gore in the first 7 seconds: use a calm clip or a kinetic lettering card). Title like "Wildest GTA 6 moment
    today: <what happened> #GTA6 #Shorts". Never a cutscene, ending or story moment; no in-game radio. Series name in
    the description: "Wildest Moment of the Day #<n>" (count previous `wild` Shorts in content/learn/uploads.json + 1).
 0b. **Learn first**: run `python -m studio.learn` and `python -m studio.retention` (free; read `content/learn/retention.md`:

@@ -21,7 +21,7 @@ doesn't pass every rule is NOT auto-posted.
    - +2 published in the last 3 hours (+1 if 3-6 hours)
    - +2 huge reach (affects every player, or a top streamer, or a record number)
    - +2 people are searching it now (it, or its topic, shows in today's `market-*.md`, or many outlets cover it)
-   - +1 we have a strong visual for it (official screenshot or gameplay highlight)
+   - +1 it has a clear number, quote or verdict we can put on a lettering card (or a gameplay highlight)
 4. **Auto-post ONLY if all are true**: score >= 8; confirmed by 2+ reputable sources; no story spoilers; not a
    topic we already posted (check our uploads' titles and `content/log.md`); fewer than 2 breaking auto-posts
    in the last 24 hours; and it isn't about a real person's private life, a tragedy, or anything legal/medical.
@@ -43,6 +43,8 @@ upload only if it reports no blockers (rights, facts, black frames, captions vs 
 to main is refused, also send the episode JSON + the log line to the main chat (fire_trigger trig_01XX9xXTp8xfb4i3yYUFP9uF)
 so the repo log stays complete.
 
-**Nov 22 (owner): original first.** Even breaking news needs at least one `chart` segment with the key checked number
-(e.g. a `counter` of the record, a `bars` leaderboard) — `studio.vice publish` blocks trailer-only narration. Voice: the
-channel voice in config/channel.json (af_heart). Trailer clips only as 1-2 s cutaways.
+**Nov 22-23 (owner): original first, no trailer images.** Build the Short from GTA 6-style lettering cards
+(`studio/vicecards.py`): a kinetic hook card, a `headline` card (kicker CONFIRMED / REPORTEDLY), a `meter`/`versus`/`bars`
+card with the key checked number and a `src`, then a kinetic verdict/question. No trailer clips or official screenshots at
+all (`studio.vice publish` blocks them). Voice: the channel voice in config/channel.json (af_heart). Rules in
+content/episode-format.md (headlines of 19 characters or less, prices spoken in dollars and cents).

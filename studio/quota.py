@@ -174,13 +174,32 @@ def scheduled(tok=None):
     return out
 
 
-def free_slots(sched, days=3):
-    """[(date, [free slot labels])] for today and the next days; a slot counts as taken by a video within 45 min."""
+def reserved(lang="en"):
+    """{date: [ET datetime]} of approved Shorts still waiting in content/learn/approved_queue.json (Nov 23: the free-slot
+    list showed Tue/Wed as empty while 10 approved Shorts were booked for them)."""
+    try:
+        from .spend import pending
+        items = pending()
+    except Exception:
+        return {}
+    out = {}
+    for it, ne, ns in items:
+        slot = it.get("en") if lang == "en" and ne else it.get("es") if lang == "es" and ns else None
+        if slot:
+            when = dt.datetime.combine(dt.date.fromisoformat(slot[0]), dt.datetime.strptime(slot[1], "%I:%M %p").time(), ET)
+            out.setdefault(when.date(), []).append(when)
+    return out
+
+
+def free_slots(sched, days=3, lang="en"):
+    """[(date, [free slot labels])] for today and the next days; a slot counts as taken by a video within 45 min,
+    scheduled on YouTube or booked in the approved queue."""
     today = dt.datetime.now(ET).date()
+    booked = reserved(lang)
     out = []
     for k in range(days):
         d = today + dt.timedelta(days=k)
-        taken = sched.get(d, [])
+        taken = sched.get(d, []) + booked.get(d, [])
         free = []
         for s in slots_for(d):
             at = dt.datetime.combine(d, dt.datetime.strptime(s, "%I:%M %p").time(), ET)
