@@ -67,3 +67,13 @@ def test_pops_follow_the_lettering():
     import tempfile, pathlib
     out = sound.sfx_track(pathlib.Path(tempfile.mkdtemp()) / "s.wav", 2.0, [1.0], [0.0], pops=[0.5, 1.5])
     assert pathlib.Path(out).exists()
+
+
+def test_year_like_prices_are_flagged():
+    from studio.vice import viewcheck
+    mk = lambda t: {"short_title": "GTA 6 x", "short": [{"text": t, "chart": {"type": "kinetic", "lines": ["A"], "src": "s"}}]}
+    flag = lambda t: [w for w in viewcheck.check(mk(t), recent=[])[1] if w.startswith("captions")]
+    assert flag("It stays seventy nine ninety nine.")
+    assert not flag("It came out in nineteen ninety eight.")
+    assert not flag("It stays at seventy nine dollars and ninety nine cents.")
+    assert not flag("In Spain, 79.99 euros.")

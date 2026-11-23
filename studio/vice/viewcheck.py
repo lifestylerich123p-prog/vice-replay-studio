@@ -185,6 +185,21 @@ def check_short(ep, key, title, segs, gameplay_available=False):
                                                              (x.get("chart") or {}).get("note") for x in segs):
         warnings.append(f"originality: Short '{key}' shows no source on screen; add \"src\": \"VGC · Metacritic\" to "
                         f"the card with the main fact (and say your verdict in the script)")
+    # Nov 23: "seventy nine ninety nine" is read like a year by the caption step and shows "7,999"; say prices as
+    # "seventy nine dollars and ninety nine cents"
+    try:
+        from ..make_video import display_tokens
+        for k, x in enumerate(segs):
+            words = (x.get("text") or "").split()
+            for tok, a, b, isnum in display_tokens(words):
+                digits = re.sub(r"[^0-9]", "", tok)
+                scaled = any(re.sub(r"[^a-z]", "", w.lower()) in ("hundred", "thousand") for w in words[a:b + 1])
+                spoken = all(re.sub(r"[^\w]", "", w).isalpha() for w in words[a:b + 1])
+                if isnum and spoken and len(digits) == 4 and not 1900 <= int(digits) <= 2099 and not scaled:
+                    warnings.append(f"captions: Short '{key}' segment {k + 1} shows '{tok}' on screen (spoken like a "
+                                    f"year); for a price say 'seventy nine dollars and ninety nine cents'")
+    except ImportError:
+        pass
     # Nov 23: on the GTA 6-style lettering cards a headline that wraps to 2 lines runs into the big lettering
     from .. import vicecards
     for k, x in enumerate(segs):

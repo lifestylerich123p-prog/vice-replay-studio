@@ -193,3 +193,12 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   check before using it.
 - Put per-segment voice files in `media/voice/<slug>/` and point `audio_es` (or `audio`) at them; the renderer uses them
   instead of Kokoro and the rights gate checks them (`everygen-voice` in rights/registry.json).
+
+## Nov 23, 2026: lettering Shorts, captions and layout
+- Captions read "seventy nine ninety nine" like a year and showed "7,999"; the voice reads "$79.99" as "1 dollar 79 99".
+  Say prices as "seventy nine dollars and ninety nine cents" (captions: "79 dollars and 99 cents"). The publish check
+  now warns on any spoken number that becomes a 4-digit non-year.
+- Two-line captions reach up to ~60% of a Short's height: on vertical Shorts the source line sits ABOVE the card;
+  keep card text out of the bottom ~8% of the card area.
+- 16:9 long videos: the VS card goes side by side; size lettering by the short side of the frame.
+- Headlines over 19 characters wrap and hit the lettering (warned). One `seed` per Short keeps the same sky.
