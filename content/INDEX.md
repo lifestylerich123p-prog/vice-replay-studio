@@ -34,6 +34,7 @@ Read this first instead of searching the repo.
 | ? | gta6-ranking-rides | Short | Ranking the 6 Rides in Rockstar's GTA 6 Gameplay | short: QzFhpT4dNVQ |
 | ? | gta6-race-hud-details | Short | GTA 6 Races: Look at the Corner of the Screen | short: sP1fq11WMmw |
 | ? | gta6-precio-por-pais-es | Short | GTA 6: cuánto cuesta en cada país | - |
+| ? | gta6-patch-notes-7-fixes | Short | Rockstar Finally Posted GTA 6 Patch Notes: 7 Fixes | - |
 | ? | gta6-no-darts | Short | GTA 6 Has No Darts. Rockstar Says Why | short: JYYfpuj-jwQ |
 | ? | gta6-no-60fps-ps5-pro | Short | GTA 6 Has No 60 FPS Mode, Not Even on PS5 Pro | short: 6p9VtX-UaVU |
 | ? | gta6-money-chart-es | Short | GTA 6 hizo 5 VECES el lanzamiento de GTA 5... con trampa | - |
