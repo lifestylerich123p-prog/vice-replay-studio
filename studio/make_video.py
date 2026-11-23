@@ -940,18 +940,9 @@ def main():
                                           rate, slug)
     out_dir = ROOT / "output" / slug
     if not vertical:
-        # Thumbnails: 3 versions for YouTube Studio's "Test & Compare" (A/B/C). Same text, different picture:
-        # A = thumbnail.image (or the first screenshot used in the video), B = another screenshot, C = neon art.
-        th = ep.get("thumbnail", {})
-        pics = [str(base / th["image"])] if th.get("image") else []
-        pics += [s["media"] for s in ep["segments"] if s.get("media") and Path(s["media"]).suffix.lower() in IMAGE_EXT]
-        pics += [str(base / p) for p in th.get("images", [])]
-        pics = list(dict.fromkeys(str(Path(x).resolve()) for x in pics))  # same file, different spelling -> once
-        backgrounds = (pics[:2] + [None]) if pics else [None]
-        for label, bg in zip("abc", backgrounds):
-            brand.thumbnail(th.get("line1", ep["title"]), th.get("line2", ""), th.get("tag", ""),
-                            out_dir / f"thumbnail-{label}.jpg", bg_image=bg)
-        shutil.copy(out_dir / "thumbnail-a.jpg", out_dir / "thumbnail.jpg")
+        # Thumbnails A/B/C for YouTube Studio's "Test & Compare" (studio/thumbs.py; `thumbnail.variants` test ideas)
+        from . import thumbs
+        thumbs.render(ep, base, out_dir)
         # YouTube chapters need: first at 0:00, at least 3, each >= 10s
         ch = []
         for s, n in chapters:

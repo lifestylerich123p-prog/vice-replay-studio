@@ -19,6 +19,9 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
    - `thumbnail`: `line1` (1-2 words, white), `line2` (2-3 words, pink slab), `tag` (2-4 words), `image`
      (the best screenshot for it). The render makes thumbnail-a/b/c.jpg with different pictures for
      YouTube Studio's Test & Compare (up to 3 thumbnails per video).
+     Nov 23: add `"variants": [{line1, line2, tag, image}, {...}]` so B and C test different IDEAS (a big number,
+     a contrast) instead of the same words on new pictures; `"image": "vice:2"` = our Vice City set. Rebuild only the
+     thumbnails with `python -m studio.thumbs episodes/<slug>.json`.
      Thumbnail text must not repeat the title word for word.
    - Every Short's last segment automatically shows a "FOLLOW FOR DAILY GTA 6" badge (Spanish: "SÍGUENOS: GTA 6 A
      DIARIO"); subscribers are the channel's bottleneck for monetization. Set `"follow_cta": false` to turn it off.
