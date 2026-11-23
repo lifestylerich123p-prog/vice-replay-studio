@@ -1,0 +1,41 @@
+{
+ "slug": "gta6-patch-notes-7-fixes",
+ "style": "vice",
+ "seed": 6,
+ "caption": "GTA 6 finally has patch notes 🛠️ Update 1.002.002 (Nov 23) fixes 7 things, after two updates with no notes at all.\n\nCrashes, autosaves, phone calls that wouldn't trigger, a wanted level you couldn't lose, stuck weather, the gym deadlift bar and fences. Still no 60 FPS mode.\n\nWhat should Rockstar fix next? 👇\n\nSources: Rockstar's notes as reported by VICE, Dot Esports, Comicbook, RockstarINTEL.\n\nFan page, not affiliated with Rockstar Games.\n\n#gta6 #gtavi #gta6update #patchnotes #gaming #ps5 #xbox",
+ "first_comment": "Full patch notes (EN + ES) on vicereplay.com 🔗",
+ "cover": {
+  "title": "GTA 6 finally has patch notes",
+  "subtitle": "Update 1.002.002: 7 fixes. Swipe."
+ },
+ "tips": [
+  {
+   "title": "Crashes",
+   "text": "Several problems that made the game crash are fixed."
+  },
+  {
+   "title": "Autosave",
+   "text": "Autosaves that didn't work correctly now save."
+  },
+  {
+   "title": "Phone calls",
+   "text": "Calls that never came, including ones you need to move the story on, now trigger."
+  },
+  {
+   "title": "Wanted level",
+   "text": "No more wanted level you couldn't lose."
+  },
+  {
+   "title": "Weather",
+   "text": "Weather no longer gets stuck for hours."
+  },
+  {
+   "title": "Gym + fences",
+   "text": "The gym deadlift bar works, and partners hand over the bags you sell to fences."
+  }
+ ],
+ "cta": {
+  "title": "What should they fix next?",
+  "text": "Comment below. Still no 60 FPS mode on consoles.\nFollow @vice.replaytv for GTA 6 every day."
+ }
+}

@@ -262,6 +262,11 @@
   "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
  },
  {
+  "at": "2026-11-25 15:00",
+  "carousel": "content/carousels/gta6-patch-notes-7-fixes.json",
+  "note": "Nov 23: patch notes 1.002.002, 7 fixes (news; the Wed 3 PM queue run posts it)"
+ },
+ {
   "at": "2026-11-25 17:30",
   "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
   "item": "news",
@@ -274,6 +279,11 @@
   "item": "short",
   "note": "17:30 keeps Sunday's posts 2.5 h+ apart | moved Nov 22 to Thu 11:05 AM with the YouTube Short (5 PM slot data: 2-6 PM median 2.7 v/h vs 6-11 AM 16)",
   "posted": "skipped: YouTube Short unscheduled Nov 22 (owner: replace weak ones with graph/evidence Shorts)"
+ },
+ {
+  "at": "2026-11-26 15:00",
+  "carousel": "content/carousels/gta-tier-list-sales.json",
+  "note": "Nov 23: every GTA ranked by sales (Thanksgiving afternoon)"
  },
  {
   "at": "2026-11-27 15:00",
