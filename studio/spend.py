@@ -83,8 +83,26 @@ def commands(it, ne, ns):
     return cmds
 
 
+def renders_needed(it, ne, ns):
+    """Short videos the upload needs that aren't on disk (output/ isn't committed; a fresh container has none).
+    Everything to rebuild them is committed: the episode, its cards and any voice files in media/voice/."""
+    slug, key = it["slug"], it.get("item", "short")
+    if key != "short":
+        return []
+    out = ROOT / "output" / slug
+    need = []
+    if ne and not (out / f"{slug}-short.mp4").exists():
+        need.append(["python", "-m", "studio.make_video", f"episodes/{slug}.json", "--short"])
+    if ns and not (out / f"{slug}-short-es.mp4").exists():
+        need.append(["python", "-m", "studio.make_video", f"episodes/{slug}.json", "--short", "--es"])
+    return need
+
+
 def upload():
     for it, ne, ns in plan():
+        for cmd in renders_needed(it, ne, ns):
+            print("$", " ".join(cmd), "(video missing: rendering it first)")
+            subprocess.run(cmd, cwd=ROOT)
         gate = subprocess.run(["python", "-m", "studio.vice", "publish", f"episodes/{it['slug']}.json"],
                               cwd=ROOT, capture_output=True, text=True)
         out = gate.stdout + gate.stderr

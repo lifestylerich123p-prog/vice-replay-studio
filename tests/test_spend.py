@@ -17,3 +17,10 @@ def test_pending_skips_what_is_already_up_and_sorts_by_slot():
     firsts = [min(x for x in (it.get("en"), it.get("es")) if x) for it, _, _ in items]
     assert all(ne or ns for _, ne, ns in items)
     assert len(firsts) == len(items)
+
+
+def test_missing_videos_get_rendered_before_upload():
+    it = {"slug": "no-such-slug", "item": "short", "es_only": True, "es": ["2026-11-27", "11:00 AM"]}
+    assert spend.renders_needed(it, False, True) == [["python", "-m", "studio.make_video", "episodes/no-such-slug.json",
+                                                      "--short", "--es"]]
+    assert spend.renders_needed(dict(it, item="tips"), False, True) == []

@@ -153,6 +153,16 @@
     "10:00 AM"
    ],
    "approved": "Nov 22 10 PM (approve)"
+  },
+  {
+   "slug": "gta6-little-cuba-es",
+   "item": "short",
+   "es_only": true,
+   "es": [
+    "2026-11-27",
+    "11:00 AM"
+   ],
+   "approved": "Nov 23 (APPROVE, title 1: ¿qué BOLÁ asere?; Everygen Viral Adam voice)"
   }
  ]
 }

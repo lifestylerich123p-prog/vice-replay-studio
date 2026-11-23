@@ -253,3 +253,8 @@
   2:04 AM quota run uploads them when there's room (Thursday has no 3 AM batch, so the Fri 2:04 AM run has a full
   day's quota for them at the latest).
 
+- 2026-11-23 (owner "APPROVE", title 1): approved the Cuban-style Spanish-only Short `gta6-little-cuba-es` (title "GTA 6,
+  ¿qué BOLÁ asere? Esto es pura Cuba 🇨🇺 #GTA6 #Shorts", Everygen Viral Adam voice, the owner's pick) for the Spanish
+  channel **Fri Nov 27 11:00 AM**, added to content/learn/approved_queue.json. Owner asked for it "100% Cuban": the
+  script uses Cuban slang (asere, ¡Azúcar!, está en talla, consorte) and the titles use real Cuban customs. The
+  nightly run now re-renders any queued Short whose video is missing (studio/spend.py `renders_needed`).
