@@ -22,6 +22,7 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| ? | gta6-vs-red-dead-2 | Short | GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers | - |
 | ? | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | - |
 | ? | gta6-update-no-patch-notes | Short | GTA 6 Got 3 Updates and Zero Patch Notes | short: KI-6wP_Jhik |
 | ? | gta6-ultimate-vs-standard | Short | GTA 6: The $100 Edition Beat the $80 One | - |
@@ -55,7 +56,9 @@ Read this first instead of searching the repo.
 | ? | gta6-3-records | Short | GTA 6 Broke 3 Records in One Week | - |
 | ? | gta6-13-years | Short | GTA 6 Took 13 Years. No Other GTA Took Even 6 | - |
 | ? | gta6-10-numbers | video | GTA 6 in 10 Numbers: The First Week, Explained | - |
+| ? | gta-tier-list-sales | Short | Every GTA Ranked by Sales: GTA 5 Gets Its Own Tier | - |
 | ? | gta-history-quiz | Short | GTA History Quiz: Only Real Fans Get 3/3 | - |
+| ? | gta-cities-quiz | Short | GTA Cities Quiz: Only Real Fans Get 3/3 | - |
 | 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 |
 | 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | short: y4jQTwLJwP4 |
 | 2026-11-21 | gta6-how-long-to-beat | video | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | short: bVoHzywwvgc, main: rHaMTePDRUQ, tips: M7oKevOPY08 |
