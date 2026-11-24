@@ -226,14 +226,28 @@
    "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
   },
   {
-   "slug": "gta6-3-records",
+   "slug": "gta6-criminal-profile",
    "item": "short",
    "en": [
     "2026-12-01",
     "11:00 AM"
    ],
+   "es": [
+    "2026-12-02",
+    "12:30 PM"
+   ],
+   "approved": "Nov 24 ~3:30 PM ET (owner: \"Ok do what you think\" to: criminal profile tips Short Tue Dec 1 11:00, 3 records to Sun Dec 6 11:00); search gap 'gta 6 how to lower criminal profile' (guide EN+ES live); RE-CHECK facts before upload (owner rule); Spanish winners-only"
+  },
+  {
+   "slug": "gta6-3-records",
+   "item": "short",
+   "en": [
+    "2026-12-06",
+    "11:00 AM"
+   ],
    "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)",
-   "moved": "Nov 24: Fri 12:30 PM went to the key cloner Short (owner approved)"
+   "moved": "Nov 24 ~3:30 PM ET (owner: \"Ok do what you think\" to: criminal profile tips Short Tue Dec 1 11:00, 3 records to Sun Dec 6 11:00)",
+   "es": null
   },
   {
    "slug": "gta6-launch-quiz",
