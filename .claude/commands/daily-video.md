@@ -4,11 +4,29 @@ description: The automated daily run - pick today's topic, make the video + Shor
 You are running the daily Vice Replay automation. Nobody is watching live, so don't ask questions:
 make sensible choices, finish the whole run, and explain your choices in the final report.
 
+**NOV 24 UPDATES (owner: "approve everything", "full access into creative design", "all is approved"; these win
+over the Nov 23 rules below where they differ):**
+- **Photo cards + map cards are ON.** Our lettering cards now play on a real official GTA 6 screenshot (4K, picked by
+  `studio/cardphotos.py`: exact car/place first, bright pictures on the opening card) and "where is it" Shorts use the
+  `map` chart card (zoom to a pin on Rockstar's official map; content/episode-format.md, episodes/gta6-ufo-where.json).
+  Trailer CLIPS and bare screenshots without our cards stay out. Hook v2 is automatic (punch-in opening, no repeated
+  hook text, one-line headline slab up to ~24 characters).
+- **What works (scorecard Nov 24):** tips / "where to find" Shorts (6.3 v/h, 715 views in 24 h) and "catch" angles. At
+  least one Short a day should answer a "where / how" question. YouTube search is 22% of our views: read
+  `content/learn/search-terms.json` (refreshed by `studio.learn`) and make a map Short + guide for any phrase with 50+
+  views we don't answer yet; also use the GAPs in the latest `content/learn/search-demand-*.md`.
+- **Map spots** come from `site/map-pins.json` (2+ guides each); add new verified spots there first (the website's
+  interactive map and `tools/map_pictures.py` read it). Only place names printed on the map (studio/mappins.PLACES).
+- **Every new Short gets a NEW slug** (never reuse an uploaded one: the uploader would skip it; `studio.doctor` flags it)
+  and `short_title_options[1]` = a truthful "catch" title for the automatic swap.
+- **Long videos:** only for big events (Game Awards) until the owner's gameplay arrives (both recent long videos: 0 views).
+- **Before reporting:** `python -m studio.readiness` must show every booked video ready (rendered, 30 fps, checks passed).
+
 **NOV 23 RULES (owner; these win over anything below that conflicts):**
-1. **No trailer clips or official screenshots in ANY video** (Shorts, long videos, Reels). Pictures are our GTA 6-style
-   lettering cards (`studio/vicecards.py`: kinetic, countdown, versus, tier, meter, headline, plus charts with
-   `"bg": "vice"`; see content/episode-format.md and episodes/gta6-tier-list-critics.json) or the owner's gameplay. The
-   publish check blocks footage. Official images stay only for thumbnails, site cards and IG carousels.
+1. ~~No trailer clips or official screenshots in ANY video~~ (Nov 24: official screenshots are allowed behind our cards
+   and the official map in map cards; trailer CLIPS still out). Pictures are our GTA 6-style lettering cards
+   (`studio/vicecards.py`: kinetic, countdown, versus, tier, meter, headline, plus charts; see content/episode-format.md
+   and episodes/gta6-tier-list-critics.json), map cards, or the owner's gameplay. The publish check blocks footage.
 2. **Every Short:** a statement hook on a kinetic card (the first frame is the cover), a `src` on the card with the main
    fact, one verdict line ("our take: ..."), a card mix that differs from the last uploads, headlines of 19 characters
    or less, one `seed` per Short, prices spoken as "seventy nine dollars and ninety nine cents". Facts in 2+ sources.

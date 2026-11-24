@@ -89,6 +89,16 @@ def main():
     # one, so the uploader would have treated it as already posted). Every booked item must be new.
     for msg in queue_clashes():
         bad.append(msg)
+    # 1c. Booked videos in the next 48 h must be rendered, 30 fps and past their quality check (Nov 24)
+    try:
+        from . import readiness
+        late = readiness.problems(hours=48)
+        for w, s, it, lang, msg in late:
+            bad.append(f"Booked {lang.upper()} {it} {s} ({w:%a %-I:%M %p}) isn't ready: {msg}. Re-render it now")
+        if not late:
+            ok.append("Every video booked in the next 48 h is rendered and passed its checks")
+    except Exception as e:  # noqa: BLE001 - the health check must not crash
+        warn.append(f"Readiness check failed: {type(e).__name__}")
     # 1b. The learner (Nov 23: it went 2 days without a refresh when the daily runs couldn't push)
     snap = LEARN / "channel.json"
     if snap.exists():

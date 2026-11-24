@@ -20,6 +20,7 @@ Momentum run for Vice Replay. Nobody is watching live: don't ask questions. Read
    Also send the .mp4 files with SendUserFile and finish with: **Reply "approve" in the main chat to post the follow-up.**
 5. Don't upload anything, don't push, don't make more than one follow-up per run.
 
+**Nov 24 (owner approved photo + map cards):** the cards automatically play on a bright official GTA 6 screenshot (studio/cardphotos.py) and a place in the story can be a `map` card (zoom to a pin on Rockstar's official map, episodes/gta6-ufo-where.json). Trailer CLIPS stay out. Use a NEW slug, never an uploaded one.
 **Nov 22-23 (owner): original first, no trailer images.** A follow-up Short is built from GTA 6-style lettering
 cards (`studio/vicecards.py`) around new checked numbers with a `src` on screen, or the owner's gameplay; trailer clips
 and official screenshots are blocked by `studio.vice publish`.

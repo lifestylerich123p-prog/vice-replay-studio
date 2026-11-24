@@ -246,7 +246,9 @@ def write_index():
              "`content/learn/analytics.json` · lessons: `content/learn/lessons.md`, `content/learn/patterns.md`",
              f"- Latest market report: `{markets[-1].relative_to(ROOT)}`" if markets else "- Latest market report: none yet",
              "- Routines: `.claude/commands/` · code: `studio/` · website: `site/` + `tools/site_guides.py` (repo vicereplay-site)",
-             "- Screenshots: `media/official/` (names = place/character/car) · gameplay: `media/gameplay/` (+ processed.json)",
+             "- Screenshots: `media/official/` (names = place/character/car; 4K copies in `media/official-hd/`, fetched by `studio/officialhd.py`) · gameplay: `media/gameplay/` (+ processed.json)",
+             "- Map (Nov 24): spots `site/map-pins.json` (2+ guides each) · map labels + pictures `studio/mappins.py`, `tools/map_pictures.py` · website tiles `tools/map_tiles.py` · Short card `chart` type `map` · photo picks `studio/cardphotos.py`",
+             "- Ready to upload? `python -m studio.readiness` (every booked video: rendered, 30 fps, checks passed) · search: `content/learn/search-terms.json` (YouTube searches that find us), `content/learn/search-demand-*.md` (Google/Bing) · channel page `tools/channel_branding.py`",
              "- Renders: `output/<slug>/` (videos auto-deleted 2 days after upload; `uploaded.json` kept)",
              "- Live status: `content/learn/status.md` (`python -m studio.status`) · health: `content/learn/health.md`",
              "- Instagram: queue `content/learn/reels_queue.json`, carousels `content/carousels/`, how-to "

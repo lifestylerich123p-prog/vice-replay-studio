@@ -49,6 +49,7 @@ upload only if it reports no blockers (rights, facts, black frames, captions vs 
 to main is refused, also send the episode JSON + the log line to the main chat (fire_trigger trig_01XX9xXTp8xfb4i3yYUFP9uF)
 so the repo log stays complete.
 
+**Nov 24 (owner approved photo + map cards):** the cards automatically play on a bright official GTA 6 screenshot (studio/cardphotos.py) and a place in the story can be a `map` card (zoom to a pin on Rockstar's official map, episodes/gta6-ufo-where.json). Trailer CLIPS stay out. Use a NEW slug, never an uploaded one.
 **Nov 22-23 (owner): original first, no trailer images.** Build the Short from GTA 6-style lettering cards
 (`studio/vicecards.py`): a kinetic hook card, a `headline` card (kicker CONFIRMED / REPORTEDLY), a `meter`/`versus`/`bars`
 card with the key checked number and a `src`, then a kinetic verdict/question. No trailer clips or official screenshots at

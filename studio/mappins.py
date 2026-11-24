@@ -7,10 +7,9 @@ own labels) or by the map's printed grid (columns 1-9, rows A-M), and can render
                         {"n": 2, "at": "G7", "label": "..."}], "out.jpg", crop="all")
     mappins.zoom_clip({"at": "Port Gellhorn", "label": "UFO, after 2 AM"}, "ufo.mp4", dur=4)   # video: see below
 
-Where it can be used: the official map is official media, so website pages, thumbnails and Instagram carousels yes;
-inside Shorts/long videos only once the owner allows official images in videos again (CLAUDE.md "No trailer images in
-ANY video"; the photo-cards question of Nov 24). Locations must come from 2+ reputable guides; when guides disagree,
-pin the area and say so in the text.
+Where it can be used (Nov 24: the owner approved the official map in videos): website pages, thumbnails, Instagram
+carousels (studio/ig_cards.py map pages) and Shorts (the `map` chart card in studio/charts.py). Locations must come
+from 2+ reputable guides (site/map-pins.json); when guides disagree, pin the area and say so in the text.
 """
 import subprocess
 from pathlib import Path

@@ -7,7 +7,9 @@ Read this first instead of searching the repo.
 - What was made: `content/log.md` · numbers: `content/performance.md`, `content/learn/channel.json`, `content/learn/analytics.json` · lessons: `content/learn/lessons.md`, `content/learn/patterns.md`
 - Latest market report: `content/learn/market-es-2026-11-22.md`
 - Routines: `.claude/commands/` · code: `studio/` · website: `site/` + `tools/site_guides.py` (repo vicereplay-site)
-- Screenshots: `media/official/` (names = place/character/car) · gameplay: `media/gameplay/` (+ processed.json)
+- Screenshots: `media/official/` (names = place/character/car; 4K copies in `media/official-hd/`, fetched by `studio/officialhd.py`) · gameplay: `media/gameplay/` (+ processed.json)
+- Map (Nov 24): spots `site/map-pins.json` (2+ guides each) · map labels + pictures `studio/mappins.py`, `tools/map_pictures.py` · website tiles `tools/map_tiles.py` · Short card `chart` type `map` · photo picks `studio/cardphotos.py`
+- Ready to upload? `python -m studio.readiness` (every booked video: rendered, 30 fps, checks passed) · search: `content/learn/search-terms.json` (YouTube searches that find us), `content/learn/search-demand-*.md` (Google/Bing) · channel page `tools/channel_branding.py`
 - Renders: `output/<slug>/` (videos auto-deleted 2 days after upload; `uploaded.json` kept)
 - Live status: `content/learn/status.md` (`python -m studio.status`) · health: `content/learn/health.md`
 - Instagram: queue `content/learn/reels_queue.json`, carousels `content/carousels/`, how-to `.claude/commands/instagram.md`
@@ -22,10 +24,23 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| 2026-11-24 | gta6-vercetti-portal | Short | GTA 6's Tommy Vercetti Portal | - |
+| 2026-11-24 | gta6-ultimate-cars-where | Short | Where Your GTA 6 Ultimate Edition Cars Are | - |
+| 2026-11-24 | gta6-ufo-where | Short | Where to Find the UFO in GTA 6 | - |
 | 2026-11-24 | gta6-stream-wars | video | GTA 6 Stream Wars: IShowSpeed vs Everyone (Real Numbers) | - |
+| 2026-11-24 | gta6-skunk-ape-where | Short | Where to Find GTA 6's Bigfoot | - |
+| 2026-11-24 | gta6-shoe-store-where | Short | GTA 6 Shoe Store: Where to Buy Shoes | - |
+| 2026-11-24 | gta6-red-dead-easter-eggs | Short | 2 Red Dead Easter Eggs in GTA 6 | - |
 | 2026-11-24 | gta6-money-tier-list | Short | Every Way to Make Money in GTA 6, Ranked | - |
+| 2026-11-24 | gta6-mod-shops | Short | Where to Mod Your Car in GTA 6 | - |
+| 2026-11-24 | gta6-military-base-jets | Short | Where to Find Fighter Jets in GTA 6 | - |
+| 2026-11-24 | gta6-mapa-oficial-es | Short | El mapa oficial de GTA 6 en HD | - |
 | 2026-11-24 | gta6-key-cloner-3-steps | Short | GTA 6's Key Cloner in 3 Steps | - |
+| 2026-11-24 | gta6-illojuan-vs-rubius-es | Short | IlloJuan vs Rubius: el duelo de espectadores de GTA 6 | - |
 | 2026-11-24 | gta6-ibai-cero-espectadores-es | Short | Ibai y el streamer de GTA 6 con cero espectadores | - |
+| 2026-11-24 | gta6-giant-crab | Short | GTA 6's Giant Crab Easter Egg | - |
+| 2026-11-24 | gta6-early-helicopter | Short | GTA 6's Easiest Early Helicopter | - |
+| 2026-11-24 | gta6-dexter-apartment-map | Short | Dexter's Apartment in GTA 6 | - |
 | 2026-11-23 | gta6-vs-red-dead-2 | Short | GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers | - |
 | 2026-11-23 | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | short: sEg8EWL2XPA |
 | 2026-11-23 | gta6-update-no-patch-notes | Short | GTA 6 Got 3 Updates and Zero Patch Notes | short: KI-6wP_Jhik (private) |
@@ -167,7 +182,7 @@ Read this first instead of searching the repo.
 | 2026-11-22 | /es/guias/gta-6-cifras-semana-lanzamiento/ | Ventas y récords de GTA 6: todas las cifras del lanzamiento vs GTA 5 |
 | 2026-11-22 | /guides/gta-6-darts/ | Does GTA 6 Have Darts? No, and Rockstar Explains Why (Pool Is In) |
 | 2026-11-24 | /guides/gta-6-deals/ | GTA 6 Deals and Discount Codes: What's Real This Week (Checked) |
-| 2026-11-24 | /guides/gta-6-easter-eggs/ | GTA 6 Easter Eggs: The Best Secrets Players Found in Launch Week (No Spoilers) |
+| 2026-11-24 | /guides/gta-6-easter-eggs/ | GTA 6 Easter Eggs: The Best Secrets and Where to Find Them (Map) |
 | 2026-11-23 | /guides/gta-6-game-awards/ | GTA 6 at The Game Awards 2026: All 8 Nominations, Rivals and Odds |
 | 2026-11-18 | /guides/gta-6-gift-guide/ | GTA 6 Gift Guide 2026: Best Gifts for a GTA 6 Fan (PS5 and Xbox) |
 | 2026-11-24 | /guides/gta-6-hacker-sentence/ | Did They Catch the GTA 6 Hacker? Arion Kurtaj's Sentence Explained (Nov 2026) |
@@ -177,6 +192,7 @@ Read this first instead of searching the repo.
 | 2026-11-19 | /guides/gta-6-launch-day-survival-guide/ | GTA 6 Launch Day Survival Guide: Servers, 30 FPS and Settings |
 | 2026-11-22 | /guides/gta-6-launch-week-numbers/ | GTA 6 Sales and Records: Every Launch Week Number vs GTA 5 (Checked) |
 | 2026-11-24 | /guides/gta-6-make-money/ | How to Make Money Fast in GTA 6: The Best Ways, Early to Late Game |
+| 2026-11-24 | /guides/gta-6-map-leonida-places/ | GTA 6 Map: Official HD Leonida Map, Interactive, With Secret Spots |
 | 2026-11-18 | /guides/gta-6-map-size/ | How Big Is the GTA 6 Map? Leonida vs GTA 5 and Red Dead 2 |
 | 2026-11-23 | /es/guias/gta-6-notas-del-parche/ | GTA 6 actualización 1.002.002: notas del parche y los 7 arreglos |
 | 2026-11-24 | /es/guias/gta-6-online-cuando-sale/ | GTA 6 Online: ¿cuándo sale? Lo que está confirmado |
@@ -187,18 +203,20 @@ Read this first instead of searching the repo.
 | 2026-11-19 | /guides/gta-6-ps5-pro-worth-it/ | Is PS5 Pro Worth It for GTA 6? 30 FPS, PSSR and What You Actually Get |
 | 2026-11-24 | /guides/gta-6-radio-stations/ | GTA 6 Radio Stations: Every Station and Its Hosts (V-Rock, Flash FM and More) |
 | 2026-11-24 | /es/guias/gta-6-records-streaming/ | GTA 6 en directo: los streamers más vistos y todos los récords |
+| 2026-11-24 | /guides/gta-6-shoe-stores/ | GTA 6 Shoe Store: Where to Buy Shoes (Map) |
 | 2026-11-24 | /guides/gta-6-streaming-records/ | GTA 6 Streaming Records: Most-Watched Streamers and Every Number |
 | 2026-11-24 | /guides/gta-6-trophies/ | GTA 6 Trophies: How Hard Is the Platinum? (55 Trophies, 100%) |
 | 2026-11-21 | /guides/gta-6-ultimate-edition/ | Is GTA 6 Ultimate Edition Worth It? The 5 Shops Only It Unlocks (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-vs-gta-5/ | GTA 6 vs GTA 5: The Biggest Differences Explained |
+| 2026-11-24 | /es/guias/mapa-gta-6/ | Mapa de GTA 6: mapa oficial en HD e interactivo, con secretos |
 | 2026-11-19 | /es/guias/mejor-ssd-gta-6/ | Mejor SSD para GTA 6 en PS5 (212 GB): qué comprar y qué evitar |
 | 2026-11-24 | /es/guias/ofertas-gta-6/ | GTA 6: ofertas y códigos de descuento reales esta semana |
 | 2026-11-24 | /es/guias/precio-gta-6/ | Precio de GTA 6 en cada país: España, México, Colombia y Argentina |
 | 2026-11-19 | /es/guias/ps5-pro-gta-6-vale-la-pena/ | ¿Vale la pena la PS5 Pro para GTA 6? 30 FPS, PSSR y lo que realmente cambia |
+| 2026-11-24 | /es/guias/tienda-de-zapatos-gta-6/ | Tienda de zapatos de GTA 6: dónde comprar zapatos (mapa) |
 | built-in | /guides/gta-6-unlock-time/ | GTA 6 Unlock Time: When You Can Play in Every Time Zone |
 | built-in | /guides/gta-6-new-zealand-trick/ | GTA 6 New Zealand Trick: Can You Play Early, and Is It Safe? |
 | built-in | /guides/gta-6-launch-checklist/ | GTA 6 Launch Checklist: Download Size, Price and What's Missing on Day One |
-| built-in | /guides/gta-6-map-leonida-places/ | GTA 6 Map: 6 Places in Leonida You Need to Know |
 | built-in | /guides/gta-6-storage/ | How Many GB Is GTA 6? 212 GB, and How to Make Room on PS5 and Xbox |
 | built-in | /guides/gta-6-cheats/ | GTA 6 Cheat Codes: Money, Armor, Ammo + How to Unlock |
 | built-in | /guides/gta-6-pc-release-date/ | Is GTA 6 on PC? PC Release Date and What's Actually Reported |
