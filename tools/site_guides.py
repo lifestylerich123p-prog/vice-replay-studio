@@ -1072,6 +1072,7 @@ def refresh_home():
                       {"@context": "https://schema.org", "@type": "Organization", "name": "Vice Replay", "url": DOMAIN + "/", "logo": DOMAIN + "/favicon.png",
                        "sameAs": [YT, YT_ES, "https://www.tiktok.com/@vicereplay00", "https://www.instagram.com/vice.replaytv/"]}], ensure_ascii=False)
     doc2 = _re.sub(r'<script type="application/ld\+json" id="vr-org">.*?</script>', "", doc2, flags=_re.S)
+    doc2 = _re.sub(r"\s+</head>", "\n</head>", doc2, count=1)  # Nov 24 audit: every build left one more blank line here
     head_extra = style + f'<script type="application/ld+json" id="vr-org">{org}</script>'
     if 'rel="manifest"' not in doc2:
         head_extra += ('<link rel="apple-touch-icon" href="/favicon.png"><link rel="manifest" href="/site.webmanifest">'
