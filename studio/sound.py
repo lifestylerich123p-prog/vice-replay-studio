@@ -160,19 +160,56 @@ def pop(dur=0.16, seed=3):
     return tone + _lowpass_fast(tick, 5000)
 
 
+def swell(dur=0.42, seed=4):
+    """Nov 24 (owner: "change the sound used to change between slides, I don't like it"): a soft synthwave swell
+    instead of the noise whoosh. Two detuned saws a fifth apart glide up, filtered and faded in/out: musical, quiet."""
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    f0 = 220 * np.geomspace(1.0, 1.5, n)
+    y = np.zeros(n)
+    for mult, det in ((1.0, 0.0), (1.0, 0.006), (1.5, 0.004)):
+        ph = 2 * np.pi * np.cumsum(f0 * mult * (1 + det)) / SR
+        y += 2 * ((ph / (2 * np.pi)) % 1.0) - 1
+    y = _lowpass(y, np.geomspace(600, 2600, n))
+    env = np.sin(np.linspace(0, np.pi, n)) ** 1.5
+    return y * env
+
+
+def tick(dur=0.09, seed=5):
+    """A tiny, clean UI tick (the most minimal option)."""
+    t = np.arange(int(dur * SR)) / SR
+    return np.sin(2 * np.pi * 1800 * t) * np.exp(-t * 90)
+
+
+TRANSITIONS = {"swell": (swell, 0.30), "tick": (tick, 0.22), "whoosh": (whoosh, 0.45), "none": (None, 0.0)}
+
+
+def transition_choice():
+    """config/channel.json "transition_sound": swell (default since Nov 24) | tick | whoosh (the old one) | none."""
+    import json
+    try:
+        cfg = json.loads((Path(__file__).resolve().parent.parent / "config" / "channel.json").read_text())
+        name = cfg.get("transition_sound", "swell")
+    except (OSError, ValueError):
+        name = "swell"
+    return name if name in TRANSITIONS else "swell"
+
+
 def sfx_track(path, total, whooshes, impacts, pops=()):
-    """One stereo track with whooshes centred on segment cuts, impacts on the hook and soft pops where the lettering
-    cards land a word or number (studio/vicecards.py `hits`)."""
+    """One stereo track with a transition sound on segment cuts (config "transition_sound"), impacts on the hook and
+    soft pops where the lettering cards land a word or number (studio/vicecards.py `hits`)."""
     out = np.zeros(int(total * SR) + SR)
-    w, im, pp = whoosh(), impact(), pop()
+    make, level = TRANSITIONS[transition_choice()]
+    w = make() if make else np.zeros(1)
+    im, pp = impact(), pop()
     for tm in pops:
         s = max(0, int(tm * SR))
         seg = pp[: len(out) - s]
         out[s:s + len(seg)] += 0.32 * seg / (np.max(np.abs(pp)) or 1)
-    for tm in whooshes:
-        s = max(0, int((tm - 0.28) * SR))
+    for tm in whooshes if make else ():
+        s = max(0, int((tm - len(w) / SR / 2) * SR))
         seg = w[: len(out) - s]
-        out[s:s + len(seg)] += 0.45 * seg / (np.max(np.abs(w)) or 1)
+        out[s:s + len(seg)] += level * seg / (np.max(np.abs(w)) or 1)
     for tm in impacts:
         s = max(0, int(tm * SR))
         seg = im[: len(out) - s]

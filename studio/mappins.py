@@ -21,13 +21,38 @@ from . import brand
 
 ROOT = Path(__file__).resolve().parent.parent
 MAP = ROOT / "media" / "official" / "leonida-map-poster.jpg"
+# Nov 24 (owner: "I want high definition"): Rockstar's printable poster, 5775 x 7900 (2x the poster above, same
+# layout), fetched on demand from Rockstar's own download page and kept out of git (46 MB): media/official-hd/.
+HD_ZIP = "https://media-rockstargames-com.akamaized.net/VI/downloads/artwork_wallpapers/Leonida_Map_Poster_Printable.zip"
+HD_MAP = ROOT / "media" / "official-hd" / "leonida-map-print.jpg"
+
+
+def map_image():
+    """The sharpest official map available: the printable HD poster (downloaded once), else the 2900 px poster."""
+    if not HD_MAP.exists():
+        try:
+            import io
+            import urllib.request
+            import zipfile
+            data = urllib.request.urlopen(HD_ZIP, timeout=300).read()
+            z = zipfile.ZipFile(io.BytesIO(data))
+            name = next(n for n in z.namelist() if n.lower().endswith(".jpg"))
+            Image.MAX_IMAGE_PIXELS = None
+            im = Image.open(io.BytesIO(z.read(name))).convert("RGB")
+            HD_MAP.parent.mkdir(parents=True, exist_ok=True)
+            im.save(HD_MAP, quality=92)
+        except Exception as e:  # noqa: BLE001 - fall back to the committed poster
+            print(f"HD map unavailable ({type(e).__name__}); using the 2900 px poster")
+            return Image.open(MAP).convert("RGB")
+    Image.MAX_IMAGE_PIXELS = None
+    return Image.open(HD_MAP).convert("RGB")
 VIEW_W, VIEW_H = 1023.4, 1400.0  # the 1400 px-high view the positions below were read from (Nov 24)
 
 # Label centers read off the official map (x, y in that view); every name is printed on Rockstar's map.
 PLACES = {
     "Port Gellhorn": (312, 498), "Kelly County": (433, 553), "Starlet Motel": (360, 520),
     "Vice City": (686, 728), "Vice Beach": (870, 685), "Vice-Dale County": (738, 803), "Downtown": (718, 748),
-    "Little Cuba": (676, 747), "VCIA": (580, 798), "Washington Island": (850, 603), "Washington Beach": (875, 622),
+    "Little Cuba": (676, 747), "VCIA": (580, 798), "Washington Island": (850, 603), "Vespucci Island": (781, 677), "Rialto Islands": (783, 658), "Washington Beach": (875, 622),
     "Ambrosia": (567, 500), "Leonard County": (715, 503), "Belville": (672, 554), "Lake Leonida": (618, 437),
     "Lummox County": (510, 283), "Mount Kalaga": (515, 318), "Millport": (673, 323), "Bonanza": (493, 199),
     "Grayson": (389, 305), "Waning Sands": (756, 452), "Draper Island": (252, 419), "Capri": (294, 738),
@@ -78,7 +103,7 @@ def _label(d, x, y, text, scale, w, side=None):
 def pinned_map(pins, out, crop="all", width=1600, title=None):
     """Draw numbered pins (+ labels) on the official map and save a JPEG/WebP. crop="all" = whole map; or a place /
     grid cell to center on, or "pins" = the box around all pins. Returns the output path."""
-    base = Image.open(MAP).convert("RGB")
+    base = map_image()
     W, H = base.size
     pts = [(p, where(p["at"])) for p in pins]
     if crop == "pins" and pts:
@@ -118,7 +143,7 @@ def pinned_map(pins, out, crop="all", width=1600, title=None):
 def zoom_clip(pin, out, dur=4.0, w=1080, h=1920, fps=30):
     """A vertical clip that starts on the whole map and zooms to one pin, which then pulses. For Shorts only after the
     owner allows official images in videos again (see module docstring)."""
-    base = Image.open(MAP).convert("RGB")
+    base = map_image()
     W, H = base.size
     fx, fy = where(pin["at"])
     tx, ty = fx * W, fy * H

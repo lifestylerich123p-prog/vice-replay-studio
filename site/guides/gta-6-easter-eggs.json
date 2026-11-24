@@ -15,7 +15,7 @@
  "sections": [
   [
    "Where they are on the map",
-   "<img src=\"/img/maps/gta-6-easter-eggs-map.jpg\" width=\"1400\" height=\"1582\" alt=\"GTA 6 easter egg locations pinned on Rockstar's official Leonida map\" loading=\"lazy\" style=\"width:100%;height:auto;border-radius:14px;border:1px solid var(--line)\"><ol class=\"list\"><li><b>1. Egg tower:</b> a tall radio mast in Bluegrass, north of Hamlet; some guides say South Vice-Dale. Climb to the top.</li><li><b>2. UFO abduction:</b> Kelly County, northwest of the Starlet Motel near Port Gellhorn, after 2 AM. It doesn't happen every night; one guide places it just east of Port Gellhorn.</li><li><b>3. Skunk Ape:</b> around Cottonmouth Lake in Grassrivers, at night.</li><li><b>4. Dexter's apartment:</b> Washington Island, east of Vice City.</li><li><b>5. Giant crab:</b> an abandoned research station in Pelican Valley (Gullet Marsh).</li><li><b>6. Cool Dog on a jet ski:</b> open water; the reported starting area is Gambit Bay, west of Key Lento.</li></ol><p class=\"sources\">Pins are placed on Rockstar's official map from the locations in launch-week guides (GTABase, Red Bull, The Click, Game8); where guides disagree we say so. Exact spots can be hard to trigger.</p>"
+   "<a href=\"/img/maps/gta-6-easter-eggs-map.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"/img/maps/gta-6-easter-eggs-map.jpg\" width=\"1800\" height=\"2035\" alt=\"GTA 6 easter egg locations pinned on Rockstar's official Leonida map\" loading=\"lazy\" style=\"width:100%;height:auto;border-radius:14px;border:1px solid var(--line);margin:8px 0\"></a><ol class=\"list\"><li><b>1. Egg tower:</b> a tall radio mast in Bluegrass, north of Hamlet; some guides say South Vice-Dale. Climb to the top.</li><li><b>2. UFO abduction:</b> Kelly County, northwest of the Starlet Motel near Port Gellhorn, after 2 AM. It doesn't happen every night; one guide places it just east of Port Gellhorn.</li><li><b>3. Skunk Ape:</b> around Cottonmouth Lake in Grassrivers, south of Hamlet, at night.</li><li><b>4. Dexter's apartment:</b> Washington Island, east of Vice City. You can't go inside.</li><li><b>5. Giant crab:</b> an abandoned research station in Pelican Valley (Gullet Marsh).</li><li><b>6. Cool Dog on a jet ski:</b> open water; the reported starting area is Gambit Bay, west of Key Lento.</li><li><b>7. Paul Walker's car:</b> a villa garage on Vespucci Island (Rialto Islands), off Vice City: a car styled like his Fast & Furious Eclipse (guides list it as a Maibatsu Penumbra). Guides disagree on how to get in.</li></ol><h3>Close-up: Vice City (high resolution)</h3><a href=\"/img/maps/gta-6-secrets-vice-city-hd.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"/img/maps/gta-6-secrets-vice-city-hd.jpg\" width=\"2000\" height=\"2500\" alt=\"Dexter's apartment and Paul Walker's car on the official map of Vice City\" loading=\"lazy\" style=\"width:100%;height:auto;border-radius:14px;border:1px solid var(--line);margin:8px 0\"></a><h3>Close-up: south Leonida (high resolution)</h3><a href=\"/img/maps/gta-6-secrets-south-hd.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"/img/maps/gta-6-secrets-south-hd.jpg\" width=\"2000\" height=\"2499\" alt=\"Egg tower, Skunk Ape, giant crab and Cool Dog on the official map of south Leonida\" loading=\"lazy\" style=\"width:100%;height:auto;border-radius:14px;border:1px solid var(--line);margin:8px 0\"></a><p class=\"sources\">Pins are placed on Rockstar's official printable Leonida map from the locations in launch-week guides (GTABase, Red Bull, The Click, Game8, VICE, PCGamesN, TechWiser); where guides disagree we say so. Tap an image to open it full size.</p>"
   ],
   [
    "A literal Easter egg",
@@ -55,6 +55,10 @@
   [
    "Where is Dexter's apartment in GTA 6?",
    "On Washington Island, east of Vice City."
+  ],
+  [
+   "Where is Paul Walker's car in GTA 6?",
+   "In a villa garage on Vespucci Island in the Rialto Islands, off Vice City; guides list it as a Maibatsu Penumbra styled like his Fast & Furious Eclipse."
   ]
  ],
  "gear": [
@@ -88,6 +92,18 @@
   [
    "Game8: all GTA 6 easter eggs and secrets",
    "https://game8.co/games/GTA-6/archives/638651"
+  ],
+  [
+   "VICE: where to find Paul Walker's Eclipse in GTA 6",
+   "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/"
+  ],
+  [
+   "PCGamesN: how to get Paul Walker's car in GTA 6",
+   "https://www.pcgamesn.com/grand-theft-auto-vi/paul-walkers-car"
+  ],
+  [
+   "TechWiser: Paul Walker's car location",
+   "https://techwiser.com/gta-6-fast-and-furious-paul-walker-car-location/"
   ]
  ]
 }

@@ -90,5 +90,7 @@
     "on": true,
     "min_views_24h": 150,
     "_note": "Owner Nov 23 (\"Approve next steps\"): until Vice Replay en Español has an audience, a Spanish version of an English Short is uploaded only if the English one did well in its first 24 h (views >= max(min_views_24h, median 24 h views of our last 7 days)). Spanish-only Shorts (es_only, no English original) are not affected. studio.spend decides; set on=false to go back to EN+ES for every Short."
-  }
+  },
+  "transition_sound": "swell",
+  "_transition_sound_note": "Nov 24 owner: didn't like the old noise whoosh between slides. swell (default) | tick | whoosh | none"
 }
