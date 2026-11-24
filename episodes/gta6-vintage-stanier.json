@@ -1,0 +1,190 @@
+{
+ "title": "GTA 6 Vintage Pack Car: Where to Find the '55 Stanier",
+ "slug": "gta6-vintage-stanier",
+ "series": "Map Spots",
+ "format": "tips/discovery",
+ "mood": "bright",
+ "use_gameplay": false,
+ "style": "vice (lettering cards, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6 Vintage Pack car: where it's parked 🚗 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 Vintage Pack car: where it's parked 🚗 #GTA6 #Shorts",
+  "GTA 6: your free '55 Stanier is here 🚗 #GTA6 #Shorts",
+  "Where is the Vapid Stanier in GTA 6? 🚗 #GTA6 #Shorts"
+ ],
+ "short_description": "Got GTA 6's Vintage Vice City Pack? Your '55 Vapid Stanier and its garage wait outside the Ocean View Hotel in Vice Beach. A task appears in the map index under Exploration (guides place it in Chapter 3). The pack came with digital purchases before November 20 and boxed copies while stocks last. No story spoilers. Every spot: vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: PC Gamer, GTABase, Gfinity.",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "pinned_comment": "Classic car or supercar? 👇",
+ "short_pinned_comment_es": "¿Clásico o superdeportivo? 👇",
+ "short_es": {
+  "title": "¿Tienes el pack Vintage Vice City? Tu Vapid Stanier del 55 y su garaje te esperan frente al Ocean View Hotel, en Vice Beach. Aparece una tarea en el índice del mapa, en Exploración. Fuentes: PC Gamer, GTABase, Gfinity.",
+  "description": "GTA 6: tu Stanier del 55 está AQUÍ 🚗 #GTA6 #Shorts",
+  "tags": [
+   "GTA 6 pack Vintage",
+   "GTA 6 Vapid Stanier",
+   "GTA 6 coche gratis",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 Vintage Vice City Pack",
+  "GTA 6 Vapid Stanier",
+  "GTA 6 pre-order bonus",
+  "GTA 6 free car",
+  "GTA 6 Ocean View Hotel",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6cars",
+  "#gta6tips"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "sources": [
+  "PC Gamer - how to collect the Vintage Vice City Pack: https://www.pcgamer.com/games/grand-theft-auto/gta-6-pre-order-bonus-vintage-vice-city-pack/",
+  "GTABase - Vapid Stanier '55: https://www.gtabase.com/gta-6/vehicles/vapid-stanier-55",
+  "Gfinity - how to get the Vintage Vice City Pack: https://www.gfinityesports.com/article/how-to-get-gta-6-vintage-vice-city-pack-and-whats-included"
+ ],
+ "facts_note": "Nov 24: '55 Vapid Stanier + garage outside the Ocean View Hotel (PC Gamer, GTABase; our pin: Vice Beach); task in the map index > Exploration (PC Gamer); Chapter 3 (our pin, PC Gamer + GTABase); pack = digital purchases before Nov 20 + boxed copies while stocks last (PC Gamer, Gfinity). Street name differs between guides (Ocean Drive / Shore Drive): left out. Re-check right before posting.",
+ "short": [
+  {
+   "headline": "VINTAGE PACK",
+   "headline_es": "PACK VINTAGE",
+   "text": "Your free '55 Stanier from the Vintage Pack is parked in Vice Beach.",
+   "text_es": "Tu Stanier del 55 del pack Vintage está aparcado en Vice Beach.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "YOUR FREE '55 STANIER",
+     "IS PARKED HERE"
+    ],
+    "pink": [
+     "IS PARKED HERE"
+    ],
+    "seed": 226
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "TU STANIER DEL 55",
+     "ESTÁ AQUÍ"
+    ],
+    "pink": [
+     "ESTÁ AQUÍ"
+    ],
+    "seed": 226
+   }
+  },
+  {
+   "headline": "VICE BEACH",
+   "headline_es": "VICE BEACH",
+   "text": "Outside the Ocean View Hotel, in Vice Beach.",
+   "text_es": "Frente al Ocean View Hotel, en Vice Beach.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Vice Beach",
+    "label": "'55 Stanier · Ocean View Hotel",
+    "n": 1,
+    "src": "PC Gamer · GTABase"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Vice Beach",
+    "label": "Stanier del 55 · Ocean View",
+    "n": 1,
+    "src": "PC Gamer · GTABase"
+   }
+  },
+  {
+   "headline": "WITH A GARAGE",
+   "headline_es": "CON GARAJE",
+   "text": "It comes with its own garage.",
+   "text_es": "Viene con su propio garaje.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "'55 Vapid Stanier + its own garage.",
+    "pink": [
+     "+ its own garage"
+    ],
+    "seed": 226,
+    "src": "PC Gamer · GTABase"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Vapid Stanier del 55 + su garaje.",
+    "pink": [
+     "+ su garaje"
+    ],
+    "seed": 226,
+    "src": "PC Gamer · GTABase"
+   }
+  },
+  {
+   "headline": "WHEN",
+   "headline_es": "CUÁNDO",
+   "text": "Check the map index, under Exploration: the task shows up there.",
+   "text_es": "Mira el índice del mapa, en Exploración: ahí aparece la tarea.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Map index → Exploration: the task appears.",
+    "pink": [
+     "Exploration"
+    ],
+    "seed": 226,
+    "src": "PC Gamer",
+    "sub": "guides place it in Chapter 3"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Índice del mapa → Exploración: ahí está.",
+    "pink": [
+     "Exploración"
+    ],
+    "seed": 226,
+    "src": "PC Gamer",
+    "sub": "según las guías, en el capítulo 3"
+   }
+  },
+  {
+   "headline": "CLASSIC OR SUPER?",
+   "headline_es": "¿CLÁSICO O SÚPER?",
+   "text": "Classic car or supercar? Tell me, because",
+   "text_es": "¿Clásico o superdeportivo? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "CLASSIC",
+     "OR SUPERCAR?"
+    ],
+    "pink": [
+     "OR SUPERCAR?"
+    ],
+    "seed": 226
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CLÁSICO",
+     "O SÚPER?"
+    ],
+    "pink": [
+     "O SÚPER?"
+    ],
+    "seed": 226
+   }
+  }
+ ]
+}

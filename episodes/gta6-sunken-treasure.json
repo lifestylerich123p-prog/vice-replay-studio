@@ -1,0 +1,191 @@
+{
+ "title": "GTA 6 Sunken Treasure: Easy Early Money",
+ "slug": "gta6-sunken-treasure",
+ "series": "Map Spots",
+ "format": "tips/discovery",
+ "mood": "bright",
+ "use_gameplay": false,
+ "style": "vice (lettering cards, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6's easiest early money is underwater 💰 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6's easiest early money is underwater 💰 #GTA6 #Shorts",
+  "GTA 6 sunken treasure: where to dive 💰 #GTA6 #Shorts",
+  "GTA 6 early money: shipwreck dives 💰 #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6's easiest early money is underwater. After the Island Dreams mission you can get scuba gear and a metal detector, and shipwreck dive sites open up; guides count six wrecks around Key Lento. The treasure sells for a lot early on. Light on spoilers: only where it unlocks. Every spot: vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: Slashgear, VGC, games.gg, GTABoom.",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "pinned_comment": "Diving or stealing cars for early cash? 👇",
+ "short_pinned_comment_es": "¿Bucear o robar coches para el dinero del inicio? 👇",
+ "short_es": {
+  "title": "El dinero más fácil del inicio de GTA 6 está bajo el agua: tras la misión Island Dreams tienes equipo de buceo y detector de metales, y se abren los naufragios; las guías cuentan seis alrededor de Key Lento. Fuentes: Slashgear, VGC, games.gg, GTABoom.",
+  "description": "El dinero FÁCIL de GTA 6 está bajo el agua 💰 #GTA6 #Shorts",
+  "tags": [
+   "GTA 6 tesoro",
+   "GTA 6 naufragio",
+   "GTA 6 dinero",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 sunken treasure",
+  "GTA 6 shipwreck",
+  "GTA 6 early money",
+  "GTA 6 make money",
+  "GTA 6 Island Dreams",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6money",
+  "#gta6tips"
+ ],
+ "guide": "gta-6-make-money",
+ "sources": [
+  "Slashgear - easy early money in GTA 6 with sunken treasure: https://www.slashgear.com/2322274/gta-6-how-to-make-money-early-underwater-shipwreck-treasure-dives-locations/",
+  "VGC - GTA 6 Island Dreams walkthrough: https://www.videogameschronicle.com/guide/gta-6-island-dreams-walkthrough/",
+  "games.gg - Island Dreams mission walkthrough: https://games.gg/grand-theft-auto-vi/guides/island-dreams-mission-walkthrough-grand-theft-auto-6/",
+  "GTABoom - GTA 6 treasure hunting: https://www.gtaboom.com/gta-6-treasure-hunting-2b73"
+ ],
+ "facts_note": "Nov 24: dives open after Island Dreams (VGC, games.gg, GTABoom); scuba gear + metal detector (GTABoom, guides); six shipwrecks around Key Lento (Slashgear); treasure sells high / best early money (VGC quote, guides). Exact payouts differ between guides: left out. Re-check right before posting.",
+ "short": [
+  {
+   "headline": "TREASURE",
+   "headline_es": "TESORO",
+   "text": "GTA 6's easiest early money is underwater.",
+   "text_es": "El dinero más fácil del inicio de GTA seis está bajo el agua.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6'S EASY MONEY",
+     "IS UNDERWATER"
+    ],
+    "pink": [
+     "IS UNDERWATER"
+    ],
+    "seed": 222
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "EL DINERO FÁCIL",
+     "ESTÁ BAJO EL AGUA"
+    ],
+    "pink": [
+     "ESTÁ BAJO EL AGUA"
+    ],
+    "seed": 222
+   }
+  },
+  {
+   "headline": "KEY LENTO",
+   "headline_es": "KEY LENTO",
+   "text": "Guides count six shipwrecks around Key Lento.",
+   "text_es": "Las guías cuentan seis naufragios alrededor de Key Lento.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Key Lento",
+    "label": "Shipwreck dives",
+    "n": 1,
+    "to": 0.36,
+    "src": "Slashgear · GTABoom"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Key Lento",
+    "label": "Naufragios",
+    "n": 1,
+    "to": 0.36,
+    "src": "Slashgear · GTABoom"
+   }
+  },
+  {
+   "headline": "HOW TO START",
+   "headline_es": "CÓMO EMPEZAR",
+   "text": "It opens after the Island Dreams mission: scuba gear and a metal detector.",
+   "text_es": "Se abre tras la misión Island Dreams: equipo de buceo y detector de metales.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Unlocks after Island Dreams. Scuba + metal detector.",
+    "pink": [
+     "Island Dreams"
+    ],
+    "seed": 222,
+    "src": "VGC · games.gg · GTABoom"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Tras Island Dreams: buceo + detector de metales.",
+    "pink": [
+     "Island Dreams"
+    ],
+    "seed": 222,
+    "src": "VGC · games.gg · GTABoom"
+   }
+  },
+  {
+   "headline": "CASH IT IN",
+   "headline_es": "VÉNDELO",
+   "text": "Sell what you find. Early on, it pays better than most jobs.",
+   "text_es": "Vende lo que encuentres. Al principio paga mejor que casi todo.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Sell the treasure: big early cash.",
+    "pink": [
+     "big early cash"
+    ],
+    "seed": 222,
+    "src": "VGC · Slashgear"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Vende el tesoro: mucho dinero al principio.",
+    "pink": [
+     "mucho dinero"
+    ],
+    "seed": 222,
+    "src": "VGC · Slashgear"
+   }
+  },
+  {
+   "headline": "DIVE OR STEAL?",
+   "headline_es": "¿BUCEAR O ROBAR?",
+   "text": "Dive or steal cars? Tell me, because",
+   "text_es": "¿Bucear o robar coches? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "DIVE",
+     "OR STEAL?"
+    ],
+    "pink": [
+     "OR STEAL?"
+    ],
+    "seed": 222
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿BUCEAR",
+     "O ROBAR?"
+    ],
+    "pink": [
+     "O ROBAR?"
+    ],
+    "seed": 222
+   }
+  }
+ ]
+}
