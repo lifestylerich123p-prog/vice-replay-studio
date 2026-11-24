@@ -1,9 +1,9 @@
 {
  "slug": "gta-6-easter-eggs",
  "lang": "en",
- "title": "GTA 6 Easter Eggs: The Best Secrets Players Found in Launch Week (No Spoilers)",
+ "title": "GTA 6 Easter Eggs: The Best Secrets and Where to Find Them (Map)",
  "h1": "GTA 6 easter eggs: <span>the best so far</span>",
- "desc": "The best GTA 6 easter eggs players found in launch week: an actual egg nest on a tower, a UFO abduction, the Skunk Ape, Dexter's apartment and a portal to 2002's Vice City. No story spoilers.",
+ "desc": "The best GTA 6 easter eggs and where they are, pinned on Rockstar's official map: the egg tower, a UFO abduction, the Skunk Ape, Dexter's apartment, a giant crab and more. No story spoilers.",
  "date": "2026-11-24",
  "video": null,
  "card": [
@@ -13,6 +13,10 @@
  ],
  "lede": "Players found dozens of secrets in GTA 6's first week. These are the ones reported by several outlets (ComicBook, GamingBible, BuzzFeed), with roughly where to look. <b>No story spoilers.</b>",
  "sections": [
+  [
+   "Where they are on the map",
+   "<img src=\"/img/maps/gta-6-easter-eggs-map.jpg\" width=\"1400\" height=\"1582\" alt=\"GTA 6 easter egg locations pinned on Rockstar's official Leonida map\" loading=\"lazy\" style=\"width:100%;height:auto;border-radius:14px;border:1px solid var(--line)\"><ol class=\"list\"><li><b>1. Egg tower:</b> a tall radio mast in Bluegrass, north of Hamlet; some guides say South Vice-Dale. Climb to the top.</li><li><b>2. UFO abduction:</b> Kelly County, northwest of the Starlet Motel near Port Gellhorn, after 2 AM. It doesn't happen every night; one guide places it just east of Port Gellhorn.</li><li><b>3. Skunk Ape:</b> around Cottonmouth Lake in Grassrivers, at night.</li><li><b>4. Dexter's apartment:</b> Washington Island, east of Vice City.</li><li><b>5. Giant crab:</b> an abandoned research station in Pelican Valley (Gullet Marsh).</li><li><b>6. Cool Dog on a jet ski:</b> open water; the reported starting area is Gambit Bay, west of Key Lento.</li></ol><p class=\"sources\">Pins are placed on Rockstar's official map from the locations in launch-week guides (GTABase, Red Bull, The Click, Game8); where guides disagree we say so. Exact spots can be hard to trigger.</p>"
+  ],
   [
    "A literal Easter egg",
    "<p>Climb to the top of a tall tower in Vice City and you'll find painted eggs in a nest: probably the most on-the-nose easter egg in the game.</p>"
@@ -43,6 +47,14 @@
   [
    "Is Bigfoot in GTA 6?",
    "Players report a Skunk Ape, Florida's Bigfoot, in the southern mangroves."
+  ],
+  [
+   "Where is the UFO in GTA 6?",
+   "In Kelly County, northwest of the Starlet Motel near Port Gellhorn, after 2 AM; it doesn't appear every night."
+  ],
+  [
+   "Where is Dexter's apartment in GTA 6?",
+   "On Washington Island, east of Vice City."
   ]
  ],
  "gear": [
@@ -60,6 +72,22 @@
   [
    "BuzzFeed: 23 GTA 6 easter eggs players have discovered",
    "https://www.buzzfeed.com/mariamsharia/gta-6-easter-eggs-players-have-already-found"
+  ],
+  [
+   "GTABase: all GTA 6 easter egg locations (map)",
+   "https://www.gtabase.com/gta-6/map/?feature=easter-eggs"
+  ],
+  [
+   "Red Bull: GTA 6 easter eggs, secrets and locations",
+   "https://www.redbull.com/au-en/gta-6-easter-eggs"
+  ],
+  [
+   "The Click: GTA 6 easter egg locations",
+   "https://www.theclick.gg/gta-6-easter-egg-locations/"
+  ],
+  [
+   "Game8: all GTA 6 easter eggs and secrets",
+   "https://game8.co/games/GTA-6/archives/638651"
   ]
  ]
 }

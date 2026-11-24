@@ -50,6 +50,37 @@ HOOK = ["vice-city-27", "car-grotti-cheetah-01", "vice-city-01", "vice-city-10",
         "car-vapid-stanier-01", "leonida-keys-01", "vice-city-08"]
 
 
+# Exact names first (owner, Nov 24: "when using images look for those exact images"): a title or line that names a
+# car, place or character gets THAT screenshot. Only Rockstar's official pack is used (rockstargames.com/VI/downloads,
+# last updated Nov 4, 2026 and fully in media/official); never other people's images.
+EXACT = [
+    (r"\bcheetah\b|\bgrotti\b", "car-grotti-cheetah"), (r"\bsqualo\b", "car-squalo"),
+    (r"\bstanier\b", "car-vapid-stanier"), (r"\bganado\b", "car-vapid-ganado"), (r"\bbuggy\b", "car-vapid-buggy"),
+    (r"one[- ]eyed willie|\bcanis\b", "car-canis-one-eyed-willie"), (r"electric fang|tattoo", "car-electric-fang"),
+    (r"\brideout\b", "rideout-customs"), (r"\bwyman\b", "wyman-car-collection"), (r"sara'?s salon", "saras-salon"),
+    (r"stock 305", "stock-305"), (r"port gellhorn", "port-gellhorn"), (r"grassrivers|everglades|swamp", "grassrivers"),
+    (r"mount kalaga", "mount-kalaga"), (r"\bambrosia\b", "ambrosia"), (r"leonida keys|\bthe keys\b", "leonida-keys"),
+    (r"\bmap\b|\bmapa\b", "leonida-map-poster"), (r"\bjason\b", "jason-duval"), (r"\blucia\b", "lucia-caminos"),
+    (r"cal hampton", "cal-hampton"), (r"brian heder", "brian-heder"), (r"\braul\b", "raul-bautista"),
+    (r"real dimez", "real-dimez"), (r"\bboobie\b", "boobie-ike"), (r"dre'?quan", "drequan-priest"),
+    (r"vice city", "vice-city"),
+]
+SAFE = {n for names in POOL.values() for n in names}  # viewed Nov 24: OK as a video background
+
+
+def exact(text, video=False):
+    """Official screenshots that show exactly what the text names, most specific first. video=True keeps only the
+    vetted SAFE set (videos need first-second ad safety; thumbnails, site cards and carousels can use any file in
+    media/official, which only holds owner-approved shots)."""
+    t = (text or "").lower()
+    out = []
+    for rx, prefix in EXACT:
+        if re.search(rx, t):
+            files = sorted(f.stem for f in OFFICIAL.glob(f"{prefix}*.jpg"))
+            out += [f for f in files if (f in SAFE or not video) and f not in out]
+    return out
+
+
 def enabled(ep=None):
     if ep is not None and ep.get("card_photos") is False:
         return False
@@ -68,6 +99,9 @@ def pick(text, index, used=()):
     """A safe official screenshot for one card: topic-matched (cars / water / world / city), varied by the card's
     text and position, never repeating one already used in the same video when another is free."""
     t = (text or "").lower()
+    hits = [n for n in exact(t, video=True) if f"media/official/{n}.jpg" not in used]
+    if hits:  # the exact car / place the line names
+        return f"media/official/{hits[index % len(hits)]}.jpg"
     group = next((g for g, rx in TOPICS if re.search(rx, t)), "city")
     names = [n for n in (HOOK if index == 0 and group == "city" else POOL[group]) if _exists(n)] or \
             [n for g in POOL.values() for n in g if _exists(n)]
