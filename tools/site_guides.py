@@ -5,7 +5,7 @@ SITE = os.environ.get("VICEREPLAY_SITE") or os.path.join(os.path.dirname(os.path
 DOMAIN = "https://vicereplay.com"
 TAG = "vicereplay-20"
 YT = "https://www.youtube.com/@vicereplaytv-q8s"
-YT_ES = "https://www.youtube.com/channel/UCWPnqYqYu9_CLsJ8Bk1MPgQ"  # Vice Replay en Español
+YT_ES = "https://www.youtube.com/@vicereplayes"  # Vice Replay en Español (UCWPnqYqYu9_CLsJ8Bk1MPgQ)
 import re as _re
 # Deals shown as direct Amazon buttons on the links page (bio link) and the homepage. Update prices here when they
 # change (checked Nov 24, 2026: Kotaku/Gamerant DualSense $54; 9to5Toys Pulse Elite ~$110; Sony sale Nov 16-30).
@@ -233,7 +233,9 @@ GEAR = [("PS5 DualSense controller", "PS5 DualSense controller"), ("Gaming heads
 def sources(lst):
     return '<div class="sources"><h2>Sources</h2><ul class="list">' + "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{html.escape(n)}</a></li>' for n, u in lst) + "</ul></div>"
 
-def watchmore(vid):
+def watchmore(vid, lang="en"):
+    if lang == "es":
+        return f'<div class="box"><h3>Mira más</h3><div class="btns"><a class="item" href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener">Míralo en YouTube<span aria-hidden="true">→</span></a><a class="item" href="{YT_ES}?sub_confirmation=1" target="_blank" rel="noopener">Suscríbete a Vice Replay en Español<small>Noticias y Shorts de GTA 6 en español</small><span aria-hidden="true">→</span></a></div></div>'
     return f'<div class="box"><h3>Watch more</h3><div class="btns"><a class="item" href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener">Watch this on YouTube<span aria-hidden="true">→</span></a><a class="item" href="{YT}?sub_confirmation=1" target="_blank" rel="noopener">Subscribe to Vice Replay<small>New GTA 6 news and Shorts every day</small><span aria-hidden="true">→</span></a></div></div>'
 
 CHEATS = [  # verified: GameSpot, PC Gamer, GamesRadar, Screen Rant, Vice (Nov 19)
@@ -306,19 +308,21 @@ def soften_gear(slug, body, lang):
     return _re.sub(r'<div class="box"><h3>Gear for GTA 6 \(affiliate links\)</h3>.*?All gear picks</a></p></div>', line, body, count=1, flags=_re.S)
 
 
-def load_watch():
+def load_watch(lang="en"):
     """{guide slug: (YouTube id, kind)} for guides with a matching upload that is PUBLIC now (its slot has passed, not
     hidden). Episodes name their guide with `guide`, or match it by name (gta6-x -> gta-6-x), like the uploader does.
-    Shorts win over long videos; newest first. No API call: registry + approved_queue slots."""
+    Shorts win over long videos; newest first. No API call: registry + approved_queue slots.
+    lang="es": Vice Replay en Español uploads (uploads-es.json, queue "es" slots); with_watch maps a Spanish guide to
+    them through its English pair (ALT) or its own slug (a Spanish-only episode can name its es guide directly)."""
     import datetime as _dt, glob as _glob
     from zoneinfo import ZoneInfo
     et = ZoneInfo("America/New_York"); now = _dt.datetime.now(et)
     try:
-        reg = json.load(open(os.path.join(STUDIO, "content/learn/uploads.json")))
+        reg = json.load(open(os.path.join(STUDIO, "content/learn/uploads-es.json" if lang == "es" else "content/learn/uploads.json")))
         queue = json.load(open(os.path.join(STUDIO, "content/learn/approved_queue.json")))["items"]
     except (OSError, ValueError, KeyError):
         return {}
-    slot = {(i["slug"], i.get("item", "short")): i.get("en") for i in queue}
+    slot = {(i["slug"], i.get("item", "short")): i.get(lang) for i in queue}
     have = {os.path.basename(d.rstrip("/")) for d in _glob.glob(os.path.join(SITE, "guides", "*/"))}
     have |= {g[0] for g in GUIDES}
     guide_of = {}
@@ -343,25 +347,38 @@ def load_watch():
         rank = (kind == "short", r.get("uploaded") or "")
         if g not in best or rank > best[g][2]:
             best[g] = (vid, kind, rank)
-    return {g: (v, k) for g, (v, k, _r) in best.items()}
+    return {g: (v, k) for g, (v, k, _r) in best.items()}  # es: keyed by the episode's (usually English) guide slug
 
 
 _WATCH = None
+_WATCH_ES = None
 
 
 def with_watch(slug, body, lang):
     """A 'watch it' button right under the answer/picture/jump list when a public video matches the guide."""
-    global _WATCH
-    if lang != "en" or 'class="video"' in body:
+    global _WATCH, _WATCH_ES
+    if 'class="video"' in body:
         return body
-    if _WATCH is None:
-        _WATCH = load_watch()
-    if slug not in _WATCH:
+    if lang == "es":
+        if _WATCH_ES is None:
+            _WATCH_ES = load_watch("es")
+        en = ALT.get(f"es/guias/{slug}/", "")  # its English pair, looked up now (ALT fills in as pages are built)
+        en = en.split("/")[1] if en.startswith("guides/") else None
+        watch = {slug: _WATCH_ES[k] for k in (slug, en) if k in _WATCH_ES}
+    else:
+        if _WATCH is None:
+            _WATCH = load_watch()
+        watch = _WATCH
+    if slug not in watch:
         return body
-    vid, kind = _WATCH[slug]
+    vid, kind = watch[slug]
     url = f"https://www.youtube.com/shorts/{vid}" if kind == "short" else f"https://www.youtube.com/watch?v={vid}"
-    label = "▶ Watch it in 30 seconds" if kind == "short" else "▶ Watch the video"
-    btn = f'<a class="watch" href="{url}" target="_blank" rel="noopener">{label}<small>on our YouTube channel</small></a>'
+    if lang == "es":
+        label = "▶ Míralo en 30 segundos" if kind == "short" else "▶ Mira el video"
+        btn = f'<a class="watch" href="{url}" target="_blank" rel="noopener">{label}<small>en Vice Replay en Español</small></a>'
+    else:
+        label = "▶ Watch it in 30 seconds" if kind == "short" else "▶ Watch the video"
+        btn = f'<a class="watch" href="{url}" target="_blank" rel="noopener">{label}<small>on our YouTube channel</small></a>'
     for anchor in ('</nav>', '<img class="lead"'):
         k = body.find(anchor)
         if k >= 0:
@@ -411,6 +428,8 @@ def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None):
     body = with_toc(body, lang)
     body = with_watch(slug, body, lang)
     body = soften_gear(slug, body, lang)
+    if lang == "es" and YT_ES not in body:  # every Spanish guide points Spanish readers to the Spanish channel
+        body += f'<div class="box"><h3>GTA 6 en español, cada día</h3><div class="btns"><a class="item" href="{YT_ES}?sub_confirmation=1" target="_blank" rel="noopener">Suscríbete a Vice Replay en Español<small>Shorts y noticias de GTA 6 en español</small><span aria-hidden="true">→</span></a></div></div>'
     if lang == "en": GUIDES.append((slug, title, desc, date))
     else: GUIDES_ES.append((slug, title, desc, date))
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": title[:110], "description": desc, "image": [img],
@@ -783,7 +802,7 @@ for g in _JSON:
     body += "".join(f"<h2>{html.escape(h)}</h2>{b}" for h, b in g.get("sections", []))
     body += f'<div class="note">{g["note"]}</div>' if g.get("note") else ""
     body += gearbox(items, "Enlaces (Amazon EE. UU.):" if es else "Getting GTA 6 or making room for it? Links go to current listings:") if items else ""
-    body += watchmore(g["video"]) if g.get("video") else ""
+    body += watchmore(g["video"], "es" if es else "en") if g.get("video") else ""
     body += sources([tuple(x) for x in g.get("sources", [])]) if g.get("sources") else ""
     guide(g["slug"], g["title"], g["desc"], g["date"], body, faq=[tuple(x) for x in g.get("faq", [])] or None, lang=g.get("lang", "en"))
 
@@ -791,7 +810,7 @@ for g in _JSON:
 SEARCH_JS = '<script>(function(){var q=document.getElementById("q");if(!q)return;var cs=[].slice.call(document.querySelectorAll(".cards .card"));var n=document.getElementById("qn");q.addEventListener("input",function(){var t=q.value.toLowerCase().trim(),k=0;cs.forEach(function(c){var m=!t||c.textContent.toLowerCase().indexOf(t)>-1;c.style.display=m?"":"none";if(m)k++;});n.textContent=t?(k+" / "+cs.length):"";});})();</script>'
 GUIDES_ES.sort(key=lambda g: g[3], reverse=True)
 page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en español: trucos, hora de lanzamiento, espacio y PC. Sin spoilers.",
-     banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="https://www.youtube.com/@vicereplaytv-q8s">Nuestros videos tienen subtítulos en español.</a></p><div class="search"><input type="search" id="q" placeholder="Busca entre ' + str(len(GUIDES_ES)) + ' guías: trucos, precio, online..." aria-label="Buscar guías" autocomplete="off"><span id="qn"></span></div><div class="cards">'
+     banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="' + YT_ES + '?sub_confirmation=1">Suscríbete a Vice Replay en Español</a>: Shorts de GTA 6 en español cada día.</p><div class="search"><input type="search" id="q" placeholder="Busca entre ' + str(len(GUIDES_ES)) + ' guías: trucos, precio, online..." aria-label="Buscar guías" autocomplete="off"><span id="qn"></span></div><div class="cards">'
      + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>' + SEARCH_JS, lang="es")
 
 # Spanish gear page (Nov 22, 2026): the Amazon link for Vice Replay en Español (channel links, descriptions, comments)
