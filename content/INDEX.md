@@ -157,6 +157,7 @@ Read this first instead of searching the repo.
 | 2026-11-18 | /guides/gta-6-characters/ | Every GTA 6 Character Confirmed So Far (No Spoilers) |
 | 2026-11-22 | /es/guias/gta-6-cifras-semana-lanzamiento/ | Ventas y récords de GTA 6: todas las cifras del lanzamiento vs GTA 5 |
 | 2026-11-22 | /guides/gta-6-darts/ | Does GTA 6 Have Darts? No, and Rockstar Explains Why (Pool Is In) |
+| 2026-11-23 | /guides/gta-6-game-awards/ | GTA 6 at The Game Awards 2026: All 8 Nominations, Rivals and Odds |
 | 2026-11-18 | /guides/gta-6-gift-guide/ | GTA 6 Gift Guide 2026: Best Gifts for a GTA 6 Fan (PS5 and Xbox) |
 | 2026-11-21 | /guides/gta-6-how-long-to-beat/ | How Long Is GTA 6? Story Length, Real Finish Times and 100% (No Spoilers) |
 | 2026-11-19 | /es/guias/guia-lanzamiento-gta-6/ | GTA 6 ya salió: guía de supervivencia (servidores, 30 FPS y ajustes) |
@@ -166,6 +167,7 @@ Read this first instead of searching the repo.
 | 2026-11-23 | /es/guias/gta-6-notas-del-parche/ | GTA 6 actualización 1.002.002: notas del parche y los 7 arreglos |
 | 2026-11-23 | /guides/gta-6-patch-notes/ | GTA 6 Update 1.002.002 Patch Notes: All 7 Fixes (Nov 23, 2026) |
 | 2026-11-18 | /guides/gta-6-physical-edition/ | GTA 6 Physical Edition: No Disc in the Box? What You're Actually Buying |
+| 2026-11-23 | /es/guias/gta-6-premios-game-awards/ | GTA 6 en The Game Awards 2026: sus 8 nominaciones, rivales y probabilidades |
 | 2026-11-19 | /guides/gta-6-ps5-pro-worth-it/ | Is PS5 Pro Worth It for GTA 6? 30 FPS, PSSR and What You Actually Get |
 | 2026-11-21 | /guides/gta-6-ultimate-edition/ | Is GTA 6 Ultimate Edition Worth It? The 5 Shops Only It Unlocks (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-vs-gta-5/ | GTA 6 vs GTA 5: The Biggest Differences Explained |
