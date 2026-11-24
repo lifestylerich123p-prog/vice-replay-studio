@@ -68,13 +68,14 @@
    "item": "short",
    "en": [
     "2026-11-26",
-    "9:30 AM"
+    "11:00 AM"
    ],
    "es": [
     "2026-11-26",
     "9:30 AM"
    ],
-   "approved": "Nov 22 7 PM (ok approve and post)"
+   "approved": "Nov 22 7 PM (ok approve and post)",
+   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
   },
   {
    "slug": "gta-history-quiz",
@@ -107,27 +108,29 @@
    "slug": "gta6-80-hours",
    "item": "short",
    "en": [
-    "2026-11-28",
+    "2026-12-05",
     "10:00 AM"
    ],
    "es": [
-    "2026-11-28",
-    "10:00 AM"
+    "2026-12-05",
+    "12:30 PM"
    ],
-   "approved": "Nov 22 10 PM (approve)"
+   "approved": "Nov 22 10 PM (approve)",
+   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
   },
   {
    "slug": "gta6-5-things",
    "item": "short",
    "en": [
-    "2026-11-29",
-    "10:00 AM"
+    "2026-12-02",
+    "9:30 AM"
    ],
    "es": [
-    "2026-11-29",
-    "10:00 AM"
+    "2026-12-02",
+    "12:30 PM"
    ],
-   "approved": "Nov 22 10 PM (approve)"
+   "approved": "Nov 22 10 PM (approve)",
+   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
   },
   {
    "slug": "gta6-little-cuba-es",
@@ -216,9 +219,10 @@
    "item": "short",
    "en": [
     "2026-11-26",
-    "11:00 AM"
+    "9:30 AM"
    ],
-   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)",
+   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
   },
   {
    "slug": "gta6-3-records",
@@ -284,13 +288,14 @@
    "item": "short",
    "en": [
     "2026-11-30",
-    "12:30 PM"
+    "9:30 AM"
    ],
    "es": [
     "2026-11-30",
     "1:30 PM"
    ],
-   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): remade as lettering cards"
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): remade as lettering cards",
+   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
   },
   {
    "slug": "gta6-vs-red-dead-2",
@@ -322,14 +327,15 @@
    "slug": "gta-tier-list-protagonists",
    "item": "short",
    "en": [
-    "2026-12-02",
-    "9:30 AM"
+    "2026-11-29",
+    "10:00 AM"
    ],
    "es": [
-    "2026-12-02",
-    "12:30 PM"
+    "2026-11-29",
+    "10:00 AM"
    ],
-   "approved": "Nov 23 ~6:20 PM (owner \"Approve next steps\": tier lists twice a week, Tier List #3 Wed Dec 2 9:30 AM); Spanish follows winners-only"
+   "approved": "Nov 23 ~6:20 PM (owner \"Approve next steps\": tier lists twice a week, Tier List #3 Wed Dec 2 9:30 AM); Spanish follows winners-only",
+   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
   },
   {
    "slug": "gta6-game-awards-explained",
@@ -344,14 +350,15 @@
    "slug": "gta-tier-list-maps",
    "item": "short",
    "en": [
-    "2026-12-05",
+    "2026-11-28",
     "10:00 AM"
    ],
    "es": [
-    "2026-12-05",
-    "12:30 PM"
+    "2026-11-28",
+    "10:00 AM"
    ],
-   "approved": "Nov 23 ~7 PM (owner \"APPROVE what you should do next\"): Tier List #4, the new Saturday tier day; Spanish follows winners-only"
+   "approved": "Nov 23 ~7 PM (owner \"APPROVE what you should do next\"): Tier List #4, the new Saturday tier day; Spanish follows winners-only",
+   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
   },
   {
    "slug": "gta6-first-platinum",
