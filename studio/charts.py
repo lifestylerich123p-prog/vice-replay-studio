@@ -384,8 +384,52 @@ def quiz_frame(base, spec, t, w, h):
     return img.convert("RGB")
 
 
+_MAP = {}
+
+
+def map_frame(base, spec, t, w, h):
+    """A "where is it" card (owner approved Nov 24: the official map with pins/zoom in videos): Rockstar's official
+    Leonida map, starting on the whole state and zooming to `at` (a place printed on the map, a grid cell like "G7", or
+    [x, y] fractions; `dx`/`dy` nudge it), then a pulsing numbered pin and our `label`. Spec: {"type": "map",
+    "at": "Kelly County", "label": "UFO · after 2 AM", "n": 1, "to": 0.28 (final visible width share)}."""
+    from . import mappins
+    if "img" not in _MAP:
+        _MAP["img"] = mappins.map_image()
+    im = _MAP["img"]
+    W, H = im.size
+    fx, fy = mappins.where(spec.get("at", "Vice City"))
+    tx, ty = (fx + spec.get("dx", 0)) * W, (fy + spec.get("dy", 0)) * H
+    dur = max(spec.get("_dur", 4.0), 0.5)
+    p = min(1.0, t / (dur * 0.55))
+    e = 1 - (1 - p) ** 3
+    vh0 = H                                   # start: the whole height of the map
+    vh1 = W * float(spec.get("to", 0.28)) * h / w
+    vh = vh0 * (1 - e) + vh1 * e
+    vw = vh * w / h
+    cx = (W / 2) * (1 - e) + tx * e
+    cy = (H / 2) * (1 - e) + ty * e
+    x0, y0 = max(0, min(W - vw, cx - vw / 2)), max(0, min(H - vh, cy - vh / 2))
+    if vw > W:                                # wider than the map: centre it on a dark band
+        x0 = (W - vw) / 2
+    frame = im.crop((int(x0), int(y0), int(x0 + vw), int(y0 + vh))).resize((w, h), Image.BILINEAR)
+    if vw > W:
+        frame = frame.copy()
+    d = ImageDraw.Draw(frame)
+    px, py = (tx - x0) / vw * w, (ty - y0) / vh * h
+    if p >= 1.0:
+        k = (t - dur * 0.55) * FPS
+        pulse = 1 + 0.18 * abs((k / FPS * 2) % 2 - 1)
+        mappins._pin(d, px, py, spec.get("n", ""), 1.9 * pulse)
+        if spec.get("label"):
+            mappins._label(d, px, py, spec["label"], 1.9, w, spec.get("side"))
+    f = brand.font(brand.BODY_FONT, 26)
+    credit = "Map: Rockstar Games (official)"
+    d.text((w - f.getlength(credit) - 24, h - 130), credit, font=f, fill=(255, 255, 255))
+    return frame
+
+
 DRAW = {"bars": bars_frame, "counter": counter_frame, "line": line_frame, "quote": quote_frame, "list": list_frame,
-        "text": text_frame, "quiz": quiz_frame}
+        "text": text_frame, "quiz": quiz_frame, "map": map_frame}
 
 
 def _source_line(img, spec, w, h):

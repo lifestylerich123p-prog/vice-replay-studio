@@ -576,7 +576,7 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
                 print(f"  ! segment {i}: Spanish render shows the English chart text {chart_words(chart)}; add `chart_es`")
         if vertical and i == 0:  # a Short's first frame is its cover: show the whole hook card at once
             chart = dict(chart, cover=True)
-        if "bg" not in chart and seg.get("_card_photos", True):  # photo cards (owner approved Nov 24)
+        if "bg" not in chart and chart.get("type") != "map" and seg.get("_card_photos", True):  # photo cards (owner approved Nov 24)
             from . import cardphotos
             if cardphotos.enabled():
                 words = " ".join(str(seg.get(k, "")) for k in ("headline", "text")) + " " + " ".join(chart_words(chart))

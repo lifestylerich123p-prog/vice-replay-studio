@@ -1,0 +1,62 @@
+{
+ "slug": "gta-6-map-leonida-places",
+ "lang": "en",
+ "pair": "mapa-gta-6",
+ "title": "GTA 6 Map: Official HD Leonida Map, Interactive, With Secret Spots",
+ "h1": "The GTA 6 map, <span>zoom to every street</span>",
+ "desc": "Rockstar's official Leonida map in full HD: zoom in to street names, turn pin layers on and off, and find GTA 6's easter eggs, secrets and key places. No spoilers.",
+ "date": "2026-11-24",
+ "video": null,
+ "card": [
+  "GTA 6 MAP",
+  "OFFICIAL HD",
+  "leonida-map-poster.jpg"
+ ],
+ "lede": "This is <b>Rockstar's official Leonida map</b> at full printable resolution (5775 × 7900 pixels), so you can zoom down to street names. We pinned the places worth knowing and the easter eggs that at least two launch-week guides agree on.",
+ "sections": [
+  [
+   "Interactive map",
+   "<!--MAP-->"
+  ],
+  [
+   "HD map pictures",
+   "<p>Prefer a picture? These open full size:</p><ul class=\"list\"><li><a href=\"/img/maps/gta-6-easter-eggs-map.jpg\" target=\"_blank\" rel=\"noopener\">Whole map with the easter egg pins</a></li><li><a href=\"/img/maps/gta-6-secrets-vice-city-hd.jpg\" target=\"_blank\" rel=\"noopener\">Vice City close-up (HD)</a></li><li><a href=\"/img/maps/gta-6-secrets-south-hd.jpg\" target=\"_blank\" rel=\"noopener\">South Leonida close-up (HD)</a></li></ul><p>Rockstar's own printable poster is free on the <a href=\"https://www.rockstargames.com/VI/downloads\" target=\"_blank\" rel=\"noopener\">GTA VI downloads page</a>.</p>"
+  ],
+  [
+   "Is the leaked map real?",
+   "<p>Before launch, fan-made maps pieced together from leaks went around. You don't need them anymore: the map above is Rockstar's official one. We don't use leaked material on this site.</p>"
+  ],
+  [
+   "How big is it?",
+   "<p>About twice the size of GTA 5's map, going by what Rockstar has told interviewers; exact square miles are still fan estimates. <a href=\"/guides/gta-6-map-size/\">The full size comparison</a>.</p>"
+  ]
+ ],
+ "note": "The map is Rockstar Games' official Leonida map poster; pins and notes are ours. Pins mark the area a spot is in, from launch-week guides; where guides disagree, the note says so.",
+ "faq": [
+  [
+   "Is there an official GTA 6 map?",
+   "Yes. Rockstar released a printable Leonida map poster on its GTA VI downloads page. This page uses it at full resolution."
+  ],
+  [
+   "Where is Vice City on the map?",
+   "On the southeast coast of Leonida, with Vice Beach and the islands off its east side."
+  ],
+  [
+   "Is there a GTA 6 interactive map?",
+   "Yes, this page: zoom in, turn pin layers on and off, and tap a pin for what's there."
+  ]
+ ],
+ "gear": [
+  "game"
+ ],
+ "sources": [
+  [
+   "Rockstar Games: GTA VI downloads (official Leonida map)",
+   "https://www.rockstargames.com/VI/downloads"
+  ],
+  [
+   "Rockstar Games: official GTA VI site (places)",
+   "https://www.rockstargames.com/VI"
+  ]
+ ]
+}

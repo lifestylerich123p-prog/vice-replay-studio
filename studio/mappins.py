@@ -48,9 +48,10 @@ def map_image():
     return Image.open(HD_MAP).convert("RGB")
 VIEW_W, VIEW_H = 1023.4, 1400.0  # the 1400 px-high view the positions below were read from (Nov 24)
 
-# Label centers read off the official map (x, y in that view); every name is printed on Rockstar's map.
+# Label centers read off the official map (x, y in that view); every name is printed on Rockstar's map (all 37 checked
+# against the HD poster on Nov 24; "Starlet Motel" was removed: it isn't printed, so a pin there was a guess).
 PLACES = {
-    "Port Gellhorn": (312, 498), "Kelly County": (433, 553), "Starlet Motel": (360, 520),
+    "Port Gellhorn": (312, 498), "Kelly County": (433, 553),
     "Vice City": (686, 728), "Vice Beach": (870, 685), "Vice-Dale County": (738, 803), "Downtown": (718, 748),
     "Little Cuba": (676, 747), "VCIA": (580, 798), "Washington Island": (850, 603), "Vespucci Island": (781, 677), "Rialto Islands": (783, 658), "Washington Beach": (875, 622),
     "Ambrosia": (567, 500), "Leonard County": (715, 503), "Belville": (672, 554), "Lake Leonida": (618, 437),

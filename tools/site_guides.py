@@ -541,23 +541,8 @@ guide("gta-6-launch-checklist", "GTA 6 Launch Checklist: Download Size, Price an
 {watchmore("vJDnv7_7Hcs")}
 {sources([("Forbes: release time, download size, day-one update","https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/"),("Gameluster: 212 GB preload","https://gameluster.com/gta-6-212gb-download-size-preload/"),("Rockstar Games: official GTA VI site","https://www.rockstargames.com/VI")])}""")
 
-# 4. Map
-guide("gta-6-map-leonida-places", "GTA 6 Map: 6 Places in Leonida You Need to Know",
- "GTA 6 is bigger than Vice City. A quick guide to the six places Rockstar has shown in the state of Leonida: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga.",
- "2026-11-13", f"""<h1>GTA 6 is bigger than <span>Vice City</span></h1>
-<p class="meta">Updated November 13, 2026 · Vice Replay · No story spoilers</p>
-<p class="lede">GTA 6 is set in the state of Leonida, Rockstar's take on Florida. Before launch, Rockstar showed six very different places. Here's what each one is about.</p>
-{video("GjhaJdjHR4Q","GTA 6 Is Bigger Than Vice City: 6 Places to Know")}
-<h2>Vice City</h2><p>The neon heart of Leonida, inspired by Miami: beaches, nightlife, money and chaos.</p>
-<h2>Leonida Keys</h2><p>A chain of islands and bridges inspired by the Florida Keys: boats, sunsets and laid-back island towns.</p>
-<h2>Grassrivers</h2><p>Leonida's wetlands, Rockstar's version of the Everglades: swamps, airboats and alligators.</p>
-<h2>Port Gellhorn</h2><p>A fading beach-resort town on the Gulf coast, with its glory days behind it.</p>
-<h2>Ambrosia</h2><p>An industrial town built around a sugar refinery, with a rough biker scene.</p>
-<h2>Mount Kalaga National Park</h2><p>The wild north: forests, trails and back roads for off-road driving and hunting.</p>
-<div class="note">The video uses original concept art made by us, not GTA 6 gameplay. Place descriptions are based on Rockstar's official GTA VI website.</div>
-{gearbox(GAME + STORAGE, "Getting GTA 6 or making room for it? These searches show current options and prices:")}
-{watchmore("GjhaJdjHR4Q")}
-{sources([("Rockstar Games: official GTA VI site (places)","https://www.rockstargames.com/VI")])}""")
+# 4. Map: since Nov 24 the map hub is site/guides/gta-6-map-leonida-places.json (interactive official HD map, EN) +
+# mapa-gta-6.json (ES); its old 6-places text is the 'Places to know' pins in site/map-pins.json.
 
 # 5. Storage evergreen
 guide("gta-6-storage", "How Many GB Is GTA 6? 212 GB, and How to Make Room on PS5 and Xbox",
@@ -787,6 +772,47 @@ guide("gta-6-lanzamiento-en-vivo", "GTA 6 en vivo: parches, récords y noticias 
 # {"slug","lang":"en|es","title","desc","date","video":"YouTube id or null","card":[line1,line2,"screenshot.jpg"],
 #  "lede","sections":[[heading, html]],"note","faq":[[q,a]],"gear":["game","storage"],"sources":[[name,url]]}
 import glob as _glob
+
+
+def interactive_map(lang="en"):
+    """Nov 24 (owner: "research those maps pictures more"): Rockstar's official Leonida map, zoomable to full HD
+    (tiles from tools/map_tiles.py), with our pins from site/map-pins.json and category filters. A guide JSON section
+    that contains <!--MAP--> gets it, followed by a numbered list of the pins (tap one to fly to it)."""
+    import shutil
+    import sys
+    sys.path.insert(0, STUDIO)
+    from studio import mappins
+    src = json.load(open(os.path.join(STUDIO, "site", "map-pins.json")))
+    os.makedirs(os.path.join(SITE, "js"), exist_ok=True)
+    shutil.copy(os.path.join(STUDIO, "site", "assets", "vr-map.js"), os.path.join(SITE, "js", "vr-map.js"))
+    cats = [{"id": c["id"], "color": c["color"], "name": c[lang]} for c in src["cats"]]
+    pins = []
+    for n, p in enumerate(src["pins"], 1):
+        x, y = mappins.where(p["at"])
+        if "dx" not in p and "dy" not in p and str(p["at"]).lower() in {k.lower() for k in mappins.PLACES}:
+            y -= 0.009  # just above the printed place name, so the pin doesn't cover it
+        t = p[lang]
+        pins.append({"n": n, "cat": p["cat"], "x": round(x + p.get("dx", 0), 4), "y": round(y + p.get("dy", 0), 4),
+                     "t": t["t"], "d": t["d"], "when": t.get("when", "")})
+    data = json.dumps({"lang": lang, "w": 5775, "h": 7900, "cats": cats, "pins": pins}, ensure_ascii=False).replace("</", "<\\/")
+    es = lang == "es"
+    hint = ("Pellizca o usa la rueda para acercarte hasta las calles; toca un pin para ver qué hay y dónde. Los pines marcan la zona."
+            if es else "Pinch or scroll to zoom down to street names; tap a pin for what's there. Pins mark the area.")
+    items = "".join(f'<li><a href="#vrmap" data-pin="{p["n"]}"><b>{p["n"]}. {html.escape(p["t"])}</b></a>: {html.escape(p["d"])}'
+                    + (f' <i>({html.escape(p["when"])})</i>' if p["when"] else "") + "</li>" for p in pins)
+    style = ('<style>#vrmap{height:min(78vh,720px);border-radius:14px;border:1px solid var(--line);margin:12px 0 6px;background:#0d0717}'
+             '.vrpin b{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;color:#fff;'
+             'font:700 14px/1 var(--body);border:2px solid #fff;box-shadow:0 0 0 3px rgba(13,7,23,.55),0 0 14px rgba(255,31,142,.6)}'
+             '.vrlegend{background:rgba(13,7,23,.88);color:#f4eefc;padding:8px 10px;border-radius:10px;font:600 13px/1.5 var(--body)}'
+             '.vrlegend label{display:flex;align-items:center;gap:6px;cursor:pointer}.vrlegend i{width:12px;height:12px;border-radius:50%;display:inline-block}'
+             '.leaflet-container img.leaflet-tile{mix-blend-mode:normal;width:256.6px!important;height:256.6px!important}.leaflet-popup-content{font:14px/1.45 var(--body)}.vrlist li{margin-bottom:8px}</style>')
+    return (f'<link rel="stylesheet" href="/js/leaflet.css">{style}<div id="vrmap" role="application" '
+            f'aria-label="{"Mapa interactivo de Leonida" if es else "Interactive map of Leonida"}"></div>'
+            f'<p class="meta">{hint}</p><ol class="list vrlist">{items}</ol>'
+            f'<script type="application/json" id="vrpins">{data}</script>'
+            '<script src="/js/leaflet.js"></script><script src="/js/vr-map.js"></script>')
+
+
 _JSON = [json.load(open(_f)) for _f in sorted(_glob.glob(os.path.join(STUDIO, "site/guides/*.json")))]
 for _g in _JSON:  # "pair": slug of the same guide in the other language (EN guides/<slug>/ <-> ES es/guias/<slug>/)
     if _g.get("pair") and _g.get("lang", "en") == "en":
@@ -799,7 +825,7 @@ for g in _JSON:
     h1 = g.get("h1") or g["title"]
     body = f'<h1>{h1}</h1><p class="meta">{"Actualizado el" if es else "Updated"} {__import__("datetime").date.fromisoformat(g["date"]).strftime("%B %-d, %Y")} · Vice Replay</p><p class="lede">{g.get("lede", "")}</p>'
     body += video(g["video"], g["title"]) if g.get("video") else ""
-    body += "".join(f"<h2>{html.escape(h)}</h2>{b}" for h, b in g.get("sections", []))
+    body += "".join(f"<h2>{html.escape(h)}</h2>{b}".replace("<!--MAP-->", interactive_map(g.get("lang", "en")) if "<!--MAP-->" in b else "") for h, b in g.get("sections", []))
     body += f'<div class="note">{g["note"]}</div>' if g.get("note") else ""
     body += gearbox(items, "Enlaces (Amazon EE. UU.):" if es else "Getting GTA 6 or making room for it? Links go to current listings:") if items else ""
     body += watchmore(g["video"], "es" if es else "en") if g.get("video") else ""
