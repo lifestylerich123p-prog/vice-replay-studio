@@ -1,0 +1,218 @@
+{
+  "title": "Ibai y el streamer de GTA 6 con cero espectadores",
+  "slug": "gta6-ibai-cero-espectadores-es",
+  "series": "Streamers",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "es_only": true,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_title": "GTA 6 streamer had ZERO viewers... then Ibai #GTA6 #Shorts",
+  "short_description": "Spanish-channel-only Short (Nov 24: Spanish-speaking streamer news, the format that works best in English, told for the Spanish audience). Our voice and cards only: no streamer footage, no game images.",
+  "short_es": {
+    "title": "Jugaba GTA 6 para CERO personas... hasta que llegó Ibai 😭 #GTA6 #Shorts",
+    "description": "El 19 de noviembre, Ibai buscó a alguien que jugara GTA 6 sin público y encontró a Dicrim_RD69, un streamer dominicano con cero espectadores. Escribió «hola» en su chat y compartió el enlace con sus seguidores: el directo llegó a 3.243 espectadores a la vez y Dicrim se emocionó hasta llorar. Ibai le dijo que siguiera haciendo directos si eso lo hacía feliz. ¿Qué streamer pequeño de GTA 6 merece más gente? Déjalo abajo.\n\nFuentes: 3DJuegos, Dexerto, Que.es, Critical Hits.",
+    "tags": [
+      "Ibai",
+      "Ibai GTA 6",
+      "Ibai Llanos",
+      "streamer GTA 6",
+      "GTA 6 Twitch",
+      "Dicrim",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "short_pinned_comment_es": "¿Qué streamer pequeño de GTA 6 merece más espectadores? Déjalo abajo 👇",
+  "pinned_comment": "Which small GTA 6 streamer deserves more viewers? Drop them below 👇",
+  "tags": [
+    "Ibai",
+    "GTA 6 streamer",
+    "GTA VI"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#ibai",
+    "#gta6español"
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short). Preview rendered with the free Kokoro em_alex until the owner OKs the Everygen spend.",
+  "sources": [
+    "3DJuegos - Ibai consigue que un streamer de GTA 6 pase de cero espectadores a más de 3.200 y acaba haciéndole llorar: https://www.3djuegos.com/streamers/noticias/ibai-consigue-que-streamer-gta-6-pase-cero-espectadores-a-3-200-acaba-haciendole-llorar",
+    "Dexerto - GTA 6 streamer with zero viewers left in tears after Ibai sent thousands of people to his broadcast: https://www.dexerto.com/gta/gta-6-streamer-with-zero-viewers-left-in-tears-after-ibai-sent-thousands-of-people-to-his-broadcast-3430452/",
+    "Que.es (Nov 20, 2026) - Ibai revienta el directo de un streamer sin audiencia: de 0 a 3.200 espectadores y llorando en directo: https://www.que.es/2026/11/20/ibai-streamer-directo-viral/",
+    "Critical Hits - Ibai leva streamer de GTA 6 às lágrimas após audiência saltar para 3 mil: https://criticalhits.com.br/games/ibai-leva-streamer-de-gta-6-as-lagrimas-apos-audiencia-saltar-para-3-mil/"
+  ],
+  "short": [
+    {
+      "headline": "CERO ESPECTADORES",
+      "headline_es": "CERO ESPECTADORES",
+      "text": "He was streaming GTA 6 to zero people.",
+      "text_es": "Jugaba GTA 6 en directo para cero personas.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "GTA 6",
+          "EN DIRECTO",
+          "PARA 0"
+        ],
+        "pink": [
+          "PARA 0"
+        ],
+        "locale": "es",
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "GTA 6",
+          "EN DIRECTO",
+          "PARA 0"
+        ],
+        "pink": [
+          "PARA 0"
+        ],
+        "locale": "es",
+        "seed": 2
+      }
+    },
+    {
+      "headline": "LLEGÓ IBAI",
+      "headline_es": "LLEGÓ IBAI",
+      "text": "Until Ibai wrote hello in his chat and shared the link.",
+      "text_es": "Hasta que Ibai escribió hola en su chat y compartió el enlace.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "19 DE NOVIEMBRE",
+        "text": "Ibai entra al chat",
+        "pink": [
+          "IBAI"
+        ],
+        "ticker": "escribe «hola» · comparte el enlace · sus seguidores llegan",
+        "locale": "es",
+        "src": "3DJuegos · Dexerto · Que.es",
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "19 DE NOVIEMBRE",
+        "text": "Ibai entra al chat",
+        "pink": [
+          "IBAI"
+        ],
+        "ticker": "escribe «hola» · comparte el enlace · sus seguidores llegan",
+        "locale": "es",
+        "src": "3DJuegos · Dexerto · Que.es",
+        "seed": 2
+      }
+    },
+    {
+      "headline": "DE 0 A 3.243",
+      "headline_es": "DE 0 A 3.243",
+      "text": "Zero to 3,243 viewers at once.",
+      "text_es": "De cero a tres mil doscientos cuarenta y tres espectadores.",
+      "keep_media": true,
+      "chart": {
+        "type": "versus",
+        "a": [
+          "ANTES",
+          "0"
+        ],
+        "b": [
+          "DESPUÉS",
+          "3.243"
+        ],
+        "winner": "b",
+        "locale": "es",
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "versus",
+        "a": [
+          "ANTES",
+          "0"
+        ],
+        "b": [
+          "DESPUÉS",
+          "3.243"
+        ],
+        "winner": "b",
+        "locale": "es",
+        "seed": 2
+      }
+    },
+    {
+      "headline": "LLORÓ EN DIRECTO",
+      "headline_es": "LLORÓ EN DIRECTO",
+      "text": "Dicrim, a Dominican streamer, ended up crying on stream.",
+      "text_es": "Dicrim, un streamer dominicano, terminó llorando en directo.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "DICRIM_RD69",
+        "text": "Lloró en directo",
+        "pink": [
+          "LLORÓ"
+        ],
+        "ticker": "streamer dominicano · fan de Ibai · «sigue si te hace feliz»",
+        "locale": "es",
+        "src": "Dexerto · Critical Hits",
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "DICRIM_RD69",
+        "text": "Lloró en directo",
+        "pink": [
+          "LLORÓ"
+        ],
+        "ticker": "streamer dominicano · fan de Ibai · «sigue si te hace feliz»",
+        "locale": "es",
+        "src": "Dexerto · Critical Hits",
+        "seed": 2
+      }
+    },
+    {
+      "headline": "¿A QUIÉN?",
+      "headline_es": "¿A QUIÉN?",
+      "text": "Who would you send viewers to? Tell me below, because",
+      "text_es": "¿A quién le mandarías gente? Dímelo abajo, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "¿A QUIÉN",
+          "LE MANDAS",
+          "GENTE?"
+        ],
+        "pink": [
+          "GENTE?"
+        ],
+        "sub": "dímelo abajo",
+        "locale": "es",
+        "seed": 2
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿A QUIÉN",
+          "LE MANDAS",
+          "GENTE?"
+        ],
+        "pink": [
+          "GENTE?"
+        ],
+        "sub": "dímelo abajo",
+        "locale": "es",
+        "seed": 2
+      }
+    }
+  ]
+}
