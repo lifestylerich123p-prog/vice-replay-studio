@@ -22,6 +22,7 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| 2026-11-24 | gta6-stream-wars | video | GTA 6 Stream Wars: IShowSpeed vs Everyone (Real Numbers) | - |
 | 2026-11-23 | gta6-vs-red-dead-2 | Short | GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers | - |
 | 2026-11-23 | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | short: sEg8EWL2XPA |
 | 2026-11-23 | gta6-update-no-patch-notes | Short | GTA 6 Got 3 Updates and Zero Patch Notes | short: KI-6wP_Jhik (private) |
@@ -158,6 +159,7 @@ Read this first instead of searching the repo.
 | 2026-11-18 | /guides/gta-6-characters/ | Every GTA 6 Character Confirmed So Far (No Spoilers) |
 | 2026-11-22 | /es/guias/gta-6-cifras-semana-lanzamiento/ | Ventas y récords de GTA 6: todas las cifras del lanzamiento vs GTA 5 |
 | 2026-11-22 | /guides/gta-6-darts/ | Does GTA 6 Have Darts? No, and Rockstar Explains Why (Pool Is In) |
+| 2026-11-24 | /guides/gta-6-deals/ | GTA 6 Deals and Discount Codes: What's Real This Week (Checked) |
 | 2026-11-23 | /guides/gta-6-game-awards/ | GTA 6 at The Game Awards 2026: All 8 Nominations, Rivals and Odds |
 | 2026-11-18 | /guides/gta-6-gift-guide/ | GTA 6 Gift Guide 2026: Best Gifts for a GTA 6 Fan (PS5 and Xbox) |
 | 2026-11-21 | /guides/gta-6-how-long-to-beat/ | How Long Is GTA 6? Story Length, Real Finish Times and 100% (No Spoilers) |
@@ -170,9 +172,13 @@ Read this first instead of searching the repo.
 | 2026-11-18 | /guides/gta-6-physical-edition/ | GTA 6 Physical Edition: No Disc in the Box? What You're Actually Buying |
 | 2026-11-23 | /es/guias/gta-6-premios-game-awards/ | GTA 6 en The Game Awards 2026: sus 8 nominaciones, rivales y probabilidades |
 | 2026-11-19 | /guides/gta-6-ps5-pro-worth-it/ | Is PS5 Pro Worth It for GTA 6? 30 FPS, PSSR and What You Actually Get |
+| 2026-11-24 | /es/guias/gta-6-records-streaming/ | GTA 6 en directo: los streamers más vistos y todos los récords |
+| 2026-11-24 | /guides/gta-6-streaming-records/ | GTA 6 Streaming Records: Most-Watched Streamers and Every Number |
+| 2026-11-24 | /guides/gta-6-trophies/ | GTA 6 Trophies: How Hard Is the Platinum? (55 Trophies, 100%) |
 | 2026-11-21 | /guides/gta-6-ultimate-edition/ | Is GTA 6 Ultimate Edition Worth It? The 5 Shops Only It Unlocks (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-vs-gta-5/ | GTA 6 vs GTA 5: The Biggest Differences Explained |
 | 2026-11-19 | /es/guias/mejor-ssd-gta-6/ | Mejor SSD para GTA 6 en PS5 (212 GB): qué comprar y qué evitar |
+| 2026-11-24 | /es/guias/ofertas-gta-6/ | GTA 6: ofertas y códigos de descuento reales esta semana |
 | 2026-11-19 | /es/guias/ps5-pro-gta-6-vale-la-pena/ | ¿Vale la pena la PS5 Pro para GTA 6? 30 FPS, PSSR y lo que realmente cambia |
 | built-in | /guides/gta-6-unlock-time/ | GTA 6 Unlock Time: When You Can Play in Every Time Zone |
 | built-in | /guides/gta-6-new-zealand-trick/ | GTA 6 New Zealand Trick: Can You Play Early, and Is It Safe? |
@@ -184,12 +190,12 @@ Read this first instead of searching the repo.
 | built-in | /guides/gta-6-launch-streams/ | GTA 6 Launch Streams: YouTube's 24-Hour Livestream and Kai Cenat's 100% Marathon |
 | built-in | /guides/gta-6-reviews/ | GTA 6 Reviews: 99 on Metacritic, Tied for the Best Score Ever |
 | built-in | /guides/gta-6-game-awards-nominations/ | GTA 6 at The Game Awards 2026: 8 Nominations Including Game of the Year |
-| built-in | /guides/gta-6-launch-live/ | GTA 6 Launch: Live Updates, Times and Everything You Need Tonight |
+| built-in | /guides/gta-6-launch-live/ | GTA 6 Live Updates: Patches, Records and News After Launch |
 | built-in | /es/guias/trucos-gta-6/ | Trucos de GTA 6: dinero, chaleco, munición y cómo desbloquearlos |
 | built-in | /es/guias/espacio-gta-6/ | ¿Sin espacio para GTA 6? Cómo liberar espacio en PS5 y Xbox (212 GB) |
 | built-in | /es/guias/hora-de-lanzamiento-gta-6/ | GTA 6: a qué hora se desbloquea en cada país |
 | built-in | /es/guias/gta-6-pc/ | GTA 6 en PC: fecha de salida y lo que se sabe |
-| built-in | /es/guias/gta-6-lanzamiento-en-vivo/ | Lanzamiento de GTA 6: actualizaciones en vivo |
+| built-in | /es/guias/gta-6-lanzamiento-en-vivo/ | GTA 6 en vivo: parches, récords y noticias tras el lanzamiento |
 
 ## Screenshot groups in media/official/
 ambrosia, boobie-ike, brian-heder, cal-hampton, car-canis-one-eyed-willie, car-electric-fang, car-grotti-cheetah, car-squalo, car-vapid-buggy, car-vapid-ganado, car-vapid-stanier, drequan-priest, electric-fang-tattoo, goodtime-gear, grassrivers, jason-and-lucia, jason-and-lucia-ultimate, jason-duval, leonida-keys, leonida-map-poster, lucia-caminos, mount-kalaga, port-gellhorn, raul-bautista, real-dimez, rideout-customs, safehouse-vehicles, saras-salon, stock-305, vice-city, vice-city-style, vintage-vice-city-pack, vintage-vice-city-pack-exclusive-looks, vintage-vice-city-pack-vapid-stanier, vintage-vice-city-weapon-pattern, wyman-car-collection
