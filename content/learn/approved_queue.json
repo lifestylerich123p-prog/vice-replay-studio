@@ -64,7 +64,7 @@
    "approved": "Nov 22 9:15 AM"
   },
   {
-   "slug": "gta6-jason-quiet",
+   "slug": "gta6-vs-gta5-online",
    "item": "short",
    "en": [
     "2026-12-06",
@@ -74,8 +74,7 @@
     "2026-12-07",
     "12:30 PM"
    ],
-   "approved": "Nov 22 7 PM (ok approve and post)",
-   "moved": "Nov 24 ~2:45 PM ET (owner: \"Approve\" the swap table: GTA 5 vs 6 cops + protagonists tier list Thu, 2021 house Sun; B-tier tier list taking off)"
+   "approved": "Nov 24 ~5:30 PM ET (owner: \"Approve\" 3 GTA 6 vs GTA 5 comparisons + 1 tier list in place of the 4 weakest fact/quiz Shorts; tier cards 16.9 v/h, comparisons 6.0 v/h on the scorecard); RE-CHECK facts before upload (owner rule); Spanish winners-only. RE-CHECK within 2 h of the slot: 'no date' can change any day; if Rockstar announces GTA 6 Online, rewrite or skip."
   },
   {
    "slug": "gta-history-quiz",
@@ -92,18 +91,17 @@
    "moved": "Nov 24 ~2:45 PM ET (owner: \"Approve\" the swap table: GTA 5 vs 6 cops + protagonists tier list Thu, 2021 house Sun; B-tier tier list taking off)"
   },
   {
-   "slug": "gta6-13-years",
+   "slug": "gta6-vs-gta5-leads",
    "item": "short",
    "en": [
     "2026-12-05",
     "12:30 PM"
    ],
    "es": [
-    "2026-12-01",
+    "2026-12-06",
     "1:30 PM"
    ],
-   "approved": "Nov 22 10 PM (approve)",
-   "moved": "Nov 24: Mon Nov 30 11 AM went to the shoe store map Short (our #1 YouTube search phrase)"
+   "approved": "Nov 24 ~5:30 PM ET (owner: \"Approve\" 3 GTA 6 vs GTA 5 comparisons + 1 tier list in place of the 4 weakest fact/quiz Shorts; tier cards 16.9 v/h, comparisons 6.0 v/h on the scorecard); RE-CHECK facts before upload (owner rule); Spanish winners-only."
   },
   {
    "slug": "gta6-80-hours",
@@ -239,29 +237,30 @@
    "approved": "Nov 24 ~3:30 PM ET (owner: \"Ok do what you think\" to: criminal profile tips Short Tue Dec 1 11:00, 3 records to Sun Dec 6 11:00); search gap 'gta 6 how to lower criminal profile' (guide EN+ES live); RE-CHECK facts before upload (owner rule); Spanish winners-only"
   },
   {
-   "slug": "gta6-3-records",
+   "slug": "gta6-easter-eggs-tier-list",
    "item": "short",
    "en": [
     "2026-12-06",
     "11:00 AM"
    ],
-   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)",
-   "moved": "Nov 24 ~3:30 PM ET (owner: \"Ok do what you think\" to: criminal profile tips Short Tue Dec 1 11:00, 3 records to Sun Dec 6 11:00)",
-   "es": null
+   "es": [
+    "2026-12-07",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~5:30 PM ET (owner: \"Approve\" 3 GTA 6 vs GTA 5 comparisons + 1 tier list in place of the 4 weakest fact/quiz Shorts; tier cards 16.9 v/h, comparisons 6.0 v/h on the scorecard); RE-CHECK facts before upload (owner rule); Spanish winners-only."
   },
   {
-   "slug": "gta6-launch-quiz",
+   "slug": "gta6-vs-gta5-map",
    "item": "short",
    "en": [
     "2026-12-04",
     "11:00 AM"
    ],
    "es": [
-    "2026-11-29",
-    "12:30 PM"
+    "2026-12-05",
+    "1:30 PM"
    ],
-   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)",
-   "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots"
+   "approved": "Nov 24 ~5:30 PM ET (owner: \"Approve\" 3 GTA 6 vs GTA 5 comparisons + 1 tier list in place of the 4 weakest fact/quiz Shorts; tier cards 16.9 v/h, comparisons 6.0 v/h on the scorecard); RE-CHECK facts before upload (owner rule); Spanish winners-only."
   },
   {
    "slug": "gta6-sin-doblaje-es",
@@ -705,6 +704,63 @@
    ],
    "approved": "Nov 22 (Approve)",
    "paused": "2026-11-23 audit: trailer images (publish check blockers); its slots (Nov 23) passed. Remake as cards to post."
+  },
+  {
+   "slug": "gta6-jason-quiet",
+   "item": "short",
+   "en": [
+    "2026-12-06",
+    "10:00 AM"
+   ],
+   "es": [
+    "2026-12-07",
+    "12:30 PM"
+   ],
+   "approved": "Nov 22 7 PM (ok approve and post)",
+   "moved": "Nov 24 ~2:45 PM ET (owner: \"Approve\" the swap table: GTA 5 vs 6 cops + protagonists tier list Thu, 2021 house Sun; B-tier tier list taking off)",
+   "paused": "Nov 24: replaced by gta6-vs-gta5-online (owner approved; weakest format). Rendered and checked: use it to fill a gap later."
+  },
+  {
+   "slug": "gta6-13-years",
+   "item": "short",
+   "en": [
+    "2026-12-05",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-12-01",
+    "1:30 PM"
+   ],
+   "approved": "Nov 22 10 PM (approve)",
+   "moved": "Nov 24: Mon Nov 30 11 AM went to the shoe store map Short (our #1 YouTube search phrase)",
+   "paused": "Nov 24: replaced by gta6-vs-gta5-leads (owner approved; weakest format). Rendered and checked: use it to fill a gap later."
+  },
+  {
+   "slug": "gta6-3-records",
+   "item": "short",
+   "en": [
+    "2026-12-06",
+    "11:00 AM"
+   ],
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)",
+   "moved": "Nov 24 ~3:30 PM ET (owner: \"Ok do what you think\" to: criminal profile tips Short Tue Dec 1 11:00, 3 records to Sun Dec 6 11:00)",
+   "es": null,
+   "paused": "Nov 24: replaced by gta6-easter-eggs-tier-list (owner approved; weakest format). Rendered and checked: use it to fill a gap later."
+  },
+  {
+   "slug": "gta6-launch-quiz",
+   "item": "short",
+   "en": [
+    "2026-12-04",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-29",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)",
+   "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots",
+   "paused": "Nov 24: replaced by gta6-vs-gta5-map (owner approved; weakest format). Rendered and checked: use it to fill a gap later."
   }
  ]
 }

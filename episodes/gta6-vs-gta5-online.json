@@ -1,0 +1,205 @@
+{
+ "title": "GTA 6 vs GTA 5 Online: Two Weeks Then, No Date Now",
+ "slug": "gta6-vs-gta5-online",
+ "series": "GTA 5 vs GTA 6",
+ "format": "comparison",
+ "mood": "tension",
+ "use_gameplay": false,
+ "style": "vice (lettering cards, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6 vs GTA 5 Online: no date yet 🌐 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 vs GTA 5 Online: no date yet 🌐 #GTA6 #Shorts",
+  "GTA 5 Online took 2 weeks. GTA 6? 🌐 #GTA6 #Shorts",
+  "When is GTA 6 Online coming out? 🌐 #GTA6 #Shorts"
+ ],
+ "short_description": "GTA Online arrived two weeks after GTA 5 in 2013. GTA 6 launched as a single-player game and Rockstar hasn't announced an online mode or a date. The '2027' going around came from Twitch's CEO in a Bloomberg interview, not from Rockstar, so treat it as a report. GTA 5's GTA Online keeps getting updates. Checked right before posting.\n\nSources: VICE, GTABase, HuffPost, Covers.",
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "Day one GTA 6 Online: yes or no? 👇",
+ "short_pinned_comment_es": "¿GTA 6 Online el primer día: sí o no? 👇",
+ "short_es": {
+  "title": "GTA 6 Online NO tiene fecha (GTA 5 tardó 2 semanas) 🌐 #GTA6 #Shorts",
+  "description": "GTA Online llegó dos semanas después de GTA 5 en 2013. GTA 6 salió como juego para un jugador y Rockstar no ha anunciado modo online ni fecha. El '2027' viene del CEO de Twitch en Bloomberg, no de Rockstar. Fuentes: VICE, GTABase, HuffPost, Covers.",
+  "tags": [
+   "GTA 6 Online",
+   "GTA 6 Online fecha",
+   "GTA 6 multijugador",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 Online",
+  "GTA 6 Online release date",
+  "when is GTA 6 Online",
+  "GTA 6 multiplayer",
+  "GTA 6 vs GTA 5",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6online",
+  "#gtaonline"
+ ],
+ "guide": "gta-6-online",
+ "sources": [
+  "VICE: Is GTA 6 going to have online? What we know: https://www.vice.com/en/article/gta-6-online-release-date/",
+  "GTABase: When is GTA 6 Online coming out?: https://www.gtabase.com/articles/gta-6/when-is-gta-6-online-coming-out",
+  "HuffPost UK: When does GTA 6 Online come out?: https://www.huffingtonpost.co.uk/entry/when-is-gta6-online-out_uk_6b058562e4b0cf294a14adc0",
+  "Covers: GTA 6 Online release date, multiplayer expected in 2027: https://www.covers.com/entertainment/gta-6-online-release-date"
+ ],
+ "facts_note": "Nov 24: GTA Online launched Oct 1, 2013, two weeks after GTA 5 (Sep 17) (our gta-6-vs-gta-5 guide, Forbes); GTA 6 single-player at launch, no online mode or date announced by Rockstar (VICE, GTABase, HuffPost); '2027' = Twitch CEO Dan Clancy to Bloomberg, a report, not Rockstar (VICE, Covers); Take-Two keeps supporting GTA Online (GTABase, HuffPost). 'NO DATE' can stop being true any day: RE-CHECK within 2 h of the slot; if Rockstar announces anything, rewrite or skip.",
+ "short": [
+  {
+   "headline": "ONLINE: 2 WEEKS VS ?",
+   "headline_es": "ONLINE: 2 SEMANAS VS ?",
+   "text": "GTA 5 Online took two weeks. GTA 6 Online has no date.",
+   "text_es": "GTA cinco Online tardó dos semanas. GTA seis Online no tiene fecha.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 5 ONLINE: 2 WEEKS",
+     "GTA 6 ONLINE: ?"
+    ],
+    "pink": [
+     "GTA 6 ONLINE: ?"
+    ],
+    "seed": 213
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 5 ONLINE: 2 SEMANAS",
+     "GTA 6 ONLINE: ?"
+    ],
+    "pink": [
+     "GTA 6 ONLINE: ?"
+    ],
+    "seed": 213
+   }
+  },
+  {
+   "headline": "THEN VS NOW",
+   "headline_es": "ANTES Y AHORA",
+   "text": "In 2013, GTA Online came two weeks after the game.",
+   "text_es": "En 2013, GTA Online llegó dos semanas después del juego.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "GTA 5 ONLINE",
+     "2 WEEKS"
+    ],
+    "b": [
+     "GTA 6 ONLINE",
+     "NO DATE"
+    ],
+    "winner": "a",
+    "seed": 213,
+    "src": "VICE · GTABase"
+   },
+   "chart_es": {
+    "type": "versus",
+    "a": [
+     "GTA 5 ONLINE",
+     "2 SEMANAS"
+    ],
+    "b": [
+     "GTA 6 ONLINE",
+     "SIN FECHA"
+    ],
+    "winner": "a",
+    "seed": 213,
+    "src": "VICE · GTABase"
+   }
+  },
+  {
+   "headline": "NOT ANNOUNCED",
+   "headline_es": "SIN ANUNCIAR",
+   "text": "GTA 6 launched single-player. Rockstar hasn't announced online.",
+   "text_es": "GTA seis salió para un jugador. Rockstar no ha anunciado el online.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "GTA 6 launched single-player. No online announced.",
+    "pink": [
+     "No online announced"
+    ],
+    "seed": 213,
+    "src": "VICE · GTABase · HuffPost"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "GTA 6 salió para un jugador. Sin online anunciado.",
+    "pink": [
+     "Sin online anunciado"
+    ],
+    "seed": 213,
+    "src": "VICE · GTABase · HuffPost"
+   }
+  },
+  {
+   "headline": "THAT 2027?",
+   "headline_es": "¿Y EL 2027?",
+   "text": "That 2027 you keep seeing? Twitch's CEO said it, not Rockstar.",
+   "text_es": "¿Ese 2027 que ves por todos lados? Lo dijo el CEO de Twitch, no Rockstar.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "\"2027\" came from Twitch's CEO, not Rockstar.",
+    "pink": [
+     "not Rockstar"
+    ],
+    "sub": "via Bloomberg: a report, not a date",
+    "seed": 213,
+    "src": "VICE · Covers"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "El \"2027\" lo dijo el CEO de Twitch, no Rockstar.",
+    "pink": [
+     "no Rockstar"
+    ],
+    "sub": "vía Bloomberg: un reporte, no una fecha",
+    "seed": 213,
+    "src": "VICE · Covers"
+   }
+  },
+  {
+   "headline": "DAY ONE?",
+   "headline_es": "¿EL PRIMER DÍA?",
+   "text": "Would you play it on day one? Tell me, because",
+   "text_es": "¿Lo jugarías el primer día? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "DAY ONE",
+     "GTA 6 ONLINE?"
+    ],
+    "pink": [
+     "GTA 6 ONLINE?"
+    ],
+    "seed": 213
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿GTA 6 ONLINE",
+     "EL PRIMER DÍA?"
+    ],
+    "pink": [
+     "EL PRIMER DÍA?"
+    ],
+    "seed": 213
+   }
+  }
+ ]
+}

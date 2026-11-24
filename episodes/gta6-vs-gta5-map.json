@@ -1,0 +1,199 @@
+{
+ "title": "GTA 6 vs GTA 5: The Map Is About Twice the Size",
+ "slug": "gta6-vs-gta5-map",
+ "series": "GTA 5 vs GTA 6",
+ "format": "comparison",
+ "mood": "tension",
+ "use_gameplay": false,
+ "style": "vice (lettering cards, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6 vs GTA 5 map: about twice the size 🗺️ #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 vs GTA 5 map: about twice the size 🗺️ #GTA6 #Shorts",
+  "GTA 6's map vs GTA 5's: not even close 🗺️ #GTA6 #Shorts",
+  "How big is the GTA 6 map? (vs GTA 5) 🗺️ #GTA6 #Shorts"
+ ],
+ "short_description": "How big is GTA 6's map? Rockstar has described Leonida as about twice the size of GTA 5's map, and Rob Nelson reportedly said Vice City alone is about twice Los Santos. Fan estimates run from about 1.7x to 2.5x depending on whether you count water, so 'about twice' is the safe answer. Our interactive map: vicereplay.com (Guides → GTA 6 Map). No story spoilers.\n\nMap: Rockstar Games' official Leonida map. Sources: TweakTown, Insider Gaming, Stevivor, Dexerto.",
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "Bigger map or better map? 👇",
+ "short_pinned_comment_es": "¿Mapa más grande o mapa mejor? 👇",
+ "short_es": {
+  "title": "El mapa de GTA 6 es el DOBLE que GTA 5 🗺️ #GTA6 #Shorts",
+  "description": "¿Qué tan grande es el mapa de GTA 6? Rockstar ha descrito Leonida como unas dos veces el mapa de GTA 5, y según se informa Vice City sola es como dos Los Santos. Las estimaciones de fans van de 1,7x a 2,5x. Mapa interactivo en vicereplay.com/es/guias/mapa-gta-6/. Fuentes: TweakTown, Insider Gaming, Stevivor, Dexerto.",
+  "tags": [
+   "GTA 6 mapa tamaño",
+   "GTA 6 vs GTA 5",
+   "mapa GTA 6",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 map size",
+  "GTA 6 vs GTA 5 map",
+  "how big is GTA 6 map",
+  "GTA 6 map",
+  "GTA 6 Leonida",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6map",
+  "#gta5"
+ ],
+ "guide": "gta-6-map-size",
+ "sources": [
+  "TweakTown: map roughly twice GTA 5: https://www.tweaktown.com/news/114382/gta-6s-map-is-roughly-twice-gta-5s-and-almost-as-big-as-gta-4-gta-5-and-rdr2-combined/index.html",
+  "Dexerto: you won't see it all in story missions: https://www.dexerto.com/gta/rockstar-says-gta-6s-map-is-so-big-you-wont-see-it-all-just-by-playing-story-missions-3414118/",
+  "Stevivor: GTA 6 map: https://stevivor.com/guides/gta-6-map/",
+  "Insider Gaming: map size: https://insider-gaming.com/gta-6-map-size/"
+ ],
+ "facts_note": "Nov 24: 'about twice GTA 5' = what Rockstar told interviewers (TweakTown, Insider Gaming, Stevivor); Vice City alone ~2x Los Santos = Rob Nelson, reportedly (stated as reportedly); fan estimates 1.7x-2.5x (water vs land). Re-check right before posting.",
+ "short": [
+  {
+   "headline": "GTA 6 VS GTA 5 MAP",
+   "headline_es": "MAPA GTA 6 VS GTA 5",
+   "text": "GTA 6's map is about twice GTA 5's.",
+   "text_es": "El mapa de GTA seis es como dos veces el de GTA cinco.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6'S MAP IS",
+     "ABOUT 2X GTA 5"
+    ],
+    "pink": [
+     "ABOUT 2X GTA 5"
+    ],
+    "seed": 211
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "EL MAPA DE GTA 6",
+     "ES CASI 2X GTA 5"
+    ],
+    "pink": [
+     "ES CASI 2X GTA 5"
+    ],
+    "seed": 211
+   }
+  },
+  {
+   "headline": "SIZE",
+   "headline_es": "TAMAÑO",
+   "text": "That's what Rockstar told interviewers: about double.",
+   "text_es": "Eso dijo Rockstar en entrevistas: más o menos el doble.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "GTA 5 MAP",
+     "1X"
+    ],
+    "b": [
+     "GTA 6 MAP",
+     "~2X"
+    ],
+    "winner": "b",
+    "seed": 211,
+    "src": "TweakTown · Insider Gaming"
+   },
+   "chart_es": {
+    "type": "versus",
+    "a": [
+     "MAPA GTA 5",
+     "1X"
+    ],
+    "b": [
+     "MAPA GTA 6",
+     "~2X"
+    ],
+    "winner": "b",
+    "seed": 211,
+    "src": "TweakTown · Insider Gaming"
+   }
+  },
+  {
+   "headline": "VICE CITY ALONE",
+   "headline_es": "SOLO VICE CITY",
+   "text": "And Vice City alone is reportedly about twice Los Santos.",
+   "text_es": "Y según se informa, solo Vice City es como dos Los Santos.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Vice City",
+    "label": "≈ 2x Los Santos (reportedly)",
+    "n": 1,
+    "to": 0.4,
+    "src": "Rob Nelson via Stevivor"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Vice City",
+    "label": "≈ 2 Los Santos (según reportes)",
+    "n": 1,
+    "to": 0.4,
+    "src": "Rob Nelson vía Stevivor"
+   }
+  },
+  {
+   "headline": "WHY 1.7X TO 2.5X",
+   "headline_es": "DE 1,7X A 2,5X",
+   "text": "Fan estimates range from 1.7 to 2.5 times, depending on the water.",
+   "text_es": "Las estimaciones de fans van de uno coma siete a dos coma cinco veces, según cuenten el agua.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Fan estimates: 1.7x to 2.5x. It depends on the water.",
+    "pink": [
+     "1.7x to 2.5x"
+    ],
+    "seed": 211
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Estimaciones de fans: de 1,7x a 2,5x. Depende del agua.",
+    "pink": [
+     "1,7x a 2,5x"
+    ],
+    "seed": 211
+   }
+  },
+  {
+   "headline": "BIGGER OR BETTER?",
+   "headline_es": "¿MÁS GRANDE O MEJOR?",
+   "text": "Bigger, or just better? Tell me, because",
+   "text_es": "¿Más grande o mejor? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "BIGGER",
+     "OR BETTER?"
+    ],
+    "pink": [
+     "OR BETTER?"
+    ],
+    "seed": 211
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿MÁS GRANDE",
+     "O MEJOR?"
+    ],
+    "pink": [
+     "O MEJOR?"
+    ],
+    "seed": 211
+   }
+  }
+ ]
+}
