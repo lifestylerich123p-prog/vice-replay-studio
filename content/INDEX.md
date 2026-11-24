@@ -29,13 +29,13 @@ Read this first instead of searching the repo.
 | 2026-11-23 | gta6-tier-list-critics | Short | GTA 6 Tier List: Every GTA Ranked by Critics | short: jQbv5GPR3dk |
 | 2026-11-23 | gta6-sin-doblaje-es | Short | GTA 6 no tiene doblaje al español | - |
 | 2026-11-23 | gta6-precio-por-pais-es | Short | GTA 6: cuánto cuesta en cada país | - |
-| 2026-11-23 | gta6-patch-notes-7-fixes | Short | Rockstar Finally Posted GTA 6 Patch Notes: 7 Fixes | - |
+| 2026-11-23 | gta6-patch-notes-7-fixes | Short | Rockstar Finally Posted GTA 6 Patch Notes: 7 Fixes | short: jVcY1N4bBHU |
 | 2026-11-23 | gta6-little-cuba-es | Short | GTA 6 está lleno de Cuba | - |
 | 2026-11-23 | gta6-launch-quiz | Short | GTA 6 Launch Quiz: Only Real Fans Get 3/3 | - |
 | 2026-11-23 | gta6-game-awards-record | Short | GTA 6 Can't Break the Game Awards Record | - |
 | 2026-11-23 | gta6-game-awards-explained | video | GTA 6 at The Game Awards 2026: All 8 Nominations Explained | - |
 | 2026-11-23 | gta6-game-awards-8-noms | Short | GTA 6 Has the Most Game Awards Nominations: 8 | - |
-| 2026-11-23 | gta6-first-platinum | Short | GTA 6's Platinum Trophy Is Already Taken | - |
+| 2026-11-23 | gta6-first-platinum | Short | GTA 6's Platinum Trophy Is Already Taken | short: fckK4qbyd48 |
 | 2026-11-23 | gta6-black-friday-no-discount | Short | GTA 6 Black Friday: Take-Two Says No Discount | - |
 | 2026-11-23 | gta6-80-hours | Short | GTA 6 Is Rockstar's Longest Story Ever: About 80 Hours | - |
 | 2026-11-23 | gta6-5-things | Short | GTA 6: 5 Things You Didn't Know (All Checked) | - |
@@ -43,7 +43,7 @@ Read this first instead of searching the repo.
 | 2026-11-23 | gta6-3-records | Short | GTA 6 Broke 3 Records in One Week | - |
 | 2026-11-23 | gta6-13-years | Short | GTA 6 Took 13 Years. No Other GTA Took Even 6 | - |
 | 2026-11-23 | gta6-10-numbers | video | GTA 6 in 10 Numbers: The First Week, Explained | - |
-| 2026-11-23 | gta-tier-list-sales | Short | Every GTA Ranked by Sales: GTA 5 Gets Its Own Tier | - |
+| 2026-11-23 | gta-tier-list-sales | Short | Every GTA Ranked by Sales: GTA 5 Gets Its Own Tier | short: aU1Js-p-FCo |
 | 2026-11-23 | gta-tier-list-protagonists | Short | Every GTA Protagonist Ranked: CJ Isn't S Tier | - |
 | 2026-11-23 | gta-tier-list-maps | Short | Every GTA Map Ranked: Los Santos Is Only B Tier | - |
 | 2026-11-23 | gta-cities-quiz | Short | GTA Cities Quiz: Only Real Fans Get 3/3 | - |
