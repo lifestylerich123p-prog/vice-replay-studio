@@ -421,7 +421,7 @@ def map_frame(base, spec, t, w, h):
         pulse = 1 + 0.18 * abs((k / FPS * 2) % 2 - 1)
         mappins._pin(d, px, py, spec.get("n", ""), 1.9 * pulse)
         if spec.get("label"):
-            mappins._label(d, px, py, spec["label"], 1.9, w, spec.get("side"))
+            mappins._label(d, px, py, spec["label"], 1.6, w, spec.get("side"))
     f = brand.font(brand.BODY_FONT, 26)
     credit = "Map: Rockstar Games (official)"
     d.text((w - f.getlength(credit) - 24, h - 130), credit, font=f, fill=(255, 255, 255))

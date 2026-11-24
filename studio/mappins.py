@@ -101,7 +101,10 @@ def _label(d, x, y, text, scale, w, side=None):
     tw = f.getlength(text)
     pad = 12 * scale
     right = side != "left" and x + 40 * scale + tw + 2 * pad < w
+    if not right and side != "left" and x - 40 * scale - tw - 2 * pad < 0:
+        right = (w - x) >= x  # fits on neither side: take the roomier one, then keep it inside the frame
     lx = x + 40 * scale if right else x - 40 * scale - tw - 2 * pad
+    lx = max(4, min(w - tw - 2 * pad - 4, lx))  # Nov 24: labels were cut off at the frame edge
     box = (lx, y - 22 * scale, lx + tw + 2 * pad, y + 22 * scale)
     d.rounded_rectangle(box, radius=int(10 * scale), fill=(13, 7, 23), outline=brand.CYAN, width=max(1, int(2 * scale)))
     d.text((lx + pad, y - 16 * scale), text, font=f, fill=(255, 255, 255))
