@@ -133,3 +133,15 @@ Next ideas on the new cards (facts checked before writing):
 Mon news card · Tue VS · Wed tier list · Thu quiz · Fri countdown · Sat Spanish special · Sun long hub (3:30 PM) +
 meter Short. Details in .claude/commands/daily-video.md rule 7. Number each series in the description ("Vice Replay
 Tier List #2") so returning viewers recognize it.
+
+## Nov 24 investigation (market + search)
+- **"GTA 5 vs GTA 6: <one feature>" series** (comparison = our #2 format, 6.0 v/h; the day's hottest GTA 6 Shorts were
+  "GTA 5 vs GTA 6 Cops" 12.5M and "GTA 6 vs RDR2 gun strap" 8.9M). Versus card first, 1 verified difference per Short.
+  First one booked: gta6-cops-remember (Thu Nov 26). Next ideas: wanted stars, map size, phone, swimming/diving,
+  weather, radio. Every claim about GTA 6 in 2+ sources; GTA 5 side only what's well documented.
+- **Tier lists keep winning** ("Vice City is only B tier": 506 views in 3 h, 613 in 24 h vs 431 footage median).
+  Booked: protagonists (Thu), money (Fri), maps (Sat). Keep one a week at least.
+- **Search gaps filled**: "gta 6 how to lower criminal profile" -> guide EN+ES live + Short draft gta6-criminal-profile.
+  Skipped: impound (guides disagree, tied to a story mission), "gta 6 netflix" (August's Extended Look, not news),
+  hurricane "how to trigger" (hurricanes confirmed by Game Informer; no source shows a trigger: clickbait).
+- **Already posted, don't redo**: cheats (3 Shorts), no mission replay, Dog Island. Check uploads.json first.
