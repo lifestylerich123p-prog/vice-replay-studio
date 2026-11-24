@@ -775,7 +775,7 @@ guide("gta-6-lanzamiento-en-vivo", "GTA 6 en vivo: parches, récords y noticias 
 import glob as _glob
 
 
-def interactive_map(lang="en"):
+def interactive_map(lang="en", only=None):
     """Nov 24 (owner: "research those maps pictures more"): Rockstar's official Leonida map, zoomable to full HD
     (tiles from tools/map_tiles.py), with our pins from site/map-pins.json and category filters. A guide JSON section
     that contains <!--MAP--> gets it, followed by a numbered list of the pins (tap one to fly to it)."""
@@ -796,19 +796,23 @@ def interactive_map(lang="en"):
         slug = _re.sub(r"[^a-z0-9]+", "-", p["en"]["t"].lower().replace("'", "")).strip("-")  # same id in EN and ES
         pins.append({"n": n, "id": slug, "cat": p["cat"], "x": round(x + p.get("dx", 0), 4), "y": round(y + p.get("dy", 0), 4),
                      "t": t["t"], "d": t["d"], "when": t.get("when", "")})
-    data = json.dumps({"lang": lang, "w": 5775, "h": 7900, "cats": cats, "pins": pins}, ensure_ascii=False).replace("</", "<\\/")
+    data = {"lang": lang, "w": 5775, "h": 7900, "cats": cats, "pins": pins}
+    if only:  # a category page (<!--MAP:mods-->): opens on that layer, lists only its pins; the rest stay one tap away
+        data["only"] = list(only)
+    data = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     es = lang == "es"
     hint = ("Pellizca o usa la rueda para acercarte hasta las calles; toca un pin para ver qué hay y dónde. Los pines marcan la zona."
             if es else "Pinch or scroll to zoom down to street names; tap a pin for what's there. Pins mark the area.")
     items = "".join(f'<li id="{p["id"]}-item"><a href="#{p["id"]}" data-pin="{p["n"]}"><b>{p["n"]}. {html.escape(p["t"])}</b></a>: {html.escape(p["d"])}'
-                    + (f' <i>({html.escape(p["when"])})</i>' if p["when"] else "") + "</li>" for p in pins)
+                    + (f' <i>({html.escape(p["when"])})</i>' if p["when"] else "") + "</li>" for p in pins
+                    if not only or p["cat"] in only)
     style = ('<style>#vrmap{height:min(78vh,720px);border-radius:14px;border:1px solid var(--line);margin:12px 0 6px;background:#0d0717}'
              '.vrpin b{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;color:#fff;'
              'font:700 14px/1 var(--body);border:2px solid #fff;box-shadow:0 0 0 3px rgba(13,7,23,.55),0 0 14px rgba(255,31,142,.6)}'
              '.vrsmall .vrpin b{width:18px;height:18px;margin:6px;font-size:10px;border-width:1.5px;box-shadow:0 0 0 2px rgba(13,7,23,.5)}'
              '.vrlegend{background:rgba(13,7,23,.88);color:#f4eefc;padding:8px 10px;border-radius:10px;font:600 13px/1.5 var(--body)}'
              '.vrlegend label{display:flex;align-items:center;gap:6px;cursor:pointer}.vrlegend i{width:12px;height:12px;border-radius:50%;display:inline-block}'
-             '.leaflet-container img.leaflet-tile{mix-blend-mode:normal;width:256.6px!important;height:256.6px!important}.leaflet-popup-content{font:14px/1.45 var(--body)}.vrdone b{opacity:.45;filter:grayscale(.6)}.vrok{color:#1a9c5b;font-weight:700}.vrbtn{margin-top:8px;padding:6px 10px;border-radius:8px;border:0;background:#ff1f8e;color:#fff;font:600 13px var(--body);cursor:pointer}.vrprog{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.2)}.vrcount{display:block;color:#00e5d2}.vrlink{background:none;border:0;color:#b7a9cf;text-decoration:underline;font:12px var(--body);padding:0;cursor:pointer}.vrdone-item{opacity:.55;text-decoration:line-through}.vrlist li{margin-bottom:8px}</style>')
+             '.leaflet-container img.leaflet-tile{mix-blend-mode:normal;width:256.6px!important;height:256.6px!important}.leaflet-popup-content{font:14px/1.45 var(--body)}.vrdone b{opacity:.45;filter:grayscale(.6)}.vrok{color:#1a9c5b;font-weight:700}.vrbtn{margin-top:8px;padding:6px 10px;border-radius:8px;border:0;background:#ff1f8e;color:#fff;font:600 13px var(--body);cursor:pointer}.vrprog{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.2)}.vrcount{display:block;color:#00e5d2}.vrlink{background:none;border:0;color:#b7a9cf;text-decoration:underline;font:12px var(--body);padding:0;cursor:pointer}.vrdone-item{opacity:.55;text-decoration:line-through}.vrsearch{width:100%;margin:0 0 6px;padding:5px 8px;border-radius:7px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#f4eefc;font:13px var(--body)}.vrlegend small{color:#b7a9cf;margin-left:2px}.vrnext{display:block;margin:6px 0 4px;padding:5px 9px}.vrlist li{margin-bottom:8px}</style>')
     return (f'<link rel="stylesheet" href="/js/leaflet.css">{style}<div id="vrmap" role="application" '
             f'aria-label="{"Mapa interactivo de Leonida" if es else "Interactive map of Leonida"}"></div>'
             f'<p class="meta">{hint}</p><ol class="list vrlist">{items}</ol>'
@@ -816,6 +820,7 @@ def interactive_map(lang="en"):
             '<script src="/js/leaflet.js"></script><script src="/js/vr-map.js"></script>')
 
 
+_MAPTAG = _re.compile(r"<!--MAP(?::([a-z,]+))?-->")  # <!--MAP--> = every pin; <!--MAP:mods--> = a category page
 _JSON = [json.load(open(_f)) for _f in sorted(_glob.glob(os.path.join(STUDIO, "site/guides/*.json")))]
 for _g in _JSON:  # "pair": slug of the same guide in the other language (EN guides/<slug>/ <-> ES es/guias/<slug>/)
     if _g.get("pair") and _g.get("lang", "en") == "en":
@@ -828,7 +833,8 @@ for g in _JSON:
     h1 = g.get("h1") or g["title"]
     body = f'<h1>{h1}</h1><p class="meta">{"Actualizado el" if es else "Updated"} {__import__("datetime").date.fromisoformat(g["date"]).strftime("%B %-d, %Y")} · Vice Replay</p><p class="lede">{g.get("lede", "")}</p>'
     body += video(g["video"], g["title"]) if g.get("video") else ""
-    body += "".join(f"<h2>{html.escape(h)}</h2>{b}".replace("<!--MAP-->", interactive_map(g.get("lang", "en")) if "<!--MAP-->" in b else "") for h, b in g.get("sections", []))
+    body += "".join(_MAPTAG.sub(lambda m: interactive_map(g.get("lang", "en"), (m.group(1) or "").split(",") if m.group(1) else None),
+                                f"<h2>{html.escape(h)}</h2>{b}") for h, b in g.get("sections", []))
     body += f'<div class="note">{g["note"]}</div>' if g.get("note") else ""
     body += gearbox(items, "Enlaces (Amazon EE. UU.):" if es else "Getting GTA 6 or making room for it? Links go to current listings:") if items else ""
     body += watchmore(g["video"], "es" if es else "en") if g.get("video") else ""
