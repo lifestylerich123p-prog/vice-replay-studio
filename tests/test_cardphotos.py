@@ -44,3 +44,10 @@ def test_duplicate_slab_is_dropped_on_the_hook():
     from studio.make_video import _said_by_card
     assert _said_by_card("A REAL UFO", {"type": "kinetic", "lines": ["GTA 6 HAS", "A REAL UFO"]})
     assert not _said_by_card("JASON'S SECRET", {"type": "text", "text": "Jason was inspired by Steve McQueen"})
+
+
+def test_hook_pictures_are_bright():
+    cardphotos.reset()
+    for text in ["4 GTA 6 secrets players just found", "GTA 6 has a real UFO", "The swamp in GTA 6"]:
+        name = cardphotos.pick(text, 0).rsplit("/", 1)[-1][:-4]
+        assert cardphotos.brightness(name) >= cardphotos.HOOK_MIN, (text, name)

@@ -96,6 +96,19 @@ def _exists(name):
 
 
 _USED = set()
+HOOK_MIN = 85  # mean luminance 0-255 of the picture; Grassrivers/Port Gellhorn night shots are 33-41
+_LUMA = {}
+
+
+def brightness(name):
+    if name not in _LUMA:
+        try:
+            from PIL import Image, ImageStat
+            im = Image.open(OFFICIAL / f"{name}.jpg").convert("L").resize((160, 90))
+            _LUMA[name] = ImageStat.Stat(im).mean[0]
+        except OSError:
+            _LUMA[name] = 0
+    return _LUMA[name]
 
 
 def reset():
@@ -116,6 +129,8 @@ def pick(text, index, used=()):
     group = next((g for g, rx in TOPICS if re.search(rx, t)), "city")
     names = [n for n in (HOOK if index == 0 and group == "city" else POOL[group]) if _exists(n)] or \
             [n for g in POOL.values() for n in g if _exists(n)]
+    if index == 0:  # Nov 24 hook v2: the opening frame needs a bright, readable picture (night shots read as black)
+        names = [n for n in names if brightness(n) >= HOOK_MIN] or [n for n in HOOK if _exists(n)] or names
     if not names:
         return None
     h = int(hashlib.md5(f"{t}|{index}".encode()).hexdigest(), 16)
