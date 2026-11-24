@@ -65,6 +65,8 @@ footer{margin-top:44px;color:var(--muted);font-size:13px;border-top:1px solid va
 .banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,7,23,.88) 0%,rgba(13,7,23,.5) 42%,rgba(13,7,23,0) 72%)}
 .banner h1{position:relative;z-index:1;margin:0;padding:18px 20px;max-width:68%}
 .related{margin-top:34px}
+.watch{display:flex;flex-direction:column;background:var(--pink);color:#fff;text-decoration:none;font-weight:800;font-size:17px;border-radius:12px;padding:12px 16px;margin:0 0 22px}
+.watch small{font-weight:500;font-size:13px;opacity:.9}
 table{width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:16px}
 th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 th{color:var(--cyan);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
@@ -287,6 +289,88 @@ def with_lead(body, img, title):
     return body[:k] + "\n" + tag + body[k:]
 
 
+# Visitor-first (owner Nov 24, "do what you think best"): news pages don't push gear. On these the big Amazon box
+# becomes one quiet line; buyer pages (storage, SSD, deals, gifts, PS5 Pro, physical edition...) keep the full box.
+NEWS_SLUGS = {"gta-6-launch-live", "gta-6-hacker-sentence", "gta-6-online", "gta-6-streaming-records", "gta-6-game-awards",
+              "gta-6-game-awards-nominations", "gta-6-patch-notes", "gta-6-launch-week-numbers", "gta-6-reviews", "gta-6-darts",
+              "gta-6-characters", "gta-6-radio-stations", "gta-6-easter-eggs", "gta-6-trophies", "gta-6-launch-streams",
+              "gta-6-lanzamiento-en-vivo", "gta-6-online-cuando-sale", "gta-6-records-streaming", "gta-6-premios-game-awards",
+              "gta-6-notas-del-parche", "gta-6-cifras-semana-lanzamiento", "dardos-gta-6"}
+
+
+def soften_gear(slug, body, lang):
+    if slug not in NEWS_SLUGS:
+        return body
+    line = ('<p class="sources">Short on space or need a controller? <a href="/es/equipo/">Nuestro equipo para GTA 6</a> (enlaces de afiliado).</p>'
+            if lang == "es" else '<p class="sources">Short on space or need a controller? <a href="/gear/">Our GTA 6 gear picks</a> (affiliate links).</p>')
+    return _re.sub(r'<div class="box"><h3>Gear for GTA 6 \(affiliate links\)</h3>.*?All gear picks</a></p></div>', line, body, count=1, flags=_re.S)
+
+
+def load_watch():
+    """{guide slug: (YouTube id, kind)} for guides with a matching upload that is PUBLIC now (its slot has passed, not
+    hidden). Episodes name their guide with `guide`, or match it by name (gta6-x -> gta-6-x), like the uploader does.
+    Shorts win over long videos; newest first. No API call: registry + approved_queue slots."""
+    import datetime as _dt, glob as _glob
+    from zoneinfo import ZoneInfo
+    et = ZoneInfo("America/New_York"); now = _dt.datetime.now(et)
+    try:
+        reg = json.load(open(os.path.join(STUDIO, "content/learn/uploads.json")))
+        queue = json.load(open(os.path.join(STUDIO, "content/learn/approved_queue.json")))["items"]
+    except (OSError, ValueError, KeyError):
+        return {}
+    slot = {(i["slug"], i.get("item", "short")): i.get("en") for i in queue}
+    have = {os.path.basename(d.rstrip("/")) for d in _glob.glob(os.path.join(SITE, "guides", "*/"))}
+    have |= {g[0] for g in GUIDES}
+    guide_of = {}
+    for f in _glob.glob(os.path.join(STUDIO, "episodes", "*.json")):
+        try:
+            e = json.load(open(f))
+        except ValueError:
+            continue
+        slug = e.get("slug") or os.path.basename(f)[:-5]
+        g = e.get("guide") or slug.replace("gta6-", "gta-6-", 1)
+        if g in have or e.get("guide"):
+            guide_of[slug] = g
+    best = {}
+    for vid, r in reg.items():
+        g = guide_of.get(r.get("slug"))
+        if not g or r.get("hidden"):
+            continue
+        s_ = slot.get((r["slug"], r.get("item", "short")))
+        if s_ and _dt.datetime.strptime(f"{s_[0]} {s_[1]}", "%Y-%m-%d %I:%M %p").replace(tzinfo=et) > now:
+            continue  # still private until its slot
+        kind = "main" if r.get("item") == "main" else "short"
+        rank = (kind == "short", r.get("uploaded") or "")
+        if g not in best or rank > best[g][2]:
+            best[g] = (vid, kind, rank)
+    return {g: (v, k) for g, (v, k, _r) in best.items()}
+
+
+_WATCH = None
+
+
+def with_watch(slug, body, lang):
+    """A 'watch it' button right under the answer/picture/jump list when a public video matches the guide."""
+    global _WATCH
+    if lang != "en" or 'class="video"' in body:
+        return body
+    if _WATCH is None:
+        _WATCH = load_watch()
+    if slug not in _WATCH:
+        return body
+    vid, kind = _WATCH[slug]
+    url = f"https://www.youtube.com/shorts/{vid}" if kind == "short" else f"https://www.youtube.com/watch?v={vid}"
+    label = "▶ Watch it in 30 seconds" if kind == "short" else "▶ Watch the video"
+    btn = f'<a class="watch" href="{url}" target="_blank" rel="noopener">{label}<small>on our YouTube channel</small></a>'
+    for anchor in ('</nav>', '<img class="lead"'):
+        k = body.find(anchor)
+        if k >= 0:
+            k = body.find(">", k) + 1
+            return body[:k] + "\n" + btn + body[k:]
+    k = body.find("</p>", body.find('<p class="lede">')) + 4
+    return body[:k] + "\n" + btn + body[k:]
+
+
 def with_toc(body, lang):
     """Guides with 4+ sections get an 'On this page' jump list under the picture, and each h2 gets an id (Nov 24:
     a phone reader with a specific question shouldn't scroll 7-9 screens)."""
@@ -325,6 +409,8 @@ def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None):
     img = card(slug, l1, l2 or "On replay", shot)
     body = with_lead(body, img, title)
     body = with_toc(body, lang)
+    body = with_watch(slug, body, lang)
+    body = soften_gear(slug, body, lang)
     if lang == "en": GUIDES.append((slug, title, desc, date))
     else: GUIDES_ES.append((slug, title, desc, date))
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": title[:110], "description": desc, "image": [img],
