@@ -1,0 +1,74 @@
+{
+ "slug": "dardos-gta-6",
+ "pair": "gta-6-darts",
+ "lang": "es",
+ "title": "¿GTA 6 tiene dardos? No, y Rockstar explica por qué (el billar sí está)",
+ "h1": "¿GTA 6 tiene <span>dardos?</span>",
+ "desc": "GTA 6 no tiene dardos ni bolos. Rob Nelson, de Rockstar North, le explicó a VGC por qué: ni Rockstar tiene tiempo ni dinero ilimitados. El billar sí está. Con fuentes y sin spoilers.",
+ "date": "2026-11-22",
+ "video": "C6Fkd2tqtwQ",
+ "card": [
+  "SIN DARDOS",
+  "ROCKSTAR EXPLICA",
+  "vice-city-15.jpg"
+ ],
+ "lede": "Respuesta corta: <b>no</b>. GTA 6 no tiene dardos ni bolos, dos minijuegos que los fans recuerdan de juegos anteriores. <b>El billar sí está.</b> Rob Nelson, codirector de Rockstar North, explicó el recorte en una entrevista con Video Games Chronicle el día del lanzamiento (19 de noviembre de 2026). Sin spoilers.",
+ "sections": [
+  [
+   "Lo que dijo Rockstar",
+   "<p>\"Lo de los dardos es un tema polémico\", le dijo Nelson a VGC. \"Se oye que tienen dinero ilimitado o tiempo ilimitado; ni siquiera nosotros, y a veces simplemente hay que admitir que no vamos a poder hacerlo al nivel que creemos necesario\" (traducción nuestra).</p><p>O sea: Rockstar prefiere dejar fuera un minijuego antes que lanzar uno que no la convence. Según GGRecon, los bolos se quitaron por la misma razón.</p>"
+  ],
+  [
+   "Qué sí está",
+   "<p>El <b>billar</b> es una actividad de GTA 6: se juega en bares y lugares de recreo y cuenta para el 100% (GTABase). En la entrevista, Nelson mencionó el billar, las pesas y el básquetbol como interacciones que el equipo sí pudo hacer auténticas (según GGRecon).</p>"
+  ],
+  [
+   "¿Agregarán los dardos después?",
+   "<p>Rockstar no lo ha dicho. Nelson no prometió que los dardos o los bolos vuelvan en una actualización; cualquier \"ya vienen\" es un rumor hasta que Rockstar lo confirme.</p>"
+  ]
+ ],
+ "note": "Actualizaremos esta página si Rockstar agrega dardos o bolos en una actualización.",
+ "faq": [
+  [
+   "¿GTA 6 tiene dardos?",
+   "No. Rob Nelson, de Rockstar North, le dijo a VGC el 19 de noviembre de 2026 que los dardos no llegaron porque el equipo no pudo hacerlos tan bien como quería en el tiempo que tenía."
+  ],
+  [
+   "¿GTA 6 tiene bolos?",
+   "No. Los bolos también se quitaron, según los reportes de la misma entrevista (GGRecon, GameNewsPlus)."
+  ],
+  [
+   "¿Se puede jugar billar en GTA 6?",
+   "Sí. El billar es una actividad en bares y lugares de recreo y cuenta para el 100%."
+  ],
+  [
+   "¿Rockstar agregará dardos en una actualización?",
+   "Rockstar no lo ha dicho."
+  ]
+ ],
+ "gear": [
+  "game"
+ ],
+ "sources": [
+  [
+   "VGC: Rockstar explains why you can't play darts in GTA 6 (Rob Nelson, Nov 19, 2026)",
+   "https://www.videogameschronicle.com/news/rockstar-explains-why-you-cant-play-darts-in-gta-6-we-dont-have-unlimited-time/"
+  ],
+  [
+   "GGRecon: Rockstar explains why there's no darts in GTA 6",
+   "https://www.ggrecon.com/articles/gta-6-no-darts-rockstar-explains/"
+  ],
+  [
+   "GameNewsPlus: Why GTA 6 has no darts or bowling",
+   "https://gamenewsplus.net/news/rockstar-explains-why-darts-and-bowling-are-missing-from-gta-6-40084/"
+  ],
+  [
+   "Tbreak: GTA 6 darts, why Rockstar left the minigame out",
+   "https://tbreak.com/gta-6-darts-rockstar-explains/"
+  ],
+  [
+   "GTABase: GTA 6 pool activity",
+   "https://www.gtabase.com/side-missions/gta-6/pool"
+  ]
+ ]
+}

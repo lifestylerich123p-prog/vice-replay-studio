@@ -14,6 +14,8 @@ def published_files():
     out = []
     uploads = json.loads((ROOT / "content" / "learn" / "uploads.json").read_text())
     for vid, u in uploads.items():
+        if u.get("retired"):  # never went public (unscheduled and kept private); its re-cut may reuse the footage
+            continue
         f = ROOT / "output" / u["slug"] / ITEM_FILE.get(u.get("item", "short"), "{slug}-short.mp4").format(slug=u["slug"])
         if f.exists():
             out.append((vid, f))

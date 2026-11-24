@@ -28,9 +28,19 @@ def test_limit_is_learned(tmp_path, monkeypatch):
     assert quota.limit() == 1600 and quota.left_today() == 0
 
 
-def test_free_slots_skip_taken_and_past():
+def test_free_slots_skip_taken_and_past(monkeypatch):
+    monkeypatch.setattr(quota, "reserved", lambda lang="en": {})  # no approved-queue bookings in this test
     tomorrow = dt.datetime.now(quota.ET).date() + dt.timedelta(days=1)
     slots = quota.slots_for(tomorrow)
     first = dt.datetime.combine(tomorrow, dt.datetime.strptime(slots[0], "%I:%M %p").time(), quota.ET)
     plan = dict(quota.free_slots({tomorrow: [first + dt.timedelta(minutes=30)]}, days=2))
     assert slots[0] not in plan[tomorrow] and len(plan[tomorrow]) == len(slots) - 1
+
+
+def test_free_slots_count_the_approved_queue(monkeypatch):
+    tomorrow = dt.datetime.now(quota.ET).date() + dt.timedelta(days=1)
+    slots = quota.slots_for(tomorrow)
+    at = dt.datetime.combine(tomorrow, dt.datetime.strptime(slots[1], "%I:%M %p").time(), quota.ET)
+    monkeypatch.setattr(quota, "reserved", lambda lang="en": {tomorrow: [at]})
+    plan = dict(quota.free_slots({}, days=2))
+    assert slots[1] not in plan[tomorrow]

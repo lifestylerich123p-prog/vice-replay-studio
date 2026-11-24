@@ -1,0 +1,208 @@
+{
+ "title": "GTA 6 Took 13 Years. No Other GTA Took Even 6",
+ "slug": "gta6-13-years",
+ "series": "Explained",
+ "format": "comparison",
+ "mood": "bright",
+ "use_gameplay": false,
+ "short_title": "GTA 6 took 13 years. No other GTA took 6 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 took 13 years. No other GTA took 6 #GTA6 #Shorts",
+  "The longest wait in GTA history: 13 years #GTA6 #Shorts",
+  "GTA 6 vs GTA 5: 13 years apart, charted #GTA6 #Shorts"
+ ],
+ "short_description": "Years between each new main GTA game, from the US release dates: GTA III (Oct 2001) to Vice City (Oct 2002) 1 year; Vice City to San Andreas (Oct 2004) 2; San Andreas to GTA IV (Apr 2008) 3.5; GTA IV to GTA V (Sept 17, 2013) 5.4; GTA V to GTA 6 (Nov 19, 2026) 13.2. How old were you when GTA 5 came out?\n\nSources: GamesRadar GTA timeline, Dot Esports release order, Sportskeeda release dates, Rockstar Intel timeline.",
+ "short_es": {
+  "title": "GTA 6 tardó 13 AÑOS... ningún otro GTA tardó ni 6 ⏳ #GTA6 #Shorts",
+  "description": "Años entre cada GTA principal según su lanzamiento en EE. UU.: GTA III (oct 2001) a Vice City (oct 2002) 1 año; a San Andreas (oct 2004) 2; a GTA IV (abr 2008) 3,5; a GTA V (17 sep 2013) 5,4; a GTA 6 (19 nov 2026) 13,2. ¿Cuántos años tenías cuando salió GTA 5?",
+  "tags": [
+   "GTA 6",
+   "GTA 6 13 años",
+   "historia de GTA",
+   "GTA 5 vs GTA 6",
+   "GTA 6 español",
+   "fechas GTA",
+   "GTA VI"
+  ]
+ },
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "How old were you when GTA 5 came out? 👇",
+ "short_pinned_comment_es": "¿Cuántos años tenías cuando salió GTA 5? 👇",
+ "tags": [
+  "GTA 6",
+  "GTA 6 13 years",
+  "GTA release dates",
+  "GTA history",
+  "GTA 5 vs GTA 6",
+  "how long between GTA games",
+  "GTA 6 wait",
+  "GTA timeline",
+  "GTA VI",
+  "Grand Theft Auto VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gta",
+  "#gaming",
+  "#gtahistory"
+ ],
+ "sources": [
+  "GamesRadar - The complete GTA timeline: https://www.gamesradar.com/gta-timeline-every-gta-game-in-order",
+  "Dot Esports - All Grand Theft Auto games in release order: https://dotesports.com/gta/news/all-grand-theft-auto-games-in-release-order",
+  "Sportskeeda - Release dates of every GTA game: https://sportskeeda.com/gta/release-dates-every-gta-game-date",
+  "Rockstar Intel - Timeline of Grand Theft Auto series release dates: https://rockstarintel.com/timeline-of-grand-theft-auto-series-release-dates/"
+ ],
+ "short": [
+  {
+   "headline": "13 YEARS",
+   "headline_es": "13 AÑOS",
+   "text": "GTA 6 took thirteen years. No other GTA took even six.",
+   "text_es": "GTA 6 tardó trece años. Ningún otro GTA tardó ni seis.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "GTA 6 took 13 years",
+    "pink": [
+     "13"
+    ],
+    "seed": 31,
+    "sub": "No other GTA took even 6"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "GTA 6 tardó 13 años",
+    "pink": [
+     "13"
+    ],
+    "seed": 31,
+    "sub": "Ningún otro GTA tardó ni 6"
+   },
+   "audio_es": "media/voice/gta6-13-years/es/seg1.wav"
+  },
+  {
+   "headline": "YEARS BETWEEN GTAs",
+   "headline_es": "AÑOS ENTRE GTAs",
+   "text": "GTA 4 to 5 took five and a half years. Everything before, under four.",
+   "text_es": "De GTA 4 a 5 pasaron cinco años y medio. Antes, menos de cuatro.",
+   "keep_media": true,
+   "chart": {
+    "type": "bars",
+    "items": [
+     [
+      "GTA 5 > GTA 6",
+      13.2
+     ],
+     [
+      "GTA 4 > GTA 5",
+      5.4
+     ],
+     [
+      "San Andreas > GTA 4",
+      3.5
+     ],
+     [
+      "Vice City > San Andreas",
+      2.0
+     ],
+     [
+      "GTA 3 > Vice City",
+      1.0
+     ]
+    ],
+    "unit": " yrs",
+    "highlight": 0,
+    "note": "Years between US release dates",
+    "seed": 31
+   },
+   "chart_es": {
+    "type": "bars",
+    "items": [
+     [
+      "GTA 5 > GTA 6",
+      13.2
+     ],
+     [
+      "GTA 4 > GTA 5",
+      5.4
+     ],
+     [
+      "San Andreas > GTA 4",
+      3.5
+     ],
+     [
+      "Vice City > San Andreas",
+      2.0
+     ],
+     [
+      "GTA 3 > Vice City",
+      1.0
+     ]
+    ],
+    "unit": " años",
+    "highlight": 0,
+    "note": "Años entre lanzamientos en EE. UU.",
+    "seed": 31
+   },
+   "audio_es": "media/voice/gta6-13-years/es/seg2.wav"
+  },
+  {
+   "headline": "FUN FACT",
+   "headline_es": "DATO CURIOSO",
+   "text": "Kids born the week GTA 5 came out are thirteen now.",
+   "text_es": "Quien nació la semana que salió GTA 5 ya tiene trece años.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Kids born with GTA 5 are 13 now",
+    "pink": [
+     "13"
+    ],
+    "seed": 31,
+    "sub": "Sept 17, 2013 to Nov 19, 2026"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Quien nació con GTA 5 ya tiene 13",
+    "pink": [
+     "13"
+    ],
+    "seed": 31,
+    "sub": "17 sep 2013 a 19 nov 2026"
+   },
+   "audio_es": "media/voice/gta6-13-years/es/seg3.wav"
+  },
+  {
+   "headline": "HOW OLD WERE YOU?",
+   "headline_es": "¿CUÁNTOS AÑOS TENÍAS?",
+   "text": "How old were you when GTA 5 came out? Tell me, because",
+   "text_es": "¿Cuántos años tenías cuando salió GTA 5? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "How old were you when GTA 5 came out?",
+    "pink": [
+     "GTA",
+     "5"
+    ],
+    "seed": 31
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "¿Cuántos años tenías cuando salió GTA 5?",
+    "pink": [
+     "GTA",
+     "5?"
+    ],
+    "seed": 31
+   },
+   "audio_es": "media/voice/gta6-13-years/es/seg4.wav"
+  }
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)",
+ "guide": "gta-6-vs-gta-5"
+}

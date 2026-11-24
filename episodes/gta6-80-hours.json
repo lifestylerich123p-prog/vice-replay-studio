@@ -1,0 +1,185 @@
+{
+ "title": "GTA 6 Is Rockstar's Longest Story Ever: About 80 Hours",
+ "slug": "gta6-80-hours",
+ "series": "C: Tested",
+ "format": "comparison",
+ "mood": "tension",
+ "use_gameplay": false,
+ "short_title": "GTA 6 vs GTA 5: 80 hours vs 32 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 vs GTA 5: 80 hours vs 32 #GTA6 #Shorts",
+  "GTA 6 is 2.5 GTA 5s long (80 hours) #GTA6 #Shorts",
+  "GTA 6: Rockstar's longest story ever #GTA6 #Shorts"
+ ],
+ "short_description": "Rockstar North's Rob Nelson says GTA 6 took him about 80 hours: the main story plus a few side missions with story consequences, Rockstar's longest yet. HowLongToBeat players average about 51 hours for Red Dead Redemption 2's main story and about 32 for GTA V's. Different measures, so treat it as a rough comparison. No spoilers.\n\nSources: TechRadar, VICE, Beebom (HowLongToBeat averages).",
+ "short_es": {
+  "title": "GTA 6 dura 80 HORAS... dos GTA 5 y medio ⏱️ #GTA6 #Shorts",
+  "description": "Rob Nelson, de Rockstar North, dice que GTA 6 le tomó unas 80 horas: la historia y algunas misiones secundarias con consecuencias. Según HowLongToBeat, la historia de Red Dead Redemption 2 dura unas 51 horas y la de GTA V unas 32. Son medidas distintas: compáralo como aproximado. Sin spoilers.",
+  "tags": [
+   "GTA 6 duración",
+   "cuánto dura GTA 6",
+   "GTA 6 80 horas",
+   "GTA 6 vs GTA 5",
+   "Red Dead Redemption 2",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "Will you finish GTA 6 before New Year? YES or NO 👇",
+ "short_pinned_comment_es": "¿Terminarás GTA 6 antes de Año Nuevo? SÍ o NO 👇",
+ "tags": [
+  "GTA 6 vs GTA 5",
+  "how long is GTA 6",
+  "GTA 6 length",
+  "GTA 6 80 hours",
+  "GTA 6 how long to beat",
+  "GTA 6 vs Red Dead 2",
+  "Rob Nelson",
+  "GTA 6",
+  "GTA VI",
+  "Grand Theft Auto VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gaming",
+  "#rdr2"
+ ],
+ "sources": [
+  "TechRadar - GTA 6 will be a massive game and Rockstar's longest yet, as the studio confirms it can take up to 80 hours to beat: https://techradar.com/gaming/gta-6-will-be-a-massive-game-and-rockstars-longest-yet-as-the-studio-confirms-it-can-take-up-to-80-hours-to-beat",
+  "VICE - GTA 6: how long to complete (80 hours): https://www.vice.com/en/article/gta-6-how-long-to-complete-80-hours/",
+  "Beebom - How long to beat GTA 6 (GTA V ~32 h, RDR2 ~51 h on HowLongToBeat): https://beebom.com/how-long-to-beat-gta-6/"
+ ],
+ "short": [
+  {
+   "headline": "ROCKSTAR'S LONGEST EVER",
+   "headline_es": "LO MÁS LARGO DE ROCKSTAR",
+   "text": "GTA 6 is Rockstar's longest story ever. About eighty hours.",
+   "text_es": "GTA 6 es la historia más larga de Rockstar. Unas ochenta horas.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 80,
+    "unit": " h",
+    "label": "GTA 6 (Rockstar's estimate)",
+    "seed": 33
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 80,
+    "unit": " h",
+    "label": "GTA 6 (estimación de Rockstar)",
+    "seed": 33
+   },
+   "audio_es": "media/voice/gta6-80-hours/es/seg1.wav"
+  },
+  {
+   "headline": "VS RED DEAD 2 AND GTA 5",
+   "headline_es": "VS RED DEAD 2 Y GTA 5",
+   "text": "Red Dead 2 takes about fifty one. GTA 5, about thirty two.",
+   "text_es": "Red Dead 2 dura unas cincuenta y una. GTA 5, unas treinta y dos.",
+   "keep_media": true,
+   "chart": {
+    "type": "bars",
+    "items": [
+     [
+      "GTA 6",
+      80
+     ],
+     [
+      "Red Dead Redemption 2",
+      51
+     ],
+     [
+      "GTA 5",
+      32
+     ]
+    ],
+    "unit": " h",
+    "highlight": 0,
+    "note": "GTA 6: Rockstar's estimate (story + some side missions); others: HowLongToBeat main story",
+    "seed": 33
+   },
+   "chart_es": {
+    "type": "bars",
+    "items": [
+     [
+      "GTA 6",
+      80
+     ],
+     [
+      "Red Dead Redemption 2",
+      51
+     ],
+     [
+      "GTA 5",
+      32
+     ]
+    ],
+    "unit": " h",
+    "highlight": 0,
+    "note": "GTA 6: estimación de Rockstar (historia + algunas secundarias); otros: HowLongToBeat",
+    "seed": 33
+   },
+   "audio_es": "media/voice/gta6-80-hours/es/seg2.wav"
+  },
+  {
+   "headline": "2.5 GTA 5s",
+   "headline_es": "2,5 GTA 5",
+   "text": "That's two and a half GTA 5s.",
+   "text_es": "Eso son dos GTA 5 y medio.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "That's 2.5 GTA 5s",
+    "pink": [
+     "2.5"
+    ],
+    "seed": 33
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Son 2,5 GTA 5",
+    "pink": [
+     "2,5"
+    ],
+    "seed": 33
+   },
+   "audio_es": "media/voice/gta6-80-hours/es/seg3.wav"
+  },
+  {
+   "headline": "DONE BY NEW YEAR?",
+   "headline_es": "¿ANTES DE AÑO NUEVO?",
+   "text": "Will you finish it before New Year? Tell me, because",
+   "text_es": "¿Lo terminarás antes de Año Nuevo? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Will you finish it before New Year?",
+    "pink": [
+     "New",
+     "Year?"
+    ],
+    "seed": 33
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "¿Lo terminarás antes de Año Nuevo?",
+    "pink": [
+     "Año",
+     "Nuevo?"
+    ],
+    "seed": 33
+   },
+   "audio_es": "media/voice/gta6-80-hours/es/seg4.wav"
+  }
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)",
+ "guide": "gta-6-how-long-to-beat"
+}

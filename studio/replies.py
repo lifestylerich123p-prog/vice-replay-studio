@@ -2,6 +2,7 @@
 
     python -m studio.replies list                  # unreplied comments on our videos -> output/replies.json
     python -m studio.replies post output/replies.json   # post the "reply" filled in for each item (skips empty)
+    python -m studio.replies list --es / post output/replies-es.json --es   # the same on Vice Replay en Español
 
 `list` writes [{"id", "video", "video_title", "author", "comment", "reply": ""}] for top-level comments from other
 people that have no reply from our channel yet. Fill in "reply" (or set "skip": true for spam, hate or trolls so they never come back; an empty reply
@@ -45,8 +46,16 @@ def unreplied(tok):
 def main():
     if len(sys.argv) < 2 or sys.argv[1] not in ("list", "post"):
         sys.exit(__doc__)
-    tok = token()
-    path = ROOT / "output" / "replies.json"
+    # Nov 22 night (owner: "every posting credit must be used posting or answering comments"): --es answers the
+    # Spanish channel (Vice Replay en Español) too; its own key, its own list file, the same replied.json.
+    es = "--es" in sys.argv
+    sys.argv = [x for x in sys.argv if x != "--es"]
+    if es:
+        from .youtube_upload import channel_ids, token_for
+        tok = token_for(channel_ids()["es"], "YT_SPANISH_REFRESH_TOKEN")
+    else:
+        tok = token()
+    path = ROOT / "output" / ("replies-es.json" if es else "replies.json")
     if sys.argv[1] == "list":
         items = unreplied(tok)
         path.parent.mkdir(exist_ok=True)

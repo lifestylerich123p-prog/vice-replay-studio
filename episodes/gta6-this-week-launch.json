@@ -1,0 +1,417 @@
+{
+  "title": "GTA 6 This Week: $3.79 Billion, a 99 and 68M Views",
+  "slug": "gta6-this-week-launch",
+  "voice": "am_michael",
+  "rate": "+8%",
+  "format": "news",
+  "series": "Weekly recap",
+  "use_gameplay": false,
+  "description": "GTA 6's launch week in one video, no story spoilers: the midnight launch (New Zealand first), the 99 on Metacritic that ties Ocarina of Time, Take-Two's official $3.79 billion in preorders and first-day sales (vs GTA 5's $800 million first day), a 7.9 million-viewer streaming peak, IShowSpeed's 68 million-view launch stream, the first people to reach the credits, and the cheats and hidden easy mode players found.",
+  "thumbnail": {
+    "line1": "WEEK ONE",
+    "line2": "BY THE NUMBERS",
+    "tag": "NO SPOILERS",
+    "image": "../media/official/vice-city-01.jpg",
+    "images": [
+      "../media/official/jason-and-lucia-03.jpg",
+      "../media/official/leonida-keys-02.jpg"
+    ]
+  },
+  "tags": [
+    "GTA 6",
+    "GTA VI",
+    "GTA 6 this week",
+    "GTA 6 news",
+    "GTA 6 launch",
+    "GTA 6 sales",
+    "GTA 6 3.79 billion",
+    "GTA 6 Metacritic",
+    "GTA 6 streaming record",
+    "IShowSpeed GTA 6",
+    "GTA 6 cheats",
+    "GTA 6 easy mode",
+    "GTA 6 vs GTA 5",
+    "Vice City",
+    "Leonida"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "ViceCity"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#gaming",
+    "#gta6news",
+    "#ishowspeed"
+  ],
+  "affiliate": [
+    "storage",
+    "game"
+  ],
+  "sources": [
+    "Take-Two press release filed with the SEC (8-K exhibit 99.1, Nov 20, 2026) - GTA VI $3.79 billion: https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm",
+    "Variety - GTA 6 sales: $3.79 billion in first day sales (Take-Two, Nov 20, 2026): https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/",
+    "Yahoo Tech - GTA 6 live updates: record $3.8 billion launch: https://tech.yahoo.com/gaming/breaking-news/live/gta-6-release-live-updates-reviews-memes-and-more-as-gamers-explore-and-react-to-leonida-after-13-long-years-230554192.html",
+    "Fox 5 - GTA VI pulls in estimated $1.84 billion by release day, more than double GTA V's launch record (Sensor Tower): https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record",
+    "Take-Two 8-K (Sept 18, 2013) - GTA V first-day sell-through over $800 million: https://www.sec.gov/Archives/edgar/data/0000946581/000110465913070819/a13-20938_1ex99d1.htm",
+    "Engadget - Grand Theft Auto 5 makes off with over $800 million on day one: https://www.engadget.com/2013-09-18-grand-theft-auto-5-makes-off-with-over-800-million-on-day-one.html",
+    "Forbes - The GTA 6 Metacritic score ties an all-time record: https://www.forbes.com/sites/paultassi/2026/11/18/the-gta-6-metacritic-review-score-is-in-and-ties-an-all-time-record/",
+    "GameSpot - GTA 6 has a Metacritic score so high it's only happened once before: https://www.gamespot.com/articles/gta-6-has-a-metacritic-score-so-high-its-only-happened-once-before/",
+    "Inven Global - GTA VI sets livestreaming records with 7.91M peak viewers on launch day (Streams Charts): https://www.invenglobal.com/articles/28854/gta-vi-sets-livestreaming-records-with-791m-peak-viewers-on-launch-day",
+    "Streams Charts - Viewership records and top streamers from GTA 6's first 24 hours: https://streamscharts.com/news/gta-6-day1-recap",
+    "Streams Charts - GTA 6 YouTube launch streams led by IShowSpeed: https://streamscharts.com/news/gta-6s-most-viewed-youtube-streams",
+    "YouTube Data API view counts, re-checked Nov 22, 2026 6:15 AM ET: IShowSpeed qSyo5d-dVzA 68,716,978; hwSg39yIBGU 37,755,127; OIeLbmyraRQ 23,119,224; CarryMinati (CarryisLive) irNhWMG560k 18,142,556; Mythpat LMbea5SozeM 17,877,361",
+    "GamesRadar - The first GTA 6 speedrun is less than 40 hours: https://www.gamesradar.com/games/grand-theft-auto/the-first-gta-6-speedrun-is-less-than-40-hours-with-no-breaks-from-a-streamer-who-stayed-up-for-50-plus-hours/",
+    "Dexerto - IShowSpeed finishes GTA 6 in 52 hours without sleeping: https://www.dexerto.com/youtube/ishowspeed-breaks-down-in-tears-after-finishing-gta-6-in-52-hours-without-sleeping-3430267/",
+    "GamesRadar - All GTA 6 cheats and how to unlock them: https://www.gamesradar.com/games/grand-theft-auto/gta-6-cheats/",
+    "PC Gamer - All GTA 6 cheats and how to unlock them: https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/",
+    "Push Square - GTA 6 has an easy mode buried in its accessibility options: https://www.pushsquare.com/news/2026/11/gta-6-has-an-easy-mode-buried-in-an-impressive-range-of-accessibility-options",
+    "VGC - GTA 6 easy mode: does GTA 6 have difficulty options?: https://www.videogameschronicle.com/guide/gta-6-easy-mode-does-gta-6-have-difficulty-options/",
+    "Push Square - GTA 6 release times (New Zealand first): https://www.pushsquare.com/guides/gta-6-release-times-when-can-you-start-playing",
+    "Shacknews - GTA 6 price: Standard $79.99, Ultimate $99.99: https://www.shacknews.com/article/149778/grand-theft-auto-6-price-standard-ultimate-gta-6"
+  ],
+  "outro_card": "GTA 6 news every day on Vice Replay",
+  "segments": [
+    {
+      "headline": "WEEK ONE",
+      "headline_es": "SEMANA UNO",
+      "chapter": "The week in one line",
+      "text": "GTA 6's first week, in two minutes. Three point seven nine billion dollars, a ninety nine on Metacritic, one stream with sixty eight million views, and cheats with a catch. Zero story spoilers.",
+      "text_es": "La primera semana de GTA 6, en dos minutos. Tres mil setecientos noventa millones de dólares, un noventa y nueve en Metacritic, un directo con sesenta y ocho millones de vistas, y trucos con trampa. Cero spoilers de la historia.",
+      "media": "../media/trailer/out-now-night-drive-ocean-drive.mp4"
+    },
+    {
+      "headline": "IT'S OUT",
+      "headline_es": "YA SALIÓ",
+      "chapter": "Launch night",
+      "text": "It unlocked at midnight local time on November nineteenth, on PS5 and Xbox Series. New Zealand got there first, so some players changed their console region to start hours early. My take: the wait was worth more than those hours.",
+      "text_es": "Se desbloqueó a la medianoche, hora local, el diecinueve de noviembre, en PS5 y Xbox Series. Nueva Zelanda llegó primero, así que algunos jugadores cambiaron la región de su consola para empezar horas antes. Mi opinión: la espera valía más que esas horas.",
+      "media": "../media/trailer/extended-look-skyline-blimp.mp4"
+    },
+    {
+      "headline": "METACRITIC: 99",
+      "headline_es": "METACRITIC: 99",
+      "chapter": "The reviews",
+      "text": "Then the reviews. Ninety nine on Metacritic, tied with Zelda Ocarina of Time for the highest score the site has ever shown. The one complaint you saw everywhere? Thirty frames per second, even on PS5 Pro.",
+      "text_es": "Luego las reseñas. Noventa y nueve en Metacritic, empatado con Zelda Ocarina of Time como la nota más alta de la historia del sitio. ¿La queja que viste en todas partes? Treinta cuadros por segundo, incluso en PS5 Pro.",
+      "media": "../media/trailer/extended-look-convertible-waterfront.mp4"
+    },
+    {
+      "headline": "$3.79 BILLION",
+      "headline_es": "3.790 MILLONES",
+      "chapter": "The money",
+      "text": "On Friday Take-Two made it official: three point seven nine billion dollars in preorders and first day sales, which it called the biggest entertainment launch in history. GTA 5 made eight hundred million on its first day. That's almost five times.",
+      "text_es": "El viernes Take-Two lo hizo oficial: tres mil setecientos noventa millones de dólares entre preventas y ventas del primer día, y lo llamó el mayor lanzamiento de entretenimiento de la historia. GTA 5 hizo ochocientos millones en su primer día. Casi cinco veces más.",
+      "media": "../media/trailer/extended-look-aerial-bay.mp4"
+    },
+    {
+      "headline": "7.9M WATCHING",
+      "headline_es": "7,9 M MIRANDO",
+      "chapter": "The streams",
+      "text": "And people watched as much as they played. Streams Charts counted a peak of seven point nine million viewers at once on launch day, about four and a half times the old launch record. IShowSpeed's launch stream alone now sits at sixty eight million views.",
+      "text_es": "Y la gente miró tanto como jugó. Streams Charts contó un pico de siete coma nueve millones de espectadores al mismo tiempo el día del lanzamiento, unas cuatro veces y media el récord anterior. Solo el directo de lanzamiento de IShowSpeed ya tiene sesenta y ocho millones de vistas.",
+      "media": "../media/trailer/extended-look-van-residential.mp4"
+    },
+    {
+      "headline": "FIRST TO FINISH",
+      "headline_es": "LOS PRIMEROS",
+      "chapter": "The first finishers",
+      "text": "The race to the credits went to New Zealand's BrycexD, who says he finished in thirty nine hours and thirty eight minutes. IShowSpeed needed fifty two and a half, without sleeping. Most of us are nowhere near that, and that's fine.",
+      "text_es": "La carrera a los créditos la ganó BrycexD, de Nueva Zelanda, que dice que terminó en treinta y nueve horas y treinta y ocho minutos. IShowSpeed necesitó cincuenta y dos y media, sin dormir. La mayoría ni nos acercamos, y está bien.",
+      "media": "../media/trailer/extended-look-skydive-city.mp4"
+    },
+    {
+      "headline": "CHEATS + EASY MODE",
+      "headline_es": "TRUCOS + MODO FÁCIL",
+      "chapter": "What players found",
+      "text": "Players found two big surprises. Cheats are real, but they only unlock after you finish the story, and using one turns off saving for that session. And there's no difficulty menu, but two accessibility switches work like a hidden easy mode.",
+      "text_es": "Los jugadores encontraron dos sorpresas. Los trucos existen, pero solo se desbloquean después de terminar la historia, y usar uno desactiva el guardado en esa sesión. Y no hay menú de dificultad, pero dos opciones de accesibilidad funcionan como un modo fácil escondido.",
+      "media": "../media/trailer/extended-look-dirt-bike-trail.mp4"
+    },
+    {
+      "headline": "YOUR PICK?",
+      "headline_es": "¿TU MOMENTO?",
+      "chapter": "Your turn",
+      "text": "So what was the biggest moment of GTA 6's first week for you: the money, the ninety nine, or the streams? Tell me in the comments, and subscribe for GTA 6 news every day.",
+      "text_es": "¿Cuál fue para ti el momento más grande de la primera semana de GTA 6: el dinero, el noventa y nueve, o los directos? Dímelo en los comentarios, y suscríbete para noticias de GTA 6 cada día.",
+      "media": "../media/trailer/extended-look-sunset-skyline.mp4"
+    }
+  ],
+  "title_options": [
+    "GTA 6 This Week: $3.79 Billion, a 99 and 68M Views",
+    "GTA 6's First Week in 2 Minutes (No Spoilers)",
+    "GTA 6 Launch Week: Every Record It Broke"
+  ],
+  "pinned_comment": "Biggest moment of GTA 6's first week? Reply MONEY, 99 or STREAMS 👇 (no spoilers please)",
+  "es": {
+    "title": "GTA 6 esta semana: 3.790 millones, un 99 y 68 M de vistas",
+    "description": "La semana de lanzamiento de GTA 6 en un video, sin spoilers: el lanzamiento a medianoche (Nueva Zelanda primero), el 99 en Metacritic que empata a Ocarina of Time, los 3.790 millones de dólares oficiales de Take-Two en preventas y primer día (vs los 800 millones de GTA 5 en su primer día), un pico de 7,9 millones de espectadores, el directo de IShowSpeed con 68 millones de vistas, los primeros en llegar a los créditos, y los trucos y el modo fácil escondido."
+  },
+  "comment_replies": [
+    {
+      "author": "@cent187",
+      "comment": "And 1am atlantic time for us Canadians. Booboo.",
+      "url": "https://www.youtube.com/watch?v=Y4AT3Y4kcmg&lc=UgxCb_1TONO3FR_mEDx4AaABAg",
+      "reply": "1 AM Atlantic was rough 😭 Worth the lost sleep though? How far in are you now?"
+    },
+    {
+      "author": "@extrashifty578",
+      "comment": "Look we all know it's BS. They announced the deadline was November 20th then this they even had the balls to not wait on the 20th to announce the nominees. You can't tell it won't win it.",
+      "url": "https://www.youtube.com/watch?v=xvudsg_o6ow&lc=UgynkbCOhpsG6Uwhynt4AaABAg",
+      "reply": "The timing was weird, no argument there 👀 Now that it's out with a 99, do you think it takes Game of the Year?"
+    }
+  ],
+  "shorts": [
+    {
+      "id": "news",
+      "format": "streamer",
+      "series": "B: Rankings",
+      "title": "IShowSpeed owns the TOP 3 GTA 6 streams #GTA6 #Shorts",
+      "title_options": [
+        "IShowSpeed owns the TOP 3 GTA 6 streams #GTA6 #Shorts",
+        "68 MILLION views on ONE GTA 6 stream #GTA6 #Shorts",
+        "The 3 most-watched GTA 6 streams are all Speed #GTA6 #Shorts"
+      ],
+      "description": "The three most-viewed GTA 6 live streams on YouTube all belong to IShowSpeed: 68.7M, 37.7M and 23.1M views (YouTube's public counters, checked Nov 22 at 6:15 AM ET; our count from YouTube's own search of finished GTA 6 streams). The biggest that isn't Speed: CarryMinati, 18.1M, with Mythpat (17.9M) right behind. Streams Charts had Speed's launch stream at 65.1M on Nov 20. No story spoilers. Footage: official Rockstar media, original audio removed.",
+      "hashtags": [
+        "GTA6",
+        "IShowSpeed",
+        "Shorts"
+      ],
+      "tiktok_hashtags": [
+        "#gta6",
+        "#ishowspeed",
+        "#gtavi",
+        "#gaming",
+        "#gta6news"
+      ],
+      "pinned_comment": "Can anyone beat 68 MILLION? Name the streamer 👇",
+      "pinned_comment_es": "¿Alguien le gana a 68 MILLONES? Di qué streamer 👇",
+      "es": {
+        "title": "IShowSpeed tiene los 3 directos MÁS vistos de GTA 6 😳 #GTA6 #Shorts",
+        "description": "Los tres directos de GTA 6 más vistos en YouTube son de IShowSpeed: 68,7 M, 37,7 M y 23,1 M de vistas (contadores públicos de YouTube, 22 de noviembre). El más grande que no es de Speed: CarryMinati, 18,1 M, con Mythpat (17,9 M) justo detrás. Sin spoilers.",
+        "tags": [
+          "IShowSpeed GTA 6",
+          "GTA 6 directo",
+          "GTA 6 streamers",
+          "IShowSpeed",
+          "GTA 6 récord",
+          "GTA 6 noticias"
+        ]
+      },
+      "segments": [
+        {
+          "headline": "SPEED OWNS TOP 3",
+          "headline_es": "SPEED TIENE EL TOP 3",
+          "text": "The three most-watched GTA 6 streams on YouTube? All IShowSpeed.",
+          "text_es": "¿Los tres directos de GTA 6 más vistos en YouTube? Todos de IShowSpeed.",
+          "keep_media": true,
+          "shots": [
+            {
+              "media": "../media/trailer/out-now-marina-ferris-wheel.mp4",
+              "start": 0.0,
+              "dur": 1.4
+            },
+            {
+              "media": "../media/trailer/extended-look-convertible-palm-street.mp4",
+              "start": 0.3
+            }
+          ]
+        },
+        {
+          "headline": "#3 23M · #2 37.7M",
+          "headline_es": "#3 23 M · #2 37,7 M",
+          "text": "Number three, twenty three million views. Number two, thirty seven million.",
+          "text_es": "Número tres, veintitrés millones de vistas. Número dos, treinta y siete millones.",
+          "keep_media": true,
+          "shots": [
+            {
+              "media": "../media/trailer/out-now-yacht-bay.mp4",
+              "start": 0.0,
+              "dur": 1.3
+            },
+            {
+              "media": "../media/trailer/extended-look-avenue-skyline.mp4",
+              "start": 0.0
+            }
+          ]
+        },
+        {
+          "headline": "#1: 68 MILLION",
+          "headline_es": "#1: 68 MILLONES",
+          "text": "And number one, his launch stream: sixty eight million views, on YouTube's own counter this morning.",
+          "text_es": "Y el número uno, su directo de lanzamiento: sesenta y ocho millones de vistas, según el contador de YouTube esta mañana.",
+          "keep_media": true,
+          "shots": [
+            {
+              "media": "../media/trailer/launch-trailer-boatyard.mp4",
+              "start": 0.0,
+              "dur": 1.5
+            },
+            {
+              "media": "../media/trailer/extended-look-night-drive-skyline.mp4",
+              "start": 0.0
+            }
+          ]
+        },
+        {
+          "headline": "NOT SPEED: 18.1M",
+          "headline_es": "SIN SPEED: 18,1 M",
+          "text": "The biggest one that isn't Speed? CarryMinati, eighteen point one million, with Mythpat right behind. Can anyone catch Speed? Tell me below, because",
+          "text_es": "¿El más grande que no es de Speed? CarryMinati, con dieciocho millones cien mil, y Mythpat justo detrás. ¿Alguien alcanza a Speed? Dímelo abajo, porque",
+          "keep_media": true,
+          "shots": [
+            {
+              "media": "../media/trailer/launch-trailer-beach-plane.mp4",
+              "start": 0.0,
+              "dur": 1.5
+            },
+            {
+              "media": "../media/trailer/extended-look-strip-mall-parking.mp4",
+              "start": 1.0
+            }
+          ]
+        }
+      ],
+      "tags": [
+        "IShowSpeed GTA 6",
+        "GTA 6 stream",
+        "GTA 6 most viewed stream",
+        "IShowSpeed",
+        "CarryMinati GTA 6",
+        "Mythpat GTA 6",
+        "GTA 6 streamers",
+        "GTA 6 record"
+      ]
+    },
+    {
+      "id": "tips",
+      "format": "comparison",
+      "series": "Explained",
+      "title": "GTA 6 made 5X GTA 5's launch... with a catch #GTA6 #Shorts",
+      "title_options": [
+        "GTA 6 made 5X GTA 5's launch... with a catch #GTA6 #Shorts",
+        "GTA 6 vs GTA 5 launch money: not a fair fight #GTA6 #Shorts",
+        "$3.79B vs $800M: GTA 6 vs GTA 5 #GTA6 #Shorts"
+      ],
+      "description": "Take-Two says GTA 6 made $3.79 billion in preorders and first-day sales (Variety, Nov 20). GTA 5 made $800 million in its first day in 2013. The catch: GTA 6's number includes every preorder, and Standard costs $79.99 vs GTA 5's $59.99. Sensor Tower's independent estimate ($1.84B by release day) is still more than double GTA 5's record (Fox 5). Footage: official Rockstar media, original audio removed.",
+      "hashtags": [
+        "GTA6",
+        "GTA5",
+        "Shorts"
+      ],
+      "tiktok_hashtags": [
+        "#gta6",
+        "#gta5",
+        "#gtavi",
+        "#gaming",
+        "#gta6news"
+      ],
+      "pinned_comment": "Fair comparison or not? Reply FAIR or NOT FAIR 👇",
+      "pinned_comment_es": "¿Comparación justa o no? Responde JUSTA o NO 👇",
+      "es": {
+        "title": "GTA 6 hizo 5 VECES el lanzamiento de GTA 5... con trampa 💰 #GTA6 #Shorts",
+        "description": "Take-Two dice que GTA 6 hizo 3.790 millones de dólares entre preventas y primer día. GTA 5 hizo 800 millones en su primer día, en 2013. La trampa: el número de GTA 6 incluye todas las preventas y la edición estándar cuesta 79,99 dólares, no 59,99. Aun así, la estimación de Sensor Tower (1.840 millones al día del lanzamiento) es más del doble.",
+        "tags": [
+          "GTA 6 vs GTA 5",
+          "GTA 6 ventas",
+          "GTA 6 dinero",
+          "GTA 6 récord",
+          "GTA 6 3790 millones",
+          "GTA 5",
+          "GTA 6 noticias"
+        ]
+      },
+      "segments": [
+        {
+          "headline": "5X GTA 5?",
+          "headline_es": "¿5 VECES GTA 5?",
+          "text": "GTA 6 made almost five times GTA 5's launch. But there's a catch.",
+          "text_es": "GTA 6 hizo casi cinco veces el lanzamiento de GTA 5. Pero hay trampa.",
+          "keep_media": true,
+          "shots": [
+            {
+              "media": "../media/trailer/launch-trailer-jason-lucia-car.mp4",
+              "start": 0.0,
+              "dur": 1.5
+            },
+            {
+              "media": "../media/trailer/extended-look-highway-palms.mp4",
+              "start": 0.0
+            }
+          ]
+        },
+        {
+          "headline": "$3.79B VS $800M",
+          "headline_es": "3.790 M VS 800 M",
+          "text": "Take-Two says three point seven nine billion dollars. GTA 5 made eight hundred million on its first day, back in twenty thirteen.",
+          "text_es": "Take-Two dice tres mil setecientos noventa millones de dólares. GTA 5 hizo ochocientos millones en su primer día, en dos mil trece.",
+          "keep_media": true,
+          "shots": [
+            {
+              "media": "../media/trailer/extended-look-aerial-bay.mp4",
+              "start": 0.0,
+              "dur": 2.0
+            },
+            {
+              "media": "../media/trailer/extended-look-downtown-highway.mp4",
+              "start": 0.0
+            }
+          ]
+        },
+        {
+          "headline": "THE CATCH",
+          "headline_es": "LA TRAMPA",
+          "text": "The catch: GTA 6's number counts every preorder, and the game costs eighty dollars, not sixty.",
+          "text_es": "La trampa: el número de GTA 6 cuenta todas las preventas, y el juego cuesta ochenta dólares, no sesenta.",
+          "keep_media": true,
+          "shots": [
+            {
+              "media": "../media/trailer/out-now-night-drive-ocean-drive.mp4",
+              "start": 0.0,
+              "dur": 1.1
+            },
+            {
+              "media": "../media/trailer/extended-look-red-convertible-city.mp4",
+              "start": 0.0
+            }
+          ]
+        },
+        {
+          "headline": "STILL 2X",
+          "headline_es": "AÚN EL DOBLE",
+          "text": "Even an independent estimate says more than double. Fair fight or not? Tell me below, because",
+          "text_es": "Incluso una estimación independiente dice más del doble. ¿Pelea justa o no? Dímelo abajo, porque",
+          "keep_media": true,
+          "shots": [
+            {
+              "media": "../media/trailer/launch-trailer-swamp-sunset.mp4",
+              "start": 0.0,
+              "dur": 1.3
+            },
+            {
+              "media": "../media/trailer/extended-look-swamp-airboat.mp4",
+              "start": 0.0
+            }
+          ]
+        }
+      ],
+      "tags": [
+        "GTA 6 vs GTA 5",
+        "GTA 6 sales",
+        "GTA 6 3.79 billion",
+        "GTA 6 made",
+        "GTA 5 launch",
+        "GTA 6 money",
+        "GTA 6 record",
+        "Take-Two GTA 6",
+        "GTA 6 news"
+      ],
+      "es_only": "owner OK Nov 22: a 3rd English video on the $3.79B in 4 days is too repetitive; the Spanish channel hasn't covered it",
+      "replaced_by": "gta6-money-chart-es (graph version, owner Nov 22)"
+    }
+  ],
+  "guide": "gta-6-launch-week-numbers"
+}

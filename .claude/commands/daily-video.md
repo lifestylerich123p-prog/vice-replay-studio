@@ -4,6 +4,34 @@ description: The automated daily run - pick today's topic, make the video + Shor
 You are running the daily Vice Replay automation. Nobody is watching live, so don't ask questions:
 make sensible choices, finish the whole run, and explain your choices in the final report.
 
+**NOV 23 RULES (owner; these win over anything below that conflicts):**
+1. **No trailer clips or official screenshots in ANY video** (Shorts, long videos, Reels). Pictures are our GTA 6-style
+   lettering cards (`studio/vicecards.py`: kinetic, countdown, versus, tier, meter, headline, plus charts with
+   `"bg": "vice"`; see content/episode-format.md and episodes/gta6-tier-list-critics.json) or the owner's gameplay. The
+   publish check blocks footage. Official images stay only for thumbnails, site cards and IG carousels.
+2. **Every Short:** a statement hook on a kinetic card (the first frame is the cover), a `src` on the card with the main
+   fact, one verdict line ("our take: ..."), a card mix that differs from the last uploads, headlines of 19 characters
+   or less, one `seed` per Short, prices spoken as "seventy nine dollars and ninety nine cents". Facts in 2+ sources.
+   YouTube (July 2026) doesn't pay "generic, repetitive content easily made with templates": vary formats and angles.
+3. **Slots:** 9:30 / 11:00 / 12:30 PM ET on both channels (evenings only for big news). `python -m studio.quota` counts
+   the approved queue as booked. Deliver for approval; once the owner approves in the main chat, the Short goes into
+   content/learn/approved_queue.json and the daily 3:45 AM run uploads it after the quota reset.
+4. **Spanish channel:** at least one Spanish-only angle a day (local prices, Latin American interest, Cuban/Mexican
+   style), not only translations; Spanish slots lean 12:30 PM ET (lunch in Mexico, evening in Spain).
+5. **Long videos:** only the weekly hub (Sunday, 16:9 lettering cards like episodes/gta6-10-numbers.json); no daily long
+   video. The "Wildest Moment" gameplay Short stays when the owner uploads gameplay (segment 1 = a kinetic card).
+6. Instagram captions say "AI narration" automatically; remind the owner to switch on TikTok's AI label.
+7. **Weekly card series** (owner Nov 23; one recognizable format per weekday, different card mix every day, so
+   YouTube sees variety, not a template): **Mon** news card (`headline` + kinetic: the week's biggest confirmed update);
+   **Tue** VS day (`versus`: GTA 6 vs GTA 5, edition vs edition, record vs record); **Wed** tier list (`tier`: rank
+   something with checked numbers or owner/comment votes; **Nov 23: tier lists won big (506 views in 3 h vs a
+   219 median), so a 2nd tier list every Saturday 10 AM in English**, data-backed or a clearly labeled opinion ranking
+   with a contrarian hook, e.g. "CJ isn't S tier"); **Thu** quiz (`quiz` cards with a timer, "only real fans get
+   3/3"); **Fri** countdown ("N things", `countdown` cards); **Sat** Spanish special (a Spanish-only angle on the Spanish
+   channel: local prices, Latin American interest, regional slang/style); **Sun** the long hub video (16:9 lettering,
+   episodes/gta6-10-numbers.json style) at 3:30 PM + a meter/kinetic Short. Series name in each description, e.g.
+   "Vice Replay Tier List #2". The other daily Shorts stay free-form (news, catches, streamers).
+
 00. **Health first (free)**: `python -m studio.doctor --fix`. If it reports 🔴 (YouTube connection failing or about to
    expire, website down), put that in bold at the very top of the final message with the fix.
 0. **Gameplay + "Wildest Moment of the Day"**: run `python -m studio.gameplay` (pulls the owner's new recordings from
@@ -14,7 +42,7 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    at 3 frames of it, and write 3-4 segments that tell what happens in the owner's own words-style ("watch what
    happens when..."), with a hook in 2 seconds, a payoff, and the follow badge. Set `"keep_media": true` and that
    clip as `media` on segments 2-4 (with `media_start` offsets so it plays through), but keep segment 1 calm (no
-   shooting/gore in the first 7 seconds: use a calm clip or official picture). Title like "Wildest GTA 6 moment
+   shooting/gore in the first 7 seconds: use a calm clip or a kinetic lettering card). Title like "Wildest GTA 6 moment
    today: <what happened> #GTA6 #Shorts". Never a cutscene, ending or story moment; no in-game radio. Series name in
    the description: "Wildest Moment of the Day #<n>" (count previous `wild` Shorts in content/learn/uploads.json + 1).
 0b. **Learn first**: run `python -m studio.learn` and `python -m studio.retention` (free; read `content/learn/retention.md`:
@@ -29,6 +57,64 @@ make sensible choices, finish the whole run, and explain your choices in the fin
    market's winners have in common (topics, title wording, length, Shorts vs long). Only claim what the
    numbers show. Use the lessons in every choice below: topic, hook, title options, thumbnail text, length.
    Learn from winning videos' patterns; never copy their titles, footage or thumbnails.
+**NOV 22 RESEARCH PLAN (owner: "full investigation"; overrides the plans below where they differ; sources in
+content/learn/growth-plan-2026-11-22.md).** YouTube's Oct 1, 2026 Shorts update cuts reach for footage that only gets
+"VO descriptions of what's happening on screen" (YouTube's Creator Liaison), which is close to our trailer-narration style,
+and our numbers agree (narrated Shorts ~57% viewed, 40% stayed to watch; real moments 86-92%). So:
+- **Max 2 narrated Shorts a day** until owner gameplay exists (more volume of the same template looks mass-produced).
+- **13-20 s, one fact** (35-55 words; `studio.vice publish` blocks over ~30 s). Concrete number or catch in the FIRST line
+  and on screen (our best openers: "30 FPS EVERYWHERE", "$1.65 BILLION": 50-55% stayed; vague teasers: 29%).
+- **Commentary, not description**: every Short needs a claim, a verdict or a test ("it works / it doesn't / here's the
+  catch"). Never narrate what the picture shows. Prefer our own graphics (magnifier, map, numbers, comparisons) over
+  plain trailer clips.
+- **Formats, in order**: streamer news with a number (Spanish channel: Spanish-speaking streamers, 2 sources); "how to
+  find it" for this week's community discoveries told on the official map (never their footage); quiz/map; big
+  confirmed news. Evergreen how-tos go to the website guides (Shorts fade after ~30 days).
+- **Never delete a flop** (YouTube: deleting cuts the audience link); unlist at most, and make a new angle instead.
+- Judge each Short against our own median in content/learn/retention.md ("Stayed to watch"), not a magic number.
+
+**NOV 22 FLOP REVIEW (owner: "hide the videos that don't get views and learn from it"; overrides older plans).**
+9 videos under 50 views after 36 h+ were set PRIVATE (not deleted; list in content/owner.md). What the numbers say
+(all our videos 36 h+ old): long videos median 14 views (7 of 9 under 50); tips/how-to Shorts median 237 (3 of 7 under
+50); catch 1,174, number/verdict 928, streamer 638 with zero flops; Shorts posted 6-11 AM median 1,084 vs 2-6 PM 199;
+scripts of 76+ words median 404 vs 56-75 words 836. So:
+- **No daily long video.** The only long video is Sunday's weekly recap; every other day is Shorts only (saves ~2,500
+  YouTube units a day for Shorts). Long guides belong on the website.
+- **No tips/how-to Shorts at all** (settings, fixes, cheat lists, beginner tips, "do this first"): website guides only.
+- **Every Short is a catch, a number/verdict or a streamer story**, built on a `chart` (or owner gameplay), 56-75 words
+  max (`studio.vice publish` blocks 76+), posted 9:30 / 11:00 / 12:30.
+- Hide (private, never delete) any Short under 50 views after 48 h, and add its pattern to content/learn/lessons.md:
+  run `python -m studio.flops` (lists them; changes nothing) and put its list in the report; the main chat runs
+  `--apply`. Before picking today's layout, read the scorecard's "By picture" / "By opener" tables.
+- **FACTS ONLY** (owner, Nov 22 evening): no game footage in Shorts; cards only (charts, quote, list, text, quiz).
+  Rotate the day's Shorts between numbers, quotes, fun facts / GTA history and a "how much do you know" quiz; queue an
+  Instagram quiz carousel about once a week (content/carousels/gta-quiz-5.json is the template).
+- **Vary the graph layout** (Nov 22): bars, counter and `line` charts in a different order than the last uploads
+  (the publish check warns on a repeat); every chart with words gets `chart_es` for the Spanish version.
+- **Hook**: first sentence = the surprising result as a statement (3-10 words), never a question (35% vs 60% of
+  viewers kept); templates with our numbers in resources/hooks-and-titles.md.
+
+**NOV 22 BLUEPRINT RULES (owner: "match the energy", "titles and tags perfect"; apply to every Short).**
+- **Market scan first**: YouTube API search (`order=viewCount`, last 48 h, `videoDuration=short`) for "GTA 6" AND "GTA VI"
+  AND "Grand Theft Auto VI", merged (a "GTA 6"-only search missed CarryMinati's 18.1M "GTA VI" stream). Copy the
+  winning FORMAT we can legally make (e.g. the "every look" montage), never their footage, skits or endings.
+- **Energy**: Shorts now default to 0.2 s gaps and hard cuts (no dip to black). Segment 1 = `shots` with 3-5 quick cuts
+  (0.25-0.3 s each) that show the payoff in the first 2 s, then the hook clip; a cut every ~1-1.5 s; end on a
+  0.3 s-per-shot recap flash that loops into the first line. Examples: episodes/gta6-lucia-outfits.json,
+  episodes/gta6-top-3-rides.json.
+- **Look at every picture at FULL resolution** before using it: thumbnails hid a pistol (lucia-caminos-08) and a
+  revolver (an Ultimate shot, now removed). No weapons in hand, nothing revealing, no near-black frames (brighten a
+  dark still with the shot key `"gamma": 1.3`).
+- **No two picks of the same thing** in a list/montage (two Ultimate shots were the same outfit).
+- **Titles**: the words people search first ("GTA 6" + subject: "Lucia", "outfits", a streamer's name), under 60
+  characters before "#GTA6 #Shorts". **Tags**: `tags` (8-15 phrases for THIS Short) and `short_es.tags` / `es.tags` in
+  Spanish; the views check warns when they're missing.
+- **Don't repeat a topic** we posted in the last 4 days (the $3.79B was made 3 times: the 3rd went Spanish-only).
+- **Original first** (Oct 2026 YouTube update: narration over reused footage isn't original, and that was most of our
+  Shorts): every narrated Short has at least one `chart` segment (leaderboard / counter / VS) built from numbers WE
+  checked (YouTube API counts, official figures), and trailer clips are cutaways. Demo: the chart segments in
+  content/episode-format.md. Best fits: streamer leaderboards, money/records, "X vs Y" comparisons, our quiz scores.
+
 **NOV 21 PLAN (owner: "use data to find a plan of action and implement"; overrides the slots and mix below).**
 Since launch, people play the game themselves and our trailer-footage Shorts mostly die (Nov 19 noon to Nov 20:
 tips/search-answer Shorts got 5-60 views; settings 7, cheat list 5, no-mission-replay 53). What still works:

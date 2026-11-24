@@ -1,0 +1,80 @@
+{
+  "title": "Players Found Dexter's Apartment in GTA 6",
+  "slug": "gta6-dexter-apartment",
+  "series": "C: Details",
+  "voice": "am_michael",
+  "rate": "+10%",
+  "format": "details",
+  "use_gameplay": false,
+  "short_title": "Players found Dexter's apartment in GTA 6 #GTA6 #Shorts",
+  "short_title_options": [
+    "Players found Dexter's apartment in GTA 6 #GTA6 #Shorts",
+    "Dexter's apartment is in GTA 6 (here's where) #GTA6 #Shorts",
+    "GTA 6 hid Dexter's apartment in Vice Beach #GTA6 #Shorts"
+  ],
+  "short_description": "Players found \"Trinity Apartments\" on Washington Island in Vice Beach, a nod to the Trinity Killer from Dexter season 4, with a boat docked out back that looks like Dexter's \"Slice of Life\". Rockstar hasn't confirmed it's intentional. Sources: Dexerto, TheWrap, Insider Gaming, Destructoid, games.gg (Nov 2026). Footage: Rockstar's official map and trailers.",
+  "short_es": {
+    "title": "Encontraron el DEPARTAMENTO de Dexter en GTA 6 🔪 #GTA6 #Shorts",
+    "description": "Jugadores encontraron \"Trinity Apartments\" en Washington Island, Vice Beach: un guiño al asesino Trinity de la temporada 4 de Dexter, con un bote atrás que se parece a su \"Slice of Life\". Rockstar no lo ha confirmado."
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Going to check it out? YES or NO 👇",
+  "short_pinned_comment_es": "¿Vas a ir a verlo? SÍ o NO 👇",
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#dexter",
+    "#easteregg"
+  ],
+  "sources": [
+    "Dexerto: https://www.dexerto.com/gta/gta-6-players-find-dexters-apartment-serial-killer-kit-and-can-even-steal-his-boat-3429888/",
+    "TheWrap: https://www.thewrap.com/culture-lifestyle/culture/gta-6-dexter-morgan-apartment-easter-egg/",
+    "Insider Gaming: https://insider-gaming.com/dexter-morgans-apartment-gta-6/",
+    "Destructoid: https://www.destructoid.com/dexter-morgan-is-stalking-leonidas-streets-in-gta-6-in-amazing-easter-egg/",
+    "games.gg: https://games.gg/grand-theft-auto-vi/guides/gta-6-where-to-find-dexter-apartment/"
+  ],
+  "short": [
+    {
+      "headline": "DEXTER IN GTA 6?",
+      "headline_es": "¿DEXTER EN GTA 6?",
+      "text": "Players found Dexter's apartment in GTA 6.",
+      "text_es": "Jugadores encontraron el departamento de Dexter en GTA 6.",
+      "media": "../media/trailer/out-now-marina-ferris-wheel.mp4",
+      "keep_media": true
+    },
+    {
+      "headline": "WASHINGTON ISLAND",
+      "headline_es": "WASHINGTON ISLAND",
+      "text": "It's called Trinity Apartments, on Washington Island in Vice Beach. Trinity, like the killer from season four.",
+      "text_es": "Se llama Trinity Apartments, en Washington Island, Vice Beach. Trinity, como el asesino de la temporada cuatro.",
+      "media": "../media/official/leonida-map-poster.jpg",
+      "keep_media": true,
+      "magnify": {
+        "box": [
+          0.77,
+          0.39,
+          0.93,
+          0.48
+        ],
+        "width": 0.66,
+        "y": 0.3
+      }
+    },
+    {
+      "headline": "HIS BOAT TOO",
+      "headline_es": "Y SU BOTE",
+      "text": "Docked out back: a boat that looks just like his Slice of Life. Rockstar hasn't confirmed any of it.",
+      "text_es": "Atrás hay un bote igualito a su Slice of Life. Rockstar no ha confirmado nada.",
+      "media": "../media/trailer/extended-look-aerial-bay.mp4",
+      "keep_media": true
+    },
+    {
+      "headline": "WOULD YOU GO?",
+      "headline_es": "¿IRÍAS?",
+      "text": "Going to check it out? Yes or no.",
+      "text_es": "¿Vas a ir a verlo? Sí o no.",
+      "media": "../media/trailer/launch-trailer-marina-aerial.mp4",
+      "keep_media": true
+    }
+  ]
+}

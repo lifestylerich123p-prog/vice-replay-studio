@@ -1,0 +1,190 @@
+{
+  "title": "GTA 6 Has No Darts. Rockstar Says Why",
+  "slug": "gta6-no-darts",
+  "series": "Explained",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "short_title": "GTA 6 has no darts. Rockstar says why #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6 has no darts. Rockstar says why #GTA6 #Shorts",
+    "Rockstar: even we don't have unlimited time (GTA 6) #GTA6 #Shorts",
+    "GTA 6 cut darts and bowling. Here's why #GTA6 #Shorts"
+  ],
+  "short_description": "Rob Nelson, co-studio head of Rockstar North, told Video Games Chronicle (Nov 19) why darts didn't make GTA 6: \"The darts one is a contentious one... you hear they have unlimited money or unlimited time, even we do not.\" Pool made it in; darts and bowling were cut. Rockstar hasn't said if they'll be added later.\n\nSources: VGC interview (videogameschronicle.com), GGRecon, GameNewsPlus, GTABase (pool activity). No spoilers.",
+  "short_es": {
+    "title": "GTA 6 NO tiene dardos... Rockstar explica por qué 🎯 #GTA6 #Shorts",
+    "description": "Rob Nelson, codirector de Rockstar North, le dijo a Video Games Chronicle (19 de nov.) por qué no hay dardos en GTA 6: \"Lo de los dardos es un tema polémico... se oye que tienen dinero ilimitado o tiempo ilimitado; ni siquiera nosotros\" (traducido). El billar sí llegó; los dardos y los bolos no. Rockstar no ha dicho si los agregará después. Sin spoilers.",
+    "tags": [
+      "GTA 6 dardos",
+      "GTA 6 minijuegos",
+      "GTA 6 billar",
+      "Rockstar North",
+      "GTA 6 contenido cortado",
+      "GTA 6 español",
+      "GTA 6 noticias",
+      "GTA VI"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Do you miss darts in GTA 6? YES or NO 👇",
+  "short_pinned_comment_es": "¿Extrañas los dardos en GTA 6? SÍ o NO 👇",
+  "tags": [
+    "GTA 6 darts",
+    "GTA 6 minigames",
+    "GTA 6 cut content",
+    "GTA 6 pool",
+    "GTA 6 bowling",
+    "Rockstar North",
+    "Rob Nelson",
+    "GTA 6 interview",
+    "GTA 6 news",
+    "GTA 6",
+    "GTA VI",
+    "Grand Theft Auto VI"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#rockstar",
+    "#gaming"
+  ],
+  "sources": [
+    "VGC - Rockstar explains why you can't play darts in GTA 6: 'We don't have unlimited time' (Rob Nelson, Nov 19, 2026): https://www.videogameschronicle.com/news/rockstar-explains-why-you-cant-play-darts-in-gta-6-we-dont-have-unlimited-time/",
+    "GGRecon - Rockstar explains why there's no darts in GTA 6 (darts and bowling cut; pool, weightlifting, basketball in): https://www.ggrecon.com/articles/gta-6-no-darts-rockstar-explains/",
+    "GameNewsPlus - Why GTA 6 has no darts or bowling, according to Rockstar: https://gamenewsplus.net/news/rockstar-explains-why-darts-and-bowling-are-missing-from-gta-6-40084/",
+    "Tbreak - GTA 6 darts: why Rockstar left the minigame out: https://tbreak.com/gta-6-darts-rockstar-explains/",
+    "GTABase - GTA 6 pool activity: https://www.gtabase.com/side-missions/gta-6/pool"
+  ],
+  "short": [
+    {
+      "headline": "NO DARTS IN GTA 6",
+      "headline_es": "SIN DARDOS EN GTA 6",
+      "text": "Rockstar cut darts from GTA 6, and admitted why.",
+      "text_es": "Rockstar quitó los dardos de GTA 6, y admitió por qué.",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "Rockstar CUT darts from GTA 6",
+        "pink": [
+          "CUT",
+          "darts"
+        ],
+        "sub": "and admitted why",
+        "seed": 11
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "Rockstar QUITÓ los dardos de GTA 6",
+        "pink": [
+          "QUITÓ",
+          "dardos"
+        ],
+        "sub": "y admitió por qué",
+        "seed": 11
+      }
+    },
+    {
+      "headline": "\"EVEN WE DO NOT\"",
+      "headline_es": "\"NI SIQUIERA NOSOTROS\"",
+      "text": "Rockstar North's Rob Nelson told VGC that even Rockstar doesn't have unlimited time or money.",
+      "text_es": "Rob Nelson, de Rockstar North, le dijo a VGC que ni Rockstar tiene tiempo ni dinero ilimitados.",
+      "keep_media": true,
+      "chart": {
+        "type": "quote",
+        "text": "you hear they have unlimited money or unlimited time, even we do not",
+        "pink": [
+          "unlimited",
+          "even we do not"
+        ],
+        "who": "Rob Nelson, Rockstar North, to VGC (Nov 19)",
+        "seed": 11
+      },
+      "chart_es": {
+        "type": "quote",
+        "text": "se oye que tienen dinero ilimitado o tiempo ilimitado; ni siquiera nosotros",
+        "pink": [
+          "ilimitado",
+          "ni siquiera nosotros"
+        ],
+        "who": "Rob Nelson, Rockstar North, a VGC (traducido)",
+        "seed": 11
+      }
+    },
+    {
+      "headline": "POOL: IN. DARTS: OUT",
+      "headline_es": "BILLAR SÍ. DARDOS NO",
+      "text": "Pool made it in. Darts and bowling didn't.",
+      "text_es": "El billar sí llegó. Los dardos y los bolos no.",
+      "keep_media": true,
+      "chart": {
+        "type": "list",
+        "title": "IN GTA 6?",
+        "items": [
+          [
+            "Pool",
+            "IN"
+          ],
+          [
+            "Darts",
+            "CUT"
+          ],
+          [
+            "Bowling",
+            "CUT"
+          ]
+        ],
+        "seed": 11
+      },
+      "chart_es": {
+        "type": "list",
+        "title": "¿EN GTA 6?",
+        "items": [
+          [
+            "Billar",
+            "SÍ"
+          ],
+          [
+            "Dardos",
+            "NO"
+          ],
+          [
+            "Bolos",
+            "NO"
+          ]
+        ],
+        "seed": 11
+      }
+    },
+    {
+      "headline": "DARTS OR A BETTER GAME?",
+      "headline_es": "¿DARDOS O MEJOR JUEGO?",
+      "text": "Darts, or a better game? Tell me, because",
+      "text_es": "¿Dardos, o un mejor juego? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "Darts, or a better game?",
+        "pink": [
+          "better",
+          "game?"
+        ],
+        "seed": 11
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "¿Dardos, o un mejor juego?",
+        "pink": [
+          "mejor",
+          "juego?"
+        ],
+        "seed": 11
+      }
+    }
+  ]
+}

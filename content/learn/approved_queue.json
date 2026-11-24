@@ -1,0 +1,446 @@
+{
+ "_note": "Approved Shorts not yet uploaded (owner approvals in content/owner.md). studio.spend uploads the earliest ones early, scheduled for these slots, whenever the day's quota has room; studio.ship's duplicate guard skips anything already up. Dates/times are US Eastern.",
+ "items": [
+  {
+   "slug": "gta6-money-chart-es",
+   "item": "short",
+   "es_only": true,
+   "es": [
+    "2026-11-23",
+    "3:30 PM"
+   ],
+   "approved": "Nov 22 9:15 AM (graph Shorts)"
+  },
+  {
+   "slug": "gta6-no-darts",
+   "item": "short",
+   "en": [
+    "2026-11-23",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-23",
+    "11:00 AM"
+   ],
+   "approved": "Nov 22 6:45 PM (do what you think)"
+  },
+  {
+   "slug": "gta6-cheapest-gta-inflation",
+   "item": "short",
+   "en": [
+    "2026-11-24",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-25",
+    "11:00 AM"
+   ],
+   "approved": "Nov 22 10 AM"
+  },
+  {
+   "slug": "gta6-99-club",
+   "item": "short",
+   "en": [
+    "2026-11-24",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-24",
+    "11:00 AM"
+   ],
+   "approved": "Nov 22 9:15 AM"
+  },
+  {
+   "slug": "gta6-trailer-views",
+   "item": "short",
+   "en": [
+    "2026-11-25",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-25",
+    "12:30 PM"
+   ],
+   "approved": "Nov 22 9:15 AM"
+  },
+  {
+   "slug": "gta6-jason-quiet",
+   "item": "short",
+   "en": [
+    "2026-11-26",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-26",
+    "9:30 AM"
+   ],
+   "approved": "Nov 22 7 PM (ok approve and post)"
+  },
+  {
+   "slug": "gta-history-quiz",
+   "item": "short",
+   "en": [
+    "2026-11-26",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-26",
+    "12:30 PM"
+   ],
+   "approved": "Nov 22 7 PM (ok approve and post)"
+  },
+  {
+   "slug": "gta6-13-years",
+   "item": "short",
+   "en": [
+    "2026-11-27",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-27",
+    "9:30 AM"
+   ],
+   "approved": "Nov 22 10 PM (approve)"
+  },
+  {
+   "slug": "gta6-80-hours",
+   "item": "short",
+   "en": [
+    "2026-11-28",
+    "10:00 AM"
+   ],
+   "es": [
+    "2026-11-28",
+    "10:00 AM"
+   ],
+   "approved": "Nov 22 10 PM (approve)"
+  },
+  {
+   "slug": "gta6-5-things",
+   "item": "short",
+   "en": [
+    "2026-11-29",
+    "10:00 AM"
+   ],
+   "es": [
+    "2026-11-29",
+    "10:00 AM"
+   ],
+   "approved": "Nov 22 10 PM (approve)"
+  },
+  {
+   "slug": "gta6-little-cuba-es",
+   "item": "short",
+   "es_only": true,
+   "es": [
+    "2026-11-27",
+    "11:00 AM"
+   ],
+   "approved": "Nov 23 (APPROVE, title 1: ¿qué BOLÁ asere?; Everygen Viral Adam voice)"
+  },
+  {
+   "slug": "gta6-4-secrets",
+   "item": "short",
+   "en": [
+    "2026-12-04",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-12-04",
+    "9:30 AM"
+   ],
+   "approved": "Nov 23 6:45 AM (APPROVE; GTA 6-style countdown cards)",
+   "moved": "Nov 23 (approved plan): Tue Nov 24 9:30 went to the momentum follow-up (Tier List #2); Fri Dec 4 = countdown day"
+  },
+  {
+   "slug": "gta6-vs-gta5-fps",
+   "item": "short",
+   "en": [
+    "2026-11-25",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-25",
+    "9:30 AM"
+   ],
+   "approved": "Nov 23 6:55 AM (APPROVE; lettering VS card)"
+  },
+  {
+   "slug": "gta6-black-friday-no-discount",
+   "item": "short",
+   "en": [
+    "2026-11-25",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-26",
+    "11:00 AM"
+   ],
+   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)"
+  },
+  {
+   "slug": "gta6-game-awards-8-noms",
+   "item": "short",
+   "en": [
+    "2026-11-27",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-28",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)"
+  },
+  {
+   "slug": "gta6-precio-por-pais-es",
+   "item": "short",
+   "es_only": true,
+   "es": [
+    "2026-11-27",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)"
+  },
+  {
+   "slug": "gta6-10-numbers",
+   "item": "main",
+   "en": [
+    "2026-11-29",
+    "3:30 PM"
+   ],
+   "approved": "Nov 23 (owner \"all\": Sunday long-video slot, starting with GTA 6 in 10 Numbers)"
+  },
+  {
+   "slug": "gta6-ultimate-vs-standard",
+   "item": "short",
+   "en": [
+    "2026-11-26",
+    "11:00 AM"
+   ],
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
+  },
+  {
+   "slug": "gta6-3-records",
+   "item": "short",
+   "en": [
+    "2026-11-27",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
+  },
+  {
+   "slug": "gta6-launch-quiz",
+   "item": "short",
+   "en": [
+    "2026-11-28",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-29",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
+  },
+  {
+   "slug": "gta6-sin-doblaje-es",
+   "item": "short",
+   "es_only": true,
+   "es": [
+    "2026-11-28",
+    "1:30 PM"
+   ],
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
+  },
+  {
+   "slug": "gta6-patch-notes-7-fixes",
+   "item": "short",
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): news follow-up; replaces the outdated zero-patch-notes Short",
+   "en": [
+    "2026-11-24",
+    "8:00 AM"
+   ],
+   "es": [
+    "2026-11-24",
+    "12:30 PM"
+   ]
+  },
+  {
+   "slug": "gta-tier-list-sales",
+   "item": "short",
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): momentum follow-up to the tier list (506 views in 2.5 h)",
+   "en": [
+    "2026-11-24",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-12-02",
+    "12:30 PM"
+   ]
+  },
+  {
+   "slug": "gta6-top-3-rides",
+   "item": "short",
+   "en": [
+    "2026-11-30",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-30",
+    "1:30 PM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): remade as lettering cards"
+  },
+  {
+   "slug": "gta6-vs-red-dead-2",
+   "item": "short",
+   "en": [
+    "2026-12-01",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-12-01",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): Tuesday VS"
+  },
+  {
+   "slug": "gta-cities-quiz",
+   "item": "short",
+   "en": [
+    "2026-12-03",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-12-03",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): Thursday quiz"
+  },
+  {
+   "slug": "gta-tier-list-protagonists",
+   "item": "short",
+   "en": [
+    "2026-12-02",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-12-02",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~6:20 PM (owner \"Approve next steps\": tier lists twice a week, Tier List #3 Wed Dec 2 9:30 AM); Spanish follows winners-only"
+  },
+  {
+   "slug": "gta6-game-awards-explained",
+   "item": "main",
+   "en": [
+    "2026-12-06",
+    "3:30 PM"
+   ],
+   "approved": "Nov 23 ~7 PM (owner \"APPROVE what you should do next: in your opinion\"): Sunday long-video slot; re-check every fact Dec 5-6"
+  },
+  {
+   "slug": "gta-tier-list-maps",
+   "item": "short",
+   "en": [
+    "2026-12-05",
+    "10:00 AM"
+   ],
+   "es": [
+    "2026-12-05",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~7 PM (owner \"APPROVE what you should do next\"): Tier List #4, the new Saturday tier day; Spanish follows winners-only"
+  },
+  {
+   "slug": "gta6-first-platinum",
+   "item": "short",
+   "en": [
+    "2026-11-25",
+    "8:00 AM"
+   ],
+   "es": [
+    "2026-11-26",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~7:45 PM (owner: \"APPROVE\"): momentum follow-up to gta6-first-to-finish, title 1; Spanish only if it wins its first 24 h"
+  },
+  {
+   "slug": "gta6-stream-wars",
+   "item": "news",
+   "en": [
+    "2026-11-25",
+    "3:30 PM"
+   ],
+   "es": [
+    "2026-11-26",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); hacker sentencing, afternoon slot under the big-news exception"
+  },
+  {
+   "slug": "gta6-stream-wars",
+   "item": "short",
+   "en": [
+    "2026-11-28",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-29",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); proposed Mon 9:30, moved to Sat 11 AM (earlier, and Monday 9:30 is the week plan's news slot)"
+  },
+  {
+   "slug": "gta6-stream-wars",
+   "item": "tips",
+   "en": [
+    "2026-11-29",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-30",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); RE-CHECK 'Rockstar hasn't confirmed it' (Vice City portal) within 2 h of the slot"
+  },
+  {
+   "slug": "gta6-stream-wars",
+   "item": "main",
+   "en": [
+    "2026-11-30",
+    "3:30 PM"
+   ],
+   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); long video, optional slot per the daily run"
+  }
+ ],
+ "paused": [
+  {
+   "slug": "gta6-update-no-patch-notes",
+   "item": "short",
+   "en": [
+    "2026-11-23",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-24",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 6:55 AM (APPROVE; lettering, today's update news)",
+   "paused": "2026-11-23 afternoon: Rockstar published patch notes for 1.002.002 (7 fixes; VICE, Dot Esports, Comicbook, RockstarINTEL), so 'zero patch notes' is outdated. Spanish upload cancelled; English Short got a correction."
+  },
+  {
+   "slug": "gta6-lucia-outfits",
+   "item": "short",
+   "en": [
+    "2026-11-23",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-23",
+    "8:30 PM"
+   ],
+   "approved": "Nov 22 (Approve)",
+   "paused": "2026-11-23 audit: trailer images (publish check blockers); its slots (Nov 23) passed. Remake as cards to post."
+  }
+ ]
+}

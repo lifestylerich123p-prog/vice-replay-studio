@@ -1,0 +1,421 @@
+{
+ "series": "Tier List",
+ "format": "ranking",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (GTA 6-style lettering cards, Nov 23)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "title": "Every GTA Protagonist Ranked: CJ Isn't S Tier",
+ "slug": "gta-tier-list-protagonists",
+ "short_title": "GTA protagonists ranked: CJ isn't S tier #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA protagonists ranked: CJ isn't S tier #GTA6 #Shorts",
+  "Every GTA protagonist ranked (fight me) #GTA6 #Shorts",
+  "Tommy or CJ? GTA protagonist tier list #GTA6 #Shorts"
+ ],
+ "short_description": "Vice Replay Tier List #3: every 3D-era GTA protagonist, ranked by us (our opinion, not a poll). S: Tommy Vercetti (Vice City) and Niko Bellic (GTA IV). A: CJ (San Andreas) and Trevor (GTA V). B: Michael and Franklin (GTA V). C: Claude (GTA III), who never says a word. GTA 6's Jason and Lucia: too early, no spoilers. Where would you put them? Fight us in the comments.\n\nGames: Rockstar Games. Ranking: Vice Replay.",
+ "short_es": {
+  "title": "Protagonistas de GTA: CJ NO es tier S 😳 #GTA6 #Shorts",
+  "description": "Vice Replay Tier List: cada protagonista de GTA de la era 3D, según nosotros (es nuestra opinión). S: Tommy Vercetti (Vice City) y Niko Bellic (GTA IV). A: CJ (San Andreas) y Trevor (GTA V). B: Michael y Franklin (GTA V). C: Claude (GTA III), que no dice ni una palabra. ¿Y Jason y Lucía de GTA 6? Muy pronto, sin spoilers. ¿Dónde los pondrías?",
+  "tags": [
+   "GTA protagonistas",
+   "GTA tier list",
+   "CJ San Andreas",
+   "Tommy Vercetti",
+   "Niko Bellic",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "Where do Jason and Lucia go: S, A, B or C? 👇 (no spoilers)",
+ "short_pinned_comment_es": "¿Dónde van Jason y Lucía: S, A, B o C? 👇 (sin spoilers)",
+ "tags": [
+  "GTA protagonists ranked",
+  "GTA tier list",
+  "best GTA protagonist",
+  "CJ San Andreas",
+  "Tommy Vercetti",
+  "Niko Bellic",
+  "Trevor GTA 5",
+  "GTA 6 Jason Lucia",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gta",
+  "#tierlist",
+  "#gtasanandreas",
+  "#gtavicecity"
+ ],
+ "sources": [
+  "Rockstar Games - Grand Theft Auto III, Vice City, San Andreas, IV, V (protagonists as credited in each game): https://www.rockstargames.com/games",
+  "Ranking: Vice Replay's opinion (labeled as such on screen and in the description)"
+ ],
+ "short": [
+  {
+   "headline": "CJ ISN'T S TIER",
+   "headline_es": "CJ NO ES TIER S",
+   "text": "Our GTA protagonist tier list. CJ is not S tier.",
+   "text_es": "Nuestro ranking de protagonistas de GTA. CJ no es tier S.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "CJ IS NOT",
+     "S TIER"
+    ],
+    "pink": [
+     "S TIER"
+    ],
+    "sub": "our GTA protagonist tier list",
+    "seed": 10
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "CJ NO ES",
+     "TIER S"
+    ],
+    "pink": [
+     "TIER S"
+    ],
+    "sub": "nuestro ranking de protagonistas",
+    "seed": 10
+   }
+  },
+  {
+   "headline": "C TIER",
+   "headline_es": "TIER C",
+   "text": "C tier: Claude. Silent the whole game.",
+   "text_es": "Tier C: Claude. Callado todo el juego.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "GTA PROTAGONISTS",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      []
+     ],
+     [
+      "C",
+      [
+       "Claude · GTA III"
+      ]
+     ]
+    ],
+    "static": [],
+    "src": "our ranking · games: Rockstar",
+    "seed": 10
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "PROTAGONISTAS DE GTA",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      []
+     ],
+     [
+      "C",
+      [
+       "Claude · GTA III"
+      ]
+     ]
+    ],
+    "static": [],
+    "src": "nuestro ranking · juegos: Rockstar",
+    "seed": 10
+   }
+  },
+  {
+   "headline": "B TIER",
+   "headline_es": "TIER B",
+   "text": "B tier: Michael and Franklin.",
+   "text_es": "Tier B: Michael y Franklin.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "GTA PROTAGONISTS",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      [
+       "Michael · GTA V",
+       "Franklin · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Claude · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C"
+    ],
+    "src": "our ranking · games: Rockstar",
+    "seed": 10
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "PROTAGONISTAS DE GTA",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      [
+       "Michael · GTA V",
+       "Franklin · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Claude · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C"
+    ],
+    "src": "nuestro ranking · juegos: Rockstar",
+    "seed": 10
+   }
+  },
+  {
+   "headline": "A TIER",
+   "headline_es": "TIER A",
+   "text": "A tier: CJ and Trevor.",
+   "text_es": "Tier A: CJ y Trevor.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "GTA PROTAGONISTS",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      [
+       "CJ · San Andreas",
+       "Trevor · GTA V"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Michael · GTA V",
+       "Franklin · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Claude · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B"
+    ],
+    "src": "our ranking · games: Rockstar",
+    "seed": 10
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "PROTAGONISTAS DE GTA",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      [
+       "CJ · San Andreas",
+       "Trevor · GTA V"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Michael · GTA V",
+       "Franklin · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Claude · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B"
+    ],
+    "src": "nuestro ranking · juegos: Rockstar",
+    "seed": 10
+   }
+  },
+  {
+   "headline": "S TIER",
+   "headline_es": "TIER S",
+   "text": "S tier: Tommy Vercetti and Niko Bellic.",
+   "text_es": "Tier S: Tommy Vercetti y Niko Bellic.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "GTA PROTAGONISTS",
+    "rows": [
+     [
+      "S",
+      [
+       "Tommy · Vice City",
+       "Niko · GTA IV"
+      ]
+     ],
+     [
+      "A",
+      [
+       "CJ · San Andreas",
+       "Trevor · GTA V"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Michael · GTA V",
+       "Franklin · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Claude · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B",
+     "A"
+    ],
+    "src": "our ranking · games: Rockstar",
+    "seed": 10
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "PROTAGONISTAS DE GTA",
+    "rows": [
+     [
+      "S",
+      [
+       "Tommy · Vice City",
+       "Niko · GTA IV"
+      ]
+     ],
+     [
+      "A",
+      [
+       "CJ · San Andreas",
+       "Trevor · GTA V"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Michael · GTA V",
+       "Franklin · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Claude · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B",
+     "A"
+    ],
+    "src": "nuestro ranking · juegos: Rockstar",
+    "seed": 10
+   }
+  },
+  {
+   "headline": "JASON + LUCIA?",
+   "headline_es": "¿JASON Y LUCÍA?",
+   "text": "Where do Jason and Lucia go? Tell me, because",
+   "text_es": "¿Dónde van Jason y Lucía? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WHERE DO JASON",
+     "AND LUCIA GO?"
+    ],
+    "pink": [
+     "LUCIA GO?"
+    ],
+    "seed": 10
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿DÓNDE VAN",
+     "JASON Y LUCÍA?"
+    ],
+    "pink": [
+     "JASON Y LUCÍA?"
+    ],
+    "seed": 10
+   }
+  }
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, generated only if the English Short wins its first 24 h (winners-only, Nov 23)"
+}

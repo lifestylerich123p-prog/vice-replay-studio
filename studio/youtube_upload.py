@@ -21,6 +21,7 @@ import datetime as dt
 import json
 from urllib.parse import parse_qs, urlparse
 import os
+import re
 import sys
 import urllib.error
 import urllib.parse
@@ -35,8 +36,90 @@ ROOT = Path(__file__).resolve().parent.parent
 ET = ZoneInfo("America/New_York")
 
 
-def token(refresh_env="YT_REFRESH_TOKEN"):
-    """Access token for the channel whose refresh token is in `refresh_env` (YT_ES_REFRESH_TOKEN = the Spanish channel)."""
+_BY_CHANNEL = {}
+
+
+def channel_ids():
+    """{"en": Vice Replay id, "es": Vice Replay en Español id} from config/channel.json."""
+    ch = json.loads((ROOT / "config" / "channel.json").read_text())["channels"]
+    return {"en": ch["vice-replay"]["channel_id"], "es": ch.get("vice-replay-es", {}).get("channel_id", "")}
+
+
+def _owner_of(access):
+    """Channel id an access token belongs to (1 quota unit)."""
+    rq = urllib.request.Request("https://youtube.googleapis.com/youtube/v3/channels?part=id&mine=true",
+                                headers={"Authorization": f"Bearer {access}"})
+    with urllib.request.urlopen(rq, timeout=30) as r:
+        items = json.load(r).get("items") or [{}]
+    from . import quota
+    quota.spend("GET", "https://youtube.googleapis.com/youtube/v3/channels")
+    return items[0].get("id")
+
+
+def shorts_subtitles():
+    """Upload subtitle files on Shorts? (config/channel.json `shorts_subtitles`; off since Nov 22: owner wants every quota
+    unit spent on posting or answering comments, and Shorts have burned-in captions.)"""
+    try:
+        return bool(json.loads((ROOT / "config" / "channel.json").read_text()).get("shorts_subtitles", True))
+    except (OSError, ValueError):
+        return True
+
+
+def token_for(channel_id, prefer="YT_REFRESH_TOKEN"):
+    """Access token for a given channel, whichever YT_*REFRESH_TOKEN setting holds it (Nov 22: the owner's settings
+    ended up with the English and Spanish keys swapped; picking by channel, not by name, makes that harmless)."""
+    if channel_id in _BY_CHANNEL:
+        return _BY_CHANNEL[channel_id]
+    names = [prefer] + sorted(n for n in os.environ if re.fullmatch(r"YT_\w*REFRESH_TOKEN", n) and n != prefer)
+    first_error = None
+    for n in names:
+        if not os.environ.get(n):
+            continue
+        owner = None
+        for attempt in range(4):  # Nov 22: 2 of 6 checks hit a brief network error and reported "no key belongs"
+            try:
+                acc = token(n)
+                owner = _owner_of(acc)
+                break
+            except SystemExit as e:
+                first_error = first_error or e
+                break
+            except urllib.error.HTTPError as e:
+                body = e.read().decode(errors="ignore")
+                if e.code == 403 and ("quotaExceeded" in body or "dailyLimitExceeded" in body):
+                    from . import quota
+                    sys.exit(f"YOUTUBE DAILY QUOTA USED UP: the key is fine; it resets in {quota.reset_in()} "
+                             "(midnight Pacific = 3 AM ET). Run the same command again after that.")
+                import time
+                time.sleep(2 * (attempt + 1))
+            except (urllib.error.URLError, OSError):
+                import time
+                time.sleep(2 * (attempt + 1))
+        if owner is None:
+            continue
+        if owner == channel_id:
+            if n != prefer:
+                why = "holds another channel's key" if os.environ.get(prefer) else "isn't set in this session"
+                print(f"(note: {prefer} {why}; using {n}, which belongs to {channel_id})", file=sys.stderr)
+            _BY_CHANNEL[channel_id] = acc
+            return acc
+    if first_error:
+        raise first_error
+    sys.exit(f"No saved YouTube key (YT_*REFRESH_TOKEN) belongs to channel {channel_id}. Reconnect it with "
+             "tools/youtube_auth.py and save the key in the environment settings.")
+
+
+def token(refresh_env=None):
+    """Access token. With no argument: the English channel's key, found by channel (see token_for). With a setting
+    name: exactly that setting's key (used to diagnose which channel a setting holds)."""
+    if refresh_env is None:
+        try:
+            ids = channel_ids()
+        except (OSError, ValueError, KeyError):
+            ids = {}
+        if ids.get("en"):
+            return token_for(ids["en"], "YT_REFRESH_TOKEN")
+        refresh_env = "YT_REFRESH_TOKEN"
     need = ["YT_CLIENT_ID", "YT_CLIENT_SECRET", refresh_env]
     missing = [k for k in need if not os.environ.get(k)]
     if missing:
@@ -77,6 +160,27 @@ def req(method, url, tok, body=None, ctype="application/json", headers=None):
 def yt_safe(text):
     """YouTube rejects titles/descriptions containing < or > (400 invalidDescription, Nov 21: "Settings > Gameplay")."""
     return (text or "").replace(">", "→").replace("<", "‹")
+
+
+BASE_TAGS = ["GTA 6", "GTA VI", "Grand Theft Auto VI", "GTA 6 Shorts"]
+
+
+def clean_tags(tags, base=BASE_TAGS):
+    """Tags for one video: the topic's own tags first, then the channel basics; no duplicates (any case), no < > #,
+    within YouTube's 500-character budget (a tag with spaces counts 2 more for its quotes, plus 1 per comma).
+    Nov 22: Shorts from Short-only episodes had gone up with no tags at all (tags.txt is written for main videos only)."""
+    out, seen, total = [], set(), 0
+    for t in list(tags or []) + list(base or []):
+        t = " ".join(str(t).replace("<", "").replace(">", "").replace("#", "").split())
+        if not t or t.lower() in seen:
+            continue
+        cost = len(t) + (2 if " " in t else 0) + (1 if out else 0)
+        if total + cost > 500:
+            continue
+        out.append(t)
+        seen.add(t.lower())
+        total += cost
+    return out
 
 
 def upload(tok, path, title, description, tags, publish_at=None, privacy="public", es=None, lang="en"):
@@ -210,7 +314,10 @@ def add_to_playlist(tok, vid, title):
                    {"snippet": {"title": title, "description": f"{title} from Vice Replay: GTA's wildest moments. On replay.",
                                 "defaultLanguage": "en"}, "status": {"privacyStatus": "public"}})
         _playlist_cache[title] = r["id"]
-    existing, _ = req("GET", yt + f"playlistItems?part=id&playlistId={_playlist_cache[title]}&videoId={vid}", tok)
+    try:  # a playlist created a moment ago can answer 404 here for a little while: treat it as empty
+        existing, _ = req("GET", yt + f"playlistItems?part=id&playlistId={_playlist_cache[title]}&videoId={vid}", tok)
+    except SystemExit:
+        existing = {}
     if existing.get("items"):
         return  # already in this playlist
     # a brand-new playlist (or video) can briefly return 409/503; wait and retry a few times
@@ -343,6 +450,10 @@ def main():
     if not a.episode or not a.approve:
         sys.exit("Give the episode and --approve (only after the owner approved in chat).")
     ep = json.loads(Path(a.episode).read_text())
+    if ep.get("es_only"):  # Nov 22: a whole episode made for the Spanish channel (e.g. gta6-money-chart-es)
+        print(f"{ep['slug']}: Spanish channel only; nothing to upload on the English channel "
+              f"(python -m studio.youtube_es {a.episode} --approve short ...)")
+        return
     slug = ep["slug"]
     out = ROOT / "output" / slug
     day = dt.date.fromisoformat(a.date) if a.date else dt.datetime.now(ET).date()
@@ -371,7 +482,8 @@ def main():
             if first:
                 url = first[1] + ("&" if "?" in first[1] else "?") + "tag=" + cfg["tag"]
                 pin_main = f"{pin_main}\n\n{first[0]}: {url} (affiliate link)"
-        jobs.append(("main", out / f"{slug}.mp4", title, (out / "description.txt").read_text(), tags, t_main,
+        jobs.append(("main", out / f"{slug}.mp4", title, (out / "description.txt").read_text(),
+                     clean_tags(tags or ep.get("tags")), t_main,
                      out / "thumbnail-a.jpg", pin_main, ep.get("es"), out / f"{slug}.timings.json",
                      ep.get("playlist") or PLAYLISTS["main"]))
     shorts = ([{"id": "", "pinned_comment": ep.get("short_pinned_comment") or ep.get("pinned_comment"),
@@ -382,21 +494,34 @@ def main():
         name = f"{slug}-short" + (f"-{sh['id']}" if sh.get("id") else "")
         if not allow(key) or not (out / f"{name}.mp4").exists():
             continue
+        if sh.get("replaced_by"):  # a newer version of this Short is its own episode (Nov 22: graph/evidence remakes)
+            print(f"skip {key}: replaced by {sh['replaced_by']}")
+            continue
+        if sh.get("es_only"):  # owner's call per Short (Nov 22: the GTA 5 money Short goes to the Spanish channel only)
+            print(f"skip {key}: Spanish channel only ({sh['es_only'] if isinstance(sh['es_only'], str) else 'es_only'})")
+            continue
         title, desc = parse_short_txt(out / f"{name}.txt")
         es = sh.get("es") or (ep.get("short_es") if not sh.get("id") else None)
         playlist = sh.get("playlist") or (PLAYLISTS["short"] if not sh.get("id") else PLAYLISTS["news"])
-        jobs.append((key, out / f"{name}.mp4", title or sh.get("title") or ep["title"], desc, tags,
-                     (t_short if k == 0 else t_news if k == 1 else t_extra), None, sh.get("pinned_comment"), es, out / f"{name}.timings.json",
+        jobs.append((key, out / f"{name}.mp4", title or sh.get("title") or ep["title"], desc,
+                     clean_tags(sh.get("tags") or ep.get("tags") or tags),
+                     # by name first, like studio.youtube_es (Nov 22: a "news" Short listed first landed on the
+                     # 10 AM slot next to another IShowSpeed Short); position only for other ids
+                     {"short": t_short, "news": t_news, "tips": t_extra}.get(
+                         key, t_short if k == 0 else t_news if k == 1 else t_extra),
+                     None, sh.get("pinned_comment"), es, out / f"{name}.timings.json",
                      playlist))
 
     # the site guide may spell the slug "gta-6-..." while the episode says "gta6-..."
-    gslug = next((g for g in (slug, slug.replace("gta6-", "gta-6-", 1))
-                  if (ROOT / "site" / "guides" / f"{g}.json").exists()), "")
-    guide_url = f"https://vicereplay.com/guides/{gslug}/" if gslug else ""
+    # Nov 22: only exact slug matches got a link, so almost no video sent viewers to the site. Now: the episode's own
+    # "guide" (site/guides/<slug>.json), else a same-name guide, else the guides index.
+    gslug = next((g for g in (ep.get("guide"), slug, slug.replace("gta6-", "gta-6-", 1))
+                  if g and (ROOT / "site" / "guides" / f"{g}.json").exists()), "")
+    guide_url = f"https://vicereplay.com/guides/{gslug}/" if gslug else "https://vicereplay.com/guides/"
     guard = None
     for key, path, title, desc, tg, when, thumb, pin, es, timings, playlist in jobs:
         if guide_url and "vicereplay.com/guides" not in desc:
-            desc = desc.rstrip() + f"\n\nGuide: {guide_url}"
+            desc = desc.rstrip() + (f"\n\nFull guide: {guide_url}" if gslug else f"\n\nMore GTA 6 guides: {guide_url}")
         if key in done:
             print(f"skip {key}: already uploaded ({done[key]['url']})")
             continue
@@ -418,8 +543,14 @@ def main():
         register_upload(slug, key, vid, title)
         srt, en_srt = spanish_srt(timings), english_srt(timings)
         steps = [("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb)),
-                 ("english_subtitles", lambda: en_srt and upload_caption(tok, vid, en_srt, lang="en", name="English")),
-                 ("spanish_subtitles", lambda: srt and upload_caption(tok, vid, srt)),
+                 ("english_subtitles", lambda: en_srt and (key == "main" or shorts_subtitles())
+                  and upload_caption(tok, vid, en_srt, lang="en", name="English")),
+                 # Nov 22: Shorts also post on Vice Replay en Español, so the Spanish track on the English Short is
+                 # redundant (400 quota units each; 13 caption uploads were ~30% of the day that ran out). Long videos
+                 # stay English-only on YouTube, so they keep their Spanish subtitles.
+                 ("spanish_subtitles", lambda: srt and not (key != "main" and (channel_ids().get("es")
+                                                                              or not shorts_subtitles()))
+                  and upload_caption(tok, vid, srt)),
                  ("playlist", lambda: add_to_playlist(tok, vid, playlist))]
         done[key]["spanish_title"] = "yes" if es and es.get("title") else "no (episode has no 'es')"
         if publish_at:

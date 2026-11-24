@@ -4,18 +4,26 @@ Templates only. Fill every blank with a fact that was researched for that episod
 
 ## Hook lines (segment 1)
 
-| Type | Template |
-|---|---|
-| Number | "[Number] [thing] in GTA 6. Here's the one that matters." |
-| Mistake | "Most players get [thing] wrong in their first hour of GTA 6." |
-| Time saver | "This saves you [amount of time] in GTA 6." |
-| Before you | "Before you [do common thing] in GTA 6, change this." |
-| Hidden | "There's a detail in [area] almost nobody noticed." |
-| Comparison | "GTA 5 did [thing] one way. GTA 6 changed it." |
-| Countdown | "GTA 6 is [time] away. Do these [number] things first." |
-| Verdict | "The reviews are in. Here's the one-sentence verdict." |
-| Question | "Is [thing] worth it in GTA 6? Short answer: [yes/no]." |
-| Rumour | "Reportedly, [claim]. Here's what we actually know." |
+**Data (Nov 22, our 20 Shorts with retention):** a question as the first sentence kept 35% of viewers (median 130
+views) vs 60% for a statement (858 views). The best openers state the surprising RESULT at once, in 3-10 words;
+the worst asked a question ("Can't get into GTA 6?" 25%, "GTA 6 looking blurry?" 26%) or built up to the point
+("Rockstar's boss almost never speaks in public." 47%). `studio.vice publish` blocks a question as the first sentence.
+
+| Type | Template (statement first, the catch after) | Our proof |
+|---|---|---|
+| Result | "[Surprising result]." then why | "Eighteen hours early." 82% viewed |
+| Real, but | "[Thing] is real, but there's a catch." | "GTA 6 cheats are real, but there's a catch nobody expected." 75% |
+| Number | "[Subject] just got/has [number]." | "GTA 6 just got a ninety nine on Metacritic." 66% |
+| Record | "Only [N] [things] ever [did X]. [Subject] is one." | 99 club (new) |
+| Versus | "[A] beats [B] and [C] combined." | trailer views (new) |
+| Already | "[Thing] is already [surprising state]." | "GTA 6 is already out in New Zealand." 66% |
+| Streamer | "[Name] did [number/thing]." (name + number in the first line) | IShowSpeed family name 1,192 views |
+
+Rules: no question first (a question is fine at the END, as the comment prompt); no setup sentence before the point;
+a NUMBER in the first on-screen headline (65% of viewers kept vs 49%; a `chart` counter counts); Shorts titles of 40-45
+characters before the hashtags (top GTA 6 Shorts: 95K views/h at 40 or less vs 70K); never "#" + a number in a title
+(YouTube makes it a hashtag). Full findings: content/learn/hooks-2026-11-22.md.
+the on-screen headline says the same claim in 2-4 words (no "?"); show the payoff picture in the first 2 s.
 
 ## Titles (main video)
 

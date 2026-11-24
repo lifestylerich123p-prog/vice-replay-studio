@@ -14,7 +14,7 @@
   "effort": "S",
   "cost": "$0",
   "research": "HUD values read frame by frame at 1920x1080 (Nov 20)",
-  "status": "rendered, QC passed, awaiting owner approval"
+  "status": "replaced Nov 22: races Short unscheduled (details type, weak slot)"
  },
  {
   "id": "d01b",
@@ -48,7 +48,7 @@
   "effort": "S",
   "cost": "$0",
   "research": "what each clip shows (reviewed Nov 20); opinion clearly ours",
-  "status": "idea"
+  "status": "done: re-cut as gta6-top-3-rides (Wed Nov 25 9:30 AM)"
  },
  {
   "id": "d02b",
@@ -60,7 +60,7 @@
   "payoff": "What to know before you update",
   "footage": "official footage",
   "rights_status": "cleared-conditional: official Rockstar footage/screens (audio dropped, short excerpts)",
-  "format": "news Short 25 s",
+  "format": "graph news Short 15-20 s: `counter` of the key checked number (patch size / fixes count) + 1 cutaway",
   "editing": "standard narrated",
   "effort": "S",
   "cost": "$0",
@@ -90,16 +90,16 @@
   "date": "2026-11-24",
   "slot_et": "6:00 PM",
   "series": "Tips",
-  "topic": "GTA 6 money: where Chapter 2 cash actually comes from (3 guides compared)",
+  "topic": "Rockstar's best-sellers: can GTA 6 catch GTA 5's 230M? (Take-Two filings: GTA V 230M+, RDR2 87M+; 2 sources each)",
   "payoff": "The one money method all guides agree on",
   "footage": "official footage",
   "rights_status": "cleared-conditional: official Rockstar footage/screens (audio dropped, short excerpts)",
-  "format": "tips Short 25 s",
+  "format": "graph Short 15-20 s: `bars` of lifetime sales + `counter` of GTA 6's first official number if Take-Two gives one",
   "editing": "numbers on screen",
   "effort": "S",
   "cost": "$0",
   "research": "PowerPyx, GTAboom, Forbes money guides (re-check)",
-  "status": "idea"
+  "status": "idea (graph)"
  },
  {
   "id": "d04a",
@@ -124,16 +124,16 @@
   "date": "2026-11-25",
   "slot_et": "6:00 PM",
   "series": "B: Rankings",
-  "topic": "Ranking GTA 6 cheat codes by how useful they are (top 5)",
+  "topic": "GTA 6 reviews: how many perfect scores? (Metacritic/OpenCritic counts, top outlets' scores)",
   "payoff": "The one cheat worth using first",
   "footage": "official footage + code cards",
   "rights_status": "cleared-conditional: official Rockstar footage/screens (audio dropped, short excerpts)",
-  "format": "ranking Short 30 s",
+  "format": "graph Short 15-20 s: `counter` of perfect scores + `bars` by outlet",
   "editing": "code cards (ig_cards style)",
   "effort": "S",
   "cost": "$0",
   "research": "our verified cheat table (site guide), re-check",
-  "status": "idea"
+  "status": "idea (graph)"
  },
  {
   "id": "d05a",
@@ -179,7 +179,7 @@
   "payoff": "What's actually discounted today",
   "footage": "official footage + price cards",
   "rights_status": "cleared-conditional: official Rockstar footage/screens (audio dropped, short excerpts)",
-  "format": "deals Short 25 s + description links",
+  "format": "graph deals Short 15-20 s: `bars` of real Black Friday prices by store (checked that morning) + description links",
   "editing": "price cards",
   "effort": "S",
   "cost": "$0",
@@ -196,7 +196,7 @@
   "payoff": "Sales, streams, players: which record is biggest",
   "footage": "official footage + number cards",
   "rights_status": "cleared-conditional: official Rockstar footage/screens (audio dropped, short excerpts)",
-  "format": "ranking Short 30 s",
+  "format": "graph ranking Short 15-20 s: `bars` of records we can source (trailer views 309.8M, peak viewers 7.91M, $3.79B) — not the same numbers as the last 4 days' Shorts",
   "editing": "number cards",
   "effort": "S",
   "cost": "$0",

@@ -1,0 +1,204 @@
+{
+ "title": "GTA 6's First Trailer Is Still No. 1 (309M Views)",
+ "slug": "gta6-trailer-views",
+ "series": "C: Tested",
+ "voice": "am_michael",
+ "rate": "+12%",
+ "format": "news",
+ "use_gameplay": false,
+ "short_title": "GTA 6's first trailer STILL wins (309M views) #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6's first trailer STILL wins (309M views) #GTA6 #Shorts",
+  "GTA 6 Trailer 1 beats Trailer 2 + the launch trailer #GTA6 #Shorts",
+  "GTA 6 trailers ranked by views (Rockstar's own count) #GTA6 #Shorts"
+ ],
+ "short_description": "Rockstar's GTA 6 videos on YouTube, by views (YouTube's public counters, Nov 22, 2026): Trailer 1 (Dec 2023) 309.8M, Trailer 2 (May 2025) 193.1M, Launch Trailer (Oct 2026) 86.9M, An Extended Look (Aug 2026) 39.8M, Out Now (Nov 2026) 20.6M. Trailer 1 has more views than Trailer 2 and the Launch Trailer combined (280.0M). Counts keep growing. No story spoilers.",
+ "short_es": {
+  "title": "El PRIMER tráiler de GTA 6 sigue ganando (309 M) 🎬 #GTA6 #Shorts",
+  "description": "Los videos de GTA 6 de Rockstar en YouTube por vistas (contadores públicos, 22 nov 2026): Tráiler 1 309,8 M, Tráiler 2 193,1 M, Tráiler de lanzamiento 86,9 M, An Extended Look 39,8 M, Out Now 20,6 M. El Tráiler 1 tiene más vistas que el Tráiler 2 y el de lanzamiento juntos. Sin spoilers.",
+  "tags": [
+   "GTA 6 tráiler",
+   "GTA 6 tráiler 1",
+   "GTA 6 tráiler 2",
+   "tráiler de lanzamiento GTA 6",
+   "GTA 6 vistas",
+   "Rockstar Games",
+   "GTA 6 español"
+  ]
+ },
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "Trailer 1, Trailer 2 or the launch trailer: which one is the best? 👇",
+ "short_pinned_comment_es": "¿Tráiler 1, tráiler 2 o el de lanzamiento: cuál es el mejor? 👇",
+ "tags": [
+  "GTA 6 trailer",
+  "GTA 6 trailer 1",
+  "GTA 6 trailer 2",
+  "GTA 6 launch trailer",
+  "GTA 6 trailer views",
+  "most viewed trailer",
+  "Rockstar Games",
+  "GTA 6 Extended Look",
+  "GTA 6 record"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#trailer",
+  "#rockstargames"
+ ],
+ "sources": [
+  "YouTube Data API view counts of Rockstar Games' official uploads, Nov 22, 2026 9:30 AM ET: QdBZY2fkU-0 (Trailer 1) 309,793,377; VQRLujxTm3c (Trailer 2) 193,067,042; rz1B4B2yBZY (Launch Trailer) 86,859,076; tJbzMqJGH4k (An Extended Look) 39,824,632; _yl5ELcmugI (Out Now) 20,600,996"
+ ],
+ "short": [
+  {
+   "headline": "TRAILER 1 STILL WINS",
+   "headline_es": "EL TRÁILER 1 SIGUE GANANDO",
+   "text": "GTA 6's first trailer still beats the next two combined.",
+   "text_es": "El primer tráiler de GTA 6 todavía le gana a los dos siguientes juntos.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 309793377,
+    "label": "views on GTA 6 Trailer 1",
+    "seed": 5
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 309793377,
+    "label": "vistas del tráiler 1 de GTA 6",
+    "seed": 5
+   },
+   "audio_es": "media/voice/gta6-trailer-views/es/seg1.wav"
+  },
+  {
+   "headline": "ROCKSTAR'S TOP 5",
+   "headline_es": "TOP 5 DE ROCKSTAR",
+   "text": "Trailer 1: three hundred nine million views. Trailer 2: a hundred ninety three million. The launch trailer: eighty seven.",
+   "text_es": "Tráiler 1: trescientos nueve millones de vistas. Tráiler 2: ciento noventa y tres millones. El de lanzamiento: ochenta y siete.",
+   "keep_media": true,
+   "chart": {
+    "type": "bars",
+    "items": [
+     [
+      "Trailer 1 (2023)",
+      309.8
+     ],
+     [
+      "Trailer 2 (2025)",
+      193.1
+     ],
+     [
+      "Launch Trailer",
+      86.9
+     ],
+     [
+      "An Extended Look",
+      39.8
+     ],
+     [
+      "Out Now",
+      20.6
+     ]
+    ],
+    "unit": "M",
+    "highlight": 0,
+    "note": "Rockstar Games' YouTube view counts, Nov 22",
+    "seed": 5
+   },
+   "chart_es": {
+    "type": "bars",
+    "items": [
+     [
+      "Tráiler 1 (2023)",
+      309.8
+     ],
+     [
+      "Tráiler 2 (2025)",
+      193.1
+     ],
+     [
+      "Tráiler de lanzamiento",
+      86.9
+     ],
+     [
+      "An Extended Look",
+      39.8
+     ],
+     [
+      "Out Now",
+      20.6
+     ]
+    ],
+    "unit": " M",
+    "highlight": 0,
+    "note": "Vistas en el canal de YouTube de Rockstar Games, 22 de nov.",
+    "seed": 5
+   },
+   "audio_es": "media/voice/gta6-trailer-views/es/seg2.wav"
+  },
+  {
+   "headline": "2 TRAILERS COMBINED: STILL BEHIND",
+   "headline_es": "DOS JUNTOS: SIGUEN ATRÁS",
+   "text": "Add those two up, and they're still behind.",
+   "text_es": "Súmalos, y aun así se quedan atrás.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 309.8,
+    "unit": "M",
+    "label": "Trailer 1",
+    "vs": {
+     "value": 280.0,
+     "unit": "M",
+     "label": "Trailer 2 + Launch Trailer"
+    },
+    "seed": 5
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 309.8,
+    "unit": " M",
+    "label": "Tráiler 1",
+    "vs": {
+     "value": 280.0,
+     "unit": " M",
+     "label": "Tráiler 2 + lanzamiento"
+    },
+    "seed": 5
+   },
+   "audio_es": "media/voice/gta6-trailer-views/es/seg3.wav"
+  },
+  {
+   "headline": "YOUR FAVORITE?",
+   "headline_es": "¿TU FAVORITO?",
+   "text": "Which one did you watch the most? Tell me, because",
+   "text_es": "¿Cuál viste más? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Which trailer did you watch the most?",
+    "pink": [
+     "the",
+     "most?"
+    ],
+    "seed": 5
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "¿Qué tráiler viste más?",
+    "pink": [
+     "más?"
+    ],
+    "seed": 5
+   },
+   "audio_es": "media/voice/gta6-trailer-views/es/seg4.wav"
+  }
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)",
+ "guide": "gta-6-launch-week-numbers"
+}

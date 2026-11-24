@@ -67,15 +67,28 @@ def note(name):
     return 440.0 * 2 ** ((names[pitch] + 12 * (octave - 4)) / 12)
 
 
-def theme(path, bpm=100, loops=2, seed=7):
-    """Night-drive synthwave loop: Am - F - C - G, pad + arpeggiated bass + drums (8 bars per loop)."""
+# Our own Content-ID-safe tracks (Nov 22, owner: "find better audio that connects"): one song on every video was
+# tiring and another "template" signal. Each mood: (bpm, chords, bass roots). make_video picks one per episode.
+MOODS = {
+    "night": (100, [["A3", "C4", "E4"], ["F3", "A3", "C4"], ["C4", "E4", "G4"], ["G3", "B3", "D4"]], ["A1", "F1", "C2", "G1"]),
+    "hype": (124, [["E3", "G3", "B3"], ["C3", "E3", "G3"], ["G3", "B3", "D4"], ["D3", "F#3", "A3"]], ["E1", "C1", "G1", "D1"]),
+    "tension": (112, [["D3", "F3", "A3"], ["A#2", "D3", "F3"], ["F3", "A3", "C4"], ["C3", "E3", "G3"]], ["D1", "A#0", "F1", "C1"]),
+    "bright": (118, [["C3", "E3", "G3"], ["G3", "B3", "D4"], ["A3", "C4", "E4"], ["F3", "A3", "C4"]], ["C1", "G1", "A1", "F1"]),
+}
+
+
+def theme(path, bpm=100, loops=2, seed=7, mood=None):
+    """Synthwave loop: pad + 8th-note octave bass + drums (8 bars per loop). Default Am - F - C - G (the original
+    night-drive theme); mood="hype"/"tension"/"bright" changes tempo and chords."""
     rng = np.random.default_rng(seed)
+    chords = [["A3", "C4", "E4"], ["F3", "A3", "C4"], ["C4", "E4", "G4"], ["G3", "B3", "D4"]]
+    roots = ["A1", "F1", "C2", "G1"]
+    if mood:
+        bpm, chords, roots = MOODS[mood]
     beat = 60 / bpm
     bar = 4 * beat
     total = int(8 * bar * loops * SR)
     mix = np.zeros(total)
-    chords = [["A3", "C4", "E4"], ["F3", "A3", "C4"], ["C4", "E4", "G4"], ["G3", "B3", "D4"]]
-    roots = ["A1", "F1", "C2", "G1"]
     for lp in range(loops):
         for ci in range(4):
             start = int((lp * 8 + ci * 2) * bar * SR)
@@ -138,10 +151,24 @@ def impact(dur=0.9, seed=2):
     return boom + _lowpass_fast(click, 3000)
 
 
-def sfx_track(path, total, whooshes, impacts):
-    """One stereo track with whooshes centred on segment cuts and impacts on the hook."""
+def pop(dur=0.16, seed=3):
+    """A short, soft synth pop for a word or number landing on a lettering card (Nov 23)."""
+    rng = np.random.default_rng(seed)
+    t = np.arange(int(dur * SR)) / SR
+    tone = np.sin(2 * np.pi * (520 + 700 * np.exp(-t * 40)) * t) * np.exp(-t * 28)
+    tick = rng.standard_normal(len(t)) * np.exp(-t * 220) * 0.35
+    return tone + _lowpass_fast(tick, 5000)
+
+
+def sfx_track(path, total, whooshes, impacts, pops=()):
+    """One stereo track with whooshes centred on segment cuts, impacts on the hook and soft pops where the lettering
+    cards land a word or number (studio/vicecards.py `hits`)."""
     out = np.zeros(int(total * SR) + SR)
-    w, im = whoosh(), impact()
+    w, im, pp = whoosh(), impact(), pop()
+    for tm in pops:
+        s = max(0, int(tm * SR))
+        seg = pp[: len(out) - s]
+        out[s:s + len(seg)] += 0.32 * seg / (np.max(np.abs(pp)) or 1)
     for tm in whooshes:
         s = max(0, int((tm - 0.28) * SR))
         seg = w[: len(out) - s]

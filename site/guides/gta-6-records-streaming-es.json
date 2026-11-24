@@ -1,0 +1,82 @@
+{
+ "slug": "gta-6-records-streaming",
+ "pair": "gta-6-streaming-records",
+ "lang": "es",
+ "title": "GTA 6 en directo: los streamers más vistos y todos los récords",
+ "h1": "GTA 6 en directo: <span>quién ganó la semana</span>",
+ "desc": "El lanzamiento de GTA 6 en streaming, comprobado: pico de 7,91 millones, 125,47 millones de horas en 24 horas y los creadores más vistos (IShowSpeed, TheBurntPeanut, alanzoka). Sin spoilers.",
+ "date": "2026-11-24",
+ "video": null,
+ "card": [
+  "GUERRA DE STREAMS",
+  "SPEED VS UN VTUBER",
+  "vice-city-01.jpg"
+ ],
+ "lede": "GTA 6 fue el lanzamiento más visto en directo que ha medido <b>Streams Charts</b>: un pico de <b>7,91 millones</b> de personas a la vez y <b>125,47 millones de horas</b> vistas en sus primeras 24 horas. Aquí, quién atrajo esas audiencias, en cinco rondas y con cada número de al menos dos fuentes. Sin spoilers.",
+ "sections": [
+  [
+   "Ronda 1: el avance contra el lanzamiento",
+   "<p>El Extended Look de Rockstar llegó a unos <b>3,97 millones</b> de espectadores simultáneos (Inven Global, Rockstar Intel). El día del lanzamiento casi lo duplicó: <b>7,91 millones</b> en el pico, sumando Twitch, YouTube, Kick y las plataformas coreanas SOOP y CHZZK (Streams Charts vía Inven Global).</p>"
+  ],
+  [
+   "Ronda 2: 125,47 millones de horas en un día",
+   "<p>En las primeras 24 horas se vieron <b>125,47 millones de horas</b> de directos de GTA 6 (Streams Charts; Inven Global y Dot Esports). Más de 14.000 años de video en un solo día.</p>"
+  ],
+  [
+   "Ronda 3: los creadores más vistos",
+   "<ul class=\"list\"><li><b>IShowSpeed</b>: 4,47 millones de horas (YouTube y Twitch).</li><li><b>TheBurntPeanut</b> (un VTuber): 3,89 millones de horas.</li><li><b>alanzoka</b> (Brasil): 3,11 millones de horas, todas en Twitch.</li></ul><p>Nuestra opinión: que un VTuber sin cara quedara a unas 580.000 horas del gran nombre de la semana es la verdadera noticia.</p>"
+  ],
+  [
+   "Ronda 4: la carrera a los créditos",
+   "<p>Speed ganó en vistas, no en la carrera. El neozelandés <b>BrycexD</b> terminó la historia, según los reportes, en <b>39 horas y 38 minutos</b>; IShowSpeed lo hizo en un solo directo de <b>52 horas y 31 minutos</b>.</p>"
+  ],
+  [
+   "Por qué cambian los números entre sitios",
+   "<p>Algunos medios dan picos más bajos (6,3-7,4 millones) porque cuentan solo directos etiquetados como GTA VI, otra ventana de tiempo o menos plataformas. Usamos el conteo completo de Streams Charts e indicamos la fuente de cada número.</p>"
+  ]
+ ],
+ "faq": [
+  [
+   "¿Quién fue el streamer más visto de GTA 6?",
+   "IShowSpeed, con 4,47 millones de horas vistas el primer día (Streams Charts)."
+  ],
+  [
+   "¿Cuál fue el pico de espectadores de GTA 6?",
+   "7,91 millones de espectadores simultáneos el día del lanzamiento, según Streams Charts."
+  ],
+  [
+   "¿Quién es TheBurntPeanut?",
+   "Un VTuber (un avatar animado en lugar de cámara), el segundo creador más visto de GTA 6 el primer día con 3,89 millones de horas."
+  ]
+ ],
+ "gear": [
+  "game",
+  "storage"
+ ],
+ "sources": [
+  [
+   "Streams Charts: viewership records and top streamers from GTA 6's first 24 hours",
+   "https://streamscharts.com/news/gta-6-day1-recap"
+  ],
+  [
+   "Inven Global: GTA VI sets livestreaming records with 7.91M peak viewers",
+   "https://www.invenglobal.com/articles/28854/gta-vi-sets-livestreaming-records-with-791m-peak-viewers-on-launch-day"
+  ],
+  [
+   "Dot Esports: GTA 6 racks up 125 million hours watched in its first 24 hours",
+   "https://dotesports.com/gta/news/gta-6-125-million-hours-watched-24-hours"
+  ],
+  [
+   "UrduPoint: GTA VI livestreams peak at 7.91 million viewers, IShowSpeed leads",
+   "https://www.urdupoint.com/showbiz/en/influencers/gta-vi-livestreams-peak-7-91-million-viewers-ishowspeed-most-watched-creator.html"
+  ],
+  [
+   "Inven Global: 'GTA6' tops Netflix, draws 3.97 million concurrent viewers",
+   "https://www.invenglobal.com/articles/25362/gta6-tops-netflix-draws-397-million-concurrent-viewers"
+  ],
+  [
+   "Rockstar Intel: GTA 6 gameplay reveal had nearly 4 million live viewers",
+   "https://rockstarintel.com/gta-6-gameplay-reveal-had-nearly-4-million-live-viewers-as-it-broke-netflix/"
+  ]
+ ]
+}

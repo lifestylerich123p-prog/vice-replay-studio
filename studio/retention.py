@@ -101,7 +101,7 @@ def drop_summary(secs):
 def main():
     tok = token()
     try:
-        rows = report(tok, metrics="views,averageViewDuration,averageViewPercentage,subscribersGained",
+        rows = report(tok, metrics="views,engagedViews,averageViewDuration,averageViewPercentage,subscribersGained,likes,shares",
                       dimensions="video", sort="-views", maxResults=200)
     except urllib.error.HTTPError as e:
         raise SystemExit(f"Analytics unavailable ({e.code}). Reconnect YouTube with tools/youtube_auth.py if this persists.")
@@ -125,7 +125,11 @@ def main():
                      "subs": r.get("subscribersGained", 0), "hook_kept_pct": hook_pct, "end_kept_pct": end_pct,
                      "hook": hook_text, "first_line": e.get("first_line", ""), "topic": e.get("topic", ""),
                      "hook_has_number": bool(re.search(r"\d", hook_text)),
-                     "length_sec": length, "per_second": secs})
+                     "length_sec": length, "per_second": secs,
+                     # engaged views / views: YouTube counts a Shorts view as "engaged" once it plays past the first
+                     # moments, so this is the closest API number to Studio's "stayed to watch" (Nov 22)
+                     "stayed_pct": round(100 * r["engagedViews"] / r["views"]) if r.get("engagedViews") is not None and r.get("views") else None,
+                     "likes": r.get("likes", 0), "shares": r.get("shares", 0)})
     LEARN.mkdir(parents=True, exist_ok=True)
     (LEARN / "retention.json").write_text(json.dumps(data, indent=2, ensure_ascii=False))
 
@@ -164,6 +168,15 @@ def main():
             s, loss = drop_summary(d["per_second"])
             at = lambda i: d["per_second"][i] if len(d["per_second"]) > i else "-"
             lines.append(f"| {d['avg_pct']:.0f}% | {at(3)}% | {at(5)}% | 0:{s:02d} (-{loss} pts) | {d['hook'][:60]} |")
+    stayed = [d for d in shorts if d.get("stayed_pct") is not None and d["views"] >= 30]
+    if stayed:  # YouTube has no official pass mark: compare each Short to our own median (research, Nov 22)
+        med = statistics.median(d["stayed_pct"] for d in stayed)
+        likes = sum(d["likes"] for d in stayed) * 100 / max(1, sum(d["views"] for d in stayed))
+        lines += ["", "## Stayed to watch (engaged views / views; beat our own median, not a magic number)",
+                  f"Median {med:.0f}% over {len(stayed)} Shorts with 30+ views; {likes:.1f} likes per 100 views.",
+                  "", "| stayed | vs median | % viewed | views | hook |", "|---|---|---|---|---|"]
+        for d in sorted(stayed, key=lambda d: d["stayed_pct"], reverse=True)[:6] + sorted(stayed, key=lambda d: d["stayed_pct"])[:3]:
+            lines.append(f"| {d['stayed_pct']}% | {d['stayed_pct'] - med:+.0f} | {d['avg_pct']:.0f}% | {d['views']} | {d['hook'][:60]} |")
     longs = [d for d in data if d["kind"] == "long" and d["avg_pct"] is not None]
     if longs:
         lines += ["", "## Long videos", "| % viewed | avg seconds | views | title |", "|---|---|---|---|"]

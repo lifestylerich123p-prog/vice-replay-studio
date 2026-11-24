@@ -163,7 +163,8 @@ def spoken_es(words):
 def check(path, episode=None, dest="vice-replay", script_key="short", project=None, intended_freezes=(),
           campaign=None, use_whisper=True):
     path = Path(path)
-    ep = json.loads(Path(episode).read_text()) if episode else None
+    # episode: a path to the JSON, or an already-loaded dict (publish passes one single-Short view per Short)
+    ep = episode if isinstance(episode, dict) else json.loads(Path(episode).read_text()) if episode else None
     timings_f = path.with_suffix(".timings.json")
     timings = json.loads(timings_f.read_text()) if timings_f.exists() else None
     if isinstance(timings, dict):
@@ -217,7 +218,13 @@ def check(path, episode=None, dest="vice-replay", script_key="short", project=No
             "use a moving clip or add motion (punch-in/pan) here", at=s)
     if not f["freezes"]:
         add("frozen picture", "pass", "picture keeps moving")
-    if v and f["crop"]:
+    card_segs = (ep.get(script_key) or ep.get("short") or []) if ep else []
+    all_cards = bool(card_segs) and all(isinstance(x, dict) and x.get("chart") for x in card_segs)
+    if v and f["crop"] and all_cards and ((v["width"] - f["crop"][0] > 16) or (v["height"] - f["crop"][1] > 16)):
+        # Nov 22: facts-only Shorts are 100% our cards on a dark gradient; cropdetect reads the dark edges as bars
+        add("black bars", "pass", f"active picture {f['crop'][0]}x{f['crop'][1]}: dark card backgrounds (every segment "
+            "is our own graphic), not letterboxing")
+    elif v and f["crop"]:
         cw, ch_, cx, cy = f["crop"]
         bars = (v["width"] - cw > 16) or (v["height"] - ch_ > 16)
         add("black bars", "fail" if bars else "pass",
@@ -261,12 +268,22 @@ def check(path, episode=None, dest="vice-replay", script_key="short", project=No
     con = db.connect()
     vh = dedupe.video_hash(path)
     me = str(path.resolve().relative_to(db.ROOT)) if path.resolve().is_relative_to(db.ROOT) else str(path)
-    others = [(dedupe.overlap(vh, r["phash"]), r) for r in db.rows(con, "SELECT * FROM used_footage") if r["source"] != me]
+    # frames inside our own chart segments (studio/charts.py) are original graphics, never "the same footage"
+    segs = (ep.get(script_key) or ep.get("short") or []) if ep else []
+    own = set()
+    if timings and any(isinstance(x, dict) and x.get("chart") for x in segs):
+        starts = [max(0.0, float(t.get("start", 0)) - 0.2) for t in timings if isinstance(t, dict)]
+        for i, x in enumerate(segs[:len(starts)]):
+            if isinstance(x, dict) and x.get("chart"):
+                end = starts[i + 1] if i + 1 < len(starts) else dur
+                own |= {k for k in range(int(dur) + 1) if starts[i] <= k < end}
+    others = [(dedupe.overlap(vh, r["phash"], own=own or None), r) for r in db.rows(con, "SELECT * FROM used_footage")
+              if r["source"] != me]
     msig = dedupe.motion_sig(path) if any(o >= 0.7 for o, _ in others) else None
     dup, look_alike = [], []
     for o, r in others:
         if o >= 0.7:
-            (dup if dedupe.is_repost(vh, r["phash"], msig, r.get("msig")) else look_alike).append(r)
+            (dup if dedupe.is_repost(vh, r["phash"], msig, r.get("msig"), own=own or None) else look_alike).append(r)
     shared = [(o, r) for o, r in others if 0.35 <= o < 0.7]
     if look_alike:
         add("look-alike", "info", "same layout/webcam as " + ", ".join(sorted({r["video_id"] or r["source"] for r in look_alike})[:4])

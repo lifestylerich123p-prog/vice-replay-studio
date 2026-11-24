@@ -127,7 +127,7 @@ def upload_spanish(ep_path, a):
         if val:
             cmd += [flag, str(val)]
     r = run(cmd)
-    lines = [l for l in r.stdout.splitlines() if any(k in l for k in ("uploading", "skip", '"url"', "scheduled_et", "QUOTA"))]
+    lines = [l for l in r.stdout.splitlines() if any(k in l for k in ("uploading", "skip", '"url"', "scheduled_et", "QUOTA", "WAITS"))]
     print("\nSPANISH UPLOAD:\n" + "\n".join(lines))
     if r.returncode:
         print(r.stderr[-1000:])

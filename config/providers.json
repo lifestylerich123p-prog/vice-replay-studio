@@ -26,7 +26,7 @@
     "status": "installed"
   },
   "kokoro": {
-    "use": "narration voice am_michael / em_alex",
+    "use": "narration voice af_heart / em_alex (config/channel.json)",
     "cost": "free, local",
     "status": "installed"
   },

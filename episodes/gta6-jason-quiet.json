@@ -1,0 +1,175 @@
+{
+  "title": "GTA 6's Jason Was Inspired by Steve McQueen",
+  "slug": "gta6-jason-quiet",
+  "series": "Explained",
+  "format": "news",
+  "mood": "night",
+  "use_gameplay": false,
+  "short_title": "GTA 6's Jason was inspired by Steve McQueen #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA 6's Jason was inspired by Steve McQueen #GTA6 #Shorts",
+    "GTA 6's Jason barely talks. Here's why #GTA6 #Shorts",
+    "Why GTA 6's Jason is so quiet (Rockstar) #GTA6 #Shorts"
+  ],
+  "short_description": "Rockstar's senior vice president of narrative, Rupert Humphries, told Destructoid that Jason's quiet style comes from Steve McQueen in Sam Peckinpah's 1972 film The Getaway (McQueen \"was famous for pulling lines out of scripts and saying things with his presence alone\") and from research into Army veterans: \"These guys typically aren't running their mouths.\" No story spoilers.\n\nSources: Destructoid, GamesRadar, PC Gamer (Nov 2026).",
+  "short_es": {
+    "title": "El Jason de GTA 6 está inspirado en STEVE McQUEEN 🎬 #GTA6 #Shorts",
+    "description": "Rupert Humphries, vicepresidente de narrativa de Rockstar, le dijo a Destructoid que el estilo callado de Jason viene de Steve McQueen en The Getaway (1972), \"famoso por quitar líneas de los guiones y decir las cosas solo con su presencia\", y de investigar a veteranos del ejército: \"estos tipos normalmente no andan hablando de más\" (traducido). Sin spoilers.",
+    "tags": [
+      "GTA 6 Jason",
+      "Jason Duval",
+      "GTA 6 personajes",
+      "Steve McQueen",
+      "GTA 6 Rockstar entrevista",
+      "GTA 6 español",
+      "GTA 6 noticias",
+      "GTA VI"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "pinned_comment": "Quiet Jason or loud Trevor? Reply JASON or TREVOR 👇",
+  "short_pinned_comment_es": "¿Jason callado o Trevor ruidoso? Responde JASON o TREVOR 👇",
+  "tags": [
+    "GTA 6 Jason",
+    "Jason Duval",
+    "GTA 6 Jason Duval",
+    "GTA 6 characters",
+    "Steve McQueen",
+    "The Getaway",
+    "Rupert Humphries",
+    "GTA 6 Rockstar interview",
+    "GTA 6 news",
+    "GTA 6",
+    "GTA VI",
+    "Grand Theft Auto VI"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#jasonduval",
+    "#rockstar"
+  ],
+  "sources": [
+    "Destructoid - GTA 6's Jason is nonchalant, and the lead writer says it's because of his 1970s heist movie inspiration (Rupert Humphries email interview): https://www.destructoid.com/gta-6-jason-nonchalant-1970s-heist-movie-inspiration/",
+    "GamesRadar - GTA 6's narrative lead says Jason's reserved demeanor was inspired by a 1972 crime movie and research around veterans: https://www.gamesradar.com/games/grand-theft-auto/gta-6s-narrative-lead-says-jasons-reserved-demeanor-was-inspired-by-a-1972-crime-movie-and-research-we-were-doing-around-veterans/",
+    "PC Gamer - Jason's stoic character was inspired by Steve McQueen and research into Army veterans: 'These guys typically aren't running their mouths': https://www.pcgamer.com/games/grand-theft-auto/jasons-stoic-character-in-grand-theft-auto-6-was-inspired-by-steve-mcqueen-and-research-into-army-veterans-these-guys-typically-arent-running-their-mouths/"
+  ],
+  "short": [
+    {
+      "headline": "JASON'S SECRET: McQUEEN",
+      "headline_es": "EL SECRETO DE JASON",
+      "text": "GTA 6's Jason was inspired by Steve McQueen.",
+      "text_es": "El Jason de GTA 6 está inspirado en Steve McQueen.",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "Jason was inspired by Steve McQueen",
+        "pink": [
+          "Steve",
+          "McQueen"
+        ],
+        "sub": "Rockstar says so",
+        "seed": 13
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "Jason está inspirado en Steve McQueen",
+        "pink": [
+          "Steve",
+          "McQueen"
+        ],
+        "sub": "lo dice Rockstar",
+        "seed": 13
+      },
+      "audio_es": "media/voice/gta6-jason-quiet/es/seg1.wav"
+    },
+    {
+      "headline": "1972: THE GETAWAY",
+      "headline_es": "1972: THE GETAWAY",
+      "text": "Rockstar's narrative boss says they studied his nineteen seventy two movie, The Getaway.",
+      "text_es": "El jefe de narrativa de Rockstar dice que estudiaron su película de mil novecientos setenta y dos, The Getaway.",
+      "keep_media": true,
+      "chart": {
+        "type": "quote",
+        "text": "famous for pulling lines out of scripts and saying things with his presence alone",
+        "pink": [
+          "presence alone"
+        ],
+        "who": "Rupert Humphries, Rockstar, on Steve McQueen (to Destructoid)",
+        "seed": 13,
+        "src": "Destructoid · GamesRadar · PC Gamer"
+      },
+      "chart_es": {
+        "type": "quote",
+        "text": "famoso por quitar líneas de los guiones y decir las cosas solo con su presencia",
+        "pink": [
+          "presencia"
+        ],
+        "who": "Rupert Humphries, Rockstar, sobre Steve McQueen (traducido)",
+        "seed": 13,
+        "src": "Destructoid · GamesRadar · PC Gamer"
+      },
+      "audio_es": "media/voice/gta6-jason-quiet/es/seg2.wav"
+    },
+    {
+      "headline": "+ REAL ARMY VETERANS",
+      "headline_es": "+ VETERANOS REALES",
+      "text": "And real Army veterans. That's why Jason barely talks.",
+      "text_es": "Y a veteranos reales del ejército. Por eso Jason casi no habla.",
+      "keep_media": true,
+      "chart": {
+        "type": "quote",
+        "text": "These guys typically aren't running their mouths",
+        "pink": [
+          "aren't running their mouths"
+        ],
+        "who": "Rupert Humphries, Rockstar, to Destructoid",
+        "seed": 13,
+        "src": "Destructoid · PC Gamer"
+      },
+      "chart_es": {
+        "type": "quote",
+        "text": "Estos tipos normalmente no andan hablando de más",
+        "pink": [
+          "hablando de más"
+        ],
+        "who": "Rupert Humphries, Rockstar (traducido)",
+        "seed": 13,
+        "src": "Destructoid · PC Gamer"
+      },
+      "audio_es": "media/voice/gta6-jason-quiet/es/seg3.wav"
+    },
+    {
+      "headline": "QUIET OR LOUD?",
+      "headline_es": "¿CALLADO O RUIDOSO?",
+      "text": "Quiet hero, or loud like Trevor? Tell me, because",
+      "text_es": "¿Héroe callado, o ruidoso como Trevor? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "Quiet Jason or loud Trevor?",
+        "pink": [
+          "Jason",
+          "Trevor?"
+        ],
+        "seed": 13
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "¿Jason callado o Trevor ruidoso?",
+        "pink": [
+          "Jason",
+          "Trevor"
+        ],
+        "seed": 13
+      },
+      "audio_es": "media/voice/gta6-jason-quiet/es/seg4.wav"
+    }
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)"
+}

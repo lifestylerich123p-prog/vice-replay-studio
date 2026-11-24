@@ -26,8 +26,8 @@ from pathlib import Path
 
 from . import postguard
 from .review_page import extra_time, times_for
-from .youtube_upload import (ET, ROOT, add_to_playlist, comment, req, slot, srt_from_timings, token, upload,
-                             upload_caption, yt_safe)
+from .youtube_upload import (ET, ROOT, add_to_playlist, clean_tags, comment, req, slot, srt_from_timings, token,
+                             shorts_subtitles, token_for, upload, upload_caption, yt_safe)
 
 import os
 
@@ -36,14 +36,18 @@ import os
 ENV = "YT_SPANISH_REFRESH_TOKEN" if os.environ.get("YT_SPANISH_REFRESH_TOKEN") else "YT_ES_REFRESH_TOKEN"
 REGISTRY = ROOT / "content" / "learn" / "uploads-es.json"
 PLAYLIST = "GTA 6 en Español"
+TAGS_ES = ["GTA 6", "GTA 6 español", "GTA 6 en español", "noticias GTA 6", "GTA VI", "Grand Theft Auto VI", "Vice City"]
 NOT_AFFILIATED = "Canal de fans: no afiliado a Rockstar Games ni a Take-Two Interactive."
+EN_LINK = "🇺🇸 Vice Replay en inglés: https://www.youtube.com/@ViceReplayTV-q8s"
+SITE_ES = "🌴 Guías de GTA 6 en español: https://vicereplay.com/es/"
 
 
 DESCRIPTION = (
     "Vice Replay en Español: noticias de GTA 6 cada mañana, en español. Streamers, récords, quizzes, el mapa de Leonida "
     "contra la vida real y los detalles que casi nadie ve. Sin spoilers de la historia.\n\n"
     "Shorts nuevos todos los días. Suscríbete para no perderte nada de Vice City.\n\n"
-    "🌴 Guías en español: vicereplay.com/es/\n📩 Contacto: vicereplay.com/contact/\n\n"
+    "🌴 Guías en español: vicereplay.com/es/\n🎮 Equipo para GTA 6 (Amazon): vicereplay.com/es/equipo/\n"
+    "📩 Contacto: vicereplay.com/contact/\n\n"
     "Canal de fans: no afiliado a Rockstar Games ni a Take-Two Interactive. Las imágenes oficiales pertenecen a sus "
     "dueños y las usamos con comentario propio.")
 KEYWORDS = ['GTA 6', 'GTA VI', 'GTA 6 español', 'noticias GTA 6', 'GTA 6 en español', 'Grand Theft Auto VI', 'Vice City',
@@ -102,6 +106,9 @@ def jobs(ep, approved):
         key = sh.get("id") or "short"
         if "all" not in approved and key not in approved:
             continue
+        if sh.get("replaced_by"):
+            print(f"skip {key}: replaced by {sh['replaced_by']}")
+            continue
         es = sh.get("es") or {}
         if not es.get("title"):
             print(f"skip {key}: no Spanish title in the episode (`short_es` / `es`)")
@@ -111,6 +118,22 @@ def jobs(ep, approved):
     return out
 
 
+def spanish_waits(ep_path):
+    """True when the winners-only rule holds this episode's Spanish version back (Spanish-only Shorts and English
+    Shorts already marked winners in content/learn/approved_queue.json go ahead)."""
+    from . import spend
+    if not spend.winners_rule():
+        return False
+    import json as _json
+    from pathlib import Path as _P
+    slug = _P(ep_path).stem
+    try:
+        items = [i for i in _json.loads(spend.QUEUE.read_text())["items"] if i.get("slug") == slug]
+    except (OSError, ValueError, KeyError):
+        items = []
+    return not items or all(spend.es_waits(i) for i in items)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("episode", help="episodes/<slug>.json, 'whoami', 'brand' or 'comment'")
@@ -118,8 +141,19 @@ def main():
     ap.add_argument("--approve", default="", help="short, news, ... or all (owner approval in chat only)")
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
     ap.add_argument("--at", help='posting time for every item, e.g. "9:30 AM" (ET)')
+    ap.add_argument("--force-es", action="store_true", help="post even if the winners-only rule says wait (owner asks)")
     a = ap.parse_args()
-    tok = token(ENV)
+    if a.approve and a.episode.endswith(".json") and not a.force_es and spanish_waits(a.episode):
+        print(f"SPANISH WAITS: {a.episode}: winners-only rule (owner Nov 23, config/channel.json spanish_winners_only). "
+              "studio.spend books the Spanish version only if the English Short does well in its first 24 h. "
+              "Nothing uploaded (add --force-es only if the owner asks for this one).")
+        return
+    if a.episode == "whoami":  # what the preferred setting holds, exactly
+        cid, title = whoami(token(ENV))
+        print(f"{ENV} belongs to: {title} ({cid})")
+        return
+    es_id = config().get("vice-replay-es", {}).get("channel_id")
+    tok = token_for(es_id, ENV) if es_id else token(ENV)
     if a.episode == "whoami":
         cid, title = whoami(tok)
         print(f"{ENV} belongs to: {title} ({cid})")
@@ -162,8 +196,10 @@ def main():
             continue
         when = a.at or (short_t if key == "short" else news_t if key == "news" else extra_time(day))
         publish_at = slot(day, when)
-        desc = yt_safe((es.get("description") or "").strip() + f"\n\n{NOT_AFFILIATED}")
-        tags = ["GTA 6", "GTA VI", "GTA 6 español", "Grand Theft Auto VI", "Vice City", "Leonida"]
+        desc = yt_safe((es.get("description") or "").strip() + f"\n\n{SITE_ES}\n{EN_LINK}\n\n{NOT_AFFILIATED}")
+        # the topic's own Spanish tags first (es.tags / tags_es), then the channel basics (Nov 22: every Spanish
+        # upload had the same 6 generic tags)
+        tags = clean_tags(es.get("tags") or ep.get("tags_es"), base=TAGS_ES)
         print(f"uploading {key} (es): {title} -> {'now' if not publish_at else when + ' ET'}")
         v = upload(tok, video, title, desc, tags, publish_at, lang="es")
         vid = v["id"]
@@ -173,7 +209,8 @@ def main():
         reg[vid] = {"slug": slug, "item": key, "title": title, "uploaded": dt.datetime.now(dt.timezone.utc).isoformat()[:19]}
         REGISTRY.write_text(json.dumps(reg, indent=1, ensure_ascii=False))
         srt = srt_from_timings(out / f"{name}.timings.json", "text")
-        for step, fn in (("subtitles", lambda: srt and upload_caption(tok, vid, srt, lang="es", name="Español")),
+        for step, fn in (("subtitles", lambda: srt and shorts_subtitles() and upload_caption(tok, vid, srt, lang="es",
+                                                                                         name="Español")),
                          ("playlist", lambda: add_to_playlist(tok, vid, PLAYLIST)),
                          ("comment", lambda: pin and not publish_at and comment(tok, vid, pin))):
             try:

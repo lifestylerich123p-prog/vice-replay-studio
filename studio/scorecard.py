@@ -89,6 +89,47 @@ def tags(v):
     return out
 
 
+def script_tags(vid, ups):
+    """What the episode file says about a Short we made (Nov 22): its picture (our own `chart` graphics, owner
+    gameplay, or trailer/screenshot footage only) and whether its first sentence is a question. This is the test of the
+    Nov 22 switch to graph Shorts (YouTube's Oct 2026 originality update) and of the "statement, not question" hook."""
+    u = ups.get(vid) or {}
+    try:
+        ep = json.loads((ROOT / "episodes" / f"{u['slug']}.json").read_text())
+    except (OSError, ValueError, KeyError):
+        return {}
+    item = u.get("item")
+    segs = ep.get("short") if item == "short" else next(
+        (x.get("segments") for x in ep.get("shorts", []) if x.get("id") == item), None)
+    if not segs:
+        return {}
+    media = json.dumps(segs)
+    charts = [x.get("chart") for x in segs if x.get("chart")]
+    vice = "vice" in str(ep.get("style", "")) or any(
+        c.get("type") in VICE_TYPES or c.get("bg") == "vice" for c in charts)
+    pic = ("lettering cards" if charts and vice and len(charts) == len(segs) else
+           "graph (older charts)" if charts else
+           "owner gameplay" if "media/gameplay" in media else "trailer/screenshots")
+    first = re.split(r"(?<=[.?!])\s", (segs[0].get("text") or "").strip())[0]
+    return {"picture": pic, "opener": "question" if first.endswith("?") else "statement", "card": card_type(charts)}
+
+
+VICE_TYPES = {"kinetic", "countdown", "versus", "tier", "headline", "meter"}
+# Groups we no longer make: shown in the tables for the record, never turned into "DO MORE" advice (Nov 23).
+RETIRED = {("picture", "trailer/screenshots"): "no trailer images in any video since Nov 23 (owner)",
+           ("kind", "campaign clip"): "campaign clips post on ClipCircuit since Nov 20 (owner)",
+           ("format", "campaign clip"): "campaign clips post on ClipCircuit since Nov 20 (owner)"}
+LAUNCH_END = dt.datetime(2026, 11, 22, 5, 0, tzinfo=dt.timezone.utc)  # launch-week traffic lifted everything before
+
+
+def card_type(charts):
+    """The Short's main card: the most used chart type other than the kinetic hook/question cards (Nov 23)."""
+    kinds = [c.get("type", "?") for c in charts if c.get("type") not in ("kinetic", "text")]
+    if not kinds:
+        return "kinetic only" if charts else "-"
+    return max(dict.fromkeys(kinds), key=kinds.count)
+
+
 def med(xs):
     xs = [x for x in xs if x is not None]
     return round(statistics.median(xs), 1) if xs else None
@@ -100,6 +141,10 @@ def build():
     if (LEARN / "analytics.json").exists():
         ana = {r["video"]: r for r in json.loads((LEARN / "analytics.json").read_text()).get("videos", [])}
     hist = load_history()
+    try:
+        ups = json.loads((LEARN / "uploads.json").read_text())
+    except (OSError, ValueError):
+        ups = {}
     now = ts(snap["checked"])
     rows = []
     for v in snap["videos"]:
@@ -107,7 +152,11 @@ def build():
             continue
         pub = ts(v["published"])
         age = (now - pub).total_seconds() / 3600
-        r = {**v, **tags(v), "age_h": round(age, 1),
+        extra = script_tags(v["id"], ups) if "campaign" not in tags(v)["kind"] else {}
+        r = {**v, **tags(v), "picture": extra.get("picture", "-"), "opener": extra.get("opener", "-"),
+             "card": extra.get("card", "-"), "era": "launch week" if pub < LAUNCH_END else "after launch",
+             "age_h": round(age, 1),
+             "v3": views_at(hist, v["id"], pub, hours=3, slack=2) if age >= 3 else None,
              "v24": views_at(hist, v["id"], pub) if age >= 24 else None,
              "pct": ana.get(v["id"], {}).get("averageViewPercentage")}
         rows.append(r)
@@ -117,15 +166,23 @@ def build():
              "of the Short watched (YouTube Analytics, a few days behind). Medians per group; n = number of Shorts.", ""]
     overall = med([r["views_per_hour"] for r in rows])
     advice = []
-    for key in ("format", "kind", "hook", "length", "slot (ET)"):
+    for key in ("era", "picture", "card", "format", "kind", "opener", "hook", "length", "slot (ET)"):
         groups = {}
         for r in rows:
+            if r[key] == "-":  # campaign clips / Shorts without an episode file: no picture/opener tag
+                continue
             groups.setdefault(r[key], []).append(r)
-        lines += [f"## By {key}", "", "| Group | n | median v/h | median 24 h views | median watched |", "|---|---|---|---|---|"]
+        lines += [f"## By {key}", "", "| Group | n | median v/h | median 3 h views | median 24 h views | median watched |",
+                  "|---|---|---|---|---|---|"]
         for g, rs in sorted(groups.items(), key=lambda kv: -(med([r["views_per_hour"] for r in kv[1]]) or 0)):
             m = med([r["views_per_hour"] for r in rs])
-            lines.append(f"| {g} | {len(rs)} | {m} | {med([r['v24'] for r in rs]) or '-'} | "
+            retired = RETIRED.get((key, g))
+            lines.append(f"| {g}{' (retired)' if retired else ''} | {len(rs)} | {m} | "
+                         f"{med([r['v3'] for r in rs]) if med([r['v3'] for r in rs]) is not None else '-'} | "
+                         f"{med([r['v24'] for r in rs]) or '-'} | "
                          f"{(str(med([r['pct'] for r in rs])) + '%') if med([r['pct'] for r in rs]) else '-'} |")
+            if retired or key == "era":
+                continue
             if len(rs) >= 3 and overall and m is not None:
                 if m >= 1.5 * overall:
                     advice.append(f"DO MORE: {key} = {g} (median {m} v/h vs {overall} overall, n={len(rs)})")
@@ -134,10 +191,18 @@ def build():
         lines.append("")
     best = sorted(rows, key=lambda r: -r["views_per_hour"])
     fmt = lambda r: (f"- {r['views_per_hour']} v/h, {r['views']:,} views, 24 h: {r['v24'] if r['v24'] is not None else '-'}"
-                     f" · {r['kind']}, {r['hook']}, {r['length']} · {r['title'][:70]}")
+                     f" · {r['picture'] if r['picture'] != '-' else r['kind']}"
+                     f"{', ' + r['card'] if r['card'] not in ('-',) else ''}, {r['hook']}, {r['length']} · {r['title'][:70]}")
     lines += ["## Best 5", ""] + [fmt(r) for r in best[:5]] + ["", "## Worst 5 (older than 24 h)", ""]
     lines += [fmt(r) for r in [r for r in best if r["age_h"] >= 24][-5:]] + [""]
-    lines += ["## Auto advice", ""] + ([f"- {a}" for a in advice] or ["- Not enough Shorts per group yet."]) + [""]
+    new_era = [r for r in rows if r["picture"] == "lettering cards"]
+    if new_era:
+        lines += ["## Lettering cards so far (the Nov 23 style), fastest first", ""]
+        lines += [fmt(r) + f" · 3 h: {r['v3'] if r['v3'] is not None else '-'}"
+                  for r in sorted(new_era, key=lambda r: -r["views_per_hour"])] + [""]
+    lines += ["## Auto advice", ""] + ([f"- {a}" for a in advice] or ["- Not enough Shorts per group yet."])
+    lines += ["- Ignored (we don't make these anymore): " + "; ".join(sorted(set(RETIRED.values()))),
+              "- Launch week (before Nov 22) lifted every Short: compare formats within \"after launch\" when n allows.", ""]
     (LEARN / "scorecard.md").write_text("\n".join(lines))
     print("Scorecard: content/learn/scorecard.md" + ("".join(f"\n  {a}" for a in advice)))
 

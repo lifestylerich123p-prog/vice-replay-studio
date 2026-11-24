@@ -9,6 +9,9 @@ What it does:
 - media/gameplay/raw/: removes downloaded recordings older than 14 days (their highlights stay in media/gameplay/).
 - content/learn/market-*.md: keeps the newest 14, moves older ones to content/archive/learn/.
 - site/live.json: keeps the newest 40 updates.
+- YouTube API data about other channels (market-*.md, research/competitors/, competitor tables + API cache in
+  database/vice.db) is deleted after 30 days (YouTube API Services Developer Policies: refresh or delete
+  non-authorized data within 30 days). Our own channels' numbers are kept.
 - __pycache__ folders and stray .DS_Store files.
 - Footage: once the owner's own gameplay reaches GAMEPLAY_TARGET highlights in media/gameplay/, retires the stock
   library: trailer clips and screenshots go to media/_retired/ (not committed; re-downloadable from
@@ -20,6 +23,7 @@ What it does:
 import argparse
 import json
 import re
+import subprocess
 import shutil
 import time
 from pathlib import Path
@@ -33,6 +37,45 @@ def age_days(p):
 
 
 GAMEPLAY_TARGET = 30
+
+
+RETENTION_DAYS = 30  # YouTube API Services Developer Policies: other channels' data is refreshed or deleted within 30 days
+
+
+def youtube_retention(dry, gone, today=None):
+    """Delete YouTube API data about OTHER channels older than 30 days (Nov 23, before the quota-extension audit):
+    dated research files (market-*.md, market-es-*.md, research/competitors/*-YYYY-MM-DD.*, their archive copies)
+    and the competitor/API-cache rows in database/vice.db. Our own channels' data (authorized) is not touched."""
+    import datetime as dt
+    import re
+    import sqlite3
+    today = today or dt.date.today()
+    cutoff = today - dt.timedelta(days=RETENTION_DAYS)
+    files = []
+    for folder, pat in ((ROOT / "content" / "learn", "market-*.md"), (ROOT / "content" / "archive" / "learn", "market-*.md"),
+                        (ROOT / "research" / "competitors", "*")):
+        files += [f for f in folder.glob(pat) if f.is_file()] if folder.exists() else []
+    for f in files:
+        m = re.search(r"(\d{4}-\d{2}-\d{2})", f.name)
+        if m and dt.date.fromisoformat(m.group(1)) < cutoff:
+            gone.append(f"{f.relative_to(ROOT)} (other channels' YouTube data, over {RETENTION_DAYS} days)")
+            if not dry:
+                f.unlink()
+    db = ROOT / "database" / "vice.db"
+    if db.exists():
+        con = sqlite3.connect(db)
+        stamp = cutoff.isoformat()
+        for table in ("competitor_videos", "competitor_channels", "cache"):
+            try:
+                n = con.execute(f"SELECT COUNT(*) FROM {table} WHERE fetched_at < ?", (stamp,)).fetchone()[0]
+            except sqlite3.OperationalError:
+                continue
+            if n:
+                gone.append(f"database/vice.db {table}: {n} rows over {RETENTION_DAYS} days")
+                if not dry:
+                    con.execute(f"DELETE FROM {table} WHERE fetched_at < ?", (stamp,))
+        con.commit()
+        con.close()
 
 
 def retire_stock(dry, gone):
@@ -128,6 +171,7 @@ def clean(dry):
             gone.append(f"site/live.json: {len(items) - 40} old updates")
             if not dry:
                 live.write_text(json.dumps(items[:40], ensure_ascii=False, indent=1))
+    youtube_retention(dry, gone)
     retire_stock(dry, gone)
     for p in list(ROOT.rglob("__pycache__")) + list(ROOT.rglob(".DS_Store")):
         if ".git" not in p.parts and p.exists():
@@ -142,6 +186,22 @@ def episode_rows():
         cells = [c.strip() for c in line.strip("|").split("|")]
         if len(cells) >= 2 and re.match(r"\d{4}-\d{2}-\d{2}", cells[0]):
             dates.setdefault(cells[1], cells[0])
+    # Episodes the log doesn't name (made in a batch, or in a helper chat): the day the file entered git.
+    try:
+        added = subprocess.run(["git", "log", "--diff-filter=A", "--format=@%as", "--name-only", "--", "episodes/"],
+                               cwd=ROOT, capture_output=True, text=True, timeout=30).stdout
+    except (OSError, subprocess.SubprocessError):
+        added = ""
+    first, day = {}, None
+    for line in added.splitlines():
+        if line.startswith("@"):
+            day = line[1:]
+        elif line.endswith(".json") and day:
+            first[Path(line).stem] = day  # git log runs newest first, so the last one seen is the first add
+    for slug, d in first.items():
+        dates.setdefault(slug, d)
+    reg_f = ROOT / "content" / "learn" / "uploads.json"
+    reg = json.loads(reg_f.read_text()) if reg_f.exists() else {}
     rows = []
     for f in sorted((ROOT / "episodes").glob("*.json")):
         try:
@@ -153,7 +213,8 @@ def episode_rows():
         ids = ""
         if up.exists():
             done = json.loads(up.read_text())
-            ids = ", ".join(f"{k}: {v['id']}" for k, v in done.items() if isinstance(v, dict) and v.get("id"))
+            ids = ", ".join(f"{k}: {v['id']}" + (" (private)" if reg.get(v["id"], {}).get("hidden") else "")
+                            for k, v in done.items() if isinstance(v, dict) and v.get("id"))
         kind = "video" if ep.get("segments") else "Short"
         rows.append((dates.get(slug, "?"), slug, kind, ep.get("title", ""), ids or "-"))
     return sorted(rows, reverse=True)
@@ -195,6 +256,11 @@ def write_index():
              "- Channels (Vice Replay / ClipCircuit / What If Arena, who does what): `content/channels.md` (Drive copy: Creator HQ)",
              "- Learning: `content/learn/scorecard.md` (fair 24 h numbers, DO MORE / DO LESS), `content/learn/ideas.md` (researched next topics), "
              "`history.jsonl` (view snapshots) · fresh streamer moments: `python -m studio.moments <name>`",
+             "- How a Short is built (Nov 22): own `chart` graphics (`studio/charts.py`: bars, counter, line, quote) or owner gameplay, "
+             "statement hook, 35-55 words: `content/episode-format.md` · hook data `content/learn/hooks-2026-11-22.md` · "
+             "pre-upload check `python -m studio.vice publish` · 48 h flop review `python -m studio.flops`",
+             "- Spanish channel (Vice Replay en Español): `content/spanish-channel.md`, registry `content/learn/uploads-es.json`, "
+             "`studio/youtube_es.py` · both home pages: `python -m studio.channel_layout` · tags on old videos: `python -m studio.retag`",
              "- Reference pack (playbooks, hooks, topic bank): `resources/README.md` (channel rules win over it)",
              "- Finished one-off files: `content/archive/`", "",
              "## Episodes (newest first)", "| Date | Slug | Kind | Title | YouTube ids |", "|---|---|---|---|---|"]

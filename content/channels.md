@@ -26,9 +26,11 @@ Checked Nov 20, 2026 on the owner's Everygen billing page and the account API:
 ## The channels
 
 ### Vice Replay: GTA 6 channel + makes all GTA 6 campaign clips (posted on ClipCircuit)
-- What: GTA 6 news, guides and tips (Shorts + long videos), website vicereplay.com (EN/ES guides), Amazon
-  Associates (tag vicereplay-20), and every GTA 6 clipping campaign (Lacy, KreekCraft, any GTA 6 campaign).
-- Where: YouTube @ViceReplayTV-q8s · Instagram @vice.replaytv · TikTok (owner posts by hand) · vicereplay.com.
+- What: GTA 6 news Shorts built on our own graphs of checked numbers (Nov 22: original-first), one weekly recap
+  video on Sundays, website vicereplay.com (EN/ES guides), Amazon Associates (tag vicereplay-20), and every GTA 6
+  clipping campaign (Lacy, KreekCraft, any GTA 6 campaign).
+- Where: YouTube @ViceReplayTV-q8s + Spanish sister channel "Vice Replay en Español" (UCWPnqYqYu9_CLsJ8Bk1MPgQ, Nov 22)
+  · Instagram @vice.replaytv · TikTok (owner posts by hand) · vicereplay.com.
 - Chat: "Vice Replay: GTA 6 channel + GTA 6 clipping (main control)" (Claude Code cloud; repo lifestylerich123p-prog/vice-replay-studio)
   plus "Vice Replay: TikTok files".
 - Data: repo `content/` (campaigns/tracker.md, learn/), Drive folders "Vice Replay Gameplay" and
@@ -63,6 +65,12 @@ Checked Nov 20, 2026 on the owner's Everygen billing page and the account API:
 - YouTube: many near-identical streamer clips in one day get suppressed. Max 2 campaign clips a day per channel,
   fresh moments only (not the moment every clipper already posted).
 - Never paste passwords, tokens or keys in any chat.
+- YouTube API (updated Nov 22, night): each side has its OWN Google Cloud project and daily quota. Vice Replay +
+  Vice Replay en Español: project "Vice Replay" (ID what-if-arena, renamed from "What If Arena"), OAuth app "Creator HQ",
+  client "Vice Replay uploader". What If Arena: its own project "What If Arena API" (own client; reconnected Nov 22).
+  Both apps are published (In production), so keys don't expire after 7 days; branding uses vicereplay.com, /privacy/
+  and /terms/. Each channel's key lives only in its own chat's settings. Don't delete OAuth clients without checking
+  which chat uses them (the old What If Arena client in the Vice Replay project stays about a week as a backup).
 
 ## What works (shared lessons)
 - 8-16 s clips get ~7x the views per hour of 20-30 s clips (307 Lacy GTA 6 Shorts, Nov 18-19).
@@ -74,6 +82,17 @@ Checked Nov 20, 2026 on the owner's Everygen billing page and the account API:
   small channels; per-view campaigns ($1-2 per 1K views, $3 minimum) pay from the first few thousand views.
   Vendor data: clippers average ~$0.39 per 1K views after fees.
 - Before cutting a streamer clip, check what's already clipped (Vice Replay: `python -m studio.moments <name>`).
+- **Originality (Nov 22, all channels)**: YouTube's Oct 1, 2026 Shorts update ranks original Shorts higher and says
+  voice-over on reused footage isn't original; it's judged channel-wide. Vice Replay now builds Shorts on its own
+  animated graphs (or owner gameplay); clip channels should add real edits/commentary, never plain reposts.
+- **Hooks (Vice Replay data, 20 Shorts)**: first sentence = the surprising result as a statement (kept 60% of viewers)
+  vs a question (35%); a number on screen in the first second; 13-20 s; posted 6 AM-12:30 PM ET (median 16 views/h vs
+  2.7 for 2-6 PM). Long videos on a new channel got a median 14 views: Shorts first.
+- **Flops get hidden, never deleted** (owner, Nov 22): under 50 views after 48 h -> private (reversible), lesson logged.
+- **Titles**: never "#1" or "#8" in a YouTube title: YouTube turns it into a clickable hashtag. Write "No. 1".
+- **Monetization deadline (all channels)**: the YouTube Partner Program entry bar doubles for new channels on Feb 1,
+  2027 (1,000 subscribers + 8,000 watch hours in a year or 20 million Shorts views in 90 days; today 4,000 / 10
+  million). A channel already in YPP keeps its status. Source: support.google.com/youtube/answer/12843009.
 
 ## Campaign inbox
 | Campaign | Channel | Status |
@@ -84,6 +103,17 @@ Checked Nov 20, 2026 on the owner's Everygen billing page and the account API:
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-23 (evening) · Vice Replay · Everygen: 30 credits (Viral Adam, 1 per line) for 5 more owner-approved Spanish Shorts: the 7 patch-note fixes, Tier List #2 (sales), top 3 rides, GTA 6 vs Red Dead 2 and the cities quiz (one glitched line redone). Vice Replay's Everygen total today: 117; since Nov 19 about 157, just over its ~150 share. From now on Vice Replay spends less: the owner approved "Spanish winners-only" (a Spanish version, and its voice, only for English Shorts that do well in their first 24 h). Balance not re-checked in this chat.
+- 2026-11-23 · Vice Replay · Everygen: +12 credits (Viral Adam) for two new Spanish Shorts: the GTA 6 launch quiz and the Spanish-only "GTA 6 no tiene doblaje". Vice Replay's Everygen total today: 87 credits (10 Cuban Short + 65 queued Spanish Shorts + 12).
+- 2026-11-23 · Vice Replay · Everygen: 65 credits for Spanish voiceovers (Viral Adam, 1 credit per line) on all 14 queued Spanish Shorts (owner "all"): the free Spanish voice mispronounced some lines. Vice Replay's Everygen total today: 75 credits (10 Cuban Short + 65 now).
+- 2026-11-23 · Vice Replay · Everygen: 10 credits for 2 Spanish voiceovers (5 lines each, Pham and Viral Adam) for the Cuban-style Short on Vice Replay en Español (owner: "use everygen"). About 1 credit per line of up to ~70 characters. The renderer takes a ready-made voice file per segment ("audio" / "audio_es").
+- 2026-11-23 · Vice Replay · vidIQ: 10 credits (outliers + trending for GTA 6 Shorts); balance 0 until Dec 15. Working this week: numbered "5 things you didn't know" listicles, "catch" hooks, "GTA 6 vs GTA 5" comparisons, short memes/POV. Full report: content/learn/market-2026-11-23.md.
+- 2026-11-22 (night) · Vice Replay · Owner renamed the old Cloud project to "Vice Replay" (ID stays what-if-arena). Both Vice Replay keys re-checked after the rename: OK.
+- 2026-11-22 (night) · What If Arena (logged by Vice Replay; WIA's Docs connector can't edit the shared doc) · YouTube reconnected for What If Arena on its own project "What If Arena API"; login confirmed; old client/token backed up in its secrets folder. Quotas are now separate.
+- 2026-11-22 (night) · Vice Replay · Owner created the Cloud project "What If Arena API" (API on, app published, Desktop client downloaded). What If Arena chat: reconnect with that client file and log it here. Vice Replay keys checked: still fine on the old project.
+- 2026-11-22 · Vice Replay · YouTube quota ran out at 7:02 PM ET (one Cloud project for all 3 channels). Plan: What If Arena gets its OWN Cloud project (steps: content/youtube-quota-plan.md); Vice Replay keeps the old one. Spanish subtitle track dropped on English Shorts (saves 400 units each).
+- 2026-11-22 · Vice Replay · YouTube Partner Program bar doubles for NEW channels on Feb 1, 2027 (1,000 subs + 8,000 watch hours in 365 days or 20M Shorts views in 90 days). Already in YPP = unaffected. Each channel close to today's bar should push to qualify before Feb 1.
+- 2026-11-22 · Vice Replay · Google app "Creator HQ" (shared Cloud project "What If Arena") is published: keys no longer expire after 7 days; What If Arena: reconnect once (Testing-era key expires ~Nov 24). Shared lessons added (originality update, statement hooks, morning posts, hide-not-delete, no "#1" in titles). Vice Replay en Español launched. No Everygen spends.
 - 2026-11-20 · Vice Replay · Everygen: 32 credits (14 for 7 thumbnail backgrounds and 8 for 4 Instagram 4:5 cards, Nano Banana 2; 10 for a 5-second neon intro sting, Kling 3.0 Turbo). Balance 579 after. Between about 5:40 and 6:45 PM ET the balance also fell by about 370 credits that Vice Replay did not spend: other chats, please log your spends here so the split stays on track.
 - 2026-11-20 · Vice Replay · System update for all chats. (1) Everygen download_video is free; keep YouTube parts to about 20 s per call. (2) Vice Replay's new clip tools for GTA 6 campaign clips (for ClipCircuit): automatic webcam-on-top framing, captions checked before release, required logos kept visible, and a repost check that blocks re-posting the same footage in any re-edit. (3) Owner rule: check all facts right before posting. (4) KreekCraft has no GTA 6 replays on YouTube yet: a Twitch link is needed. (5) Lacy's pool needs a 100+ follower account. Everygen balance 981.
 - 2026-11-20 · Vice Replay · This is now the Channel Map: the Nov 19 copy was renamed "OLD Channel Map (Nov 19)". The Google Docs connector is connected, so from now on this file is edited in place and its link stays the same. Everygen balance 981, no new spends.

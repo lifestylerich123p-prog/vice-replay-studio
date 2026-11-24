@@ -21,3 +21,6 @@ reports/jobs/
 
 # campaign stream footage (streamer's content; used only for that campaign, never committed)
 media/campaign/
+
+# Personal Claude Code settings (owner Nov 23: Everygen auto-approve for now)
+.claude/settings.local.json

@@ -145,70 +145,209 @@
  {
   "at": "2026-11-22 12:00",
   "episode": "episodes/gta6-streaming-record.json",
-  "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Sun so Sat's BF Reel isn't 5 min after it"
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Sun so Sat's BF Reel isn't 5 min after it",
+  "posted": "https://www.instagram.com/reel/DgDSyaEjcuH/",
+  "posted_at": "2026-11-22 12:00"
  },
  {
   "at": "2026-11-22 15:00",
   "episode": "episodes/gta6-first-to-finish.json",
   "item": "short",
-  "note": "replaced the stale launch-day survival-guide Reel (servers/settings, launch was Nov 19) with the BrycexD Short"
- },
- {
-  "at": "2026-11-22 17:30",
-  "episode": "episodes/gta6-race-hud-details.json",
-  "item": "short",
-  "note": "17:30 keeps Sunday's posts 2.5 h+ apart"
+  "note": "replaced the stale launch-day survival-guide Reel (servers/settings, launch was Nov 19) with the BrycexD Short",
+  "posted": "https://www.instagram.com/reel/DgDnkCzmVD1/",
+  "posted_at": "2026-11-22 15:00"
  },
  {
   "at": "2026-11-22 20:30",
-  "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
+  "episode": "episodes/gta6-this-week-launch.json",
   "item": "news",
-  "note": "moved to Sun 8:30 PM: Sat 4:05 PM went to the 'has anyone finished' Reel (4/day cap, 2.5 h apart)"
+  "note": "IShowSpeed top-3 streams Reel (YouTube Sun 7:30 PM); took Sunday's 8:30 PM slot (4/day cap): fresher numbers than the tips Reel",
+  "posted": "https://www.instagram.com/reel/DgENd5BlEel/",
+  "posted_at": "2026-11-22 20:33"
+ },
+ {
+  "at": "2026-11-23 09:05",
+  "episode": "episodes/gta6-update-no-patch-notes.json",
+  "item": "short",
+  "posted": "https://www.instagram.com/reel/DgFkUL-gSns/",
+  "posted_at": "2026-11-23 09:12"
+ },
+ {
+  "at": "2026-11-23 11:05",
+  "episode": "episodes/gta6-no-darts.json",
+  "item": "short",
+  "posted": "https://www.instagram.com/reel/DgF83t1CFDm/",
+  "posted_at": "2026-11-23 12:46"
  },
  {
   "at": "2026-11-23 12:35",
   "episode": "episodes/gta6-ranking-rides.json",
-  "item": "short"
+  "item": "short",
+  "posted": "skipped: YouTube Short unscheduled Nov 22 (39 s; owner OK to re-cut ~18 s); Lucia outfits Reel takes Mon 12:35"
+ },
+ {
+  "at": "2026-11-23 12:35",
+  "episode": "episodes/gta6-lucia-outfits.json",
+  "item": "short",
+  "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
+ },
+ {
+  "at": "2026-11-23 12:35",
+  "episode": "episodes/gta6-tier-list-critics.json",
+  "item": "short",
+  "posted": "https://www.instagram.com/reel/DgF9B7Xkv0n/",
+  "posted_at": "2026-11-23 12:48"
  },
  {
   "at": "2026-11-23 15:05",
   "carousel": "content/carousels/gta6-not-enough-space.json",
-  "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Mon: Sat now has BF 11:05 + comparison 13:35; 15:05 keeps 2.5 h after the 12:35 ranking Reel"
+  "note": "moved: Meta ad restriction, slowing to max 4 posts/day; moved to Mon: Sat now has BF 11:05 + comparison 13:35; 15:05 keeps 2.5 h after the 12:35 ranking Reel",
+  "posted": "https://www.instagram.com/p/DgGM9vPFGEk/",
+  "posted_at": "2026-11-23 15:06"
  },
  {
   "at": "2026-11-23 17:35",
   "episode": "episodes/gta6-video-store-closing.json",
   "item": "short",
-  "note": "moved to Mon 5:35 PM: Nov 20 already had 4 posts (cap); 2.5 h after the 15:05 carousel"
+  "note": "moved to Mon 5:35 PM: Nov 20 already had 4 posts (cap); 2.5 h after the 15:05 carousel",
+  "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
  },
  {
   "at": "2026-11-23 20:05",
   "episode": "episodes/gta6-ultimate-edition-shops.json",
   "item": "short",
-  "note": "Black Friday week: the Ultimate Edition Short is timelier than the easy-mode one"
+  "note": "Black Friday week: the Ultimate Edition Short is timelier than the easy-mode one",
+  "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
+ },
+ {
+  "at": "2026-11-24 08:05",
+  "episode": "episodes/gta6-patch-notes-7-fixes.json",
+  "item": "short",
+  "posted": "skipped: the Wed Nov 25 3 PM carousel covers the 7 fixes (Instagram 4/day cap on Tue)"
+ },
+ {
+  "at": "2026-11-24 09:35",
+  "episode": "episodes/gta-tier-list-sales.json",
+  "item": "short"
+ },
+ {
+  "at": "2026-11-24 11:05",
+  "episode": "episodes/gta6-cheapest-gta-inflation.json",
+  "item": "short"
  },
  {
   "at": "2026-11-24 12:00",
   "episode": "episodes/gta6-storage-full.json",
-  "note": "moved to Tue: Sunday has 4 posts (4/day cap)"
+  "note": "moved to Tue: Sunday has 4 posts (4/day cap)",
+  "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
+ },
+ {
+  "at": "2026-11-24 12:35",
+  "episode": "episodes/gta6-99-club.json",
+  "item": "short"
  },
  {
   "at": "2026-11-24 14:30",
   "episode": "episodes/gta6-how-long-to-beat.json",
   "item": "tips",
-  "note": "easy-mode Short, moved from Mon 20:05; 2.5 h after Tue 12:00"
+  "note": "easy-mode Short, moved from Mon 20:05; 2.5 h after Tue 12:00",
+  "posted": "skipped: YouTube Short unscheduled Nov 22 (owner: replace weak ones with graph/evidence Shorts)"
+ },
+ {
+  "at": "2026-11-24 14:30",
+  "carousel": "content/carousels/gta-quiz-5.json",
+  "note": "GTA knowledge quiz carousel (owner Nov 22 evening: quiz posts that test knowledge); fires with the Tue 2:30 PM IG reminder"
  },
  {
   "at": "2026-11-24 17:00",
   "episode": "episodes/gta6-guess-the-ride.json",
   "item": "short",
-  "note": "quiz Short (YouTube Mon 11 AM); Mon IG was full"
+  "note": "quiz Short (YouTube Mon 11 AM); Mon IG was full",
+  "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
  },
  {
   "at": "2026-11-24 19:30",
   "episode": "episodes/gta6-map-is-florida.json",
   "item": "short",
-  "note": "map vs Florida Short (YouTube Tue 11 AM)"
+  "note": "map vs Florida Short (YouTube Tue 11 AM)",
+  "posted": "skipped: YouTube Short unscheduled Nov 22 (replaced by the inflation graph Short)"
+ },
+ {
+  "at": "2026-11-25 08:05",
+  "episode": "episodes/gta6-first-platinum.json",
+  "item": "short"
+ },
+ {
+  "at": "2026-11-25 09:35",
+  "episode": "episodes/gta6-vs-gta5-fps.json",
+  "item": "short"
+ },
+ {
+  "at": "2026-11-25 11:05",
+  "episode": "episodes/gta6-black-friday-no-discount.json",
+  "item": "short"
+ },
+ {
+  "at": "2026-11-25 12:00",
+  "episode": "episodes/gta6-dexter-apartment.json",
+  "item": "short",
+  "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
+ },
+ {
+  "at": "2026-11-28 17:30",
+  "episode": "episodes/gta6-trailer-views.json",
+  "item": "short",
+  "note": "moved from Wed 12:35: Wed had 5 posts (4/day cap); Sat has 3"
+ },
+ {
+  "at": "2026-11-25 15:00",
+  "episode": "episodes/gta6-no-60fps-ps5-pro.json",
+  "item": "short",
+  "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
+ },
+ {
+  "at": "2026-11-25 15:00",
+  "carousel": "content/carousels/gta6-patch-notes-7-fixes.json",
+  "note": "Nov 23: patch notes 1.002.002, 7 fixes (news; the Wed 3 PM queue run posts it)"
+ },
+ {
+  "at": "2026-11-25 17:30",
+  "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
+  "item": "news",
+  "note": "moved to Wed 5:30 PM: Sunday 8:30 PM went to the IShowSpeed top-3 Reel (4/day cap)",
+  "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
+ },
+ {
+  "at": "2026-11-26 11:05",
+  "episode": "episodes/gta6-race-hud-details.json",
+  "item": "short",
+  "note": "17:30 keeps Sunday's posts 2.5 h+ apart | moved Nov 22 to Thu 11:05 AM with the YouTube Short (5 PM slot data: 2-6 PM median 2.7 v/h vs 6-11 AM 16)",
+  "posted": "skipped: YouTube Short unscheduled Nov 22 (owner: replace weak ones with graph/evidence Shorts)"
+ },
+ {
+  "at": "2026-11-26 15:00",
+  "carousel": "content/carousels/gta-tier-list-sales.json",
+  "note": "Nov 23: every GTA ranked by sales (Thanksgiving afternoon)"
+ },
+ {
+  "at": "2026-11-27 15:00",
+  "carousel": "content/carousels/goodbye-gta-5.json",
+  "note": "Goodbye GTA 5: 13 years in numbers (farewell-to-GTA-5 trend; pairs with the 13-years Short at 9:30 AM) | moved Nov 23 to 3 PM: Friday's 9:35/11:05/12:35 Reels left no room at noon"
+ },
+ {
+  "at": "2026-11-28 15:00",
+  "carousel": "content/carousels/gta-tier-list-critics.json",
+  "note": "Nov 23 (owner \"1,2,4\": carousels in the new lettering style): every GTA ranked by Metacritic; 5 days after the tier-list Reel"
+ },
+ {
+  "at": "2026-11-29 16:00",
+  "carousel": "content/carousels/gta6-week-one-numbers.json",
+  "note": "Nov 23: teaser for the Sunday hub video (GTA 6 in 10 Numbers, 3:30 PM): post only once that video is public"
+ },
+ {
+  "at": "2026-12-06 16:00",
+  "carousel": "content/carousels/gta6-game-awards-odds.json",
+  "note": "Nov 23: odds carousel for the Game Awards long video (3:30 PM): post only once that video is public"
  },
  {
   "at": "2026-12-31 23:59",

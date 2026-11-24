@@ -5,11 +5,13 @@ SITE = os.environ.get("VICEREPLAY_SITE") or os.path.join(os.path.dirname(os.path
 DOMAIN = "https://vicereplay.com"
 TAG = "vicereplay-20"
 YT = "https://www.youtube.com/@vicereplaytv-q8s"
+YT_ES = "https://www.youtube.com/channel/UCWPnqYqYu9_CLsJ8Bk1MPgQ"  # Vice Replay en Español
 import re as _re
 # Deals shown as direct Amazon buttons on the links page (bio link) and the homepage. Update prices here when they
-# change (checked Nov 20, 2026: Kotaku/Gizmodo DualSense $54; TechRadar/Shattered Pulse Elite ~$110).
-DEALS_CHECKED = "Nov 20"
-DEALS = [("🎮 PS5 DualSense controller: $54.99", "usually $74 · the best GTA 6 deal this week", "PS5 DualSense wireless controller"),
+# change (checked Nov 24, 2026: Kotaku/Gamerant DualSense $54; 9to5Toys Pulse Elite ~$110; Sony sale Nov 16-30).
+DEALS_CHECKED = "Nov 24"
+DEALS = [("🛍️ Amazon's full Black Friday sale", "TVs, consoles, everything on sale through Nov 30", "https://www.amazon.com/deals"),
+         ("🎮 PS5 DualSense controller: $54.99", "usually $74 · the best GTA 6 deal this week", "PS5 DualSense wireless controller"),
          ("🎧 PlayStation Pulse Elite headset: ~$110", "usually $150", "PlayStation Pulse Elite wireless headset"),
          ("💾 2 TB PS5 SSD with heatsink", "GTA 6 is 212 GB: the upgrade that fits", "PS5 compatible 2TB NVMe SSD with heatsink"),
          ("🌴 GTA 6 for PS5", "full price at US stores right now", "https://www.amazon.com/dp/B0H6K928WL"),
@@ -62,6 +64,24 @@ footer{margin-top:44px;color:var(--muted);font-size:13px;border-top:1px solid va
 .banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center}
 .banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,7,23,.88) 0%,rgba(13,7,23,.5) 42%,rgba(13,7,23,0) 72%)}
 .banner h1{position:relative;z-index:1;margin:0;padding:18px 20px;max-width:68%}
+.related{margin-top:34px}
+.watch{display:flex;flex-direction:column;background:var(--pink);color:#fff;text-decoration:none;font-weight:800;font-size:17px;border-radius:12px;padding:12px 16px;margin:0 0 22px}
+.watch small{font-weight:500;font-size:13px;opacity:.9}
+table{width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:16px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--cyan);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+tr:nth-child(even) td{background:rgba(255,255,255,.035)}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:0 0 22px;display:grid;gap:2px}
+.toc b{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:4px}
+.toc a{color:var(--fg);text-decoration:none;padding:7px 0;border-bottom:1px solid var(--line);font-weight:700;font-size:15px}
+.toc a:last-child{border-bottom:0}
+h2[id]{scroll-margin-top:16px}
+.search{display:flex;align-items:center;gap:10px;margin:0 0 16px}
+.search input{flex:1;font:inherit;font-size:16px;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--fg)}
+.search input:focus{outline:2px solid var(--pink);border-color:transparent}
+.search span{color:var(--muted);font-size:13px;white-space:nowrap}
+footer a{display:inline-block;padding:6px 0}
+.lead{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:14px;margin:4px 0 18px;border:1px solid var(--line);background:var(--panel-2)}
 .card.pic{display:grid;grid-template-columns:128px 1fr;gap:14px;align-items:start;padding:12px}
 .card.pic img{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:8px;background:var(--panel-2)}
 .card.pic b{font-size:16px}.card.pic small{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-top:4px}
@@ -158,11 +178,11 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
             {"@type": "ListItem", "position": 3, "name": title, "item": url}]})
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in jsonld)
     if lang == "es":
-        menu = f'<a href="/es/">Guías</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
-        foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
+        menu = f'<a href="/es/guias/gta-6-lanzamiento-en-vivo/">Noticias</a><a href="/es/">Guías</a><a href="/es/equipo/">Equipo</a><a href="{YT_ES}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
+        foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/es/acerca/">Quiénes somos</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
     else:
-        menu = f'<a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
-        foot = 'Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.'
+        menu = f'<a href="/guides/gta-6-launch-live/">News</a><a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
+        foot = 'Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a> · <a href="/about/">About us</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.'
     doc = f"""<!doctype html>
 <html lang="{lang}">
 <head>
@@ -176,7 +196,7 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
 <meta property="og:url" content="{url}"><meta property="og:site_name" content="Vice Replay"><meta property="og:image" content="{image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title)}"><meta name="twitter:description" content="{html.escape(desc)}"><meta name="twitter:image" content="{image}">
 <meta name="theme-color" content="#0d0717">
-<link rel="icon" href="/favicon.png">
+<link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/favicon.png"><link rel="manifest" href="/site.webmanifest"><link rel="alternate" type="application/rss+xml" title="Vice Replay: GTA 6 news and guides" href="/feed.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;700;800&display=swap">
 <style>{CSS}</style>{ld}
 </head>
@@ -239,11 +259,158 @@ def faq_html(faq, lang="en"):
     if not faq: return ""
     return f'<h2>{"Quick answers" if lang == "en" else "Respuestas rápidas"}</h2>' + "".join(f'<div class="box"><h3>{html.escape(q)}</h3><p style="margin:0">{html.escape(a)}</p></div>' for q, a in faq)
 
+# Dated update notes on guides written before launch (Nov 24, 2026). The old text stays as a record; the note says what
+# changed. studio/site_stale.py skips pages that carry one.
+NOTICES = {
+ "gta-6-unlock-time": 'GTA 6 is out: it unlocked on November 19, 2026. This page explains how the staggered launch worked. What\'s new now: <a href="/guides/gta-6-launch-live/">live updates</a>.',
+ "gta-6-new-zealand-trick": 'GTA 6 has been out everywhere since November 19, so there\'s no reason to change your region now. What\'s new: <a href="/guides/gta-6-launch-live/">live updates</a>.',
+ "gta-6-launch-checklist": 'Launch week is over. Still useful: storage, settings and the day-one update. The latest patch is 1.002.002: <a href="/guides/gta-6-patch-notes/">patch notes</a>.',
+ "gta-6-launch-day-survival-guide": 'Launch day is over. Having problems now? The latest patch, 1.002.002, fixed crashes, autosaves and missing phone calls: <a href="/guides/gta-6-patch-notes/">patch notes</a>.',
+ "gta-6-launch-streams": 'Launch night is over. Who won it: <a href="/guides/gta-6-streaming-records/">GTA 6 streaming records</a>.',
+ "gta-6-game-awards-nominations": 'The show is Thursday, December 10, at 7:30 PM Eastern. Our full preview: <a href="/guides/gta-6-game-awards/">GTA 6 at The Game Awards 2026</a>.',
+ "gta-6-reviews": 'Metacritic still shows 99 for the PS5 version, now from 158 critic reviews.',
+ "hora-de-lanzamiento-gta-6": 'GTA 6 ya salió: se desbloqueó el 19 de noviembre de 2026. Esta página explica cómo funcionó el lanzamiento. Lo nuevo: <a href="/es/guias/gta-6-lanzamiento-en-vivo/">noticias en vivo</a>.',
+ "guia-lanzamiento-gta-6": 'La semana de lanzamiento terminó. ¿Problemas ahora? El parche 1.002.002 arregló cierres, autoguardado y llamadas que no llegaban: <a href="/es/guias/gta-6-notas-del-parche/">notas del parche</a>.',
+}
+NOTICE_DATE = {"en": "Update, Nov 24", "es": "Actualización, 24 nov"}
+
+
+def with_lead(body, img, title):
+    """Nov 24 upgrade: the guide's 1200x630 card as a big header image (looks like a magazine page; Google Discover
+    favours pages with a large image). Goes right before the lede, so after the h1, meta line and any update note."""
+    tag = (f'<img class="lead" src="{img}" width="1200" height="630" alt="{html.escape(title)}" '
+           'fetchpriority="high" decoding="async">')
+    k = body.find('<p class="lede">')
+    if k >= 0:  # owner Nov 24 ("think like a visitor"): the answer first, the picture right after it
+        k = body.find("</p>", k) + 4
+    else:
+        k = body.find("</h1>")
+        k = body.find("</p>", body.find('<p class="meta">', k)) + 4 if '<p class="meta">' in body[k:] else k + 5
+    return body[:k] + "\n" + tag + body[k:]
+
+
+# Visitor-first (owner Nov 24, "do what you think best"): news pages don't push gear. On these the big Amazon box
+# becomes one quiet line; buyer pages (storage, SSD, deals, gifts, PS5 Pro, physical edition...) keep the full box.
+NEWS_SLUGS = {"gta-6-launch-live", "gta-6-hacker-sentence", "gta-6-online", "gta-6-streaming-records", "gta-6-game-awards",
+              "gta-6-game-awards-nominations", "gta-6-patch-notes", "gta-6-launch-week-numbers", "gta-6-reviews", "gta-6-darts",
+              "gta-6-characters", "gta-6-radio-stations", "gta-6-easter-eggs", "gta-6-trophies", "gta-6-launch-streams",
+              "gta-6-lanzamiento-en-vivo", "gta-6-online-cuando-sale", "gta-6-records-streaming", "gta-6-premios-game-awards",
+              "gta-6-notas-del-parche", "gta-6-cifras-semana-lanzamiento", "dardos-gta-6"}
+
+
+def soften_gear(slug, body, lang):
+    if slug not in NEWS_SLUGS:
+        return body
+    line = ('<p class="sources">Short on space or need a controller? <a href="/es/equipo/">Nuestro equipo para GTA 6</a> (enlaces de afiliado).</p>'
+            if lang == "es" else '<p class="sources">Short on space or need a controller? <a href="/gear/">Our GTA 6 gear picks</a> (affiliate links).</p>')
+    return _re.sub(r'<div class="box"><h3>Gear for GTA 6 \(affiliate links\)</h3>.*?All gear picks</a></p></div>', line, body, count=1, flags=_re.S)
+
+
+def load_watch():
+    """{guide slug: (YouTube id, kind)} for guides with a matching upload that is PUBLIC now (its slot has passed, not
+    hidden). Episodes name their guide with `guide`, or match it by name (gta6-x -> gta-6-x), like the uploader does.
+    Shorts win over long videos; newest first. No API call: registry + approved_queue slots."""
+    import datetime as _dt, glob as _glob
+    from zoneinfo import ZoneInfo
+    et = ZoneInfo("America/New_York"); now = _dt.datetime.now(et)
+    try:
+        reg = json.load(open(os.path.join(STUDIO, "content/learn/uploads.json")))
+        queue = json.load(open(os.path.join(STUDIO, "content/learn/approved_queue.json")))["items"]
+    except (OSError, ValueError, KeyError):
+        return {}
+    slot = {(i["slug"], i.get("item", "short")): i.get("en") for i in queue}
+    have = {os.path.basename(d.rstrip("/")) for d in _glob.glob(os.path.join(SITE, "guides", "*/"))}
+    have |= {g[0] for g in GUIDES}
+    guide_of = {}
+    for f in _glob.glob(os.path.join(STUDIO, "episodes", "*.json")):
+        try:
+            e = json.load(open(f))
+        except ValueError:
+            continue
+        slug = e.get("slug") or os.path.basename(f)[:-5]
+        g = e.get("guide") or slug.replace("gta6-", "gta-6-", 1)
+        if g in have or e.get("guide"):
+            guide_of[slug] = g
+    best = {}
+    for vid, r in reg.items():
+        g = guide_of.get(r.get("slug"))
+        if not g or r.get("hidden"):
+            continue
+        s_ = slot.get((r["slug"], r.get("item", "short")))
+        if s_ and _dt.datetime.strptime(f"{s_[0]} {s_[1]}", "%Y-%m-%d %I:%M %p").replace(tzinfo=et) > now:
+            continue  # still private until its slot
+        kind = "main" if r.get("item") == "main" else "short"
+        rank = (kind == "short", r.get("uploaded") or "")
+        if g not in best or rank > best[g][2]:
+            best[g] = (vid, kind, rank)
+    return {g: (v, k) for g, (v, k, _r) in best.items()}
+
+
+_WATCH = None
+
+
+def with_watch(slug, body, lang):
+    """A 'watch it' button right under the answer/picture/jump list when a public video matches the guide."""
+    global _WATCH
+    if lang != "en" or 'class="video"' in body:
+        return body
+    if _WATCH is None:
+        _WATCH = load_watch()
+    if slug not in _WATCH:
+        return body
+    vid, kind = _WATCH[slug]
+    url = f"https://www.youtube.com/shorts/{vid}" if kind == "short" else f"https://www.youtube.com/watch?v={vid}"
+    label = "▶ Watch it in 30 seconds" if kind == "short" else "▶ Watch the video"
+    btn = f'<a class="watch" href="{url}" target="_blank" rel="noopener">{label}<small>on our YouTube channel</small></a>'
+    for anchor in ('</nav>', '<img class="lead"'):
+        k = body.find(anchor)
+        if k >= 0:
+            k = body.find(">", k) + 1
+            return body[:k] + "\n" + btn + body[k:]
+    k = body.find("</p>", body.find('<p class="lede">')) + 4
+    return body[:k] + "\n" + btn + body[k:]
+
+
+def with_toc(body, lang):
+    """Guides with 4+ sections get an 'On this page' jump list under the picture, and each h2 gets an id (Nov 24:
+    a phone reader with a specific question shouldn't scroll 7-9 screens)."""
+    heads = _re.findall(r"<h2>(.*?)</h2>", body)
+    if len(heads) < 4:
+        return body
+    def anchor(h):
+        return _re.sub(r"[^a-z0-9áéíóúñ]+", "-", _re.sub(r"<[^>]+>", "", h).lower()).strip("-")[:60]
+    for h in heads:
+        body = body.replace(f"<h2>{h}</h2>", f'<h2 id="{anchor(h)}">{h}</h2>', 1)
+    label = "En esta página" if lang == "es" else "On this page"
+    links = "".join(f'<a href="#{anchor(h)}">{_re.sub(r"<[^>]+>", "", h)}</a>' for h in heads)
+    toc = f'<nav class="toc" aria-label="{label}"><b>{label}</b>{links}</nav>'
+    k = body.find('<img class="lead"')
+    k = body.find(">", k) + 1 if k >= 0 else body.find("</p>", body.find('<p class="lede">')) + 4
+    return body[:k] + "\n" + toc + body[k:]
+
+
+def with_notice(slug, body, lang):
+    """Put the dated update note right under the page's meta line (or its h1)."""
+    if slug not in NOTICES:
+        return body
+    box = f'<div class="note update"><b>{NOTICE_DATE[lang]}:</b> {NOTICES[slug]}</div>'
+    for anchor in ('<p class="meta">', '</h1>'):
+        k = body.find(anchor)
+        if k >= 0:
+            end = body.find("</p>", k) + 4 if anchor.startswith("<p") else k + len(anchor)
+            return body[:end] + "\n" + box + body[end:]
+    return box + body
+
 def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None):
     faq = faq or FAQS.get(slug)
+    body = with_notice(slug, body, lang)
     path = f"guides/{slug}/" if lang == "en" else f"es/guias/{slug}/"
     l1, l2, shot = CARDS.get(slug, (title.split(":")[0][:28], "", None))
     img = card(slug, l1, l2 or "On replay", shot)
+    body = with_lead(body, img, title)
+    body = with_toc(body, lang)
+    body = with_watch(slug, body, lang)
+    body = soften_gear(slug, body, lang)
     if lang == "en": GUIDES.append((slug, title, desc, date))
     else: GUIDES_ES.append((slug, title, desc, date))
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": title[:110], "description": desc, "image": [img],
@@ -270,7 +437,7 @@ CARDS.update({
  "gta-6-launch-streams": ("LAUNCH NIGHT", "WHERE TO WATCH", "vice-city-13.jpg"),
  "gta-6-reviews": ("GTA 6 REVIEWS", "99 ON METACRITIC", "jason-and-lucia-03.jpg"),
  "gta-6-game-awards-nominations": ("GAME OF THE YEAR", "8 NOMINATIONS", "lucia-caminos-10.jpg"),
- "gta-6-launch-live": ("GTA 6 LAUNCH", "LIVE UPDATES", "vice-city-21.jpg"),
+ "gta-6-launch-live": ("GTA 6 NEWS", "LIVE UPDATES", "vice-city-21.jpg"),
  "trucos-gta-6": ("TRUCOS DE GTA 6", "250.000 $ + 6 MÁS", "car-grotti-cheetah-01.jpg"),
  "espacio-gta-6": ("¿SIN ESPACIO?", "GTA 6 PESA 212 GB", "car-vapid-stanier-01.jpg"),
  "hora-de-lanzamiento-gta-6": ("GTA 6: ¿A QUÉ HORA", "SE DESBLOQUEA?", "vice-city-05.jpg"),
@@ -374,7 +541,7 @@ guide("gta-6-map-leonida-places", "GTA 6 Map: 6 Places in Leonida You Need to Kn
 {sources([("Rockstar Games: official GTA VI site (places)","https://www.rockstargames.com/VI")])}""")
 
 # 5. Storage evergreen
-guide("gta-6-storage", "GTA 6 Storage Full? How to Make Room on PS5 and Xbox (212 GB)",
+guide("gta-6-storage", "How Many GB Is GTA 6? 212 GB, and How to Make Room on PS5 and Xbox",
  "GTA 6 needs up to 212 GB. Free ways to clear space on PS5 and Xbox Series X|S first, then what to look for if you need a storage upgrade.",
  "2026-11-18", f"""<h1>GTA 6 storage full? <span>Free fixes first</span></h1>
 <p class="meta">Updated November 18, 2026 · Vice Replay</p>
@@ -417,11 +584,11 @@ guide("gta-6-cheats", "GTA 6 Cheat Codes: Money, Armor, Ammo + How to Unlock",
 {sources([("GameSpot: all GTA 6 cheats and how to unlock them","https://www.gamespot.com/articles/all-gta-6-cheats-and-how-to-unlock-them/"),("Vice: all GTA 6 cheat codes","https://www.vice.com/en/article/gta-6-cheat-codes-list/"),("GamesRadar: all GTA 6 cheats and how to unlock them","https://www.gamesradar.com/games/grand-theft-auto/gta-6-cheats/"),("PC Gamer: all GTA 6 cheats and how to unlock them","https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"),("Insider Gaming: all GTA 6 cheats","https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/"),("VGTimes on Eurogamer's testing: cheats locked behind the story","https://vgtimes.com/gaming-news/175043-gta-6-locks-cheats-behind-the-main-story-and-disables-saving.html"),("Screen Rant: GTA 6 cheats for PS5 and Xbox","https://screenrant.com/gta-6-cheats-ps5-xbox/")])}""")
 
 # 7-10. News articles (Nov 17)
-guide("gta-6-pc-release-date", "GTA 6 on PC: Release Date and What's Actually Reported",
- "GTA 6 launches on PS5 and Xbox Series X|S only. Here's what Take-Two has said about PC, the reported early 2027 window, and what's still unconfirmed.",
+guide("gta-6-pc-release-date", "Is GTA 6 on PC? PC Release Date and What's Actually Reported",
+ "GTA 6 is out on PS5 and Xbox Series X|S only. Here's what Take-Two has said about PC, the reported early 2027 window, and what's still unconfirmed.",
  "2026-11-17", f"""<h1>GTA 6 on PC: <span>when?</span></h1>
 <p class="meta">Updated November 17, 2026 · Vice Replay</p>
-<p class="lede">GTA 6 launches on November 19, 2026, on <b>PS5 and Xbox Series X|S only</b>. There is no official PC release date yet. Here's what's known and what's only reported.</p>
+<p class="lede">GTA 6 came out on November 19, 2026, on <b>PS5 and Xbox Series X|S only</b>. There is still no official PC release date (checked November 24: Take-Two says PC news will come from Rockstar). Here's what's known and what's only reported.</p>
 <h2>What's official</h2>
 <p>Take-Two and Rockstar have only announced console versions. Take-Two CEO Strauss Zelnick has defended the console-first plan, saying Rockstar "always starts on console" and serves its core audience first.</p>
 <h2>What's reported: early 2027</h2>
@@ -482,30 +649,30 @@ guide("gta-6-game-awards-nominations", "GTA 6 at The Game Awards 2026: 8 Nominat
 
 # 11. Launch live hub (update the UPDATES list every day of launch week; newest first)
 UPDATES = [(u["time"], u["html"]) for u in json.load(open(os.path.join(STUDIO, "site/live.json")))]  # newest first
-guide("gta-6-launch-live", "GTA 6 Launch: Live Updates, Times and Everything You Need Tonight",
- "GTA 6 launch live updates: unlock times, YouTube's 24-hour stream, reviews, cheats, storage and PC news in one page, updated every day of launch week.",
- "2026-11-17", f"""<h1>GTA 6 launch: <span>live updates</span></h1>
-<p class="meta">Last updated {UPDATES[0][0]} · Vice Replay · This page is updated every day of launch week</p>
-<p class="lede">GTA 6 comes out on <b>November 19, 2026</b> on PS5 and Xbox Series X|S. Everything you need for launch week is on this page, newest first.</p>
-<div class="box"><h3>Key times (Eastern)</h3><ul class="list" style="margin:0">
-<li><b>Nov 18, ~6 AM:</b> New Zealand unlocks first (PlayStation Store listings)</li>
-<li><b>Nov 18:</b> reviews reportedly go live (unconfirmed)</li>
-<li><b>Nov 18, 11 PM:</b> YouTube's launch pre-show with RDCWorld</li>
-<li><b>Nov 19, midnight local time:</b> GTA 6 unlocks where you are; YouTube's 24-hour stream starts</li>
-<li><b>Nov 19, 1 AM:</b> Xbox Cloud Gaming (Forbes)</li></ul></div>
+guide("gta-6-launch-live", "GTA 6 Live Updates: Patches, Records and News After Launch",
+ "GTA 6 news, newest first: patch notes, sales and streaming records, The Game Awards and PC news, all checked in 2+ sources. Updated every day.",
+ "2026-11-17", f"""<h1>GTA 6 news: <span>live updates</span></h1>
+<p class="meta">Last updated {UPDATES[0][0]} · Vice Replay · Updated every day</p>
+<p class="lede">GTA 6 came out on <b>November 19, 2026</b> on PS5 and Xbox Series X|S. Every confirmed update since then is on this page, newest first.</p>
+<div class="box"><h3>Coming up (Eastern)</h3><ul class="list" style="margin:0">
+<li><b>Now until Nov 30:</b> Black Friday sales. GTA 6 itself is still full price. <a href="/guides/gta-6-black-friday/">What's worth buying</a></li>
+<li><b>Thu Dec 10, 7:30 PM:</b> The Game Awards. GTA 6 has 8 nominations, the most this year. <a href="/guides/gta-6-game-awards/">Our preview</a></li>
+<li><b>Next patch:</b> no date yet. The latest is 1.002.002 (Nov 23). <a href="/guides/gta-6-patch-notes/">Patch notes</a></li>
+<li><b>PC:</b> no official date. A report says early 2027; Rockstar hasn't confirmed it. <a href="/guides/gta-6-pc-release-date/">What's known</a></li></ul></div>
 <h2>Latest updates</h2>
 {"".join(f'<div class="note"><b>{t}</b><br>{x}</div>' for t, x in UPDATES)}
-<h2>Before you play</h2>
-<ul class="list"><li><a href="/guides/gta-6-launch-checklist/">Launch checklist</a>: price, day-one patch, what's missing</li>
-<li><a href="/guides/gta-6-unlock-time/">Unlock time in every time zone</a></li>
-<li><a href="/guides/gta-6-storage/">Storage full? Free fixes first</a></li>
-<li><a href="/guides/gta-6-launch-streams/">Where to watch launch night</a></li>
-<li><a href="/guides/gta-6-pc-release-date/">GTA 6 on PC: when?</a></li></ul>
+<h2>Popular guides</h2>
+<ul class="list"><li><a href="/guides/gta-6-storage/">Storage full? Free fixes first</a></li>
+<li><a href="/guides/gta-6-patch-notes/">Patch notes: every fix so far</a></li>
+<li><a href="/guides/gta-6-how-long-to-beat/">How long to beat GTA 6</a></li>
+<li><a href="/guides/gta-6-cheats/">Cheat codes: what's real</a></li>
+<li><a href="/guides/gta-6-streaming-records/">Streaming records: who won launch week</a></li>
+<li><a href="/guides/gta-6-launch-week-numbers/">Launch week in numbers</a></li></ul>
 {gearbox(GAME + STORAGE, "Getting the game or making room for the 212 GB install? Links go to the exact listings:")}
 {watchmore("pcoMWOraJA4")}""",
- faq=[("When does GTA 6 come out?", "November 19, 2026, on PS5 and Xbox Series X|S. It unlocks at midnight local time in each region."),
-      ("Is GTA 6 on PC at launch?", "No. There's no official PC date; a report says early 2027, but Rockstar hasn't confirmed it.")],
- modified="2026-11-18")
+ faq=[("When did GTA 6 come out?", "November 19, 2026, on PS5 and Xbox Series X|S."),
+      ("Is GTA 6 on PC?", "Not yet. There's no official PC date; a report says early 2027, but Rockstar hasn't confirmed it.")],
+ modified="2026-11-24")
 
 # Spanish guides (es/guias/)
 guide("trucos-gta-6", "Trucos de GTA 6: dinero, chaleco, munición y cómo desbloquearlos",
@@ -567,7 +734,7 @@ guide("gta-6-pc", "GTA 6 en PC: fecha de salida y lo que se sabe",
  "GTA 6 sale solo en PS5 y Xbox Series X|S. Lo que dijo Take-Two sobre PC, la fecha reportada de principios de 2027 y lo que aún no está confirmado.",
  "2026-11-18", f"""<h1>GTA 6 en PC: <span>¿cuándo?</span></h1>
 <p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
-<p class="lede">GTA 6 sale el 19 de noviembre de 2026 <b>solo en PS5 y Xbox Series X|S</b>. No hay fecha oficial para PC.</p>
+<p class="lede">GTA 6 salió el 19 de noviembre de 2026 <b>solo en PS5 y Xbox Series X|S</b>. Todavía no hay fecha oficial para PC (revisado el 24 de noviembre).</p>
 <h2>Lo oficial</h2><p>Take-Two solo anunció consolas. Su CEO, Strauss Zelnick, dijo que Rockstar "siempre empieza en consola".</p>
 <h2>Lo reportado: principios de 2027</h2><p>Según un reporte de GamesBeat con fuentes anónimas, la versión de PC apuntaría a <b>enero-marzo de 2027</b>. Rockstar no lo ha confirmado.</p>
 <h2>Cuidado</h2><p>No compres "claves de GTA 6 para PC": no existe esa versión, son estafas.</p>
@@ -575,23 +742,27 @@ guide("gta-6-pc", "GTA 6 en PC: fecha de salida y lo que se sabe",
 {sources([("GodisaGeek","https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"),("tbreak","https://tbreak.com/gta-6-pc-release-delayed-console-first/")])}""",
  faq=[("¿GTA 6 sale en PC?", "No en el lanzamiento. No hay fecha oficial; un reporte habla de principios de 2027, sin confirmar.")], lang="es")
 
-guide("gta-6-lanzamiento-en-vivo", "Lanzamiento de GTA 6: actualizaciones en vivo",
- "Lanzamiento de GTA 6 en vivo: horarios, transmisión de 24 horas de YouTube, reseñas, trucos, espacio y PC, actualizado cada día de la semana de lanzamiento.",
- "2026-11-18", f"""<h1>Lanzamiento de GTA 6: <span>en vivo</span></h1>
-<p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
-<p class="lede">GTA 6 sale el <b>19 de noviembre de 2026</b> en PS5 y Xbox Series X|S. Todo lo de la semana de lanzamiento, en una página.</p>
-<div class="box"><h3>Horarios clave (hora del Este de EE. UU.)</h3><ul class="list" style="margin:0">
-<li><b>18 nov, ~6 AM:</b> Nueva Zelanda desbloquea primero</li><li><b>18 nov:</b> reseñas (según reportes, sin confirmar)</li>
-<li><b>18 nov, 11 PM:</b> pre-show de YouTube con RDCWorld</li><li><b>19 nov, medianoche local:</b> GTA 6 se desbloquea; empieza la transmisión de 24 horas de YouTube</li>
-<li><b>19 nov, 1 AM:</b> Xbox Cloud Gaming</li></ul></div>
+guide("gta-6-lanzamiento-en-vivo", "GTA 6 en vivo: parches, récords y noticias tras el lanzamiento",
+ "Noticias de GTA 6, de la más nueva a la más vieja: notas del parche, récords de ventas y de streaming, The Game Awards y PC. Todo revisado en 2+ fuentes.",
+ "2026-11-18", f"""<h1>Noticias de GTA 6: <span>en vivo</span></h1>
+<p class="meta">Actualizado el 24 de noviembre de 2026 · Vice Replay</p>
+<p class="lede">GTA 6 salió el <b>19 de noviembre de 2026</b> en PS5 y Xbox Series X|S. Aquí está cada novedad confirmada desde entonces.</p>
+<div class="box"><h3>Lo que viene (hora del Este de EE. UU.)</h3><ul class="list" style="margin:0">
+<li><b>Hasta el 30 nov:</b> rebajas de Black Friday; GTA 6 sigue a precio completo</li>
+<li><b>Jue 10 dic, 7:30 PM:</b> The Game Awards. GTA 6 tiene 8 nominaciones. <a href="/es/guias/gta-6-premios-game-awards/">Nuestra previa</a></li>
+<li><b>Próximo parche:</b> sin fecha. El último es el 1.002.002 (23 nov). <a href="/es/guias/gta-6-notas-del-parche/">Notas del parche</a></li>
+<li><b>PC:</b> sin fecha oficial; un reporte habla de principios de 2027, sin confirmar. <a href="/es/guias/gta-6-pc/">Lo que se sabe</a></li></ul></div>
 <h2>Últimas noticias</h2>
-<div class="note"><b>17 nov</b><br>The Game Awards 2026: GTA 6 recibe 8 nominaciones, incluido Juego del Año. Manni L. Perez, la actriz de Lucía, está nominada a Mejor Actuación.</div>
+<div class="note"><b>24 nov</b><br>Los creadores más vistos del primer día (Streams Charts): IShowSpeed, 4,47 millones de horas; el VTuber TheBurntPeanut, 3,89 millones. <a href="/es/guias/gta-6-records-streaming/">Récords de streaming</a>.</div>
+<div class="note"><b>23 nov</b><br>Rockstar publicó por fin notas del parche: la actualización 1.002.002 trae 7 arreglos. <a href="/es/guias/gta-6-notas-del-parche/">Los 7 arreglos</a>.</div>
+<div class="note"><b>20 nov</b><br>Take-Two: GTA 6 hizo 3.790 millones de dólares entre preventas y ventas del primer día. <a href="/es/guias/gta-6-cifras-semana-lanzamiento/">Todas las cifras</a>.</div>
 <div class="note"><b>19 nov, 3 AM</b><br>Los trucos existen, pero solo se desbloquean al terminar la historia, y desactivan el guardado y los trofeos durante la sesión. <a href="/es/guias/trucos-gta-6/">Cómo funcionan</a>.</div>
-<div class="note"><b>17 nov</b><br>Trucos: ninguno confirmado antes del lanzamiento. <a href="/es/guias/trucos-gta-6/">Nuestra lista</a>.</div>
-<h2>Antes de jugar</h2>
-<ul class="list"><li><a href="/es/guias/hora-de-lanzamiento-gta-6/">A qué hora se desbloquea</a></li><li><a href="/es/guias/espacio-gta-6/">¿Sin espacio? Primero lo gratis</a></li><li><a href="/es/guias/gta-6-pc/">GTA 6 en PC</a></li></ul>
+<div class="note"><b>17 nov</b><br>The Game Awards 2026: GTA 6 recibe 8 nominaciones, incluido Juego del Año. Manni L. Perez, la actriz de Lucía, está nominada a Mejor Actuación.</div>
+<h2>Guías populares</h2>
+<ul class="list"><li><a href="/es/guias/espacio-gta-6/">¿Sin espacio? Primero lo gratis</a></li><li><a href="/es/guias/cuanto-dura-gta-6/">Cuánto dura GTA 6</a></li><li><a href="/es/guias/trucos-gta-6/">Trucos de GTA 6</a></li><li><a href="/es/guias/gta-6-pc/">GTA 6 en PC</a></li></ul>
 {gearbox(GAME + STORAGE, "Enlaces directos (Amazon EE. UU.):")}""",
- faq=[("¿Cuándo sale GTA 6?", "El 19 de noviembre de 2026 en PS5 y Xbox Series X|S, a la medianoche hora local.")], lang="es")
+ faq=[("¿Cuándo salió GTA 6?", "El 19 de noviembre de 2026 en PS5 y Xbox Series X|S."),
+      ("¿GTA 6 está en PC?", "Todavía no. No hay fecha oficial; un reporte habla de principios de 2027, sin confirmar.")], lang="es")
 
 # Guides written as data by the daily run: site/guides/<slug>.json
 # {"slug","lang":"en|es","title","desc","date","video":"YouTube id or null","card":[line1,line2,"screenshot.jpg"],
@@ -616,25 +787,50 @@ for g in _JSON:
     body += sources([tuple(x) for x in g.get("sources", [])]) if g.get("sources") else ""
     guide(g["slug"], g["title"], g["desc"], g["date"], body, faq=[tuple(x) for x in g.get("faq", [])] or None, lang=g.get("lang", "en"))
 
+# Search box on the guide lists (Nov 24): filters the cards as you type, no server needed
+SEARCH_JS = '<script>(function(){var q=document.getElementById("q");if(!q)return;var cs=[].slice.call(document.querySelectorAll(".cards .card"));var n=document.getElementById("qn");q.addEventListener("input",function(){var t=q.value.toLowerCase().trim(),k=0;cs.forEach(function(c){var m=!t||c.textContent.toLowerCase().indexOf(t)>-1;c.style.display=m?"":"none";if(m)k++;});n.textContent=t?(k+" / "+cs.length):"";});})();</script>'
 GUIDES_ES.sort(key=lambda g: g[3], reverse=True)
 page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en español: trucos, hora de lanzamiento, espacio y PC. Sin spoilers.",
-     banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="https://www.youtube.com/@vicereplaytv-q8s">Nuestros videos tienen subtítulos en español.</a></p><div class="cards">'
-     + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>', lang="es")
+     banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="https://www.youtube.com/@vicereplaytv-q8s">Nuestros videos tienen subtítulos en español.</a></p><div class="search"><input type="search" id="q" placeholder="Busca entre ' + str(len(GUIDES_ES)) + ' guías: trucos, precio, online..." aria-label="Buscar guías" autocomplete="off"><span id="qn"></span></div><div class="cards">'
+     + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>' + SEARCH_JS, lang="es")
+
+# Spanish gear page (Nov 22, 2026): the Amazon link for Vice Replay en Español (channel links, descriptions, comments)
+ALT.update({"es/equipo/": "gear/"})
+ES_GEAR = [("Más espacio para PS5: SSD NVMe de 2 TB con disipador", "PS5 compatible 2TB NVMe SSD with heatsink"),
+           ("Tarjeta de expansión para Xbox Series X|S", "Xbox Series X S storage expansion card 2TB"),
+           ("Control DualSense de PS5", "PS5 DualSense controller"),
+           ("Audífonos gamer (PS5 / Xbox)", "gaming headset PS5 Xbox"),
+           ("GTA 6 para PS5", GAME[0][1]), ("GTA 6 para Xbox Series X|S", GAME[1][1]),
+           ("Capturadora para grabar tu gameplay", "capture card 4K60 PS5"),
+           ("Prueba gratis de Amazon Prime (30 días)", "https://www.amazon.com/tryprimefree")]
+_es_items = "".join(f'<a class="item" href="{amz(q)}" target="_blank" rel="sponsored noopener">{html.escape(label)}<span aria-hidden="true">→</span></a>' for label, q in ES_GEAR)
+page("es/equipo/", "Equipo para GTA 6 (Amazon) · Vice Replay", "Equipo para GTA 6: espacio para PS5 y Xbox, control, audífonos y el juego. Enlaces de Amazon.",
+     banner('Equipo para <span>GTA&nbsp;6</span>', 'deals-gear')
+     + '<p class="lede">Lo que más nos preguntan: espacio para instalar GTA 6, control, audífonos y el juego. Los botones buscan en Amazon.com con precios actuales.</p>'
+     + f'<div class="box"><h3>Equipo para GTA 6 (enlaces de afiliado)</h3><div class="btns">{_es_items}</div>'
+     + '<p class="sources" style="margin:10px 0 0">Enlaces de afiliado: como Afiliado de Amazon gano con las compras que califican, sin costo extra para ti. '
+       'No hemos probado estos productos: revisa reseñas y compatibilidad antes de comprar. Los enlaces llevan a Amazon.com (Estados Unidos); '
+       'desde México u otros países revisa el envío y el precio final.</p></div>'
+     + '<p>¿Sin espacio para GTA 6? Antes de comprar, prueba lo gratis: <a href="/es/guias/espacio-gta-6/">nuestra guía de espacio</a>.</p>', lang="es")
 
 # guides index
 GUIDES.sort(key=lambda g: (g[0] != "gta-6-launch-live", g[3]), reverse=False)
 GUIDES[1:] = sorted(GUIDES[1:], key=lambda g: g[3], reverse=True)
 card("default", "GTA'S WILDEST MOMENTS.", "ON REPLAY.", "vice-city-11.jpg")
-cards = "".join(f'<a class="card pic" href="/guides/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES)
+cards = "".join(f'<a class="card pic" href="/guides/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES)
 page("guides/", "GTA 6 Guides · Vice Replay", "GTA 6 guides from Vice Replay: unlock times, download size, storage, the map and launch tips.",
-     banner('GTA&nbsp;6 <span>guides</span>', 'news-skyline') + f'<p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers. <a href="/es/">En español</a></p><div class="cards">{cards}</div>')
+     banner('GTA&nbsp;6 <span>guides</span>', 'news-skyline') + f'<p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers. <a href="/es/">En español</a></p><div class="search"><input type="search" id="q" placeholder="Search {len(GUIDES)} guides: money, radio, cheats..." aria-label="Search guides" autocomplete="off"><span id="qn"></span></div><div class="cards">{cards}</div>' + SEARCH_JS)
 
 # links page
 latest = GUIDES[0]
-page("links/", "Vice Replay Links", "Every Vice Replay link: GTA 6 Black Friday deals, storage fixes, gear, YouTube, TikTok and Instagram.", f"""{banner('Vice Replay <span>links</span>', 'night-streets')}
-<p class="lede">GTA's wildest moments. On replay.</p>
+page("links/", "Vice Replay Links", "Every Vice Replay link: GTA 6 Black Friday deals, storage fixes, gear, YouTube, TikTok and Instagram.", f"""<h1>Vice Replay <span>links</span></h1>
+<p class="lede">GTA's wildest moments. On replay. Fresh GTA 6 news first, then deals and our channels.</p>
+<h2>Latest</h2>
+<div class="cards">{"".join(f'<a class="card pic" href="/guides/{s_}/"><img src="/og/t/{s_}.webp" width="480" height="252" alt="{html.escape(t_)}" loading="lazy"><span><b>{html.escape(t_)}</b><small>{html.escape(d_)}</small></span></a>' for s_, t_, d_, _x in GUIDES[:4])}</div>
+<div class="btns" style="margin-top:12px"><a class="item" href="{YT}?sub_confirmation=1" target="_blank" rel="noopener">▶️ Watch on YouTube<small>Daily GTA 6 Shorts and news</small><span aria-hidden="true">→</span></a></div>
 {deals_html()}
 <div class="btns">
+<a class="item" href="/guides/gta-6-deals/">🏷️ GTA 6 deals and discount codes<small>What's real this week, and the "free code" scams</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/gta-6-black-friday/">🔥 GTA 6 Black Friday deals<small>What's worth buying for GTA 6 this week</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/gta-6-storage/">💾 GTA 6 says "not enough space"?<small>Free fixes + the PS5 SSD that fits (212 GB)</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/gta-6-best-ssd/">🛒 Best SSD for GTA 6 (PS5)<small>What to buy, what to skip, how to install</small><span aria-hidden="true">→</span></a>
@@ -657,13 +853,203 @@ page("contact/", "Work With Vice Replay", "Sponsorships, clipping campaigns and 
 <ul class="list"><li>Fake reviews or claims that we used a product we haven't.</li><li>Gambling, account selling, "money generators" or anything that breaks Rockstar's or YouTube's rules.</li><li>Hidden ads: every paid placement is disclosed.</li></ul>
 <p>Include your brand or channel, what you have in mind, and your timing. We usually reply within 2 days.</p>""")
 
+# Privacy policy + terms (Nov 22, 2026): Google needs both links on its Branding page before the YouTube upload app
+# ("Creator HQ", shared by Vice Replay, What If Arena and ClipCircuit) can be published, and YouTube API Services require the privacy wording below.
+page("privacy/", "Privacy Policy · Vice Replay", "How vicereplay.com and the Creator HQ YouTube tool (Vice Replay, What If Arena, ClipCircuit) handle data.", f"""<h1>Privacy <span>policy</span></h1>
+<p class="lede">Last updated November 23, 2026. Vice Replay is a fan channel and website about GTA 6. We collect as little as possible.</p>
+<h2>This website</h2>
+<ul class="list"><li><b>No accounts, no sign-ups.</b> We don't ask for your name, email or anything else to read the site.</li>
+<li><b>Analytics:</b> we use Cloudflare Web Analytics, which counts visits without cookies and without tracking you across sites.</li>
+<li><b>Amazon links:</b> some links are Amazon affiliate links (tag vicereplay-20). If you click one, Amazon may use cookies under
+<a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ">Amazon's privacy notice</a>, and we may earn a commission.</li>
+<li><b>Embedded YouTube videos</b> are served by YouTube under Google's privacy policy.</li></ul>
+<h2>Creator HQ (our YouTube tool)</h2>
+<p>Creator HQ is a private tool that uploads and manages videos on <b>the owner's own</b> YouTube channels (Vice Replay, Vice Replay en Español, What If Arena and ClipCircuit) through the <b>YouTube API Services</b>.
+It is used only by the channel owner. When the owner signs in with Google, the tool receives access to those channels to upload and schedule videos, add them to playlists, post and reply to comments on the owner's own videos, and read those channels' statistics.</p>
+<ul class="list"><li>To plan videos, the tool also reads <b>public</b> YouTube information about popular gaming videos (titles, channel names, view counts) through the YouTube API Services. It is used only inside the tool, never published or shared, and deleted or refreshed within 30 days.</li>
+<li>We do not sell or share any YouTube data, and we do not collect personal data from other YouTube users.</li>
+<li>The access key is stored privately in our own production environment and used only for our channels.</li>
+<li>By using features built on YouTube, you are also subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+<li>Access can be revoked at any time on the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>. To have data deleted, write to the contact address below; we answer within 30 days.</li></ul>
+<h2>Children</h2><p>This site and our channels are not directed to children under 13.</p>
+<h2>Contact</h2><p>Questions about privacy: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a>.</p>""")
+
+page("terms/", "Terms of Use · Vice Replay", "Terms of use for vicereplay.com and Vice Replay.", f"""<h1>Terms <span>of use</span></h1>
+<p class="lede">Last updated November 22, 2026.</p>
+<h2>Fan site</h2><p>Vice Replay is a fan channel and website. It is <b>not affiliated with Rockstar Games or Take-Two Interactive</b>. Grand Theft Auto, GTA and related names and images belong to their owners and are used here for news, commentary and guides.</p>
+<h2>Content</h2><p>Guides and news are for information and entertainment. We check facts against sources and date our pages, but games and prices change: always check the official source before you buy or rely on something.</p>
+<h2>Affiliate links</h2><p>Some links are affiliate links (Amazon Associates, tag vicereplay-20). We may earn a commission at no extra cost to you, and we disclose it where it applies.</p>
+<h2>YouTube</h2><p>Our videos are on YouTube and follow the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+<h2>No warranty</h2><p>The site is provided as is. We aren't responsible for third-party sites we link to.</p>
+<h2>Contact</h2><p><a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a></p>""")
+
 INDEXNOW_KEY = "42ea7b879d668a2c990cad4a77c32361"  # public by design: proves to Bing/IndexNow that we own the site
 open(os.path.join(SITE, f"{INDEXNOW_KEY}.txt"), "w").write(INDEXNOW_KEY)
 open(os.path.join(SITE, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
 _newest = max([d for *_, d in GUIDES] + ["2026-11-18"]); _newest_es = max([d for *_, d in GUIDES_ES] + ["2026-11-18"])  # hubs change whenever a guide is added
-urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
+# About pages (Nov 24 upgrade): who we are and how we check facts. Google's quality guidance weighs trust; a fan site
+# earns it by showing its rules. No owner name or location here (owner info stays private).
+ALT["about/"] = "es/acerca/"; ALT["es/acerca/"] = "about/"
+_ORG = {"@context": "https://schema.org", "@type": "Organization", "name": "Vice Replay", "url": DOMAIN + "/",
+        "logo": DOMAIN + "/favicon.png", "email": "contact@vicereplay.com",
+        "sameAs": [YT, YT_ES, "https://www.tiktok.com/@vicereplay00", "https://www.instagram.com/vice.replaytv/"]}
+page("about/", "About Vice Replay: How We Check GTA 6 News", "Who makes Vice Replay, how we check every GTA 6 fact in 2+ sources, how we fix mistakes, and how the site makes money.", f"""<h1>About <span>Vice Replay</span></h1>
+<p class="lede">Vice Replay is an independent GTA 6 fan channel and website: daily news, streamer stories, guides and Shorts, in English and Spanish. GTA's wildest moments. On replay.</p>
+<h2>How we check facts</h2>
+<ul class="list"><li>Every number, date and quote is checked in <b>at least two reputable sources</b> before we publish, and again right before a video goes out.</li>
+<li>Sources are listed at the bottom of every guide, with links.</li>
+<li>Reports and rumors are labeled ("reportedly", "not confirmed by Rockstar").</li>
+<li>No story spoilers in titles or thumbnails, and we never use leaked material.</li></ul>
+<h2>When something changes</h2>
+<p>GTA 6 news moves fast. When a fact changes we update the page and its date; when an older page is out of date we add a dated note at the top instead of quietly rewriting history. Spotted a mistake? <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a>.</p>
+<h2>How the site makes money</h2>
+<p>Some links are Amazon affiliate links: as an Amazon Associate we earn from qualifying purchases, at no extra cost to you. Sponsored segments are always labeled. We never sell codes, accounts or "money generators".</p>
+<h2>Not official</h2>
+<p>Vice Replay is a fan project, not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive.</p>
+<h2>Find us</h2>
+<div class="btns"><a class="item" href="{YT}" target="_blank" rel="noopener">YouTube<small>English</small><span aria-hidden="true">→</span></a><a class="item" href="{YT_ES}" target="_blank" rel="noopener">YouTube en español<span aria-hidden="true">→</span></a><a class="item" href="https://www.instagram.com/vice.replaytv/" target="_blank" rel="noopener">Instagram<small>@vice.replaytv</small><span aria-hidden="true">→</span></a><a class="item" href="https://www.tiktok.com/@vicereplay00" target="_blank" rel="noopener">TikTok<small>@vicereplay00</small><span aria-hidden="true">→</span></a></div>""",
+     jsonld=[_ORG, {"@context": "https://schema.org", "@type": "AboutPage", "name": "About Vice Replay", "url": DOMAIN + "/about/"}])
+page("es/acerca/", "Quiénes somos: así revisa Vice Replay las noticias de GTA 6", "Quién hace Vice Replay, cómo revisamos cada dato de GTA 6 en 2+ fuentes, cómo corregimos errores y cómo se financia el sitio.", f"""<h1>Quiénes <span>somos</span></h1>
+<p class="lede">Vice Replay es un canal y sitio de fans de GTA 6, independiente: noticias diarias, streamers, guías y Shorts, en inglés y en español.</p>
+<h2>Cómo revisamos los datos</h2>
+<ul class="list"><li>Cada cifra, fecha y cita se revisa en <b>al menos dos fuentes confiables</b> antes de publicar.</li><li>Las fuentes están al final de cada guía, con enlaces.</li><li>Los rumores se marcan como tales ("según reportes", "sin confirmar").</li><li>Sin spoilers de la historia en títulos ni miniaturas, y nunca usamos material filtrado.</li></ul>
+<h2>Cuando algo cambia</h2>
+<p>Actualizamos la página y su fecha; si una página vieja quedó desactualizada, ponemos una nota fechada arriba. ¿Viste un error? <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a>.</p>
+<h2>Cómo se financia</h2>
+<p>Algunos enlaces son de afiliado de Amazon: como Asociado de Amazon ganamos con las compras que califican, sin costo extra para ti. Los patrocinios siempre se indican.</p>
+<h2>No oficial</h2>
+<p>Vice Replay es un proyecto de fans, no afiliado con Rockstar Games ni con Take-Two Interactive.</p>""",
+     jsonld=[_ORG, {"@context": "https://schema.org", "@type": "AboutPage", "name": "Quiénes somos", "url": DOMAIN + "/es/acerca/"}], lang="es")
+
+urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18"), ("privacy/", "2026-11-23"), ("terms/", "2026-11-22"), ("es/equipo/", "2026-11-22"), ("about/", "2026-11-24"), ("es/acerca/", "2026-11-24")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
 open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
+def refresh_home():
+    """Homepage (hand-written index.html): rebuild its deals list and 'Latest GTA 6 news' on every build (Nov 24), so it
+    can't keep showing launch-night links or old prices. Latest news = picture cards right under the intro, so a phone
+    sees fresh news on the first screen. Also makes sure the head has the org/website data, icon, manifest and RSS."""
+    path = os.path.join(SITE, "index.html")
+    doc = open(path).read()
+    deals = "".join(f'\n    <li><a class="item big" href="{amz(q)}" target="_blank" rel="sponsored noopener">{html.escape(t)}<span aria-hidden="true">→</span></a></li>'
+                    for t, sub, q in DEALS)
+    deals_sec = (f'<section class="group" id="deals"><h2>🔥 Black Friday deals on Amazon</h2><p>Checked {DEALS_CHECKED} · prices change fast · '
+                 f'<a href="/guides/gta-6-deals/" style="color:#00e5d2">every real GTA 6 deal</a></p><ul class="links">{deals}\n  </ul>'
+                 '<p style="font-size:13px;opacity:.75">Affiliate links: as an Amazon Associate we earn from qualifying purchases, at no extra cost to you.</p></section>')
+    newest = [g for g in GUIDES if g[0] != "gta-6-launch-live"][:5]
+    def short(title):  # "GTA 6 Streaming Records: Most-Watched..." -> "GTA 6 Streaming Records"
+        head = title.split(":")[0].strip()
+        if len(title) <= 58: return title
+        if 14 <= len(head) <= 58: return head
+        return title[:58].rsplit(" ", 1)[0] + "…"
+    def pic(slug, title, sub, hot=False):
+        return (f'\n    <a class="card pic{" hot" if hot else ""}" href="/guides/{slug}/"><img src="/og/t/{slug}.webp" width="480" height="252" '
+                f'alt="{html.escape(title)}" loading="lazy"><span><b>{html.escape(title)}</b><small>{html.escape(sub)}</small></span></a>')
+    cards = pic("gta-6-launch-live", "🔴 GTA 6 news: live updates", "Every confirmed update since launch, newest first", True)
+    cards += "".join(pic(s_, short(ti), de) for s_, ti, de, dt_ in newest)
+    latest_sec = f'<section class="group" id="latest"><h2>Latest GTA 6 news</h2><div class="cards">{cards}\n  </div></section>'
+    doc2 = _re.sub(r'<section class="group" id="deals">.*?</section>', lambda m: deals_sec, doc, count=1, flags=_re.S)
+    doc2 = _re.sub(r'\s*<section class="group"(?: id="latest")?><h2>Latest GTA 6 news</h2>.*?</section>', "", doc2, count=1, flags=_re.S)
+    k = doc2.find('<p class="lede">')
+    k = doc2.find("</p>", k) + 4
+    doc2 = doc2[:k] + "\n  " + latest_sec + doc2[k:]
+    style = ('<style id="vr-cards">.cards{display:grid;gap:10px}.card{display:block;background:var(--panel-2);border:1px solid var(--line);'
+             'border-radius:14px;color:var(--fg);text-decoration:none}.card:hover{border-color:#ff1f8e}.card.pic{display:grid;'
+             'grid-template-columns:120px 1fr;gap:12px;align-items:center;padding:10px}.card.pic img{display:block;width:100%;height:auto;'
+             'aspect-ratio:40/21;border-radius:8px}.card.pic b{font-size:16px;line-height:1.3;display:block}.card.pic small{color:var(--muted);'
+             'font-size:13px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.card.hot{outline:2px solid #ff1f8e}'
+             '@media(min-width:640px){.card.pic{grid-template-columns:200px 1fr}}@media(max-width:639px){.hero{aspect-ratio:2.2/1}.hero .brand{font-size:clamp(36px,11vw,56px)}main>h1,.wrap>h1{font-size:clamp(30px,9vw,42px);margin-top:16px}}</style>')
+    doc2 = _re.sub(r'<style id="vr-cards">.*?</style>', "", doc2, flags=_re.S)
+    org = json.dumps([{"@context": "https://schema.org", "@type": "WebSite", "name": "Vice Replay", "url": DOMAIN + "/", "inLanguage": ["en", "es"]},
+                      {"@context": "https://schema.org", "@type": "Organization", "name": "Vice Replay", "url": DOMAIN + "/", "logo": DOMAIN + "/favicon.png",
+                       "sameAs": [YT, YT_ES, "https://www.tiktok.com/@vicereplay00", "https://www.instagram.com/vice.replaytv/"]}], ensure_ascii=False)
+    doc2 = _re.sub(r'<script type="application/ld\+json" id="vr-org">.*?</script>', "", doc2, flags=_re.S)
+    head_extra = style + f'<script type="application/ld+json" id="vr-org">{org}</script>'
+    if 'rel="manifest"' not in doc2:
+        head_extra += ('<link rel="apple-touch-icon" href="/favicon.png"><link rel="manifest" href="/site.webmanifest">'
+                       '<link rel="alternate" type="application/rss+xml" title="Vice Replay: GTA 6 news and guides" href="/feed.xml">')
+    doc2 = doc2.replace("</head>", head_extra + "\n</head>", 1)
+    if 'href="/about/"' not in doc2:
+        doc2 = doc2.replace('>Work with us</a></p>', '>Work with us</a> · <a href="/about/" style="color:#00e5d2">About us</a></p>', 1)
+    if doc2 != doc:
+        open(path, "w").write(doc2)
+
+
+
+def add_related():
+    """Nov 24 upgrade: a 'Related guides' box with 4 picture cards at the end of every guide (EN + ES), picked by shared
+    words in title + description (newest first on ties). Internal links help readers stay and help search engines find
+    and rank every page. Rebuilt on each run (old box removed first)."""
+    stop = set("gta 6 vi the a an and or of to in on for is it its what how why when where with you your our are be".split()
+               + "de el la los las y o en un una que para por con del al es su sus lo".split())
+    def words(t):
+        return {w for w in _re.findall(r"[a-záéíóúñ0-9]+", t.lower()) if w not in stop and len(w) > 2}
+    for items, base, heading in ((GUIDES, "guides", "Related guides"), (GUIDES_ES, "es/guias", "Guías relacionadas")):
+        info = {s_: (t_, d_, dt_, words(t_ + " " + d_)) for s_, t_, d_, dt_ in items}
+        for slug, (title, desc, date, w) in info.items():
+            f = os.path.join(SITE, base, slug, "index.html")
+            if not os.path.exists(f):
+                continue
+            ranked = sorted((o for o in info if o != slug), key=lambda o: (len(w & info[o][3]), info[o][2]), reverse=True)[:4]
+            cards = "".join(f'<a class="card pic" href="/{base}/{o}/"><img src="/og/t/{o}.webp" width="480" height="252" alt="{html.escape(info[o][0])}" loading="lazy"><span><b>{html.escape(info[o][0])}</b><small>{html.escape(info[o][1])}</small></span></a>' for o in ranked)
+            box = f'<div class="related"><h2>{heading}</h2><div class="cards">{cards}</div></div>'
+            doc = open(f).read()
+            doc = _re.sub(r'<div class="related">.*?</div></div>', "", doc, flags=_re.S)
+            doc = doc.replace("</main>", box + "\n</main>", 1)
+            open(f, "w").write(doc)
+
+
+def write_feeds_404_manifest():
+    """Nov 24 upgrades: RSS feeds (EN /feed.xml, ES /es/feed.xml) so readers and aggregators can follow new guides,
+    a branded 404 page (GitHub Pages serves /404.html) and a web app manifest (save-to-home-screen icon)."""
+    import datetime as _dt
+    from email.utils import format_datetime
+    def feed(items, path, title, link, lang):
+        rows = []
+        for slug, ti, desc, date in items[:30]:
+            url = f"{DOMAIN}/{'es/guias' if lang == 'es' else 'guides'}/{slug}/"
+            when = format_datetime(_dt.datetime.fromisoformat(date + "T12:00:00+00:00"))
+            rows.append(f"<item><title>{html.escape(ti)}</title><link>{url}</link><guid>{url}</guid>"
+                        f"<pubDate>{when}</pubDate><description>{html.escape(desc)}</description></item>")
+        xml = (f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>{html.escape(title)}</title>'
+               f'<link>{link}</link><description>{html.escape(title)}</description><language>{lang}</language>'
+               + "".join(rows) + "</channel></rss>\n")
+        os.makedirs(os.path.dirname(os.path.join(SITE, path)) or SITE, exist_ok=True)
+        open(os.path.join(SITE, path), "w").write(xml)
+    feed(sorted(GUIDES, key=lambda g: g[3], reverse=True), "feed.xml", "Vice Replay: GTA 6 news and guides", DOMAIN + "/", "en")
+    feed(sorted(GUIDES_ES, key=lambda g: g[3], reverse=True), "es/feed.xml", "Vice Replay en español: guías de GTA 6", DOMAIN + "/es/", "es")
+    latest = "".join(f'<a class="item" href="/guides/{s}/">{html.escape(t)}<span aria-hidden="true">→</span></a>'
+                     for s, t, _, _ in sorted(GUIDES, key=lambda g: g[3], reverse=True)[:6])
+    page("404/", "Page not found · Vice Replay", "This page went off the map.", f"""<h1>This page went <span>off the map</span></h1>
+<p class="lede">The link is old or mistyped. Here's what's new on Vice Replay instead.</p>
+<div class="btns"><a class="item" href="/guides/gta-6-launch-live/">🔴 GTA 6 news: live updates<span aria-hidden="true">→</span></a>{latest}<a class="item" href="/guides/">All guides<span aria-hidden="true">→</span></a></div>""")
+    d404 = os.path.join(SITE, "404")
+    doc = open(os.path.join(d404, "index.html")).read()
+    doc = doc.replace('content="index,follow,max-image-preview:large"', 'content="noindex"')
+    doc = _re.sub(r'<link rel="canonical"[^>]*>', "", doc)
+    open(os.path.join(SITE, "404.html"), "w").write(doc)
+    import shutil
+    shutil.rmtree(d404, ignore_errors=True)
+    json.dump({"name": "Vice Replay", "short_name": "Vice Replay", "start_url": "/", "display": "standalone",
+               "background_color": "#0d0717", "theme_color": "#0d0717", "description": "GTA 6 news, guides and Shorts",
+               "icons": [{"src": "/favicon.png", "sizes": "192x192", "type": "image/png"}]},
+              open(os.path.join(SITE, "site.webmanifest"), "w"))
+
+
+add_related()
+write_feeds_404_manifest()
+
+refresh_home()
+try:
+    import sys as _sys
+    _sys.path.insert(0, STUDIO)
+    from studio.site_stale import scan as _stale_scan, freshness as _fresh
+    for _pg, _ctx in _stale_scan(SITE):
+        print(f"STALE {_pg}: ...{_ctx}...")
+    for _w in _fresh(STUDIO):
+        print("OLD", _w)
+except Exception as _e:  # the check must never break a build
+    print("stale check skipped:", _e)
+
 print("ok", len(GUIDES))
 
 

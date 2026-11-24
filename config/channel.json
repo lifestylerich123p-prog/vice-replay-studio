@@ -80,5 +80,15 @@
       "note": "Spanish-voice versions of Vice Replay Shorts (rendered every day by studio.ship). Upload: python -m studio.youtube_es. channel_id is filled in after the owner creates the channel and `youtube_es whoami` shows it."
     }
   },
-  "caption_style": "animated"
+  "caption_style": "animated",
+  "voice": "af_heart",
+  "voice_es": "em_alex",
+  "_voice_note": "Nov 22 owner: \"use the best voice rated\" -> Kokoro af_heart (grade A; am_michael was C+). Kokoro grades no Spanish voice, so Spanish stays em_alex until the owner picks.",
+  "shorts_subtitles": false,
+  "_shorts_subtitles_note": "Nov 22 night, owner: \"every posting credit must be used posting or answering comments\". Subtitle files cost 400 quota units each and Shorts already have burned-in captions; set true to upload subtitle tracks on Shorts again (long videos always get them).",
+  "spanish_winners_only": {
+    "on": true,
+    "min_views_24h": 150,
+    "_note": "Owner Nov 23 (\"Approve next steps\"): until Vice Replay en Español has an audience, a Spanish version of an English Short is uploaded only if the English one did well in its first 24 h (views >= max(min_views_24h, median 24 h views of our last 7 days)). Spanish-only Shorts (es_only, no English original) are not affected. studio.spend decides; set on=false to go back to EN+ES for every Short."
+  }
 }

@@ -1,0 +1,44 @@
+{
+ "slug": "goodbye-gta-5",
+ "caption": "Goodbye GTA 5 👋 13 years in numbers.\n\nSept 17, 2013 to Nov 19, 2026: three console generations, $800M+ on day one, ~230 million copies sold (Take-Two, May 2026), and the longest wait in GTA history.\n\nMichael, Franklin or Trevor: who will you miss most? 👇\n\nFacts checked: Take-Two filings and earnings, GTA Base / Game Informer release dates. Fan page, not affiliated with Rockstar Games.\n\n#gta5 #gta6 #gtavi #gta #gaming #goodbyegta5",
+ "first_comment": "Michael, Franklin or Trevor: who will you miss most? 👇",
+ "cover": {
+  "title": "Goodbye GTA 5",
+  "subtitle": "13 years in numbers. Swipe.",
+  "bg": "vice-city-15.jpg"
+ },
+ "tips": [
+  {
+   "title": "Sept 17, 2013",
+   "text": "GTA 5 comes out\non PS3 and Xbox 360.",
+   "bg": "vice-city-10.jpg"
+  },
+  {
+   "title": "3 console generations",
+   "text": "PS3 / Xbox 360 (2013)\nPS4 / Xbox One (2014)\nPS5 / Xbox Series (2022)\nplus PC (2015)",
+   "bg": "leonida-keys-03.jpg"
+  },
+  {
+   "title": "$800 million+",
+   "text": "Its first day of sales\n(Take-Two, 2013).",
+   "bg": "car-grotti-cheetah-01.jpg"
+  },
+  {
+   "title": "~230 million copies",
+   "text": "Sold by May 2026\n(Take-Two).",
+   "bg": "vice-city-11.jpg"
+  },
+  {
+   "title": "13 years",
+   "text": "Until GTA 6 on Nov 19, 2026.\nNo GTA ever waited longer.",
+   "bg": "mount-kalaga-02.jpg"
+  }
+ ],
+ "cta": {
+  "title": "Who will you miss most?",
+  "text": "Michael, Franklin or Trevor?\nComment below. Follow @vice.replaytv for GTA 6 every day.",
+  "bg": "vice-city-15.jpg"
+ },
+ "style": "vice",
+ "seed": 1
+}

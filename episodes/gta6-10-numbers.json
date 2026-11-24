@@ -1,0 +1,749 @@
+{
+ "title": "GTA 6 in 10 Numbers: The First Week, Explained",
+ "slug": "gta6-10-numbers",
+ "series": "Explained",
+ "format": "explainer",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (GTA 6-style lettering cards, Nov 23)",
+ "title_options": [
+  "GTA 6 in 10 Numbers: The First Week, Explained",
+  "GTA 6 After One Week: 10 Numbers That Explain It",
+  "GTA 6 by the Numbers: Sales, Reviews, FPS and More"
+ ],
+ "description": "GTA 6's first week in ten numbers, every one checked in at least two sources, no story spoilers: $3.79 billion (and the catch), $79.99 (the cheapest GTA ever after inflation), 99 on Metacritic, 80 hours, 30 FPS (even on PS5 Pro), 3.3 million Twitch viewers, 309 million trailer views, 4 secrets players found, 7 fixes in the first patch notes and 8 Game Awards nominations. Which number surprised you most?",
+ "thumbnail": {
+  "line1": "GTA 6 made",
+  "line2": "$3.79 billion",
+  "tag": "but there's a catch",
+  "image": "../media/official/vice-city-01.jpg",
+  "variants": [
+   {
+    "line1": "A 99 game",
+    "line2": "at 30 FPS",
+    "tag": "week one in numbers",
+    "image": "../media/official/jason-and-lucia-01.jpg"
+   },
+   {
+    "line1": "GTA 6",
+    "line2": "in 10 numbers",
+    "tag": "week one",
+    "image": "vice:2"
+   }
+  ],
+  "note": "Nov 23: A = the money number + the catch (uploaded), B = the 99 vs 30 FPS contrast, C = the plain title on our Vice City set. Test & Compare B and C in YouTube Studio (long videos only)."
+ },
+ "pinned_comment": "Which of the 10 numbers surprised you most? 👇",
+ "tags": [
+  "GTA 6",
+  "GTA 6 numbers",
+  "GTA 6 sales",
+  "GTA 6 Metacritic",
+  "GTA 6 FPS",
+  "GTA 6 price",
+  "GTA 6 how long to beat",
+  "GTA 6 Twitch record",
+  "GTA 6 explained",
+  "GTA 6 first week",
+  "GTA VI",
+  "Grand Theft Auto VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi"
+ ],
+ "sources": [
+  "Beebom - GTA 6 likely won't get a Christmas discount, says Take-Two CEO: https://beebom.com/gta-6-likely-wont-get-a-christmas-discount-says-take-two-ceo/",
+  "Dexerto - Rockstar Games boss says $100 GTA 6 Ultimate Edition is outselling the $80 standard version: https://www.dexerto.com/gta/rockstar-games-boss-says-100-gta-6-ultimate-edition-is-outselling-the-80-standard-version-3397246/",
+  "Dot Esports - GTA 6 Twitch viewership record: https://dotesports.com/gta/news/gta-6-twitch-viewership-record",
+  "Engadget - GTA 5 makes over $800 million on day one: https://www.engadget.com/2013-09-18-grand-theft-auto-5-makes-off-with-over-800-millio",
+  "Fox 5 - GTA VI pulls in estimated $1.84 billion by release day (Sensor Tower): https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record",
+  "GameSpot - GTA 5 PS5 graphics modes (Performance mode targets 60 FPS): https://www.gamespot.com/articles/new-gta-5-and-gta-online-for-ps5-and-xbox-series-x-s-details-screenshots-revealed/1100-6501259/",
+  "GamesRadar - How long is GTA 6? About 80 hours: https://www.gamesradar.com/games/grand-theft-auto/how-long-is-gta-6-about-80-hours-according-to-one-rockstar-devs-playthrough/",
+  "Gematsu - The Game Awards 2026 nominees: https://www.gematsu.com/2026/11/the-game-awards-2026-nominees-announced",
+  "IBTimes - GTA 6 Easter egg is literally an egg: https://www.ibtimes.co.uk/gta-6-player-discovers-literal-easter-egg-leonida-1833342",
+  "Insider Gaming - GTA 6 Metacritic score: https://insider-gaming.com/gta-6-metacritic-score-maintains-goat-status/",
+  "Insider Gaming - GTA 6 streaming launch record: https://insider-gaming.com/gta-6-streaming-launch-record/",
+  "Jalopnik - Paul Walker tribute car in GTA 6: https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
+  "MP1st - GTA 6 update 1.002.002 released on November 23: https://mp1st.com/title-updates-and-patches/gta-6-first-update-1-002-002-released-on-november-23",
+  "PC Gamer - Rockstar says a PS5 Pro is not powerful enough for 60 FPS GTA 6: https://www.pcgamer.com/games/grand-theft-auto/rockstar-says-a-ps5-pro-is-simply-not-powerful-enough-for-60-fps-gta-6-as-i-crack-a-smile-at-my-5090/",
+  "PlayStation LifeStyle - GTA 6 update 1.002.002: https://www.playstationlifestyle.net/2026/11/23/gta-6-update-1002002-november-23-2026-patch-notes",
+  "Sportskeeda - Top 5 GTA games by Metacritic: https://sportskeeda.com/gta/top-5-gta-games-based-average-critic-reviews-metacritic",
+  "Take-Two 8-K exhibit 99.1 (Nov 20, 2026) - $3.79 billion: https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm",
+  "TechPowerUp - GTA 6 review roundup: 99 on Metacritic and 118 perfect scores: https://www.techpowerup.com/354998/gta-6-review-roundup-99-on-metacritic-and-118-perfect-scores",
+  "TechRadar - GTA 6 Ultimate Edition is selling more than standard, says Take-Two CEO: https://techradar.com/gaming/gta-6-ultimate-edition-is-selling-more-than-standard-says-take-two-ceo-despite-the-price-controversy-the-most-avid-consumers-are-the-ones-who-are-pre-ordering-now",
+  "TechRadar - GTA 6 can take up to 80 hours to beat: https://techradar.com/gaming/gta-6-will-be-a-massive-game-and-rockstars-longest-yet-as-the-studio-confirms-it-can-take-up-to-80-hours-to-beat",
+  "U.S. Bureau of Labor Statistics - CPI-U: https://www.bls.gov/cpi/",
+  "VGC - GTA 6 Bigfoot explained: https://www.videogameschronicle.com/guide/gta-6-bigfoot-explained-how-to-find-bigfoot-in-gta-6/",
+  "VGC - GTA 6 is the highest scoring video game of all time on Metacritic: https://www.videogameschronicle.com/news/grand-theft-auto-6-is-currently-the-highest-scoring-video-game-of-all-time-according-to-metacritic/",
+  "VGC - GTA 6 is the most nominated game at The Game Awards 2026: https://www.videogameschronicle.com/news/gta-6-is-the-most-nominated-game-at-the-game-awards-2026/",
+  "VGC - Rockstar explains why you can't play darts in GTA 6: https://www.videogameschronicle.com/news/rockstar-explains-why-you-cant-play-darts-in-gta-6-we-dont-have-unlimited-time/",
+  "Variety - GTA 6 sales: $3.79 billion: https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198",
+  "Wccftech - GTA VI Twitch viewers record beats League of Legends: https://wccftech.com/grand-theft-auto-vi-twitch-viewers-record-league-of-legends/",
+  "Wccftech - PS5 Pro CPU not powerful enough for GTA VI at 60 FPS: https://wccftech.com/rockstar-ps5-pro-cpu-not-powerful-grand-theft-auto-vi-complex-simulation-60-fps-hopes/",
+  "VICE - GTA 6 update 01.002.002 patch notes: https://www.vice.com/en/article/gta-6-update-01-002-002-patch-notes/",
+  "Dot Esports - GTA 6 patch 1.002.002: weather, autosave and more fixed: https://dotesports.com/gta/news/gta-6-patch-note-fix-change-weather-autosave-wanted-level",
+  "Comicbook - GTA 6 first update after release, full patch notes: https://comicbook.com/gaming/news/gta-6-grand-theft-auto-vi-update-patch-notes-ps5-xbox-november-23/",
+  "RockstarINTEL - GTA VI update 01.002.002 patch notes released: https://rockstarintel.com/new-gta-vi-update-01-002-002-patch-notes-released/"
+ ],
+ "segments": [
+  {
+   "headline": "GTA 6 IN 10 NUMBERS",
+   "text": "One week after launch, here's GTA 6 in ten numbers. Every one checked in at least two sources, and what each one actually tells us.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6",
+     "IN 10 NUMBERS"
+    ],
+    "pink": [
+     "IN 10 NUMBERS"
+    ],
+    "sub": "every number checked in 2+ sources",
+    "seed": 0
+   },
+   "chapter": "Intro"
+  },
+  {
+   "headline": "NUMBER 1",
+   "text": "Number one: three point seven nine billion dollars. That's what Take-Two reported for pre-orders plus the first day.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 1,
+    "of": 10,
+    "label": "$3.79 BILLION",
+    "sub": "pre-orders + day one, Take-Two",
+    "prefix": true,
+    "seed": 0
+   },
+   "chapter": "1. $3.79 billion"
+  },
+  {
+   "headline": "VS GTA 5",
+   "text": "GTA 5's first day, back in 2013, was eight hundred million. So on paper, GTA 6 did almost five times that.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "GTA 5 · DAY ONE (2013)",
+     "$800M"
+    ],
+    "b": [
+     "GTA 6 · PRE-ORDERS + DAY ONE",
+     "$3.79B"
+    ],
+    "winner": "b",
+    "src": "Take-Two filings (2013, 2026) · Variety · Engadget",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "THE CATCH",
+   "text": "The catch: GTA 6's number includes months of pre-orders, and it costs eighty dollars, not sixty. It's not a clean comparison.",
+   "keep_media": true,
+   "chart": {
+    "type": "headline",
+    "kicker": "THE CATCH",
+    "text": "Months of pre-orders included",
+    "pink": [
+     "PRE-ORDERS"
+    ],
+    "ticker": "GTA 5: one day at $60 · GTA 6: pre-orders + day one at $80-$100",
+    "src": "Take-Two 8-K, Nov 20, 2026",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "OUTSIDE ESTIMATE",
+   "text": "But even Sensor Tower's outside estimate, one point eight four billion by release day, is more than double GTA 5. Either way, it's the biggest launch Rockstar has ever had.",
+   "keep_media": true,
+   "chart": {
+    "type": "bars",
+    "bg": "vice",
+    "prefix": "$",
+    "unit": "M",
+    "highlight": 1,
+    "items": [
+     [
+      "GTA 6 (Take-Two, official)",
+      3790
+     ],
+     [
+      "GTA 6 (Sensor Tower, estimate)",
+      1840
+     ],
+     [
+      "GTA 5 (day one, 2013)",
+      800
+     ]
+    ],
+    "src": "Sensor Tower via Fox 5 · esports.gg · 80.lv",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "NUMBER 2",
+   "text": "Number two: seventy nine dollars and ninety nine cents. That's the standard price. Ultimate costs twenty more.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 2,
+    "of": 10,
+    "label": "$79.99",
+    "sub": "standard · Ultimate is $20 more",
+    "prefix": true,
+    "seed": 0
+   },
+   "chapter": "2. $79.99"
+  },
+  {
+   "headline": "AFTER INFLATION",
+   "text": "Adjust for inflation, though, and it's the cheapest GTA ever. GTA 3 and GTA 4 cost about ninety four dollars in today's money.",
+   "keep_media": true,
+   "chart": {
+    "type": "line",
+    "bg": "vice",
+    "prefix": "$",
+    "floor": 70,
+    "highlight": 5,
+    "items": [
+     [
+      "GTA 3\n2001",
+      95
+     ],
+     [
+      "Vice City\n2002",
+      93
+     ],
+     [
+      "GTA SA\n2004",
+      88
+     ],
+     [
+      "GTA 4\n2008",
+      94
+     ],
+     [
+      "GTA 5\n2013",
+      86
+     ],
+     [
+      "GTA 6\n2026",
+      80
+     ]
+    ],
+    "note": "Launch price in Oct 2026 dollars (BLS CPI-U)",
+    "src": "BLS CPI-U",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "THE SURPRISE",
+   "text": "The surprise: Take-Two says more people pre-ordered the hundred-dollar Ultimate edition than the standard one. And its boss says no holiday discount. Zelnick's explanation: the most avid fans are the ones who pre-order first, and they buy everything.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "bg": "vice",
+    "title": "TAKE-TWO'S CEO SAYS",
+    "items": [
+     [
+      "Ultimate outsold Standard",
+      "YES"
+     ],
+     [
+      "Holiday discount",
+      "NO"
+     ]
+    ],
+    "good": [
+     "yes"
+    ],
+    "src": "TechRadar · Dexerto · Beebom · IBTimes",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "NUMBER 3",
+   "text": "Number three: ninety nine on Metacritic. Only one other game ever got that: Zelda, Ocarina of Time.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 3,
+    "of": 10,
+    "label": "99 ON METACRITIC",
+    "sub": "tied with Ocarina of Time",
+    "prefix": true,
+    "seed": 0
+   },
+   "chapter": "3. 99 on Metacritic"
+  },
+  {
+   "headline": "PERFECT TENS",
+   "text": "Of a hundred forty seven critic reviews on PS5, a hundred eighteen were perfect scores, as of launch week. That's not one hyped outlet. That's eight in ten critics giving it a perfect score.",
+   "keep_media": true,
+   "chart": {
+    "type": "meter",
+    "value": 118,
+    "max": 147,
+    "label": "perfect scores",
+    "sub": "out of 147 PS5 critic reviews",
+    "src": "TechPowerUp · Insider Gaming",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "EVERY GTA RANKED",
+   "text": "Against the whole series: GTA 6 and GTA 4 are S tier, GTA 3 and 5 are A tier, and Vice City and San Andreas land in B.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "EVERY GTA ON METACRITIC",
+    "rows": [
+     [
+      "S",
+      [
+       "GTA 6 · 99",
+       "GTA IV · 98"
+      ]
+     ],
+     [
+      "A",
+      [
+       "GTA III · 97",
+       "GTA V · 97"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Vice City · 95",
+       "San Andreas · 95"
+      ]
+     ]
+    ],
+    "src": "Metacritic · Sportskeeda · Insider Gaming",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "NUMBER 4",
+   "text": "Number four: eighty hours. Rockstar's own estimate for the story plus some side missions.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 4,
+    "of": 10,
+    "label": "80 HOURS",
+    "sub": "Rockstar's estimate",
+    "prefix": true,
+    "seed": 0
+   },
+   "chapter": "4. 80 hours"
+  },
+  {
+   "headline": "TWO AND A HALF GTA 5S",
+   "text": "Red Dead 2 takes about fifty one hours. GTA 5, about thirty two. That's two and a half GTA 5s.",
+   "keep_media": true,
+   "chart": {
+    "type": "bars",
+    "bg": "vice",
+    "unit": " h",
+    "highlight": 0,
+    "items": [
+     [
+      "GTA 6",
+      80
+     ],
+     [
+      "Red Dead Redemption 2",
+      51
+     ],
+     [
+      "GTA 5",
+      32
+     ]
+    ],
+    "note": "GTA 6: Rockstar's estimate; others: HowLongToBeat main story",
+    "src": "GamesRadar · TechRadar · HowLongToBeat",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "13 YEARS",
+   "text": "And it took thirteen years to get here. No other gap between GTAs was even six. Kids born the week GTA 5 came out are thirteen now.",
+   "keep_media": true,
+   "chart": {
+    "type": "bars",
+    "bg": "vice",
+    "unit": " yrs",
+    "highlight": 0,
+    "items": [
+     [
+      "GTA 5 > GTA 6",
+      13.2
+     ],
+     [
+      "GTA 4 > GTA 5",
+      5.4
+     ],
+     [
+      "San Andreas > GTA 4",
+      3.5
+     ],
+     [
+      "Vice City > San Andreas",
+      2.0
+     ]
+    ],
+    "note": "Years between US release dates",
+    "src": "US release dates",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "NUMBER 5",
+   "text": "Number five: thirty frames per second. On PS5, GTA 5 runs at sixty. GTA 6 runs at thirty.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 5,
+    "of": 10,
+    "label": "30 FPS",
+    "sub": "on every console",
+    "prefix": true,
+    "seed": 0
+   },
+   "chapter": "5. 30 FPS"
+  },
+  {
+   "headline": "60 VS 30",
+   "text": "That's half the frame rate of a game from 2013, on the same console. Rockstar chose a bigger, denser world over a smoother one.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "GTA 5 · PS5",
+     "60 FPS"
+    ],
+    "b": [
+     "GTA 6 · PS5",
+     "30 FPS"
+    ],
+    "winner": "a",
+    "src": "GameSpot · PC Gamer · Wccftech",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "NOT EVEN PRO",
+   "text": "Not even the PS5 Pro gets sixty. Rockstar told Kotaku its processor can't handle the simulation. The Pro gets ray-traced shadows and a sharper picture instead.",
+   "keep_media": true,
+   "chart": {
+    "type": "headline",
+    "kicker": "ROCKSTAR TO KOTAKU",
+    "text": "PS5 Pro: still 30 FPS",
+    "pink": [
+     "30 FPS"
+    ],
+    "ticker": "sharper, not smoother · ray-traced shadows · 40 FPS ruled out",
+    "src": "PC Gamer · Wccftech · Insider Gaming",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "NUMBER 6",
+   "text": "Number six: three point three million. GTA 6's peak on Twitch.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 6,
+    "of": 10,
+    "label": "3.3 MILLION",
+    "sub": "peak viewers on Twitch",
+    "prefix": true,
+    "seed": 0
+   },
+   "chapter": "6. 3.3 million viewers"
+  },
+  {
+   "headline": "TWITCH RECORD",
+   "text": "That beat League of Legends' record for a single game. Across Twitch, YouTube and Kick, the peak passed seven million. For a single-player game, that's unheard of.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "OLD RECORD · LEAGUE OF LEGENDS",
+     "3.11M"
+    ],
+    "b": [
+     "GTA 6",
+     "3.3M"
+    ],
+    "winner": "b",
+    "src": "Streams Charts via Dot Esports · Insider Gaming · Wccftech",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "ISHOWSPEED",
+   "text": "And the three most-watched GTA 6 streams on YouTube all belong to IShowSpeed. His launch stream: sixty eight million views.",
+   "keep_media": true,
+   "chart": {
+    "type": "bars",
+    "bg": "vice",
+    "unit": "M",
+    "highlight": 0,
+    "items": [
+     [
+      "IShowSpeed, launch",
+      68
+     ],
+     [
+      "IShowSpeed, No. 2",
+      37
+     ],
+     [
+      "IShowSpeed, No. 3",
+      23
+     ],
+     [
+      "CarryMinati",
+      18.1
+     ]
+    ],
+    "note": "YouTube view counts, Nov 22",
+    "src": "YouTube counters, Nov 22",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "NUMBER 7",
+   "text": "Number seven: three hundred nine million. Views on GTA 6's first trailer, from 2023.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 7,
+    "of": 10,
+    "label": "309 MILLION",
+    "sub": "views on Trailer 1",
+    "prefix": true,
+    "seed": 0
+   },
+   "chapter": "7. 309 million views"
+  },
+  {
+   "headline": "TRAILER 1 WINS",
+   "text": "It still beats trailer two and the launch trailer combined. The hype for that first look still beats everything Rockstar has shown since.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "TRAILER 2 + LAUNCH TRAILER",
+     "280M"
+    ],
+    "b": [
+     "TRAILER 1",
+     "309.8M"
+    ],
+    "winner": "b",
+    "src": "Rockstar's YouTube counts, Nov 22",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "NUMBER 8",
+   "text": "Number eight: four. The secrets players found in the first days.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 8,
+    "of": 10,
+    "label": "4 SECRETS",
+    "sub": "found in week one",
+    "prefix": true,
+    "seed": 0
+   },
+   "chapter": "8. 4 secrets"
+  },
+  {
+   "headline": "THE SECRETS",
+   "text": "A Paul Walker tribute car, a Bigfoot in the swamps, an NPC who knows he's in a simulation, and a literal Easter egg on top of a tower.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "bg": "vice",
+    "title": "FOUND BY PLAYERS",
+    "items": [
+     [
+      "Paul Walker tribute car",
+      "FOUND"
+     ],
+     [
+      "Bigfoot (Skunk Ape)",
+      "FOUND"
+     ],
+     [
+      "NPC who knows",
+      "FOUND"
+     ],
+     [
+      "A literal Easter egg",
+      "FOUND"
+     ]
+    ],
+    "good": [
+     "found"
+    ],
+    "src": "Jalopnik · VGC · Unilad · IBTimes",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "CUT",
+   "text": "And two things that didn't make it: darts and bowling. Rockstar North said even Rockstar doesn't have unlimited time.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "bg": "vice",
+    "title": "IN GTA 6?",
+    "items": [
+     [
+      "Pool",
+      "IN"
+     ],
+     [
+      "Darts",
+      "CUT"
+     ],
+     [
+      "Bowling",
+      "CUT"
+     ]
+    ],
+    "src": "VGC · GGRecon",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "NUMBER 9",
+   "text": "Number nine: seven. The fixes in the first patch notes Rockstar has published, for update three.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 9,
+    "of": 10,
+    "label": "7 FIXES",
+    "sub": "the first patch notes",
+    "prefix": true,
+    "seed": 0
+   },
+   "chapter": "9. 7 fixes"
+  },
+  {
+   "headline": "PATCH 1.002.002",
+   "text": "Crashes, autosaves, phone calls that wouldn't trigger, and a wanted level you couldn't lose. The first two updates came out with no notes at all.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "bg": "vice",
+    "title": "FIXED IN 1.002.002",
+    "items": [
+     [
+      "Crashes",
+      "FIXED"
+     ],
+     [
+      "Autosave",
+      "FIXED"
+     ],
+     [
+      "Phone calls",
+      "FIXED"
+     ],
+     [
+      "Wanted level",
+      "FIXED"
+     ]
+    ],
+    "good": [
+     "fixed"
+    ],
+    "src": "VICE · Dot Esports · Comicbook · RockstarINTEL",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "NUMBER 10",
+   "text": "Number ten: eight. Game Awards nominations, the most of any game this year.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 10,
+    "of": 10,
+    "label": "8 NOMINATIONS",
+    "sub": "The Game Awards 2026",
+    "prefix": true,
+    "seed": 0
+   },
+   "chapter": "10. 8 nominations"
+  },
+  {
+   "headline": "DECEMBER 10",
+   "text": "It's up for Game of the Year against five others, including a Zelda remake. Winners are announced December tenth.",
+   "keep_media": true,
+   "chart": {
+    "type": "headline",
+    "kicker": "GAME OF THE YEAR",
+    "text": "6 games, 1 winner, December 10",
+    "pink": [
+     "DECEMBER 10"
+    ],
+    "ticker": "007 First Light · Control Resonant · GTA VI · Phantom Blade Zero · Resident Evil Requiem · Ocarina of Time Remake",
+    "src": "VGC · Gematsu · GosuGamers",
+    "seed": 0
+   }
+  },
+  {
+   "headline": "OUR TAKE",
+   "text": "Our take after week one: the big numbers aren't hype. The real open question now is frame rate.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "OUR TAKE:",
+     "NOT HYPE"
+    ],
+    "pink": [
+     "NOT HYPE"
+    ],
+    "sub": "open question: 30 FPS",
+    "seed": 0
+   },
+   "chapter": "Our take"
+  },
+  {
+   "headline": "YOUR TURN",
+   "text": "Which number surprised you most? Tell me in the comments, and subscribe: we break down GTA 6 every day.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WHICH NUMBER",
+     "SURPRISED YOU?"
+    ],
+    "pink": [
+     "SURPRISED YOU?"
+    ],
+    "seed": 0
+   }
+  }
+ ],
+ "fact_update": "2026-11-23 afternoon: Rockstar published notes for 1.002.002 (7 fixes); number 9 changed from '0 patch notes' to '7 fixes'",
+ "guide": "gta-6-launch-week-numbers"
+}

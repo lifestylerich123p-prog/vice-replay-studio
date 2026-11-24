@@ -111,6 +111,8 @@
   boats, Rideout Customs, Sara's Salon, Stock 305, Wyman car collection, Vice City style). EXCLUDED Ultimate Edition
   shots: both revolver shots, weapon variants, the PTT store (man holding a gun), two Electric Fang tattoo-parlor
   shots (balaclava pose, bat/pipe), the Squalo swimwear shot, Stock 305 #4 and Vice City Style #3/#5 (revealing poses).
+  Nov 22: `jason-and-lucia-ultimate-02.jpg` (Lucia on the green car holding a revolver at her hip) had slipped into
+  media/official; removed (found while checking the Lucia outfits Short at full resolution).
 - 2026-11-21: Channel profile improved (owner: "continue to do improvement to the channel"): new description and
   keywords (daily morning news, streamer stories, quizzes, map comparisons; not-affiliated line kept; old text in
   content/archive/channel-profile-before-2026-11-21.json), homepage sections added (Streamer & Breaking News, Shorts,
@@ -139,6 +141,167 @@
   (UCWPnqYqYu9_CLsJ8Bk1MPgQ) is connected. From now on an owner "approve" for an episode's Shorts also posts their
   Spanish versions on the Spanish channel, same slots (`studio.ship --upload` does it; `--no-es-upload` skips).
   Long videos stay English-only. Spanish key: YT_SPANISH_REFRESH_TOKEN (wins) or YT_ES_REFRESH_TOKEN.
-- 2026-11-20 open owner items: publish the Google OAuth app + reconnect YouTube before ~Nov 24; add both repos to the
+- 2026-11-22 (1 AM ET): the saved keys were swapped (YT_REFRESH_TOKEN = Spanish channel, YT_ES_REFRESH_TOKEN =
+  English, YT_SPANISH_REFRESH_TOKEN = Spanish). Since commit 7434d93 every tool picks the key by the channel it
+  belongs to, so it works anyway; the health check shows a 🟡 until the settings are tidied (owner, when awake:
+  English key in YT_REFRESH_TOKEN, Spanish key in YT_SPANISH_REFRESH_TOKEN, delete YT_ES_REFRESH_TOKEN).
+- 2026-11-22 (8 AM ET, owner "Ok" to the schedule review): (1) Lucia outfits Short moves up from Wed 9:30 AM to
+  **Mon Nov 23 12:30 PM (English)** and **Mon 8:30 PM (Spanish**: the Spanish 12:30 slot has the map Short); (2) the
+  39 s ranking Short QzFhpT4dNVQ is unscheduled (private, kept) and its IG Reel skipped; the re-cut
+  `episodes/gta6-top-3-rides.json` (~17 s, top 3) takes **Wed Nov 25 9:30 AM** (EN + ES); (3) the GTA 5 money Short
+  (gta6-this-week-launch `tips`, `es_only` in the episode) goes to the **Spanish channel only**, Mon 3:30 PM. The
+  Mon 3:12 / 3:20 AM reminders were written before this: follow this entry. The Mon 12:40 PM ranking-comment
+  reminder is void (that video won't be public).
+- 2026-11-22 (8:40 AM ET, owner "find upgrades"): races Short sP1fq11WMmw moved from Sun 5 PM to **Thu Nov 26 11:00 AM**
+  (2-6 PM posts: median 2.7 views/h vs 16 for 6-11 AM); its IG Reel moved to Thu 11:05; Sun 5:10 PM comment reminder void.
+- 2026-11-22 (9:15 AM ET, owner: "I want to try making videos like that from now on... graph, real evidence based.
+  Start taking off the ones not going to get views and changing them for this"): from now on Shorts are built on
+  our own graphs of checked numbers (studio/charts.py), trailer footage only as cutaways. Unscheduled (private, kept):
+  M7oKevOPY08 "hidden EASY MODE" (Tue 12:30) and sP1fq11WMmw "races" (Thu 11 AM); their IG Reels and comment
+  reminders are void. Replacements: `gta6-99-club` (Metacritic graph) **Tue Nov 24 12:30 PM EN / 11:00 AM ES**;
+  `gta6-trailer-views` (Rockstar trailer view counts) **Wed Nov 25 12:30 PM EN + ES**; the Spanish money Short is now
+  `gta6-money-chart-es` (es_only, Mon 3:30 PM ES) and gta6-this-week-launch `tips` is `replaced_by` it. Uploads: Mon
+  3:07 AM (money ES) and Tue 3:10 AM (99 club + trailers), after each day's quota reset.
+- 2026-11-22 (10 AM ET, owner: "change the video for the ones that will have more views and start changing the system
+  to match"; "use the best voice rated"): voice -> Kokoro af_heart (grade A) in config/channel.json for every new
+  render (Spanish stays em_alex); Lucia, top-3 rides, 99 club and trailer views re-rendered with it. The 33 s map Short
+  9ZmygQdJRBA (Tue 11 AM) is unscheduled and replaced by `gta6-cheapest-gta-inflation` (GTA 6 is the cheapest GTA after
+  inflation, our BLS CPI math): **Tue Nov 24 11:00 AM EN, Wed Nov 25 11:00 AM ES** (upload Tue 3:20 AM). System:
+  studio/vice/viewcheck.py now BLOCKS a Short that is narration over trailer footage only (needs a `chart` or owner
+  gameplay; an owner-approved `originality` note waives it, e.g. Lucia montage, top-3 rides).
+- 2026-11-20 open owner items: ~~publish the Google OAuth app + reconnect YouTube before ~Nov 24~~ (DONE Nov 22 for Vice
+  Replay EN + ES; What If Arena still to reconnect in its own chat); add both repos to the
   routines (claude.ai/connect-github) so breaking-news/daily runs can push; decide AI-voice label on/off; approve the
   next Everygen batch ("make the rest", ~64 credits); KreekCraft GTA 6 Twitch link for a campaign clip; record gameplay.
+- 2026-11-22 (11 AM ET, owner: "start deleting videos that don't have the needed views and learn from it" -> "OK do it as
+  you say, don't delete"): set PRIVATE (not deleted, reversible in Studio): 3T1de9Fnygg (Is Out: Do This Before You
+  Play, 0), PJgR2lmq_Nc (Beginner Tips long, 2), RmONg7-uN4w (Physical Edition long, 8), MIvka1jBpJ0 (Not Enough Space
+  long, 25), 6QbWET74cQs (settings, 5), acNIOalmWzM (money cheat, 9), RAs1Sx_7Zh8 (won't connect, 28), LHTxGyakWyI
+  (dog, 33), 2MOr9zSDyfM (Chaos Is Coming, 43). Kept public on purpose: the 3 LACY campaign clips under 50 views
+  (submitted to the campaign) and 3 long videos the website embeds (vJDnv7_7Hcs launch checklist, YqnShunG7WY best
+  settings, GjhaJdjHR4Q map size). Lessons -> .claude/commands/daily-video.md "NOV 22 FLOP REVIEW".
+
+- 2026-11-22 (owner): the shared Google Cloud project "What If Arena" (OAuth app, renamed "Creator HQ"; Branding uses
+  vicereplay.com/, /privacy/ and /terms/) is now PUBLISHED ("In production"): new refresh tokens no longer expire after
+  7 days. Keys made while it was in Testing still expire (~Nov 24): reconnect Vice Replay (English + Spanish) and What
+  If Arena once, then write the date to content/learn/youtube_connected.txt.
+- 2026-11-22 (afternoon, owner: "update all our info with the ideas we came up with today and continue to think of how to
+  improve them"): (1) the new keys are loaded in the main chat (YT_REFRESH_TOKEN = English, YT_SPANISH_REFRESH_TOKEN =
+  Spanish; YT_ES_REFRESH_TOKEN is gone); both verified. (2) Title fixes, no other change: top-3 rides is now "GTA 6 top 3
+  rides: No. 1 isn't the convertible" and trailer views "GTA 6's first trailer STILL wins (309M views)" / ES "El PRIMER
+  tráiler de GTA 6 sigue ganando (309 M) 🎬": their "#1" would have become a hashtag and the publish check would have
+  stopped Monday's and Tuesday's uploads. (3) The inflation Short's middle chart is now a LINE (GTA 3 2001 -> GTA 6 2026,
+  same numbers, axis from $70 stated), so the four graph Shorts don't share one layout; re-rendered EN + ES. (4) Spanish
+  versions of 99 club, trailer views and inflation now show Spanish chart words (`chart_es`); re-rendered. (5) New:
+  `python -m studio.flops` (48 h flop review, list first; `--apply` in the main chat), scorecard groups by picture and
+  opener, publish-check warnings for repeated layouts, English chart words in Spanish versions and chart dates 3+ days
+  old. Docs updated: README, INDEX, episode-format, playbook, topic bank, ideas (next graph Shorts + unbuilt ideas),
+  docs/vice-system.md, Channel Map.
+- 2026-11-22 (6:30 PM ET, owner: "check for updates or new system upgrades or anything new that could help"): found
+  (1) YouTube Partner Program entry bar doubles for new channels on Feb 1, 2027 (1,000 subs + 8,000 h or 20M Shorts
+  views in 90 days; details in content/learn/lessons.md), shared in the Channel Map for all 3 channels; (2) Shorts
+  series (YPP only) and image carousels in the Shorts feed (owner posts from the phone); (3) news leads: Rockstar
+  interviews (IGN) and Randy's Wish List car locations (content/learn/ideas.md). Built: `quote` chart type (animated
+  quote card) so interview and streamer-quote Shorts are original without footage. No unmerged work on other branches.
+- 2026-11-22 (6:45 PM ET, owner "do what you think" to my option 1 for the darts Short): `gta6-no-darts` (quote cards:
+  Rob Nelson / Rockstar North to VGC, darts and bowling cut, pool in) uploads Mon 3:40 AM for **Mon Nov 23 11:00 AM
+  EN + ES**; the quiz Short I2VEKQUia8w moved from Mon 11:00 to **Wed Nov 25 11:00 AM** (its Mon 11:10 comment reminder
+  is void; new one Wed 11:10). Website: /guides/gta-6-darts/ and /es/guias/dardos-gta-6/ published. Randy's Wish
+  List guide held until sources agree on the car count (16-22). Uploader: the key check now retries brief network
+  errors (2 of 6 checks had failed with "no saved key belongs to channel").
+- 2026-11-22 (7:30 PM ET, owner: "remember we're doing the other type of Shorts now, not the ones with footage but facts
+  with a strong hook" + "fun facts or history, how much you know questions, Instagram posts testing knowledge, use all
+  available plugins"): Shorts are FACTS ONLY from now on (our cards, no trailer clips/screenshots; the publish check
+  blocks footage unless owner gameplay or an earlier owner waiver: Lucia and top-3 rides keep theirs). New cards: `text`,
+  `list`, `quiz` (+ `quote`). Converted to cards only and re-rendered EN + ES: money-chart-es, darts, 99 club,
+  trailer views, inflation, Jason. New: `gta-history-quiz` (3 questions, waiting for approval) and the Instagram quiz
+  carousel `gta-quiz-5` (queued Tue Nov 24 2:30 PM under the IG standing approval). Plugins: social-media-skills
+  interactive-content (quiz rules), vidIQ checked (10 credits left until Dec 15, saved), Everygen not used (needs a
+  cost estimate + owner yes).
+- 2026-11-22 (7 PM ET, owner "ok approve and post"): approved `gta6-jason-quiet` and `gta-history-quiz` (EN + ES). The
+  YouTube quota ran out at ~7 PM (shared Cloud project with What If Arena; ~17.3K logged by us), so nothing can post
+  until 3 AM. Plan: IShowSpeed comments at Mon 3:02 AM (the 7:40 PM reminder will fail and can be ignored).
+  **Mon 3 AM batch = money ES, darts EN + ES, Lucia EN + ES, retag, channel layout; SKIP the top-3 rides step of the
+  3:08 AM plan** (moved to the Wed 3:10 AM batch to stay under quota). Wed 3:10 AM batch: rides (Wed 9:30 AM), Jason
+  (Thu Nov 26 9:30 AM), history quiz (Thu 12:30 PM), all EN + ES.
+- 2026-11-22 (8:30 PM ET, owner: "check the complete system and find any upgrade"): quota used Nov 22: 6 uploads ~9,600
+  units, 13 subtitle uploads ~5,200 (30%), the rest reads/updates; ran out at 7:02 PM. Built: English Shorts no longer
+  upload a Spanish subtitle track (the Spanish channel covers it). QC fix: all-card Shorts' dark backgrounds no longer
+  fail "black bars"; a used-up quota is no longer reported as an expired key. All 7 queued Shorts pass QC (blocked only
+  by the quota until 3 AM). Owner options: separate Cloud project for What If Arena; YouTube quota extension form.
+- 2026-11-22 (night): owner created the Google Cloud project "What If Arena API" (YouTube Data API v3 enabled, Google
+  Auth Platform published, Desktop client JSON downloaded on the Mac). Pending: the What If Arena chat reconnects with
+  it and logs it in the Channel Map. Vice Replay's EN + ES keys checked after the change: both still valid on the old
+  project (project number 662880770567, ID what-if-arena; now effectively Vice Replay's; renaming it is optional).
+- 2026-11-22 (night): DONE. What If Arena reconnected on its own project "What If Arena API" (its chat confirmed the login;
+  its Docs connector can't edit the Channel Map, so Vice Replay logged it there). Vice Replay now has the old project's
+  daily quota to itself.
+- 2026-11-22 (night): owner renamed the old Cloud project from "What If Arena" to **"Vice Replay"** (ID what-if-arena
+  unchanged). Keys re-checked after the rename: EN + ES OK. Don't delete the OAuth client "Vice Replay uploader"
+  (662880770567-coc1..., used by both Vice Replay channels); the other client there (…-pcng…) is probably What If Arena's
+  old one: keep about a week as a backup, then the owner may delete it.
+- 2026-11-22 (9:15 PM ET, owner: "now every posting credit must be used posting or answering comments" + "recheck
+  everything; if the hook isn't strong or it doesn't bring entertainment, redo"): (1) quota rule: subtitle files off on
+  Shorts (config `shorts_subtitles: false`, ~400 units each saved), comment replies now cover the Spanish channel
+  (`studio.replies ... --es`), new `studio.spend` + `content/learn/approved_queue.json` + a nightly 2:04 AM ET task
+  that uploads approved Shorts early and answers every comment with what's left. (2) Hook re-check of the 9 queued
+  Shorts: kept 99 club, inflation, history quiz, Lucia, rides; REDONE: darts (opens on "Rockstar CUT darts from GTA 6,
+  and admitted why"), trailer views (opens on "still beats the next two combined"), Jason (opens on "inspired by Steve
+  McQueen", new title), Spanish money (trimmed 63 -> 51 words); re-rendered EN + ES.
+- 2026-11-22 (10 PM ET, owner "approve"): approved `gta6-13-years` (Fri Nov 27 9:30 AM), `gta6-80-hours` (Sat Nov 28
+  10 AM) and `gta6-5-things` (Sun Nov 29 10 AM), all EN + ES, added to content/learn/approved_queue.json. The nightly
+  2:04 AM quota run uploads them when there's room (Thursday has no 3 AM batch, so the Fri 2:04 AM run has a full
+  day's quota for them at the latest).
+
+- 2026-11-23 (owner "APPROVE", title 1): approved the Cuban-style Spanish-only Short `gta6-little-cuba-es` (title "GTA 6,
+  ¿qué BOLÁ asere? Esto es pura Cuba 🇨🇺 #GTA6 #Shorts", Everygen Viral Adam voice, the owner's pick) for the Spanish
+  channel **Fri Nov 27 11:00 AM**, added to content/learn/approved_queue.json. Owner asked for it "100% Cuban": the
+  script uses Cuban slang (asere, ¡Azúcar!, está en talla, consorte) and the titles use real Cuban customs. The
+  nightly run now re-renders any queued Short whose video is missing (studio/spend.py `renders_needed`).
+- 2026-11-23 (owner: "stop posting the video with trailer imaging, we're moving to the ones with lettering and more
+  modern style"): no trailer clips or official screenshots in ANY video (Shorts, long videos, Reels); cards/lettering
+  or owner gameplay only. Done: 9 scheduled footage uploads unscheduled and kept private, NOT deleted (EN guess-the-ride
+  I2VEKQUia8w, Dexter dOv6212lgj4, 60 FPS 6p9VtX-UaVU, Lucia y4jQTwLJwP4; ES guess-the-ride tAFvDxAzXIo, map-is-florida
+  WKYAhjMTLAs, Dexter vuOrdppswjY, 60 FPS n2kWpaarjxo, Lucia Q5mOKpMIgVY); the Lucia and top-3 rides waivers revoked
+  (rides taken out of approved_queue.json, Wed batch updated); 8 Instagram Reels of footage Shorts skipped; viewcheck now
+  blocks footage in long videos too and counts auto-picked stock footage; the Instagram queue skips footage Reels.
+  Still scheduled: darts EN+ES (11 AM) and the Spanish money chart (3:30 PM), all cards.
+- 2026-11-23 (6:45 AM, owner "APPROVE AND CONTINUE TO DO RESEARCH ... TAKE YOUR TIME"): approved the first GTA 6-style
+  lettering Shorts. Tier list `gta6-tier-list-critics` uploaded for today 12:30 PM (EN jQbv5GPR3dk, ES dKw9tqx_TNg);
+  `gta6-4-secrets` (countdown cards) added to approved_queue.json for Tue Nov 24 9:30 AM EN + ES (uploads after the
+  3 AM quota reset).
+- 2026-11-23 (6:55 AM, owner "APPROVE"): approved `gta6-update-no-patch-notes` (EN today 9:30 AM; ES Tue 12:30 PM after
+  the quota reset) and `gta6-vs-gta5-fps` (Wed Nov 25 9:30 AM EN + ES), both GTA 6-style lettering Shorts; added to
+  approved_queue.json.
+- 2026-11-23 (~7:40 AM, owner "APPROVE"): approved `gta6-black-friday-no-discount` (EN Wed Nov 25 11 AM, ES Thu 11 AM),
+  `gta6-game-awards-8-noms` (EN Fri Nov 27 11 AM, ES Sat 12:30 PM) and the Spanish-only `gta6-precio-por-pais-es` (Fri
+  12:30 PM); all in approved_queue.json, uploaded by the post-reset runs. Also taken as a go-ahead to BUILD the long
+  "GTA 6 in numbers" hub video (posting it still needs its own approval).
+- 2026-11-23 (owner "all" to the posting-process upgrades): (1) fill the open daytime slots with ~6 more lettering
+  Shorts; (2) a Sunday 3:30 PM long-video slot, starting with `gta6-10-numbers` (Sun Nov 29, in approved_queue.json as
+  item "main"); every Short's Related video then points to the newest hub; (3) one daily 1 PM checklist message (pins,
+  Related video, TikTok files); (4) Everygen's Viral Adam voice for every Spanish Short (~1 credit per line, ~5 per
+  Short, logged in the Channel Map); (5) the weekly card series (Mon news, Tue VS, Wed tier list, Thu quiz, Fri
+  countdown, Sat Spanish special, Sun hub).
+- 2026-11-23 ~3:45 PM ET, owner "approve" (the plan proposed after "do what you think best"): (1) the outdated
+  "zero patch notes" Short KI-6wP_Jhik set PRIVATE (Rockstar published notes for 1.002.002 that afternoon); (2)
+  `gta6-patch-notes-7-fixes` Tue Nov 24 8:00 AM EN + 12:30 PM ES (no Instagram Reel: the Wed 3 PM carousel covers it);
+  (3) momentum follow-up `gta-tier-list-sales` (Tier List #2) Tue Nov 24 9:30 AM EN, ES Wed Dec 2 12:30 PM; (4)
+  `gta6-4-secrets` moved to Fri Dec 4 9:30 AM (countdown day); (5) next week: `gta6-top-3-rides` (remade as cards) Mon
+  Nov 30 12:30 / ES 1:30 PM, `gta6-vs-red-dead-2` Tue Dec 1 9:30 / ES 12:30, `gta-cities-quiz` Thu Dec 3 9:30 / ES
+  12:30. Viral Adam ES voices: 29 lines (~29 credits). Same message: "auto approve the everygen for now" =
+  mcp__Everygen allowed in .claude/settings.local.json (not committed; delete it to turn the auto-approve off). Paid
+  image/video generations still get a cost estimate and the owner's yes first.
+- 2026-11-23 ~6:20 PM ET, owner "Approve next steps": (1) Spanish WINNERS-ONLY: until Vice Replay en Español has an
+  audience, a Spanish version of an English Short is uploaded only if the English Short did well in its first 24 h
+  (views >= max(150, median 24 h views of our last 7 days)); studio.spend books winners in the next 12:30-1:30 PM
+  Spanish slot and logs the rest as skipped; Spanish-only Shorts (es_only) unchanged; config/channel.json
+  `spanish_winners_only.on=false` turns it off. (2) Tier lists twice a week: Tier List #3 for Wed Dec 2 9:30 AM.
+- 2026-11-23 ~7:45 PM ET, owner "APPROVE AND DO LAS RUN FOR TONIGHT": momentum follow-up `gta6-first-platinum`
+  ("GTA 6's Platinum trophy is already taken", title 1) booked Wed Nov 25 8:00 AM EN; Spanish winners-only. Uploads in
+  the after-3 AM run (quota was spent). Also cleaned the scheduled tasks (4 stale ones off, 2 carousel runners renamed).
+- 2026-11-24 ~8 AM ET, owner "Approve and check was goin on" (answering the daily run's "reply approve"): the Nov 24 set
+  `gta6-stream-wars` (recovered from the run's log; push had failed): news Short Wed Nov 25 3:30 PM, VTuber Short Sat Nov 28
+  11 AM (moved from Mon 9:30), Vice City tips Short Sun Nov 29 12:30 PM (re-check 'Rockstar hasn't confirmed' first),
+  long video Mon Nov 30 3:30 PM; Spanish winners-only. Same morning (owner asks): website post-launch refresh,
+  deals/codes pages, search-demand pages, stale + freshness monitoring, Amazon full-sale button.

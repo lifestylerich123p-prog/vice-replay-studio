@@ -1,0 +1,44 @@
+{
+ "slug": "gta-quiz-5",
+ "caption": "How well do you know GTA? 5 questions 🧠 Swipe, answer in your head, then check the last slide.\n\nComment your score: 0 to 5 👇 Tag the friend who thinks they know everything about GTA.\n\nAll facts checked: GTA's working title (GamesRadar, Escapist), the 1997 original's three cities (GameSpot), Ray Liotta as Tommy Vercetti (Vice City, 2002), GTA 6's Metacritic 99 and Take-Two's $3.79B (Nov 20, 2026).\n\nFan page, not affiliated with Rockstar Games.\n\n#gta6 #gtavi #gta #gtaquiz #gtavicecity #gaming #quiz",
+ "first_comment": "My score: _/5. Your turn 👇",
+ "cover": {
+  "title": "How well do you know GTA?",
+  "subtitle": "5 questions. Answers on the last slide.",
+  "bg": "vice-city-15.jpg"
+ },
+ "tips": [
+  {
+   "title": "GTA's first name?",
+   "text": "A) Car Thief\nB) Race'n'Chase\nC) Getaway City",
+   "bg": "vice-city-10.jpg"
+  },
+  {
+   "title": "First game set in Vice City?",
+   "text": "A) GTA Vice City (2002)\nB) GTA 2 (1999)\nC) GTA 1 (1997)",
+   "bg": "leonida-keys-03.jpg"
+  },
+  {
+   "title": "Who voiced Tommy Vercetti?",
+   "text": "A) Al Pacino\nB) Ray Liotta\nC) Robert De Niro",
+   "bg": "vice-city-11.jpg"
+  },
+  {
+   "title": "GTA 6 on Metacritic?",
+   "text": "A) 97\nB) 98\nC) 99",
+   "bg": "mount-kalaga-02.jpg"
+  },
+  {
+   "title": "GTA 6 preorders + day one?",
+   "text": "A) $800 million\nB) $1.65 billion\nC) $3.79 billion",
+   "bg": "car-grotti-cheetah-01.jpg"
+  }
+ ],
+ "cta": {
+  "title": "Answers",
+  "text": "1 B, Race'n'Chase\n2 C, GTA 1 (1997)\n3 B, Ray Liotta\n4 C, 99\n5 C, $3.79 billion (Take-Two)\nComment your score: 0 to 5",
+  "bg": "vice-city-15.jpg"
+ },
+ "style": "vice",
+ "seed": 2
+}

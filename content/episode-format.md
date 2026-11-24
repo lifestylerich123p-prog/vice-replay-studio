@@ -19,9 +19,15 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
    - `thumbnail`: `line1` (1-2 words, white), `line2` (2-3 words, pink slab), `tag` (2-4 words), `image`
      (the best screenshot for it). The render makes thumbnail-a/b/c.jpg with different pictures for
      YouTube Studio's Test & Compare (up to 3 thumbnails per video).
+     Nov 23: add `"variants": [{line1, line2, tag, image}, {...}]` so B and C test different IDEAS (a big number,
+     a contrast) instead of the same words on new pictures; `"image": "vice:2"` = our Vice City set. Rebuild only the
+     thumbnails with `python -m studio.thumbs episodes/<slug>.json`.
      Thumbnail text must not repeat the title word for word.
    - Every Short's last segment automatically shows a "FOLLOW FOR DAILY GTA 6" badge (Spanish: "SÍGUENOS: GTA 6 A
      DIARIO"); subscribers are the channel's bottleneck for monetization. Set `"follow_cta": false` to turn it off.
+   - Hook (Nov 22 data): the FIRST sentence is a statement of the surprising result, 3-10 words, never a question
+     (questions first kept 35% of viewers vs 60%); templates in resources/hooks-and-titles.md. `studio.vice publish`
+     blocks a question opener.
    - Make Shorts loop: the last line should flow back into the first (e.g. ends "...and that's why" while
      the hook starts with the reason), so replays count as extra watch time.
    - `pinned_comment`: one question for the comments that's easy to answer (pick-one or a number), posted and
@@ -30,6 +36,13 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
      style (one key word in CAPS + one emoji, e.g. "El PRIMERO en terminar GTA 6 NO fue IShowSpeed 😳 #GTA6 #Shorts"),
      plus `short_pinned_comment_es` (and `pinned_comment_es` inside `shorts` items): an easy Spanish question.
      For Spanish streamer stories (IlloJuan, Rubius, TheGrefg, Ibai...) see content/learn/market-es-*.md.
+   - Titles and tags (Nov 22, owner: "check titles and tags are perfect"): the title leads with the words people
+     search ("GTA 6" + the subject: "GTA 6: Lucia's 8 outfits...", a streamer's name first for streamer stories),
+     under 60 characters before "#GTA6 #Shorts". `tags`: 8-15 search phrases for THIS topic, most specific first
+     ("GTA 6 Lucia", "GTA 6 outfits", "Vintage Vice City Pack"), on the episode or per item in `shorts`; Spanish ones
+     in `short_es.tags` / each Short's `es.tags` ("outfits de Lucia", "GTA 6 español"). The uploaders add the channel
+     basics themselves (studio.youtube_upload.clean_tags, 500-character limit). Before Nov 22, Short-only episodes
+     uploaded with NO tags; `python -m studio.retag` fixes videos already up (content/learn/retag.json).
    - Spanish (free extra audience): every segment (main and Shorts) also gets `text_es` (natural Latin American
      Spanish, same meaning, similar length; keep names like GTA 6, Vice City, Kai Cenat as they are). Add `es`
      {`title`, `description`} for the main video, `short_es` for the main Short, and `es` inside each `shorts`
@@ -71,6 +84,52 @@ Per-segment keys (all optional) in `short` / `segments`:
 - `callout`: {"x", "y", "r", "at", "label"?} a pink/cyan ring on screen (output coordinates 0-1).
 - `zoom`: {"x", "y", "to": 1.3-1.6, "at", "dur"} smooth punch-in toward a point.
 - `shots`: [{"media", "start", "speed"?, "focus"?, "dur"?}, ...] cuts between several clips inside one segment (pacing).
+- `chart` (Nov 22): our own animated graphic as the segment's picture (studio/charts.py), e.g.
+  `{"type": "bars", "items": [["IShowSpeed, launch", 68.7], ["CarryMinati", 18.1]], "unit": "M", "highlight": 0,
+  "note": "YouTube view counts, Nov 22"}` (a leaderboard that grows, max 6 rows) or `{"type": "counter", "value": 3.79,
+  "prefix": "$", "unit": "B", "label": "...", "vs": {...}}` (a number that counts up, optionally VS a second one).
+  YouTube's Oct 2026 update ranks ORIGINAL Shorts higher and says narration over reused footage isn't original:
+  build the Short around our charts/data and use trailer footage as 1-2 s cutaways, not the whole video.
+  Write the number the way the chart shows it ("sixty eight point seven million" for 68.7M).
+  `{"type": "line", "items": [["GTA 3\n2001", 95], ["GTA 5\n2013", 86], ["GTA 6\n2026", 80]], "prefix": "$",
+  "floor": 70, "note": "...; axis starts at $70"}` (Nov 22): a trend that draws itself left to right, max 8 points, a
+  second label line (year) after "\n"; use it for anything over time (prices, views per day, player counts).
+  `floor` starts the bars/axis above 0: say so in the `note`. Long notes shrink to fit.
+  `{"type": "quote", "text": "exact words, short", "pink": ["key words"], "who": "Rockstar, to IGN (Nov 22)"}`
+  (Nov 22): a quote card. The words appear one by one, `pink` words light up, then who said it. Use it for Rockstar
+  interviews and streamer stories (what a streamer SAID, from a reliable source), where there are no numbers to chart
+  and the streamer's footage is off-limits. Quote exactly and briefly (one or two sentences); name the outlet.
+  - **FACTS ONLY (owner, Nov 22 evening: "not the ones with footage, facts with a strong hook")**: a Short is built
+    only from our own cards; no trailer clips or official screenshots, not even as cutaways (`studio.vice publish`
+    blocks them; owner gameplay is fine; since Nov 23 no waivers and no trailer images in long videos either). Cards:
+    `bars`, `counter`, `line`, `quote`, plus `{"type": "text", "text": "Darts, or a better game?", "pink": [...],
+    "sub": "..."}` (a big statement: the hook or the closing question), `{"type": "list", "title": "IN GTA 6?",
+    "items": [["Pool", "IN"], ["Darts", "CUT"]]}` (a checklist; IN/YES/SÍ/REAL tags cyan, the rest pink) and
+    `{"type": "quiz", "tag": "1/3", "q": "Who voiced Tommy Vercetti?", "options": ["Al Pacino", "Ray Liotta", "Robert De
+    Niro"], "answer": 1}` (the question with a countdown; repeat it with `"reveal": true` in the next segment for the
+    answer). Formats: fun facts, GTA history, "how much do you know" quizzes (see episodes/gta-history-quiz.json),
+    numbers, Rockstar/streamer quotes. Quiz rules: every answer checked in 2+ sources, wrong options plausible but
+    invented, never a real alternative title; vary which letter is right.
+  - **GTA 6-style lettering cards** (owner Nov 23: "lettering and more modern style ... GTA 6 style";
+    studio/vicecards.py): they play on our animated Vice City set (sunset sky, striped sun, palm silhouettes, a neon
+    grid floor that scrolls), with neon chrome lettering that punches in. Lead new Shorts with these:
+    `{"type": "kinetic", "lines": ["VICE CITY", "IS B TIER"], "pink": ["B TIER"], "sub": "..."}` (1-4 big lines, one at a
+    time: the hook and the closing question), `{"type": "countdown", "n": 2, "of": 4, "label": "Bigfoot is real",
+    "sub": "..."}` (listicle items: "4 secrets", "5 things"), `{"type": "versus", "a": ["GTA 5", "32 HOURS"], "b":
+    ["GTA 6", "80 HOURS"], "winner": "b"}` (VS / this-or-that; the winner lights up at 60%), `{"type": "tier", "title":
+    "...", "rows": [["S", ["GTA 6 · 99"]], ["A", []]], "static": ["B"]}` (fill one row per segment; `static` rows were
+    filled earlier), `{"type": "meter", "value": 99, "max": 100, "label": "Metacritic", "sub": "..."}` (a gauge
+    that fills while the number counts up: scores, percentages) and `{"type": "headline", "kicker": "PLAYERS REPORT", "text": "...", "ticker": "..."}` (news; put
+    REPORTEDLY / LEAK in the kicker for anything unconfirmed). Use one `seed` per Short (same sky in every segment).
+    Any older chart can add `"bg": "vice"`. Research behind it (Nov 23): animate only the key words, change the card
+    every 2-4 s, tier lists / countdown listicles / quizzes / VS drive comments (examples: episodes/
+    gta6-tier-list-critics.json, gta6-4-secrets.json).
+  - **Spanish chart text** (Nov 22): a chart with a `label`, `note` or VS label needs `chart_es` on the same segment (the
+    same chart with Spanish words); Spanish renders switch numbers to 3.790,5 style by themselves. Without it the
+    Spanish Short shows English words (the publish check warns).
+  - **Vary the layout** (Nov 22): the first four graph Shorts were all counter > bars > counter > clip. Mix the order
+    (open on bars or a line, a clip cutaway in the middle); the publish check warns when a Short repeats the picture
+    order of one of the last 4 uploads.
 
 Footage rules learned Nov 20: read every sign/number/HUD value at FULL resolution before writing it (a thumbnail showed
 "5/9" where the frame said "5/6"); official clips contain internal cuts and UI moments (the strip-mall clip opens on a
@@ -81,6 +140,9 @@ Nov 21; config/channel.json `caption_style`): groups of 3 words pop in, the spok
 number words show as pink digits ("fifty two hours" -> 52 HOURS, "ninety eight percent" -> 98%), so keep writing
 numbers as words for the voice. Spanish captions keep their words as written.
 Before delivering or uploading: `python -m studio.vice publish episodes/<slug>.json` must show no blockers.
+With `"shorts"` it gates every Short (and a legacy `"short"`) on its own render and text in one run, plus one
+rights/facts check of the main video, with blockers prefixed by the Short id or `main` (`news: ...`, `main: ...`);
+no temporary single-Short episodes needed.
 
 AI graphics (Everygen, cleared in `rights/registry.json` as `ai-backgrounds`, Vice Replay only, never on campaign clips):
 - `assets/ai-backgrounds/*.jpg` (16:9): thumbnail/card backgrounds by theme: news-skyline, rankings-podium, money-cash,

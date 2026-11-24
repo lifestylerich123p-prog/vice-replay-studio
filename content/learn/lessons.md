@@ -125,3 +125,112 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   (0-30); every long video (0-25). Real gameplay is the step change: the Lacy campaign clips on this channel on Nov 19
   got 9,393 / 1,863 / 1,011. `studio.vice publish` now enforces a moving first frame and warns on tips/long scripts
   (studio/vice/viewcheck.py).
+- 2026-11-22 (YouTube Analytics Nov 13-20, lag 1-2 days): real-gameplay Lacy clips held 86-92% average viewed
+  (13-17 s watched); our narrated ~30 s Shorts average ~57% (44-75%), i.e. half the viewers leave. Channel-wide on
+  Shorts with 50+ views: 1.4 likes per 100 views, 0.6 subs per 1,000 views, engaged views = 44% of views (most
+  viewers swipe in the first seconds). Short real moments get finished; narrated explainers don't.
+- 2026-11-22 (web investigation, see content/learn/growth-plan-2026-11-22.md): YouTube's Oct 2026 Shorts originality
+  update de-ranks voice-overs that only describe the footage; short (13-20 s) real moments win; never delete flops;
+  owner gameplay is the biggest lever. Rules now in the daily run and the views check.
+
+- 2026-11-22 (daily run, channel.json): same topic, different slot: "$1.65 BILLION" (posted 6:56 AM ET) 19.6 v/h vs
+  "$3.79 BILLION" (5:30 PM) 5.6 v/h, ~3.5x. Nov 21's Shorts in slot order: IShowSpeed 52 h (9:30 AM, streamer +
+  number) 12.9 v/h, Black Friday catch (11 AM) 8.2, first GTA 5 vs 6 comparison (1:30 PM) 5.1. Morning streamer +
+  number keeps winning; the comparison format (DO MORE, n=3) has only been tested in the afternoon so far.
+- 2026-11-22 (market, 48 h): the top English Short is a money comparison ("$1 v $1,000,000 Car In GTA 6", MrBeast
+  Gaming, ~290K v/h); streamer-pair Shorts are next but built on the ending (off-limits). 7 of the top 10 are
+  non-English skits/POV. Today: a money comparison with a catch + a streamer ranking built on numbers we checked
+  ourselves (YouTube Data API view counts of finished GTA 6 streams: original data, no streamer footage).
+- 2026-11-22 (status): the three newest Lacy campaign clips on this channel got 2-8 views vs 1,011-9,439 for the first
+  three (Nov 19). Campaign clips aren't automatic wins once a moment is crowded; the owner's Nov 20 rule already
+  moves them to ClipCircuit.
+- 2026-11-22 (main chat, pre-upload fact check): a YouTube search for "GTA 6" missed CarryMinati's "GTA VI" stream
+  (18.1M), so the draft named Mythpat (17.9M) as the biggest non-Speed stream. For any "most-viewed" ranking, search
+  "GTA 6", "GTA VI" and "Grand Theft Auto VI" and merge before naming a #1.
+- 2026-11-22 (main chat, market scan 48 h, YouTube API): top GTA 6 Shorts are skits (can't do: real actors), streamer
+  endings (spoilers) and gameplay stunts (need owner gameplay). The format we CAN do: the fast "every look" montage
+  (DjMaRiiO "LOS OUTFITS DE LUCIA EN GTA VI" 4.5M at ~120K v/h, 9 s; "todos los cortes de pelo" 2.2M). Built
+  gta6-lucia-outfits on it: 8 numbered outfits, ~1.4 s per cut, 5-outfit flash in the first 1.75 s, recap flash at
+  the end that loops, the catch (#8 Vintage Vice City Pack, only with copies bought before Nov 20). Renderer: segment
+  `pad` 0.1 + `hard_cut` (the default 0.45 s pad + fade to black between segments made v1 feel slow: 23 s -> 19 s).
+  Title words people search: "Lucia" and "outfits" (not "looks").
+- 2026-11-22 (main chat): every Short rendered before today has a ~0.1 s black flash at each cut (segment fade out +
+  fade in) plus a 0.45 s pause after each line. New default for Shorts: 0.2 s pause + hard cuts (same Dexter script:
+  20.4 s -> 19.3 s, 3 black flashes -> 0). Long videos keep the soft dip.
+- 2026-11-22 (main chat, owner "something is not working, check online"): YouTube's Oct 1, 2026 Shorts update ranks
+  original videos higher; YouTube's Creator Liaison reportedly said voice-over on reused footage doesn't make a clip
+  original (Mark Studios, OutlierKit, Relevant Audience). Our narrated trailer-footage Shorts: median 366 views; real
+  gameplay moments (the LACY clips): 1K-9.4K. Fixes: studio/charts.py (our own animated leaderboards/counters as the main
+  picture, trailer as cutaways); owner gameplay is still the biggest missing lever.
+- 2026-11-22 (flop review, all videos 36 h+ old): long videos median 14 views (7/9 under 50) -> no daily long video,
+  only Sunday's recap; tips/how-to Shorts median 237 (3/7 under 50) -> website only; catch 1,174, number/verdict 928,
+  streamer 638 (0 flops); Shorts at 6-11 AM median 1,084 vs 2-6 PM 199; 76+ word scripts median 404 vs 56-75 words 836
+  (block now at 76). 9 flops set private (not deleted).
+- 2026-11-22 (hook research): our 20 Shorts with retention data: question as the first sentence 35% viewed (median 130
+  views, n=4) vs statement 60% (858, n=16). Best: the surprising result at once ("Eighteen hours early." 82%, "GTA 6
+  cheats are real, but there's a catch nobody expected." 75%, "GTA 6 just got a ninety nine on Metacritic." 66%).
+  Worst: questions ("Can't get into GTA 6?" 25%, "GTA 6 looking blurry?" 26%) and setups ("Rockstar's boss almost
+  never speaks in public." 47%). Outside research (vendor blogs, inconsistent numbers) agrees: claim first, no intro,
+  curiosity gap + fast payoff. Now enforced: studio.vice publish blocks a question opener.
+- 2026-11-22 (hook investigation, content/learn/hooks-2026-11-22.md): a number in the first on-screen headline kept 65%
+  vs 49%; real gameplay moments 89% vs 58% narrated; top market Shorts with titles of 40 characters or less 95K v/h vs
+  70K; "when..."/POV titles 2x (needs gameplay). "#8" in a title became a hashtag (caught in the Lucia title, now blocked).
+
+## 2026-11-22 (evening): YouTube Partner Program bar doubles on Feb 1, 2027
+- YouTube's help page "Changes to the YouTube Partner Program" (support.google.com/youtube/answer/12843009) plus
+  Search Engine Journal, Basic Tutorials and others: from Feb 1, 2027, NEW channels need 1,000 subscribers AND 8,000
+  watch hours in 365 days OR 20 million Shorts views in 90 days (today: 4,000 hours or 10 million). Channels already
+  in YPP keep their status (activity rules apply). Vice Replay is at 15 subscribers and ~36K lifetime views (Nov 22),
+  so joining before Feb 1 is a long shot; plan for the new bar. What follows: subscribers are the first gate either
+  way (follow badge, pinned questions, a series viewers want to binge), and Shorts views are the realistic path (our
+  long videos get a median of 14 views).
+
+
+## Nov 23, 2026: Everygen voices for Spanish (Cuban Short)
+- Everygen voiceovers cost about 1 credit per line (up to ~70 characters): cheap for voices Kokoro lacks.
+- In Spanish, **Viral Adam** sounds native and passes the caption check (Whisper hears the script); **Pham** has a
+  foreign accent (51% word error: "GTS es esta leno"). Owner picked Viral Adam. Test any new voice with the caption
+  check before using it.
+- Put per-segment voice files in `media/voice/<slug>/` and point `audio_es` (or `audio`) at them; the renderer uses them
+  instead of Kokoro and the rights gate checks them (`everygen-voice` in rights/registry.json).
+
+## Nov 23, 2026: lettering Shorts, captions and layout
+- Captions read "seventy nine ninety nine" like a year and showed "7,999"; the voice reads "$79.99" as "1 dollar 79 99".
+  Say prices as "seventy nine dollars and ninety nine cents" (captions: "79 dollars and 99 cents"). The publish check
+  now warns on any spoken number that becomes a 4-digit non-year.
+- Two-line captions reach up to ~60% of a Short's height: on vertical Shorts the source line sits ABOVE the card;
+  keep card text out of the bottom ~8% of the card area.
+- 16:9 long videos: the VS card goes side by side; size lettering by the short side of the frame.
+- Headlines over 19 characters wrap and hit the lettering (warned). One `seed` per Short keeps the same sky.
+- Captions turned spoken decimals into nonsense ("one point eight four billion" -> "one point 12,000,000,000";
+  "sixty eight point seven million" -> "68 point 7,000,000"), on every video before Nov 23. Fixed in
+  make_video.display_tokens: decimals show as "1.84 billion" / "68.7 million", round numbers as "800 million".
+
+## 2026-11-23 afternoon (main chat): first lettering Shorts, first results
+- **Tier list took off**: "GTA 6 tier list: Vice City is only B tier" (tier cards, 18 s, statement hook that picks a
+  fight) had 506 views ~2.5 h after its 12:30 PM slot, about 2x our best Short at the same age (258 at 3 h). Same day,
+  same style: darts quote card 16 views at ~5 h, patch-notes news card 8 at ~6 h. Lesson: rankings with a contrarian
+  verdict beat plain news/quote cards; follow up with Tier List #2 (sales) while it's hot.
+- **Spanish channel gets ~0 distribution so far** (0 subscribers; the Spanish tier list had 0 views at 2.5 h while the
+  English one had 506). Same video, so it's the channel, not the format: keep Spanish uploads lean until it has a base.
+- **News ages fast**: the 9 AM "zero patch notes" Short was outdated by the afternoon (Rockstar published notes for
+  1.002.002). For "no news yet" angles, re-check right before the slot, and prefer framings that stay true ("3 updates
+  in 10 days") over "zero X".
+- **Spanish channel diagnosis (Nov 23 evening)**: settings are right (channel + every video: language es, audio es,
+  Gaming, not made for kids, 12-15 tags), yet 0 total views after 9 videos. Likely causes: a 1-day-old channel with
+  0 subscribers, and Shorts that repeat the English cards (same layout and order, Spanish text) from a second channel
+  of the same owner, which YouTube can treat as repeated content. Response: winners-only (fewer, proven Spanish
+  versions) + Spanish-only originals (Cuba, prices by country, no dubbing). If a Spanish version goes up, change its
+  hook card (a Spanish-specific opener) so it isn't a 1:1 copy of the English Short.
+
+## 2026-11-24 (daily run): what the numbers say this morning
+- **Rankings with a verdict are still our best card**: "Vice City is only B tier" is at 612 views (36 v/h vs a 2 v/h
+  channel median); the darts quote card from the same weekend sits at 23. Same lettering style, so the difference is
+  the angle (a ranking that picks a fight) not the picture. Today's VS rounds end on a verdict for the same reason.
+- **Streamer + "wasn't IShowSpeed" angle keeps paying**: "The first person to finish GTA 6 wasn't IShowSpeed" is at 616
+  (14 v/h, still climbing on day 3). Today's main Short reuses the shape with new numbers ("Speed won by 580,000 hours",
+  a VTuber at #2) instead of repeating the topic.
+- **Market (last 48 h)**: the top GTA 6 Shorts are short and simple: "GTA 5 vs GTA 6 Cops" 11.3M in 9 s, "GTA 6 Hidden
+  Facts" 12.1M in 42 s, "Map of all GTA 6 Players" 5.8M in 11 s. VS and "hidden facts/secrets" are the formats we can
+  make legally (our cards, no their footage); the easter-egg Short today is our "hidden facts" test. Statement openers
+  still beat questions on our channel (6.4 vs 1.6 v/h median, n=26 vs 3).

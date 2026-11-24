@@ -1,0 +1,253 @@
+{
+ "series": "Explained",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (GTA 6-style lettering cards, Nov 23)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "title": "GTA 6 Can't Break the Game Awards Record",
+ "slug": "gta6-game-awards-record",
+ "plan": "Game Awards plan (owner Nov 23 \"1,2,4\"): predictions Short for Wed Dec 9, the day before the show. Re-check every fact on Dec 8-9.",
+ "short_title": "GTA 6 can't break the Game Awards record #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 can't break the Game Awards record #GTA6 #Shorts",
+  "GTA 6 could win everything and still lose the record #GTA6 #Shorts",
+  "GTA 6 Game Awards predictions: how many will it win? #GTA6 #Shorts"
+ ],
+ "short_description": "Even if GTA VI wins all 8 categories it's nominated in at The Game Awards 2026, it can't break the record: Clair Obscur: Expedition 33 won 9 awards in one night in 2025 (Guinness World Records). GTA VI's 8 nominations: Game of the Year, Best Game Direction, Best Narrative, Best Art Direction, Best Score and Music, Best Audio Design, Best Performance (Manni L. Perez as Lucia) and Best Action/Adventure. Our prediction: 6 of 8. The show is live Thursday, December 10 at 7:30 PM ET from the Peacock Theater in Los Angeles. How many will it win?\n\nSources: Guinness World Records, VGC, TechRadar, Wccftech, Billboard, VICE.",
+ "short_es": {
+  "title": "GTA 6 NO puede romper el récord de The Game Awards 🏆 #GTA6 #Shorts",
+  "description": "Aunque GTA VI gane las 8 categorías en las que está nominado en The Game Awards 2026, no puede romper el récord: Clair Obscur: Expedition 33 ganó 9 premios en una sola noche en 2025 (Guinness World Records). Las 8 nominaciones de GTA VI: Juego del Año, Mejor Dirección, Mejor Narrativa, Mejor Dirección de Arte, Mejor Banda Sonora, Mejor Diseño de Audio, Mejor Actuación (Manni L. Perez como Lucía) y Mejor Juego de Acción/Aventura. Nuestra predicción: 6 de 8. El show es en vivo el jueves 10 de diciembre a las 7:30 PM (hora del este de EE. UU.). ¿Cuántos gana?",
+  "tags": [
+   "GTA 6 Game Awards",
+   "The Game Awards 2026",
+   "GTA 6 juego del año",
+   "GOTY 2026",
+   "GTA 6 predicciones",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "How many will GTA 6 win? Reply 0 to 8 👇",
+ "short_pinned_comment_es": "¿Cuántos gana GTA 6? Responde de 0 a 8 👇",
+ "tags": [
+  "GTA 6 Game Awards",
+  "The Game Awards 2026",
+  "GTA 6 Game of the Year",
+  "Game Awards predictions",
+  "Game Awards record",
+  "Clair Obscur record",
+  "GTA 6",
+  "GTA VI",
+  "Grand Theft Auto VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#thegameawards",
+  "#goty"
+ ],
+ "sources": [
+  "Guinness World Records - Most Game Awards won by a videogame in a single year (9, Clair Obscur: Expedition 33): https://www.guinnessworldrecords.com/world-records/781348-most-game-awards-won-by-a-videogame-in-a-single-year",
+  "VGC - The Game Awards 2025 winners: Clair Obscur sets a new record for awards won: https://www.videogameschronicle.com/news/the-game-awards-2025-complete-list-of-winners-as-clair-obscur-wins-game-of-the-year-and-sets-a-new-record-for-awards-won/",
+  "TechRadar - The Game Awards 2025 winners: Clair Obscur takes home 9 awards: https://www.techradar.com/gaming/gaming-industry/the-game-awards-2025-winners-list-clair-obscur-expedition-33-makes-history-as-it-takes-home-9-awards-including-game-of-the-year",
+  "Wccftech - GTA VI earns eight Game Awards 2026 nominations: https://wccftech.com/grand-theft-auto-vi-the-game-awards-2026-nominations-clair-obscur-record/",
+  "Billboard - Grand Theft Auto VI leads 2026 Game Awards nominations, full list: https://www.billboard.com/music/awards/2026-game-awards-nominations-list-grand-theft-auto-vi-1236384541/",
+  "VICE - GTA 6 earns 8 nominations at The Game Awards, Manni L. Perez performance: https://www.vice.com/en/article/gta-6-earns-8-nominations-at-the-game-awards-and-confirms-manni-l-perez-performance/",
+  "Gematsu - The Game Awards 2026 nominees announced: https://www.gematsu.com/2026/11/the-game-awards-2026-nominees-announced",
+  "GGRecon - The Game Awards 2026 streams live on Disney+ (Dec 10): https://www.ggrecon.com/articles/the-game-awards-2026-disney-plus/"
+ ],
+ "short": [
+  {
+   "headline": "CAN'T BREAK IT",
+   "headline_es": "NO PUEDE ROMPERLO",
+   "text": "GTA 6 can't break the Game Awards record.",
+   "text_es": "GTA seis no puede romper el récord de The Game Awards.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 CAN'T",
+     "BREAK THE RECORD"
+    ],
+    "pink": [
+     "THE RECORD"
+    ],
+    "sub": "even if it wins everything",
+    "seed": 4
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 NO PUEDE",
+     "ROMPER EL RÉCORD"
+    ],
+    "pink": [
+     "EL RÉCORD"
+    ],
+    "sub": "aunque lo gane todo",
+    "seed": 4
+   }
+  },
+  {
+   "headline": "THE RECORD: 9",
+   "headline_es": "EL RÉCORD: 9",
+   "text": "The record: nine wins in one night. GTA 6 has only eight nominations.",
+   "text_es": "El récord: nueve premios en una noche. GTA seis solo tiene ocho nominaciones.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "Clair Obscur · 2025",
+     "9 WINS"
+    ],
+    "b": [
+     "GTA 6 · 2026",
+     "8 NOMS"
+    ],
+    "winner": "a",
+    "seed": 4,
+    "src": "Guinness World Records · VGC · TechRadar"
+   },
+   "chart_es": {
+    "type": "versus",
+    "a": [
+     "Clair Obscur · 2025",
+     "9 PREMIOS"
+    ],
+    "b": [
+     "GTA 6 · 2026",
+     "8 NOMINAC."
+    ],
+    "winner": "a",
+    "seed": 4,
+    "src": "Guinness World Records · VGC · TechRadar"
+   }
+  },
+  {
+   "headline": "OUR PICKS",
+   "headline_es": "NUESTRAS APUESTAS",
+   "text": "Our picks: Game of the Year and Art Direction are locks. Narrative's a coin flip.",
+   "text_es": "Nuestras apuestas: Juego del Año y Dirección de Arte, seguros. Narrativa, cara o cruz.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "OUR PICKS",
+    "bg": "vice",
+    "seed": 4,
+    "items": [
+     [
+      "Game of the Year",
+      "LOCK"
+     ],
+     [
+      "Art Direction",
+      "LOCK"
+     ],
+     [
+      "Narrative",
+      "50/50"
+     ],
+     [
+      "Lucia's performance",
+      "50/50"
+     ]
+    ],
+    "good": [
+     "lock"
+    ],
+    "src": "nominees: Wccftech · Billboard · VICE"
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "NUESTRAS APUESTAS",
+    "bg": "vice",
+    "seed": 4,
+    "locale": "es",
+    "items": [
+     [
+      "Juego del Año",
+      "SEGURO"
+     ],
+     [
+      "Dirección de Arte",
+      "SEGURO"
+     ],
+     [
+      "Narrativa",
+      "50/50"
+     ],
+     [
+      "Actuación de Lucía",
+      "50/50"
+     ]
+    ],
+    "good": [
+     "seguro"
+    ],
+    "src": "nominados: Wccftech · Billboard · VICE"
+   }
+  },
+  {
+   "headline": "OUR CALL: 6 OF 8",
+   "headline_es": "NUESTRA APUESTA: 6",
+   "text": "Our call: six of eight, Thursday, December tenth.",
+   "text_es": "Nuestra apuesta: seis de ocho, el jueves diez de diciembre.",
+   "keep_media": true,
+   "chart": {
+    "type": "meter",
+    "value": 6,
+    "max": 8,
+    "label": "wins (our call)",
+    "sub": "show: Thu, Dec 10, 7:30 PM ET",
+    "src": "The Game Awards via GGRecon · Wikipedia",
+    "seed": 4
+   },
+   "chart_es": {
+    "type": "meter",
+    "value": 6,
+    "max": 8,
+    "label": "premios (apuesta)",
+    "sub": "show: jueves 10 de dic., 7:30 PM ET",
+    "src": "The Game Awards vía GGRecon · Wikipedia",
+    "seed": 4
+   }
+  },
+  {
+   "headline": "HOW MANY?",
+   "headline_es": "¿CUÁNTOS?",
+   "text": "How many will it win? Tell me, because",
+   "text_es": "¿Cuántos va a ganar? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "HOW MANY",
+     "WILL IT WIN?"
+    ],
+    "pink": [
+     "WILL IT WIN?"
+    ],
+    "seed": 4
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CUÁNTOS",
+     "VA A GANAR?"
+    ],
+    "pink": [
+     "VA A GANAR?"
+    ],
+    "seed": 4
+   }
+  }
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short); generate after approval",
+ "guide": "gta-6-game-awards"
+}

@@ -1,0 +1,336 @@
+{
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_playlist": "GTA 6 Shorts",
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)",
+  "series": "Quiz",
+  "title": "GTA Cities Quiz: Only Real Fans Get 3/3",
+  "slug": "gta-cities-quiz",
+  "short_title": "GTA cities quiz: only real fans get 3/3 #GTA6 #Shorts",
+  "short_title_options": [
+    "GTA cities quiz: only real fans get 3/3 #GTA6 #Shorts",
+    "Which real city is it? GTA quiz #GTA6 #Shorts",
+    "Bet you miss question 3: GTA cities quiz #GTA6 #Shorts"
+  ],
+  "short_description": "Vice Replay Quiz #3: which real city is it? 1: Los Santos is based on Los Angeles. 2: Liberty City is based on New York. 3: GTA 6's Vice City is in Leonida, Rockstar's version of Florida (the state is Leonida, not Florida). Comment your score!\n\nSources: Rockstar Games (GTA VI: the state of Leonida), Sportskeeda, Giant Bomb.",
+  "short_es": {
+    "title": "Quiz de ciudades GTA: solo los FANS sacan 3/3 🧠 #GTA6 #Shorts",
+    "description": "Vice Replay Quiz: ¿qué ciudad real es? 1: Los Santos está basada en Los Ángeles. 2: Liberty City en Nueva York. 3: la Vice City de GTA 6 está en Leonida, la versión de Rockstar de Florida (el estado se llama Leonida, no Florida). ¡Comenta tu puntaje!",
+    "tags": [
+      "GTA quiz",
+      "GTA 6 quiz",
+      "GTA ciudades",
+      "GTA 6 Leonida",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "pinned_comment": "Your score? Reply 0, 1, 2 or 3 👇",
+  "short_pinned_comment_es": "¿Tu puntaje? Responde 0, 1, 2 o 3 👇",
+  "tags": [
+    "GTA quiz",
+    "GTA 6 quiz",
+    "GTA cities",
+    "GTA 6 Leonida",
+    "Los Santos",
+    "Liberty City",
+    "Vice City",
+    "GTA 6",
+    "GTA VI"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#gtavi",
+    "#quiz",
+    "#gta"
+  ],
+  "sources": [
+    "Rockstar Games - Grand Theft Auto VI (the state of Leonida): https://www.rockstargames.com/VI",
+    "Sportskeeda - Which real-life cities inspired the major cities of GTA?: https://sportskeeda.com/gta/which-real-life-cities-inspired-cities-gta",
+    "Giant Bomb - San Andreas (Los Santos, San Fierro, Las Venturas): https://giantbomb.com/wiki/Locations/San_Andreas",
+    "Sportskeeda - Every city featured in the GTA games: https://www.sportskeeda.com/gta/every-city-featured-gta-games"
+  ],
+  "short": [
+    {
+      "headline": "3 CITIES",
+      "headline_es": "3 CIUDADES",
+      "text": "Only real GTA fans get all three cities right.",
+      "text_es": "Solo los verdaderos fans de GTA aciertan las tres ciudades.",
+      "keep_media": true,
+      "chart": {
+        "type": "text",
+        "text": "Only real GTA fans get 3/3",
+        "pink": [
+          "3/3"
+        ],
+        "sub": "Keep score",
+        "seed": 8,
+        "bg": "vice"
+      },
+      "chart_es": {
+        "type": "text",
+        "text": "Solo los verdaderos fans sacan 3/3",
+        "pink": [
+          "3/3"
+        ],
+        "sub": "Lleva la cuenta",
+        "seed": 8,
+        "bg": "vice"
+      },
+      "audio_es": "media/voice/gta-cities-quiz/es/seg1.wav"
+    },
+    {
+      "headline": "QUESTION 1",
+      "headline_es": "PREGUNTA 1",
+      "text": "One: Los Santos is based on which city?",
+      "text_es": "Una: ¿en qué ciudad está basada Los Santos?",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "1/3",
+        "q": "Los Santos is based on...",
+        "options": [
+          "San Diego",
+          "Los Angeles",
+          "Phoenix"
+        ],
+        "answer": 1,
+        "seed": 8,
+        "bg": "vice"
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "1/3",
+        "q": "Los Santos está basada en...",
+        "options": [
+          "San Diego",
+          "Los Ángeles",
+          "Phoenix"
+        ],
+        "answer": 1,
+        "seed": 8,
+        "bg": "vice"
+      },
+      "audio_es": "media/voice/gta-cities-quiz/es/seg2.wav"
+    },
+    {
+      "headline": "LOS ANGELES",
+      "headline_es": "LOS ÁNGELES",
+      "text": "Los Angeles.",
+      "text_es": "Los Ángeles.",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "1/3",
+        "q": "Los Santos is based on...",
+        "options": [
+          "San Diego",
+          "Los Angeles",
+          "Phoenix"
+        ],
+        "answer": 1,
+        "seed": 8,
+        "reveal": true,
+        "src": "Sportskeeda · Giant Bomb",
+        "bg": "vice"
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "1/3",
+        "q": "Los Santos está basada en...",
+        "options": [
+          "San Diego",
+          "Los Ángeles",
+          "Phoenix"
+        ],
+        "answer": 1,
+        "seed": 8,
+        "reveal": true,
+        "src": "Sportskeeda · Giant Bomb",
+        "bg": "vice"
+      },
+      "audio_es": "media/voice/gta-cities-quiz/es/seg3.wav"
+    },
+    {
+      "headline": "QUESTION 2",
+      "headline_es": "PREGUNTA 2",
+      "text": "Two: Liberty City?",
+      "text_es": "Dos: ¿Liberty City?",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "2/3",
+        "q": "Liberty City is based on...",
+        "options": [
+          "Chicago",
+          "Boston",
+          "New York"
+        ],
+        "answer": 2,
+        "seed": 8,
+        "bg": "vice"
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "2/3",
+        "q": "Liberty City está basada en...",
+        "options": [
+          "Chicago",
+          "Boston",
+          "Nueva York"
+        ],
+        "answer": 2,
+        "seed": 8,
+        "bg": "vice"
+      },
+      "audio_es": "media/voice/gta-cities-quiz/es/seg4.wav"
+    },
+    {
+      "headline": "NEW YORK",
+      "headline_es": "NUEVA YORK",
+      "text": "New York.",
+      "text_es": "¡Nueva York!",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "2/3",
+        "q": "Liberty City is based on...",
+        "options": [
+          "Chicago",
+          "Boston",
+          "New York"
+        ],
+        "answer": 2,
+        "seed": 8,
+        "reveal": true,
+        "src": "Sportskeeda · Giant Bomb",
+        "bg": "vice"
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "2/3",
+        "q": "Liberty City está basada en...",
+        "options": [
+          "Chicago",
+          "Boston",
+          "Nueva York"
+        ],
+        "answer": 2,
+        "seed": 8,
+        "reveal": true,
+        "src": "Sportskeeda · Giant Bomb",
+        "bg": "vice"
+      },
+      "audio_es": "media/voice/gta-cities-quiz/es/seg5.wav"
+    },
+    {
+      "headline": "QUESTION 3",
+      "headline_es": "PREGUNTA 3",
+      "text": "Three: GTA 6's Vice City is in which state?",
+      "text_es": "Tres: ¿en qué estado está la Vice City de GTA seis?",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "3/3",
+        "q": "GTA 6's Vice City is in which state?",
+        "options": [
+          "Florida",
+          "Leonida",
+          "San Andreas"
+        ],
+        "answer": 1,
+        "seed": 8,
+        "bg": "vice"
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "3/3",
+        "q": "¿En qué estado está la Vice City de GTA 6?",
+        "options": [
+          "Florida",
+          "Leonida",
+          "San Andreas"
+        ],
+        "answer": 1,
+        "seed": 8,
+        "bg": "vice"
+      },
+      "audio_es": "media/voice/gta-cities-quiz/es/seg6.wav"
+    },
+    {
+      "headline": "LEONIDA",
+      "headline_es": "LEONIDA",
+      "text": "Leonida. It's based on Florida, but it isn't Florida.",
+      "text_es": "Leonida. Está basada en Florida, pero no es Florida.",
+      "keep_media": true,
+      "chart": {
+        "type": "quiz",
+        "tag": "3/3",
+        "q": "GTA 6's Vice City is in which state?",
+        "options": [
+          "Florida",
+          "Leonida",
+          "San Andreas"
+        ],
+        "answer": 1,
+        "seed": 8,
+        "reveal": true,
+        "src": "Rockstar Games · Sportskeeda",
+        "bg": "vice"
+      },
+      "chart_es": {
+        "type": "quiz",
+        "tag": "3/3",
+        "q": "¿En qué estado está la Vice City de GTA 6?",
+        "options": [
+          "Florida",
+          "Leonida",
+          "San Andreas"
+        ],
+        "answer": 1,
+        "seed": 8,
+        "reveal": true,
+        "src": "Rockstar Games · Sportskeeda",
+        "bg": "vice"
+      },
+      "audio_es": "media/voice/gta-cities-quiz/es/seg7.wav"
+    },
+    {
+      "headline": "YOUR SCORE?",
+      "headline_es": "¿TU PUNTAJE?",
+      "text": "What's your score? Tell me, because",
+      "text_es": "¿Cuál es tu puntaje? Dime, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "WHAT'S YOUR",
+          "SCORE?"
+        ],
+        "pink": [
+          "SCORE?"
+        ],
+        "seed": 8
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿CUÁL ES",
+          "TU PUNTAJE?"
+        ],
+        "pink": [
+          "TU PUNTAJE?"
+        ],
+        "seed": 8
+      },
+      "audio_es": "media/voice/gta-cities-quiz/es/seg8.wav"
+    }
+  ]
+}

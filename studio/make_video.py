@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 FPS = 30
 VIDEO_EXT = {".mp4", ".mov", ".mkv", ".webm", ".m4v"}
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".webp"}
-DEFAULT_VOICE = "am_michael"
+DEFAULT_VOICE = "af_heart"  # Kokoro grade A (am_michael is C+); config/channel.json "voice" overrides
 
 
 def run(cmd):
@@ -104,7 +104,7 @@ def tts(text, voice, rate, out_base):
             return premium_tts(text, voice, out_base)
         except Exception as e:
             print(f"  ! {voice.split(':')[0]} voice failed ({type(e).__name__}: {e}); using free Kokoro voice")
-            voice = "am_michael"
+            voice = channel_setting("voice") or DEFAULT_VOICE
     if not voice.endswith("Neural"):
         try:
             speed = 1 + int(rate.strip("%+")) / 100 if rate.strip("%+-").isdigit() else 1.08
@@ -205,7 +205,11 @@ def _num_value(run):
     """Value of a run of English number words ("fifty two", "two hundred fifty thousand"), or None."""
     total, cur = 0, 0
     for w in run:
-        if w in _ONES:
+        # spoken years: "nineteen ninety eight" = 19|98, "twenty thirteen" = 20|13 (a tens word or a teen after a
+        # number already in progress starts the next two digits; Nov 22 a caption showed "FROM 117" for 1998)
+        if cur % 100 and ((w in _TENS) or (w in _ONES and _ONES[w] >= 10)):
+            cur = cur * 100 + (_TENS.get(w) or _ONES[w])
+        elif w in _ONES:
             cur += _ONES[w]
         elif w in _TENS:
             cur += _TENS[w]
@@ -218,6 +222,32 @@ def _num_value(run):
     return total + cur
 
 
+def _decimal_at(words, low, i):
+    """A spoken decimal starting at word i: "<number words> point <digit words> [million|billion|thousand|percent]".
+    Returns (caption text, index of its last word) or None."""
+    ends = lambda k: bool(re.search(r"[.,!?;:]$", words[k]))
+    j = i
+    while j < len(low) and (low[j] in _ONES or low[j] in _TENS or low[j] == "hundred") and not (j > i and ends(j - 1)):
+        j += 1
+    if j == i or j >= len(low) or low[j] != "point" or ends(j - 1):
+        return None
+    whole = _num_value(low[i:j])
+    k, digits = j + 1, ""
+    while k < len(low) and low[k] in _ONES and _ONES[low[k]] <= 9:
+        digits += str(_ONES[low[k]])
+        k += 1
+        if ends(k - 1):
+            break
+    if whole is None or not digits:
+        return None
+    txt, last = f"{whole}.{digits}", k - 1
+    if not ends(last) and k < len(low) and low[k] in ("million", "billion", "thousand", "percent"):
+        txt += "%" if low[k] == "percent" else f" {low[k]}"
+        last = k
+    tail = re.search(r"[.,!?;:]+$", words[last])
+    return txt + (tail.group(0) if tail else ""), last
+
+
 def display_tokens(words, lang="en"):
     """Caption tokens: runs of spoken number words become digits ("fifty two" -> "52", "ninety eight percent" ->
     "98%"), only when it's clearly a number (2+ words, 10 or more, or followed by a unit), so "number one" and
@@ -226,6 +256,12 @@ def display_tokens(words, lang="en"):
     out, i, low = [], 0, [re.sub(r"[^\w]", "", w.lower()) for w in words]
     numw = (set(_ONES) | set(_TENS) | {"hundred"} | set(_SCALES)) if lang == "en" else set()
     while i < len(words):
+        dec = _decimal_at(words, low, i) if lang == "en" else None
+        if dec:  # "one point eight four billion" -> "1.84 billion" (Nov 23: it showed "one point 12,000,000,000")
+            txt, last = dec
+            out.append((txt, i, last, True))
+            i = last + 1
+            continue
         j = i
         while j < len(words) and low[j] in numw and not re.search(r"[.,!?;:]$", words[j][:-1] if j > i else ""):
             j += 1
@@ -236,7 +272,10 @@ def display_tokens(words, lang="en"):
         nxt = low[j] if j < len(words) else ""
         if val is not None and (len(run) >= 2 or val >= 10 or nxt in _UNITS) and not (len(run) == 1 and run[0] in _SCALES):
             tail = re.search(r"[.,!?;:]+$", words[j - 1])
-            txt = f"{val:,}"
+            year = 1900 <= val <= 2100 or (1000 <= val < 1900 and not any(w in _SCALES for w in run))
+            txt = f"{val}" if year else f"{val:,}"  # 1998, not 1,998
+            if run[-1] in ("million", "billion") and val % _SCALES[run[-1]] == 0:  # "800 million", not 800,000,000
+                txt = f"{val // _SCALES[run[-1]]:,} {run[-1]}"
             if nxt == "percent":
                 txt += "%"; j += 1
                 tail = re.search(r"[.,!?;:]+$", words[j - 1])
@@ -250,6 +289,14 @@ def display_tokens(words, lang="en"):
         out.append((words[i], i, i, bool(re.search(r"\d|\$|%", words[i]))))
         i += 1
     return out
+
+
+def channel_setting(key, default=None):
+    """A channel-wide setting from config/channel.json (e.g. "voice", "voice_es", "caption_style")."""
+    try:
+        return json.loads((ROOT / "config" / "channel.json").read_text()).get(key, default)
+    except Exception:  # noqa: BLE001
+        return default
 
 
 def caption_style():
@@ -419,7 +466,7 @@ def seg_effects(seg, vf, w, h, dur):
 
 
 def shots_background(i, seg, dur, w, h, work, base):
-    """Pacing: a segment with "shots" ([{"media", "start", "focus"?}, ...]) gets a background that cuts between
+    """Pacing: a segment with "shots" ([{"media", "start", "focus"?, "gamma"?}, ...]) gets a background that cuts between
     them, evenly across the narration (or by each shot's "dur"). Silent; clip audio is never used."""
     shots = seg["shots"]
     fixed = sum(x.get("dur", 0) for x in shots)
@@ -446,7 +493,7 @@ def shots_background(i, seg, dur, w, h, work, base):
         cx = f"'clip((iw-ow)*{fx}-30+60*t/{d:.2f},0,iw-ow)'" if still else f"(iw-ow)*{fx}"
         run(["ffmpeg", "-y", "-v", "error", *src,
              "-vf", f"setpts=PTS/{sp},scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}:x={cx}:y=(ih-oh)/2,"
-                    f"eq=brightness=-0.04:saturation=1.15,setsar=1,fps={FPS}",
+                    f"eq=brightness=-0.04:saturation=1.15:gamma={sh.get('gamma', 1.0)},setsar=1,fps={FPS}",
              "-t", f"{d:.2f}", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", str(out)])
         parts.append(out)
     lst = work / f"shots_{i}.txt"
@@ -481,10 +528,56 @@ def warn_scene_cut(i, seg, dur):
               f"check it still shows what the narration says (or use shots/speed)")
 
 
+def fix_timestamps(path):
+    """Nov 22: a card-only Short decoded with "non monotonically increasing dts" (30 fps cards in a 29.97 fps video;
+    two frames rounded to the same time) and failed QC's decode check. If the finished file has any decode error,
+    re-encode it once at a steady 29.97 fps (same length, audio copied)."""
+    path = Path(path)
+    err = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-f", "null", "-"], capture_output=True, text=True).stderr
+    if not err.strip():
+        return False
+    tmp = path.with_name(path.stem + ".fix.mp4")
+    r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-vf", "fps=30000/1001", "-c:v", "libx264",
+                        "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags",
+                        "+faststart", str(tmp)], capture_output=True, text=True)
+    if r.returncode == 0 and tmp.exists():
+        tmp.replace(path)
+        print(f"  (fixed timestamps in {path.name}: {err.strip().splitlines()[0][:90]})")
+        return True
+    tmp.unlink(missing_ok=True)
+    return False
+
+
+def chart_words(chart):
+    """The words a chart shows besides names and numbers (label, note, the VS label): what needs a Spanish `chart_es`."""
+    words = [chart.get("label"), chart.get("note"), (chart.get("vs") or {}).get("label"), chart.get("text"),
+             chart.get("who"), chart.get("q"), chart.get("title"), chart.get("sub"), chart.get("kicker"),
+             chart.get("ticker"), *(chart.get("lines") or []),
+             *[(chart.get(k) or [None, None])[0] for k in ("a", "b")]]
+    return [x for x in words if x and isinstance(x, str) and not x.replace(" ", "").replace(".", "").isdigit()]
+
+
 def render_segment(i, seg, audio, w, h, vertical, work, enc):
     voice_dur = duration(audio)
-    dur = round(voice_dur + 0.45, 2)
+    # "pad": seconds held after the line (default 0.45); "hard_cut": no dip to black between segments. Montage Shorts
+    # (Nov 22, "match the energy" of the top GTA 6 montages) use pad ~0.1 + hard cuts so the pictures change on the beat.
+    # Shorts default to the montage energy (Nov 22, owner: "match the energy"): 0.2 s after each line and hard cuts;
+    # long videos keep 0.45 s and the soft dip between segments. A segment can still set either key itself.
+    dur = round(voice_dur + float(seg.get("pad", 0.2 if vertical else 0.45)), 2)
     warn_scene_cut(i, seg, dur)
+    if seg.get("chart"):  # our own animated graphic (studio/charts.py): original visuals, not reused footage
+        from . import charts
+        chart = seg["chart"]
+        if seg.get("_lang") == "es":  # Nov 22: Spanish Shorts showed the English labels/notes and 3,790.5-style numbers
+            chart = dict(seg.get("chart_es") or chart)
+            chart.setdefault("locale", "es")
+            if not seg.get("chart_es") and chart_words(chart) and chart.get("locale") == "es" and \
+                    not seg["chart"].get("locale") == "es":
+                print(f"  ! segment {i}: Spanish render shows the English chart text {chart_words(chart)}; add `chart_es`")
+        if vertical and i == 0:  # a Short's first frame is its cover: show the whole hook card at once
+            chart = dict(chart, cover=True)
+        seg = dict(seg, media=str(charts.render(chart, dur + 0.5, w, h, work / f"chart_{i}.mp4", seed=i)),
+                   media_start=0, focus=None)
     if seg.get("shots"):
         seg = dict(seg, media=str(shots_background(i, seg, dur, w, h, work, Path(seg.get("_base", ".")))),
                    media_start=0, focus=None)
@@ -501,7 +594,9 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     seg["_aligned"] = bool(times)
     subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical, times=times, lang=lang)
     out = work / f"seg_{i:02d}.mp4"
-    fade_in = "" if (vertical and i == 0) else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
+    hard = bool(seg.get("hard_cut", vertical))
+    fade_in = "" if (vertical and i == 0) or hard else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
+    fade_out = "null" if hard else f"fade=t=out:st={dur - 0.25}:d=0.25"
     extra, co = [], ""
     if seg.get("callout"):
         c = seg["callout"]
@@ -509,7 +604,7 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
         co = f"[c0];[c0][3:v]overlay=0:0:enable='gte(t,{c.get('at', 0)})'"
     fc = (f"[0:v]{vf},setsar=1,fps={FPS}[bg];[bg][1:v]overlay=0:0{co},"
           f"subtitles='{subs}':fontsdir='{brand.FONTS}',"
-          f"{fade_in}fade=t=out:st={dur - 0.25}:d=0.25[v];"
+          f"{fade_in}{fade_out}[v];"
           f"[2:a]adelay=200|200,apad,atrim=0:{dur},aformat=sample_rates=48000:channel_layouts=stereo[a]")
     run(["ffmpeg", "-y", "-v", "error", *vin, "-loop", "1", "-i", str(ov), "-i", str(audio), *extra,
          "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-t", str(dur), *enc, str(out)])
@@ -686,15 +781,28 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
 
     parts, chapters, t = [], [], 0.0
     cuts, impacts, timings = [], [0.0], []  # sound effects: impact on the hook, whoosh on every cut
+    pops = []  # soft pops where a lettering card lands a word or number (studio/vicecards.py)
     if not vertical:
         intro = render_intro(ep["title"], work, enc, w, h)
         parts.append(intro)
         t += duration(intro)
     for i, seg in enumerate(segments):
         print(f"[{i + 1}/{len(segments)}] {seg.get('headline') or seg['text'][:40]}")
-        audio = tts(seg["text"], voice, rate, work / f"vo_{i:02d}")
+        # a ready-made voice file (e.g. an Everygen voiceover) wins over TTS: "audio" (English) / "audio_es"
+        vo_file = seg.get("audio_es") if seg.get("_lang") == "es" else seg.get("audio")
+        if vo_file and (ROOT / vo_file).exists():
+            audio = work / f"vo_{i:02d}{Path(vo_file).suffix}"
+            shutil.copy(ROOT / vo_file, audio)
+        else:
+            audio = tts(seg["text"], voice, rate, work / f"vo_{i:02d}")
         clip, d = render_segment(i, seg, audio, w, h, vertical, work, enc)
-        if seg.get("chapter") or seg.get("headline"):
+        hits_file = work / f"chart_{i}.hits.json"
+        if seg.get("chart") and hits_file.exists():
+            pops += [t + x for x in json.loads(hits_file.read_text()) if x < d - 0.1]
+            hits_file.unlink()
+        # long card videos (Nov 23) mark only section starts with "chapter"; then headlines don't make chapters
+        only_marked = any(x.get("chapter") for x in segments) and len(segments) > 12
+        if seg.get("chapter") or (seg.get("headline") and not only_marked):
             chapters.append((0.0 if i == 0 and vertical else t, seg.get("chapter") or seg["headline"]))
         if t > 0:
             cuts.append(t)
@@ -722,11 +830,22 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     elif music:
         music = base / music
     else:
-        lib = sorted(p for p in (ROOT / "assets" / "music").glob("*") if p.suffix.lower() in {".mp3", ".wav", ".m4a"})
-        music = lib[0] if lib else sound.theme(ROOT / "assets" / "music" / "vice-replay-theme.wav")
+        # Nov 22 (owner: "better audio that connects"): a track per mood instead of one song on every video.
+        # "mood" on the episode, else by format; our own generated synthwave, so no Content ID risk.
+        mood = ep.get("mood") or {"news": "hype", "comparison": "tension", "ranking": "tension", "quiz": "bright",
+                                  "details": "bright"}.get(ep.get("format"), "night")
+        lib_dir = ROOT / "assets" / "music"
+        if mood == "night" or mood not in sound.MOODS:
+            music = lib_dir / "vice-replay-theme.wav"
+            if not music.exists():
+                music = sound.theme(music)
+        else:
+            music = next((p for p in (lib_dir / f"vr-{mood}.m4a", lib_dir / f"vr-{mood}.wav") if p.exists()), None) \
+                or sound.theme(lib_dir / f"vr-{mood}.wav", loops=3, seed=11, mood=mood)
+        print(f"music: {Path(music).name} (mood {mood})")
     sfx = None
     if ep.get("sfx", True):
-        sfx = sound.sfx_track(work / "sfx.wav", duration(raw), cuts, impacts)
+        sfx = sound.sfx_track(work / "sfx.wav", duration(raw), cuts, impacts, pops)
     mixed = work / "mixed.mp4"
     mix_audio(raw, music if music and Path(music).exists() else None, sfx, mixed, ["-c:a", "aac", "-b:a", "192k"])
     # YouTube plays back at about -14 LUFS; normalize so the voice isn't quiet next to other videos
@@ -774,7 +893,9 @@ def main():
     if a.preview:
         w, h = w // 2, h // 2
     enc = ENC + (["-preset", "veryfast", "-crf", "28"] if a.preview else [])
-    voice = a.voice or ep.get("voice", DEFAULT_VOICE)
+    # Channel voice (config/channel.json "voice", owner Nov 22: "use the best voice rated" = Kokoro af_heart, grade A)
+    # wins over the episode's own "voice" (39 old episodes say am_michael, grade C+) unless it sets "voice_override".
+    voice = a.voice or ep.get("voice_override") or channel_setting("voice") or ep.get("voice", DEFAULT_VOICE)
     rate = ep.get("rate", "+8%")
 
     out_dir = ROOT / "output" / slug
@@ -785,7 +906,7 @@ def main():
         if not shorts:
             sys.exit("No 'short' or 'shorts' in this episode.")
         if a.es:
-            voice = a.voice or ep.get("voice_es", "em_alex")
+            voice = a.voice or ep.get("voice_es") or channel_setting("voice_es") or "em_alex"
             es_shorts = []
             for k, sh in enumerate(shorts):
                 es = sh.get("es") or (ep.get("short_es") if k == 0 and not sh.get("id") else None) or {}
@@ -806,27 +927,22 @@ def main():
             if used:
                 lines += ["Imágenes de GTA VI: Rockstar Games, usadas para noticias y comentario." if a.es else
                           "GTA VI footage/screenshots: Rockstar Games, used for news and commentary.", ""]
+            # cross-promotion (Nov 22): every English Short points Spanish speakers to the sister channel
+            lines += ["🇺🇸 Vice Replay in English: https://www.youtube.com/@ViceReplayTV-q8s" if a.es else
+                      "🇪🇸 Vice Replay en Español: https://www.youtube.com/channel/UCWPnqYqYu9_CLsJ8Bk1MPgQ", ""]
             lines += ["Vice Replay es un canal de fans, no afiliado con Rockstar Games." if a.es else
                       "Vice Replay is a fan channel, not affiliated with Rockstar Games.", "", tags]
             (out_dir / f"{name}.txt").write_text("\n".join(lines))
+            fix_timestamps(final)
             print(f"Done: {final}  ({fmt_ts(duration(final))})")
         return
     final, chapters, used_footage = build(ep, base, slug, ep["segments"], False, a.preview, enc, w, h, voice,
                                           rate, slug)
     out_dir = ROOT / "output" / slug
     if not vertical:
-        # Thumbnails: 3 versions for YouTube Studio's "Test & Compare" (A/B/C). Same text, different picture:
-        # A = thumbnail.image (or the first screenshot used in the video), B = another screenshot, C = neon art.
-        th = ep.get("thumbnail", {})
-        pics = [str(base / th["image"])] if th.get("image") else []
-        pics += [s["media"] for s in ep["segments"] if s.get("media") and Path(s["media"]).suffix.lower() in IMAGE_EXT]
-        pics += [str(base / p) for p in th.get("images", [])]
-        pics = list(dict.fromkeys(str(Path(x).resolve()) for x in pics))  # same file, different spelling -> once
-        backgrounds = (pics[:2] + [None]) if pics else [None]
-        for label, bg in zip("abc", backgrounds):
-            brand.thumbnail(th.get("line1", ep["title"]), th.get("line2", ""), th.get("tag", ""),
-                            out_dir / f"thumbnail-{label}.jpg", bg_image=bg)
-        shutil.copy(out_dir / "thumbnail-a.jpg", out_dir / "thumbnail.jpg")
+        # Thumbnails A/B/C for YouTube Studio's "Test & Compare" (studio/thumbs.py; `thumbnail.variants` test ideas)
+        from . import thumbs
+        thumbs.render(ep, base, out_dir)
         # YouTube chapters need: first at 0:00, at least 3, each >= 10s
         ch = []
         for s, n in chapters:

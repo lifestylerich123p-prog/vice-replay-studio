@@ -1,0 +1,415 @@
+{
+ "series": "Tier List",
+ "format": "ranking",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (GTA 6-style lettering cards, Nov 23)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "title": "Every GTA Map Ranked: Los Santos Is Only B Tier",
+ "slug": "gta-tier-list-maps",
+ "short_title": "GTA maps ranked: Los Santos is only B tier #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA maps ranked: Los Santos is only B tier #GTA6 #Shorts",
+  "Every GTA map ranked (Leonida is S) #GTA6 #Shorts",
+  "Best GTA map ever? Our tier list #GTA6 #Shorts"
+ ],
+ "short_description": "Vice Replay Tier List #4: every 3D-era GTA map, ranked by us (our opinion, not a poll). S: Vice City (2002) and Leonida (GTA 6). A: San Andreas (2004) and GTA IV's Liberty City. B: GTA V's Los Santos. C: GTA III's Liberty City. Where would you put Los Santos? Fight us in the comments.\n\nGames: Rockstar Games. Ranking: Vice Replay.",
+ "short_es": {
+  "title": "Mapas de GTA: Los Santos es SOLO tier B 😳 #GTA6 #Shorts",
+  "description": "Vice Replay Tier List: cada mapa de GTA de la era 3D, según nosotros (es nuestra opinión). S: Vice City (2002) y Leonida (GTA 6). A: San Andreas (2004) y la Liberty City de GTA IV. B: Los Santos de GTA V. C: la Liberty City de GTA III. ¿Dónde pondrías Los Santos?",
+  "tags": [
+   "GTA mapas",
+   "GTA tier list",
+   "GTA 6 Leonida",
+   "Vice City",
+   "Los Santos",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "Where does Los Santos go: S, A, B or C? 👇",
+ "short_pinned_comment_es": "¿Dónde va Los Santos: S, A, B o C? 👇",
+ "tags": [
+  "GTA maps ranked",
+  "GTA tier list",
+  "best GTA map",
+  "GTA 6 Leonida",
+  "Vice City map",
+  "Los Santos",
+  "San Andreas map",
+  "Liberty City",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gta",
+  "#tierlist",
+  "#gtavicecity",
+  "#gta5"
+ ],
+ "sources": [
+  "Rockstar Games - Grand Theft Auto III, Vice City, San Andreas, IV, V and VI (settings as published by Rockstar): https://www.rockstargames.com/games",
+  "Ranking: Vice Replay's opinion (labeled as such on screen and in the description)"
+ ],
+ "short": [
+  {
+   "headline": "ONLY B TIER",
+   "headline_es": "SOLO TIER B",
+   "text": "Every GTA map, ranked. Los Santos is only B tier.",
+   "text_es": "Cada mapa de GTA, en un ranking. Los Santos es solo tier B.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "LOS SANTOS IS",
+     "ONLY B TIER"
+    ],
+    "pink": [
+     "ONLY B TIER"
+    ],
+    "sub": "our GTA map tier list",
+    "seed": 11
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "LOS SANTOS ES",
+     "SOLO TIER B"
+    ],
+    "pink": [
+     "SOLO TIER B"
+    ],
+    "sub": "nuestro ranking de mapas",
+    "seed": 11
+   }
+  },
+  {
+   "headline": "C TIER",
+   "headline_es": "TIER C",
+   "text": "C tier: GTA 3's Liberty City.",
+   "text_es": "Tier C: la Liberty City de GTA tres.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "EVERY GTA MAP",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      []
+     ],
+     [
+      "C",
+      [
+       "Liberty City · GTA III"
+      ]
+     ]
+    ],
+    "static": [],
+    "src": "our ranking · games: Rockstar",
+    "seed": 11
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "CADA MAPA DE GTA",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      []
+     ],
+     [
+      "C",
+      [
+       "Liberty City · GTA III"
+      ]
+     ]
+    ],
+    "static": [],
+    "src": "nuestro ranking · juegos: Rockstar",
+    "seed": 11
+   }
+  },
+  {
+   "headline": "B TIER",
+   "headline_es": "TIER B",
+   "text": "B tier: Los Santos, from GTA 5.",
+   "text_es": "Tier B: Los Santos, de GTA cinco.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "EVERY GTA MAP",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      [
+       "Los Santos · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Liberty City · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C"
+    ],
+    "src": "our ranking · games: Rockstar",
+    "seed": 11
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "CADA MAPA DE GTA",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      [
+       "Los Santos · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Liberty City · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C"
+    ],
+    "src": "nuestro ranking · juegos: Rockstar",
+    "seed": 11
+   }
+  },
+  {
+   "headline": "A TIER",
+   "headline_es": "TIER A",
+   "text": "A tier: San Andreas, and GTA 4's Liberty City.",
+   "text_es": "Tier A: San Andreas, y la Liberty City de GTA cuatro.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "EVERY GTA MAP",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      [
+       "San Andreas · 2004",
+       "Liberty City · GTA IV"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Los Santos · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Liberty City · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B"
+    ],
+    "src": "our ranking · games: Rockstar",
+    "seed": 11
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "CADA MAPA DE GTA",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      [
+       "San Andreas · 2004",
+       "Liberty City · GTA IV"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Los Santos · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Liberty City · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B"
+    ],
+    "src": "nuestro ranking · juegos: Rockstar",
+    "seed": 11
+   }
+  },
+  {
+   "headline": "S TIER",
+   "headline_es": "TIER S",
+   "text": "S tier: Vice City, and Leonida.",
+   "text_es": "Tier S: Vice City, y Leonida.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "EVERY GTA MAP",
+    "rows": [
+     [
+      "S",
+      [
+       "Vice City · 2002",
+       "Leonida · GTA 6"
+      ]
+     ],
+     [
+      "A",
+      [
+       "San Andreas · 2004",
+       "Liberty City · GTA IV"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Los Santos · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Liberty City · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B",
+     "A"
+    ],
+    "src": "our ranking · games: Rockstar",
+    "seed": 11
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "CADA MAPA DE GTA",
+    "rows": [
+     [
+      "S",
+      [
+       "Vice City · 2002",
+       "Leonida · GTA 6"
+      ]
+     ],
+     [
+      "A",
+      [
+       "San Andreas · 2004",
+       "Liberty City · GTA IV"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Los Santos · GTA V"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Liberty City · GTA III"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B",
+     "A"
+    ],
+    "src": "nuestro ranking · juegos: Rockstar",
+    "seed": 11
+   }
+  },
+  {
+   "headline": "YOUR CALL?",
+   "headline_es": "¿Y TÚ?",
+   "text": "Where would you put Los Santos? Tell me, because",
+   "text_es": "¿Dónde pondrías Los Santos? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WHERE DOES",
+     "LOS SANTOS GO?"
+    ],
+    "pink": [
+     "LOS SANTOS GO?"
+    ],
+    "seed": 11
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿DÓNDE VA",
+     "LOS SANTOS?"
+    ],
+    "pink": [
+     "LOS SANTOS?"
+    ],
+    "seed": 11
+   }
+  }
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, generated only if the English Short wins its first 24 h (winners-only, Nov 23)"
+}

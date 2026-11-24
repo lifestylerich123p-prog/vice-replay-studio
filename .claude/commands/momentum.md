@@ -19,3 +19,7 @@ Momentum run for Vice Replay. Nobody is watching live: don't ask questions. Read
    plus a first line "MOMENTUM: <original Short title> is at <n> views/hour; follow-up ready, owner approves in main chat."
    Also send the .mp4 files with SendUserFile and finish with: **Reply "approve" in the main chat to post the follow-up.**
 5. Don't upload anything, don't push, don't make more than one follow-up per run.
+
+**Nov 22-23 (owner): original first, no trailer images.** A follow-up Short is built from GTA 6-style lettering
+cards (`studio/vicecards.py`) around new checked numbers with a `src` on screen, or the owner's gameplay; trailer clips
+and official screenshots are blocked by `studio.vice publish`.

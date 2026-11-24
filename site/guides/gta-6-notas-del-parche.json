@@ -1,0 +1,82 @@
+{
+ "slug": "gta-6-notas-del-parche",
+ "pair": "gta-6-patch-notes",
+ "lang": "es",
+ "title": "GTA 6 actualización 1.002.002: notas del parche y los 7 arreglos",
+ "h1": "GTA 6 1.002.002: <span>notas del parche</span>",
+ "desc": "Las notas de Rockstar para la actualización 1.002.002 de GTA 6 (23 de noviembre de 2026): 7 arreglos, de cierres y autoguardado a llamadas y nivel de búsqueda. Tamaño y fuentes.",
+ "date": "2026-11-23",
+ "video": "",
+ "card": [
+  "NOTAS DEL PARCHE",
+  "7 ARREGLOS",
+  "vice-city-12.jpg"
+ ],
+ "lede": "La actualización <b>1.002.002</b> empezó a salir el <b>23 de noviembre de 2026</b> y es la primera de GTA 6 con notas del parche. Según las notas publicadas por VICE, Dot Esports y Comicbook, trae <b>7 arreglos</b>. Pesa unos 604 MB en PS5 y hasta 1,6 GB en Xbox Series X|S, y sale por oleadas. Sin spoilers.",
+ "sections": [
+  [
+   "Los 7 arreglos",
+   "<ul class=\"list\"><li><b>Cierres:</b> varios problemas que hacían que el juego se cerrara.</li><li><b>Clima:</b> el clima se quedaba igual demasiado tiempo.</li><li><b>Autoguardado:</b> el autoguardado no funcionaba bien.</li><li><b>Llamadas:</b> llamadas que no llegaban, incluidas las necesarias para avanzar en la historia o desbloquear misiones.</li><li><b>Nivel de búsqueda:</b> no se podía perder el nivel de búsqueda.</li><li><b>Gimnasio:</b> no se podía usar la barra de peso muerto.</li><li><b>Peristas:</b> los compañeros no entregaban las bolsas para vender.</li></ul>"
+  ],
+  [
+   "Las dos actualizaciones anteriores",
+   "<p>La <b>1.002.000</b> (13 de nov., unos 1,07 GB en PS5) y la <b>1.002.001</b> (16 de nov., unos 602 MB) salieron antes del lanzamiento sin notas (GGRecon, Forbes). La 1.002.002 es la primera que Rockstar explicó.</p>"
+  ],
+  [
+   "Lo que no cambió",
+   "<p>Sigue sin haber modo de 60 FPS en consolas: Rockstar le dijo a Kotaku que ni la PS5 Pro pasa de 30 FPS.</p>"
+  ]
+ ],
+ "note": "Actualizaremos esta página cuando salgan la próxima actualización o sus notas.",
+ "faq": [
+  [
+   "¿Cuál es la última actualización de GTA 6?",
+   "La 1.002.002, del 23 de noviembre de 2026 (a la fecha de esta página)."
+  ],
+  [
+   "¿Qué arregló la actualización 1.002.002?",
+   "Siete cosas: cierres, clima trabado, autoguardado, llamadas que no llegaban, no poder perder el nivel de búsqueda, la barra de peso muerto y las bolsas para vender."
+  ],
+  [
+   "¿Cuánto pesa?",
+   "Unos 604 MB en PS5 y hasta 1,6 GB en Xbox Series X|S, según los reportes."
+  ],
+  [
+   "¿Agregó 60 FPS?",
+   "No. Rockstar dice que no hay modo de 60 FPS, ni en PS5 Pro."
+  ]
+ ],
+ "gear": [
+  "storage"
+ ],
+ "sources": [
+  [
+   "VICE: GTA 6 update 01.002.002 patch notes",
+   "https://www.vice.com/en/article/gta-6-update-01-002-002-patch-notes/"
+  ],
+  [
+   "Dot Esports: GTA 6 patch 1.002.002, weather, autosave and more fixed",
+   "https://dotesports.com/gta/news/gta-6-patch-note-fix-change-weather-autosave-wanted-level"
+  ],
+  [
+   "Comicbook: GTA 6 first update after release, full patch notes",
+   "https://comicbook.com/gaming/news/gta-6-grand-theft-auto-vi-update-patch-notes-ps5-xbox-november-23/"
+  ],
+  [
+   "RockstarINTEL: GTA VI update 01.002.002 patch notes released",
+   "https://rockstarintel.com/new-gta-vi-update-01-002-002-patch-notes-released/"
+  ],
+  [
+   "Wccftech: GTA VI 01.002.002 bug fix update rolling out",
+   "https://wccftech.com/grand-theft-auto-vi-01-002-002-update/"
+  ],
+  [
+   "PlayStation LifeStyle: GTA 6 PS5 update 1.002.002 rolling out",
+   "https://www.playstationlifestyle.net/2026/11/23/gta-6-update-1002002-november-23-2026-patch-notes"
+  ],
+  [
+   "Forbes: GTA 6's second update came with no notes (Nov 17)",
+   "https://www.forbes.com/sites/brianmazique/2026/11/17/gta-6-just-got-a-second-update-before-anyone-can-play-it-and-rockstar-still-isnt-saying-what-it-changes/"
+  ]
+ ]
+}
