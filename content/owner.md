@@ -323,3 +323,10 @@
   map series"): the "Where to find it" map Shorts (official map zoom cards, 2+ guides per spot) fill the open daytime
   slots Nov 29-Dec 5, plus one Spanish-only Short on the official map (Viral Adam voice, ~5 credits). Facts re-checked
   before each upload as always.
+- 2026-11-24 ~7:15 PM ET, owner (Spanish chat): "I want both chats to agree when the video is ready". **Ready-check rule:**
+  a video is called "ready" to the owner (hand-off or upload) only after BOTH the main chat and the chat that made it
+  confirm the same version: same episode file and voice files (git blob hashes match on origin/main), same title,
+  slot and pinned comment, gate clean on each side's render, facts re-checked. The chat that made it asks the other
+  with send_message ("READY or NOT READY + differences") and waits for the answer before telling the owner. Found Nov
+  24: main still had an older Bad Bunny version (old title/hook) while the Spanish chat handed the owner the new one.
+
