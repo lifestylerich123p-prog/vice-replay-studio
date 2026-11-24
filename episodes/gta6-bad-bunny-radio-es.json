@@ -1,252 +1,255 @@
 {
- "title": "Bad Bunny tiene su propia radio en GTA 6",
- "slug": "gta6-bad-bunny-radio-es",
- "series": "Miami latino",
- "format": "news",
- "mood": "hype",
- "use_gameplay": false,
- "es_only": true,
- "style": "vice (GTA 6-style lettering cards + card photos, Nov 24)",
- "guide": "gta-6-radio-stations",
- "short_title": "Bad Bunny has his own RADIO in GTA 6 #GTA6 #Shorts",
- "short_description": "Spanish-channel-only Short (owner Nov 24: target Miami's Latino community). Bad Bunny and RaiNao host Cocoteo FM. We only talk about the station: no Bad Bunny music, no artist images (Content ID / likeness).",
- "short_es": {
-  "title": "Bad Bunny tiene su propia RADIO en GTA 6 🐰 #GTA6 #Shorts",
-  "description": "En GTA 6, Bad Bunny es DJ: presenta Cocoteo FM como El Martillo, junto a RaiNao como La Gata. La emisora pone música latina de hoy: bachata, merengue, dembow y reguetón, y en su lista está «Otra Noche en Miami», en un juego cuya Vice City es Miami. ¿Desde qué parte de Miami nos ves? Dímelo abajo.\n\nFuentes: Rolling Stone, Complex, Yahoo, KeenGamer, Hola.",
+  "title": "Bad Bunny tiene su propia radio en GTA 6",
+  "slug": "gta6-bad-bunny-radio-es",
+  "series": "Miami latino",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "es_only": true,
+  "style": "vice (GTA 6-style lettering cards + card photos, Nov 24)",
+  "guide": "gta-6-radio-stations",
+  "short_title": "In GTA 6's MIAMI the DJ is Bad Bunny #GTA6 #Shorts",
+  "short_description": "Spanish-channel-only Short (owner Nov 24: target Miami's Latino community). Bad Bunny and RaiNao host Cocoteo FM. We only talk about the station: no Bad Bunny music, no artist images (Content ID / likeness).",
+  "short_es": {
+    "title": "En el MIAMI de GTA 6 el DJ es Bad Bunny 🐰 #GTA6 #Shorts",
+    "description": "En GTA 6, Bad Bunny es DJ: presenta Cocoteo FM como El Martillo, junto a RaiNao como La Gata. La emisora pone música latina de hoy: bachata, merengue, dembow y reguetón, y en su lista está «Otra Noche en Miami», en un juego cuya Vice City es Miami. ¿Desde qué parte de Miami nos ves? Dímelo abajo.\n\nFuentes: Rolling Stone, Complex, Yahoo, GTABase, KeenGamer, Hola.",
+    "tags": [
+      "Bad Bunny GTA 6",
+      "Cocoteo FM",
+      "GTA 6 radio",
+      "Bad Bunny",
+      "RaiNao",
+      "GTA 6 Miami",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "short_pinned_comment_es": "¿Desde qué parte de Miami nos ves? Hialeah, Doral, la Pequeña Habana... 👇",
+  "pinned_comment": "Which part of Miami are you watching from? 👇",
+  "cta_es": "SÍGUENOS: GTA 6 DESDE MIAMI",
   "tags": [
-   "Bad Bunny GTA 6",
-   "Cocoteo FM",
-   "GTA 6 radio",
-   "Bad Bunny",
-   "RaiNao",
-   "GTA 6 Miami",
-   "GTA 6 español",
-   "GTA VI"
+    "Bad Bunny",
+    "GTA 6 radio",
+    "GTA VI"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#badbunny",
+    "#miami"
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (5 lines, 5 credits, Nov 24, Spanish chat; owner wanted it ASAP)",
+  "sources": [
+    "Rolling Stone - Bad Bunny, Lana Del Rey to Light Up the Leonida Airwaves as 'GTA VI' Radio Hosts (El Martillo and La Gata, Cocoteo FM, modern Latin music): https://www.rollingstone.com/music/music-news/bad-bunny-lana-del-rey-gta-6-radio-stations-1235639652/",
+    "Complex - Grand Theft Auto VI Radio Stations Feature Bad Bunny, Burna Boy, Lana Del Rey (bachata, merengue, dembow, reggaeton): https://www.complex.com/pop-culture/a/alex-ocho/gta-6-radio-stations-hosts-bad-bunny-burna-boy",
+    "Yahoo Tech - Anitta, Bad Bunny and RaiNao lend voices to Grand Theft Auto VI (playlist includes 'Otra Noche en Miami' and 'EoO'): https://tech.yahoo.com/gaming/articles/anitta-bad-bunny-rainao-lend-162609376.html",
+    "KeenGamer - GTA 6 Reveals Its First Six Radio Stations, Hosted by Bad Bunny, Slayer, and More: https://www.keengamer.com/articles/news/gta-6-reveals-its-first-six-radio-stations-hosted-by-bad-bunny-slayer-and-more/",
+    "Hola - Bad Bunny, Rauw Alejandro, and more Latinos join GTA 6 soundtrack: https://www.hola.com/us/entertainment/20261118935908/bad-bunny-rauw-alejandro-latinos-join-gta-6-soundtrack/",
+    "GTABase - Cocoteo FM (tracklist: 'Otra Noche en Miami' by Bad Bunny, track 3): https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm"
+  ],
+  "short": [
+    {
+      "headline": "VICE CITY = MIAMI",
+      "headline_es": "VICE CITY = MIAMI",
+      "text": "In GTA 6's Miami, the DJ is Bad Bunny.",
+      "text_es": "En el Miami de GTA seis, el DJ es Bad Bunny.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "MIAMI",
+          "TIENE DJ:",
+          "BAD BUNNY"
+        ],
+        "pink": [
+          "BAD BUNNY"
+        ],
+        "locale": "es",
+        "seed": 3,
+        "bg": "photo:media/official/vice-city-22.jpg"
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "MIAMI",
+          "TIENE DJ:",
+          "BAD BUNNY"
+        ],
+        "pink": [
+          "BAD BUNNY"
+        ],
+        "locale": "es",
+        "seed": 3,
+        "bg": "photo:media/official/vice-city-22.jpg"
+      },
+      "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg1.wav"
+    },
+    {
+      "headline": "COCOTEO FM",
+      "headline_es": "COCOTEO FM",
+      "text": "It's called Cocoteo FM. He's El Martillo, and RaiNao is La Gata.",
+      "text_es": "Se llama Cocoteo FM. Él es El Martillo, y RaiNao es La Gata.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "COCOTEO FM",
+        "text": "El Martillo y La Gata",
+        "pink": [
+          "EL MARTILLO"
+        ],
+        "ticker": "Bad Bunny = El Martillo · RaiNao = La Gata · música latina de hoy",
+        "locale": "es",
+        "src": "Rolling Stone · Complex",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "COCOTEO FM",
+        "text": "El Martillo y La Gata",
+        "pink": [
+          "EL MARTILLO"
+        ],
+        "ticker": "Bad Bunny = El Martillo · RaiNao = La Gata · música latina de hoy",
+        "locale": "es",
+        "src": "Rolling Stone · Complex",
+        "seed": 3
+      },
+      "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg2.wav"
+    },
+    {
+      "headline": "LO QUE SUENA",
+      "headline_es": "LO QUE SUENA",
+      "text": "Bachata, merengue, dembow and reggaeton.",
+      "text_es": "Pone bachata, merengue, dembow y reguetón.",
+      "keep_media": true,
+      "chart": {
+        "type": "list",
+        "title": "COCOTEO FM",
+        "bg": "vice",
+        "locale": "es",
+        "seed": 3,
+        "src": "Complex",
+        "items": [
+          [
+            "1",
+            "Bachata"
+          ],
+          [
+            "2",
+            "Merengue"
+          ],
+          [
+            "3",
+            "Dembow"
+          ],
+          [
+            "4",
+            "Reguetón"
+          ]
+        ]
+      },
+      "chart_es": {
+        "type": "list",
+        "title": "COCOTEO FM",
+        "bg": "vice",
+        "locale": "es",
+        "seed": 3,
+        "src": "Complex",
+        "items": [
+          [
+            "1",
+            "Bachata"
+          ],
+          [
+            "2",
+            "Merengue"
+          ],
+          [
+            "3",
+            "Dembow"
+          ],
+          [
+            "4",
+            "Reguetón"
+          ]
+        ]
+      },
+      "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg3.wav"
+    },
+    {
+      "headline": "OTRA NOCHE EN MIAMI",
+      "headline_es": "OTRA NOCHE EN MIAMI",
+      "text": "And it plays Otra Noche en Miami, in a game that is Miami.",
+      "text_es": "Y suena Otra Noche en Miami, en un juego que es Miami.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "VICE CITY = MIAMI",
+        "text": "Otra Noche en Miami",
+        "pink": [
+          "MIAMI"
+        ],
+        "ticker": "en la lista de Cocoteo FM · Vice City está basada en Miami",
+        "locale": "es",
+        "src": "Yahoo · Hola",
+        "seed": 3
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "VICE CITY = MIAMI",
+        "text": "Otra Noche en Miami",
+        "pink": [
+          "MIAMI"
+        ],
+        "ticker": "en la lista de Cocoteo FM · Vice City está basada en Miami",
+        "locale": "es",
+        "src": "Yahoo · Hola",
+        "seed": 3
+      },
+      "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg4.wav"
+    },
+    {
+      "headline": "¿DESDE DÓNDE?",
+      "headline_es": "¿DESDE DÓNDE?",
+      "text": "Which part of Miami are you watching from? Tell me below, because",
+      "text_es": "¿Desde qué parte de Miami nos ves? Dímelo abajo, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "¿DESDE QUÉ",
+          "PARTE DE",
+          "MIAMI?"
+        ],
+        "pink": [
+          "MIAMI?"
+        ],
+        "sub": "dímelo abajo",
+        "locale": "es",
+        "seed": 3,
+        "bg": "photo:media/official/vice-city-08.jpg"
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿DESDE QUÉ",
+          "PARTE DE",
+          "MIAMI?"
+        ],
+        "pink": [
+          "MIAMI?"
+        ],
+        "sub": "dímelo abajo",
+        "locale": "es",
+        "seed": 3,
+        "bg": "photo:media/official/vice-city-08.jpg"
+      },
+      "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg5.wav"
+    }
   ]
- },
- "short_playlist": "GTA 6 Shorts",
- "short_pinned_comment_es": "¿Desde qué parte de Miami nos ves? Hialeah, Doral, la Pequeña Habana... 👇",
- "pinned_comment": "Which part of Miami are you watching from? 👇",
- "cta_es": "SÍGUENOS: GTA 6 DESDE MIAMI",
- "tags": [
-  "Bad Bunny",
-  "GTA 6 radio",
-  "GTA VI"
- ],
- "hashtags": [
-  "GTA6",
-  "GTAVI",
-  "Shorts"
- ],
- "tiktok_hashtags": [
-  "#gta6",
-  "#badbunny",
-  "#miami"
- ],
- "voice_es_note": "Spanish voice: Everygen Viral Adam, generated by the main chat (CLAUDE.md); preview rendered with Kokoro em_alex.",
- "sources": [
-  "Rolling Stone - Bad Bunny, Lana Del Rey to Light Up the Leonida Airwaves as 'GTA VI' Radio Hosts (El Martillo and La Gata, Cocoteo FM, modern Latin music): https://www.rollingstone.com/music/music-news/bad-bunny-lana-del-rey-gta-6-radio-stations-1235639652/",
-  "Complex - Grand Theft Auto VI Radio Stations Feature Bad Bunny, Burna Boy, Lana Del Rey (bachata, merengue, dembow, reggaeton): https://www.complex.com/pop-culture/a/alex-ocho/gta-6-radio-stations-hosts-bad-bunny-burna-boy",
-  "Yahoo Tech - Anitta, Bad Bunny and RaiNao lend voices to Grand Theft Auto VI (playlist includes 'Otra Noche en Miami' and 'EoO'): https://tech.yahoo.com/gaming/articles/anitta-bad-bunny-rainao-lend-162609376.html",
-  "KeenGamer - GTA 6 Reveals Its First Six Radio Stations, Hosted by Bad Bunny, Slayer, and More: https://www.keengamer.com/articles/news/gta-6-reveals-its-first-six-radio-stations-hosted-by-bad-bunny-slayer-and-more/",
-  "Hola - Bad Bunny, Rauw Alejandro, and more Latinos join GTA 6 soundtrack: https://www.hola.com/us/entertainment/20261118935908/bad-bunny-rauw-alejandro-latinos-join-gta-6-soundtrack/"
- ],
- "short": [
-  {
-   "headline": "BAD BUNNY ES DJ",
-   "headline_es": "BAD BUNNY ES DJ",
-   "text": "Bad Bunny has his own radio station in GTA 6.",
-   "text_es": "Bad Bunny tiene su propia radio en GTA seis.",
-   "keep_media": true,
-   "chart": {
-    "type": "kinetic",
-    "lines": [
-     "BAD BUNNY",
-     "TIENE RADIO",
-     "EN GTA 6"
-    ],
-    "pink": [
-     "TIENE RADIO"
-    ],
-    "locale": "es",
-    "seed": 3,
-    "bg": "photo:media/official/vice-city-22.jpg"
-   },
-   "chart_es": {
-    "type": "kinetic",
-    "lines": [
-     "BAD BUNNY",
-     "TIENE RADIO",
-     "EN GTA 6"
-    ],
-    "pink": [
-     "TIENE RADIO"
-    ],
-    "locale": "es",
-    "seed": 3,
-    "bg": "photo:media/official/vice-city-22.jpg"
-   },
-   "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg1.wav"
-  },
-  {
-   "headline": "COCOTEO FM",
-   "headline_es": "COCOTEO FM",
-   "text": "It's called Cocoteo FM. He's El Martillo, and RaiNao is La Gata.",
-   "text_es": "Se llama Cocoteo FM. Él es El Martillo, y RaiNao es La Gata.",
-   "keep_media": true,
-   "chart": {
-    "type": "headline",
-    "kicker": "COCOTEO FM",
-    "text": "El Martillo y La Gata",
-    "pink": [
-     "EL MARTILLO"
-    ],
-    "ticker": "Bad Bunny = El Martillo · RaiNao = La Gata · música latina de hoy",
-    "locale": "es",
-    "src": "Rolling Stone · Complex",
-    "seed": 3
-   },
-   "chart_es": {
-    "type": "headline",
-    "kicker": "COCOTEO FM",
-    "text": "El Martillo y La Gata",
-    "pink": [
-     "EL MARTILLO"
-    ],
-    "ticker": "Bad Bunny = El Martillo · RaiNao = La Gata · música latina de hoy",
-    "locale": "es",
-    "src": "Rolling Stone · Complex",
-    "seed": 3
-   },
-   "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg2.wav"
-  },
-  {
-   "headline": "LO QUE SUENA",
-   "headline_es": "LO QUE SUENA",
-   "text": "Bachata, merengue, dembow and reggaeton.",
-   "text_es": "Pone bachata, merengue, dembow y reguetón.",
-   "keep_media": true,
-   "chart": {
-    "type": "list",
-    "title": "COCOTEO FM",
-    "bg": "vice",
-    "locale": "es",
-    "seed": 3,
-    "src": "Complex",
-    "items": [
-     [
-      "1",
-      "Bachata"
-     ],
-     [
-      "2",
-      "Merengue"
-     ],
-     [
-      "3",
-      "Dembow"
-     ],
-     [
-      "4",
-      "Reguetón"
-     ]
-    ]
-   },
-   "chart_es": {
-    "type": "list",
-    "title": "COCOTEO FM",
-    "bg": "vice",
-    "locale": "es",
-    "seed": 3,
-    "src": "Complex",
-    "items": [
-     [
-      "1",
-      "Bachata"
-     ],
-     [
-      "2",
-      "Merengue"
-     ],
-     [
-      "3",
-      "Dembow"
-     ],
-     [
-      "4",
-      "Reguetón"
-     ]
-    ]
-   },
-   "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg3.wav"
-  },
-  {
-   "headline": "OTRA NOCHE EN MIAMI",
-   "headline_es": "OTRA NOCHE EN MIAMI",
-   "text": "And it plays Otra Noche en Miami, in a game that is Miami.",
-   "text_es": "Y suena Otra Noche en Miami, en un juego que es Miami.",
-   "keep_media": true,
-   "chart": {
-    "type": "headline",
-    "kicker": "VICE CITY = MIAMI",
-    "text": "Otra Noche en Miami",
-    "pink": [
-     "MIAMI"
-    ],
-    "ticker": "en la lista de Cocoteo FM · Vice City está basada en Miami",
-    "locale": "es",
-    "src": "Yahoo · Hola",
-    "seed": 3
-   },
-   "chart_es": {
-    "type": "headline",
-    "kicker": "VICE CITY = MIAMI",
-    "text": "Otra Noche en Miami",
-    "pink": [
-     "MIAMI"
-    ],
-    "ticker": "en la lista de Cocoteo FM · Vice City está basada en Miami",
-    "locale": "es",
-    "src": "Yahoo · Hola",
-    "seed": 3
-   },
-   "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg4.wav"
-  },
-  {
-   "headline": "¿DESDE DÓNDE?",
-   "headline_es": "¿DESDE DÓNDE?",
-   "text": "Which part of Miami are you watching from? Tell me below, because",
-   "text_es": "¿Desde qué parte de Miami nos ves? Dímelo abajo, porque",
-   "keep_media": true,
-   "chart": {
-    "type": "kinetic",
-    "lines": [
-     "¿DESDE QUÉ",
-     "PARTE DE",
-     "MIAMI?"
-    ],
-    "pink": [
-     "MIAMI?"
-    ],
-    "sub": "dímelo abajo",
-    "locale": "es",
-    "seed": 3
-   },
-   "chart_es": {
-    "type": "kinetic",
-    "lines": [
-     "¿DESDE QUÉ",
-     "PARTE DE",
-     "MIAMI?"
-    ],
-    "pink": [
-     "MIAMI?"
-    ],
-    "sub": "dímelo abajo",
-    "locale": "es",
-    "seed": 3
-   },
-   "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg5.wav"
-  }
- ]
 }
