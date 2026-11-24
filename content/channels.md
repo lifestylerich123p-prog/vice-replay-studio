@@ -58,6 +58,11 @@ Checked Nov 20, 2026 on the owner's Everygen billing page and the account API:
 - One Content Rewards account (owner's). Submit every clip within 30 minutes of posting it.
 - Everygen: ONE shared credit balance for all chats. Estimate first, check the balance before and after, and log
   every spend in "Shared log". Owner: "be careful with the credits".
+- Everygen claim first (Nov 24, after 10 credits were lost to two chats making the same voice): Vice Replay chats run
+  `python -m studio.everygen_claim claim <job> --credits N --what "..."` before any paid Everygen call; only one chat
+  can win a job (GitHub branch claude/everygen-ledger), and a hook blocks paid calls without a claim. Other channels'
+  chats (What If Arena, ClipCircuit) have no access to that repo: they write "CLAIMING: <job>" in the Shared log before
+  a spend over 20 credits and check nobody else did.
 - Campaign clips use real source footage only (no AI footage). AI art is fine for Vice Replay community images and
   What If Arena.
 - Instagram: new accounts go slow. Meta restricted ADS on @vice.replaytv on Nov 19 after 11 API posts in one day,

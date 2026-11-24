@@ -69,9 +69,18 @@ days get under half the views per Short of 2-Short days and no more total views,
   recorded with radio/music off. Audio is our generated synthwave theme + SFX (`"music": "none"`, `"sfx": false`).
 - **Cheap**: free Kokoro voice (English `af_heart`, grade A, owner Nov 22; set in config/channel.json `voice`); no paid
   APIs unless the owner says so. **Spanish Shorts: Everygen's Viral Adam** (owner Nov 23, ~1 credit per line): when a
-  Short is approved, the main chat generates one line per segment (`generate_voiceover_batch`, voice `viral-adam`, write
+  Short is approved, the chat making it generates one line per segment (`generate_voiceover_batch`, voice `viral-adam`, write
   "GTA seis" / numbers as words), saves them to `media/voice/<slug>/es/segN.wav`, sets each segment's `audio_es`,
   re-renders `--short --es` and logs the credits in the Channel Map; Kokoro `em_alex` is only the fallback.
+- **Everygen: claim before you spend** (owner Nov 24, after two chats made the same voice twice: "that double
+  spending can't happen again, so both chats must work together"): EVERY paid Everygen call (voice, image, video,
+  find_clips) starts with `python -m studio.everygen_claim claim <job> --credits N --what "..."` (job e.g.
+  `voice:<slug>:es`). It claims the job on GitHub (branch `claude/everygen-ledger`, one winner even if two chats try at
+  once) and refuses if the other chat holds it, already did it, or the voice already exists on any branch: then don't
+  spend, use theirs. Afterwards `... done <job> --credits N --balance B`; `... list` shows every chat's claims. A hook
+  in `.claude/settings.json` blocks paid Everygen calls without a fresh claim (active from each chat's next start).
+  Handing a job to another chat = say so in a message and never make it yourself; a redo of a glitched line uses
+  `--again "why"`.
 - **Footage law** (details: `content/legal.md`): Rockstar's fan policy allows posting the owner's gameplay with real
   commentary; monetization is tolerated, not licensed. Never post isolated cutscenes, endings/big story moments,
   standalone in-game TV/comedy shows, or anything from leaked copies. YouTube ads: no graphic violence in the first
