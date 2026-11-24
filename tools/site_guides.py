@@ -1080,6 +1080,10 @@ def refresh_home():
     doc2 = doc2.replace("</head>", head_extra + "\n</head>", 1)
     if 'href="/about/"' not in doc2:
         doc2 = doc2.replace('>Work with us</a></p>', '>Work with us</a> · <a href="/about/" style="color:#00e5d2">About us</a></p>', 1)
+    if 'href="/privacy/"' not in doc2:  # Nov 24 audit: the hand-written homepage footer had no Privacy/Terms links
+        doc2 = doc2.replace('>About us</a></p>', '>About us</a> · <a href="/guides/gta-6-map-leonida-places/" style="color:#00e5d2">'
+                            'GTA 6 map</a> · <a href="/privacy/" style="color:#00e5d2">Privacy</a> · <a href="/terms/" '
+                            'style="color:#00e5d2">Terms</a></p>', 1)
     if doc2 != doc:
         open(path, "w").write(doc2)
 
