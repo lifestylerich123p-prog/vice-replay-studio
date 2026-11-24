@@ -3,6 +3,7 @@
     python -m studio.youtube_es whoami                                   # which channel YT_ES_REFRESH_TOKEN belongs to
     python -m studio.youtube_es brand                                    # Spanish description, keywords, banner
     python -m studio.youtube_es comment VIDEO_ID "texto"                 # pinned question, once the Short is public
+    python -m studio.youtube_es recent [N]                               # newest N uploads (spot a by-hand post)
     python -m studio.youtube_es episodes/<slug>.json --approve short,news [--date YYYY-MM-DD] [--at "9:30 AM"]
 
 studio.ship already renders `<name>-es.mp4` for every Short (Kokoro em_alex + text_es), and they were never posted.
@@ -104,6 +105,16 @@ def whoami(tok):
     return it.get("id"), it.get("snippet", {}).get("title")
 
 
+def recent_uploads(tok, n=15):
+    """[(video id, added at UTC, title)] newest first: also shows Shorts the owner posted by hand (~2 units)."""
+    ch, _ = req("GET", "https://youtube.googleapis.com/youtube/v3/channels?part=contentDetails&mine=true", tok)
+    up = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    r, _ = req("GET", "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet"
+                      f"&maxResults={max(1, min(n, 50))}&playlistId={up}", tok)
+    return [(it["snippet"]["resourceId"]["videoId"], it["snippet"].get("publishedAt", "")[:16],
+             it["snippet"]["title"]) for it in r.get("items", [])]
+
+
 def check_channel(tok):
     """Refuse unless the Spanish token belongs to the registered Spanish channel (never the English one)."""
     cid, title = whoami(tok)
@@ -158,7 +169,7 @@ def spanish_waits(ep_path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("episode", help="episodes/<slug>.json, 'whoami', 'brand', 'trailer' or 'comment'")
+    ap.add_argument("episode", help="episodes/<slug>.json, 'whoami', 'brand', 'trailer', 'comment' or 'recent'")
     ap.add_argument("rest", nargs="*", help="for comment: VIDEO_ID TEXT")
     ap.add_argument("--approve", default="", help="short, news, ... or all (owner approval in chat only)")
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
@@ -181,6 +192,10 @@ def main():
         print(f"{ENV} belongs to: {title} ({cid})")
         return
     cid = check_channel(tok)
+    if a.episode == "recent":  # Nov 24: the owner may post a Short by hand; the upload runs check this before posting
+        for vid, when, title in recent_uploads(tok, int(a.rest[0]) if a.rest else 15):
+            print(f"{vid}  {when}Z  {title}")
+        return
     if a.episode == "brand":
         brand(tok, cid)
         return
