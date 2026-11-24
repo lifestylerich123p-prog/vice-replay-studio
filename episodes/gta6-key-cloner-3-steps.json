@@ -1,0 +1,194 @@
+{
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (GTA 6-style lettering cards, Nov 23)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "series": "How To",
+ "title": "GTA 6's Key Cloner in 3 Steps",
+ "slug": "gta6-key-cloner-3-steps",
+ "short_title": "GTA 6's key cloner in 3 steps #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6's key cloner in 3 steps #GTA6 #Shorts",
+  "You can't buy GTA 6's key cloner #GTA6 #Shorts",
+  "How to steal any car in GTA 6 (key cloner) #GTA6 #Shorts"
+ ],
+ "short_description": "How to get and use GTA 6's key cloner: you can't buy it. 1) It unlocks in a story mission for Randy (Chapter 3 in most guides). 2) Scan a car with the WAiNK app on your phone to see if it needs a cloned key or has a tracker. 3) At the driver's door, pick Clone Key and fill the meter. Pricey cars carry trackers, so cloning gets you in, not off the radar. Light on spoilers.\n\nSources: GameSpot, GamesRadar, VICE.",
+ "short_es": {
+  "title": "La CLONADORA de llaves de GTA 6 en 3 pasos 🔑 #GTA6 #Shorts",
+  "description": "Cómo conseguir y usar la clonadora de llaves de GTA 6: no se compra. 1) Se desbloquea en una misión de Randy (capítulo 3 en la mayoría de las guías). 2) Escanea el auto con la app WAiNK. 3) En la puerta del conductor, elige Clonar llave y llena el medidor. Fuentes: GameSpot, GamesRadar, VICE.",
+  "tags": [
+   "GTA 6 clonadora de llaves",
+   "GTA 6 como robar autos",
+   "GTA 6 trucos",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "What's the first car you cloned? 👇",
+ "short_pinned_comment_es": "¿Cuál fue el primer auto que clonaste? 👇",
+ "tags": [
+  "GTA 6 key cloner",
+  "GTA 6 how to get key cloner",
+  "GTA 6 steal cars",
+  "GTA 6 Randy",
+  "GTA 6 tips",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#keycloner"
+ ],
+ "sources": [
+  "GameSpot - How to get a key cloner in GTA 6: https://www.gamespot.com/articles/how-to-get-a-key-cloner-in-gta-6/",
+  "GamesRadar - GTA 6 key cloner, how to clone keys: https://www.gamesradar.com/games/grand-theft-auto/gta-6-key-cloner-how-to-get/",
+  "VICE - How to get the key cloner in GTA 6: https://www.vice.com/en/article/gta-6-key-cloner/"
+ ],
+ "guide": "gta-6-how-to",
+ "short": [
+  {
+   "headline": "NOT FOR SALE",
+   "headline_es": "NO SE COMPRA",
+   "text": "You can't buy the key cloner in GTA 6.",
+   "text_es": "La clonadora de llaves de GTA seis no se compra.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "YOU CAN'T BUY",
+     "THE KEY CLONER"
+    ],
+    "pink": [
+     "THE KEY CLONER"
+    ],
+    "sub": "3 steps to clone any car",
+    "seed": 14
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "LA CLONADORA",
+     "NO SE COMPRA"
+    ],
+    "pink": [
+     "NO SE COMPRA"
+    ],
+    "sub": "3 pasos para clonar cualquier auto",
+    "seed": 14
+   }
+  },
+  {
+   "headline": "STEP 1",
+   "headline_es": "PASO 1",
+   "text": "One: finish Randy's story mission, Chapter 3 in most guides.",
+   "text_es": "Uno: termina la misión de Randy, capítulo tres en la mayoría de las guías.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 1,
+    "of": 3,
+    "label": "Randy's mission",
+    "sub": "Chapter 3 in most guides",
+    "src": "GameSpot · GamesRadar · VICE",
+    "seed": 14
+   },
+   "chart_es": {
+    "type": "countdown",
+    "n": 1,
+    "of": 3,
+    "label": "La misión de Randy",
+    "sub": "capítulo 3 en la mayoría de las guías",
+    "src": "GameSpot · GamesRadar · VICE",
+    "seed": 14
+   }
+  },
+  {
+   "headline": "STEP 2",
+   "headline_es": "PASO 2",
+   "text": "Two: scan the car with the WAiNK app on your phone.",
+   "text_es": "Dos: escanea el auto con la app WAiNK de tu teléfono.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 2,
+    "of": 3,
+    "label": "Scan the car",
+    "sub": "WAiNK app on your phone",
+    "src": "GameSpot · GamesRadar",
+    "seed": 14
+   },
+   "chart_es": {
+    "type": "countdown",
+    "n": 2,
+    "of": 3,
+    "label": "Escanea el auto",
+    "sub": "app WAiNK en tu teléfono",
+    "src": "GameSpot · GamesRadar",
+    "seed": 14
+   }
+  },
+  {
+   "headline": "STEP 3",
+   "headline_es": "PASO 3",
+   "text": "Three: at the driver's door, pick Clone Key and fill the meter.",
+   "text_es": "Tres: en la puerta del conductor, elige Clonar llave y llena el medidor.",
+   "keep_media": true,
+   "chart": {
+    "type": "countdown",
+    "n": 3,
+    "of": 3,
+    "label": "Pick Clone Key",
+    "sub": "at the driver's door, fill the meter",
+    "src": "GameSpot · VICE",
+    "seed": 14
+   },
+   "chart_es": {
+    "type": "countdown",
+    "n": 3,
+    "of": 3,
+    "label": "Clonar llave",
+    "sub": "en la puerta del conductor",
+    "src": "GameSpot · VICE",
+    "seed": 14
+   }
+  },
+  {
+   "headline": "TRACKERS",
+   "headline_es": "RASTREADORES",
+   "text": "Pricey cars carry trackers. What's your first steal? Tell me, because",
+   "text_es": "Los autos caros traen rastreador. ¿Cuál robas primero? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "PRICEY CARS",
+     "CARRY TRACKERS"
+    ],
+    "pink": [
+     "CARRY TRACKERS"
+    ],
+    "seed": 14
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "LOS AUTOS CAROS",
+     "TRAEN RASTREADOR"
+    ],
+    "pink": [
+     "TRAEN RASTREADOR"
+    ],
+    "seed": 14
+   }
+  }
+ ]
+}

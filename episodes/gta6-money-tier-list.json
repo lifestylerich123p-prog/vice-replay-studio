@@ -1,0 +1,349 @@
+{
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (GTA 6-style lettering cards, Nov 23)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "series": "Tier List",
+ "title": "Every Way to Make Money in GTA 6, Ranked",
+ "slug": "gta6-money-tier-list",
+ "short_title": "Every way to make money in GTA 6, ranked #GTA6 #Shorts",
+ "short_title_options": [
+  "Every way to make money in GTA 6, ranked #GTA6 #Shorts",
+  "GTA 6 money tier list: stores are D tier #GTA6 #Shorts",
+  "The worst way to make money in GTA 6 #GTA6 #Shorts"
+ ],
+ "short_description": "Every way to make money in GTA 6, ranked from worst to best: corner-store robberies (D: small pay, lots of heat), stealing cars for Moses (B: fast early cash), jewelry jobs and Randy's high-end cars (A: from Chapter 3, you need the key cloner for Randy), and bank vaults (S: late in the story; guides agree they pay the most). Keep your cash in the bank, not your pocket. What's your money method?\n\nSources: GamesRadar, PowerPyx, GTABase, Dexerto.",
+ "short_es": {
+  "title": "Cómo hacer DINERO en GTA 6, de peor a mejor 💰 #GTA6 #Shorts",
+  "description": "Todas las formas de ganar dinero en GTA 6, de peor a mejor: robar tiendas (D), autos para Moses (B), joyerías y autos de lujo para Randy (A, desde el capítulo 3) y bóvedas de banco (S, al final de la historia). Fuentes: GamesRadar, PowerPyx, GTABase, Dexerto.",
+  "tags": [
+   "GTA 6 dinero",
+   "GTA 6 como ganar dinero",
+   "GTA 6 tier list",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "What's your money method: cars, jewelry or vaults? 👇",
+ "short_pinned_comment_es": "¿Cómo haces dinero tú: autos, joyas o bóvedas? 👇",
+ "tags": [
+  "GTA 6 money",
+  "GTA 6 how to make money",
+  "GTA 6 make money fast",
+  "GTA 6 tier list",
+  "GTA 6 bank vault",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6money",
+  "#tierlist"
+ ],
+ "sources": [
+  "GamesRadar - How to make money fast in GTA 6: https://www.gamesradar.com/games/grand-theft-auto/gta-6-make-money-fast/",
+  "PowerPyx - GTA 6 money guide: https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+  "GTABase - How to make money fast in GTA 6, 8 best methods: https://www.gtabase.com/gta-6/articles/how-to-make-money-fast-in-gta-6",
+  "Dexerto - How to make money fast in GTA 6: https://www.dexerto.com/wikis/gta-6/how-to-make-money-fast/"
+ ],
+ "guide": "gta-6-make-money",
+ "short": [
+  {
+   "headline": "WORST MONEY",
+   "headline_es": "EL PEOR",
+   "text": "Robbing corner stores is the worst money in GTA 6.",
+   "text_es": "Robar tiendas es la peor forma de hacer dinero en GTA seis.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "STORE ROBBERIES",
+     "ARE D TIER"
+    ],
+    "pink": [
+     "ARE D TIER"
+    ],
+    "sub": "every way to make money, ranked",
+    "seed": 12
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "ROBAR TIENDAS",
+     "ES TIER D"
+    ],
+    "pink": [
+     "ES TIER D"
+    ],
+    "sub": "cómo hacer dinero, de peor a mejor",
+    "seed": 12
+   }
+  },
+  {
+   "headline": "B TIER",
+   "headline_es": "TIER B",
+   "text": "B tier: stealing cars for Moses. Fast early cash.",
+   "text_es": "Tier B: robar autos para Moses. Dinero rápido al principio.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "EVERY WAY TO MAKE MONEY",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      [
+       "Cars for Moses"
+      ]
+     ],
+     [
+      "D",
+      [
+       "Store robberies"
+      ]
+     ]
+    ],
+    "static": [
+     "D"
+    ],
+    "src": "GamesRadar · PowerPyx · GTABase",
+    "seed": 12
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "CÓMO HACER DINERO",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      [
+       "Autos para Moses"
+      ]
+     ],
+     [
+      "D",
+      [
+       "Robar tiendas"
+      ]
+     ]
+    ],
+    "static": [
+     "D"
+    ],
+    "src": "GamesRadar · PowerPyx · GTABase",
+    "seed": 12
+   }
+  },
+  {
+   "headline": "A TIER",
+   "headline_es": "TIER A",
+   "text": "A tier: jewelry jobs and Randy's high-end cars, from Chapter 3.",
+   "text_es": "Tier A: joyerías y los autos de lujo de Randy, desde el capítulo tres.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "EVERY WAY TO MAKE MONEY",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      [
+       "Jewelry jobs",
+       "Randy's cars"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Cars for Moses"
+      ]
+     ],
+     [
+      "D",
+      [
+       "Store robberies"
+      ]
+     ]
+    ],
+    "static": [
+     "D",
+     "B"
+    ],
+    "src": "GamesRadar · PowerPyx · Dexerto",
+    "seed": 12
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "CÓMO HACER DINERO",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      [
+       "Joyerías",
+       "Autos de Randy"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Autos para Moses"
+      ]
+     ],
+     [
+      "D",
+      [
+       "Robar tiendas"
+      ]
+     ]
+    ],
+    "static": [
+     "D",
+     "B"
+    ],
+    "src": "GamesRadar · PowerPyx · Dexerto",
+    "seed": 12
+   }
+  },
+  {
+   "headline": "S TIER",
+   "headline_es": "TIER S",
+   "text": "S tier: bank vaults, late in the story. Guides agree they pay the most.",
+   "text_es": "Tier S: las bóvedas de banco, al final de la historia. Las guías coinciden: pagan más.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "EVERY WAY TO MAKE MONEY",
+    "rows": [
+     [
+      "S",
+      [
+       "Bank vaults"
+      ]
+     ],
+     [
+      "A",
+      [
+       "Jewelry jobs",
+       "Randy's cars"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Cars for Moses"
+      ]
+     ],
+     [
+      "D",
+      [
+       "Store robberies"
+      ]
+     ]
+    ],
+    "static": [
+     "D",
+     "B",
+     "A"
+    ],
+    "src": "GamesRadar · PowerPyx · GTABase",
+    "seed": 12
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "CÓMO HACER DINERO",
+    "rows": [
+     [
+      "S",
+      [
+       "Bóvedas de banco"
+      ]
+     ],
+     [
+      "A",
+      [
+       "Joyerías",
+       "Autos de Randy"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Autos para Moses"
+      ]
+     ],
+     [
+      "D",
+      [
+       "Robar tiendas"
+      ]
+     ]
+    ],
+    "static": [
+     "D",
+     "B",
+     "A"
+    ],
+    "src": "GamesRadar · PowerPyx · GTABase",
+    "seed": 12
+   }
+  },
+  {
+   "headline": "YOUR METHOD?",
+   "headline_es": "¿Y TÚ?",
+   "text": "What's your money method? Tell me, because",
+   "text_es": "¿Cuál es tu método? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WHAT'S YOUR",
+     "MONEY METHOD?"
+    ],
+    "pink": [
+     "MONEY METHOD?"
+    ],
+    "seed": 12
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CUÁL ES",
+     "TU MÉTODO?"
+    ],
+    "pink": [
+     "TU MÉTODO?"
+    ],
+    "seed": 12
+   }
+  }
+ ]
+}
