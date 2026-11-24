@@ -160,7 +160,9 @@ def main():
         ok.append("Website is up")
     # 3a. Pre-launch wording left on the site ("comes out on November 19"...; owner Nov 24: "things are out of date")
     try:
-        from .site_stale import scan
+        from .site_stale import freshness, scan
+        for w in freshness(ROOT):
+            warn.append("Website: " + w)
         stale = scan(ROOT.parent / "vicereplay-site")
         if stale:
             pages = sorted({p for p, _ in stale})

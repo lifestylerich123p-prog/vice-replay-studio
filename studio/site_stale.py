@@ -7,7 +7,9 @@ purpose as a record and the note on top says what changed.
 
     python -m studio.site_stale            # scan ../vicereplay-site
 """
+import datetime as dt
 import html
+import json
 import os
 import re
 import sys
@@ -38,10 +40,50 @@ def scan(site_dir):
     return out
 
 
+def _month_day(text, today):
+    """'Nov 24' / 'Nov 24, 6 AM ET' -> date in today's year (last year if that would be in the future)."""
+    m = re.match(r"([A-Z][a-z]{2})[a-z]*\.? (\d{1,2})", text.strip())
+    if not m:
+        return None
+    d = dt.datetime.strptime(f"{m.group(1)} {m.group(2)} {today.year}", "%b %d %Y").date()
+    return d.replace(year=d.year - 1) if d > today else d
+
+
+def freshness(studio_root, today=None, max_days=3):
+    """Warnings for time-sensitive site content (Nov 24 owner: "monitor so this doesn't happen"):
+    expired guides (`expires` in site/guides/*.json), deal prices checked more than `max_days` ago (DEALS_CHECKED in
+    tools/site_guides.py) and a live-updates page with no new line for more than `max_days`."""
+    root = Path(studio_root)
+    today = today or dt.date.today()
+    out = []
+    for f in sorted((root / "site" / "guides").glob("*.json")):
+        try:
+            g = json.loads(f.read_text())
+        except ValueError:
+            continue
+        if g.get("expires") and dt.date.fromisoformat(g["expires"]) < today:
+            out.append(f"guide {g.get('slug', f.stem)} expired on {g['expires']}: update its deals or retire it")
+    src = root / "tools" / "site_guides.py"
+    m = re.search(r'^DEALS_CHECKED = "([^"]+)"', src.read_text(), re.M) if src.exists() else None
+    checked = _month_day(m.group(1), today) if m else None
+    if checked and (today - checked).days > max_days:
+        out.append(f"deal prices last checked {m.group(1)} ({(today - checked).days} days ago): re-check DEALS in tools/site_guides.py")
+    live = root / "site" / "live.json"
+    if live.exists():
+        items = json.loads(live.read_text())
+        newest = _month_day(items[0]["time"], today) if items else None
+        if newest and (today - newest).days > max_days:
+            out.append(f"live updates page: newest line is from {items[0]['time']} ({(today - newest).days} days ago): add today's news to site/live.json")
+    return out
+
+
 if __name__ == "__main__":
     root = Path(__file__).resolve().parent.parent
     site = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("VICEREPLAY_SITE") or root.parent / "vicereplay-site"
     hits = scan(site)
     for page, ctx in hits:
         print(f"STALE {page}: ...{ctx}...")
-    print(f"{len(hits)} stale phrase(s)")
+    old = freshness(root)
+    for w in old:
+        print("OLD", w)
+    print(f"{len(hits)} stale phrase(s), {len(old)} freshness warning(s)")

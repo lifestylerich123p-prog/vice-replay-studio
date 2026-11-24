@@ -689,6 +689,7 @@ page("links/", "Vice Replay Links", "Every Vice Replay link: GTA 6 Black Friday 
 <p class="lede">GTA's wildest moments. On replay.</p>
 {deals_html()}
 <div class="btns">
+<a class="item" href="/guides/gta-6-deals/">🏷️ GTA 6 deals and discount codes<small>What's real this week, and the "free code" scams</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/gta-6-black-friday/">🔥 GTA 6 Black Friday deals<small>What's worth buying for GTA 6 this week</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/gta-6-storage/">💾 GTA 6 says "not enough space"?<small>Free fixes + the PS5 SSD that fits (212 GB)</small><span aria-hidden="true">→</span></a>
 <a class="item" href="/guides/gta-6-best-ssd/">🛒 Best SSD for GTA 6 (PS5)<small>What to buy, what to skip, how to install</small><span aria-hidden="true">→</span></a>
@@ -777,9 +778,11 @@ refresh_home()
 try:
     import sys as _sys
     _sys.path.insert(0, STUDIO)
-    from studio.site_stale import scan as _stale_scan
+    from studio.site_stale import scan as _stale_scan, freshness as _fresh
     for _pg, _ctx in _stale_scan(SITE):
         print(f"STALE {_pg}: ...{_ctx}...")
+    for _w in _fresh(STUDIO):
+        print("OLD", _w)
 except Exception as _e:  # the check must never break a build
     print("stale check skipped:", _e)
 
