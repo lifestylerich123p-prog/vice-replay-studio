@@ -1,201 +1,202 @@
 {
-  "series": "Explained",
-  "format": "comparison",
-  "mood": "hype",
-  "use_gameplay": false,
-  "style": "vice (GTA 6-style lettering cards, Nov 23)",
-  "short_playlist": "GTA 6 Shorts",
-  "hashtags": [
-    "GTA6",
-    "GTAVI",
-    "Shorts"
-  ],
-  "title": "GTA 6: The $100 Edition Beat the $80 One",
-  "slug": "gta6-ultimate-vs-standard",
-  "short_title": "GTA 6: the $100 edition beat the $80 one #GTA6 #Shorts",
-  "short_title_options": [
-    "GTA 6: the $100 edition beat the $80 one #GTA6 #Shorts",
-    "GTA 6 fans paid $100, not $80. Here's why #GTA6 #Shorts",
-    "GTA 6 Ultimate vs Standard: Ultimate won #GTA6 #Shorts"
-  ],
-  "short_description": "Take-Two CEO Strauss Zelnick said more people pre-ordered GTA 6's $99.99 Ultimate Edition than the $79.99 standard one: \"the most avid consumers are the ones who are pre-ordering now.\" The extra $20 opens five businesses in Vice City that only run with the Ultimate Edition (Rockstar's edition page). Our take: for an 80-hour game, $20 is cheap. Which one did you get?\n\nSources: TechRadar, Dexerto, MP1st (Zelnick); Rockstar Games (Ultimate Edition page); Tom's Guide, Shacknews (prices).",
-  "short_es": {
-    "title": "GTA 6: la edición de 100 dólares le GANÓ a la de 80 💸 #GTA6 #Shorts",
-    "description": "El CEO de Take-Two, Strauss Zelnick, dijo que más gente reservó la Ultimate de 99,99 dólares que la estándar de 79,99. Los 20 dólares extra abren cinco negocios en Vice City que solo funcionan con la Ultimate. ¿Cuál compraste?",
-    "tags": [
-      "GTA 6 Ultimate",
-      "GTA 6 edición estándar",
-      "GTA 6 precio",
-      "GTA 6 español",
-      "GTA VI"
-    ]
-  },
-  "pinned_comment": "Standard or Ultimate: which did you get? 👇",
-  "short_pinned_comment_es": "¿Estándar o Ultimate? 👇",
+ "series": "Explained",
+ "format": "comparison",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (GTA 6-style lettering cards, Nov 23)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "title": "GTA 6: The $100 Edition Beat the $80 One",
+ "slug": "gta6-ultimate-vs-standard",
+ "short_title": "GTA 6: the $100 edition beat the $80 one #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6: the $100 edition beat the $80 one #GTA6 #Shorts",
+  "GTA 6 fans paid $100, not $80. Here's why #GTA6 #Shorts",
+  "GTA 6 Ultimate vs Standard: Ultimate won #GTA6 #Shorts"
+ ],
+ "short_description": "Take-Two CEO Strauss Zelnick said more people pre-ordered GTA 6's $99.99 Ultimate Edition than the $79.99 standard one: \"the most avid consumers are the ones who are pre-ordering now.\" The extra $20 opens five businesses in Vice City that only run with the Ultimate Edition (Rockstar's edition page). Our take: for an 80-hour game, $20 is cheap. Which one did you get?\n\nSources: TechRadar, Dexerto, MP1st (Zelnick); Rockstar Games (Ultimate Edition page); Tom's Guide, Shacknews (prices).",
+ "short_es": {
+  "title": "GTA 6: la edición de 100 dólares le GANÓ a la de 80 💸 #GTA6 #Shorts",
+  "description": "El CEO de Take-Two, Strauss Zelnick, dijo que más gente reservó la Ultimate de 99,99 dólares que la estándar de 79,99. Los 20 dólares extra abren cinco negocios en Vice City que solo funcionan con la Ultimate. ¿Cuál compraste?",
   "tags": [
-    "GTA 6 Ultimate Edition",
-    "GTA 6 Standard Edition",
-    "GTA 6 price",
-    "GTA 6 which edition",
-    "GTA 6 Ultimate vs Standard",
-    "Strauss Zelnick",
-    "GTA 6",
-    "GTA VI",
-    "Grand Theft Auto VI"
-  ],
-  "tiktok_hashtags": [
-    "#gta6",
-    "#gtavi",
-    "#gaming"
-  ],
-  "sources": [
-    "TechRadar - GTA 6 Ultimate Edition is selling more than standard, says Take-Two CEO: https://techradar.com/gaming/gta-6-ultimate-edition-is-selling-more-than-standard-says-take-two-ceo-despite-the-price-controversy-the-most-avid-consumers-are-the-ones-who-are-pre-ordering-now",
-    "Dexerto - Rockstar Games boss says $100 GTA 6 Ultimate Edition is outselling the $80 standard version: https://www.dexerto.com/gta/rockstar-games-boss-says-100-gta-6-ultimate-edition-is-outselling-the-80-standard-version-3397246/",
-    "MP1st - More people have pre-ordered the $100 edition: https://mp1st.com/news/gta-6-more-people-pre-ordered-100-edition-dont-expect-christmas-discount",
-    "Rockstar Games - GTA VI Ultimate Edition (five businesses only open with the Ultimate Edition): https://www.rockstargames.com/VI",
-    "Tom's Guide - GTA 6 price and editions: https://www.tomsguide.com/news/gta-6"
-  ],
-  "short": [
-    {
-      "headline": "$100 BEAT $80",
-      "headline_es": "$100 LE GANÓ A $80",
-      "text": "More people pre-ordered the hundred-dollar GTA 6 than the eighty-dollar one.",
-      "text_es": "Más gente reservó el GTA 6 de cien dólares que el de ochenta.",
-      "keep_media": true,
-      "chart": {
-        "type": "versus",
-        "a": [
-          "STANDARD",
-          "$79.99"
-        ],
-        "b": [
-          "ULTIMATE",
-          "$99.99"
-        ],
-        "winner": "b",
-        "src": "TechRadar · Dexerto · MP1st",
-        "seed": 1
-      },
-      "chart_es": {
-        "type": "versus",
-        "a": [
-          "STANDARD",
-          "$79.99"
-        ],
-        "b": [
-          "ULTIMATE",
-          "$99.99"
-        ],
-        "winner": "b",
-        "src": "TechRadar · Dexerto · MP1st",
-        "seed": 1
-      }
-    },
-    {
-      "headline": "TAKE-TWO SAYS",
-      "headline_es": "LO DICE TAKE-TWO",
-      "text": "Take-Two's boss says the most avid fans pre-order first, and they buy the big one.",
-      "text_es": "El jefe de Take-Two dice que los fans más intensos reservan primero, y compran la grande.",
-      "keep_media": true,
-      "chart": {
-        "type": "headline",
-        "kicker": "TAKE-TWO CEO",
-        "text": "Ultimate outsold Standard",
-        "pink": [
-          "ULTIMATE"
-        ],
-        "ticker": "Strauss Zelnick · pre-orders · \"the most avid consumers are the ones who are pre-ordering now\"",
-        "src": "TechRadar · Dexerto",
-        "seed": 1
-      },
-      "chart_es": {
-        "type": "headline",
-        "kicker": "CEO DE TAKE-TWO",
-        "text": "La Ultimate vendió más",
-        "pink": [
-          "ULTIMATE"
-        ],
-        "ticker": "Strauss Zelnick · reservas · los fans más intensos reservan primero",
-        "src": "TechRadar · Dexerto",
-        "seed": 1
-      }
-    },
-    {
-      "headline": "WHAT $20 BUYS",
-      "headline_es": "QUÉ DAN 20 DÓLARES",
-      "text": "The extra twenty dollars opens five businesses only Ultimate players get.",
-      "text_es": "Los veinte dólares extra abren cinco negocios que solo tiene la Ultimate.",
-      "keep_media": true,
-      "chart": {
-        "type": "list",
-        "bg": "vice",
-        "title": "ULTIMATE: +$20",
-        "items": [
-          [
-            "5 extra businesses",
-            "YES"
-          ],
-          [
-            "Same story",
-            "YES"
-          ]
-        ],
-        "good": [
-          "yes"
-        ],
-        "src": "Rockstar's Ultimate Edition page",
-        "seed": 1
-      },
-      "chart_es": {
-        "type": "list",
-        "bg": "vice",
-        "title": "ULTIMATE: +$20",
-        "items": [
-          [
-            "5 negocios extra",
-            "SÍ"
-          ],
-          [
-            "La misma historia",
-            "SÍ"
-          ]
-        ],
-        "good": [
-          "sí"
-        ],
-        "locale": "es",
-        "src": "Página de la Ultimate de Rockstar",
-        "seed": 1
-      }
-    },
-    {
-      "headline": "WHICH ONE?",
-      "headline_es": "¿CUÁL?",
-      "text": "Our take: for an eighty-hour game, twenty dollars is cheap. Which did you get? Tell me, because",
-      "text_es": "Nuestra opinión: para un juego de ochenta horas, veinte dólares es poco. ¿Cuál compraste? Dime, porque",
-      "keep_media": true,
-      "chart": {
-        "type": "kinetic",
-        "lines": [
-          "WHICH ONE",
-          "DID YOU GET?"
-        ],
-        "pink": [
-          "DID YOU GET?"
-        ],
-        "seed": 1
-      },
-      "chart_es": {
-        "type": "kinetic",
-        "lines": [
-          "¿CUÁL",
-          "COMPRASTE?"
-        ],
-        "pink": [
-          "COMPRASTE?"
-        ],
-        "seed": 1
-      }
-    }
+   "GTA 6 Ultimate",
+   "GTA 6 edición estándar",
+   "GTA 6 precio",
+   "GTA 6 español",
+   "GTA VI"
   ]
+ },
+ "pinned_comment": "Standard or Ultimate: which did you get? 👇",
+ "short_pinned_comment_es": "¿Estándar o Ultimate? 👇",
+ "tags": [
+  "GTA 6 Ultimate Edition",
+  "GTA 6 Standard Edition",
+  "GTA 6 price",
+  "GTA 6 which edition",
+  "GTA 6 Ultimate vs Standard",
+  "Strauss Zelnick",
+  "GTA 6",
+  "GTA VI",
+  "Grand Theft Auto VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gaming"
+ ],
+ "sources": [
+  "TechRadar - GTA 6 Ultimate Edition is selling more than standard, says Take-Two CEO: https://techradar.com/gaming/gta-6-ultimate-edition-is-selling-more-than-standard-says-take-two-ceo-despite-the-price-controversy-the-most-avid-consumers-are-the-ones-who-are-pre-ordering-now",
+  "Dexerto - Rockstar Games boss says $100 GTA 6 Ultimate Edition is outselling the $80 standard version: https://www.dexerto.com/gta/rockstar-games-boss-says-100-gta-6-ultimate-edition-is-outselling-the-80-standard-version-3397246/",
+  "MP1st - More people have pre-ordered the $100 edition: https://mp1st.com/news/gta-6-more-people-pre-ordered-100-edition-dont-expect-christmas-discount",
+  "Rockstar Games - GTA VI Ultimate Edition (five businesses only open with the Ultimate Edition): https://www.rockstargames.com/VI",
+  "Tom's Guide - GTA 6 price and editions: https://www.tomsguide.com/news/gta-6"
+ ],
+ "short": [
+  {
+   "headline": "$100 BEAT $80",
+   "headline_es": "$100 LE GANÓ A $80",
+   "text": "More people pre-ordered the hundred-dollar GTA 6 than the eighty-dollar one.",
+   "text_es": "Más gente reservó el GTA 6 de cien dólares que el de ochenta.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "STANDARD",
+     "$79.99"
+    ],
+    "b": [
+     "ULTIMATE",
+     "$99.99"
+    ],
+    "winner": "b",
+    "src": "TechRadar · Dexerto · MP1st",
+    "seed": 1
+   },
+   "chart_es": {
+    "type": "versus",
+    "a": [
+     "STANDARD",
+     "$79.99"
+    ],
+    "b": [
+     "ULTIMATE",
+     "$99.99"
+    ],
+    "winner": "b",
+    "src": "TechRadar · Dexerto · MP1st",
+    "seed": 1
+   }
+  },
+  {
+   "headline": "TAKE-TWO SAYS",
+   "headline_es": "LO DICE TAKE-TWO",
+   "text": "Take-Two's boss says the most avid fans pre-order first, and they buy the big one.",
+   "text_es": "El jefe de Take-Two dice que los fans más intensos reservan primero, y compran la grande.",
+   "keep_media": true,
+   "chart": {
+    "type": "headline",
+    "kicker": "TAKE-TWO CEO",
+    "text": "Ultimate outsold Standard",
+    "pink": [
+     "ULTIMATE"
+    ],
+    "ticker": "Strauss Zelnick · pre-orders · \"the most avid consumers are the ones who are pre-ordering now\"",
+    "src": "TechRadar · Dexerto",
+    "seed": 1
+   },
+   "chart_es": {
+    "type": "headline",
+    "kicker": "CEO DE TAKE-TWO",
+    "text": "La Ultimate vendió más",
+    "pink": [
+     "ULTIMATE"
+    ],
+    "ticker": "Strauss Zelnick · reservas · los fans más intensos reservan primero",
+    "src": "TechRadar · Dexerto",
+    "seed": 1
+   }
+  },
+  {
+   "headline": "WHAT $20 BUYS",
+   "headline_es": "QUÉ DAN 20 DÓLARES",
+   "text": "The extra twenty dollars opens five businesses only Ultimate players get.",
+   "text_es": "Los veinte dólares extra abren cinco negocios que solo tiene la Ultimate.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "bg": "vice",
+    "title": "ULTIMATE: +$20",
+    "items": [
+     [
+      "5 extra businesses",
+      "YES"
+     ],
+     [
+      "Same story",
+      "YES"
+     ]
+    ],
+    "good": [
+     "yes"
+    ],
+    "src": "Rockstar's Ultimate Edition page",
+    "seed": 1
+   },
+   "chart_es": {
+    "type": "list",
+    "bg": "vice",
+    "title": "ULTIMATE: +$20",
+    "items": [
+     [
+      "5 negocios extra",
+      "SÍ"
+     ],
+     [
+      "La misma historia",
+      "SÍ"
+     ]
+    ],
+    "good": [
+     "sí"
+    ],
+    "locale": "es",
+    "src": "Página de la Ultimate de Rockstar",
+    "seed": 1
+   }
+  },
+  {
+   "headline": "WHICH ONE?",
+   "headline_es": "¿CUÁL?",
+   "text": "Our take: for an eighty-hour game, twenty dollars is cheap. Which did you get? Tell me, because",
+   "text_es": "Nuestra opinión: para un juego de ochenta horas, veinte dólares es poco. ¿Cuál compraste? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WHICH ONE",
+     "DID YOU GET?"
+    ],
+    "pink": [
+     "DID YOU GET?"
+    ],
+    "seed": 1
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CUÁL",
+     "COMPRASTE?"
+    ],
+    "pink": [
+     "COMPRASTE?"
+    ],
+    "seed": 1
+   }
+  }
+ ],
+ "guide": "gta-6-ultimate-edition"
 }

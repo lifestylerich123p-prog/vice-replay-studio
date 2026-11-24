@@ -1,236 +1,237 @@
 {
-  "format": "news",
-  "mood": "hype",
-  "use_gameplay": false,
-  "style": "vice (GTA 6-style lettering cards, Nov 23)",
-  "short_playlist": "GTA 6 Shorts",
-  "hashtags": [
-    "GTA6",
-    "GTAVI",
-    "Shorts"
-  ],
-  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)",
-  "series": "VS",
-  "title": "GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers",
-  "slug": "gta6-vs-red-dead-2",
-  "short_title": "GTA 6 vs Red Dead 2: 3 rounds, real numbers #GTA6 #Shorts",
-  "short_title_options": [
-    "GTA 6 vs Red Dead 2: 3 rounds, real numbers #GTA6 #Shorts",
-    "GTA 6 vs Red Dead 2: who wins? #GTA6 #Shorts",
-    "Is GTA 6 better than Red Dead 2? #GTA6 #Shorts"
-  ],
-  "short_description": "Vice Replay VS: GTA 6 vs Red Dead Redemption 2 in three rounds. Critics: 99 vs 97 on Metacritic (VGC, Notebookcheck). Length: about 80 hours (Rockstar's estimate, story plus some side missions; GamesRadar, TechRadar) vs about 51 (HowLongToBeat). Launch: $3.79 billion from pre-orders plus day one (Take-Two, Nov 20, 2026) vs $725 million in Red Dead 2's first three days (Take-Two, Oct 2018; Shacknews, GamesRadar, CNBC). Not the same measure: GTA 6's number includes months of pre-orders. Is Red Dead still Rockstar's best?\n\nSources: VGC, Notebookcheck, GamesRadar, TechRadar, HowLongToBeat, Take-Two, Shacknews, CNBC.",
-  "short_es": {
-    "title": "GTA 6 vs Red Dead 2: ¿quién GANA? ⚔️ #GTA6 #Shorts",
-    "description": "Vice Replay VS: GTA 6 contra Red Dead Redemption 2 en tres rondas. Crítica: 99 contra 97 en Metacritic. Duración: unas 80 horas (estimación de Rockstar) contra unas 51 (HowLongToBeat). Lanzamiento: 3.790 millones de dólares entre reservas y el primer día (Take-Two) contra 725 millones en los primeros tres días de Red Dead 2 (Take-Two, 2018). No es la misma medida: el número de GTA 6 incluye meses de reservas. ¿Red Dead sigue siendo el mejor de Rockstar?",
-    "tags": [
-      "GTA 6 vs Red Dead 2",
-      "GTA 6 español",
-      "Red Dead Redemption 2",
-      "GTA 6 Metacritic",
-      "GTA 6 duración",
-      "GTA VI"
-    ]
-  },
-  "pinned_comment": "Better game: GTA 6 or Red Dead 2? 👇",
-  "short_pinned_comment_es": "¿Cuál es mejor: GTA 6 o Red Dead 2? 👇",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (GTA 6-style lettering cards, Nov 23)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short)",
+ "series": "VS",
+ "title": "GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers",
+ "slug": "gta6-vs-red-dead-2",
+ "short_title": "GTA 6 vs Red Dead 2: 3 rounds, real numbers #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 vs Red Dead 2: 3 rounds, real numbers #GTA6 #Shorts",
+  "GTA 6 vs Red Dead 2: who wins? #GTA6 #Shorts",
+  "Is GTA 6 better than Red Dead 2? #GTA6 #Shorts"
+ ],
+ "short_description": "Vice Replay VS: GTA 6 vs Red Dead Redemption 2 in three rounds. Critics: 99 vs 97 on Metacritic (VGC, Notebookcheck). Length: about 80 hours (Rockstar's estimate, story plus some side missions; GamesRadar, TechRadar) vs about 51 (HowLongToBeat). Launch: $3.79 billion from pre-orders plus day one (Take-Two, Nov 20, 2026) vs $725 million in Red Dead 2's first three days (Take-Two, Oct 2018; Shacknews, GamesRadar, CNBC). Not the same measure: GTA 6's number includes months of pre-orders. Is Red Dead still Rockstar's best?\n\nSources: VGC, Notebookcheck, GamesRadar, TechRadar, HowLongToBeat, Take-Two, Shacknews, CNBC.",
+ "short_es": {
+  "title": "GTA 6 vs Red Dead 2: ¿quién GANA? ⚔️ #GTA6 #Shorts",
+  "description": "Vice Replay VS: GTA 6 contra Red Dead Redemption 2 en tres rondas. Crítica: 99 contra 97 en Metacritic. Duración: unas 80 horas (estimación de Rockstar) contra unas 51 (HowLongToBeat). Lanzamiento: 3.790 millones de dólares entre reservas y el primer día (Take-Two) contra 725 millones en los primeros tres días de Red Dead 2 (Take-Two, 2018). No es la misma medida: el número de GTA 6 incluye meses de reservas. ¿Red Dead sigue siendo el mejor de Rockstar?",
   "tags": [
-    "GTA 6 vs Red Dead 2",
-    "GTA 6 vs RDR2",
-    "Red Dead Redemption 2",
-    "GTA 6 Metacritic",
-    "GTA 6 how long to beat",
-    "GTA 6 sales",
-    "GTA 6",
-    "GTA VI"
-  ],
-  "tiktok_hashtags": [
-    "#gta6",
-    "#gtavi",
-    "#rdr2",
-    "#reddeadredemption2"
-  ],
-  "sources": [
-    "VGC - GTA 6 is the highest scoring video game of all time on Metacritic: https://www.videogameschronicle.com/news/grand-theft-auto-6-is-currently-the-highest-scoring-video-game-of-all-time-according-to-metacritic/",
-    "Notebookcheck - GTA 6 reviews award 99 on Metacritic (GTA 5 and RDR2 at 97): https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html",
-    "GamesRadar - How long is GTA 6? About 80 hours: https://www.gamesradar.com/games/grand-theft-auto/how-long-is-gta-6-about-80-hours-according-to-one-rockstar-devs-playthrough/",
-    "TechRadar - GTA 6 can take up to 80 hours to beat: https://techradar.com/gaming/gta-6-will-be-a-massive-game-and-rockstars-longest-yet-as-the-studio-confirms-it-can-take-up-to-80-hours-to-beat",
-    "HowLongToBeat - Red Dead Redemption 2: https://howlongtobeat.com/game/27100",
-    "Take-Two 8-K exhibit 99.1 (Nov 20, 2026) - $3.79 billion: https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm",
-    "Shacknews - Red Dead Redemption 2 sells over $725 million in first three days: https://shacknews.com/article/108216/red-dead-redemption-2-sells-over-725-million-in-first-three-days-setting-records",
-    "GamesRadar - Red Dead Redemption 2 sells $725 million in 3 days: https://www.gamesradar.com/red-dead-redemption-2-sells-dollar725-million-in-3-days-the-best-opening-weekend-in-entertainment-history",
-    "CNBC - Red Dead Redemption 2 smashes Avengers: Infinity War: https://www.cnbc.com/2018/10/31/rockstars-red-dead-redemption-2-smashes-avengers-infinity-war.html"
-  ],
-  "short": [
-    {
-      "headline": "GTA 6 VS RDR2",
-      "headline_es": "GTA 6 VS RDR2",
-      "text": "GTA 6 versus Red Dead 2. Three rounds.",
-      "text_es": "GTA seis contra Red Dead dos. Tres rondas.",
-      "keep_media": true,
-      "chart": {
-        "type": "kinetic",
-        "lines": [
-          "GTA 6 VS",
-          "RED DEAD 2"
-        ],
-        "pink": [
-          "RED DEAD 2"
-        ],
-        "sub": "3 rounds, real numbers",
-        "seed": 6
-      },
-      "chart_es": {
-        "type": "kinetic",
-        "lines": [
-          "GTA 6 VS",
-          "RED DEAD 2"
-        ],
-        "pink": [
-          "RED DEAD 2"
-        ],
-        "sub": "3 rondas, números reales",
-        "seed": 6
-      },
-      "audio_es": "media/voice/gta6-vs-red-dead-2/es/seg1.wav"
-    },
-    {
-      "headline": "ROUND 1: CRITICS",
-      "headline_es": "RONDA 1: CRÍTICA",
-      "text": "Round one, critics: ninety nine against ninety seven. GTA 6.",
-      "text_es": "Ronda uno, la crítica: noventa y nueve contra noventa y siete. GTA seis.",
-      "keep_media": true,
-      "chart": {
-        "type": "versus",
-        "a": [
-          "Red Dead 2 · Metacritic",
-          "97"
-        ],
-        "b": [
-          "GTA 6 · Metacritic",
-          "99"
-        ],
-        "winner": "b",
-        "src": "VGC · Notebookcheck",
-        "seed": 6
-      },
-      "chart_es": {
-        "type": "versus",
-        "a": [
-          "Red Dead 2 · Metacritic",
-          "97"
-        ],
-        "b": [
-          "GTA 6 · Metacritic",
-          "99"
-        ],
-        "winner": "b",
-        "src": "VGC · Notebookcheck",
-        "seed": 6
-      },
-      "audio_es": "media/voice/gta6-vs-red-dead-2/es/seg2.wav"
-    },
-    {
-      "headline": "ROUND 2: LENGTH",
-      "headline_es": "RONDA 2: DURACIÓN",
-      "text": "Round two, length: eighty hours against fifty one.",
-      "text_es": "Ronda dos, duración: ochenta horas contra cincuenta y una.",
-      "keep_media": true,
-      "chart": {
-        "type": "versus",
-        "a": [
-          "Red Dead 2 · to beat",
-          "~51 HRS"
-        ],
-        "b": [
-          "GTA 6 · Rockstar's estimate",
-          "~80 HRS"
-        ],
-        "winner": "b",
-        "src": "GamesRadar · TechRadar · HowLongToBeat",
-        "seed": 6
-      },
-      "chart_es": {
-        "type": "versus",
-        "a": [
-          "Red Dead 2 · duración",
-          "~51 H"
-        ],
-        "b": [
-          "GTA 6 · según Rockstar",
-          "~80 H"
-        ],
-        "winner": "b",
-        "src": "GamesRadar · TechRadar · HowLongToBeat",
-        "seed": 6
-      },
-      "audio_es": "media/voice/gta6-vs-red-dead-2/es/seg3.wav"
-    },
-    {
-      "headline": "ROUND 3: LAUNCH",
-      "headline_es": "RONDA 3: VENTAS",
-      "text": "Round three, launch: three point seven nine billion against seven hundred twenty five million.",
-      "text_es": "Ronda tres, el lanzamiento: tres mil setecientos noventa millones contra setecientos veinticinco millones.",
-      "keep_media": true,
-      "chart": {
-        "type": "versus",
-        "a": [
-          "Red Dead 2 · first 3 days",
-          "$725M"
-        ],
-        "b": [
-          "GTA 6 · pre-orders + day 1",
-          "$3.79B"
-        ],
-        "winner": "b",
-        "src": "Take-Two (2018, 2026) · Shacknews · CNBC",
-        "seed": 6
-      },
-      "chart_es": {
-        "type": "versus",
-        "a": [
-          "Red Dead 2 · 3 primeros días",
-          "$725M"
-        ],
-        "b": [
-          "GTA 6 · reservas + día 1",
-          "$3.79B"
-        ],
-        "winner": "b",
-        "src": "Take-Two (2018, 2026) · Shacknews · CNBC",
-        "seed": 6
-      },
-      "audio_es": "media/voice/gta6-vs-red-dead-2/es/seg4.wav"
-    },
-    {
-      "headline": "3-0. OR IS IT?",
-      "headline_es": "3-0. ¿O NO?",
-      "text": "Three to nothing. But is Red Dead still better? Tell me, because",
-      "text_es": "Tres a cero. ¿Pero Red Dead sigue siendo mejor? Dime, porque",
-      "keep_media": true,
-      "chart": {
-        "type": "kinetic",
-        "lines": [
-          "3-0 GTA 6.",
-          "OR IS RDR2 BETTER?"
-        ],
-        "pink": [
-          "RDR2 BETTER?"
-        ],
-        "seed": 6
-      },
-      "chart_es": {
-        "type": "kinetic",
-        "lines": [
-          "3-0 GTA 6.",
-          "¿O RDR2 ES MEJOR?"
-        ],
-        "pink": [
-          "RDR2 ES MEJOR?"
-        ],
-        "seed": 6
-      },
-      "audio_es": "media/voice/gta6-vs-red-dead-2/es/seg5.wav"
-    }
+   "GTA 6 vs Red Dead 2",
+   "GTA 6 español",
+   "Red Dead Redemption 2",
+   "GTA 6 Metacritic",
+   "GTA 6 duración",
+   "GTA VI"
   ]
+ },
+ "pinned_comment": "Better game: GTA 6 or Red Dead 2? 👇",
+ "short_pinned_comment_es": "¿Cuál es mejor: GTA 6 o Red Dead 2? 👇",
+ "tags": [
+  "GTA 6 vs Red Dead 2",
+  "GTA 6 vs RDR2",
+  "Red Dead Redemption 2",
+  "GTA 6 Metacritic",
+  "GTA 6 how long to beat",
+  "GTA 6 sales",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#rdr2",
+  "#reddeadredemption2"
+ ],
+ "sources": [
+  "VGC - GTA 6 is the highest scoring video game of all time on Metacritic: https://www.videogameschronicle.com/news/grand-theft-auto-6-is-currently-the-highest-scoring-video-game-of-all-time-according-to-metacritic/",
+  "Notebookcheck - GTA 6 reviews award 99 on Metacritic (GTA 5 and RDR2 at 97): https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html",
+  "GamesRadar - How long is GTA 6? About 80 hours: https://www.gamesradar.com/games/grand-theft-auto/how-long-is-gta-6-about-80-hours-according-to-one-rockstar-devs-playthrough/",
+  "TechRadar - GTA 6 can take up to 80 hours to beat: https://techradar.com/gaming/gta-6-will-be-a-massive-game-and-rockstars-longest-yet-as-the-studio-confirms-it-can-take-up-to-80-hours-to-beat",
+  "HowLongToBeat - Red Dead Redemption 2: https://howlongtobeat.com/game/27100",
+  "Take-Two 8-K exhibit 99.1 (Nov 20, 2026) - $3.79 billion: https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm",
+  "Shacknews - Red Dead Redemption 2 sells over $725 million in first three days: https://shacknews.com/article/108216/red-dead-redemption-2-sells-over-725-million-in-first-three-days-setting-records",
+  "GamesRadar - Red Dead Redemption 2 sells $725 million in 3 days: https://www.gamesradar.com/red-dead-redemption-2-sells-dollar725-million-in-3-days-the-best-opening-weekend-in-entertainment-history",
+  "CNBC - Red Dead Redemption 2 smashes Avengers: Infinity War: https://www.cnbc.com/2018/10/31/rockstars-red-dead-redemption-2-smashes-avengers-infinity-war.html"
+ ],
+ "short": [
+  {
+   "headline": "GTA 6 VS RDR2",
+   "headline_es": "GTA 6 VS RDR2",
+   "text": "GTA 6 versus Red Dead 2. Three rounds.",
+   "text_es": "GTA seis contra Red Dead dos. Tres rondas.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 VS",
+     "RED DEAD 2"
+    ],
+    "pink": [
+     "RED DEAD 2"
+    ],
+    "sub": "3 rounds, real numbers",
+    "seed": 6
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 VS",
+     "RED DEAD 2"
+    ],
+    "pink": [
+     "RED DEAD 2"
+    ],
+    "sub": "3 rondas, números reales",
+    "seed": 6
+   },
+   "audio_es": "media/voice/gta6-vs-red-dead-2/es/seg1.wav"
+  },
+  {
+   "headline": "ROUND 1: CRITICS",
+   "headline_es": "RONDA 1: CRÍTICA",
+   "text": "Round one, critics: ninety nine against ninety seven. GTA 6.",
+   "text_es": "Ronda uno, la crítica: noventa y nueve contra noventa y siete. GTA seis.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "Red Dead 2 · Metacritic",
+     "97"
+    ],
+    "b": [
+     "GTA 6 · Metacritic",
+     "99"
+    ],
+    "winner": "b",
+    "src": "VGC · Notebookcheck",
+    "seed": 6
+   },
+   "chart_es": {
+    "type": "versus",
+    "a": [
+     "Red Dead 2 · Metacritic",
+     "97"
+    ],
+    "b": [
+     "GTA 6 · Metacritic",
+     "99"
+    ],
+    "winner": "b",
+    "src": "VGC · Notebookcheck",
+    "seed": 6
+   },
+   "audio_es": "media/voice/gta6-vs-red-dead-2/es/seg2.wav"
+  },
+  {
+   "headline": "ROUND 2: LENGTH",
+   "headline_es": "RONDA 2: DURACIÓN",
+   "text": "Round two, length: eighty hours against fifty one.",
+   "text_es": "Ronda dos, duración: ochenta horas contra cincuenta y una.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "Red Dead 2 · to beat",
+     "~51 HRS"
+    ],
+    "b": [
+     "GTA 6 · Rockstar's estimate",
+     "~80 HRS"
+    ],
+    "winner": "b",
+    "src": "GamesRadar · TechRadar · HowLongToBeat",
+    "seed": 6
+   },
+   "chart_es": {
+    "type": "versus",
+    "a": [
+     "Red Dead 2 · duración",
+     "~51 H"
+    ],
+    "b": [
+     "GTA 6 · según Rockstar",
+     "~80 H"
+    ],
+    "winner": "b",
+    "src": "GamesRadar · TechRadar · HowLongToBeat",
+    "seed": 6
+   },
+   "audio_es": "media/voice/gta6-vs-red-dead-2/es/seg3.wav"
+  },
+  {
+   "headline": "ROUND 3: LAUNCH",
+   "headline_es": "RONDA 3: VENTAS",
+   "text": "Round three, launch: three point seven nine billion against seven hundred twenty five million.",
+   "text_es": "Ronda tres, el lanzamiento: tres mil setecientos noventa millones contra setecientos veinticinco millones.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "Red Dead 2 · first 3 days",
+     "$725M"
+    ],
+    "b": [
+     "GTA 6 · pre-orders + day 1",
+     "$3.79B"
+    ],
+    "winner": "b",
+    "src": "Take-Two (2018, 2026) · Shacknews · CNBC",
+    "seed": 6
+   },
+   "chart_es": {
+    "type": "versus",
+    "a": [
+     "Red Dead 2 · 3 primeros días",
+     "$725M"
+    ],
+    "b": [
+     "GTA 6 · reservas + día 1",
+     "$3.79B"
+    ],
+    "winner": "b",
+    "src": "Take-Two (2018, 2026) · Shacknews · CNBC",
+    "seed": 6
+   },
+   "audio_es": "media/voice/gta6-vs-red-dead-2/es/seg4.wav"
+  },
+  {
+   "headline": "3-0. OR IS IT?",
+   "headline_es": "3-0. ¿O NO?",
+   "text": "Three to nothing. But is Red Dead still better? Tell me, because",
+   "text_es": "Tres a cero. ¿Pero Red Dead sigue siendo mejor? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "3-0 GTA 6.",
+     "OR IS RDR2 BETTER?"
+    ],
+    "pink": [
+     "RDR2 BETTER?"
+    ],
+    "seed": 6
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "3-0 GTA 6.",
+     "¿O RDR2 ES MEJOR?"
+    ],
+    "pink": [
+     "RDR2 ES MEJOR?"
+    ],
+    "seed": 6
+   },
+   "audio_es": "media/voice/gta6-vs-red-dead-2/es/seg5.wav"
+  }
+ ],
+ "guide": "gta-6-how-long-to-beat"
 }

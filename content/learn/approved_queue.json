@@ -25,19 +25,6 @@
    "approved": "Nov 22 6:45 PM (do what you think)"
   },
   {
-   "slug": "gta6-lucia-outfits",
-   "item": "short",
-   "en": [
-    "2026-11-23",
-    "12:30 PM"
-   ],
-   "es": [
-    "2026-11-23",
-    "8:30 PM"
-   ],
-   "approved": "Nov 22 (Approve)"
-  },
-  {
    "slug": "gta6-cheapest-gta-inflation",
    "item": "short",
    "en": [
@@ -379,6 +366,20 @@
    ],
    "approved": "Nov 23 6:55 AM (APPROVE; lettering, today's update news)",
    "paused": "2026-11-23 afternoon: Rockstar published patch notes for 1.002.002 (7 fixes; VICE, Dot Esports, Comicbook, RockstarINTEL), so 'zero patch notes' is outdated. Spanish upload cancelled; English Short got a correction."
+  },
+  {
+   "slug": "gta6-lucia-outfits",
+   "item": "short",
+   "en": [
+    "2026-11-23",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-23",
+    "8:30 PM"
+   ],
+   "approved": "Nov 22 (Approve)",
+   "paused": "2026-11-23 audit: trailer images (publish check blockers); its slots (Nov 23) passed. Remake as cards to post."
   }
  ]
 }
