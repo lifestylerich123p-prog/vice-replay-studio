@@ -162,7 +162,60 @@ def hero_media():
 hero_media()
 banner_img("deals-gear")  # used by the hand-written gear/ page
 
+ES_MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre",
+             "noviembre", "diciembre"]
+
+
+def nice_date(iso, lang="en"):
+    """"November 24, 2026" / "24 de noviembre de 2026" (Nov 24 audit: Spanish pages said "Actualizado el November 24")."""
+    d = __import__("datetime").date.fromisoformat(iso)
+    return f"{d.day} de {ES_MONTHS[d.month - 1]} de {d.year}" if lang == "es" else d.strftime("%B %-d, %Y")
+
+
+def tag_title(title):
+    """<title>: Google shows ~60 characters; drop the " · Vice Replay" brand when it would push a title past that."""
+    suffix = " · Vice Replay"
+    if title.endswith(suffix) and len(title) > 62:
+        return title[: -len(suffix)]
+    return title
+
+
+def tag_desc(desc, n=158):
+    """Meta description: Google cuts ~160 characters. Keep whole sentences when we can, else cut at a word with "…"."""
+    desc = " ".join(desc.split())
+    if len(desc) <= n:
+        return desc
+    cut = desc[:n]
+    end = max(cut.rfind(". "), cut.rfind("? "), cut.rfind("! "))
+    if end >= 90:
+        return cut[: end + 1]
+    return cut[: cut.rfind(" ")].rstrip(",;:") + "…"
+
+
+MAPS_IMG = __import__("re").compile(r'<img src="/img/maps/([\w-]+)\.jpg" width="(\d+)" height="(\d+)"')
+
+
+def light_maps(body):
+    """Nov 24 audit: the HD map pictures (0.6-1.6 MB JPGs) loaded inline and made phones wait 4-7 s. Show a 1080-px WebP
+    (~10x smaller) on the page; the link around it still opens the full HD JPG for zooming."""
+    def swap(m):
+        name, w, h = m.group(1), int(m.group(2)), int(m.group(3))
+        src = os.path.join(SITE, "img", "maps", name + ".jpg")
+        out = os.path.join(SITE, "img", "maps", name + "-1080.webp")
+        if not os.path.exists(src):
+            return m.group(0)
+        if not os.path.exists(out) or os.path.getmtime(out) < os.path.getmtime(src):
+            im = Image.open(src).convert("RGB")
+            if im.width > 1080:
+                im = im.resize((1080, round(1080 * im.height / im.width)), Image.LANCZOS)
+            im.save(out, quality=80, method=6)
+        nh = round(1080 * h / w) if w > 1080 else h
+        return f'<img src="/img/maps/{name}-1080.webp" width="{min(w, 1080)}" height="{nh}"'
+    return MAPS_IMG.sub(swap, body)
+
+
 def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
+    body = light_maps(body)
     body = __import__("re").sub(r"<h1>(.*?)</h1>", lambda m: "<h1>" + m.group(1).replace("GTA 6", "GTA&nbsp;6") + "</h1>", body, flags=16)  # never split "GTA 6" (16 = re.S)
     url = f"{DOMAIN}/{path}" if path else DOMAIN + "/"
     image = image or f"{DOMAIN}/og/default.jpg"
@@ -180,22 +233,22 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in jsonld)
     if lang == "es":
         menu = f'<a href="/es/guias/gta-6-lanzamiento-en-vivo/">Noticias</a><a href="/es/guias/mapa-gta-6/">Mapa</a><a href="/es/">Guías</a><a href="/es/equipo/">Equipo</a><a href="{YT_ES}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
-        foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/es/acerca/">Quiénes somos</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
+        foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/es/acerca/">Quiénes somos</a> · <a href="/es/guias/mapa-gta-6/">Mapa de GTA 6</a> · <a href="/privacy/" hreflang="en">Privacidad</a> · <a href="/terms/" hreflang="en">Términos</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
     else:
         menu = f'<a href="/guides/gta-6-launch-live/">News</a><a href="/guides/gta-6-map-leonida-places/">Map</a><a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
-        foot = 'Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a> · <a href="/about/">About us</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.'
+        foot = 'Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a> · <a href="/about/">About us</a> · <a href="/guides/gta-6-map-leonida-places/">GTA 6 map</a> · <a href="/links/">All our links</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.'
     doc = f"""<!doctype html>
 <html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>{html.escape(title)}</title>
-<meta name="description" content="{html.escape(desc)}">
+<title>{html.escape(tag_title(title))}</title>
+<meta name="description" content="{html.escape(tag_desc(desc))}">
 <link rel="canonical" href="{url}">{alt}
 <meta name="robots" content="index,follow,max-image-preview:large">
-<meta property="og:type" content="{'article' if 'guid' in path else 'website'}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}">
+<meta property="og:type" content="{'article' if 'guid' in path else 'website'}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(tag_desc(desc, 200))}">
 <meta property="og:url" content="{url}"><meta property="og:site_name" content="Vice Replay"><meta property="og:image" content="{image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title)}"><meta name="twitter:description" content="{html.escape(desc)}"><meta name="twitter:image" content="{image}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title)}"><meta name="twitter:description" content="{html.escape(tag_desc(desc, 200))}"><meta name="twitter:image" content="{image}">
 <meta name="theme-color" content="#0d0717">
 <link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/favicon.png"><link rel="manifest" href="/site.webmanifest"><link rel="alternate" type="application/rss+xml" title="Vice Replay: GTA 6 news and guides" href="/feed.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;700;800&display=swap">
@@ -831,7 +884,7 @@ for g in _JSON:
     items = (GAME if "game" in g.get("gear", []) else []) + (STORAGE if "storage" in g.get("gear", []) else []) + (GEAR if "gear" in g.get("gear", []) else [])
     es = g.get("lang") == "es"
     h1 = g.get("h1") or g["title"]
-    body = f'<h1>{h1}</h1><p class="meta">{"Actualizado el" if es else "Updated"} {__import__("datetime").date.fromisoformat(g["date"]).strftime("%B %-d, %Y")} · Vice Replay</p><p class="lede">{g.get("lede", "")}</p>'
+    body = f'<h1>{h1}</h1><p class="meta">{"Actualizado el" if es else "Updated"} {nice_date(g["date"], "es" if es else "en")} · Vice Replay</p><p class="lede">{g.get("lede", "")}</p>'
     body += video(g["video"], g["title"]) if g.get("video") else ""
     body += "".join(_MAPTAG.sub(lambda m: interactive_map(g.get("lang", "en"), (m.group(1) or "").split(",") if m.group(1) else None),
                                 f"<h2>{html.escape(h)}</h2>{b}") for h, b in g.get("sections", []))
@@ -844,7 +897,7 @@ for g in _JSON:
 # Search box on the guide lists (Nov 24): filters the cards as you type, no server needed
 SEARCH_JS = '<script>(function(){var q=document.getElementById("q");if(!q)return;var cs=[].slice.call(document.querySelectorAll(".cards .card"));var n=document.getElementById("qn");q.addEventListener("input",function(){var t=q.value.toLowerCase().trim(),k=0;cs.forEach(function(c){var m=!t||c.textContent.toLowerCase().indexOf(t)>-1;c.style.display=m?"":"none";if(m)k++;});n.textContent=t?(k+" / "+cs.length):"";});})();</script>'
 GUIDES_ES.sort(key=lambda g: g[3], reverse=True)
-page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en español: trucos, hora de lanzamiento, espacio y PC. Sin spoilers.",
+page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en español: el mapa oficial de Leonida con los secretos marcados, trucos, consejos, precios y noticias. Sin spoilers y actualizado cada día.",
      banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="' + YT_ES + '?sub_confirmation=1">Suscríbete a Vice Replay en Español</a>: Shorts de GTA 6 en español cada día.</p><div class="search"><input type="search" id="q" placeholder="Busca entre ' + str(len(GUIDES_ES)) + ' guías: trucos, precio, online..." aria-label="Buscar guías" autocomplete="off"><span id="qn"></span></div><div class="cards">'
      + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>' + SEARCH_JS, lang="es")
 
