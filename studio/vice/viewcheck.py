@@ -109,6 +109,12 @@ def _recent_layouts(slug, n=4):
     return out
 
 
+
+def _fits_one_line(headline):
+    """Does brand.headline_card fit this on one line of a Short (its smallest one-line size)?"""
+    from .. import brand
+    return brand.font(brand.HEADLINE_FONT, int(1920 * 0.043)).getlength(headline.upper()) <= int(1080 * 0.82)
+
 def check(ep, gameplay_available=False, recent=None):
     """(blockers, warnings) for every Short in an episode. With owner gameplay highlights available, Shorts swap them in
     for segments without `keep_media` (unless the episode sets `"use_gameplay": false`). `recent`: [(slug, layout)] of
@@ -210,9 +216,9 @@ def check_short(ep, key, title, segs, gameplay_available=False):
     for k, x in enumerate(segs):
         if (x.get("chart") or {}).get("type") in set(vicecards.DRAW) | {"text", "quote", "list", "quiz", "bars", "counter"}:
             for lab, hl in (("", x.get("headline")), (" (Spanish)", x.get("headline_es"))):
-                if hl and len(hl) > 19:
+                if hl and len(hl) > 19 and not _fits_one_line(hl):  # Nov 24: the slab shrinks to one line first
                     warnings.append(f"headline: Short '{key}' segment {k + 1}{lab} headline '{hl}' wraps to 2 lines and "
-                                    f"runs into the lettering card; keep it to 19 characters")
+                                    f"runs into the lettering card; shorten it (about 24 characters max)")
     if segs:
         # Hook (Nov 22, owner: "research hooks to get the viewers' attention"): our 20 Shorts with retention data:
         # a question as the first sentence kept 35% (median 130 views) vs 60% for a statement (858). Best openers state

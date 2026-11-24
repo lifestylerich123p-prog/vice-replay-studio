@@ -135,6 +135,12 @@ def headline_card(text, w, h, vertical=False, cta=None):
     if text:
         max_w = int(w * (0.82 if vertical else 0.55))
         f, lines = fit_lines(text.upper(), HEADLINE_FONT, max_w, int(h * (0.06 if vertical else 0.085)))
+        if vertical and len(lines) > 1:  # Nov 24: a 2-line slab ran into the card under it; shrink to one line first
+            for frac in (0.055, 0.05, 0.046, 0.043):
+                f1 = font(HEADLINE_FONT, int(h * frac))
+                if f1.getlength(text.upper()) <= max_w:
+                    f, lines = f1, [text.upper()]
+                    break
         lh = int(f.size * 1.12)
         x0 = int(w * 0.05)
         y0 = int(h * (0.17 if vertical else 0.14))
