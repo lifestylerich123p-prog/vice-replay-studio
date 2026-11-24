@@ -23,6 +23,9 @@ Read this first instead of searching the repo.
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
 | 2026-11-24 | gta6-stream-wars | video | GTA 6 Stream Wars: IShowSpeed vs Everyone (Real Numbers) | - |
+| 2026-11-24 | gta6-money-tier-list | Short | Every Way to Make Money in GTA 6, Ranked | - |
+| 2026-11-24 | gta6-key-cloner-3-steps | Short | GTA 6's Key Cloner in 3 Steps | - |
+| 2026-11-24 | gta6-ibai-cero-espectadores-es | Short | Ibai y el streamer de GTA 6 con cero espectadores | - |
 | 2026-11-23 | gta6-vs-red-dead-2 | Short | GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers | - |
 | 2026-11-23 | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | short: sEg8EWL2XPA |
 | 2026-11-23 | gta6-update-no-patch-notes | Short | GTA 6 Got 3 Updates and Zero Patch Notes | short: KI-6wP_Jhik (private) |
