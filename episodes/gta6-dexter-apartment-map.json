@@ -1,0 +1,163 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "slug": "gta6-dexter-apartment-map",
+ "title": "Dexter's Apartment in GTA 6",
+ "short_title": "GTA 6 has Dexter's apartment: here's where #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 has Dexter's apartment: here's where #GTA6 #Shorts",
+  "Where to find Dexter's apartment in GTA 6 #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6 has a nod to the TV series Dexter: a light-blue waterfront building with a spiral staircase on Washington Island, east of Vice City. The door stays locked, and a look-alike of Dexter's boat sits at a dock to the west. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: Dexerto, The Click, TheGamer, GamesRadar.",
+ "short_es": {
+  "title": "GTA 6 tiene el APARTAMENTO de Dexter 😳 #GTA6 #Shorts",
+  "description": "Un guiño a la serie Dexter en GTA 6: un edificio azul claro junto al agua, con escalera de caracol, en Washington Island. La puerta no se abre y al oeste hay un barco igual al de Dexter. Fuentes: Dexerto, The Click, TheGamer, GamesRadar.",
+  "tags": [
+   "GTA 6 Dexter",
+   "GTA 6 easter eggs",
+   "GTA 6 secretos",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "Did you know this was Dexter's place before this video? Yes or no 👇",
+ "short_pinned_comment_es": "¿Sabías que era la casa de Dexter? 👇",
+ "tags": [
+  "GTA 6 Dexter",
+  "GTA 6 Dexter apartment",
+  "GTA 6 Dexter easter egg",
+  "GTA 6 easter eggs",
+  "GTA 6 Washington Island",
+  "GTA 6 secrets",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#dexter",
+  "#gta6eastereggs"
+ ],
+ "sources": [
+  "Dexerto - Dexter easter eggs: https://www.dexerto.com/wikis/gta-6/easter-eggs/dexter-easter-eggs/",
+  "The Click - Dexter's apartment location: https://www.theclick.gg/gta-6-dexter-apartment-location/",
+  "TheGamer - Dexter show reference: https://www.thegamer.com/gta-6-grand-theft-auto-dexter-show-reference-discovery/",
+  "GamesRadar - movie and TV easter eggs: https://www.gamesradar.com/games/grand-theft-auto/gta-6-is-a-movie-and-tv-goldmine-as-players-discover-everything-from-fast-and-furious-cars-to-dexters-apartment/"
+ ],
+ "short": [
+  {
+   "headline": "DEXTER LIVES HERE",
+   "headline_es": "AQUÍ VIVE DEXTER",
+   "text": "GTA 6 recreated Dexter's apartment from the TV show.",
+   "text_es": "GTA seis recreó el apartamento de Dexter, el de la serie.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "DEXTER'S",
+     "APARTMENT"
+    ],
+    "pink": [
+     "APARTMENT"
+    ],
+    "seed": 71,
+    "sub": "from the TV series"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "EL APARTAMENTO",
+     "DE DEXTER"
+    ],
+    "pink": [
+     "DE DEXTER"
+    ],
+    "seed": 71,
+    "sub": "el de la serie"
+   }
+  },
+  {
+   "headline": "WASHINGTON ISLAND",
+   "headline_es": "WASHINGTON ISLAND",
+   "text": "It's on Washington Island, just east of Vice City.",
+   "text_es": "Está en Washington Island, al este de Vice City.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Washington Island",
+    "label": "Dexter's apartment",
+    "n": 1,
+    "dy": -0.009,
+    "side": "left"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Washington Island",
+    "label": "Apartamento de Dexter",
+    "n": 1,
+    "dy": -0.009,
+    "side": "left"
+   }
+  },
+  {
+   "headline": "LOOK FOR THIS",
+   "headline_es": "BUSCA ESTO",
+   "text": "Look for a light-blue building with a spiral staircase.",
+   "text_es": "Busca un edificio azul claro con escalera de caracol.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Light-blue building, spiral staircase",
+    "pink": [
+     "spiral staircase"
+    ],
+    "seed": 72,
+    "src": "Dexerto · The Click · TheGamer"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Edificio azul claro, escalera de caracol",
+    "pink": [
+     "escalera de caracol"
+    ],
+    "seed": 72,
+    "src": "Dexerto · The Click · TheGamer"
+   }
+  },
+  {
+   "headline": "CHECK THE DOCK",
+   "headline_es": "MIRA EL MUELLE",
+   "text": "The door's locked, but his boat is at the dock, because",
+   "text_es": "La puerta no abre, pero su barco está en el muelle, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Door locked. His boat? At the dock to the west.",
+    "pink": [
+     "boat"
+    ],
+    "seed": 73
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Puerta cerrada. ¿Su barco? En el muelle, al oeste.",
+    "pink": [
+     "barco"
+    ],
+    "seed": 73
+   }
+  }
+ ],
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+}

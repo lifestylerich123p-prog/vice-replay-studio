@@ -25,6 +25,51 @@ LEARN = ROOT / "content" / "learn"
 YT = "https://youtube.googleapis.com/youtube/v3/"
 
 
+
+def queue_clashes():
+    """Booked approved_queue items whose slug was already uploaded as a DIFFERENT video (the episode file was overwritten
+    by a new Short): the uploader matches by slug and would skip the new one as already posted."""
+    import re as _re
+    ROOT = LEARN.parent.parent
+    try:
+        q = json.loads((LEARN / "approved_queue.json").read_text())["items"]
+        ups = json.loads((LEARN / "uploads.json").read_text())
+    except (OSError, ValueError, KeyError):
+        return []
+    norm = lambda s: _re.sub(r"#\w+|[^a-z0-9]+", " ", str(s).lower()).strip()
+
+    def titles(obj, acc):
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                if "title" in k:
+                    for x in (v if isinstance(v, list) else [v]):
+                        if isinstance(x, str):
+                            acc.add(norm(x))
+                titles(v, acc)
+        elif isinstance(obj, list):
+            for v in obj:
+                titles(v, acc)
+        return acc
+    today = dt.date.today().isoformat()
+    out = []
+    for i in q:
+        if i.get("es_only") or (i.get("en") or [""])[0] < today:
+            continue
+        uploaded = [u for u in ups.values() if (u.get("slug"), u.get("item")) == (i.get("slug"), i.get("item"))]
+        if not uploaded:
+            continue
+        try:
+            ep = json.loads((ROOT / "episodes" / f"{i['slug']}.json").read_text())
+        except (OSError, ValueError):
+            continue
+        known = titles(ep, set())
+        for u in uploaded:
+            if norm(u.get("title", "")) not in known:
+                out.append(f"Booked {i['slug']} {i['item']} ({i['en'][0]}) shares its slug with an older upload "
+                           f"(\"{u.get('title', '')[:50]}\"): the uploader would skip it as already posted; rename the episode")
+                break
+    return out
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--fix", action="store_true")
@@ -40,6 +85,10 @@ def main():
     except SystemExit as e:
         bad.append(f"YouTube connection FAILED: {str(e)[:160]}. Reconnect: tools/youtube_auth.py, then update "
                    "YT_REFRESH_TOKEN in the environment settings.")
+    # 1a. Booked Shorts that reuse an uploaded slug (Nov 24: a new "Dexter" map Short reused the slug of an old private
+    # one, so the uploader would have treated it as already posted). Every booked item must be new.
+    for msg in queue_clashes():
+        bad.append(msg)
     # 1b. The learner (Nov 23: it went 2 days without a refresh when the daily runs couldn't push)
     snap = LEARN / "channel.json"
     if snap.exists():
