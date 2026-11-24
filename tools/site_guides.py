@@ -41,7 +41,7 @@ CSS = """:root{--bg:#0d0717;--panel:#170d26;--panel-2:#21123a;--line:#3a2357;--f
 .wrap{max-width:720px;margin:0 auto;padding:22px max(16px,env(safe-area-inset-right,0px)) 64px max(16px,env(safe-area-inset-left,0px))}
 nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px;flex-wrap:wrap}
 .brand{font-family:var(--display);font-size:24px;letter-spacing:.02em;color:var(--fg);text-decoration:none}.brand b{color:var(--cyan);font-weight:400}
-main table{table-layout:fixed;max-width:100%}main td,main th{overflow-wrap:anywhere}nav .menu{display:flex;flex-wrap:wrap;gap:8px 16px;font-weight:700;font-size:14px}nav .menu a{color:var(--muted);text-decoration:none}nav .menu a:hover{color:var(--pink)}
+main table{table-layout:fixed;max-width:100%}main td,main th{overflow-wrap:anywhere}h2.cat{margin:26px 0 10px}nav .menu{display:flex;flex-wrap:wrap;gap:8px 16px;font-weight:700;font-size:14px}nav .menu a{color:var(--muted);text-decoration:none}nav .menu a:hover{color:var(--pink)}
 h1{font-family:var(--display);font-weight:400;font-size:clamp(32px,8vw,50px);line-height:1.15;margin:0 0 12px;text-wrap:balance}
 h1 span{background:var(--pink);padding:0 .15em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 h2{font-family:var(--display);font-weight:400;font-size:28px;line-height:1.15;margin:36px 0 8px;color:var(--fg)}
@@ -214,7 +214,7 @@ def light_maps(body):
     return MAPS_IMG.sub(swap, body)
 
 
-def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
+def page(path, title, desc, body, image=None, jsonld=None, lang="en", canonical=None):
     body = light_maps(body)
     body = __import__("re").sub(r"<h1>(.*?)</h1>", lambda m: "<h1>" + m.group(1).replace("GTA 6", "GTA&nbsp;6") + "</h1>", body, flags=16)  # never split "GTA 6" (16 = re.S)
     url = f"{DOMAIN}/{path}" if path else DOMAIN + "/"
@@ -244,7 +244,7 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{html.escape(tag_title(title))}</title>
 <meta name="description" content="{html.escape(tag_desc(desc))}">
-<link rel="canonical" href="{url}">{alt}
+<link rel="canonical" href="{DOMAIN + "/" + canonical if canonical else url}">{alt}
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="{'article' if 'guid' in path else 'website'}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(tag_desc(desc, 200))}">
 <meta property="og:url" content="{url}"><meta property="og:site_name" content="Vice Replay"><meta property="og:image" content="{image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -331,6 +331,52 @@ NOTICES = {
  "guia-lanzamiento-gta-6": 'La semana de lanzamiento terminó. ¿Problemas ahora? El parche 1.002.002 arregló cierres, autoguardado y llamadas que no llegaban: <a href="/es/guias/gta-6-notas-del-parche/">notas del parche</a>.',
 }
 NOTICE_DATE = {"en": "Update, Nov 24", "es": "Actualización, 24 nov"}
+NOTICE_ISO = "2026-11-24"  # the date those notes were written: the page's visible date, dateModified and sitemap follow it
+
+# Nov 24 review: launch-week pages that are history now. Still online (people link to them), but not recommended
+# as "related", listed last on the guides index, and never on the homepage's latest list.
+ARCHIVE = {"gta-6-unlock-time", "gta-6-new-zealand-trick", "gta-6-launch-checklist", "gta-6-launch-streams",
+           "gta-6-launch-day-survival-guide", "gta-6-game-awards-nominations", "hora-de-lanzamiento-gta-6",
+           "guia-lanzamiento-gta-6"}
+CANONICAL = {"gta-6-game-awards-nominations": "guides/gta-6-game-awards/"}  # near-duplicate: Google gets the full page
+MODIFIED = {}
+
+TOPIC_RULES = [  # first match wins; slugs in EN and ES
+    ("map", ("map", "mapa", "shoe", "zapatos", "easter", "secret", "where", "places")),
+    ("money", ("money", "dinero", "deals", "ofertas", "black-friday", "gift", "price", "precio", "physical", "ultimate-edition")),
+    ("tips", ("tips", "consejos", "beginner", "principiantes", "criminal", "perfil", "cheats", "trucos", "how-to", "trophies",
+              "darts", "dardos", "online")),
+    ("tech", ("settings", "ssd", "storage", "espacio", "ps5-pro", "pc", "fps")),
+    ("story", ("characters", "radio", "how-long", "cuanto-dura", "vs-gta-5", "map-size")),
+]
+TOPIC_NAMES = {"en": {"map": "🗺️ Map & locations", "tips": "🎮 Tips & systems", "money": "💰 Money & deals", "tech": "⚙️ Tech & storage",
+                      "story": "📖 The game", "news": "📰 News & numbers", "archive": "🗄️ Launch week (archive)"},
+               "es": {"map": "🗺️ Mapa y lugares", "tips": "🎮 Consejos y sistemas", "money": "💰 Dinero y ofertas",
+                      "tech": "⚙️ Técnica y espacio", "story": "📖 El juego", "news": "📰 Noticias y cifras",
+                      "archive": "🗄️ Semana de lanzamiento (archivo)"}}
+
+
+def topic(slug):
+    if slug in ARCHIVE:
+        return "archive"
+    for name, keys in TOPIC_RULES:
+        if any(k in slug for k in keys):
+            return name
+    return "news"
+
+def grouped_cards(items, base, lang):
+    """Guide cards in topic sections (Nov 24 review: one flat 39-card list, ~14,000 px on a phone), archive last."""
+    order = ["map", "tips", "money", "news", "tech", "story", "archive"]
+    out = ""
+    for tp in order:
+        group = [g for g in items if topic(g[0]) == tp]
+        if not group:
+            continue
+        out += f'<h2 class="cat">{TOPIC_NAMES[lang][tp]}</h2><div class="cards">' + "".join(
+            f'<a class="card pic" href="/{base}/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" '
+            f'loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in group) + "</div>"
+    return out
+
 
 
 def with_lead(body, img, title):
@@ -504,6 +550,16 @@ def with_notice(slug, body, lang):
 def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None, lead=True):
     faq = faq or FAQS.get(slug)
     body = with_notice(slug, body, lang)
+    if slug in NOTICES:  # Nov 24 review: pages with an "Update, Nov 24" note still said "Updated November 17"
+        modified = max(modified or date, NOTICE_ISO)
+        body = _re.sub(r'(<p class="meta">)(Updated|Actualizado el) [^·<]+·',
+                       lambda m: f"{m.group(1)}{m.group(2)} {nice_date(modified, lang)} ·", body, count=1)
+    if modified:
+        MODIFIED[slug] = modified
+    # Byline (Nov 24): an honest team byline that links to how we check facts (no invented author)
+    team = ('<a href="/es/acerca/#como-revisamos">Por el equipo de Vice Replay</a>' if lang == "es"
+            else '<a href="/about/#how-we-check">By the Vice Replay team</a>')
+    body = _re.sub(r'(<p class="meta">[^<]*?)· Vice Replay', lambda m: m.group(1) + "· " + team, body, count=1)
     path = f"guides/{slug}/" if lang == "en" else f"es/guias/{slug}/"
     l1, l2, shot = CARDS.get(slug, (title.split(":")[0][:28], "", None))
     img = card(slug, l1, l2 or "On replay", shot)
@@ -534,7 +590,7 @@ def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None, lea
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
     marker = '<div class="sources">'
     body = body.replace(marker, faq_html(faq, lang) + marker, 1) if marker in body else body + faq_html(faq, lang)
-    page(path, f"{title} · Vice Replay", desc, body, image=img, jsonld=ld, lang=lang)
+    page(path, f"{title} · Vice Replay", desc, body, image=img, jsonld=ld, lang=lang, canonical=CANONICAL.get(slug))
 GUIDES_ES = []
 
 CARDS.update({
@@ -937,11 +993,15 @@ for g in _JSON:
           lead=not g.get("map_first"))
 
 # Search box on the guide lists (Nov 24): filters the cards as you type, no server needed
-SEARCH_JS = '<script>(function(){var q=document.getElementById("q");if(!q)return;var cs=[].slice.call(document.querySelectorAll(".cards .card"));var n=document.getElementById("qn");q.addEventListener("input",function(){var t=q.value.toLowerCase().trim(),k=0;cs.forEach(function(c){var m=!t||c.textContent.toLowerCase().indexOf(t)>-1;c.style.display=m?"":"none";if(m)k++;});n.textContent=t?(k+" / "+cs.length):"";});})();</script>'
+SEARCH_JS = ('<script>(function(){var q=document.getElementById("q");if(!q)return;var cs=[].slice.call(document.querySelectorAll(".cards .card"));'
+             'var n=document.getElementById("qn"),e=document.getElementById("qe"),hs=[].slice.call(document.querySelectorAll("h2.cat"));'
+             'q.addEventListener("input",function(){var t=q.value.toLowerCase().trim(),k=0;cs.forEach(function(c){var m=!t||c.textContent.toLowerCase().indexOf(t)>-1;'
+             'c.style.display=m?"":"none";if(m)k++;});n.textContent=t?(k+" / "+cs.length):"";if(e)e.hidden=!(t&&k===0);'
+             'hs.forEach(function(h){var g=h.nextElementSibling;var any=g&&[].some.call(g.children,function(c){return c.style.display!=="none";});h.style.display=any?"":"none";});});})();</script>')
 GUIDES_ES.sort(key=lambda g: g[3], reverse=True)
 page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en español: el mapa oficial de Leonida con los secretos marcados, trucos, consejos, precios y noticias. Sin spoilers y actualizado cada día.",
-     banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="' + YT_ES + '?sub_confirmation=1">Suscríbete a Vice Replay en Español</a>: Shorts de GTA 6 en español cada día.</p><div class="search"><input type="search" id="q" placeholder="Busca entre ' + str(len(GUIDES_ES)) + ' guías: trucos, precio, online..." aria-label="Buscar guías" autocomplete="off"><span id="qn"></span></div><div class="cards">'
-     + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>' + SEARCH_JS, lang="es")
+     banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="' + YT_ES + '?sub_confirmation=1">Suscríbete a Vice Replay en Español</a>: Shorts de GTA 6 en español cada día.</p><div class="search"><input type="search" id="q" placeholder="Busca entre ' + str(len(GUIDES_ES)) + ' guías: trucos, precio, online..." aria-label="Buscar guías" autocomplete="off"><span id="qn"></span></div>'
+     + '<p id="qe" class="meta" hidden>No hay resultados. ¿Buscas un lugar? <a href="/es/guias/mapa-gta-6/">Busca en el mapa de GTA 6</a>.</p>' + grouped_cards(GUIDES_ES, "es/guias", "es") + SEARCH_JS, lang="es")
 
 # Spanish gear page (Nov 22, 2026): the Amazon link for Vice Replay en Español (channel links, descriptions, comments)
 ALT.update({"es/equipo/": "gear/"})
@@ -966,9 +1026,11 @@ page("es/equipo/", "Equipo para GTA 6 (Amazon) · Vice Replay", "Equipo para GTA
 GUIDES.sort(key=lambda g: (g[0] != "gta-6-launch-live", g[3]), reverse=False)
 GUIDES[1:] = sorted(GUIDES[1:], key=lambda g: g[3], reverse=True)
 card("default", "GTA'S WILDEST MOMENTS.", "ON REPLAY.", "vice-city-11.jpg")
+
+
 cards = "".join(f'<a class="card pic" href="/guides/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES)
-page("guides/", "GTA 6 Guides · Vice Replay", "GTA 6 guides from Vice Replay: unlock times, download size, storage, the map and launch tips.",
-     banner('GTA&nbsp;6 <span>guides</span>', 'news-skyline') + f'<p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers. <a href="/es/">En español</a></p><div class="search"><input type="search" id="q" placeholder="Search {len(GUIDES)} guides: money, radio, cheats..." aria-label="Search guides" autocomplete="off"><span id="qn"></span></div><div class="cards">{cards}</div>' + SEARCH_JS)
+page("guides/", "GTA 6 Guides · Vice Replay", "GTA 6 guides from Vice Replay: the interactive Leonida map, tips and systems, money, settings and storage, and the latest news. No spoilers.",
+     banner('GTA&nbsp;6 <span>guides</span>', 'news-skyline') + f'<p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers. <a href="/es/">En español</a></p><div class="search"><input type="search" id="q" placeholder="Search {len(GUIDES)} guides: money, radio, cheats..." aria-label="Search guides" autocomplete="off"><span id="qn"></span></div><p id="qe" class="meta" hidden>Nothing here. Looking for a place? <a href="/guides/gta-6-map-leonida-places/">Search the GTA 6 map</a>.</p>{grouped_cards(GUIDES, "guides", "en")}' + SEARCH_JS)
 
 # links page
 latest = GUIDES[0]
@@ -1044,7 +1106,7 @@ _ORG = {"@context": "https://schema.org", "@type": "Organization", "name": "Vice
         "sameAs": [YT, YT_ES, "https://www.tiktok.com/@vicereplay00", "https://www.instagram.com/vice.replaytv/"]}
 page("about/", "About Vice Replay: How We Check GTA 6 News", "Who makes Vice Replay, how we check every GTA 6 fact in 2+ sources, how we fix mistakes, and how the site makes money.", f"""<h1>About <span>Vice Replay</span></h1>
 <p class="lede">Vice Replay is an independent GTA 6 fan channel and website: daily news, streamer stories, guides and Shorts, in English and Spanish. GTA's wildest moments. On replay.</p>
-<h2>How we check facts</h2>
+<h2 id="how-we-check">How we check facts</h2>
 <ul class="list"><li>Every number, date and quote is checked in <b>at least two reputable sources</b> before we publish, and again right before a video goes out.</li>
 <li>Sources are listed at the bottom of every guide, with links.</li>
 <li>Reports and rumors are labeled ("reportedly", "not confirmed by Rockstar").</li>
@@ -1060,7 +1122,7 @@ page("about/", "About Vice Replay: How We Check GTA 6 News", "Who makes Vice Rep
      jsonld=[_ORG, {"@context": "https://schema.org", "@type": "AboutPage", "name": "About Vice Replay", "url": DOMAIN + "/about/"}])
 page("es/acerca/", "Quiénes somos: así revisa Vice Replay las noticias de GTA 6", "Quién hace Vice Replay, cómo revisamos cada dato de GTA 6 en 2+ fuentes, cómo corregimos errores y cómo se financia el sitio.", f"""<h1>Quiénes <span>somos</span></h1>
 <p class="lede">Vice Replay es un canal y sitio de fans de GTA 6, independiente: noticias diarias, streamers, guías y Shorts, en inglés y en español.</p>
-<h2>Cómo revisamos los datos</h2>
+<h2 id="como-revisamos">Cómo revisamos los datos</h2>
 <ul class="list"><li>Cada cifra, fecha y cita se revisa en <b>al menos dos fuentes confiables</b> antes de publicar.</li><li>Las fuentes están al final de cada guía, con enlaces.</li><li>Los rumores se marcan como tales ("según reportes", "sin confirmar").</li><li>Sin spoilers de la historia en títulos ni miniaturas, y nunca usamos material filtrado.</li></ul>
 <h2>Cuando algo cambia</h2>
 <p>Actualizamos la página y su fecha; si una página vieja quedó desactualizada, ponemos una nota fechada arriba. ¿Viste un error? <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a>.</p>
@@ -1070,7 +1132,7 @@ page("es/acerca/", "Quiénes somos: así revisa Vice Replay las noticias de GTA 
 <p>Vice Replay es un proyecto de fans, no afiliado con Rockstar Games ni con Take-Two Interactive.</p>""",
      jsonld=[_ORG, {"@context": "https://schema.org", "@type": "AboutPage", "name": "Quiénes somos", "url": DOMAIN + "/es/acerca/"}], lang="es")
 
-urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18"), ("privacy/", "2026-11-23"), ("terms/", "2026-11-22"), ("es/equipo/", "2026-11-22"), ("about/", "2026-11-24"), ("es/acerca/", "2026-11-24")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
+urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18"), ("privacy/", "2026-11-23"), ("terms/", "2026-11-22"), ("es/equipo/", "2026-11-22"), ("about/", "2026-11-24"), ("es/acerca/", "2026-11-24")] + [(f"guides/{s}/", MODIFIED.get(s, d)) for s, _, _, d in GUIDES if s not in CANONICAL] + [("es/", _newest_es)] + [(f"es/guias/{s}/", MODIFIED.get(s, d)) for s, _, _, d in GUIDES_ES if s not in CANONICAL]
 open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
 def refresh_home():
@@ -1161,7 +1223,9 @@ def add_related():
             f = os.path.join(SITE, base, slug, "index.html")
             if not os.path.exists(f):
                 continue
-            ranked = sorted((o for o in info if o != slug), key=lambda o: (len(w & info[o][3]), info[o][2]), reverse=True)[:4]
+            # Nov 24 review: shared words paired shoe stores with Game Awards; same topic first, never launch-week archive
+            pool = [o for o in info if o != slug and o not in ARCHIVE and o not in CANONICAL]
+            ranked = sorted(pool, key=lambda o: (topic(o) == topic(slug), len(w & info[o][3]), info[o][2]), reverse=True)[:4]
             cards = "".join(f'<a class="card pic" href="/{base}/{o}/"><img src="/og/t/{o}.webp" width="480" height="252" alt="{html.escape(info[o][0])}" loading="lazy"><span><b>{html.escape(info[o][0])}</b><small>{html.escape(info[o][1])}</small></span></a>' for o in ranked)
             box = f'<div class="related"><h2>{heading}</h2><div class="cards">{cards}</div></div>'
             doc = open(f).read()
