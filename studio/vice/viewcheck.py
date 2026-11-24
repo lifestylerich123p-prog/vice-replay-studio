@@ -115,6 +115,26 @@ def _fits_one_line(headline):
     from .. import brand
     return brand.font(brand.HEADLINE_FONT, int(1920 * 0.043)).getlength(headline.upper()) <= int(1080 * 0.82)
 
+def _kinetic_sizes(chart, band=False, w=1080, h=1920):
+    """[(line, px)]: the font size each `kinetic` line ends up at once vicecards.lettering shrinks it to fit (the hook
+    can sit in the top band over a payoff picture, which is shorter, so lines get smaller there)."""
+    if chart.get("type") != "kinetic":
+        return []
+    from .. import brand, vicecards
+    x0, y0, x1, y1 = vicecards.region(w, h)
+    if band:
+        y0, y1 = int(h * 0.075), int(h * 0.25)
+    lines = [str(x) for x in chart.get("lines") or str(chart.get("text", "")).split("|")][:4]
+    slot = (y1 - y0) / max(len(lines), 1)
+    out = []
+    for line in lines:
+        size = int(min(slot * 0.78, w * (0.20 if len(lines) <= 2 else 0.15)))
+        while brand.font(brand.HEADLINE_FONT, size).getlength(line.upper()) > (x1 - x0) * 0.98 and size > 24:
+            size = int(size * 0.94)
+        out.append((line, size))
+    return out
+
+
 def check(ep, gameplay_available=False, recent=None):
     """(blockers, warnings) for every Short in an episode. With owner gameplay highlights available, Shorts swap them in
     for segments without `keep_media` (unless the episode sets `"use_gameplay": false`). `recent`: [(slug, layout)] of
@@ -263,6 +283,11 @@ def check_short(ep, key, title, segs, gameplay_available=False):
             if x.get("text_es") and words and not x.get("chart_es") and c.get("locale") != "es":
                 warnings.append(f"spanish: Short '{key}' segment {k + 1} chart shows English text in the Spanish "
                                 f"version ({words[0]!r}...): add `chart_es` with Spanish label/note")
+        for k, x in enumerate(segs):  # Nov 24 review: lettering must stay big enough to read on a phone
+            for line, px in _kinetic_sizes(x.get("chart") or {}, band=(k == 0)):
+                if px < 80:
+                    warnings.append(f"readability: Short '{key}' segment {k + 1} line {line!r} renders at ~{px} px "
+                                    f"(under 80 px on a 1920-tall Short); shorten it to ~14 characters or split the line")
         text = f"{title} {first.get('headline', '')} {ep.get('format', '')}"
         if TIPS.search(text) and not re.search(r"\d", first.get("headline", "")):
             warnings.append(f"views: Short '{key}' reads like a plain tip ({TIPS.search(text).group(0)!r}). Tips Shorts got "
