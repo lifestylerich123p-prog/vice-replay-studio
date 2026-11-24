@@ -75,7 +75,7 @@ only for big news or long videos (`studio.quota` lists daytime first).
   time-limited approval written there. Nothing else is posted without asking.
 - **Momentum** (`momentum.md`, daily): one follow-up Short with something new when a Short takes off; owner approves
   in the main chat. **Website**: daily guide (+ Spanish) via `site/` + `tools/site_guides.py`, published from the main
-  chat (`/publish-site`); scheduled runs can't push, they hand files over with fire_trigger. **Keep the site current** (owner Nov 24: "monitor so this doesn't happen"): a line in `site/live.json` every day, deal prices re-checked every 3 days (`DEALS_CHECKED` in tools/site_guides.py), deal pages carry `expires`; `python -m studio.site_stale` must show 0 stale / 0 old (the site build and `studio.doctor` warn too).
+  chat (`/publish-site`); scheduled runs can't push, they hand files over with fire_trigger. **Keep the site current** (owner Nov 24: "monitor so this doesn't happen"): a line in `site/live.json` every day, deal prices re-checked every 3 days (`DEALS_CHECKED` in tools/site_guides.py), deal pages carry `expires`; `python -m studio.site_stale` must show 0 stale / 0 old (the site build and `studio.doctor` warn too). **Search traffic**: every Sunday run `python -m studio.search_demand` (Google + Bing autocomplete vs our pages) and turn the top checkable GAPs into guides (2+ sources, no spoilers, no leaks).
 - **Instagram** (@vice.replaytv, owner approved Nov 19): every uploaded Short and about one carousel/image a day go
   out through `content/learn/reels_queue.json` (max 4 posts/day; campaign clips paused since Meta's Nov 19 ad flag);
   how: `.claude/commands/instagram.md`.

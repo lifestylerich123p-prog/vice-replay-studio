@@ -64,6 +64,7 @@ footer{margin-top:44px;color:var(--muted);font-size:13px;border-top:1px solid va
 .banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center}
 .banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,7,23,.88) 0%,rgba(13,7,23,.5) 42%,rgba(13,7,23,0) 72%)}
 .banner h1{position:relative;z-index:1;margin:0;padding:18px 20px;max-width:68%}
+.related{margin-top:34px}
 .lead{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:14px;margin:4px 0 18px;border:1px solid var(--line);background:var(--panel-2)}
 .card.pic{display:grid;grid-template-columns:128px 1fr;gap:14px;align-items:start;padding:12px}
 .card.pic img{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:8px;background:var(--panel-2)}
@@ -848,6 +849,29 @@ def refresh_home():
 
 
 
+def add_related():
+    """Nov 24 upgrade: a 'Related guides' box with 4 picture cards at the end of every guide (EN + ES), picked by shared
+    words in title + description (newest first on ties). Internal links help readers stay and help search engines find
+    and rank every page. Rebuilt on each run (old box removed first)."""
+    stop = set("gta 6 vi the a an and or of to in on for is it its what how why when where with you your our are be".split()
+               + "de el la los las y o en un una que para por con del al es su sus lo".split())
+    def words(t):
+        return {w for w in _re.findall(r"[a-záéíóúñ0-9]+", t.lower()) if w not in stop and len(w) > 2}
+    for items, base, heading in ((GUIDES, "guides", "Related guides"), (GUIDES_ES, "es/guias", "Guías relacionadas")):
+        info = {s_: (t_, d_, dt_, words(t_ + " " + d_)) for s_, t_, d_, dt_ in items}
+        for slug, (title, desc, date, w) in info.items():
+            f = os.path.join(SITE, base, slug, "index.html")
+            if not os.path.exists(f):
+                continue
+            ranked = sorted((o for o in info if o != slug), key=lambda o: (len(w & info[o][3]), info[o][2]), reverse=True)[:4]
+            cards = "".join(f'<a class="card pic" href="/{base}/{o}/"><img src="/og/t/{o}.webp" width="480" height="252" alt="{html.escape(info[o][0])}" loading="lazy"><span><b>{html.escape(info[o][0])}</b><small>{html.escape(info[o][1])}</small></span></a>' for o in ranked)
+            box = f'<div class="related"><h2>{heading}</h2><div class="cards">{cards}</div></div>'
+            doc = open(f).read()
+            doc = _re.sub(r'<div class="related">.*?</div></div>', "", doc, flags=_re.S)
+            doc = doc.replace("</main>", box + "\n</main>", 1)
+            open(f, "w").write(doc)
+
+
 def write_feeds_404_manifest():
     """Nov 24 upgrades: RSS feeds (EN /feed.xml, ES /es/feed.xml) so readers and aggregators can follow new guides,
     a branded 404 page (GitHub Pages serves /404.html) and a web app manifest (save-to-home-screen icon)."""
@@ -885,6 +909,7 @@ def write_feeds_404_manifest():
               open(os.path.join(SITE, "site.webmanifest"), "w"))
 
 
+add_related()
 write_feeds_404_manifest()
 
 refresh_home()

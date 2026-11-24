@@ -26,7 +26,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SEEDS = {
     "en": ["gta 6", "gta 6 how", "gta 6 how to", "is gta 6", "does gta 6", "can you", "gta 6 best", "gta 6 where",
            "gta 6 when", "gta 6 why", "gta 6 what", "gta 6 cheats", "gta 6 money", "gta 6 map", "gta 6 ps5",
-           "gta 6 online", "gta 6 price", "gta 6 update"] + [f"gta 6 {c}" for c in string.ascii_lowercase],
+           "gta 6 online", "gta 6 price", "gta 6 update", "gta 6 how to get", "gta 6 how to make", "gta 6 where to find",
+           "gta 6 where is", "gta 6 can you", "gta 6 is there", "gta 6 how many", "gta 6 radio", "gta 6 secret", "gta 6 easter egg"] + [f"gta 6 {c}" for c in string.ascii_lowercase],
     "es": ["gta 6", "gta 6 como", "gta 6 cuando", "gta 6 donde", "gta 6 trucos", "gta 6 dinero", "gta 6 mapa",
            "gta 6 precio", "gta 6 online", "gta 6 mejor"] + [f"gta 6 {c}" for c in "abcdefghilmnopqrstv"],
 }

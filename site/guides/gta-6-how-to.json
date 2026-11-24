@@ -1,9 +1,9 @@
 {
  "slug": "gta-6-how-to",
  "lang": "en",
- "title": "GTA 6 How To: Get the Key Cloner, Get Your Car Out of the Impound, Lose the Cops",
+ "title": "GTA 6 How To: Switch Characters, Key Cloner, Impound and Losing the Cops",
  "h1": "GTA 6 how to: <span>key cloner, impound, cops</span>",
- "desc": "Quick answers to GTA 6's most searched how-to questions: how to get the key cloner, how to get your car out of the impound, and how to lower your wanted level. Light on spoilers.",
+ "desc": "Quick answers to GTA 6's most searched how-to questions: how to switch between Jason and Lucia, get the key cloner, get your car out of the impound and lower your wanted level. Light on spoilers.",
  "date": "2026-11-24",
  "video": null,
  "card": [
@@ -13,6 +13,10 @@
  ],
  "lede": "The three things people ask most after launch, answered in a few lines each, from the guides that tested them. Light on spoilers: no story details beyond where a feature unlocks.",
  "sections": [
+  [
+   "How to switch between Jason and Lucia",
+   "<p>Hold <b>Right on the D-pad</b> to open the partner menu, then press <b>R1</b> (PS5) or <b>RB</b> (Xbox) (GamesRadar, PowerPyx, KeenGamer). Free switching opens in <b>Chapter 2</b> in most guides. Some missions need a specific character, and the other one can be grayed out at home.</p>"
+  ],
   [
    "How to get the key cloner",
    "<p>You can't buy it: the key cloner unlocks during a story mission for Randy, which most guides place in <b>Chapter 3</b> (GameSpot, GamesRadar, VICE). After that, scan a car with the phone's <b>WAiNK</b> app to see if it needs a cloned key or has a tracker, walk to the driver's door and pick <b>Clone Key</b>, then fill the meter with the right stick. Expensive cars often carry trackers, so cloning gets you in, not off the radar. No <b>Clone Key</b> option yet? You haven't reached that mission.</p>"
@@ -28,6 +32,10 @@
  ],
  "note": "These guides are from launch week; patches can change details. Checked November 24, 2026.",
  "faq": [
+  [
+   "How do you switch characters in GTA 6?",
+   "Hold Right on the D-pad for the partner menu, then press R1 (PS5) or RB (Xbox). It unlocks in Chapter 2."
+  ],
   [
    "How do you get the key cloner in GTA 6?",
    "It unlocks in a story mission for Randy (Chapter 3 in most guides); you can't buy it."
@@ -68,6 +76,18 @@
   [
    "Red Bull: GTA 6 wanted and heat levels",
    "https://www.redbull.com/int-en/gta-6-wanted-heat-levels"
+  ],
+  [
+   "GamesRadar: how to change between Jason and Lucia",
+   "https://www.gamesradar.com/games/grand-theft-auto/gta-6-switch-characters-command/"
+  ],
+  [
+   "PowerPyx: how to switch between Lucia and Jason",
+   "https://www.powerpyx.com/gta-6-how-to-switch-between-playing-as-lucia-jason/"
+  ],
+  [
+   "KeenGamer: how to switch between Jason and Lucia",
+   "https://www.keengamer.com/articles/guides/how-to-switch-between-jason-and-lucia-in-gta-6/"
   ]
  ]
 }
