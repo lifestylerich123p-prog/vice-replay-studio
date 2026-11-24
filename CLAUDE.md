@@ -36,7 +36,9 @@ only for big news or long videos (`studio.quota` lists daytime first).
   `content/owner.md` by `python -m studio.gameplay`, not committed). Never other creators' videos, never a whole
   trailer, clip audio always dropped; narration adds real commentary. Pick `media` per segment by filename and rotate.
   Keep strip-club or sexualized images out (list of excluded shots in owner.md). New official media:
-  rockstargames.com/VI/downloads, add only after viewing each.
+  rockstargames.com/VI/downloads, add only after viewing each. **Exact images first** (owner Nov 24): when a title or
+  line names a car, place or character, use THAT official screenshot (`studio.cardphotos.exact`); Rockstar's pack was
+  last updated Nov 4, 2026 and is all in media/official; never other people's images.
 - **No trailer images in ANY video** (owner, Nov 22 evening + Nov 23: "stop posting the video with trailer imaging,
   we're moving to the ones with lettering and more modern style"): Shorts, long videos and Reels use our own cards
   (charts, quote, list, text, quiz: fun facts, GTA history, quizzes, numbers, quotes) with a strong statement hook,

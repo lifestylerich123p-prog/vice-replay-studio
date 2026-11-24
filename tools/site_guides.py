@@ -449,7 +449,7 @@ CARDS.update({
  "gta-6-unlock-time": ("GTA 6 UNLOCK TIME", "WHOSE MIDNIGHT?", "vice-city-05.jpg"),
  "gta-6-new-zealand-trick": ("THE NEW ZEALAND TRICK", "WORTH THE RISK?", "leonida-keys-03.jpg"),
  "gta-6-launch-checklist": ("GTA 6 LAUNCH", "CHECKLIST", "jason-and-lucia-05.jpg"),
- "gta-6-map-leonida-places": ("BIGGER THAN", "VICE CITY", "mount-kalaga-02.jpg"),
+ "gta-6-map-leonida-places": ("BIGGER THAN", "VICE CITY", "leonida-map-poster.jpg"),
  "gta-6-storage": ("GTA 6 STORAGE FULL?", "FREE FIXES FIRST", "car-vapid-stanier-01.jpg"),
  "gta-6-cheats": ("GTA 6 CHEAT CODES", "$250K + 6 MORE", "car-grotti-cheetah-01.jpg"),
  "gta-6-pc-release-date": ("GTA 6 ON PC", "WHEN?", "port-gellhorn-02.jpg"),
