@@ -823,7 +823,9 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     used_footage = any(s.get("media") for s in segments)
     if vertical and segments and ep.get("follow_cta", True):
         es = any(s.get("text") == s.get("text_es") for s in segments if s.get("text_es"))
-        segments[-1]["cta"] = "SÍGUENOS: GTA 6 A DIARIO" if es else "FOLLOW FOR DAILY GTA 6"
+        # Nov 24 (subscribers): an episode can promise the next one instead, e.g. "cta_es": "PARTE 2 MAÑANA: SÍGUENOS"
+        segments[-1]["cta"] = ((ep.get("cta_es") if es else ep.get("cta")) or
+                               ("SÍGUENOS: GTA 6 A DIARIO" if es else "FOLLOW FOR DAILY GTA 6"))
 
     parts, chapters, t = [], [], 0.0
     cuts, impacts, timings = [], [0.0], []  # sound effects: impact on the hook, whoosh on every cut

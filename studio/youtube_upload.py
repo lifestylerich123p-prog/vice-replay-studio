@@ -183,7 +183,24 @@ def clean_tags(tags, base=BASE_TAGS):
     return out
 
 
+SUBSCRIBE = {  # Nov 24 (owner: "work on how to get subscribers"): a one-tap subscribe link (YouTube opens the
+    # subscribe pop-up) right after the description's first paragraph, the part people see without expanding
+    "en": "🔔 Subscribe for daily GTA 6: https://www.youtube.com/@ViceReplayTV-q8s?sub_confirmation=1",
+    "es": "🔔 Suscríbete para GTA 6 cada día: https://www.youtube.com/@vicereplayes?sub_confirmation=1",
+}
+
+
+def with_subscribe(description, lang="en"):
+    """description with the channel's subscribe link after its first paragraph (once)."""
+    line = SUBSCRIBE.get(lang)
+    if not line or "sub_confirmation" in description:
+        return description
+    head, sep, rest = description.partition("\n\n")
+    return head.rstrip() + "\n\n" + line + ("\n\n" + rest if sep else "")
+
+
 def upload(tok, path, title, description, tags, publish_at=None, privacy="public", es=None, lang="en"):
+    description = with_subscribe(description, lang)
     title, description = yt_safe(title), yt_safe(description)
     if es:
         es = {k: yt_safe(v) if isinstance(v, str) else v for k, v in es.items()}

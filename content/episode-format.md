@@ -24,7 +24,7 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
      thumbnails with `python -m studio.thumbs episodes/<slug>.json`.
      Thumbnail text must not repeat the title word for word.
    - Every Short's last segment automatically shows a "FOLLOW FOR DAILY GTA 6" badge (Spanish: "SÍGUENOS: GTA 6 A
-     DIARIO"); subscribers are the channel's bottleneck for monetization. Set `"follow_cta": false` to turn it off.
+     DIARIO"); subscribers are the channel's bottleneck for monetization. Set `"follow_cta": false` to turn it off; `"cta"` / `"cta_es"` replace its text with a promise (series parts: "PART 2 TOMORROW: FOLLOW" / "PARTE 2 MAÑANA: SÍGUENOS"; keep it under ~26 characters).
    - Hook (Nov 22 data): the FIRST sentence is a statement of the surprising result, 3-10 words, never a question
      (questions first kept 35% of viewers vs 60%); templates in resources/hooks-and-titles.md. `studio.vice publish`
      blocks a question opener.
