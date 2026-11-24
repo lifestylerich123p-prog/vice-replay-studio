@@ -103,6 +103,7 @@ Checked Nov 20, 2026 on the owner's Everygen billing page and the account API:
 | Any non-GTA campaign | ClipCircuit | see the ClipCircuit inventory sheet |
 
 ## Shared log (newest first: date · chat · note)
+- 2026-11-24 · Vice Replay · Everygen: 5 credits (Viral Adam, 5 lines) for the Spanish-only Short "Bad Bunny tiene su propia RADIO en GTA 6" (Miami latino series; owner approved in the Spanish chat, main chat made the voice after checking none existed). Balance after: ~89 (top-up; plan credits 0 until Dec 12).
 - 2026-11-24 · Vice Replay · Everygen: 5 credits (Viral Adam, 5 lines) for the Spanish-only Short "El MAPA oficial de GTA 6 en HD" (owner: "all is approved"). Balance after: 94 (all top-up; plan credits 0 until Dec 12).
 - 2026-11-24 · Vice Replay · Everygen: 5 credits WASTED: the main chat re-made the Viral Adam voice for the Spanish-only Ibai Short a minute after the Spanish chat had already made it (its copy is the one used). Fix: before any Everygen voice job, check `git log --all -- media/voice/<slug>` and the Shared log.
 - 2026-11-24 · Vice Replay · Everygen: 4 credits (Viral Adam) for the Spanish-only Short "IlloJuan le GANÓ a Rubius en GTA 6" (owner: "approve all new ideas").
