@@ -4,8 +4,8 @@ Views/reach need the Meta app permission instagram_manage_insights (not granted 
 
 | Kind | n | median views | median reach | median likes | median saves |
 |---|---|---|---|---|---|
-| Reel | 23 | 0 | 0 | 8 | 0 |
-| Carousel | 5 | 0 | 0 | 0 | 0 |
+| Reel | 23 | 0 | 0 | 9 | 0 |
+| Carousel | 6 | 0.0 | 0.0 | 0.0 | 0.0 |
 | Image | 1 | 0 | 0 | 0 | 0 |
 
 ## Best 5
@@ -21,5 +21,5 @@ Views/reach need the Meta app permission instagram_manage_insights (not granted 
 - ? views, 0 likes · Reel · Lacy can't steal cars in GTA 6 😭🔑
 - ? views, 0 likes · Reel · LACY found a shoe store in GTA 6 👟😭
 - ? views, 0 likes · Reel · LACY tried to pet a GTA 6 alligator 🐊😭
-- ? views, 0 likes · Reel · GTA 6's Metacritic 99: only ONE other game #GTA6
+- ? views, 0 likes · Carousel · How well do you know GTA? 5 questions 🧠 Swipe, answer in your head, th
 - ? views, 0 likes · Reel · Every GTA ranked by sales: GTA 5 is alone #GTA6
