@@ -145,3 +145,17 @@ Tier List #2") so returning viewers recognize it.
   Skipped: impound (guides disagree, tied to a story mission), "gta 6 netflix" (August's Extended Look, not news),
   hurricane "how to trigger" (hurricanes confirmed by Game Informer; no source shows a trigger: clickbait).
 - **Already posted, don't redo**: cheats (3 Shorts), no mission replay, Dog Island. Check uploads.json first.
+
+## Miami latino series (owner Nov 24: "concentrate on targeting Miami's Latinos community"), Spanish channel
+Vice City is Miami, so the Spanish channel's home audience is Miami's Latinos (then LatAm). Max 1 Spanish-only/day.
+Pinned questions ask "¿desde qué parte de Miami nos ves?" style questions to build a local community.
+Done/booked: Little Cuba = Pequeña Habana (Fri Nov 27), Bad Bunny's Cocoteo FM (Mon Nov 30).
+Next (each needs 2+ sources at writing time):
+1. **Gloria Estefan is a GTA 6 radio DJ** (Consequence; find a 2nd source): Miami's own legend on the radio.
+2. **Rauw Alejandro and the other Latino artists on the soundtrack** (Hola.com Nov 18; 2nd source needed): a list card.
+3. **Vice City vs Miami: 5 lugares** with the `map` card: Ocean Beach = South Beach/Ocean Drive, Little Cuba = Pequeña
+   Habana, Vice-Dale = Miami-Dade (gta6-life, Forbes Oct 27, gtasixmap). Hialeah and Little Haiti: only community
+   databases so far (don't use until 2 guides agree).
+4. **"¿Qué falta de Miami en GTA 6?"** (Versailles, Calle Ocho, Marlins park...): opinion/poll Short, comments bait;
+   say clearly these are wishes, not in the game.
+
