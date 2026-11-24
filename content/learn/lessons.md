@@ -222,3 +222,15 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   of the same owner, which YouTube can treat as repeated content. Response: winners-only (fewer, proven Spanish
   versions) + Spanish-only originals (Cuba, prices by country, no dubbing). If a Spanish version goes up, change its
   hook card (a Spanish-specific opener) so it isn't a 1:1 copy of the English Short.
+
+## 2026-11-24 (daily run): what the numbers say this morning
+- **Rankings with a verdict are still our best card**: "Vice City is only B tier" is at 612 views (36 v/h vs a 2 v/h
+  channel median); the darts quote card from the same weekend sits at 23. Same lettering style, so the difference is
+  the angle (a ranking that picks a fight) not the picture. Today's VS rounds end on a verdict for the same reason.
+- **Streamer + "wasn't IShowSpeed" angle keeps paying**: "The first person to finish GTA 6 wasn't IShowSpeed" is at 616
+  (14 v/h, still climbing on day 3). Today's main Short reuses the shape with new numbers ("Speed won by 580,000 hours",
+  a VTuber at #2) instead of repeating the topic.
+- **Market (last 48 h)**: the top GTA 6 Shorts are short and simple: "GTA 5 vs GTA 6 Cops" 11.3M in 9 s, "GTA 6 Hidden
+  Facts" 12.1M in 42 s, "Map of all GTA 6 Players" 5.8M in 11 s. VS and "hidden facts/secrets" are the formats we can
+  make legally (our cards, no their footage); the easter-egg Short today is our "hidden facts" test. Statement openers
+  still beat questions on our channel (6.4 vs 1.6 v/h median, n=26 vs 3).
