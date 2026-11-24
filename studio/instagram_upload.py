@@ -248,7 +248,12 @@ def episode_reel(path, item="short"):
     tags = " ".join(dict.fromkeys(ep.get("tiktok_hashtags", ["#gta6", "#gtavi", "#gaming"]) + ["#gta6news"]))
     # Meta (help.instagram.com/761121959519495): realistic AI-made audio, e.g. an AI voiceover, must be disclosed; the
     # API can't set the "AI info" label, so the caption says it (Nov 23 research)
-    caption = (f"{title}\n\n{desc}\n\n🎙️ AI narration · our own graphics and research\n"
+    # Nov 24 (studio.ig_stats): our best Reels were practical tips with a save/screenshot nudge ("First 3 settings"
+    # 119 likes, "screenshot this" 41); where-to-find and how-to Reels get the nudge as their first line
+    save = ""
+    if ep.get("series") in ("Map Spots", "How To") or any(w in title.lower() for w in ("where", "how to", "steps")):
+        save = "📌 Save this for when you play.\n\n"
+    caption = (f"{save}{title}\n\n{desc}\n\n🎙️ AI narration · our own graphics and research\n"
                f"Follow @vice.replaytv for GTA 6 every day.\n{tags}")
     return str(ROOT / "output" / slug / f"{name}.mp4"), caption
 
