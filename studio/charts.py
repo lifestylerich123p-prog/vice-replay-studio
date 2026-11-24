@@ -402,7 +402,7 @@ def map_frame(base, spec, t, w, h):
     dur = max(spec.get("_dur", 4.0), 0.5)
     p = min(1.0, t / (dur * 0.55))
     e = 1 - (1 - p) ** 3
-    vh0 = H                                   # start: the whole height of the map
+    vh0 = min(H, W * h / w)                   # start: the whole map (height on a Short, width on a 16:9 video)
     vh1 = W * float(spec.get("to", 0.28)) * h / w
     vh = vh0 * (1 - e) + vh1 * e
     vw = vh * w / h
