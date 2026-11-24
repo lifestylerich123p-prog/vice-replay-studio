@@ -24,4 +24,6 @@ media/campaign/
 
 # Personal Claude Code settings (owner Nov 23: Everygen auto-approve for now)
 .claude/settings.local.json
+# this chat's Everygen claim (studio/everygen_claim.py; read by the PreToolUse hook, per container)
+.claude/everygen-claim.local.json
 media/official-hd/
