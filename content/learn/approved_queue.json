@@ -93,14 +93,15 @@
    "slug": "gta6-13-years",
    "item": "short",
    "en": [
-    "2026-11-27",
-    "9:30 AM"
+    "2026-11-30",
+    "11:00 AM"
    ],
    "es": [
-    "2026-11-27",
-    "9:30 AM"
+    "2026-12-01",
+    "1:30 PM"
    ],
-   "approved": "Nov 22 10 PM (approve)"
+   "approved": "Nov 22 10 PM (approve)",
+   "moved": "Nov 24: Fri 9:30 AM went to the money tier list (owner approved)"
   },
   {
    "slug": "gta6-80-hours",
@@ -223,10 +224,11 @@
    "slug": "gta6-3-records",
    "item": "short",
    "en": [
-    "2026-11-27",
-    "12:30 PM"
+    "2026-12-01",
+    "11:00 AM"
    ],
-   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)"
+   "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)",
+   "moved": "Nov 24: Fri 12:30 PM went to the key cloner Short (owner approved)"
   },
   {
    "slug": "gta6-launch-quiz",
@@ -411,6 +413,32 @@
     "3:30 PM"
    ],
    "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); long video, optional slot per the daily run"
+  },
+  {
+   "slug": "gta6-money-tier-list",
+   "item": "short",
+   "en": [
+    "2026-11-27",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-28",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~11:30 AM (owner \"Approve everything for good of the channel\"); tier list (the format that took off) on the top search topic"
+  },
+  {
+   "slug": "gta6-key-cloner-3-steps",
+   "item": "short",
+   "en": [
+    "2026-11-27",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-28",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~11:30 AM (owner \"Approve everything for good of the channel\"); how-to on a top search topic"
   }
  ],
  "paused": [

@@ -405,6 +405,40 @@ def _source_line(img, spec, w, h):
     return img
 
 
+ZOOM = 1.12  # photo cards: the picture starts at 112% of the frame and slowly zooms in to 102%
+
+
+def _photo_base(path, w, h):
+    """Photo cards (owner approved Nov 24): the screenshot cover-cropped to ZOOM x the frame, darkened with a top/bottom
+    gradient and a purple shade so neon lettering reads on any picture. None if the file is missing."""
+    from PIL import ImageEnhance
+    root = Path(__file__).resolve().parent.parent
+    f = Path(path) if Path(path).is_absolute() else root / path
+    if not f.exists():
+        return None
+    W, H = int(w * ZOOM), int(h * ZOOM)
+    im = Image.open(f).convert("RGB")
+    r = max(W / im.width, H / im.height)
+    im = im.resize((int(im.width * r) + 1, int(im.height * r) + 1), Image.LANCZOS)
+    left, top = (im.width - W) // 2, (im.height - H) // 2
+    im = im.crop((left, top, left + W, top + H))
+    im = ImageEnhance.Brightness(im).enhance(0.52)
+    im = ImageEnhance.Color(im).enhance(1.12)
+    grad = Image.new("L", (1, H))
+    for y in range(H):  # darker at the top (title) and bottom (captions), lighter through the middle
+        e = abs(y / H - 0.45) / 0.55
+        grad.putpixel((0, y), int(255 * min(1.0, 0.18 + 0.75 * e ** 1.6)))
+    shade = Image.new("RGB", (W, H), (14, 4, 30))
+    return Image.composite(shade, im, grad.resize((W, H)))
+
+
+def _photo_frame(base, p, w, h):
+    s = ZOOM - 0.10 * max(0.0, min(1.0, p))
+    cw, ch = int(w * s), int(h * s)
+    x0, y0 = (base.width - cw) // 2, (base.height - ch) // 2
+    return base.crop((x0, y0, x0 + cw, y0 + ch)).resize((w, h), Image.BILINEAR)
+
+
 def render(spec, dur, w, h, out, seed=0):
     """Write an mp4 (no audio) of the animated chart, dur seconds long; returns its path. The GTA 6-style cards
     (studio/vicecards.py: kinetic, countdown, versus, tier, headline) and any chart with "bg": "vice" play on the
@@ -413,11 +447,13 @@ def render(spec, dur, w, h, out, seed=0):
     out = Path(out)
     kind = spec.get("type")
     draw = vicecards.DRAW.get(kind) or DRAW.get(kind, bars_frame)
-    vice = spec.get("bg", "vice" if kind in vicecards.DRAW else "gradient") == "vice"
+    bgname = str(spec.get("bg", "vice" if kind in vicecards.DRAW else "gradient"))
+    photo = _photo_base(bgname[6:], w, h) if bgname.startswith("photo:") else None
+    vice = bgname == "vice" or (bgname.startswith("photo:") and photo is None)
     sd = spec.get("seed", seed)
     if vice:
         still, horizon = vicecards.sky(w, h, sd)
-    else:
+    elif photo is None:
         base = _backdrop(w, h, seed=sd)
     spec = dict(spec, _dur=dur)
     shift = 5.0 if spec.get("cover") and kind != "kinetic" else 0.0  # cover: show the finished card from frame one
@@ -426,7 +462,10 @@ def render(spec, dur, w, h, out, seed=0):
                              "-pix_fmt", "yuv420p", str(out)], stdin=subprocess.PIPE)
     for f in range(max(1, int(round(dur * FPS)))):
         t = f / FPS
-        bg = vicecards.frame_bg(still, horizon, t, w, h) if vice else base
+        if photo is not None:  # Nov 24 photo cards: a real GTA 6 screenshot behind the lettering, slow zoom in
+            bg = _photo_frame(photo, t / max(dur, 0.1), w, h)
+        else:
+            bg = vicecards.frame_bg(still, horizon, t, w, h) if vice else base
         frame = draw(bg, spec, t + shift, w, h)
         if spec.get("src"):
             frame = _source_line(frame, spec, w, h)

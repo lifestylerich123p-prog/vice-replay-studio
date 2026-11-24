@@ -576,6 +576,13 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
                 print(f"  ! segment {i}: Spanish render shows the English chart text {chart_words(chart)}; add `chart_es`")
         if vertical and i == 0:  # a Short's first frame is its cover: show the whole hook card at once
             chart = dict(chart, cover=True)
+        if "bg" not in chart and seg.get("_card_photos", True):  # photo cards (owner approved Nov 24)
+            from . import cardphotos
+            if cardphotos.enabled():
+                words = " ".join(str(seg.get(k, "")) for k in ("headline", "text")) + " " + " ".join(chart_words(chart))
+                ph = cardphotos.pick(words, i, used=seg.get("_photos_used", ()))
+                if ph:
+                    chart = dict(chart, bg=f"photo:{ph}")
         seg = dict(seg, media=str(charts.render(chart, dur + 0.5, w, h, work / f"chart_{i}.mp4", seed=i)),
                    media_start=0, focus=None)
     if seg.get("shots"):
@@ -786,6 +793,8 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
         intro = render_intro(ep["title"], work, enc, w, h)
         parts.append(intro)
         t += duration(intro)
+    from . import cardphotos
+    cardphotos.reset()  # photo cards: no picture twice in one video
     for i, seg in enumerate(segments):
         print(f"[{i + 1}/{len(segments)}] {seg.get('headline') or seg['text'][:40]}")
         # a ready-made voice file (e.g. an Everygen voiceover) wins over TTS: "audio" (English) / "audio_es"

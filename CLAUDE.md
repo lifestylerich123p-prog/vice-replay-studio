@@ -41,12 +41,13 @@ only for big news or long videos (`studio.quota` lists daytime first).
   last updated Nov 4, 2026 and is all in media/official; never other people's images. **Map spots** (owner Nov 24): `studio.mappins` pins numbered spots on Rockstar's
   official map by place name or the map's grid ("G7"): `pinned_map` for site pages/carousels/thumbnails, `zoom_clip`
   for videos (only once official images are allowed in videos again); locations from 2+ guides, disagreements stated.
-- **No trailer images in ANY video** (owner, Nov 22 evening + Nov 23: "stop posting the video with trailer imaging,
-  we're moving to the ones with lettering and more modern style"): Shorts, long videos and Reels use our own cards
-  (charts, quote, list, text, quiz: fun facts, GTA history, quizzes, numbers, quotes) with a strong statement hook,
-  or the owner's gameplay. No trailer clips or official screenshots, no waivers (`studio.vice publish` and the
-  Instagram queue block them; footage Shorts were unscheduled Nov 23, kept private). Official media stays only for
-  thumbnails, site cards and IG carousels.
+- **Lettering cards + real pictures** (owner Nov 22-23: "lettering and more modern style", no trailer imaging; Nov 24
+  after the views drop, "Approve everything for good of the channel"): Shorts, long videos and Reels are our lettering
+  cards (charts, quote, list, tier, versus, quiz) with a strong statement hook, or the owner's gameplay. Since Nov 24
+  every card plays on a real GTA 6 picture: an official screenshot from the vetted places/cars pool, exact-name match
+  first (`studio/cardphotos.py`, config `card_photos`), slow zoom, darkened under the lettering; map spots use the
+  official map (`studio/mappins.py`). Still NOT allowed: trailer CLIPS, bare screenshots without our cards, character
+  close-ups, guns, revealing poses (`studio.vice publish` blocks non-card footage segments).
 - **Owner gameplay first**: Shorts automatically use the newest gameplay highlights when they exist (`"keep_media":
   true` keeps a segment's own picture; `"use_gameplay": false` turns it off); at 30+ highlights `studio.tidy`
   retires most stock footage (keeps a core for site cards, thumbnails, character news).

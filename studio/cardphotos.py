@@ -1,5 +1,5 @@
 """Real GTA 6 pictures behind our lettering cards (owner, Nov 24, 2026: "if you think what I said doesn't work, change
-it and upgrade it").
+it and upgrade it"; approved Nov 24: "Approve everything for good of the channel").
 
 Why: since the Nov 23 switch to text-only cards on the synthwave set, Shorts get swiped past (median 431 views at 24 h
 for the old screenshot Shorts vs ~20-80 for cards, one tier-list hit aside). The owner wanted lettering and a modern
@@ -95,13 +95,24 @@ def _exists(name):
     return (OFFICIAL / f"{name}.jpg").exists()
 
 
+_USED = set()
+
+
+def reset():
+    """Start a new video: pictures may repeat across videos, not within one."""
+    _USED.clear()
+
+
 def pick(text, index, used=()):
     """A safe official screenshot for one card: topic-matched (cars / water / world / city), varied by the card's
     text and position, never repeating one already used in the same video when another is free."""
     t = (text or "").lower()
+    used = set(used) | _USED
     hits = [n for n in exact(t, video=True) if f"media/official/{n}.jpg" not in used]
     if hits:  # the exact car / place the line names
-        return f"media/official/{hits[index % len(hits)]}.jpg"
+        choice = f"media/official/{hits[index % len(hits)]}.jpg"
+        _USED.add(choice)
+        return choice
     group = next((g for g, rx in TOPICS if re.search(rx, t)), "city")
     names = [n for n in (HOOK if index == 0 and group == "city" else POOL[group]) if _exists(n)] or \
             [n for g in POOL.values() for n in g if _exists(n)]
@@ -110,4 +121,5 @@ def pick(text, index, used=()):
     h = int(hashlib.md5(f"{t}|{index}".encode()).hexdigest(), 16)
     order = names[h % len(names):] + names[:h % len(names)]
     choice = next((n for n in order if f"media/official/{n}.jpg" not in used), order[0])
+    _USED.add(f"media/official/{choice}.jpg")
     return f"media/official/{choice}.jpg"

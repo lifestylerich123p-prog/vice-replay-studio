@@ -305,3 +305,9 @@
   11 AM (moved from Mon 9:30), Vice City tips Short Sun Nov 29 12:30 PM (re-check 'Rockstar hasn't confirmed' first),
   long video Mon Nov 30 3:30 PM; Spanish winners-only. Same morning (owner asks): website post-launch refresh,
   deals/codes pages, search-demand pages, stale + freshness monitoring, Amazon full-sale button.
+- 2026-11-24 ~11:30 AM ET, owner "Approve everything for good of the channel" (answering the 4 open questions):
+  (1) PHOTO CARDS: official Rockstar screenshots (vetted places/cars pool in studio/cardphotos.py, exact-name match first)
+  behind our lettering in Shorts and long videos, and the official map with pins/zoom (studio/mappins.py); trailer CLIPS
+  stay out; (2) money tier list Fri Nov 27 9:30 AM + key cloner Fri 12:30 PM (13 years and 3 records move to free 11 AM
+  slots); (3) the Spanish-only Ibai Short with the Viral Adam voice; (4) the "¿En español?" cross-promo comment on the
+  English tier list. Spanish winners-only, approvals for new uploads and the other rules stay.
