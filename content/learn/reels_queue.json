@@ -296,12 +296,6 @@
   "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
  },
  {
-  "at": "2026-11-28 17:30",
-  "episode": "episodes/gta6-trailer-views.json",
-  "item": "short",
-  "note": "moved from Wed 12:35: Wed had 5 posts (4/day cap); Sat has 3"
- },
- {
   "at": "2026-11-25 15:00",
   "episode": "episodes/gta6-no-60fps-ps5-pro.json",
   "item": "short",
@@ -318,6 +312,10 @@
   "item": "news",
   "note": "moved to Wed 5:30 PM: Sunday 8:30 PM went to the IShowSpeed top-3 Reel (4/day cap)",
   "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
+ },
+ {
+  "at": "2026-11-26 11:00",
+  "carousel": "content/carousels/gta6-secrets-map.json"
  },
  {
   "at": "2026-11-26 11:05",
@@ -340,6 +338,12 @@
   "at": "2026-11-28 15:00",
   "carousel": "content/carousels/gta-tier-list-critics.json",
   "note": "Nov 23 (owner \"1,2,4\": carousels in the new lettering style): every GTA ranked by Metacritic; 5 days after the tier-list Reel"
+ },
+ {
+  "at": "2026-11-28 17:30",
+  "episode": "episodes/gta6-trailer-views.json",
+  "item": "short",
+  "note": "moved from Wed 12:35: Wed had 5 posts (4/day cap); Sat has 3"
  },
  {
   "at": "2026-11-29 16:00",

@@ -138,10 +138,10 @@ def map_background(m):
     shade = Image.new("L", (W, H))
     sd = ImageDraw.Draw(shade)
     for yy in range(H):
-        sd.line([(0, yy), (W, yy)], fill=int(235 * max(0.0, (yy / H - 0.52) / 0.48) ** 1.2))
+        sd.line([(0, yy), (W, yy)], fill=int(245 * min(1.0, max(0.0, (yy / H - 0.40) / 0.30)) ** 1.1))
     im = Image.composite(Image.new("RGB", (W, H), brand.NIGHT), im, shade)
     f = brand.font(brand.BODY_FONT, 24)
-    ImageDraw.Draw(im).text((W - f.getlength("Map: Rockstar Games (official)") - 30, 150), "Map: Rockstar Games (official)",
+    ImageDraw.Draw(im).text((W - f.getlength("Map: Rockstar Games (official)") - 30, 200), "Map: Rockstar Games (official)",
                             font=f, fill=brand.NIGHT)
     return im
 

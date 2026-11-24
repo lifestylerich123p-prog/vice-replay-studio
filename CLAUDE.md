@@ -39,8 +39,10 @@ only for big news or long videos (`studio.quota` lists daytime first).
   rockstargames.com/VI/downloads, add only after viewing each. **Exact images first** (owner Nov 24): when a title or
   line names a car, place or character, use THAT official screenshot (`studio.cardphotos.exact`); Rockstar's pack was
   last updated Nov 4, 2026 and is all in media/official; never other people's images. **Map spots** (owner Nov 24): `studio.mappins` pins numbered spots on Rockstar's
-  official map by place name or the map's grid ("G7"): `pinned_map` for site pages/carousels/thumbnails, `zoom_clip`
-  for videos (only once official images are allowed in videos again); locations from 2+ guides, disagreements stated.
+  official map by place name or the map's grid ("G7"): `pinned_map` for site pages/thumbnails, carousel `map` pages
+  (studio/ig_cards.py), the `map` chart card in Shorts (zoom to a pin); pins live in `site/map-pins.json` (interactive map
+  on /guides/gta-6-map-leonida-places/ + /es/guias/mapa-gta-6/; `tools/map_tiles.py`, `tools/map_pictures.py`); only
+  labels printed on the map; locations from 2+ guides, disagreements stated.
 - **Lettering cards + real pictures** (owner Nov 22-23: "lettering and more modern style", no trailer imaging; Nov 24
   after the views drop, "Approve everything for good of the channel"): Shorts, long videos and Reels are our lettering
   cards (charts, quote, list, tier, versus, quiz) with a strong statement hook, or the owner's gameplay. Since Nov 24

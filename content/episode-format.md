@@ -84,6 +84,10 @@ Per-segment keys (all optional) in `short` / `segments`:
 - `callout`: {"x", "y", "r", "at", "label"?} a pink/cyan ring on screen (output coordinates 0-1).
 - `zoom`: {"x", "y", "to": 1.3-1.6, "at", "dur"} smooth punch-in toward a point.
 - `shots`: [{"media", "start", "speed"?, "focus"?, "dur"?}, ...] cuts between several clips inside one segment (pacing).
+- `map` chart (Nov 24, owner approved the official map in videos): `{"type": "map", "at": "Cottonmouth Lake", "label":
+  "Skunk Ape · night", "n": 2}` zooms Rockstar's official map from the whole state to that spot and pulses a pin
+  (`at` = a place printed on the map, see studio/mappins.PLACES, or a grid cell; `dx`/`dy` nudge it). For "where is X"
+  Shorts; the spot must be in site/map-pins.json (2+ guides). Example: episodes/gta6-ufo-where.json.
 - `chart` (Nov 22): our own animated graphic as the segment's picture (studio/charts.py), e.g.
   `{"type": "bars", "items": [["IShowSpeed, launch", 68.7], ["CarryMinati", 18.1]], "unit": "M", "highlight": 0,
   "note": "YouTube view counts, Nov 22"}` (a leaderboard that grows, max 6 rows) or `{"type": "counter", "value": 3.79,

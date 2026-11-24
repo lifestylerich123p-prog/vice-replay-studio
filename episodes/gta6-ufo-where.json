@@ -1,0 +1,199 @@
+{
+ "title": "Where to Find the UFO in GTA 6",
+ "slug": "gta6-ufo-where",
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_title": "GTA 6 has a real UFO: here's exactly where #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 has a real UFO: here's exactly where #GTA6 #Shorts",
+  "Where to find the UFO in GTA 6 (after 2 AM) #GTA6 #Shorts",
+  "GTA 6 UFO location: east of Port Gellhorn #GTA6 #Shorts"
+ ],
+ "short_description": "Where to find GTA 6's UFO: a country road just east of Port Gellhorn, in Kelly County (guides also say northwest of the Starlet Motel). Go alone after 2 AM, from Chapter 2 on, and look for an abandoned car with flashing lights on the roadside. It doesn't happen every night, so try again the next one. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: PowerPyx, The Click, Game8, GameSpot, Red Bull.",
+ "short_es": {
+  "title": "El OVNI de GTA 6 existe y está AQUÍ 👽 #GTA6 #Shorts",
+  "description": "Dónde encontrar el OVNI de GTA 6: una carretera rural justo al este de Port Gellhorn, en Kelly County. Ve solo después de las 2 AM, desde el capítulo 2, y busca un coche abandonado con luces intermitentes. No pasa todas las noches: si no está, vuelve la noche siguiente. Sin spoilers. Mapa interactivo en vicereplay.com/es/guias/mapa-gta-6/. Mapa: Rockstar Games (oficial). Fuentes: PowerPyx, The Click, Game8, GameSpot, Red Bull.",
+  "tags": [
+   "GTA 6 OVNI",
+   "GTA 6 ovni ubicación",
+   "GTA 6 aliens",
+   "GTA 6 secretos",
+   "GTA 6 easter eggs",
+   "GTA 6 mapa",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "Did it show up on your first night? Yes or no 👇",
+ "short_pinned_comment_es": "¿Te apareció la primera noche? Sí o no 👇",
+ "tags": [
+  "GTA 6 UFO",
+  "GTA 6 UFO location",
+  "GTA 6 aliens",
+  "GTA 6 easter eggs",
+  "GTA 6 secrets",
+  "GTA 6 Port Gellhorn",
+  "GTA 6 Kelly County",
+  "GTA 6 map",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6ufo",
+  "#gta6secrets"
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "guide": "gta-6-map-leonida-places",
+ "sources": [
+  "PowerPyx - GTA 6 UFO aliens easter egg location: https://www.powerpyx.com/gta-6-ufo-aliens-easter-egg-location/",
+  "The Click - GTA 6 UFO location: https://www.theclick.gg/gta-6-ufo-location/",
+  "Game8 - GTA 6 UFO easter egg: https://game8.co/games/GTA-6/archives/639367",
+  "GameSpot - GTA 6 has aliens and here's how to find them: https://www.gamespot.com/articles/gta-6-has-aliens-and-heres-how-to-find-them/",
+  "Red Bull - GTA 6 easter eggs: https://www.redbull.com/int-en/gta-6-easter-eggs"
+ ],
+ "facts_note": "Nov 24 map research (2+ guides): east of Port Gellhorn / NW of the Starlet Motel (both right; the motel isn't printed on Rockstar's map, so the pin marks the area east of town); after 2 AM (Dexerto's '2 PM' is the outlier); from Chapter 2 (= after Chapter 1); alone; not every night. The follow-up (alien base, keypad) is left out on purpose: it's the payoff.",
+ "short": [
+  {
+   "headline": "A REAL UFO",
+   "headline_es": "OVNI REAL",
+   "text": "GTA 6 has a real UFO. Here's exactly where.",
+   "text_es": "GTA seis tiene un OVNI de verdad. Te digo dónde.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 HAS",
+     "A REAL UFO"
+    ],
+    "pink": [
+     "A REAL UFO"
+    ],
+    "sub": "and exactly where to find it",
+    "seed": 31
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 TIENE",
+     "UN OVNI REAL"
+    ],
+    "pink": [
+     "UN OVNI REAL"
+    ],
+    "sub": "y dónde encontrarlo",
+    "seed": 31
+   }
+  },
+  {
+   "headline": "KELLY COUNTY",
+   "headline_es": "KELLY COUNTY",
+   "text": "Country roads just east of Port Gellhorn, in Kelly County.",
+   "text_es": "Carreteras rurales al este de Port Gellhorn, en Kelly County.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "dx": 0.05,
+    "label": "UFO · after 2 AM",
+    "n": 1
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "dx": 0.05,
+    "label": "OVNI · tras las 2 AM",
+    "n": 1
+   }
+  },
+  {
+   "headline": "AFTER 2 AM",
+   "headline_es": "DESPUÉS DE LAS 2",
+   "text": "Go after 2 AM, alone, from Chapter 2.",
+   "text_es": "Ve después de las dos de la mañana, solo, desde el capítulo dos.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "After 2 AM. Alone. Chapter 2 or later.",
+    "pink": [
+     "2 AM"
+    ],
+    "seed": 32,
+    "src": "PowerPyx · Game8 · The Click"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Después de las 2 AM. Solo. Desde el capítulo 2.",
+    "pink": [
+     "2 AM"
+    ],
+    "seed": 32,
+    "src": "PowerPyx · Game8 · The Click"
+   }
+  },
+  {
+   "headline": "LOOK FOR THIS",
+   "headline_es": "BUSCA ESTO",
+   "text": "Look for an abandoned car with flashing lights.",
+   "text_es": "Busca un coche abandonado con luces parpadeando.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "AN ABANDONED CAR",
+     "LIGHTS FLASHING"
+    ],
+    "pink": [
+     "LIGHTS FLASHING"
+    ],
+    "seed": 33
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "UN COCHE ABANDONADO",
+     "LUCES PARPADEANDO"
+    ],
+    "pink": [
+     "LUCES PARPADEANDO"
+    ],
+    "seed": 33
+   }
+  },
+  {
+   "headline": "NOT EVERY NIGHT",
+   "headline_es": "NO CADA NOCHE",
+   "text": "No car? It doesn't happen every night. Try again, because",
+   "text_es": "¿No está? No pasa todas las noches. Vuelve, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "No car? Try the next night.",
+    "pink": [
+     "next night"
+    ],
+    "sub": "It doesn't happen every night",
+    "seed": 34
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "¿No está? Vuelve la noche siguiente.",
+    "pink": [
+     "noche siguiente"
+    ],
+    "sub": "No pasa todas las noches",
+    "seed": 34
+   }
+  }
+ ]
+}
