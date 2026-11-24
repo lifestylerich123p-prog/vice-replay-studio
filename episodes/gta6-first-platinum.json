@@ -1,0 +1,178 @@
+{
+ "series": "News",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (GTA 6-style lettering cards, Nov 23)",
+ "momentum_followup_of": "gta6-first-to-finish (559 views, 17/h vs a 3/h median on Nov 23)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "title": "GTA 6's Platinum Trophy Is Already Taken",
+ "slug": "gta6-first-platinum",
+ "short_title": "GTA 6's Platinum trophy is already taken #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6's Platinum trophy is already taken #GTA6 #Shorts",
+  "GTA 6: someone already has the Platinum #GTA6 #Shorts",
+  "GTA 6's 200-hour Platinum is already done #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6's Platinum trophy, \"Vice Got a Price!\", needs 100% completion and every other trophy; trophy guides estimate up to about 200 hours. In launch week, the fan trophy tracker PSNProfiles listed a PS5 player, Danpool85, as the first to earn it (reported by GamingBible, TheGamer and Tech4Gamers). PSNProfiles isn't run by PlayStation, and Rockstar and Sony haven't confirmed a world first. How long will your Platinum take?\n\nSources: GamingBible, TheGamer, Tech4Gamers, GGRecon, KeenGamer.",
+ "short_es": {
+  "title": "El platino de GTA 6 YA tiene dueño 🏆 #GTA6 #Shorts",
+  "description": "El trofeo platino de GTA 6, \"Vice Got a Price!\", pide el 100% del juego y todos los demás trofeos; las guías calculan hasta unas 200 horas. En la semana del lanzamiento, el rastreador de trofeos PSNProfiles (no es de PlayStation) mostró a un jugador de PS5, Danpool85, como el primero en conseguirlo, según GamingBible, TheGamer y Tech4Gamers. Rockstar y Sony no lo confirmaron. ¿Cuánto te va a tomar a ti?",
+  "tags": [
+   "GTA 6 platino",
+   "GTA 6 trofeos",
+   "GTA 6 100%",
+   "GTA 6 cuanto dura",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "How long will your Platinum take: 50, 100 or 200+ hours? 👇",
+ "short_pinned_comment_es": "¿Cuánto te va a tomar el platino: 50, 100 o 200+ horas? 👇",
+ "tags": [
+  "GTA 6 platinum",
+  "GTA 6 platinum trophy",
+  "GTA 6 trophies",
+  "GTA 6 100%",
+  "GTA 6 first platinum",
+  "GTA 6 how long to beat",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#platinum",
+  "#trophyhunter"
+ ],
+ "sources": [
+  "GamingBible - GTA 6's first platinum trophy has been unlocked, and here's how long it took (Nov 23, 2026): https://www.gamingbible.com/news/gta-6-first-platinum-trophy-unlocked-how-long-909175-20261123",
+  "TheGamer - Someone has already managed to unlock GTA 6's Platinum trophy: https://www.thegamer.com/gta-6-first-person-platinum-trophy/",
+  "Tech4Gamers - A fan has already unlocked the first Platinum trophy in GTA 6 (PSNProfiles): https://tech4gamers.com/fan-unlocks-gta-6-platinum-trophy/",
+  "GGRecon - GTA 6's trophy list is out, and the Platinum needs 100%: https://www.ggrecon.com/articles/gta-6-trophies-achievements-list-platinum/",
+  "KeenGamer - GTA 6 trophy guide and Platinum roadmap, all 55 trophies (100-200 hours): https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/"
+ ],
+ "short": [
+  {
+   "headline": "ALREADY TAKEN",
+   "headline_es": "YA TIENE DUEÑO",
+   "text": "Someone already has GTA 6's Platinum trophy.",
+   "text_es": "Alguien ya tiene el trofeo platino de GTA seis.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6's PLATINUM",
+     "IS ALREADY TAKEN"
+    ],
+    "pink": [
+     "ALREADY TAKEN"
+    ],
+    "sub": "launch week · PS5",
+    "seed": 11
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "EL PLATINO DE GTA 6",
+     "YA TIENE DUEÑO"
+    ],
+    "pink": [
+     "YA TIENE DUEÑO"
+    ],
+    "sub": "semana del lanzamiento · PS5",
+    "seed": 11
+   }
+  },
+  {
+   "headline": "100% NEEDED",
+   "headline_es": "HACE FALTA 100%",
+   "text": "It needs 100 percent completion and every other trophy. Guides say up to 200 hours.",
+   "text_es": "Pide el cien por ciento y todos los demás trofeos. Las guías hablan de hasta doscientas horas.",
+   "keep_media": true,
+   "chart": {
+    "type": "meter",
+    "value": 100,
+    "max": 100,
+    "label": "% completion",
+    "sub": "+ every other trophy · guides: up to 200 h",
+    "src": "GGRecon · KeenGamer",
+    "seed": 11
+   },
+   "chart_es": {
+    "type": "meter",
+    "value": 100,
+    "max": 100,
+    "label": "% completado",
+    "sub": "+ todos los trofeos · guías: hasta 200 h",
+    "src": "GGRecon · KeenGamer",
+    "seed": 11
+   }
+  },
+  {
+   "headline": "PLAYER ONE",
+   "headline_es": "EL PRIMERO",
+   "text": "Fan tracker PSNProfiles lists a PS5 player, Danpool85, as the first. Rockstar and Sony haven't confirmed it.",
+   "text_es": "El rastreador PSNProfiles dice que un jugador de PS5, Danpool85, fue el primero. Rockstar y Sony no lo confirmaron.",
+   "keep_media": true,
+   "chart": {
+    "type": "headline",
+    "kicker": "PSNPROFILES",
+    "text": "Danpool85 got it first",
+    "pink": [
+     "FIRST"
+    ],
+    "ticker": "PS5 · \"Vice Got a Price!\" · fan tracker, not confirmed by Rockstar or Sony",
+    "src": "GamingBible · TheGamer · Tech4Gamers",
+    "seed": 11
+   },
+   "chart_es": {
+    "type": "headline",
+    "kicker": "PSNPROFILES",
+    "text": "Danpool85 fue el primero",
+    "pink": [
+     "PRIMERO"
+    ],
+    "ticker": "PS5 · \"Vice Got a Price!\" · rastreador de fans, sin confirmar por Rockstar ni Sony",
+    "src": "GamingBible · TheGamer · Tech4Gamers",
+    "seed": 11
+   }
+  },
+  {
+   "headline": "YOUR TURN",
+   "headline_es": "TU TURNO",
+   "text": "How long will yours take? Tell me, because",
+   "text_es": "¿Cuánto te va a tomar a ti? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "HOW LONG WILL",
+     "YOURS TAKE?"
+    ],
+    "pink": [
+     "YOURS TAKE?"
+    ],
+    "seed": 11
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CUÁNTO TE",
+     "VA A TOMAR?"
+    ],
+    "pink": [
+     "VA A TOMAR?"
+    ],
+    "seed": 11
+   }
+  }
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, generated only if the English Short wins its first 24 h (winners-only since Nov 23)",
+ "guide": "gta-6-how-long-to-beat"
+}
