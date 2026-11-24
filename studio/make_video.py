@@ -842,6 +842,15 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     lst.write_text("".join(f"file '{p}'\n" for p in parts))
     raw = work / "joined.mp4"
     run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(raw)])
+    # Nov 24: one stream-copy join came out with a 120 fps time base (QC blocks it). Rare, so only then re-time to 30.
+    rate = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate",
+                           "-of", "csv=p=0", str(raw)], capture_output=True, text=True).stdout.strip()
+    if rate not in (f"{FPS}/1", "30000/1001"):
+        print(f"  joined video reports {rate} fps: re-timing to {FPS}")
+        fixed = work / "joined-cfr.mp4"
+        run(["ffmpeg", "-y", "-v", "error", "-i", str(raw), "-vf", f"fps={FPS}", "-c:v", "libx264", "-preset",
+             "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "copy", str(fixed)])
+        raw = fixed
     final = out_dir / f"{name}{'-preview' if preview else ''}.mp4"
     # Music: the episode's "music" file, else the first track in assets/music/, else the original theme
     # (generated on first use). "music": "none" turns it off; "sfx": false turns sound effects off.
