@@ -31,3 +31,20 @@ def test_refuses_english_token_and_unregistered_channel(monkeypatch):
         youtube_es.check_channel("t")
     monkeypatch.setattr(youtube_es, "config", lambda: cfg("UC_ES"))
     assert youtube_es.check_channel("t") == "UC_ES"
+
+
+def test_recent_uploads_lists_newest_with_ids(monkeypatch):
+    """Nov 24: the 3:25 AM run uses this to spot a Short the owner posted by hand (any title)."""
+    calls = []
+
+    def fake_req(method, url, tok, *a, **k):
+        calls.append(url)
+        if "channels?" in url:
+            return {"items": [{"contentDetails": {"relatedPlaylists": {"uploads": "UU_ES"}}}]}, 200
+        return {"items": [{"snippet": {"resourceId": {"videoId": "abc123"}, "publishedAt": "2026-11-25T00:10:00Z",
+                                       "title": "En el MIAMI de GTA 6 el DJ es Bad Bunny 🐰"}}]}, 200
+
+    monkeypatch.setattr(youtube_es, "req", fake_req)
+    got = youtube_es.recent_uploads("tok", 5)
+    assert got == [("abc123", "2026-11-25T00:10", "En el MIAMI de GTA 6 el DJ es Bad Bunny 🐰")]
+    assert "maxResults=5" in calls[1] and "playlistId=UU_ES" in calls[1]
