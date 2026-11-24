@@ -59,5 +59,16 @@
    "PUT channels": 1
   },
   "registry_est": 10000
+ },
+ "2026-11-24": {
+  "used": 1664,
+  "calls": {
+   "GET channels": 7,
+   "GET playlistItems": 4,
+   "GET videos": 2,
+   "POST videos": 1,
+   "GET playlists": 1,
+   "POST playlistItems": 1
+  }
  }
 }
