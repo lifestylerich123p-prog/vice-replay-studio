@@ -23,7 +23,7 @@ Read this first instead of searching the repo.
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
 | 2026-11-23 | gta6-vs-red-dead-2 | Short | GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers | - |
-| 2026-11-23 | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | - |
+| 2026-11-23 | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | short: sEg8EWL2XPA |
 | 2026-11-23 | gta6-update-no-patch-notes | Short | GTA 6 Got 3 Updates and Zero Patch Notes | short: KI-6wP_Jhik (private) |
 | 2026-11-23 | gta6-ultimate-vs-standard | Short | GTA 6: The $100 Edition Beat the $80 One | - |
 | 2026-11-23 | gta6-tier-list-critics | Short | GTA 6 Tier List: Every GTA Ranked by Critics | short: jQbv5GPR3dk |
@@ -36,7 +36,7 @@ Read this first instead of searching the repo.
 | 2026-11-23 | gta6-game-awards-explained | video | GTA 6 at The Game Awards 2026: All 8 Nominations Explained | - |
 | 2026-11-23 | gta6-game-awards-8-noms | Short | GTA 6 Has the Most Game Awards Nominations: 8 | - |
 | 2026-11-23 | gta6-first-platinum | Short | GTA 6's Platinum Trophy Is Already Taken | short: fckK4qbyd48 |
-| 2026-11-23 | gta6-black-friday-no-discount | Short | GTA 6 Black Friday: Take-Two Says No Discount | - |
+| 2026-11-23 | gta6-black-friday-no-discount | Short | GTA 6 Black Friday: Take-Two Says No Discount | short: pPYdMlKMaEI |
 | 2026-11-23 | gta6-80-hours | Short | GTA 6 Is Rockstar's Longest Story Ever: About 80 Hours | - |
 | 2026-11-23 | gta6-5-things | Short | GTA 6: 5 Things You Didn't Know (All Checked) | - |
 | 2026-11-23 | gta6-4-secrets | Short | 4 Secrets Players Just Found in GTA 6 | - |
@@ -47,7 +47,7 @@ Read this first instead of searching the repo.
 | 2026-11-23 | gta-tier-list-protagonists | Short | Every GTA Protagonist Ranked: CJ Isn't S Tier | - |
 | 2026-11-23 | gta-tier-list-maps | Short | Every GTA Map Ranked: Los Santos Is Only B Tier | - |
 | 2026-11-23 | gta-cities-quiz | Short | GTA Cities Quiz: Only Real Fans Get 3/3 | - |
-| 2026-11-22 | gta6-trailer-views | Short | GTA 6's First Trailer Is Still No. 1 (309M Views) | - |
+| 2026-11-22 | gta6-trailer-views | Short | GTA 6's First Trailer Is Still No. 1 (309M Views) | short: Zb40bCmejBQ |
 | 2026-11-22 | gta6-top-3-rides | Short | GTA 6: The Top 3 Rides in Rockstar's Gameplay | - |
 | 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 |
 | 2026-11-22 | gta6-no-darts | Short | GTA 6 Has No Darts. Rockstar Says Why | short: JYYfpuj-jwQ |

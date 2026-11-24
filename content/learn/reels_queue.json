@@ -278,10 +278,26 @@
   "item": "short"
  },
  {
+  "at": "2026-11-25 09:35",
+  "episode": "episodes/gta6-vs-gta5-fps.json",
+  "item": "short"
+ },
+ {
+  "at": "2026-11-25 11:05",
+  "episode": "episodes/gta6-black-friday-no-discount.json",
+  "item": "short"
+ },
+ {
   "at": "2026-11-25 12:00",
   "episode": "episodes/gta6-dexter-apartment.json",
   "item": "short",
   "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
+ },
+ {
+  "at": "2026-11-28 17:30",
+  "episode": "episodes/gta6-trailer-views.json",
+  "item": "short",
+  "note": "moved from Wed 12:35: Wed had 5 posts (4/day cap); Sat has 3"
  },
  {
   "at": "2026-11-25 15:00",
