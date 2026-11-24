@@ -1,0 +1,191 @@
+{
+ "title": "GTA 6's House That Was Hidden in a 2021 Game",
+ "slug": "gta6-2021-house",
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "night",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map pin, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6 house was hidden in a 2021 game #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 house was hidden in a 2021 game #GTA6 #Shorts",
+  "GTA 6: Rockstar hid this house in 2021? #GTA6 #Shorts",
+  "Where is the 2021 house in GTA 6? #GTA6 #Shorts"
+ ],
+ "short_description": "A house from a photo in 2021's GTA San Andreas Definitive Edition (in its alien-themed bar) has been matched to a real house in GTA 6, in Belville. Inside the garage: notes from someone convinced they live in a video game. Rockstar hasn't said whether it was planned back then. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: Dexerto, Kotaku, VGC, games.gg.",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "pinned_comment": "Planned in 2021 or added later? 👇",
+ "short_pinned_comment_es": "¿Planeado en 2021 o añadido después? 👇",
+ "short_es": {
+  "title": "Esta casa de GTA 6 estaba ESCONDIDA en 2021 🏠 #GTA6 #Shorts",
+  "description": "Una casa de una foto de GTA San Andreas Definitive Edition (2021) coincide con una casa real de GTA 6, en Belville. En el garaje: notas de alguien convencido de que vive en un videojuego. Rockstar no ha dicho si estaba planeado. Sin spoilers. Mapa interactivo en vicereplay.com/es/guias/mapa-gta-6/. Fuentes: Dexerto, Kotaku, VGC, games.gg.",
+  "tags": [
+   "GTA 6 casa 2021",
+   "GTA 6 secretos",
+   "GTA 6 easter eggs",
+   "GTA 6 Belville",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 2021 house",
+  "GTA 6 San Andreas house",
+  "GTA 6 Belville house",
+  "GTA 6 easter eggs",
+  "GTA 6 secrets",
+  "GTA 6 map",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6secrets",
+  "#gta6eastereggs"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "sources": [
+  "Dexerto - GTA 6 screenshot hidden in San Andreas back in 2021 was real: https://www.dexerto.com/gta/gta-6-screenshot-hidden-in-san-andreas-back-in-2021-was-real-and-the-house-has-a-dark-secret-3429837/",
+  "Kotaku - Turns out GTA San Andreas remastered was teasing GTA 6 back in 2021: https://kotaku.com/turns-out-gta-san-andreas-remastered-was-teasing-gta-6-back-in-2021-2000758132",
+  "VGC - GTA 6 players discover our real first look was likely hidden in a 2021 remaster: https://www.videogameschronicle.com/news/gta-6-players-discover-our-real-first-look-at-the-game-was-likely-hidden-in-a-2021-remaster/",
+  "games.gg - GTA 6 Belville house 2021 image: https://games.gg/news/gta-6-belville-house-2021-image/"
+ ],
+ "facts_note": "Nov 24: the photo was in San Andreas Definitive Edition (2021, not 2004), in the alien-themed bar (VGC, Kotaku); matched to a house in Belville, Leonard County (games.gg, GTA Wiki mapping project via Dexerto); garage holds a conspiracy theorist's notes (Dexerto, Kotaku). Rockstar hasn't said whether it was planned in 2021 (GameSpot/Kotaku): stated. We don't show the 2021 image (not a GTA 6 official screenshot). Possibly the same garage as our 'NPC who knows it's a game' pin; not claimed. Re-check right before posting.",
+ "short": [
+  {
+   "headline": "HIDDEN IN 2021",
+   "headline_es": "ESCONDIDA EN 2021",
+   "text": "This GTA 6 house was hiding in a 2021 game. Here's where.",
+   "text_es": "Esta casa de GTA seis estaba escondida en un juego de 2021. Aquí está.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "THIS GTA 6 HOUSE",
+     "WAS HIDDEN IN 2021"
+    ],
+    "pink": [
+     "HIDDEN IN 2021"
+    ],
+    "seed": 171
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "ESTA CASA DE GTA 6",
+     "SE VIO EN 2021"
+    ],
+    "pink": [
+     "EN 2021"
+    ],
+    "seed": 171
+   }
+  },
+  {
+   "headline": "BELVILLE",
+   "headline_es": "BELVILLE",
+   "text": "It's in Belville, in Leonard County.",
+   "text_es": "Está en Belville, en Leonard County.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Belville",
+    "label": "The 2021 house",
+    "n": 1,
+    "src": "games.gg · Dexerto"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Belville",
+    "label": "La casa de 2021",
+    "n": 1,
+    "src": "games.gg · Dexerto"
+   }
+  },
+  {
+   "headline": "SAN ANDREAS, 2021",
+   "headline_es": "SAN ANDREAS, 2021",
+   "text": "In 2021, the San Andreas remaster hung a photo of this exact house in its alien bar.",
+   "text_es": "En 2021, el remaster de San Andreas tenía una foto de esta misma casa en su bar de aliens.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "2021: its photo hung in San Andreas Definitive Edition.",
+    "pink": [
+     "2021"
+    ],
+    "seed": 171,
+    "src": "VGC · Kotaku"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "2021: su foto colgaba en San Andreas Definitive Edition.",
+    "pink": [
+     "2021"
+    ],
+    "seed": 171,
+    "src": "VGC · Kotaku"
+   }
+  },
+  {
+   "headline": "THE GARAGE",
+   "headline_es": "EL GARAJE",
+   "text": "And in the garage? Notes from someone sure they live in a video game.",
+   "text_es": "¿Y en el garaje? Notas de alguien seguro de que vive en un videojuego.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Inside the garage: someone sure they're in a video game.",
+    "pink": [
+     "video game"
+    ],
+    "seed": 171,
+    "src": "Dexerto · Kotaku"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "En el garaje: alguien seguro de que vive en un videojuego.",
+    "pink": [
+     "videojuego"
+    ],
+    "seed": 171,
+    "src": "Dexerto · Kotaku"
+   }
+  },
+  {
+   "headline": "PLANNED?",
+   "headline_es": "¿PLANEADO?",
+   "text": "Rockstar hasn't said if it was planned. What do you think? Because",
+   "text_es": "Rockstar no ha dicho si estaba planeado. ¿Tú qué crees? Porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "PLANNED IN 2021",
+     "OR ADDED LATER?"
+    ],
+    "pink": [
+     "OR ADDED LATER?"
+    ],
+    "seed": 171
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿PLANEADO EN 2021",
+     "O AÑADIDO DESPUÉS?"
+    ],
+    "pink": [
+     "O AÑADIDO DESPUÉS?"
+    ],
+    "seed": 171
+   }
+  }
+ ]
+}

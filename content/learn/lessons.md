@@ -276,3 +276,9 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   where-to-find first, a "save this" nudge on them, carousels only when they're genuinely save-worthy.
 - Retention (Nov 24 refresh): average Short is watched 68% (many rewatch). Viewers don't leave; YouTube shows us to
   too few people. The fix is the first frame + topic (search phrases, tips), not shorter Shorts.
+- Opening review (Nov 24, independent reviewer on 4 booked Shorts, scores 4-7/10): all four opened on a static
+  two-line card until ~3 s; the payoff (pin, board) came at 3.3-3.9 s, after the swipe decision. Fixed in the renderer
+  for every Short: payoff picture in frame one, lettering slam in the first 300 ms, no duplicate tags/captions, bigger
+  tier board, follow badge moved above YouTube's title overlay, map zooms kept inside the printed map and off the
+  "LEONIDA" title art. Facts: the egg tower's region isn't settled (Bluegrass vs South Vice-Dale; IBTimes: not
+  independently established), so always say "guides point to".

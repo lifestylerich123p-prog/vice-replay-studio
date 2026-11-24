@@ -28,6 +28,16 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
    - Hook (Nov 22 data): the FIRST sentence is a statement of the surprising result, 3-10 words, never a question
      (questions first kept 35% of viewers vs 60%); templates in resources/hooks-and-titles.md. `studio.vice publish`
      blocks a question opener.
+   - **Payoff in the first frame** (Nov 24 independent review: our openings held a static card ~3 s before the answer
+     showed): when segment 1 is a `kinetic` hook and segment 2 is a map / tier / list / versus / bars / counter / meter
+     card, the renderer opens on segment 2's FINISHED picture (the pinned map, the filled board) with the hook lettering
+     slammed on top, no captions or tag repeating it; segment 2 then starts close to the pin instead of zooming out to
+     the whole state. So: write the hook as 2 short lines (≤ 8 words) and make segment 2 the answer card. Turn it off
+     with `"payoff": false` on segment 1 (or `"payoff_hook": false` on the episode), e.g. for a quiz.
+   - One text layer per idea: a tag that repeats the card's own lettering is dropped, and hook captions are dropped
+     when half the spoken words are already on the hook card. Keep `sub` lines for something NEW (they're now white,
+     bigger, on a plate). Before writing a new topic, search `content/learn/uploads.json` titles + `episodes/` for it
+     (Nov 24: cheats, mission replay and Dog Island had been drafted again by mistake).
    - Make Shorts loop: the last line should flow back into the first (e.g. ends "...and that's why" while
      the hook starts with the reason), so replays count as extra watch time.
    - `pinned_comment`: one question for the comments that's easy to answer (pick-one or a number), posted and

@@ -104,14 +104,14 @@
    "chart": {
     "type": "map",
     "at": "Port Gellhorn",
-    "dx": 0.05,
+    "dx": 0.057,
     "label": "UFO · after 2 AM",
     "n": 1
    },
    "chart_es": {
     "type": "map",
     "at": "Port Gellhorn",
-    "dx": 0.05,
+    "dx": 0.057,
     "label": "OVNI · tras las 2 AM",
     "n": 1
    }

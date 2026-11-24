@@ -1,0 +1,239 @@
+{
+ "title": "GTA 6 Cops Remember Your Outfit: How to Lose Them",
+ "slug": "gta6-cops-remember",
+ "series": "How To",
+ "format": "tips/discovery",
+ "mood": "tension",
+ "use_gameplay": false,
+ "style": "vice (lettering cards, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6 cops remember your outfit #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 cops remember your outfit #GTA6 #Shorts",
+  "GTA 6: how to lose the cops (new wanted system) #GTA6 #Shorts",
+  "GTA 6 police track your face, clothes and car #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6's wanted system doesn't just run out on a timer. Police track your face, your clothes and your car (icons under the wanted stars show what they know), and the area of the crime stays hot after you escape. To lose them: change clothes, switch cars and get out of the area. No story spoilers.\n\nSources: GamesRadar, Engadget, VICE, games.gg, GTABase.",
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "What's your escape plan: new outfit or new car? 👇",
+ "short_pinned_comment_es": "¿Cuál es tu plan de escape: ropa nueva o coche nuevo? 👇",
+ "short_es": {
+  "title": "La POLICÍA de GTA 6 recuerda tu ropa 🚨 #GTA6 #Shorts",
+  "description": "En GTA 6 la búsqueda no se acaba con un temporizador. La policía rastrea tu cara, tu ropa y tu coche (los iconos bajo las estrellas muestran lo que saben), y la zona del crimen sigue caliente. Para perderlos: cambia de ropa, de coche y sal de la zona. Sin spoilers. Fuentes: GamesRadar, Engadget, VICE, games.gg, GTABase.",
+  "tags": [
+   "GTA 6 policía",
+   "GTA 6 nivel de búsqueda",
+   "GTA 6 consejos",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 wanted system",
+  "GTA 6 police",
+  "GTA 6 how to lose cops",
+  "GTA 6 wanted level",
+  "GTA 6 heat system",
+  "GTA 6 tips",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6police"
+ ],
+ "guide": "gta-6-beginner-tips",
+ "sources": [
+  "GamesRadar - GTA 6 wanted system goes up to 6 stars and lets police track your face, your clothes and your car: https://www.gamesradar.com/games/grand-theft-auto/gta-6-wanted-system-goes-up-to-6-stars-and-lets-police-track-your-face-your-clothes-and-your-car/",
+  "Engadget - GTA 6's cops will remember you thanks to the 'Heat' system: https://engadget.com/2320983/gta-6s-cops-will-remember-you-thanks-to-the-heat-system/",
+  "VICE - GTA 6 wanted system explained: https://www.vice.com/en/article/gta-6-wanted-system-explained/",
+  "games.gg - GTA 6 police are harder to shake off: https://games.gg/news/gta-6-police-smarter-memory-radar/",
+  "GTABase - GTA 6 wanted level explained: https://www.gtabase.com/articles/gta-6/gta-6-wanted-level-explained-police-system-guide"
+ ],
+ "facts_note": "Nov 24: police track face, clothes and vehicle, shown as icons under the stars (GamesRadar, Engadget, VICE, games.gg); 6 stars; no simple timer reset; crime areas stay flagged/hot (GamesRadar, games.gg); lose them by changing clothes, switching vehicles, leaving the search area (VICE, GTABase, games.gg). Left out (one source only): splitting Jason and Lucia drops a star. Re-check right before posting.",
+ "short": [
+  {
+   "headline": "COPS REMEMBER",
+   "headline_es": "TE RECUERDAN",
+   "text": "GTA 6 cops remember your outfit.",
+   "text_es": "La policía de GTA seis recuerda tu ropa.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 COPS",
+     "REMEMBER YOUR OUTFIT"
+    ],
+    "pink": [
+     "REMEMBER YOUR OUTFIT"
+    ],
+    "seed": 191
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "LA POLICÍA",
+     "RECUERDA TU ROPA"
+    ],
+    "pink": [
+     "RECUERDA TU ROPA"
+    ],
+    "seed": 191
+   }
+  },
+  {
+   "headline": "WHAT THEY TRACK",
+   "headline_es": "LO QUE RASTREAN",
+   "text": "They track your face, your clothes and your car. The icons under your stars show it.",
+   "text_es": "Rastrean tu cara, tu ropa y tu coche. Lo ves en los iconos bajo las estrellas.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "POLICE TRACK YOUR...",
+    "items": [
+     [
+      "Face",
+      "YES"
+     ],
+     [
+      "Clothes",
+      "YES"
+     ],
+     [
+      "Car",
+      "YES"
+     ]
+    ],
+    "seed": 191,
+    "src": "GamesRadar · Engadget · VICE"
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "LA POLICÍA RASTREA...",
+    "items": [
+     [
+      "Cara",
+      "SÍ"
+     ],
+     [
+      "Ropa",
+      "SÍ"
+     ],
+     [
+      "Coche",
+      "SÍ"
+     ]
+    ],
+    "seed": 191,
+    "src": "GamesRadar · Engadget · VICE"
+   }
+  },
+  {
+   "headline": "HOT ZONES",
+   "headline_es": "ZONAS CALIENTES",
+   "text": "And the area stays hot after you escape. Go back too soon and the chase restarts.",
+   "text_es": "Y la zona sigue caliente aunque escapes. Si vuelves pronto, la persecución empieza otra vez.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "The crime area stays hot after you escape.",
+    "pink": [
+     "stays hot"
+    ],
+    "seed": 191,
+    "src": "GamesRadar · games.gg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "La zona del crimen sigue caliente aunque escapes.",
+    "pink": [
+     "sigue caliente"
+    ],
+    "seed": 191,
+    "src": "GamesRadar · games.gg"
+   }
+  },
+  {
+   "headline": "HOW TO LOSE THEM",
+   "headline_es": "CÓMO PERDERLOS",
+   "text": "To lose them: change clothes, switch cars and get out of the area.",
+   "text_es": "Para perderlos: cambia de ropa, de coche y sal de la zona.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "TO LOSE THEM",
+    "items": [
+     [
+      "Change clothes",
+      "YES"
+     ],
+     [
+      "Switch cars",
+      "YES"
+     ],
+     [
+      "Leave the area",
+      "YES"
+     ]
+    ],
+    "seed": 191,
+    "src": "VICE · GTABase · games.gg"
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "PARA PERDERLOS",
+    "items": [
+     [
+      "Cambia de ropa",
+      "SÍ"
+     ],
+     [
+      "Cambia de coche",
+      "SÍ"
+     ],
+     [
+      "Sal de la zona",
+      "SÍ"
+     ]
+    ],
+    "seed": 191,
+    "src": "VICE · GTABase · games.gg"
+   }
+  },
+  {
+   "headline": "YOUR PLAN?",
+   "headline_es": "¿TU PLAN?",
+   "text": "New outfit or new car first? Tell me, because",
+   "text_es": "¿Primero ropa nueva o coche nuevo? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "NEW OUTFIT",
+     "OR NEW CAR?"
+    ],
+    "pink": [
+     "OR NEW CAR?"
+    ],
+    "seed": 191
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿ROPA NUEVA",
+     "O COCHE NUEVO?"
+    ],
+    "pink": [
+     "O COCHE NUEVO?"
+    ],
+    "seed": 191
+   }
+  }
+ ]
+}

@@ -243,6 +243,8 @@ def kinetic_frame(base, spec, t, w, h):
     sunset (yellow-pink) fill instead of white-cyan."""
     img = base.copy().convert("RGBA")
     x0, y0, x1, y1 = region(w, h)
+    if spec.get("band") == "top" and h > w:  # payoff hook: lettering on top, the answer (pin, board) stays visible below
+        y0, y1 = int(h * 0.075), int(h * float(spec.get("band_y1", 0.285)))
     lines = [str(x) for x in spec.get("lines") or str(spec.get("text", "")).split("|")][:4]
     n = len(lines)
     times = _times(n, spec.get("_dur", 3.0))
@@ -261,15 +263,21 @@ def kinetic_frame(base, spec, t, w, h):
         spr = lettering(line.upper(), size, int((x1 - x0) * 0.98), *((YELLOW, brand.PINK, brand.CYAN) if pink else
                                                                     (brand.WHITE, brand.CYAN, brand.PINK)))
         cy = y0 + slot * (k + 0.5) + (y1 - y0 - slot * n) / 2
-        if cover:  # visible from frame one; each line still pulses on its beat
-            pulse = 0.14 * (1 - _ease((t - t0) / 0.25)) if t >= t0 else 0.0
+        if cover:  # visible from frame one; each line slams on its beat (Nov 24 review: motion in the first 300 ms)
+            pulse = 0.30 * (1 - _ease((t - t0) / 0.24)) if t >= t0 else 0.0
             place(img, spr, (x0 + x1) / 2 + ox, cy + oy, scale=1.0 + pulse)
         else:
             place(img, spr, (x0 + x1) / 2 + ox, cy + oy, scale=1.0 + 0.45 * (1 - _back(p)), alpha=min(1.0, p * 1.6))
-    if spec.get("sub") and t > times[-1] + 0.2:
-        d = ImageDraw.Draw(img)
-        _small(d, str(spec["sub"]), (x0 + x1) / 2, y1 + int(h * 0.004), int(w * 0.04), fill=(230, 220, 245),
-               max_w=x1 - x0)
+    if spec.get("sub") and t > times[-1] + 0.2 and spec.get("band") != "top":
+        d = ImageDraw.Draw(img)  # Nov 24 review: the grey 4% sub line was unreadable on a phone; white, bigger, plated
+        f = brand.font(brand.BODY_FONT, int(w * 0.047))
+        sub = str(spec["sub"])
+        while f.getlength(sub) > (x1 - x0) and f.size > 24:
+            f = brand.font(brand.BODY_FONT, f.size - 2)
+        tw, cx = f.getlength(sub), (x0 + x1) / 2
+        yy = y1 + int(h * 0.006)
+        d.rounded_rectangle([cx - tw / 2 - 18, yy - 8, cx + tw / 2 + 18, yy + f.size + 14], radius=14, fill=(13, 7, 23, 200))
+        d.text((cx - tw / 2, yy), sub, font=f, fill=brand.WHITE)
     return img.convert("RGB")
 
 
@@ -360,18 +368,23 @@ def versus_frame(base, spec, t, w, h):
     return img.convert("RGB")
 
 
+TIER_BOX_V = (0.05, 0.265, 0.895, 0.625)  # Shorts: taller board, clear of the right-hand buttons and the captions
+
+
 def tier_frame(base, spec, t, w, h):
     """A tier list: S/A/B/C/D rows (colored letters), items drop into their row one by one. rows: [["S", "item"] or
     ["S", ["item", "item"]]]; optional `title` above."""
     img = base.copy().convert("RGBA")
     x0, y0, x1, y1 = region(w, h)
+    if h > w:  # Nov 24 review: the board filled ~25% of a phone screen with ~30 px items and ran under the like button
+        x0, y0, x1, y1 = TIER_BOX_V[0] * w, TIER_BOX_V[1] * h, TIER_BOX_V[2] * w, TIER_BOX_V[3] * h
     d = ImageDraw.Draw(img)
     rows = [(str(r[0]), (r[1] if isinstance(r[1], list) else [r[1]]) if len(r) > 1 else []) for r in
             spec.get("rows") or []][:5]
     static = {str(x) for x in spec.get("static") or []}  # rows already filled in an earlier segment: no animation
     top = y0
     if spec.get("title"):
-        top += _small(d, str(spec["title"]).upper(), (x0 + x1) / 2, y0, int(w * 0.05), fill=brand.WHITE,
+        top += _small(d, str(spec["title"]).upper(), (x0 + x1) / 2, y0, int(w * (0.046 if h > w else 0.05)), fill=brand.WHITE,
                       max_w=x1 - x0, font=brand.HEADLINE_FONT) + int(h * 0.012)
     rh = (y1 - top) / max(1, len(rows))
     items = [(ri, it) for ri, (lab, its) in enumerate(rows) for it in its if lab not in static]
@@ -400,7 +413,7 @@ def tier_frame(base, spec, t, w, h):
             if p <= 0:
                 cx += per + w * 0.015
                 continue
-            size = int(rh * 0.30)
+            size = int(rh * (0.36 if h > w else 0.30))
             while True:
                 fi = brand.font(brand.BODY_FONT, size)
                 if fi.getlength(it) <= per - w * 0.03 or size <= 14:

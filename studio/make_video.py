@@ -567,6 +567,16 @@ def _said_by_card(headline, chart):
     words = _re.findall(r"[A-Z0-9$%]+", headline.upper())
     return bool(words) and all(w_ in card for w_ in words)
 
+def _card_says_it(text, chart):
+    """True when at least half the spoken words are already in a lettering hook card (then captions only repeat it)."""
+    if (chart or {}).get("type") not in ("kinetic", "headline", "text"):
+        return False
+    import re as _re
+    card = set(_re.findall(r"[a-z0-9$%']+", " ".join(chart_words(chart)).lower()))
+    said = [x for x in _re.findall(r"[a-z0-9$%']+", text.lower()) if x not in ("a", "the", "and", "in", "of", "to")]
+    return bool(said) and sum(x in card for x in said) / len(said) >= 0.5
+
+
 def render_segment(i, seg, audio, w, h, vertical, work, enc):
     voice_dur = duration(audio)
     # "pad": seconds held after the line (default 0.45); "hard_cut": no dip to black between segments. Montage Shorts
@@ -586,6 +596,16 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
                 print(f"  ! segment {i}: Spanish render shows the English chart text {chart_words(chart)}; add `chart_es`")
         if vertical and i == 0:  # a Short's first frame is its cover: show the whole hook card at once
             chart = dict(chart, cover=True)
+        if vertical and i == 0 and seg.get("_payoff") and chart.get("type") == "kinetic":
+            # Nov 24 review ("show the payoff in the first frame"): the hook lettering sits on top of the next card's
+            # finished picture (the pinned map, the tier board) instead of a photo card that says nothing yet.
+            nxt = seg["_payoff"]
+            pc = nxt.get("chart_es") if seg.get("_lang") == "es" and nxt.get("chart_es") else nxt["chart"]
+            band_y1 = 0.285
+            if pc.get("type") == "tier":  # the taller Shorts board starts at 26.5%: lettering above it, no board title
+                pc, band_y1 = dict(pc, title=None), 0.25
+            st = charts.still(pc, w, h, work / f"payoff_{i}.png", seed=i + 1)
+            chart = dict(chart, bg=f"still:{st}", band="top", band_y1=band_y1)
         if "bg" not in chart and chart.get("type") != "map" and seg.get("_card_photos", True):  # photo cards (owner approved Nov 24)
             from . import cardphotos
             if cardphotos.enabled():
@@ -605,14 +625,19 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     vin, vf = visual_input(media, dur, w, h, i, work, seg.get("media_start"))
     vf = seg_effects(seg, vf, w, h, dur)
     ov = work / f"ov_{i}.png"
+    lang_ = seg.get("_lang", "en")
     slab = seg.get("headline", "")
-    if vertical and i == 0 and seg.get("chart") and slab and _said_by_card(slab, seg["chart"]):
-        slab = ""  # Nov 24 hook v2: the hook card already shouts it; one statement instead of three
+    if vertical and seg.get("chart") and slab and (_said_by_card(slab, seg.get("chart_es") if lang_ == "es" and
+                                                    seg.get("chart_es") else seg["chart"]) or (i == 0 and seg.get("_payoff"))):
+        slab = ""  # Nov 24 hook v2 + review: the card already shouts it; one statement instead of three (any segment)
     brand.headline_card(slab, w, h, vertical, seg.get("cta")).save(ov)
     lang = seg.get("_lang", "en")
     times = align_words(seg["text"], audio, lang) if seg.get("_align", True) else None
     seg["_aligned"] = bool(times)
     subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical, times=times, lang=lang)
+    caps = f"subtitles='{subs}':fontsdir='{brand.FONTS}',"
+    if vertical and i == 0 and _card_says_it(seg["text"], seg.get("chart")):
+        caps = ""  # Nov 24 review: one text layer per idea; the hook lettering already says what the voice says
     out = work / f"seg_{i:02d}.mp4"
     hard = bool(seg.get("hard_cut", vertical))
     fade_in = "" if (vertical and i == 0) or hard else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
@@ -623,7 +648,7 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
         extra = ["-loop", "1", "-i", str(callout_png(c, w, h, work / f"callout_{i}.png"))]
         co = f"[c0];[c0][3:v]overlay=0:0:enable='gte(t,{c.get('at', 0)})'"
     fc = (f"[0:v]{vf},setsar=1,fps={FPS}[bg];[bg][1:v]overlay=0:0{co},"
-          f"subtitles='{subs}':fontsdir='{brand.FONTS}',"
+          f"{caps}"
           f"{fade_in}{fade_out}[v];"
           f"[2:a]adelay=200|200,apad,atrim=0:{dur},aformat=sample_rates=48000:channel_layouts=stereo[a]")
     run(["ffmpeg", "-y", "-v", "error", *vin, "-loop", "1", "-i", str(ov), "-i", str(audio), *extra,
@@ -808,6 +833,24 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
         t += duration(intro)
     from . import cardphotos
     cardphotos.reset()  # photo cards: no picture twice in one video
+    from . import charts as _charts
+    if vertical and len(segments) > 1 and ep.get("payoff_hook", True) and segments[0].get("payoff", True) and \
+            (segments[0].get("chart") or {}).get("type") == "kinetic" and \
+            (segments[1].get("chart") or {}).get("type") in _charts.PAYOFF_TYPES:
+        nxt = segments[1]
+        if "bg" not in nxt["chart"] and nxt["chart"]["type"] != "map" and nxt.get("_card_photos", True) \
+                and cardphotos.enabled():  # pick the next card's photo now, so the hook shows the same picture
+            words = " ".join(str(nxt.get(k, "")) for k in ("headline", "text")) + " " + " ".join(chart_words(nxt["chart"]))
+            ph = cardphotos.pick(words, 1, used=nxt.get("_photos_used", ()))
+            if ph:
+                for key in ("chart", "chart_es"):
+                    if nxt.get(key):
+                        nxt[key] = dict(nxt[key], bg=f"photo:{ph}")
+        if nxt["chart"]["type"] == "map":  # the hook already showed the pinned map: no zoom back out to the state
+            for key in ("chart", "chart_es"):
+                if nxt.get(key):
+                    nxt[key] = dict(nxt[key], z0=min(1.0, float(nxt[key].get("to", 0.28)) * 1.6))
+        segments[0]["_payoff"] = nxt
     for i, seg in enumerate(segments):
         print(f"[{i + 1}/{len(segments)}] {seg.get('headline') or seg['text'][:40]}")
         # a ready-made voice file (e.g. an Everygen voiceover) wins over TTS: "audio" (English) / "audio_es"

@@ -125,11 +125,13 @@ def headline_card(text, w, h, vertical=False, cta=None):
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     if cta:
-        f = font(HEADLINE_FONT, int(h * 0.032))
+        f = font(HEADLINE_FONT, int(h * (0.028 if vertical else 0.032)))
         tw = f.getlength(cta)
         px, py = int(h * 0.022), int(h * 0.012)
         x = (w - tw) / 2
-        y = int(h * 0.755)
+        # Nov 24 review: at 75.5% the pill sat under YouTube's own title/channel overlay on a phone. Now just above the
+        # captions, inside the safe zone (y 288-1248 on a 1920-tall Short).
+        y = int(h * (0.612 if vertical else 0.755))
         d.rounded_rectangle([x - px, y - py, x + tw + px, y + f.size + py], radius=int(f.size * 0.6), fill=CYAN + (240,))
         d.text((x, y - f.size * 0.04), cta, font=f, fill=(13, 7, 23))
     if text:

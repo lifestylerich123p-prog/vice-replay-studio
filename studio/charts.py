@@ -387,6 +387,10 @@ def quiz_frame(base, spec, t, w, h):
 _MAP = {}
 
 
+MAP_AREA = (200, 200, 5575, 7700)  # the printed map inside the poster's white grid border (5775 x 7900 poster)
+MAP_ARTWORK = [(3950, 6200, 5250, 7350), (420, 380, 1420, 1520)]  # seal + "LEONIDA" title; the "Visit Leonida" legend
+
+
 def map_frame(base, spec, t, w, h):
     """A "where is it" card (owner approved Nov 24: the official map with pins/zoom in videos): Rockstar's official
     Leonida map, starting on the whole state and zooming to `at` (a place printed on the map, a grid cell like "G7", or
@@ -403,12 +407,35 @@ def map_frame(base, spec, t, w, h):
     p = min(1.0, t / (dur * 0.55))
     e = 1 - (1 - p) ** 3
     vh0 = min(H, W * h / w)                   # start: the whole map (height on a Short, width on a 16:9 video)
+    sx, sy = W / 2, H / 2
+    if spec.get("z0"):  # after a payoff hook already showed the pin: start closer, on the spot, and push in
+        vh0, sx, sy = min(vh0, W * float(spec["z0"]) * h / w), tx, ty
     vh1 = W * float(spec.get("to", 0.28)) * h / w
     vh = vh0 * (1 - e) + vh1 * e
     vw = vh * w / h
-    cx = (W / 2) * (1 - e) + tx * e
-    cy = (H / 2) * (1 - e) + ty * e
-    x0, y0 = max(0, min(W - vw, cx - vw / 2)), max(0, min(H - vh, cy - vh / 2))
+    cx = sx * (1 - e) + tx * e
+    cy = sy * (1 - e) + ty * e
+    # Nov 24 review: zooms near the coast showed the poster's white border (grid ruler digits, a cut-off "L").
+    # Keep the view inside the printed map (MAP_AREA); while the view is still wider than it, keep it all in view.
+    ax0, ay0, ax1, ay1 = MAP_AREA
+
+    def _fit(c, v, a0, a1, full):
+        lo, hi = min(a0, a1 - v), max(a0, a1 - v)
+        return max(0, min(full - v, max(lo, min(hi, c - v / 2)))) if v <= full else (full - v) / 2
+    x0, y0 = _fit(cx, vw, ax0, ax1, W), _fit(cy, vh, ay0, ay1, H)
+    # ...and slide a zoomed view off the poster's own artwork (the "GREAT STATE OF LEONIDA" seal + title, the legend):
+    # the smallest move that keeps the pin between 15% and 85% of the frame, blended in with the zoom (no jump).
+    for bx0, by0, bx1, by1 in MAP_ARTWORK:
+        if x0 < bx1 and x0 + vw > bx0 and y0 < by1 and y0 + vh > by0 and not (bx0 <= tx <= bx1 and by0 <= ty <= by1):
+            moves = []
+            for nx, ny in ((bx0 - vw, y0), (bx1, y0), (x0, by0 - vh), (x0, by1)):
+                ok = (0.15 <= (tx - nx) / vw <= 0.85 and 0.15 <= (ty - ny) / vh <= 0.85 and ax0 <= nx and
+                      nx + vw <= ax1 and ay0 <= ny and ny + vh <= ay1)
+                if ok:
+                    moves.append((abs(nx - x0) + abs(ny - y0), nx, ny))
+            if moves:
+                _, nx, ny = min(moves)
+                x0, y0 = x0 + (nx - x0) * e, y0 + (ny - y0) * e
     if vw > W:                                # wider than the map: centre it on a dark band
         x0 = (W - vw) / 2
     frame = im.crop((int(x0), int(y0), int(x0 + vw), int(y0 + vh))).resize((w, h), Image.BILINEAR)
@@ -437,6 +464,9 @@ def _source_line(img, spec, w, h):
     rewards visible research; viewers see where a number comes from (owner rule: facts checked in 2+ sources)."""
     d = ImageDraw.Draw(img)
     x0, y0, x1, y1 = _region(w, h)
+    if spec.get("type") == "tier" and h > w:  # the taller Shorts board starts higher; keep the source above it
+        from .vicecards import TIER_BOX_V
+        y0 = int(TIER_BOX_V[1] * h)
     label = ("Fuente: " if spec.get("locale") == "es" else "Source: ") + str(spec["src"])
     size = int(min(w, h) * 0.026)
     fn = brand.font(brand.BODY_FONT, size)
@@ -495,6 +525,41 @@ def _photo_frame(base, p, w, h, t=None, hook=False):
     return base.crop((x0, y0, x0 + cw, y0 + ch)).resize((w, h), Image.BILINEAR)
 
 
+PAYOFF_TYPES = ("map", "tier", "versus", "list", "bars", "counter", "meter")  # cards whose finished state is an answer
+
+
+def still(spec, w, h, out, seed=0):
+    """The finished state of a card as a PNG (Nov 24 review: "show the payoff in the first frame"). A Short whose hook
+    is a lettering card and whose next segment is one of PAYOFF_TYPES opens on this picture with the hook lettering
+    over it, instead of a plain photo card, so the answer (the pin, the board) is on screen from frame one."""
+    from . import vicecards
+    kind = spec.get("type")
+    draw = vicecards.DRAW.get(kind) or DRAW.get(kind, bars_frame)
+    bgname = str(spec.get("bg", "vice" if kind in vicecards.DRAW else "gradient"))
+    photo = _photo_base(bgname[6:], w, h) if bgname.startswith("photo:") else None
+    sd = spec.get("seed", seed)
+    if photo is not None:
+        bg = _photo_frame(photo, 1.0, w, h)
+    elif bgname == "vice" or bgname.startswith("photo:"):
+        sk, horizon = vicecards.sky(w, h, sd)
+        bg = vicecards.frame_bg(sk, horizon, 5.0, w, h)
+    else:
+        bg = _backdrop(w, h, seed=sd)
+    spec = dict(spec, _dur=4.0, cover=True)
+    spec.pop("src", None)  # one text layer: the source line comes back on the card's own segment
+    draw(bg, spec, 60.0, w, h).convert("RGB").save(out, quality=95)
+    return Path(out)
+
+
+def _top_shade(w, h, upto=0.40):
+    """A dark gradient only where the hook lettering sits (top), so the payoff picture keeps its colour below it."""
+    m = Image.new("L", (1, h))
+    for y in range(h):
+        v = y / h
+        m.putpixel((0, y), int(255 * max(0.0, min(0.86, (upto - v) / upto * 1.25))) if v < upto else 0)
+    return m.resize((w, h)), Image.new("RGB", (w, h), (14, 4, 30))
+
+
 def render(spec, dur, w, h, out, seed=0):
     """Write an mp4 (no audio) of the animated chart, dur seconds long; returns its path. The GTA 6-style cards
     (studio/vicecards.py: kinetic, countdown, versus, tier, headline) and any chart with "bg": "vice" play on the
@@ -505,7 +570,12 @@ def render(spec, dur, w, h, out, seed=0):
     draw = vicecards.DRAW.get(kind) or DRAW.get(kind, bars_frame)
     bgname = str(spec.get("bg", "vice" if kind in vicecards.DRAW else "gradient"))
     photo = _photo_base(bgname[6:], w, h) if bgname.startswith("photo:") else None
-    vice = bgname == "vice" or (bgname.startswith("photo:") and photo is None)
+    shade = None
+    still_img = None
+    if bgname.startswith("still:") and Path(bgname[6:]).exists():  # payoff hook: the next card's finished picture
+        still_img = Image.open(bgname[6:]).convert("RGB").resize((w, h), Image.LANCZOS)
+        shade = _top_shade(w, h, upto=float(spec.get("band_y1", 0.285)) + 0.12)
+    vice = bgname == "vice" or (bgname[:6] in ("photo:", "still:") and photo is None)
     sd = spec.get("seed", seed)
     if vice:
         still, horizon = vicecards.sky(w, h, sd)
@@ -518,7 +588,13 @@ def render(spec, dur, w, h, out, seed=0):
                              "-pix_fmt", "yuv420p", str(out)], stdin=subprocess.PIPE)
     for f in range(max(1, int(round(dur * FPS)))):
         t = f / FPS
-        if photo is not None:  # Nov 24 photo cards: a real GTA 6 screenshot behind the lettering, slow zoom in
+        if still_img is not None:  # payoff hook: a quick punch (106% -> 100% in 0.3 s), then a slight push; the answer
+            k = 1 - (1 - min(1.0, t / 0.3)) ** 3  # stays where the next segment shows it (no drift under the lettering)
+            sc = 1.06 - 0.06 * k + 0.02 * (t / max(dur, 0.1))
+            big = still_img.resize((int(w * sc), int(h * sc)), Image.BILINEAR)
+            bx, by = (big.width - w) // 2, (big.height - h) // 2
+            bg = Image.composite(shade[1], big.crop((bx, by, bx + w, by + h)), shade[0])
+        elif photo is not None:  # Nov 24 photo cards: a real GTA 6 screenshot behind the lettering, slow zoom in
             bg = _photo_frame(photo, t / max(dur, 0.1), w, h, t=t, hook=bool(spec.get("cover")))
         else:
             bg = vicecards.frame_bg(still, horizon, t, w, h) if vice else base

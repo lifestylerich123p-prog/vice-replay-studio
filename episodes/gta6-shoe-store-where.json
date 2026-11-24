@@ -126,7 +126,8 @@
      "Footwear"
     ],
     "src": "PowerPyx · GTABase · Gamertweak",
-    "seed": 142
+    "seed": 142,
+    "bg": "photo:media/official/leonida-keys-01.jpg"
    },
    "chart_es": {
     "type": "text",
@@ -135,7 +136,8 @@
      "Calzado"
     ],
     "src": "PowerPyx · GTABase · Gamertweak",
-    "seed": 142
+    "seed": 142,
+    "bg": "photo:media/official/leonida-keys-01.jpg"
    }
   },
   {
@@ -153,7 +155,7 @@
     "pink": [
      "14 TO 17"
     ],
-    "sub": "depending on the guide",
+    "sub": "Map → Style → Footwear",
     "seed": 143
    },
    "chart_es": {
@@ -165,7 +167,7 @@
     "pink": [
      "DE 14 A 17"
     ],
-    "sub": "según la guía",
+    "sub": "Mapa → Estilo → Calzado",
     "seed": 143
    }
   }
