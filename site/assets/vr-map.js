@@ -9,6 +9,9 @@
   L.tileLayer("/img/map/{z}/{x}/{y}.webp", {bounds: bounds, noWrap: true, maxNativeZoom: Z, maxZoom: 6, tileSize: 256,
     attribution: es ? "Mapa: Rockstar Games (oficial) · pines: Vice Replay" : "Map: Rockstar Games (official) · pins: Vice Replay"}).addTo(map);
   map.fitBounds(bounds);
+  var small = function () { el.classList.toggle("vrsmall", map.getZoom() < 1.75); };
+  map.on("zoomend", small);
+  small();
   map.setMaxBounds(bounds.pad(0.15));
   map.attributionControl.setPrefix(false);
   var layers = {}, markers = {};

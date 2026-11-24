@@ -48,7 +48,7 @@ def map_image():
     return Image.open(HD_MAP).convert("RGB")
 VIEW_W, VIEW_H = 1023.4, 1400.0  # the 1400 px-high view the positions below were read from (Nov 24)
 
-# Label centers read off the official map (x, y in that view); every name is printed on Rockstar's map (all 37 checked
+# Label centers read off the official map (x, y in that view); every name is printed on Rockstar's map (the first 37 checked
 # against the HD poster on Nov 24; "Starlet Motel" was removed: it isn't printed, so a pin there was a guess).
 PLACES = {
     "Port Gellhorn": (312, 498), "Kelly County": (433, 553),
@@ -61,6 +61,11 @@ PLACES = {
     "South Vice-Dale": (632, 945), "Watson Bay": (442, 985), "Mariana County": (421, 1021),
     "Pelican Valley": (533, 1025), "Cottonmouth Lake": (536, 1078), "Gambit Bay": (566, 1106), "Key Lento": (581, 1165),
     "Southwind": (336, 1195), "Mile Zero Air Station": (281, 1218),
+    # Nov 24, second pass (map research): smaller labels, read the same way off the HD poster
+    "La Perle": (696, 650), "Crosstown": (713, 695), "Rockridge": (668, 697), "Bayside": (735, 661), "Salton": (636, 757),
+    "Waxman Island": (790, 745), "Southside": (634, 909), "Peacock Bay": (679, 894), "T.H. Power Station": (642, 1000),
+    "Frogswater": (443, 480), "Howe Dairy": (432, 527), "Tequesta Retreat": (742, 832), "Port Vice City": (808, 778),
+    "Paradise RV Park": (481, 953), "Gullet Marsh": (511, 1000), "Gellhorn": (365, 625),
 }
 COLS = {str(i + 1): x for i, x in enumerate([88, 193, 299, 405, 511, 617, 723, 829, 935])}
 ROWS = {r: y for r, y in zip("ABCDEFGHIJKLM", [76, 168, 274, 380, 487, 593, 698, 805, 912, 1018, 1124, 1231, 1327])}

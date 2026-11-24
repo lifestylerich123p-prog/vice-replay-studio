@@ -1,50 +1,567 @@
 {
  "about": "Pins for the interactive map (tools/site_guides.py interactive_map). 'at' = a place name printed on Rockstar's official map or its grid cell (studio.mappins.where); dx/dy nudge the pin (fractions of the map). Every spot needs 2+ guides in 'src'; say so in the text when guides disagree. No story spoilers, nothing from leaks, nothing sexualized.",
+ "checked": "2026-11-24",
  "cats": [
-  {"id": "places", "color": "#9B6BFF", "en": "Places to know", "es": "Lugares clave"},
-  {"id": "eggs", "color": "#FF1F8E", "en": "Easter eggs", "es": "Easter eggs"},
-  {"id": "wild", "color": "#00E5D2", "en": "Wildlife & mysteries", "es": "Fauna y misterios"},
-  {"id": "cars", "color": "#FFC531", "en": "Cars & garages", "es": "Coches y garajes"}
+  {
+   "id": "places",
+   "color": "#9B6BFF",
+   "en": "Places to know",
+   "es": "Lugares clave"
+  },
+  {
+   "id": "eggs",
+   "color": "#FF1F8E",
+   "en": "Easter eggs",
+   "es": "Easter eggs"
+  },
+  {
+   "id": "wild",
+   "color": "#00E5D2",
+   "en": "Wildlife & mysteries",
+   "es": "Fauna y misterios"
+  },
+  {
+   "id": "cars",
+   "color": "#FFC531",
+   "en": "Cars, boats & aircraft",
+   "es": "Coches, barcos y aviones"
+  },
+  {
+   "id": "mods",
+   "color": "#FF7A1A",
+   "en": "Mod shops",
+   "es": "Talleres de tuneo"
+  }
  ],
  "pins": [
-  {"cat": "places", "at": "Vice City", "src": ["Rockstar Games"],
-   "en": {"t": "Vice City", "d": "The neon heart of Leonida, Rockstar's Miami: beaches, nightlife, money and chaos."},
-   "es": {"t": "Vice City", "d": "El corazón de neón de Leonida, la Miami de Rockstar: playas, vida nocturna, dinero y caos."}},
-  {"cat": "places", "at": "Key Lento", "src": ["Rockstar Games"],
-   "en": {"t": "Leonida Keys", "d": "Islands and bridges inspired by the Florida Keys: boats, sunsets and laid-back island towns."},
-   "es": {"t": "Leonida Keys", "d": "Islas y puentes inspirados en los Cayos de Florida: barcos, atardeceres y pueblos tranquilos."}},
-  {"cat": "places", "at": "Grassrivers", "src": ["Rockstar Games"],
-   "en": {"t": "Grassrivers", "d": "Leonida's wetlands, Rockstar's Everglades: swamps, airboats and alligators."},
-   "es": {"t": "Grassrivers", "d": "Los pantanos de Leonida, los Everglades de Rockstar: aerodeslizadores y caimanes."}},
-  {"cat": "places", "at": "Port Gellhorn", "src": ["Rockstar Games"],
-   "en": {"t": "Port Gellhorn", "d": "A fading beach-resort town on the Gulf coast, with its glory days behind it."},
-   "es": {"t": "Port Gellhorn", "d": "Un pueblo de playa venido a menos en la costa del Golfo."}},
-  {"cat": "places", "at": "Ambrosia", "src": ["Rockstar Games"],
-   "en": {"t": "Ambrosia", "d": "An industrial town built around a sugar refinery, with a rough biker scene."},
-   "es": {"t": "Ambrosia", "d": "Un pueblo industrial alrededor de una refinería de azúcar, con ambiente motero."}},
-  {"cat": "places", "at": "Mount Kalaga", "src": ["Rockstar Games"],
-   "en": {"t": "Mount Kalaga National Park", "d": "The wild north: forests, trails and back roads for off-roading and hunting."},
-   "es": {"t": "Parque Nacional Mount Kalaga", "d": "El norte salvaje: bosques, senderos y caminos de tierra."}},
-  {"cat": "eggs", "at": "Bluegrass", "src": ["GTABase", "Red Bull", "The Click"],
-   "en": {"t": "Egg tower", "d": "A tall radio mast in Bluegrass, north of Hamlet; some guides say South Vice-Dale. Climb to the top."},
-   "es": {"t": "Torre del huevo", "d": "Una antena de radio alta en Bluegrass, al norte de Hamlet; algunas guías dicen South Vice-Dale. Sube hasta arriba."}},
-  {"cat": "wild", "at": "Kelly County", "src": ["GTABase", "Game8", "Red Bull"],
-   "en": {"t": "UFO abduction", "d": "Kelly County, northwest of the Starlet Motel near Port Gellhorn, after 2 AM. It doesn't happen every night; one guide places it just east of Port Gellhorn.", "when": "After 2 AM"},
-   "es": {"t": "Abducción OVNI", "d": "Kelly County, al noroeste del Starlet Motel, cerca de Port Gellhorn, después de las 2 AM. No pasa todas las noches; una guía lo sitúa al este de Port Gellhorn.", "when": "Después de las 2 AM"}},
-  {"cat": "wild", "at": "Cottonmouth Lake", "src": ["GTABase", "The Click"],
-   "en": {"t": "Skunk Ape", "d": "Leonida's Bigfoot, around Cottonmouth Lake in Grassrivers, south of Hamlet.", "when": "At night"},
-   "es": {"t": "Skunk Ape", "d": "El Pie Grande de Leonida, alrededor de Cottonmouth Lake en Grassrivers, al sur de Hamlet.", "when": "De noche"}},
-  {"cat": "eggs", "at": "Washington Island", "src": ["GTABase", "Red Bull"],
-   "en": {"t": "Dexter's apartment", "d": "A nod to the TV series Dexter on Washington Island, east of Vice City. You can't go inside."},
-   "es": {"t": "El apartamento de Dexter", "d": "Un guiño a la serie Dexter en Washington Island, al este de Vice City. No se puede entrar."}},
-  {"cat": "wild", "at": "Pelican Valley", "src": ["GTABase", "Game8"],
-   "en": {"t": "Giant crab", "d": "An abandoned research station in Pelican Valley (Gullet Marsh)."},
-   "es": {"t": "Cangrejo gigante", "d": "Una estación de investigación abandonada en Pelican Valley (Gullet Marsh)."}},
-  {"cat": "eggs", "at": "Gambit Bay", "src": ["GTABase", "Red Bull"],
-   "en": {"t": "Cool Dog on a jet ski", "d": "Out on the open water; the reported starting area is Gambit Bay, west of Key Lento."},
-   "es": {"t": "Cool Dog en moto de agua", "d": "En mar abierto; la zona de salida reportada es Gambit Bay, al oeste de Key Lento."}},
-  {"cat": "cars", "at": "Vespucci Island", "src": ["VICE", "PCGamesN", "TechWiser"],
-   "en": {"t": "Paul Walker's car", "d": "A villa garage on Vespucci Island (Rialto Islands): a car styled like his Fast & Furious Eclipse (guides list it as a Maibatsu Penumbra). Guides disagree on how to get in."},
-   "es": {"t": "El coche de Paul Walker", "d": "Un garaje de una villa en Vespucci Island (Rialto Islands): un coche al estilo de su Eclipse de Fast & Furious (las guías dicen Maibatsu Penumbra). No coinciden en cómo entrar."}}
+  {
+   "cat": "places",
+   "at": "Vice City",
+   "src": [
+    "Rockstar Games"
+   ],
+   "en": {
+    "t": "Vice City",
+    "d": "The neon heart of Leonida, Rockstar's Miami: beaches, nightlife, money and chaos."
+   },
+   "es": {
+    "t": "Vice City",
+    "d": "El corazón de neón de Leonida, la Miami de Rockstar: playas, vida nocturna, dinero y caos."
+   }
+  },
+  {
+   "cat": "places",
+   "at": "Key Lento",
+   "src": [
+    "Rockstar Games"
+   ],
+   "en": {
+    "t": "Leonida Keys",
+    "d": "Islands and bridges inspired by the Florida Keys: boats, sunsets and laid-back island towns."
+   },
+   "es": {
+    "t": "Leonida Keys",
+    "d": "Islas y puentes inspirados en los Cayos de Florida: barcos, atardeceres y pueblos tranquilos."
+   }
+  },
+  {
+   "cat": "places",
+   "at": "Grassrivers",
+   "src": [
+    "Rockstar Games",
+    "GameSpot",
+    "GTABase"
+   ],
+   "en": {
+    "t": "Grassrivers",
+    "d": "Leonida's wetlands, Rockstar's Everglades: swamps, airboats and alligators everywhere, including rare albino ones."
+   },
+   "es": {
+    "t": "Grassrivers",
+    "d": "Los pantanos de Leonida, los Everglades de Rockstar: aerodeslizadores y caimanes por todas partes, incluso algún albino."
+   }
+  },
+  {
+   "cat": "places",
+   "at": "Port Gellhorn",
+   "src": [
+    "Rockstar Games"
+   ],
+   "en": {
+    "t": "Port Gellhorn",
+    "d": "A fading beach-resort town on the Gulf coast, with its glory days behind it."
+   },
+   "es": {
+    "t": "Port Gellhorn",
+    "d": "Un pueblo de playa venido a menos en la costa del Golfo."
+   }
+  },
+  {
+   "cat": "places",
+   "at": "Ambrosia",
+   "src": [
+    "Rockstar Games"
+   ],
+   "en": {
+    "t": "Ambrosia",
+    "d": "An industrial town built around a sugar refinery, with a rough biker scene."
+   },
+   "es": {
+    "t": "Ambrosia",
+    "d": "Un pueblo industrial alrededor de una refinería de azúcar, con ambiente motero."
+   }
+  },
+  {
+   "cat": "places",
+   "at": "Mount Kalaga",
+   "src": [
+    "Rockstar Games",
+    "PowerPyx",
+    "GTABase"
+   ],
+   "en": {
+    "t": "Mount Kalaga National Park",
+    "d": "The wild north: forests, trails and back roads. The summit is one of the 25 BASE jumps."
+   },
+   "es": {
+    "t": "Parque Nacional Mount Kalaga",
+    "d": "El norte salvaje: bosques, senderos y caminos de tierra. La cima es uno de los 25 saltos BASE."
+   }
+  },
+  {
+   "cat": "eggs",
+   "at": "Bluegrass",
+   "src": [
+    "Red Bull",
+    "The Click",
+    "GameSpot",
+    "Game8"
+   ],
+   "en": {
+    "t": "Egg tower",
+    "d": "A bird's nest of painted eggs on top of a tall radio mast in Bluegrass, north of Hamlet (some guides say South Vice-Dale). The climb takes about 7 minutes; throw an egg at full power."
+   },
+   "es": {
+    "t": "Torre del huevo",
+    "d": "Un nido con huevos pintados en lo alto de una antena de radio en Bluegrass, al norte de Hamlet (algunas guías dicen South Vice-Dale). La subida dura unos 7 minutos; lanza un huevo con toda la fuerza."
+   }
+  },
+  {
+   "cat": "eggs",
+   "at": "Washington Island",
+   "src": [
+    "Dexerto",
+    "The Click",
+    "TheGamer",
+    "GamesRadar"
+   ],
+   "en": {
+    "t": "Dexter's apartment",
+    "d": "A nod to the TV series Dexter: a light-blue waterfront building with a spiral staircase on Washington Island. The door stays locked."
+   },
+   "es": {
+    "t": "El apartamento de Dexter",
+    "d": "Un guiño a la serie Dexter: un edificio azul claro junto al agua, con escalera de caracol, en Washington Island. La puerta no se abre."
+   }
+  },
+  {
+   "cat": "eggs",
+   "at": "Gambit Bay",
+   "src": [
+    "GamesRadar",
+    "Game8",
+    "The Click",
+    "TheGamer",
+    "VICE"
+   ],
+   "en": {
+    "t": "Cool Dog on a jet ski",
+    "d": "Swim far from land and boats and a dog on a jet ski comes to rescue you. Gambit Bay, west of Key Lento, is the most-cited spot; it's random, so give it time."
+   },
+   "es": {
+    "t": "Cool Dog en moto de agua",
+    "d": "Nada lejos de la costa y de los barcos y un perro en moto de agua viene a rescatarte. Gambit Bay, al oeste de Key Lento, es la zona más citada; es aleatorio, ten paciencia."
+   }
+  },
+  {
+   "cat": "eggs",
+   "at": "Belville",
+   "src": [
+    "Dexerto",
+    "VICE",
+    "The Click"
+   ],
+   "en": {
+    "t": "The NPC who knows it's a game",
+    "d": "The house from a photo hidden in GTA San Andreas' 2021 remaster. Its garage holds notes from a man who believes he lives in a video game. The house itself is locked."
+   },
+   "es": {
+    "t": "El NPC que sabe que es un juego",
+    "d": "La casa de una foto escondida en el remaster de GTA San Andreas de 2021. En su garaje hay notas de un hombre que cree que vive en un videojuego. La casa está cerrada."
+   }
+  },
+  {
+   "cat": "eggs",
+   "at": "Port Gellhorn",
+   "src": [
+    "GamesRadar",
+    "TheGamer",
+    "Dexerto",
+    "Game8"
+   ],
+   "en": {
+    "t": "Arthur Morgan's hat",
+    "d": "A 'Genuine Cowboy Hat' at a yard sale in southern Port Gellhorn: Red Dead Redemption 2's hat. From Chapter 2; guides list different prices."
+   },
+   "es": {
+    "t": "El sombrero de Arthur Morgan",
+    "d": "Un 'Genuine Cowboy Hat' en una venta de garaje al sur de Port Gellhorn: el sombrero de Red Dead Redemption 2. Desde el capítulo 2; las guías dan precios distintos."
+   },
+   "dx": -0.004,
+   "dy": 0.03
+  },
+  {
+   "cat": "eggs",
+   "at": "Millport",
+   "src": [
+    "Red Bull",
+    "GameSpot",
+    "The Click"
+   ],
+   "en": {
+    "t": "A Red Dead book",
+    "d": "Inside Jacob's Tavern in Millport: a Western novel about a cowboy from New Austin."
+   },
+   "es": {
+    "t": "Un libro de Red Dead",
+    "d": "Dentro de Jacob's Tavern, en Millport: una novela del oeste sobre un vaquero de New Austin."
+   }
+  },
+  {
+   "cat": "eggs",
+   "at": "T.H. Power Station",
+   "src": [
+    "GameSpot",
+    "Dexerto",
+    "PCGamesN",
+    "TheGamer",
+    "The Click"
+   ],
+   "en": {
+    "t": "Tommy Vercetti's portal",
+    "d": "A 12-switch puzzle that starts at the Badger radio tower in Key Lento and ends here, at the Turtle Head power station, between 7 PM and 6 AM. The reward: Tommy Vercetti's shirt and bike. Fast travel resets it."
+   },
+   "es": {
+    "t": "El portal de Tommy Vercetti",
+    "d": "Un puzzle de 12 interruptores que empieza en la torre de radio Badger de Key Lento y termina aquí, en la central de Turtle Head, entre las 7 PM y las 6 AM. Premio: la camisa y la moto de Tommy Vercetti. El viaje rápido lo reinicia."
+   }
+  },
+  {
+   "cat": "wild",
+   "at": "Port Gellhorn",
+   "src": [
+    "PowerPyx",
+    "The Click",
+    "Game8",
+    "GameSpot",
+    "Red Bull"
+   ],
+   "en": {
+    "t": "UFO abduction",
+    "d": "An abandoned car with flashing lights on a country road east of Port Gellhorn, in Kelly County, near the Starlet Motel. Go alone after 2 AM, from Chapter 2. It doesn't happen every night.",
+    "when": "After 2 AM"
+   },
+   "es": {
+    "t": "Abducción OVNI",
+    "d": "Un coche abandonado con luces intermitentes en una carretera rural al este de Port Gellhorn, en Kelly County, cerca del Starlet Motel. Ve solo después de las 2 AM, desde el capítulo 2. No pasa todas las noches.",
+    "when": "Después de las 2 AM"
+   },
+   "dx": 0.05,
+   "dy": 0.0
+  },
+  {
+   "cat": "wild",
+   "at": "Cottonmouth Lake",
+   "src": [
+    "GTABase",
+    "GamesRadar",
+    "Dexerto",
+    "Game8",
+    "VICE"
+   ],
+   "en": {
+    "t": "Skunk Ape",
+    "d": "Leonida's Bigfoot. The easiest spot is the lakeside road at Cottonmouth Lake, south of Hamlet; look for a deer carcass. Guides also name Gullet Marsh.",
+    "when": "Night is best"
+   },
+   "es": {
+    "t": "Skunk Ape",
+    "d": "El Pie Grande de Leonida. El sitio más fácil es la carretera junto a Cottonmouth Lake, al sur de Hamlet; busca un ciervo muerto. Las guías también citan Gullet Marsh.",
+    "when": "Mejor de noche"
+   }
+  },
+  {
+   "cat": "wild",
+   "at": "Gullet Marsh",
+   "src": [
+    "Dexerto",
+    "TheGamer",
+    "The Click",
+    "Red Bull"
+   ],
+   "en": {
+    "t": "Giant crab",
+    "d": "An abandoned crab research outpost in the Gullet Marsh channels, reached by boat. Restore the power and find the password to see what's inside."
+   },
+   "es": {
+    "t": "Cangrejo gigante",
+    "d": "Un puesto de investigación de cangrejos abandonado en los canales de Gullet Marsh; se llega en barco. Devuelve la luz y encuentra la contraseña para ver qué hay dentro."
+   }
+  },
+  {
+   "cat": "cars",
+   "at": "Vespucci Island",
+   "src": [
+    "VICE",
+    "Red Bull",
+    "GamesRadar",
+    "The Click"
+   ],
+   "en": {
+    "t": "Paul Walker's car",
+    "d": "A green tuner modelled on his Eclipse from the first Fast & Furious (in-game: Maibatsu Penumbra FF), in a villa garage near the middle of Vespucci Island. Guides say the side door next to the garage gets you in."
+   },
+   "es": {
+    "t": "El coche de Paul Walker",
+    "d": "Un deportivo verde inspirado en su Eclipse de la primera Rápidos y Furiosos (en el juego: Maibatsu Penumbra FF), en el garaje de una villa en el centro de Vespucci Island. Según las guías, se entra por la puerta lateral."
+   }
+  },
+  {
+   "cat": "cars",
+   "at": "Tequesta Retreat",
+   "src": [
+    "GTABase",
+    "GamesRadar",
+    "Red Bull",
+    "GameSpot"
+   ],
+   "en": {
+    "t": "'95 Grotti Cheetah (Ultimate Edition)",
+    "d": "In the underground garage of Pegassi Residences on Tequesta Retreat. Unlocks in Chapter 5 (Map index, Exploration)."
+   },
+   "es": {
+    "t": "Grotti Cheetah del 95 (Ultimate Edition)",
+    "d": "En el garaje subterráneo de Pegassi Residences, en Tequesta Retreat. Se desbloquea en el capítulo 5 (índice del mapa, Exploración)."
+   }
+  },
+  {
+   "cat": "cars",
+   "at": "Paradise RV Park",
+   "src": [
+    "GameSpot",
+    "GTABase",
+    "Game8",
+    "The Click"
+   ],
+   "en": {
+    "t": "Dominator Buggy + Paradise Garage (Ultimate Edition)",
+    "d": "A bonus buggy and a one-car garage by Paradise RV Park, northeast of Watson Bay. Chapter 2, after a dirt-track race at Wyman's Thrillbilly Mud Club."
+   },
+   "es": {
+    "t": "Dominator Buggy + Paradise Garage (Ultimate Edition)",
+    "d": "Un buggy de regalo y un garaje para un coche junto a Paradise RV Park, al noreste de Watson Bay. Capítulo 2, tras una carrera en el Thrillbilly Mud Club de Wyman."
+   }
+  },
+  {
+   "cat": "cars",
+   "at": "Washington Beach",
+   "src": [
+    "GamesRadar",
+    "Red Bull",
+    "GameSpot"
+   ],
+   "en": {
+    "t": "Squalo boat (Ultimate Edition)",
+    "d": "The bonus speedboat waits in a canal just south of Washington Beach. Chapter 4 (Map index, Personal)."
+   },
+   "es": {
+    "t": "Lancha Squalo (Ultimate Edition)",
+    "d": "La lancha de regalo espera en un canal justo al sur de Washington Beach. Capítulo 4 (índice del mapa, Personal)."
+   },
+   "dx": -0.006,
+   "dy": 0.014
+  },
+  {
+   "cat": "cars",
+   "at": "Vice Beach",
+   "src": [
+    "PC Gamer",
+    "GTABase"
+   ],
+   "en": {
+    "t": "'55 Vapid Stanier (Vintage pack)",
+    "d": "The pre-order classic, parked outside the Ocean View Hotel in Vice Beach. Chapter 3 (Map index, Exploration)."
+   },
+   "es": {
+    "t": "Vapid Stanier del 55 (pack Vintage)",
+    "d": "El clásico de la reserva, aparcado frente al Ocean View Hotel en Vice Beach. Capítulo 3 (índice del mapa, Exploración)."
+   }
+  },
+  {
+   "cat": "cars",
+   "at": "Southwind",
+   "src": [
+    "PC Gamer",
+    "The Click",
+    "TheGamer",
+    "PowerPyx"
+   ],
+   "en": {
+    "t": "Early helicopter",
+    "d": "A helicopter on a private dock in Southwind: turn off at the Sherwin Boatworks and Chicki's Tiki Bar signs; the dock is east of the parking lot. Not a guaranteed spawn."
+   },
+   "es": {
+    "t": "Helicóptero temprano",
+    "d": "Un helicóptero en un muelle privado de Southwind: gira en los carteles de Sherwin Boatworks y Chicki's Tiki Bar; el muelle está al este del aparcamiento. No siempre aparece."
+   }
+  },
+  {
+   "cat": "cars",
+   "at": "Mile Zero Air Station",
+   "src": [
+    "PC Gamer",
+    "GTABase",
+    "Game8",
+    "The Click"
+   ],
+   "en": {
+    "t": "Military base (jets)",
+    "d": "Fighter jets are parked in the north half of Mile Zero Air Station, southeast of Key Lento. Getting in brings a very high wanted level."
+   },
+   "es": {
+    "t": "Base militar (cazas)",
+    "d": "Los cazas están en la mitad norte de Mile Zero Air Station, al sureste de Key Lento. Entrar te da un nivel de búsqueda muy alto."
+   }
+  },
+  {
+   "cat": "mods",
+   "at": "Crosstown",
+   "src": [
+    "PowerPyx",
+    "Game8"
+   ],
+   "en": {
+    "t": "Rideout Customs",
+    "d": "Mod shop in Crosstown, Vice City (Ultimate Edition)."
+   },
+   "es": {
+    "t": "Rideout Customs",
+    "d": "Taller de tuneo en Crosstown, Vice City (Ultimate Edition)."
+   }
+  },
+  {
+   "cat": "mods",
+   "at": "Little Cuba",
+   "src": [
+    "PowerPyx",
+    "Game8"
+   ],
+   "en": {
+    "t": "Euroform Automotive",
+    "d": "Mod shop in Little Cuba, Vice City."
+   },
+   "es": {
+    "t": "Euroform Automotive",
+    "d": "Taller de tuneo en Little Cuba, Vice City."
+   },
+   "dx": 0.004,
+   "dy": 0.012
+  },
+  {
+   "cat": "mods",
+   "at": "Capri",
+   "src": [
+    "PowerPyx",
+    "Game8"
+   ],
+   "en": {
+    "t": "Capri Classic",
+    "d": "Mod shop in Capri."
+   },
+   "es": {
+    "t": "Capri Classic",
+    "d": "Taller de tuneo en Capri."
+   }
+  },
+  {
+   "cat": "mods",
+   "at": "Key Lento",
+   "src": [
+    "PowerPyx",
+    "Game8"
+   ],
+   "en": {
+    "t": "Coastal Auto Care",
+    "d": "Mod shop in Key Lento."
+   },
+   "es": {
+    "t": "Coastal Auto Care",
+    "d": "Taller de tuneo en Key Lento."
+   },
+   "dx": 0.012,
+   "dy": 0.006
+  },
+  {
+   "cat": "mods",
+   "at": "Grayson",
+   "src": [
+    "PowerPyx",
+    "Game8"
+   ],
+   "en": {
+    "t": "Ledford Motorcycle Workshop",
+    "d": "Motorcycle mod shop on the Grayson shore."
+   },
+   "es": {
+    "t": "Ledford Motorcycle Workshop",
+    "d": "Taller de motos en la costa de Grayson."
+   }
+  },
+  {
+   "cat": "mods",
+   "at": "Lake Leonida",
+   "src": [
+    "PowerPyx",
+    "Game8"
+   ],
+   "en": {
+    "t": "One-Eyed Willie's",
+    "d": "Mod shop north of Lake Leonida (Ultimate Edition)."
+   },
+   "es": {
+    "t": "One-Eyed Willie's",
+    "d": "Taller de tuneo al norte de Lake Leonida (Ultimate Edition)."
+   },
+   "dx": 0.0,
+   "dy": -0.028
+  },
+  {
+   "cat": "mods",
+   "at": "Port Gellhorn",
+   "src": [
+    "PowerPyx",
+    "Game8"
+   ],
+   "en": {
+    "t": "Dirt Merchants & Wasteland Off-Road",
+    "d": "Two off-road mod shops in Port Gellhorn: Dirt Merchants in the south, Wasteland Off-Road in the north."
+   },
+   "es": {
+    "t": "Dirt Merchants y Wasteland Off-Road",
+    "d": "Dos talleres todoterreno en Port Gellhorn: Dirt Merchants al sur y Wasteland Off-Road al norte."
+   },
+   "dx": -0.012,
+   "dy": 0.012
+  }
  ]
 }

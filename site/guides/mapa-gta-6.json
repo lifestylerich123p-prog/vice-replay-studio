@@ -11,15 +11,23 @@
   "OFICIAL EN HD",
   "leonida-map-poster.jpg"
  ],
- "lede": "Este es <b>el mapa oficial de Leonida de Rockstar</b> a resolución de impresión (5775 × 7900 píxeles): puedes acercarte hasta los nombres de las calles. Marcamos los lugares clave y los easter eggs en los que coinciden al menos dos guías.",
+ "lede": "Este es <b>el mapa oficial de Leonida de Rockstar</b> a resolución de impresión (5775 × 7900 píxeles): puedes acercarte hasta los nombres de las calles. Marcamos 30 sitios en los que coinciden al menos dos guías de la semana de lanzamiento: easter eggs, el OVNI y el Pie Grande, coches de regalo y talleres de tuneo.",
  "sections": [
   [
    "Mapa interactivo",
    "<!--MAP-->"
   ],
   [
+   "Dónde descargar el mapa oficial",
+   "<p>Rockstar publicó el mapa completo de Leonida como <b>póster imprimible gratis el día del lanzamiento, el 19 de noviembre</b>. Está en la <a href=\"https://www.rockstargames.com/VI/downloads\" target=\"_blank\" rel=\"noopener\">página de descargas de GTA VI</a>; el mapa de esta página es ese póster. GameSpot informa además de un póster físico de doble cara en la Rockstar Store: 0,99 dólares, o gratis con cualquier pedido.</p>"
+  ],
+  [
    "Imágenes del mapa en HD",
-   "<p>¿Prefieres una imagen? Se abren a tamaño completo:</p><ul class=\"list\"><li><a href=\"/img/maps/gta-6-easter-eggs-map.jpg\" target=\"_blank\" rel=\"noopener\">Mapa completo con los easter eggs</a></li><li><a href=\"/img/maps/gta-6-secrets-vice-city-hd.jpg\" target=\"_blank\" rel=\"noopener\">Vice City de cerca (HD)</a></li><li><a href=\"/img/maps/gta-6-secrets-south-hd.jpg\" target=\"_blank\" rel=\"noopener\">El sur de Leonida de cerca (HD)</a></li></ul><p>El póster imprimible de Rockstar es gratis en su <a href=\"https://www.rockstargames.com/VI/downloads\" target=\"_blank\" rel=\"noopener\">página de descargas de GTA VI</a>.</p>"
+   "<p>¿Prefieres una imagen? Se abren a tamaño completo:</p><ul class=\"list\"><li><a href=\"/img/maps/gta-6-easter-eggs-map.jpg\" target=\"_blank\" rel=\"noopener\">Mapa completo con los easter eggs</a></li><li><a href=\"/img/maps/gta-6-secrets-north-hd.jpg\" target=\"_blank\" rel=\"noopener\">El norte de Leonida de cerca (HD)</a></li><li><a href=\"/img/maps/gta-6-secrets-vice-city-hd.jpg\" target=\"_blank\" rel=\"noopener\">Vice City de cerca (HD)</a></li><li><a href=\"/img/maps/gta-6-secrets-south-hd.jpg\" target=\"_blank\" rel=\"noopener\">El sur de Leonida de cerca (HD)</a></li></ul>"
+  ],
+  [
+   "¿Cuántos coleccionables hay?",
+   "<table style=\"width:100%;border-collapse:collapse;margin:8px 0\"><tr><th style=\"text-align:left;border-bottom:1px solid var(--line);padding:6px\">Qué</th><th style=\"text-align:left;border-bottom:1px solid var(--line);padding:6px\">Cuántos</th><th style=\"text-align:left;border-bottom:1px solid var(--line);padding:6px\">Guías</th></tr><tr><td style=\"border-bottom:1px solid var(--line);padding:6px\">Cartas coleccionables</td><td style=\"border-bottom:1px solid var(--line);padding:6px\">480 (18 colecciones)</td><td style=\"border-bottom:1px solid var(--line);padding:6px\">Red Bull, PowerPyx</td></tr><tr><td style=\"border-bottom:1px solid var(--line);padding:6px\">Saltos acrobáticos</td><td style=\"border-bottom:1px solid var(--line);padding:6px\">130</td><td style=\"border-bottom:1px solid var(--line);padding:6px\">PowerPyx, GTABase</td></tr><tr><td style=\"border-bottom:1px solid var(--line);padding:6px\">Smash 'n' Grab</td><td style=\"border-bottom:1px solid var(--line);padding:6px\">35</td><td style=\"border-bottom:1px solid var(--line);padding:6px\">PowerPyx, GTABase, The Click</td></tr><tr><td style=\"border-bottom:1px solid var(--line);padding:6px\">Saltos BASE</td><td style=\"border-bottom:1px solid var(--line);padding:6px\">25</td><td style=\"border-bottom:1px solid var(--line);padding:6px\">PowerPyx, GTABase, The Click, GameSpot</td></tr><tr><td style=\"border-bottom:1px solid var(--line);padding:6px\">Monumentos para escanear con WAiNK</td><td style=\"border-bottom:1px solid var(--line);padding:6px\">31</td><td style=\"border-bottom:1px solid var(--line);padding:6px\">GameSpot, Game8, PowerPyx</td></tr></table><p>Las guías todavía dan totales distintos para los paquetes ocultos y los meteoritos; los añadiremos cuando coincidan.</p>"
   ],
   [
    "¿Y el mapa filtrado?",
@@ -33,8 +41,8 @@
  "note": "El mapa es el póster oficial de Leonida de Rockstar Games; los pines y las notas son nuestros. Cada pin marca la zona, según guías de la semana de lanzamiento; si no coinciden, lo decimos.",
  "faq": [
   [
-   "¿Hay un mapa oficial de GTA 6?",
-   "Sí. Rockstar publicó un póster imprimible del mapa de Leonida en su página de descargas de GTA VI. Esta página lo usa a resolución completa."
+   "¿Dónde descargo el mapa oficial de GTA 6?",
+   "En la página de descargas de GTA VI de Rockstar: un póster imprimible gratis, publicado el día del lanzamiento, el 19 de noviembre."
   ],
   [
    "¿Dónde está Vice City en el mapa?",
@@ -43,6 +51,10 @@
   [
    "¿Hay un mapa interactivo de GTA 6?",
    "Sí, esta página: acércate, filtra los pines y toca uno para ver qué hay."
+  ],
+  [
+   "¿Dónde está el OVNI de GTA 6?",
+   "En una carretera rural al este de Port Gellhorn, en Kelly County, después de las 2 AM y desde el capítulo 2. No aparece todas las noches."
   ]
  ],
  "gear": [
@@ -56,6 +68,58 @@
   [
    "Rockstar Games: web oficial de GTA VI",
    "https://www.rockstargames.com/VI"
+  ],
+  [
+   "Rockstar Newswire: GTA VI now available (launch day)",
+   "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available"
+  ],
+  [
+   "PC Gamer: Rockstar posted GTA 6's full map online",
+   "https://www.pcgamer.com/games/grand-theft-auto/rockstar-has-finally-posted-gta-6s-full-map-online-thank-goodness-because-clearing-the-entire-thing-in-game-takes-ages/"
+  ],
+  [
+   "GameSpot: physical GTA 6 map poster",
+   "https://www.gamespot.com/articles/gta-6-is-getting-a-physical-map-heres-how-to-get-one-for-free-or-very-cheap/"
+  ],
+  [
+   "Red Bull: GTA 6 easter eggs",
+   "https://www.redbull.com/int-en/gta-6-easter-eggs"
+  ],
+  [
+   "PowerPyx: UFO easter egg location",
+   "https://www.powerpyx.com/gta-6-ufo-aliens-easter-egg-location/"
+  ],
+  [
+   "GTABase: Skunk Ape location",
+   "https://www.gtabase.com/gta-6/articles/gta-6-bigfoot-location-how-to-find-the-skunk-ape"
+  ],
+  [
+   "VICE: Paul Walker's car location",
+   "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/"
+  ],
+  [
+   "GameSpot: Tommy Vercetti's shirt and bike",
+   "https://www.gamespot.com/articles/how-to-get-tommy-vercettis-shirt-and-bike-in-gta-6/"
+  ],
+  [
+   "GamesRadar: Ultimate Edition bonuses",
+   "https://www.gamesradar.com/games/grand-theft-auto/gta-6-ultimate-edition-pre-order-bonuses/"
+  ],
+  [
+   "PC Gamer: military base location",
+   "https://www.pcgamer.com/games/grand-theft-auto/gta-6-military-base-location/"
+  ],
+  [
+   "PowerPyx: all mod shop locations",
+   "https://www.powerpyx.com/gta-6-all-mod-shops-locations/"
+  ],
+  [
+   "Game8: mod shops",
+   "https://game8.co/games/GTA-6/archives/638824"
+  ],
+  [
+   "PowerPyx: BASE jump locations",
+   "https://www.powerpyx.com/gta-6-all-base-jump-locations/"
   ]
  ]
 }

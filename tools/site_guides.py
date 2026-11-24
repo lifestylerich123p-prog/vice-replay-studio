@@ -803,6 +803,7 @@ def interactive_map(lang="en"):
     style = ('<style>#vrmap{height:min(78vh,720px);border-radius:14px;border:1px solid var(--line);margin:12px 0 6px;background:#0d0717}'
              '.vrpin b{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;color:#fff;'
              'font:700 14px/1 var(--body);border:2px solid #fff;box-shadow:0 0 0 3px rgba(13,7,23,.55),0 0 14px rgba(255,31,142,.6)}'
+             '.vrsmall .vrpin b{width:18px;height:18px;margin:6px;font-size:10px;border-width:1.5px;box-shadow:0 0 0 2px rgba(13,7,23,.5)}'
              '.vrlegend{background:rgba(13,7,23,.88);color:#f4eefc;padding:8px 10px;border-radius:10px;font:600 13px/1.5 var(--body)}'
              '.vrlegend label{display:flex;align-items:center;gap:6px;cursor:pointer}.vrlegend i{width:12px;height:12px;border-radius:50%;display:inline-block}'
              '.leaflet-container img.leaflet-tile{mix-blend-mode:normal;width:256.6px!important;height:256.6px!important}.leaflet-popup-content{font:14px/1.45 var(--body)}.vrlist li{margin-bottom:8px}</style>')
