@@ -808,7 +808,7 @@ def interactive_map(lang="en"):
              '.vrsmall .vrpin b{width:18px;height:18px;margin:6px;font-size:10px;border-width:1.5px;box-shadow:0 0 0 2px rgba(13,7,23,.5)}'
              '.vrlegend{background:rgba(13,7,23,.88);color:#f4eefc;padding:8px 10px;border-radius:10px;font:600 13px/1.5 var(--body)}'
              '.vrlegend label{display:flex;align-items:center;gap:6px;cursor:pointer}.vrlegend i{width:12px;height:12px;border-radius:50%;display:inline-block}'
-             '.leaflet-container img.leaflet-tile{mix-blend-mode:normal;width:256.6px!important;height:256.6px!important}.leaflet-popup-content{font:14px/1.45 var(--body)}.vrlist li{margin-bottom:8px}</style>')
+             '.leaflet-container img.leaflet-tile{mix-blend-mode:normal;width:256.6px!important;height:256.6px!important}.leaflet-popup-content{font:14px/1.45 var(--body)}.vrdone b{opacity:.45;filter:grayscale(.6)}.vrok{color:#1a9c5b;font-weight:700}.vrbtn{margin-top:8px;padding:6px 10px;border-radius:8px;border:0;background:#ff1f8e;color:#fff;font:600 13px var(--body);cursor:pointer}.vrprog{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.2)}.vrcount{display:block;color:#00e5d2}.vrlink{background:none;border:0;color:#b7a9cf;text-decoration:underline;font:12px var(--body);padding:0;cursor:pointer}.vrdone-item{opacity:.55;text-decoration:line-through}.vrlist li{margin-bottom:8px}</style>')
     return (f'<link rel="stylesheet" href="/js/leaflet.css">{style}<div id="vrmap" role="application" '
             f'aria-label="{"Mapa interactivo de Leonida" if es else "Interactive map of Leonida"}"></div>'
             f'<p class="meta">{hint}</p><ol class="list vrlist">{items}</ol>'
