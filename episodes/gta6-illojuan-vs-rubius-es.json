@@ -1,0 +1,189 @@
+{
+  "title": "IlloJuan vs Rubius: el duelo de espectadores de GTA 6",
+  "slug": "gta6-illojuan-vs-rubius-es",
+  "series": "Streamers",
+  "format": "news",
+  "mood": "hype",
+  "use_gameplay": false,
+  "es_only": true,
+  "style": "vice (GTA 6-style lettering cards, Nov 23)",
+  "short_title": "IlloJuan BEAT Rubius in GTA 6 viewers #GTA6 #Shorts",
+  "short_description": "Spanish-channel-only Short (Nov 24): versus angle (picks a fight, our best card format) on the two biggest Spanish streams of the GTA 6 launch. Our voice and cards only: no streamer footage, no game images. The disputed 562K Streams Charts 24 h figure is left out.",
+  "short_es": {
+    "title": "IlloJuan le GANÓ a Rubius en GTA 6 😳 #GTA6 #Shorts",
+    "description": "El duelo de los directos de GTA 6 en español: Rubius juntó 311.000 espectadores a la vez y IlloJuan llegó a un pico de 403.666 en su primer directo del juego, el récord de su canal (9 horas y 22 minutos en vivo, con una media de 251.431). ¿A quién viste tú? Dímelo abajo.\n\nFuentes: Movistar eSports (datos de TwitchTracker), Streams Charts, Vandal (datos de Twitch), El Morrocotudo.",
+    "tags": [
+      "IlloJuan",
+      "Rubius",
+      "IlloJuan GTA 6",
+      "Rubius GTA 6",
+      "GTA 6 Twitch",
+      "récord GTA 6",
+      "GTA 6 español",
+      "GTA VI"
+    ]
+  },
+  "short_playlist": "GTA 6 Shorts",
+  "short_pinned_comment_es": "¿A quién viste en el lanzamiento: ILLO o RUBIUS? 👇",
+  "pinned_comment": "Who did you watch at launch: Illo or Rubius? 👇",
+  "tags": [
+    "IlloJuan",
+    "Rubius",
+    "GTA VI"
+  ],
+  "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+  ],
+  "tiktok_hashtags": [
+    "#gta6",
+    "#illojuan",
+    "#rubius"
+  ],
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (4 lines, 4 credits, Nov 24; owner Nov 23: every Spanish Short)",
+  "sources": [
+    "Movistar eSports - IlloJuan bate todos los récords de su canal con su primer directo de GTA 6 (TwitchTracker: 9 h 22 min, media 251.431, pico 403.666): https://movistaresports.com/illojuan-bate-records-en-su-canal-con-gta-6/",
+    "Streams Charts - GTA 6 Twitch Viewers & Streaming Records (IlloJuan 403.7K peak in its list): https://streamscharts.com/specials/gta6",
+    "Vandal - GTA 6 arrasa en Twitch... un streamer español suma más de 300.000 espectadores (Rubius 311.000, datos de Twitch): https://vandal.elespanol.com/noticia-amp/2026323031/twitch-pone-cifras-al-exito-de-gta-6-la-audiencia-en-la-plataforma-se-duplico-gracias-al-juego-de-rockstar/",
+    "El Morrocotudo - Ranking GTA 6: los 10 gameplays más vistos tras su estreno (Rubius 311.000): https://www.elmorrocotudo.cl/noticia/tecnologia/ranking-gta-6-los-10-gameplays-mas-vistos-tras-su-estreno-y-los-streamers-que-rom"
+  ],
+  "short": [
+    {
+      "headline": "ILLO LE GANÓ",
+      "headline_es": "ILLO LE GANÓ",
+      "text": "IlloJuan beat Rubius at the GTA 6 launch.",
+      "text_es": "IlloJuan le ganó a Rubius en el lanzamiento de GTA seis.",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "ILLOJUAN",
+          "LE GANÓ",
+          "A RUBIUS"
+        ],
+        "pink": [
+          "LE GANÓ"
+        ],
+        "locale": "es",
+        "seed": 1
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "ILLOJUAN",
+          "LE GANÓ",
+          "A RUBIUS"
+        ],
+        "pink": [
+          "LE GANÓ"
+        ],
+        "locale": "es",
+        "seed": 1
+      },
+      "audio_es": "media/voice/gta6-illojuan-vs-rubius-es/es/seg1.wav"
+    },
+    {
+      "headline": "A LA VEZ",
+      "headline_es": "A LA VEZ",
+      "text": "Rubius: 311,000 viewers at once. IlloJuan: over 400,000.",
+      "text_es": "Rubius juntó trescientos once mil espectadores a la vez. IlloJuan, más de cuatrocientos mil.",
+      "keep_media": true,
+      "chart": {
+        "type": "versus",
+        "a": [
+          "RUBIUS",
+          "311.000"
+        ],
+        "b": [
+          "ILLOJUAN",
+          "403.666"
+        ],
+        "winner": "b",
+        "locale": "es",
+        "seed": 1
+      },
+      "chart_es": {
+        "type": "versus",
+        "a": [
+          "RUBIUS",
+          "311.000"
+        ],
+        "b": [
+          "ILLOJUAN",
+          "403.666"
+        ],
+        "winner": "b",
+        "locale": "es",
+        "seed": 1
+      },
+      "audio_es": "media/voice/gta6-illojuan-vs-rubius-es/es/seg2.wav"
+    },
+    {
+      "headline": "SU RÉCORD",
+      "headline_es": "SU RÉCORD",
+      "text": "It's the record of his channel: over nine hours live.",
+      "text_es": "Es el récord de su canal: más de nueve horas en directo.",
+      "keep_media": true,
+      "chart": {
+        "type": "headline",
+        "kicker": "ILLOJUAN",
+        "text": "Récord de su canal",
+        "pink": [
+          "RÉCORD"
+        ],
+        "ticker": "9 h 22 min en vivo · media de 251.431 · pico de 403.666",
+        "locale": "es",
+        "src": "Movistar eSports (TwitchTracker) · Streams Charts",
+        "seed": 1
+      },
+      "chart_es": {
+        "type": "headline",
+        "kicker": "ILLOJUAN",
+        "text": "Récord de su canal",
+        "pink": [
+          "RÉCORD"
+        ],
+        "ticker": "9 h 22 min en vivo · media de 251.431 · pico de 403.666",
+        "locale": "es",
+        "src": "Movistar eSports (TwitchTracker) · Streams Charts",
+        "seed": 1
+      },
+      "audio_es": "media/voice/gta6-illojuan-vs-rubius-es/es/seg3.wav"
+    },
+    {
+      "headline": "¿ILLO O RUBIUS?",
+      "headline_es": "¿ILLO O RUBIUS?",
+      "text": "Who did you watch, Illo or Rubius? Tell me below, because",
+      "text_es": "¿Tú a quién viste, a Illo o a Rubius? Dímelo abajo, porque",
+      "keep_media": true,
+      "chart": {
+        "type": "kinetic",
+        "lines": [
+          "¿ILLO",
+          "O RUBIUS?"
+        ],
+        "pink": [
+          "O RUBIUS?"
+        ],
+        "sub": "dímelo abajo",
+        "locale": "es",
+        "seed": 1
+      },
+      "chart_es": {
+        "type": "kinetic",
+        "lines": [
+          "¿ILLO",
+          "O RUBIUS?"
+        ],
+        "pink": [
+          "O RUBIUS?"
+        ],
+        "sub": "dímelo abajo",
+        "locale": "es",
+        "seed": 1
+      },
+      "audio_es": "media/voice/gta6-illojuan-vs-rubius-es/es/seg4.wav"
+    }
+  ]
+}
