@@ -115,6 +115,37 @@ def code_row(d, code, y, max_w=W - 120):
     return y + h
 
 
+def map_background(m):
+    """Nov 24 (owner approved the official map with pins): Rockstar's official Leonida map cropped around one spot
+    (m = {"at": place / grid cell, "label", "n", "dx"?, "dy"?, "to": visible width share, default 0.3}), the pin in
+    the upper half, darkened toward the bottom where the title and text go."""
+    from . import mappins
+    big = mappins.map_image()
+    BW, BH = big.size
+    fx, fy = mappins.where(m["at"])
+    tx, ty = (fx + m.get("dx", 0)) * BW, (fy + m.get("dy", 0)) * BH
+    vw = BW * float(m.get("to", 0.3))
+    vh = vw * H / W
+    x0 = max(0, min(BW - vw, tx - vw / 2))
+    y0 = max(0, min(BH - vh, ty - vh * 0.36))
+    im = big.crop((int(x0), int(y0), int(x0 + vw), int(y0 + vh))).resize((W, H), Image.LANCZOS)
+    d = ImageDraw.Draw(im)
+    px, py = (tx - x0) / vw * W, (ty - y0) / vh * H
+    if "n" in m:
+        mappins._pin(d, px, py, m["n"], 1.6)
+    if m.get("label"):
+        mappins._label(d, px, py, m["label"], 1.6, W, m.get("side"))
+    shade = Image.new("L", (W, H))
+    sd = ImageDraw.Draw(shade)
+    for yy in range(H):
+        sd.line([(0, yy), (W, yy)], fill=int(235 * max(0.0, (yy / H - 0.52) / 0.48) ** 1.2))
+    im = Image.composite(Image.new("RGB", (W, H), brand.NIGHT), im, shade)
+    f = brand.font(brand.BODY_FONT, 24)
+    ImageDraw.Draw(im).text((W - f.getlength("Map: Rockstar Games (official)") - 30, 150), "Map: Rockstar Games (official)",
+                            font=f, fill=brand.NIGHT)
+    return im
+
+
 def build(spec_path):
     spec = json.loads(Path(spec_path).read_text())
     out = ROOT / "output" / "carousels" / spec["slug"]
@@ -123,7 +154,8 @@ def build(spec_path):
     files = []
     for k, (kind, p) in enumerate(pages, 1):
         # "style": "vice" (Nov 23, owner: lettering and a modern style; Instagram cuts reach for reposted images)
-        im = background(f"vice:{spec.get('seed', 0)}" if spec.get("style") == "vice" else p.get("bg", "vice-city-05.jpg"))
+        im = map_background(p["map"]) if p.get("map") else \
+            background(f"vice:{spec.get('seed', 0)}" if spec.get("style") == "vice" else p.get("bg", "vice-city-05.jpg"))
         header(im, k, len(pages))
         d = ImageDraw.Draw(im)
         if kind == "cover":
@@ -133,6 +165,10 @@ def build(spec_path):
             t = "SWIPE  →"
             d.rounded_rectangle([60, H - 210, 60 + f.getlength(t) + 60, H - 130], 40, fill=brand.CYAN)
             d.text((90, H - 206), t, font=f, fill=brand.NIGHT)
+        elif kind == "tip" and p.get("map"):  # map page: pin on top, title + where-to-find text at the bottom
+            y = boxed_title(d, p["title"], 860, 84, brand.NIGHT)
+            body(d, p["text"], y + 22, 42)
+            footer(d)
         elif kind == "tip":
             n = str(p.get("badge", k - 1))  # "badge": "S" for tier-list slides (Nov 23)
             top = 400 if p.get("code") else 520  # cards with a code start higher to fit it
