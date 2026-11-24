@@ -23,6 +23,7 @@ What it does:
 import argparse
 import json
 import re
+import subprocess
 import shutil
 import time
 from pathlib import Path
@@ -185,6 +186,22 @@ def episode_rows():
         cells = [c.strip() for c in line.strip("|").split("|")]
         if len(cells) >= 2 and re.match(r"\d{4}-\d{2}-\d{2}", cells[0]):
             dates.setdefault(cells[1], cells[0])
+    # Episodes the log doesn't name (made in a batch, or in a helper chat): the day the file entered git.
+    try:
+        added = subprocess.run(["git", "log", "--diff-filter=A", "--format=@%as", "--name-only", "--", "episodes/"],
+                               cwd=ROOT, capture_output=True, text=True, timeout=30).stdout
+    except (OSError, subprocess.SubprocessError):
+        added = ""
+    first, day = {}, None
+    for line in added.splitlines():
+        if line.startswith("@"):
+            day = line[1:]
+        elif line.endswith(".json") and day:
+            first[Path(line).stem] = day  # git log runs newest first, so the last one seen is the first add
+    for slug, d in first.items():
+        dates.setdefault(slug, d)
+    reg_f = ROOT / "content" / "learn" / "uploads.json"
+    reg = json.loads(reg_f.read_text()) if reg_f.exists() else {}
     rows = []
     for f in sorted((ROOT / "episodes").glob("*.json")):
         try:
@@ -196,7 +213,8 @@ def episode_rows():
         ids = ""
         if up.exists():
             done = json.loads(up.read_text())
-            ids = ", ".join(f"{k}: {v['id']}" for k, v in done.items() if isinstance(v, dict) and v.get("id"))
+            ids = ", ".join(f"{k}: {v['id']}" + (" (private)" if reg.get(v["id"], {}).get("hidden") else "")
+                            for k, v in done.items() if isinstance(v, dict) and v.get("id"))
         kind = "video" if ep.get("segments") else "Short"
         rows.append((dates.get(slug, "?"), slug, kind, ep.get("title", ""), ids or "-"))
     return sorted(rows, reverse=True)
