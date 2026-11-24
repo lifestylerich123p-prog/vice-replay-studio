@@ -84,6 +84,15 @@ def transcribe(path, lang="en"):
             for s in segs for w in (s.words or [])]
 
 
+def whisper_letters(text):
+    """Whisper spells short letter words out: "C .J." for CJ, "S .T .E .R." / "us tier" for "S tier" (Nov 24: a tier
+    list Short failed the caption check at 40% although the voice was right). Join them back before comparing."""
+    t = re.sub(r"\b([A-Z])\s*\.\s*T\s*\.\s*E\s*\.\s*R\b\.?", r"\1 tier", text)  # C .T .E .R. -> C tier
+    t = re.sub(r"\bus tier\b", "S tier", t)
+    t = re.sub(r"\b([A-Z])\s*\.\s*([A-Z])\b\.?", r"\1\2", t)  # C .J. -> CJ
+    return t
+
+
 def norm_words(text):
     t = text.lower().replace("&", " and ").replace("%", " percent ")
     t = re.sub(r"(?<=\d),(?=\d{3})", "", t)  # 1,300 -> 1300
@@ -255,7 +264,7 @@ def check(path, episode=None, dest="vice-replay", script_key="short", project=No
         if words is None:
             add("captions", "warn", "faster-whisper not installed: caption accuracy not measured", "pip install faster-whisper")
         else:
-            heard = " ".join(w["w"] for w in words)
+            heard = whisper_letters(" ".join(w["w"] for w in words))
             if es:  # Spanish writes 3.243 for 3,243: drop the thousands dot before splitting into words
                 heard = re.sub(r"(?<=\d)\.(?=\d{3}\b)", "", heard)
             heard = norm_words(heard)
