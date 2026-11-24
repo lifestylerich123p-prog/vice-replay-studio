@@ -513,13 +513,16 @@ def _photo_base(path, w, h):
     return Image.composite(shade, im, grad.resize((W, H)))
 
 
-def _photo_frame(base, p, w, h, t=None, hook=False):
+def _photo_frame(base, p, w, h, t=None, hook=False, beat=None):
     """Slow push-in over the card. On a Short's hook card (hook=True) the camera first punches in fast during the first
     0.45 s, so the opening frame moves (Nov 22 data: Shorts that open on motion got ~5x the views)."""
     s = ZOOM - 0.10 * max(0.0, min(1.0, p))
     if hook and t is not None:
         k = min(1.0, t / 0.45)
         s = ZOOM - 0.13 * (1 - (1 - k) ** 3) - 0.06 * max(0.0, min(1.0, p))
+    if beat is not None and t is not None and t >= beat:  # Nov 24 review: a static card held 3+ s; a quick push-in
+        k = min(1.0, (t - beat) / 0.16)                    # halfway through changes the picture without a cut
+        s -= 0.06 * (1 - (1 - k) ** 3)
     cw, ch = int(w * s), int(h * s)
     x0, y0 = (base.width - cw) // 2, (base.height - ch) // 2
     return base.crop((x0, y0, x0 + cw, y0 + ch)).resize((w, h), Image.BILINEAR)
@@ -582,6 +585,9 @@ def render(spec, dur, w, h, out, seed=0):
     elif photo is None:
         base = _backdrop(w, h, seed=sd)
     spec = dict(spec, _dur=dur)
+    # a camera beat halfway through a long static lettering card on a Short (lists/boards/maps animate on their own)
+    beat = dur * 0.5 if (h > w and dur > 2.8 and kind in ("text", "quote", "headline", "kinetic", "countdown") and
+                         not spec.get("cover")) else None
     shift = 5.0 if spec.get("cover") and kind != "kinetic" else 0.0  # cover: show the finished card from frame one
     proc = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}",
                              "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
@@ -595,7 +601,7 @@ def render(spec, dur, w, h, out, seed=0):
             bx, by = (big.width - w) // 2, (big.height - h) // 2
             bg = Image.composite(shade[1], big.crop((bx, by, bx + w, by + h)), shade[0])
         elif photo is not None:  # Nov 24 photo cards: a real GTA 6 screenshot behind the lettering, slow zoom in
-            bg = _photo_frame(photo, t / max(dur, 0.1), w, h, t=t, hook=bool(spec.get("cover")))
+            bg = _photo_frame(photo, t / max(dur, 0.1), w, h, t=t, hook=bool(spec.get("cover")), beat=beat)
         else:
             bg = vicecards.frame_bg(still, horizon, t, w, h) if vice else base
         frame = draw(bg, spec, t + shift, w, h)
