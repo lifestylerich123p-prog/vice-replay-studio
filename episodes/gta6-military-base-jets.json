@@ -1,0 +1,163 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "slug": "gta6-military-base-jets",
+ "title": "Where to Find Fighter Jets in GTA 6",
+ "short_title": "GTA 6: where to find fighter jets #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6: where to find fighter jets #GTA6 #Shorts",
+  "GTA 6 military base location (jets) #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6's fighter jets are at Mile Zero Air Station, the military base southeast of Key Lento. The jets park in the north half of the base; guides use a stunt jump at the southeast corner, on the southern access road, to get in. Expect a very high wanted level the moment you're inside. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: PC Gamer, GTABase, Game8, The Click.",
+ "short_es": {
+  "title": "Dónde están los CAZAS en GTA 6 ✈️ #GTA6 #Shorts",
+  "description": "Los cazas de GTA 6 están en Mile Zero Air Station, la base militar al sureste de Key Lento, en la mitad norte. Las guías entran con un salto en la esquina sureste. Entrar da un nivel de búsqueda muy alto. Fuentes: PC Gamer, GTABase, Game8, The Click.",
+  "tags": [
+   "GTA 6 base militar",
+   "GTA 6 avión",
+   "GTA 6 cazas",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "How many stars did you have when you landed? 👇",
+ "short_pinned_comment_es": "¿Cuántas estrellas tenías al aterrizar? 👇",
+ "tags": [
+  "GTA 6 fighter jet",
+  "GTA 6 military base",
+  "GTA 6 jet location",
+  "GTA 6 Mile Zero Air Station",
+  "GTA 6 planes",
+  "GTA 6 map",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6jets",
+  "#gta6tips"
+ ],
+ "sources": [
+  "PC Gamer - GTA 6 military base location: https://www.pcgamer.com/games/grand-theft-auto/gta-6-military-base-location/",
+  "GTABase - GTA 6 military base location: https://www.gtabase.com/gta-6/articles/gta-6-military-base-location",
+  "Game8 - military base: https://game8.co/games/GTA-6/archives/638780",
+  "The Click - military base location: https://www.theclick.gg/gta-6-military-base-location/"
+ ],
+ "short": [
+  {
+   "headline": "FIGHTER JETS",
+   "headline_es": "CAZAS",
+   "text": "GTA 6's fighter jets are parked in one place.",
+   "text_es": "Los cazas de GTA seis están en un solo lugar.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6'S",
+     "FIGHTER JETS"
+    ],
+    "pink": [
+     "FIGHTER JETS"
+    ],
+    "seed": 81,
+    "sub": "and how to get in"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "LOS CAZAS",
+     "DE GTA 6"
+    ],
+    "pink": [
+     "LOS CAZAS"
+    ],
+    "seed": 81,
+    "sub": "y cómo entrar"
+   }
+  },
+  {
+   "headline": "MILE ZERO",
+   "headline_es": "MILE ZERO",
+   "text": "Mile Zero Air Station, southeast of Key Lento.",
+   "text_es": "Mile Zero Air Station, al sureste de Key Lento.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Mile Zero Air Station",
+    "label": "Fighter jets",
+    "n": 1,
+    "dy": -0.02
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Mile Zero Air Station",
+    "label": "Cazas",
+    "n": 1,
+    "dy": -0.02
+   }
+  },
+  {
+   "headline": "NORTH HALF",
+   "headline_es": "MITAD NORTE",
+   "text": "The jets sit in the north half of the base.",
+   "text_es": "Los cazas están en la mitad norte de la base.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Jets: the north half of the base",
+    "pink": [
+     "north half"
+    ],
+    "seed": 82,
+    "src": "PC Gamer · GTABase · Game8"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Cazas: la mitad norte de la base",
+    "pink": [
+     "mitad norte"
+    ],
+    "seed": 82,
+    "src": "PC Gamer · GTABase · Game8"
+   }
+  },
+  {
+   "headline": "WAY IN",
+   "headline_es": "LA ENTRADA",
+   "text": "Guides jump in from the southeast corner. Expect a huge wanted level, because",
+   "text_es": "Las guías entran saltando por la esquina sureste. Espera un nivel de búsqueda enorme, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Stunt jump in at the southeast corner",
+    "pink": [
+     "southeast corner"
+    ],
+    "seed": 83,
+    "sub": "Expect a very high wanted level"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Salto por la esquina sureste",
+    "pink": [
+     "esquina sureste"
+    ],
+    "seed": 83,
+    "sub": "Nivel de búsqueda muy alto"
+   }
+  }
+ ],
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+}

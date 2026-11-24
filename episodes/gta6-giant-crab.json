@@ -1,0 +1,165 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "slug": "gta6-giant-crab",
+ "title": "GTA 6's Giant Crab Easter Egg",
+ "short_title": "GTA 6 has a giant crab: here's where #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 has a giant crab: here's where #GTA6 #Shorts",
+  "GTA 6 giant crab location (password CLEAVES) #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6's giant crab easter egg: an abandoned crab research outpost in the Gullet Marsh channels of Pelican Valley, reached by boat. Restore power at the breaker box outside, then use the password CLEAVES to see what's inside. Guides disagree on whether you can fight the crab off. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: Dexerto, TheGamer, The Click, Red Bull.",
+ "short_es": {
+  "title": "GTA 6 tiene un CANGREJO gigante: está aquí 🦀 #GTA6 #Shorts",
+  "description": "El easter egg del cangrejo gigante de GTA 6: un puesto de investigación abandonado en los canales de Gullet Marsh, Pelican Valley; se llega en barco. Devuelve la luz y usa la contraseña CLEAVES. Fuentes: Dexerto, TheGamer, The Click, Red Bull.",
+  "tags": [
+   "GTA 6 cangrejo gigante",
+   "GTA 6 easter eggs",
+   "GTA 6 secretos",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "Run or fight the crab? 🦀👇",
+ "short_pinned_comment_es": "¿Huir o pelear con el cangrejo? 🦀👇",
+ "tags": [
+  "GTA 6 giant crab",
+  "GTA 6 crab easter egg",
+  "GTA 6 Pelican Valley",
+  "GTA 6 CLEAVES password",
+  "GTA 6 easter eggs",
+  "GTA 6 secrets",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#giantcrab",
+  "#gta6secrets"
+ ],
+ "sources": [
+  "Dexerto - Giant crab easter egg: https://www.dexerto.com/wikis/gta-6/easter-eggs/giant-crab-easter-egg/",
+  "TheGamer - Giant crab location and codes: https://www.thegamer.com/grand-theft-auto-6-giant-crab-location-crabshack-vf5-legendary-smg-research-code-safe-double-success-guide/",
+  "The Click - Pelican Valley outpost codes: https://www.theclick.gg/gta-6-pelican-valley-outpost-codes/",
+  "Red Bull - GTA 6 easter eggs: https://www.redbull.com/ca-en/gta-6-easter-eggs"
+ ],
+ "short": [
+  {
+   "headline": "A GIANT CRAB",
+   "headline_es": "UN CANGREJO GIGANTE",
+   "text": "GTA 6 hides a giant crab, and I know where.",
+   "text_es": "GTA seis esconde un cangrejo gigante, y sé dónde.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 HIDES",
+     "A GIANT CRAB"
+    ],
+    "pink": [
+     "A GIANT CRAB"
+    ],
+    "seed": 111
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 ESCONDE UN",
+     "CANGREJO GIGANTE"
+    ],
+    "pink": [
+     "CANGREJO GIGANTE"
+    ],
+    "seed": 111
+   }
+  },
+  {
+   "headline": "GULLET MARSH",
+   "headline_es": "GULLET MARSH",
+   "text": "Take a boat into Gullet Marsh, in Pelican Valley.",
+   "text_es": "Entra en barco a Gullet Marsh, en Pelican Valley.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Gullet Marsh",
+    "label": "Crab outpost",
+    "n": 1,
+    "dy": -0.009
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Gullet Marsh",
+    "label": "Puesto del cangrejo",
+    "n": 1,
+    "dy": -0.009
+   }
+  },
+  {
+   "headline": "POWER FIRST",
+   "headline_es": "PRIMERO LA LUZ",
+   "text": "Find the abandoned outpost and turn the power back on.",
+   "text_es": "Busca el puesto abandonado y devuelve la luz.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Restore power at the breaker box",
+    "pink": [
+     "breaker box"
+    ],
+    "seed": 112,
+    "src": "Dexerto · TheGamer · The Click"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Devuelve la luz en el cuadro eléctrico",
+    "pink": [
+     "cuadro eléctrico"
+    ],
+    "seed": 112,
+    "src": "Dexerto · TheGamer · The Click"
+   }
+  },
+  {
+   "headline": "PASSWORD: CLEAVES",
+   "headline_es": "CONTRASEÑA: CLEAVES",
+   "text": "The password is CLEAVES. Then run, because",
+   "text_es": "La contraseña es CLEAVES. Y luego corre, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "PASSWORD:",
+     "CLEAVES"
+    ],
+    "pink": [
+     "CLEAVES"
+    ],
+    "seed": 113
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "CONTRASEÑA:",
+     "CLEAVES"
+    ],
+    "pink": [
+     "CLEAVES"
+    ],
+    "seed": 113
+   }
+  }
+ ],
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+}

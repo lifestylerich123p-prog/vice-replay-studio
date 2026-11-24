@@ -1,0 +1,190 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "slug": "gta6-ultimate-cars-where",
+ "title": "Where Your GTA 6 Ultimate Edition Cars Are",
+ "short_title": "GTA 6 Ultimate Edition: your bonus cars #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 Ultimate Edition: your bonus cars #GTA6 #Shorts",
+  "GTA 6: where to find the Grotti Cheetah #GTA6 #Shorts"
+ ],
+ "short_description": "Bought GTA 6's Ultimate Edition? Where the bonus rides unlock: the '67 Dominator Buggy and Paradise Garage by Paradise RV Park, northeast of Watson Bay (Chapter 2, after a dirt race at Wyman's Thrillbilly Mud Club); the Squalo speedboat in a canal just south of Washington Beach (Chapter 4, Map index → Personal); the '95 Grotti Cheetah in the Pegassi Residences garage on Tequesta Retreat (Chapter 5, Map index → Exploration). No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: GTABase, GamesRadar, Red Bull, GameSpot.",
+ "short_es": {
+  "title": "GTA 6 Ultimate: dónde están tus COCHES de regalo 🏎️ #GTA6 #Shorts",
+  "description": "Dónde se desbloquean los coches de la Ultimate Edition de GTA 6: el Dominator Buggy en Paradise RV Park (capítulo 2), la lancha Squalo al sur de Washington Beach (capítulo 4) y el Grotti Cheetah del 95 en Tequesta Retreat (capítulo 5). Fuentes: GTABase, GamesRadar, Red Bull, GameSpot.",
+  "tags": [
+   "GTA 6 Ultimate Edition",
+   "GTA 6 Grotti Cheetah",
+   "GTA 6 coches",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "Cheetah, Buggy or Squalo: which one did you grab first? 👇",
+ "short_pinned_comment_es": "¿Cheetah, Buggy o Squalo? 👇",
+ "tags": [
+  "GTA 6 Ultimate Edition",
+  "GTA 6 Ultimate Edition cars",
+  "GTA 6 Grotti Cheetah location",
+  "GTA 6 Squalo",
+  "GTA 6 Dominator Buggy",
+  "GTA 6 bonus cars",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6cars",
+  "#ultimateedition"
+ ],
+ "sources": [
+  "GTABase - How to claim Ultimate Edition benefits: https://www.gtabase.com/gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6",
+  "GamesRadar - Ultimate Edition pre-order bonuses: https://www.gamesradar.com/games/grand-theft-auto/gta-6-ultimate-edition-pre-order-bonuses/",
+  "Red Bull - Ultimate Edition bonuses: https://www.redbull.com/int-en/gta-6-ultimate-edition-bonuses",
+  "GameSpot - All Ultimate Edition bonuses: https://www.gamespot.com/articles/how-to-get-all-gta-6-ultimate-edition-bonuses/"
+ ],
+ "short": [
+  {
+   "headline": "YOU PAID $100",
+   "headline_es": "PAGASTE 100",
+   "text": "You paid a hundred dollars. Here's where your cars are.",
+   "text_es": "Pagaste cien dólares. Aquí están tus coches.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "YOU PAID $100",
+     "HERE ARE YOUR CARS"
+    ],
+    "pink": [
+     "HERE ARE YOUR CARS"
+    ],
+    "seed": 51
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "PAGASTE 100 DÓLARES",
+     "AQUÍ TUS COCHES"
+    ],
+    "pink": [
+     "AQUÍ TUS COCHES"
+    ],
+    "seed": 51
+   }
+  },
+  {
+   "headline": "BUGGY · CHAPTER 2",
+   "headline_es": "BUGGY · CAP. 2",
+   "text": "The buggy: Paradise RV Park, from Chapter 2.",
+   "text_es": "El buggy: Paradise RV Park, desde el capítulo dos.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Paradise RV Park",
+    "label": "Dominator Buggy",
+    "n": 1,
+    "dy": -0.009
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Paradise RV Park",
+    "label": "Dominator Buggy",
+    "n": 1,
+    "dy": -0.009
+   }
+  },
+  {
+   "headline": "SQUALO · CHAPTER 4",
+   "headline_es": "SQUALO · CAP. 4",
+   "text": "The Squalo: a canal south of Washington Beach, Chapter 4.",
+   "text_es": "La Squalo: un canal al sur de Washington Beach, capítulo cuatro.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Washington Beach",
+    "label": "Squalo boat",
+    "n": 2,
+    "dx": -0.006,
+    "dy": 0.014,
+    "side": "left"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Washington Beach",
+    "label": "Lancha Squalo",
+    "n": 2,
+    "dx": -0.006,
+    "dy": 0.014,
+    "side": "left"
+   }
+  },
+  {
+   "headline": "CHEETAH · CHAPTER 5",
+   "headline_es": "CHEETAH · CAP. 5",
+   "text": "The Cheetah: a garage on Tequesta Retreat, Chapter 5.",
+   "text_es": "El Cheetah: un garaje en Tequesta Retreat, capítulo cinco.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Tequesta Retreat",
+    "label": "'95 Grotti Cheetah",
+    "n": 3,
+    "dy": -0.009,
+    "src": "GTABase · GamesRadar · Red Bull"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Tequesta Retreat",
+    "label": "Grotti Cheetah 95",
+    "n": 3,
+    "dy": -0.009,
+    "src": "GTABase · GamesRadar · Red Bull"
+   }
+  },
+  {
+   "headline": "WHICH FIRST?",
+   "headline_es": "¿CUÁL PRIMERO?",
+   "text": "Which one first? Tell me, because",
+   "text_es": "¿Cuál primero? Dime, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WHICH ONE",
+     "FIRST?"
+    ],
+    "pink": [
+     "FIRST?"
+    ],
+    "seed": 52,
+    "sub": "Cheetah, Buggy or Squalo"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CUÁL",
+     "PRIMERO?"
+    ],
+    "pink": [
+     "PRIMERO?"
+    ],
+    "seed": 52,
+    "sub": "Cheetah, Buggy o Squalo"
+   }
+  }
+ ],
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+}

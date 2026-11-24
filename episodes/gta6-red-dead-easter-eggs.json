@@ -1,0 +1,162 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "slug": "gta6-red-dead-easter-eggs",
+ "title": "2 Red Dead Easter Eggs in GTA 6",
+ "short_title": "GTA 6 hides 2 Red Dead easter eggs #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 hides 2 Red Dead easter eggs #GTA6 #Shorts",
+  "Arthur Morgan's hat is in GTA 6 #GTA6 #Shorts"
+ ],
+ "short_description": "Two Red Dead Redemption easter eggs in GTA 6: Arthur Morgan's 'Genuine Cowboy Hat' at a yard sale in southern Port Gellhorn (from Chapter 2; guides list different prices), and a Western novel about a cowboy from New Austin inside Jacob's Tavern in Millport. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: GamesRadar, TheGamer, Dexerto, Game8, Red Bull, GameSpot, The Click.",
+ "short_es": {
+  "title": "GTA 6 esconde 2 secretos de RED DEAD 🤠 #GTA6 #Shorts",
+  "description": "Dos guiños a Red Dead en GTA 6: el sombrero de Arthur Morgan en una venta de garaje al sur de Port Gellhorn (desde el capítulo 2) y una novela sobre un vaquero de New Austin en Jacob's Tavern, Millport. Fuentes: GamesRadar, TheGamer, Dexerto, Game8, Red Bull, GameSpot.",
+  "tags": [
+   "GTA 6 Red Dead",
+   "GTA 6 Arthur Morgan",
+   "GTA 6 easter eggs",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "Would you wear Arthur's hat in Vice City? Yes or no 🤠👇",
+ "short_pinned_comment_es": "¿Llevarías el sombrero de Arthur en Vice City? 🤠👇",
+ "tags": [
+  "GTA 6 Red Dead easter egg",
+  "GTA 6 Arthur Morgan hat",
+  "GTA 6 Arthur Morgan",
+  "GTA 6 New Austin",
+  "GTA 6 easter eggs",
+  "GTA 6 secrets",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#reddead",
+  "#arthurmorgan"
+ ],
+ "sources": [
+  "GamesRadar - Arthur Morgan's hat: https://www.gamesradar.com/games/grand-theft-auto/gta-6-arthur-morgans-hat/",
+  "TheGamer - Arthur Morgan hat unlock: https://www.thegamer.com/gta-6-arthur-morgan-red-dead-redemption-2-easter-egg-hat-unlock/",
+  "Dexerto - Arthur Morgan's hat: https://www.dexerto.com/wikis/gta-6/easter-eggs/arthur-morgans-hat/",
+  "Red Bull - GTA 6 easter eggs (New Austin book): https://www.redbull.com/int-en/gta-6-easter-eggs",
+  "GameSpot - GTA 6 easter eggs list: https://www.gamespot.com/articles/gta-6-easter-eggs-list-and-locations/"
+ ],
+ "short": [
+  {
+   "headline": "RED DEAD IN GTA 6",
+   "headline_es": "RED DEAD EN GTA 6",
+   "text": "Red Dead is hiding inside GTA 6, twice.",
+   "text_es": "Red Dead se esconde dentro de GTA seis, dos veces.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "RED DEAD IS",
+     "HIDING IN GTA 6"
+    ],
+    "pink": [
+     "RED DEAD"
+    ],
+    "seed": 91
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "RED DEAD SE",
+     "ESCONDE EN GTA 6"
+    ],
+    "pink": [
+     "RED DEAD"
+    ],
+    "seed": 91
+   }
+  },
+  {
+   "headline": "1: ARTHUR'S HAT",
+   "headline_es": "1: EL SOMBRERO",
+   "text": "One: Arthur Morgan's hat, at a yard sale in Port Gellhorn.",
+   "text_es": "Uno: el sombrero de Arthur Morgan, en una venta de garaje en Port Gellhorn.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "label": "Arthur Morgan's hat",
+    "n": 1,
+    "dx": -0.004,
+    "dy": 0.03
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "label": "Sombrero de Arthur",
+    "n": 1,
+    "dx": -0.004,
+    "dy": 0.03
+   }
+  },
+  {
+   "headline": "FROM CHAPTER 2",
+   "headline_es": "DESDE EL CAPÍTULO 2",
+   "text": "It shows up from Chapter 2.",
+   "text_es": "Aparece desde el capítulo dos.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "The yard sale opens in Chapter 2",
+    "pink": [
+     "Chapter 2"
+    ],
+    "seed": 92,
+    "src": "GamesRadar · TheGamer · Dexerto"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "La venta abre en el capítulo 2",
+    "pink": [
+     "capítulo 2"
+    ],
+    "seed": 92,
+    "src": "GamesRadar · TheGamer · Dexerto"
+   }
+  },
+  {
+   "headline": "2: A COWBOY BOOK",
+   "headline_es": "2: UN LIBRO",
+   "text": "Two: a cowboy novel from New Austin, in Millport, because",
+   "text_es": "Dos: una novela de un vaquero de New Austin, en Millport, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Millport",
+    "label": "New Austin book",
+    "n": 2,
+    "dy": -0.009,
+    "side": "left"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Millport",
+    "label": "Libro de New Austin",
+    "n": 2,
+    "dy": -0.009,
+    "side": "left"
+   }
+  }
+ ],
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+}

@@ -1,0 +1,156 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "slug": "gta6-mod-shops",
+ "title": "Where to Mod Your Car in GTA 6",
+ "short_title": "GTA 6: where to mod your car (best shops) #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6: where to mod your car (best shops) #GTA6 #Shorts",
+  "GTA 6 has 14 mod shops: start with these #GTA6 #Shorts"
+ ],
+ "short_description": "Where to customize cars in GTA 6: 14 mod shops in all. In Vice City, Euroform Automotive is in Little Cuba and Rideout Customs (Ultimate Edition) is in Crosstown. For off-road builds, Port Gellhorn has Dirt Merchants in the south and Wasteland Off-Road in the north. Others: Capri Classic in Capri, Coastal Auto Care in Key Lento, Ledford Motorcycle Workshop in Grayson. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: PowerPyx, Game8.",
+ "short_es": {
+  "title": "GTA 6: dónde TUNEAR tu coche 🔧 #GTA6 #Shorts",
+  "description": "Dónde tunear coches en GTA 6: 14 talleres. En Vice City, Euroform Automotive en Little Cuba y Rideout Customs (Ultimate Edition) en Crosstown. Para todoterreno, Dirt Merchants y Wasteland Off-Road en Port Gellhorn. Fuentes: PowerPyx, Game8.",
+  "tags": [
+   "GTA 6 tunear coches",
+   "GTA 6 talleres",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "What's the first car you modded? 👇",
+ "short_pinned_comment_es": "¿Cuál fue el primer coche que tuneaste? 👇",
+ "tags": [
+  "GTA 6 mod shop",
+  "GTA 6 mod shop locations",
+  "GTA 6 customize car",
+  "GTA 6 Rideout Customs",
+  "GTA 6 car customization",
+  "GTA 6 map",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6cars",
+  "#carmods"
+ ],
+ "sources": [
+  "PowerPyx - All mod shop locations: https://www.powerpyx.com/gta-6-all-mod-shops-locations/",
+  "Game8 - Mod shops: https://game8.co/games/GTA-6/archives/638824"
+ ],
+ "short": [
+  {
+   "headline": "14 MOD SHOPS",
+   "headline_es": "14 TALLERES",
+   "text": "GTA 6 has fourteen mod shops. Start with these three.",
+   "text_es": "GTA seis tiene catorce talleres. Empieza por estos tres.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "14 MOD SHOPS",
+     "START WITH 3"
+    ],
+    "pink": [
+     "START WITH 3"
+    ],
+    "seed": 121
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "14 TALLERES",
+     "EMPIEZA POR 3"
+    ],
+    "pink": [
+     "EMPIEZA POR 3"
+    ],
+    "seed": 121
+   }
+  },
+  {
+   "headline": "LITTLE CUBA",
+   "headline_es": "LITTLE CUBA",
+   "text": "Euroform Automotive, in Little Cuba.",
+   "text_es": "Euroform Automotive, en Little Cuba.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Little Cuba",
+    "label": "Euroform Automotive",
+    "n": 1,
+    "dx": 0.004,
+    "dy": 0.012,
+    "src": "PowerPyx · Game8"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Little Cuba",
+    "label": "Euroform Automotive",
+    "n": 1,
+    "dx": 0.004,
+    "dy": 0.012,
+    "src": "PowerPyx · Game8"
+   }
+  },
+  {
+   "headline": "CROSSTOWN",
+   "headline_es": "CROSSTOWN",
+   "text": "Rideout Customs in Crosstown, if you have the Ultimate Edition.",
+   "text_es": "Rideout Customs en Crosstown, si tienes la Ultimate Edition.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Crosstown",
+    "label": "Rideout Customs",
+    "n": 2,
+    "dy": -0.009
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Crosstown",
+    "label": "Rideout Customs",
+    "n": 2,
+    "dy": -0.009
+   }
+  },
+  {
+   "headline": "OFF-ROAD",
+   "headline_es": "TODOTERRENO",
+   "text": "Off-road builds? Port Gellhorn has two, because",
+   "text_es": "¿Todoterreno? Port Gellhorn tiene dos, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "label": "Dirt Merchants + Wasteland",
+    "n": 3,
+    "dx": -0.012,
+    "dy": 0.012
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "label": "Dirt Merchants + Wasteland",
+    "n": 3,
+    "dx": -0.012,
+    "dy": 0.012
+   }
+  }
+ ],
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+}

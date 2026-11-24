@@ -1,0 +1,190 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "slug": "gta6-vercetti-portal",
+ "title": "GTA 6's Tommy Vercetti Portal",
+ "short_title": "GTA 6 hides a portal to 2002 Vice City #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 hides a portal to 2002 Vice City #GTA6 #Shorts",
+  "How to get Tommy Vercetti's shirt in GTA 6 #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6's Tommy Vercetti easter egg: a 12-switch puzzle that starts at the Badger radio tower in Key Lento and ends at the Turtle Head power station east of Hamlet, between 7 PM and 6 AM. The reward: Tommy Vercetti's shirt and bike. Fast travel or switching characters resets it. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: GameSpot, Dexerto, PCGamesN, TheGamer, The Click.",
+ "short_es": {
+  "title": "GTA 6 esconde un PORTAL al Vice City de 2002 🌴 #GTA6 #Shorts",
+  "description": "El easter egg de Tommy Vercetti en GTA 6: 12 interruptores desde la torre de radio Badger en Key Lento hasta la central de Turtle Head, entre las 7 PM y las 6 AM. Premio: la camisa y la moto de Tommy. Fuentes: GameSpot, Dexerto, PCGamesN, TheGamer, The Click.",
+  "tags": [
+   "GTA 6 Tommy Vercetti",
+   "GTA 6 portal",
+   "GTA 6 easter eggs",
+   "GTA 6 secretos",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "Tommy's shirt or Tommy's bike: which do you want first? 👇",
+ "short_pinned_comment_es": "¿La camisa o la moto de Tommy? 👇",
+ "tags": [
+  "GTA 6 Tommy Vercetti",
+  "GTA 6 Vice City portal",
+  "GTA 6 Tommy Vercetti shirt",
+  "GTA 6 easter eggs",
+  "GTA 6 secrets",
+  "GTA 6 Key Lento",
+  "GTA 6 map",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#tommyvercetti",
+  "#gta6secrets"
+ ],
+ "sources": [
+  "GameSpot - How to get Tommy Vercetti's shirt and bike: https://www.gamespot.com/articles/how-to-get-tommy-vercettis-shirt-and-bike-in-gta-6/",
+  "Dexerto - Tommy Vercetti easter egg: https://www.dexerto.com/wikis/gta-6/easter-eggs/tommy-vercetti-easter-egg/",
+  "PCGamesN - Tommy Vercetti easter egg: https://www.pcgamesn.com/grand-theft-auto-vi/tommy-vercetti-easter-egg",
+  "The Click - GTA 6 Vice City portal: https://www.theclick.gg/gta-6-vice-city-portal/"
+ ],
+ "short": [
+  {
+   "headline": "2002 IS BACK",
+   "headline_es": "VUELVE 2002",
+   "text": "GTA 6 hides a portal to 2002's Vice City.",
+   "text_es": "GTA seis esconde un portal al Vice City de dos mil dos.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "A PORTAL TO",
+     "2002 VICE CITY"
+    ],
+    "pink": [
+     "2002 VICE CITY"
+    ],
+    "seed": 41
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "UN PORTAL AL",
+     "VICE CITY DE 2002"
+    ],
+    "pink": [
+     "VICE CITY DE 2002"
+    ],
+    "seed": 41
+   }
+  },
+  {
+   "headline": "START: KEY LENTO",
+   "headline_es": "INICIO: KEY LENTO",
+   "text": "It starts at the Badger radio tower in Key Lento.",
+   "text_es": "Empieza en la torre de radio Badger, en Key Lento.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Key Lento",
+    "label": "Start: Badger tower",
+    "n": 1,
+    "dx": 0.004,
+    "dy": -0.012
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Key Lento",
+    "label": "Inicio: torre Badger",
+    "n": 1,
+    "dx": 0.004,
+    "dy": -0.012
+   }
+  },
+  {
+   "headline": "12 SWITCHES",
+   "headline_es": "12 INTERRUPTORES",
+   "text": "Flip twelve switches in order. Don't fast travel.",
+   "text_es": "Activa doce interruptores en orden. Sin viaje rápido.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "12 switches, in order. No fast travel.",
+    "pink": [
+     "12 switches"
+    ],
+    "seed": 42,
+    "src": "GameSpot · Dexerto · PCGamesN"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "12 interruptores, en orden. Sin viaje rápido.",
+    "pink": [
+     "12 interruptores"
+    ],
+    "seed": 42,
+    "src": "GameSpot · Dexerto · PCGamesN"
+   }
+  },
+  {
+   "headline": "FINISH: 7 PM-6 AM",
+   "headline_es": "FINAL: 7 PM-6 AM",
+   "text": "Finish at the Turtle Head power station, after dark.",
+   "text_es": "Termina en la central de Turtle Head, de noche.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "T.H. Power Station",
+    "label": "Finish · 7 PM-6 AM",
+    "n": 2,
+    "dy": -0.009
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "T.H. Power Station",
+    "label": "Final · 7 PM-6 AM",
+    "n": 2,
+    "dy": -0.009
+   }
+  },
+  {
+   "headline": "TOMMY'S SHIRT",
+   "headline_es": "LA CAMISA DE TOMMY",
+   "text": "Your reward is Tommy's shirt and bike, because",
+   "text_es": "El premio es la camisa y la moto de Tommy, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "TOMMY'S SHIRT",
+     "+ TOMMY'S BIKE"
+    ],
+    "pink": [
+     "TOMMY'S SHIRT"
+    ],
+    "seed": 43
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "LA CAMISA",
+     "+ LA MOTO"
+    ],
+    "pink": [
+     "LA CAMISA"
+    ],
+    "seed": 43
+   }
+  }
+ ],
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+}

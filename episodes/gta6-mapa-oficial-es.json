@@ -1,0 +1,202 @@
+{
+ "title": "El mapa oficial de GTA 6 en HD",
+ "slug": "gta6-mapa-oficial-es",
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "es_only": true,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_title": "GTA 6's official map, in HD #GTA6 #Shorts",
+ "short_description": "Spanish-channel-only Short (Nov 24 search research: 'gta 6 mapa', 'mapa oficial', 'mapa interactivo' are top Spanish searches and no Spanish page explains the official download). Our cards + Rockstar's official map.",
+ "short_es": {
+  "title": "El MAPA oficial de GTA 6 en HD (y gratis) 🗺️ #GTA6 #Shorts",
+  "description": "Rockstar publicó el mapa oficial de Leonida, el mapa completo de GTA 6, como póster imprimible gratis el día del lanzamiento, el 19 de noviembre. Se descarga en la página de descargas de GTA VI de Rockstar (rockstargames.com/VI/downloads). En vicereplay.com lo tienes interactivo: acércate hasta las calles y mira 30 secretos marcados (Guías → Mapa).\n\nMapa: Rockstar Games (oficial). Fuentes: Rockstar Newswire, PC Gamer.",
+  "tags": [
+   "GTA 6 mapa",
+   "GTA 6 mapa oficial",
+   "GTA 6 mapa interactivo",
+   "mapa de GTA 6",
+   "GTA 6 Leonida",
+   "GTA 6 Vice City",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "short_playlist": "GTA 6 Shorts",
+ "short_pinned_comment_es": "¿Qué lugar del mapa quieres que marquemos ahora? 👇",
+ "pinned_comment": "Which spot should we pin next? 👇",
+ "tags": [
+  "GTA 6 map",
+  "GTA 6 official map",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gta6mapa",
+  "#gta6español"
+ ],
+ "guide": "mapa-gta-6",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam (5 lines), owner Nov 24 'all is approved'",
+ "sources": [
+  "Rockstar Newswire - GTA VI now available (launch day, Nov 19): https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+  "PC Gamer - Rockstar posted GTA 6's full map online: https://www.pcgamer.com/games/grand-theft-auto/rockstar-has-finally-posted-gta-6s-full-map-online-thank-goodness-because-clearing-the-entire-thing-in-game-takes-ages/",
+  "Rockstar Games - GTA VI downloads: https://www.rockstargames.com/VI/downloads"
+ ],
+ "facts_note": "Official poster posted on launch day Nov 19 (Rockstar Newswire + PC Gamer). We never use or mention leaked maps.",
+ "short": [
+  {
+   "headline": "MAPA OFICIAL",
+   "headline_es": "MAPA OFICIAL",
+   "text": "Rockstar released GTA 6's official map, free and in HD.",
+   "text_es": "Rockstar publicó el mapa oficial de GTA seis, gratis y en alta definición.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "EL MAPA OFICIAL",
+     "DE GTA 6"
+    ],
+    "pink": [
+     "DE GTA 6"
+    ],
+    "sub": "gratis y en HD",
+    "seed": 131,
+    "locale": "es"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "EL MAPA OFICIAL",
+     "DE GTA 6"
+    ],
+    "pink": [
+     "DE GTA 6"
+    ],
+    "sub": "gratis y en HD",
+    "seed": 131,
+    "locale": "es"
+   },
+   "audio_es": "media/voice/gta6-mapa-oficial-es/es/seg1.wav"
+  },
+  {
+   "headline": "TODO LEONIDA",
+   "headline_es": "TODO LEONIDA",
+   "text": "The whole state, from Vice City to the Keys.",
+   "text_es": "Todo Leonida, desde Vice City hasta los Cayos.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Vice City",
+    "label": "Vice City",
+    "n": 1,
+    "to": 0.45,
+    "locale": "es"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Vice City",
+    "label": "Vice City",
+    "n": 1,
+    "to": 0.45,
+    "locale": "es"
+   },
+   "audio_es": "media/voice/gta6-mapa-oficial-es/es/seg2.wav"
+  },
+  {
+   "headline": "19 DE NOVIEMBRE",
+   "headline_es": "19 DE NOVIEMBRE",
+   "text": "It came out on launch day.",
+   "text_es": "Salió el diecinueve de noviembre, el día del lanzamiento.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Publicado el 19 de noviembre",
+    "pink": [
+     "19 de noviembre"
+    ],
+    "src": "Rockstar · PC Gamer",
+    "seed": 132,
+    "locale": "es"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Publicado el 19 de noviembre",
+    "pink": [
+     "19 de noviembre"
+    ],
+    "src": "Rockstar · PC Gamer",
+    "seed": 132,
+    "locale": "es"
+   },
+   "audio_es": "media/voice/gta6-mapa-oficial-es/es/seg3.wav"
+  },
+  {
+   "headline": "DESCÁRGALO",
+   "headline_es": "DESCÁRGALO",
+   "text": "Download it from Rockstar's downloads page.",
+   "text_es": "Se descarga gratis en la web de Rockstar, en descargas.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "rockstargames.com/VI/downloads",
+    "pink": [
+     "downloads"
+    ],
+    "sub": "Gratis, para imprimir",
+    "seed": 133,
+    "locale": "es"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "rockstargames.com/VI/downloads",
+    "pink": [
+     "downloads"
+    ],
+    "sub": "Gratis, para imprimir",
+    "seed": 133,
+    "locale": "es"
+   },
+   "audio_es": "media/voice/gta6-mapa-oficial-es/es/seg4.wav"
+  },
+  {
+   "headline": "INTERACTIVO",
+   "headline_es": "INTERACTIVO",
+   "text": "And on vicereplay.com it's interactive, with thirty secrets, because",
+   "text_es": "Y en vicereplay punto com lo tienes interactivo, con treinta secretos, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "INTERACTIVO",
+     "EN VICEREPLAY.COM"
+    ],
+    "pink": [
+     "INTERACTIVO"
+    ],
+    "sub": "30 secretos marcados",
+    "seed": 134,
+    "locale": "es"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "INTERACTIVO",
+     "EN VICEREPLAY.COM"
+    ],
+    "pink": [
+     "INTERACTIVO"
+    ],
+    "sub": "30 secretos marcados",
+    "seed": 134,
+    "locale": "es"
+   },
+   "audio_es": "media/voice/gta6-mapa-oficial-es/es/seg5.wav"
+  }
+ ]
+}

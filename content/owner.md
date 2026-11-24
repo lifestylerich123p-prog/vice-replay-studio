@@ -319,3 +319,7 @@
   approval for DESIGN changes (how videos, cards, carousels, thumbnails and the website look). Uploads, new topics
   and spending still follow the normal approvals. Used for: hook v2 (brighter 4K photo cards, punch-in opening,
   no duplicate slab, one-line slabs), map in the site menu + homepage, per-spot map links.
+- 2026-11-24 ~12:15 PM ET, owner: "Do what you think will help the channel, all is approved" (answer to "approve the
+  map series"): the "Where to find it" map Shorts (official map zoom cards, 2+ guides per spot) fill the open daytime
+  slots Nov 29-Dec 5, plus one Spanish-only Short on the official map (Viral Adam voice, ~5 credits). Facts re-checked
+  before each upload as always.

@@ -1,0 +1,159 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "slug": "gta6-early-helicopter",
+ "title": "GTA 6's Easiest Early Helicopter",
+ "short_title": "GTA 6: the easiest early helicopter #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6: the easiest early helicopter #GTA6 #Shorts",
+  "Where to find a helicopter early in GTA 6 #GTA6 #Shorts"
+ ],
+ "short_description": "The easiest early helicopter in GTA 6: a private dock in Southwind. Turn off at the Sherwin Boatworks and Chicki's Tiki Bar signs; the dock is east of the parking lot. It isn't a guaranteed spawn, so check back if it's empty. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: PC Gamer, The Click, TheGamer, PowerPyx.",
+ "short_es": {
+  "title": "El HELICÓPTERO más fácil de GTA 6 🚁 #GTA6 #Shorts",
+  "description": "El helicóptero más fácil al principio de GTA 6: un muelle privado en Southwind. Gira en los carteles de Sherwin Boatworks y Chicki's Tiki Bar; el muelle está al este del aparcamiento. No siempre aparece. Fuentes: PC Gamer, The Click, TheGamer, PowerPyx.",
+  "tags": [
+   "GTA 6 helicóptero",
+   "GTA 6 Southwind",
+   "GTA 6 trucos",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "Was the heli there on your first try? Yes or no 👇",
+ "short_pinned_comment_es": "¿Estaba el helicóptero a la primera? 👇",
+ "tags": [
+  "GTA 6 helicopter",
+  "GTA 6 helicopter location",
+  "GTA 6 early helicopter",
+  "GTA 6 Southwind",
+  "GTA 6 tips",
+  "GTA 6 map",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#helicopter"
+ ],
+ "sources": [
+  "PC Gamer - GTA 6 first plane and helicopter: https://www.pcgamer.com/games/grand-theft-auto/gta-6-first-plane-and-helicopter/",
+  "The Click - GTA 6 helicopter locations: https://www.theclick.gg/gta-6-helicopter-locations/",
+  "TheGamer - easy early planes and helicopters: https://www.thegamer.com/gta-6-planes-helicopters-easy-locations-early-game/",
+  "PowerPyx - helicopter and plane locations: https://www.powerpyx.com/gta-6-helicopter-plane-locations/"
+ ],
+ "short": [
+  {
+   "headline": "FREE HELICOPTER",
+   "headline_es": "HELI GRATIS",
+   "text": "The easiest early helicopter in GTA 6 is in Southwind.",
+   "text_es": "El helicóptero más fácil de GTA seis está en Southwind.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "THE EASIEST",
+     "EARLY HELICOPTER"
+    ],
+    "pink": [
+     "EARLY HELICOPTER"
+    ],
+    "seed": 61
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "EL HELICÓPTERO",
+     "MÁS FÁCIL"
+    ],
+    "pink": [
+     "MÁS FÁCIL"
+    ],
+    "seed": 61
+   }
+  },
+  {
+   "headline": "SOUTHWIND",
+   "headline_es": "SOUTHWIND",
+   "text": "Head to Southwind, in Leonida's far southwest.",
+   "text_es": "Ve a Southwind, en el extremo suroeste de Leonida.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Southwind",
+    "label": "Helicopter dock",
+    "n": 1,
+    "dy": -0.009
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Southwind",
+    "label": "Muelle del helicóptero",
+    "n": 1,
+    "dy": -0.009
+   }
+  },
+  {
+   "headline": "FOLLOW THE SIGNS",
+   "headline_es": "SIGUE LOS CARTELES",
+   "text": "Turn at the Sherwin Boatworks and Chicki's Tiki Bar signs.",
+   "text_es": "Gira en los carteles de Sherwin Boatworks y Chicki's Tiki Bar.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Turn at Sherwin Boatworks + Chicki's Tiki Bar",
+    "pink": [
+     "Sherwin Boatworks"
+    ],
+    "seed": 62,
+    "src": "PC Gamer · The Click · TheGamer"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Gira en Sherwin Boatworks + Chicki's Tiki Bar",
+    "pink": [
+     "Sherwin Boatworks"
+    ],
+    "seed": 62,
+    "src": "PC Gamer · The Click · TheGamer"
+   }
+  },
+  {
+   "headline": "EAST OF THE LOT",
+   "headline_es": "AL ESTE",
+   "text": "The dock is east of the parking lot. Empty? Check back, because",
+   "text_es": "El muelle está al este del aparcamiento. ¿Vacío? Vuelve, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Dock east of the parking lot. Not every time.",
+    "pink": [
+     "east"
+    ],
+    "seed": 63
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Muelle al este del aparcamiento. No siempre está.",
+    "pink": [
+     "al este"
+    ],
+    "seed": 63
+   }
+  }
+ ],
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+}

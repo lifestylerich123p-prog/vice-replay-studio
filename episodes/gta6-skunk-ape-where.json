@@ -1,0 +1,161 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Shorts",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "slug": "gta6-skunk-ape-where",
+ "title": "Where to Find GTA 6's Bigfoot",
+ "short_title": "GTA 6's Bigfoot is real: where to look #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6's Bigfoot is real: where to look #GTA6 #Shorts",
+  "Where to find the Skunk Ape in GTA 6 #GTA6 #Shorts"
+ ],
+ "short_description": "Where to find the Skunk Ape, GTA 6's Bigfoot: the lakeside road at Cottonmouth Lake, south of Hamlet in Grassrivers. Look for a deer carcass; it's available early in Chapter 1, and night is best. Kirk's 'Mr. Mangrove' side quests (flyer at Skeeter's bar in Hamlet) take it further. Guides also name Gullet Marsh. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: GTABase, GamesRadar, Dexerto, Game8, VICE.",
+ "short_es": {
+  "title": "El PIE GRANDE de GTA 6 existe: dónde buscarlo 🦍 #GTA6 #Shorts",
+  "description": "Dónde encontrar al Skunk Ape, el Pie Grande de GTA 6: la carretera junto a Cottonmouth Lake, al sur de Hamlet. Busca un ciervo muerto; desde el capítulo 1 y mejor de noche. Fuentes: GTABase, GamesRadar, Dexerto, Game8, VICE.",
+  "tags": [
+   "GTA 6 Pie Grande",
+   "GTA 6 Skunk Ape",
+   "GTA 6 secretos",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "Did you find it on your first night? Yes or no 🦍👇",
+ "short_pinned_comment_es": "¿Lo encontraste la primera noche? 🦍👇",
+ "tags": [
+  "GTA 6 Bigfoot",
+  "GTA 6 Skunk Ape",
+  "GTA 6 Skunk Ape location",
+  "GTA 6 Bigfoot location",
+  "GTA 6 Mr Mangrove",
+  "GTA 6 easter eggs",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#bigfoot",
+  "#gta6secrets"
+ ],
+ "sources": [
+  "GTABase - Bigfoot location: https://www.gtabase.com/gta-6/articles/gta-6-bigfoot-location-how-to-find-the-skunk-ape",
+  "GamesRadar - Skunk Ape and Mr. Mangrove: https://www.gamesradar.com/games/grand-theft-auto/gta-6-bigfoot-skunk-ape-mr-mangrove/",
+  "Dexerto - Skunk Ape easter egg: https://www.dexerto.com/wikis/gta-6/easter-eggs/skunk-ape-easter-egg/",
+  "VICE - GTA 6 Bigfoot explained: https://www.vice.com/en/article/gta-6-bigfoot-explained-what-is-skunkape/"
+ ],
+ "short": [
+  {
+   "headline": "BIGFOOT IS REAL",
+   "headline_es": "PIE GRANDE EXISTE",
+   "text": "Bigfoot is real in GTA 6. Here's exactly where to look.",
+   "text_es": "El Pie Grande existe en GTA seis. Te digo dónde buscar.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "BIGFOOT IS",
+     "REAL IN GTA 6"
+    ],
+    "pink": [
+     "REAL IN GTA 6"
+    ],
+    "seed": 101
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "EL PIE GRANDE",
+     "EXISTE"
+    ],
+    "pink": [
+     "EXISTE"
+    ],
+    "seed": 101
+   }
+  },
+  {
+   "headline": "COTTONMOUTH LAKE",
+   "headline_es": "COTTONMOUTH LAKE",
+   "text": "Take the lakeside road at Cottonmouth Lake, south of Hamlet.",
+   "text_es": "Toma la carretera junto a Cottonmouth Lake, al sur de Hamlet.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Cottonmouth Lake",
+    "label": "Skunk Ape",
+    "n": 1,
+    "dy": -0.009
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Cottonmouth Lake",
+    "label": "Skunk Ape",
+    "n": 1,
+    "dy": -0.009
+   }
+  },
+  {
+   "headline": "LOOK FOR THIS",
+   "headline_es": "BUSCA ESTO",
+   "text": "Look for a deer carcass. Night works best.",
+   "text_es": "Busca un ciervo muerto. De noche, mejor.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Find the deer carcass. Go at night.",
+    "pink": [
+     "deer carcass"
+    ],
+    "seed": 102,
+    "src": "GTABase · GamesRadar · Dexerto"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Busca el ciervo muerto. Ve de noche.",
+    "pink": [
+     "ciervo muerto"
+    ],
+    "seed": 102,
+    "src": "GTABase · GamesRadar · Dexerto"
+   }
+  },
+  {
+   "headline": "CHAPTER 1 OK",
+   "headline_es": "DESDE EL CAPÍTULO 1",
+   "text": "It works from Chapter 1, so go tonight, because",
+   "text_es": "Funciona desde el capítulo uno, así que ve hoy, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Works from Chapter 1",
+    "pink": [
+     "Chapter 1"
+    ],
+    "seed": 103,
+    "sub": "Then Kirk's Mr. Mangrove quests"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Funciona desde el capítulo 1",
+    "pink": [
+     "capítulo 1"
+    ],
+    "seed": 103,
+    "sub": "Y después, las misiones de Kirk"
+   }
+  }
+ ],
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+}
