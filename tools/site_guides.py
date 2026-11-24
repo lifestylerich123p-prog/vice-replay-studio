@@ -64,6 +64,7 @@ footer{margin-top:44px;color:var(--muted);font-size:13px;border-top:1px solid va
 .banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center}
 .banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,7,23,.88) 0%,rgba(13,7,23,.5) 42%,rgba(13,7,23,0) 72%)}
 .banner h1{position:relative;z-index:1;margin:0;padding:18px 20px;max-width:68%}
+.lead{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:14px;margin:4px 0 18px;border:1px solid var(--line);background:var(--panel-2)}
 .card.pic{display:grid;grid-template-columns:128px 1fr;gap:14px;align-items:start;padding:12px}
 .card.pic img{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:8px;background:var(--panel-2)}
 .card.pic b{font-size:16px}.card.pic small{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-top:4px}
@@ -161,10 +162,10 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in jsonld)
     if lang == "es":
         menu = f'<a href="/es/">Guías</a><a href="/es/equipo/">Equipo</a><a href="{YT_ES}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
-        foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
+        foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/es/acerca/">Quiénes somos</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
     else:
         menu = f'<a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
-        foot = 'Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.'
+        foot = 'Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a> · <a href="/about/">About us</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.'
     doc = f"""<!doctype html>
 <html lang="{lang}">
 <head>
@@ -178,7 +179,7 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
 <meta property="og:url" content="{url}"><meta property="og:site_name" content="Vice Replay"><meta property="og:image" content="{image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title)}"><meta name="twitter:description" content="{html.escape(desc)}"><meta name="twitter:image" content="{image}">
 <meta name="theme-color" content="#0d0717">
-<link rel="icon" href="/favicon.png">
+<link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/favicon.png"><link rel="manifest" href="/site.webmanifest"><link rel="alternate" type="application/rss+xml" title="Vice Replay: GTA 6 news and guides" href="/feed.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;700;800&display=swap">
 <style>{CSS}</style>{ld}
 </head>
@@ -257,6 +258,18 @@ NOTICES = {
 NOTICE_DATE = {"en": "Update, Nov 24", "es": "Actualización, 24 nov"}
 
 
+def with_lead(body, img, title):
+    """Nov 24 upgrade: the guide's 1200x630 card as a big header image (looks like a magazine page; Google Discover
+    favours pages with a large image). Goes right before the lede, so after the h1, meta line and any update note."""
+    tag = (f'<img class="lead" src="{img}" width="1200" height="630" alt="{html.escape(title)}" '
+           'fetchpriority="high" decoding="async">')
+    k = body.find('<p class="lede">')
+    if k < 0:
+        k = body.find("</h1>")
+        k = body.find("</p>", body.find('<p class="meta">', k)) + 4 if '<p class="meta">' in body[k:] else k + 5
+    return body[:k] + tag + "\n" + body[k:]
+
+
 def with_notice(slug, body, lang):
     """Put the dated update note right under the page's meta line (or its h1)."""
     if slug not in NOTICES:
@@ -275,6 +288,7 @@ def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None):
     path = f"guides/{slug}/" if lang == "en" else f"es/guias/{slug}/"
     l1, l2, shot = CARDS.get(slug, (title.split(":")[0][:28], "", None))
     img = card(slug, l1, l2 or "On replay", shot)
+    body = with_lead(body, img, title)
     if lang == "en": GUIDES.append((slug, title, desc, date))
     else: GUIDES_ES.append((slug, title, desc, date))
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": title[:110], "description": desc, "image": [img],
@@ -654,7 +668,7 @@ for g in _JSON:
 GUIDES_ES.sort(key=lambda g: g[3], reverse=True)
 page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en español: trucos, hora de lanzamiento, espacio y PC. Sin spoilers.",
      banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="https://www.youtube.com/@vicereplaytv-q8s">Nuestros videos tienen subtítulos en español.</a></p><div class="cards">'
-     + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>', lang="es")
+     + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>', lang="es")
 
 # Spanish gear page (Nov 22, 2026): the Amazon link for Vice Replay en Español (channel links, descriptions, comments)
 ALT.update({"es/equipo/": "gear/"})
@@ -679,7 +693,7 @@ page("es/equipo/", "Equipo para GTA 6 (Amazon) · Vice Replay", "Equipo para GTA
 GUIDES.sort(key=lambda g: (g[0] != "gta-6-launch-live", g[3]), reverse=False)
 GUIDES[1:] = sorted(GUIDES[1:], key=lambda g: g[3], reverse=True)
 card("default", "GTA'S WILDEST MOMENTS.", "ON REPLAY.", "vice-city-11.jpg")
-cards = "".join(f'<a class="card pic" href="/guides/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES)
+cards = "".join(f'<a class="card pic" href="/guides/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES)
 page("guides/", "GTA 6 Guides · Vice Replay", "GTA 6 guides from Vice Replay: unlock times, download size, storage, the map and launch tips.",
      banner('GTA&nbsp;6 <span>guides</span>', 'news-skyline') + f'<p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers. <a href="/es/">En español</a></p><div class="cards">{cards}</div>')
 
@@ -746,18 +760,53 @@ INDEXNOW_KEY = "42ea7b879d668a2c990cad4a77c32361"  # public by design: proves to
 open(os.path.join(SITE, f"{INDEXNOW_KEY}.txt"), "w").write(INDEXNOW_KEY)
 open(os.path.join(SITE, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
 _newest = max([d for *_, d in GUIDES] + ["2026-11-18"]); _newest_es = max([d for *_, d in GUIDES_ES] + ["2026-11-18"])  # hubs change whenever a guide is added
-urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18"), ("privacy/", "2026-11-23"), ("terms/", "2026-11-22"), ("es/equipo/", "2026-11-22")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
+# About pages (Nov 24 upgrade): who we are and how we check facts. Google's quality guidance weighs trust; a fan site
+# earns it by showing its rules. No owner name or location here (owner info stays private).
+ALT["about/"] = "es/acerca/"; ALT["es/acerca/"] = "about/"
+_ORG = {"@context": "https://schema.org", "@type": "Organization", "name": "Vice Replay", "url": DOMAIN + "/",
+        "logo": DOMAIN + "/favicon.png", "email": "contact@vicereplay.com",
+        "sameAs": [YT, YT_ES, "https://www.tiktok.com/@vicereplay00", "https://www.instagram.com/vice.replaytv/"]}
+page("about/", "About Vice Replay: How We Check GTA 6 News", "Who makes Vice Replay, how we check every GTA 6 fact in 2+ sources, how we fix mistakes, and how the site makes money.", f"""<h1>About <span>Vice Replay</span></h1>
+<p class="lede">Vice Replay is an independent GTA 6 fan channel and website: daily news, streamer stories, guides and Shorts, in English and Spanish. GTA's wildest moments. On replay.</p>
+<h2>How we check facts</h2>
+<ul class="list"><li>Every number, date and quote is checked in <b>at least two reputable sources</b> before we publish, and again right before a video goes out.</li>
+<li>Sources are listed at the bottom of every guide, with links.</li>
+<li>Reports and rumors are labeled ("reportedly", "not confirmed by Rockstar").</li>
+<li>No story spoilers in titles or thumbnails, and we never use leaked material.</li></ul>
+<h2>When something changes</h2>
+<p>GTA 6 news moves fast. When a fact changes we update the page and its date; when an older page is out of date we add a dated note at the top instead of quietly rewriting history. Spotted a mistake? <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a>.</p>
+<h2>How the site makes money</h2>
+<p>Some links are Amazon affiliate links: as an Amazon Associate we earn from qualifying purchases, at no extra cost to you. Sponsored segments are always labeled. We never sell codes, accounts or "money generators".</p>
+<h2>Not official</h2>
+<p>Vice Replay is a fan project, not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive.</p>
+<h2>Find us</h2>
+<div class="btns"><a class="item" href="{YT}" target="_blank" rel="noopener">YouTube<small>English</small><span aria-hidden="true">→</span></a><a class="item" href="{YT_ES}" target="_blank" rel="noopener">YouTube en español<span aria-hidden="true">→</span></a><a class="item" href="https://www.instagram.com/vice.replaytv/" target="_blank" rel="noopener">Instagram<small>@vice.replaytv</small><span aria-hidden="true">→</span></a><a class="item" href="https://www.tiktok.com/@vicereplay00" target="_blank" rel="noopener">TikTok<small>@vicereplay00</small><span aria-hidden="true">→</span></a></div>""",
+     jsonld=[_ORG, {"@context": "https://schema.org", "@type": "AboutPage", "name": "About Vice Replay", "url": DOMAIN + "/about/"}])
+page("es/acerca/", "Quiénes somos: así revisa Vice Replay las noticias de GTA 6", "Quién hace Vice Replay, cómo revisamos cada dato de GTA 6 en 2+ fuentes, cómo corregimos errores y cómo se financia el sitio.", f"""<h1>Quiénes <span>somos</span></h1>
+<p class="lede">Vice Replay es un canal y sitio de fans de GTA 6, independiente: noticias diarias, streamers, guías y Shorts, en inglés y en español.</p>
+<h2>Cómo revisamos los datos</h2>
+<ul class="list"><li>Cada cifra, fecha y cita se revisa en <b>al menos dos fuentes confiables</b> antes de publicar.</li><li>Las fuentes están al final de cada guía, con enlaces.</li><li>Los rumores se marcan como tales ("según reportes", "sin confirmar").</li><li>Sin spoilers de la historia en títulos ni miniaturas, y nunca usamos material filtrado.</li></ul>
+<h2>Cuando algo cambia</h2>
+<p>Actualizamos la página y su fecha; si una página vieja quedó desactualizada, ponemos una nota fechada arriba. ¿Viste un error? <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a>.</p>
+<h2>Cómo se financia</h2>
+<p>Algunos enlaces son de afiliado de Amazon: como Asociado de Amazon ganamos con las compras que califican, sin costo extra para ti. Los patrocinios siempre se indican.</p>
+<h2>No oficial</h2>
+<p>Vice Replay es un proyecto de fans, no afiliado con Rockstar Games ni con Take-Two Interactive.</p>""",
+     jsonld=[_ORG, {"@context": "https://schema.org", "@type": "AboutPage", "name": "Quiénes somos", "url": DOMAIN + "/es/acerca/"}], lang="es")
+
+urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18"), ("privacy/", "2026-11-23"), ("terms/", "2026-11-22"), ("es/equipo/", "2026-11-22"), ("about/", "2026-11-24"), ("es/acerca/", "2026-11-24")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
 open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
 def refresh_home():
-    """Homepage (hand-written index.html, Nov 24 upgrade): rebuild its deals list and 'Latest GTA 6 news' list on every
-    build, so it can't keep showing launch-night links or old prices. Only those two sections are touched."""
+    """Homepage (hand-written index.html): rebuild its deals list and 'Latest GTA 6 news' on every build (Nov 24), so it
+    can't keep showing launch-night links or old prices. Latest news = picture cards right under the intro, so a phone
+    sees fresh news on the first screen. Also makes sure the head has the org/website data, icon, manifest and RSS."""
     path = os.path.join(SITE, "index.html")
     doc = open(path).read()
     deals = "".join(f'\n    <li><a class="item big" href="{amz(q)}" target="_blank" rel="sponsored noopener">{html.escape(t)}<span aria-hidden="true">→</span></a></li>'
                     for t, sub, q in DEALS)
     deals_sec = (f'<section class="group" id="deals"><h2>🔥 Black Friday deals on Amazon</h2><p>Checked {DEALS_CHECKED} · prices change fast · '
-                 f'<a href="/guides/gta-6-black-friday/" style="color:#00e5d2">all GTA 6 deals</a></p><ul class="links">{deals}\n  </ul>'
+                 f'<a href="/guides/gta-6-deals/" style="color:#00e5d2">every real GTA 6 deal</a></p><ul class="links">{deals}\n  </ul>'
                  '<p style="font-size:13px;opacity:.75">Affiliate links: as an Amazon Associate we earn from qualifying purchases, at no extra cost to you.</p></section>')
     newest = [g for g in GUIDES if g[0] != "gta-6-launch-live"][:5]
     def short(title):  # "GTA 6 Streaming Records: Most-Watched..." -> "GTA 6 Streaming Records"
@@ -765,14 +814,78 @@ def refresh_home():
         if len(title) <= 58: return title
         if 14 <= len(head) <= 58: return head
         return title[:58].rsplit(" ", 1)[0] + "…"
-    latest = ('\n    <li><a class="item" href="/guides/gta-6-launch-live/" style="outline:2px solid #ff1f8e">🔴 GTA 6 news: live updates<span aria-hidden="true">→</span></a></li>'
-              + "".join(f'\n    <li><a class="item" href="/guides/{s}/">{html.escape(short(ti))}<span aria-hidden="true">→</span></a></li>' for s, ti, d, dt in newest))
-    latest_sec = f'<section class="group"><h2>Latest GTA 6 news</h2><ul class="links">{latest}\n  </ul></section>'
+    def pic(slug, title, sub, hot=False):
+        return (f'\n    <a class="card pic{" hot" if hot else ""}" href="/guides/{slug}/"><img src="/og/t/{slug}.webp" width="480" height="252" '
+                f'alt="{html.escape(title)}" loading="lazy"><span><b>{html.escape(title)}</b><small>{html.escape(sub)}</small></span></a>')
+    cards = pic("gta-6-launch-live", "🔴 GTA 6 news: live updates", "Every confirmed update since launch, newest first", True)
+    cards += "".join(pic(s_, short(ti), de) for s_, ti, de, dt_ in newest)
+    latest_sec = f'<section class="group" id="latest"><h2>Latest GTA 6 news</h2><div class="cards">{cards}\n  </div></section>'
     doc2 = _re.sub(r'<section class="group" id="deals">.*?</section>', lambda m: deals_sec, doc, count=1, flags=_re.S)
-    doc2 = _re.sub(r'<section class="group"><h2>Latest GTA 6 news</h2>.*?</section>', lambda m: latest_sec, doc2, count=1, flags=_re.S)
+    doc2 = _re.sub(r'\s*<section class="group"(?: id="latest")?><h2>Latest GTA 6 news</h2>.*?</section>', "", doc2, count=1, flags=_re.S)
+    k = doc2.find('<p class="lede">')
+    k = doc2.find("</p>", k) + 4
+    doc2 = doc2[:k] + "\n  " + latest_sec + doc2[k:]
+    style = ('<style id="vr-cards">.cards{display:grid;gap:10px}.card{display:block;background:var(--panel-2);border:1px solid var(--line);'
+             'border-radius:14px;color:var(--fg);text-decoration:none}.card:hover{border-color:#ff1f8e}.card.pic{display:grid;'
+             'grid-template-columns:120px 1fr;gap:12px;align-items:center;padding:10px}.card.pic img{display:block;width:100%;height:auto;'
+             'aspect-ratio:40/21;border-radius:8px}.card.pic b{font-size:16px;line-height:1.3;display:block}.card.pic small{color:var(--muted);'
+             'font-size:13px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.card.hot{outline:2px solid #ff1f8e}'
+             '@media(min-width:640px){.card.pic{grid-template-columns:200px 1fr}}@media(max-width:639px){.hero{aspect-ratio:2.2/1}.hero .brand{font-size:clamp(36px,11vw,56px)}main>h1,.wrap>h1{font-size:clamp(30px,9vw,42px);margin-top:16px}}</style>')
+    doc2 = _re.sub(r'<style id="vr-cards">.*?</style>', "", doc2, flags=_re.S)
+    org = json.dumps([{"@context": "https://schema.org", "@type": "WebSite", "name": "Vice Replay", "url": DOMAIN + "/", "inLanguage": ["en", "es"]},
+                      {"@context": "https://schema.org", "@type": "Organization", "name": "Vice Replay", "url": DOMAIN + "/", "logo": DOMAIN + "/favicon.png",
+                       "sameAs": [YT, YT_ES, "https://www.tiktok.com/@vicereplay00", "https://www.instagram.com/vice.replaytv/"]}], ensure_ascii=False)
+    doc2 = _re.sub(r'<script type="application/ld\+json" id="vr-org">.*?</script>', "", doc2, flags=_re.S)
+    head_extra = style + f'<script type="application/ld+json" id="vr-org">{org}</script>'
+    if 'rel="manifest"' not in doc2:
+        head_extra += ('<link rel="apple-touch-icon" href="/favicon.png"><link rel="manifest" href="/site.webmanifest">'
+                       '<link rel="alternate" type="application/rss+xml" title="Vice Replay: GTA 6 news and guides" href="/feed.xml">')
+    doc2 = doc2.replace("</head>", head_extra + "\n</head>", 1)
+    if 'href="/about/"' not in doc2:
+        doc2 = doc2.replace('>Work with us</a></p>', '>Work with us</a> · <a href="/about/" style="color:#00e5d2">About us</a></p>', 1)
     if doc2 != doc:
         open(path, "w").write(doc2)
 
+
+
+def write_feeds_404_manifest():
+    """Nov 24 upgrades: RSS feeds (EN /feed.xml, ES /es/feed.xml) so readers and aggregators can follow new guides,
+    a branded 404 page (GitHub Pages serves /404.html) and a web app manifest (save-to-home-screen icon)."""
+    import datetime as _dt
+    from email.utils import format_datetime
+    def feed(items, path, title, link, lang):
+        rows = []
+        for slug, ti, desc, date in items[:30]:
+            url = f"{DOMAIN}/{'es/guias' if lang == 'es' else 'guides'}/{slug}/"
+            when = format_datetime(_dt.datetime.fromisoformat(date + "T12:00:00+00:00"))
+            rows.append(f"<item><title>{html.escape(ti)}</title><link>{url}</link><guid>{url}</guid>"
+                        f"<pubDate>{when}</pubDate><description>{html.escape(desc)}</description></item>")
+        xml = (f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>{html.escape(title)}</title>'
+               f'<link>{link}</link><description>{html.escape(title)}</description><language>{lang}</language>'
+               + "".join(rows) + "</channel></rss>\n")
+        os.makedirs(os.path.dirname(os.path.join(SITE, path)) or SITE, exist_ok=True)
+        open(os.path.join(SITE, path), "w").write(xml)
+    feed(sorted(GUIDES, key=lambda g: g[3], reverse=True), "feed.xml", "Vice Replay: GTA 6 news and guides", DOMAIN + "/", "en")
+    feed(sorted(GUIDES_ES, key=lambda g: g[3], reverse=True), "es/feed.xml", "Vice Replay en español: guías de GTA 6", DOMAIN + "/es/", "es")
+    latest = "".join(f'<a class="item" href="/guides/{s}/">{html.escape(t)}<span aria-hidden="true">→</span></a>'
+                     for s, t, _, _ in sorted(GUIDES, key=lambda g: g[3], reverse=True)[:6])
+    page("404/", "Page not found · Vice Replay", "This page went off the map.", f"""<h1>This page went <span>off the map</span></h1>
+<p class="lede">The link is old or mistyped. Here's what's new on Vice Replay instead.</p>
+<div class="btns"><a class="item" href="/guides/gta-6-launch-live/">🔴 GTA 6 news: live updates<span aria-hidden="true">→</span></a>{latest}<a class="item" href="/guides/">All guides<span aria-hidden="true">→</span></a></div>""")
+    d404 = os.path.join(SITE, "404")
+    doc = open(os.path.join(d404, "index.html")).read()
+    doc = doc.replace('content="index,follow,max-image-preview:large"', 'content="noindex"')
+    doc = _re.sub(r'<link rel="canonical"[^>]*>', "", doc)
+    open(os.path.join(SITE, "404.html"), "w").write(doc)
+    import shutil
+    shutil.rmtree(d404, ignore_errors=True)
+    json.dump({"name": "Vice Replay", "short_name": "Vice Replay", "start_url": "/", "display": "standalone",
+               "background_color": "#0d0717", "theme_color": "#0d0717", "description": "GTA 6 news, guides and Shorts",
+               "icons": [{"src": "/favicon.png", "sizes": "192x192", "type": "image/png"}]},
+              open(os.path.join(SITE, "site.webmanifest"), "w"))
+
+
+write_feeds_404_manifest()
 
 refresh_home()
 try:
