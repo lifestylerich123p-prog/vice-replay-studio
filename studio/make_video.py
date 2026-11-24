@@ -636,8 +636,9 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     seg["_aligned"] = bool(times)
     subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical, times=times, lang=lang)
     caps = f"subtitles='{subs}':fontsdir='{brand.FONTS}',"
-    if vertical and i == 0 and _card_says_it(seg["text"], seg.get("chart")):
-        caps = ""  # Nov 24 review: one text layer per idea; the hook lettering already says what the voice says
+    if vertical and i == 0 and (seg.get("_payoff") or _card_says_it(seg["text"], seg.get("chart"))):
+        caps = ""  # Nov 24 review: one text layer per idea; the hook lettering already says it (and on a payoff hook the
+        # captions ran under the pin and its label)
     out = work / f"seg_{i:02d}.mp4"
     hard = bool(seg.get("hard_cut", vertical))
     fade_in = "" if (vertical and i == 0) or hard else "fade=t=in:st=0:d=0.25,"  # a Short's first frame is its cover
