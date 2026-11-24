@@ -19,8 +19,10 @@ Owner asked Nov 23 ("1,2,4"). Facts checked Nov 23 in 2+ sources each; **re-chec
 ## Schedule
 | When (ET) | What | Status |
 |---|---|---|
+| Fri Nov 27, 11:00 AM | **8 nominations Short** `gta6-game-awards-8-noms` (Spanish Nov 28 only if the English one wins its first 24 h) | booked |
+| Sun Dec 6, 3:30 PM | **Long video** `gta6-game-awards-explained` (3:11, all 8 nominations); 4 PM Game Awards odds carousel on Instagram | booked |
 | Mon Dec 8, 10 AM | Fact re-check run (nominees, record, show time, Players' Voice); re-render the predictions Short if anything changed; keep Dec 10 light (see quota) | scheduled |
-| Wed Dec 9, 9:30 AM | **Predictions Short** `episodes/gta6-game-awards-record.json` ("GTA 6 can't break the Game Awards record", 18 s, our call 6 of 8). EN + ES (Viral Adam) | rendered, needs owner approval |
+| Wed Dec 9, 9:30 AM | **Predictions Short** `episodes/gta6-game-awards-record.json` ("GTA 6 can't break the Game Awards record", 18 s, our call 6 of 8). English; Spanish only if it wins its first 24 h (winners-only since Nov 23) | rendered, needs owner approval |
 | Thu Dec 10, ~11:15 PM | **Results-night Short** (template A or B below): breaking news, auto-post under the standing breaking-news approval if it passes every rule in `.claude/commands/breaking-news.md` | scheduled run |
 | Fri Dec 11, 11:00 AM | **Scorecard Short** (template C): every category won/lost, "our call was 6". Needs owner approval (made on results night, sent with the night report) | made on results night |
 | Sun Dec 13, 3:30 PM | Weekly long video: "GTA 6 at The Game Awards: every win and loss, explained" (hub slot) | idea, plan in the Dec 11 daily run |
