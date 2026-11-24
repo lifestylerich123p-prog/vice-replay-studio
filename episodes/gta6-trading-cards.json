@@ -1,0 +1,214 @@
+{
+ "title": "GTA 6 Has 480 Trading Cards: How to Cash Them",
+ "slug": "gta6-trading-cards",
+ "series": "How To",
+ "format": "tips/discovery",
+ "mood": "bright",
+ "use_gameplay": false,
+ "style": "vice (lettering cards, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6 has 480 hidden trading cards 🃏 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 has 480 hidden trading cards 🃏 #GTA6 #Shorts",
+  "GTA 6 cards: sell them for up to $1,000+ 🃏 #GTA6 #Shorts",
+  "GTA 6 collectible cards explained 🃏 #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6 has 480 collectible cards in 18 sets, and each comes in bronze, silver and gold. Sell them at any pawn shop: guides list anything from about $20 to over $1,000 depending on rarity. No story spoilers.\n\nSources: games.gg, MetaForge, NSS Sports, GTA Wiki.",
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "Keep them or sell them? 👇",
+ "short_pinned_comment_es": "¿Las guardas o las vendes? 👇",
+ "short_es": {
+  "title": "GTA 6 tiene 480 cartas coleccionables en 18 colecciones, en bronce, plata y oro. Se venden en cualquier casa de empeño: de unos 20 a más de 1.000 dólares según la rareza. Fuentes: games.gg, MetaForge, NSS Sports.",
+  "description": "GTA 6 tiene 480 CARTAS escondidas 🃏 #GTA6 #Shorts",
+  "tags": [
+   "GTA 6 cartas",
+   "GTA 6 coleccionables",
+   "GTA 6 dinero",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 trading cards",
+  "GTA 6 collectible cards",
+  "GTA 6 pawn shop",
+  "GTA 6 money",
+  "GTA 6 collectibles",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6money",
+  "#gta6tips"
+ ],
+ "guide": "gta-6-make-money",
+ "sources": [
+  "games.gg - GTA 6 collectible cards, all sets: https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-collectible-cards-all-sets-guide/",
+  "MetaForge - GTA 6 collectible cards, all sets: https://metaforge.app/gta-6/gta-6-collectible-cards-all-sets",
+  "NSS Sports - GTA VI sports trading cards: https://www.nss-sports.com/en/news/47745/gta-6-sports-trading-cards",
+  "GTA Wiki - Collectible Card Sets: https://gta.wiki/w/Collectible_Card_Sets"
+ ],
+ "facts_note": "Nov 24: 480 cards in 18 sets (games.gg, MetaForge, NSS, our map guide's table with Red Bull + PowerPyx); bronze/silver/gold variants (games.gg, MetaForge); sold at pawn shops, ~$20 to $1,000+ by rarity (several guides). Per-tier prices = one source: left out. 'Selling keeps set progress' not confirmed in 2 sources: left out. Re-check right before posting.",
+ "short": [
+  {
+   "headline": "480 CARDS",
+   "headline_es": "480 CARTAS",
+   "text": "GTA 6 has 480 hidden trading cards. Here's how to cash them.",
+   "text_es": "GTA seis tiene cuatrocientas ochenta cartas escondidas. Así se cobran.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 HAS",
+     "480 HIDDEN CARDS"
+    ],
+    "pink": [
+     "480 HIDDEN CARDS"
+    ],
+    "seed": 223
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 TIENE",
+     "480 CARTAS"
+    ],
+    "pink": [
+     "480 CARTAS"
+    ],
+    "seed": 223
+   }
+  },
+  {
+   "headline": "18 SETS",
+   "headline_es": "18 COLECCIONES",
+   "text": "Four hundred eighty cards, in eighteen sets.",
+   "text_es": "Cuatrocientas ochenta cartas, en dieciocho colecciones.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 480,
+    "label": "cards in 18 sets",
+    "seed": 223,
+    "src": "games.gg · MetaForge · NSS"
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 480,
+    "label": "cartas en 18 colecciones",
+    "seed": 223,
+    "locale": "es",
+    "src": "games.gg · MetaForge · NSS"
+   }
+  },
+  {
+   "headline": "3 RARITIES",
+   "headline_es": "3 RAREZAS",
+   "text": "Each one comes in bronze, silver and gold.",
+   "text_es": "Cada una viene en bronce, plata y oro.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "EVERY CARD COMES IN",
+    "items": [
+     [
+      "Bronze",
+      "1"
+     ],
+     [
+      "Silver",
+      "2"
+     ],
+     [
+      "Gold",
+      "3"
+     ]
+    ],
+    "seed": 223,
+    "src": "games.gg · MetaForge"
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "CADA CARTA EN",
+    "items": [
+     [
+      "Bronce",
+      "1"
+     ],
+     [
+      "Plata",
+      "2"
+     ],
+     [
+      "Oro",
+      "3"
+     ]
+    ],
+    "seed": 223,
+    "src": "games.gg · MetaForge"
+   }
+  },
+  {
+   "headline": "PAWN SHOP",
+   "headline_es": "EMPEÑO",
+   "text": "Sell them at any pawn shop: from about twenty dollars to over a thousand.",
+   "text_es": "Véndelas en cualquier casa de empeño: de unos veinte a más de mil dólares.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Pawn shop: about $20 to $1,000+.",
+    "pink": [
+     "$1,000+"
+    ],
+    "seed": 223,
+    "src": "games.gg · MetaForge",
+    "sub": "depends on rarity"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Casa de empeño: de 20 a más de 1.000 $.",
+    "pink": [
+     "1.000 $"
+    ],
+    "seed": 223,
+    "src": "games.gg · MetaForge",
+    "sub": "según la rareza"
+   }
+  },
+  {
+   "headline": "KEEP OR SELL?",
+   "headline_es": "¿GUARDAR O VENDER?",
+   "text": "Keep them or sell them? Tell me, because",
+   "text_es": "¿Guardarlas o venderlas? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "KEEP",
+     "OR SELL?"
+    ],
+    "pink": [
+     "OR SELL?"
+    ],
+    "seed": 223
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿GUARDAR",
+     "O VENDER?"
+    ],
+    "pink": [
+     "O VENDER?"
+    ],
+    "seed": 223
+   }
+  }
+ ]
+}

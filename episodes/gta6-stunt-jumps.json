@@ -1,0 +1,209 @@
+{
+ "title": "GTA 6 Stunt Jumps: 130 of Them, and How to Find Them",
+ "slug": "gta6-stunt-jumps",
+ "series": "How To",
+ "format": "tips/discovery",
+ "mood": "bright",
+ "use_gameplay": false,
+ "style": "vice (lettering cards, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6 has 130 stunt jumps (find them) 🏍️ #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 has 130 stunt jumps (find them) 🏍️ #GTA6 #Shorts",
+  "GTA 6 stunt jumps + BASE jumps 🏍️ #GTA6 #Shorts",
+  "Where are the stunt jumps in GTA 6? 🏍️ #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6 has 130 stunt jumps and 25 BASE jumps, and they count toward 100%. Guides say you can track them on the map under Exploration, then Stunt Spots: found ones show in purple, completed ones in white. No story spoilers. Our map: vicereplay.com (Guides → GTA 6 Map).\n\nSources: PowerPyx, GTABase, GameSpot, The Click.",
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "How many have you landed? 👇",
+ "short_pinned_comment_es": "¿Cuántos llevas? 👇",
+ "short_es": {
+  "title": "GTA 6 tiene 130 saltos acrobáticos y 25 saltos BASE, y cuentan para el 100%. Según las guías, se ven en el mapa, en Exploración y luego Stunt Spots. Fuentes: PowerPyx, GTABase, GameSpot, The Click.",
+  "description": "GTA 6 tiene 130 SALTOS acrobáticos 🏍️ #GTA6 #Shorts",
+  "tags": [
+   "GTA 6 saltos acrobáticos",
+   "GTA 6 saltos BASE",
+   "GTA 6 100%",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 stunt jumps",
+  "GTA 6 stunt jump locations",
+  "GTA 6 BASE jumps",
+  "GTA 6 100%",
+  "GTA 6 collectibles",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6stunts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "sources": [
+  "PowerPyx - GTA 6 stunt jump locations: https://www.powerpyx.com/?p=373173",
+  "GTABase - GTA 6 map, stunt jumps: https://www.gtabase.com/gta-6/map/?feature=stunt-jumps",
+  "PowerPyx - GTA 6 BASE jump locations: https://www.powerpyx.com/gta-6-all-base-jump-locations/",
+  "The Click - GTA 6 collectibles: https://www.theclick.gg/"
+ ],
+ "facts_note": "Nov 24: 130 stunt jumps (PowerPyx, GTABase: our map guide table); 25 BASE jumps (PowerPyx, GTABase, The Click, GameSpot: same table); they count toward 100% (PowerPyx); map tracking under Exploration > Stunt Spots, found purple / done white (PowerPyx; said as 'guides say'). The 397/300 stunt totals = one source: left out. Re-check right before posting.",
+ "short": [
+  {
+   "headline": "130 JUMPS",
+   "headline_es": "130 SALTOS",
+   "text": "GTA 6 has a hundred and thirty stunt jumps. Here's how to find them.",
+   "text_es": "GTA seis tiene ciento treinta saltos acrobáticos. Así los encuentras.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 HAS",
+     "130 STUNT JUMPS"
+    ],
+    "pink": [
+     "130 STUNT JUMPS"
+    ],
+    "seed": 225
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 TIENE",
+     "130 SALTOS"
+    ],
+    "pink": [
+     "130 SALTOS"
+    ],
+    "seed": 225
+   }
+  },
+  {
+   "headline": "THE COUNT",
+   "headline_es": "LA CUENTA",
+   "text": "One hundred thirty stunt jumps, plus twenty-five BASE jumps.",
+   "text_es": "Ciento treinta saltos acrobáticos, más veinticinco saltos BASE.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "STUNTS IN GTA 6",
+    "items": [
+     [
+      "Stunt jumps",
+      "130"
+     ],
+     [
+      "BASE jumps",
+      "25"
+     ]
+    ],
+    "seed": 225,
+    "src": "PowerPyx · GTABase"
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "ACROBACIAS EN GTA 6",
+    "items": [
+     [
+      "Saltos acrobáticos",
+      "130"
+     ],
+     [
+      "Saltos BASE",
+      "25"
+     ]
+    ],
+    "seed": 225,
+    "src": "PowerPyx · GTABase"
+   }
+  },
+  {
+   "headline": "FIND THEM",
+   "headline_es": "ENCUÉNTRALOS",
+   "text": "Guides say: open the map, Exploration, then Stunt Spots.",
+   "text_es": "Según las guías: abre el mapa, Exploración y luego Stunt Spots.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Map → Exploration → Stunt Spots",
+    "pink": [
+     "Stunt Spots"
+    ],
+    "seed": 225,
+    "src": "PowerPyx",
+    "sub": "found: purple · done: white"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Mapa → Exploración → Stunt Spots",
+    "pink": [
+     "Stunt Spots"
+    ],
+    "seed": 225,
+    "src": "PowerPyx",
+    "sub": "encontrados: morado · hechos: blanco"
+   }
+  },
+  {
+   "headline": "100%",
+   "headline_es": "100%",
+   "text": "And they count toward one hundred percent.",
+   "text_es": "Y cuentan para el cien por cien.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "They count toward 100%.",
+    "pink": [
+     "100%"
+    ],
+    "seed": 225,
+    "src": "PowerPyx · GTABase"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Cuentan para el 100%.",
+    "pink": [
+     "100%"
+    ],
+    "seed": 225,
+    "src": "PowerPyx · GTABase"
+   }
+  },
+  {
+   "headline": "HOW MANY?",
+   "headline_es": "¿CUÁNTOS?",
+   "text": "How many have you landed? Tell me, because",
+   "text_es": "¿Cuántos llevas? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "HOW MANY",
+     "HAVE YOU LANDED?"
+    ],
+    "pink": [
+     "HAVE YOU LANDED?"
+    ],
+    "seed": 225
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CUÁNTOS",
+     "LLEVAS?"
+    ],
+    "pink": [
+     "LLEVAS?"
+    ],
+    "seed": 225
+   }
+  }
+ ]
+}

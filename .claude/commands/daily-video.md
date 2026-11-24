@@ -51,6 +51,12 @@ over the Nov 23 rules below where they differ):**
    channel: local prices, Latin American interest, regional slang/style); **Sun** the long hub video (16:9 lettering,
    episodes/gta6-10-numbers.json style) at 3:30 PM + a meter/kinetic Short. Series name in each description, e.g.
    "Vice Replay Tier List #2". The other daily Shorts stay free-form (news, catches, streamers).
+8. **Daily mix (owner Nov 24, "Do it")**: every day = **2 map/how-to Shorts** (answer a real search question: "where
+   is X", "how to X"; a `map` or `list` card right after the hook, a website guide behind it) **+ 1 anchor** from rule 7.
+   **No pure fact/number Shorts** ("Metacritic 99", "patch notes", "13 years": 17-57 views each); turn a fact into a
+   how-to, a versus or a ranking instead. Topic source, in order: `content/learn/search-terms.json` (YouTube searches
+   that found us), `python -m studio.search_demand` GAPs, then the map pins in site/map-pins.json without a Short.
+   Check `content/learn/uploads.json` titles + episodes/ first: never redo a posted topic.
 
 00. **Health first (free)**: `python -m studio.doctor --fix`. If it reports 🔴 (YouTube connection failing or about to
    expire, website down), put that in bold at the very top of the final message with the fix.

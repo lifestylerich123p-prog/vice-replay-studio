@@ -1,0 +1,212 @@
+{
+ "title": "GTA 6's WAiNK App: Scan 100 Spots for a Trophy",
+ "slug": "gta6-waink-app",
+ "series": "How To",
+ "format": "tips/discovery",
+ "mood": "bright",
+ "use_gameplay": false,
+ "style": "vice (lettering cards, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6 phone trophy: scan 100 spots 📱 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 phone trophy: scan 100 spots 📱 #GTA6 #Shorts",
+  "GTA 6 WAiNK app explained 📱 #GTA6 #Shorts",
+  "What to scan with WAiNK in GTA 6 📱 #GTA6 #Shorts"
+ ],
+ "short_description": "Your phone's WAiNK app in GTA 6 does more than check cars for trackers: scan landmarks, curiosities and sculptures around Leonida, and 100 scans unlock a trophy and count toward 100%. The landmarks set alone has 31. No story spoilers.\n\nSources: PowerPyx, GameSpot, Game8, GMTreks.",
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "How many have you scanned so far? 👇",
+ "short_pinned_comment_es": "¿Cuántos llevas escaneados? 👇",
+ "short_es": {
+  "title": "La app WAiNK de GTA 6 sirve para más que revisar coches: escanea monumentos, curiosidades y esculturas; 100 escaneos dan un trofeo y cuentan para el 100%. Solo los monumentos son 31. Fuentes: PowerPyx, GameSpot, Game8.",
+  "description": "GTA 6: tu teléfono esconde un TROFEO 📱 #GTA6 #Shorts",
+  "tags": [
+   "GTA 6 WAiNK",
+   "GTA 6 trofeos",
+   "GTA 6 coleccionables",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 WAiNK",
+  "GTA 6 WAiNK locations",
+  "GTA 6 trophies",
+  "GTA 6 100%",
+  "GTA 6 collectibles",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6trophies"
+ ],
+ "guide": "gta-6-trophies",
+ "sources": [
+  "PowerPyx - GTA 6 WAiNK scan locations: https://www.powerpyx.com/?p=374045",
+  "GMTreks - GTA 6 WAiNK locations: https://gmtreks.com/gta6/page/01M7R0PJ8N9EG5Y2EBNA7GXN86",
+  "GameSpot - GTA 6 physical map and landmarks: https://www.gamespot.com/articles/gta-6-is-getting-a-physical-map-heres-how-to-get-one-for-free-or-very-cheap/",
+  "Game8 - GTA 6: https://game8.co/games/GTA-6"
+ ],
+ "facts_note": "Nov 24: 100 WAiNK scans for the 'You WAiNKer!' trophy and 100% (PowerPyx, GMTreks); categories landmarks/curiosities/sculptures (PowerPyx, GMTreks); 31 landmarks (GameSpot, Game8, PowerPyx: our map guide table). Curiosity/sculpture counts = one source: left out; the total number of scan spots differs between guides: left out. WAiNK also scans cars for trackers (GameSpot, GamesRadar, VICE: key cloner). Re-check right before posting.",
+ "short": [
+  {
+   "headline": "SCAN 100",
+   "headline_es": "ESCANEA 100",
+   "text": "Your GTA 6 phone hides a trophy: scan 100 spots with WAiNK.",
+   "text_es": "Tu teléfono en GTA seis esconde un trofeo: escanea cien sitios con WAiNK.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "SCAN 100 SPOTS",
+     "= A TROPHY"
+    ],
+    "pink": [
+     "= A TROPHY"
+    ],
+    "seed": 224
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "ESCANEA 100 SITIOS",
+     "= UN TROFEO"
+    ],
+    "pink": [
+     "= UN TROFEO"
+    ],
+    "seed": 224
+   }
+  },
+  {
+   "headline": "100 SCANS",
+   "headline_es": "100 ESCANEOS",
+   "text": "One hundred scans unlock the trophy, and count toward one hundred percent.",
+   "text_es": "Cien escaneos dan el trofeo y cuentan para el cien por cien.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 100,
+    "label": "WAiNK scans for the trophy",
+    "seed": 224,
+    "src": "PowerPyx · GMTreks"
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 100,
+    "label": "escaneos para el trofeo",
+    "seed": 224,
+    "locale": "es",
+    "src": "PowerPyx · GMTreks"
+   }
+  },
+  {
+   "headline": "WHAT TO SCAN",
+   "headline_es": "QUÉ ESCANEAR",
+   "text": "Scan landmarks, curiosities and sculptures. Landmarks alone: thirty-one.",
+   "text_es": "Monumentos, curiosidades y esculturas. Solo monumentos: treinta y uno.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "WHAT TO SCAN",
+    "items": [
+     [
+      "Landmarks",
+      "31"
+     ],
+     [
+      "Curiosities",
+      "+"
+     ],
+     [
+      "Sculptures",
+      "+"
+     ]
+    ],
+    "seed": 224,
+    "src": "PowerPyx · GameSpot · Game8"
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "QUÉ ESCANEAR",
+    "items": [
+     [
+      "Monumentos",
+      "31"
+     ],
+     [
+      "Curiosidades",
+      "+"
+     ],
+     [
+      "Esculturas",
+      "+"
+     ]
+    ],
+    "seed": 224,
+    "src": "PowerPyx · GameSpot · Game8"
+   }
+  },
+  {
+   "headline": "SAME APP",
+   "headline_es": "LA MISMA APP",
+   "text": "Same app that checks cars for trackers before you steal them.",
+   "text_es": "Es la misma app que revisa si un coche lleva rastreador.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Same app that spots car trackers.",
+    "pink": [
+     "car trackers"
+    ],
+    "seed": 224,
+    "src": "GameSpot · GamesRadar"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "La misma app que detecta rastreadores.",
+    "pink": [
+     "rastreadores"
+    ],
+    "seed": 224,
+    "src": "GameSpot · GamesRadar"
+   }
+  },
+  {
+   "headline": "HOW MANY?",
+   "headline_es": "¿CUÁNTOS?",
+   "text": "How many have you scanned? Tell me, because",
+   "text_es": "¿Cuántos llevas? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "HOW MANY",
+     "HAVE YOU SCANNED?"
+    ],
+    "pink": [
+     "HAVE YOU SCANNED?"
+    ],
+    "seed": 224
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CUÁNTOS",
+     "LLEVAS?"
+    ],
+    "pink": [
+     "LLEVAS?"
+    ],
+    "seed": 224
+   }
+  }
+ ]
+}

@@ -1,0 +1,208 @@
+{
+ "title": "GTA 6 Impound: Get Your Car Back Without the Cops",
+ "slug": "gta6-impound-app",
+ "series": "How To",
+ "format": "tips/discovery",
+ "mood": "bright",
+ "use_gameplay": false,
+ "style": "vice (lettering cards, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6 car impounded? Don't go get it 🚚 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 car impounded? Don't go get it 🚚 #GTA6 #Shorts",
+  "How to get your car out of the impound in GTA 6 🚚 #GTA6 #Shorts",
+  "GTA 6 made the Scooter Brothers meme useful 🚚 #GTA6 #Shorts"
+ ],
+ "short_description": "Car got impounded in GTA 6? Two ways back: break into the impound lot (you'll get a wanted level) or pay the Scooter Bros app to deliver it, no cops involved. The app isn't there from the start: it unlocks during the story. Yes, it's the old Scooter Brothers meme, finally useful. No story spoilers. More quick answers: vicereplay.com (Guides).\n\nSources: GamesRadar, PowerPyx, Space4Games, Digital Citizen.",
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "Lot or app: which one do you use? 👇",
+ "short_pinned_comment_es": "¿Depósito o app: cuál usas? 👇",
+ "short_es": {
+  "title": "¿Te llevaron el coche al depósito en GTA 6? Dos formas: entrar al depósito (con nivel de búsqueda) o pagar la app Scooter Bros para que te lo traigan, sin policía. La app se desbloquea con la historia. Sin spoilers. Fuentes: GamesRadar, PowerPyx, Space4Games.",
+  "description": "GTA 6: tu coche en el DEPÓSITO, recupéralo así 🚚 #GTA6 #Shorts",
+  "tags": [
+   "GTA 6 depósito",
+   "GTA 6 recuperar coche",
+   "GTA 6 Scooter Bros",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 impound",
+  "GTA 6 how to get car out of impound",
+  "GTA 6 Scooter Bros",
+  "GTA 6 car impounded",
+  "GTA 6 tips",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips"
+ ],
+ "guide": "gta-6-how-to",
+ "sources": [
+  "GamesRadar - GTA 6 redeems GTA's most annoying meme: https://www.gamesradar.com/games/grand-theft-auto/18-years-later-gta-6-redeems-grand-theft-autos-most-annoying-meme-by-turning-it-into-something-useful/",
+  "PowerPyx - GTA 6 Impounded Vehicle walkthrough: https://www.powerpyx.com/gta-6-impounded-vehicle-walkthrough/",
+  "Space4Games - GTA 6 car towed or impounded: https://space4games.com/en/games-en/gta-6-car-towed-impounded-get-back-guide/",
+  "Digital Citizen - Scooter Brothers return as a vehicle delivery service: https://www.digitalcitizen.life/gta-6-brings-back-the-scooter-brothers-meme-as-a-vehicle-delivery-service/"
+ ],
+ "facts_note": "Nov 24 (search gap 'gta 6 how to get car out of impound'): two ways back = take it from the lot (wanted level) or pay the Scooter Bros app to deliver it (PowerPyx, Space4Games, our how-to guide); Scooter Brothers meme turned useful (GamesRadar, Digital Citizen); the app unlocks during the story, not from the start (guides; one names the Chapter 2 Moses mission: not stated, only 'during the story'). Premium tier free credits = one source: left out. Re-check right before posting.",
+ "short": [
+  {
+   "headline": "IMPOUNDED?",
+   "headline_es": "¿EN EL DEPÓSITO?",
+   "text": "Don't go get your impounded car in GTA 6. Let it come to you.",
+   "text_es": "No vayas por tu coche al depósito en GTA seis. Que venga solo.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "CAR IMPOUNDED?",
+     "DON'T GO GET IT"
+    ],
+    "pink": [
+     "DON'T GO GET IT"
+    ],
+    "seed": 221
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿COCHE EN EL DEPÓSITO?",
+     "NO VAYAS POR ÉL"
+    ],
+    "pink": [
+     "NO VAYAS POR ÉL"
+    ],
+    "seed": 221
+   }
+  },
+  {
+   "headline": "TWO WAYS",
+   "headline_es": "DOS FORMAS",
+   "text": "Take it from the lot and get stars, or let the Scooter Bros app bring it.",
+   "text_es": "Sácalo del depósito y te buscan, o deja que la app Scooter Bros te lo traiga.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "GET IT BACK",
+    "items": [
+     [
+      "Impound lot",
+      "COPS"
+     ],
+     [
+      "Scooter Bros app",
+      "YES"
+     ]
+    ],
+    "seed": 221,
+    "src": "PowerPyx · Space4Games"
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "RECUPÉRALO",
+    "items": [
+     [
+      "Depósito",
+      "POLICÍA"
+     ],
+     [
+      "App Scooter Bros",
+      "SÍ"
+     ]
+    ],
+    "seed": 221,
+    "src": "PowerPyx · Space4Games"
+   }
+  },
+  {
+   "headline": "THE APP",
+   "headline_es": "LA APP",
+   "text": "It costs a fee, but no cops.",
+   "text_es": "Cuesta dinero, pero sin policía.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Scooter Bros: pay a fee, skip the cops.",
+    "pink": [
+     "skip the cops"
+    ],
+    "seed": 221,
+    "src": "PowerPyx · Space4Games",
+    "sub": "unlocks during the story"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Scooter Bros: pagas y te ahorras la policía.",
+    "pink": [
+     "sin policía"
+    ],
+    "seed": 221,
+    "src": "PowerPyx · Space4Games",
+    "sub": "se desbloquea con la historia"
+   }
+  },
+  {
+   "headline": "THE MEME",
+   "headline_es": "EL MEME",
+   "text": "Yes, the Scooter Brothers meme. GTA 6 finally made it useful.",
+   "text_es": "Sí, el meme de los Scooter Brothers. GTA seis por fin lo hizo útil.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "The Scooter Brothers meme, finally useful.",
+    "pink": [
+     "finally useful"
+    ],
+    "seed": 221,
+    "src": "GamesRadar · Digital Citizen"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "El meme de los Scooter Brothers, por fin útil.",
+    "pink": [
+     "por fin útil"
+    ],
+    "seed": 221,
+    "src": "GamesRadar · Digital Citizen"
+   }
+  },
+  {
+   "headline": "LOT OR APP?",
+   "headline_es": "¿DEPÓSITO O APP?",
+   "text": "Lot or app? Tell me, because",
+   "text_es": "¿Depósito o app? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "LOT",
+     "OR APP?"
+    ],
+    "pink": [
+     "OR APP?"
+    ],
+    "seed": 221
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿DEPÓSITO",
+     "O APP?"
+    ],
+    "pink": [
+     "O APP?"
+    ],
+    "seed": 221
+   }
+  }
+ ]
+}
