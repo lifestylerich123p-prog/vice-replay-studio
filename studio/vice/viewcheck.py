@@ -208,7 +208,7 @@ def check_short(ep, key, title, segs, gameplay_available=False):
     # Nov 23: on the GTA 6-style lettering cards a headline that wraps to 2 lines runs into the big lettering
     from .. import vicecards
     for k, x in enumerate(segs):
-        if (x.get("chart") or {}).get("type") in vicecards.DRAW:
+        if (x.get("chart") or {}).get("type") in set(vicecards.DRAW) | {"text", "quote", "list", "quiz", "bars", "counter"}:
             for lab, hl in (("", x.get("headline")), (" (Spanish)", x.get("headline_es"))):
                 if hl and len(hl) > 19:
                     warnings.append(f"headline: Short '{key}' segment {k + 1}{lab} headline '{hl}' wraps to 2 lines and "

@@ -33,7 +33,7 @@ POOL = {
              "vintage-vice-city-pack-vapid-stanier-04"],
     "water": ["car-squalo-01", "car-squalo-02", "car-squalo-03", "leonida-keys-01", "leonida-keys-04",
               "leonida-keys-06", "leonida-keys-07", "vice-city-15"],
-    "world": ["leonida-map-poster", "grassrivers-02", "grassrivers-03", "grassrivers-04", "grassrivers-05",
+    "world": ["grassrivers-02", "grassrivers-03", "grassrivers-04", "grassrivers-05",
               "mount-kalaga-01", "mount-kalaga-02", "mount-kalaga-04", "mount-kalaga-05", "mount-kalaga-06",
               "ambrosia-01", "ambrosia-02", "ambrosia-04", "port-gellhorn-01", "port-gellhorn-06", "leonida-keys-02"],
     "city": ["vice-city-01", "vice-city-03", "vice-city-08", "vice-city-10", "vice-city-11", "vice-city-17",

@@ -468,18 +468,28 @@ def _photo_base(path, w, h):
     im = im.resize((int(im.width * r) + 1, int(im.height * r) + 1), Image.LANCZOS)
     left, top = (im.width - W) // 2, (im.height - H) // 2
     im = im.crop((left, top, left + W, top + H))
-    im = ImageEnhance.Brightness(im).enhance(0.52)
-    im = ImageEnhance.Color(im).enhance(1.12)
+    # Nov 24 "hook v2" (owner: full creative access): the picture was darkened so much it read as a plain dark set.
+    # Brighter and punchier now; the dark band sits only where text goes (logo/slab on top, captions at the bottom).
+    im = ImageEnhance.Brightness(im).enhance(0.72)
+    im = ImageEnhance.Contrast(im).enhance(1.08)
+    im = ImageEnhance.Color(im).enhance(1.25)
     grad = Image.new("L", (1, H))
-    for y in range(H):  # darker at the top (title) and bottom (captions), lighter through the middle
-        e = abs(y / H - 0.45) / 0.55
-        grad.putpixel((0, y), int(255 * min(1.0, 0.18 + 0.75 * e ** 1.6)))
+    for y in range(H):  # 0 = full picture, 255 = night purple
+        v = y / H
+        top = max(0.0, (0.16 - v) / 0.16)            # logo + headline slab
+        bottom = max(0.0, (v - 0.58) / 0.42)         # captions and YouTube's own buttons
+        grad.putpixel((0, y), int(255 * min(0.92, 0.22 + 0.55 * top + 0.70 * bottom ** 1.2)))
     shade = Image.new("RGB", (W, H), (14, 4, 30))
     return Image.composite(shade, im, grad.resize((W, H)))
 
 
-def _photo_frame(base, p, w, h):
+def _photo_frame(base, p, w, h, t=None, hook=False):
+    """Slow push-in over the card. On a Short's hook card (hook=True) the camera first punches in fast during the first
+    0.45 s, so the opening frame moves (Nov 22 data: Shorts that open on motion got ~5x the views)."""
     s = ZOOM - 0.10 * max(0.0, min(1.0, p))
+    if hook and t is not None:
+        k = min(1.0, t / 0.45)
+        s = ZOOM - 0.13 * (1 - (1 - k) ** 3) - 0.06 * max(0.0, min(1.0, p))
     cw, ch = int(w * s), int(h * s)
     x0, y0 = (base.width - cw) // 2, (base.height - ch) // 2
     return base.crop((x0, y0, x0 + cw, y0 + ch)).resize((w, h), Image.BILINEAR)
@@ -509,7 +519,7 @@ def render(spec, dur, w, h, out, seed=0):
     for f in range(max(1, int(round(dur * FPS)))):
         t = f / FPS
         if photo is not None:  # Nov 24 photo cards: a real GTA 6 screenshot behind the lettering, slow zoom in
-            bg = _photo_frame(photo, t / max(dur, 0.1), w, h)
+            bg = _photo_frame(photo, t / max(dur, 0.1), w, h, t=t, hook=bool(spec.get("cover")))
         else:
             bg = vicecards.frame_bg(still, horizon, t, w, h) if vice else base
         frame = draw(bg, spec, t + shift, w, h)

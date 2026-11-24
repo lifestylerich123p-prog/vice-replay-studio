@@ -179,10 +179,10 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
             {"@type": "ListItem", "position": 3, "name": title, "item": url}]})
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in jsonld)
     if lang == "es":
-        menu = f'<a href="/es/guias/gta-6-lanzamiento-en-vivo/">Noticias</a><a href="/es/">Guías</a><a href="/es/equipo/">Equipo</a><a href="{YT_ES}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
+        menu = f'<a href="/es/guias/gta-6-lanzamiento-en-vivo/">Noticias</a><a href="/es/guias/mapa-gta-6/">Mapa</a><a href="/es/">Guías</a><a href="/es/equipo/">Equipo</a><a href="{YT_ES}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
         foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/es/acerca/">Quiénes somos</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
     else:
-        menu = f'<a href="/guides/gta-6-launch-live/">News</a><a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
+        menu = f'<a href="/guides/gta-6-launch-live/">News</a><a href="/guides/gta-6-map-leonida-places/">Map</a><a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
         foot = 'Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a> · <a href="/about/">About us</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.'
     doc = f"""<!doctype html>
 <html lang="{lang}">
@@ -982,7 +982,7 @@ def refresh_home():
     deals_sec = (f'<section class="group" id="deals"><h2>🔥 Black Friday deals on Amazon</h2><p>Checked {DEALS_CHECKED} · prices change fast · '
                  f'<a href="/guides/gta-6-deals/" style="color:#00e5d2">every real GTA 6 deal</a></p><ul class="links">{deals}\n  </ul>'
                  '<p style="font-size:13px;opacity:.75">Affiliate links: as an Amazon Associate we earn from qualifying purchases, at no extra cost to you.</p></section>')
-    newest = [g for g in GUIDES if g[0] != "gta-6-launch-live"][:5]
+    newest = [g for g in GUIDES if g[0] not in ("gta-6-launch-live", "gta-6-map-leonida-places")][:5]
     def short(title):  # "GTA 6 Streaming Records: Most-Watched..." -> "GTA 6 Streaming Records"
         head = title.split(":")[0].strip()
         if len(title) <= 58: return title
@@ -992,6 +992,8 @@ def refresh_home():
         return (f'\n    <a class="card pic{" hot" if hot else ""}" href="/guides/{slug}/"><img src="/og/t/{slug}.webp" width="480" height="252" '
                 f'alt="{html.escape(title)}" loading="lazy"><span><b>{html.escape(title)}</b><small>{html.escape(sub)}</small></span></a>')
     cards = pic("gta-6-launch-live", "🔴 GTA 6 news: live updates", "Every confirmed update since launch, newest first", True)
+    cards += pic("gta-6-map-leonida-places", "🗺️ Interactive GTA 6 map (official HD)",
+                 "Zoom to street names: easter eggs, the UFO, Bigfoot, bonus cars and mod shops pinned", True)
     cards += "".join(pic(s_, short(ti), de) for s_, ti, de, dt_ in newest)
     latest_sec = f'<section class="group" id="latest"><h2>Latest GTA 6 news</h2><div class="cards">{cards}\n  </div></section>'
     doc2 = _re.sub(r'<section class="group" id="deals">.*?</section>', lambda m: deals_sec, doc, count=1, flags=_re.S)
@@ -1004,7 +1006,7 @@ def refresh_home():
              'grid-template-columns:120px 1fr;gap:12px;align-items:center;padding:10px}.card.pic img{display:block;width:100%;height:auto;'
              'aspect-ratio:40/21;border-radius:8px}.card.pic b{font-size:16px;line-height:1.3;display:block}.card.pic small{color:var(--muted);'
              'font-size:13px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.card.hot{outline:2px solid #ff1f8e}'
-             '@media(min-width:640px){.card.pic{grid-template-columns:200px 1fr}}@media(max-width:639px){.hero{aspect-ratio:2.2/1}.hero .brand{font-size:clamp(36px,11vw,56px)}main>h1,.wrap>h1{font-size:clamp(30px,9vw,42px);margin-top:16px}}</style>')
+             '@media(min-width:640px){.card.pic{grid-template-columns:200px 1fr}}@media(max-width:639px){.card.pic{grid-template-columns:1fr}.card.pic b{font-size:18px}.hero{aspect-ratio:2.2/1}.hero .brand{font-size:clamp(36px,11vw,56px)}main>h1,.wrap>h1{font-size:clamp(30px,9vw,42px);margin-top:16px}}</style>')
     doc2 = _re.sub(r'<style id="vr-cards">.*?</style>', "", doc2, flags=_re.S)
     org = json.dumps([{"@context": "https://schema.org", "@type": "WebSite", "name": "Vice Replay", "url": DOMAIN + "/", "inLanguage": ["en", "es"]},
                       {"@context": "https://schema.org", "@type": "Organization", "name": "Vice Replay", "url": DOMAIN + "/", "logo": DOMAIN + "/favicon.png",

@@ -557,6 +557,16 @@ def chart_words(chart):
     return [x for x in words if x and isinstance(x, str) and not x.replace(" ", "").replace(".", "").isdigit()]
 
 
+
+def _said_by_card(headline, chart):
+    """True when every word of the pink headline slab is already in the card's own lettering (kinetic / text cards)."""
+    if (chart or {}).get("type") not in ("kinetic", "text", "headline", "quote"):
+        return False
+    import re as _re
+    card = " ".join(chart_words(chart)).upper()
+    words = _re.findall(r"[A-Z0-9$%]+", headline.upper())
+    return bool(words) and all(w_ in card for w_ in words)
+
 def render_segment(i, seg, audio, w, h, vertical, work, enc):
     voice_dur = duration(audio)
     # "pad": seconds held after the line (default 0.45); "hard_cut": no dip to black between segments. Montage Shorts
@@ -595,7 +605,10 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     vin, vf = visual_input(media, dur, w, h, i, work, seg.get("media_start"))
     vf = seg_effects(seg, vf, w, h, dur)
     ov = work / f"ov_{i}.png"
-    brand.headline_card(seg.get("headline", ""), w, h, vertical, seg.get("cta")).save(ov)
+    slab = seg.get("headline", "")
+    if vertical and i == 0 and seg.get("chart") and slab and _said_by_card(slab, seg["chart"]):
+        slab = ""  # Nov 24 hook v2: the hook card already shouts it; one statement instead of three
+    brand.headline_card(slab, w, h, vertical, seg.get("cta")).save(ov)
     lang = seg.get("_lang", "en")
     times = align_words(seg["text"], audio, lang) if seg.get("_align", True) else None
     seg["_aligned"] = bool(times)
