@@ -148,6 +148,22 @@ def main():
         bad.append(f"Instagram connection FAILED: {str(e)[:160]} (token for graph.facebook.com in the environment's "
                    "network secrets; see content/archive/instagram-setup-2026-11-19.md)")
 
+    # 2c. Uploads missing from the registry (Nov 24: two breaking-news runs posted the same story because the first
+    # couldn't push uploads.json). Any public video of ours that the registry doesn't know is a blind spot.
+    try:
+        chan = json.loads((ROOT / "content/learn/channel.json").read_text())
+        reg = json.loads((ROOT / "content/learn/uploads.json").read_text())
+        tracker = (ROOT / "content/campaigns/tracker.md").read_text() if (ROOT / "content/campaigns/tracker.md").exists() else ""
+        unknown = [v for v in chan.get("videos", []) if v["id"] not in reg and v["id"] not in tracker
+                   and not any(k in v.get("title", "") for k in ("LACY", "Lacy", "KreekCraft", "Tomo"))
+                   and v.get("published", "") >= "2026-11-21"]
+        if unknown:
+            warn.append(f"{len(unknown)} upload(s) not in content/learn/uploads.json (posted by a run that couldn't push?): "
+                        + ", ".join(f"{v['id']} {v['title'][:40]!r}" for v in unknown[:4])
+                        + ". Register them so the duplicate guard and flop review see them.")
+    except (OSError, ValueError):
+        pass
+
     # 3. Website
     for path in ("", "gear/", "guides/", "guides/gta-6-launch-live/", "sitemap.xml"):
         try:

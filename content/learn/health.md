@@ -1,11 +1,11 @@
-# System health (2026-11-24 12:42 UTC, `python -m studio.doctor`)
+# System health (2026-11-24 14:49 UTC, `python -m studio.doctor`)
 
-- 🟡 No 'Daily run' commit on GitHub today: the 5 AM run may have failed to push. Recover it from its log (publish-site.md, 'If the daily run's hand-off never arrives') and check GitHub access at claude.ai/connect-github
 - 🟢 YouTube connection works
-- 🟢 Learner fresh (15 h old)
+- 🟢 Learner fresh (0 h old)
 - 🟢 YouTube keys from Nov 22 (Google app in production: no 7-day expiry)
 - 🟢 Spanish channel (Vice Replay en Español) connection works
 - 🟢 Every recent public upload has our comment
-- 🟢 Instagram @vice.replaytv works (26 posts, 14 followers; 4/100 posts used today)
+- 🟢 Instagram @vice.replaytv works (27 posts, 15 followers; 4/100 posts used today)
 - 🟢 Website is up
-- 🟢 Disk: 25.4 GB free
+- 🟢 Today's daily run is saved on GitHub
+- 🟢 Disk: 25.5 GB free

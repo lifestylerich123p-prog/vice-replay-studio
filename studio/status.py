@@ -61,6 +61,15 @@ def spanish_section(now):
     return L + [""]
 
 
+def cold_lines(vph):
+    """🧊 lines (Nov 24, "why are views falling"): Shorts public 2-12 h with under 15 views. YouTube shows a Short to a
+    small test audience first; almost no views after hours means people swipe past it. Compare its hook/format with
+    the 🔥 ones the same day instead of waiting a week for the scorecard."""
+    cold = [r for r in vph if dt.timedelta(hours=2) <= r[0] <= dt.timedelta(hours=12) and r[2] < 15]
+    return [f"- 🧊 NOT TAKING OFF: {title[:55]} ({views} views after {age.total_seconds() / 3600:.0f} h): swiped past; "
+            "check its first 2 seconds" for age, _, views, title in sorted(cold, key=lambda r: r[0])]
+
+
 def momentum_lines(vph):
     """🔥 lines for Shorts that are taking off (Nov 23; .claude/commands/momentum.md rule): published in the last
     48 h, views/hour at least 2x the median of our last-7-days Shorts, and 500+ views. vph = [(age, v/h, views, title)]."""
@@ -117,6 +126,7 @@ def main():
     L += [f"- ⏰ {t:%a %-I:%M %p}: {title[:60]}" for t, title in sorted(sched)] or ["- nothing scheduled"]
     L += [f"- {v:,} views: {title[:60]}" for v, title in sorted(recent, reverse=True)[:6]]
     L += momentum_lines(vph)
+    L += cold_lines(vph)
     try:  # quota + free slots: what's still possible to post (python -m studio.quota for details)
         from . import quota
         by_day = {}

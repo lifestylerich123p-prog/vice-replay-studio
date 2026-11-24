@@ -79,6 +79,56 @@ def youtube_duplicate(slug, key, titles, reg, live):
     return None
 
 
+STORY_STOP = set("gta 6 vi the a an and or of to in on for is it its it's just already now this that with your you our "
+                 "shorts short here why how what when who new official".split())
+
+
+def story_words(title):
+    """Key words of a title for 'same story' checks: lowercased, no hashtags/stop words; numbers kept (39, 3.79)."""
+    t = re.sub(r"#\w+", "", (title or "").lower())
+    return {w for w in re.findall(r"[a-z]+|\d+(?:\.\d+)?", t) if w not in STORY_STOP and (len(w) > 2 or w.isdigit())}
+
+
+def channel_recent(tok, req, hours=72, pages=2):
+    """[(title, video id, published)] for the channel's uploads in the last `hours` (newest first; 1 unit per page)."""
+    ch, _ = req("GET", "https://youtube.googleapis.com/youtube/v3/channels?part=contentDetails&mine=true", tok)
+    up = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    cut = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=hours)
+    out, page = [], ""
+    for _ in range(pages):
+        r, _ = req("GET", "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50"
+                          f"&playlistId={up}" + (f"&pageToken={page}" if page else ""), tok)
+        for it in r.get("items", []):
+            sn = it["snippet"]
+            when = dt.datetime.fromisoformat(sn["publishedAt"].replace("Z", "+00:00"))
+            if when >= cut:
+                out.append((sn["title"], sn["resourceId"]["videoId"], when))
+        page = r.get("nextPageToken")
+        if not page:
+            break
+    return out
+
+
+def same_story(titles, recent):
+    """Reason string if a recent upload tells the same story (Nov 24: two breaking-news runs posted '39 million PS5
+    players' twice in 3 hours with different wording, because the first run couldn't push the registry). Same story =
+    the same key number (2+ digits, e.g. 39 / 3.79 / 212) and half the key words shared, or 70% shared without one."""
+    for t in titles:
+        a = story_words(t)
+        if len(a) < 3:
+            continue
+        for rt, vid, when in recent:
+            b = story_words(rt)
+            if not b:
+                continue
+            j = len(a & b) / len(a | b)
+            big = {w for w in a & b if w.replace(".", "").isdigit() and len(w.replace(".", "")) >= 2}
+            if (big and j >= 0.4) or j >= 0.7:
+                return (f"the channel posted the same story {when:%b %d %H:%M} UTC: {rt!r} (https://youtu.be/{vid}); "
+                        "a near-identical video hurts the channel")
+    return None
+
+
 CAPTION_KEY = 120  # normalized characters compared: the title plus the start of the description
 
 

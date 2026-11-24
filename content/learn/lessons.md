@@ -234,3 +234,24 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   Facts" 12.1M in 42 s, "Map of all GTA 6 Players" 5.8M in 11 s. VS and "hidden facts/secrets" are the formats we can
   make legally (our cards, no their footage); the easter-egg Short today is our "hidden facts" test. Statement openers
   still beat questions on our channel (6.4 vs 1.6 v/h median, n=26 vs 3).
+
+## 2026-11-24 (owner: "check why views are falling"): diagnosis + what changes
+- **The launch spike was borrowed views.** Channel views: Nov 19 16,579 (5,903 from search) -> Nov 20 3,612 -> Nov 21
+  899 (pre-launch Nov 14-16 was 1,600-2,300/day). About 11,000 of the Nov 17-21 views were LACY campaign clips, which
+  now post on ClipCircuit (owner rule Nov 20), and launch-day search ("NZ trick", "already out", "$1.65 billion")
+  faded within 48 h. Part of the drop is the whole niche cooling after launch, not us.
+- **What we control: picture + angle + volume.** Footage Shorts (27, now retired): median 431 views at 24 h, 63.6%
+  watched. Lettering cards so far: one hit (tier list, 612) and the rest 2-80 views; the 7 fixes Short had 2 views
+  in its first hour = people swipe past text-only cards unless the angle picks a fight (rankings with a verdict).
+  Volume fell from 6-7 public Shorts/day (Nov 17-20) to 3 (Nov 22-23), and 22 of 66 uploads are private.
+- **Market check:** the biggest GTA 6 Shorts this week are gameplay moments and streamer reactions (Spanish market:
+  Sergio Encinas 10.8M, Rubius easter egg 3.7M); search demand is gameplay help (money, key cloner, radio, easter
+  eggs). Our cards can match the topics, but the visuals people stop for are gameplay.
+- **Changes made Nov 24:** (1) uploader blocks the same story twice (studio/postguard.same_story: two breaking runs
+  posted "39 million PS5 players" 3 h apart because the first couldn't push the registry); (2) doctor warns about
+  uploads missing from the registry; (3) breaking news after 6 PM ET waits for 9:30 AM next day (6 PM-6 AM = 1.9
+  views/h vs 16 for 6-11 AM); (4) status shows 🧊 for Shorts under 15 views after 2-12 h, next to the 🔥 ones.
+- **Do next:** rankings/versus/"catch" angles over plain number trivia; how-to angles from studio.search_demand
+  (money, key cloner, easter eggs) as cards; keep 4-6 Shorts/day in morning slots; and the biggest lever is the
+  owner's own gameplay (`media/gameplay/` via the Drive folder, radio off): Rockstar's policy allows it and it's
+  what the top Shorts show.

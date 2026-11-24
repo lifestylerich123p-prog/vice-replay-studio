@@ -39,3 +39,12 @@ def test_status_momentum_flags_only_real_risers():
     assert any("Tier list" in l for l in lines)
     assert not any("Darts" in l for l in lines)
     assert status.momentum_lines(vph[:2]) == []  # not enough Shorts for a baseline
+
+
+def test_status_cold_lines():
+    import datetime as dt
+    from studio.status import cold_lines
+    rows = [(dt.timedelta(hours=3), 1.0, 3, "cold one"), (dt.timedelta(hours=3), 50.0, 150, "fine one"),
+            (dt.timedelta(minutes=30), 0.0, 0, "too young"), (dt.timedelta(hours=20), 0.1, 2, "too old")]
+    out = cold_lines(rows)
+    assert len(out) == 1 and "cold one" in out[0]

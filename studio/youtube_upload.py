@@ -519,6 +519,7 @@ def main():
                   if g and (ROOT / "site" / "guides" / f"{g}.json").exists()), "")
     guide_url = f"https://vicereplay.com/guides/{gslug}/" if gslug else "https://vicereplay.com/guides/"
     guard = None
+    recent = None
     for key, path, title, desc, tg, when, thumb, pin, es, timings, playlist in jobs:
         if guide_url and "vicereplay.com/guides" not in desc:
             desc = desc.rstrip() + (f"\n\nFull guide: {guide_url}" if gslug else f"\n\nMore GTA 6 guides: {guide_url}")
@@ -529,6 +530,10 @@ def main():
             if guard is None:
                 guard = (postguard.registry_entries(), postguard.channel_titles(tok, req))
             why = postguard.youtube_duplicate(slug, key, title_candidates(ep, key, title), *guard)
+            if not why:  # Nov 24: same story under a different title (e.g. two breaking-news runs)
+                if recent is None:
+                    recent = postguard.channel_recent(tok, req)
+                why = postguard.same_story(title_candidates(ep, key, title), recent)
             if why:
                 print(f"skip {key}: {why}. Another chat or run already posted it; --force uploads anyway.")
                 continue

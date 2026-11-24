@@ -96,50 +96,54 @@ Read this first instead of searching the repo.
 ## Channel uploads (from the last learn run)
 | YouTube id | Title | Views |
 |---|---|---|
-| jQbv5GPR3dk | GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts | 506 |
-| aYBokm3TIYE | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts | 9364 |
-| oYqPC06109w | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy | 5326 |
+| aYBokm3TIYE | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts | 9420 |
+| jQbv5GPR3dk | GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts | 612 |
+| oYqPC06109w | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy | 5329 |
 | ty0KP7MLaKU | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts | 1855 |
-| Egb3otGWJIg | The first person to finish GTA 6 wasn't IShowSpeed #GTA6 #Shorts | 534 |
+| Egb3otGWJIg | The first person to finish GTA 6 wasn't IShowSpeed #GTA6 #Shorts | 636 |
 | uCNHbnOqgs0 | IShowSpeed teared up over his family's name in GTA 6 #GTA6 #Shorts | 1192 |
 | b4pWGuZNPJY | GTA 6 already made $1.65 BILLION #GTA6 #Shorts | 1380 |
 | Z8jQK8nZ1cQ | GTA 6 on PS5 vs PS5 Pro: the verdict is in #GTA6 #Shorts | 1187 |
 | DG_MpuSMDV8 | GTA 6 is already OUT in New Zealand (the catch) #GTA6 #Shorts | 1307 |
 | vlPV5Yre8T8 | GTA 6 cheats are real... but there's a catch #GTA6 #Shorts | 1172 |
-| Eikozi0uFec | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 #shorts | 1008 |
 | YKR0s2dWJ8o | GTA 6 NZ trick: 18 hours early? #GTA6 #Shorts | 1344 |
-| Wl6K3f5FtVU | GTA 6 says NOT ENOUGH SPACE? Do this first #GTA6 #Shorts | 974 |
+| Eikozi0uFec | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 #shorts | 1008 |
 | S5L5Mah6LIU | GTA 6 just got a 99 on Metacritic #GTA6 #Shorts | 1075 |
+| Wl6K3f5FtVU | GTA 6 says NOT ENOUGH SPACE? Do this first #GTA6 #Shorts | 978 |
 | _5ZWAUY75y4 | Lucia's actress is CONFIRMED before launch #GTA6 #Shorts | 1223 |
-| vkvg5KPqb70 | Don't grind money in GTA 6 Chapter 1 (here's the catch) #GTA6 #Shorts | 577 |
 | DBlAdqc1orw | GTA 6 is OUT: do these 3 things first #GTA6 #Shorts | 834 |
 | gvIH1aLtJuc | IShowSpeed heads to New Zealand for GTA 6? #GTA6 #Shorts | 1000 |
+| vkvg5KPqb70 | Don't grind money in GTA 6 Chapter 1 (here's the catch) #GTA6 #Shorts | 577 |
 | 6bPAn80dKno | 7 MILLION people watched GTA 6 at once #GTA6 #Shorts | 779 |
 | Y4AT3Y4kcmg | GTA 6 at 9 PM the night before? #GTA6 #Shorts | 798 |
-| xvA4O2ytSnE | GTA 6 locks 5 shops behind the $100 edition #GTA6 #Shorts | 140 |
 | bVoHzywwvgc | IShowSpeed beat GTA 6 in 52 HOURS... then lost his save #GTA6 #Shorts | 267 |
+| xvA4O2ytSnE | GTA 6 locks 5 shops behind the $100 edition #GTA6 #Shorts | 157 |
 | 9lTZNbwbSec | GTA 6 physical edition has NO DISC #GTA6 #Shorts | 400 |
-| zfjEiiiQdJk | GTA 6 Black Friday deals have a catch #GTA6 #Shorts | 178 |
-| JYYfpuj-jwQ | GTA 6 has no darts. Rockstar says why #GTA6 #Shorts | 18 |
-| 4EuMnzlLKTY | Rockstar's boss just broke his silence on GTA 6 #GTA6 #Shorts | 371 |
+| 4EuMnzlLKTY | Rockstar's boss just broke his silence on GTA 6 #GTA6 #Shorts | 373 |
+| zfjEiiiQdJk | GTA 6 Black Friday deals have a catch #GTA6 #Shorts | 180 |
 | KlelqBLnEUI | GTA 6 made $3.79 BILLION in ONE day (official) #GTA6 #Shorts | 199 |
-| uvWNXugdvSo | 4 things GTA 5 had that GTA 6 doesn't #GTA6 #Shorts | 129 |
-| yU-xKsoUdbM | GTA 6 won't let you replay missions #GTA6 #Shorts | 172 |
 | xvudsg_o6ow | GTA 6 just got nominated for GAME OF THE YEAR #GTA6 #Shorts | 353 |
 | wPPhLBHS7-M | GTA 6 in 3 days: what you need to know #GTA6 #Shorts | 379 |
+| Kd9YMDDeJTg | GTA 6: 39 million players on PS5, a PlayStation record #GTA6 #Shorts | 21 |
+| yU-xKsoUdbM | GTA 6 won't let you replay missions #GTA6 #Shorts | 172 |
+| uvWNXugdvSo | 4 things GTA 5 had that GTA 6 doesn't #GTA6 #Shorts | 131 |
 | ZUcedkldfsE | Kai Cenat's 130 HOUR GTA warm-up is over #GTA6 #Shorts | 277 |
 | pcoMWOraJA4 | GTA 6 Unlock Time in Every Time Zone (US, UK, EU, Australia) | 295 |
+| kQ_OUxG_GYk | GTA 6: 39 million PS5 players in 4 days #GTA6 #Shorts | 20 |
 | yKISW4fJj3Y | Those GTA 6 cheat codes are FAKE #GTA6 #Shorts | 237 |
 | DIFRHVF6T0E | YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts | 254 |
+| JYYfpuj-jwQ | GTA 6 has no darts. Rockstar says why #GTA6 #Shorts | 27 |
+| jVcY1N4bBHU | GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts | 2 |
 | Rt18FhG-DYk | GTA 6 details: the video game store going bust #GTA6 #Shorts | 75 |
-| uRIkm8L3Gr8 | IShowSpeed owns the TOP 3 GTA 6 streams #GTA6 #Shorts | 20 |
 | rhf1qryjRSM | Rockstar sent GTA 6 packages to streamers #GTA6 #Shorts | 97 |
-| kLxIVUzSOaI | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore | 175 |
 | -C9KX5Afwgw | GTA 6 New Zealand Trick: Play Early or Risk Your Account? | 106 |
+| kLxIVUzSOaI | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore | 175 |
+| uRIkm8L3Gr8 | IShowSpeed owns the TOP 3 GTA 6 streams #GTA6 #Shorts | 22 |
 | 9QNojUuqHtc | Lacy can't steal cars in GTA 6 😭🔑 #LACY #GTA6 #Shorts | 7 |
 | c_l7udfLNnk | LACY vs a GTA 6 shark 🦈😳 #LACY #GTA6 #shortsyoutube | 8 |
 | GjhaJdjHR4Q | GTA 6 Is Bigger Than Vice City: 6 Places to Know | 16 |
 | YqnShunG7WY | GTA 6 Survival Guide: 7 Things to Do Before You Play | 14 |
+| aU1Js-p-FCo | Every GTA ranked by sales: GTA 5 is alone #GTA6 #Shorts | 0 |
 | EJOdYW3sx44 | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | 0 |
 | rHaMTePDRUQ | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | 0 |
 | S_H61BzbFKA | GTA 6 Black Friday: What's Actually Worth Buying | 0 |
@@ -160,18 +164,25 @@ Read this first instead of searching the repo.
 | 2026-11-22 | /es/guias/gta-6-cifras-semana-lanzamiento/ | Ventas y récords de GTA 6: todas las cifras del lanzamiento vs GTA 5 |
 | 2026-11-22 | /guides/gta-6-darts/ | Does GTA 6 Have Darts? No, and Rockstar Explains Why (Pool Is In) |
 | 2026-11-24 | /guides/gta-6-deals/ | GTA 6 Deals and Discount Codes: What's Real This Week (Checked) |
+| 2026-11-24 | /guides/gta-6-easter-eggs/ | GTA 6 Easter Eggs: The Best Secrets Players Found in Launch Week (No Spoilers) |
 | 2026-11-23 | /guides/gta-6-game-awards/ | GTA 6 at The Game Awards 2026: All 8 Nominations, Rivals and Odds |
 | 2026-11-18 | /guides/gta-6-gift-guide/ | GTA 6 Gift Guide 2026: Best Gifts for a GTA 6 Fan (PS5 and Xbox) |
+| 2026-11-24 | /guides/gta-6-hacker-sentence/ | Did They Catch the GTA 6 Hacker? Arion Kurtaj's Sentence Explained (Nov 2026) |
 | 2026-11-21 | /guides/gta-6-how-long-to-beat/ | How Long Is GTA 6? Story Length, Real Finish Times and 100% (No Spoilers) |
+| 2026-11-24 | /guides/gta-6-how-to/ | GTA 6 How To: Switch Characters, Key Cloner, Impound and Losing the Cops |
 | 2026-11-19 | /es/guias/guia-lanzamiento-gta-6/ | GTA 6 ya salió: guía de supervivencia (servidores, 30 FPS y ajustes) |
 | 2026-11-19 | /guides/gta-6-launch-day-survival-guide/ | GTA 6 Launch Day Survival Guide: Servers, 30 FPS and Settings |
 | 2026-11-22 | /guides/gta-6-launch-week-numbers/ | GTA 6 Sales and Records: Every Launch Week Number vs GTA 5 (Checked) |
+| 2026-11-24 | /guides/gta-6-make-money/ | How to Make Money Fast in GTA 6: The Best Ways, Early to Late Game |
 | 2026-11-18 | /guides/gta-6-map-size/ | How Big Is the GTA 6 Map? Leonida vs GTA 5 and Red Dead 2 |
 | 2026-11-23 | /es/guias/gta-6-notas-del-parche/ | GTA 6 actualización 1.002.002: notas del parche y los 7 arreglos |
+| 2026-11-24 | /es/guias/gta-6-online-cuando-sale/ | GTA 6 Online: ¿cuándo sale? Lo que está confirmado |
+| 2026-11-24 | /guides/gta-6-online/ | Does GTA 6 Have Online? GTA 6 Online Release Date: What's Confirmed |
 | 2026-11-23 | /guides/gta-6-patch-notes/ | GTA 6 Update 1.002.002 Patch Notes: All 7 Fixes (Nov 23, 2026) |
 | 2026-11-18 | /guides/gta-6-physical-edition/ | GTA 6 Physical Edition: No Disc in the Box? What You're Actually Buying |
 | 2026-11-23 | /es/guias/gta-6-premios-game-awards/ | GTA 6 en The Game Awards 2026: sus 8 nominaciones, rivales y probabilidades |
 | 2026-11-19 | /guides/gta-6-ps5-pro-worth-it/ | Is PS5 Pro Worth It for GTA 6? 30 FPS, PSSR and What You Actually Get |
+| 2026-11-24 | /guides/gta-6-radio-stations/ | GTA 6 Radio Stations: Every Station and Its Hosts (V-Rock, Flash FM and More) |
 | 2026-11-24 | /es/guias/gta-6-records-streaming/ | GTA 6 en directo: los streamers más vistos y todos los récords |
 | 2026-11-24 | /guides/gta-6-streaming-records/ | GTA 6 Streaming Records: Most-Watched Streamers and Every Number |
 | 2026-11-24 | /guides/gta-6-trophies/ | GTA 6 Trophies: How Hard Is the Platinum? (55 Trophies, 100%) |
@@ -179,14 +190,15 @@ Read this first instead of searching the repo.
 | 2026-11-18 | /guides/gta-6-vs-gta-5/ | GTA 6 vs GTA 5: The Biggest Differences Explained |
 | 2026-11-19 | /es/guias/mejor-ssd-gta-6/ | Mejor SSD para GTA 6 en PS5 (212 GB): qué comprar y qué evitar |
 | 2026-11-24 | /es/guias/ofertas-gta-6/ | GTA 6: ofertas y códigos de descuento reales esta semana |
+| 2026-11-24 | /es/guias/precio-gta-6/ | Precio de GTA 6 en cada país: España, México, Colombia y Argentina |
 | 2026-11-19 | /es/guias/ps5-pro-gta-6-vale-la-pena/ | ¿Vale la pena la PS5 Pro para GTA 6? 30 FPS, PSSR y lo que realmente cambia |
 | built-in | /guides/gta-6-unlock-time/ | GTA 6 Unlock Time: When You Can Play in Every Time Zone |
 | built-in | /guides/gta-6-new-zealand-trick/ | GTA 6 New Zealand Trick: Can You Play Early, and Is It Safe? |
 | built-in | /guides/gta-6-launch-checklist/ | GTA 6 Launch Checklist: Download Size, Price and What's Missing on Day One |
 | built-in | /guides/gta-6-map-leonida-places/ | GTA 6 Map: 6 Places in Leonida You Need to Know |
-| built-in | /guides/gta-6-storage/ | GTA 6 Storage Full? How to Make Room on PS5 and Xbox (212 GB) |
+| built-in | /guides/gta-6-storage/ | How Many GB Is GTA 6? 212 GB, and How to Make Room on PS5 and Xbox |
 | built-in | /guides/gta-6-cheats/ | GTA 6 Cheat Codes: Money, Armor, Ammo + How to Unlock |
-| built-in | /guides/gta-6-pc-release-date/ | GTA 6 on PC: Release Date and What's Actually Reported |
+| built-in | /guides/gta-6-pc-release-date/ | Is GTA 6 on PC? PC Release Date and What's Actually Reported |
 | built-in | /guides/gta-6-launch-streams/ | GTA 6 Launch Streams: YouTube's 24-Hour Livestream and Kai Cenat's 100% Marathon |
 | built-in | /guides/gta-6-reviews/ | GTA 6 Reviews: 99 on Metacritic, Tied for the Best Score Ever |
 | built-in | /guides/gta-6-game-awards-nominations/ | GTA 6 at The Game Awards 2026: 8 Nominations Including Game of the Year |

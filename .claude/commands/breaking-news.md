@@ -23,7 +23,9 @@ doesn't pass every rule is NOT auto-posted.
    - +2 people are searching it now (it, or its topic, shows in today's `market-*.md`, or many outlets cover it)
    - +1 it has a clear number, quote or verdict we can put on a lettering card (or a gameplay highlight)
 4. **Auto-post ONLY if all are true**: score >= 8; confirmed by 2+ reputable sources; no story spoilers; not a
-   topic we already posted (check our uploads' titles and `content/log.md`); fewer than 2 breaking auto-posts
+   topic we already posted (check the CHANNEL's last 72 h of uploads, not only the registry: a run that can't push
+   leaves uploads.json stale, and on Nov 23 two runs posted "39 million PS5 players" twice in 3 hours; the uploader
+   now blocks the same story automatically, never pass `--force` to get around it); fewer than 2 breaking auto-posts
    in the last 24 hours; and it isn't about a real person's private life, a tragedy, or anything legal/medical.
    Otherwise: if score >= 6, make the Short anyway and deliver it for approval like daily-video.md step 3
    (no upload); if lower, send a 2-line "nothing big" note and stop.
@@ -31,8 +33,12 @@ doesn't pass every rule is NOT auto-posted.
    `#GTA6 #Shorts`), `short_description` (facts + sources, end with `#ViceReplayBreaking`), `pinned_comment`,
    `sources`, `short_es` {title, description} and `text_es` on each segment (Spanish), `short` (3-4 segments, 20-40 s, hook in the first 2 seconds, only confirmed facts, say "reportedly"
    for anything not official). Render with `python -m studio.ship episodes/<slug>.json` and read `output/<slug>/check.jpg` once.
-6. **Publish now**: `python -m studio.youtube_upload episodes/<slug>.json --approve short --now`. It goes public
-   immediately, not made for kids, with the comment posted.
+6. **Publish**: between 6 AM and 6 PM ET, publish now: `python -m studio.youtube_upload episodes/<slug>.json --approve
+   short --now` (public immediately, not made for kids, comment posted). **After 6 PM ET** (Nov 24 data: Shorts posted
+   6 PM-6 AM get ~1.9 views/h vs 16 for 6-11 AM), schedule it for **9:30 AM ET the next morning** instead (same
+   command without `--now`, plus `--date <tomorrow> --at "9:30 AM"`), unless it's a 10/10 story everyone will cover
+   tonight. Either way, add it to `content/learn/uploads.json` in your final message (the main chat registers it if
+   you can't push).
 7. **Tell the owner** (PushNotification if available, and a short final message): "Auto-posted breaking Short:
    <title> <link>. Score <n>/10 because <one line>. Sources: <links>. Pin the comment; delete it in YouTube
    Studio if you don't want it." Also send the video with SendUserFile so they can repost it on TikTok/Instagram.
