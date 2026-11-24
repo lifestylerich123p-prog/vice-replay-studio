@@ -22,7 +22,6 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| 2026-11-24 | gta6-first-platinum | Short | GTA 6's Platinum Trophy Is Already Taken | - |
 | 2026-11-23 | gta6-vs-red-dead-2 | Short | GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers | - |
 | 2026-11-23 | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | - |
 | 2026-11-23 | gta6-update-no-patch-notes | Short | GTA 6 Got 3 Updates and Zero Patch Notes | short: KI-6wP_Jhik (private) |
@@ -36,6 +35,7 @@ Read this first instead of searching the repo.
 | 2026-11-23 | gta6-game-awards-record | Short | GTA 6 Can't Break the Game Awards Record | - |
 | 2026-11-23 | gta6-game-awards-explained | video | GTA 6 at The Game Awards 2026: All 8 Nominations Explained | - |
 | 2026-11-23 | gta6-game-awards-8-noms | Short | GTA 6 Has the Most Game Awards Nominations: 8 | - |
+| 2026-11-23 | gta6-first-platinum | Short | GTA 6's Platinum Trophy Is Already Taken | - |
 | 2026-11-23 | gta6-black-friday-no-discount | Short | GTA 6 Black Friday: Take-Two Says No Discount | - |
 | 2026-11-23 | gta6-80-hours | Short | GTA 6 Is Rockstar's Longest Story Ever: About 80 Hours | - |
 | 2026-11-23 | gta6-5-things | Short | GTA 6: 5 Things You Didn't Know (All Checked) | - |

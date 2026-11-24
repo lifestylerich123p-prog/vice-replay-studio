@@ -297,3 +297,6 @@
   (views >= max(150, median 24 h views of our last 7 days)); studio.spend books winners in the next 12:30-1:30 PM
   Spanish slot and logs the rest as skipped; Spanish-only Shorts (es_only) unchanged; config/channel.json
   `spanish_winners_only.on=false` turns it off. (2) Tier lists twice a week: Tier List #3 for Wed Dec 2 9:30 AM.
+- 2026-11-23 ~7:45 PM ET, owner "APPROVE AND DO LAS RUN FOR TONIGHT": momentum follow-up `gta6-first-platinum`
+  ("GTA 6's Platinum trophy is already taken", title 1) booked Wed Nov 25 8:00 AM EN; Spanish winners-only. Uploads in
+  the after-3 AM run (quota was spent). Also cleaned the scheduled tasks (4 stale ones off, 2 carousel runners renamed).
