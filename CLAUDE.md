@@ -30,7 +30,8 @@ only for big news or long videos (`studio.quota` lists daytime first).
 official YouTube number; 2026 studies say 1-3 Shorts/day (vidIQ, 10.2M channels: growth rises with cadence; Metricool,
 ~800K videos: monthly Shorts views keep rising with volume, while 35+ Shorts/month drags long-form). Our scorecard's
 "Shorts that day" table shows no drop per Short on busy days. So: **3 English Shorts/day** (9:30, 11:00, 12:30;
-weekends 10, 11 or 12:30, 1:30), a 4th only for breaking news; **1 long video/week** (Sunday); Spanish channel winners +
+weekends 10, 11 or 12:30, 1:30), a 4th only for breaking news; **long videos only for big events** (Game Awards etc.) until the owner's gameplay arrives
+(Nov 24: both recent long videos had 0 views; related/browse traffic is ~0, so long-form isn't being recommended); Spanish channel winners +
 max 1 Spanish-only/day; Instagram stays at the owner's cap of 4/day (Mosseri: no magic number). Review Dec 8 (scheduled): if after-launch 3-Short
 days get under half the views per Short of 2-Short days and no more total views, go to 2/day.
 

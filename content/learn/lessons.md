@@ -255,3 +255,17 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   (money, key cloner, easter eggs) as cards; keep 4-6 Shorts/day in morning slots; and the biggest lever is the
   owner's own gameplay (`media/gameplay/` via the Drive folder, radio off): Rockstar's policy allows it and it's
   what the top Shorts show.
+
+## Nov 24 investigation (owner: "continue to investigate and act")
+- Traffic, Oct 27-Nov 24 (YouTube Analytics): Shorts feed 27,574 views, **YouTube search 8,072 (22%)**, related videos 22,
+  browse/other 366. Search is our second engine: titles must start with the exact phrase people type ("GTA 6 ..." +
+  "where to find" / "how to" / the thing's name), and the first line of the description repeats it.
+- Both recent long videos (how long to beat, launch week recap) had **0 views** after 2-3 days; related-video traffic
+  is ~0. Long videos now only for big events until the owner's own gameplay exists (CLAUDE.md posting rule).
+- Scorecard: tips/discovery Shorts lead (6.3 v/h, 715 views in 24 h, 72% watched); "catch" headlines next (7.7 v/h).
+  The map series ("where to find X" on the official map) is built on both; each has a catch-style title as option 2
+  for the automatic swap.
+- Hook v2 (same day): photo cards were too dark and static in the first second; now brighter 4K pictures, a punch-in
+  in the first 0.45 s, no repeated hook text, bright hook pictures only (luminance 85+).
+- Slug reuse bug: a new Short reused an old private Short's slug, so the uploader would have skipped it; studio.doctor
+  now flags it.
