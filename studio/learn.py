@@ -185,8 +185,21 @@ def analytics(channel_titles):
         return None
     for row in per_video:
         row["title"] = channel_titles.get(row.get("video"), row.get("video"))
-    data = {"from": start.isoformat(), "to": end.isoformat(), "videos": per_video, "traffic_sources": sources}
+    # Nov 24: YouTube search was 22% of views and one phrase ("gta 6 shoe store") brought ~4,000 of them. Keep the
+    # top search phrases so the daily run can make a Short/guide for any big phrase we don't answer yet.
+    try:
+        terms = report(metrics="views", dimensions="insightTrafficSourceDetail",
+                       filters="insightTrafficSourceType==YT_SEARCH", sort="-views", maxResults=25)  # API max is 25
+    except urllib.error.HTTPError:
+        terms = []
+    data = {"from": start.isoformat(), "to": end.isoformat(), "videos": per_video, "traffic_sources": sources,
+            "search_terms": terms}
     (LEARN / "analytics.json").write_text(json.dumps(data, indent=2))
+    if terms:
+        (LEARN / "search-terms.json").write_text(json.dumps({"from": start.isoformat(), "to": end.isoformat(),
+                                                            "terms": terms}, indent=1, ensure_ascii=False))
+        print("Top YouTube searches that found us: " + ", ".join(
+            f"{x['insightTrafficSourceDetail']} {x['views']}" for x in terms[:8]))
     print("Analytics (last 28 days): avg % watched / avg seconds watched / subs gained per upload")
     for r in per_video[:6]:
         print(f"  {r.get('averageViewPercentage', 0):5.1f}%  {r.get('averageViewDuration', 0):>4}s  "
