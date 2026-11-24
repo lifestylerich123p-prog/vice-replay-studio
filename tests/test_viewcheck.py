@@ -21,7 +21,8 @@ def test_owner_gameplay_counts_as_motion_unless_kept_picture():
     assert viewcheck.check(ep({"media": "a.jpg"}, use_gameplay=False), gameplay_available=True)[0]
 
 
-def test_long_scripts_and_plain_tips_warn():
+def test_long_scripts_and_plain_tips_warn(monkeypatch):
+    monkeypatch.setattr(viewcheck, "_tips_winning", lambda: False)  # the tip warning only fires while tips aren't winning
     b, _ = viewcheck.check(ep({"media": "a.mp4"}, words=100))
     assert any("words" in x for x in b)  # over ~30 s blocks
     _, w = viewcheck.check(ep({"media": "a.mp4"}, words=60))
@@ -68,3 +69,9 @@ def test_hash_number_in_title_blocks():
     assert any(x.startswith("title") for x in viewcheck.check(ep)[0])
     ep["short_title"] = "GTA 6 Lucia: 8 outfits #GTA6 #Shorts"
     assert not any(x.startswith("title") for x in viewcheck.check(ep)[0])
+
+
+def test_no_plain_tip_warning_while_the_scorecard_says_tips_win(monkeypatch):
+    monkeypatch.setattr(viewcheck, "_tips_winning", lambda: True)
+    _, w = viewcheck.check(ep({"media": "a.mp4"}, title="Change these GTA 6 settings NOW", headline="SETTINGS"))
+    assert not any("plain tip" in x for x in w)

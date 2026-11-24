@@ -115,6 +115,17 @@ def _fits_one_line(headline):
     from .. import brand
     return brand.font(brand.HEADLINE_FONT, int(1920 * 0.043)).getlength(headline.upper()) <= int(1080 * 0.82)
 
+def _tips_winning():
+    """True while the live scorecard says DO MORE tips/discovery (Nov 24: tips became our best format at 6.1 v/h, so the
+    old 'tips Shorts got 5-27 views' warning was steering runs away from what works). Data-driven, not hard-coded."""
+    from pathlib import Path as _P
+    f = _P(__file__).resolve().parents[2] / "content" / "learn" / "scorecard.md"
+    try:
+        return "DO MORE: format = tips" in f.read_text()
+    except OSError:
+        return False
+
+
 def _kinetic_sizes(chart, band=False, w=1080, h=1920):
     """[(line, px)]: the font size each `kinetic` line ends up at once vicecards.lettering shrinks it to fit (the hook
     can sit in the top band over a payoff picture, which is shorter, so lines get smaller there)."""
@@ -289,7 +300,7 @@ def check_short(ep, key, title, segs, gameplay_available=False):
                     warnings.append(f"readability: Short '{key}' segment {k + 1} line {line!r} renders at ~{px} px "
                                     f"(under 80 px on a 1920-tall Short); shorten it to ~14 characters or split the line")
         text = f"{title} {first.get('headline', '')} {ep.get('format', '')}"
-        if TIPS.search(text) and not re.search(r"\d", first.get("headline", "")):
+        if TIPS.search(text) and not re.search(r"\d", first.get("headline", "")) and not _tips_winning():
             warnings.append(f"views: Short '{key}' reads like a plain tip ({TIPS.search(text).group(0)!r}). Tips Shorts got "
                             f"5-27 views since launch; lead with a number, a streamer or a catch, or move the tip to the "
                             f"website guide")
