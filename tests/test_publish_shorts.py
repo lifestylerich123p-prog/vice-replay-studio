@@ -65,7 +65,9 @@ def qc_checks(root, name):
     return json.loads((root / "output" / SLUG / f"{name}.qc.json").read_text())["checks"]
 
 
-def test_two_shorts_rendered_give_one_combined_result(studio):
+def test_two_shorts_rendered_give_one_combined_result(studio, monkeypatch):
+    from studio.vice import viewcheck  # the "plain tip" advice follows the live scorecard; pin it for this test
+    monkeypatch.setattr(viewcheck, "_tips_winning", lambda: False)
     root, heard = studio
     news, tips = short("news"), short("tips", first_media=STILL, title="GTA 6 tips nobody tells you #Shorts")
     episode = write_episode(root, shorts=[news, tips])
