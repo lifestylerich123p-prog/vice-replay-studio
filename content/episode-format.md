@@ -11,7 +11,10 @@ Moved out of CLAUDE.md so runs that don't write episodes don't load it. Every ru
    - Title options for automatic swaps: `title_options` (3, main video), `short_title_options` (2-3, main Short) and
      `title_options` (2-3) inside each `shorts` item. Option 1 is posted; option 2 is swapped in if it underperforms.
    - `short`: 3-5 segments, under 55 seconds of narration total: the Short cut from this video. Also set
-     `short_title` (under 60 chars, ends with #GTA6 #Shorts) and `short_description` (1-2 sentences).
+     `short_title` (under 60 chars, ideally 40 or less before the hashtags, ends with ONE topic emoji then #GTA6 #Shorts,
+     e.g. "GTA 6 has a giant crab: here's where 🦀 #GTA6 #Shorts"; Nov 24 market: top GTA 6 Shorts with an emoji had a
+     +34% median views/h, "vs" comparisons 2x, a "?" in the title -32%; a catch in brackets "(most people miss this)"
+     matches our best hook type) and `short_description` (1-2 sentences).
    - `shorts`: extra standalone Shorts, a list of `{"id", "title", "description", "hashtags", "segments"}`
      (same segment format, 2-4 segments, 20-45 seconds). The daily run adds one news Short here.
    - Shorts get far more views than long videos on this channel. Short segment 1 must hook in the first

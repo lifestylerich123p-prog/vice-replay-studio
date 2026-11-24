@@ -282,3 +282,10 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   tier board, follow badge moved above YouTube's title overlay, map zooms kept inside the printed map and off the
   "LEONIDA" title art. Facts: the egg tower's region isn't settled (Bluegrass vs South Vice-Dale; IBTimes: not
   independently established), so always say "guides point to".
+- Competitor details (Nov 24; 68 top GTA 6 Shorts of the week + metadata of the top 50 via the API): median views/h
+  with an emoji in the title 133K vs 99K; "vs" comparisons 207K vs 104K; "?" in the title 69K vs 108K; 20 s or less
+  151K vs 98K (our own data doesn't show that: our 31-60 s did better in launch week, keep 13-20 s). Most top Shorts
+  have EMPTY descriptions and no tags (metadata isn't the lever; the first frame and topic are). Their like rate ~1.65%
+  = ours 1.58%, but our comment rate is ~19x theirs (0.26% vs 0.014%): the pinned question works, keep it. Smaller
+  channels (under ~120K subs) that won: comparisons, "5 things you didn't know", exact money ("Fastest $40,000"),
+  "(Most People Miss This)" tags, details/NPC behaviour. Applied: one topic emoji on every booked English title.
