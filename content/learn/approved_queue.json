@@ -363,6 +363,54 @@
     "12:30 PM"
    ],
    "approved": "Nov 23 ~7:45 PM (owner: \"APPROVE\"): momentum follow-up to gta6-first-to-finish, title 1; Spanish only if it wins its first 24 h"
+  },
+  {
+   "slug": "gta6-stream-wars",
+   "item": "news",
+   "en": [
+    "2026-11-25",
+    "3:30 PM"
+   ],
+   "es": [
+    "2026-11-26",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); hacker sentencing, afternoon slot under the big-news exception"
+  },
+  {
+   "slug": "gta6-stream-wars",
+   "item": "short",
+   "en": [
+    "2026-11-28",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-11-29",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); proposed Mon 9:30, moved to Sat 11 AM (earlier, and Monday 9:30 is the week plan's news slot)"
+  },
+  {
+   "slug": "gta6-stream-wars",
+   "item": "tips",
+   "en": [
+    "2026-11-29",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-30",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); RE-CHECK 'Rockstar hasn't confirmed it' (Vice City portal) within 2 h of the slot"
+  },
+  {
+   "slug": "gta6-stream-wars",
+   "item": "main",
+   "en": [
+    "2026-11-30",
+    "3:30 PM"
+   ],
+   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); long video, optional slot per the daily run"
   }
  ],
  "paused": [

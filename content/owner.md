@@ -300,3 +300,8 @@
 - 2026-11-23 ~7:45 PM ET, owner "APPROVE AND DO LAS RUN FOR TONIGHT": momentum follow-up `gta6-first-platinum`
   ("GTA 6's Platinum trophy is already taken", title 1) booked Wed Nov 25 8:00 AM EN; Spanish winners-only. Uploads in
   the after-3 AM run (quota was spent). Also cleaned the scheduled tasks (4 stale ones off, 2 carousel runners renamed).
+- 2026-11-24 ~8 AM ET, owner "Approve and check was goin on" (answering the daily run's "reply approve"): the Nov 24 set
+  `gta6-stream-wars` (recovered from the run's log; push had failed): news Short Wed Nov 25 3:30 PM, VTuber Short Sat Nov 28
+  11 AM (moved from Mon 9:30), Vice City tips Short Sun Nov 29 12:30 PM (re-check 'Rockstar hasn't confirmed' first),
+  long video Mon Nov 30 3:30 PM; Spanish winners-only. Same morning (owner asks): website post-launch refresh,
+  deals/codes pages, search-demand pages, stale + freshness monitoring, Amazon full-sale button.
