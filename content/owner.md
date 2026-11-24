@@ -315,3 +315,7 @@
   "39 million" Short Kd9YMDDeJTg set PRIVATE (not deleted; the first one, kQ_OUxG_GYk, stays); this week's Shorts
   reordered (tier lists, versus and rankings into the earliest morning slots); map zoom Shorts allowed (official map,
   photo-card rule) and the official screenshots may be upgraded to Rockstar's 4K files.
+- 2026-11-24 ~1 PM ET, owner: "Continue with upgrades, I give you full access into creative design". Standing
+  approval for DESIGN changes (how videos, cards, carousels, thumbnails and the website look). Uploads, new topics
+  and spending still follow the normal approvals. Used for: hook v2 (brighter 4K photo cards, punch-in opening,
+  no duplicate slab, one-line slabs), map in the site menu + homepage, per-spot map links.
