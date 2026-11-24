@@ -269,3 +269,10 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   in the first 0.45 s, no repeated hook text, bright hook pictures only (luminance 85+).
 - Slug reuse bug: a new Short reused an old private Short's slug, so the uploader would have skipped it; studio.doctor
   now flags it.
+- Instagram (Nov 24, `studio.ig_stats`; views need the instagram_manage_insights permission, so likes/comments only):
+  practical tip Reels win by far: "First 3 settings to change" 119 likes, "Don't grind money in Chapter 1 (here's
+  the catch)" 68, "cheat codes that actually work (screenshot this)" 41, "no mission replay (save like this)" 37.
+  Carousels: median 0 likes over 5 (they mostly reach our 15 followers). Facts/number Reels ~0. So: tips and
+  where-to-find first, a "save this" nudge on them, carousels only when they're genuinely save-worthy.
+- Retention (Nov 24 refresh): average Short is watched 68% (many rewatch). Viewers don't leave; YouTube shows us to
+  too few people. The fix is the first frame + topic (search phrases, tips), not shorter Shorts.

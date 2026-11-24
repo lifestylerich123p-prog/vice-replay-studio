@@ -21,6 +21,8 @@ over the Nov 23 rules below where they differ):**
   and `short_title_options[1]` = a truthful "catch" title for the automatic swap.
 - **Long videos:** only for big events (Game Awards) until the owner's gameplay arrives (both recent long videos: 0 views).
 - **Before reporting:** `python -m studio.readiness` must show every booked video ready (rendered, 30 fps, checks passed).
+- **Instagram (Nov 24, `studio.ig_stats`):** practical tip / where-to-find Reels win (save nudge is automatic); carousels
+  got ~0 likes, so make one only when it's genuinely save-worthy (a map, a checklist), not daily.
 
 **NOV 23 RULES (owner; these win over anything below that conflicts):**
 1. ~~No trailer clips or official screenshots in ANY video~~ (Nov 24: official screenshots are allowed behind our cards
