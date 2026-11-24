@@ -283,7 +283,13 @@
     "when": "Después de las 2 AM"
    },
    "dx": 0.05,
-   "dy": 0.0
+   "dy": 0.0,
+   "aliases": [
+    "ovni",
+    "alien",
+    "aliens",
+    "ufo"
+   ]
   },
   {
    "cat": "wild",
@@ -304,7 +310,12 @@
     "t": "Skunk Ape",
     "d": "El Pie Grande de Leonida. El sitio más fácil es la carretera junto a Cottonmouth Lake, al sur de Hamlet; busca un ciervo muerto. Las guías también citan Gullet Marsh.",
     "when": "Mejor de noche"
-   }
+   },
+   "aliases": [
+    "bigfoot",
+    "sasquatch",
+    "pie grande"
+   ]
   },
   {
    "cat": "wild",
@@ -322,7 +333,11 @@
    "es": {
     "t": "Cangrejo gigante",
     "d": "Un puesto de investigación de cangrejos abandonado en los canales de Gullet Marsh; se llega en barco. Devuelve la luz y encuentra la contraseña para ver qué hay dentro."
-   }
+   },
+   "aliases": [
+    "cangrejo",
+    "crab"
+   ]
   },
   {
    "cat": "cars",
@@ -429,7 +444,11 @@
    "es": {
     "t": "Helicóptero temprano",
     "d": "Un helicóptero en un muelle privado de Southwind: gira en los carteles de Sherwin Boatworks y Chicki's Tiki Bar; el muelle está al este del aparcamiento. No siempre aparece."
-   }
+   },
+   "aliases": [
+    "heli",
+    "helicóptero"
+   ]
   },
   {
    "cat": "cars",
@@ -447,7 +466,13 @@
    "es": {
     "t": "Base militar (cazas)",
     "d": "Los cazas están en la mitad norte de Mile Zero Air Station, al sureste de Key Lento. Entrar te da un nivel de búsqueda muy alto."
-   }
+   },
+   "aliases": [
+    "jet",
+    "fighter",
+    "caza",
+    "militar"
+   ]
   },
   {
    "cat": "mods",
@@ -463,7 +488,13 @@
    "es": {
     "t": "Rideout Customs",
     "d": "Taller de tuneo en Crosstown, Vice City (Ultimate Edition)."
-   }
+   },
+   "aliases": [
+    "mod shop",
+    "tuning",
+    "taller",
+    "customize"
+   ]
   },
   {
    "cat": "mods",
@@ -481,7 +512,13 @@
     "d": "Taller de tuneo en Little Cuba, Vice City."
    },
    "dx": 0.004,
-   "dy": 0.012
+   "dy": 0.012,
+   "aliases": [
+    "mod shop",
+    "tuning",
+    "taller",
+    "customize"
+   ]
   },
   {
    "cat": "mods",
@@ -497,7 +534,13 @@
    "es": {
     "t": "Capri Classic",
     "d": "Taller de tuneo en Capri."
-   }
+   },
+   "aliases": [
+    "mod shop",
+    "tuning",
+    "taller",
+    "customize"
+   ]
   },
   {
    "cat": "mods",
@@ -515,7 +558,13 @@
     "d": "Taller de tuneo en Key Lento."
    },
    "dx": 0.012,
-   "dy": 0.006
+   "dy": 0.006,
+   "aliases": [
+    "mod shop",
+    "tuning",
+    "taller",
+    "customize"
+   ]
   },
   {
    "cat": "mods",
@@ -531,7 +580,13 @@
    "es": {
     "t": "Ledford Motorcycle Workshop",
     "d": "Taller de motos en la costa de Grayson."
-   }
+   },
+   "aliases": [
+    "mod shop",
+    "tuning",
+    "taller",
+    "customize"
+   ]
   },
   {
    "cat": "mods",
@@ -549,7 +604,13 @@
     "d": "Taller de tuneo al norte de Lake Leonida (Ultimate Edition)."
    },
    "dx": 0.0,
-   "dy": -0.028
+   "dy": -0.028,
+   "aliases": [
+    "mod shop",
+    "tuning",
+    "taller",
+    "customize"
+   ]
   },
   {
    "cat": "mods",
@@ -567,7 +628,13 @@
     "d": "Dos talleres todoterreno en Port Gellhorn: Dirt Merchants al sur y Wasteland Off-Road al norte."
    },
    "dx": -0.012,
-   "dy": 0.012
+   "dy": 0.012,
+   "aliases": [
+    "mod shop",
+    "tuning",
+    "taller",
+    "customize"
+   ]
   },
   {
    "cat": "shops",
@@ -587,7 +654,14 @@
    "es": {
     "t": "Flip Flop House (zapatería)",
     "d": "La primera tienda de zapatos: junto a Sunbelt Highway en Key Lento, a la izquierda viniendo del norte. Para las demás: mapa del juego, Estilo, Calzado."
-   }
+   },
+   "aliases": [
+    "shoes",
+    "shoe store",
+    "zapatos",
+    "zapatería",
+    "tienda de zapatos"
+   ]
   }
  ]
 }

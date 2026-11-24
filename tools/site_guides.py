@@ -41,7 +41,7 @@ CSS = """:root{--bg:#0d0717;--panel:#170d26;--panel-2:#21123a;--line:#3a2357;--f
 .wrap{max-width:720px;margin:0 auto;padding:22px max(16px,env(safe-area-inset-right,0px)) 64px max(16px,env(safe-area-inset-left,0px))}
 nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px;flex-wrap:wrap}
 .brand{font-family:var(--display);font-size:24px;letter-spacing:.02em;color:var(--fg);text-decoration:none}.brand b{color:var(--cyan);font-weight:400}
-nav .menu{display:flex;gap:16px;font-weight:700;font-size:14px}nav .menu a{color:var(--muted);text-decoration:none}nav .menu a:hover{color:var(--pink)}
+main table{table-layout:fixed;max-width:100%}main td,main th{overflow-wrap:anywhere}nav .menu{display:flex;flex-wrap:wrap;gap:8px 16px;font-weight:700;font-size:14px}nav .menu a{color:var(--muted);text-decoration:none}nav .menu a:hover{color:var(--pink)}
 h1{font-family:var(--display);font-weight:400;font-size:clamp(32px,8vw,50px);line-height:1.15;margin:0 0 12px;text-wrap:balance}
 h1 span{background:var(--pink);padding:0 .15em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 h2{font-family:var(--display);font-weight:400;font-size:28px;line-height:1.15;margin:36px 0 8px;color:var(--fg)}
@@ -284,8 +284,10 @@ GAME = [("GTA 6 for PS5", "https://www.amazon.com/dp/B0H6K928WL"), ("GTA 6 for X
 
 GEAR = [("PS5 DualSense controller", "PS5 DualSense controller"), ("Gaming headset (PS5 / Xbox)", "gaming headset PS5 Xbox")]
 
-def sources(lst):
-    return '<div class="sources"><h2>Sources</h2><ul class="list">' + "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{html.escape(n)}</a></li>' for n, u in lst) + "</ul></div>"
+def sources(lst):  # Amazon listings cited as a source are affiliate links: rel="sponsored" (Nov 24 review)
+    return '<div class="sources"><h2>Sources</h2><ul class="list">' + "".join(
+        f'<li><a href="{u}" target="_blank" rel="{"sponsored noopener" if "amazon." in u else "noopener"}">{html.escape(n)}</a></li>'
+        for n, u in lst) + "</ul></div>"
 
 def watchmore(vid, lang="en"):
     if lang == "es":
@@ -352,6 +354,29 @@ NEWS_SLUGS = {"gta-6-launch-live", "gta-6-hacker-sentence", "gta-6-online", "gta
               "gta-6-characters", "gta-6-radio-stations", "gta-6-easter-eggs", "gta-6-trophies", "gta-6-launch-streams",
               "gta-6-lanzamiento-en-vivo", "gta-6-online-cuando-sale", "gta-6-records-streaming", "gta-6-premios-game-awards",
               "gta-6-notas-del-parche", "gta-6-cifras-semana-lanzamiento", "dardos-gta-6"}
+
+
+ES_GEAR = [  # Nov 24 review: Spanish pages showed the English affiliate box, disclosure included
+    ("Gear for GTA 6 (affiliate links)", "Equipo para GTA 6 (enlaces de afiliado)"),
+    ("Free 30-day Amazon Prime trial: fast delivery", "Prueba gratis de Amazon Prime (30 días): envío rápido"),
+    ("GTA 6 for Xbox Series X|S", "GTA 6 para Xbox Series X|S"), ("GTA 6 for PS5", "GTA 6 para PS5"),
+    ("PS5 storage upgrade (2TB NVMe SSD with heatsink)", "Más espacio para PS5 (SSD NVMe de 2 TB con disipador)"),
+    ("Xbox Series X|S storage expansion card", "Tarjeta de expansión de almacenamiento para Xbox Series X|S"),
+    ("PS5 DualSense controller", "Mando DualSense de PS5"), ("Gaming headset (PS5 / Xbox)", "Auriculares gaming (PS5 / Xbox)"),
+    ("Affiliate links: as an Amazon Associate I earn from qualifying purchases, at no extra cost to you. We haven't tested these "
+     "products; check reviews and compatibility before you buy.", "Enlaces de afiliado: como Afiliado de Amazon, gano con las compras "
+     "que califican, sin costo extra para ti. No hemos probado estos productos; revisa opiniones y compatibilidad antes de comprar."),
+    ('<a href="/gear/">All gear picks</a>', '<a href="/es/equipo/">Todo nuestro equipo</a>'),
+    ("If you're short on space for the 212 GB install, these searches show current options and prices:",
+     "Si te falta espacio para los 212 GB, estas búsquedas muestran opciones y precios actuales:"),
+    ("Short on space or need a controller?", "¿Te falta espacio o necesitas un mando?"),
+]
+
+
+def es_gear(body):
+    for en, es in ES_GEAR:
+        body = body.replace(en, es).replace(html.escape(en, quote=False), es)
+    return body
 
 
 def soften_gear(slug, body, lang):
@@ -457,6 +482,10 @@ def with_toc(body, lang):
     toc = f'<nav class="toc" aria-label="{label}"><b>{label}</b>{links}</nav>'
     k = body.find('<img class="lead"')
     k = body.find(">", k) + 1 if k >= 0 else body.find("</p>", body.find('<p class="lede">')) + 4
+    if 'id="vrmap"' in body:  # map pages: the map first, the jump list right after its section
+        m = body.find("<h2", body.find('id="vrmap"'))
+        if m > 0:
+            k = m
     return body[:k] + "\n" + toc + body[k:]
 
 
@@ -472,18 +501,27 @@ def with_notice(slug, body, lang):
             return body[:end] + "\n" + box + body[end:]
     return box + body
 
-def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None):
+def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None, lead=True):
     faq = faq or FAQS.get(slug)
     body = with_notice(slug, body, lang)
     path = f"guides/{slug}/" if lang == "en" else f"es/guias/{slug}/"
     l1, l2, shot = CARDS.get(slug, (title.split(":")[0][:28], "", None))
     img = card(slug, l1, l2 or "On replay", shot)
-    body = with_lead(body, img, title)
+    if lead:  # map pages skip it (Nov 24 review: the map started 1,149 px down on a phone, under a picture of a map)
+        body = with_lead(body, img, title)
     body = with_toc(body, lang)
     body = with_watch(slug, body, lang)
     body = soften_gear(slug, body, lang)
+    if lang == "es":
+        body = es_gear(body)
+    sub = ""
     if lang == "es" and YT_ES not in body:  # every Spanish guide points Spanish readers to the Spanish channel
-        body += f'<div class="box"><h3>GTA 6 en español, cada día</h3><div class="btns"><a class="item" href="{YT_ES}?sub_confirmation=1" target="_blank" rel="noopener">Suscríbete a Vice Replay en Español<small>Shorts y noticias de GTA 6 en español</small><span aria-hidden="true">→</span></a></div></div>'
+        sub = f'<div class="box"><h3>GTA 6 en español, cada día</h3><div class="btns"><a class="item" href="{YT_ES}?sub_confirmation=1" target="_blank" rel="noopener">Suscríbete a Vice Replay en Español<small>Shorts y noticias de GTA 6 en español</small><span aria-hidden="true">→</span></a></div></div>'
+    elif lang == "en" and "sub_confirmation" not in body:  # Nov 24 review: 27 of 39 English guides had no way to subscribe
+        sub = f'<div class="box"><h3>GTA 6 every day, in under a minute</h3><div class="btns"><a class="item" href="{YT}?sub_confirmation=1" target="_blank" rel="noopener">Subscribe to Vice Replay on YouTube<small>Daily GTA 6 Shorts: secrets, map spots, tier lists</small><span aria-hidden="true">→</span></a></div></div>'
+    if sub:  # before the sources, so readers see it before the reference list
+        k = body.find('<div class="sources">')
+        body = body[:k] + sub + body[k:] if k >= 0 else body + sub
     if lang == "en": GUIDES.append((slug, title, desc, date))
     else: GUIDES_ES.append((slug, title, desc, date))
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": title[:110], "description": desc, "image": [img],
@@ -848,7 +886,8 @@ def interactive_map(lang="en", only=None):
         t = p[lang]
         slug = _re.sub(r"[^a-z0-9]+", "-", p["en"]["t"].lower().replace("'", "")).strip("-")  # same id in EN and ES
         pins.append({"n": n, "id": slug, "cat": p["cat"], "x": round(x + p.get("dx", 0), 4), "y": round(y + p.get("dy", 0), 4),
-                     "t": t["t"], "d": t["d"], "when": t.get("when", "")})
+                     "t": t["t"], "d": t["d"], "when": t.get("when", ""),
+                     "k": (p["en"]["t"] + " " + p["en"]["d"] + " " + " ".join(p.get("aliases", []))) if lang == "es" else " ".join(p.get("aliases", []))})
     data = {"lang": lang, "w": 5775, "h": 7900, "cats": cats, "pins": pins}
     if only:  # a category page (<!--MAP:mods-->): opens on that layer, lists only its pins; the rest stay one tap away
         data["only"] = list(only)
@@ -865,10 +904,10 @@ def interactive_map(lang="en", only=None):
              '.vrsmall .vrpin b{width:18px;height:18px;margin:6px;font-size:10px;border-width:1.5px;box-shadow:0 0 0 2px rgba(13,7,23,.5)}'
              '.vrlegend{background:rgba(13,7,23,.88);color:#f4eefc;padding:8px 10px;border-radius:10px;font:600 13px/1.5 var(--body)}'
              '.vrlegend label{display:flex;align-items:center;gap:6px;cursor:pointer}.vrlegend i{width:12px;height:12px;border-radius:50%;display:inline-block}'
-             '.leaflet-container img.leaflet-tile{mix-blend-mode:normal;width:256.6px!important;height:256.6px!important}.leaflet-popup-content{font:14px/1.45 var(--body)}.vrdone b{opacity:.45;filter:grayscale(.6)}.vrok{color:#1a9c5b;font-weight:700}.vrbtn{margin-top:8px;padding:6px 10px;border-radius:8px;border:0;background:#ff1f8e;color:#fff;font:600 13px var(--body);cursor:pointer}.vrprog{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.2)}.vrcount{display:block;color:#00e5d2}.vrlink{background:none;border:0;color:#b7a9cf;text-decoration:underline;font:12px var(--body);padding:0;cursor:pointer}.vrdone-item{opacity:.55;text-decoration:line-through}.vrsearch{width:100%;margin:0 0 6px;padding:5px 8px;border-radius:7px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#f4eefc;font:13px var(--body)}.vrlegend small{color:#b7a9cf;margin-left:2px}.vrnext{display:block;margin:6px 0 4px;padding:5px 9px}.vrlist li{margin-bottom:8px}</style>')
+             '.leaflet-container img.leaflet-tile{mix-blend-mode:normal;width:256.6px!important;height:256.6px!important}.leaflet-popup-content{font:14px/1.45 var(--body)}.vrdone b{opacity:.45;filter:grayscale(.6)}.vrok{color:#1a9c5b;font-weight:700}.vrbtn{margin-top:8px;padding:6px 10px;border-radius:8px;border:0;background:#ff1f8e;color:#fff;font:600 13px var(--body);cursor:pointer}.vrprog{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.2)}.vrcount{display:block;color:#00e5d2}.vrlink{background:none;border:0;color:#b7a9cf;text-decoration:underline;font:12px var(--body);padding:0;cursor:pointer}.vrdone-item{opacity:.55;text-decoration:line-through}.vrsearch{width:100%;margin:0 0 6px;padding:6px 8px;border-radius:7px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#f4eefc;font:16px var(--body)}.vrlegend small{color:#cfc3e4;margin-left:2px;font-size:12px}.vrnext{display:block;margin:6px 0 4px;padding:5px 9px}.vrlist li{margin-bottom:8px}.vrlist{list-style:none;padding-left:0}.vrtoggle{display:none;background:none;border:0;color:#f4eefc;font:700 14px var(--body);padding:2px 0;cursor:pointer}.vrfullbtn{display:block;margin-bottom:6px}.vrhint{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);z-index:800;background:rgba(13,7,23,.85);color:#fff;font:600 13px var(--body);padding:6px 12px;border-radius:20px;pointer-events:none}#vrmap.vrfull{position:fixed;inset:0;height:100vh!important;width:100vw;z-index:9999;border-radius:0;margin:0}body.vrnoscroll{overflow:hidden}@media(max-width:640px){#vrmap{height:64vh}.vrtoggle{display:block}.vrlegend:not(.open) .vrbody,.vrlegend:not(.open) .vrfullbtn{display:none}.vrlegend{max-width:78vw}.vrprog .vrlink{font-size:13px}}</style>')
     return (f'<link rel="stylesheet" href="/js/leaflet.css">{style}<div id="vrmap" role="application" '
             f'aria-label="{"Mapa interactivo de Leonida" if es else "Interactive map of Leonida"}"></div>'
-            f'<p class="meta">{hint}</p><ol class="list vrlist">{items}</ol>'
+            f'<p class="meta">{hint}</p><ul class="list vrlist">{items}</ul>'
             f'<script type="application/json" id="vrpins">{data}</script>'
             '<script src="/js/leaflet.js"></script><script src="/js/vr-map.js"></script>')
 
@@ -884,6 +923,8 @@ for g in _JSON:
     items = (GAME if "game" in g.get("gear", []) else []) + (STORAGE if "storage" in g.get("gear", []) else []) + (GEAR if "gear" in g.get("gear", []) else [])
     es = g.get("lang") == "es"
     h1 = g.get("h1") or g["title"]
+    pins_n = len(json.load(open(os.path.join(STUDIO, "site", "map-pins.json")))["pins"])
+    g = json.loads(json.dumps(g).replace("{PINS}", str(pins_n)))  # counts from the pin data (Nov 24: page said 30, map had 31)
     body = f'<h1>{h1}</h1><p class="meta">{"Actualizado el" if es else "Updated"} {nice_date(g["date"], "es" if es else "en")} · Vice Replay</p><p class="lede">{g.get("lede", "")}</p>'
     body += video(g["video"], g["title"]) if g.get("video") else ""
     body += "".join(_MAPTAG.sub(lambda m: interactive_map(g.get("lang", "en"), (m.group(1) or "").split(",") if m.group(1) else None),
@@ -892,7 +933,8 @@ for g in _JSON:
     body += gearbox(items, "Enlaces (Amazon EE. UU.):" if es else "Getting GTA 6 or making room for it? Links go to current listings:") if items else ""
     body += watchmore(g["video"], "es" if es else "en") if g.get("video") else ""
     body += sources([tuple(x) for x in g.get("sources", [])]) if g.get("sources") else ""
-    guide(g["slug"], g["title"], g["desc"], g["date"], body, faq=[tuple(x) for x in g.get("faq", [])] or None, lang=g.get("lang", "en"))
+    guide(g["slug"], g["title"], g["desc"], g["date"], body, faq=[tuple(x) for x in g.get("faq", [])] or None, lang=g.get("lang", "en"),
+          lead=not g.get("map_first"))
 
 # Search box on the guide lists (Nov 24): filters the cards as you type, no server needed
 SEARCH_JS = '<script>(function(){var q=document.getElementById("q");if(!q)return;var cs=[].slice.call(document.querySelectorAll(".cards .card"));var n=document.getElementById("qn");q.addEventListener("input",function(){var t=q.value.toLowerCase().trim(),k=0;cs.forEach(function(c){var m=!t||c.textContent.toLowerCase().indexOf(t)>-1;c.style.display=m?"":"none";if(m)k++;});n.textContent=t?(k+" / "+cs.length):"";});})();</script>'
@@ -1061,12 +1103,28 @@ def refresh_home():
     k = doc2.find('<p class="lede">')
     k = doc2.find("</p>", k) + 4
     doc2 = doc2[:k] + "\n  " + latest_sec + doc2[k:]
+    # Nov 24 review: no menu on the homepage, the YouTube link sat ~2,960 px down, and the deals came before the guides.
+    doc2 = _re.sub(r'<p class="lede">.*?</p>', '<p class="lede">Rockstar\'s official Leonida map with every secret pinned, '
+                   'quick sourced guides and GTA 6 news. New Shorts every day.</p>', doc2, count=1, flags=_re.S)
+    doc2 = _re.sub(r'\s*<div class="hrow">.*?</nav></div>', "", doc2, count=1, flags=_re.S)
+    hrow = (f'<div class="hrow"><a class="subbtn" href="{YT}?sub_confirmation=1" target="_blank" rel="noopener">▶ Subscribe on YouTube</a>'
+            '<nav class="hmenu" aria-label="Menu"><a href="/guides/gta-6-map-leonida-places/">🗺️ Map</a><a href="/guides/">Guides</a>'
+            '<a href="/guides/gta-6-launch-live/">News</a><a href="/gear/">Gear</a><a href="/es/" hreflang="es">Español</a></nav></div>')
+    k = doc2.find("</p>", doc2.find('<p class="lede">')) + 4
+    doc2 = doc2[:k] + "\n  " + hrow + doc2[k:]
+    dm = _re.search(r'\s*<section class="group" id="deals">.*?</section>', doc2, flags=_re.S)
+    gm = _re.search(r'<section class="group"><h2>GTA 6 guides</h2>.*?</section>', doc2, flags=_re.S)
+    if dm and gm and dm.start() < gm.start():  # deals after the guides
+        sec = dm.group(0)
+        doc2 = doc2[:dm.start()] + doc2[dm.end():]
+        gm = _re.search(r'<section class="group"><h2>GTA 6 guides</h2>.*?</section>', doc2, flags=_re.S)
+        doc2 = doc2[:gm.end()] + sec + doc2[gm.end():]
     style = ('<style id="vr-cards">.cards{display:grid;gap:10px}.card{display:block;background:var(--panel-2);border:1px solid var(--line);'
              'border-radius:14px;color:var(--fg);text-decoration:none}.card:hover{border-color:#ff1f8e}.card.pic{display:grid;'
              'grid-template-columns:120px 1fr;gap:12px;align-items:center;padding:10px}.card.pic img{display:block;width:100%;height:auto;'
              'aspect-ratio:40/21;border-radius:8px}.card.pic b{font-size:16px;line-height:1.3;display:block}.card.pic small{color:var(--muted);'
              'font-size:13px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.card.hot{outline:2px solid #ff1f8e}'
-             '@media(min-width:640px){.card.pic{grid-template-columns:200px 1fr}}@media(max-width:639px){.card.pic{grid-template-columns:1fr}.card.pic b{font-size:18px}.hero{aspect-ratio:2.2/1}.hero .brand{font-size:clamp(36px,11vw,56px)}main>h1,.wrap>h1{font-size:clamp(30px,9vw,42px);margin-top:16px}}</style>')
+             '@media(min-width:640px){.card.pic{grid-template-columns:200px 1fr}}@media(max-width:639px){.card.pic{grid-template-columns:1fr}.card.pic b{font-size:18px}.hero{aspect-ratio:2.2/1}.hero .brand{font-size:clamp(36px,11vw,56px)}main>h1,.wrap>h1{font-size:clamp(30px,9vw,42px);margin-top:16px}}.hrow{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:4px 0 18px}.subbtn{display:inline-block;background:#ff1f8e;color:#fff;font-weight:800;text-decoration:none;padding:11px 18px;border-radius:999px;box-shadow:0 0 18px rgba(255,31,142,.45)}.subbtn:hover{filter:brightness(1.1)}.hmenu{display:flex;flex-wrap:wrap;gap:8px 14px;font-weight:700;font-size:15px}.hmenu a{color:#00e5d2;text-decoration:none}</style>')
     doc2 = _re.sub(r'<style id="vr-cards">.*?</style>', "", doc2, flags=_re.S)
     org = json.dumps([{"@context": "https://schema.org", "@type": "WebSite", "name": "Vice Replay", "url": DOMAIN + "/", "inLanguage": ["en", "es"]},
                       {"@context": "https://schema.org", "@type": "Organization", "name": "Vice Replay", "url": DOMAIN + "/", "logo": DOMAIN + "/favicon.png",

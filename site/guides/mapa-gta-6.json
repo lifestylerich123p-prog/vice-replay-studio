@@ -11,7 +11,7 @@
   "OFICIAL EN HD",
   "leonida-map-poster.jpg"
  ],
- "lede": "Este es <b>el mapa oficial de Leonida de Rockstar</b> a resolución de impresión (5775 × 7900 píxeles): puedes acercarte hasta los nombres de las calles. Marcamos 30 sitios en los que coinciden al menos dos guías de la semana de lanzamiento: easter eggs, el OVNI y el Pie Grande, coches de regalo y talleres de tuneo.",
+ "lede": "Este es <b>el mapa oficial de Leonida de Rockstar</b> a resolución de impresión (5775 × 7900 píxeles): puedes acercarte hasta los nombres de las calles. Marcamos {PINS} sitios en los que coinciden al menos dos guías de la semana de lanzamiento: easter eggs, el OVNI y el Pie Grande, coches de regalo y talleres de tuneo.",
  "sections": [
   [
    "Mapa interactivo",
@@ -121,5 +121,6 @@
    "PowerPyx: BASE jump locations",
    "https://www.powerpyx.com/gta-6-all-base-jump-locations/"
   ]
- ]
+ ],
+ "map_first": true
 }
