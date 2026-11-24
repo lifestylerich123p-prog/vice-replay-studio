@@ -1,0 +1,56 @@
+{
+ "slug": "tienda-de-zapatos-gta-6",
+ "lang": "es",
+ "title": "Tienda de zapatos de GTA 6: dónde comprar zapatos (mapa)",
+ "h1": "¿Dónde está la <span>zapatería</span> de GTA 6?",
+ "desc": "La primera tienda de zapatos de GTA 6 es Flip Flop House, en Key Lento. Cómo encontrar las demás con el filtro del mapa y cuántas hay.",
+ "date": "2026-11-24",
+ "video": null,
+ "card": [
+  "GTA 6",
+  "ZAPATERÍAS",
+  "vintage-vice-city-pack-exclusive-looks-01.jpg"
+ ],
+ "lede": "La primera tienda de zapatos es <b>Flip Flop House</b>, junto a Sunbelt Highway en <b>Key Lento</b>, a la izquierda si vienes del norte. Aquí la tienes en el mapa oficial de Rockstar, y cómo encontrar las demás.",
+ "sections": [
+  [
+   "Dónde está",
+   "<a href=\"/img/maps/gta-6-shoe-store-map.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"/img/maps/gta-6-shoe-store-map.jpg\" width=\"1600\" height=\"2068\" alt=\"Zapatería Flip Flop House de GTA 6 en el mapa oficial de Key Lento\" loading=\"lazy\" style=\"width:100%;height:auto;border-radius:14px;border:1px solid var(--line);margin:8px 0\"></a><p>También en nuestro <a href=\"/es/guias/mapa-gta-6/#flip-flop-house-shoe-store\">mapa interactivo de GTA 6</a>.</p>"
+  ],
+  [
+   "Cómo encontrar todas",
+   "<p>Abre el mapa del juego, elige <b>Estilo</b> y luego el filtro <b>Calzado</b>. Cada zapatería tiene un icono de zapatos.</p>"
+  ],
+  [
+   "¿Cuántas hay?",
+   "<p>Las guías no coinciden: PowerPyx y Gamertweak cuentan <b>17</b>, GTABase <b>14</b>.</p>"
+  ]
+ ],
+ "faq": [
+  [
+   "¿Dónde está la tienda de zapatos en GTA 6?",
+   "La primera es Flip Flop House, junto a Sunbelt Highway en Key Lento. Para las demás: mapa, Estilo, Calzado."
+  ]
+ ],
+ "gear": [
+  "game"
+ ],
+ "sources": [
+  [
+   "PowerPyx: GTA 6 footwear store locations",
+   "https://www.powerpyx.com/?p=371145"
+  ],
+  [
+   "Gamertweak: where to buy clothes in GTA 6",
+   "https://gamertweak.com/where-to-buy-clothes-in-gta-6-all-clothing-stores/"
+  ],
+  [
+   "GTABase: GTA 6 map, footwear",
+   "https://www.gtabase.com/gta-6/map/?feature=footwear"
+  ],
+  [
+   "Playnews: Flip Flop House in Key Lento",
+   "https://www.playnews.gg/guides/magasin-de-chaussures-gta-6-ou-trouver-le-flip-flop-house-a-key-lento-au-debut-du-jeu"
+  ]
+ ]
+}

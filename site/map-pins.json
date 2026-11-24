@@ -31,6 +31,12 @@
    "color": "#FF7A1A",
    "en": "Mod shops",
    "es": "Talleres de tuneo"
+  },
+  {
+   "id": "shops",
+   "color": "#3DDC84",
+   "en": "Shops & style",
+   "es": "Tiendas y estilo"
   }
  ],
  "pins": [
@@ -562,6 +568,26 @@
    },
    "dx": -0.012,
    "dy": 0.012
+  },
+  {
+   "cat": "shops",
+   "at": "Key Lento",
+   "dx": -0.006,
+   "dy": -0.022,
+   "src": [
+    "PowerPyx",
+    "Gamertweak",
+    "GTABase",
+    "Playnews"
+   ],
+   "en": {
+    "t": "Flip Flop House (shoe store)",
+    "d": "The first shoe store: off Sunbelt Highway in Key Lento, on the left coming from the north. For the other 13-16, open the in-game map: Style, then Footwear."
+   },
+   "es": {
+    "t": "Flip Flop House (zapatería)",
+    "d": "La primera tienda de zapatos: junto a Sunbelt Highway en Key Lento, a la izquierda viniendo del norte. Para las demás: mapa del juego, Estilo, Calzado."
+   }
   }
  ]
 }

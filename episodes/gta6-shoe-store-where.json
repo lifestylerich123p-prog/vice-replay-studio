@@ -1,0 +1,173 @@
+{
+ "title": "GTA 6 Shoe Store: Where to Buy Shoes",
+ "slug": "gta6-shoe-store-where",
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-shoe-stores",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "short_title": "GTA 6 shoe store: where to buy shoes #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 shoe store: where to buy shoes #GTA6 #Shorts",
+  "Where is the shoe store in GTA 6? Here #GTA6 #Shorts"
+ ],
+ "short_description": "Where is the shoe store in GTA 6? The first one is Flip Flop House, off Sunbelt Highway in Key Lento (on the left coming from the north). To find the rest, open the map, pick Style, then the Footwear filter: guides count 14 to 17 shoe stores. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: PowerPyx, Gamertweak, GTABase, Xboxplay, Playnews.",
+ "short_es": {
+  "title": "La TIENDA de zapatos de GTA 6: dónde está 👟 #GTA6 #Shorts",
+  "description": "La primera tienda de zapatos de GTA 6 es Flip Flop House, junto a Sunbelt Highway en Key Lento. Para ver las demás: mapa, Estilo, filtro Calzado (las guías cuentan entre 14 y 17). Fuentes: PowerPyx, Gamertweak, GTABase.",
+  "tags": [
+   "GTA 6 tienda de zapatos",
+   "GTA 6 zapatos",
+   "GTA 6 ropa",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "What shoes is Jason wearing right now? 👟👇",
+ "short_pinned_comment_es": "¿Qué zapatos lleva tu Jason? 👟👇",
+ "tags": [
+  "GTA 6 shoe store",
+  "GTA 6 shoe store location",
+  "where is the shoe store in GTA 6",
+  "GTA 6 shoes",
+  "GTA 6 Flip Flop House",
+  "GTA 6 clothing stores",
+  "GTA 6 Key Lento",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6shoes",
+  "#gta6tips"
+ ],
+ "sources": [
+  "PowerPyx - GTA 6 footwear store locations: https://www.powerpyx.com/?p=371145",
+  "Gamertweak - Where to buy clothes in GTA 6 (all clothing stores): https://gamertweak.com/where-to-buy-clothes-in-gta-6-all-clothing-stores/",
+  "GTABase - GTA 6 map, footwear: https://www.gtabase.com/gta-6/map/?feature=footwear",
+  "Xboxplay - GTA 6 shoe stores: https://xboxplay.games/gta-6/gta-6-shoe-stores-where-to-buy-sneakers-footwear-77395",
+  "Playnews - Flip Flop House in Key Lento: https://www.playnews.gg/guides/magasin-de-chaussures-gta-6-ou-trouver-le-flip-flop-house-a-key-lento-au-debut-du-jeu"
+ ],
+ "facts_note": "Nov 24: our #1 YouTube search phrase is 'gta 6 shoe store' (2,302 views in 28 days, from the LACY clip). Facts in 2+ guides; the store count differs (14 GTABase vs 17 PowerPyx/Gamertweak), said as a range. 'private room' / 'girl' searches deliberately not covered (adult-club confusion).",
+ "short": [
+  {
+   "headline": "THE SHOE STORE",
+   "headline_es": "LA ZAPATERÍA",
+   "text": "The first shoe store in GTA 6 is in Key Lento.",
+   "text_es": "La primera tienda de zapatos de GTA seis está en Key Lento.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "THE GTA 6",
+     "SHOE STORE"
+    ],
+    "pink": [
+     "SHOE STORE"
+    ],
+    "sub": "where to buy shoes",
+    "seed": 141
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "LA TIENDA DE",
+     "ZAPATOS DE GTA 6"
+    ],
+    "pink": [
+     "ZAPATOS"
+    ],
+    "sub": "dónde comprar",
+    "seed": 141
+   }
+  },
+  {
+   "headline": "FLIP FLOP HOUSE",
+   "headline_es": "FLIP FLOP HOUSE",
+   "text": "Flip Flop House, right off Sunbelt Highway.",
+   "text_es": "Flip Flop House, junto a Sunbelt Highway.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Key Lento",
+    "label": "Flip Flop House",
+    "n": 1,
+    "dx": -0.006,
+    "dy": -0.022
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Key Lento",
+    "label": "Flip Flop House",
+    "n": 1,
+    "dx": -0.006,
+    "dy": -0.022
+   }
+  },
+  {
+   "headline": "THE REST",
+   "headline_es": "LAS DEMÁS",
+   "text": "For the rest, open the map, pick Style, then Footwear.",
+   "text_es": "Para las demás, abre el mapa, elige Estilo y luego Calzado.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Map → Style → Footwear",
+    "pink": [
+     "Footwear"
+    ],
+    "src": "PowerPyx · GTABase · Gamertweak",
+    "seed": 142
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Mapa → Estilo → Calzado",
+    "pink": [
+     "Calzado"
+    ],
+    "src": "PowerPyx · GTABase · Gamertweak",
+    "seed": 142
+   }
+  },
+  {
+   "headline": "14 TO 17 STORES",
+   "headline_es": "DE 14 A 17",
+   "text": "There are fourteen to seventeen of them, because",
+   "text_es": "Hay entre catorce y diecisiete, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "14 TO 17",
+     "SHOE STORES"
+    ],
+    "pink": [
+     "14 TO 17"
+    ],
+    "sub": "depending on the guide",
+    "seed": 143
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "DE 14 A 17",
+     "ZAPATERÍAS"
+    ],
+    "pink": [
+     "DE 14 A 17"
+    ],
+    "sub": "según la guía",
+    "seed": 143
+   }
+  }
+ ]
+}
