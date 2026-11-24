@@ -56,7 +56,7 @@ Read this first instead of searching the repo.
 | 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | short: y4jQTwLJwP4 (private) |
 | 2026-11-22 | gta6-jason-quiet | Short | GTA 6's Jason Was Inspired by Steve McQueen | - |
 | 2026-11-22 | gta6-dexter-apartment | Short | Players Found Dexter's Apartment in GTA 6 | short: dOv6212lgj4 (private) |
-| 2026-11-22 | gta6-cheapest-gta-inflation | Short | GTA 6 Is the CHEAPEST GTA Ever (After Inflation) | - |
+| 2026-11-22 | gta6-cheapest-gta-inflation | Short | GTA 6 Is the CHEAPEST GTA Ever (After Inflation) | short: K9Ii3rntcog |
 | 2026-11-22 | gta6-99-club | Short | GTA 6's 99 on Metacritic: Only ONE Other Game Has It | short: LYmF6sSQtYE |
 | 2026-11-22 | gta-history-quiz | Short | GTA History Quiz: Only Real Fans Get 3/3 | - |
 | 2026-11-21 | gta6-ultimate-edition-shops | Short | GTA 6 Locks 5 Shops Behind the $100 Edition | short: xvA4O2ytSnE |
