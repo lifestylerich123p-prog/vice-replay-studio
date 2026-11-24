@@ -255,7 +255,10 @@ def check(path, episode=None, dest="vice-replay", script_key="short", project=No
         if words is None:
             add("captions", "warn", "faster-whisper not installed: caption accuracy not measured", "pip install faster-whisper")
         else:
-            heard = norm_words(" ".join(w["w"] for w in words))
+            heard = " ".join(w["w"] for w in words)
+            if es:  # Spanish writes 3.243 for 3,243: drop the thousands dot before splitting into words
+                heard = re.sub(r"(?<=\d)\.(?=\d{3}\b)", "", heard)
+            heard = norm_words(heard)
             say = spoken_es if es else spoken
             e = wer(say(script), say(heard))
             add("captions", "pass" if e <= 0.12 else "warn" if e <= 0.25 else "fail",
