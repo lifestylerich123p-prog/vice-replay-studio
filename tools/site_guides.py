@@ -82,7 +82,7 @@ h2[id]{scroll-margin-top:16px}
 .search span{color:var(--muted);font-size:13px;white-space:nowrap}
 footer a{display:inline-block;padding:6px 0}
 .lead{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:14px;margin:4px 0 18px;border:1px solid var(--line);background:var(--panel-2)}
-.card.pic{display:grid;grid-template-columns:128px 1fr;gap:14px;align-items:start;padding:12px}
+.card.pic{display:grid;grid-template-columns:128px 1fr;gap:14px;align-items:start;padding:12px}@media(max-width:639px){.card.pic{grid-template-columns:1fr;gap:10px}.card.pic b{font-size:18px}}
 .card.pic img{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:8px;background:var(--panel-2)}
 .card.pic b{font-size:16px}.card.pic small{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-top:4px}
 @media(min-width:600px){.banner{aspect-ratio:21/9}.card.pic{grid-template-columns:200px 1fr;gap:16px}.card.pic b{font-size:18px}}"""
@@ -102,8 +102,9 @@ def card(name, line1, line2, shot=None):
     W, H = 1200, 630
     im = Image.new("RGB", (W, H), "#0d0717")
     if shot and os.path.exists(os.path.join(OFFICIAL, shot)):
-        ph = Image.open(os.path.join(OFFICIAL, shot)).convert("RGB")
-        r = max(W / ph.width, H / ph.height); ph = ph.resize((int(ph.width * r) + 1, int(ph.height * r) + 1))
+        _hd = os.path.join(STUDIO, "media", "official-hd", shot)  # Nov 24: 4K original when present (studio.officialhd)
+        ph = Image.open(_hd if os.path.exists(_hd) else os.path.join(OFFICIAL, shot)).convert("RGB")
+        r = max(W / ph.width, H / ph.height); ph = ph.resize((int(ph.width * r) + 1, int(ph.height * r) + 1), Image.LANCZOS)
         ph = ph.crop(((ph.width - W) // 2, (ph.height - H) // 2, (ph.width - W) // 2 + W, (ph.height - H) // 2 + H))
         im.paste(ph)
         shade = Image.new("L", (W, H)); sd = ImageDraw.Draw(shade)
@@ -127,7 +128,7 @@ def card(name, line1, line2, shot=None):
     os.makedirs(os.path.join(SITE, "og"), exist_ok=True)
     im.save(os.path.join(SITE, "og", name + ".jpg"), quality=85)
     os.makedirs(os.path.join(SITE, "og", "t"), exist_ok=True)  # small copy for the picture cards on the guide lists
-    im.resize((480, 252), Image.LANCZOS).save(os.path.join(SITE, "og", "t", name + ".webp"), quality=78, method=6)
+    im.resize((960, 504), Image.LANCZOS).save(os.path.join(SITE, "og", "t", name + ".webp"), quality=74, method=6)  # 2x for phone screens (Nov 24)
     return f"{DOMAIN}/og/{name}.jpg"
 
 AI_BG = os.path.join(STUDIO, "assets/ai-backgrounds")  # AI illustrations, cleared for vicereplay.com (rights: ai-backgrounds)

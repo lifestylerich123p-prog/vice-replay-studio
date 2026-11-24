@@ -57,7 +57,9 @@ def build():
     from PIL import Image
     for name, nums, crop, width, alt, heading in PICTURES:
         pins = [{"n": n, "at": pin_at(p), "label": label, "side": side} for n, p, label, side in eggs if n in nums]
-        out = mappins.pinned_map(pins, OUT / name, crop=crop, width=width)
+        overview = name == "gta-6-easter-eggs-map.jpg"  # numbers only (the list below names them), big enough for a phone
+        out = mappins.pinned_map(pins, OUT / name, crop=crop, width=width, scale=2.6 if overview else 1.9,
+                                 labels=False, legend=not overview)
         w, h = Image.open(out).size
         img = (f'<a href="/img/maps/{name}" target="_blank" rel="noopener"><img src="/img/maps/{name}" width="{w}" '
                f'height="{h}" alt="{html.escape(alt)}" loading="lazy" style="width:100%;height:auto;border-radius:14px;'

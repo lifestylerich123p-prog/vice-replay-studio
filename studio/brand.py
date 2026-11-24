@@ -153,6 +153,9 @@ def headline_card(text, w, h, vertical=False, cta=None):
 def thumbnail(line1, line2, tag, out, bg_image=None, w=1280, h=720):
     """YouTube thumbnail in the channel style: wordmark, huge white + pink text, cyan tag."""
     if bg_image:
+        if "media/official/" in str(bg_image):
+            from . import officialhd
+            bg_image = officialhd.best(bg_image)  # Nov 24: 4K original
         bg = Image.open(bg_image).convert("RGB")
         r = max(w / bg.width, h / bg.height)
         bg = bg.resize((int(bg.width * r) + 1, int(bg.height * r) + 1), Image.LANCZOS)

@@ -460,6 +460,8 @@ def _photo_base(path, w, h):
     f = Path(path) if Path(path).is_absolute() else root / path
     if not f.exists():
         return None
+    from . import officialhd
+    f = officialhd.best(f)  # Nov 24: the 4K original (a 9:16 slice of a 1920 px shot was blown up ~2.2x)
     W, H = int(w * ZOOM), int(h * ZOOM)
     im = Image.open(f).convert("RGB")
     r = max(W / im.width, H / im.height)

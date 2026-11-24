@@ -78,6 +78,15 @@ of the Short watched (YouTube Analytics, a few days behind). Medians per group; 
 | evening 17-21 | 15 | 2.0 | 427 | 72.0 | 57.1% |
 | late 21+ | 3 | 2.0 | - | 945 | 54.5% |
 
+## By Shorts that day
+
+| Group | n | median v/h | median 3 h views | median 24 h views | median watched |
+|---|---|---|---|---|---|
+| 4+ | 38 | 2.8 | 259 | 301 | 58.3% |
+| 3 | 3 | 1.4 | 90.5 | - | 60.6% |
+| 2 | 2 | 0.6 | - | - | - |
+| 1 | 2 | 0.4 | - | - | 44.9% |
+
 ## Best 5
 
 - 77.4 v/h, 9,420 views, 24 h: 8195 · campaign clip, statement, 16-30 s · LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts

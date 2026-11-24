@@ -86,9 +86,10 @@ def where(at):
     return x / VIEW_W, y / VIEW_H
 
 
-def _pin(d, x, y, n, scale):
+def _pin(d, x, y, n, scale, ring=True):
     r = int(26 * scale)
-    d.ellipse((x - r * 1.9, y - r * 1.9, x + r * 1.9, y + r * 1.9), outline=brand.PINK, width=max(2, int(4 * scale)))
+    if ring:
+        d.ellipse((x - r * 1.9, y - r * 1.9, x + r * 1.9, y + r * 1.9), outline=brand.PINK, width=max(2, int(4 * scale)))
     d.ellipse((x - r, y - r, x + r, y + r), fill=brand.PINK, outline=(255, 255, 255), width=max(2, int(4 * scale)))
     f = brand.font(brand.HEADLINE_FONT, int(30 * scale))
     t = str(n)
@@ -106,7 +107,74 @@ def _label(d, x, y, text, scale, w, side=None):
     d.text((lx + pad, y - 16 * scale), text, font=f, fill=(255, 255, 255))
 
 
-def pinned_map(pins, out, crop="all", width=1600, title=None):
+
+def _spread(points, gap, rounds=60):
+    """Push pins that would overlap apart (overview maps); returns the new positions."""
+    pts = [list(p) for p in points]
+    for _ in range(rounds):
+        moved = False
+        for i in range(len(pts)):
+            for j in range(i + 1, len(pts)):
+                dx, dy = pts[j][0] - pts[i][0], pts[j][1] - pts[i][1]
+                dist = (dx * dx + dy * dy) ** 0.5 or 0.01
+                if dist < gap:
+                    push = (gap - dist) / 2 + 0.5
+                    ux, uy = (dx / dist, dy / dist) if dist > 0.01 else (1.0, 0.0)
+                    pts[i][0] -= ux * push; pts[i][1] -= uy * push
+                    pts[j][0] += ux * push; pts[j][1] += uy * push
+                    moved = True
+        if not moved:
+            break
+    return [tuple(p) for p in pts]
+
+
+def _place_label(d, x, y, text, scale, w, h, taken, side=None):
+    """Put a label next to its pin where it fits on the image and covers no other pin or label: right, left, then the
+    same a step above / below. Returns the box used."""
+    f = brand.font(brand.BODY_FONT, int(26 * scale))
+    tw = f.getlength(text)
+    pad, off, hh = 12 * scale, 40 * scale, 22 * scale
+    cands = []
+    for dy in (0, -60 * scale, 60 * scale, -110 * scale, 110 * scale):
+        for right in ((False, True) if side == "left" else (True, False)):
+            lx = x + off if right else x - off - tw - 2 * pad
+            cands.append((lx, y + dy - hh, lx + tw + 2 * pad, y + dy + hh))
+    def clash(b):
+        return any(not (b[2] < o[0] or b[0] > o[2] or b[3] < o[1] or b[1] > o[3]) for o in taken)
+    inside = [b for b in cands if b[0] >= 4 and b[2] <= w - 4 and b[1] >= 4 and b[3] <= h - 4]
+    box = next((b for b in inside if not clash(b)), inside[0] if inside else cands[0])
+    d.rounded_rectangle(box, radius=int(10 * scale), fill=(13, 7, 23), outline=brand.CYAN, width=max(1, int(2 * scale)))
+    d.text((box[0] + pad, box[1] + 6 * scale), text, font=f, fill=(255, 255, 255))
+    return box
+
+
+def _legend(img, items, scale):
+    """A dark key under the map: "1  Egg tower   3  Skunk Ape ..." with pink number dots, wrapped to the width."""
+    f = brand.font(brand.BODY_FONT, int(30 * scale))
+    r = int(22 * scale)
+    gap, padx, rowh = int(36 * scale), int(28 * scale), int(64 * scale)
+    rows, row, x = [], [], padx
+    for n, label in items:
+        wdt = 2 * r + int(12 * scale) + int(f.getlength(label))
+        if row and x + wdt > img.width - padx:
+            rows.append(row); row, x = [], padx
+        row.append((n, label, x)); x += wdt + gap
+    if row:
+        rows.append(row)
+    band = rowh * len(rows) + int(24 * scale)
+    out = Image.new("RGB", (img.width, img.height + band), (13, 7, 23))
+    out.paste(img, (0, 0))
+    d = ImageDraw.Draw(out)
+    fn = brand.font(brand.HEADLINE_FONT, int(26 * scale))
+    for k, row in enumerate(rows):
+        cy = img.height + int(12 * scale) + k * rowh + rowh // 2
+        for n, label, x in row:
+            d.ellipse((x, cy - r, x + 2 * r, cy + r), fill=brand.PINK)
+            d.text((x + r - fn.getlength(str(n)) / 2, cy - r * 0.8), str(n), font=fn, fill=(255, 255, 255))
+            d.text((x + 2 * r + int(12 * scale), cy - int(19 * scale)), label, font=f, fill=(255, 255, 255))
+    return out
+
+def pinned_map(pins, out, crop="all", width=1600, title=None, scale=1.0, labels=True, legend=False):
     """Draw numbered pins (+ labels) on the official map and save a JPEG/WebP. crop="all" = whole map; or a place /
     grid cell to center on, or "pins" = the box around all pins. Returns the output path."""
     base = map_image()
@@ -127,13 +195,23 @@ def pinned_map(pins, out, crop="all", width=1600, title=None):
     img = img.resize((width, int(img.height * s)), Image.LANCZOS)
     glow = Image.new("RGBA", img.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    scale = width / 1600 * 1.4
-    for p, (fx, fy) in pts:
-        x, y = (fx * W - box[0]) * s, (fy * H - box[1]) * s
-        _pin(d, x, y, p.get("n", ""), scale)
-        if p.get("label"):
-            _label(d, x, y, p["label"], scale, img.width, p.get("side"))
-    f = brand.font(brand.BODY_FONT, int(20 * scale))
+    scale = width / 1600 * 1.4 * scale  # scale > 1: bigger pins/labels so they read on a phone (Nov 24)
+    spots = [((fx * W - box[0]) * s, (fy * H - box[1]) * s) for _, (fx, fy) in pts]
+    shown = _spread(spots, 2.15 * 26 * scale) if not labels else list(spots)
+    taken = [(x - 26 * scale * 1.9, y - 26 * scale * 1.9, x + 26 * scale * 1.9, y + 26 * scale * 1.9) for x, y in shown]
+    for (x0, y0), (x, y) in zip(spots, shown):  # moved apart to stay readable: a line back to the real spot
+        if abs(x - x0) + abs(y - y0) > 2:
+            d.line([(x0, y0), (x, y)], fill=(13, 7, 23), width=max(2, int(3 * scale)))
+            d.ellipse((x0 - 6 * scale, y0 - 6 * scale, x0 + 6 * scale, y0 + 6 * scale), fill=brand.PINK, outline=(13, 7, 23))
+    for (p, _), (x, y) in zip(pts, shown):
+        _pin(d, x, y, p.get("n", ""), scale, ring=labels)
+    for (p, _), (x, y) in zip(pts, shown):
+        if labels and p.get("label"):
+            taken.append(_place_label(d, x, y, p["label"], scale, img.width, img.height, taken, p.get("side")))
+    if legend:  # numbers on the map + a readable key underneath (Nov 24: labels at phone size were ~8 px)
+        img = _legend(img, [(p.get("n", ""), p.get("label", "")) for p, _ in pts], scale)
+        d = ImageDraw.Draw(img)
+    f = brand.font(brand.BODY_FONT, int(20 * min(scale, 2.0)))
     credit = "Map: Rockstar Games (official) · pins: vicereplay.com"
     d.text((img.width - f.getlength(credit) - 16, img.height - 34 * scale), credit, font=f, fill=(13, 7, 23))
     if title:

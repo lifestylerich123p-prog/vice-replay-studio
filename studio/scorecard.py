@@ -160,13 +160,23 @@ def build():
              "v24": views_at(hist, v["id"], pub) if age >= 24 else None,
              "pct": ana.get(v["id"], {}).get("averageViewPercentage")}
         rows.append(r)
+    # Nov 24 (owner: "search online how many videos we should be posting a day and go from there"): outside studies
+    # disagree (1-3 Shorts/day is the usual advice; no official YouTube number), so measure it on this channel: how
+    # many of our own Shorts went public that ET day, and how each of them did.
+    per_day = {}
+    for r in rows:
+        if r["kind"] != "campaign clip":
+            per_day[ts(r["published"]).astimezone(ET).date()] = per_day.get(ts(r["published"]).astimezone(ET).date(), 0) + 1
+    for r in rows:
+        n = per_day.get(ts(r["published"]).astimezone(ET).date(), 0)
+        r["Shorts that day"] = "-" if r["kind"] == "campaign clip" else ("4+" if n >= 4 else str(n))
     lines = [f"# Scorecard (auto, {snap['checked'][:16]} UTC): what works for Vice Replay", "",
              "Fair numbers: **24 h views** = views in each Short's first 24 hours (from history snapshots; empty until a",
              "Short has been tracked across its first day). **v/h** = lifetime views per hour. **watched** = average %",
              "of the Short watched (YouTube Analytics, a few days behind). Medians per group; n = number of Shorts.", ""]
     overall = med([r["views_per_hour"] for r in rows])
     advice = []
-    for key in ("era", "picture", "card", "format", "kind", "opener", "hook", "length", "slot (ET)"):
+    for key in ("era", "picture", "card", "format", "kind", "opener", "hook", "length", "slot (ET)", "Shorts that day"):
         groups = {}
         for r in rows:
             if r[key] == "-":  # campaign clips / Shorts without an episode file: no picture/opener tag

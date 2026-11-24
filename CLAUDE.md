@@ -26,6 +26,13 @@ Weekdays: main Short 9:30 AM, tips Short 12:30 PM, main 3:30 PM, news Short 8:30
 as soon as it's ready. Upload early, scheduled. Nov 22 data (21 Shorts since launch, median views/h by ET post time):
 6-11 AM 16, 11 AM-2 PM 10, 2-6 PM 2.7, 6 PM-6 AM 1.9: Shorts go in the daytime slots (9:30, 11:00, 12:30); 3:30/8:30 PM
 only for big news or long videos (`studio.quota` lists daytime first).
+**How many a day** (owner Nov 24: "search online how many videos we should be posting a day and go from there"): no
+official YouTube number; 2026 studies say 1-3 Shorts/day (vidIQ, 10.2M channels: growth rises with cadence; Metricool,
+~800K videos: monthly Shorts views keep rising with volume, while 35+ Shorts/month drags long-form). Our scorecard's
+"Shorts that day" table shows no drop per Short on busy days. So: **3 English Shorts/day** (9:30, 11:00, 12:30;
+weekends 10, 11 or 12:30, 1:30), a 4th only for breaking news; **1 long video/week** (Sunday); Spanish channel winners +
+max 1 Spanish-only/day; Instagram stays at the owner's cap of 4/day (Mosseri: no magic number). Review Dec 8 (scheduled): if after-launch 3-Short
+days get under half the views per Short of 2-Short days and no more total views, go to 2/day.
 
 ## Rules for this channel
 - **Footage**: everything in `media/` is used as backgrounds. Allowed: official Rockstar screenshots

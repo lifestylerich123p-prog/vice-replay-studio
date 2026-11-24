@@ -34,6 +34,9 @@ def background(name):
             sd.line([(0, yy), (W, yy)], fill=int(40 + 110 * (yy / H) ** 1.6))
         return Image.composite(Image.new("RGB", (W, H), brand.NIGHT), im, shade)
     p = ROOT / "media" / "official" / name
+    if p.exists():
+        from . import officialhd
+        p = officialhd.best(p)  # Nov 24: 4K originals for sharp 1080x1350 cards
     im = Image.open(p).convert("RGB") if p.exists() else brand.neon_background(W, H).convert("RGB")
     s = max(W / im.width, H / im.height)
     im = im.resize((int(im.width * s) + 1, int(im.height * s) + 1), Image.LANCZOS)
