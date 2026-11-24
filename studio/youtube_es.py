@@ -72,6 +72,25 @@ def brand(tok, cid):
     print(f"Spanish channel branded: description {len(c.get('description', ''))} chars, keywords set, banner set.")
 
 
+def set_trailer(tok, cid, vid=None):
+    """Channel trailer (what a visitor who isn't subscribed sees first). Default: the most-viewed public Spanish
+    upload in the registry (~3 quota units to pick + 50 to set). Nov 24: the channel had none."""
+    if not vid:
+        reg = json.loads(REGISTRY.read_text()) if REGISTRY.exists() else {}
+        ids = [k for k, r in reg.items() if not r.get("hidden")][-50:]
+        v, _ = req("GET", "https://youtube.googleapis.com/youtube/v3/videos?part=status,statistics&id=" + ",".join(ids), tok)
+        live = [it for it in v.get("items", []) if it["status"].get("privacyStatus") == "public"]
+        if not live:
+            sys.exit("no public Spanish video yet: nothing to use as the trailer")
+        vid = max(live, key=lambda it: int(it["statistics"].get("viewCount", 0)))["id"]
+    ch, _ = req("GET", "https://youtube.googleapis.com/youtube/v3/channels?part=brandingSettings&mine=true", tok)
+    bs = ch["items"][0]["brandingSettings"].setdefault("channel", {})
+    bs["unsubscribedTrailer"] = vid
+    req("PUT", "https://youtube.googleapis.com/youtube/v3/channels?part=brandingSettings", tok,
+        {"id": cid, "brandingSettings": {"channel": bs}})
+    print(f"Spanish channel trailer set: https://www.youtube.com/watch?v={vid}")
+
+
 def config():
     return json.loads((ROOT / "config" / "channel.json").read_text())["channels"]
 
@@ -136,7 +155,7 @@ def spanish_waits(ep_path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("episode", help="episodes/<slug>.json, 'whoami', 'brand' or 'comment'")
+    ap.add_argument("episode", help="episodes/<slug>.json, 'whoami', 'brand', 'trailer' or 'comment'")
     ap.add_argument("rest", nargs="*", help="for comment: VIDEO_ID TEXT")
     ap.add_argument("--approve", default="", help="short, news, ... or all (owner approval in chat only)")
     ap.add_argument("--date", help="posting date YYYY-MM-DD (default today, ET)")
@@ -161,6 +180,9 @@ def main():
     cid = check_channel(tok)
     if a.episode == "brand":
         brand(tok, cid)
+        return
+    if a.episode == "trailer":  # python -m studio.youtube_es trailer [VIDEO_ID]: the channel trailer for new visitors
+        set_trailer(tok, cid, a.rest[0] if a.rest else None)
         return
     if a.episode == "comment":  # python -m studio.youtube_es comment VIDEO_ID "texto" (as the Spanish channel)
         vid, text = a.rest[0], a.rest[1]

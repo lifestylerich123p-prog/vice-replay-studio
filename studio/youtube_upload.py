@@ -523,6 +523,8 @@ def main():
     for key, path, title, desc, tg, when, thumb, pin, es, timings, playlist in jobs:
         if guide_url and "vicereplay.com/guides" not in desc:
             desc = desc.rstrip() + (f"\n\nFull guide: {guide_url}" if gslug else f"\n\nMore GTA 6 guides: {guide_url}")
+        if channel_ids().get("es") and "vicereplayes" not in desc.lower():  # Nov 24: feed the Spanish channel
+            desc = desc.rstrip() + "\n🇪🇸 En español: https://www.youtube.com/@vicereplayes"
         if key in done:
             print(f"skip {key}: already uploaded ({done[key]['url']})")
             continue
