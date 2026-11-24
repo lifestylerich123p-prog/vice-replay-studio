@@ -3,56 +3,56 @@
 Use these when writing hooks and choosing length. Only trust a comparison with 3+ videos on each side.
 
 ## What keeps viewers (Shorts)
-- Hook with a number: number 67.2% viewed (20 Shorts) vs no number 48.6% (9)
-- Topic: news/breaking 57.4% viewed (10 Shorts) vs other 63.6% (19)
-- Average Short: 61.4% viewed, 117.4% still watching at the hook (~10% in; over 100 = people rewatch).
+- Hook with a number: number 67.3% viewed (24 Shorts) vs no number 69.3% (14)
+- Topic: news/breaking 59.8% viewed (11 Shorts) vs other 71.4% (27)
+- Average Short: 68.0% viewed, 122.6% still watching at the hook (~10% in; over 100 = people rewatch).
 
 ## Best and worst Shorts by % viewed
 | % viewed | at hook (100 = all) | views | subs | hook |
 |---|---|---|---|---|
-| 193% | 237% | 1005 | 1 | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 # |
-| 96% | -% | 4 | 0 | Lacy can't steal cars in GTA 6 😭🔑 #LACY #GTA6 #Shorts |
-| 89% | 122% | 1829 | 0 | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts |
-| 86% | 129% | 8126 | 2 | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts |
-| 82% | 130% | 1350 | 0 | 18 HOURS EARLY? |
-| 26% | -% | 4 | 0 | 3 SETTINGS |
-| 25% | -% | 16 | 0 | CAN'T GET IN? |
-| 0% | -% | 1 | 0 | LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #Shorts |
+| 194% | 238% | 1006 | 1 | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 # |
+| 161% | 228% | 72 | 0 | LOOK AT THIS STORE |
+| 134% | 177% | 1192 | 0 | SPEED TEARED UP |
+| 89% | 122% | 1855 | 0 | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts |
+| 86% | 128% | 82 | 0 | NO REPLAY |
+| 30% | -% | 28 | 0 | CAN'T GET IN? |
+| 28% | -% | 2 | 0 | LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #Shorts |
+| 26% | -% | 5 | 0 | 3 SETTINGS |
 
 ## Where Shorts lose viewers (per second; the biggest drop is where to fix the hook or cut)
-Median still watching: 111% at 3 s, 102% at 5 s (23 Shorts with curves).
+Median still watching: 112% at 3 s, 104% at 5 s (31 Shorts with curves).
 
 | % viewed | at 3 s | at 5 s | biggest drop | hook |
 |---|---|---|---|---|
-| 193% | 229% | 221% | 0:19 (-145 pts) | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 # |
-| 89% | 117% | 110% | 0:22 (-30 pts) | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts |
-| 86% | 111% | 101% | 0:02 (-21 pts) | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts |
+| 194% | 230% | 222% | 0:19 (-146 pts) | LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 # |
+| 161% | 228% | 222% | 0:07 (-17 pts) | LOOK AT THIS STORE |
+| 134% | 176% | 168% | 0:24 (-11 pts) | SPEED TEARED UP |
+| 89% | 117% | 110% | 0:22 (-29 pts) | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts |
+| 86% | 119% | 109% | 0:01 (-15 pts) | NO REPLAY |
+| 86% | 112% | 102% | 0:02 (-21 pts) | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts |
+| 86% | 121% | 114% | 0:29 (-11 pts) | DON'T GRIND CHAPTER 1 |
 | 82% | 130% | 120% | 0:06 (-14 pts) | 18 HOURS EARLY? |
-| 75% | 113% | 104% | 0:27 (-15 pts) | GTA 6 CHEATS ARE REAL |
-| 69% | 115% | 104% | 0:02 (-18 pts) | GTA 6 IS OUT |
-| 66% | 112% | 107% | 0:08 (-9 pts) | Already out in NZ |
-| 66% | 113% | 105% | 0:02 (-12 pts) | 99 ON METACRITIC |
 
 ## Stayed to watch (engaged views / views; beat our own median, not a magic number)
-Median 40% over 23 Shorts with 30+ views; 1.5 likes per 100 views.
+Median 40% over 32 Shorts with 30+ views; 1.5 likes per 100 views.
 
 | stayed | vs median | % viewed | views | hook |
 |---|---|---|---|---|
-| 55% | +15 | 59% | 1126 | 30 FPS EVERYWHERE |
-| 50% | +10 | 57% | 1329 | $1.65 BILLION |
-| 50% | +10 | 66% | 1309 | Already out in NZ |
-| 49% | +9 | 89% | 1829 | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts |
-| 48% | +8 | 52% | 949 | NOT ENOUGH SPACE? |
-| 46% | +6 | 82% | 1350 | 18 HOURS EARLY? |
-| 29% | -11 | 49% | 1005 | SPEED TO NZ |
-| 29% | -11 | 40% | 59 | STREAMERS GOT BOXES |
-| 30% | -10 | 57% | 373 | NO GAME DISC |
+| 54% | +14 | 59% | 1186 | 30 FPS EVERYWHERE |
+| 50% | +10 | 62% | 1378 | $1.65 BILLION |
+| 50% | +10 | 66% | 1303 | Already out in NZ |
+| 49% | +10 | 89% | 1855 | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts |
+| 48% | +8 | 52% | 971 | NOT ENOUGH SPACE? |
+| 46% | +6 | 82% | 1344 | 18 HOURS EARLY? |
+| 19% | -20 | 67% | 81 | GTA 6 TOOK THESE AWAY |
+| 26% | -14 | 161% | 72 | LOOK AT THIS STORE |
+| 28% | -12 | 50% | 199 | GTA 6 made $3.79 BILLION in ONE day (official) #GTA6 #Shorts |
 
 ## Long videos
 | % viewed | avg seconds | views | title |
 |---|---|---|---|
-| 92% | 17 | 5265 | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy |
-| 66% | 19 | 174 | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore |
-| 56% | 6 | 41 | GTA 6 Chaos Is Coming 🌴 | Vice Replay |
-| 45% | 45 | 109 | GTA 6 New Zealand Trick: Play Early or Risk Your Account? |
-| 40% | 46 | 13 | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade |
+| 92% | 17 | 5320 | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy |
+| 66% | 19 | 175 | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore |
+| 47% | 55 | 2 |  |
+| 47% | 5 | 43 |  |
+| 45% | 45 | 106 | GTA 6 New Zealand Trick: Play Early or Risk Your Account? |

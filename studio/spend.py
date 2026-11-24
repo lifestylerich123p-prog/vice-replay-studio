@@ -230,6 +230,17 @@ def upload():
             if r.returncode:
                 print(f"! {it['slug']}: upload step failed (exit {r.returncode}); stopping")
                 return
+    # Nov 24: the backup titles (option 2, a "catch" angle on the map Shorts) were never used because nothing ran the
+    # swap. Underperformers 24-96 h old get their option-2 title once (owner's standing approval; ~60 units each).
+    try:
+        from . import quota
+        if quota.left_today() > 800:
+            print("$ python -m studio.title_swap")
+            subprocess.run(["python", "-m", "studio.title_swap"], cwd=ROOT)
+        else:
+            print("title swap skipped tonight: under 800 units left")
+    except Exception as e:  # noqa: BLE001 - never block the upload run on the swap
+        print(f"title swap skipped ({type(e).__name__})")
     print("Done. Schedule each printed COMMENTS TO POST for 10 min after its slot, commit uploads*.json, quota.json.")
 
 
