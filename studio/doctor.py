@@ -158,6 +158,16 @@ def main():
             bad.append(f"vicereplay.com/{path} is down ({type(e).__name__})")
     if not any("vicereplay.com" in b for b in bad):
         ok.append("Website is up")
+    # 3a. Pre-launch wording left on the site ("comes out on November 19"...; owner Nov 24: "things are out of date")
+    try:
+        from .site_stale import scan
+        stale = scan(ROOT.parent / "vicereplay-site")
+        if stale:
+            pages = sorted({p for p, _ in stale})
+            warn.append(f"Website: {len(pages)} page(s) still use pre-launch wording ({', '.join(pages[:3])}): "
+                        "fix in tools/site_guides.py or add a NOTICES note (python -m studio.site_stale lists them)")
+    except Exception:  # noqa: BLE001 - a missing site checkout must not break the health check
+        pass
 
     # 3b. Did today's 5 AM daily run save its work? (Nov 21: its push got a 403 and nobody noticed for hours)
     try:

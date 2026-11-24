@@ -241,8 +241,37 @@ def faq_html(faq, lang="en"):
     if not faq: return ""
     return f'<h2>{"Quick answers" if lang == "en" else "Respuestas rápidas"}</h2>' + "".join(f'<div class="box"><h3>{html.escape(q)}</h3><p style="margin:0">{html.escape(a)}</p></div>' for q, a in faq)
 
+# Dated update notes on guides written before launch (Nov 24, 2026). The old text stays as a record; the note says what
+# changed. studio/site_stale.py skips pages that carry one.
+NOTICES = {
+ "gta-6-unlock-time": 'GTA 6 is out: it unlocked on November 19, 2026. This page explains how the staggered launch worked. What\'s new now: <a href="/guides/gta-6-launch-live/">live updates</a>.',
+ "gta-6-new-zealand-trick": 'GTA 6 has been out everywhere since November 19, so there\'s no reason to change your region now. What\'s new: <a href="/guides/gta-6-launch-live/">live updates</a>.',
+ "gta-6-launch-checklist": 'Launch week is over. Still useful: storage, settings and the day-one update. The latest patch is 1.002.002: <a href="/guides/gta-6-patch-notes/">patch notes</a>.',
+ "gta-6-launch-day-survival-guide": 'Launch day is over. Having problems now? The latest patch, 1.002.002, fixed crashes, autosaves and missing phone calls: <a href="/guides/gta-6-patch-notes/">patch notes</a>.',
+ "gta-6-launch-streams": 'Launch night is over. Who won it: <a href="/guides/gta-6-streaming-records/">GTA 6 streaming records</a>.',
+ "gta-6-game-awards-nominations": 'The show is Thursday, December 10, at 7:30 PM Eastern. Our full preview: <a href="/guides/gta-6-game-awards/">GTA 6 at The Game Awards 2026</a>.',
+ "gta-6-reviews": 'Metacritic still shows 99 for the PS5 version, now from 158 critic reviews.',
+ "hora-de-lanzamiento-gta-6": 'GTA 6 ya salió: se desbloqueó el 19 de noviembre de 2026. Esta página explica cómo funcionó el lanzamiento. Lo nuevo: <a href="/es/guias/gta-6-lanzamiento-en-vivo/">noticias en vivo</a>.',
+ "guia-lanzamiento-gta-6": 'La semana de lanzamiento terminó. ¿Problemas ahora? El parche 1.002.002 arregló cierres, autoguardado y llamadas que no llegaban: <a href="/es/guias/gta-6-notas-del-parche/">notas del parche</a>.',
+}
+NOTICE_DATE = {"en": "Update, Nov 24", "es": "Actualización, 24 nov"}
+
+
+def with_notice(slug, body, lang):
+    """Put the dated update note right under the page's meta line (or its h1)."""
+    if slug not in NOTICES:
+        return body
+    box = f'<div class="note update"><b>{NOTICE_DATE[lang]}:</b> {NOTICES[slug]}</div>'
+    for anchor in ('<p class="meta">', '</h1>'):
+        k = body.find(anchor)
+        if k >= 0:
+            end = body.find("</p>", k) + 4 if anchor.startswith("<p") else k + len(anchor)
+            return body[:end] + "\n" + box + body[end:]
+    return box + body
+
 def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None):
     faq = faq or FAQS.get(slug)
+    body = with_notice(slug, body, lang)
     path = f"guides/{slug}/" if lang == "en" else f"es/guias/{slug}/"
     l1, l2, shot = CARDS.get(slug, (title.split(":")[0][:28], "", None))
     img = card(slug, l1, l2 or "On replay", shot)
@@ -272,7 +301,7 @@ CARDS.update({
  "gta-6-launch-streams": ("LAUNCH NIGHT", "WHERE TO WATCH", "vice-city-13.jpg"),
  "gta-6-reviews": ("GTA 6 REVIEWS", "99 ON METACRITIC", "jason-and-lucia-03.jpg"),
  "gta-6-game-awards-nominations": ("GAME OF THE YEAR", "8 NOMINATIONS", "lucia-caminos-10.jpg"),
- "gta-6-launch-live": ("GTA 6 LAUNCH", "LIVE UPDATES", "vice-city-21.jpg"),
+ "gta-6-launch-live": ("GTA 6 NEWS", "LIVE UPDATES", "vice-city-21.jpg"),
  "trucos-gta-6": ("TRUCOS DE GTA 6", "250.000 $ + 6 MÁS", "car-grotti-cheetah-01.jpg"),
  "espacio-gta-6": ("¿SIN ESPACIO?", "GTA 6 PESA 212 GB", "car-vapid-stanier-01.jpg"),
  "hora-de-lanzamiento-gta-6": ("GTA 6: ¿A QUÉ HORA", "SE DESBLOQUEA?", "vice-city-05.jpg"),
@@ -420,10 +449,10 @@ guide("gta-6-cheats", "GTA 6 Cheat Codes: Money, Armor, Ammo + How to Unlock",
 
 # 7-10. News articles (Nov 17)
 guide("gta-6-pc-release-date", "GTA 6 on PC: Release Date and What's Actually Reported",
- "GTA 6 launches on PS5 and Xbox Series X|S only. Here's what Take-Two has said about PC, the reported early 2027 window, and what's still unconfirmed.",
+ "GTA 6 is out on PS5 and Xbox Series X|S only. Here's what Take-Two has said about PC, the reported early 2027 window, and what's still unconfirmed.",
  "2026-11-17", f"""<h1>GTA 6 on PC: <span>when?</span></h1>
 <p class="meta">Updated November 17, 2026 · Vice Replay</p>
-<p class="lede">GTA 6 launches on November 19, 2026, on <b>PS5 and Xbox Series X|S only</b>. There is no official PC release date yet. Here's what's known and what's only reported.</p>
+<p class="lede">GTA 6 came out on November 19, 2026, on <b>PS5 and Xbox Series X|S only</b>. There is still no official PC release date (checked November 24: Take-Two says PC news will come from Rockstar). Here's what's known and what's only reported.</p>
 <h2>What's official</h2>
 <p>Take-Two and Rockstar have only announced console versions. Take-Two CEO Strauss Zelnick has defended the console-first plan, saying Rockstar "always starts on console" and serves its core audience first.</p>
 <h2>What's reported: early 2027</h2>
@@ -484,30 +513,30 @@ guide("gta-6-game-awards-nominations", "GTA 6 at The Game Awards 2026: 8 Nominat
 
 # 11. Launch live hub (update the UPDATES list every day of launch week; newest first)
 UPDATES = [(u["time"], u["html"]) for u in json.load(open(os.path.join(STUDIO, "site/live.json")))]  # newest first
-guide("gta-6-launch-live", "GTA 6 Launch: Live Updates, Times and Everything You Need Tonight",
- "GTA 6 launch live updates: unlock times, YouTube's 24-hour stream, reviews, cheats, storage and PC news in one page, updated every day of launch week.",
- "2026-11-17", f"""<h1>GTA 6 launch: <span>live updates</span></h1>
-<p class="meta">Last updated {UPDATES[0][0]} · Vice Replay · This page is updated every day of launch week</p>
-<p class="lede">GTA 6 comes out on <b>November 19, 2026</b> on PS5 and Xbox Series X|S. Everything you need for launch week is on this page, newest first.</p>
-<div class="box"><h3>Key times (Eastern)</h3><ul class="list" style="margin:0">
-<li><b>Nov 18, ~6 AM:</b> New Zealand unlocks first (PlayStation Store listings)</li>
-<li><b>Nov 18:</b> reviews reportedly go live (unconfirmed)</li>
-<li><b>Nov 18, 11 PM:</b> YouTube's launch pre-show with RDCWorld</li>
-<li><b>Nov 19, midnight local time:</b> GTA 6 unlocks where you are; YouTube's 24-hour stream starts</li>
-<li><b>Nov 19, 1 AM:</b> Xbox Cloud Gaming (Forbes)</li></ul></div>
+guide("gta-6-launch-live", "GTA 6 Live Updates: Patches, Records and News After Launch",
+ "GTA 6 news, newest first: patch notes, sales and streaming records, The Game Awards and PC news, all checked in 2+ sources. Updated every day.",
+ "2026-11-17", f"""<h1>GTA 6 news: <span>live updates</span></h1>
+<p class="meta">Last updated {UPDATES[0][0]} · Vice Replay · Updated every day</p>
+<p class="lede">GTA 6 came out on <b>November 19, 2026</b> on PS5 and Xbox Series X|S. Every confirmed update since then is on this page, newest first.</p>
+<div class="box"><h3>Coming up (Eastern)</h3><ul class="list" style="margin:0">
+<li><b>Now until Nov 30:</b> Black Friday sales. GTA 6 itself is still full price. <a href="/guides/gta-6-black-friday/">What's worth buying</a></li>
+<li><b>Thu Dec 10, 7:30 PM:</b> The Game Awards. GTA 6 has 8 nominations, the most this year. <a href="/guides/gta-6-game-awards/">Our preview</a></li>
+<li><b>Next patch:</b> no date yet. The latest is 1.002.002 (Nov 23). <a href="/guides/gta-6-patch-notes/">Patch notes</a></li>
+<li><b>PC:</b> no official date. A report says early 2027; Rockstar hasn't confirmed it. <a href="/guides/gta-6-pc-release-date/">What's known</a></li></ul></div>
 <h2>Latest updates</h2>
 {"".join(f'<div class="note"><b>{t}</b><br>{x}</div>' for t, x in UPDATES)}
-<h2>Before you play</h2>
-<ul class="list"><li><a href="/guides/gta-6-launch-checklist/">Launch checklist</a>: price, day-one patch, what's missing</li>
-<li><a href="/guides/gta-6-unlock-time/">Unlock time in every time zone</a></li>
-<li><a href="/guides/gta-6-storage/">Storage full? Free fixes first</a></li>
-<li><a href="/guides/gta-6-launch-streams/">Where to watch launch night</a></li>
-<li><a href="/guides/gta-6-pc-release-date/">GTA 6 on PC: when?</a></li></ul>
+<h2>Popular guides</h2>
+<ul class="list"><li><a href="/guides/gta-6-storage/">Storage full? Free fixes first</a></li>
+<li><a href="/guides/gta-6-patch-notes/">Patch notes: every fix so far</a></li>
+<li><a href="/guides/gta-6-how-long-to-beat/">How long to beat GTA 6</a></li>
+<li><a href="/guides/gta-6-cheats/">Cheat codes: what's real</a></li>
+<li><a href="/guides/gta-6-streaming-records/">Streaming records: who won launch week</a></li>
+<li><a href="/guides/gta-6-launch-week-numbers/">Launch week in numbers</a></li></ul>
 {gearbox(GAME + STORAGE, "Getting the game or making room for the 212 GB install? Links go to the exact listings:")}
 {watchmore("pcoMWOraJA4")}""",
- faq=[("When does GTA 6 come out?", "November 19, 2026, on PS5 and Xbox Series X|S. It unlocks at midnight local time in each region."),
-      ("Is GTA 6 on PC at launch?", "No. There's no official PC date; a report says early 2027, but Rockstar hasn't confirmed it.")],
- modified="2026-11-18")
+ faq=[("When did GTA 6 come out?", "November 19, 2026, on PS5 and Xbox Series X|S."),
+      ("Is GTA 6 on PC?", "Not yet. There's no official PC date; a report says early 2027, but Rockstar hasn't confirmed it.")],
+ modified="2026-11-24")
 
 # Spanish guides (es/guias/)
 guide("trucos-gta-6", "Trucos de GTA 6: dinero, chaleco, munición y cómo desbloquearlos",
@@ -569,7 +598,7 @@ guide("gta-6-pc", "GTA 6 en PC: fecha de salida y lo que se sabe",
  "GTA 6 sale solo en PS5 y Xbox Series X|S. Lo que dijo Take-Two sobre PC, la fecha reportada de principios de 2027 y lo que aún no está confirmado.",
  "2026-11-18", f"""<h1>GTA 6 en PC: <span>¿cuándo?</span></h1>
 <p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
-<p class="lede">GTA 6 sale el 19 de noviembre de 2026 <b>solo en PS5 y Xbox Series X|S</b>. No hay fecha oficial para PC.</p>
+<p class="lede">GTA 6 salió el 19 de noviembre de 2026 <b>solo en PS5 y Xbox Series X|S</b>. Todavía no hay fecha oficial para PC (revisado el 24 de noviembre).</p>
 <h2>Lo oficial</h2><p>Take-Two solo anunció consolas. Su CEO, Strauss Zelnick, dijo que Rockstar "siempre empieza en consola".</p>
 <h2>Lo reportado: principios de 2027</h2><p>Según un reporte de GamesBeat con fuentes anónimas, la versión de PC apuntaría a <b>enero-marzo de 2027</b>. Rockstar no lo ha confirmado.</p>
 <h2>Cuidado</h2><p>No compres "claves de GTA 6 para PC": no existe esa versión, son estafas.</p>
@@ -577,23 +606,27 @@ guide("gta-6-pc", "GTA 6 en PC: fecha de salida y lo que se sabe",
 {sources([("GodisaGeek","https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"),("tbreak","https://tbreak.com/gta-6-pc-release-delayed-console-first/")])}""",
  faq=[("¿GTA 6 sale en PC?", "No en el lanzamiento. No hay fecha oficial; un reporte habla de principios de 2027, sin confirmar.")], lang="es")
 
-guide("gta-6-lanzamiento-en-vivo", "Lanzamiento de GTA 6: actualizaciones en vivo",
- "Lanzamiento de GTA 6 en vivo: horarios, transmisión de 24 horas de YouTube, reseñas, trucos, espacio y PC, actualizado cada día de la semana de lanzamiento.",
- "2026-11-18", f"""<h1>Lanzamiento de GTA 6: <span>en vivo</span></h1>
-<p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
-<p class="lede">GTA 6 sale el <b>19 de noviembre de 2026</b> en PS5 y Xbox Series X|S. Todo lo de la semana de lanzamiento, en una página.</p>
-<div class="box"><h3>Horarios clave (hora del Este de EE. UU.)</h3><ul class="list" style="margin:0">
-<li><b>18 nov, ~6 AM:</b> Nueva Zelanda desbloquea primero</li><li><b>18 nov:</b> reseñas (según reportes, sin confirmar)</li>
-<li><b>18 nov, 11 PM:</b> pre-show de YouTube con RDCWorld</li><li><b>19 nov, medianoche local:</b> GTA 6 se desbloquea; empieza la transmisión de 24 horas de YouTube</li>
-<li><b>19 nov, 1 AM:</b> Xbox Cloud Gaming</li></ul></div>
+guide("gta-6-lanzamiento-en-vivo", "GTA 6 en vivo: parches, récords y noticias tras el lanzamiento",
+ "Noticias de GTA 6, de la más nueva a la más vieja: notas del parche, récords de ventas y de streaming, The Game Awards y PC. Todo revisado en 2+ fuentes.",
+ "2026-11-18", f"""<h1>Noticias de GTA 6: <span>en vivo</span></h1>
+<p class="meta">Actualizado el 24 de noviembre de 2026 · Vice Replay</p>
+<p class="lede">GTA 6 salió el <b>19 de noviembre de 2026</b> en PS5 y Xbox Series X|S. Aquí está cada novedad confirmada desde entonces.</p>
+<div class="box"><h3>Lo que viene (hora del Este de EE. UU.)</h3><ul class="list" style="margin:0">
+<li><b>Hasta el 30 nov:</b> rebajas de Black Friday; GTA 6 sigue a precio completo</li>
+<li><b>Jue 10 dic, 7:30 PM:</b> The Game Awards. GTA 6 tiene 8 nominaciones. <a href="/es/guias/gta-6-premios-game-awards/">Nuestra previa</a></li>
+<li><b>Próximo parche:</b> sin fecha. El último es el 1.002.002 (23 nov). <a href="/es/guias/gta-6-notas-del-parche/">Notas del parche</a></li>
+<li><b>PC:</b> sin fecha oficial; un reporte habla de principios de 2027, sin confirmar. <a href="/es/guias/gta-6-pc/">Lo que se sabe</a></li></ul></div>
 <h2>Últimas noticias</h2>
-<div class="note"><b>17 nov</b><br>The Game Awards 2026: GTA 6 recibe 8 nominaciones, incluido Juego del Año. Manni L. Perez, la actriz de Lucía, está nominada a Mejor Actuación.</div>
+<div class="note"><b>24 nov</b><br>Los creadores más vistos del primer día (Streams Charts): IShowSpeed, 4,47 millones de horas; el VTuber TheBurntPeanut, 3,89 millones. <a href="/es/guias/gta-6-records-streaming/">Récords de streaming</a>.</div>
+<div class="note"><b>23 nov</b><br>Rockstar publicó por fin notas del parche: la actualización 1.002.002 trae 7 arreglos. <a href="/es/guias/gta-6-notas-del-parche/">Los 7 arreglos</a>.</div>
+<div class="note"><b>20 nov</b><br>Take-Two: GTA 6 hizo 3.790 millones de dólares entre preventas y ventas del primer día. <a href="/es/guias/gta-6-cifras-semana-lanzamiento/">Todas las cifras</a>.</div>
 <div class="note"><b>19 nov, 3 AM</b><br>Los trucos existen, pero solo se desbloquean al terminar la historia, y desactivan el guardado y los trofeos durante la sesión. <a href="/es/guias/trucos-gta-6/">Cómo funcionan</a>.</div>
-<div class="note"><b>17 nov</b><br>Trucos: ninguno confirmado antes del lanzamiento. <a href="/es/guias/trucos-gta-6/">Nuestra lista</a>.</div>
-<h2>Antes de jugar</h2>
-<ul class="list"><li><a href="/es/guias/hora-de-lanzamiento-gta-6/">A qué hora se desbloquea</a></li><li><a href="/es/guias/espacio-gta-6/">¿Sin espacio? Primero lo gratis</a></li><li><a href="/es/guias/gta-6-pc/">GTA 6 en PC</a></li></ul>
+<div class="note"><b>17 nov</b><br>The Game Awards 2026: GTA 6 recibe 8 nominaciones, incluido Juego del Año. Manni L. Perez, la actriz de Lucía, está nominada a Mejor Actuación.</div>
+<h2>Guías populares</h2>
+<ul class="list"><li><a href="/es/guias/espacio-gta-6/">¿Sin espacio? Primero lo gratis</a></li><li><a href="/es/guias/cuanto-dura-gta-6/">Cuánto dura GTA 6</a></li><li><a href="/es/guias/trucos-gta-6/">Trucos de GTA 6</a></li><li><a href="/es/guias/gta-6-pc/">GTA 6 en PC</a></li></ul>
 {gearbox(GAME + STORAGE, "Enlaces directos (Amazon EE. UU.):")}""",
- faq=[("¿Cuándo sale GTA 6?", "El 19 de noviembre de 2026 en PS5 y Xbox Series X|S, a la medianoche hora local.")], lang="es")
+ faq=[("¿Cuándo salió GTA 6?", "El 19 de noviembre de 2026 en PS5 y Xbox Series X|S."),
+      ("¿GTA 6 está en PC?", "Todavía no. No hay fecha oficial; un reporte habla de principios de 2027, sin confirmar.")], lang="es")
 
 # Guides written as data by the daily run: site/guides/<slug>.json
 # {"slug","lang":"en|es","title","desc","date","video":"YouTube id or null","card":[line1,line2,"screenshot.jpg"],
@@ -715,6 +748,41 @@ _newest = max([d for *_, d in GUIDES] + ["2026-11-18"]); _newest_es = max([d for
 urls = [("", _newest), ("guides/", _newest), ("gear/", "2026-11-18"), ("links/", _newest), ("contact/", "2026-11-18"), ("privacy/", "2026-11-23"), ("terms/", "2026-11-22"), ("es/equipo/", "2026-11-22")] + [(f"guides/{s}/", d) for s, _, _, d in GUIDES] + [("es/", _newest_es)] + [(f"es/guias/{s}/", d) for s, _, _, d in GUIDES_ES]
 open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
+def refresh_home():
+    """Homepage (hand-written index.html, Nov 24 upgrade): rebuild its deals list and 'Latest GTA 6 news' list on every
+    build, so it can't keep showing launch-night links or old prices. Only those two sections are touched."""
+    path = os.path.join(SITE, "index.html")
+    doc = open(path).read()
+    deals = "".join(f'\n    <li><a class="item big" href="{amz(q)}" target="_blank" rel="sponsored noopener">{html.escape(t)}<span aria-hidden="true">→</span></a></li>'
+                    for t, sub, q in DEALS)
+    deals_sec = (f'<section class="group" id="deals"><h2>🔥 Black Friday deals on Amazon</h2><p>Checked {DEALS_CHECKED} · prices change fast · '
+                 f'<a href="/guides/gta-6-black-friday/" style="color:#00e5d2">all GTA 6 deals</a></p><ul class="links">{deals}\n  </ul>'
+                 '<p style="font-size:13px;opacity:.75">Affiliate links: as an Amazon Associate we earn from qualifying purchases, at no extra cost to you.</p></section>')
+    newest = [g for g in GUIDES if g[0] != "gta-6-launch-live"][:5]
+    def short(title):  # "GTA 6 Streaming Records: Most-Watched..." -> "GTA 6 Streaming Records"
+        head = title.split(":")[0].strip()
+        if len(title) <= 58: return title
+        if 14 <= len(head) <= 58: return head
+        return title[:58].rsplit(" ", 1)[0] + "…"
+    latest = ('\n    <li><a class="item" href="/guides/gta-6-launch-live/" style="outline:2px solid #ff1f8e">🔴 GTA 6 news: live updates<span aria-hidden="true">→</span></a></li>'
+              + "".join(f'\n    <li><a class="item" href="/guides/{s}/">{html.escape(short(ti))}<span aria-hidden="true">→</span></a></li>' for s, ti, d, dt in newest))
+    latest_sec = f'<section class="group"><h2>Latest GTA 6 news</h2><ul class="links">{latest}\n  </ul></section>'
+    doc2 = _re.sub(r'<section class="group" id="deals">.*?</section>', lambda m: deals_sec, doc, count=1, flags=_re.S)
+    doc2 = _re.sub(r'<section class="group"><h2>Latest GTA 6 news</h2>.*?</section>', lambda m: latest_sec, doc2, count=1, flags=_re.S)
+    if doc2 != doc:
+        open(path, "w").write(doc2)
+
+
+refresh_home()
+try:
+    import sys as _sys
+    _sys.path.insert(0, STUDIO)
+    from studio.site_stale import scan as _stale_scan
+    for _pg, _ctx in _stale_scan(SITE):
+        print(f"STALE {_pg}: ...{_ctx}...")
+except Exception as _e:  # the check must never break a build
+    print("stale check skipped:", _e)
+
 print("ok", len(GUIDES))
 
 
