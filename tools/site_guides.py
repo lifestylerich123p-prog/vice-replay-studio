@@ -793,13 +793,14 @@ def interactive_map(lang="en"):
         if "dx" not in p and "dy" not in p and str(p["at"]).lower() in {k.lower() for k in mappins.PLACES}:
             y -= 0.009  # just above the printed place name, so the pin doesn't cover it
         t = p[lang]
-        pins.append({"n": n, "cat": p["cat"], "x": round(x + p.get("dx", 0), 4), "y": round(y + p.get("dy", 0), 4),
+        slug = _re.sub(r"[^a-z0-9]+", "-", p["en"]["t"].lower().replace("'", "")).strip("-")  # same id in EN and ES
+        pins.append({"n": n, "id": slug, "cat": p["cat"], "x": round(x + p.get("dx", 0), 4), "y": round(y + p.get("dy", 0), 4),
                      "t": t["t"], "d": t["d"], "when": t.get("when", "")})
     data = json.dumps({"lang": lang, "w": 5775, "h": 7900, "cats": cats, "pins": pins}, ensure_ascii=False).replace("</", "<\\/")
     es = lang == "es"
     hint = ("Pellizca o usa la rueda para acercarte hasta las calles; toca un pin para ver qué hay y dónde. Los pines marcan la zona."
             if es else "Pinch or scroll to zoom down to street names; tap a pin for what's there. Pins mark the area.")
-    items = "".join(f'<li><a href="#vrmap" data-pin="{p["n"]}"><b>{p["n"]}. {html.escape(p["t"])}</b></a>: {html.escape(p["d"])}'
+    items = "".join(f'<li id="{p["id"]}-item"><a href="#{p["id"]}" data-pin="{p["n"]}"><b>{p["n"]}. {html.escape(p["t"])}</b></a>: {html.escape(p["d"])}'
                     + (f' <i>({html.escape(p["when"])})</i>' if p["when"] else "") + "</li>" for p in pins)
     style = ('<style>#vrmap{height:min(78vh,720px);border-radius:14px;border:1px solid var(--line);margin:12px 0 6px;background:#0d0717}'
              '.vrpin b{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;color:#fff;'
