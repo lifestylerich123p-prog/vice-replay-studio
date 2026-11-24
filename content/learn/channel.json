@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-24T18:08+00:00",
+  "checked": "2026-11-24T19:21+00:00",
   "channel_id": "UCzk9Wts3WFynOHZQJRWOQIw",
   "subscribers": "15",
   "videos": [
@@ -10,10 +10,10 @@
       "published": "2026-11-19T13:00:40Z",
       "seconds": 16,
       "type": "Short",
-      "views": 9427,
+      "views": 9428,
       "likes": 70,
       "comments": 0,
-      "views_per_hour": 75.3,
+      "views_per_hour": 74.6,
       "url": "https://www.youtube.com/watch?v=aYBokm3TIYE"
     },
     {
@@ -26,7 +26,7 @@
       "views": 613,
       "likes": 3,
       "comments": 2,
-      "views_per_hour": 24.9,
+      "views_per_hour": 23.7,
       "url": "https://www.youtube.com/watch?v=jQbv5GPR3dk"
     },
     {
@@ -39,7 +39,7 @@
       "views": 5329,
       "likes": 42,
       "comments": 6,
-      "views_per_hour": 22.3,
+      "views_per_hour": 22.2,
       "url": "https://www.youtube.com/watch?v=oYqPC06109w"
     },
     {
@@ -52,7 +52,7 @@
       "views": 1855,
       "likes": 21,
       "comments": 3,
-      "views_per_hour": 14.8,
+      "views_per_hour": 14.7,
       "url": "https://www.youtube.com/watch?v=ty0KP7MLaKU"
     },
     {
@@ -62,10 +62,10 @@
       "published": "2026-11-22T15:00:12Z",
       "seconds": 29,
       "type": "Short",
-      "views": 656,
+      "views": 653,
       "likes": 16,
       "comments": 3,
-      "views_per_hour": 12.8,
+      "views_per_hour": 12.5,
       "url": "https://www.youtube.com/watch?v=Egb3otGWJIg"
     },
     {
@@ -78,21 +78,8 @@
       "views": 1192,
       "likes": 25,
       "comments": 2,
-      "views_per_hour": 12.0,
-      "url": "https://www.youtube.com/watch?v=uCNHbnOqgs0"
-    },
-    {
-      "id": "aU1Js-p-FCo",
-      "title": "Every GTA ranked by sales: GTA 5 is alone #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-24T14:30:30Z",
-      "seconds": 20,
-      "type": "Short",
-      "views": 43,
-      "likes": 1,
-      "comments": 1,
       "views_per_hour": 11.8,
-      "url": "https://www.youtube.com/watch?v=aU1Js-p-FCo"
+      "url": "https://www.youtube.com/watch?v=uCNHbnOqgs0"
     },
     {
       "id": "b4pWGuZNPJY",
@@ -104,7 +91,7 @@
       "views": 1380,
       "likes": 26,
       "comments": 1,
-      "views_per_hour": 10.9,
+      "views_per_hour": 10.8,
       "url": "https://www.youtube.com/watch?v=b4pWGuZNPJY"
     },
     {
@@ -117,8 +104,21 @@
       "views": 1187,
       "likes": 16,
       "comments": 5,
-      "views_per_hour": 10.5,
+      "views_per_hour": 10.4,
       "url": "https://www.youtube.com/watch?v=Z8jQK8nZ1cQ"
+    },
+    {
+      "id": "aU1Js-p-FCo",
+      "title": "Every GTA ranked by sales: GTA 5 is alone #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-24T14:30:30Z",
+      "seconds": 20,
+      "type": "Short",
+      "views": 49,
+      "likes": 1,
+      "comments": 1,
+      "views_per_hour": 10.1,
+      "url": "https://www.youtube.com/watch?v=aU1Js-p-FCo"
     },
     {
       "id": "DG_MpuSMDV8",
@@ -130,7 +130,7 @@
       "views": 1307,
       "likes": 33,
       "comments": 1,
-      "views_per_hour": 9.2,
+      "views_per_hour": 9.1,
       "url": "https://www.youtube.com/watch?v=DG_MpuSMDV8"
     },
     {
@@ -143,7 +143,7 @@
       "views": 1172,
       "likes": 21,
       "comments": 1,
-      "views_per_hour": 9.0,
+      "views_per_hour": 8.9,
       "url": "https://www.youtube.com/watch?v=vlPV5Yre8T8"
     },
     {
@@ -169,7 +169,7 @@
       "views": 1009,
       "likes": 8,
       "comments": 0,
-      "views_per_hour": 8.1,
+      "views_per_hour": 8.0,
       "url": "https://www.youtube.com/watch?v=Eikozi0uFec"
     },
     {
@@ -195,7 +195,7 @@
       "views": 978,
       "likes": 15,
       "comments": 1,
-      "views_per_hour": 7.8,
+      "views_per_hour": 7.7,
       "url": "https://www.youtube.com/watch?v=Wl6K3f5FtVU"
     },
     {
@@ -208,7 +208,7 @@
       "views": 1223,
       "likes": 27,
       "comments": 2,
-      "views_per_hour": 7.3,
+      "views_per_hour": 7.2,
       "url": "https://www.youtube.com/watch?v=_5ZWAUY75y4"
     },
     {
@@ -221,7 +221,7 @@
       "views": 834,
       "likes": 26,
       "comments": 1,
-      "views_per_hour": 6.3,
+      "views_per_hour": 6.2,
       "url": "https://www.youtube.com/watch?v=DBlAdqc1orw"
     },
     {
@@ -247,7 +247,7 @@
       "views": 577,
       "likes": 6,
       "comments": 1,
-      "views_per_hour": 6.0,
+      "views_per_hour": 5.9,
       "url": "https://www.youtube.com/watch?v=vkvg5KPqb70"
     },
     {
@@ -299,7 +299,7 @@
       "views": 157,
       "likes": 0,
       "comments": 1,
-      "views_per_hour": 3.2,
+      "views_per_hour": 3.1,
       "url": "https://www.youtube.com/watch?v=xvA4O2ytSnE"
     },
     {
@@ -312,7 +312,7 @@
       "views": 400,
       "likes": 4,
       "comments": 1,
-      "views_per_hour": 2.9,
+      "views_per_hour": 2.8,
       "url": "https://www.youtube.com/watch?v=9lTZNbwbSec"
     },
     {
@@ -329,19 +329,6 @@
       "url": "https://www.youtube.com/watch?v=4EuMnzlLKTY"
     },
     {
-      "id": "jVcY1N4bBHU",
-      "title": "GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-24T13:00:05Z",
-      "seconds": 17,
-      "type": "Short",
-      "views": 13,
-      "likes": 0,
-      "comments": 1,
-      "views_per_hour": 2.5,
-      "url": "https://www.youtube.com/watch?v=jVcY1N4bBHU"
-    },
-    {
       "id": "zfjEiiiQdJk",
       "title": "GTA 6 Black Friday deals have a catch #GTA6 #Shorts",
       "channel": "Vice Replay",
@@ -355,6 +342,19 @@
       "url": "https://www.youtube.com/watch?v=zfjEiiiQdJk"
     },
     {
+      "id": "LYmF6sSQtYE",
+      "title": "GTA 6's Metacritic 99: only ONE other game #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-24T17:30:37Z",
+      "seconds": 20,
+      "type": "Short",
+      "views": 4,
+      "likes": 0,
+      "comments": 1,
+      "views_per_hour": 2.2,
+      "url": "https://www.youtube.com/watch?v=LYmF6sSQtYE"
+    },
+    {
       "id": "KlelqBLnEUI",
       "title": "GTA 6 made $3.79 BILLION in ONE day (official) #GTA6 #Shorts",
       "channel": "Vice Replay",
@@ -364,7 +364,7 @@
       "views": 199,
       "likes": 6,
       "comments": 1,
-      "views_per_hour": 2.2,
+      "views_per_hour": 2.1,
       "url": "https://www.youtube.com/watch?v=KlelqBLnEUI"
     },
     {
@@ -379,6 +379,19 @@
       "comments": 4,
       "views_per_hour": 2.1,
       "url": "https://www.youtube.com/watch?v=xvudsg_o6ow"
+    },
+    {
+      "id": "jVcY1N4bBHU",
+      "title": "GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-24T13:00:05Z",
+      "seconds": 17,
+      "type": "Short",
+      "views": 13,
+      "likes": 0,
+      "comments": 1,
+      "views_per_hour": 2.0,
+      "url": "https://www.youtube.com/watch?v=jVcY1N4bBHU"
     },
     {
       "id": "wPPhLBHS7-M",
@@ -452,10 +465,10 @@
       "published": "2026-11-24T01:29:41Z",
       "seconds": 24,
       "type": "Short",
-      "views": 26,
+      "views": 27,
       "likes": 0,
       "comments": 1,
-      "views_per_hour": 1.6,
+      "views_per_hour": 1.5,
       "url": "https://www.youtube.com/watch?v=kQ_OUxG_GYk"
     },
     {
@@ -498,19 +511,6 @@
       "url": "https://www.youtube.com/watch?v=JYYfpuj-jwQ"
     },
     {
-      "id": "K9Ii3rntcog",
-      "title": "GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-24T16:00:29Z",
-      "seconds": 18,
-      "type": "Short",
-      "views": 2,
-      "likes": 0,
-      "comments": 1,
-      "views_per_hour": 0.9,
-      "url": "https://www.youtube.com/watch?v=K9Ii3rntcog"
-    },
-    {
       "id": "Rt18FhG-DYk",
       "title": "GTA 6 details: the video game store going bust #GTA6 #Shorts",
       "channel": "Vice Replay",
@@ -548,6 +548,19 @@
       "comments": 0,
       "views_per_hour": 0.7,
       "url": "https://www.youtube.com/watch?v=kLxIVUzSOaI"
+    },
+    {
+      "id": "K9Ii3rntcog",
+      "title": "GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-24T16:00:29Z",
+      "seconds": 18,
+      "type": "Short",
+      "views": 2,
+      "likes": 0,
+      "comments": 1,
+      "views_per_hour": 0.6,
+      "url": "https://www.youtube.com/watch?v=K9Ii3rntcog"
     },
     {
       "id": "-C9KX5Afwgw",
@@ -626,19 +639,6 @@
       "comments": 0,
       "views_per_hour": 0.1,
       "url": "https://www.youtube.com/watch?v=YqnShunG7WY"
-    },
-    {
-      "id": "LYmF6sSQtYE",
-      "title": "GTA 6's Metacritic 99: only ONE other game #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-24T17:30:37Z",
-      "seconds": 20,
-      "type": "Short",
-      "views": 0,
-      "likes": 0,
-      "comments": 1,
-      "views_per_hour": 0.0,
-      "url": "https://www.youtube.com/watch?v=LYmF6sSQtYE"
     },
     {
       "id": "EJOdYW3sx44",

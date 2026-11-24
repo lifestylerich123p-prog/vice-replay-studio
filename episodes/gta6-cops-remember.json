@@ -2,22 +2,22 @@
  "title": "GTA 6 Cops Remember Your Outfit: How to Lose Them",
  "slug": "gta6-cops-remember",
  "series": "How To",
- "format": "tips/discovery",
+ "format": "comparison",
  "mood": "tension",
  "use_gameplay": false,
  "style": "vice (lettering cards, payoff-first hook, Nov 24)",
- "short_title": "GTA 6 cops remember your outfit #GTA6 #Shorts",
+ "short_title": "GTA 6 cops remember your outfit (GTA 5's didn't) #GTA6 #Shorts",
  "short_title_options": [
-  "GTA 6 cops remember your outfit #GTA6 #Shorts",
-  "GTA 6: how to lose the cops (new wanted system) #GTA6 #Shorts",
-  "GTA 6 police track your face, clothes and car #GTA6 #Shorts"
+  "GTA 6 cops remember your outfit (GTA 5's didn't) #GTA6 #Shorts",
+  "GTA 5 vs GTA 6 cops: they remember you now #GTA6 #Shorts",
+  "GTA 6: how to lose the cops (new wanted system) #GTA6 #Shorts"
  ],
- "short_description": "GTA 6's wanted system doesn't just run out on a timer. Police track your face, your clothes and your car (icons under the wanted stars show what they know), and the area of the crime stays hot after you escape. To lose them: change clothes, switch cars and get out of the area. No story spoilers.\n\nSources: GamesRadar, Engadget, VICE, games.gg, GTABase.",
+ "short_description": "In GTA 5 the wanted level faded once the cops lost sight of you. GTA 6's doesn't just run out: police track your face, your clothes and your car (icons under the wanted stars show what they know), and the area of the crime stays hot after you escape. To lose them: change clothes, switch cars and get out of the area. No story spoilers.\n\nSources: GamesRadar, Engadget, VICE, games.gg, GTABase.",
  "short_playlist": "GTA 6 Shorts",
  "pinned_comment": "What's your escape plan: new outfit or new car? 👇",
  "short_pinned_comment_es": "¿Cuál es tu plan de escape: ropa nueva o coche nuevo? 👇",
  "short_es": {
-  "title": "La POLICÍA de GTA 6 recuerda tu ropa 🚨 #GTA6 #Shorts",
+  "title": "La POLICÍA de GTA 6 recuerda tu ropa (la de GTA 5 no) 🚨 #GTA6 #Shorts",
   "description": "En GTA 6 la búsqueda no se acaba con un temporizador. La policía rastrea tu cara, tu ropa y tu coche (los iconos bajo las estrellas muestran lo que saben), y la zona del crimen sigue caliente. Para perderlos: cambia de ropa, de coche y sal de la zona. Sin spoilers. Fuentes: GamesRadar, Engadget, VICE, games.gg, GTABase.",
   "tags": [
    "GTA 6 policía",
@@ -56,42 +56,77 @@
   "games.gg - GTA 6 police are harder to shake off: https://games.gg/news/gta-6-police-smarter-memory-radar/",
   "GTABase - GTA 6 wanted level explained: https://www.gtabase.com/articles/gta-6/gta-6-wanted-level-explained-police-system-guide"
  ],
- "facts_note": "Nov 24: police track face, clothes and vehicle, shown as icons under the stars (GamesRadar, Engadget, VICE, games.gg); 6 stars; no simple timer reset; crime areas stay flagged/hot (GamesRadar, games.gg); lose them by changing clothes, switching vehicles, leaving the search area (VICE, GTABase, games.gg). Left out (one source only): splitting Jason and Lucia drops a star. Re-check right before posting.",
+ "facts_note": "Nov 24: police track face, clothes and vehicle, shown as icons under the stars (GamesRadar, Engadget, VICE, games.gg); 6 stars; no simple timer reset; crime areas stay flagged/hot (GamesRadar, games.gg); lose them by changing clothes, switching vehicles, leaving the search area (VICE, GTABase, games.gg). Left out (one source only): splitting Jason and Lucia drops a star. Re-check right before posting. GTA 5 comparison: earlier GTAs treated the wanted level as a timer that reset once you were out of view (GamesRadar, games.gg). Nov 24 market: 'GTA 5 vs GTA 6 Cops' was the hottest GTA 6 Short (~268K views/h), so this one is framed as a comparison.",
  "short": [
   {
-   "headline": "COPS REMEMBER",
-   "headline_es": "TE RECUERDAN",
-   "text": "GTA 6 cops remember your outfit.",
-   "text_es": "La policía de GTA seis recuerda tu ropa.",
+   "headline": "GTA 5 VS GTA 6 COPS",
+   "headline_es": "GTA 5 VS GTA 6",
+   "text": "GTA 5 cops forgot you. GTA 6 cops don't.",
+   "text_es": "La policía de GTA cinco te olvidaba. La de GTA seis, no.",
    "keep_media": true,
    "chart": {
     "type": "kinetic",
     "lines": [
-     "GTA 6 COPS",
-     "REMEMBER YOUR OUTFIT"
+     "GTA 5 COPS FORGOT YOU",
+     "GTA 6 COPS DON'T"
     ],
     "pink": [
-     "REMEMBER YOUR OUTFIT"
+     "GTA 6 COPS DON'T"
     ],
     "seed": 191
    },
    "chart_es": {
     "type": "kinetic",
     "lines": [
-     "LA POLICÍA",
-     "RECUERDA TU ROPA"
+     "GTA 5 TE OLVIDABA",
+     "GTA 6 NO"
     ],
     "pink": [
-     "RECUERDA TU ROPA"
+     "GTA 6 NO"
     ],
     "seed": 191
    }
   },
   {
+   "headline": "OUT OF SIGHT?",
+   "headline_es": "¿FUERA DE VISTA?",
+   "text": "Out of sight used to mean safe. Not anymore.",
+   "text_es": "Fuera de vista era estar a salvo. Ya no.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "GTA 5 COPS",
+     "FORGET"
+    ],
+    "b": [
+     "GTA 6 COPS",
+     "REMEMBER"
+    ],
+    "winner": "b",
+    "seed": 191,
+    "src": "GamesRadar · games.gg"
+   },
+   "chart_es": {
+    "type": "versus",
+    "a": [
+     "GTA 5",
+     "OLVIDA"
+    ],
+    "b": [
+     "GTA 6",
+     "RECUERDA"
+    ],
+    "winner": "b",
+    "seed": 191,
+    "src": "GamesRadar · games.gg"
+   }
+  },
+  {
    "headline": "WHAT THEY TRACK",
    "headline_es": "LO QUE RASTREAN",
-   "text": "They track your face, your clothes and your car. The icons under your stars show it.",
-   "text_es": "Rastrean tu cara, tu ropa y tu coche. Lo ves en los iconos bajo las estrellas.",
+   "text": "They track your face, your clothes and your car.",
+   "text_es": "Rastrean tu cara, tu ropa y tu coche.",
    "keep_media": true,
    "chart": {
     "type": "list",
@@ -137,8 +172,8 @@
   {
    "headline": "HOT ZONES",
    "headline_es": "ZONAS CALIENTES",
-   "text": "And the area stays hot after you escape. Go back too soon and the chase restarts.",
-   "text_es": "Y la zona sigue caliente aunque escapes. Si vuelves pronto, la persecución empieza otra vez.",
+   "text": "And the area stays hot after you escape.",
+   "text_es": "Y la zona sigue caliente aunque escapes.",
    "keep_media": true,
    "chart": {
     "type": "text",
@@ -162,8 +197,8 @@
   {
    "headline": "HOW TO LOSE THEM",
    "headline_es": "CÓMO PERDERLOS",
-   "text": "To lose them: change clothes, switch cars and get out of the area.",
-   "text_es": "Para perderlos: cambia de ropa, de coche y sal de la zona.",
+   "text": "To lose them: new clothes, new car, new area.",
+   "text_es": "Para perderlos: otra ropa, otro coche, otra zona.",
    "keep_media": true,
    "chart": {
     "type": "list",
@@ -210,7 +245,7 @@
    "headline": "YOUR PLAN?",
    "headline_es": "¿TU PLAN?",
    "text": "New outfit or new car first? Tell me, because",
-   "text_es": "¿Primero ropa nueva o coche nuevo? Dímelo, porque",
+   "text_es": "¿Primero ropa o coche? Dímelo, porque",
    "keep_media": true,
    "chart": {
     "type": "kinetic",

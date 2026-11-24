@@ -1,4 +1,4 @@
-# Vice Replay status (Tue Nov 24, 1:08 PM ET, `python -m studio.status`)
+# Vice Replay status (Tue Nov 24, 2:21 PM ET, `python -m studio.status`)
 
 ## Health
 Last check (2026-11-24 17:51 UTC, `python -m studio.doctor`)
@@ -10,13 +10,13 @@ Last check (2026-11-24 17:51 UTC, `python -m studio.doctor`)
 - ⏰ Wed 11:00 AM: GTA 6 Black Friday: Take-Two says no discount #GTA6 #Shorts
 - ⏰ Wed 12:30 PM: GTA 6's first trailer STILL wins (309M views) #GTA6 #Shorts
 - 36 views: Every GTA ranked by sales: GTA 5 is alone #GTA6 #Shorts
-- 24 views: GTA 6: 39 million PS5 players in 4 days #GTA6 #Shorts
+- 27 views: GTA 6: 39 million PS5 players in 4 days #GTA6 #Shorts
 - 13 views: GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts
-- 0 views: GTA 6's Metacritic 99: only ONE other game #GTA6 #Shorts
+- 4 views: GTA 6's Metacritic 99: only ONE other game #GTA6 #Shorts
 - 0 views: GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Shorts
-- 🔥 TAKING OFF: GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts (613 views, 25/h vs 1/h median): make a follow-up (.claude/commands/momentum.md)
-- 🧊 NOT TAKING OFF: GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Short (0 views after 2 h): swiped past; check its first 2 seconds
-- 🧊 NOT TAKING OFF: GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts (13 views after 5 h): swiped past; check its first 2 seconds
+- 🔥 TAKING OFF: GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts (614 views, 24/h vs 2/h median): make a follow-up (.claude/commands/momentum.md)
+- 🧊 NOT TAKING OFF: GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Short (0 views after 3 h): swiped past; check its first 2 seconds
+- 🧊 NOT TAKING OFF: GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts (13 views after 6 h): swiped past; check its first 2 seconds
 - Quota: ~0 units usable today (~0 uploads), resets 3 AM ET
 - Free slot Tue: 3:30 PM, 8:30 PM
 - Free slot Wed: 8:30 PM
