@@ -41,7 +41,7 @@
     "#ibai",
     "#gta6español"
   ],
-  "voice_es_note": "Spanish voice: Everygen Viral Adam (owner Nov 23: every Spanish Short). Preview rendered with the free Kokoro em_alex until the owner OKs the Everygen spend.",
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (5 lines, 5 credits, Nov 24; owner Nov 23: every Spanish Short)",
   "sources": [
     "3DJuegos - Ibai consigue que un streamer de GTA 6 pase de cero espectadores a más de 3.200 y acaba haciéndole llorar: https://www.3djuegos.com/streamers/noticias/ibai-consigue-que-streamer-gta-6-pase-cero-espectadores-a-3-200-acaba-haciendole-llorar",
     "Dexerto - GTA 6 streamer with zero viewers left in tears after Ibai sent thousands of people to his broadcast: https://www.dexerto.com/gta/gta-6-streamer-with-zero-viewers-left-in-tears-after-ibai-sent-thousands-of-people-to-his-broadcast-3430452/",
@@ -80,7 +80,8 @@
         ],
         "locale": "es",
         "seed": 2
-      }
+      },
+      "audio_es": "media/voice/gta6-ibai-cero-espectadores-es/es/seg1.wav"
     },
     {
       "headline": "LLEGÓ IBAI",
@@ -111,7 +112,8 @@
         "locale": "es",
         "src": "3DJuegos · Dexerto · Que.es",
         "seed": 2
-      }
+      },
+      "audio_es": "media/voice/gta6-ibai-cero-espectadores-es/es/seg2.wav"
     },
     {
       "headline": "DE 0 A 3.243",
@@ -146,7 +148,8 @@
         "winner": "b",
         "locale": "es",
         "seed": 2
-      }
+      },
+      "audio_es": "media/voice/gta6-ibai-cero-espectadores-es/es/seg3.wav"
     },
     {
       "headline": "LLORÓ EN DIRECTO",
@@ -177,7 +180,8 @@
         "locale": "es",
         "src": "Dexerto · Critical Hits",
         "seed": 2
-      }
+      },
+      "audio_es": "media/voice/gta6-ibai-cero-espectadores-es/es/seg4.wav"
     },
     {
       "headline": "¿A QUIÉN?",
@@ -212,7 +216,8 @@
         "sub": "dímelo abajo",
         "locale": "es",
         "seed": 2
-      }
+      },
+      "audio_es": "media/voice/gta6-ibai-cero-espectadores-es/es/seg5.wav"
     }
   ]
 }

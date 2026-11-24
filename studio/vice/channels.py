@@ -17,11 +17,12 @@ def config():
     return json.loads(CONFIG.read_text())
 
 
-def authenticated_channel_id():
-    """Channel the upload token belongs to (1 quota unit). None if the token can't be used."""
+def authenticated_channel_id(env=None):
+    """Channel the upload token belongs to (1 quota unit). None if the token can't be used.
+    env: the token's environment variable (the Spanish channel uses its own token, see studio/youtube_es.py)."""
     try:
         from ..youtube_upload import token
-        tok = token()
+        tok = token(env) if env else token()
         req = urllib.request.Request("https://youtube.googleapis.com/youtube/v3/channels?part=id&mine=true",
                                      headers={"Authorization": f"Bearer {tok}"})
         with urllib.request.urlopen(req, timeout=30) as r:
@@ -49,7 +50,10 @@ def validate(destination, content_type, check_token=True, token_channel=None):
             notes.append(f"'{content_type}' belongs on: {', '.join(cfg[k]['name'] for k in owner_of)}")
     mode = ch.get("upload")
     if mode == "api" and check_token:
-        tok_ch = token_channel if token_channel is not None else authenticated_channel_id()
+        env = None
+        if destination == "vice-replay-es":  # Nov 24: check the Spanish token, not the English one
+            from ..youtube_es import ENV as env
+        tok_ch = token_channel if token_channel is not None else (authenticated_channel_id(env) if env else authenticated_channel_id())
         if tok_ch == "quota":
             problems.append("YouTube daily quota used up (resets 3 AM ET): the connection is "
                             "fine and nothing else is wrong; run publish again after the reset")

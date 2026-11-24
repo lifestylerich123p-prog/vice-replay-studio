@@ -411,6 +411,16 @@
     "3:30 PM"
    ],
    "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); long video, optional slot per the daily run"
+  },
+  {
+   "slug": "gta6-ibai-cero-espectadores-es",
+   "item": "short",
+   "es_only": true,
+   "es": [
+    "2026-11-25",
+    "10:00 AM"
+   ],
+   "approved": "Nov 24 ~10 AM ET (owner in the Spanish helper chat: \"Approve all project upgrades and new ideas\" after seeing this Short); Viral Adam voice done (5 credits); gate clean; RE-CHECK the facts before upload (owner rule)"
   }
  ],
  "paused": [
