@@ -405,7 +405,7 @@ guide("gta-6-map-leonida-places", "GTA 6 Map: 6 Places in Leonida You Need to Kn
 {sources([("Rockstar Games: official GTA VI site (places)","https://www.rockstargames.com/VI")])}""")
 
 # 5. Storage evergreen
-guide("gta-6-storage", "GTA 6 Storage Full? How to Make Room on PS5 and Xbox (212 GB)",
+guide("gta-6-storage", "How Many GB Is GTA 6? 212 GB, and How to Make Room on PS5 and Xbox",
  "GTA 6 needs up to 212 GB. Free ways to clear space on PS5 and Xbox Series X|S first, then what to look for if you need a storage upgrade.",
  "2026-11-18", f"""<h1>GTA 6 storage full? <span>Free fixes first</span></h1>
 <p class="meta">Updated November 18, 2026 · Vice Replay</p>
@@ -448,7 +448,7 @@ guide("gta-6-cheats", "GTA 6 Cheat Codes: Money, Armor, Ammo + How to Unlock",
 {sources([("GameSpot: all GTA 6 cheats and how to unlock them","https://www.gamespot.com/articles/all-gta-6-cheats-and-how-to-unlock-them/"),("Vice: all GTA 6 cheat codes","https://www.vice.com/en/article/gta-6-cheat-codes-list/"),("GamesRadar: all GTA 6 cheats and how to unlock them","https://www.gamesradar.com/games/grand-theft-auto/gta-6-cheats/"),("PC Gamer: all GTA 6 cheats and how to unlock them","https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"),("Insider Gaming: all GTA 6 cheats","https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/"),("VGTimes on Eurogamer's testing: cheats locked behind the story","https://vgtimes.com/gaming-news/175043-gta-6-locks-cheats-behind-the-main-story-and-disables-saving.html"),("Screen Rant: GTA 6 cheats for PS5 and Xbox","https://screenrant.com/gta-6-cheats-ps5-xbox/")])}""")
 
 # 7-10. News articles (Nov 17)
-guide("gta-6-pc-release-date", "GTA 6 on PC: Release Date and What's Actually Reported",
+guide("gta-6-pc-release-date", "Is GTA 6 on PC? PC Release Date and What's Actually Reported",
  "GTA 6 is out on PS5 and Xbox Series X|S only. Here's what Take-Two has said about PC, the reported early 2027 window, and what's still unconfirmed.",
  "2026-11-17", f"""<h1>GTA 6 on PC: <span>when?</span></h1>
 <p class="meta">Updated November 17, 2026 · Vice Replay</p>
