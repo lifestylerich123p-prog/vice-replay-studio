@@ -65,6 +65,20 @@ footer{margin-top:44px;color:var(--muted);font-size:13px;border-top:1px solid va
 .banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,7,23,.88) 0%,rgba(13,7,23,.5) 42%,rgba(13,7,23,0) 72%)}
 .banner h1{position:relative;z-index:1;margin:0;padding:18px 20px;max-width:68%}
 .related{margin-top:34px}
+table{width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:16px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--cyan);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+tr:nth-child(even) td{background:rgba(255,255,255,.035)}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:0 0 22px;display:grid;gap:2px}
+.toc b{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:4px}
+.toc a{color:var(--fg);text-decoration:none;padding:7px 0;border-bottom:1px solid var(--line);font-weight:700;font-size:15px}
+.toc a:last-child{border-bottom:0}
+h2[id]{scroll-margin-top:16px}
+.search{display:flex;align-items:center;gap:10px;margin:0 0 16px}
+.search input{flex:1;font:inherit;font-size:16px;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--fg)}
+.search input:focus{outline:2px solid var(--pink);border-color:transparent}
+.search span{color:var(--muted);font-size:13px;white-space:nowrap}
+footer a{display:inline-block;padding:6px 0}
 .lead{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:14px;margin:4px 0 18px;border:1px solid var(--line);background:var(--panel-2)}
 .card.pic{display:grid;grid-template-columns:128px 1fr;gap:14px;align-items:start;padding:12px}
 .card.pic img{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:8px;background:var(--panel-2)}
@@ -162,10 +176,10 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en"):
             {"@type": "ListItem", "position": 3, "name": title, "item": url}]})
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in jsonld)
     if lang == "es":
-        menu = f'<a href="/es/">Guías</a><a href="/es/equipo/">Equipo</a><a href="{YT_ES}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
+        menu = f'<a href="/es/guias/gta-6-lanzamiento-en-vivo/">Noticias</a><a href="/es/">Guías</a><a href="/es/equipo/">Equipo</a><a href="{YT_ES}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
         foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/es/acerca/">Quiénes somos</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
     else:
-        menu = f'<a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
+        menu = f'<a href="/guides/gta-6-launch-live/">News</a><a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
         foot = 'Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a> · <a href="/about/">About us</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.'
     doc = f"""<!doctype html>
 <html lang="{lang}">
@@ -265,10 +279,30 @@ def with_lead(body, img, title):
     tag = (f'<img class="lead" src="{img}" width="1200" height="630" alt="{html.escape(title)}" '
            'fetchpriority="high" decoding="async">')
     k = body.find('<p class="lede">')
-    if k < 0:
+    if k >= 0:  # owner Nov 24 ("think like a visitor"): the answer first, the picture right after it
+        k = body.find("</p>", k) + 4
+    else:
         k = body.find("</h1>")
         k = body.find("</p>", body.find('<p class="meta">', k)) + 4 if '<p class="meta">' in body[k:] else k + 5
-    return body[:k] + tag + "\n" + body[k:]
+    return body[:k] + "\n" + tag + body[k:]
+
+
+def with_toc(body, lang):
+    """Guides with 4+ sections get an 'On this page' jump list under the picture, and each h2 gets an id (Nov 24:
+    a phone reader with a specific question shouldn't scroll 7-9 screens)."""
+    heads = _re.findall(r"<h2>(.*?)</h2>", body)
+    if len(heads) < 4:
+        return body
+    def anchor(h):
+        return _re.sub(r"[^a-z0-9áéíóúñ]+", "-", _re.sub(r"<[^>]+>", "", h).lower()).strip("-")[:60]
+    for h in heads:
+        body = body.replace(f"<h2>{h}</h2>", f'<h2 id="{anchor(h)}">{h}</h2>', 1)
+    label = "En esta página" if lang == "es" else "On this page"
+    links = "".join(f'<a href="#{anchor(h)}">{_re.sub(r"<[^>]+>", "", h)}</a>' for h in heads)
+    toc = f'<nav class="toc" aria-label="{label}"><b>{label}</b>{links}</nav>'
+    k = body.find('<img class="lead"')
+    k = body.find(">", k) + 1 if k >= 0 else body.find("</p>", body.find('<p class="lede">')) + 4
+    return body[:k] + "\n" + toc + body[k:]
 
 
 def with_notice(slug, body, lang):
@@ -290,6 +324,7 @@ def guide(slug, title, desc, date, body, faq=None, lang="en", modified=None):
     l1, l2, shot = CARDS.get(slug, (title.split(":")[0][:28], "", None))
     img = card(slug, l1, l2 or "On replay", shot)
     body = with_lead(body, img, title)
+    body = with_toc(body, lang)
     if lang == "en": GUIDES.append((slug, title, desc, date))
     else: GUIDES_ES.append((slug, title, desc, date))
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": title[:110], "description": desc, "image": [img],
@@ -666,10 +701,12 @@ for g in _JSON:
     body += sources([tuple(x) for x in g.get("sources", [])]) if g.get("sources") else ""
     guide(g["slug"], g["title"], g["desc"], g["date"], body, faq=[tuple(x) for x in g.get("faq", [])] or None, lang=g.get("lang", "en"))
 
+# Search box on the guide lists (Nov 24): filters the cards as you type, no server needed
+SEARCH_JS = '<script>(function(){var q=document.getElementById("q");if(!q)return;var cs=[].slice.call(document.querySelectorAll(".cards .card"));var n=document.getElementById("qn");q.addEventListener("input",function(){var t=q.value.toLowerCase().trim(),k=0;cs.forEach(function(c){var m=!t||c.textContent.toLowerCase().indexOf(t)>-1;c.style.display=m?"":"none";if(m)k++;});n.textContent=t?(k+" / "+cs.length):"";});})();</script>'
 GUIDES_ES.sort(key=lambda g: g[3], reverse=True)
 page("es/", "Guías de GTA 6 en español · Vice Replay", "Guías de GTA 6 en español: trucos, hora de lanzamiento, espacio y PC. Sin spoilers.",
-     banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="https://www.youtube.com/@vicereplaytv-q8s">Nuestros videos tienen subtítulos en español.</a></p><div class="cards">'
-     + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>', lang="es")
+     banner('Guías de GTA&nbsp;6 <span>en español</span>', 'swamp-nature') + '<p class="lede">Guías rápidas y con fuentes. Sin spoilers. <a href="https://www.youtube.com/@vicereplaytv-q8s">Nuestros videos tienen subtítulos en español.</a></p><div class="search"><input type="search" id="q" placeholder="Busca entre ' + str(len(GUIDES_ES)) + ' guías: trucos, precio, online..." aria-label="Buscar guías" autocomplete="off"><span id="qn"></span></div><div class="cards">'
+     + "".join(f'<a class="card pic" href="/es/guias/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES_ES) + '</div>' + SEARCH_JS, lang="es")
 
 # Spanish gear page (Nov 22, 2026): the Amazon link for Vice Replay en Español (channel links, descriptions, comments)
 ALT.update({"es/equipo/": "gear/"})
@@ -696,12 +733,15 @@ GUIDES[1:] = sorted(GUIDES[1:], key=lambda g: g[3], reverse=True)
 card("default", "GTA'S WILDEST MOMENTS.", "ON REPLAY.", "vice-city-11.jpg")
 cards = "".join(f'<a class="card pic" href="/guides/{s}/"><img src="/og/t/{s}.webp" width="480" height="252" alt="{html.escape(t)}" loading="lazy"><span><b>{html.escape(t)}</b><small>{html.escape(d)}</small></span></a>' for s, t, d, _ in GUIDES)
 page("guides/", "GTA 6 Guides · Vice Replay", "GTA 6 guides from Vice Replay: unlock times, download size, storage, the map and launch tips.",
-     banner('GTA&nbsp;6 <span>guides</span>', 'news-skyline') + f'<p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers. <a href="/es/">En español</a></p><div class="cards">{cards}</div>')
+     banner('GTA&nbsp;6 <span>guides</span>', 'news-skyline') + f'<p class="lede">Quick, sourced GTA 6 guides that go with our videos. No story spoilers. <a href="/es/">En español</a></p><div class="search"><input type="search" id="q" placeholder="Search {len(GUIDES)} guides: money, radio, cheats..." aria-label="Search guides" autocomplete="off"><span id="qn"></span></div><div class="cards">{cards}</div>' + SEARCH_JS)
 
 # links page
 latest = GUIDES[0]
-page("links/", "Vice Replay Links", "Every Vice Replay link: GTA 6 Black Friday deals, storage fixes, gear, YouTube, TikTok and Instagram.", f"""{banner('Vice Replay <span>links</span>', 'night-streets')}
-<p class="lede">GTA's wildest moments. On replay.</p>
+page("links/", "Vice Replay Links", "Every Vice Replay link: GTA 6 Black Friday deals, storage fixes, gear, YouTube, TikTok and Instagram.", f"""<h1>Vice Replay <span>links</span></h1>
+<p class="lede">GTA's wildest moments. On replay. Fresh GTA 6 news first, then deals and our channels.</p>
+<h2>Latest</h2>
+<div class="cards">{"".join(f'<a class="card pic" href="/guides/{s_}/"><img src="/og/t/{s_}.webp" width="480" height="252" alt="{html.escape(t_)}" loading="lazy"><span><b>{html.escape(t_)}</b><small>{html.escape(d_)}</small></span></a>' for s_, t_, d_, _x in GUIDES[:4])}</div>
+<div class="btns" style="margin-top:12px"><a class="item" href="{YT}?sub_confirmation=1" target="_blank" rel="noopener">▶️ Watch on YouTube<small>Daily GTA 6 Shorts and news</small><span aria-hidden="true">→</span></a></div>
 {deals_html()}
 <div class="btns">
 <a class="item" href="/guides/gta-6-deals/">🏷️ GTA 6 deals and discount codes<small>What's real this week, and the "free code" scams</small><span aria-hidden="true">→</span></a>
