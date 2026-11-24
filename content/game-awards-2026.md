@@ -51,3 +51,5 @@ Every template: `text_es` + `chart_es` (Spanish: "GTA seis", numbers as words), 
 style (one CAPS word + one emoji), pinned comments EN/ES, sources (official thegameawards.com winners list + 2 outlets:
 IGN, GameSpot, VGC, Variety, The Verge, Polygon, Kotaku), `#ViceReplayBreaking` at the end of the night Short's
 description. No story spoilers.
+
+**Website (Nov 23):** vicereplay.com/guides/gta-6-game-awards/ (+ ES /es/guias/gta-6-premios-game-awards/). Every Game Awards video links it (`guide` key). After the long video goes public (Sun Dec 6), put its id in `site/guides/gta-6-game-awards.json` `video` and republish; on Dec 10 night, add the winners to both guides.
