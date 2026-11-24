@@ -1,0 +1,77 @@
+{
+ "slug": "gta-6-criminal-profile",
+ "lang": "en",
+ "pair": "perfil-criminal-gta-6",
+ "title": "GTA 6 Criminal Profile: All Levels and How to Lower It",
+ "h1": "GTA 6 <span>criminal profile</span>: levels and how to lower it",
+ "desc": "How GTA 6's criminal profile works: the four levels from Professional to Psycho, the Shattered state you can't come back from, and how to lower your profile.",
+ "date": "2026-11-24",
+ "video": null,
+ "card": [
+  "GTA 6",
+  "CRIMINAL PROFILE",
+  "vice-city-15.jpg"
+ ],
+ "lede": "GTA 6 doesn't just track <i>whether</i> you commit crimes, it tracks <b>how</b>. Your <b>criminal profile</b> runs from <b>Professional</b> to <b>Psycho</b>, Jason and Lucia each have their own, and if you push it too far it can <b>shatter</b> for the rest of the game. Here's every level and how to bring yours back down.",
+ "sections": [
+  [
+   "What the criminal profile is",
+   "<p>Think Red Dead Redemption 2's honor meter, but for crime. The profile watches how you work: a quiet job with a clean getaway reads as professional, a bloodbath reads as psycho. PC Gamer and GamesRadar both compare it to RDR2's honor system.</p><p><b>Jason and Lucia are tracked separately</b> (Notebookcheck and others), so one can be a professional while the other isn't.</p>"
+  ],
+  [
+   "All criminal profile levels",
+   "<ol class=\"list\"><li><b>Professional</b>: clean, careful, no unnecessary violence.</li><li><b>Aggressive</b>: more force than the job needed.</li><li><b>Violent</b>: a habit of extra violence.</li><li><b>Psycho</b>: chaos as the default.</li><li><b>Shattered</b>: the point of no return (see below).</li></ol><p class=\"meta\">Guides mostly agree on the first four names (GTABase calls it \"Professional to Psycho\"); one guide uses \"Hardened\" for the second step, and some call the broken state \"Irredeemable\" instead of \"Shattered\".</p>"
+  ],
+  [
+   "How to lower your criminal profile",
+   "<p>The guides agree on the direction: <b>stop going beyond what the job needs</b>. Rockstar's Rob Nelson reportedly described it as the profile shifting when you <i>consistently</i> do unnecessary things, so one messy moment won't flip it, and one clean job won't fix it.</p><ul class=\"list\"><li>Do jobs quietly and leave without a trail.</li><li>No extra kills: if it isn't needed for the job, don't.</li><li>Keep it up over several jobs; the profile follows your habits, not a single mission.</li><li>Want to experiment? Make a manual save first. You have 15 slots, and you can't save during a mission.</li></ul>"
+  ],
+  [
+   "Can you fix a Shattered profile?",
+   "<p>Not in that playthrough, according to PC Gamer, Notebookcheck and Dexerto: once it shatters the game stops scoring you and it stays that way. The only way back is a save from before it happened, which is why the save tip above matters.</p>"
+  ]
+ ],
+ "faq": [
+  [
+   "How do you lower your criminal profile in GTA 6?",
+   "Stop going beyond what the job needs: clean getaways, no extra kills, and keep it up over several jobs. It follows your habits, not one mission."
+  ],
+  [
+   "What are the criminal profile levels in GTA 6?",
+   "Professional, Aggressive, Violent and Psycho, plus a broken Shattered state (some guides say Irredeemable). Jason and Lucia each have their own."
+  ],
+  [
+   "Can you undo a Shattered criminal profile?",
+   "Not in that playthrough, according to PC Gamer and Notebookcheck. Load a save from before it happened."
+  ]
+ ],
+ "gear": [
+  "game"
+ ],
+ "sources": [
+  [
+   "PC Gamer: GTA 6 honor system, how your criminal profile works",
+   "https://www.pcgamer.com/games/grand-theft-auto/gta-6-criminal-profile-honor-system-explained/"
+  ],
+  [
+   "PC Gamer: the criminal profile includes a 'shattered' state",
+   "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-criminal-profile-system-sounds-pretty-interesting-isnt-a-direct-copy-of-red-deads-honor-system/"
+  ],
+  [
+   "GamesRadar: GTA 6's criminal profile tracks how heinous your crimes are",
+   "https://www.gamesradar.com/games/grand-theft-auto/gta-6s-criminal-profile-will-track-how-heinous-your-crimes-are-just-like-red-dead-redemption-2s-honor-system/"
+  ],
+  [
+   "Notebookcheck: a permanent point of no return, Jason and Lucia tracked separately",
+   "https://www.notebookcheck.net/GTA-VI-honor-system-adds-permanent-point-of-no-return-as-Jason-and-Lucia-track-separately.1387694.0.html"
+  ],
+  [
+   "GTABase: GTA 6 criminal profile explained, professional to psycho",
+   "https://www.gtabase.com/articles/gta-6/gta-6-criminal-profile-explained-professional-to-psycho"
+  ],
+  [
+   "Insider Gaming: all criminal profiles explained",
+   "https://insider-gaming.com/all-criminal-profiles-explained-gta-6/"
+  ]
+ ]
+}

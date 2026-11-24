@@ -1,0 +1,226 @@
+{
+ "title": "GTA 6 Criminal Profile: It Can Give Up on You",
+ "slug": "gta6-criminal-profile",
+ "series": "How To",
+ "format": "tips/discovery",
+ "mood": "tension",
+ "use_gameplay": false,
+ "style": "vice (lettering cards, payoff-first hook, Nov 24)",
+ "short_title": "GTA 6 tracks how evil you are #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 tracks how evil you are #GTA6 #Shorts",
+  "GTA 6 criminal profile: professional or psycho? #GTA6 #Shorts",
+  "How to lower your criminal profile in GTA 6 #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6's criminal profile tracks how you commit crimes, a bit like Red Dead 2's honor. Four levels: Professional, Aggressive, Violent, Psycho, and Jason and Lucia each have their own. Push it too far and it can shatter (some guides say Irredeemable): locked for the rest of the game. To bring it back, cut the unnecessary violence: clean getaways, no extra kills. Full guide: vicereplay.com (Guides). No story spoilers.\n\nSources: PC Gamer, GamesRadar, Notebookcheck, GTABase, Insider Gaming.",
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "Be honest: professional or psycho? 👇",
+ "short_pinned_comment_es": "Sé sincero: ¿profesional o psicópata? 👇",
+ "short_es": {
+  "title": "GTA 6 sabe lo MALO que eres 😈 #GTA6 #Shorts",
+  "description": "El perfil criminal de GTA 6 registra cómo cometes tus crímenes, como el honor de Red Dead 2. Cuatro niveles: Profesional, Agresivo, Violento y Psicópata, y Jason y Lucia tienen el suyo. Si te pasas, se puede romper (algunas guías dicen Irredimible) y queda bloqueado para el resto de la partida. Para bajarlo: menos violencia innecesaria. Guía en vicereplay.com. Sin spoilers. Fuentes: PC Gamer, GamesRadar, Notebookcheck, GTABase, Insider Gaming.",
+  "tags": [
+   "GTA 6 perfil criminal",
+   "GTA 6 honor",
+   "GTA 6 consejos",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "tags": [
+  "GTA 6 criminal profile",
+  "GTA 6 how to lower criminal profile",
+  "GTA 6 honor system",
+  "GTA 6 psycho",
+  "GTA 6 tips",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips"
+ ],
+ "guide": "gta-6-criminal-profile",
+ "sources": [
+  "PC Gamer: GTA 6 honor system, how your criminal profile works: https://www.pcgamer.com/games/grand-theft-auto/gta-6-criminal-profile-honor-system-explained/",
+  "PC Gamer: the criminal profile includes a 'shattered' state: https://www.pcgamer.com/games/grand-theft-auto/gta-6s-criminal-profile-system-sounds-pretty-interesting-isnt-a-direct-copy-of-red-deads-honor-system/",
+  "GamesRadar: GTA 6's criminal profile tracks how heinous your crimes are: https://www.gamesradar.com/games/grand-theft-auto/gta-6s-criminal-profile-will-track-how-heinous-your-crimes-are-just-like-red-dead-redemption-2s-honor-system/",
+  "Notebookcheck: a permanent point of no return, Jason and Lucia tracked separately: https://www.notebookcheck.net/GTA-VI-honor-system-adds-permanent-point-of-no-return-as-Jason-and-Lucia-track-separately.1387694.0.html",
+  "GTABase: GTA 6 criminal profile explained, professional to psycho: https://www.gtabase.com/articles/gta-6/gta-6-criminal-profile-explained-professional-to-psycho",
+  "Insider Gaming: all criminal profiles explained: https://insider-gaming.com/all-criminal-profiles-explained-gta-6/"
+ ],
+ "facts_note": "Nov 24 (search gap 'gta 6 how to lower criminal profile'): tracks HOW you commit crimes, RDR2-honor-like (PC Gamer, GamesRadar, Destructoid); separate profiles for Jason and Lucia (Notebookcheck + others); four levels Professional/Aggressive/Violent/Psycho (GTABase 'professional to psycho', Beebom, others; one guide says 'Hardened'); a fifth broken state, 'Shattered' (PC Gamer) or 'Irredeemable' (some guides), permanent (Notebookcheck, Dexerto 'gives up on you'): both names stated. Lower it by cutting unnecessary violence (GTABase, Insider Gaming, guides; Rob Nelson reportedly: it shifts when you consistently go beyond what's necessary). What each level changes in play isn't settled: left out. Re-check right before posting.",
+ "short": [
+  {
+   "headline": "HOW EVIL ARE YOU?",
+   "headline_es": "¿CUÁN MALO ERES?",
+   "text": "GTA 6 tracks how evil you are. It can give up on you.",
+   "text_es": "GTA seis sabe lo malo que eres. Y te puede dar por perdido.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 TRACKS",
+     "HOW EVIL YOU ARE"
+    ],
+    "pink": [
+     "HOW EVIL YOU ARE"
+    ],
+    "seed": 201
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 SABE",
+     "LO MALO QUE ERES"
+    ],
+    "pink": [
+     "LO MALO QUE ERES"
+    ],
+    "seed": 201
+   }
+  },
+  {
+   "headline": "CRIMINAL PROFILE",
+   "headline_es": "PERFIL CRIMINAL",
+   "text": "Four levels: professional, aggressive, violent, psycho. Jason and Lucia each get their own.",
+   "text_es": "Cuatro niveles: profesional, agresivo, violento y psicópata. Jason y Lucia tienen el suyo.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "CRIMINAL PROFILE",
+    "items": [
+     [
+      "Professional",
+      "1"
+     ],
+     [
+      "Aggressive",
+      "2"
+     ],
+     [
+      "Violent",
+      "3"
+     ],
+     [
+      "Psycho",
+      "4"
+     ]
+    ],
+    "seed": 201,
+    "src": "PC Gamer · GamesRadar · GTABase"
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "PERFIL CRIMINAL",
+    "items": [
+     [
+      "Profesional",
+      "1"
+     ],
+     [
+      "Agresivo",
+      "2"
+     ],
+     [
+      "Violento",
+      "3"
+     ],
+     [
+      "Psicópata",
+      "4"
+     ]
+    ],
+    "seed": 201,
+    "src": "PC Gamer · GamesRadar · GTABase"
+   }
+  },
+  {
+   "headline": "TOO FAR?",
+   "headline_es": "¿TE PASASTE?",
+   "text": "Push it too far and it shatters. Locked for the rest of the game.",
+   "text_es": "Si te pasas, se rompe. Bloqueado para el resto de la partida.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Too far, and it shatters. Locked for good.",
+    "pink": [
+     "shatters"
+    ],
+    "sub": "some guides call it Irredeemable",
+    "seed": 201,
+    "src": "PC Gamer · Notebookcheck"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Si te pasas, se rompe. Para siempre.",
+    "pink": [
+     "se rompe"
+    ],
+    "sub": "algunas guías lo llaman Irredimible",
+    "seed": 201,
+    "src": "PC Gamer · Notebookcheck"
+   }
+  },
+  {
+   "headline": "TO LOWER IT",
+   "headline_es": "PARA BAJARLO",
+   "text": "To bring it back: clean getaways, no extra kills.",
+   "text_es": "Para bajarlo: huidas limpias, sin muertes de más.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Clean getaways. No extra kills.",
+    "pink": [
+     "No extra kills"
+    ],
+    "seed": 201,
+    "src": "GTABase · Insider Gaming"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Huidas limpias. Sin muertes de más.",
+    "pink": [
+     "Sin muertes de más"
+    ],
+    "seed": 201,
+    "src": "GTABase · Insider Gaming"
+   }
+  },
+  {
+   "headline": "WHICH ARE YOU?",
+   "headline_es": "¿CUÁL ERES?",
+   "text": "So, professional or psycho? Tell me, because",
+   "text_es": "¿Profesional o psicópata? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "PROFESSIONAL",
+     "OR PSYCHO?"
+    ],
+    "pink": [
+     "OR PSYCHO?"
+    ],
+    "seed": 201
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿PROFESIONAL",
+     "O PSICÓPATA?"
+    ],
+    "pink": [
+     "O PSICÓPATA?"
+    ],
+    "seed": 201
+   }
+  }
+ ]
+}
