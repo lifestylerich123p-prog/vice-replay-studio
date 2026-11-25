@@ -38,11 +38,11 @@ Read this first instead of searching the repo.
 | 2026-11-24 | gta6-trading-cards | Short | GTA 6 Has 480 Trading Cards: How to Cash Them | - |
 | 2026-11-24 | gta6-sunken-treasure | Short | GTA 6 Sunken Treasure: Easy Early Money | - |
 | 2026-11-24 | gta6-stunt-jumps | Short | GTA 6 Stunt Jumps: 130 of Them, and How to Find Them | - |
-| 2026-11-24 | gta6-stream-wars | video | GTA 6 Stream Wars: IShowSpeed vs Everyone (Real Numbers) | - |
+| 2026-11-24 | gta6-stream-wars | video | GTA 6 Stream Wars: IShowSpeed vs Everyone (Real Numbers) | news: fmE0eA1ayf4 |
 | 2026-11-24 | gta6-skunk-ape-where | Short | Where to Find GTA 6's Bigfoot | - |
-| 2026-11-24 | gta6-shoe-store-where | Short | GTA 6 Shoe Store: Where to Buy Shoes | - |
+| 2026-11-24 | gta6-shoe-store-where | Short | GTA 6 Shoe Store: Where to Buy Shoes | short: CGAd-LB82d4 |
 | 2026-11-24 | gta6-red-dead-easter-eggs | Short | 2 Red Dead Easter Eggs in GTA 6 | - |
-| 2026-11-24 | gta6-money-tier-list | Short | Every Way to Make Money in GTA 6, Ranked | - |
+| 2026-11-24 | gta6-money-tier-list | Short | Every Way to Make Money in GTA 6, Ranked | short: iUMOzeRaG7A |
 | 2026-11-24 | gta6-mod-shops | Short | Where to Mod Your Car in GTA 6 | - |
 | 2026-11-24 | gta6-military-base-jets | Short | Where to Find Fighter Jets in GTA 6 | - |
 | 2026-11-24 | gta6-mapa-oficial-es | Short | El mapa oficial de GTA 6 en HD | - |
@@ -56,13 +56,13 @@ Read this first instead of searching the repo.
 | 2026-11-24 | gta6-early-helicopter | Short | GTA 6's Easiest Early Helicopter | - |
 | 2026-11-24 | gta6-dexter-apartment-map | Short | Dexter's Apartment in GTA 6 | - |
 | 2026-11-24 | gta6-criminal-profile | Short | GTA 6 Criminal Profile: It Can Give Up on You | - |
-| 2026-11-24 | gta6-cops-remember | Short | GTA 6 Cops Remember Your Outfit: How to Lose Them | - |
+| 2026-11-24 | gta6-cops-remember | Short | GTA 6 Cops Remember Your Outfit: How to Lose Them | short: h9gMGI8gUiU |
 | 2026-11-24 | gta6-bad-bunny-radio-es | Short | Bad Bunny tiene su propia radio en GTA 6 | - |
 | 2026-11-24 | gta6-2021-house | Short | GTA 6's House That Was Hidden in a 2021 Game | - |
 | 2026-11-23 | gta6-vs-red-dead-2 | Short | GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers | - |
 | 2026-11-23 | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | short: sEg8EWL2XPA |
 | 2026-11-23 | gta6-update-no-patch-notes | Short | GTA 6 Got 3 Updates and Zero Patch Notes | short: KI-6wP_Jhik (private) |
-| 2026-11-23 | gta6-ultimate-vs-standard | Short | GTA 6: The $100 Edition Beat the $80 One | - |
+| 2026-11-23 | gta6-ultimate-vs-standard | Short | GTA 6: The $100 Edition Beat the $80 One | short: Aln9RLi-KjY |
 | 2026-11-23 | gta6-tier-list-critics | Short | GTA 6 Tier List: Every GTA Ranked by Critics | short: jQbv5GPR3dk |
 | 2026-11-23 | gta6-sin-doblaje-es | Short | GTA 6 no tiene doblaje al español | - |
 | 2026-11-23 | gta6-precio-por-pais-es | Short | GTA 6: cuánto cuesta en cada país | - |
@@ -81,7 +81,7 @@ Read this first instead of searching the repo.
 | 2026-11-23 | gta6-13-years | Short | GTA 6 Took 13 Years. No Other GTA Took Even 6 | - |
 | 2026-11-23 | gta6-10-numbers | video | GTA 6 in 10 Numbers: The First Week, Explained | - |
 | 2026-11-23 | gta-tier-list-sales | Short | Every GTA Ranked by Sales: GTA 5 Gets Its Own Tier | short: aU1Js-p-FCo |
-| 2026-11-23 | gta-tier-list-protagonists | Short | Every GTA Protagonist Ranked: CJ Isn't S Tier | - |
+| 2026-11-23 | gta-tier-list-protagonists | Short | Every GTA Protagonist Ranked: CJ Isn't S Tier | short: OliGdX-eRFY |
 | 2026-11-23 | gta-tier-list-maps | Short | Every GTA Map Ranked: Los Santos Is Only B Tier | - |
 | 2026-11-23 | gta-cities-quiz | Short | GTA Cities Quiz: Only Real Fans Get 3/3 | - |
 | 2026-11-22 | gta6-trailer-views | Short | GTA 6's First Trailer Is Still No. 1 (309M Views) | short: Zb40bCmejBQ |

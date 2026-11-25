@@ -314,11 +314,27 @@
   "posted": "skipped: Nov 24 (studio.ig_stats): our 5 carousels got a median of 0 likes vs 8 for Reels; kept only useful/save-worthy carousels (secrets map, week-one numbers, Game Awards odds). Owner: 'continue checks and ways to help'."
  },
  {
+  "at": "2026-11-25 15:35",
+  "episode": "episodes/gta6-stream-wars.json",
+  "item": "news"
+ },
+ {
   "at": "2026-11-25 17:30",
   "episode": "episodes/gta6-beginner-tips-nobody-tells-you.json",
   "item": "news",
   "note": "moved to Wed 5:30 PM: Sunday 8:30 PM went to the IShowSpeed top-3 Reel (4/day cap)",
   "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
+ },
+ {
+  "at": "2026-11-27 12:35",
+  "episode": "episodes/gta6-shoe-store-where.json",
+  "item": "short",
+  "note": "Moved from Wed 8:35 PM (Wed already had 4 Instagram posts; cap 4/day)."
+ },
+ {
+  "at": "2026-11-26 09:35",
+  "episode": "episodes/gta6-ultimate-vs-standard.json",
+  "item": "short"
  },
  {
   "at": "2026-11-26 11:00",
@@ -332,10 +348,25 @@
   "posted": "skipped: YouTube Short unscheduled Nov 22 (owner: replace weak ones with graph/evidence Shorts)"
  },
  {
+  "at": "2026-11-26 11:05",
+  "episode": "episodes/gta6-cops-remember.json",
+  "item": "short"
+ },
+ {
+  "at": "2026-11-26 12:35",
+  "episode": "episodes/gta-tier-list-protagonists.json",
+  "item": "short"
+ },
+ {
   "at": "2026-11-26 15:00",
   "carousel": "content/carousels/gta-tier-list-sales.json",
   "note": "Nov 23: every GTA ranked by sales (Thanksgiving afternoon)",
   "posted": "skipped: Nov 24 (studio.ig_stats): our 5 carousels got a median of 0 likes vs 8 for Reels; kept only useful/save-worthy carousels (secrets map, week-one numbers, Game Awards odds). Owner: 'continue checks and ways to help'."
+ },
+ {
+  "at": "2026-11-27 09:35",
+  "episode": "episodes/gta6-money-tier-list.json",
+  "item": "short"
  },
  {
   "at": "2026-11-27 15:00",
