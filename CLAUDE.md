@@ -31,7 +31,8 @@ official YouTube number; 2026 studies say 1-3 Shorts/day (vidIQ, 10.2M channels:
 ~800K videos: monthly Shorts views keep rising with volume, while 35+ Shorts/month drags long-form). Our scorecard's
 "Shorts that day" table shows no drop per Short on busy days. So: **3 English Shorts/day** (owner Nov 24 "Do it": **2
 map/how-to answers + 1 anchor** a day, Tue GTA 6 vs GTA 5, Wed tier list, Thu quiz; no pure fact Shorts; daily-video.md
-rule 8) (9:30, 11:00, 12:30;
+rule 8; owner Nov 25 "Start posting the maps videos at least one a day": **every day has at least one map Short**, a
+Short with an official-map card; `studio.doctor` warns about any day in the next 7 without one) (9:30, 11:00, 12:30;
 weekends 10, 11 or 12:30, 1:30), a 4th only for breaking news; **long videos only for big events** (Game Awards etc.) **and search guides** that tie a Shorts series together
 (e.g. episodes/gta6-map-secrets-guide.json: chapters per spot, every map Short's "Related video"; guides keep pulling
 search traffic after launch, news recaps don't) until the owner's gameplay arrives

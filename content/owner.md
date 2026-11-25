@@ -339,3 +339,9 @@
   never footage, images or audio from leaked copies (Take-Two copyright takedowns = channel risk). Free tools only:
   web search + our renderer, Kokoro voice, our cards and music; no Everygen/vidIQ credits. The owner uploads it by hand
   (no API upload). Keep it under 15:00 so it uploads without phone verification.
+- 2026-11-25 (owner: "Start posting the maps videos at least one a day"): every day has at least one map Short (a
+  Short with an official-map card) booked. Done that day by moving approved map Shorts out of days that had three
+  (sunken treasure to Thu Nov 26 8:00 AM as a 4th Short since Thursday's three were already uploaded; giant crab to Fri;
+  Skunk Ape to Sat; key cloner and impound app moved back). `studio.doctor` warns about any day in the next 7 with no
+  map Short; new map Shorts still need the owner's "approve". Same day: the trivia video's browser upload stalled at
+  7%, the owner deleted it and said "Upload", so the main chat uploaded it by API (kSufP4pt08I).

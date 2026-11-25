@@ -70,6 +70,34 @@ def queue_clashes():
                 break
     return out
 
+def item_segments(ep, item):
+    """The segments one booked queue item plays: the main video, the Short, or a named extra Short (news/tips/...)."""
+    if item == "main":
+        return ep.get("segments") or []
+    if item == "short":
+        sh = ep.get("short")
+        return (sh.get("segments") if isinstance(sh, dict) else sh) or []
+    extra = next((s for s in ep.get("shorts") or [] if isinstance(s, dict) and s.get("id") == item), {})
+    return extra.get("segments") or []
+
+
+def map_gaps(items, load_episode, start, days=7):
+    """Days (ISO dates) from `start` with no English map Short booked. Owner, Nov 25: "Start posting the maps videos at
+    least one a day". A map Short is a Short with an official-map card (chart type "map")."""
+    have = set()
+    for i in items:
+        en = i.get("en")
+        if not en or i.get("es_only") or i.get("item", "short") == "main":
+            continue
+        try:
+            segs = item_segments(load_episode(i["slug"]), i.get("item", "short"))
+        except (OSError, ValueError, KeyError):
+            continue
+        if any(isinstance(s.get("chart"), dict) and s["chart"].get("type") == "map" for s in segs):
+            have.add(en[0])
+    return [d for d in ((start + dt.timedelta(days=k)).isoformat() for k in range(days)) if d not in have]
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--fix", action="store_true")
@@ -89,6 +117,18 @@ def main():
     # one, so the uploader would have treated it as already posted). Every booked item must be new.
     for msg in queue_clashes():
         bad.append(msg)
+    # 1a2. At least one map Short a day (owner, Nov 25: "Start posting the maps videos at least one a day")
+    try:
+        root = LEARN.parent.parent
+        gaps = map_gaps(json.loads((LEARN / "approved_queue.json").read_text())["items"],
+                        lambda s: json.loads((root / "episodes" / f"{s}.json").read_text()), dt.date.today())
+        if gaps:
+            warn.append(f"No map Short booked on {', '.join(gaps)} (owner Nov 25: at least one map video a day): "
+                        f"move one in from a day with two or more, or make a new \"where is X\" Short")
+        else:
+            ok.append("A map Short is booked every day for the next 7 days")
+    except (OSError, ValueError, KeyError) as e:
+        warn.append(f"Map-a-day check failed: {type(e).__name__}")
     # 1c. Booked videos in the next 48 h must be rendered, 30 fps and past their quality check (Nov 24)
     try:
         from . import readiness
