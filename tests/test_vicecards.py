@@ -10,6 +10,19 @@ def _frame(spec, t=1.0, seed=0):
     return vicecards.DRAW[spec["type"]](vicecards.frame_bg(still, hz, t, W, H), dict(spec, _dur=3.0), t, W, H)
 
 
+def test_kinetic_sub_line_only_on_vertical_cards():
+    """Nov 25: the kinetic sub line collided with captions in 16:9 videos, so landscape cards skip it."""
+    spec = {"type": "kinetic", "lines": ["THE COPS", "COME FAST"], "_dur": 3.0}
+
+    def draw(w, h, sub):
+        still, hz = vicecards.sky(w, h, 0)
+        s = dict(spec, sub="pick an ATM with a clear road out") if sub else dict(spec)
+        return vicecards.kinetic_frame(vicecards.frame_bg(still, hz, 2.8, w, h), s, 2.8, w, h).tobytes()
+
+    assert draw(384, 216, True) == draw(384, 216, False)  # landscape: no sub line
+    assert draw(216, 384, True) != draw(216, 384, False)  # vertical Short: sub line drawn
+
+
 def test_every_card_draws_a_full_frame():
     specs = [{"type": "kinetic", "lines": ["13 YEARS", "IT'S HERE"], "pink": ["IT'S HERE"], "sub": "x"},
              {"type": "countdown", "n": 2, "of": 4, "label": "Bigfoot is real", "sub": "the Skunk Ape"},

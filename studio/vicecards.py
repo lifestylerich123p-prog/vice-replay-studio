@@ -268,7 +268,9 @@ def kinetic_frame(base, spec, t, w, h):
             place(img, spr, (x0 + x1) / 2 + ox, cy + oy, scale=1.0 + pulse)
         else:
             place(img, spr, (x0 + x1) / 2 + ox, cy + oy, scale=1.0 + 0.45 * (1 - _back(p)), alpha=min(1.0, p * 1.6))
-    if spec.get("sub") and t > times[-1] + 0.2 and spec.get("band") != "top":
+    # Nov 25: in 16:9 the sub line lands in the caption band and collides with the captions + source line (trivia and
+    # ATM guide check sheets); the captions already carry that line, so landscape cards skip it. Shorts are unchanged.
+    if spec.get("sub") and t > times[-1] + 0.2 and spec.get("band") != "top" and w <= h:
         d = ImageDraw.Draw(img)  # Nov 24 review: the grey 4% sub line was unreadable on a phone; white, bigger, plated
         f = brand.font(brand.BODY_FONT, int(w * 0.047))
         sub = str(spec["sub"])
