@@ -1,4 +1,4 @@
-# System health (2026-11-24 20:48 UTC, `python -m studio.doctor`)
+# System health (2026-11-25 00:27 UTC, `python -m studio.doctor`)
 
 - 🟢 YouTube connection works
 - 🟢 Every video booked in the next 48 h is rendered and passed its checks
@@ -9,4 +9,4 @@
 - 🟢 Instagram @vice.replaytv works (30 posts, 15 followers; 4/100 posts used today)
 - 🟢 Website is up
 - 🟢 Today's daily run is saved on GitHub
-- 🟢 Disk: 20.8 GB free
+- 🟢 Disk: 23.5 GB free
