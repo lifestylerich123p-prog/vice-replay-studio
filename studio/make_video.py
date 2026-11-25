@@ -914,7 +914,11 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
         mood = ep.get("mood") or {"news": "hype", "comparison": "tension", "ranking": "tension", "quiz": "bright",
                                   "details": "bright"}.get(ep.get("format"), "night")
         lib_dir = ROOT / "assets" / "music"
-        if mood == "night" or mood not in sound.MOODS:
+        if mood == "latino":  # Nov 24: our own dembow/reggaeton beat for the Spanish channel's Miami Latino Shorts
+            music = lib_dir / "vr-latino.wav"
+            if not music.exists():
+                music = sound.dembow(music)
+        elif mood == "night" or mood not in sound.MOODS:
             music = lib_dir / "vice-replay-theme.wav"
             if not music.exists():
                 music = sound.theme(music)

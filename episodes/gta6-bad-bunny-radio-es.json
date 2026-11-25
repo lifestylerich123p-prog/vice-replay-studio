@@ -3,7 +3,7 @@
   "slug": "gta6-bad-bunny-radio-es",
   "series": "Miami latino",
   "format": "news",
-  "mood": "hype",
+  "mood": "latino",
   "use_gameplay": false,
   "es_only": true,
   "style": "vice (GTA 6-style lettering cards + card photos, Nov 24)",
@@ -12,7 +12,7 @@
   "short_description": "Spanish-channel-only Short (owner Nov 24: target Miami's Latino community). Bad Bunny and RaiNao host Cocoteo FM. We only talk about the station: no Bad Bunny music, no artist images (Content ID / likeness).",
   "short_es": {
     "title": "En el MIAMI de GTA 6 el DJ es Bad Bunny 🐰 #GTA6 #Shorts",
-    "description": "En GTA 6, Bad Bunny es DJ: presenta Cocoteo FM como El Martillo, junto a RaiNao como La Gata. La emisora pone música latina de hoy: bachata, merengue, dembow y reguetón, y en su lista está «Otra Noche en Miami», en un juego cuya Vice City es Miami. ¿Desde qué parte de Miami nos ves? Dímelo abajo.\n\nFuentes: Rolling Stone, Complex, Yahoo, GTABase, KeenGamer, Hola.",
+    "description": "En GTA 6, Bad Bunny es DJ: presenta Cocoteo FM como El Martillo, junto a RaiNao como La Gata. La emisora pone música latina de hoy: bachata, merengue, dembow y reguetón, y en su lista está «Otra Noche en Miami», en un juego cuya Vice City es Miami. ¿Desde qué parte de Miami nos ves, mi gente? Dale, dímelo abajo.\n\nFuentes: Rolling Stone, Complex, Yahoo, GTABase, KeenGamer, Hola.",
     "tags": [
       "Bad Bunny GTA 6",
       "Cocoteo FM",
@@ -43,7 +43,7 @@
     "#badbunny",
     "#miami"
   ],
-  "voice_es_note": "Spanish voice: Everygen Viral Adam (5 lines, 5 credits, Nov 24, Spanish chat; owner wanted it ASAP)",
+  "voice_es_note": "Spanish voice: Everygen Viral Adam (5 lines Nov 24 + lines 1 and 5 re-voiced with Latino slang, 2 credits; claimed on the ledger)",
   "sources": [
     "Rolling Stone - Bad Bunny, Lana Del Rey to Light Up the Leonida Airwaves as 'GTA VI' Radio Hosts (El Martillo and La Gata, Cocoteo FM, modern Latin music): https://www.rollingstone.com/music/music-news/bad-bunny-lana-del-rey-gta-6-radio-stations-1235639652/",
     "Complex - Grand Theft Auto VI Radio Stations Feature Bad Bunny, Burna Boy, Lana Del Rey (bachata, merengue, dembow, reggaeton): https://www.complex.com/pop-culture/a/alex-ocho/gta-6-radio-stations-hosts-bad-bunny-burna-boy",
@@ -56,8 +56,8 @@
     {
       "headline": "VICE CITY = MIAMI",
       "headline_es": "VICE CITY = MIAMI",
-      "text": "In GTA 6's Miami, the DJ is Bad Bunny.",
-      "text_es": "En el Miami de GTA seis, el DJ es Bad Bunny.",
+      "text": "My people, in GTA 6's Miami, the DJ is Bad Bunny.",
+      "text_es": "Mi gente, en el Miami de GTA seis, el DJ es Bad Bunny.",
       "keep_media": true,
       "chart": {
         "type": "kinetic",
@@ -216,8 +216,8 @@
     {
       "headline": "¿DESDE DÓNDE?",
       "headline_es": "¿DESDE DÓNDE?",
-      "text": "Which part of Miami are you watching from? Tell me below, because",
-      "text_es": "¿Desde qué parte de Miami nos ves? Dímelo abajo, porque",
+      "text": "Which part of Miami are you watching from? Come on, tell me below, because",
+      "text_es": "¿Desde qué parte de Miami nos ves? Dale, dímelo abajo, porque",
       "keep_media": true,
       "chart": {
         "type": "kinetic",
@@ -229,7 +229,7 @@
         "pink": [
           "MIAMI?"
         ],
-        "sub": "dímelo abajo",
+        "sub": "¡dale, dímelo abajo!",
         "locale": "es",
         "seed": 3,
         "bg": "photo:media/official/vice-city-08.jpg"
@@ -244,7 +244,7 @@
         "pink": [
           "MIAMI?"
         ],
-        "sub": "dímelo abajo",
+        "sub": "¡dale, dímelo abajo!",
         "locale": "es",
         "seed": 3,
         "bg": "photo:media/official/vice-city-08.jpg"

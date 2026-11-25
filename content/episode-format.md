@@ -171,3 +171,9 @@ AI graphics (Everygen, cleared in `rights/registry.json` as `ai-backgrounds`, Vi
 - vicereplay.com uses them too (built by `tools/site_guides.py`): homepage hero = the sting (plays once, then holds;
   skipped for reduced-motion/data-saver), banners on /guides/ (news-skyline), /es/ (swamp-nature), /links/
   (night-streets) and /gear/ (deals-gear), and picture cards from each guide's share image (og/t/).
+
+**Latino sound (Nov 24, owner: "the video itself has to have that Latino way")**: `"mood": "latino"` plays our own
+dembow/reggaeton beat (studio/sound.py `dembow`, Content-ID safe) instead of synthwave; use it on Spanish-channel Miami
+Latino Shorts. `"music_level"` (default 0.16) and `"music_duck"` (default 6) make the music louder / duck less: 0.5 / 2.5
+puts the beat ~8 dB under the voice, clearly heard on a phone.
+
