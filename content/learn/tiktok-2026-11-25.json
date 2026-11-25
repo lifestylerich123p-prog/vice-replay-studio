@@ -1,176 +1,237 @@
 {
- "source": "Windsor.ai tiktok_organic, pulled 2026-11-25 (last 30 days)",
+ "source": "Windsor.ai tiktok_organic, pulled 2026-11-25 1 PM ET (last 30 days incl. today); replaces the 2026-11-25 night pull",
+ "newest_post": "2026-11-25",
  "videos": [
   {
    "posted": "2026-11-17",
-   "caption": "GTA 6 at 9 PM the night before?",
+   "posted_at_utc": "2026-11-17T23:13:45",
+   "caption": "GTA 6 at 9 PM the night before? 🕘",
    "lang": "en",
    "views": 136,
    "full_watch_rate": 0.034,
    "avg_watch_s": 8.33,
-   "duration_s": 34.8
+   "duration_s": 34.8,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-17",
-   "caption": "GTA 6 just got nominated for GAME OF THE YEAR",
+   "posted_at_utc": "2026-11-17T23:00:22",
+   "caption": "GTA 6 just got nominated for GAME OF THE YEAR 🏆",
    "lang": "en",
    "views": 136,
    "full_watch_rate": 0.0194,
    "avg_watch_s": 5.1,
-   "duration_s": 34.9
+   "duration_s": 34.906,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-17",
-   "caption": "IShowSpeed heads to New Zealand for GTA 6?",
+   "posted_at_utc": "2026-11-17T22:16:36",
+   "caption": "IShowSpeed heads to New Zealand for GTA 6? ✈️",
    "lang": "en",
    "views": 165,
    "full_watch_rate": 0.0276,
    "avg_watch_s": 4.51,
-   "duration_s": 29.8
+   "duration_s": 29.767,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-17",
-   "caption": "GTA 6 NZ trick: 18 hours early?",
+   "posted_at_utc": "2026-11-17T22:15:50",
+   "caption": "GTA 6 NZ trick: 18 hours early? 🌏",
    "lang": "en",
    "views": 914,
    "full_watch_rate": 0.0543,
    "avg_watch_s": 9.04,
-   "duration_s": 32.4
+   "duration_s": 32.403,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-17",
-   "caption": "Lucia's actress is CONFIRMED before launch",
+   "posted_at_utc": "2026-11-17T22:11:04",
+   "caption": "Lucia's actress is CONFIRMED before launch 👀",
    "lang": "en",
    "views": 234,
    "full_watch_rate": 0.0314,
    "avg_watch_s": 4.5,
-   "duration_s": 27.9
+   "duration_s": 27.902,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-18",
-   "caption": "GTA 6 ya salió en Nueva Zelanda (la trampa)",
+   "posted_at_utc": "2026-11-18T19:38:56",
+   "caption": "GTA 6 ya salió en Nueva Zelanda 🌏 (la trampa)",
    "lang": "es",
    "views": 202,
    "full_watch_rate": 0.0481,
    "avg_watch_s": 5.03,
-   "duration_s": 30.6
+   "duration_s": 30.596,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-18",
-   "caption": "GTA 6 is already OUT in New Zealand (the catch)",
+   "posted_at_utc": "2026-11-18T19:38:14",
+   "caption": "GTA 6 is already OUT in New Zealand 🌏 (the catch)",
    "lang": "en",
    "views": 276,
    "full_watch_rate": 0.0704,
    "avg_watch_s": 9.87,
-   "duration_s": 34.5
+   "duration_s": 34.502,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-18",
-   "caption": "Rockstar's boss Sam Houser just broke his silence",
+   "posted_at_utc": "2026-11-18T17:59:46",
+   "caption": "Rockstar's boss Sam Houser just broke his silence on GTA 6 👀",
    "lang": "en",
-   "views": 44,
-   "full_watch_rate": 0.0,
-   "avg_watch_s": 2.41,
-   "duration_s": 29.1
+   "views": 45,
+   "full_watch_rate": 0,
+   "avg_watch_s": 2.37,
+   "duration_s": 29.134,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-18",
-   "caption": "El jefe de Rockstar, Sam Houser, rompió el silencio",
+   "posted_at_utc": "2026-11-18T17:59:28",
+   "caption": "El jefe de Rockstar, Sam Houser, rompió el silencio sobre GTA 6 👀",
    "lang": "es",
    "views": 125,
    "full_watch_rate": 0.0073,
    "avg_watch_s": 2.9,
-   "duration_s": 25.4
+   "duration_s": 25.4,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-18",
-   "caption": "Esos trucos de GTA 6 son FALSOS",
+   "posted_at_utc": "2026-11-18T02:17:49",
+   "caption": "Esos trucos de GTA 6 son FALSOS 🚫",
    "lang": "es",
    "views": 87,
-   "full_watch_rate": 0.0,
+   "full_watch_rate": 0,
    "avg_watch_s": 1.82,
-   "duration_s": 30.2
+   "duration_s": 30.213,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-18",
-   "caption": "Those GTA 6 cheat codes are FAKE",
+   "posted_at_utc": "2026-11-18T01:31:08",
+   "caption": "Those GTA 6 cheat codes are FAKE 🚫",
    "lang": "en",
-   "views": 139,
+   "views": 140,
    "full_watch_rate": 0.0458,
    "avg_watch_s": 5.03,
-   "duration_s": 34.0
+   "duration_s": 34,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-19",
-   "caption": "GTA 6 en PS5 vs PS5 Pro: ya hay veredicto",
+   "posted_at_utc": "2026-11-19T23:44:15",
+   "caption": "GTA 6 en PS5 vs PS5 Pro: ya hay veredicto 🎮",
    "lang": "es",
    "views": 177,
-   "full_watch_rate": 0.0529,
-   "avg_watch_s": 17.24,
-   "duration_s": 35.9
+   "full_watch_rate": 0.0521,
+   "avg_watch_s": 16.99,
+   "duration_s": 35.867,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-19",
-   "caption": "GTA 6 on PS5 vs PS5 Pro: the verdict is in",
+   "posted_at_utc": "2026-11-19T23:43:57",
+   "caption": "GTA 6 on PS5 vs PS5 Pro: the verdict is in 🎮",
    "lang": "en",
-   "views": 187,
-   "full_watch_rate": 0.0485,
-   "avg_watch_s": 17.55,
-   "duration_s": 39.7
+   "views": 188,
+   "full_watch_rate": 0.0478,
+   "avg_watch_s": 17.39,
+   "duration_s": 39.71,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-19",
-   "caption": "No puedes entrar a GTA 6? Revisa esto",
+   "posted_at_utc": "2026-11-19T23:42:57",
+   "caption": "No puedes entrar a GTA 6? Revisa esto 🔧",
    "lang": "es",
-   "views": 269,
-   "full_watch_rate": 0.0784,
-   "avg_watch_s": 8.42,
-   "duration_s": 32.3
+   "views": 272,
+   "full_watch_rate": 0.0769,
+   "avg_watch_s": 8.35,
+   "duration_s": 32.289,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-19",
-   "caption": "Can't get into GTA 6? Check these 2 things",
+   "posted_at_utc": "2026-11-19T23:42:29",
+   "caption": "Can't get into GTA 6? Check these 2 things 🔧",
    "lang": "en",
-   "views": 197,
-   "full_watch_rate": 0.039,
-   "avg_watch_s": 6.57,
-   "duration_s": 33.5
+   "views": 205,
+   "full_watch_rate": 0.037,
+   "avg_watch_s": 6.56,
+   "duration_s": 33.534,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-19",
-   "caption": "Los 3 primeros ajustes que debes cambiar en GTA 6",
+   "posted_at_utc": "2026-11-19T23:40:59",
+   "caption": "Los 3 primeros ajustes que debes cambiar en GTA 6 ⚙️",
    "lang": "es",
-   "views": 131,
-   "full_watch_rate": 0.0131,
-   "avg_watch_s": 3.77,
-   "duration_s": 28.2
+   "views": 133,
+   "full_watch_rate": 0.0194,
+   "avg_watch_s": 5.37,
+   "duration_s": 28.187,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-19",
-   "caption": "First 3 settings to change in GTA 6",
+   "posted_at_utc": "2026-11-19T23:40:39",
+   "caption": "First 3 settings to change in GTA 6 ⚙️",
    "lang": "en",
    "views": 118,
    "full_watch_rate": 0.0388,
    "avg_watch_s": 6.75,
-   "duration_s": 32.0
+   "duration_s": 32.005,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-19",
-   "caption": "GTA 6 ya ganó 1.650 MILLONES de dólares",
+   "posted_at_utc": "2026-11-19T23:39:59",
+   "caption": "GTA 6 ya ganó 1.650 MILLONES de dólares 💰",
    "lang": "es",
    "views": 587,
    "full_watch_rate": 0.0483,
    "avg_watch_s": 7.12,
-   "duration_s": 28.0
+   "duration_s": 27.994,
+   "new_followers": 0
   },
   {
    "posted": "2026-11-19",
-   "caption": "GTA 6 already made $1.65 BILLION",
+   "posted_at_utc": "2026-11-19T23:39:34",
+   "caption": "GTA 6 already made $1.65 BILLION 💰",
    "lang": "en",
    "views": 114,
    "full_watch_rate": 0.0231,
    "avg_watch_s": 5.9,
-   "duration_s": 32.0
+   "duration_s": 32,
+   "new_followers": 0
+  },
+  {
+   "posted": "2026-11-25",
+   "posted_at_utc": "2026-11-25T02:25:07",
+   "caption": "En el Miami de GTA 6 el DJ es Bad Bunny 🐰🎧 ¿Desde qué parte de Miami nos ves? 👇",
+   "lang": "es",
+   "views": 119,
+   "full_watch_rate": 0.0308,
+   "avg_watch_s": 5.48,
+   "duration_s": 25.009,
+   "new_followers": 0
+  },
+  {
+   "posted": "2026-11-25",
+   "posted_at_utc": "2026-11-25T02:21:55",
+   "caption": "GTA 6 shoe store: where to buy shoes 👟 Flip Flop House, Key Lento. Save this for when you play 📌",
+   "lang": "en",
+   "views": 2653,
+   "full_watch_rate": 0.1835,
+   "avg_watch_s": 7.07,
+   "duration_s": 11.34,
+   "new_followers": 3
   }
  ]
 }
