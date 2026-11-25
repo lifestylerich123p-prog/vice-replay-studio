@@ -488,14 +488,15 @@
    "slug": "gta6-ufo-where",
    "item": "short",
    "en": [
-    "2026-11-28",
+    "2026-12-07",
     "12:30 PM"
    ],
    "es": [
-    "2026-11-29",
-    "1:30 PM"
+    "2026-12-09",
+    "12:30 PM"
    ],
-   "approved": "Nov 24 ~12:30 PM (owner 'Research those maps pictures more' + 'Approve everything'; the zoom-to-pin map Short offered earlier that day); gate clean; RE-CHECK the facts before upload (owner rule)"
+   "approved": "Nov 24 ~12:30 PM (owner 'Research those maps pictures more' + 'Approve everything'; the zoom-to-pin map Short offered earlier that day); gate clean; RE-CHECK the facts before upload (owner rule)",
+   "moved": "Nov 25 3 AM swap fallback (unschedule blocked): UFO to Mon Dec 7 12:30 PM (its Sat Nov 28 12:30 slot now belongs to gta6-impound-app); Spanish moved after it (winners-only)."
   },
   {
    "slug": "gta6-vercetti-portal",
@@ -632,14 +633,15 @@
    "slug": "gta6-shoe-store-where",
    "item": "short",
    "en": [
-    "2026-11-30",
-    "11:00 AM"
+    "2026-11-25",
+    "8:30 PM"
    ],
    "es": [
     "2026-12-01",
     "1:30 PM"
    ],
-   "approved": "Nov 24 (owner: \"Do what you think will help the channel, all is approved\" + \"investigate and act\"): answers our #1 YouTube search ('gta 6 shoe store', 2,302 views in 28 days); RE-CHECK facts before upload"
+   "approved": "Nov 24 (owner: \"Do what you think will help the channel, all is approved\" + \"investigate and act\"): answers our #1 YouTube search ('gta 6 shoe store', 2,302 views in 28 days); RE-CHECK facts before upload",
+   "moved": "Nov 25 3 AM swap fallback: YouTube unschedule of the Platinum/trailer-views Shorts was blocked by this session's permission check, so those keep their slots; shoe store takes Wed's free 8:30 PM (was Mon Nov 30 11:00 AM, now gta6-trading-cards'). Its Reel goes on a later day (Wed already has 4 Instagram posts)."
   },
   {
    "slug": "gta6-map-secrets-guide",
