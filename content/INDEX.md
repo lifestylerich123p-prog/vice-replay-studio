@@ -24,6 +24,9 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| 2026-11-25 | gta6-trivia-night | video | GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz) | - |
+| 2026-11-25 | gta6-trivia-3-questions | Short | GTA 6 trivia only real fans get right | - |
+| 2026-11-25 | gta6-hacker-hotel-tv | Short | The GTA 6 leak came from a hotel TV | - |
 | 2026-11-24 | gta6-waink-app | Short | GTA 6's WAiNK App: Scan 100 Spots for a Trophy | - |
 | 2026-11-24 | gta6-vs-gta5-online | Short | GTA 6 vs GTA 5 Online: Two Weeks Then, No Date Now | - |
 | 2026-11-24 | gta6-vs-gta5-map | Short | GTA 6 vs GTA 5: The Map Is About Twice the Size | - |
