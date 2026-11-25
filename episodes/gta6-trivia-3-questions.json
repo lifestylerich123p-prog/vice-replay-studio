@@ -1,0 +1,321 @@
+{
+ "title": "GTA 6 trivia only real fans get right",
+ "slug": "gta6-trivia-3-questions",
+ "series": "Quiz",
+ "format": "quiz",
+ "mood": "bright",
+ "use_gameplay": false,
+ "payoff_hook": false,
+ "short_title": "GTA 6 trivia only real fans get right 🧠 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 trivia only real fans get right 🧠 #GTA6 #Shorts",
+  "3 weird GTA 6 facts (quiz) 🧠 #GTA6 #Shorts"
+ ],
+ "short_description": "Three GTA 6 questions. 1: Weird Al Yankovic hosts Vice City FM, the non-stop '80s station (and voices the Burger Shot ads). 2: Jason's pet corn snake is called Dolores. 3: A shop sign in the first trailer refuses cash stored in underwear. Comment your score! 20 more questions in our full GTA 6 trivia video. Full video on the channel ⬇️\n\nSources: Kotaku, AV Club, TheClick, GameOverDrive, Dexerto.",
+ "short_es": {
+  "title": "Trivia de GTA 6 que SOLO los fans aciertan 🧠 #GTA6 #Shorts",
+  "description": "Tres preguntas de GTA 6. 1: Weird Al Yankovic presenta Vice City FM, la emisora de los 80. 2: La serpiente de Jason se llama Dolores. 3: Un cartel del primer tráiler no acepta dinero guardado en ropa interior. ¡Comenta tu puntaje!",
+  "tags": [
+   "quiz GTA 6",
+   "trivia GTA 6",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "short_playlist": "GTA 6 Shorts",
+ "pinned_comment": "Your score? Reply 0, 1, 2 or 3 👇",
+ "short_pinned_comment_es": "¿Tu puntaje? Responde 0, 1, 2 o 3 👇",
+ "cta": "FULL QUIZ ON THE CHANNEL",
+ "cta_es": "QUIZ COMPLETO EN EL CANAL",
+ "tags": [
+  "GTA 6 quiz",
+  "GTA 6 trivia",
+  "GTA 6 facts",
+  "GTA 6 Weird Al",
+  "GTA 6 radio",
+  "GTA 6 Jason snake",
+  "GTA 6 trailer details",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#quiz"
+ ],
+ "sources": [
+  "https://kotaku.com/yes-thats-weird-al-hosting-a-radio-station-in-gta-6-2000758140",
+  "https://www.avclub.com/weird-al-yankovic-radio-dj-grand-theft-auto-iv-gta",
+  "https://www.theclick.gg/?p=119154",
+  "https://gameoverdrive.com.br/gta-6-dolores-cobra-jason/",
+  "https://www.videogameschronicle.com/guide/gta-6-beginners-guide-6-tips-you-need-to-know-before-starting-gta-6/",
+  "https://gameriv.com/gta-6-how-to-get-a-free-focus-boost-by-feeding-dolores-the-snake/",
+  "https://criticalhits.com.br/games/weird-al-assume-a-apresentacao-da-vice-city-fm-em-gta-6/",
+  "https://kotaku.com/grand-theft-auto-gta-6-vi-trailer-jokes-florida-1851074373",
+  "https://dexerto.com/gta/gta-6-hint-finally-found-in-gta-trilogy-after-latest-update-2980211",
+  "https://www.sportskeeda.com/gta/news-gta-6-like-textures-reportedly-found-gta-trilogy-definitive-edition",
+  "https://www.gamingbible.com/news/gta-6-teaser-gta-trilogy-190032-20241115"
+ ],
+ "short": [
+  {
+   "headline": "ONLY REAL FANS",
+   "headline_es": "SOLO FANS DE VERDAD",
+   "text": "Only real GTA 6 fans get all three.",
+   "text_es": "Solo los verdaderos fans de GTA seis aciertan las tres.",
+   "keep_media": true,
+   "payoff": false,
+   "chart": {
+    "type": "text",
+    "text": "Only real fans get 3/3",
+    "pink": [
+     "3/3"
+    ],
+    "seed": 42
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Solo los fans sacan 3/3",
+    "pink": [
+     "3/3"
+    ],
+    "locale": "es",
+    "seed": 42
+   }
+  },
+  {
+   "headline": "QUESTION 1",
+   "headline_es": "PREGUNTA 1",
+   "text": "One. Weird Al is a DJ in GTA 6. Which station does he host?",
+   "text_es": "Uno. Weird Al es DJ en GTA seis. ¿Qué emisora presenta?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "1/3",
+    "q": "Which station does Weird Al host?",
+    "options": [
+     "Swamp Rock 101",
+     "Vice City FM",
+     "Key Lento Talk"
+    ],
+    "answer": 1,
+    "seed": 42
+   },
+   "chart_es": {
+    "type": "quiz",
+    "tag": "1/3",
+    "q": "¿Qué emisora presenta Weird Al?",
+    "options": [
+     "Swamp Rock 101",
+     "Vice City FM",
+     "Key Lento Talk"
+    ],
+    "answer": 1,
+    "locale": "es",
+    "seed": 42
+   }
+  },
+  {
+   "headline": "VICE CITY FM",
+   "headline_es": "VICE CITY FM",
+   "text": "Vice City FM, the non-stop eighties station.",
+   "text_es": "Vice City FM, la emisora de los ochenta.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "1/3",
+    "q": "Which station does Weird Al host?",
+    "options": [
+     "Swamp Rock 101",
+     "Vice City FM",
+     "Key Lento Talk"
+    ],
+    "answer": 1,
+    "seed": 42,
+    "reveal": true,
+    "src": "Kotaku · AV Club"
+   },
+   "chart_es": {
+    "type": "quiz",
+    "tag": "1/3",
+    "q": "¿Qué emisora presenta Weird Al?",
+    "options": [
+     "Swamp Rock 101",
+     "Vice City FM",
+     "Key Lento Talk"
+    ],
+    "answer": 1,
+    "locale": "es",
+    "seed": 42,
+    "reveal": true,
+    "src": "Kotaku · AV Club"
+   }
+  },
+  {
+   "headline": "QUESTION 2",
+   "headline_es": "PREGUNTA 2",
+   "text": "Two. Jason keeps a pet corn snake. What's her name?",
+   "text_es": "Dos. Jason tiene una serpiente de mascota. ¿Cómo se llama?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "2/3",
+    "q": "What's Jason's pet snake called?",
+    "options": [
+     "Daisy",
+     "Delilah",
+     "Dolores"
+    ],
+    "answer": 2,
+    "seed": 42
+   },
+   "chart_es": {
+    "type": "quiz",
+    "tag": "2/3",
+    "q": "¿Cómo se llama la serpiente de Jason?",
+    "options": [
+     "Daisy",
+     "Delilah",
+     "Dolores"
+    ],
+    "answer": 2,
+    "locale": "es",
+    "seed": 42
+   }
+  },
+  {
+   "headline": "DOLORES",
+   "headline_es": "DOLORES",
+   "text": "Dolores. Feed her a mouse for a small Focus boost.",
+   "text_es": "Dolores. Dale un ratón y ganas un poco de Focus.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "2/3",
+    "q": "What's Jason's pet snake called?",
+    "options": [
+     "Daisy",
+     "Delilah",
+     "Dolores"
+    ],
+    "answer": 2,
+    "seed": 42,
+    "reveal": true,
+    "src": "TheClick · GameOverDrive"
+   },
+   "chart_es": {
+    "type": "quiz",
+    "tag": "2/3",
+    "q": "¿Cómo se llama la serpiente de Jason?",
+    "options": [
+     "Daisy",
+     "Delilah",
+     "Dolores"
+    ],
+    "answer": 2,
+    "locale": "es",
+    "seed": 42,
+    "reveal": true,
+    "src": "TheClick · GameOverDrive"
+   }
+  },
+  {
+   "headline": "QUESTION 3",
+   "headline_es": "PREGUNTA 3",
+   "text": "Three. A shop sign in the first trailer refuses cash stored where?",
+   "text_es": "Tres. Un cartel del primer tráiler rechaza dinero guardado, ¿dónde?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "3/3",
+    "q": "Trailer 1 sign: no cash stored in...?",
+    "options": [
+     "Underwear",
+     "Shoes",
+     "A cereal box"
+    ],
+    "answer": 0,
+    "seed": 42
+   },
+   "chart_es": {
+    "type": "quiz",
+    "tag": "3/3",
+    "q": "Cartel del tráiler 1: no se acepta dinero en...",
+    "options": [
+     "Ropa interior",
+     "Zapatos",
+     "Una caja de cereal"
+    ],
+    "answer": 0,
+    "locale": "es",
+    "seed": 42
+   }
+  },
+  {
+   "headline": "UNDERWEAR",
+   "headline_es": "ROPA INTERIOR",
+   "text": "In underwear. Really.",
+   "text_es": "En la ropa interior. En serio.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "3/3",
+    "q": "Trailer 1 sign: no cash stored in...?",
+    "options": [
+     "Underwear",
+     "Shoes",
+     "A cereal box"
+    ],
+    "answer": 0,
+    "seed": 42,
+    "reveal": true,
+    "src": "Kotaku · Dexerto"
+   },
+   "chart_es": {
+    "type": "quiz",
+    "tag": "3/3",
+    "q": "Cartel del tráiler 1: no se acepta dinero en...",
+    "options": [
+     "Ropa interior",
+     "Zapatos",
+     "Una caja de cereal"
+    ],
+    "answer": 0,
+    "locale": "es",
+    "seed": 42,
+    "reveal": true,
+    "src": "Kotaku · Dexerto"
+   }
+  },
+  {
+   "headline": "YOUR SCORE?",
+   "headline_es": "¿TU PUNTAJE?",
+   "text": "What did you get? Twenty more are in our full quiz. Comment your score, because",
+   "text_es": "¿Cuántas sacaste? Hay veinte más en nuestro quiz completo. Comenta tu puntaje, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "0, 1, 2 or 3?",
+    "pink": [
+     "3?"
+    ],
+    "sub": "20 more in the full quiz",
+    "seed": 42
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "¿0, 1, 2 o 3?",
+    "pink": [
+     "3?"
+    ],
+    "sub": "20 más en el quiz completo",
+    "locale": "es",
+    "seed": 42
+   }
+  }
+ ]
+}

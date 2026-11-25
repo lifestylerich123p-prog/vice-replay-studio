@@ -1,0 +1,216 @@
+{
+ "title": "The GTA 6 leak came from a hotel TV",
+ "slug": "gta6-hacker-hotel-tv",
+ "series": "Explained",
+ "format": "news",
+ "mood": "tension",
+ "use_gameplay": false,
+ "short_title": "The GTA 6 leak came from a hotel TV 😳 #GTA6 #Shorts",
+ "short_title_options": [
+  "The GTA 6 leak came from a hotel TV 😳 #GTA6 #Shorts",
+  "GTA 6 hacker: hotel TV + Fire Stick = 90 clips 😳 #GTA6 #Shorts"
+ ],
+ "short_description": "In September 2022 a hacker leaked about 90 early GTA 6 clips. His setup: a hotel TV, an Amazon Fire Stick and a phone, while out on bail. Rockstar told the court it cost about $5 million; in November 2026 he pleaded guilty to all charges. No leaked footage is shown. Full video on the channel ⬇️\n\nSources: GameSpot, Engadget, GamesRadar, PC Gamer, Shacknews, VGC.",
+ "short_es": {
+  "title": "El LEAK de GTA 6 salió de la tele de un hotel 😳 #GTA6 #Shorts",
+  "description": "En septiembre de 2022 un hacker filtró unos 90 clips tempranos de GTA 6. Su equipo: la tele de un hotel, un Fire Stick de Amazon y un teléfono, en libertad bajo fianza. Rockstar dijo en el juicio que le costó unos 5 millones de dólares; en noviembre de 2026 se declaró culpable de todos los cargos. Sin imágenes filtradas.",
+  "tags": [
+   "filtración GTA 6",
+   "hackeo GTA 6",
+   "hacker GTA 6",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "short_playlist": "GTA 6 Streamer & Breaking News",
+ "pinned_comment": "Did you see the 2022 leaks back then? YES or NO 👇",
+ "short_pinned_comment_es": "¿Viste los leaks de 2022 en su momento? SÍ o NO 👇",
+ "cta": "FULL VIDEO ON THE CHANNEL",
+ "cta_es": "VIDEO COMPLETO EN EL CANAL",
+ "tags": [
+  "GTA 6 leak",
+  "GTA 6 hack",
+  "GTA 6 hacker",
+  "Rockstar hack 2022",
+  "GTA 6 2022 leak",
+  "GTA 6 news",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gaming"
+ ],
+ "research_note": "No leaked footage or images (owner Nov 24 rule); the hacker is not named (health details came out in court). 2+ sources per line; the plea: PC Gamer + Shacknews.",
+ "sources": [
+  "https://www.engadget.com/gta-6-hacker-is-sentenced-to-an-indefinite-hospitalization-194251395.html",
+  "https://www.gamesradar.com/the-gta-6-leak-cost-rockstar-dollar5-million-and-thousands-of-hours-of-staff-time",
+  "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-hacker-pleads-guilty-to-all-charges/",
+  "https://www.shacknews.com/article/151372/gta-6-hacker-guilty-plea",
+  "https://www.videogameschronicle.com/news/gta-6-hacker-sentenced-to-an-indefinite-hospital-order",
+  "https://www.gamesradar.com/rockstar-acknowledges-massive-gta-6-leak-we-are-extremely-disappointed",
+  "https://gamespot.com/articles/gta-6-leak-rockstar-responds-says-work-will-continue-as-planned/1100-6507632/",
+  "https://www.videogameschronicle.com/news/rockstar-comments-on-gta-6-leak-and-claims-project-wont-be-delayed",
+  "https://www.cnbc.com/2022/09/19/gta-iv-game-footage-leaks-take-two-shares-slide.html",
+  "https://www.gamespot.com/articles/gta-6-hacker-was-a-teenager-on-bail-in-a-hotel-room-using-an-amazon-fire-stick/1100-6517235/",
+  "https://www.pcgamer.com/uk/teenage-grand-theft-auto-6-hacker-given-an-indefinite-sentence-in-a-secure-hospital-due-to-his-intent-to-return-to-cybercrime-as-soon-as-possible/"
+ ],
+ "short": [
+  {
+   "headline": "FROM A HOTEL ROOM",
+   "headline_es": "DESDE UN HOTEL",
+   "text": "The biggest GTA 6 leak came from a hotel room.",
+   "text_es": "La mayor filtración de GTA seis salió de un cuarto de hotel.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 LEAKED",
+     "FROM A",
+     "HOTEL ROOM"
+    ],
+    "pink": [
+     "HOTEL ROOM"
+    ],
+    "seed": 41
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 SE FILTRÓ",
+     "DESDE UN",
+     "HOTEL"
+    ],
+    "pink": [
+     "HOTEL"
+    ],
+    "locale": "es",
+    "seed": 41
+   }
+  },
+  {
+   "headline": "90 CLIPS",
+   "headline_es": "90 CLIPS",
+   "text": "In September twenty twenty two, a hacker posted around ninety clips of unfinished GTA 6.",
+   "text_es": "En septiembre de dos mil veintidós, un hacker publicó unos noventa clips de GTA seis sin terminar.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 90,
+    "unit": "",
+    "label": "early GTA 6 clips leaked · Sept 2022",
+    "seed": 41
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 90,
+    "unit": "",
+    "label": "clips filtrados de GTA 6 · sept 2022",
+    "locale": "es",
+    "seed": 41
+   }
+  },
+  {
+   "headline": "HIS SETUP",
+   "headline_es": "SU EQUIPO",
+   "text": "His setup: a hotel TV, an Amazon Fire Stick and a phone, while he was out on bail.",
+   "text_es": "Su equipo: la tele del hotel, un Fire Stick de Amazon y un teléfono, estando en libertad bajo fianza.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "HIS SETUP",
+    "items": [
+     [
+      "Hotel TV",
+      "YES"
+     ],
+     [
+      "Amazon Fire Stick",
+      "YES"
+     ],
+     [
+      "A phone",
+      "YES"
+     ]
+    ],
+    "seed": 41
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "SU EQUIPO",
+    "items": [
+     [
+      "Tele del hotel",
+      "SÍ"
+     ],
+     [
+      "Fire Stick de Amazon",
+      "SÍ"
+     ],
+     [
+      "Un teléfono",
+      "SÍ"
+     ]
+    ],
+    "locale": "es",
+    "seed": 41
+   }
+  },
+  {
+   "headline": "$5 MILLION",
+   "headline_es": "5 MILLONES",
+   "text": "Rockstar told the court the hack cost it about five million dollars.",
+   "text_es": "Rockstar le dijo al tribunal que el hackeo le costó unos cinco millones de dólares.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 5,
+    "prefix": "$",
+    "unit": "M",
+    "label": "what the hack cost Rockstar",
+    "seed": 41
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 5,
+    "prefix": "$",
+    "unit": "M",
+    "label": "lo que le costó a Rockstar",
+    "locale": "es",
+    "seed": 41
+   }
+  },
+  {
+   "headline": "GUILTY",
+   "headline_es": "CULPABLE",
+   "text": "This month he pleaded guilty to all charges. The full story is in our GTA 6 trivia video. And remember,",
+   "text_es": "Este mes se declaró culpable de todos los cargos. La historia completa está en nuestro video de trivia. Y recuerda,",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Guilty on all charges",
+    "pink": [
+     "Guilty"
+    ],
+    "sub": "Full story: our GTA 6 trivia video",
+    "seed": 41
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Culpable de todo",
+    "pink": [
+     "Culpable"
+    ],
+    "sub": "Historia completa: trivia GTA 6",
+    "locale": "es",
+    "seed": 41
+   }
+  }
+ ]
+}
