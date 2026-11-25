@@ -56,6 +56,9 @@ def _owner_of(access):
     return items[0].get("id")
 
 
+SKIPPED = object()  # returned by an upload step that had nothing to do (see the steps list in main)
+
+
 def shorts_subtitles():
     """Upload subtitle files on Shorts? (config/channel.json `shorts_subtitles`; off since Nov 22: owner wants every quota
     unit spent on posting or answering comments, and Shorts have burned-in captions.)"""
@@ -566,15 +569,16 @@ def main():
         done_file.write_text(json.dumps(done, indent=2))
         register_upload(slug, key, vid, title)
         srt, en_srt = spanish_srt(timings), english_srt(timings)
-        steps = [("thumbnail", lambda: thumb and set_thumbnail(tok, vid, thumb)),
-                 ("english_subtitles", lambda: en_srt and (key == "main" or shorts_subtitles())
-                  and upload_caption(tok, vid, en_srt, lang="en", name="English")),
+        # Nov 25: a step whose condition is false returns SKIPPED, so the report says "skipped" instead of a false
+        # "ok" (the trivia upload reported subtitles "ok" when no timings file existed and nothing was sent).
+        steps = [("thumbnail", lambda: set_thumbnail(tok, vid, thumb) if thumb else SKIPPED),
+                 ("english_subtitles", lambda: upload_caption(tok, vid, en_srt, lang="en", name="English")
+                  if en_srt and (key == "main" or shorts_subtitles()) else SKIPPED),
                  # Nov 22: Shorts also post on Vice Replay en Español, so the Spanish track on the English Short is
                  # redundant (400 quota units each; 13 caption uploads were ~30% of the day that ran out). Long videos
                  # stay English-only on YouTube, so they keep their Spanish subtitles.
-                 ("spanish_subtitles", lambda: srt and not (key != "main" and (channel_ids().get("es")
-                                                                              or not shorts_subtitles()))
-                  and upload_caption(tok, vid, srt)),
+                 ("spanish_subtitles", lambda: upload_caption(tok, vid, srt)
+                  if srt and not (key != "main" and (channel_ids().get("es") or not shorts_subtitles())) else SKIPPED),
                  ("playlist", lambda: add_to_playlist(tok, vid, playlist))]
         done[key]["spanish_title"] = "yes" if es and es.get("title") else "no (episode has no 'es')"
         if publish_at:
@@ -584,8 +588,7 @@ def main():
             steps.append(("comment", lambda: comment(tok, vid, pin)))
         for step, fn in steps:
             try:
-                fn()
-                done[key][step] = "ok"
+                done[key][step] = "skipped" if fn() is SKIPPED else "ok"
             except SystemExit as e:
                 done[key][step] = f"failed: {e}"
                 print(f"  ! {step} failed for {key}: {e}")
