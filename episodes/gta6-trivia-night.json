@@ -1,0 +1,1358 @@
+{
+ "title": "GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz)",
+ "slug": "gta6-trivia-night",
+ "series": "Quiz",
+ "format": "quiz",
+ "mood": "bright",
+ "use_gameplay": false,
+ "payoff_hook": false,
+ "style": "vice (GTA 6-style lettering cards + card photos; 16:9 long video)",
+ "owner_note": "Owner Nov 24: 15-min trivia video, all free, owner uploads it by hand (no API upload).",
+ "segments": [
+  {
+   "headline": "50 FACTS",
+   "text": "Fifty GTA 6 facts, twenty questions, the leaks, and a spoiler round at the very end. Keep score: one point for every right answer.",
+   "keep_media": true,
+   "chapter": "Intro: 50 facts, 20 questions",
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "50 GTA 6 FACTS",
+     "20 QUESTIONS",
+     "LEAKS + SPOILERS"
+    ],
+    "pink": [
+     "20 QUESTIONS"
+    ],
+    "sub": "Keep score",
+    "seed": 300
+   },
+   "payoff": false
+  },
+  {
+   "headline": "6 ROUNDS",
+   "text": "Six rounds. The numbers, the map, the funny stuff, easter eggs and GTA history, then the leaks. Round six is story spoilers, and I'll warn you before it starts.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "TONIGHT",
+    "items": [
+     [
+      "The numbers",
+      "R1"
+     ],
+     [
+      "Where in Leonida",
+      "R2"
+     ],
+     [
+      "The funny stuff",
+      "R3"
+     ],
+     [
+      "Easter eggs + history",
+      "R4"
+     ],
+     [
+      "The leaks",
+      "R5"
+     ],
+     [
+      "Spoilers",
+      "R6"
+     ]
+    ],
+    "seed": 300
+   }
+  },
+  {
+   "headline": "ROUND 1",
+   "text": "Round one. The numbers.",
+   "keep_media": true,
+   "chapter": "Round 1: The numbers",
+   "chart": {
+    "type": "countdown",
+    "n": 1,
+    "of": 6,
+    "label": "THE NUMBERS",
+    "sub": "4 questions",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "QUESTION 1",
+   "text": "Question one. Take-Two counted GTA 6's pre-orders plus its first day. How much money was that?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "1/20",
+    "q": "What did pre-orders + day one make?",
+    "options": [
+     "$3.79 billion",
+     "$1.2 billion",
+     "$6.5 billion"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "seed": 301
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "$3.79 BILLION",
+   "text": "Three point seven nine billion dollars. Take-Two called it the biggest entertainment launch in history, but it includes months of pre-orders, so it isn't a clean day one number.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "1/20",
+    "q": "What did pre-orders + day one make?",
+    "options": [
+     "$3.79 billion",
+     "$1.2 billion",
+     "$6.5 billion"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "reveal": true,
+    "src": "Take-Two · VGC",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "QUESTION 2",
+   "text": "Question two. GTA 6 scored ninety nine on Metacritic. Only one other game ever has. Which one?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "2/20",
+    "q": "Which other game has a 99 on Metacritic?",
+    "options": [
+     "Super Mario 64",
+     "Halo 2",
+     "Ocarina of Time"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "seed": 301
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "OCARINA OF TIME",
+   "text": "Zelda, Ocarina of Time, from nineteen ninety eight. That also makes GTA 6 Rockstar's best reviewed game ever.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "2/20",
+    "q": "Which other game has a 99 on Metacritic?",
+    "options": [
+     "Super Mario 64",
+     "Halo 2",
+     "Ocarina of Time"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "reveal": true,
+    "src": "VGC · Notebookcheck",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "80 HOURS",
+   "text": "Rockstar North's Rob Nelson says his own playthrough took about eighty hours, with some optional goals. GTA 5's story takes about thirty two. That's two and a half GTA 5s.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "GTA 5",
+     "32 HOURS"
+    ],
+    "b": [
+     "GTA 6",
+     "80 HOURS"
+    ],
+    "winner": "b",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "QUESTION 3",
+   "text": "Question three. At launch, three point three million people watched GTA 6 on Twitch at the same time. That broke a single game record. Whose record?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "3/20",
+    "q": "Whose single-game Twitch record fell?",
+    "options": [
+     "Fortnite",
+     "Minecraft",
+     "League of Legends"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "seed": 301
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "LEAGUE OF LEGENDS",
+   "text": "League of Legends, at three point one one million. And across Twitch, YouTube and Kick, people watched one hundred twenty five million hours of GTA 6 on day one alone.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "3/20",
+    "q": "Whose single-game Twitch record fell?",
+    "options": [
+     "Fortnite",
+     "Minecraft",
+     "League of Legends"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "reveal": true,
+    "src": "Dot Esports · Streams Charts",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "90 MILLION",
+   "text": "GTA 6's first trailer got ninety million YouTube views in twenty four hours. Guinness lists it as the most viewed non-music video in a day, ahead of MrBeast's fifty nine million.",
+   "keep_media": true,
+   "chart": {
+    "type": "bars",
+    "items": [
+     [
+      "GTA 6 trailer 1",
+      90
+     ],
+     [
+      "MrBeast record",
+      59
+     ]
+    ],
+    "unit": "M",
+    "highlight": 0,
+    "note": "YouTube views in 24 hours (Guinness)",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "475 MILLION",
+   "text": "Trailer two did even better. Rockstar says four hundred seventy five million views across all platforms, in a single day.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 475,
+    "unit": "M",
+    "label": "Trailer 2 views in 24 h, all platforms",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "TOM PETTY",
+   "text": "And the first trailer's song, Tom Petty's Love Is a Long Road, jumped about thirty seven thousand percent on Spotify that week.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Tom Petty: +37,000%",
+    "pink": [
+     "+37,000%"
+    ],
+    "sub": "Spotify streams, trailer week",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "13 YEARS",
+   "text": "Rockstar used to be fast. Vice City came out one year after GTA 3. GTA 5 to GTA 6 took thirteen years and two months. Kids born the week GTA 5 launched are thirteen now.",
+   "keep_media": true,
+   "chart": {
+    "type": "bars",
+    "items": [
+     [
+      "GTA 3 to Vice City",
+      1
+     ],
+     [
+      "GTA 4 to GTA 5",
+      5.4
+     ],
+     [
+      "GTA 5 to GTA 6",
+      13.2
+     ]
+    ],
+    "unit": " yrs",
+    "highlight": 2,
+    "note": "Years between main GTA games",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "CHEAPEST GTA",
+   "text": "Here's a surprise. After inflation, GTA 6 is the cheapest main GTA ever. GTA 3 cost fifty dollars in two thousand one. That's about ninety five dollars today.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "GTA 3 · 2001",
+     "$95 TODAY"
+    ],
+    "b": [
+     "GTA 6",
+     "$79.99"
+    ],
+    "winner": "b",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "QUESTION 4",
+   "text": "Question four. The standard edition is eighty dollars, the Ultimate is a hundred. Which one got more pre-orders?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "4/20",
+    "q": "Which edition got more pre-orders?",
+    "options": [
+     "Standard",
+     "Ultimate",
+     "They tied"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "seed": 301
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "ULTIMATE",
+   "text": "The Ultimate. Take-Two's boss Strauss Zelnick says the most hardcore fans pre-order first, and they buy the big one.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "4/20",
+    "q": "Which edition got more pre-orders?",
+    "options": [
+     "Standard",
+     "Ultimate",
+     "They tied"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "reveal": true,
+    "src": "Take-Two · IGN",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "30 FPS",
+   "text": "One number fans didn't love: thirty frames per second, even on a PS5 Pro. Rockstar says the Pro's processor can't run the game's simulation at sixty, so the Pro gets a sharper picture instead.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "30 FPS, even on PS5 Pro",
+    "pink": [
+     "30 FPS"
+    ],
+    "sub": "The simulation needs the CPU",
+    "seed": 301
+   }
+  },
+  {
+   "headline": "ROUND 2",
+   "text": "Round two. Where in Leonida. Every spot is on Rockstar's official map.",
+   "keep_media": true,
+   "chapter": "Round 2: Where in Leonida?",
+   "chart": {
+    "type": "countdown",
+    "n": 2,
+    "of": 6,
+    "label": "WHERE IN LEONIDA?",
+    "sub": "On Rockstar's official map",
+    "seed": 302
+   }
+  },
+  {
+   "headline": "2X GTA 5",
+   "text": "Rockstar describes Leonida as about twice the size of GTA 5's map. Fan measurements say anywhere from one point seven to two point five times, depending on how much water you count.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "GTA 5",
+     "1X MAP"
+    ],
+    "b": [
+     "LEONIDA",
+     "ABOUT 2X"
+    ],
+    "winner": "b",
+    "seed": 302
+   }
+  },
+  {
+   "headline": "QUESTION 5",
+   "text": "Question five. Leonida has its own Bigfoot. What's it called?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "5/20",
+    "q": "What is Leonida's Bigfoot called?",
+    "options": [
+     "Skunk Ape",
+     "Swamp Man",
+     "Mangrove Yeti"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "seed": 302
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "SKUNK APE",
+   "text": "The Skunk Ape.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "5/20",
+    "q": "What is Leonida's Bigfoot called?",
+    "options": [
+     "Skunk Ape",
+     "Swamp Man",
+     "Mangrove Yeti"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "reveal": true,
+    "src": "GameSpot · Dexerto",
+    "seed": 302
+   }
+  },
+  {
+   "headline": "COTTONMOUTH LAKE",
+   "text": "Take the lakeside road at Cottonmouth Lake, south of Hamlet, and look for a deer carcass. Night works best, and it's there from Chapter One.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Cottonmouth Lake",
+    "label": "Skunk Ape · night",
+    "n": 1,
+    "to": 0.34,
+    "dy": -0.009,
+    "seed": 302
+   }
+  },
+  {
+   "headline": "QUESTION 6",
+   "text": "Question six. There's a UFO in GTA 6, but only at a certain time. After what time?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "6/20",
+    "q": "After what time does the UFO show up?",
+    "options": [
+     "Noon",
+     "2 AM",
+     "Sunset"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "seed": 302
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "2 AM",
+   "text": "After two AM.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "6/20",
+    "q": "After what time does the UFO show up?",
+    "options": [
+     "Noon",
+     "2 AM",
+     "Sunset"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "reveal": true,
+    "src": "GameSpot · Dexerto",
+    "seed": 302
+   }
+  },
+  {
+   "headline": "PORT GELLHORN",
+   "text": "Drive the country roads east of Port Gellhorn, alone, from Chapter Two. Look for an abandoned car with flashing lights. Not there? Try another night.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "label": "UFO · after 2 AM",
+    "n": 2,
+    "to": 0.34,
+    "dx": 0.05,
+    "seed": 302
+   }
+  },
+  {
+   "headline": "GULLET MARSH",
+   "text": "There's a giant crab too. Take a boat into Gullet Marsh, in Pelican Valley, and find the abandoned research outpost.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Gullet Marsh",
+    "label": "Crab outpost",
+    "n": 3,
+    "to": 0.34,
+    "dy": -0.009,
+    "seed": 302
+   }
+  },
+  {
+   "headline": "QUESTION 7",
+   "text": "Question seven. Turn the outpost's power back on and it asks for a password. What is it?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "7/20",
+    "q": "Password for the giant crab outpost?",
+    "options": [
+     "CLAWS",
+     "SHELLFISH",
+     "CLEAVES"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "seed": 302
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "CLEAVES",
+   "text": "Cleaves. Type it in and meet the crab.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "7/20",
+    "q": "Password for the giant crab outpost?",
+    "options": [
+     "CLAWS",
+     "SHELLFISH",
+     "CLEAVES"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "reveal": true,
+    "src": "PCGamesN · TheGamer",
+    "seed": 302
+   }
+  },
+  {
+   "headline": "MILE ZERO",
+   "text": "Want a fighter jet? They're parked at Mile Zero Air Station, southeast of Key Lento, in the north half of the base. Getting in brings a huge wanted level.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Mile Zero Air Station",
+    "label": "Fighter jets",
+    "n": 4,
+    "to": 0.34,
+    "dy": -0.02,
+    "seed": 302
+   }
+  },
+  {
+   "headline": "FLIP FLOP HOUSE",
+   "text": "And the most searched spot of launch week: GTA 6's first shoe store is Flip Flop House, right off Sunbelt Highway in Key Lento. Guides count fourteen to seventeen shoe stores in all.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Key Lento",
+    "label": "Flip Flop House",
+    "n": 5,
+    "to": 0.34,
+    "dx": -0.006,
+    "dy": -0.022,
+    "seed": 302
+   }
+  },
+  {
+   "headline": "QUESTION 8",
+   "text": "Question eight. Key Lento is a play on a real Florida place. Which one?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "8/20",
+    "q": "Key Lento is a play on which real place?",
+    "options": [
+     "Key Largo",
+     "Key West",
+     "Key Biscayne"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "seed": 302
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "KEY LARGO",
+   "text": "Key Largo. The Leonida Keys are the Florida Keys, and up north, Lake Leonida sits right where Lake Okeechobee is.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "8/20",
+    "q": "Key Lento is a play on which real place?",
+    "options": [
+     "Key Largo",
+     "Key West",
+     "Key Biscayne"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "reveal": true,
+    "src": "Sportskeeda · GTABase",
+    "seed": 302
+   }
+  },
+  {
+   "headline": "MOUNT KALAGA",
+   "text": "Leonida even has a mountain, Mount Kalaga, with a BASE jump at the top. Real Florida could never: its highest point, Britton Hill, is three hundred forty five feet tall.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Florida's real top: 345 ft",
+    "pink": [
+     "345 ft"
+    ],
+    "sub": "Leonida has Mount Kalaga",
+    "seed": 302
+   }
+  },
+  {
+   "headline": "GRASSRIVERS",
+   "text": "And Grassrivers is Leonida's Everglades: swamps, airboats and alligators, right where the real Everglades are.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Grassrivers",
+    "label": "Leonida's Everglades",
+    "n": 6,
+    "to": 0.34,
+    "seed": 302
+   }
+  },
+  {
+   "headline": "HALFTIME",
+   "text": "That's eight questions. Six or more and you know your Leonida. Next, the funny stuff, then the leaks. And the spoilers are still coming.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "8 DOWN",
+     "12 TO GO"
+    ],
+    "pink": [
+     "12 TO GO"
+    ],
+    "sub": "Leaks + spoilers still coming",
+    "seed": 302
+   }
+  },
+  {
+   "headline": "ROUND 3",
+   "text": "Round three. The funny stuff. All of it is really in the game.",
+   "keep_media": true,
+   "chapter": "Round 3: The funny stuff",
+   "chart": {
+    "type": "countdown",
+    "n": 3,
+    "of": 6,
+    "label": "THE FUNNY STUFF",
+    "sub": "Yes, it's all real",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "QUESTION 9",
+   "text": "Question nine. Swim far out to sea, away from land and boats. Who might come to rescue you?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "9/20",
+    "q": "Stranded at sea, who may rescue you?",
+    "options": [
+     "A dolphin",
+     "A pelican",
+     "A dog on a jet ski"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "seed": 303
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "A DOG ON A JET SKI",
+   "text": "A dog. On a jet ski. Guides point to Gambit Bay, west of Key Lento, but it's random, so give it time.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "9/20",
+    "q": "Stranded at sea, who may rescue you?",
+    "options": [
+     "A dolphin",
+     "A pelican",
+     "A dog on a jet ski"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "reveal": true,
+    "src": "GameSpot · Dexerto",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "WEIRD AL",
+   "text": "Weird Al Yankovic is a DJ in GTA 6. He hosts Vice City FM, the non-stop eighties station, and he voices the Burger Shot ads. None of his own songs are in the game, though.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Weird Al is a GTA 6 DJ",
+    "pink": [
+     "Weird Al"
+    ],
+    "sub": "Vice City FM + Burger Shot ads",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "30,000 CALORIES",
+   "text": "A fake fast food ad for Chacey's sells a thirty thousand calorie meat sandwich. And fans found its wide open prairie backdrop was filmed in Red Dead Redemption 2.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 30000,
+    "unit": "",
+    "label": "calories in one Chacey's sandwich",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "QUESTION 10",
+   "text": "Question ten. One classic activity didn't make it into GTA 6. Which one?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "10/20",
+    "q": "Which activity did Rockstar cut?",
+    "options": [
+     "Pool",
+     "Darts",
+     "Basketball"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "seed": 303
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "DARTS",
+   "text": "Darts. And bowling. Rob Nelson told VGC that even Rockstar doesn't have unlimited time or money. Pool made the cut.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "10/20",
+    "q": "Which activity did Rockstar cut?",
+    "options": [
+     "Pool",
+     "Darts",
+     "Basketball"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "reveal": true,
+    "src": "VGC · Dexerto",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "A CARTOON PEANUT",
+   "text": "On day one, IShowSpeed was the most watched GTA 6 streamer. Number two was TheBurntPeanut, a VTuber. A cartoon peanut finished about six hundred thousand watch hours behind Speed.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "ISHOWSPEED",
+     "No. 1"
+    ],
+    "b": [
+     "A CARTOON PEANUT",
+     "No. 2"
+    ],
+    "winner": "a",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "NO DISC",
+   "text": "GTA 6's physical edition has no disc. The box holds a download code, because the install is up to two hundred twelve gigabytes. You buy a box, then download the game anyway.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "The box has no disc",
+    "pink": [
+     "no disc"
+    ],
+    "sub": "A code for a 212 GB download",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "REAL BURGER SHOT",
+   "text": "Before launch, GTA's fake fast food became real. Two counters at the Miami Heat's arena turned into a Burger Shot and a Cluckin' Bell.",
+   "keep_media": true,
+   "chart": {
+    "type": "headline",
+    "kicker": "REAL LIFE",
+    "text": "Burger Shot opened in Miami",
+    "ticker": "Kaseya Center · home of the Miami Heat · Cluckin' Bell too",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "QUESTION 11",
+   "text": "Question eleven. Jason has a pet corn snake at his house. What's her name?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "11/20",
+    "q": "What's Jason's pet snake called?",
+    "options": [
+     "Dolores",
+     "Daisy",
+     "Delilah"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "seed": 303
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "DOLORES",
+   "text": "Dolores. Guides say feeding her a mouse gives your Focus meter a small boost early on.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "11/20",
+    "q": "What's Jason's pet snake called?",
+    "options": [
+     "Dolores",
+     "Daisy",
+     "Delilah"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "reveal": true,
+    "src": "TheClick · GameOverDrive",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "EASTER EGG",
+   "text": "GTA 6 has a literal Easter egg. Climb a tall radio mast in Bluegrass, north of Hamlet, for several minutes, and at the top there's a nest of painted eggs. Some guides put the tower in South Vice-Dale instead.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Bluegrass",
+    "label": "Egg tower",
+    "n": 7,
+    "to": 0.34,
+    "dy": -0.009,
+    "seed": 303
+   }
+  },
+  {
+   "headline": "QUESTION 12",
+   "text": "Question twelve. Remember the Scooter Brothers meme? In GTA 6 it's a real app. What does it do?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "12/20",
+    "q": "What does the Scooter Bros app do?",
+    "options": [
+     "Rents you a scooter",
+     "Orders pizza",
+     "Returns your impounded car"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "seed": 303
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "RETURNS YOUR IMPOUNDED",
+   "text": "It brings your impounded car back. Pay Scooter Bros a fee and they return it, no cops involved.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "12/20",
+    "q": "What does the Scooter Bros app do?",
+    "options": [
+     "Rents you a scooter",
+     "Orders pizza",
+     "Returns your impounded car"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "reveal": true,
+    "src": "GTABase · Dexerto",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "QUESTION 13",
+   "text": "Question thirteen. In the first trailer, a shop sign refuses one kind of cash. Cash stored where?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "13/20",
+    "q": "No more cash stored in...?",
+    "options": [
+     "Shoes",
+     "Underwear",
+     "A cereal box"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "seed": 303
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "UNDERWEAR",
+   "text": "In underwear. Fans later found the same sign in the GTA Trilogy Definitive Edition.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "13/20",
+    "q": "No more cash stored in...?",
+    "options": [
+     "Shoes",
+     "Underwear",
+     "A cereal box"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "reveal": true,
+    "src": "Kotaku · Dexerto",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "TALKING PARROT",
+   "text": "In Key Lento, a liquor store full of parrot noises hides a tip. Guides say talking to the parrot points you to a hidden stash of cash.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Ask the parrot",
+    "pink": [
+     "parrot"
+    ],
+    "sub": "Three Sheets Liquor, Key Lento",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "GOTY FIRST",
+   "text": "And GTA 6 was up for Game of the Year before anyone could play it. The nominations came out November seventeenth. The game launched on the nineteenth.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Nominated 2 days before launch",
+    "pink": [
+     "2 days"
+    ],
+    "sub": "The Game Awards 2026",
+    "seed": 303
+   }
+  },
+  {
+   "headline": "ROUND 4",
+   "text": "Round four. Easter eggs, and a lightning round on GTA history.",
+   "keep_media": true,
+   "chapter": "Round 4: Easter eggs + GTA history",
+   "chart": {
+    "type": "countdown",
+    "n": 4,
+    "of": 6,
+    "label": "EASTER EGGS + HISTORY",
+    "sub": "Lightning round at the end",
+    "seed": 304
+   }
+  },
+  {
+   "headline": "VICE CITY PORTAL",
+   "text": "GTA 6 hides a portal back to two thousand two's Vice City. Flip twelve switches in order, from the Badger radio tower in Key Lento to the Turtle Head power station, at night. The reward: Tommy Vercetti's shirt and bike.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "T.H. Power Station",
+    "label": "Portal · 7 PM-6 AM",
+    "n": 8,
+    "to": 0.34,
+    "dy": -0.009,
+    "seed": 304
+   }
+  },
+  {
+   "headline": "QUESTION 14",
+   "text": "Question fourteen. GTA 6 hides a tribute to Paul Walker: a green tuner from the first Fast and Furious. Which car is it styled on?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "14/20",
+    "q": "Paul Walker's car is styled on...?",
+    "options": [
+     "Mitsubishi Eclipse",
+     "Ford Mustang",
+     "Chevy Camaro"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "seed": 304
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "MITSUBISHI ECLIPSE",
+   "text": "His Mitsubishi Eclipse. In GTA 6 it's the Maibatsu Penumbra, in a villa garage on Vespucci Island.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "14/20",
+    "q": "Paul Walker's car is styled on...?",
+    "options": [
+     "Mitsubishi Eclipse",
+     "Ford Mustang",
+     "Chevy Camaro"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "reveal": true,
+    "src": "Dexerto · GamesRadar",
+    "seed": 304
+   }
+  },
+  {
+   "headline": "ARTHUR'S HAT",
+   "text": "Arthur Morgan's hat from Red Dead Redemption 2 is for sale at a yard sale in southern Port Gellhorn, from Chapter Two.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "label": "Arthur Morgan's hat",
+    "n": 9,
+    "to": 0.34,
+    "dx": -0.004,
+    "dy": 0.03,
+    "seed": 304
+   }
+  },
+  {
+   "headline": "QUESTION 15",
+   "text": "Question fifteen. A photo in a twenty twenty one GTA remaster turned out to be a real house in GTA 6. Which remaster?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "15/20",
+    "q": "Which 2021 remaster hid a GTA 6 house?",
+    "options": [
+     "GTA 3 Definitive",
+     "San Andreas Definitive",
+     "Vice City Definitive"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "seed": 304
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "SAN ANDREAS DEFINITIVE",
+   "text": "San Andreas. The photo hung in its alien-themed bar. In GTA 6 the house is in Belville, and its garage holds notes from a man convinced he lives in a video game.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "15/20",
+    "q": "Which 2021 remaster hid a GTA 6 house?",
+    "options": [
+     "GTA 3 Definitive",
+     "San Andreas Definitive",
+     "Vice City Definitive"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "reveal": true,
+    "src": "Dexerto · TheGamer",
+    "seed": 304
+   }
+  },
+  {
+   "headline": "THE LEONIDA",
+   "text": "Even Red Dead 2 had a hint. Its files include an unused boat texture called The Leonida, from twenty eighteen. Fans only spotted it this year, and Rockstar never said if it was a tease.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Red Dead 2 named a boat The Leonida",
+    "pink": [
+     "The Leonida"
+    ],
+    "sub": "2018 · found in 2026",
+    "seed": 304
+   }
+  },
+  {
+   "headline": "QUESTION 16",
+   "text": "Question sixteen. Jason's quiet style came from one movie star. Which one?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "16/20",
+    "q": "Jason was inspired by which star?",
+    "options": [
+     "Clint Eastwood",
+     "Al Pacino",
+     "Steve McQueen"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "seed": 304
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "STEVE MCQUEEN",
+   "text": "Steve McQueen, in the nineteen seventy two movie The Getaway. Rockstar's narrative lead says they also talked to Army veterans, who typically aren't running their mouths.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "16/20",
+    "q": "Jason was inspired by which star?",
+    "options": [
+     "Clint Eastwood",
+     "Al Pacino",
+     "Steve McQueen"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "reveal": true,
+    "src": "GamesRadar · PC Gamer",
+    "seed": 304
+   }
+  },
+  {
+   "headline": "LIGHTNING ROUND",
+   "text": "Lightning round. Four questions about the GTA games before this one.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "LIGHTNING",
+     "ROUND"
+    ],
+    "pink": [
+     "ROUND"
+    ],
+    "sub": "4 questions, GTA history",
+    "seed": 304
+   }
+  },
+  {
+   "headline": "QUESTION 17",
+   "text": "Question seventeen. What was GTA called before it was GTA?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "17/20",
+    "q": "What was GTA called before GTA?",
+    "options": [
+     "Race'n'Chase",
+     "Car Thief",
+     "Getaway City"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "seed": 304
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "RACE'N'CHASE",
+   "text": "Race and Chase, at DMA Design in Scotland.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "17/20",
+    "q": "What was GTA called before GTA?",
+    "options": [
+     "Race'n'Chase",
+     "Car Thief",
+     "Getaway City"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "reveal": true,
+    "src": "GamesRadar · The Escapist",
+    "seed": 304
+   }
+  },
+  {
+   "headline": "QUESTION 18",
+   "text": "Question eighteen. Who voiced Tommy Vercetti?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "18/20",
+    "q": "Who voiced Tommy Vercetti?",
+    "options": [
+     "Al Pacino",
+     "Ray Liotta",
+     "Robert De Niro"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "seed": 304
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "RAY LIOTTA",
+   "text": "Ray Liotta, from Goodfellas. And Vice City wasn't new then: it first appeared in the original GTA, in nineteen ninety seven.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "18/20",
+    "q": "Who voiced Tommy Vercetti?",
+    "options": [
+     "Al Pacino",
+     "Ray Liotta",
+     "Robert De Niro"
+    ],
+    "answer": 1,
+    "think": 4.0,
+    "reveal": true,
+    "src": "Wikipedia · IMDb · GameSpot",
+    "seed": 304
+   }
+  },
+  {
+   "headline": "QUESTION 19",
+   "text": "Question nineteen. In GTA 4, the borough of Algonquin is based on which real place?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "19/20",
+    "q": "GTA 4's Algonquin is based on...?",
+    "options": [
+     "Brooklyn",
+     "Queens",
+     "Manhattan"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "seed": 304
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "MANHATTAN",
+   "text": "Manhattan. Broker is Brooklyn, Dukes is Queens and Bohan is the Bronx.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "19/20",
+    "q": "GTA 4's Algonquin is based on...?",
+    "options": [
+     "Brooklyn",
+     "Queens",
+     "Manhattan"
+    ],
+    "answer": 2,
+    "think": 4.0,
+    "reveal": true,
+    "src": "Sportskeeda · Giant Bomb",
+    "seed": 304
+   }
+  },
+  {
+   "headline": "QUESTION 20",
+   "text": "Question twenty. Before GTA 6, which GTA had the best Metacritic score?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "20/20",
+    "q": "Top Metacritic GTA before GTA 6?",
+    "options": [
+     "GTA 4",
+     "GTA 5",
+     "San Andreas"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "seed": 304
+   },
+   "pad": 4.0
+  },
+  {
+   "headline": "GTA 4",
+   "text": "GTA 4, with ninety eight. Then GTA 6 showed up with ninety nine.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "20/20",
+    "q": "Top Metacritic GTA before GTA 6?",
+    "options": [
+     "GTA 4",
+     "GTA 5",
+     "San Andreas"
+    ],
+    "answer": 0,
+    "think": 4.0,
+    "reveal": true,
+    "src": "Metacritic · VGC",
+    "seed": 304
+   }
+  },
+  {
+   "headline": "SCORE CHECK",
+   "text": "That's all twenty. Fifteen or more, you're a real Leonida local. Under ten, watch it again. Keep that number for the comments. Now, the leaks.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "YOUR SCORE",
+    "items": [
+     [
+      "15-20: Leonida local",
+      "LEGEND"
+     ],
+     [
+      "10-14: Tourist",
+      "OK"
+     ],
+     [
+      "0-9: Watch again",
+      "REPLAY"
+     ]
+    ],
+    "seed": 304
+   }
+  }
+ ]
+}
