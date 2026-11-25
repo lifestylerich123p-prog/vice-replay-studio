@@ -739,8 +739,10 @@ def outro_image(text, w, h, path):
     return path
 
 
-def mix_audio(video, music, sfx, out, enc_audio, music_level=0.16):
-    """Voice + music bed that ducks under the voice (sidechain) + sound effects."""
+def mix_audio(video, music, sfx, out, enc_audio, music_level=0.16, duck_ratio=6):
+    """Voice + music bed that ducks under the voice (sidechain) + sound effects.
+    Nov 24 (owner: "I don't hear any music"): the default bed sits ~18 dB under the voice, inaudible on a phone; an
+    episode can set "music_level" (e.g. 0.45) and "music_duck" (sidechain ratio, e.g. 2.5) to make the music heard."""
     total = duration(video)
     ins = ["-i", str(video)]
     fc = "[0:a]asplit=2[v][key];"
@@ -750,7 +752,7 @@ def mix_audio(video, music, sfx, out, enc_audio, music_level=0.16):
         ins += ["-stream_loop", "-1", "-i", str(music)]
         fc += (f"[{n}:a]volume={music_level},afade=t=in:d=0.8,afade=t=out:st={max(0, total - 2.5)}:d=2.5,"
                f"atrim=0:{total},aformat=sample_rates=48000:channel_layouts=stereo[mraw];"
-               f"[mraw][key]sidechaincompress=threshold=0.03:ratio=6:attack=15:release=350[m];")
+               f"[mraw][key]sidechaincompress=threshold=0.03:ratio={duck_ratio}:attack=15:release=350[m];")
         mixin += "[m]"
         n += 1
     else:
@@ -924,7 +926,8 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
     if ep.get("sfx", True):
         sfx = sound.sfx_track(work / "sfx.wav", duration(raw), cuts, impacts, pops)
     mixed = work / "mixed.mp4"
-    mix_audio(raw, music if music and Path(music).exists() else None, sfx, mixed, ["-c:a", "aac", "-b:a", "192k"])
+    mix_audio(raw, music if music and Path(music).exists() else None, sfx, mixed, ["-c:a", "aac", "-b:a", "192k"],
+              music_level=float(ep.get("music_level", 0.16)), duck_ratio=float(ep.get("music_duck", 6)))
     # YouTube plays back at about -14 LUFS; normalize so the voice isn't quiet next to other videos
     run(["ffmpeg", "-y", "-v", "error", "-i", str(mixed), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
          "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
