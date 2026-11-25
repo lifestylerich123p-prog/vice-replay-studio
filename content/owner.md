@@ -330,3 +330,12 @@
   with send_message ("READY or NOT READY + differences") and waits for the answer before telling the owner. Found Nov
   24: main still had an older Bad Bunny version (old title/hook) while the Spanish chat handed the owner the new one.
 
+- 2026-11-24 ~7:40 PM ET, owner: "create a 15 minute video ... trivia fun facts and funny stuff all free ... I'll post
+  it myself" + "everything free but use tools online for help and the ones we already have, this is a test to see if
+  the system can handle it" + "put spoiler and leaks to get viewers in". **Spoilers and leaks rule (this trivia video,
+  and the default for later long videos unless the owner says otherwise):** story spoilers are allowed INSIDE a video
+  in a clearly warned, chaptered spoiler round (placed last, skippable); titles and thumbnails may say "SPOILERS" but
+  never reveal one. Leaks are covered as reported news, labeled ("according to leaks / dataminers"), 2+ outlets each;
+  never footage, images or audio from leaked copies (Take-Two copyright takedowns = channel risk). Free tools only:
+  web search + our renderer, Kokoro voice, our cards and music; no Everygen/vidIQ credits. The owner uploads it by hand
+  (no API upload). Keep it under 15:00 so it uploads without phone verification.
