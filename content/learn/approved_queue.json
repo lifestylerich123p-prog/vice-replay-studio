@@ -727,16 +727,6 @@
     "12:30 PM"
    ],
    "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only."
-  },
-  {
-   "slug": "gta6-bad-bunny-radio-es",
-   "item": "short",
-   "es_only": true,
-   "es": [
-    "2026-11-25",
-    "12:30 PM"
-   ],
-   "approved": "Nov 24 6:30 PM ET (owner in the Spanish chat: \"if we can post today let's do it ... strong hook Miami reference\"; quota was spent, so the first daytime slot after the reset; 2nd Spanish-only that day at the owner's request). Viral Adam voice DONE in the Spanish chat (5 credits), final render gate-clean 3 times; re-check facts before upload (Rolling Stone, Complex, Yahoo, GTABase)"
   }
  ],
  "paused": [
@@ -853,6 +843,17 @@
    ],
    "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); RE-CHECK 'Rockstar hasn't confirmed it' (Vice City portal) within 2 h of the slot",
    "paused": "Nov 24: same Vercetti-portal topic as gta6-vercetti-portal the same day (near-identical videos risk YouTube's repetitive-content rule); the map version stays."
+  },
+  {
+   "slug": "gta6-bad-bunny-radio-es",
+   "item": "short",
+   "es_only": true,
+   "es": [
+    "2026-11-25",
+    "12:30 PM"
+   ],
+   "approved": "Nov 24 6:30 PM ET (owner in the Spanish chat: \"if we can post today let's do it ... strong hook Miami reference\"; quota was spent, so the first daytime slot after the reset; 2nd Spanish-only that day at the owner's request). Viral Adam voice DONE in the Spanish chat (5 credits), final render gate-clean 3 times; re-check facts before upload (Rolling Stone, Complex, Yahoo, GTABase)",
+   "paused": "posted by hand by the owner Nov 24 ~7:24 PM ET: fLmdQepmNpw (public, pinned question already there); not uploaded again"
   }
  ]
 }
