@@ -1,10 +1,10 @@
 {
-  "from": "2026-10-27",
-  "to": "2026-11-24",
+  "from": "2026-10-28",
+  "to": "2026-11-25",
   "videos": [
     {
       "video": "aYBokm3TIYE",
-      "views": 9332,
+      "views": 9333,
       "estimatedMinutesWatched": 998,
       "averageViewDuration": 13,
       "averageViewPercentage": 86,
@@ -556,11 +556,11 @@
   "traffic_sources": [
     {
       "insightTrafficSourceType": "SHORTS",
-      "views": 27887
+      "views": 27874
     },
     {
       "insightTrafficSourceType": "YT_SEARCH",
-      "views": 8464
+      "views": 8472
     },
     {
       "insightTrafficSourceType": "YT_OTHER_PAGE",

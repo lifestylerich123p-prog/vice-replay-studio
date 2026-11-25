@@ -295,3 +295,15 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   hours early?" 914 views (a catch/trick hook, like on YouTube). Spanish versions on the same account did as well or
   better (median 177 vs 152 views; "$1.65 MILLONES" 587 vs the English 114). So on TikTok: post the new 13-25 s
   payoff-first Shorts, post the Spanish version too, lead with the catch.
+- 2026-11-25 (daily run; studio.status 5:15 AM ET + market-2026-11-25.md): the critics tier list ("Vice City is only
+  B tier", jQbv5GPR3dk) is still the only fresh Short taking off (616 views, 15/h vs our 1/h median), while the four
+  most recent number/fact Shorts sit at 19-63 views (sales tier list 63, cheapest-GTA 47, Metacritic 99 club 28, patch
+  notes 19). Same lesson as Nov 24, now with more data: a contrarian ranking beats a plain number even when both use
+  the same Metacritic facts. Follow-up made with NEW games (RDR1/RDR2/Bully/Max Payne 3), not a re-cut.
+- 2026-11-25 (market): the 48 h top 25 GTA 6 Shorts are mostly skits/relatable humour (we can't make those without
+  gameplay), but the money how-to lane is wide open in long form: "How to make $100k from ATM robberies" (9:45,
+  676K views, 24.7K/h) and "Fastest $40,000" (Short, 3.9M). Our search-guide long video today copies the TOPIC (ATM
+  robberies, with the catch players hit: marked bills), not the footage.
+- 2026-11-25 (process): this cloud session had a Python 3.13 `pip` on PATH while `python` is 3.11, so
+  `pip install -r requirements.txt` installed nothing usable (requests/Pillow missing). Use
+  `python -m pip install -r requirements.txt`.

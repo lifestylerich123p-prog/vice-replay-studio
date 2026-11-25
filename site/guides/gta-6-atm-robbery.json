@@ -1,0 +1,89 @@
+{
+ "slug": "gta-6-atm-robbery",
+ "lang": "en",
+ "pair": "robar-cajeros-gta-6",
+ "title": "GTA 6 ATM Robbery: How to Steal ATMs With a Winch (and the Catch)",
+ "h1": "GTA 6 <span>ATM robbery</span>: the winch method and the catch",
+ "desc": "How to rob ATMs in GTA 6: get a winch or a tow truck, pull an outdoor ATM off the wall, open it, lose the cops, and why marked bills need the Dye Pack Jammer.",
+ "date": "2026-11-25",
+ "video": null,
+ "card": [
+  "GTA 6",
+  "ATM ROBBERY",
+  "safehouse-vehicles-01.jpg"
+ ],
+ "lede": "Yes, GTA 6 lets you rip <b>a whole ATM</b> out of a wall and drag it away. You need a <b>winch</b>, a clear road out and a little patience, because the cash comes with a <b>catch</b>. Here's the method the guides agree on, and the two details they don't.",
+ "sections": [
+  [
+   "What you need",
+   "<ul class=\"list\"><li><b>A vehicle with a winch</b>: your own pickup with a winch fitted, or a tow truck.</li><li><b>An outdoor ATM</b>: the street-facing kind built into a wall.</li><li><b>A getaway route</b>: police respond as soon as the machine leaves the wall (games.gg, GTA 6 Community Wiki).</li></ul>"
+  ],
+  [
+   "Where to get a winch (or a tow truck)",
+   "<p>Guides say mod shops fit a winch under <b>Bodywork &gt; Towing</b> (GTA 6 Community Wiki, MMOExp). GameSpot points pickup owners to <b>Wasteland Off-Road</b>, the off-road shop in Port Gellhorn (it's pinned on our <a href=\"/guides/gta-6-map-leonida-places/\">interactive GTA 6 map</a>).</p><p>No mod shop yet? Guides say <b>tow trucks</b> turn up around impound lots and on the road. The winch price isn't settled: one guide lists $1,700, another says it's unconfirmed, so check the shop menu.</p>"
+  ],
+  [
+   "How to pull and open the ATM",
+   "<ol class=\"list\"><li>Reverse up to the ATM until the hook connects.</li><li>Drive off: the machine comes out of the wall.</li><li>Get somewhere quiet, then drag it until it breaks open or use a sticky bomb (Happy Gamer, games.gg).</li><li>Grab the cash and leave before the response arrives.</li></ol>"
+  ],
+  [
+   "The catch: marked bills and dye packs",
+   "<p>Guides say robbery cash can come as <b>marked bills</b> hiding dye packs, and fences won't take marked money until you own the <b>Dye Pack Jammer</b>, a Chapter 3 unlock (Happy Gamer, KeenGamer, games.gg). Guides also disagree on when ATM jobs open up: Happy Gamer says you can fit your own winch from Chapter 2, Magic Game World ties the ATM jobs to Chapter 3.</p><p><b>Our take:</b> it's the most fun money in the game, but it pays best once you have the jammer. Until then, our <a href=\"/guides/gta-6-make-money/\">money guide</a> has safer early cash.</p>"
+  ],
+  [
+   "Bank it, don't carry it",
+   "<p>Cash in your pocket is lost if you're busted, so deposit it at an ATM (games.gg, KeenGamer). Yes, the irony is intended.</p>"
+  ]
+ ],
+ "faq": [
+  [
+   "Can you rob ATMs in GTA 6?",
+   "Yes. Hook an outdoor ATM with a winch vehicle or tow truck, pull it off the wall and break it open (GameSpot, Happy Gamer, games.gg)."
+  ],
+  [
+   "Where do you get a winch in GTA 6?",
+   "Mod shops fit one under Bodywork > Towing; GameSpot names Wasteland Off-Road in Port Gellhorn. Tow trucks work too."
+  ],
+  [
+   "Why won't the fence take my ATM money?",
+   "Guides say it can be marked bills: you need the Dye Pack Jammer (Chapter 3) first."
+  ]
+ ],
+ "gear": [
+  "game"
+ ],
+ "sources": [
+  [
+   "GameSpot: how to tow away and steal ATMs in GTA 6",
+   "https://www.gamespot.com/articles/gta-6-steal-atm-tow-trucks/"
+  ],
+  [
+   "GTA 6 Community Wiki: ATM robbery, how to get a winch and tow truck",
+   "https://gta6communitywiki.com/tips/atm-robbery"
+  ],
+  [
+   "Happy Gamer: how to rob an ATM in GTA 6 (winch method and marked bills)",
+   "https://happygamer.com/gta-6-how-to-rob-atm-178845/"
+  ],
+  [
+   "games.gg: how to open a stolen ATM and rob ATMs with a winch",
+   "https://games.gg/grand-theft-auto-vi/guides/gta-6-how-to-open-a-stolen-atm-and-rob-atms-with-a-winch/"
+  ],
+  [
+   "KeenGamer: how to fence stolen goods in GTA 6, fences and marked bills",
+   "https://www.keengamer.com/articles/guides/how-to-fence-stolen-goods-in-gta-6-all-fence-locations-and-marked-bills/"
+  ],
+  [
+   "games.gg: GTA 6 money laundering explained",
+   "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-money-laundering-explained/"
+  ],
+  [
+   "Magic Game World: GTA 6 towable ATM guide",
+   "https://www.magicgameworld.com/gta-6-towable-atm-guide-how-to-complete-yasmanis-atm-jobs/"
+  ],
+  [
+   "MMOExp: GTA 6 ATM robbery guide",
+   "https://www.mmoexp.com/News/gta-6-atm-robbery-guide-how-to-make-100k-in-under-an-hour.html"
+  ]
+ ]
+}

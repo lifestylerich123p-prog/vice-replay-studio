@@ -1,0 +1,1231 @@
+{
+ "title": "GTA 6 ATM Robbery Guide: Winch, Tow Truck and the Dye Pack Catch",
+ "slug": "gta6-atm-robbery-guide",
+ "series": "Explained",
+ "format": "search-answer",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + card photos + official map zoom; 16:9 long video = search guide)",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam only if an English Short wins its first 24 h (winners-only); Kokoro em_alex fallback in this render",
+ "title_options": [
+  "GTA 6 ATM Robbery Guide: Winch, Tow Truck and the Dye Pack Catch",
+  "How to Steal ATMs in GTA 6 (Winch Method, No Spoilers)",
+  "GTA 6: How to Rob ATMs With a Winch, Step by Step"
+ ],
+ "description": "Vice Replay Explained: how ATM robberies work in GTA 6, from the guides that tested it (no story spoilers). You need a vehicle with a winch (mod shops fit one under Bodywork > Towing; GameSpot names Wasteland Off-Road in Port Gellhorn) or a tow truck (guides find them around impound lots), an outdoor ATM, and a getaway: police respond as soon as the machine leaves the wall. Reverse until the hook connects, drive off, then drag the ATM until it breaks or use a sticky bomb. The catch: guides say the cash can come as marked bills with dye packs, and fences won't take marked money until you unlock the Dye Pack Jammer (Chapter 3). Guides disagree on when the ATM job opens (Chapter 2 vs 3) and on the winch price, so we left those numbers out. Bank your cash: you lose what you carry if you're busted.\n\nFull written guide: https://vicereplay.com/guides/gta-6-atm-robbery/\n\nSources: GameSpot, GTA 6 Community Wiki, Happy Gamer, games.gg, Magic Game World, MMOExp, KeenGamer. Map: Rockstar Games' official Leonida map.",
+ "thumbnail": {
+  "line1": "STEAL",
+  "line2": "THE WHOLE ATM",
+  "tag": "WINCH METHOD",
+  "image": "../media/official/safehouse-vehicles-01.jpg",
+  "variants": [
+   {
+    "line1": "$0",
+    "line2": "IF IT'S DYED",
+    "tag": "THE CATCH",
+    "image": "vice:2"
+   },
+   {
+    "line1": "HOOK IT.",
+    "line2": "DRIVE.",
+    "tag": "3 STEPS",
+    "image": "../media/official/port-gellhorn-01.jpg"
+   }
+  ]
+ },
+ "pinned_comment": "Winch pickup or tow truck: which one are you using? 👇",
+ "tags": [
+  "GTA 6 ATM robbery",
+  "GTA 6 how to rob ATM",
+  "GTA 6 steal ATM",
+  "GTA 6 winch",
+  "GTA 6 tow truck",
+  "GTA 6 ATM winch",
+  "GTA 6 dye pack",
+  "GTA 6 dye pack jammer",
+  "GTA 6 marked bills",
+  "GTA 6 money guide",
+  "GTA 6 make money",
+  "GTA 6 Wasteland Off-Road",
+  "GTA 6 guide",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gta6tips",
+  "#gta6money",
+  "#gtavi",
+  "#gaming"
+ ],
+ "affiliate": [
+  "storage",
+  "gear"
+ ],
+ "sources": [
+  "GameSpot - How to tow away and steal ATMs in GTA 6: https://www.gamespot.com/articles/gta-6-steal-atm-tow-trucks/",
+  "GTA 6 Community Wiki - ATM robbery: how to get a winch and tow truck: https://gta6communitywiki.com/tips/atm-robbery",
+  "Happy Gamer - How to rob an ATM in GTA 6: winch method and marked bills: https://happygamer.com/gta-6-how-to-rob-atm-178845/",
+  "games.gg - GTA 6: how to open a stolen ATM and rob ATMs with a winch: https://games.gg/grand-theft-auto-vi/guides/gta-6-how-to-open-a-stolen-atm-and-rob-atms-with-a-winch/",
+  "Magic Game World - GTA 6 towable ATM guide (Yasmani's ATM jobs): https://www.magicgameworld.com/gta-6-towable-atm-guide-how-to-complete-yasmanis-atm-jobs/",
+  "MMOExp - GTA 6 ATM robbery guide: https://www.mmoexp.com/News/gta-6-atm-robbery-guide-how-to-make-100k-in-under-an-hour.html",
+  "KeenGamer - How to fence stolen goods in GTA 6, fence locations and marked bills: https://www.keengamer.com/articles/guides/how-to-fence-stolen-goods-in-gta-6-all-fence-locations-and-marked-bills/",
+  "games.gg - GTA 6 money laundering explained: https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-money-laundering-explained/",
+  "PowerPyx / Game8 (via site/map-pins.json) - Wasteland Off-Road mod shop, Port Gellhorn",
+  "ppe.pl - GTA 6: ripping ATMs out of walls with a winch vehicle: https://www.ppe.pl/poradniki/432031/gta-6-wyrywanie-i-okradanie-bankomatow-ze-sciany-pojazd-z-wyciagarka-dzwig-gdzie-jest.html"
+ ],
+ "guide": "gta-6-atm-robbery",
+ "facts_note": "Nov 25 research (2+ guides each): winch via mod shop Bodywork>Towing (GameSpot, GTA 6 Community Wiki, MMOExp); Wasteland Off-Road named by GameSpot (pin in site/map-pins.json from PowerPyx + Game8; GameSpot says 'Kelly County', our pin is north Port Gellhorn, which is in Kelly County); tow trucks near impound lots (Wiki, MMOExp); reverse/hook/drive + drag or sticky bomb (Happy Gamer, games.gg); cops respond fast (games.gg, Wiki); marked bills + Dye Pack Jammer, Chapter 3 (Happy Gamer, KeenGamer, games.gg). LEFT OUT on purpose: winch price ($1,700 from MMOExp only, gta6.house says unconfirmed), '$100K an hour' (one source), unlock chapter (Ch 2 vs Ch 3: stated as a disagreement), mission names (story).",
+ "es": {
+  "title": "Cómo ROBAR cajeros en GTA 6: cabrestante, grúa y la trampa del tinte 💸",
+  "description": "Vice Replay Explicado: cómo funcionan los robos de cajeros en GTA 6, según las guías que lo probaron (sin spoilers). Necesitas un vehículo con cabrestante (los talleres lo ponen en Carrocería > Remolque; GameSpot nombra Wasteland Off-Road en Port Gellhorn) o una grúa, un cajero exterior y una huida: la policía responde en cuanto la máquina sale de la pared. La trampa: el dinero puede venir marcado con tinte y los peristas no lo aceptan hasta que tengas el bloqueador de tinte (capítulo 3). Guía escrita: https://vicereplay.com/es/guias/robar-cajeros-gta-6/",
+  "tags": [
+   "GTA 6 robar cajeros",
+   "GTA 6 cajero",
+   "GTA 6 cabrestante",
+   "GTA 6 grúa",
+   "GTA 6 dinero",
+   "GTA 6 trucos dinero",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "segments": [
+  {
+   "chapter": "Intro",
+   "headline": "GTA 6 ATM GUIDE",
+   "headline_es": "GUÍA DE CAJEROS",
+   "text": "GTA 6 lets you rip a whole ATM out of the wall and drive away with it. Here's how it works: the truck you need, where to get the winch, how to open it, and the catch that ruins the cash.",
+   "text_es": "GTA seis te deja arrancar un cajero entero de la pared y llevártelo. Te explico cómo: el vehículo que necesitas, dónde poner el cabrestante, cómo abrirlo y la trampa que arruina el dinero.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6",
+     "ATM ROBBERY GUIDE"
+    ],
+    "pink": [
+     "ATM ROBBERY GUIDE"
+    ],
+    "seed": 41,
+    "sub": "winch · tow truck · the dye pack catch"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6",
+     "ROBAR CAJEROS"
+    ],
+    "pink": [
+     "ROBAR CAJEROS"
+    ],
+    "seed": 41,
+    "sub": "cabrestante · grúa · la trampa del tinte"
+   }
+  },
+  {
+   "chapter": "What you need",
+   "headline": "WHAT YOU NEED",
+   "headline_es": "LO QUE NECESITAS",
+   "text": "You need three things. A vehicle with a winch. An outdoor ATM, the kind built into a wall on the street. And a getaway plan, because the second that machine moves, the cops know.",
+   "text_es": "Necesitas tres cosas. Un vehículo con cabrestante. Un cajero exterior, de los que están en la pared de la calle. Y un plan de huida, porque en cuanto la máquina se mueve, la policía se entera.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "THE ATM JOB",
+    "items": [
+     [
+      "Winch vehicle",
+      "1"
+     ],
+     [
+      "Outdoor ATM",
+      "2"
+     ],
+     [
+      "Getaway plan",
+      "3"
+     ]
+    ],
+    "src": "GameSpot · Happy Gamer · games.gg",
+    "seed": 41
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "EL GOLPE AL CAJERO",
+    "items": [
+     [
+      "Vehículo con cabrestante",
+      "1"
+     ],
+     [
+      "Cajero exterior",
+      "2"
+     ],
+     [
+      "Plan de huida",
+      "3"
+     ]
+    ],
+    "src": "GameSpot · Happy Gamer · games.gg",
+    "seed": 41
+   }
+  },
+  {
+   "chapter": "Step 1: the winch",
+   "headline": "GET A WINCH",
+   "headline_es": "PON UN CABRESTANTE",
+   "text": "Option one: fit a winch to your own pickup. Guides say mod shops sell it under Bodywork, then Towing. GameSpot points to Wasteland Off-Road, the off-road shop up in Port Gellhorn.",
+   "text_es": "Opción uno: ponle un cabrestante a tu propia camioneta. Según las guías, los talleres lo venden en Carrocería, luego Remolque. GameSpot señala Wasteland Off-Road, el taller todoterreno al norte de Port Gellhorn.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "dx": -0.012,
+    "dy": 0.012,
+    "label": "Wasteland Off-Road · winch",
+    "n": 1
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "dx": -0.012,
+    "dy": 0.012,
+    "label": "Wasteland Off-Road · cabrestante",
+    "n": 1
+   }
+  },
+  {
+   "chapter": "Step 2: or a tow truck",
+   "headline": "OR A TOW TRUCK",
+   "headline_es": "O UNA GRÚA",
+   "text": "Option two: skip the mod shop and take a tow truck. Guides say you'll find them around impound lots and driving through the city. Price of a winch install: guides don't agree yet, so check the menu.",
+   "text_es": "Opción dos: olvídate del taller y llévate una grúa. Según las guías, hay cerca de los depósitos de coches y circulando por la ciudad. El precio del cabrestante: las guías no coinciden, así que mira el menú.",
+   "keep_media": true,
+   "chart": {
+    "type": "versus",
+    "a": [
+     "Your pickup",
+     "+ WINCH"
+    ],
+    "b": [
+     "Tow truck",
+     "READY"
+    ],
+    "winner": "b",
+    "src": "GTA 6 Wiki · MMOExp",
+    "seed": 41
+   },
+   "chart_es": {
+    "type": "versus",
+    "a": [
+     "Tu camioneta",
+     "+ CABRESTANTE"
+    ],
+    "b": [
+     "Grúa",
+     "LISTA"
+    ],
+    "winner": "b",
+    "src": "GTA 6 Wiki · MMOExp",
+    "seed": 41
+   }
+  },
+  {
+   "chapter": "Step 3: hook, pull, open",
+   "headline": "HOOK. PULL. GO.",
+   "headline_es": "ENGANCHA Y TIRA",
+   "text": "Now the job. Reverse up to the ATM until the hook connects. Then drive off and the machine comes out of the wall. To open it, guides say drag it until it breaks, or use a sticky bomb.",
+   "text_es": "Ahora el golpe. Da marcha atrás hasta el cajero hasta que el gancho se enganche. Luego arranca y la máquina sale de la pared. Para abrirla, según las guías, arrástrala hasta que se rompa o usa una bomba lapa.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "HOW TO PULL IT",
+    "items": [
+     [
+      "Reverse to the ATM",
+      "1"
+     ],
+     [
+      "Hook connects",
+      "2"
+     ],
+     [
+      "Drive off",
+      "3"
+     ],
+     [
+      "Drag or sticky bomb",
+      "4"
+     ]
+    ],
+    "src": "Happy Gamer · games.gg",
+    "seed": 42
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "CÓMO ARRANCARLO",
+    "items": [
+     [
+      "Marcha atrás al cajero",
+      "1"
+     ],
+     [
+      "Engancha",
+      "2"
+     ],
+     [
+      "Arranca",
+      "3"
+     ],
+     [
+      "Arrastra o bomba lapa",
+      "4"
+     ]
+    ],
+    "src": "Happy Gamer · games.gg",
+    "seed": 42
+   }
+  },
+  {
+   "chapter": "The heat",
+   "headline": "THE COPS COME",
+   "headline_es": "LLEGA LA POLICÍA",
+   "text": "The heat comes fast. Every guide agrees: police respond as soon as the ATM leaves the wall. So pick an ATM with a clear road out, not a dead end downtown, and break it open somewhere quiet.",
+   "text_es": "La policía llega rápido. Todas las guías coinciden: responde en cuanto el cajero sale de la pared. Elige un cajero con salida despejada, no un callejón del centro, y ábrelo en un sitio tranquilo.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "THE COPS",
+     "COME FAST"
+    ],
+    "pink": [
+     "COME FAST"
+    ],
+    "seed": 42,
+    "sub": "pick an ATM with a clear road out",
+    "src": "games.gg · GTA 6 Wiki"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "LA POLICÍA",
+     "LLEGA RÁPIDO"
+    ],
+    "pink": [
+     "LLEGA RÁPIDO"
+    ],
+    "seed": 42,
+    "sub": "elige un cajero con salida despejada",
+    "src": "games.gg · GTA 6 Wiki"
+   }
+  },
+  {
+   "chapter": "The dye pack catch",
+   "headline": "THE CATCH: DYE",
+   "headline_es": "LA TRAMPA: TINTE",
+   "text": "Here's the catch. Guides say the cash can come as marked bills with dye packs, and fences won't take marked money until you have the Dye Pack Jammer, a Chapter 3 unlock. When the job opens up is the other open question: guides say Chapter 2 or 3.",
+   "text_es": "Aquí está la trampa. Según las guías, el dinero puede venir en billetes marcados con tinte, y los peristas no aceptan dinero marcado hasta que tengas el bloqueador de tinte, del capítulo tres. Cuándo se desbloquea el golpe también varía: las guías dicen capítulo dos o tres.",
+   "keep_media": true,
+   "chart": {
+    "type": "headline",
+    "kicker": "THE CATCH",
+    "text": "Marked bills need the Dye Pack Jammer",
+    "ticker": "Happy Gamer · KeenGamer · games.gg · guides differ on Chapter 2 vs 3",
+    "seed": 43
+   },
+   "chart_es": {
+    "type": "headline",
+    "kicker": "LA TRAMPA",
+    "text": "Billetes marcados: necesitas el bloqueador",
+    "ticker": "Happy Gamer · KeenGamer · games.gg · las guías difieren: capítulo 2 o 3",
+    "seed": 43
+   }
+  },
+  {
+   "chapter": "Bank it",
+   "headline": "BANK IT",
+   "headline_es": "DEPOSÍTALO",
+   "text": "Last step: bank it. Cash in your pocket is lost if you get busted, so deposit it at an ATM, the irony. Our take: it's the most fun money in the game, but it pays best once you have the jammer. Your best ATM spot? Tell me below, and subscribe for a GTA 6 guide every day.",
+   "text_es": "Último paso: deposítalo. El efectivo que llevas encima se pierde si te arrestan, así que ingrésalo en un cajero, qué ironía. Nuestra opinión: es el dinero más divertido del juego, pero rinde más con el bloqueador. ¿Tu mejor cajero? Dímelo abajo y suscríbete para una guía de GTA seis cada día.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "BANK IT.",
+     "DON'T CARRY IT."
+    ],
+    "pink": [
+     "DON'T CARRY IT."
+    ],
+    "seed": 43,
+    "sub": "busted = pocket cash gone",
+    "src": "games.gg · KeenGamer"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "DEPOSÍTALO.",
+     "NO LO LLEVES."
+    ],
+    "pink": [
+     "NO LO LLEVES."
+    ],
+    "seed": 43,
+    "sub": "si te arrestan, pierdes el efectivo",
+    "src": "games.gg · KeenGamer"
+   }
+  }
+ ],
+ "short": [
+  {
+   "headline": "STEAL THE ATM",
+   "headline_es": "ROBA EL CAJERO",
+   "text": "GTA 6 lets you steal the whole ATM.",
+   "text_es": "GTA seis te deja robar el cajero entero.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 LETS YOU",
+     "STEAL THE ATM"
+    ],
+    "pink": [
+     "STEAL THE ATM"
+    ],
+    "seed": 44,
+    "sub": "the whole machine",
+    "src": "GameSpot · Happy Gamer"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 TE DEJA",
+     "ROBAR EL CAJERO"
+    ],
+    "pink": [
+     "ROBAR EL CAJERO"
+    ],
+    "seed": 44,
+    "sub": "la máquina entera",
+    "src": "GameSpot · Happy Gamer"
+   }
+  },
+  {
+   "headline": "GET A WINCH",
+   "headline_es": "CABRESTANTE",
+   "text": "Fit a winch at a mod shop, like Wasteland Off-Road in Port Gellhorn.",
+   "text_es": "Pon un cabrestante en un taller, en Carrocería, Remolque. Las guías nombran Wasteland Off-Road, en Port Gellhorn.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "dx": -0.012,
+    "dy": 0.012,
+    "label": "Winch · Wasteland Off-Road",
+    "n": 1
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "dx": -0.012,
+    "dy": 0.012,
+    "label": "Cabrestante · Wasteland Off-Road",
+    "n": 1
+   }
+  },
+  {
+   "headline": "HOOK. PULL. GO.",
+   "headline_es": "ENGANCHA Y TIRA",
+   "text": "Reverse into an outdoor ATM, hook it, and drive. Cops come fast.",
+   "text_es": "Marcha atrás a un cajero exterior, engánchalo y arranca. La policía llega rápido.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "ATM JOB",
+    "items": [
+     [
+      "Reverse in",
+      "1"
+     ],
+     [
+      "Hook it",
+      "2"
+     ],
+     [
+      "Drive",
+      "3"
+     ]
+    ],
+    "src": "Happy Gamer · games.gg",
+    "seed": 44
+   },
+   "chart_es": {
+    "type": "list",
+    "title": "GOLPE AL CAJERO",
+    "items": [
+     [
+      "Marcha atrás",
+      "1"
+     ],
+     [
+      "Engancha",
+      "2"
+     ],
+     [
+      "Arranca",
+      "3"
+     ]
+    ],
+    "src": "Happy Gamer · games.gg",
+    "seed": 44
+   }
+  },
+  {
+   "headline": "THE CATCH: DYE",
+   "headline_es": "LA TRAMPA",
+   "text": "The catch: the cash can be marked. No fence takes it before the Chapter 3 Dye Pack Jammer.",
+   "text_es": "La trampa: el dinero puede venir marcado. Los peristas no lo aceptan hasta que tengas el bloqueador de tinte, en el capítulo tres.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Marked bills. No jammer, no deal.",
+    "pink": [
+     "No jammer"
+    ],
+    "sub": "Dye Pack Jammer · Chapter 3",
+    "src": "Happy Gamer · KeenGamer",
+    "seed": 44
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Billetes marcados. Sin bloqueador, no hay trato.",
+    "pink": [
+     "Sin bloqueador"
+    ],
+    "sub": "bloqueador de tinte · capítulo 3",
+    "src": "Happy Gamer · KeenGamer",
+    "seed": 44
+   }
+  },
+  {
+   "headline": "WAIT FOR IT",
+   "headline_es": "ESPERA",
+   "text": "Our take: wait for the jammer. Then yes,",
+   "text_es": "Nuestra opinión: espera al bloqueador. Y entonces sí,",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "OUR TAKE:",
+     "WAIT FOR THE JAMMER"
+    ],
+    "pink": [
+     "WAIT FOR THE JAMMER"
+    ],
+    "seed": 44
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "NUESTRA OPINIÓN:",
+     "ESPERA AL BLOQUEADOR"
+    ],
+    "pink": [
+     "ESPERA AL BLOQUEADOR"
+    ],
+    "seed": 44
+   }
+  }
+ ],
+ "short_title": "GTA 6 lets you steal the whole ATM: here's how 🏧 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 lets you steal the whole ATM: here's how 🏧 #GTA6 #Shorts",
+  "GTA 6 ATM robberies have a catch (dye packs) #GTA6 #Shorts",
+  "How to rob an ATM in GTA 6 with a winch 🏧 #GTA6 #Shorts"
+ ],
+ "short_description": "How to steal an ATM in GTA 6: fit a winch at a mod shop (Bodywork > Towing; guides name Wasteland Off-Road in Port Gellhorn) or grab a tow truck, reverse into an outdoor ATM, hook it and drive. The catch: the cash can be marked, and fences won't take it until you get the Dye Pack Jammer (Chapter 3). Map: Rockstar's official Leonida map. Sources: GameSpot, Happy Gamer, games.gg, KeenGamer, GTA 6 Community Wiki. Full video on the channel ⬇️",
+ "short_es": {
+  "title": "GTA 6 te deja ROBAR el cajero entero 🏧 #GTA6 #Shorts",
+  "description": "Cómo robar un cajero en GTA 6: pon un cabrestante en un taller (Carrocería > Remolque; las guías nombran Wasteland Off-Road en Port Gellhorn) o usa una grúa, engancha un cajero exterior y arranca. La trampa: el dinero puede venir marcado y los peristas no lo aceptan hasta el bloqueador de tinte (capítulo 3). Fuentes: GameSpot, Happy Gamer, games.gg, KeenGamer.",
+  "tags": [
+   "GTA 6 robar cajero",
+   "GTA 6 cajero",
+   "GTA 6 cabrestante",
+   "GTA 6 dinero",
+   "GTA 6 trucos",
+   "GTA 6 español",
+   "GTA VI"
+  ]
+ },
+ "short_pinned_comment": "Would you rob ATMs before you get the jammer? Yes or no 👇",
+ "short_pinned_comment_es": "¿Robarías cajeros antes de tener el bloqueador? Sí o no 👇",
+ "short_tags": [
+  "GTA 6 ATM robbery",
+  "GTA 6 how to rob ATM",
+  "GTA 6 steal ATM",
+  "GTA 6 winch",
+  "GTA 6 dye pack",
+  "GTA 6 money",
+  "GTA 6 tips",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "shorts": [
+  {
+   "id": "tips",
+   "format": "search-answer",
+   "series": "Map Spots",
+   "seed": 51,
+   "title": "GTA 6: where to find Paul Walker's car 🏎️ #GTA6 #Shorts",
+   "title_options": [
+    "GTA 6: where to find Paul Walker's car 🏎️ #GTA6 #Shorts",
+    "Paul Walker's car is in GTA 6, but it's hidden #GTA6 #Shorts",
+    "GTA 6's Fast and Furious car: exactly where 🏎️ #GTA6 #Shorts"
+   ],
+   "description": "Where to find Paul Walker's car in GTA 6: a villa garage near the middle of Vespucci Island, Vice City. It's a green Maibatsu Penumbra FF modelled on his Eclipse from the first Fast and Furious; guides say the side door next to the garage gets you in, and you can take it as soon as you can roam (no story spoilers). Every spot is on our interactive map at vicereplay.com (Guides → GTA 6 Map). Map: Rockstar Games' official Leonida map. Sources: Jalopnik, BGR, Insider Gaming, Gfinity, games.gg.",
+   "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+   ],
+   "tiktok_hashtags": [
+    "#gta6",
+    "#paulwalker",
+    "#fastandfurious",
+    "#gtavi",
+    "#gta6cars"
+   ],
+   "pinned_comment": "Keep it stock or tune it? 👇",
+   "pinned_comment_es": "¿Lo dejas de serie o lo tuneas? 👇",
+   "tags": [
+    "GTA 6 Paul Walker car",
+    "GTA 6 Paul Walker",
+    "GTA 6 Fast and Furious car",
+    "GTA 6 Penumbra FF",
+    "GTA 6 Eclipse",
+    "GTA 6 Vespucci Island",
+    "GTA 6 secret cars",
+    "GTA 6 rare cars",
+    "GTA 6 easter eggs",
+    "GTA 6 map",
+    "GTA 6",
+    "GTA VI"
+   ],
+   "playlist": "GTA 6 Map: Where to Find It",
+   "es": {
+    "title": "El coche de PAUL WALKER en GTA 6: dónde está 🏎️ #GTA6 #Shorts",
+    "description": "Dónde está el coche de Paul Walker en GTA 6: el garaje de una villa en el centro de Vespucci Island, Vice City. Es un Maibatsu Penumbra FF verde inspirado en su Eclipse de la primera Rápidos y Furiosos; según las guías, se entra por la puerta lateral. Mapa interactivo en vicereplay.com/es/guias/mapa-gta-6/. Fuentes: Jalopnik, BGR, Insider Gaming, Gfinity.",
+    "tags": [
+     "GTA 6 coche Paul Walker",
+     "GTA 6 Rápidos y Furiosos",
+     "GTA 6 Penumbra FF",
+     "GTA 6 coches secretos",
+     "GTA 6 mapa",
+     "GTA 6 español",
+     "GTA VI"
+    ]
+   },
+   "sources": [
+    "Jalopnik - Where to find the Paul Walker Fast and Furious tribute car in GTA 6: https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
+    "BGR - GTA 6 has a hidden Fast and Furious easter egg: https://www.bgr.com/2322463/gta-6-hidden-fast-and-furious-paul-walker-car/",
+    "Insider Gaming - Paul Walker GTA 6 easter egg: https://insider-gaming.com/paul-walker-gta-6-easter-egg/",
+    "Gfinity - GTA 6: how to find the Fast & Furious 1995 Mitsubishi Eclipse: https://www.gfinityesports.com/article/gta-6-how-to-find-the-fast-furious-1995-mitsubishi-eclipse",
+    "games.gg - GTA 6 Paul Walker car location: https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-paul-walker-car-location-how-to-get/",
+    "Critical Hits - GTA 6 esconde carro de Paul Walker e referência a Toy Story: https://criticalhits.com.br/games/gta-6-esconde-carro-de-paul-walker-e-referencia-a-toy-story"
+   ],
+   "facts_note": "Pin already in site/map-pins.json (VICE, Red Bull, GamesRadar, The Click) + Jalopnik, BGR, Insider Gaming, Gfinity, games.gg today. Toy Story trunk reference left OUT of the script (one clear source, Critical Hits). Paul Walker's car was one item in gta6-4-secrets / map-secrets-guide; this is its first dedicated where-Short.",
+   "segments": [
+    {
+     "headline": "PAUL WALKER'S CAR",
+     "headline_es": "EL COCHE DE PAUL",
+     "text": "Paul Walker's car is hidden in GTA 6. Here's exactly where.",
+     "text_es": "El coche de Paul Walker está escondido en GTA seis. Te digo dónde.",
+     "keep_media": true,
+     "chart": {
+      "type": "kinetic",
+      "lines": [
+       "PAUL WALKER'S CAR",
+       "IS IN GTA 6"
+      ],
+      "pink": [
+       "IS IN GTA 6"
+      ],
+      "seed": 51,
+      "sub": "and exactly where",
+      "src": "Jalopnik · BGR"
+     },
+     "chart_es": {
+      "type": "kinetic",
+      "lines": [
+       "EL COCHE DE PAUL WALKER",
+       "ESTÁ EN GTA 6"
+      ],
+      "pink": [
+       "ESTÁ EN GTA 6"
+      ],
+      "seed": 51,
+      "sub": "y dónde está",
+      "src": "Jalopnik · BGR"
+     }
+    },
+    {
+     "headline": "VESPUCCI ISLAND",
+     "headline_es": "VESPUCCI ISLAND",
+     "text": "Vespucci Island, in Vice City. A villa garage near the middle of the island.",
+     "text_es": "Vespucci Island, en Vice City. El garaje de una villa en el centro de la isla.",
+     "keep_media": true,
+     "chart": {
+      "type": "map",
+      "at": "Vespucci Island",
+      "label": "Penumbra FF · villa garage",
+      "n": 1
+     },
+     "chart_es": {
+      "type": "map",
+      "at": "Vespucci Island",
+      "label": "Penumbra FF · garaje",
+      "n": 1
+     }
+    },
+    {
+     "headline": "THE ECLIPSE",
+     "headline_es": "EL ECLIPSE",
+     "text": "A green Maibatsu Penumbra FF: his Eclipse from the first Fast and Furious.",
+     "text_es": "Es un Maibatsu Penumbra FF verde, inspirado en su Eclipse de la primera Rápidos y Furiosos.",
+     "keep_media": true,
+     "chart": {
+      "type": "versus",
+      "a": [
+       "The Fast and the Furious",
+       "ECLIPSE"
+      ],
+      "b": [
+       "GTA 6",
+       "PENUMBRA FF"
+      ],
+      "winner": "b",
+      "src": "Jalopnik · Insider Gaming · Gfinity",
+      "seed": 51
+     },
+     "chart_es": {
+      "type": "versus",
+      "a": [
+       "Rápidos y Furiosos",
+       "ECLIPSE"
+      ],
+      "b": [
+       "GTA 6",
+       "PENUMBRA FF"
+      ],
+      "winner": "b",
+      "src": "Jalopnik · Insider Gaming · Gfinity",
+      "seed": 51
+     }
+    },
+    {
+     "headline": "SIDE DOOR",
+     "headline_es": "PUERTA LATERAL",
+     "text": "Guides say the side door gets you in. Free roam is enough.",
+     "text_es": "Según las guías, se entra por la puerta lateral junto al garaje. Lo puedes tomar en cuanto puedas explorar.",
+     "keep_media": true,
+     "chart": {
+      "type": "list",
+      "title": "HOW TO GET IT",
+      "items": [
+       [
+        "Vespucci Island",
+        "1"
+       ],
+       [
+        "Side door",
+        "2"
+       ],
+       [
+        "Free roam: yes",
+        "3"
+       ]
+      ],
+      "src": "Jalopnik · games.gg",
+      "seed": 51
+     },
+     "chart_es": {
+      "type": "list",
+      "title": "CÓMO CONSEGUIRLO",
+      "items": [
+       [
+        "Vespucci Island",
+        "1"
+       ],
+       [
+        "Puerta lateral",
+        "2"
+       ],
+       [
+        "Libre: sí",
+        "3"
+       ]
+      ],
+      "src": "Jalopnik · games.gg",
+      "seed": 51
+     }
+    },
+    {
+     "headline": "GRAB IT EARLY",
+     "headline_es": "TÓMALO YA",
+     "text": "Our take: best free car in Vice City. Grab it early, because",
+     "text_es": "Nuestra opinión: el mejor coche gratis de Vice City. Tómalo pronto, porque",
+     "keep_media": true,
+     "chart": {
+      "type": "kinetic",
+      "lines": [
+       "OUR TAKE:",
+       "GRAB IT EARLY"
+      ],
+      "pink": [
+       "GRAB IT EARLY"
+      ],
+      "seed": 51
+     },
+     "chart_es": {
+      "type": "kinetic",
+      "lines": [
+       "NUESTRA OPINIÓN:",
+       "TÓMALO PRONTO"
+      ],
+      "pink": [
+       "TÓMALO PRONTO"
+      ],
+      "seed": 51
+     }
+    }
+   ]
+  },
+  {
+   "id": "news",
+   "format": "ranking",
+   "series": "Tier List",
+   "seed": 61,
+   "title": "Rockstar's games ranked: Red Dead 2 isn't S tier 😤 #GTA6 #Shorts",
+   "title_options": [
+    "Rockstar's games ranked: Red Dead 2 isn't S tier 😤 #GTA6 #Shorts",
+    "GTA 6 vs Red Dead 2: only one is S tier #GTA6 #Shorts",
+    "Every Rockstar classic ranked by critics 🏆 #GTA6 #Shorts"
+   ],
+   "description": "Vice Replay Tier List #5 (momentum follow-up to 'Vice City is only B tier'): Rockstar's biggest games ranked by Metacritic score. S: GTA 6 (99), GTA IV (98). A: Red Dead Redemption 2 (97), GTA V (97). B: Red Dead Redemption (95). C: Bully (87, PS2), Max Payne 3 (87, PS3). Our take: Red Dead 2 deserves S anyway. Sources: Metacritic, Notebookcheck, VGC, Push Square, Fandomwire, Wikipedia.",
+   "hashtags": [
+    "GTA6",
+    "GTAVI",
+    "Shorts"
+   ],
+   "tiktok_hashtags": [
+    "#gta6",
+    "#rdr2",
+    "#reddeadredemption2",
+    "#tierlist",
+    "#rockstargames"
+   ],
+   "pinned_comment": "Red Dead 2: S or A? 👇",
+   "pinned_comment_es": "Red Dead 2: ¿S o A? 👇",
+   "tags": [
+    "GTA 6 tier list",
+    "Rockstar games ranked",
+    "Red Dead 2 tier list",
+    "GTA 6 vs Red Dead 2",
+    "Rockstar tier list",
+    "GTA 6 Metacritic",
+    "Red Dead Redemption 2 Metacritic",
+    "Max Payne 3",
+    "Bully",
+    "GTA games ranked",
+    "GTA 6",
+    "GTA VI"
+   ],
+   "es": {
+    "title": "Los juegos de Rockstar: Red Dead 2 NO es tier S 😤 #GTA6 #Shorts",
+    "description": "Vice Replay Tier List: los grandes juegos de Rockstar según Metacritic. S: GTA 6 (99), GTA IV (98). A: Red Dead Redemption 2 (97), GTA V (97). B: Red Dead Redemption (95). C: Bully (87), Max Payne 3 (87). Nuestra opinión: Red Dead 2 merece S. Fuentes: Metacritic, Notebookcheck, VGC.",
+    "tags": [
+     "GTA 6 tier list",
+     "juegos de Rockstar",
+     "Red Dead 2",
+     "GTA 6 Metacritic",
+     "GTA 6 español",
+     "GTA VI"
+    ]
+   },
+   "sources": [
+    "Notebookcheck - GTA 6 reviews award 99 on Metacritic, topping GTA 4 (98); GTA 5 and RDR2 at 97: https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html",
+    "VGC - GTA 6 is currently the highest scoring video game of all time on Metacritic: https://www.videogameschronicle.com/news/grand-theft-auto-6-is-currently-the-highest-scoring-video-game-of-all-time-according-to-metacritic/",
+    "Metacritic - Rockstar Games company page (Red Dead Redemption PS3/360: 95; GTA IV 98; RDR2 97): https://www.metacritic.com/company/rockstar-games/",
+    "Push Square - Rockstar snags the two best reviewed PS4 games of the decade (RDR2, GTA V): https://www.pushsquare.com/news/2019/12/rockstar_snags_the_two_best_reviewed_ps4_games_of_the_decade_on_metacritic",
+    "Fandomwire - Best Rockstar games (Red Dead Redemption scored 95 on Metacritic): https://fandomwire.com/7-best-rockstar-games-of-all-time/",
+    "Metacritic - Max Payne 3 (PlayStation 3), Metascore 87: https://legacy.prod.metacritic.com/game/playstation-3/max-payne-3",
+    "Metacritic - Max Payne 3 (PC), Metascore 87: https://legacy.prod.metacritic.com/game/pc/max-payne-3",
+    "Metacritic - Bully (PlayStation 2): https://legacy.prod.metacritic.com/game/playstation-2/bully",
+    "Wikipedia - Bully (video game), reception: Metacritic 87/100 (PS2): https://en.wikipedia.org/wiki/Bully_(video_game)"
+   ],
+   "facts_note": "Platform versions: Bully PS2 87 (Metacritic page + Wikipedia), Max Payne 3 PS3 87 and PC 87 (360 is 86: we use 87 with PS3 named in the description), Red Dead Redemption PS3/360 95 (Metacritic company page, Fandomwire), RDR2/GTA V 97 and GTA IV 98, GTA 6 99 (Notebookcheck, VGC, Push Square). L.A. Noire left out (couldn't confirm 89 in 2 sources). Momentum: jQbv5GPR3dk 616 views, 15/h vs 1/h median (studio.status, Nov 25 5:15 AM ET); adds Rockstar's non-GTA games, so it's not a re-cut.",
+   "segments": [
+    {
+     "headline": "RED DEAD 2? A TIER",
+     "headline_es": "RED DEAD 2? TIER A",
+     "text": "By critic scores, Red Dead 2 isn't S tier.",
+     "text_es": "Según la crítica, Red Dead 2 no es tier S.",
+     "keep_media": true,
+     "chart": {
+      "type": "kinetic",
+      "lines": [
+       "RED DEAD 2",
+       "ISN'T S TIER"
+      ],
+      "pink": [
+       "ISN'T S TIER"
+      ],
+      "seed": 61,
+      "sub": "Rockstar's games by Metacritic",
+      "src": "Metacritic · Notebookcheck"
+     },
+     "chart_es": {
+      "type": "kinetic",
+      "lines": [
+       "RED DEAD 2",
+       "NO ES TIER S"
+      ],
+      "pink": [
+       "NO ES TIER S"
+      ],
+      "seed": 61,
+      "sub": "los juegos de Rockstar según Metacritic",
+      "src": "Metacritic · Notebookcheck"
+     }
+    },
+    {
+     "headline": "C TIER",
+     "headline_es": "TIER C",
+     "text": "Bully and Max Payne 3: eighty seven on Metacritic.",
+     "text_es": "Bully y Max Payne 3: ochenta y siete en Metacritic.",
+     "keep_media": true,
+     "chart": {
+      "type": "tier",
+      "title": "ROCKSTAR ON METACRITIC",
+      "rows": [
+       [
+        "S",
+        []
+       ],
+       [
+        "A",
+        []
+       ],
+       [
+        "B",
+        []
+       ],
+       [
+        "C",
+        [
+         "Bully · 87",
+         "Max Payne 3 · 87"
+        ]
+       ]
+      ],
+      "static": [],
+      "seed": 61
+     },
+     "chart_es": {
+      "type": "tier",
+      "title": "ROCKSTAR EN METACRITIC",
+      "rows": [
+       [
+        "S",
+        []
+       ],
+       [
+        "A",
+        []
+       ],
+       [
+        "B",
+        []
+       ],
+       [
+        "C",
+        [
+         "Bully · 87",
+         "Max Payne 3 · 87"
+        ]
+       ]
+      ],
+      "static": [],
+      "seed": 61
+     }
+    },
+    {
+     "headline": "B TIER",
+     "headline_es": "TIER B",
+     "text": "The first Red Dead: ninety five.",
+     "text_es": "El primer Red Dead: noventa y cinco.",
+     "keep_media": true,
+     "chart": {
+      "type": "tier",
+      "title": "ROCKSTAR ON METACRITIC",
+      "rows": [
+       [
+        "S",
+        []
+       ],
+       [
+        "A",
+        []
+       ],
+       [
+        "B",
+        [
+         "Red Dead 1 · 95"
+        ]
+       ],
+       [
+        "C",
+        [
+         "Bully · 87",
+         "Max Payne 3 · 87"
+        ]
+       ]
+      ],
+      "static": [
+       "C"
+      ],
+      "seed": 61
+     },
+     "chart_es": {
+      "type": "tier",
+      "title": "ROCKSTAR EN METACRITIC",
+      "rows": [
+       [
+        "S",
+        []
+       ],
+       [
+        "A",
+        []
+       ],
+       [
+        "B",
+        [
+         "Red Dead 1 · 95"
+        ]
+       ],
+       [
+        "C",
+        [
+         "Bully · 87",
+         "Max Payne 3 · 87"
+        ]
+       ]
+      ],
+      "static": [
+       "C"
+      ],
+      "seed": 61
+     }
+    },
+    {
+     "headline": "A TIER",
+     "headline_es": "TIER A",
+     "text": "Red Dead 2 and GTA 5: ninety seven. A tier.",
+     "text_es": "Red Dead 2 y GTA cinco: noventa y siete. Tier A.",
+     "keep_media": true,
+     "chart": {
+      "type": "tier",
+      "title": "ROCKSTAR ON METACRITIC",
+      "rows": [
+       [
+        "S",
+        []
+       ],
+       [
+        "A",
+        [
+         "Red Dead 2 · 97",
+         "GTA V · 97"
+        ]
+       ],
+       [
+        "B",
+        [
+         "Red Dead 1 · 95"
+        ]
+       ],
+       [
+        "C",
+        [
+         "Bully · 87",
+         "Max Payne 3 · 87"
+        ]
+       ]
+      ],
+      "static": [
+       "C",
+       "B"
+      ],
+      "seed": 61
+     },
+     "chart_es": {
+      "type": "tier",
+      "title": "ROCKSTAR EN METACRITIC",
+      "rows": [
+       [
+        "S",
+        []
+       ],
+       [
+        "A",
+        [
+         "Red Dead 2 · 97",
+         "GTA V · 97"
+        ]
+       ],
+       [
+        "B",
+        [
+         "Red Dead 1 · 95"
+        ]
+       ],
+       [
+        "C",
+        [
+         "Bully · 87",
+         "Max Payne 3 · 87"
+        ]
+       ]
+      ],
+      "static": [
+       "C",
+       "B"
+      ],
+      "seed": 61
+     }
+    },
+    {
+     "headline": "S TIER",
+     "headline_es": "TIER S",
+     "text": "Only GTA 4 and GTA 6 made S. Ninety eight, and ninety nine.",
+     "text_es": "Solo GTA cuatro y GTA seis llegaron a S. Noventa y ocho, y noventa y nueve.",
+     "keep_media": true,
+     "chart": {
+      "type": "tier",
+      "title": "ROCKSTAR ON METACRITIC",
+      "rows": [
+       [
+        "S",
+        [
+         "GTA IV · 98",
+         "GTA 6 · 99"
+        ]
+       ],
+       [
+        "A",
+        [
+         "Red Dead 2 · 97",
+         "GTA V · 97"
+        ]
+       ],
+       [
+        "B",
+        [
+         "Red Dead 1 · 95"
+        ]
+       ],
+       [
+        "C",
+        [
+         "Bully · 87",
+         "Max Payne 3 · 87"
+        ]
+       ]
+      ],
+      "static": [
+       "C",
+       "B",
+       "A"
+      ],
+      "seed": 61
+     },
+     "chart_es": {
+      "type": "tier",
+      "title": "ROCKSTAR EN METACRITIC",
+      "rows": [
+       [
+        "S",
+        [
+         "GTA IV · 98",
+         "GTA 6 · 99"
+        ]
+       ],
+       [
+        "A",
+        [
+         "Red Dead 2 · 97",
+         "GTA V · 97"
+        ]
+       ],
+       [
+        "B",
+        [
+         "Red Dead 1 · 95"
+        ]
+       ],
+       [
+        "C",
+        [
+         "Bully · 87",
+         "Max Payne 3 · 87"
+        ]
+       ]
+      ],
+      "static": [
+       "C",
+       "B",
+       "A"
+      ],
+      "seed": 61
+     }
+    },
+    {
+     "headline": "TOO LOW?",
+     "headline_es": "¿MUY BAJO?",
+     "text": "Our take: Red Dead 2 deserves S. Still, by the numbers,",
+     "text_es": "Nuestra opinión: Red Dead 2 merece S. Aun así, según los números,",
+     "keep_media": true,
+     "chart": {
+      "type": "kinetic",
+      "lines": [
+       "OUR TAKE:",
+       "RED DEAD 2 DESERVES S"
+      ],
+      "pink": [
+       "DESERVES S"
+      ],
+      "seed": 61
+     },
+     "chart_es": {
+      "type": "kinetic",
+      "lines": [
+       "NUESTRA OPINIÓN:",
+       "RED DEAD 2 MERECE S"
+      ],
+      "pink": [
+       "MERECE S"
+      ],
+      "seed": 61
+     }
+    }
+   ]
+  }
+ ],
+ "comment_replies": []
+}
