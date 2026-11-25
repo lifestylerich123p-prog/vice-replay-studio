@@ -216,13 +216,6 @@ def sfx_track(path, total, whooshes, impacts, pops=()):
         out[s:s + len(seg)] += 0.8 * seg / (np.max(np.abs(im)) or 1)
     return _write(path, out[: int(total * SR)])
 
-
-if __name__ == "__main__":
-    root = Path(__file__).resolve().parent.parent / "assets" / "music"
-    root.mkdir(parents=True, exist_ok=True)
-    print(theme(root / "vice-replay-theme.wav"))
-
-
 def dembow(path, bpm=96, bars=16, seed=11):
     """Our own reggaeton/dembow beat (owner Nov 24: "the video itself has to have that Latino way"; Spanish channel,
     Miami Latino audience). Built here from scratch, so it is Content-ID safe: dembow kick/snare pattern (3+3+2 feel),
@@ -281,3 +274,8 @@ def dembow(path, bpm=96, bars=16, seed=11):
     x = out[:total]
     x = np.tanh(1.3 * x / (np.max(np.abs(x)) or 1))
     return _write(path, x)
+
+if __name__ == "__main__":
+    root = Path(__file__).resolve().parent.parent / "assets" / "music"
+    root.mkdir(parents=True, exist_ok=True)
+    print(theme(root / "vice-replay-theme.wav"))
