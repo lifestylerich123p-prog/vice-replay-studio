@@ -289,3 +289,9 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   = ours 1.58%, but our comment rate is ~19x theirs (0.26% vs 0.014%): the pinned question works, keep it. Smaller
   channels (under ~120K subs) that won: comparisons, "5 things you didn't know", exact money ("Fastest $40,000"),
   "(Most People Miss This)" tags, details/NPC behaviour. Applied: one topic emoji on every booked English title.
+- 2026-11-25 (first TikTok numbers, via Windsor.ai; raw: content/learn/tiktok-2026-11-25.json): all 19 TikToks were
+  posted Nov 17-19 and none since, so the tiktok-files hand-off has stalled. They were the old 30-35 s Shorts: viewers
+  watched a median 5.9 s, only 3.9% watched to the end, 0 followers gained from any video. Best: "GTA 6 NZ trick: 18
+  hours early?" 914 views (a catch/trick hook, like on YouTube). Spanish versions on the same account did as well or
+  better (median 177 vs 152 views; "$1.65 MILLONES" 587 vs the English 114). So on TikTok: post the new 13-25 s
+  payoff-first Shorts, post the Spanish version too, lead with the catch.
