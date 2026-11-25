@@ -116,6 +116,16 @@ def reset():
     _USED.clear()
 
 
+def used():
+    """The pictures this video has taken so far (a copy)."""
+    return set(_USED)
+
+
+def mark_used(paths):
+    """A resumed card (studio/make_video.py) took these pictures in the earlier run: keep them out of later cards."""
+    _USED.update(paths)
+
+
 def pick(text, index, used=()):
     """A safe official screenshot for one card: topic-matched (cars / water / world / city), varied by the card's
     text and position, never repeating one already used in the same video when another is free."""

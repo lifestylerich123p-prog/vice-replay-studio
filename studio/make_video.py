@@ -8,7 +8,9 @@ Output lands in output/<slug>/: video, thumbnail.jpg, description.txt.
 """
 import argparse
 import asyncio
+import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -577,6 +579,62 @@ def _card_says_it(text, chart):
     return bool(said) and sum(x in card for x in said) / len(said) >= 0.5
 
 
+_CODE_HASH = []
+RESUME_CODE = ("make_video.py", "charts.py", "vicecards.py", "cardphotos.py", "brand.py", "mappins.py", "sound.py")
+
+
+def code_hash():
+    """Fingerprint of the renderer's own code: a fix in any of these files invalidates every saved card."""
+    if not _CODE_HASH:
+        h = hashlib.sha256()
+        for name in RESUME_CODE:
+            p = Path(__file__).resolve().parent / name
+            h.update(p.read_bytes() if p.exists() else name.encode())
+        _CODE_HASH.append(h.hexdigest())
+    return _CODE_HASH[0]
+
+
+def segment_key(i, seg, w, h, vertical, enc, voice, rate, vo_file=None):
+    """Everything that decides card i's clip: its spec, size, encoder, voice (or ready-made voice file), the photos
+    earlier cards already took (cards never repeat a picture) and the renderer's code."""
+    from . import cardphotos
+    vo = None
+    if vo_file and (ROOT / vo_file).exists():
+        vo = hashlib.sha256((ROOT / vo_file).read_bytes()).hexdigest()
+    payload = {"i": i, "seg": seg, "w": w, "h": h, "vertical": vertical, "enc": enc, "voice": voice, "rate": rate,
+               "vo": vo, "photos_before": sorted(cardphotos.used()), "code": code_hash()}
+    return hashlib.sha256(json.dumps(payload, sort_keys=True, default=str).encode()).hexdigest()
+
+
+def resume_hit(work, i, key):
+    """The saved card i when it was rendered with exactly these inputs and its clip is intact, else None.
+    VR_NO_RESUME=1 turns resuming off."""
+    if os.environ.get("VR_NO_RESUME") == "1":
+        return None
+    side = work / f"seg_{i:02d}.resume.json"
+    try:
+        meta = json.loads(side.read_text())
+    except (OSError, ValueError):
+        return None
+    clip = Path(meta.get("clip", ""))
+    if meta.get("key") != key or not clip.exists() or clip.stat().st_size < 1024:
+        return None
+    try:
+        if abs(duration(clip) - float(meta["d"])) > 0.25:  # a clip cut short by the crash: render it again
+            return None
+    except Exception:
+        return None
+    return {**meta, "clip": clip, "d": float(meta["d"])}
+
+
+def resume_save(work, i, key, clip, d, hits, photos):
+    """Written only after the card's clip is complete (atomic rename), so a crash never leaves a 'done' marker."""
+    side = work / f"seg_{i:02d}.resume.json"
+    tmp = side.with_suffix(".tmp")
+    tmp.write_text(json.dumps({"key": key, "clip": str(clip), "d": d, "hits": hits, "photos": photos}))
+    tmp.replace(side)
+
+
 def render_segment(i, seg, audio, w, h, vertical, work, enc):
     voice_dur = duration(audio)
     # "pad": seconds held after the line (default 0.45); "hard_cut": no dip to black between segments. Montage Shorts
@@ -860,16 +918,28 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
         print(f"[{i + 1}/{len(segments)}] {seg.get('headline') or seg['text'][:40]}")
         # a ready-made voice file (e.g. an Everygen voiceover) wins over TTS: "audio" (English) / "audio_es"
         vo_file = seg.get("audio_es") if seg.get("_lang") == "es" else seg.get("audio")
-        if vo_file and (ROOT / vo_file).exists():
-            audio = work / f"vo_{i:02d}{Path(vo_file).suffix}"
-            shutil.copy(ROOT / vo_file, audio)
+        key = segment_key(i, seg, w, h, vertical, enc, voice, rate, vo_file)
+        cached = resume_hit(work, i, key)
+        if cached:  # Nov 25: a restart (container reclaimed mid-render) resumes instead of redoing every card
+            clip, d, hits = cached["clip"], cached["d"], cached.get("hits")
+            cardphotos.mark_used(cached.get("photos", ()))
+            print("  (resumed: this card was already rendered with the same inputs)")
         else:
-            audio = tts(seg["text"], voice, rate, work / f"vo_{i:02d}")
-        clip, d = render_segment(i, seg, audio, w, h, vertical, work, enc)
-        hits_file = work / f"chart_{i}.hits.json"
-        if seg.get("chart") and hits_file.exists():
-            pops += [t + x for x in json.loads(hits_file.read_text()) if x < d - 0.1]
-            hits_file.unlink()
+            photos_before = cardphotos.used()
+            if vo_file and (ROOT / vo_file).exists():
+                audio = work / f"vo_{i:02d}{Path(vo_file).suffix}"
+                shutil.copy(ROOT / vo_file, audio)
+            else:
+                audio = tts(seg["text"], voice, rate, work / f"vo_{i:02d}")
+            clip, d = render_segment(i, seg, audio, w, h, vertical, work, enc)
+            hits_file = work / f"chart_{i}.hits.json"
+            hits = None
+            if seg.get("chart") and hits_file.exists():
+                hits = json.loads(hits_file.read_text())
+                hits_file.unlink()
+            resume_save(work, i, key, clip, d, hits, sorted(cardphotos.used() - photos_before))
+        if hits:
+            pops += [t + x for x in hits if x < d - 0.1]
         # long card videos (Nov 23) mark only section starts with "chapter"; then headlines don't make chapters
         only_marked = any(x.get("chapter") for x in segments) and len(segments) > 12
         if seg.get("chapter") or (seg.get("headline") and not only_marked):
