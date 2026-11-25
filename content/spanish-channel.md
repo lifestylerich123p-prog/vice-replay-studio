@@ -32,6 +32,10 @@ GTA 6, GTA VI, GTA 6 español, noticias GTA 6, GTA 6 en español, Grand Theft Au
 - Links on the channel: vicereplay.com/es/ ("Guías en español") and vicereplay.com/es/equipo/ ("Equipo para GTA 6",
   the Spanish Amazon page; affiliate disclosure on the page).
 - Playlist "GTA 6 en Español" is created automatically by the first upload.
+- Channel trailer (for visitors who aren't subscribed): fLmdQepmNpw, the Bad Bunny Short (set Nov 25, 2026 by
+  `python -m studio.youtube_es trailer`, which picks the most-viewed public Spanish upload).
+- Branding refreshed 2026-11-25 (`python -m studio.youtube_es brand`: Spanish description for the Miami Latino
+  audience, 638 characters, keywords, banner).
 
 ## Launch lineup (owner approved Nov 22: "just the best, with all the new upgrades")
 Re-rendered Nov 22 with the animated captions; every one passes the views check (moving first frame, short script).
