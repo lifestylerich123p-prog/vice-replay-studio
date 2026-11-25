@@ -251,5 +251,7 @@
       },
       "audio_es": "media/voice/gta6-bad-bunny-radio-es/es/seg5.wav"
     }
-  ]
+  ],
+  "music_level": 0.5,
+  "music_duck": 2.5
 }
