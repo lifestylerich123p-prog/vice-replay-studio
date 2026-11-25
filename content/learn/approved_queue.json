@@ -172,14 +172,15 @@
    "slug": "gta6-game-awards-8-noms",
    "item": "short",
    "en": [
-    "2026-11-27",
-    "11:00 AM"
+    "2026-12-08",
+    "12:30 PM"
    ],
    "es": [
     "2026-11-28",
     "12:30 PM"
    ],
-   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)"
+   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)",
+   "moved": "Nov 25: Fri 11:00 AM went to tier list #5 (momentum; owner approved the set)"
   },
   {
    "slug": "gta6-precio-por-pais-es",
@@ -733,6 +734,54 @@
     "12:30 PM"
    ],
    "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only."
+  },
+  {
+   "slug": "gta6-atm-robbery-guide",
+   "item": "main",
+   "en": [
+    "2026-11-26",
+    "3:30 PM"
+   ],
+   "approved": "Nov 25 ~3:30 PM ET (owner: \"Approve and post one now\"): the Nov 25 daily set, recovered from its log; facts re-checked Nov 25 (ATM winch + marked bills, Paul Walker car)"
+  },
+  {
+   "slug": "gta6-atm-robbery-guide",
+   "item": "news",
+   "en": [
+    "2026-11-27",
+    "11:00 AM"
+   ],
+   "approved": "Nov 25 ~3:30 PM ET (owner: \"Approve and post one now\"): the Nov 25 daily set, recovered from its log; facts re-checked Nov 25 (ATM winch + marked bills, Paul Walker car); tier list #5 (momentum follow-up)",
+   "es": [
+    "2026-12-09",
+    "1:30 PM"
+   ]
+  },
+  {
+   "slug": "gta6-atm-robbery-guide",
+   "item": "short",
+   "en": [
+    "2026-12-08",
+    "9:30 AM"
+   ],
+   "approved": "Nov 25 ~3:30 PM ET (owner: \"Approve and post one now\"): the Nov 25 daily set, recovered from its log; facts re-checked Nov 25 (ATM winch + marked bills, Paul Walker car)",
+   "es": [
+    "2026-12-10",
+    "1:30 PM"
+   ]
+  },
+  {
+   "slug": "gta6-atm-robbery-guide",
+   "item": "tips",
+   "en": [
+    "2026-11-25",
+    "3:45 PM"
+   ],
+   "approved": "Nov 25 ~3:30 PM ET (owner: \"Approve and post one now\"): the Nov 25 daily set, recovered from its log; facts re-checked Nov 25 (ATM winch + marked bills, Paul Walker car); posted right away (owner: post one now)",
+   "es": [
+    "2026-12-10",
+    "12:30 PM"
+   ]
   }
  ],
  "paused": [
