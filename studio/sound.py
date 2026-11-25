@@ -221,3 +221,63 @@ if __name__ == "__main__":
     root = Path(__file__).resolve().parent.parent / "assets" / "music"
     root.mkdir(parents=True, exist_ok=True)
     print(theme(root / "vice-replay-theme.wav"))
+
+
+def dembow(path, bpm=96, bars=16, seed=11):
+    """Our own reggaeton/dembow beat (owner Nov 24: "the video itself has to have that Latino way"; Spanish channel,
+    Miami Latino audience). Built here from scratch, so it is Content-ID safe: dembow kick/snare pattern (3+3+2 feel),
+    a guira-style shaker on every 16th, a bass on the tresillo, and a marimba-like pluck on the Am-F-C-G loop."""
+    rng = np.random.default_rng(seed)
+    step = 60.0 / bpm / 4
+    n_step = int(step * SR)
+    total = n_step * 16 * bars
+    out = np.zeros(total + SR)
+
+    def add(sig, at, gain):
+        i = int(at)
+        j = min(len(out), i + len(sig))
+        out[i:j] += gain * sig[: j - i]
+
+    def kick():
+        n = int(0.32 * SR); t = np.arange(n) / SR
+        f = 48 + 90 * np.exp(-t * 28)
+        return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 9)
+
+    def snare():
+        n = int(0.16 * SR); t = np.arange(n) / SR
+        noise = np.diff(rng.standard_normal(n + 1))  # crude highpass
+        return (0.55 * noise / 3 + 0.5 * np.sin(2 * np.pi * 210 * t)) * np.exp(-t * 26)
+
+    def shaker(accent):
+        n = int(0.05 * SR); t = np.arange(n) / SR
+        noise = np.diff(np.diff(rng.standard_normal(n + 2)))
+        return noise / 6 * np.exp(-t * (70 if accent else 110))
+
+    def pluck(freq):
+        n = int(0.28 * SR); t = np.arange(n) / SR
+        return (np.sin(2 * np.pi * freq * t) + 0.35 * np.sin(2 * np.pi * 4 * freq * t) * np.exp(-t * 30)) * np.exp(-t * 11)
+
+    def bass(freq, dur):
+        n = int(dur * SR); t = np.arange(n) / SR
+        return np.tanh(1.8 * np.sin(2 * np.pi * freq * t)) * np.exp(-t * 3.2) * _env(n, 0.005, 0.03)
+
+    chords = [["A3", "C4", "E4"], ["F3", "A3", "C4"], ["C4", "E4", "G4"], ["G3", "B3", "D4"]]
+    roots = ["A1", "F1", "C2", "G1"]
+    K, S = kick(), snare()
+    for b in range(bars):
+        base = b * 16 * n_step
+        ch, root = chords[b % 4], note(roots[b % 4])
+        for s in (0, 4, 8, 12):
+            add(K, base + s * n_step, 0.95)
+        for s in (3, 6, 11, 14):  # the dembow snare
+            add(S, base + s * n_step, 0.55)
+        for s in range(16):
+            add(shaker(s % 2 == 0), base + s * n_step, 0.22 if s % 2 == 0 else 0.13)
+        for s, ln in ((0, 3), (3, 3), (6, 2), (8, 3), (11, 3), (14, 2)):  # tresillo bass
+            add(bass(root, ln * step), base + s * n_step, 0.5)
+        for s in (2, 6, 10, 14):  # off-beat marimba stab
+            for k, nm in enumerate(ch):
+                add(pluck(note(nm)), base + s * n_step + k * 40, 0.16)
+    x = out[:total]
+    x = np.tanh(1.3 * x / (np.max(np.abs(x)) or 1))
+    return _write(path, x)
