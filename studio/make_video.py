@@ -882,7 +882,11 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
             k += 1
     used_footage = any(s.get("media") for s in segments)
     if vertical and segments and ep.get("follow_cta", True):
-        es = any(s.get("text") == s.get("text_es") for s in segments if s.get("text_es"))
+        # Nov 25: trust the render's own language tag. The old guess ("any line reads the same in both languages")
+        # put the Spanish badge on an English quiz Short whose answers ("Vice City FM.", "Dolores.") are the same in both.
+        langs = {s.get("_lang") for s in segments if s.get("_lang")}
+        es = ("es" in langs) if langs else (any(s.get("text_es") for s in segments) and
+                                            all(s.get("text") == s.get("text_es") for s in segments if s.get("text_es")))
         # Nov 24 (subscribers): an episode can promise the next one instead, e.g. "cta_es": "PARTE 2 MAÑANA: SÍGUENOS"
         segments[-1]["cta"] = ((ep.get("cta_es") if es else ep.get("cta")) or
                                ("SÍGUENOS: GTA 6 A DIARIO" if es else "FOLLOW FOR DAILY GTA 6"))

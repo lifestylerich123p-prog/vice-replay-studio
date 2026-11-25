@@ -311,5 +311,33 @@
   "destinations_allowed": [],
   "status": "blocked",
   "notes": "Never."
+ },
+ {
+  "id": "vice-set-own-art",
+  "asset_class": "own generated graphics (the Vice City set: sunset sky, striped sun, palms, neon grid; drawn in code by studio/vicecards.py; thumbnail/card backgrounds 'vice:N')",
+  "match": [
+   "vice:*"
+  ],
+  "owner": "Vice Replay (generated in code)",
+  "permission": "own work",
+  "license_url": null,
+  "commercial_use": "yes",
+  "creator_restrictions": null,
+  "music_rights": null,
+  "campaign": null,
+  "attribution": null,
+  "expires": null,
+  "content_id_risk": "none",
+  "platforms_allowed": [
+   "YouTube",
+   "Instagram",
+   "TikTok"
+  ],
+  "destinations_allowed": [
+   "vice-replay",
+   "vice-replay-es"
+  ],
+  "status": "cleared",
+  "notes": "Added Nov 25, 2026 (main chat): episode-format.md offers \"image\": \"vice:2\" for thumbnails but no record matched it, so the gate denied our own art."
  }
 ]

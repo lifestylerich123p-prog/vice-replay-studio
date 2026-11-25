@@ -97,15 +97,16 @@
   {
    "headline": "90 CLIPS",
    "headline_es": "90 CLIPS",
-   "text": "In September twenty twenty two, a hacker posted around ninety clips of unfinished GTA 6.",
-   "text_es": "En septiembre de dos mil veintidós, un hacker publicó unos noventa clips de GTA seis sin terminar.",
+   "text": "In twenty twenty two, a hacker posted about ninety early GTA 6 clips.",
+   "text_es": "En dos mil veintidós, un hacker publicó unos noventa clips tempranos de GTA seis.",
    "keep_media": true,
    "chart": {
     "type": "counter",
     "value": 90,
     "unit": "",
     "label": "early GTA 6 clips leaked · Sept 2022",
-    "seed": 41
+    "seed": 41,
+    "src": "GameSpot · VGC · CNBC"
    },
    "chart_es": {
     "type": "counter",
@@ -113,14 +114,15 @@
     "unit": "",
     "label": "clips filtrados de GTA 6 · sept 2022",
     "locale": "es",
-    "seed": 41
+    "seed": 41,
+    "src": "GameSpot · VGC · CNBC"
    }
   },
   {
    "headline": "HIS SETUP",
    "headline_es": "SU EQUIPO",
-   "text": "His setup: a hotel TV, an Amazon Fire Stick and a phone, while he was out on bail.",
-   "text_es": "Su equipo: la tele del hotel, un Fire Stick de Amazon y un teléfono, estando en libertad bajo fianza.",
+   "text": "His setup: a hotel TV, a Fire Stick and a phone.",
+   "text_es": "Su equipo: la tele del hotel, un Fire Stick y un teléfono.",
    "keep_media": true,
    "chart": {
     "type": "list",
@@ -165,8 +167,8 @@
   {
    "headline": "$5 MILLION",
    "headline_es": "5 MILLONES",
-   "text": "Rockstar told the court the hack cost it about five million dollars.",
-   "text_es": "Rockstar le dijo al tribunal que el hackeo le costó unos cinco millones de dólares.",
+   "text": "Rockstar said it cost about five million dollars.",
+   "text_es": "Rockstar dijo que le costó unos cinco millones de dólares.",
    "keep_media": true,
    "chart": {
     "type": "counter",
@@ -174,7 +176,8 @@
     "prefix": "$",
     "unit": "M",
     "label": "what the hack cost Rockstar",
-    "seed": 41
+    "seed": 41,
+    "src": "GamesRadar · Engadget"
    },
    "chart_es": {
     "type": "counter",
@@ -183,14 +186,15 @@
     "unit": "M",
     "label": "lo que le costó a Rockstar",
     "locale": "es",
-    "seed": 41
+    "seed": 41,
+    "src": "GamesRadar · Engadget"
    }
   },
   {
    "headline": "GUILTY",
    "headline_es": "CULPABLE",
-   "text": "This month he pleaded guilty to all charges. The full story is in our GTA 6 trivia video. And remember,",
-   "text_es": "Este mes se declaró culpable de todos los cargos. La historia completa está en nuestro video de trivia. Y recuerda,",
+   "text": "This month he pleaded guilty. Remember,",
+   "text_es": "Este mes se declaró culpable. Recuerda,",
    "keep_media": true,
    "chart": {
     "type": "text",
@@ -199,7 +203,8 @@
      "Guilty"
     ],
     "sub": "Full story: our GTA 6 trivia video",
-    "seed": 41
+    "seed": 41,
+    "src": "PC Gamer · Shacknews"
    },
    "chart_es": {
     "type": "text",
@@ -209,8 +214,10 @@
     ],
     "sub": "Historia completa: trivia GTA 6",
     "locale": "es",
-    "seed": 41
+    "seed": 41,
+    "src": "PC Gamer · Shacknews"
    }
   }
- ]
+ ],
+ "leaks_ok": "owner Nov 24: the 2022 hack told as reported news (2+ outlets each); no footage, images or audio from leaked builds"
 }

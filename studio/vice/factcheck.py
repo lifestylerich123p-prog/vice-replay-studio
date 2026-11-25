@@ -34,8 +34,17 @@ def content_risks(text):
     return [k for k, p in RISKS.items() if re.search(p, text or "", re.I)]
 
 
+SPOILER_REVEAL = re.compile(r"\b(ending|final mission|dies|death of|killed off|cheating on|betray\w*|twist)\b", re.I)
+
+
 def check_episode(ep):
-    """Returns a list of findings: {"level": "fail"|"warn", "where", "text", "fix"}."""
+    """Returns a list of findings: {"level": "fail"|"warn", "where", "text", "fix"}.
+
+    Owner Nov 24 ("put spoiler and leaks to get viewers in"; content/owner.md): an episode may set "spoilers_ok"
+    (a warned, chaptered spoiler round) and/or "leaks_ok" (leaks covered as labeled, reported news; never leaked
+    footage). Then those words in the script are warnings, not blockers. A title or thumbnail may say "spoilers"
+    but never reveal one: ending/dies/twist/betrayal wording in a title still fails."""
+    ok_spoil, ok_leak = bool(ep.get("spoilers_ok")), bool(ep.get("leaks_ok"))
     out = []
     texts = []
     for key in ("segments", "short", "news_short", "tips_short"):
@@ -58,10 +67,17 @@ def check_episode(ep):
             if re.search(r"\bleak", s, re.I) and not HEDGE.search(s.replace("leak", "")):
                 out.append({"level": "warn", "where": w, "text": s, "fix": "label leaks: 'according to leaks', 'reportedly'"})
         for r in content_risks(t):
-            out.append({"level": "fail" if r in ("sexual content", "story spoiler", "leak / pre-release") else "warn",
-                        "where": w, "text": t[:120], "fix": f"{r}: remove or rewrite (channel rules)"})
+            allowed = (r == "story spoiler" and ok_spoil) or (r == "leak / pre-release" and ok_leak)
+            out.append({"level": "fail" if r in ("sexual content", "story spoiler", "leak / pre-release") and not allowed
+                        else "warn", "where": w, "text": t[:120],
+                        "fix": f"{r}: {'allowed for this episode (owner); keep it warned/labeled' if allowed else 'remove or rewrite (channel rules)'}"})
     title = ep.get("short_title") or ep.get("title") or ""
-    if content_risks(title):
+    risks = content_risks(title)
+    if ok_spoil and "story spoiler" in risks and not SPOILER_REVEAL.search(title):
+        risks.remove("story spoiler")  # the word "spoilers" may sell the video; a revealed spoiler may not
+    if ok_leak and "leak / pre-release" in risks:
+        risks.remove("leak / pre-release")
+    if risks:
         out.append({"level": "fail", "where": "title", "text": title, "fix": "no spoilers or sexual wording in titles"})
     for s in srcs:
         if not re.search(r"https?://", s):

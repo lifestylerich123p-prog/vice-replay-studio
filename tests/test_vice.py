@@ -188,3 +188,16 @@ def test_calendar_is_28_distinct_ideas():
     for i in items:
         for k in calendar.COLS:
             assert i.get(k), (i["id"], k)
+
+
+def test_spoilers_and_leaks_flags_downgrade_script_but_not_revealing_titles():
+    """Owner Nov 24: a warned spoiler round and labeled leak news are allowed per episode; titles never reveal."""
+    from studio.vice import factcheck
+    base = {"sources": ["https://example.com/a"], "segments": [
+        {"headline": "SPOILERS", "text": "Last round. Story spoilers. The final mission is called The End of the Road."},
+        {"headline": "THE LEAKS", "text": "Round five. The leaks, as reported."}]}
+    fails = lambda e: [f for f in factcheck.check_episode(e) if f["level"] == "fail"]
+    assert fails(dict(base, title="GTA 6 Trivia: Leaks & Spoilers"))          # old rule: blocked
+    ok = dict(base, title="GTA 6 Trivia: Leaks & Spoilers", spoilers_ok="owner", leaks_ok="owner")
+    assert not fails(ok)                                                       # new rule: allowed in a warned round
+    assert fails(dict(ok, title="GTA 6: the ending where Jason dies"))         # a title that reveals still fails

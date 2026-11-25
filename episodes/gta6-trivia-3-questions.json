@@ -90,8 +90,8 @@
   {
    "headline": "QUESTION 1",
    "headline_es": "PREGUNTA 1",
-   "text": "One. Weird Al is a DJ in GTA 6. Which station does he host?",
-   "text_es": "Uno. Weird Al es DJ en GTA seis. ¿Qué emisora presenta?",
+   "text": "One. Which station does Weird Al host?",
+   "text_es": "Uno. ¿Qué emisora presenta Weird Al?",
    "keep_media": true,
    "chart": {
     "type": "quiz",
@@ -122,8 +122,8 @@
   {
    "headline": "VICE CITY FM",
    "headline_es": "VICE CITY FM",
-   "text": "Vice City FM, the non-stop eighties station.",
-   "text_es": "Vice City FM, la emisora de los ochenta.",
+   "text": "Vice City FM.",
+   "text_es": "Vice City FM.",
    "keep_media": true,
    "chart": {
     "type": "quiz",
@@ -158,8 +158,8 @@
   {
    "headline": "QUESTION 2",
    "headline_es": "PREGUNTA 2",
-   "text": "Two. Jason keeps a pet corn snake. What's her name?",
-   "text_es": "Dos. Jason tiene una serpiente de mascota. ¿Cómo se llama?",
+   "text": "Two. What's Jason's pet snake called?",
+   "text_es": "Dos. ¿Cómo se llama la serpiente de Jason?",
    "keep_media": true,
    "chart": {
     "type": "quiz",
@@ -190,8 +190,8 @@
   {
    "headline": "DOLORES",
    "headline_es": "DOLORES",
-   "text": "Dolores. Feed her a mouse for a small Focus boost.",
-   "text_es": "Dolores. Dale un ratón y ganas un poco de Focus.",
+   "text": "Dolores.",
+   "text_es": "Dolores.",
    "keep_media": true,
    "chart": {
     "type": "quiz",
@@ -226,8 +226,8 @@
   {
    "headline": "QUESTION 3",
    "headline_es": "PREGUNTA 3",
-   "text": "Three. A shop sign in the first trailer refuses cash stored where?",
-   "text_es": "Tres. Un cartel del primer tráiler rechaza dinero guardado, ¿dónde?",
+   "text": "Three. A trailer sign bans cash stored where?",
+   "text_es": "Tres. Un cartel del tráiler prohíbe dinero guardado, ¿dónde?",
    "keep_media": true,
    "chart": {
     "type": "quiz",
@@ -258,8 +258,8 @@
   {
    "headline": "UNDERWEAR",
    "headline_es": "ROPA INTERIOR",
-   "text": "In underwear. Really.",
-   "text_es": "En la ropa interior. En serio.",
+   "text": "In underwear.",
+   "text_es": "En la ropa interior.",
    "keep_media": true,
    "chart": {
     "type": "quiz",
@@ -294,8 +294,8 @@
   {
    "headline": "YOUR SCORE?",
    "headline_es": "¿TU PUNTAJE?",
-   "text": "What did you get? Twenty more are in our full quiz. Comment your score, because",
-   "text_es": "¿Cuántas sacaste? Hay veinte más en nuestro quiz completo. Comenta tu puntaje, porque",
+   "text": "Twenty more in our full quiz. Comment your score, because",
+   "text_es": "Hay veinte más en nuestro quiz completo. Comenta tu puntaje, porque",
    "keep_media": true,
    "chart": {
     "type": "text",

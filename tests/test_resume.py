@@ -35,3 +35,10 @@ def test_segment_key_tracks_spec_and_used_photos():
     cardphotos.mark_used(["media/official/b.jpg"])                   # an earlier card took a picture
     assert k1 != mv.segment_key(0, seg, 1920, 1080, False, ["-c:v", "libx264"], "af_heart", 1.0)
     cardphotos.reset()
+
+
+def test_follow_badge_language_follows_the_render_not_matching_lines():
+    """Nov 25: an English quiz Short with answers that read the same in Spanish got the Spanish badge."""
+    import inspect
+    src = inspect.getsource(mv.build)
+    assert 'langs = {s.get("_lang")' in src and "all(s.get(\"text\") == s.get(\"text_es\")" in src
