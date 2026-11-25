@@ -336,6 +336,9 @@ def quiz_frame(base, spec, t, w, h):
     d = ImageDraw.Draw(img)
     opts = [str(o) for o in spec["options"][:4]]
     ans, reveal = spec.get("answer", 0), bool(spec.get("reveal"))
+    # Nov 25 (15-min trivia video): sizes follow the SHORT side, so a 16:9 card gets the same lettering as a Short
+    # (sizing by width made 1920-wide quiz text ~1.8x too big and the A/B/C rows overlapped). Shorts are unchanged.
+    w = min(w, h)
     if spec.get("tag"):
         ftag = brand.font(brand.HEADLINE_FONT, int(w * 0.04))
         d.text((x0, y0 - int(h * 0.004)), str(spec["tag"]), font=ftag, fill=brand.CYAN)
