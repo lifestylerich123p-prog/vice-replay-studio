@@ -288,6 +288,7 @@ def list_frame(base, spec, t, w, h):
     x0, y0, x1, y1 = _region(w, h)
     _panel(img, (x0, y0, x1, y1))
     d = ImageDraw.Draw(img)
+    w = min(w, h)  # Nov 25: size by the short side (16:9 rows/tags overlapped like the quiz card did); Shorts unchanged
     items = spec["items"][:6]
     good = {str(g).lower() for g in spec.get("good", [])} or GOOD
     note_h = int(h * 0.028) if spec.get("note") else 0

@@ -8,6 +8,243 @@
  "payoff_hook": false,
  "style": "vice (GTA 6-style lettering cards + card photos; 16:9 long video)",
  "owner_note": "Owner Nov 24: 15-min trivia video, all free, owner uploads it by hand (no API upload).",
+ "title_options": [
+  "GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz)",
+  "GTA 6 Quiz: Only Real Fans Score 20/20 (Spoilers at End)",
+  "GTA 6: 50 Facts Nobody Tells You + Leaks & Spoilers"
+ ],
+ "description": "Fifty GTA 6 facts, twenty quiz questions and four bonus ones, in six rounds: the numbers, where things are in Leonida (on Rockstar's official map), the funny stuff, easter eggs + GTA history, the leaks, and a story SPOILER round at the end (clearly marked: skip to \"Final score\" if you haven't finished the game). Keep score and tell us your number in the comments.\n\nEvery fact is from at least two reliable sources. Leaks are covered as reported news and labeled; nothing in this video comes from leaked builds.",
+ "thumbnail": {
+  "line1": "20/20?",
+  "line2": "SPOILERS",
+  "tag": "+ LEAKS · GTA 6 QUIZ",
+  "image": "vice:2",
+  "variants": [
+   {
+    "line1": "50 FACTS",
+    "line2": "YOU MISSED",
+    "tag": "+ leaks + spoilers",
+    "image": "../media/official/vice-city-22.jpg"
+   },
+   {
+    "line1": "TRIVIA NIGHT",
+    "line2": "20 QUESTIONS",
+    "tag": "how many do you get?",
+    "image": "../media/official/leonida-map-poster.jpg"
+   }
+  ],
+  "note": "No spoiler is ever shown on a thumbnail (A = score challenge, B = facts, C = quiz)."
+ },
+ "pinned_comment": "What did you score out of 20? Drop the number 👇 (No spoilers in the replies, people are still playing!)",
+ "tags": [
+  "GTA 6 trivia",
+  "GTA 6 quiz",
+  "GTA 6 facts",
+  "GTA 6 fun facts",
+  "GTA 6 spoilers",
+  "GTA 6 leaks",
+  "GTA 6 easter eggs",
+  "GTA 6 secrets",
+  "GTA 6 ending",
+  "GTA 6 hack",
+  "GTA 6 map",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI"
+ ],
+ "affiliate": [
+  "game",
+  "gear"
+ ],
+ "sources": [
+  "https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm",
+  "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/",
+  "https://www.forbes.com/sites/antoniopequenoiv/2026/11/20/gta-6-raked-in-38-billion-sales-on-first-day-the-largest-entertainment-launch-ever/",
+  "https://www.videogameschronicle.com/news/grand-theft-auto-6-is-currently-the-highest-scoring-video-game-of-all-time-according-to-metacritic/",
+  "https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html",
+  "https://www.guinnessworldrecords.com/records/partners/organisations/metacritic",
+  "https://www.gamespot.com/articles/gta-6-has-a-metacritic-score-so-high-its-only-happened-once-before/",
+  "https://www.gamesradar.com/games/grand-theft-auto/how-long-is-gta-6-about-80-hours-according-to-one-rockstar-devs-playthrough/",
+  "https://techradar.com/gaming/gta-6-will-be-a-massive-game-and-rockstars-longest-yet-as-the-studio-confirms-it-can-take-up-to-80-hours-to-beat",
+  "https://beebom.com/how-long-to-beat-gta-6/",
+  "https://dotesports.com/gta/news/gta-6-twitch-viewership-record",
+  "https://insider-gaming.com/gta-6-streaming-launch-record/",
+  "https://wccftech.com/grand-theft-auto-vi-twitch-viewers-record-league-of-legends/",
+  "https://streamscharts.com/news/gta-6-day1-recap",
+  "https://www.invenglobal.com/articles/28854/gta-vi-sets-livestreaming-records-with-791m-peak-viewers-on-launch-day",
+  "https://dotesports.com/gta/news/gta-6-125-million-hours-watched-24-hours",
+  "https://www.guinnessworldrecords.com/world-records/758375-most-viewed-youtube-video-in-24-hours-non-music",
+  "https://pcgamer.com/gta-6-trailer-smashes-a-youtube-viewership-recordbut-still-cant-compare-with-another-three-letter-acronym",
+  "https://pushsquare.com/news/2023/12/gta-6-trailer-pulls-90-million-views-in-24-hours-sets-new-world-records",
+  "https://www.videogameschronicle.com/news/at-nearly-half-a-billion-views-rockstar-says-gta-6s-new-trailer-is-the-biggest-video-launch-of-all-time",
+  "https://www.hollywoodreporter.com/business/business-news/gta-6-trailer-2-views-record-1236210396/",
+  "https://www.kitguru.net/gaming/matthew-wilson/rockstar-says-new-grand-theft-auto-6-trailer-amassed-475m-views-in-24-hours/",
+  "https://www.gamesradar.com/gta-timeline-every-gta-game-in-order",
+  "https://dotesports.com/gta/news/all-grand-theft-auto-games-in-release-order",
+  "https://rockstarintel.com/timeline-of-grand-theft-auto-series-release-dates/",
+  "https://opencritic.com/news/33766/gta-6-is-actually-the-cheapest-game-in-the-series-when-adjusted-for-inflation-as-if-that-even-counts",
+  "https://tech4gamers.com/inflation-gta-6-cheapest-installment/",
+  "https://www.techradar.com/gaming/we-finally-know-the-official-gta-6-price-its-expensive-but-not-too-bad",
+  "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+  "https://techradar.com/gaming/gta-6-ultimate-edition-is-selling-more-than-standard-says-take-two-ceo-despite-the-price-controversy-the-most-avid-consumers-are-the-ones-who-are-pre-ordering-now",
+  "https://www.dexerto.com/gta/rockstar-games-boss-says-100-gta-6-ultimate-edition-is-outselling-the-80-standard-version-3397246/",
+  "https://mp1st.com/news/gta-6-more-people-pre-ordered-100-edition-dont-expect-christmas-discount",
+  "https://www.tweaktown.com/news/114382/gta-6s-map-is-roughly-twice-gta-5s-and-almost-as-big-as-gta-4-gta-5-and-rdr2-combined/index.html",
+  "https://www.dexerto.com/gta/rockstar-says-gta-6s-map-is-so-big-you-wont-see-it-all-just-by-playing-story-missions-3414118/",
+  "https://insider-gaming.com/gta-6-map-size/",
+  "https://www.gtabase.com/gta-6/articles/gta-6-bigfoot-location-how-to-find-the-skunk-ape",
+  "https://www.gamesradar.com/games/grand-theft-auto/gta-6-bigfoot-skunk-ape-mr-mangrove/",
+  "https://www.dexerto.com/wikis/gta-6/easter-eggs/skunk-ape-easter-egg/",
+  "https://www.videogameschronicle.com/guide/gta-6-bigfoot-explained-how-to-find-bigfoot-in-gta-6/",
+  "https://www.powerpyx.com/gta-6-ufo-aliens-easter-egg-location/",
+  "https://www.theclick.gg/gta-6-ufo-location/",
+  "https://www.gamespot.com/articles/gta-6-has-aliens-and-heres-how-to-find-them/",
+  "https://game8.co/games/GTA-6/archives/639367",
+  "https://www.dexerto.com/wikis/gta-6/easter-eggs/giant-crab-easter-egg/",
+  "https://www.thegamer.com/grand-theft-auto-6-giant-crab-location-crabshack-vf5-legendary-smg-research-code-safe-double-success-guide/",
+  "https://www.theclick.gg/gta-6-pelican-valley-outpost-codes/",
+  "https://www.pcgamer.com/games/grand-theft-auto/gta-6-military-base-location/",
+  "https://www.gtabase.com/gta-6/articles/gta-6-military-base-location",
+  "https://game8.co/games/GTA-6/archives/638780",
+  "https://www.theclick.gg/gta-6-military-base-location/",
+  "https://www.powerpyx.com/?p=371145",
+  "https://gamertweak.com/where-to-buy-clothes-in-gta-6-all-clothing-stores/",
+  "https://www.gtabase.com/gta-6/map/?feature=footwear",
+  "https://www.playnews.gg/guides/magasin-de-chaussures-gta-6-ou-trouver-le-flip-flop-house-a-key-lento-au-debut-du-jeu",
+  "https://www.gtabase.com/articles/gta-6/how-gta-6-s-leonida-compares-to-real-life-florida-locations",
+  "https://allthings.how/what-the-gta-6-map-is-based-on-vice-city-and-the-state-of-leonida/",
+  "https://www.pcgamer.com/games/grand-theft-auto/gta6-map",
+  "https://www.visitflorida.com/en-us/things-to-do/arts-history/britton-hill-highest-point-florida.html",
+  "https://en.wikipedia.org/wiki/Britton_Hill",
+  "https://www.powerpyx.com/gta-6-all-base-jump-locations/",
+  "https://www.gamesradar.com/games/grand-theft-auto/gta-6-jet-ski-dog/",
+  "https://www.thegamer.com/grand-theft-auto-6-gta-dog-island-location-cool-where-to-find-ocean-guide/",
+  "https://vgtimes.com/gaming-news/175197-gta-6-has-a-jet-ski-dog-that-rescues-players-and-leads-them-to-an-island.html",
+  "https://www.windowscentral.com/gaming/gta-6-players-are-ignoring-crime-to-jet-ski-with-dogs-and-redecorate-their-bedrooms-the-funniest-clips-so-far",
+  "https://kotaku.com/yes-thats-weird-al-hosting-a-radio-station-in-gta-6-2000758140",
+  "https://www.avclub.com/weird-al-yankovic-radio-dj-grand-theft-auto-iv-gta",
+  "https://criticalhits.com.br/games/weird-al-assume-a-apresentacao-da-vice-city-fm-em-gta-6/",
+  "https://www.videogameschronicle.com/news/gta-6s-30000-calorie-meat-sandwich-parody-ad-actually-used-red-dead-redemption-2-as-a-backdrop/",
+  "https://tbreak.com/gta6-rdr2-sandwich-ad-location/",
+  "https://www.videogameschronicle.com/news/rockstar-explains-why-you-cant-play-darts-in-gta-6-we-dont-have-unlimited-time/",
+  "https://www.ggrecon.com/articles/gta-6-no-darts-rockstar-explains/",
+  "https://gamenewsplus.net/news/rockstar-explains-why-darts-and-bowling-are-missing-from-gta-6-40084/",
+  "https://www.urdupoint.com/showbiz/en/influencers/gta-vi-livestreams-peak-7-91-million-viewers-ishowspeed-most-watched-creator.html",
+  "https://kotaku.com/physical-copies-of-gta-6-will-just-be-a-code-in-a-box-with-no-disc-at-launch-2000709919",
+  "https://videogameschronicle.com/news/rockstar-confirms-there-will-be-no-disc-version-of-gta6-at-launch/",
+  "https://guru3d.com/story/gta-6-physical-edition-ships-without-disc-includes-download-code-only/",
+  "https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/",
+  "https://www.tweaktown.com/news/114346/gta-6-wouldnt-fit-on-a-ps5-or-xbox-disc-even-if-rockstar-has-plans-to-ship-one/index.html",
+  "https://www.dexerto.com/gta/gtas-burger-shot-cluckin-bell-are-now-real-in-miami-ahead-of-gta-6-3420945/",
+  "https://insider-gaming.com/gta-6-marketing-now-includes-real-life-burger-shot-cluckin-bell/",
+  "https://beebom.com/gta-6-irl-burger-shot-cluckin-bell-joints-in-miami/",
+  "https://www.videogameschronicle.com/guide/gta-6-beginners-guide-6-tips-you-need-to-know-before-starting-gta-6/",
+  "https://gameriv.com/gta-6-how-to-get-a-free-focus-boost-by-feeding-dolores-the-snake/",
+  "https://www.ibtimes.co.uk/gta-6-player-discovers-literal-easter-egg-leonida-1833342",
+  "https://www.redbull.com/int-en/gta-6-easter-eggs",
+  "https://www.theclick.gg/gta-6-tv-tower-easter-egg-location/",
+  "https://www.gamesradar.com/games/grand-theft-auto/18-years-later-gta-6-redeems-grand-theft-autos-most-annoying-meme-by-turning-it-into-something-useful/",
+  "https://www.digitalcitizen.life/gta-6-brings-back-the-scooter-brothers-meme-as-a-vehicle-delivery-service/",
+  "https://www.powerpyx.com/gta-6-impounded-vehicle-walkthrough/",
+  "https://kotaku.com/grand-theft-auto-gta-6-vi-trailer-jokes-florida-1851074373",
+  "https://dexerto.com/gta/gta-6-hint-finally-found-in-gta-trilogy-after-latest-update-2980211",
+  "https://www.sportskeeda.com/gta/news-gta-6-like-textures-reportedly-found-gta-trilogy-definitive-edition",
+  "https://www.gamingbible.com/news/gta-6-teaser-gta-trilogy-190032-20241115",
+  "https://www.gamespot.com/articles/how-to-get-tommy-vercettis-shirt-and-bike-in-gta-6/",
+  "https://www.dexerto.com/wikis/gta-6/easter-eggs/tommy-vercetti-easter-egg/",
+  "https://www.pcgamesn.com/grand-theft-auto-vi/tommy-vercetti-easter-egg",
+  "https://www.theclick.gg/gta-6-vice-city-portal/",
+  "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
+  "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
+  "https://www.bgr.com/2322463/gta-6-hidden-fast-and-furious-paul-walker-car/",
+  "https://insider-gaming.com/paul-walker-gta-6-easter-egg/",
+  "https://www.gamesradar.com/games/grand-theft-auto/gta-6-arthur-morgans-hat/",
+  "https://www.thegamer.com/gta-6-arthur-morgan-red-dead-redemption-2-easter-egg-hat-unlock/",
+  "https://www.dexerto.com/wikis/gta-6/easter-eggs/arthur-morgans-hat/",
+  "https://www.dexerto.com/gta/gta-6-screenshot-hidden-in-san-andreas-back-in-2021-was-real-and-the-house-has-a-dark-secret-3429837/",
+  "https://kotaku.com/turns-out-gta-san-andreas-remastered-was-teasing-gta-6-back-in-2021-2000758132",
+  "https://www.videogameschronicle.com/news/gta-6-players-discover-our-real-first-look-at-the-game-was-likely-hidden-in-a-2021-remaster/",
+  "https://www.vice.com/en/article/theres-an-npc-in-gta-6-who-knows-hes-in-a-video-game-heres-how-to-find-his-house/",
+  "https://dailydot.com/rdr2-gta6-the-leonida-easter-egg",
+  "https://opencritic.com/news/26671/red-dead-redemption-2-almost-included-a-reference-to-gta-6-and-fans-have-only-just-discovered-it",
+  "https://attackofthefanboy.com/gaming/rockstar-was-teasing-gta-6-inside-red-dead-redemption-2-all-along-and-fans-just-now-figured-it-out/",
+  "https://www.gtaboom.com/did-rockstar-leave-a-gta-6-hint-in-red-dead-redemption-2-298e",
+  "https://www.destructoid.com/gta-6-jason-nonchalant-1970s-heist-movie-inspiration/",
+  "https://www.gamesradar.com/games/grand-theft-auto/gta-6s-narrative-lead-says-jasons-reserved-demeanor-was-inspired-by-a-1972-crime-movie-and-research-we-were-doing-around-veterans/",
+  "https://www.pcgamer.com/games/grand-theft-auto/jasons-stoic-character-in-grand-theft-auto-6-was-inspired-by-steve-mcqueen-and-research-into-army-veterans-these-guys-typically-arent-running-their-mouths/",
+  "https://www.gamesradar.com/making-of-grand-theft-auto/",
+  "https://www.escapistmagazine.com/grand-theft-auto-originally-titled-race-n-chase/",
+  "https://www.engadget.com/2011/03/22/race-n-chase-original-gta-design-docs-posted/",
+  "https://en.wikipedia.org/wiki/Tommy_Vercetti",
+  "https://m.imdb.com/title/tt0314123/characters/nm0000501",
+  "https://giantbomb.com/wiki/Locations/Vice_City",
+  "https://www.gamespot.com/articles/the-history-of-grand-theft-auto/1100-6111834",
+  "https://en.wikipedia.org/wiki/Grand_Theft_Auto_(video_game)",
+  "https://www.giantbomb.com/wiki/Locations/Liberty_City",
+  "https://www.pcgamer.com/uk/ten-years-on-gta-4s-liberty-city-is-still-an-incredible-virtual-city/",
+  "https://sportskeeda.com/gta/which-real-life-cities-inspired-cities-gta",
+  "https://sportskeeda.com/gta/top-5-gta-games-based-average-critic-reviews-metacritic",
+  "https://insider-gaming.com/5-highest-rated-video-games-of-all-time/",
+  "https://insider-gaming.com/what-was-the-best-playstation-2-game-ever/",
+  "https://www.gamesradar.com/rockstar-acknowledges-massive-gta-6-leak-we-are-extremely-disappointed",
+  "https://gamespot.com/articles/gta-6-leak-rockstar-responds-says-work-will-continue-as-planned/1100-6507632/",
+  "https://www.videogameschronicle.com/news/rockstar-comments-on-gta-6-leak-and-claims-project-wont-be-delayed",
+  "https://www.cnbc.com/2022/09/19/gta-iv-game-footage-leaks-take-two-shares-slide.html",
+  "https://www.gamespot.com/articles/gta-6-hacker-was-a-teenager-on-bail-in-a-hotel-room-using-an-amazon-fire-stick/1100-6517235/",
+  "https://www.pcgamer.com/uk/teenage-grand-theft-auto-6-hacker-given-an-indefinite-sentence-in-a-secure-hospital-due-to-his-intent-to-return-to-cybercrime-as-soon-as-possible/",
+  "https://www.engadget.com/gta-6-hacker-is-sentenced-to-an-indefinite-hospitalization-194251395.html",
+  "https://gamesradar.com/presumably-while-calling-its-lawyers-rockstar-responded-to-the-gta-6-trailer-leak-our-trailer-has-leaked-so-please-watch-the-real-thing",
+  "https://www.pcgamer.com/rockstar-devs-react-to-grand-theft-auto-6-trailer-leak-this-fing-sucks",
+  "https://www.techradar.com/gaming/consoles-pc/gta-6-devs-reflect-on-the-leaked-trailer-this-fing-sucks",
+  "https://kotaku.com/gta-6-leaker-announces-they-wont-leak-the-full-game-the-leeks-stop-for-now-2000745917",
+  "https://www.gamesradar.com/games/grand-theft-auto/rockstar-wins-without-doing-anything-as-cyberleek-retreats-after-meme-coin-crashes-gta-6-leaker-says-the-leeks-stop-here-as-if-the-games-not-out-in-a-month/",
+  "https://www.pcgamer.com/games/grand-theft-auto/who-is-cyberleek-what-we-know-about-the-gta-6-leaker/",
+  "https://techradar.com/news/gta-6-will-feature-a-female-protagonist-as-part-of-a-bonnie-and-clyde-pair",
+  "https://shacknews.com/article/131562/gta-6-story-details",
+  "https://www.gamesradar.com/games/grand-theft-auto/gta-6s-lucia-and-jason-get-full-names-and-backstories-as-trailer-2-drops-and-rockstar-shares-loads-more-details-about-its-protagonists/",
+  "https://insider-gaming.com/gta-6-datamine-reveals-the-goodtime-state-vice-city-collection/",
+  "https://kotaku.com/rockstar-reveals-400-special-edition-of-grand-theft-auto-6-2000736975",
+  "https://www.videogameschronicle.com/news/grand-theft-auto-6-is-getting-a-400-box-of-merch-with-11-items-including-a-figure-sunglasses-and-new-era-hat/",
+  "https://www.techradar.com/gaming/gta-6-gets-a-vice-city-collection-box-set-for-super-fans-but-its-usd399-and-doesnt-even-come-with-the-game",
+  "https://www.gamespot.com/articles/gta-6-preloading-is-officially-live-files-mention-multiplayer-and-ps5-pro-features/",
+  "https://www.gamesradar.com/games/grand-theft-auto/gta-6-launch-files-already-hint-at-online-multiplayer-playstation-store-sleuth-reports-leading-to-hopes-we-wont-be-waiting-for-a-gta-online-follow-up-for-long/",
+  "https://insider-gaming.com/gta-6-datamine-reveals-multiplayer-references/",
+  "https://www.dexerto.com/gta/gta-6-releasing-on-pc-much-earlier-than-expected-report-3418569/",
+  "https://digitaltrends.com/gaming/gta-6-could-be-coming-to-pc-in-early-2027/",
+  "https://www.pcworld.com/article/3260660/we-guessed-late-2027-for-gta-6-on-pc-a-report-says-q1-2027.html",
+  "https://www.gamespot.com/articles/gta-6-rumor-suggests-a-return-to-single-player-dlc/1100-6506586/",
+  "https://gamesradar.com/gta-6-will-reportedly-go-back-to-single-player-dlc",
+  "https://kotaku.com/yes-you-can-keep-playing-gta-6-after-the-credits-roll-and-dont-worry-thats-not-a-spoiler-2000756333",
+  "https://www.gamespot.com/articles/can-you-keep-playing-after-finishing-gta-6s-story/",
+  "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mission-list/",
+  "https://www.pcgamer.com/games/grand-theft-auto/gta-6-mission-list/",
+  "https://www.videogameschronicle.com/guide/gta-6-chapters-and-mission-list-how-many-chapters-in-gta-6-spoiler-free/",
+  "https://www.gamespot.com/articles/how-long-to-beat-gta-6/",
+  "https://kotaku.com/grand-theft-auto-6-gta6-swap-characters-jason-lucia-unlock-2000758845",
+  "https://www.gamesradar.com/games/grand-theft-auto/gta-6-wont-let-you-switch-between-lucia-and-jason-whenever-you-want-because-it-would-be-unnatural-for-story-progression/",
+  "https://www.videogameschronicle.com/guide/how-to-change-characters-in-gta-6",
+  "https://kotaku.com/grand-theft-auto-6-gta6-jason-lucia-tomas-kid-baby-non-lethal-ending-2000758396",
+  "https://www.gamespot.com/articles/gta-6-saved-a-shocking-reveal-for-launch-and-it-hits-hard/",
+  "https://www.gamesradar.com/games/grand-theft-auto/gta-6-chapter-1-walkthrough/14/",
+  "https://kotaku.com/gta-6-has-a-surprising-late-game-cameo-that-knocked-me-on-my-ass-2000758623",
+  "https://www.pcgamer.com/games/grand-theft-auto/gta-6-niko-bellic/",
+  "https://www.gamespot.com/articles/gta-6-cast-list-includes-potentially-huge-spoiler-so-be-warned/",
+  "https://www.gamesradar.com/games/grand-theft-auto/gta-6-features-a-late-game-cameo-thats-worth-avoiding-spoilers-for-years-after-their-actor-said-they-didnt-hate-rockstar-but-didnt-love-their-pay-for-that-very-role/",
+  "https://www.gamespot.com/articles/does-gta-6-have-multiple-endings/",
+  "https://www.pcgamer.com/games/grand-theft-auto/gta-6-endings/",
+  "https://www.videogameschronicle.com/news/gta-6-chapter-5-mission-list-every-mission-in-order-point-of-no-return/",
+  "https://www.pcgamer.com/games/grand-theft-auto/gta-6-endings-end-of-the-road-swim-for-it-no-surrender/",
+  "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-hacker-pleads-guilty-to-all-charges/",
+  "https://www.shacknews.com/article/151372/gta-6-hacker-guilty-plea",
+  "https://www.gamesradar.com/the-gta-6-leak-cost-rockstar-dollar5-million-and-thousands-of-hours-of-staff-time",
+  "https://www.svg.com/2321698/gta-6-prologue-twist-explained-jason-lucia-son/",
+  "https://esports.gg/guides/grand-theft-auto-6/niko-bellic-gta-6-returns/",
+  "https://www.g2a.com/news/gta-6-news/niko-bellic-in-gta-6/",
+  "https://www.gtabase.com/gta-6/missions/the-end-of-the-road"
+ ],
  "segments": [
   {
    "headline": "50 FACTS",
@@ -24,7 +261,6 @@
     "pink": [
      "20 QUESTIONS"
     ],
-    "sub": "Keep score",
     "seed": 300
    },
    "payoff": false
@@ -93,10 +329,10 @@
      "$6.5 billion"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 301
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "$3.79 BILLION",
@@ -112,7 +348,7 @@
      "$6.5 billion"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "Take-Two · VGC",
     "seed": 301
@@ -132,10 +368,10 @@
      "Ocarina of Time"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 301
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "OCARINA OF TIME",
@@ -151,7 +387,7 @@
      "Ocarina of Time"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "VGC · Notebookcheck",
     "seed": 301
@@ -189,10 +425,10 @@
      "League of Legends"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 301
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "LEAGUE OF LEGENDS",
@@ -208,7 +444,7 @@
      "League of Legends"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "Dot Esports · Streams Charts",
     "seed": 301
@@ -245,20 +481,6 @@
     "value": 475,
     "unit": "M",
     "label": "Trailer 2 views in 24 h, all platforms",
-    "seed": 301
-   }
-  },
-  {
-   "headline": "TOM PETTY",
-   "text": "And the first trailer's song, Tom Petty's Love Is a Long Road, jumped about thirty seven thousand percent on Spotify that week.",
-   "keep_media": true,
-   "chart": {
-    "type": "text",
-    "text": "Tom Petty: +37,000%",
-    "pink": [
-     "+37,000%"
-    ],
-    "sub": "Spotify streams, trailer week",
     "seed": 301
    }
   },
@@ -320,10 +542,10 @@
      "They tied"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 301
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "ULTIMATE",
@@ -339,23 +561,9 @@
      "They tied"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "Take-Two · IGN",
-    "seed": 301
-   }
-  },
-  {
-   "headline": "30 FPS",
-   "text": "One number fans didn't love: thirty frames per second, even on a PS5 Pro. Rockstar says the Pro's processor can't run the game's simulation at sixty, so the Pro gets a sharper picture instead.",
-   "keep_media": true,
-   "chart": {
-    "type": "text",
-    "text": "30 FPS, even on PS5 Pro",
-    "pink": [
-     "30 FPS"
-    ],
-    "sub": "The simulation needs the CPU",
     "seed": 301
    }
   },
@@ -405,10 +613,10 @@
      "Mangrove Yeti"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 302
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "SKUNK APE",
@@ -424,7 +632,7 @@
      "Mangrove Yeti"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "GameSpot · Dexerto",
     "seed": 302
@@ -458,10 +666,10 @@
      "Sunset"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 302
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "2 AM",
@@ -477,7 +685,7 @@
      "Sunset"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "GameSpot · Dexerto",
     "seed": 302
@@ -525,10 +733,10 @@
      "CLEAVES"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 302
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "CLEAVES",
@@ -544,7 +752,7 @@
      "CLEAVES"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "PCGamesN · TheGamer",
     "seed": 302
@@ -593,10 +801,10 @@
      "Key Biscayne"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 302
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "KEY LARGO",
@@ -612,7 +820,7 @@
      "Key Biscayne"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "Sportskeeda · GTABase",
     "seed": 302
@@ -658,7 +866,6 @@
     "pink": [
      "12 TO GO"
     ],
-    "sub": "Leaks + spoilers still coming",
     "seed": 302
    }
   },
@@ -690,10 +897,10 @@
      "A dog on a jet ski"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 303
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "A DOG ON A JET SKI",
@@ -709,7 +916,7 @@
      "A dog on a jet ski"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "GameSpot · Dexerto",
     "seed": 303
@@ -755,10 +962,10 @@
      "Basketball"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 303
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "DARTS",
@@ -774,7 +981,7 @@
      "Basketball"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "VGC · Dexerto",
     "seed": 303
@@ -838,10 +1045,10 @@
      "Delilah"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 303
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "DOLORES",
@@ -857,7 +1064,7 @@
      "Delilah"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "TheClick · GameOverDrive",
     "seed": 303
@@ -891,10 +1098,10 @@
      "Returns your impounded car"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 303
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "RETURNS YOUR IMPOUNDED",
@@ -910,7 +1117,7 @@
      "Returns your impounded car"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "GTABase · Dexerto",
     "seed": 303
@@ -930,10 +1137,10 @@
      "A cereal box"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 303
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "UNDERWEAR",
@@ -949,37 +1156,9 @@
      "A cereal box"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "Kotaku · Dexerto",
-    "seed": 303
-   }
-  },
-  {
-   "headline": "TALKING PARROT",
-   "text": "In Key Lento, a liquor store full of parrot noises hides a tip. Guides say talking to the parrot points you to a hidden stash of cash.",
-   "keep_media": true,
-   "chart": {
-    "type": "text",
-    "text": "Ask the parrot",
-    "pink": [
-     "parrot"
-    ],
-    "sub": "Three Sheets Liquor, Key Lento",
-    "seed": 303
-   }
-  },
-  {
-   "headline": "GOTY FIRST",
-   "text": "And GTA 6 was up for Game of the Year before anyone could play it. The nominations came out November seventeenth. The game launched on the nineteenth.",
-   "keep_media": true,
-   "chart": {
-    "type": "text",
-    "text": "Nominated 2 days before launch",
-    "pink": [
-     "2 days"
-    ],
-    "sub": "The Game Awards 2026",
     "seed": 303
    }
   },
@@ -1025,10 +1204,10 @@
      "Chevy Camaro"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 304
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "MITSUBISHI ECLIPSE",
@@ -1044,7 +1223,7 @@
      "Chevy Camaro"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "Dexerto · GamesRadar",
     "seed": 304
@@ -1079,10 +1258,10 @@
      "Vice City Definitive"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 304
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "SAN ANDREAS DEFINITIVE",
@@ -1098,7 +1277,7 @@
      "Vice City Definitive"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "Dexerto · TheGamer",
     "seed": 304
@@ -1132,10 +1311,10 @@
      "Steve McQueen"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 304
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "STEVE MCQUEEN",
@@ -1151,7 +1330,7 @@
      "Steve McQueen"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "GamesRadar · PC Gamer",
     "seed": 304
@@ -1170,7 +1349,6 @@
     "pink": [
      "ROUND"
     ],
-    "sub": "4 questions, GTA history",
     "seed": 304
    }
   },
@@ -1188,10 +1366,10 @@
      "Getaway City"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 304
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "RACE'N'CHASE",
@@ -1207,7 +1385,7 @@
      "Getaway City"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "GamesRadar · The Escapist",
     "seed": 304
@@ -1227,10 +1405,10 @@
      "Robert De Niro"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 304
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "RAY LIOTTA",
@@ -1246,7 +1424,7 @@
      "Robert De Niro"
     ],
     "answer": 1,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "Wikipedia · IMDb · GameSpot",
     "seed": 304
@@ -1266,10 +1444,10 @@
      "Manhattan"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 304
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "MANHATTAN",
@@ -1285,7 +1463,7 @@
      "Manhattan"
     ],
     "answer": 2,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "Sportskeeda · Giant Bomb",
     "seed": 304
@@ -1305,10 +1483,10 @@
      "San Andreas"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "seed": 304
    },
-   "pad": 4.0
+   "pad": 3.5
   },
   {
    "headline": "GTA 4",
@@ -1324,7 +1502,7 @@
      "San Andreas"
     ],
     "answer": 0,
-    "think": 4.0,
+    "think": 3.5,
     "reveal": true,
     "src": "Metacritic · VGC",
     "seed": 304
@@ -1352,6 +1530,367 @@
      ]
     ],
     "seed": 304
+   }
+  },
+  {
+   "headline": "ROUND 5",
+   "text": "Round five. The leaks. First, what really happened. Then what's reportedly coming next.",
+   "keep_media": true,
+   "chapter": "Round 5: The leaks",
+   "chart": {
+    "type": "countdown",
+    "n": 5,
+    "of": 6,
+    "label": "THE LEAKS",
+    "sub": "What happened + what's reportedly next",
+    "seed": 305
+   }
+  },
+  {
+   "headline": "SEPTEMBER 2022",
+   "text": "In September twenty twenty two, a hacker broke into Rockstar and posted around ninety clips of early, unfinished GTA 6 footage. Rockstar said it was extremely disappointed, and that work would continue as planned.",
+   "keep_media": true,
+   "chart": {
+    "type": "headline",
+    "kicker": "THE 2022 HACK",
+    "text": "90 early clips leaked in one night",
+    "ticker": "Rockstar: extremely disappointed · work continues as planned",
+    "seed": 305
+   }
+  },
+  {
+   "headline": "BONUS QUESTION",
+   "text": "Bonus question. The hacker was a British teenager tied to the Lapsus group. On bail in a hotel, what did he plug into the TV to keep hacking?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "BONUS",
+    "q": "What did the hacker plug into a hotel TV?",
+    "options": [
+     "A games console",
+     "A laptop",
+     "An Amazon Fire Stick"
+    ],
+    "answer": 2,
+    "think": 3.5,
+    "seed": 305
+   },
+   "pad": 3.5
+  },
+  {
+   "headline": "AN AMAZON FIRE STICK",
+   "text": "An Amazon Fire Stick, plus a phone. Rockstar told the court the hack cost it about five million dollars, and this month he pleaded guilty to all charges.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "BONUS",
+    "q": "What did the hacker plug into a hotel TV?",
+    "options": [
+     "A games console",
+     "A laptop",
+     "An Amazon Fire Stick"
+    ],
+    "answer": 2,
+    "think": 3.5,
+    "reveal": true,
+    "src": "GameSpot · PC Gamer · Shacknews",
+    "seed": 305
+   }
+  },
+  {
+   "headline": "LEAKED EARLY",
+   "text": "Even trailer one leaked. It was set for December fifth, twenty twenty three, but a copy got out the night before, so Rockstar posted the real one about half a day early.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Trailer 1 came out early",
+    "pink": [
+     "early"
+    ],
+    "sub": "A copy leaked the night before",
+    "seed": 305
+   }
+  },
+  {
+   "headline": "CYBERLEEK",
+   "text": "This year, a leaker calling itself Cyberleek posted clips from an unfinished build and tied them to a crypto meme coin. In October the coin missed its thirty million dollar goal, and the leaker said the leaks would stop.",
+   "keep_media": true,
+   "chart": {
+    "type": "headline",
+    "kicker": "LEAK · 2026",
+    "text": "Cyberleek tied leaks to a meme coin",
+    "ticker": "Goal: $30M · missed · leaks stopped in October",
+    "seed": 305
+   }
+  },
+  {
+   "headline": "BONUS QUESTION",
+   "text": "Bonus question. Back in twenty twenty two, one outlet reported GTA 6 would star a Latina woman, in a Bonnie and Clyde style story. Which outlet?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "BONUS",
+    "q": "Who reported a Latina GTA 6 lead in 2022?",
+    "options": [
+     "Variety",
+     "The New York Times",
+     "Bloomberg"
+    ],
+    "answer": 2,
+    "think": 3.5,
+    "seed": 305
+   },
+   "pad": 3.5
+  },
+  {
+   "headline": "BLOOMBERG",
+   "text": "Bloomberg. And that report held up: Lucia and Jason are the game's criminal couple.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "BONUS",
+    "q": "Who reported a Latina GTA 6 lead in 2022?",
+    "options": [
+     "Variety",
+     "The New York Times",
+     "Bloomberg"
+    ],
+    "answer": 2,
+    "think": 3.5,
+    "reveal": true,
+    "src": "Bloomberg · GamesRadar · TechRadar",
+    "seed": 305
+   }
+  },
+  {
+   "headline": "$400 BOX",
+   "text": "Dataminers also found an unannounced collector's box in the Rockstar Store's code. Rockstar later confirmed it: The Goodtime State, a four hundred dollar box of merch that doesn't even include the game.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "$400 box. No game inside.",
+    "pink": [
+     "No game"
+    ],
+    "sub": "The Goodtime State collection",
+    "seed": 305
+   }
+  },
+  {
+   "headline": "REPORTEDLY NEXT",
+   "text": "Now what's reportedly next. According to a PlayStation dataminer, the launch files already mention online features, like joining a session. GTA 6 Online has no date yet.",
+   "keep_media": true,
+   "chart": {
+    "type": "headline",
+    "kicker": "REPORTEDLY",
+    "text": "GTA 6 Online is already in the files",
+    "ticker": "According to a dataminer · no date announced",
+    "seed": 305
+   }
+  },
+  {
+   "headline": "PC + DLC?",
+   "text": "A GamesBeat report says the PC version is reportedly aiming for early twenty twenty seven. And a longtime insider said back in twenty twenty two that story expansions are planned. Rockstar has announced none of it.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "title": "REPORTEDLY",
+    "items": [
+     [
+      "GTA 6 Online",
+      "IN FILES"
+     ],
+     [
+      "PC version",
+      "EARLY 2027?"
+     ],
+     [
+      "Story DLC",
+      "RUMOR"
+     ]
+    ],
+    "seed": 305
+   }
+  },
+  {
+   "headline": "ROUND 6",
+   "text": "Last round. Story spoilers. If you haven't finished GTA 6, skip to the end now: the timestamp is in the description. Light ones first.",
+   "keep_media": true,
+   "chapter": "Round 6: SPOILERS (story)",
+   "chart": {
+    "type": "countdown",
+    "n": 6,
+    "of": 6,
+    "label": "SPOILERS",
+    "sub": "Story spoilers: skip if you haven't finished",
+    "seed": 306
+   }
+  },
+  {
+   "headline": "AFTER THE CREDITS",
+   "text": "Finishing the story doesn't lock your save. After the credits, the game rewinds to the moment before the finale, and you keep playing.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "The credits don't end it",
+    "pink": [
+     "don't end it"
+    ],
+    "sub": "You rewind to before the finale",
+    "seed": 306
+   }
+  },
+  {
+   "headline": "5 CHAPTERS",
+   "text": "The story runs in five chapters. Chapter two puts Lucia front and center, and free switching between her and Jason only opens partway through it.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "5 chapters. Chapter 2 is Lucia's.",
+    "pink": [
+     "Lucia's"
+    ],
+    "sub": "Free switching opens mid-chapter",
+    "seed": 306
+   }
+  },
+  {
+   "headline": "MAJOR SPOILERS",
+   "text": "Now the big ones. Last chance to skip.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "MAJOR",
+     "SPOILERS"
+    ],
+    "pink": [
+     "SPOILERS"
+    ],
+    "seed": 306
+   }
+  },
+  {
+   "headline": "BONUS QUESTION",
+   "text": "Bonus question. The prologue reveals a secret Rockstar kept for years: Jason and Lucia have a baby son. What's his name?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "BONUS",
+    "q": "What's Jason and Lucia's son called?",
+    "options": [
+     "Mateo",
+     "Diego",
+     "Tomás"
+    ],
+    "answer": 2,
+    "think": 3.5,
+    "seed": 306
+   },
+   "pad": 3.5
+  },
+  {
+   "headline": "TOMÁS",
+   "text": "Tomás. Lucia's arrest in the prologue separates her from him, and that raises the stakes for everything after.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "BONUS",
+    "q": "What's Jason and Lucia's son called?",
+    "options": [
+     "Mateo",
+     "Diego",
+     "Tomás"
+    ],
+    "answer": 2,
+    "think": 3.5,
+    "reveal": true,
+    "src": "Kotaku · SVG · GTABase",
+    "seed": 306
+   }
+  },
+  {
+   "headline": "NIKO IS BACK",
+   "text": "And in the final chapter, an older Niko Bellic, the star of GTA 4, shows up in two cutscenes. His original voice actor, Michael Hollick, is back, credited only as The Hitman.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Niko Bellic is back",
+    "pink": [
+     "Niko Bellic"
+    ],
+    "sub": "2 cutscenes · credited as The Hitman",
+    "seed": 306
+   }
+  },
+  {
+   "headline": "ENDINGS",
+   "text": "GTA 6 has more than one ending, and your choices along the way decide which one you see. Kotaku says they play out in wildly different, sometimes surprising ways.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "More than one ending",
+    "pink": [
+     "one ending"
+    ],
+    "sub": "Your choices decide it",
+    "seed": 306
+   }
+  },
+  {
+   "headline": "BONUS QUESTION",
+   "text": "Last bonus question. What is GTA 6's final mission called?",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "BONUS",
+    "q": "What is GTA 6's final mission called?",
+    "options": [
+     "Last Call in Leonida",
+     "Paradise Lost",
+     "The End of the Road"
+    ],
+    "answer": 2,
+    "think": 3.5,
+    "seed": 306
+   },
+   "pad": 3.5
+  },
+  {
+   "headline": "THE END OF THE ROAD",
+   "text": "The End of the Road. It's the point of no return in chapter five, so make a separate save before you start it.",
+   "keep_media": true,
+   "chart": {
+    "type": "quiz",
+    "tag": "BONUS",
+    "q": "What is GTA 6's final mission called?",
+    "options": [
+     "Last Call in Leonida",
+     "Paradise Lost",
+     "The End of the Road"
+    ],
+    "answer": 2,
+    "think": 3.5,
+    "reveal": true,
+    "src": "VGC · GTABase · Games.gg",
+    "seed": 306
+   }
+  },
+  {
+   "headline": "YOUR SCORE?",
+   "text": "That's GTA 6 trivia: twenty questions, four bonus ones, the leaks and the spoilers. What did you score out of twenty? Tell me in the comments, and subscribe for more GTA 6.",
+   "keep_media": true,
+   "chapter": "Final score",
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "YOUR SCORE?",
+     "OUT OF 20"
+    ],
+    "pink": [
+     "OUT OF 20"
+    ],
+    "seed": 300
    }
   }
  ]
