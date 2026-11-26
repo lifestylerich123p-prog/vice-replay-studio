@@ -31,8 +31,10 @@ Read this first instead of searching the repo.
 | 2026-11-26 | gta6-silent-hill-hotel | Short | GTA 6 Silent Hill Easter Egg: Marbelle Hotel Location and Safe Code | - |
 | 2026-11-26 | gta6-sell-jewelry-where | Short | GTA 6: Where to Sell Jewelry (Best Fence) | - |
 | 2026-11-26 | gta6-no-mission-replay | Short | GTA 6 Has No Mission Replay: How to Save Instead | - |
+| 2026-11-26 | gta6-ninja-turtles-where | Short | GTA 6 Ninja Turtles Easter Egg: Where to Find It | - |
 | 2026-11-26 | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | - |
 | 2026-11-26 | gta6-map-quiz-places | Short | GTA 6 Map Quiz: Name These 3 Places | - |
+| 2026-11-26 | gta6-ghost-ship-where | Short | GTA 6 Ghost Ship Easter Egg: Lighthouse Location and Cursed Knife | - |
 | 2026-11-26 | gta6-black-panther-where | Short | GTA 6 Legendary Animals: Where to Find the Black Panther | - |
 | 2026-11-26 | gta6-black-bear-where | Short | GTA 6 Legendary Animals: Where to Find the Black Bear | - |
 | 2026-11-26 | gta6-backrooms-where | Short | Where to Find the Backrooms in GTA 6 | - |
