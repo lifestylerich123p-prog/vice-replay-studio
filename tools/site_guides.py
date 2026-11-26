@@ -981,7 +981,7 @@ for g in _JSON:
     h1 = g.get("h1") or g["title"]
     pins_n = len(json.load(open(os.path.join(STUDIO, "site", "map-pins.json")))["pins"])
     g = json.loads(json.dumps(g).replace("{PINS}", str(pins_n)))  # counts from the pin data (Nov 24: page said 30, map had 31)
-    body = f'<h1>{h1}</h1><p class="meta">{"Actualizado el" if es else "Updated"} {nice_date(g["date"], "es" if es else "en")} · Vice Replay</p><p class="lede">{g.get("lede", "")}</p>'
+    body = f'<h1>{h1}</h1><p class="meta">{"Actualizado el" if es else "Updated"} {nice_date(g.get("modified") or g["date"], "es" if es else "en")} · Vice Replay</p><p class="lede">{g.get("lede", "")}</p>'
     body += video(g["video"], g["title"]) if g.get("video") else ""
     body += "".join(_MAPTAG.sub(lambda m: interactive_map(g.get("lang", "en"), (m.group(1) or "").split(",") if m.group(1) else None),
                                 f"<h2>{html.escape(h)}</h2>{b}") for h, b in g.get("sections", []))
@@ -990,7 +990,7 @@ for g in _JSON:
     body += watchmore(g["video"], "es" if es else "en") if g.get("video") else ""
     body += sources([tuple(x) for x in g.get("sources", [])]) if g.get("sources") else ""
     guide(g["slug"], g["title"], g["desc"], g["date"], body, faq=[tuple(x) for x in g.get("faq", [])] or None, lang=g.get("lang", "en"),
-          lead=not g.get("map_first"))
+          modified=g.get("modified"), lead=not g.get("map_first"))  # Nov 26: "modified" = refreshed page (dateModified)
 
 # Search box on the guide lists (Nov 24): filters the cards as you type, no server needed
 SEARCH_JS = ('<script>(function(){var q=document.getElementById("q");if(!q)return;var cs=[].slice.call(document.querySelectorAll(".cards .card"));'

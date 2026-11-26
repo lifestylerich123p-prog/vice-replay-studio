@@ -328,3 +328,9 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   ("¿son novios?", 748 likes). Story, Online, bugs and streamers barely come up in the top comments. On OUR channel the
   few comments are about 30 FPS and waiting for the PC version. Questions under viral entertainment videos are mostly
   jokes: use YouTube search terms (search-terms.json) for "where is X" demand, comments for themes and tone.
+- 2026-11-26 (website, first Search Console read via Windsor): Google started showing vicereplay.com on Nov 20 and was
+  at ~87 impressions a day by Nov 22-23 (230 in total, 6 clicks; mostly US/UK/India). One topic carries it: "is the
+  PS5 Pro worth it for GTA 6" and its variants (~60 impressions on the PS5 Pro page at position 8-12, 0 clicks), the
+  same 30 FPS worry our YouTube commenters raise. Fix applied: titles under 60 characters with the answer first
+  ("Still 30 FPS"), snippets that lead with the answer, dateModified on refreshed pages (JSON guides now take
+  "modified"). Next: watch that page's CTR in the 1 PM checklist; a "PS5 Pro vs PS5 for GTA 6" VS Short can link to it.
