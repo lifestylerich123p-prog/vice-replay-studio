@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # top-level episode keys the renderer reads (studio/make_video.py, cardphotos.py); the rest is package/metadata
 SHARED_KEYS = ("use_gameplay", "spot", "sfx", "rate", "payoff_hook", "outro_card", "music_level", "music_duck", "music",
                "mood", "format", "follow_cta", "card_photos", "sources", "map_style")
-LANG_KEYS = {"en": ("cta", "voice", "voice_override"), "es": ("cta_es", "voice_es")}
+LANG_KEYS = {"en": ("cta", "voice", "voice_override"), "es": ("cta_es", "voice_es", "rate_es")}
 
 
 def _sha(p):
@@ -93,11 +93,21 @@ def manifest_path(video):
 
 def write(video, ep, item="short", lang="en", used_footage=None):
     m = {"video": h(video_inputs(ep, item, lang)), "package": h(package(ep, item, lang)), "lang": lang,
-         "item": item, "video_sha256": _sha(video)}
+         "item": item, "video_sha256": _sha(video),
+         "voice": spoken_by(ep, item, lang)}
     if used_footage is not None:
         m["used_footage"] = bool(used_footage)
     manifest_path(video).write_text(json.dumps(m, indent=1) + "\n")
     return m
+
+
+def spoken_by(ep, item="short", lang="en"):
+    """Which voice actually speaks this render: ready-made voice files (Everygen etc.) win over TTS."""
+    segs = segments(ep, item)
+    key = "audio_es" if lang == "es" else "audio"
+    if segs and all(x.get(key) for x in segs):
+        return "recorded:" + ("everygen-viral-adam" if lang == "es" else "file")
+    return (ep.get("voice_es") if lang == "es" else ep.get("voice_override")) or _cfg_voice(lang)
 
 
 def write_package(video, ep, item="short", lang="en"):

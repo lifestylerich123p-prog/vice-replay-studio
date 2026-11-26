@@ -1,0 +1,119 @@
+{
+ "series": "How-To",
+ "format": "tutorial",
+ "category": "map_tutorial",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "site demo (our interactive map)",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "sources": [
+  "Vice Replay interactive map (pins from 2+ guides each): https://vicereplay.com/guides/gta-6-map-leonida-places/",
+  "Rockstar Games - GTA VI official downloads (the Leonida map): https://www.rockstargames.com/VI/downloads"
+ ],
+ "claim_status": "community-found",
+ "slug": "gta6-map-checklist",
+ "hook_type": "benefit",
+ "title": "GTA 6 Map Checklist: Track Every Spot You Find",
+ "short_title": "GTA 6 map checklist: track every spot you find ✅ #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 map checklist: track every spot you find ✅ #GTA6 #Shorts",
+  "GTA 6 collectibles tracker: free, no account ✅ #GTA6 #Shorts"
+ ],
+ "short_description": "Our free GTA 6 map keeps your checklist: tick 'Mark as found' on any of the 38 trackable spots and it remembers (on your device, no account), then 'Next unfound' takes you to one you haven't found yet. https://vicereplay.com/guides/gta-6-map-leonida-places/\n\nMap: Rockstar Games (official map download). Pins and directions: Vice Replay.",
+ "short_es": {
+  "title": "GTA 6: tu LISTA de lugares encontrados ✅ #GTA6 #Shorts",
+  "description": "Nuestro mapa gratis de GTA 6 guarda tu lista: marca 'Encontrado' en cualquiera de los 38 lugares y lo recuerda (en tu dispositivo, sin cuenta); 'Siguiente sin encontrar' te lleva al próximo. https://vicereplay.com/es/guias/mapa-gta-6/",
+  "tags": [
+   "GTA 6 mapa",
+   "GTA 6 lista",
+   "GTA 6 coleccionables",
+   "GTA 6 español",
+   "GTA 6 mapa interactivo"
+  ]
+ },
+ "pinned_comment": "How many have you found so far? Reply with your number 👇",
+ "short_pinned_comment_es": "¿Cuántos llevas? Responde con tu número 👇",
+ "tags": [
+  "GTA 6 map checklist",
+  "GTA 6 collectibles tracker",
+  "GTA 6 interactive map",
+  "GTA 6 100% checklist",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6map",
+  "#gta6tips"
+ ],
+ "facts_note": "Nov 26: 38 trackable spots (legend 'Found: 0/38'); progress is stored in the browser (localStorage, no account); demo recorded with tools/record_map_demo.js --script (progress).",
+ "short": [
+  {
+   "headline": "TRACK IT",
+   "headline_es": "MÁRCALO",
+   "text": "Tick a spot and our free map remembers you found it.",
+   "text_es": "Marca un lugar y nuestro mapa recuerda que lo encontraste.",
+   "keep_media": true,
+   "media": "../media/site/map-demo-progress-en.mp4",
+   "media_start": 2.4,
+   "media_es": "../media/site/map-demo-progress-es.mp4",
+   "media_start_es": 2.4
+  },
+  {
+   "headline": "38 SPOTS",
+   "headline_es": "38 LUGARES",
+   "text": "Thirty-eight trackable spots, from the giant crab to Bigfoot.",
+   "text_es": "Treinta y ocho lugares, del cangrejo gigante al Pie Grande.",
+   "keep_media": true,
+   "media": "../media/site/map-demo-progress-en.mp4",
+   "media_start": 0.6,
+   "media_es": "../media/site/map-demo-progress-es.mp4",
+   "media_start_es": 0.6
+  },
+  {
+   "headline": "NEXT ONE",
+   "headline_es": "EL SIGUIENTE",
+   "text": "Next unfound takes you to one you haven't found yet.",
+   "text_es": "Siguiente te lleva a uno que aún no encuentras.",
+   "keep_media": true,
+   "media": "../media/site/map-demo-progress-en.mp4",
+   "media_start": 4.6,
+   "media_es": "../media/site/map-demo-progress-es.mp4",
+   "media_start_es": 4.6
+  },
+  {
+   "headline": "NO ACCOUNT",
+   "headline_es": "SIN CUENTA",
+   "text": "It's free, no account needed, so",
+   "text_es": "Es gratis y sin cuenta, así que",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FREE,",
+     "NO ACCOUNT"
+    ],
+    "pink": [
+     "NO ACCOUNT"
+    ],
+    "seed": 212
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GRATIS,",
+     "SIN CUENTA"
+    ],
+    "pink": [
+     "SIN CUENTA"
+    ],
+    "seed": 212
+   }
+  }
+ ]
+}

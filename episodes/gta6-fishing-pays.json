@@ -1,0 +1,189 @@
+{
+ "series": "Mythbusters",
+ "format": "myth-check",
+ "category": "location",
+ "hook_type": "myth-check",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (Phase 4 GTA Mythbusters: claim -> verdict -> where)",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-fishing-pays",
+ "title": "Does Fishing Pay in GTA 6?",
+ "short_title": "GTA 6 fishing: does it pay? The answer is no 🎣 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 fishing: does it pay? The answer is no 🎣 #GTA6 #Shorts",
+  "GTA 6 fishing location + why it pays $0 🎣 #GTA6 #Shorts"
+ ],
+ "title_rule": "Phase 4 follow-up of the sunken treasure money Short (12x matched baseline); 'gta 6 fishing' / 'gta 6 fishing money'; Mythbusters format",
+ "short_description": "Does fishing make money in GTA 6? No: every fish you catch is released, so it pays $0 (TheClick, GTABase, games.gg). It's still worth it for the 35 species and Cal's 'Catch a Bigger Fish' challenge in Gambit Bay, which earns the Baited My Tackle trophy. You can fish from the start: the rods are by Jason's house in Key Lento (guides differ: the pier or the boat). No story spoilers.\n\nSources: Shacknews, GTABase, TheClick, PowerPyx.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: pescar NO da dinero 🎣 #GTA6 #Shorts",
+  "description": "¿Pescar da dinero en GTA 6? No: cada pez se suelta solo, así que paga 0 dólares (TheClick, GTABase). Vale la pena por las 35 especies y el reto de Cal en Gambit Bay, que da el trofeo Baited My Tackle. Puedes pescar desde el principio: las cañas están junto a la casa de Jason en Key Lento (las guías difieren: el muelle o el barco). Fuentes: Shacknews, GTABase, TheClick, PowerPyx.",
+  "tags": [
+   "GTA 6 pescar",
+   "GTA 6 pesca dinero",
+   "GTA 6 dónde pescar",
+   "GTA 6 español",
+   "GTA 6 Key Lento"
+  ]
+ },
+ "pinned_comment": "Did you think fishing paid? Reply ✅ yes or ❌ no 👇",
+ "short_pinned_comment_es": "¿Creías que pescar pagaba? Responde ✅ sí o ❌ no 👇",
+ "tags": [
+  "GTA 6 fishing",
+  "GTA 6 fishing money",
+  "does fishing pay GTA 6",
+  "GTA 6 where to fish",
+  "GTA 6 fishing rod",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6fishing"
+ ],
+ "sources": [
+  "Shacknews - How to go fishing in GTA 6: https://www.shacknews.com/article/151389/how-to-go-fishing-gta6",
+  "GTABase - How to fish in GTA 6: https://www.gtabase.com/gta-6/articles/how-to-fish-in-gta-6",
+  "TheClick - All GTA 6 fish locations: https://www.theclick.gg/gta-6-all-fish-locations/",
+  "GTABase - Catch a Bigger Fish: https://www.gtabase.com/gta-6/missions/catch-a-bigger-fish",
+  "games.gg - GTA 6 fishing guide (catch and release, Cal's challenge): https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-fishing-guide/",
+  "PowerPyx - Catch a Bigger Fish (Baited My Tackle): https://www.powerpyx.com/?p=375539"
+ ],
+ "claim_status": "community-found",
+ "facts_note": "Nov 26 map intelligence research: fishing pays no cash, fish auto-released (TheClick, GTABase, games.gg); 35 species (TheClick, GTABase); rods by Jason's house in Key Lento (Shacknews; guides differ: pier vs boat, said in the description); Cal's challenge in Gambit Bay -> Baited My Tackle trophy (GTABase, PowerPyx). 'Lake Leonida bass' (fan wiki only) left out.",
+ "short": [
+  {
+   "headline": "FISHING PAYS $0",
+   "headline_es": "PESCAR PAGA $0",
+   "text": "Fishing in GTA 6 doesn't pay a single dollar.",
+   "text_es": "En GTA seis, pescar no te paga ni un dólar.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FISHING PAYS",
+     "$0"
+    ],
+    "pink": [
+     "$0"
+    ],
+    "seed": 221,
+    "sub": "GTA 6 mythbusters"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "PESCAR PAGA",
+     "$0"
+    ],
+    "pink": [
+     "$0"
+    ],
+    "seed": 221,
+    "sub": "mitos de GTA 6"
+   }
+  },
+  {
+   "headline": "VERDICT: TRUE",
+   "headline_es": "VEREDICTO: CIERTO",
+   "text": "Every fish you catch is released, guides confirm.",
+   "text_es": "Cada pez que atrapas se suelta solo, según las guías.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Catch → released → $0",
+    "pink": [
+     "$0"
+    ],
+    "src": "TheClick · GTABase",
+    "seed": 222
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Lo atrapas → se suelta → $0",
+    "pink": [
+     "$0"
+    ],
+    "src": "TheClick · GTABase",
+    "seed": 222
+   }
+  },
+  {
+   "headline": "35 SPECIES",
+   "headline_es": "35 ESPECIES",
+   "text": "But there are thirty-five species to collect.",
+   "text_es": "Pero hay treinta y cinco especies para atrapar.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 35,
+    "label": "fish species",
+    "src": "TheClick · GTABase"
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 35,
+    "label": "especies de peces",
+    "src": "TheClick · GTABase",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "FIRST ROD",
+   "headline_es": "PRIMERA CAÑA",
+   "text": "Your first rod is by Jason's house in Key Lento.",
+   "text_es": "Tu primera caña está junto a la casa de Jason, en Key Lento.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "area",
+    "at": "Key Lento",
+    "r": 0.02,
+    "label": "Rods by Jason's house",
+    "src": "Shacknews · GTABase"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "area",
+    "at": "Key Lento",
+    "r": 0.02,
+    "label": "Cañas junto a la casa",
+    "src": "Shacknews · GTABase",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "TROPHY",
+   "headline_es": "TROFEO",
+   "text": "Cal's challenge in Gambit Bay earns a trophy, but",
+   "text_es": "El reto de Cal en Gambit Bay da un trofeo, pero",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "route",
+    "from": "Key Lento",
+    "at": "Gambit Bay",
+    "label": "Cal's challenge",
+    "n": 1,
+    "src": "GTABase · PowerPyx"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "route",
+    "from": "Key Lento",
+    "at": "Gambit Bay",
+    "label": "Reto de Cal",
+    "n": 1,
+    "src": "GTABase · PowerPyx",
+    "locale": "es"
+   }
+  }
+ ]
+}

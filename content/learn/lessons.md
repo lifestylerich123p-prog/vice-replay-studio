@@ -358,3 +358,11 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   seis, ..."; Spanish words for places where natural (el lago Tallaloko).
 - 2026-11-26 (Phase 3, voice): Piper's raw audio clipped (peaks 0 dBFS); peak limit to -1.5 dBFS added. The
   pronunciation dictionary helps Jason / Key Lento / Vice City; respelling "GTA" or "Bigfoot" made them worse (removed).
+- 2026-11-26 (Phase 4): first Spanish Analytics pull (28 days, 10 videos, 31 views): the Bad Bunny Short, our most
+  viewed Spanish video, kept only 11.7% (about 3 s); the others with 2-8 views show 90-135% (a few viewers looping).
+  Too few views to judge voices yet: retention per voice is now recorded (A2 test from Dec 1).
+- 2026-11-26 (Phase 4, sources): one store claim from research ("Bargain World, Port Gellhorn") had no second source on
+  a direct search and was dropped; the Short says only what 2+ guides agree on. Expect this from search-summary
+  research: re-check each specific name before scripting it.
+- 2026-11-26 (Phase 4, voice): with Whisper "small", Piper es_MX claude scored 0.81 word match vs 0.68 for es_MX ald
+  (Unlicense); ald misread plain words, so claude stays the default.

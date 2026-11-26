@@ -3,6 +3,9 @@
 // network and no third-party footage; the map tiles are Rockstar's official map (allowed, credited on the page).
 //   node tools/record_map_demo.js <site dir> <page path> <search text> <pin anchor> <out.mp4>
 //   node tools/record_map_demo.js ../vicereplay-site guides/gta-6-map-leonida-places/ shoe flip-flop-house-shoe-store media/site/map-demo-shoe-en.mp4
+//   node tools/record_map_demo.js ../vicereplay-site <page path> --script steps.json <out.mp4>    (Phase 4: any demo)
+//   steps.json: [{"wait": ms} | {"click": "css"} | {"type": ["css", "text"]} | {"pin": "anchor"} | {"eval": "js"}]
+//   (waits are in video time; the page runs in slow motion while recording)
 //
 // How: Chrome's recorders capture CSS pixels (432x768 here), so the page runs in slow motion instead (its clock,
 // timers, animation frames and CSS transitions at RATE) while full-resolution screenshots (1080x1920) are taken as
@@ -26,7 +29,12 @@ const CLOCK = `(() => {
 })();`;
 
 (async () => {
-  const [site, page, query, pin, out] = process.argv.slice(2);
+  const argv = process.argv.slice(2);
+  const scripted = argv[2] === '--script';
+  const [site, page] = argv;
+  const steps = scripted ? JSON.parse(fs.readFileSync(argv[3], 'utf8')) : null;
+  const out = scripted ? argv[4] : argv[4];
+  const [query, pin] = scripted ? [null, null] : [argv[2], argv[3]];
   const port = 8700 + Math.floor(Math.random() * 90);
   const srv = spawn('python3', ['-m', 'http.server', String(port), '--bind', '127.0.0.1'], { cwd: site, stdio: 'ignore' });
   await new Promise(r => setTimeout(r, 900));
@@ -41,7 +49,8 @@ const CLOCK = `(() => {
   const shoot = async () => {
     while (rec) {
       const t = Date.now();
-      const buf = await p.screenshot({ type: 'jpeg', quality: 92 });
+      let buf;
+      try { buf = await p.screenshot({ type: 'jpeg', quality: 92 }); } catch (e) { break; }  // browser closing
       frames.push({ t: (t - t0) / 1000 * RATE, buf });
     }
   };
@@ -60,13 +69,29 @@ const CLOCK = `(() => {
     await cdp.send('Animation.setPlaybackRate', { playbackRate: RATE });
     rec = true; t0 = Date.now();
     const loop = shoot();
-    await slow(1300);                                  // the whole state, every pin
-    await p.click('.vrsearch');
-    for (const ch of query) { await p.keyboard.type(ch); await slow(150); }  // the search filters pins as you type
-    await slow(900);
-    const ok = await p.evaluate(a => { const e = document.querySelector(`[data-pin][href="#${a}"]`); if (e) e.click(); return !!e; }, pin);
-    if (!ok) throw new Error(`no pin link for #${pin}`);
-    await slow(3000);                                  // fly to the pin + its popup
+    const clickPin = async a => {
+      const ok = await p.evaluate(x => { const e = document.querySelector(`[data-pin][href="#${x}"]`); if (e) e.click(); return !!e; }, a);
+      if (!ok) throw new Error(`no pin link for #${a}`);
+    };
+    if (steps) {
+      for (const st of steps) {
+        if (st.wait) await slow(st.wait);
+        else if (st.click) {  // clicked inside the page: slow-motion animations never look "stable" to Playwright
+          const ok = await p.evaluate(sel => { const e = document.querySelector(sel); if (e) e.click(); return !!e; }, st.click);
+          if (!ok) throw new Error(`step click: nothing matches ${st.click}`);
+        }
+        else if (st.type) { await p.click(st.type[0]); for (const ch of st.type[1]) { await p.keyboard.type(ch); await slow(150); } }
+        else if (st.pin) await clickPin(st.pin);
+        else if (st.eval) await p.evaluate(st.eval);
+      }
+    } else {
+      await slow(1300);                                // the whole state, every pin
+      await p.click('.vrsearch');
+      for (const ch of query) { await p.keyboard.type(ch); await slow(150); }  // the search filters pins as you type
+      await slow(900);
+      await clickPin(pin);
+      await slow(3000);                                // fly to the pin + its popup
+    }
     rec = false;
     await loop;
     if (frames.length < 20) throw new Error(`only ${frames.length} frames captured`);

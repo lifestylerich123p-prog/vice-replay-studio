@@ -50,5 +50,21 @@
  "gta6-interactive-map-howto": {
   "date": "2026-11-26",
   "note": "Nov 26 map intelligence research (web search, 3-4 sites each; summaries, not full page reads): see facts_note; single-source details left out"
+ },
+ "gta6-clothing-stores-where": {
+  "date": "2026-11-26",
+  "note": "Nov 26: 67 stores (PowerPyx, TheClick, Gamertweak); Key Lento shops (Gamertweak + PowerPyx); Bargain World dropped (no 2nd source)"
+ },
+ "gta6-fishing-pays": {
+  "date": "2026-11-26",
+  "note": "Nov 26: no cash/catch-and-release (TheClick, GTABase, games.gg); 35 species (TheClick, GTABase); Cal Gambit Bay trophy (GTABase, PowerPyx, games.gg)"
+ },
+ "gta6-map-easter-eggs-filter": {
+  "date": "2026-11-26",
+  "note": "Nov 26: counts from site/map-pins.json (our map data); demo recorded from our own site"
+ },
+ "gta6-map-checklist": {
+  "date": "2026-11-26",
+  "note": "Nov 26: counts from site/map-pins.json (our map data); demo recorded from our own site"
  }
 }

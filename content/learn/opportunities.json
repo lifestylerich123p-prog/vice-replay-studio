@@ -1,27 +1,31 @@
 {
- "at": "2026-11-26T19:30:30.596260+00:00",
+ "at": "2026-11-26T20:13:08.006520+00:00",
  "ratio_rule": 3.0,
  "winners": [
   {
    "platform": "youtube-en",
    "id": "Ocu-HYE9Ygw",
    "title": "GTA 6's easiest early money is underwater 💰 #GTA6 #Shorts",
-   "age_h": 6.5,
+   "age_h": 7.2,
    "views": 367,
    "format": "map",
    "slug": "gta6-sunken-treasure",
    "sufficient": true,
-   "at_h": 6.5,
+   "at_h": 7.2,
    "views_at": 367,
-   "baseline": 25.5,
+   "baseline": 30.0,
    "baseline_n": 16,
    "baseline_group": "all Shorts",
-   "ratio": 14.4,
+   "ratio": 12.2,
    "family": "money",
    "ready": [
-    "fishing-spots",
-    "hunting-spots"
+    "hunting-spots",
+    "fishing-spots"
    ],
+   "scores": {
+    "hunting-spots": 0.98,
+    "fishing-spots": 0.98
+   },
    "research_next": [],
    "related_existing": []
   },
@@ -29,45 +33,43 @@
    "platform": "youtube-en",
    "id": "CGAd-LB82d4",
    "title": "GTA 6 shoe store: where to buy shoes 👟 #GTA6 #Shorts",
-   "age_h": 18.0,
+   "age_h": 18.7,
    "views": 706,
    "format": "map",
    "slug": "gta6-shoe-store-where",
    "sufficient": true,
-   "at_h": 18.0,
+   "at_h": 18.7,
    "views_at": 706,
-   "baseline": 52,
+   "baseline": 53,
    "baseline_n": 15,
    "baseline_group": "all Shorts",
-   "ratio": 13.6,
+   "ratio": 13.3,
    "family": "shopping",
-   "ready": [
-    "clothing-stores"
-   ],
+   "ready": [],
+   "scores": {},
    "research_next": [
     "rare-outfits"
    ],
-   "related_existing": [
-    "gta6-ultimate-edition-shops"
-   ]
+   "related_existing": []
   },
   {
    "platform": "youtube-en",
    "id": "ChmiOLulOvo",
    "title": "GTA 6: where to find Paul Walker's car 🏎️ #GTA6 #Shorts",
-   "age_h": 22.9,
+   "age_h": 23.6,
    "views": 255,
    "format": "map",
    "slug": "gta6-atm-robbery-guide",
    "sufficient": true,
-   "at_h": 22.9,
+   "at_h": 23.6,
    "views_at": 255,
-   "baseline": 61,
+   "baseline": 62,
    "baseline_n": 13,
    "baseline_group": "all Shorts",
-   "ratio": 4.2,
+   "ratio": 4.1,
    "family": "vehicles",
    "ready": [],
+   "scores": {},
    "research_next": [],
    "related_existing": []
   },
@@ -75,7 +77,7 @@
    "platform": "youtube-en",
    "id": "jQbv5GPR3dk",
    "title": "GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts",
-   "age_h": 74.0,
+   "age_h": 74.7,
    "views": 617,
    "format": "other",
    "slug": "gta6-tier-list-critics",
@@ -88,6 +90,7 @@
    "ratio": 11.8,
    "family": null,
    "ready": [],
+   "scores": {},
    "research_next": [],
    "related_existing": []
   },
@@ -95,7 +98,7 @@
    "platform": "youtube-en",
    "id": "sEg8EWL2XPA",
    "title": "GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 #GTA6 #Shorts",
-   "age_h": 29.0,
+   "age_h": 29.7,
    "views": 213,
    "format": "other",
    "slug": "gta6-vs-gta5-fps",
@@ -108,6 +111,7 @@
    "ratio": 3.6,
    "family": null,
    "ready": [],
+   "scores": {},
    "research_next": [],
    "related_existing": []
   },
@@ -115,7 +119,7 @@
    "platform": "tiktok",
    "title": "GTA 6 shoe store: where to buy shoes 👟 Flip Flop House, Key Lento. Save this for",
    "posted": "2026-11-25T02:21:55",
-   "age_h": 41.1,
+   "age_h": 41.9,
    "views": 7863,
    "lang": "en",
    "sufficient": true,
@@ -123,21 +127,18 @@
    "baseline_n": 12,
    "ratio": 51.4,
    "family": "shopping",
-   "ready": [
-    "clothing-stores"
-   ],
+   "ready": [],
+   "scores": {},
    "research_next": [
     "rare-outfits"
    ],
-   "related_existing": [
-    "gta6-ultimate-edition-shops"
-   ]
+   "related_existing": []
   },
   {
    "platform": "tiktok",
    "title": "GTA 6 ya ganó 1.650 MILLONES de dólares 💰 #GTA6 #gtavi #rockstar #gaming #ps5",
    "posted": "2026-11-19T23:39:59",
-   "age_h": 163.8,
+   "age_h": 164.6,
    "views": 588,
    "lang": "es",
    "sufficient": true,
@@ -146,6 +147,7 @@
    "ratio": 4.7,
    "family": null,
    "ready": [],
+   "scores": {},
    "research_next": [],
    "related_existing": []
   },
@@ -153,7 +155,7 @@
    "platform": "tiktok",
    "title": "GTA 6 NZ trick: 18 hours early? 🌏 #GTA6 #GTAVI #ViceCity #gaming #gta6news",
    "posted": "2026-11-17T22:15:50",
-   "age_h": 213.2,
+   "age_h": 214.0,
    "views": 914,
    "lang": "en",
    "sufficient": true,
@@ -162,6 +164,7 @@
    "ratio": 6.7,
    "family": null,
    "ready": [],
+   "scores": {},
    "research_next": [],
    "related_existing": []
   }

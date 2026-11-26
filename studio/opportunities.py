@@ -108,6 +108,74 @@ def evaluate_follow_up(winner, candidates, index, budget_credits=0, lang="en"):
     return ready, research
 
 
+# ---------- weighted score (owner Nov 26, Phase 4 #13) ----------
+# Every input is normalized to 0..1 (documented below); the weights are the owner's starting point, NOT validated:
+# calibrate them against real results (content/learn/xplat.json) before trusting small differences.
+from dataclasses import dataclass, field
+
+WEIGHTS = {"search_demand": 0.20, "relative_performance": 0.20, "audience_relevance": 0.15, "originality": 0.10,
+           "visual_potential": 0.10, "asset_availability": 0.15, "timeliness": 0.10}
+
+
+@dataclass
+class Opportunity:
+    search_demand: float          # 0..1: YouTube search-terms views for its phrases / 200 (capped); 0.3 = hypothesis only
+    relative_performance: float   # 0..1: the winner it follows, ratio vs matched baseline / 10 (capped); 0 if none
+    audience_relevance: float     # 0..1: both languages 1.0, one 0.7
+    originality: float            # 0..1: 1.0 new, 0.6 when existing Shorts already mention it
+    visual_potential: float       # 0..1: a map place/grid known 0.8 (+0.2 with a site demo), else 0.5
+    asset_availability: float     # 0..1: our own assets cover it (map, cards, site) 1.0, needs footage 0.3
+    timeliness: float             # 0..1: winner < 48 h old 1.0, < 7 days 0.6, else 0.3
+    estimated_credit_cost: float  # paid credits / 10 (0 for free tools)
+    facts_verified: bool
+    duplicate: bool
+    rights_verified: bool
+    evidence: dict = field(default_factory=dict)  # where each input came from: analytics / research / hypothesis
+
+
+def score_opportunity(o):
+    if not o.facts_verified or o.duplicate or not o.rights_verified:
+        return float("-inf")
+    return round(sum(getattr(o, k) * w for k, w in WEIGHTS.items()) - o.estimated_credit_cost * 5, 3)
+
+
+def search_views(phrases):
+    try:
+        terms = json.loads((LEARN / "search-terms.json").read_text())
+    except (OSError, ValueError):
+        return None
+    rows = terms.get("terms", terms) if isinstance(terms, dict) else terms
+    total = 0
+    for r in rows if isinstance(rows, list) else []:
+        t = str(r.get("term") or r.get("query") or "").lower()
+        if any(p.lower() in t or t in p.lower() for p in phrases):
+            total += int(r.get("views") or 0)
+    return total
+
+
+def opportunity_for(cand, winner, index):
+    sv = search_views(cand.get("search") or [])
+    age = winner.get("age_h") or 999
+    rel = related(cand, index)
+    o = Opportunity(
+        search_demand=min(1.0, sv / 200) if sv else 0.3,
+        relative_performance=min(1.0, (winner.get("ratio") or 0) / 10),
+        audience_relevance=1.0 if set(cand.get("langs", ["en", "es"])) >= {"en", "es"} else 0.7,
+        originality=0.6 if rel else 1.0,
+        visual_potential=0.8 if (cand.get("place") or cand.get("grid")) else 0.5,
+        asset_availability=1.0 if cand.get("family") in ("map", "shopping", "money", "creatures", "easter-eggs", "vehicles") else 0.3,
+        timeliness=1.0 if age < 48 else 0.6 if age < 168 else 0.3,
+        estimated_credit_cost=cand.get("credits", 0) / 10,
+        facts_verified=cand.get("status") == "verified" and len(_domains(cand.get("sources"))) >= 2,
+        duplicate=bool(already_produced(cand, index)) or cand.get("status") == "produced",
+        rights_verified=True,  # our own map/cards/site; footage-based topics must set "rights_verified": false until cleared
+        evidence={"search_demand": "verified analytics (YouTube search terms)" if sv else "hypothesis",
+                  "relative_performance": f"{winner.get('platform')} matched baseline"})
+    if cand.get("rights_verified") is False:
+        o.rights_verified = False
+    return o
+
+
 # ---------- winners per platform ----------
 
 def youtube_winners(snap=None, hist=None, ups=None, now=None, days=14, recent_h=96):
@@ -188,7 +256,10 @@ def run(now=None):
             text += " " + w["slug"].replace("-", " ")
         w["family"] = family_of(text, fams)
         ready, research = evaluate_follow_up(w, cands.get("candidates", []), index, lang=w.get("lang") or "en")
-        rows.append({**w, "ready": [c["key"] for c in ready], "research_next": [c["key"] for c in research],
+        scored = sorted(((score_opportunity(opportunity_for(c, w, index)), c["key"]) for c in ready), reverse=True)
+        ready = [next(c for c in ready if c["key"] == k) for _, k in scored]
+        rows.append({**w, "ready": [c["key"] for c in ready], "scores": {k: v for v, k in scored},
+                     "research_next": [c["key"] for c in research],
                      "related_existing": sorted({x for c in ready + research for x in related(c, index)})[:6]})
     res = {"at": (now or _now()).isoformat(), "ratio_rule": RATIO, "winners": rows}
     OUT.write_text(json.dumps(res, indent=1, ensure_ascii=False) + "\n")
@@ -209,7 +280,8 @@ def main(argv=None):
         print(f"WINNER {w['platform']}: {w['title'][:60]} = {w['ratio']}x baseline ({w.get('views_at', w['views'])} vs "
               f"median {w['baseline']} of {w['baseline_n']}{', ' + w['baseline_group'] if w.get('baseline_group') else ''}"
               f"{', at ' + str(w['at_h']) + ' h' if w.get('at_h') else ''}); family: {w['family']}")
-        print("  ready (verified, not made yet): " + (", ".join(w["ready"]) or "none"))
+        print("  ready (verified, not made yet): " + (", ".join(f"{k} (score {w['scores'].get(k)})" for k in w["ready"])
+                                                         or "none"))
         print("  research next (map intelligence agent): " + (", ".join(w["research_next"]) or "none"))
 
 

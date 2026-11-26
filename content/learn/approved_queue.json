@@ -297,8 +297,8 @@
    "slug": "gta6-vercetti-portal",
    "item": "short",
    "en": [
-    "2026-11-30",
-    "6:00 PM"
+    "2026-12-13",
+    "8:00 AM"
    ],
    "es": [
     "2026-12-04",
@@ -307,7 +307,8 @@
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
    "moved_plan": "was ['2026-11-29', '11:00 AM']",
-   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)"
+   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
+   "moved_by": "2026-11-26: studio.schedule gave 2026-11-30 6:00 PM to gta6-fishing-pays (followup, location); this one is secrets (over target) and wasn't uploaded yet"
   },
   {
    "slug": "gta6-ultimate-cars-where",
@@ -401,11 +402,11 @@
    "slug": "gta6-skunk-ape-where",
    "item": "short",
    "en": [
-    "2026-11-28",
+    "2026-12-11",
     "6:00 PM"
    ],
    "es": [
-    "2026-12-04",
+    "2026-12-12",
     "12:30 PM"
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
@@ -413,7 +414,9 @@
    "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-11-28 12:30 PM; the 8 AM sunken-treasure map Short hit ~100 views/h)",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
    "moved_plan": "was ['2026-11-28', '8:00 AM']",
-   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)"
+   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
+   "moved_phase4": "Phase 4 flexible slot (Nov 26): moved for the verified clothing-store follow-up of the shoe store winner; secrets were 43% of the 14-day mix vs a 25% target; this item wasn't uploaded yet",
+   "moved_by": "2026-11-26: studio.schedule gave 2026-12-04 12:30 PM to gta6-fishing-pays (followup, location); this one is secrets (over target) and wasn't uploaded yet"
   },
   {
    "slug": "gta6-giant-crab",
@@ -423,12 +426,13 @@
     "12:30 PM"
    ],
    "es": [
-    "2026-12-02",
+    "2026-12-11",
     "7:00 PM"
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "moved": "Nov 25 (owner: \"Start posting the maps videos at least one a day\"): moved so every day has a map Short",
-   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)"
+   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
+   "moved_by": "2026-11-26: studio.schedule gave 2026-12-02 7:00 PM to gta6-map-checklist (evergreen, map_tutorial); this one is secrets (over target) and wasn't uploaded yet"
   },
   {
    "slug": "gta6-mod-shops",
@@ -639,8 +643,8 @@
    "slug": "gta6-silent-hill-hotel",
    "item": "short",
    "en": [
-    "2026-11-30",
-    "8:00 AM"
+    "2026-12-12",
+    "6:00 PM"
    ],
    "approved": "Nov 26 (owner: \"Aprove\", after the research Shorts were sent): map spot answering 'gta 6 silent hill easter egg' (6 guides incl. VGC, Dexerto); re-check right before upload",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
@@ -649,7 +653,8 @@
     "2026-11-28",
     "12:30 PM"
    ],
-   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)"
+   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
+   "moved_by": "2026-11-26: studio.schedule gave 2026-11-30 8:00 AM to gta6-map-checklist (evergreen, map_tutorial); this one is secrets (over target) and wasn't uploaded yet"
   },
   {
    "slug": "gta6-white-fox-where",
@@ -663,10 +668,11 @@
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
    "moved_plan": "was ['2026-12-04', '8:00 AM']",
    "es": [
-    "2026-12-03",
+    "2026-12-11",
     "12:30 PM"
    ],
-   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)"
+   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
+   "moved_by": "2026-11-26: studio.schedule gave 2026-12-03 12:30 PM to gta6-map-easter-eggs-filter (evergreen, map_tutorial); this one is secrets (over target) and wasn't uploaded yet"
   },
   {
    "slug": "gta6-precio-por-pais-es",
@@ -741,7 +747,7 @@
    "slug": "gta6-ninja-turtles-where",
    "item": "short",
    "en": [
-    "2026-11-29",
+    "2026-12-12",
     "8:00 AM"
    ],
    "approved": "Nov 26 (owner \"CONTINUE TO DO IT\": map finds replace the parked Shorts; viral ones go earlier): Ninja Turtles drain north of Millport (viral find: 30K+ likes; 5 sources); re-check right before upload",
@@ -751,7 +757,8 @@
     "2026-11-27",
     "7:00 PM"
    ],
-   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)"
+   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
+   "moved_by": "2026-11-26: studio.schedule gave 2026-11-29 8:00 AM to gta6-map-easter-eggs-filter (evergreen, map_tutorial); this one is secrets (over target) and wasn't uploaded yet"
   },
   {
    "slug": "gta6-ghost-ship-where",
@@ -764,10 +771,11 @@
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
    "moved_plan": "was ['2026-12-02', '12:30 PM']",
    "es": [
-    "2026-11-29",
+    "2026-12-08",
     "7:00 PM"
    ],
-   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)"
+   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
+   "moved_phase4": "Phase 4 flexible slot (Nov 26): moved for the verified clothing-store follow-up of the shoe store winner; secrets were 43% of the 14-day mix vs a 25% target; this item wasn't uploaded yet"
   },
   {
    "slug": "gta6-little-cuba-es",
@@ -778,7 +786,10 @@
     "12:30 PM"
    ],
    "approved": "Nov 23 (APPROVE, title 1: ¿qué BOLÁ asere?; Everygen Viral Adam voice); moved Nov 24 night from Fri Nov 27 11 AM to Mon Nov 30 10 AM (max 1 Spanish-only a day: Fri keeps the price-per-country Short for Black Friday; Mon's slot was freed when Bad Bunny moved to Wed)",
-   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)"
+   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
+   "pinned": true,
+   "priority": "followup",
+   "pinned_why": "Nov 26: Latino/Miami angles are the Spanish channel's only proven draw (Bad Bunny = best Spanish video); keep it early"
   },
   {
    "slug": "gta6-mapa-oficial-es",
@@ -841,6 +852,55 @@
     "12:30 PM"
    ],
    "approved": "Phase 3 (owner Nov 26, 'Both channels must remain fully autonomous'): verified follow-up/tutorial; publishes only if studio/approvals.py passes; 10% interactive map tutorials (site demo recorded from our own site)"
+  },
+  {
+   "slug": "gta6-clothing-stores-where",
+   "item": "short",
+   "en": [
+    "2026-11-28",
+    "6:00 PM"
+   ],
+   "es": [
+    "2026-11-29",
+    "7:00 PM"
+   ],
+   "approved": "Phase 4 (owner Nov 26: autonomous; accelerate verified follow-ups): follow-up of the shoe store winner; publishes only if studio/approvals.py passes"
+  },
+  {
+   "slug": "gta6-map-easter-eggs-filter",
+   "item": "short",
+   "en": [
+    "2026-11-29",
+    "8:00 AM"
+   ],
+   "es": [
+    "2026-12-03",
+    "12:30 PM"
+   ]
+  },
+  {
+   "slug": "gta6-map-checklist",
+   "item": "short",
+   "en": [
+    "2026-11-30",
+    "8:00 AM"
+   ],
+   "es": [
+    "2026-12-02",
+    "7:00 PM"
+   ]
+  },
+  {
+   "slug": "gta6-fishing-pays",
+   "item": "short",
+   "en": [
+    "2026-11-30",
+    "6:00 PM"
+   ],
+   "es": [
+    "2026-12-04",
+    "12:30 PM"
+   ]
   }
  ],
  "paused": [

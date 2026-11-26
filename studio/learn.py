@@ -208,6 +208,45 @@ def analytics(channel_titles):
     return data
 
 
+def analytics_es():
+    """Phase 4 (Nov 26): the Spanish channel's own Analytics (per-video % viewed, seconds, subs, and the YouTube searches
+    that found it), with the Spanish channel's token (studio.youtube_es checks it's the Spanish channel) ->
+    content/learn/analytics-es.json. Retention per voice comes from joining this with uploads-es.json ("voice")."""
+    try:
+        from . import youtube_es as y
+        tok = y.token_for(y.config().get("vice-replay-es", {}).get("channel_id"), y.ENV)
+        y.check_channel(tok)
+    except (SystemExit, Exception) as e:  # noqa: BLE001 - no Spanish key here: skip, never fail the learner
+        print(f"Spanish analytics skipped: {e}")
+        return None
+    end = dt.date.today()
+    start = end - dt.timedelta(days=28)
+
+    def report(**p):
+        q = {"ids": "channel==MINE", "startDate": start.isoformat(), "endDate": end.isoformat(), **p}
+        r = urllib.request.Request("https://youtubeanalytics.googleapis.com/v2/reports?" + urllib.parse.urlencode(q),
+                                   headers={"Authorization": f"Bearer {tok}"})
+        with urllib.request.urlopen(r, timeout=30) as resp:
+            d = json.load(resp)
+        cols = [c["name"] for c in d.get("columnHeaders", [])]
+        return [dict(zip(cols, row)) for row in d.get("rows", [])]
+    try:
+        per_video = report(metrics="views,averageViewDuration,averageViewPercentage,subscribersGained,likes,shares",
+                           dimensions="video", sort="-views", maxResults=50)
+    except urllib.error.HTTPError as e:
+        print(f"Spanish analytics unavailable ({e.code})")
+        return None
+    try:
+        terms = report(metrics="views", dimensions="insightTrafficSourceDetail",
+                       filters="insightTrafficSourceType==YT_SEARCH", sort="-views", maxResults=25)
+    except urllib.error.HTTPError:
+        terms = []
+    data = {"from": start.isoformat(), "to": end.isoformat(), "videos": per_video, "search_terms": terms}
+    (LEARN / "analytics-es.json").write_text(json.dumps(data, indent=1, ensure_ascii=False))
+    print(f"Spanish analytics: {len(per_video)} videos, {sum(v.get('views', 0) for v in per_video)} views in 28 days")
+    return data
+
+
 def comments(channel_id, own_title):
     """Newest comments on our videos (public data), for the daily reply suggestions."""
     r = call("commentThreads", part="snippet", allThreadsRelatedToChannelId=channel_id, maxResults=50, order="time")
@@ -239,6 +278,7 @@ def main():
         except SystemExit as e:
             print(f"Comments skipped: {e}")
         analytics({v["id"]: v["title"] for v in snap["videos"]})
+        analytics_es()
         from . import scorecard  # fair 24 h numbers + what-works groups -> content/learn/scorecard.md
         scorecard.append_history(snap)
         scorecard.build()

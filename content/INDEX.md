@@ -24,9 +24,10 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| ? | gta6-interactive-map-howto | Short | GTA 6 Interactive Map: Find Any Spot in Seconds | - |
-| ? | gta6-car-dealership | Short | Is There a Car Dealership in GTA 6? | - |
-| ? | gta6-barber-shop-where | Short | Where to Get a Haircut in GTA 6 | - |
+| ? | gta6-map-easter-eggs-filter | Short | GTA 6 Easter Eggs Map: Show Only the Secrets | - |
+| ? | gta6-map-checklist | Short | GTA 6 Map Checklist: Track Every Spot You Find | - |
+| ? | gta6-fishing-pays | Short | Does Fishing Pay in GTA 6? | - |
+| ? | gta6-clothing-stores-where | Short | Where to Buy Clothes in GTA 6 | - |
 | 2026-11-26 | gta6-white-fox-where | Short | GTA 6 Legendary Animals: Where to Find the White Fox | - |
 | 2026-11-26 | gta6-vice-city-real-miami | Short | GTA 6's Vice City vs Real Miami: 5 Places | - |
 | 2026-11-26 | gta6-tattoo-shops-where | Short | GTA 6 Tattoo Shop Locations: All 11 and Where to Start | - |
@@ -37,9 +38,12 @@ Read this first instead of searching the repo.
 | 2026-11-26 | gta6-ninja-turtles-where | Short | GTA 6 Ninja Turtles Easter Egg: Where to Find It | - |
 | 2026-11-26 | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | - |
 | 2026-11-26 | gta6-map-quiz-places | Short | GTA 6 Map Quiz: Name These 3 Places | - |
+| 2026-11-26 | gta6-interactive-map-howto | Short | GTA 6 Interactive Map: Find Any Spot in Seconds | - |
 | 2026-11-26 | gta6-ghost-ship-where | Short | GTA 6 Ghost Ship Easter Egg: Lighthouse Location and Cursed Knife | - |
+| 2026-11-26 | gta6-car-dealership | Short | Is There a Car Dealership in GTA 6? | - |
 | 2026-11-26 | gta6-black-panther-where | Short | GTA 6 Legendary Animals: Where to Find the Black Panther | - |
 | 2026-11-26 | gta6-black-bear-where | Short | GTA 6 Legendary Animals: Where to Find the Black Bear | - |
+| 2026-11-26 | gta6-barber-shop-where | Short | Where to Get a Haircut in GTA 6 | - |
 | 2026-11-26 | gta6-backrooms-where | Short | Where to Find the Backrooms in GTA 6 | - |
 | 2026-11-26 | gta6-alligators-where | Short | Where to Find Alligators in GTA 6 | - |
 | 2026-11-25 | gta6-trivia-night | video | GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz) | main: kSufP4pt08I |
@@ -230,6 +234,7 @@ Read this first instead of searching the repo.
 | 2026-11-19 | /guides/gta-6-black-friday/ | GTA 6 Black Friday 2026: Live Deals on Controllers, Storage and the Game |
 | 2026-11-18 | /guides/gta-6-characters/ | GTA 6 Characters: Every One Confirmed (No Spoilers) |
 | 2026-11-22 | /es/guias/gta-6-cifras-semana-lanzamiento/ | Ventas y récords de GTA 6: todas las cifras del lanzamiento vs GTA 5 |
+| 2026-11-26 | /guides/gta-6-clothing-stores/ | GTA 6 Clothing Stores: Where to Buy Clothes (Map) |
 | 2026-11-24 | /guides/gta-6-criminal-profile/ | GTA 6 Criminal Profile: All Levels and How to Lower It |
 | 2026-11-22 | /guides/gta-6-darts/ | Does GTA 6 Have Darts? No, and Rockstar Explains Why (Pool Is In) |
 | 2026-11-24 | /guides/gta-6-deals/ | GTA 6 Deals and Discount Codes: What's Real This Week (Checked) |
@@ -268,6 +273,7 @@ Read this first instead of searching the repo.
 | 2026-11-25 | /es/guias/robar-cajeros-gta-6/ | Cómo robar cajeros en GTA 6: el método del cabrestante (y la trampa) |
 | 2026-11-24 | /es/guias/secretos-gta-6/ | Easter eggs de GTA 6: todas las ubicaciones (mapa) |
 | 2026-11-24 | /es/guias/tienda-de-zapatos-gta-6/ | Tienda de zapatos de GTA 6: dónde comprar zapatos (mapa) |
+| 2026-11-26 | /es/guias/tiendas-de-ropa-gta-6/ | Tiendas de ropa de GTA 6: dónde comprar ropa (mapa) |
 | built-in | /guides/gta-6-unlock-time/ | GTA 6 Unlock Time: When You Can Play in Every Time Zone |
 | built-in | /guides/gta-6-new-zealand-trick/ | GTA 6 New Zealand Trick: Can You Play Early, and Is It Safe? |
 | built-in | /guides/gta-6-launch-checklist/ | GTA 6 Launch Checklist: Download Size, Price and What's Missing on Day One |

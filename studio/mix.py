@@ -71,7 +71,7 @@ def main():
             have = round(100 * c.get(k, 0) / n)
             flag = "" if abs(have - want) <= 10 else ("  <- under" if have < want else "  <- over")
             print(f"  {k:13} {have:3}% (target {want}%){flag}")
-    print("gameplay needs the owner's recordings (media/gameplay); until then that share goes to location + secrets.")
+    print("gameplay needs the owner's recordings (media/gameplay); until then its share goes to map tutorials + location (rights/gameplay-sources.md).")
 
 
 if __name__ == "__main__":

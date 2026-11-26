@@ -43,6 +43,9 @@ def chats(tmp_path):
 
 
 def run(clone, session, *args, stdin=None):
+    if args and args[0] == "claim" and "--balance-now" not in args and "--no-balance" not in args:
+        args = (*args, "--balance-now", "500")  # Phase 4: paid claims carry a fresh provider reading
+    args = tuple(x for x in args if x != "--no-balance")
     env = {**os.environ, "EVERYGEN_CLAIM_REPO": str(clone), "CLAUDE_CODE_REMOTE_SESSION_ID": session}
     r = subprocess.run([sys.executable, str(MOD), *args], env=env, capture_output=True, text=True, input=stdin)
     return r.returncode, r.stdout + r.stderr
@@ -129,3 +132,18 @@ def test_settings_hook_gates_the_same_tools():
     src = MOD.read_text()
     paid = "".join(re.findall(r'r"([^"]*)"', src[src.index("PAID = re.compile("):src.index(")$\")") + 5]))
     assert matcher == paid
+
+
+def test_account_wide_reservations_and_fresh_balance(chats):
+    """Phase 4: one balance for all projects; a claim needs a fresh reading and enough unreserved credits."""
+    code, out = run(chats["main"], MAIN, "claim", "voice:p4:es", "--credits", "3", "--what", "x", "--no-balance")
+    assert code == 1 and "fresh provider reading" in out
+    # What If Arena reserves 60 of a 74 balance...
+    assert run(chats["es"], SPANISH, "claim", "video:wia-1:x", "--credits", "60", "--what", "wia",
+               "--project", "what-if-arena", "--balance-now", "74")[0] == 0
+    # ...so Vice Replay can't also assume 74: 74 - 60 reserved - 5 buffer = 9 < 10
+    code, out = run(chats["main"], MAIN, "claim", "voice:p4:es", "--credits", "10", "--what", "x", "--balance-now", "74")
+    assert code == 1 and "not enough verified credits" in out
+    assert run(chats["main"], MAIN, "claim", "voice:p4:es", "--credits", "9", "--what", "x", "--balance-now", "74")[0] == 0
+    # a failed provider call that still charged is recorded as spent
+    assert run(chats["es"], SPANISH, "failed", "video:wia-1:x", "--reason", "provider error", "--charged", "4")[0] == 0

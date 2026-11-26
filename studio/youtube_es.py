@@ -267,6 +267,11 @@ def main():
                      "scheduled_et": when if publish_at else "published now"}
         done_file.write_text(json.dumps(done, indent=2, ensure_ascii=False))
         reg[vid] = {"slug": slug, "item": key, "title": title, "uploaded": dt.datetime.now(dt.timezone.utc).isoformat()[:19]}
+        try:  # Phase 4: which voice spoke it, so retention can be compared by voice (studio.xplat, docs/EXPERIMENTS.md A2)
+            from . import renderdeps
+            reg[vid]["voice"] = json.loads(renderdeps.manifest_path(video).read_text()).get("voice")
+        except (OSError, ValueError, NameError):
+            pass
         REGISTRY.write_text(json.dumps(reg, indent=1, ensure_ascii=False))
         srt = srt_from_timings(out / f"{name}.timings.json", "text")
         for step, fn in (("subtitles", lambda: srt and shorts_subtitles() and upload_caption(tok, vid, srt, lang="es",

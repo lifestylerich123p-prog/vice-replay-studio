@@ -34,6 +34,31 @@ FORMATS = [  # first match wins; from the title/caption when the episode can't t
 ]
 
 
+HOOKS = [  # Phase 4 #8: hook structures, tracked per episode ("hook_type") or read from the first line
+    ("location-reveal", r"\b(is (right )?(in|at|here|next to)|right in|here's exactly where|está (en|aquí|junto)|aquí está)\b"),
+    ("warning", r"\b(before you|don't|do not|stop|antes de|no (compres|gastes|hagas))\b"),
+    ("curiosity", r"\b(most players|nobody|walk (straight )?past|hidden|secret|casi nadie|escond)\b"),
+    ("myth-check", r"\b(does .* exist|is it real|there's no|there is no|isn't real|no hay|existe)\b"),
+    ("benefit", r"\b(free|gratis|track|save|in seconds|one tap|un toque)\b"),
+    ("result-first", r"\d|\b(already|just|ya)\b"),
+]
+
+
+def hook_of(slug, title=""):
+    p = ROOT / "episodes" / f"{slug}.json" if slug else None
+    first = ""
+    if p and p.exists():
+        ep = json.loads(p.read_text())
+        if ep.get("hook_type"):
+            return ep["hook_type"]
+        first = ((ep.get("short") or [{}])[0].get("text") or "")
+    t = (first or title or "").lower()
+    for name, pat in HOOKS:
+        if re.search(pat, t):
+            return name
+    return "statement"
+
+
 def fmt_of(text, card=None):
     if card == "map":
         return "map/location"
@@ -69,13 +94,35 @@ def youtube_rows(snap=None, hist=None, ups=None, ret=None, cost=None):
         slug = (ups.get(v["id"]) or {}).get("slug")
         card = (scorecard.script_tags(v["id"], ups) or {}).get("card")
         r = ret.get(v["id"]) or {}
-        out.append({"platform": "youtube", "lang": "en", "id": v["id"], "title": v["title"], "slug": slug,
+        ages = {f"views_{lab}": scorecard.views_at(hist, v["id"], pub, h, slack=max(0.5, h * 0.25))
+                for lab, h in (("1h", 1), ("72h", 72), ("7d", 168), ("28d", 672))}
+        out.append({"platform": "youtube", "lang": "en", "id": v["id"], "title": v["title"], "slug": slug, **ages,
+                    "hook_type": hook_of(slug, v["title"]),
                     "format": fmt_of(v["title"], card), "published": v["published"],
                     "hour_et": pub.astimezone(ET).hour, "launch_week": pub < scorecard.LAUNCH_END,
                     "views": v["views"], "views_24h": scorecard.views_at(hist, v["id"], pub, 24),
                     "completion_pct": r.get("avg_pct"), "avg_watch_s": r.get("avg_sec"), "engaged": None,
                     "likes": v.get("likes"), "comments": v.get("comments"), "shares": r.get("shares"), "saves": None,
                     "followers": r.get("subs"), "cost_credits": (cost or {}).get(slug) if cost is not None else None})
+    return out
+
+
+def youtube_es_rows():
+    """Vice Replay en Español: Analytics (28 days) joined with uploads-es.json (slug, voice). Separate platform."""
+    try:
+        an = json.loads((LEARN / "analytics-es.json").read_text())
+        reg = json.loads((LEARN / "uploads-es.json").read_text())
+    except (OSError, ValueError):
+        return []
+    out = []
+    for v in an.get("videos", []):
+        u = reg.get(v.get("video")) or {}
+        out.append({"platform": "youtube-es", "lang": "es", "id": v.get("video"), "title": u.get("title", v.get("video")),
+                    "slug": u.get("slug"), "format": fmt_of(u.get("title")), "views": v.get("views"),
+                    "completion_pct": v.get("averageViewPercentage"), "avg_watch_s": v.get("averageViewDuration"),
+                    "followers": v.get("subscribersGained"), "likes": v.get("likes"), "shares": v.get("shares"),
+                    "comments": None, "saves": None, "engaged": None, "voice": u.get("voice"), "cost_credits": None,
+                    "hook_type": hook_of(u.get("slug"), u.get("title", ""))})
     return out
 
 
@@ -153,9 +200,28 @@ def across(rows, min_rel=1.2):
     return out
 
 
+def hook_table(rows):
+    """Median rel per hook type (YouTube only: the platform where we know the first line)."""
+    g = {}
+    for r in rows:
+        if r["platform"] == "youtube" and r.get("rel") is not None and not r.get("launch_week"):
+            g.setdefault(r.get("hook_type") or "statement", []).append(r["rel"])
+    return {k: {"median_rel": round(statistics.median(v), 2), "n": len(v), "preliminary": len(v) < 5} for k, v in g.items()}
+
+
+def age_table(rows):
+    """Median YouTube views at 1 h / 24 h / 72 h / 7 d / 28 d (after launch week), with n; n < 5 = preliminary."""
+    out = {}
+    for lab in ("1h", "24h", "72h", "7d", "28d"):
+        vals = [r[f"views_{lab}"] for r in rows if r["platform"] == "youtube" and not r.get("launch_week")
+                and r.get(f"views_{lab}") is not None]
+        out[lab] = {"median": statistics.median(vals) if vals else None, "n": len(vals), "preliminary": len(vals) < 5}
+    return out
+
+
 def build():
     cost = _credits_by_slug()
-    rows = youtube_rows(cost=cost) + tiktok_rows() + instagram_rows()
+    rows = youtube_rows(cost=cost) + youtube_es_rows() + tiktok_rows() + instagram_rows()
     base = add_baselines(rows)
     # YouTube: same-age comparison (studio.opportunities: views at min(age, 24 h) vs the median of other Shorts at that
     # age, same card format when 3+), so a 6-hour-old Short counts without waiting for its 24 h mark
@@ -169,10 +235,10 @@ def build():
         if w and w.get("ratio") is not None:
             r.update(metric=w["views_at"], baseline=w["baseline"], rel=w["ratio"], at_h=w["at_h"])
     res = {"at": dt.datetime.now(dt.timezone.utc).isoformat(), "baselines": {f"{p}/{l}": b for (p, l), b in base.items()},
-           "formats": across(rows), "posts": rows, "website": website_rows(),
+           "formats": across(rows), "hooks": hook_table(rows), "ages": age_table(rows), "posts": rows,
+           "website": website_rows(),
            "missing": ["YouTube engaged views (not in our pull)", "TikTok likes/comments/shares (not requested from Windsor yet)",
-                       "Instagram views/reach/saves (needs the owner's one-click Windsor Instagram connect)",
-                       "Spanish YouTube channel rows (no snapshot file yet)"]}
+                       "Instagram views/reach/saves (needs the owner's one-click Windsor Instagram connect)"]}
     (LEARN / "xplat.json").write_text(json.dumps(res, indent=1, ensure_ascii=False, default=str) + "\n")
     L = [f"# Cross-platform performance ({res['at'][:16]} UTC, `python -m studio.xplat`)", "",
          "Each platform is compared only with itself (rel = views / that platform's median; YouTube at 24 h, after "
@@ -183,8 +249,21 @@ def build():
         cell = lambda p: f"{d['median_rel'][p]} ({d['n'][p]})" if p in d["median_rel"] else "-"
         L.append(f"| {f} | {cell('youtube')} | {cell('tiktok')} | {cell('instagram')} | "
                  f"{', '.join(d['works_on']) or '-'}{' ✅ consistent' if d['consistent'] else ''} |")
+    L += ["", "## Hooks (YouTube, median rel, n; n < 5 = preliminary)"]
+    L += [f"- {k}: {d['median_rel']} (n={d['n']}{', preliminary' if d['preliminary'] else ''})"
+          for k, d in sorted(res["hooks"].items(), key=lambda x: -x[1]["median_rel"])]
+    L += ["", "## YouTube views by age (median, n)"]
+    L += [f"- {k}: {d['median']} (n={d['n']}{', preliminary' if d['preliminary'] else ''})" for k, d in res["ages"].items()]
+    es = [r for r in rows if r["platform"] == "youtube-es" and r.get("completion_pct") is not None and r.get("views")]
+    if es:
+        by = {}
+        for r in es:
+            by.setdefault(r.get("voice") or "unknown (before Nov 26)", []).append(r["completion_pct"])
+        L += ["", "## Spanish YouTube: average % viewed by voice (28 days)"]
+        L += [f"- {k}: {round(statistics.median(v), 1)}% (n={len(v)}{', preliminary' if len(v) < 5 else ''})"
+              for k, v in by.items()]
     L += ["", "## Top posts per platform"]
-    for p in ("youtube", "tiktok", "instagram"):
+    for p in ("youtube", "youtube-es", "tiktok", "instagram"):
         top = sorted([r for r in rows if r["platform"] == p and r.get("rel")], key=lambda r: -r["rel"])[:3]
         L += [f"- {p}: " + "; ".join(f"{r['title'][:50]} ({r['rel']}x)" for r in top)] if top else []
     if res["website"]:

@@ -97,8 +97,8 @@
     "on": true,
     "_note": "Nov 24 owner approved: official screenshots (vetted pool, exact-name first) behind lettering cards in videos; trailer clips stay out"
   },
-  "content_mix": {"location": 40, "secrets": 25, "gameplay": 15, "map_tutorial": 10, "experimental": 10,
-    "_note": "Phase 3 (owner Nov 26) starting mix; adjust from studio.xplat / studio.opportunities results, never drop a format on one video (python -m studio.mix)"},
+  "content_mix": {"location": 45, "secrets": 25, "gameplay": 0, "map_tutorial": 20, "experimental": 10,
+    "_note": "Phase 3 targets 40/25/15/10/10; Phase 4 (owner Nov 26): gameplay footage isn't available yet, so its 15% goes to location (+5) and map tutorials (+10) until the owner's recordings arrive (rights/gameplay-sources.md). Never drop a format on one video (python -m studio.mix)"},
   "auto_publish": {
     "on": true,
     "max_per_day": 2,

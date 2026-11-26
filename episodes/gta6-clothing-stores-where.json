@@ -1,0 +1,191 @@
+{
+ "series": "How-To",
+ "format": "location",
+ "category": "location",
+ "hook_type": "location-reveal",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map, Phase 4 location reveal)",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-clothing-stores-where",
+ "title": "Where to Buy Clothes in GTA 6",
+ "short_title": "GTA 6 clothing store location: buy clothes here 👕 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 clothing store location: buy clothes here 👕 #GTA6 #Shorts",
+  "GTA 6: where to buy clothes (67 stores) 👕 #GTA6 #Shorts"
+ ],
+ "title_rule": "Phase 4 follow-up of the shoe store Short (13.6x YouTube / 51x TikTok baseline; studio.opportunities 'ready'); search phrase first ('gta 6 clothing store', 'where to buy clothes gta 6')",
+ "short_description": "Where to buy clothes in GTA 6: two shops sit in Key Lento's county (Mariana County): Billie's Key Lento Gift Shop for casual/street wear and Nifty Threads Island Wear, a thrift store. Guides count 67 clothing stores across Leonida in five styles: casual/street, sportswear, formal, souvenir/swim and thrift. No story spoilers.\n\nSources: Gamertweak, PowerPyx, TheClick, Sportskeeda.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: dónde comprar ROPA 👕 #GTA6 #Shorts",
+  "description": "Dónde comprar ropa en GTA 6: en Key Lento (condado de Mariana) tienes Billie's Key Lento Gift Shop, ropa urbana, y Nifty Threads Island Wear, de segunda mano. Las guías cuentan 67 tiendas de ropa en Leonida, en cinco estilos: urbano, deportivo, formal, playa y segunda mano. Fuentes: Gamertweak, PowerPyx, TheClick, Sportskeeda.",
+  "tags": [
+   "GTA 6 ropa",
+   "GTA 6 dónde comprar ropa",
+   "GTA 6 tiendas de ropa",
+   "GTA 6 español",
+   "GTA 6 Key Lento"
+  ]
+ },
+ "pinned_comment": "Which store are you hitting first? Reply ✅ when you've found it 👇",
+ "short_pinned_comment_es": "¿A qué tienda vas primero? Responde ✅ cuando la encuentres 👇",
+ "tags": [
+  "GTA 6 clothing store",
+  "GTA 6 clothing store location",
+  "where to buy clothes in GTA 6",
+  "GTA 6 clothes",
+  "GTA 6 thrift store",
+  "GTA 6 Key Lento",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6outfits"
+ ],
+ "sources": [
+  "Gamertweak - Where to buy clothes in GTA 6, all clothing stores: https://gamertweak.com/where-to-buy-clothes-in-gta-6-all-clothing-stores/",
+  "PowerPyx - GTA 6 all clothing store locations: https://www.powerpyx.com/gta-6-all-clothing-stores-locations/",
+  "TheClick - GTA 6 clothing store locations: https://www.theclick.gg/gta-6-clothing-store-locations/",
+  "Sportskeeda - All GTA 6 clothing store locations: https://www.sportskeeda.com/esports/all-gta-6-clothing-store-locations"
+ ],
+ "claim_status": "community-found",
+ "facts_note": "Nov 26 (Phase 4): 67 stores (PowerPyx, TheClick, Gamertweak; GTABase map shows 77 pins: we say 'guides count 67'); five styles (PowerPyx categories 17/11/10/24/5, TheClick); Billie's Key Lento Gift Shop (casual & street) and Nifty Threads Island Wear (thrift, PowerPyx #63) in Mariana County (Gamertweak + PowerPyx). 'Bargain World in Port Gellhorn' was dropped: no second source.",
+ "short": [
+  {
+   "headline": "BUY CLOTHES",
+   "headline_es": "COMPRA ROPA",
+   "text": "You can buy GTA 6 clothes right in Key Lento.",
+   "text_es": "En GTA seis puedes comprar ropa en Key Lento.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "BUY CLOTHES",
+     "IN KEY LENTO"
+    ],
+    "pink": [
+     "IN KEY LENTO"
+    ],
+    "seed": 201,
+    "sub": "where to buy clothes"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "COMPRA ROPA",
+     "EN KEY LENTO"
+    ],
+    "pink": [
+     "EN KEY LENTO"
+    ],
+    "seed": 201,
+    "sub": "dónde comprar ropa"
+   }
+  },
+  {
+   "headline": "TWO SHOPS",
+   "headline_es": "DOS TIENDAS",
+   "text": "Billie's Gift Shop for street style, Nifty Threads for thrift.",
+   "text_es": "Billie's Gift Shop para ropa urbana, Nifty Threads de segunda mano.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "area",
+    "at": "Key Lento",
+    "r": 0.03,
+    "label": "Billie's · Nifty Threads",
+    "src": "Gamertweak · PowerPyx"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "area",
+    "at": "Key Lento",
+    "r": 0.03,
+    "label": "Billie's · Nifty Threads",
+    "src": "Gamertweak · PowerPyx",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "67 STORES",
+   "headline_es": "67 TIENDAS",
+   "text": "Guides count sixty-seven clothing stores across Leonida.",
+   "text_es": "Las guías cuentan sesenta y siete tiendas de ropa en Leonida.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 67,
+    "label": "clothing stores",
+    "src": "PowerPyx · TheClick · Gamertweak"
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 67,
+    "label": "tiendas de ropa",
+    "src": "PowerPyx · TheClick · Gamertweak",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "5 STYLES",
+   "headline_es": "5 ESTILOS",
+   "text": "In five styles: street, sport, formal, swim and thrift.",
+   "text_es": "En cinco estilos: urbano, deportivo, formal, playa y segunda mano.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Street · Sport · Formal · Swim · Thrift",
+    "pink": [
+     "Thrift"
+    ],
+    "src": "PowerPyx · TheClick",
+    "seed": 202
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Urbano · Deporte · Formal · Playa · Segunda mano",
+    "pink": [
+     "Segunda mano"
+    ],
+    "src": "PowerPyx · TheClick",
+    "seed": 202
+   }
+  },
+  {
+   "headline": "NO LONG DRIVE",
+   "headline_es": "SIN VIAJE LARGO",
+   "text": "So skip the long drive, because",
+   "text_es": "Así que no manejes lejos, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "SKIP THE",
+     "LONG DRIVE"
+    ],
+    "pink": [
+     "LONG DRIVE"
+    ],
+    "seed": 203
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "NO MANEJES",
+     "LEJOS"
+    ],
+    "pink": [
+     "LEJOS"
+    ],
+    "seed": 203
+   }
+  }
+ ]
+}

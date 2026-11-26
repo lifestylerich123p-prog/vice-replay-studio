@@ -80,16 +80,21 @@ def ledger_summary(rows, now=None):
         elif act == "done":
             c = open_claims.pop(job, {})
             spends.append({"t": r["t"], "job": job, "credits": int(r.get("credits") or c.get("credits") or 0),
-                           "chat": r.get("chat"), "what": c.get("what", ""),
+                           "chat": r.get("chat"), "what": c.get("what", ""), "project": c.get("project", "vice-replay"),
                            "balance_reported": None if str(r.get("balance", "?")) in ("?", "", "None")
                            else r.get("balance")})
         elif act in ("release", "failed"):
             c = open_claims.pop(job, {})
             failed.append({"t": r["t"], "job": job, "act": act, "reason": r.get("reason", ""),
-                           "credits_claimed": int(c.get("credits") or 0)})
+                           "credits_claimed": int(c.get("credits") or 0), "charged": int(r.get("credits") or 0)})
+            if act == "failed" and int(r.get("credits") or 0) > 0:  # the provider still took credits
+                spends.append({"t": r["t"], "job": job, "credits": int(r["credits"]), "chat": r.get("chat"),
+                               "what": "FAILED: " + r.get("reason", ""), "project": c.get("project", "vice-replay"),
+                               "balance_reported": None})
     spends = [s for s in spends if s["credits"] > 0 or s["job"].startswith(("voice:", "image:", "video:", "clips:"))]
-    day, month, episode = defaultdict(int), defaultdict(int), defaultdict(int)
+    day, month, episode, project = defaultdict(int), defaultdict(int), defaultdict(int), defaultdict(int)
     for s in spends:
+        project[s.get("project", "vice-replay")] += s["credits"]
         t = _ts(s["t"])
         day[t.strftime("%Y-%m-%d")] += s["credits"]
         month[t.strftime("%Y-%m")] += s["credits"]
@@ -97,8 +102,11 @@ def ledger_summary(rows, now=None):
     pending = [{"job": j, "credits": int(c.get("credits") or 0), "since": c["t"], "chat": c.get("chat"),
                 "stale": (now - _ts(c["t"])).total_seconds() > 3 * 3600} for j, c in open_claims.items()
                if not j.startswith("setup:")]
+    readings = [{"t": r["t"], "remaining": int(r["balance_seen"]), "source": "balance read for a claim"}
+                for r in rows if r.get("act") == "claim" and r.get("balance_seen") is not None]
     return {"spends": spends, "pending": pending, "failed": failed, "per_day": dict(day), "per_month": dict(month),
-            "per_episode": dict(episode)}
+            "per_episode": dict(episode), "per_project": dict(project), "reserved": sum(p["credits"] for p in pending),
+            "readings": readings}
 
 
 def reconcile(snaps, spends):
@@ -133,6 +141,8 @@ def summary(rows=None, snaps=None, now=None):
         err = ""
     snaps = snapshots() if snaps is None else snaps
     led = ledger_summary(rows, now)
+    # Phase 4: the reading every paid claim must carry is a verified provider reading too
+    snaps = sorted(snaps + [x for x in led["readings"] if x["t"] not in {y["t"] for y in snaps}], key=lambda r: r["t"])
     last = snaps[-1] if snaps else None
     bal = {"verified": False, "remaining": None, "read_at": None, "spent_since": 0, "estimate": None}
     if last:
@@ -165,6 +175,10 @@ def lines(s):
     if led["per_episode"]:
         top = sorted(led["per_episode"].items(), key=lambda x: -x[1])[:5]
         out.append("  per episode: " + ", ".join(f"{k} {v}" for k, v in top))
+    if led.get("per_project"):
+        out.append("  by project (ledger): " + ", ".join(f"{k} {v}" for k, v in sorted(led["per_project"].items())))
+    if led.get("reserved"):
+        out.append(f"  RESERVED by open claims (all projects): {led['reserved']} credits")
     for p in led["pending"]:
         out.append(f"  PENDING claim {p['job']} ({p['credits']} cr) since {p['since']}" + (" (stale: check it)" if p["stale"] else ""))
     for f in led["failed"][-3:]:

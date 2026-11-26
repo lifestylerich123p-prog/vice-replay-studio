@@ -991,7 +991,10 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
                 audio = work / f"vo_{i:02d}{Path(vo_file).suffix}"
                 shutil.copy(ROOT / vo_file, audio)
             else:
-                audio = tts(seg["text"], voice, rate, work / f"vo_{i:02d}")
+                # Phase 4: narration may differ from the captions ("say" / "say_es": what the voice reads, e.g. a
+                # pronunciation-friendly line); captions always show "text" / "text_es", spelled correctly
+                say = seg.get("say_es") if seg.get("_lang") == "es" else seg.get("say")
+                audio = tts(say or seg["text"], voice, rate, work / f"vo_{i:02d}")
             clip, d = render_segment(i, seg, audio, w, h, vertical, work, enc)
             hits_file = work / f"chart_{i}.hits.json"
             hits = None
@@ -1140,6 +1143,7 @@ def main():
             shorts[0] = dict(shorts[0], segments=[with_spot(x, ep["spot"], one) for x in shorts[0]["segments"]])
         if a.es:
             voice = a.voice or ep.get("voice_es") or channel_setting("voice_es") or "em_alex"
+            rate = ep.get("rate_es", rate)  # Phase 4: the Spanish voice's own pace (Kokoro em_alex runs fast)
             es_shorts = []
             for k, sh in enumerate(shorts):
                 es = sh.get("es") or (ep.get("short_es") if k == 0 and not sh.get("id") else None) or {}

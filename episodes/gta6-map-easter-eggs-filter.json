@@ -1,0 +1,142 @@
+{
+ "series": "How-To",
+ "format": "tutorial",
+ "category": "map_tutorial",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "site demo (our interactive map)",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "sources": [
+  "Vice Replay interactive map (pins from 2+ guides each): https://vicereplay.com/guides/gta-6-map-leonida-places/",
+  "Rockstar Games - GTA VI official downloads (the Leonida map): https://www.rockstargames.com/VI/downloads"
+ ],
+ "claim_status": "community-found",
+ "slug": "gta6-map-easter-eggs-filter",
+ "hook_type": "result-first",
+ "title": "GTA 6 Easter Eggs Map: Show Only the Secrets",
+ "short_title": "GTA 6 easter eggs map: only the secrets, free 🥚 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 easter eggs map: only the secrets, free 🥚 #GTA6 #Shorts",
+  "GTA 6 secrets map: one tap filter 🗺️ #GTA6 #Shorts"
+ ],
+ "short_description": "Our free GTA 6 map can show only the easter eggs: untick the other layers and the 11 easter eggs we've pinned stay (each from two or more guides), then 'Next unfound' flies you to one you haven't found. https://vicereplay.com/guides/gta-6-map-leonida-places/\n\nMap: Rockstar Games (official map download). Pins and directions: Vice Replay.",
+ "short_es": {
+  "title": "GTA 6: el MAPA de los easter eggs, gratis 🥚 #GTA6 #Shorts",
+  "description": "Nuestro mapa gratis de GTA 6 puede mostrar solo los easter eggs: quita las otras capas y quedan los 11 que tenemos (cada uno de dos o más guías); 'Siguiente sin encontrar' te lleva a uno que no has visto. https://vicereplay.com/es/guias/mapa-gta-6/",
+  "tags": [
+   "GTA 6 easter eggs",
+   "GTA 6 mapa",
+   "GTA 6 secretos",
+   "GTA 6 español",
+   "GTA 6 mapa interactivo"
+  ]
+ },
+ "pinned_comment": "Which easter egg should we pin next? 👇",
+ "short_pinned_comment_es": "¿Qué easter egg ponemos en el mapa? 👇",
+ "tags": [
+  "GTA 6 easter eggs map",
+  "GTA 6 easter eggs",
+  "GTA 6 secrets map",
+  "GTA 6 interactive map",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6map",
+  "#gta6secrets"
+ ],
+ "facts_note": "Nov 26: 11 easter eggs in the map legend (site/map-pins.json); demo recorded from the local site with tools/record_map_demo.js --script (filters).",
+ "short": [
+  {
+   "headline": "ONLY THE SECRETS",
+   "headline_es": "SOLO SECRETOS",
+   "text": "One tap shows only GTA 6's easter eggs.",
+   "text_es": "Un toque y solo ves los easter eggs de GTA seis.",
+   "keep_media": true,
+   "media": "../media/site/map-demo-filters-en.mp4",
+   "media_start": 4.6,
+   "media_es": "../media/site/map-demo-filters-es.mp4",
+   "media_start_es": 4.6
+  },
+  {
+   "headline": "FILTER IT",
+   "headline_es": "FILTRA",
+   "text": "Untick the other layers and just the secrets stay.",
+   "text_es": "Quita las otras capas y solo quedan los secretos.",
+   "keep_media": true,
+   "media": "../media/site/map-demo-filters-en.mp4",
+   "media_start": 0.8,
+   "media_es": "../media/site/map-demo-filters-es.mp4",
+   "media_start_es": 0.8
+  },
+  {
+   "headline": "11 EASTER EGGS",
+   "headline_es": "11 EASTER EGGS",
+   "text": "Eleven so far, each from two or more guides.",
+   "text_es": "Once por ahora, cada uno de dos o más guías.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 11,
+    "label": "easter eggs pinned",
+    "src": "vicereplay.com map"
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 11,
+    "label": "easter eggs en el mapa",
+    "src": "mapa de vicereplay.com",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "NEXT UNFOUND",
+   "headline_es": "SIGUIENTE",
+   "text": "Next unfound flies you to one you haven't seen.",
+   "text_es": "Siguiente te lleva a uno que no has visto.",
+   "keep_media": true,
+   "media": "../media/site/map-demo-filters-en.mp4",
+   "media_start": 3.6,
+   "media_es": "../media/site/map-demo-filters-es.mp4",
+   "media_start_es": 3.6
+  },
+  {
+   "headline": "FREE",
+   "headline_es": "GRATIS",
+   "text": "It's free at vicereplay dot com, so",
+   "text_es": "Es gratis en vicereplay punto com, así que",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FREE AT",
+     "VICEREPLAY.COM"
+    ],
+    "pink": [
+     "VICEREPLAY.COM"
+    ],
+    "seed": 211
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GRATIS EN",
+     "VICEREPLAY.COM"
+    ],
+    "pink": [
+     "VICEREPLAY.COM"
+    ],
+    "seed": 211
+   }
+  }
+ ],
+ "voice_es": "em_alex",
+ "rate_es": "-8%",
+ "voice_ab": "Phase 4 A2 (Nov 26): Kokoro em_alex at -8% vs Piper es_MX claude vs recorded Viral Adam on comparable Spanish Shorts; compare % viewed at 72 h (studio.xplat 'by voice')"
+}

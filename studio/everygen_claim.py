@@ -42,6 +42,13 @@ LOCAL = ROOT / ".claude" / "everygen-claim.local.json"  # gitignored; what the h
 FRESH_MIN = 60          # a claim lets this chat spend for 60 minutes
 TAKEOVER_H = 3          # an open claim older than this may be taken over (its chat probably died)
 KEY_RE = re.compile(r"^[a-z0-9][a-z0-9:_-]{2,120}$")
+# Phase 4 (owner Nov 26: "Do not allow each project to independently assume it has 74 available credits"): one
+# balance for Vice Replay, What If Arena and ClipCircuit. A paid claim needs a provider reading taken just before it
+# (Everygen get_credit_balance, <= FRESH_BALANCE_MIN old, passed as --balance-now) and is refused unless
+# reading - every open reservation (all projects, all chats) - SAFETY_BUFFER >= the credits it asks for.
+FRESH_BALANCE_MIN = 15
+SAFETY_BUFFER = 5       # unlogged/external use between the reading and the spend
+PROJECTS = ("vice-replay", "what-if-arena", "clipcircuit")
 KNOWN_CHATS = {  # session id tail -> name shown in messages
     "01CJRsWP9GjYTirqgQXefGyG": "main chat",
     "01CJRsWQE1kt7hsB4ZMNfXcZ": "Spanish chat",
@@ -195,9 +202,26 @@ def cmd_claim(a):
             where = voice_exists(k)
             if where:
                 raise Refused(f"{k}: the voice already exists ({where}). Use it. A real redo needs --again \"why\".")
+    if a.project not in PROJECTS:
+        raise Refused(f"--project must be one of {', '.join(PROJECTS)}")
+    if a.credits > 0 and a.balance_now is None:
+        raise Refused("a paid claim needs a fresh provider reading: run Everygen get_credit_balance now and pass its "
+                      "remaining credits as --balance-now N (never an estimate)")
     rows = [{"t": iso(), "job": k, "act": "claim", "chat": me, "credits": a.credits, "what": a.what,
+             "project": a.project, **({"balance_seen": a.balance_now} if a.balance_now is not None else {}),
              **({"again": a.again} if a.again else {})} for k in keys]
-    push_rows(rows, lambda last: [check_free(k, last, a.again, a.take_over, me) for k in keys])
+
+    def check(last):
+        for k in keys:
+            check_free(k, last, a.again, a.take_over, me)
+        if a.credits > 0:
+            reserved = sum(int(r.get("credits") or 0) for j, r in last.items() if r["act"] == "claim" and j not in keys)
+            avail = a.balance_now - reserved - SAFETY_BUFFER
+            if a.credits * len(keys) > avail:
+                raise Refused(f"not enough verified credits: {a.balance_now} (provider, now) - {reserved} reserved by "
+                              f"open claims (all projects) - {SAFETY_BUFFER} buffer = {avail} < {a.credits * len(keys)} "
+                              "asked. Use a free method, wait for claims to close, or ask the owner (never buy credits).")
+    push_rows(rows, check)
     local = read_local() or {}
     jobs = {j: v for j, v in (local.get("jobs") or {}).items()
             if (now() - parse(v)).total_seconds() < FRESH_MIN * 60}
@@ -218,7 +242,8 @@ def cmd_close(a, act):
             if row["chat"] != me:
                 raise Refused(f"{k} is claimed by {chat_name(row['chat'])}, not this chat")
 
-    extra = {"credits": a.credits, "balance": a.balance} if act == "done" else {"reason": a.reason}
+    extra = ({"credits": a.credits, "balance": a.balance} if act == "done" else
+             {"reason": a.reason, "credits": a.charged} if act == "failed" else {"reason": a.reason})
     push_rows([{"t": iso(), "job": k, "act": act, "chat": me, **extra} for k in keys], mine)
     local = read_local() or {}
     jobs = {j: v for j, v in (local.get("jobs") or {}).items() if j not in keys}
@@ -272,7 +297,9 @@ def cmd_hook(_a):
     sys.stderr.write(
         f"BLOCKED: {tool or 'this Everygen call'} spends shared credits and this chat holds no claim. All chats share one "
         "Everygen balance, and on Nov 24 two chats made the same voice twice. First run:\n"
-        "  python -m studio.everygen_claim claim voice:<slug>:es --credits <n> --what \"<what>\"\n"
+        "  (read Everygen get_credit_balance first)\n"
+        "  python -m studio.everygen_claim claim voice:<slug>:es --credits <n> --what \"<what>\" --balance-now <remaining>"
+        " [--project what-if-arena|clipcircuit]\n"
         "If it says CLAIMED BY another chat or ALREADY DONE: don't spend, use theirs or message that chat. "
         "After spending: python -m studio.everygen_claim done <job> --credits <n> --balance <b>.\n")
     return 2
@@ -287,6 +314,8 @@ def main(argv=None):
     c.add_argument("--what", required=True)
     c.add_argument("--again", default="", help="reason for a real redo of a job that is already done")
     c.add_argument("--take-over", action="store_true", help=f"take an open claim older than {TAKEOVER_H} h")
+    c.add_argument("--balance-now", type=int, help="remaining credits Everygen's get_credit_balance just returned")
+    c.add_argument("--project", default="vice-replay", help="vice-replay | what-if-arena | clipcircuit")
     d = sub.add_parser("done")
     d.add_argument("jobs", nargs="+")
     d.add_argument("--credits", type=int, required=True)
@@ -294,6 +323,10 @@ def main(argv=None):
     r = sub.add_parser("release")
     r.add_argument("jobs", nargs="+")
     r.add_argument("--reason", required=True)
+    f = sub.add_parser("failed", help="the provider call failed; --charged = credits it still took (0 if none)")
+    f.add_argument("jobs", nargs="+")
+    f.add_argument("--reason", required=True)
+    f.add_argument("--charged", type=int, required=True)
     sub.add_parser("list")
     sub.add_parser("hook")
     a = ap.parse_args(argv)
@@ -301,7 +334,8 @@ def main(argv=None):
         if a.cmd == "hook":
             return cmd_hook(a)
         {"claim": cmd_claim, "list": cmd_list,
-         "done": lambda x: cmd_close(x, "done"), "release": lambda x: cmd_close(x, "release")}[a.cmd](a)
+         "done": lambda x: cmd_close(x, "done"), "release": lambda x: cmd_close(x, "release"),
+         "failed": lambda x: cmd_close(x, "failed")}[a.cmd](a)
     except Refused as e:
         print(f"NOT CLAIMED: {e}" if a.cmd == "claim" else f"REFUSED: {e}", file=sys.stderr)
         return 1

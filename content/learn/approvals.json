@@ -94,6 +94,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 15:22 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:22 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 15:22 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -104,7 +122,7 @@
   "video": "output/gta6-mask-where/gta6-mask-where-short.mp4",
   "duration": 16.1,
   "spec_hash": "47eab14b1b61b78a418edd79d518fa9c0b24fc6e482292a84ba254818e2dfbd0",
-  "evaluated_at": "2026-11-26 14:51 ET",
+  "evaluated_at": "2026-11-26 15:22 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
@@ -205,6 +223,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -215,7 +251,7 @@
   "video": "output/gta6-backrooms-where/gta6-backrooms-where-short.mp4",
   "duration": 13.9,
   "spec_hash": "5d6dc62e56b26cc1c6628265a1c09ab379691335bb4a9ea43303dbcf346f2b13",
-  "evaluated_at": "2026-11-26 14:52 ET",
+  "evaluated_at": "2026-11-26 15:23 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
@@ -357,6 +393,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -367,7 +421,7 @@
   "video": "output/gta6-ninja-turtles-where/gta6-ninja-turtles-where-short-es.mp4",
   "duration": 16.1,
   "spec_hash": "ed05a07c7148d7fd5939c0cc2d2c71700dd8506f5fb1676c4c7ee6432b839355",
-  "evaluated_at": "2026-11-26 14:52 ET",
+  "evaluated_at": "2026-11-26 15:23 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
@@ -450,6 +504,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -460,7 +532,7 @@
   "video": "output/gta6-silent-hill-hotel/gta6-silent-hill-hotel-short-es.mp4",
   "duration": 21.0,
   "spec_hash": "264ad47c2722ea9f7925d052d0c5725ba2b054405035e935487e8756e4049c53",
-  "evaluated_at": "2026-11-26 14:52 ET",
+  "evaluated_at": "2026-11-26 15:23 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
@@ -537,6 +609,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -547,7 +637,7 @@
   "video": "output/gta6-backrooms-where/gta6-backrooms-where-short-es.mp4",
   "duration": 16.4,
   "spec_hash": "f0f5ff0e0ea7f7d27e1e61bb5b4a2962a7ee810134bb8ed55fbf4b33386fe79f",
-  "evaluated_at": "2026-11-26 14:52 ET",
+  "evaluated_at": "2026-11-26 15:23 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
@@ -594,6 +684,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 15:23 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -604,10 +712,412 @@
   "video": "output/gta6-barber-shop-where/gta6-barber-shop-where-short.mp4",
   "duration": 12.2,
   "spec_hash": "13890b6092598c064cdcacdcbcb974f587d9047ef5b957530e7b69f71b8c66b9",
-  "evaluated_at": "2026-11-26 14:51 ET",
+  "evaluated_at": "2026-11-26 15:23 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
   "video_sha256": "47a63a8b04531d6c8890d7ec51254784e626d606ade22fb0d169449eadad0b0e"
+ },
+ "gta6-clothing-stores-where:short:youtube-en": {
+  "slug": "gta6-clothing-stores-where",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "AUTO_APPROVED",
+  "history": [
+   [
+    "2026-11-26 15:01 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:01 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 15:01 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "the test suite hasn't passed on the current code (python -m studio.approvals tests)"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ]
+  ],
+  "publish": [
+   "2026-11-28",
+   "6:00 PM"
+  ],
+  "title": "GTA 6 clothing store location: buy clothes here 👕 #GTA6 #Shorts",
+  "video": "output/gta6-clothing-stores-where/gta6-clothing-stores-where-short.mp4",
+  "duration": 15.8,
+  "spec_hash": "6af2c60088fef6c90780fb35577b6a926e28b8f64b37b495accceb6e00acdd72",
+  "evaluated_at": "2026-11-26 15:24 ET",
+  "blockers": [],
+  "reviews": [],
+  "advice": [
+   "title: 'GTA 6 clothing store location: buy clothes here 👕' is 49 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
+  ],
+  "video_sha256": "d827a44a7b7c92123e7ffe0dbc3ba3c87d9ffff7226fe50b749e69d24e30ad06"
+ },
+ "gta6-clothing-stores-where:short:youtube-es": {
+  "slug": "gta6-clothing-stores-where",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-26 15:01 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:01 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 15:01 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot; the test suite hasn't passed on the current code (python -m studio.approvals tests)"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ]
+  ],
+  "publish": [
+   "2026-11-29",
+   "7:00 PM"
+  ],
+  "title": "GTA 6: dónde comprar ROPA 👕 #GTA6 #Shorts",
+  "video": "output/gta6-clothing-stores-where/gta6-clothing-stores-where-short-es.mp4",
+  "duration": 20.4,
+  "spec_hash": "3336dc4ac3c0dba9043eb9372af4c718259d07cea0fac90155d5a1e1a8506322",
+  "evaluated_at": "2026-11-26 15:24 ET",
+  "blockers": [],
+  "reviews": [
+   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+  ],
+  "advice": [
+   "title: 'GTA 6 clothing store location: buy clothes here 👕' is 49 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
+  ],
+  "video_sha256": "078e46dfda2a1ecae5f193544c1d573b1d5e64a6d31d6856560fe4360a63cbd2"
+ },
+ "gta6-mask-where:short:youtube-es": {
+  "slug": "gta6-mask-where",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "BLOCKED",
+  "history": [
+   [
+    "2026-11-26 15:22 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:22 ET",
+    "RENDERED",
+    "BLOCKED",
+    "gta6-mask-where-short-es.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-mask-where.json --short --es)"
+   ]
+  ],
+  "publish": [
+   "2026-11-30",
+   "7:00 PM"
+  ],
+  "title": "GTA 6: dónde comprar tu PRIMERA máscara 🎭 #GTA6 #Shorts",
+  "video": "output/gta6-mask-where/gta6-mask-where-short-es.mp4",
+  "duration": 17.8,
+  "spec_hash": "3302d0c6554598ad53625c6a06e3b75a8790e2fbb51918fc7808e331859730eb",
+  "evaluated_at": "2026-11-26 15:22 ET",
+  "blockers": [
+   "gta6-mask-where-short-es.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-mask-where.json --short --es)"
+  ],
+  "reviews": [
+   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+  ],
+  "advice": [],
+  "video_sha256": "c69c94927309866839c8b7e4707e14ba5599210c42db9314b80d1d5bd7a9224b"
+ },
+ "gta6-map-easter-eggs-filter:short:youtube-en": {
+  "slug": "gta6-map-easter-eggs-filter",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-26 15:24 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ]
+  ],
+  "publish": [
+   "2026-11-29",
+   "8:00 AM"
+  ],
+  "title": "GTA 6 easter eggs map: only the secrets, free 🥚 #GTA6 #Shorts",
+  "video": "output/gta6-map-easter-eggs-filter/gta6-map-easter-eggs-filter-short.mp4",
+  "duration": 13.7,
+  "spec_hash": "27297a95a9d90bcd5f850c3791dfab65c4907da54ee54f79624dc30921e28b55",
+  "evaluated_at": "2026-11-26 15:24 ET",
+  "blockers": [],
+  "reviews": [
+   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+  ],
+  "advice": [
+   "hook: Short 'short' opens without a number on screen; our Shorts with a number in the first headline kept 65% of viewers vs 49% (put the number in the headline or open on a `chart`)",
+   "title: 'GTA 6 easter eggs map: only the secrets, free 🥚' is 47 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
+  ],
+  "video_sha256": "3d8ecf57422e2a09c52f57567054f04a0b40ce407646270951e5e0824c329c3d"
+ },
+ "gta6-little-cuba-es:short:youtube-es": {
+  "slug": "gta6-little-cuba-es",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "BLOCKED",
+  "history": [
+   [
+    "2026-11-26 15:24 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "RENDERED",
+    "BLOCKED",
+    "gta6-little-cuba-es-short-es.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-little-cuba-es.json --short --es)"
+   ]
+  ],
+  "publish": [
+   "2026-11-29",
+   "12:30 PM"
+  ],
+  "title": "GTA 6, ¿qué BOLÁ asere? Esto es pura Cuba 🇨🇺 #GTA6 #Shorts",
+  "video": "output/gta6-little-cuba-es/gta6-little-cuba-es-short-es.mp4",
+  "duration": 21.4,
+  "spec_hash": "181ba340575fe6d6abdea60a90eae5900770f8e2a8fb71e6ff3743501643d8db",
+  "evaluated_at": "2026-11-26 15:24 ET",
+  "blockers": [
+   "gta6-little-cuba-es-short-es.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-little-cuba-es.json --short --es)"
+  ],
+  "reviews": [
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
+  ],
+  "advice": [],
+  "video_sha256": "72f82e6c1bd01a5e9f4af561719a6a758783f5527be95a931562b060e896c668"
+ },
+ "gta6-tattoo-shops-where:short:youtube-en": {
+  "slug": "gta6-tattoo-shops-where",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "BLOCKED",
+  "history": [
+   [
+    "2026-11-26 15:24 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "RENDERED",
+    "BLOCKED",
+    "gta6-tattoo-shops-where-short.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-tattoo-shops-where.json --short)"
+   ]
+  ],
+  "publish": [
+   "2026-11-29",
+   "6:00 PM"
+  ],
+  "title": "GTA 6 tattoo shops: the first one 🖋️ #GTA6 #Shorts",
+  "video": "output/gta6-tattoo-shops-where/gta6-tattoo-shops-where-short.mp4",
+  "duration": 18.3,
+  "spec_hash": "057aa3af7573cfd14d22c436d696701fe8d3ff40f97440ad083f7c8ddeeb2725",
+  "evaluated_at": "2026-11-26 15:24 ET",
+  "blockers": [
+   "gta6-tattoo-shops-where-short.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-tattoo-shops-where.json --short)"
+  ],
+  "reviews": [
+   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+  ],
+  "advice": [],
+  "video_sha256": "a00163654e958b4236b8347435bdef9247619565a8154f32be238534303a0af1"
+ },
+ "gta6-map-checklist:short:youtube-en": {
+  "slug": "gta6-map-checklist",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-26 15:24 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ]
+  ],
+  "publish": [
+   "2026-11-30",
+   "8:00 AM"
+  ],
+  "title": "GTA 6 map checklist: track every spot you find ✅ #GTA6 #Shorts",
+  "video": "output/gta6-map-checklist/gta6-map-checklist-short.mp4",
+  "duration": 11.3,
+  "spec_hash": "25f60ee4ab9d4c8eca727a803f0ee4cccf318c607b1815be266c193891760785",
+  "evaluated_at": "2026-11-26 15:24 ET",
+  "blockers": [],
+  "reviews": [
+   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+  ],
+  "advice": [
+   "originality: Short 'short' shows no source on screen; add \"src\": \"VGC · Metacritic\" to the card with the main fact (and say your verdict in the script)",
+   "hook: Short 'short' opens without a number on screen; our Shorts with a number in the first headline kept 65% of viewers vs 49% (put the number in the headline or open on a `chart`)",
+   "title: 'GTA 6 map checklist: track every spot you find ✅' is 48 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
+  ],
+  "video_sha256": "db06174db2482242f20269871fcbab78c7ef1e64551576ce6be643c13ac0c447"
+ },
+ "gta6-vice-city-real-miami:short:youtube-es": {
+  "slug": "gta6-vice-city-real-miami",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "BLOCKED",
+  "history": [
+   [
+    "2026-11-26 15:24 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "RENDERED",
+    "BLOCKED",
+    "gta6-vice-city-real-miami-short-es.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-vice-city-real-miami.json --short --es); rendered title 'V"
+   ]
+  ],
+  "publish": [
+   "2026-11-30",
+   "12:30 PM"
+  ],
+  "title": "Vice City es MIAMI de verdad: 5 lugares 🌴 #GTA6 #Shorts",
+  "video": "output/gta6-vice-city-real-miami/gta6-vice-city-real-miami-short-es.mp4",
+  "duration": 20.4,
+  "spec_hash": "fce56197f99de97c4ac11008490fb4b94bf676725ced18688d2d75d2ba06bbc2",
+  "evaluated_at": "2026-11-26 15:24 ET",
+  "blockers": [
+   "gta6-vice-city-real-miami-short-es.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-vice-city-real-miami.json --short --es)",
+   "rendered title 'Vice City es MIAMI de verdad: 5 lugares 🌴 #GTA6 #Shorts' differs from the episode's 'GTA 6: Vice City es MIAMI de verdad (5 lugares) 🌴 #GTA6 #Shorts': re-render"
+  ],
+  "reviews": [
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)",
+   "title doesn't start with GTA 6: 'Vice City es MIAMI de verdad: 5 lugares 🌴 #GTA6 #Shorts'"
+  ],
+  "advice": [],
+  "video_sha256": "6bb44f942bfeb2ce2eddfc8746608f860d616632cbc15806da1e015f0e462853"
+ },
+ "gta6-fishing-pays:short:youtube-en": {
+  "slug": "gta6-fishing-pays",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-26 15:24 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 15:24 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ]
+  ],
+  "publish": [
+   "2026-11-30",
+   "6:00 PM"
+  ],
+  "title": "GTA 6 fishing: does it pay? The answer is no 🎣 #GTA6 #Shorts",
+  "video": "output/gta6-fishing-pays/gta6-fishing-pays-short.mp4",
+  "duration": 14.9,
+  "spec_hash": "8405962a16fea52c653280c739e245fb90a7176914e850d4f7b89beef592158e",
+  "evaluated_at": "2026-11-26 15:24 ET",
+  "blockers": [],
+  "reviews": [
+   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+  ],
+  "advice": [
+   "title: 'GTA 6 fishing: does it pay? The answer is no 🎣' is 46 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
+  ],
+  "video_sha256": "5d38f54a4fb866f5d469bee5786213a07a0d687b7b50c8addc210ba7a8c915cb"
  }
 }
