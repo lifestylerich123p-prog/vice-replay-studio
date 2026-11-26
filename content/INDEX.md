@@ -24,11 +24,14 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| ? | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | - |
-| ? | gta6-backrooms-where | Short | Where to Find the Backrooms in GTA 6 | - |
+| ? | gta6-white-fox-where | Short | GTA 6 Legendary Animals: Where to Find the White Fox | - |
+| ? | gta6-silent-hill-hotel | Short | GTA 6 Silent Hill Easter Egg: Marbelle Hotel Location and Safe Code | - |
+| ? | gta6-no-mission-replay | Short | GTA 6 Has No Mission Replay: How to Save Instead | - |
 | 2026-11-26 | gta6-vice-city-real-miami | Short | GTA 6's Vice City vs Real Miami: 5 Places | - |
 | 2026-11-26 | gta6-special-cars-tier-list | Short | GTA 6's Special Cars, Ranked | - |
+| 2026-11-26 | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | - |
 | 2026-11-26 | gta6-map-quiz-places | Short | GTA 6 Map Quiz: Name These 3 Places | - |
+| 2026-11-26 | gta6-backrooms-where | Short | Where to Find the Backrooms in GTA 6 | - |
 | 2026-11-26 | gta6-alligators-where | Short | Where to Find Alligators in GTA 6 | - |
 | 2026-11-25 | gta6-trivia-night | video | GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz) | main: kSufP4pt08I |
 | 2026-11-25 | gta6-trivia-3-questions | Short | GTA 6 trivia only real fans get right | - |
