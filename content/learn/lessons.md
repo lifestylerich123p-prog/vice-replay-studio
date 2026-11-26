@@ -334,3 +334,11 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   same 30 FPS worry our YouTube commenters raise. Fix applied: titles under 60 characters with the answer first
   ("Still 30 FPS"), snippets that lead with the answer, dateModified on refreshed pages (JSON guides now take
   "modified"). Next: watch that page's CTR in the 1 PM checklist; a "PS5 Pro vs PS5 for GTA 6" VS Short can link to it.
+- 2026-11-26 11:45 AM (owner "check if we have to change something again with views and comments"; `studio.learn
+  --mine`): by card type, MAP Shorts now lead by a mile: median 46.6 views/h (n=3; the 8 AM sunken-treasure map Short
+  hit 281 views in 3 h, ~100/h, our fastest ever), tier 6.2, versus 4.0, counter 2.6, headline 0.7, list 0.2. Today's
+  two non-map Shorts sat at 0 views after 1.5-2.5 h (Ultimate vs Standard versus card; cops list card; both processed,
+  public, no restriction: just not shown). Engagement is the weak spot: the map winners get ~0.5% likes (4 on 706) and
+  ZERO viewer comments; our pinned questions get no answers; only 1 open comment on the whole channel (a troll, skipped).
+  Spanish channel: 37 views in 12 videos. Proposed to the owner: 3 map/how-to Shorts a day (tier lists stay, versus/
+  list/fact anchors swapped for map finds), one-tap comment prompts, pause Spanish YouTube for a week, 8 AM map slot.
