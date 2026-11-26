@@ -13,7 +13,7 @@ An English Short publishes automatically at its slot only when **all 10 conditio
 | 7 | No duplicate | registry (`uploads.json`) by slug/item and exact title; the uploader re-checks every GitHub branch and the channel's own list (`studio/postguard.py`) |
 | 8 | Real value / plan | a map card (location guide), a how-to/tutorial, or an episode marked `"experiment": true` |
 | 9 | Tests pass | `python -m studio.approvals tests` passed on the current code (hash of `studio/` + `tools/`) within 36 h |
-| 10 | Limits | `config/channel.json` `auto_publish.on`, slot in the future, at most `max_per_day` (2) a day, English channel only |
+| 10 | Limits | `config/channel.json` `auto_publish.on`, slot in the future and one of `slots` (EN 8:00 AM / 6:00 PM, ES 12:30 PM / 7:00 PM), at most `max_per_day` (2) a day per channel |
 
 States: RESEARCHED → VERIFIED → PRODUCED → RENDERED → QA_PASSED → AUTO_APPROVED → (UPLOADING) → SCHEDULED →
 PUBLISHED. BLOCKED = must be fixed; NEEDS_REVIEW = held until a person or the next run decides; FAILED = upload error.

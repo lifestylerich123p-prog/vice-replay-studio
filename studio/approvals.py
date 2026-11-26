@@ -16,8 +16,9 @@ evaluate() runs the owner's 10 conditions for one video, platform and slot:
     guides, 20% map tutorials, 10% experiments); generic tier/versus/headline Shorts go to NEEDS_REVIEW
   9 the test suite passed on the current code (`tests` command; cached by a hash of the code)
  10 limits: auto-publishing switched on (config/channel.json `auto_publish`), the slot in the future, at most
-    `max_per_day` auto-published Shorts that day, English channel only (Spanish YouTube is paused; TikTok and
-    Instagram keep their own arrangements)
+    `max_per_day` auto-published Shorts that day, only at the plan's slot times (`slots`: EN 8:00 AM / 6:00 PM,
+    ES 12:30 PM / 7:00 PM), YouTube only: English (`auto_publish`) and Vice Replay en Español (`auto_publish_es`, its
+    own switch, Spanish render + title); TikTok and Instagram keep their own arrangements
 The approval is bound to a fingerprint of the content (spec_hash): change the script, cards, pins, sources,
 description, pinned comment, series number or a voice file and it must be evaluated again before it can post.
 Two upload failures in a row switch auto-publishing off and tell the owner (directive section 7).
@@ -95,8 +96,9 @@ def auto_cfg(platform="youtube-en"):
         c = json.loads(CONFIG.read_text()).get(key) or {}
     except (OSError, ValueError):
         c = {}
+    default = ["12:30 PM", "7:00 PM"] if platform == "youtube-es" else ["8:00 AM", "6:00 PM"]
     return {"on": bool(c.get("on")), "max_per_day": int(c.get("max_per_day", 2)), "paused_reason": c.get("paused_reason"),
-            "failures": int(c.get("consecutive_failures", 0))}
+            "failures": int(c.get("consecutive_failures", 0)), "slots": list(c.get("slots") or default)}
 
 
 def _set_cfg(platform="youtube-en", **kw):
@@ -286,6 +288,9 @@ def checks(ep_path, item="short", platform="youtube-en", publish=None, now=None,
         review.append("no publishing slot")
     elif when is not None and when <= now:
         review.append(f"the slot {publish} has passed: never post a missed slot automatically")
+    if when is not None and when.strftime("%-I:%M %p") not in cfg["slots"]:
+        # Nov 26: the authorization covers the plan's slots only (EN 8:00 AM / 6:00 PM, ES 12:30 PM / 7:00 PM)
+        review.append(f"{publish[1]} is not an auto-publishing slot ({' / '.join(cfg['slots'])}): book a plan slot")
     if when is not None:
         d = store if store is not None else _load()
         same_day = [r for k, r in d.items() if r.get("platform") == platform and r.get("state") in

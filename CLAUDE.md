@@ -134,7 +134,7 @@ said where the store is).
   7:00 PM ET (test slots), booked as `"es"` slots in approved_queue.json, published automatically ONLY through the gate
   on platform `youtube-es` (Spanish render + Spanish title, facts, QA, duplicates; `studio.youtube_es` refuses any token
   that isn't the Spanish channel). Free local Piper voice (`voice_es` piper:es_MX-claude-high); Everygen Viral Adam only
-  for proven winners with a claim. Winners-only rule OFF. Titles: Spanish-market style (one CAPS word + one emoji);
+  for proven winners with a claim. Winners-only rule OFF. Titles: "GTA 6" first, then Spanish-market style (one CAPS word + one emoji; the gate holds others);
   registry `content/learn/uploads-es.json`.
 - **TikTok**: the owner posts by hand; Shorts go to the "📱 Vice Replay: TikTok files" chat (see owner.md;
   `studio.ship --tiktok` pushes them to the `tiktok-files` branch).

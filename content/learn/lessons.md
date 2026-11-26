@@ -342,3 +342,11 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   ZERO viewer comments; our pinned questions get no answers; only 1 open comment on the whole channel (a troll, skipped).
   Spanish channel: 37 views in 12 videos. Proposed to the owner: 3 map/how-to Shorts a day (tier lists stay, versus/
   list/fact anchors swapped for map finds), one-tap comment prompts, pause Spanish YouTube for a week, 8 AM map slot.
+- 2026-11-26 1:30 PM (TikTok, Windsor; content/learn/tiktok-2026-11-26.json): the shoe-store MAP Short is at 7,863
+  views (18.5% watched to the end, 5 new followers: our only TikTok followers) vs a median of ~135 for the other 23
+  TikToks (news, versus, tier, facts: 46-914). Same pattern as YouTube (map cards 46.6 views/h vs versus 4.0): the
+  TikTok files lead with map Shorts. No TikTok posted since Nov 25 (owner posts by hand).
+- 2026-11-26 (gate, first full dry run): 27 old Spanish slots (news/versus/tier/quiz items at 9:30 AM-1:30 PM) were
+  still booked and would have been offered to the Spanish gate ahead of the line-up; parked to `es_parked`, and the
+  gate now auto-publishes only at the plan's slot times. Two Spanish titles were held for not starting with "GTA 6"
+  (9 line-up titles fixed), and the fact checker read "green ooze leaks" as a game leak (reworded, check kept strict).

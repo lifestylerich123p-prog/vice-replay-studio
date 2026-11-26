@@ -1,0 +1,371 @@
+{
+ "gta6-mask-where:short:youtube-en": {
+  "slug": "gta6-mask-where",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "AUTO_APPROVED",
+  "history": [
+   [
+    "2026-11-26 13:16 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:16 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 13:16 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "the test suite hasn't passed on the current code (python -m studio.approvals tests)"
+   ],
+   [
+    "2026-11-26 13:33 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:33 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 13:33 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 13:48 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:48 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 13:48 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ]
+  ],
+  "publish": [
+   "2026-11-27",
+   "8:00 AM"
+  ],
+  "title": "GTA 6 mask location: your first one is here 🎭 #GTA6 #Shorts",
+  "video": "output/gta6-mask-where/gta6-mask-where-short.mp4",
+  "duration": 16.1,
+  "spec_hash": "bf3e9784de66efdc2b3a816ee8d627c3c1a80a768725d4e346c5eb0b696db0e1",
+  "evaluated_at": "2026-11-26 13:48 ET",
+  "blockers": [],
+  "reviews": [],
+  "advice": [],
+  "video_sha256": "416e771da0d47685030c7bc5a66b9be4a4e7135490c7a71df52ce04d501b9669"
+ },
+ "gta6-backrooms-where:short:youtube-en": {
+  "slug": "gta6-backrooms-where",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "AUTO_APPROVED",
+  "history": [
+   [
+    "2026-11-26 13:16 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:16 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 13:16 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "the test suite hasn't passed on the current code (python -m studio.approvals tests)"
+   ],
+   [
+    "2026-11-26 13:33 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:33 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 13:33 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 13:48 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:48 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 13:48 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ]
+  ],
+  "publish": [
+   "2026-11-28",
+   "8:00 AM"
+  ],
+  "title": "GTA 6 Backrooms location: here it is 🚪 #GTA6 #Shorts",
+  "video": "output/gta6-backrooms-where/gta6-backrooms-where-short.mp4",
+  "duration": 13.9,
+  "spec_hash": "c1a39b3a128c54e8f6975a0c89637d169576923609e59c062677a5a77ebf186c",
+  "evaluated_at": "2026-11-26 13:48 ET",
+  "blockers": [],
+  "reviews": [],
+  "advice": [],
+  "video_sha256": "5c7b955c90c151296b17c927e3ff83bd18818c787b8131a5addfe9e536d51b67"
+ },
+ "gta6-skunk-ape-where:short:youtube-en": {
+  "slug": "gta6-skunk-ape-where",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-26 13:16 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:16 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 13:16 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts not re-checked before posting (python -m studio.approvals factcheck ...); the test suite hasn't passed on the current code (python -m studio.approvals tests)"
+   ]
+  ],
+  "publish": [
+   "2026-11-28",
+   "6:00 PM"
+  ],
+  "title": "GTA 6 Bigfoot location (Skunk Ape) 👣 #GTA6 #Shorts",
+  "video": "output/gta6-skunk-ape-where/gta6-skunk-ape-where-short.mp4",
+  "duration": 12.9,
+  "spec_hash": "45e766d25d14601a558a7b67ec464b36bb13e53b699c73002863f8dd1a17bc9b",
+  "evaluated_at": "2026-11-26 13:16 ET",
+  "blockers": [],
+  "reviews": [
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)",
+   "the test suite hasn't passed on the current code (python -m studio.approvals tests)"
+  ],
+  "advice": [],
+  "video_sha256": "5ff88bfe4f02e4bdd97e0e5e7a4a20b11bb4efd0a56ac56879c4d0e5fc14c748"
+ },
+ "gta6-ninja-turtles-where:short:youtube-es": {
+  "slug": "gta6-ninja-turtles-where",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "AUTO_APPROVED",
+  "history": [
+   [
+    "2026-11-26 13:25 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:25 ET",
+    "RENDERED",
+    "BLOCKED",
+    "QA: publish check did not run: Render first: python -m studio.ship episodes/gta6-ninja-turtles-where.json\n"
+   ],
+   [
+    "2026-11-26 13:32 ET",
+    "BLOCKED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:32 ET",
+    "RENDERED",
+    "BLOCKED",
+    "QA: QC facts: short_description: The GTA 6 Ninja Turtles easter egg: a storm drain just north of Millport, by Lake Tallaloko and the Tallaloko Dam (guide"
+   ],
+   [
+    "2026-11-26 13:49 ET",
+    "BLOCKED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:49 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 13:49 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ]
+  ],
+  "publish": [
+   "2026-11-27",
+   "7:00 PM"
+  ],
+  "title": "GTA 6 esconde a las TORTUGAS NINJA: aquí están 🐢 #GTA6 #Shorts",
+  "video": "output/gta6-ninja-turtles-where/gta6-ninja-turtles-where-short-es.mp4",
+  "duration": 15.9,
+  "spec_hash": "f0f86f1b022bc7e31723bea14b5ea529f02d0e4b33fb4c3c1d87454251bd8433",
+  "evaluated_at": "2026-11-26 13:49 ET",
+  "blockers": [],
+  "reviews": [],
+  "advice": [],
+  "video_sha256": "8ed7ada0d6a1f1285f178231d922d24f76941371432aad67611f65a6bd92636b"
+ },
+ "gta6-silent-hill-hotel:short:youtube-es": {
+  "slug": "gta6-silent-hill-hotel",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "AUTO_APPROVED",
+  "history": [
+   [
+    "2026-11-26 13:33 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:33 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 13:33 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "title doesn't start with GTA 6: 'El SECRETO de Silent Hill en GTA 6 (clave 955214) 😱 #GTA6 #Shorts'"
+   ],
+   [
+    "2026-11-26 13:49 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:49 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 13:49 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ]
+  ],
+  "publish": [
+   "2026-11-28",
+   "12:30 PM"
+  ],
+  "title": "GTA 6: el SECRETO de Silent Hill (clave 955214) 😱 #GTA6 #Shorts",
+  "video": "output/gta6-silent-hill-hotel/gta6-silent-hill-hotel-short-es.mp4",
+  "duration": 20.9,
+  "spec_hash": "b9a55acc936768bde2471048f9d0795429fda5d884d42ca8444045d0fb4f5ca8",
+  "evaluated_at": "2026-11-26 13:49 ET",
+  "blockers": [],
+  "reviews": [],
+  "advice": [],
+  "video_sha256": "a7a6fe604c4a39b3fe61f899872509e96d67cf13dc45e360ea74a060fdf08fb1"
+ },
+ "gta6-backrooms-where:short:youtube-es": {
+  "slug": "gta6-backrooms-where",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "AUTO_APPROVED",
+  "history": [
+   [
+    "2026-11-26 13:33 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:33 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 13:33 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "title doesn't start with GTA 6: 'Los BACKROOMS existen en GTA 6: así se entra 😨 #GTA6 #Shorts'"
+   ],
+   [
+    "2026-11-26 13:49 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 13:49 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 13:49 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ]
+  ],
+  "publish": [
+   "2026-11-28",
+   "7:00 PM"
+  ],
+  "title": "GTA 6: los BACKROOMS existen y así se entra 😨 #GTA6 #Shorts",
+  "video": "output/gta6-backrooms-where/gta6-backrooms-where-short-es.mp4",
+  "duration": 15.8,
+  "spec_hash": "c1a39b3a128c54e8f6975a0c89637d169576923609e59c062677a5a77ebf186c",
+  "evaluated_at": "2026-11-26 13:49 ET",
+  "blockers": [],
+  "reviews": [],
+  "advice": [],
+  "video_sha256": "445bad1dada9be2965684924bf5e44b2d66fa169b2260f702236d0a3ed650292"
+ }
+}

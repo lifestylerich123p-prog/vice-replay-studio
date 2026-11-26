@@ -34,7 +34,7 @@ def test_spanish_waits_then_winner_gets_next_slot_and_loser_is_skipped(tmp_path,
     assert any(n.startswith("ES winner: hit") for n in notes) and any(n.startswith("ES skipped: flop") for n in notes)
     q = json.loads((learn / "approved_queue.json").read_text())["items"]
     hit, flop = q[0], q[1]
-    assert hit["es_status"].startswith("winner") and hit["es"] == ["2026-11-25", "1:30 PM"]  # 12:30 is the Spanish-only Short's
+    assert hit["es_status"].startswith("winner") and hit["es"] == ["2026-11-25", "7:00 PM"]  # 12:30 is the Spanish-only Short's
     assert flop["es_status"].startswith("skipped")
     # the winner's Spanish upload is now pending; the skipped one never is
     p = {it["slug"]: (ne, ns) for it, ne, ns in spend.pending()}
@@ -52,4 +52,4 @@ def test_too_young_english_short_keeps_waiting(tmp_path, monkeypatch):
 def test_next_es_slot_skips_taken(monkeypatch):
     monkeypatch.setattr(spend, "es_paused_until", lambda: None)  # no Spanish pause in this test
     after = dt.datetime(2026, 11, 25, 10, 0, tzinfo=quota.ET)
-    assert spend.next_es_slot(after, {("2026-11-25", "12:30 PM")}) == ["2026-11-25", "1:30 PM"]
+    assert spend.next_es_slot(after, {("2026-11-25", "12:30 PM")}) == ["2026-11-25", "7:00 PM"]

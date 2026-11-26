@@ -26,6 +26,10 @@ RESUELTO EL EASTER EGG", "DETALLES ALUCINANTES", "¿Qué pasa si...?"), 30-60 s,
 - Line-up: Ninja Turtles, Silent Hill (clave 955214), Backrooms, Little Cuba, ghost ship, Vice City vs Miami, mask,
   shoe store, tattoo shops, official map, giant crab, white fox, jewelry fence, Bigfoot, Vercetti portal, panther,
   UFO, "sin doblaje", alligators (content/learn/approved_queue.json `es` slots).
+- Titles start with "GTA 6" (Nov 26: the gate held Silent Hill and Backrooms for "El SECRETO..." / "Los BACKROOMS...";
+  9 line-up titles fixed).
+- Nov 26: 27 old Spanish slots (news, versus, tier, quiz items, 9:30 AM-1:30 PM) moved to `es_parked` in the queue;
+  only the line-up keeps an `es` slot, and the gate only auto-publishes at 12:30 PM / 7:00 PM.
 - Every one passes the gate on platform `youtube-es` (Spanish render + title, facts re-checked within 2 days, QA,
   duplicates, destination channel).
 - Director: `.claude/agents/vice-replay-es-director.md`; daily Spanish production run (scheduled task).

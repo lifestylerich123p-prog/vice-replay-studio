@@ -31,12 +31,13 @@
     "2026-11-24",
     "11:00 AM"
    ],
-   "es": [
+   "approved": "Nov 22 10 AM",
+   "es_status": "skipped: 95 views at 39 h (bar 150)",
+   "es_parked": [
     "2026-11-25",
     "11:00 AM"
    ],
-   "approved": "Nov 22 10 AM",
-   "es_status": "skipped: 95 views at 39 h (bar 150)"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-99-club",
@@ -45,12 +46,13 @@
     "2026-11-24",
     "12:30 PM"
    ],
-   "es": [
+   "approved": "Nov 22 9:15 AM",
+   "es_status": "skipped: 28 views at 37 h (bar 150)",
+   "es_parked": [
     "2026-11-24",
     "11:00 AM"
    ],
-   "approved": "Nov 22 9:15 AM",
-   "es_status": "skipped: 28 views at 37 h (bar 150)"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-trailer-views",
@@ -59,11 +61,12 @@
     "2026-11-25",
     "12:30 PM"
    ],
-   "es": [
+   "approved": "Nov 22 9:15 AM",
+   "es_parked": [
     "2026-11-25",
     "12:30 PM"
    ],
-   "approved": "Nov 22 9:15 AM"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-4-secrets",
@@ -72,14 +75,15 @@
     "2026-12-04",
     "8:00 AM"
    ],
-   "es": [
-    "2026-12-04",
-    "9:30 AM"
-   ],
    "approved": "Nov 23 6:45 AM (APPROVE; GTA 6-style countdown cards)",
    "moved": "Nov 24 (owner 'Research those maps pictures more / Approve everything'): map Shorts get earlier slots; now shows where each secret is (official map zooms)",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-11-30', '12:30 PM']"
+   "moved_plan": "was ['2026-11-30', '12:30 PM']",
+   "es_parked": [
+    "2026-12-04",
+    "9:30 AM"
+   ],
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-vs-gta5-fps",
@@ -88,11 +92,12 @@
     "2026-11-25",
     "9:30 AM"
    ],
-   "es": [
+   "approved": "Nov 23 6:55 AM (APPROVE; lettering VS card)",
+   "es_parked": [
     "2026-11-25",
     "9:30 AM"
    ],
-   "approved": "Nov 23 6:55 AM (APPROVE; lettering VS card)"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-black-friday-no-discount",
@@ -101,11 +106,12 @@
     "2026-11-25",
     "11:00 AM"
    ],
-   "es": [
+   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)",
+   "es_parked": [
     "2026-11-26",
     "11:00 AM"
    ],
-   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-ultimate-vs-standard",
@@ -125,11 +131,12 @@
     "2026-11-24",
     "8:00 AM"
    ],
-   "es": [
+   "es_status": "skipped: 24 views at 42 h (bar 150)",
+   "es_parked": [
     "2026-11-24",
     "12:30 PM"
    ],
-   "es_status": "skipped: 24 views at 42 h (bar 150)"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta-tier-list-sales",
@@ -139,11 +146,12 @@
     "2026-11-24",
     "9:30 AM"
    ],
-   "es": [
+   "es_status": "skipped: 122 views at 40 h (bar 150)",
+   "es_parked": [
     "2026-12-02",
     "12:30 PM"
    ],
-   "es_status": "skipped: 122 views at 40 h (bar 150)"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta-tier-list-protagonists",
@@ -152,12 +160,13 @@
     "2026-11-26",
     "12:30 PM"
    ],
-   "es": [
+   "approved": "Nov 23 ~6:20 PM (owner \"Approve next steps\": tier lists twice a week, Tier List #3 Wed Dec 2 9:30 AM); Spanish follows winners-only",
+   "moved": "Nov 24 ~2:45 PM ET (owner: \"Approve\" the swap table: GTA 5 vs 6 cops + protagonists tier list Thu, 2021 house Sun; B-tier tier list taking off)",
+   "es_parked": [
     "2026-11-27",
     "1:30 PM"
    ],
-   "approved": "Nov 23 ~6:20 PM (owner \"Approve next steps\": tier lists twice a week, Tier List #3 Wed Dec 2 9:30 AM); Spanish follows winners-only",
-   "moved": "Nov 24 ~2:45 PM ET (owner: \"Approve\" the swap table: GTA 5 vs 6 cops + protagonists tier list Thu, 2021 house Sun; B-tier tier list taking off)"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-cops-remember",
@@ -166,11 +175,12 @@
     "2026-11-26",
     "11:00 AM"
    ],
-   "es": [
+   "approved": "Nov 24 ~2:45 PM ET (owner: \"Approve\" the swap table: GTA 5 vs 6 cops + protagonists tier list Thu, 2021 house Sun; B-tier tier list taking off); GTA 5 vs GTA 6 framing (hottest GTA 6 Short that day); RE-CHECK facts before upload (owner rule); Spanish winners-only",
+   "es_parked": [
     "2026-11-27",
     "12:30 PM"
    ],
-   "approved": "Nov 24 ~2:45 PM ET (owner: \"Approve\" the swap table: GTA 5 vs 6 cops + protagonists tier list Thu, 2021 house Sun; B-tier tier list taking off); GTA 5 vs GTA 6 framing (hottest GTA 6 Short that day); RE-CHECK facts before upload (owner rule); Spanish winners-only"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-2021-house",
@@ -179,14 +189,15 @@
     "2026-12-02",
     "6:00 PM"
    ],
-   "es": [
-    "2026-11-30",
-    "12:30 PM"
-   ],
    "approved": "Nov 24 ~2:45 PM ET (owner: \"Approve\" the swap table: GTA 5 vs 6 cops + protagonists tier list Thu, 2021 house Sun; B-tier tier list taking off); map series; Rockstar hasn't confirmed it was planned (said in the Short); RE-CHECK facts before upload (owner rule); Spanish winners-only",
    "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-11-29 10:00 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-11-29', '8:00 AM']"
+   "moved_plan": "was ['2026-11-29', '8:00 AM']",
+   "es_parked": [
+    "2026-11-30",
+    "12:30 PM"
+   ],
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta-tier-list-maps",
@@ -195,12 +206,13 @@
     "2026-11-28",
     "10:00 AM"
    ],
-   "es": [
+   "approved": "Nov 23 ~7 PM (owner \"APPROVE what you should do next\"): Tier List #4, the new Saturday tier day; Spanish follows winners-only",
+   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high",
+   "es_parked": [
     "2026-11-28",
     "10:00 AM"
    ],
-   "approved": "Nov 23 ~7 PM (owner \"APPROVE what you should do next\"): Tier List #4, the new Saturday tier day; Spanish follows winners-only",
-   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-first-platinum",
@@ -209,11 +221,12 @@
     "2026-11-25",
     "8:00 AM"
    ],
-   "es": [
+   "approved": "Nov 23 ~7:45 PM (owner: \"APPROVE\"): momentum follow-up to gta6-first-to-finish, title 1; Spanish only if it wins its first 24 h",
+   "es_parked": [
     "2026-11-26",
     "12:30 PM"
    ],
-   "approved": "Nov 23 ~7:45 PM (owner: \"APPROVE\"): momentum follow-up to gta6-first-to-finish, title 1; Spanish only if it wins its first 24 h"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-stream-wars",
@@ -222,11 +235,12 @@
     "2026-11-25",
     "3:30 PM"
    ],
-   "es": [
+   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); hacker sentencing, afternoon slot under the big-news exception",
+   "es_parked": [
     "2026-11-26",
     "1:30 PM"
    ],
-   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); hacker sentencing, afternoon slot under the big-news exception"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-money-tier-list",
@@ -235,11 +249,12 @@
     "2026-11-27",
     "9:30 AM"
    ],
-   "es": [
+   "approved": "Nov 24 ~11:30 AM (owner \"Approve everything for good of the channel\"); tier list (the format that took off) on the top search topic",
+   "es_parked": [
     "2026-11-28",
     "1:30 PM"
    ],
-   "approved": "Nov 24 ~11:30 AM (owner \"Approve everything for good of the channel\"); tier list (the format that took off) on the top search topic"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-ibai-cero-espectadores-es",
@@ -301,14 +316,15 @@
     "2026-12-05",
     "8:00 AM"
    ],
-   "es": [
-    "2026-12-02",
-    "1:30 PM"
-   ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "moved": "Nov 26: Dec 1 12:30 PM -> Dec 7 9:30 AM (evergreen) so the viral Ninja Turtles find goes out sooner",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-12-07', '9:30 AM']"
+   "moved_plan": "was ['2026-12-07', '9:30 AM']",
+   "es_parked": [
+    "2026-12-02",
+    "1:30 PM"
+   ],
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-early-helicopter",
@@ -317,15 +333,16 @@
     "2026-12-06",
     "8:00 AM"
    ],
-   "es": [
-    "2026-12-03",
-    "1:30 PM"
-   ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots",
    "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-12-02 9:30 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-12-02', '8:00 AM']"
+   "moved_plan": "was ['2026-12-02', '8:00 AM']",
+   "es_parked": [
+    "2026-12-03",
+    "1:30 PM"
+   ],
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-dexter-apartment-map",
@@ -334,14 +351,15 @@
     "2026-12-07",
     "8:00 AM"
    ],
-   "es": [
-    "2026-12-03",
-    "1:30 PM"
-   ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "moved": "Nov 26: Dec 2 12:30 PM -> Dec 7 11:00 AM (evergreen) so the viral ghost ship find goes out sooner",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-12-07', '11:00 AM']"
+   "moved_plan": "was ['2026-12-07', '11:00 AM']",
+   "es_parked": [
+    "2026-12-03",
+    "1:30 PM"
+   ],
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-military-base-jets",
@@ -350,15 +368,16 @@
     "2026-12-07",
     "6:00 PM"
    ],
-   "es": [
-    "2026-12-04",
-    "1:30 PM"
-   ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots",
    "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-12-03 9:30 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-12-03', '8:00 AM']"
+   "moved_plan": "was ['2026-12-03', '8:00 AM']",
+   "es_parked": [
+    "2026-12-04",
+    "1:30 PM"
+   ],
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-red-dead-easter-eggs",
@@ -367,14 +386,15 @@
     "2026-12-08",
     "8:00 AM"
    ],
-   "es": [
-    "2026-12-04",
-    "1:30 PM"
-   ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "moved": "Nov 26: to Dec 9 so that day has a map Short (owner Nov 25: one map video a day); Dec 3 keeps the jets map Short",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-12-09', '12:30 PM']"
+   "moved_plan": "was ['2026-12-09', '12:30 PM']",
+   "es_parked": [
+    "2026-12-04",
+    "1:30 PM"
+   ],
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-skunk-ape-where",
@@ -416,14 +436,15 @@
     "2026-12-04",
     "6:00 PM"
    ],
-   "es": [
-    "2026-12-06",
-    "1:30 PM"
-   ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-12-05', '10:00 AM']"
+   "moved_plan": "was ['2026-12-05', '10:00 AM']",
+   "es_parked": [
+    "2026-12-06",
+    "1:30 PM"
+   ],
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-shoe-store-where",
@@ -456,12 +477,13 @@
     "2026-11-26",
     "8:00 AM"
    ],
-   "es": [
+   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
+   "moved": "Nov 25 (owner: \"Start posting the maps videos at least one a day\"): moved so every day has a map Short",
+   "es_parked": [
     "2026-11-29",
     "12:30 PM"
    ],
-   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
-   "moved": "Nov 25 (owner: \"Start posting the maps videos at least one a day\"): moved so every day has a map Short"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-vintage-stanier",
@@ -470,13 +492,14 @@
     "2026-12-09",
     "6:00 PM"
    ],
-   "es": [
+   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-06', '12:30 PM']",
+   "es_parked": [
     "2026-12-07",
     "12:30 PM"
    ],
-   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
-   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-12-06', '12:30 PM']"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-atm-robbery-guide",
@@ -495,10 +518,11 @@
     "11:00 AM"
    ],
    "approved": "Nov 25 ~3:30 PM ET (owner: \"Approve and post one now\"): the Nov 25 daily set, recovered from its log; facts re-checked Nov 25 (ATM winch + marked bills, Paul Walker car); tier list #5 (momentum follow-up)",
-   "es": [
+   "es_parked": [
     "2026-12-09",
     "1:30 PM"
-   ]
+   ],
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-atm-robbery-guide",
@@ -508,12 +532,13 @@
     "6:00 PM"
    ],
    "approved": "Nov 25 ~3:30 PM ET (owner: \"Approve and post one now\"): the Nov 25 daily set, recovered from its log; facts re-checked Nov 25 (ATM winch + marked bills, Paul Walker car)",
-   "es": [
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-08', '9:30 AM']",
+   "es_parked": [
     "2026-12-10",
     "1:30 PM"
    ],
-   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-12-08', '9:30 AM']"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-atm-robbery-guide",
@@ -523,10 +548,11 @@
     "3:45 PM"
    ],
    "approved": "Nov 25 ~3:30 PM ET (owner: \"Approve and post one now\"): the Nov 25 daily set, recovered from its log; facts re-checked Nov 25 (ATM winch + marked bills, Paul Walker car); posted right away (owner: post one now)",
-   "es": [
+   "es_parked": [
     "2026-12-10",
     "12:30 PM"
-   ]
+   ],
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-vice-city-real-miami",
@@ -552,13 +578,14 @@
     "2026-12-03",
     "6:00 PM"
    ],
-   "es": [
+   "approved": "Nov 26 (owner: \"approve and check everything\"): map/tier formats from the mid-week verdict; facts in 2+ sources (re-check right before upload)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-01', '11:00 AM']",
+   "es_parked": [
     "2026-12-02",
     "12:30 PM"
    ],
-   "approved": "Nov 26 (owner: \"approve and check everything\"): map/tier formats from the mid-week verdict; facts in 2+ sources (re-check right before upload)",
-   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
-   "moved_plan": "was ['2026-12-01', '11:00 AM']"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
   },
   {
    "slug": "gta6-alligators-where",

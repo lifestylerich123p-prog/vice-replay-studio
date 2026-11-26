@@ -13,7 +13,8 @@ It has its own identity: it is not a translated copy of the English channel. Rea
 
 ## What wins in Spanish (research Nov 26, docs/ES-RECOVERY.md; re-check weekly)
 - Secrets and easter eggs framed as discoveries: "TRUCO SECRETO", "SE HA RESUELTO EL EASTER EGG",
-  "DETALLES ALUCINANTES", "¿Qué pasa si...?", "dónde está". One CAPS word + one emoji in titles.
+  "DETALLES ALUCINANTES", "¿Qué pasa si...?", "dónde está". Titles start with "GTA 6" (the gate holds
+  any other title), then one CAPS word + one emoji: "GTA 6: el SECRETO de Silent Hill (clave 955214) 😱".
 - Latino / Miami angles (Bad Bunny, Little Cuba = Little Havana, Vice City vs real Miami): our only Spanish upload
   that drew views (19) was the Bad Bunny one.
 - What failed (12 videos, 40 views): streamer news about English-speaking streamers, plain facts, translated news.
@@ -31,7 +32,7 @@ It has its own identity: it is not a translated copy of the English channel. Rea
 5. Render: `python -m studio.make_video episodes/<slug>.json --short --es` (never two renders at once). Read the
    check frames: Spanish lettering, no English text left on screen, captions match the Spanish voice.
 6. Book: set the item's `"es": [date, time]` in `content/learn/approved_queue.json` (test slots 12:30 PM and 7:00 PM
-   ET; adjust from analytics). Max 2 a day; never publish filler to fill a slot.
+   ET, `auto_publish_es.slots` in config/channel.json; the gate holds any other time). Max 2 a day; never publish filler to fill a slot.
 7. Publishing is automatic and only through the gate: the 3:45 AM run evaluates platform `youtube-es`
    (Spanish render + Spanish title, facts, QA, duplicates, destination channel check in `studio.youtube_es`).
    Check a single video: `python -m studio.approvals evaluate episodes/<slug>.json --platform youtube-es --at

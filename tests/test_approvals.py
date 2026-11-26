@@ -173,3 +173,12 @@ def test_spanish_pause_is_separate(world):
     ap.upload_result(False, "x", "youtube-es")
     ap.upload_result(False, "y", "youtube-es")
     assert not ap.auto_cfg("youtube-es")["on"] and ap.auto_cfg("youtube-en")["on"]
+
+
+def test_only_the_plan_slots_auto_publish(world):
+    """Nov 26: old Spanish slots (1:30 PM, 9:30 AM) were still in the queue; only the plan's times may post."""
+    r = evaluate(world, publish=("2026-11-28", "1:30 PM"))
+    assert r["state"] == "NEEDS_REVIEW" and any("not an auto-publishing slot" in x for x in r["reviews"])
+    r = ap.evaluate(world["ep"], "short", "youtube-es", ("2026-11-28", "8:00 AM"), now=NOW)
+    assert any("not an auto-publishing slot" in x for x in r["reviews"])
+    assert ap.auto_cfg("youtube-es")["slots"] == ["12:30 PM", "7:00 PM"]

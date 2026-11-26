@@ -83,7 +83,11 @@ def es_threshold(rule, days=7):
     return max(rule.get("min_views_24h", 150), int(med))
 
 
-ES_TIMES = ("12:30 PM", "1:30 PM", "11:00 AM")  # the Spanish audience's best window (Nov 23 research: 12-2 PM ET)
+def es_times():
+    """The Spanish channel's slots = the gate's `auto_publish_es.slots` (Nov 26: 12:30 PM / 7:00 PM ET test slots), so a
+    winner is never booked at a time the gate would hold."""
+    from . import approvals
+    return tuple(approvals.auto_cfg("youtube-es")["slots"])
 
 
 def next_es_slot(after, taken):
@@ -94,7 +98,7 @@ def next_es_slot(after, taken):
         after = max(after, dt.datetime.strptime(until, "%Y-%m-%d").replace(tzinfo=quota.ET))
     day = after.date()
     for _ in range(14):
-        for t in ES_TIMES:
+        for t in es_times():
             when = dt.datetime.strptime(f"{day} {t}", "%Y-%m-%d %I:%M %p").replace(tzinfo=quota.ET)
             if when >= after and (str(day), t) not in taken:
                 return [str(day), t]
