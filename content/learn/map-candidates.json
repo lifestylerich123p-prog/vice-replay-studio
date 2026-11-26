@@ -509,10 +509,11 @@
    "grid": null,
    "claim_status": "confirmed",
    "sources": [
-    "https://www.rockstargames.com/VI/downloads"
+    "https://www.rockstargames.com/VI/downloads",
+    "https://gta.wiki/w/Abismo_Key"
    ],
-   "status": "researching",
-   "notes": "Spanish-only idea; each label must be located on the HD poster (marker test) before the map cards; the meaning of each Spanish word is dictionary fact.",
+   "status": "produced",
+   "notes": "Spanish-only Short gta6-nombres-espanol-mapa-es (Wed Dec 9 12:30 PM ET). Labels read by eye on the HD poster. 'Borrachero' NOT defined (meaning unverified; may be a plant name). Abismo = Bahia Honda per GTA Wiki only.",
    "langs": [
     "es"
    ],

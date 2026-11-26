@@ -1,0 +1,254 @@
+{
+ "title": "GTA 6: los lugares con nombre en español del mapa",
+ "slug": "gta6-nombres-espanol-mapa-es",
+ "series": "Map Spots",
+ "series_id": "hidden",
+ "format": "news",
+ "mood": "bright",
+ "use_gameplay": false,
+ "es_only": true,
+ "style": "vice (lettering cards + official map steps/zoom, Nov 26 Phase 6)",
+ "short_title": "GTA 6's map has places with Spanish names #GTA6 #Shorts",
+ "short_description": "Spanish-channel-only Short (Phase 6 #4: Spanish place names printed on Rockstar's official map; hook test arm: visual-reveal).",
+ "short_es": {
+  "title": "GTA 6 tiene lugares en ESPAÑOL en el mapa 🗺️ #GTA6 #Shorts",
+  "description": "El mapa oficial de GTA 6 (Leonida) tiene lugares con nombre en español: Riquezas Keys, junto a la base aérea Mile Zero; Abismo Key, en la carretera de los cayos entre Southwind y Key Lento; y Borrachero Sound, en la costa oeste junto a Wild Hog Point. Según la GTA Wiki, Abismo Key se inspira en Bahía Honda, en los cayos de Florida (Rockstar no lo ha dicho). ¿Viste otro nombre en español? Sin spoilers.\n\nMapa: Rockstar Games (mapa oficial de Leonida, rockstargames.com/VI/downloads). Fuentes: Rockstar Games, GTA Wiki.",
+  "tags": [
+   "GTA 6 mapa",
+   "GTA 6 nombres en español",
+   "GTA 6 Riquezas Keys",
+   "GTA 6 Abismo Key",
+   "GTA 6 Borrachero Sound",
+   "GTA 6 cayos",
+   "GTA 6 secretos",
+   "GTA 6 español",
+   "GTA VI"
+  ],
+  "title_options": [
+   "GTA 6 tiene lugares en ESPAÑOL en el mapa 🗺️ #GTA6 #Shorts",
+   "GTA 6: el mapa habla ESPAÑOL 🗺️ #GTA6 #Shorts"
+  ]
+ },
+ "short_playlist": "GTA 6 Shorts",
+ "short_pinned_comment_es": "¿Viste otro nombre en español en el mapa? Escríbelo 👇",
+ "pinned_comment": "Spot another Spanish name on the map? 👇",
+ "tags": [
+  "GTA 6 map Spanish names",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gta6mapa",
+  "#gta6español"
+ ],
+ "site_target_es": "/es/guias/mapa-gta-6/",
+ "hook_type": "visual-reveal",
+ "hook_type_es": "visual-reveal",
+ "first_frame": "map steps: three numbered pins on Rockstar's official map (Borrachero Sound, Riquezas Keys, Abismo Key)",
+ "hook_test": "Phase 6 #3 Spanish hook test arm: visual-reveal ('Mira el mapa...') with all three pins already on screen",
+ "claim_status": "confirmed",
+ "claims": [
+  {
+   "claim": "Rockstar's official map labels Borrachero Sound (west coast by Wild Hog Point), Riquezas Keys (by Mile Zero Air Station) and Abismo Key (on the Keys highway between Southwind and Key Lento)",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "Borrachero",
+    "Riquezas",
+    "Abismo"
+   ],
+   "wording": "fact",
+   "confidence": "high",
+   "evidence": [
+    {
+     "url": "https://www.rockstargames.com/VI/downloads",
+     "type": "official",
+     "published": "2026-11-19",
+     "checked": "visual",
+     "supports": "All three labels printed on the HD Leonida poster (media/official/leonida-map-poster.jpg); marker test at mappins 'Borrachero Sound', 'Riquezas Keys', 'Abismo Key'",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "Abismo Key is modelled on Bahia Honda Key (Florida Keys)",
+   "material": false,
+   "kind": "game",
+   "keywords": [
+    "Bahía Honda"
+   ],
+   "wording": "hedged",
+   "confidence": "low",
+   "evidence": [
+    {
+     "url": "https://gta.wiki/w/Abismo_Key",
+     "type": "wiki",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "'primarily a rendition of Bahia Honda Key'; Bahia Honda = 'deep bay', abismo = abyss",
+     "copies": null
+    }
+   ]
+  }
+ ],
+ "sources": [
+  "Rockstar Games - official Leonida map (GTA VI downloads; labels Borrachero Sound, Riquezas Keys, Abismo Key): https://www.rockstargames.com/VI/downloads",
+  "GTA Wiki - Abismo Key (inspired by Bahia Honda Key, per the wiki): https://gta.wiki/w/Abismo_Key"
+ ],
+ "facts_note": "Nov 26 Phase 6: labels read by eye off Rockstar's HD poster (direct visual inspection). 'Borrachero' is NOT defined in the video (its meaning couldn't be verified; it may be a plant name in parts of Latin America). Bahia Honda link = GTA Wiki only, said as 'según la GTA Wiki'.",
+ "short": [
+  {
+   "headline": "NOMBRES EN ESPAÑOL",
+   "headline_es": "NOMBRES EN ESPAÑOL",
+   "text": "Look at GTA 6's official map: there are places with Spanish names.",
+   "text_es": "Mira el mapa oficial de GTA seis: hay lugares con nombre en español.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "steps",
+    "steps": [
+     {
+      "at": "Borrachero Sound",
+      "label": "Borrachero Sound"
+     },
+     {
+      "at": "Riquezas Keys",
+      "label": "Riquezas Keys"
+     },
+     {
+      "at": "Abismo Key",
+      "label": "Abismo Key"
+     }
+    ],
+    "src": "Map: Rockstar Games (official)"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "steps",
+    "steps": [
+     {
+      "at": "Borrachero Sound",
+      "label": "Borrachero Sound"
+     },
+     {
+      "at": "Riquezas Keys",
+      "label": "Riquezas Keys"
+     },
+     {
+      "at": "Abismo Key",
+      "label": "Abismo Key"
+     }
+    ],
+    "src": "Mapa oficial de Rockstar",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "RIQUEZAS KEYS",
+   "headline_es": "RIQUEZAS KEYS",
+   "text": "Riquezas Keys, right next to Mile Zero air base.",
+   "text_es": "Riquezas Keys, justo al lado de la base aérea Mile Zero.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Riquezas Keys",
+    "label": "Riquezas Keys",
+    "n": 1,
+    "to": 0.12,
+    "src": "Map: Rockstar Games (official)"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Riquezas Keys",
+    "label": "Riquezas Keys",
+    "n": 1,
+    "to": 0.12,
+    "src": "Mapa oficial de Rockstar",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "ABISMO KEY",
+   "headline_es": "ABISMO KEY",
+   "text": "Abismo Key, on the Keys highway. According to GTA Wiki, it's based on Bahía Honda.",
+   "text_es": "Abismo Key, en la carretera de los cayos. Según la GTA Wiki, se inspira en Bahía Honda.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Abismo Key",
+    "label": "Abismo Key",
+    "n": 2,
+    "to": 0.12,
+    "src": "Map: Rockstar · GTA Wiki"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Abismo Key",
+    "label": "Abismo Key",
+    "n": 2,
+    "to": 0.12,
+    "src": "Mapa: Rockstar · GTA Wiki",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "BORRACHERO SOUND",
+   "headline_es": "BORRACHERO SOUND",
+   "text": "And on the west coast: Borrachero Sound.",
+   "text_es": "Y en la costa oeste: Borrachero Sound.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Borrachero Sound",
+    "label": "Borrachero Sound",
+    "n": 3,
+    "to": 0.2,
+    "src": "Map: Rockstar Games (official)"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Borrachero Sound",
+    "label": "Borrachero Sound",
+    "n": 3,
+    "to": 0.2,
+    "src": "Mapa oficial de Rockstar",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "¿VISTE OTRO?",
+   "headline_es": "¿VISTE OTRO?",
+   "text": "Spot another Spanish name? Comment it.",
+   "text_es": "¿Viste otro nombre en español? Escríbelo en los comentarios.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "SPOT ANOTHER?",
+     "COMMENT IT"
+    ],
+    "pink": [
+     "COMMENT IT"
+    ],
+    "seed": 291
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿VISTE OTRO?",
+     "COMÉNTALO"
+    ],
+    "pink": [
+     "COMÉNTALO"
+    ],
+    "seed": 291,
+    "locale": "es"
+   }
+  }
+ ]
+}

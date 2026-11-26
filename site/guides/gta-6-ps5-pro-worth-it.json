@@ -11,7 +11,7 @@
   "WORTH IT?",
   "vice-city-21.jpg"
  ],
- "lede": "Short answer: <b>the PS5 Pro is the best place to play GTA 6, but it doesn't get you 60 FPS.</b> Every console runs the game at 30 FPS. Here's what the Pro changes, based on Digital Foundry's testing as reported this week.",
+ "lede": "Short answer: <b>the PS5 Pro is the best place to play GTA 6, but it doesn't get you 60 FPS.</b> Every console runs the game at 30 FPS. Here's what the Pro changes, based on Digital Foundry's testing. <i>Updated Nov 26: Rockstar says no 60 FPS mode is coming to consoles before a PC version.</i>",
  "sections": [
   [
    "30 FPS on every console",
@@ -42,6 +42,14 @@
   [
    "Which console is worst for GTA 6?",
    "The Xbox Series S struggles the most, according to the same Digital Foundry testing."
+  ],
+  [
+   "Will GTA 6 get a 60 FPS patch on PS5 Pro?",
+   "Not planned. On November 18, Rockstar's technology production director told Kotaku that the PS5 Pro's CPU can't run GTA 6's simulation at 60 FPS and that a performance mode isn't coming before a PC version (as reported by HotHardware and Notebookcheck). Earlier rumors of a 60 FPS update never came true."
+  ],
+  [
+   "Do you need a PS5 Pro to play GTA 6?",
+   "No. GTA 6 runs at 30 FPS on the regular PS5 and Xbox Series X|S too. The PS5 Pro adds sharper PSSR upscaling and ray-traced shadows, not a higher frame rate."
   ]
  ],
  "gear": [
@@ -64,6 +72,14 @@
   [
    "Archyde: all consoles locked at 30 FPS",
    "https://www.archyde.com/digital-foundry-ps5-pro-best-for-gta-6-series-s-struggles-all-consoles-locked-at-30-fps/"
+  ],
+  [
+   "HotHardware: Rockstar on 60 FPS for PS5 Pro (Nov 18)",
+   "https://hothardware.com/news/rockstar-breaks-silence-gta-6-will-ever-hit-60-fps-ps5-pro"
+  ],
+  [
+   "Notebookcheck: Rockstar's console targets and PS5 Pro upgrades",
+   "https://notebookcheck.net/Rockstar-reveals-GTA-6-console-performance-targets-and-PS5-Pro-upgrades.1447121.0.html"
   ]
  ],
  "pair": "ps5-pro-gta-6-vale-la-pena",

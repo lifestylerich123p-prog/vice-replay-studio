@@ -1035,6 +1035,67 @@
     "basketball",
     "baloncesto"
    ]
+  },
+  {
+   "cat": "places",
+   "at": "Riquezas Keys",
+   "src": [
+    "Rockstar Games (official map)"
+   ],
+   "en": {
+    "t": "Riquezas Keys",
+    "d": "Small keys west of Mile Zero Air Station, one of the Spanish names on Rockstar's map."
+   },
+   "es": {
+    "t": "Riquezas Keys",
+    "d": "Cayos al oeste de la base aérea Mile Zero: uno de los nombres en español del mapa de Rockstar."
+   },
+   "aliases": [
+    "spanish names",
+    "nombres en español",
+    "cayos"
+   ]
+  },
+  {
+   "cat": "places",
+   "at": "Abismo Key",
+   "src": [
+    "Rockstar Games (official map)",
+    "GTA Wiki"
+   ],
+   "en": {
+    "t": "Abismo Key",
+    "d": "Key on the Keys highway between Southwind and Key Lento. GTA Wiki says it's based on Bahia Honda Key (Rockstar hasn't said)."
+   },
+   "es": {
+    "t": "Abismo Key",
+    "d": "Cayo en la carretera de los cayos, entre Southwind y Key Lento. Según la GTA Wiki se inspira en Bahía Honda (Rockstar no lo ha dicho)."
+   },
+   "aliases": [
+    "spanish names",
+    "nombres en español",
+    "cayos"
+   ]
+  },
+  {
+   "cat": "places",
+   "at": "Borrachero Sound",
+   "src": [
+    "Rockstar Games (official map)"
+   ],
+   "en": {
+    "t": "Borrachero Sound",
+    "d": "Bay on the west coast next to Wild Hog Point, labelled on Rockstar's map."
+   },
+   "es": {
+    "t": "Borrachero Sound",
+    "d": "Bahía en la costa oeste junto a Wild Hog Point, marcada en el mapa de Rockstar."
+   },
+   "aliases": [
+    "spanish names",
+    "nombres en español",
+    "bahía"
+   ]
   }
  ]
 }

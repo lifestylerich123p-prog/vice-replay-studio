@@ -509,7 +509,7 @@ def _span_view(im, pts, w, h, pad=1.7, min_share=0.22):
     xs, ys = [p[0] for p in pts], [p[1] for p in pts]
     cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
     need_w = max((max(xs) - min(xs)) * pad, (max(ys) - min(ys)) * pad * w / h, W * min_share)
-    vw = min(need_w, W)
+    vw = min(need_w, W, H * w / h)  # never wider than the map can fill: no black bands (Phase 6 check)
     return cx, cy, vw, vw * h / w
 
 
@@ -574,9 +574,11 @@ def map_steps(spec, t, w, h):
     for _ in range(12):  # the view is pushed inside the printed map: widen it until every stop is well inside
         x0, y0 = _map_view(im.size[0], im.size[1], pts[-1][0], pts[-1][1], cx, cy, vw, vh, 1.0)
         fp = [_to_frame(p, x0, y0, vw, vh, w, h) for p in pts]
-        if all(0.12 * w <= x <= 0.88 * w and 0.15 * h <= y <= 0.85 * h for x, y in fp) or vw >= im.size[0]:
+        maxw = min(im.size[0], im.size[1] * w / h)  # wider than this leaves black bands above/below the map
+        if all(0.12 * w <= x <= 0.88 * w and 0.15 * h <= y <= 0.85 * h for x, y in fp) or vw >= maxw:
             break
-        vw, vh = min(im.size[0], vw * 1.18), min(im.size[0], vw * 1.18) * h / w
+        vw = min(maxw, vw * 1.18)
+        vh = vw * h / w
     frame = _map_crop(im, x0, y0, vw, vh, w, h)
     d = ImageDraw.Draw(frame)
     each = dur * 0.8 / len(stops)
