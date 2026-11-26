@@ -1,0 +1,230 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-sell-jewelry-where",
+ "title": "GTA 6: Where to Sell Jewelry (Best Fence)",
+ "short_title": "GTA 6 where to sell jewelry: best fence 💎 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 where to sell jewelry: best fence 💎 #GTA6 #Shorts",
+  "GTA 6 pawn shops won't buy jewelry: here's who will #GTA6 #Shorts",
+  "Where do you sell jewelry in GTA 6? #GTA6 #Shorts"
+ ],
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete: 'gta 6 where to sell jewelry', 'gta 6 sell jewelry')",
+ "short_description": "Where to sell jewelry in GTA 6: Yasmani, the fence in Little Cuba (Vice City), pays the most for jewelry, from Chapter 3. Before that, Dunk in Port Gellhorn (Chapter 2) buys it for less, and Tyrone in La Perle pays a medium rate. Pawn shops don't take stolen jewelry. Once Yasmani is open you can also drop goods at your garage and pick the fence (it takes longer). Rates come from fan guides: check the fence's rate on your map. No story spoilers.\n\n📍 Map Spot #11 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nSources: Game8, Beebom, Sportskeeda, Libertycity, Game Rant, GAMES.GG.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: dónde VENDER joyas 💎 #GTA6 #Shorts",
+  "description": "Dónde vender joyas en GTA 6: Yasmani, el perista de Little Cuba, paga lo máximo por las joyas desde el capítulo 3. Antes, Dunk en Port Gellhorn (capítulo 2) las compra por menos. Las casas de empeño no aceptan joyas robadas. Fuentes: Game8, Beebom, Sportskeeda, Libertycity.\n\n📍 Lugar #11 de nuestra serie del mapa de GTA 6: todos están en la lista \"GTA 6 Map: Where to Find It\".",
+  "tags": [
+   "GTA 6 vender joyas",
+   "GTA 6 perista",
+   "GTA 6 Little Cuba",
+   "GTA 6 español",
+   "GTA 6 dinero"
+  ]
+ },
+ "pinned_comment": "Found him? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)",
+ "tags": [
+  "GTA 6 where to sell jewelry",
+  "GTA 6 sell jewelry",
+  "GTA 6 fence locations",
+  "GTA 6 Yasmani",
+  "GTA 6 Little Cuba",
+  "GTA 6 money",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6money"
+ ],
+ "sources": [
+  "Game8 - Where to sell jewelry: https://game8.co/games/GTA-6/archives/639589",
+  "Beebom - How to rob jewelry stores in GTA 6 (where to sell): https://beebom.com/gta-6-jewelry-stores-robberies-guide/",
+  "Sportskeeda - Best GTA 6 fence locations: https://www.sportskeeda.com/gta/best-gta-6-fence-locations-sell-narcotics-jewelry-marked-bills",
+  "Libertycity - GTA 6 fence locations: https://libertycity.net/guides/gta-6/10485-gta-6-fence-locations-where-to-sell.html",
+  "Game Rant - Where to sell stolen goods: https://gamerant.com/gta-6-where-to-sell-stolen-goods-after-brian-retires/",
+  "GAMES.GG - Fences, where to sell stolen jewelry: https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-fences-where-to-sell-stolen-jewelry/"
+ ],
+ "facts_note": "Nov 26 (owner DO IT: map Shorts replace versus/fact ones; search gap 'gta 6 where to sell jewelry'): Yasmani, Little Cuba, best for jewelry from Chapter 3 (Game8, Beebom, Sportskeeda, Libertycity, PC Gamer via the search agent); Dunk, Port Gellhorn, Chapter 2, low rate; pawn shops refuse stolen jewelry (Sportskeeda + Game8). Rates are fan-guide data: said as 'pays the most'. Narcotics deliberately not mentioned. Read from search summaries: re-check right before upload.",
+ "short": [
+  {
+   "headline": "SELL JEWELRY",
+   "headline_es": "VENDE JOYAS",
+   "text": "The best place to sell jewelry in GTA 6 is Little Cuba.",
+   "text_es": "El mejor sitio para vender joyas en GTA seis está en Little Cuba.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "SELL YOUR",
+     "JEWELRY HERE"
+    ],
+    "pink": [
+     "JEWELRY HERE"
+    ],
+    "sub": "best fence in GTA 6",
+    "seed": 241
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "VENDE TUS",
+     "JOYAS AQUÍ"
+    ],
+    "pink": [
+     "JOYAS AQUÍ"
+    ],
+    "sub": "el mejor perista",
+    "seed": 241
+   }
+  },
+  {
+   "headline": "LITTLE CUBA",
+   "headline_es": "LITTLE CUBA",
+   "text": "Yasmani, in Little Cuba, pays the most for jewelry.",
+   "text_es": "Yasmani, en Little Cuba, paga lo máximo por las joyas.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Little Cuba",
+    "label": "Yasmani (fence)",
+    "n": 1,
+    "src": "Game8 · Beebom · Sportskeeda"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Little Cuba",
+    "label": "Yasmani (perista)",
+    "n": 1,
+    "src": "Game8 · Beebom · Sportskeeda",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "CHAPTER 3",
+   "headline_es": "CAPÍTULO 3",
+   "text": "He opens up in Chapter 3.",
+   "text_es": "Se abre en el capítulo tres.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Opens in Chapter 3",
+    "pink": [
+     "Chapter 3"
+    ],
+    "src": "Game8 · Libertycity",
+    "seed": 242,
+    "bg": "photo:media/official/vice-city-15.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Se abre en el capítulo 3",
+    "pink": [
+     "capítulo 3"
+    ],
+    "src": "Game8 · Libertycity",
+    "seed": 242,
+    "bg": "photo:media/official/vice-city-15.jpg"
+   }
+  },
+  {
+   "headline": "BEFORE THAT",
+   "headline_es": "ANTES",
+   "text": "Before that, Dunk in Port Gellhorn buys it, for less.",
+   "text_es": "Antes, Dunk en Port Gellhorn las compra, pero por menos.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Early: Dunk, Port Gellhorn (pays less)",
+    "pink": [
+     "Dunk"
+    ],
+    "src": "Sportskeeda · Libertycity",
+    "seed": 243,
+    "bg": "photo:media/official/port-gellhorn-06.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Antes: Dunk, Port Gellhorn (paga menos)",
+    "pink": [
+     "Dunk"
+    ],
+    "src": "Sportskeeda · Libertycity",
+    "seed": 243,
+    "bg": "photo:media/official/port-gellhorn-06.jpg"
+   }
+  },
+  {
+   "headline": "NOT PAWN SHOPS",
+   "headline_es": "NO EN EMPEÑOS",
+   "text": "Pawn shops won't take stolen jewelry at all.",
+   "text_es": "Las casas de empeño no aceptan joyas robadas.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Pawn shops: NO stolen jewelry",
+    "pink": [
+     "NO"
+    ],
+    "src": "Sportskeeda · Game8",
+    "seed": 244,
+    "bg": "photo:media/official/vice-city-03.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Empeños: NO joyas robadas",
+    "pink": [
+     "NO"
+    ],
+    "src": "Sportskeeda · Game8",
+    "seed": 244,
+    "bg": "photo:media/official/vice-city-03.jpg"
+   }
+  },
+  {
+   "headline": "FOUND HIM?",
+   "headline_es": "¿LO ENCONTRASTE?",
+   "text": "Found him? Comment yes, because",
+   "text_es": "¿Lo encontraste? Comenta sí, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FOUND HIM?",
+     "COMMENT YES"
+    ],
+    "pink": [
+     "COMMENT YES"
+    ],
+    "seed": 245
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
+    ],
+    "pink": [
+     "COMENTA SÍ"
+    ],
+    "seed": 245
+   }
+  }
+ ],
+ "spot": 11,
+ "cta": "SPOT #12 NEXT: FOLLOW",
+ "cta_es": "LUGAR #12 PRONTO: SÍGUENOS"
+}
