@@ -379,3 +379,11 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   The Spanish problem is DISTRIBUTION (31 views in 28 days, 0 subscribers), not retention: fix reach first (consistent
   2/day Spanish slots, Spanish search phrases in titles, Spanish-first topics), keep testing hooks. xplat now skips
   zero-view videos in % viewed medians.
+- 2026-11-26 (Phase 8, competitors, PRELIMINARY: single channels, public view counts; content/learn/competitors-2026-11-26.md):
+  (1) Spanish titles pairing a number with 'secreto/secretas' beat plain 'ubicación' titles on the same channel (FAZZGTA:
+  '3 Ubicaciones Secretas' 79K vs 0.6-1.8K); across 294 Spanish GTA 6 videos 'secreto' titles ran 781 views/h vs 370 for
+  'ubicación'. (2) Re-using a winning title frame as a numbered series kept working for others (JayWayy '5 Things You
+  Didn't Know' x6, Vandal '5 DETALLES' then 'Otros 5'). (3) Map-scale Shorts built only on map graphics reached 6M
+  (VicePulse) - the one top format that needs no gameplay. Spanish phrases typed in 5/5 countries: 'gta 6 lugares
+  secretos', 'gta 6 secretos', 'gta 6 mapa oficial/interactivo', 'gta 6 tienda de zapatos'. Our booked Spanish titles
+  already lead with these phrases; apply 'N lugares SECRETOS' when a Short covers 2-3 verified spots (never padding).

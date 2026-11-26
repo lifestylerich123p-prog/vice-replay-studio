@@ -18,6 +18,10 @@ It has its own identity: it is not a translated copy of the English channel. Rea
 
 - Spanish identity, not a translated copy: Hialeah/Balsero, Little Cuba, Spanish place names on the map, Miami landmarks, Cuban-American and Latino references, useful guides. Community theories are labelled as theories; decide hook structures from % viewed by hook type (studio.xplat "Spanish hooks"), n >= 5 per structure before favoring one.
 
+- Competitors (Nov 26, preliminary): number + 'secretos' titles ('3 lugares SECRETOS') beat plain 'ubicación' titles;
+  a winning title frame can become a numbered series; phrases typed in 5/5 Spanish markets: 'gta 6 lugares secretos',
+  'gta 6 secretos', 'gta 6 mapa oficial', 'gta 6 tienda de zapatos' (content/learn/competitors-2026-11-26.md).
+
 ## What wins in Spanish (research Nov 26, docs/ES-RECOVERY.md; re-check weekly)
 - Secrets and easter eggs framed as discoveries: "TRUCO SECRETO", "SE HA RESUELTO EL EASTER EGG",
   "DETALLES ALUCINANTES", "¿Qué pasa si...?", "dónde está". Titles start with "GTA 6" (the gate holds

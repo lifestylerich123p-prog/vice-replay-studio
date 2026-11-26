@@ -544,6 +544,32 @@
    ],
    "credits": 0,
    "checked": "2026-11-26"
+  },
+  {
+   "key": "map-scale",
+   "family": "map",
+   "title_en": "How big is GTA 6's map? (on the official map)",
+   "title_es": "GTA 6: el mapa es ENORME, compáralo 🗺️",
+   "search": [
+    "gta 6 map size",
+    "gta 6 mapa tamaño"
+   ],
+   "keywords": [
+    "map size",
+    "tamaño del mapa"
+   ],
+   "place": "whole Leonida map (official poster)",
+   "grid": null,
+   "claim_status": "confirmed",
+   "sources": [],
+   "status": "researching",
+   "notes": "Competitor evidence (preliminary): map-scale Shorts on map graphics reached 6.07M/6.24M (VicePulse). Needs 2 independent sources for any size figure; must be a map card, not a versus card (owner Nov 26). Site guide gta-6-map-size exists for the hand-off.",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
   }
  ],
  "spanish_seeds_2026_11_26": [
