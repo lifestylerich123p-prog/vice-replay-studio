@@ -22,15 +22,20 @@ EGGS = [("Egg tower", "Egg tower", None), ("UFO abduction", "UFO · after 2 AM",
         ("Dexter's apartment", "Dexter's apartment", None), ("Giant crab", "Giant crab", "left"),
         ("Cool Dog on a jet ski", "Cool Dog", "left"), ("Paul Walker's car", "Paul Walker's car", "left"),
         ("The NPC who knows it's a game", "Self-aware NPC", None), ("Arthur Morgan's hat", "Arthur Morgan's hat", None),
-        ("A Red Dead book", "Red Dead book", None), ("Tommy Vercetti's portal", "Tommy Vercetti portal", None)]
+        ("A Red Dead book", "Red Dead book", None), ("Tommy Vercetti's portal", "Tommy Vercetti portal", None),
+        # Nov 26: the week's new finds (owner "GO": every map Short's spot is on the site)
+        ("The Backrooms", "Backrooms", None), ("Silent Hill hotel (Marbelle Hotel)", "Silent Hill hotel", None),
+        ("Ninja Turtles drain", "Ninja Turtles", "left"), ("Ghost ship (St. Lucia Lighthouse)", "Ghost ship", None)]
 PICTURES = [  # file, pins (EGGS numbers), crop, width, alt, heading
-    ("gta-6-easter-eggs-map.jpg", list(range(1, 12)), "pins", 1800,
+    ("gta-6-easter-eggs-map.jpg", list(range(1, 16)), "pins", 1800,
      "GTA 6 easter egg locations pinned on Rockstar's official Leonida map", None),
-    ("gta-6-secrets-north-hd.jpg", [2, 8, 9, 10], "pins", 2000,
-     "UFO, Arthur Morgan's hat, the Red Dead book and the self-aware NPC's house on the official map of north Leonida",
+    ("gta-6-secrets-north-hd.jpg", [2, 8, 9, 10, 12, 14, 15], "pins", 2000,
+     "UFO, Arthur Morgan's hat, the Red Dead book, the self-aware NPC's house, the Backrooms, the Ninja Turtles drain and "
+     "the ghost ship lighthouse on the official map of north Leonida",
      "Close-up: north Leonida (high resolution)"),
-    ("gta-6-secrets-vice-city-hd.jpg", [4, 7], "Vice City", 2000,
-     "Dexter's apartment and Paul Walker's car on the official map of Vice City", "Close-up: Vice City (high resolution)"),
+    ("gta-6-secrets-vice-city-hd.jpg", [4, 7, 13], "Vice City", 2000,
+     "Dexter's apartment, Paul Walker's car and the Silent Hill hotel on the official map of Vice City",
+     "Close-up: Vice City (high resolution)"),
     ("gta-6-secrets-south-hd.jpg", [1, 3, 5, 6, 11], "pins", 2000,
      "Egg tower, Skunk Ape, giant crab, Cool Dog and the Tommy Vercetti portal on the official map of south Leonida",
      "Close-up: south Leonida (high resolution)"),

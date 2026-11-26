@@ -620,7 +620,8 @@ FAQS = {
  "gta-6-unlock-time": [("What time does GTA 6 unlock?", "At midnight local time on November 19, 2026, region by region. New Zealand is first, around 6 AM Eastern on November 18, according to PlayStation Store listings."),
                        ("When does GTA 6 start on Xbox Cloud Gaming?", "At 1 AM Eastern on November 19, according to Forbes.")],
  "gta-6-pc-release-date": [("Is GTA 6 on PC?", "Not at launch. GTA 6 launches November 19, 2026 on PS5 and Xbox Series X|S only."),
-                           ("When is the GTA 6 PC release date?", "There's no official date. A GamesBeat report says early 2027 (January to March), but Rockstar hasn't confirmed it.")],
+                           ("When is the GTA 6 PC release date?", "There's no official date. A GamesBeat report says early 2027 (January to March), but Rockstar hasn't confirmed it; PC Gamer expects November 2027 or later."),
+                           ("Can I download GTA 6 on PC?", "No. There is no PC version yet, so every GTA 6 PC download, key or 'port' is fake, pirated or malware.")],
   "gta-6-launch-checklist": [("How much is GTA 6?", "$79.99 for the standard edition and $99.99 for the Ultimate edition in the US."),
                             ("Is GTA Online in GTA 6 at launch?", "No. The new GTA Online isn't there on day one; it's expected sometime in 2027.")],
  "gta-6-new-zealand-trick": [("Does the New Zealand trick work for GTA 6?", "It's unconfirmed. Guides describe changing your Xbox region; on PS5 the store region is tied to your account. It can break platform rules, so it's a risk.")],
@@ -736,21 +737,23 @@ guide("gta-6-cheats", "GTA 6 Cheat Codes: Money, Armor, Ammo + How to Unlock",
 {sources([("GameSpot: all GTA 6 cheats and how to unlock them","https://www.gamespot.com/articles/all-gta-6-cheats-and-how-to-unlock-them/"),("Vice: all GTA 6 cheat codes","https://www.vice.com/en/article/gta-6-cheat-codes-list/"),("GamesRadar: all GTA 6 cheats and how to unlock them","https://www.gamesradar.com/games/grand-theft-auto/gta-6-cheats/"),("PC Gamer: all GTA 6 cheats and how to unlock them","https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"),("Insider Gaming: all GTA 6 cheats","https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/"),("VGTimes on Eurogamer's testing: cheats locked behind the story","https://vgtimes.com/gaming-news/175043-gta-6-locks-cheats-behind-the-main-story-and-disables-saving.html"),("Screen Rant: GTA 6 cheats for PS5 and Xbox","https://screenrant.com/gta-6-cheats-ps5-xbox/")])}""")
 
 # 7-10. News articles (Nov 17)
-guide("gta-6-pc-release-date", "Is GTA 6 on PC? PC Release Date and What's Actually Reported",
- "GTA 6 is out on PS5 and Xbox Series X|S only. Here's what Take-Two has said about PC, the reported early 2027 window, and what's still unconfirmed.",
- "2026-11-17", f"""<h1>GTA 6 on PC: <span>when?</span></h1>
-<p class="meta">Updated November 17, 2026 · Vice Replay</p>
-<p class="lede">GTA 6 came out on November 19, 2026, on <b>PS5 and Xbox Series X|S only</b>. There is still no official PC release date (checked November 24: Take-Two says PC news will come from Rockstar). Here's what's known and what's only reported.</p>
+guide("gta-6-pc-release-date", "Is GTA 6 on PC? No Date Yet (Early 2027 Only Reported)",
+ "No: GTA 6 is on PS5 and Xbox Series X|S only, with no official PC date. Early 2027 is only a report; PC Gamer expects late 2027 or later. Every PC download is fake.",
+ "2026-11-17", f"""<h1>GTA 6 on PC: <span>not yet</span></h1>
+<p class="meta">Updated November 26, 2026 · Vice Replay</p>
+<p class="lede"><b>Short answer: no.</b> GTA 6 came out on November 19, 2026, on <b>PS5 and Xbox Series X|S only</b>, and there is still no official PC release date (checked November 26: no announcement from Rockstar or Take-Two). Early 2027 is only a report, and any "GTA 6 PC download" you see is fake. Here's what's known and what's only reported.</p>
+<h2>Every "GTA 6 PC download" is fake</h2>
+<p>There is no PC version to download, so every "GTA 6 PC download", key, "beta" or "port" link is a scam, a pirated console build or malware. Take-Two has said it is stepping up its defences against unofficial PC clones. Wait for the announcement on Rockstar's own channels.</p>
 <h2>What's official</h2>
 <p>Take-Two and Rockstar have only announced console versions. Take-Two CEO Strauss Zelnick has defended the console-first plan, saying Rockstar "always starts on console" and serves its core audience first.</p>
 <h2>What's reported: early 2027</h2>
 <p>According to a GamesBeat report citing four anonymous industry sources, Rockstar is reportedly aiming for a PC release between <b>January and March 2027</b>. Rockstar and Take-Two have not confirmed it. Some outlets also read Take-Two's financial outlook as a hint at early 2027, but that's an interpretation, not an announcement.</p>
 <h2>History says: wait</h2>
-<p>Rockstar's last big games followed the same pattern. GTA 5 reached PC about a year and a half after its console launch, and Red Dead Redemption 2 about a year after. A wait of a few months would actually be faster than usual.</p>
+<p>Rockstar's last big games followed the same pattern. GTA 5 reached PC about a year and a half after its console launch, and Red Dead Redemption 2 about a year after. A wait of a few months would actually be faster than usual; PC Gamer, going by that history, doesn't expect the PC version before November 2027.</p>
 <h2>What PC players can do now</h2>
 <ul class="list"><li>Don't buy "GTA 6 PC" keys or downloads: there's no PC version, so they're scams.</li><li>Watch Rockstar's official channels for the real announcement.</li><li>Playing on console? <a href="/guides/gta-6-storage/">Make room for the 212 GB install.</a></li></ul>
 {gearbox(GAME + STORAGE, "Playing on console at launch? These searches show current options and prices:")}
-{sources([("GodisaGeek: PC reportedly targets Q1 2027","https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"),("Outlook Respawn: PC reportedly early 2027","https://respawn.outlookindia.com/gaming/gaming-news/gta-6-pc-release-reportedly-targets-early-2027"),("tbreak: Take-Two CEO on console-first","https://tbreak.com/gta-6-pc-release-delayed-console-first/"),("Gfinity: GTA 6 platforms explained","https://www.gfinityesports.com/article/will-gta-6-come-to-pc-at-launch-platforms-explained")])}""")
+{sources([("GodisaGeek: PC reportedly targets Q1 2027","https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"),("Outlook Respawn: PC reportedly early 2027","https://respawn.outlookindia.com/gaming/gaming-news/gta-6-pc-release-reportedly-targets-early-2027"),("tbreak: Take-Two CEO on console-first","https://tbreak.com/gta-6-pc-release-delayed-console-first/"),("Gfinity: GTA 6 platforms explained","https://www.gfinityesports.com/article/will-gta-6-come-to-pc-at-launch-platforms-explained"),("PC Gamer: when is GTA 6 coming to PC?","https://www.pcgamer.com/games/grand-theft-auto/gta-6-pc-release-date/"),("TweakTown: Take-Two strengthens defences against GTA 6 PC clones","https://www.tweaktown.com/news/114606/take-two-strengthens-legal-defenses-against-ai-built-gta-6-pc-clones/index.html"),("GadgetReview: Take-Two warns of AI-assisted GTA 6 piracy","https://www.gadgetreview.com/?p=428394")])}""", modified="2026-11-26")
 
 guide("gta-6-launch-streams", "GTA 6 Launch Streams: YouTube's 24-Hour Livestream and Kai Cenat's 100% Marathon",
  "Where to watch GTA 6 on launch night: YouTube's 24-hour livestream with 30+ creators starting November 19, plus Kai Cenat's plan to 100% the game on stream.",
@@ -882,17 +885,18 @@ guide("hora-de-lanzamiento-gta-6", "GTA 6: a qué hora se desbloquea en cada pa�
 {sources([("Push Square","https://www.pushsquare.com/guides/gta-6-release-times-when-can-you-start-playing"),("Forbes: Xbox Cloud Gaming","https://www.forbes.com/sites/brianmazique/2026/11/16/xbox-just-revealed-the-exact-hour-gta-6-starts-streaming-and-it-isnt-midnight/")])}""",
  faq=[("¿A qué hora sale GTA 6?", "A la medianoche hora local del 19 de noviembre de 2026, región por región. Revisa la hora exacta en la tienda de tu consola.")], lang="es")
 
-guide("gta-6-pc", "GTA 6 en PC: fecha de salida y lo que se sabe",
+guide("gta-6-pc", "GTA 6 en PC: sin fecha todavía (lo que se sabe)",
  "GTA 6 sale solo en PS5 y Xbox Series X|S. Lo que dijo Take-Two sobre PC, la fecha reportada de principios de 2027 y lo que aún no está confirmado.",
  "2026-11-18", f"""<h1>GTA 6 en PC: <span>¿cuándo?</span></h1>
-<p class="meta">Actualizado el 18 de noviembre de 2026 · Vice Replay</p>
-<p class="lede">GTA 6 salió el 19 de noviembre de 2026 <b>solo en PS5 y Xbox Series X|S</b>. Todavía no hay fecha oficial para PC (revisado el 24 de noviembre).</p>
+<p class="meta">Actualizado el 26 de noviembre de 2026 · Vice Replay</p>
+<p class="lede"><b>Respuesta corta: no.</b> GTA 6 salió el 19 de noviembre de 2026 <b>solo en PS5 y Xbox Series X|S</b>. Todavía no hay fecha oficial para PC (revisado el 26 de noviembre), y cualquier "descarga de GTA 6 para PC" es falsa.</p>
 <h2>Lo oficial</h2><p>Take-Two solo anunció consolas. Su CEO, Strauss Zelnick, dijo que Rockstar "siempre empieza en consola".</p>
 <h2>Lo reportado: principios de 2027</h2><p>Según un reporte de GamesBeat con fuentes anónimas, la versión de PC apuntaría a <b>enero-marzo de 2027</b>. Rockstar no lo ha confirmado.</p>
-<h2>Cuidado</h2><p>No compres "claves de GTA 6 para PC": no existe esa versión, son estafas.</p>
+<h2>Cuidado: toda "descarga para PC" es falsa</h2><p>No existe versión de PC, así que cualquier descarga, clave, "beta" o "port" de GTA 6 para PC es una estafa, una copia pirata o malware. PC Gamer, por el historial de Rockstar, no espera la versión de PC antes de noviembre de 2027.</p>
 {gearbox(GAME + STORAGE, "¿Vas a jugar en consola? Enlaces (Amazon EE. UU.):")}
-{sources([("GodisaGeek","https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"),("tbreak","https://tbreak.com/gta-6-pc-release-delayed-console-first/")])}""",
- faq=[("¿GTA 6 sale en PC?", "No en el lanzamiento. No hay fecha oficial; un reporte habla de principios de 2027, sin confirmar.")], lang="es")
+{sources([("GodisaGeek","https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"),("tbreak","https://tbreak.com/gta-6-pc-release-delayed-console-first/"),("PC Gamer","https://www.pcgamer.com/games/grand-theft-auto/gta-6-pc-release-date/")])}""",
+ faq=[("¿GTA 6 sale en PC?", "No en el lanzamiento. No hay fecha oficial; un reporte habla de principios de 2027, sin confirmar."),
+      ("¿Se puede descargar GTA 6 en PC?", "No. Todavía no existe versión de PC: cualquier descarga, clave o 'port' es falso, pirata o malware.")], lang="es", modified="2026-11-26")
 
 guide("gta-6-lanzamiento-en-vivo", "GTA 6 en vivo: parches, récords y noticias tras el lanzamiento",
  "Noticias de GTA 6, de la más nueva a la más vieja: notas del parche, récords de ventas y de streaming, The Game Awards y PC. Todo revisado en 2+ fuentes.",

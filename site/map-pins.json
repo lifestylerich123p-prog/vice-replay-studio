@@ -1,6 +1,6 @@
 {
  "about": "Pins for the interactive map (tools/site_guides.py interactive_map). 'at' = a place name printed on Rockstar's official map or its grid cell (studio.mappins.where); dx/dy nudge the pin (fractions of the map). Every spot needs 2+ guides in 'src'; say so in the text when guides disagree. No story spoilers, nothing from leaks, nothing sexualized.",
- "checked": "2026-11-24",
+ "checked": "2026-11-26",
  "cats": [
   {
    "id": "places",
@@ -661,6 +661,333 @@
     "zapatos",
     "zapatería",
     "tienda de zapatos"
+   ]
+  },
+  {
+   "cat": "eggs",
+   "at": "Lake Tallaloko",
+   "dx": 0.008,
+   "dy": 0.005,
+   "src": [
+    "GAMES.GG",
+    "Xbox Play",
+    "Final Boss",
+    "GTA6 Track",
+    "Game Rant"
+   ],
+   "en": {
+    "t": "The Backrooms",
+    "d": "A small dig site on the east shore of Lake Tallaloko, north of Millport: walk into the open orange shipping container and use the item on the table at the back. Guides disagree on what the item is."
+   },
+   "es": {
+    "t": "Los Backrooms",
+    "d": "Una pequeña excavación en la orilla este de Lake Tallaloko, al norte de Millport: entra en el contenedor naranja abierto y usa el objeto de la mesa del fondo. Las guías no coinciden en qué objeto es."
+   },
+   "aliases": [
+    "backrooms",
+    "container",
+    "contenedor"
+   ]
+  },
+  {
+   "cat": "eggs",
+   "at": "Crosstown",
+   "src": [
+    "VGC",
+    "Dexerto",
+    "Hold to Reset",
+    "TheClick",
+    "Playnews"
+   ],
+   "en": {
+    "t": "Silent Hill hotel (Marbelle Hotel)",
+    "d": "An abandoned hotel in southern Crosstown, on NW 8th Street near the Nine1Nine club. Go in the back door and upstairs: the lights die and fog covers the city. The ground-floor safe code is 955214."
+   },
+   "es": {
+    "t": "Hotel de Silent Hill (Marbelle Hotel)",
+    "d": "Un hotel abandonado en el sur de Crosstown, en NW 8th Street, cerca del club Nine1Nine. Entra por la puerta de atrás y sube: se apagan las luces y la niebla cubre la ciudad. La clave de la caja fuerte de la planta baja es 955214."
+   },
+   "aliases": [
+    "silent hill",
+    "marbelle",
+    "fog",
+    "niebla",
+    "safe code"
+   ]
+  },
+  {
+   "cat": "eggs",
+   "at": "Millport",
+   "dx": -0.0147,
+   "dy": -0.0129,
+   "src": [
+    "VGTimes",
+    "Middle East Gamer",
+    "Complex",
+    "GTA Culture"
+   ],
+   "en": {
+    "t": "Ninja Turtles drain",
+    "d": "A storm drain just north of Millport, by Lake Tallaloko and the Tallaloko Dam (guides differ: between the town and the lake, or at the dam's pumping station). At night: green ooze under a staircase, four tiny turtles and pizza boxes. Not confirmed by Rockstar."
+   },
+   "es": {
+    "t": "Desagüe de las Tortugas Ninja",
+    "d": "Un desagüe justo al norte de Millport, junto a Lake Tallaloko y la presa (las guías difieren en el punto exacto). De noche: baba verde bajo una escalera, cuatro tortuguitas y cajas de pizza. Rockstar no lo ha confirmado."
+   },
+   "aliases": [
+    "tmnt",
+    "ninja turtles",
+    "tortugas ninja",
+    "turtles"
+   ]
+  },
+  {
+   "cat": "eggs",
+   "at": "Little Hardin Island",
+   "dx": 0.008,
+   "dy": -0.009,
+   "src": [
+    "Dexerto",
+    "VICE",
+    "TechWiser",
+    "TheClick",
+    "gta6.house"
+   ],
+   "en": {
+    "t": "Ghost ship (St. Lucia Lighthouse)",
+    "d": "Start at night at the St. Lucia Lighthouse on Little Hardin Island: climb it, find the keeper's journal, then take a boat east of the lighthouse around 1:30 AM. Dive to the wreck for the Cursed Knife. Guides differ on the start time."
+   },
+   "es": {
+    "t": "Barco fantasma (faro de St. Lucia)",
+    "d": "Empieza de noche en el faro de St. Lucia, en Little Hardin Island: sube, busca el diario del farero y sal en barco al este del faro hacia la 1:30. Bucea hasta el naufragio por el Cuchillo Maldito."
+   },
+   "aliases": [
+    "ghost ship",
+    "barco fantasma",
+    "lighthouse",
+    "faro",
+    "cursed knife"
+   ]
+  },
+  {
+   "cat": "wild",
+   "at": "Grassrivers",
+   "dy": 0.006,
+   "src": [
+    "GTABase",
+    "Xbox Play",
+    "Red Bull"
+   ],
+   "en": {
+    "t": "Alligators",
+    "d": "Most live in Grassrivers, Leonida's southern swamp: open water and grassy shores. An airboat is the fastest way through; Rockstar has also shown one in a pool in town."
+   },
+   "es": {
+    "t": "Caimanes",
+    "d": "Casi todos viven en Grassrivers, el pantano del sur: aguas abiertas y orillas con hierba. El aerodeslizador es lo más rápido; Rockstar también mostró uno en una piscina de la ciudad."
+   },
+   "aliases": [
+    "alligator",
+    "gator",
+    "caimán",
+    "cocodrilo"
+   ]
+  },
+  {
+   "cat": "wild",
+   "at": "Howe Dairy",
+   "src": [
+    "Insider Gaming",
+    "Mobalytics"
+   ],
+   "en": {
+    "t": "White fox (legendary animal)",
+    "d": "Woods around Howe Dairy, east of Port Gellhorn and north of the Emerald River. Only spawns after Bret texts you its clue (his questline starts in Chapter 2). Guides list $10,500 to $18,250."
+   },
+   "es": {
+    "t": "Zorro blanco (animal legendario)",
+    "d": "Bosque cerca de Howe Dairy, al este de Port Gellhorn y al norte del Emerald River. Solo aparece tras la pista de Bret (desde el capítulo 2). Las guías dicen de 10.500 a 18.250 $."
+   },
+   "aliases": [
+    "white fox",
+    "zorro blanco",
+    "legendary animals",
+    "animales legendarios"
+   ]
+  },
+  {
+   "cat": "wild",
+   "at": "Belpoint",
+   "dx": 0.02,
+   "dy": 0.01,
+   "src": [
+    "Insider Gaming",
+    "Mobalytics",
+    "Pro-Gamer",
+    "Keylento wiki"
+   ],
+   "en": {
+    "t": "Black panther (legendary animal)",
+    "d": "Belpoint Island, just west of Capri. Only spawns after Bret's clue text. Guides list $8,600 to $15,000."
+   },
+   "es": {
+    "t": "Pantera negra (animal legendario)",
+    "d": "Belpoint Island, justo al oeste de Capri. Solo aparece tras la pista de Bret. Las guías dicen de 8.600 a 15.000 $."
+   },
+   "aliases": [
+    "panther",
+    "pantera",
+    "legendary animals"
+   ]
+  },
+  {
+   "cat": "wild",
+   "at": "Hamlet",
+   "dy": 0.008,
+   "src": [
+    "Insider Gaming",
+    "Mobalytics",
+    "Pro-Gamer",
+    "Keylento wiki"
+   ],
+   "en": {
+    "t": "Black bear (legendary animal)",
+    "d": "The southern edge of Hamlet. Only spawns after Bret's clue text. Guides list $6,800 to $12,000."
+   },
+   "es": {
+    "t": "Oso negro (animal legendario)",
+    "d": "El borde sur de Hamlet. Solo aparece tras la pista de Bret. Las guías dicen de 6.800 a 12.000 $."
+   },
+   "aliases": [
+    "bear",
+    "oso",
+    "legendary animals"
+   ]
+  },
+  {
+   "cat": "wild",
+   "at": "Belville",
+   "dy": -0.012,
+   "src": [
+    "Insider Gaming",
+    "Mobalytics"
+   ],
+   "en": {
+    "t": "Coyote (legendary animal)",
+    "d": "Farmland north of Belville. Only spawns after Bret's clue text. Guides list $9,500 to $16,750."
+   },
+   "es": {
+    "t": "Coyote (animal legendario)",
+    "d": "Tierras de cultivo al norte de Belville. Solo aparece tras la pista de Bret. Las guías dicen de 9.500 a 16.750 $."
+   },
+   "aliases": [
+    "coyote",
+    "legendary animals"
+   ]
+  },
+  {
+   "cat": "shops",
+   "at": "Key Lento",
+   "dx": 0.006,
+   "dy": -0.01,
+   "src": [
+    "PC Gamer",
+    "PCGamesN",
+    "GAMES.GG",
+    "Game8"
+   ],
+   "en": {
+    "t": "Chuck's Tackle & Shot (first mask)",
+    "d": "The first place to buy a face covering: just east of Jason's house in Key Lento. Look for the stand with the alligator head on top. Most Ammu-Nations sell masks too, but many are out of reach early on."
+   },
+   "es": {
+    "t": "Chuck's Tackle & Shot (primera máscara)",
+    "d": "El primer sitio para comprar algo con que taparte la cara: justo al este de la casa de Jason, en Key Lento. Busca el puesto con la cabeza de caimán encima."
+   },
+   "aliases": [
+    "mask",
+    "máscara",
+    "mascara",
+    "bandana"
+   ]
+  },
+  {
+   "cat": "shops",
+   "at": "Key Lento",
+   "dx": -0.014,
+   "dy": 0.004,
+   "src": [
+    "Dexerto",
+    "TechWiser",
+    "TheClick",
+    "GAMES.GG"
+   ],
+   "en": {
+    "t": "The Inked Mermaid (tattoo shop)",
+    "d": "The closest of GTA 6's 11 tattoo shops at the start, in Key Lento (the only one in Mariana County). Eight more are in Vice-Dale, two in Kelly County; Electric Fang in Stockyard is Ultimate Edition only. Map icon: an orange heart."
+   },
+   "es": {
+    "t": "The Inked Mermaid (tatuajes)",
+    "d": "La más cercana de las 11 tiendas de tatuajes al empezar, en Key Lento. Hay ocho en Vice-Dale y dos en Kelly County; Electric Fang (Stockyard) es solo Ultimate Edition."
+   },
+   "aliases": [
+    "tattoo",
+    "tatuajes",
+    "tattoos"
+   ]
+  },
+  {
+   "cat": "shops",
+   "at": "Key Lento",
+   "dx": 0.0,
+   "dy": 0.014,
+   "src": [
+    "Dexerto",
+    "Sportskeeda",
+    "Tech4Gamers",
+    "TheClick"
+   ],
+   "en": {
+    "t": "Barnacle Beauties (barber & salon)",
+    "d": "The first salon, closest to Jason's house: southern Key Lento, next door to The Siren's Chest jewelry store. Guides count 7 to 18 salons; on the map they're orange scissors."
+   },
+   "es": {
+    "t": "Barnacle Beauties (peluquería)",
+    "d": "La primera peluquería, la más cercana a la casa de Jason: el sur de Key Lento, junto a la joyería The Siren's Chest."
+   },
+   "aliases": [
+    "barber",
+    "haircut",
+    "salon",
+    "peluquería",
+    "corte de pelo"
+   ]
+  },
+  {
+   "cat": "shops",
+   "at": "Little Cuba",
+   "dx": -0.004,
+   "dy": -0.008,
+   "src": [
+    "Game8",
+    "Beebom",
+    "Sportskeeda",
+    "Libertycity"
+   ],
+   "en": {
+    "t": "Yasmani (best fence for jewelry)",
+    "d": "Little Cuba, Vice City: pays the most for stolen jewelry, from Chapter 3. Early on, Dunk in Port Gellhorn buys it for less. Pawn shops don't take stolen jewelry."
+   },
+   "es": {
+    "t": "Yasmani (el mejor perista para joyas)",
+    "d": "Little Cuba, Vice City: paga lo máximo por joyas robadas desde el capítulo 3. Antes, Dunk en Port Gellhorn las compra por menos. Las casas de empeño no aceptan joyas robadas."
+   },
+   "aliases": [
+    "fence",
+    "sell jewelry",
+    "jewelry",
+    "perista",
+    "joyas"
    ]
   }
  ]
