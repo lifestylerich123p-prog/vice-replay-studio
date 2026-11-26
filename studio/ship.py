@@ -154,13 +154,19 @@ def main():
     print("gameplay:", (r.stdout.strip().splitlines() or ["(nothing new)"])[-1][:120])
     if ep.get("segments") and stale(out / f"{slug}.mp4", ep_path):
         run([PY, "-m", "studio.make_video", str(ep_path)], check=True)
-    if (ep.get("short") or ep.get("shorts")) and stale(out / f"{slug}-short.mp4" if ep.get("short") else
-                                                        out / f"{slug}-short-{ep['shorts'][0]['id']}.mp4", ep_path):
-        run([PY, "-m", "studio.make_video", str(ep_path), "--short"], check=True)
-    if not a.no_es and (ep.get("short") or ep.get("shorts")):
-        es_first = out / (f"{slug}-short-es.mp4" if ep.get("short") else f"{slug}-short-{ep['shorts'][0]['id']}-es.mp4")
-        if stale(es_first, ep_path):
-            run([PY, "-m", "studio.make_video", str(ep_path), "--short", "--es"])
+    from . import renderdeps
+    for lang in ("en", "es"):  # Phase 3 #10: each language against its own inputs (studio/renderdeps.py)
+        if not (ep.get("short") or ep.get("shorts")) or (lang == "es" and a.no_es):
+            continue
+        sfx = "-es" if lang == "es" else ""
+        first, key = ((out / f"{slug}-short{sfx}.mp4", "short") if ep.get("short") else
+                      (out / f"{slug}-short-{ep['shorts'][0]['id']}{sfx}.mp4", ep["shorts"][0]["id"]))
+        st = renderdeps.status(first, ep, key, lang, ep_path)
+        cmd = [PY, "-m", "studio.make_video", str(ep_path), "--short"] + (["--es"] if lang == "es" else [])
+        if renderdeps.needs_render(st):
+            run(cmd, check=(lang == "en"))
+        elif st == "stale-package":
+            run(cmd + ["--meta-only"])
     for w in out.glob("work*"):
         run(["rm", "-rf", str(w)])
 

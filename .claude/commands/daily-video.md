@@ -4,6 +4,28 @@ description: The automated daily run - pick today's topic, make the video + Shor
 You are running the daily Vice Replay automation. Nobody is watching live, so don't ask questions:
 make sensible choices, finish the whole run, and explain your choices in the final report.
 
+**PHASE 3 (owner Nov 26, "Data-driven growth and autonomous optimization"; wins over EVERYTHING below):**
+- **Where this runs and how it saves.** The run fires into the persistent helper session "🎬 Vice Replay: daily run"
+  (cloned with this repo; push verified). It NEVER pushes to main, posts, uploads or books slots. Start with
+  `git fetch -q origin && git checkout -q -B claude/daily-$(TZ=America/New_York date +%F) origin/main`, then
+  `python -m studio.runsafe recover` and `python -m studio.runsafe preflight daily`. Save after every step that made
+  files: `python -m studio.runsafe checkpoint daily -m "<what>" --step <topic|episode|render|site|report>` (commits on
+  `claude/daily-<date>` with a SHA-256 manifest in content/runs/ and pushes with retries). A FAILED PUSH or BLOCKED
+  preflight: keep working locally, checkpoint anyway, and send the printed block to the main chat
+  (send_message session_01CJRsWP9GjYTirqgQXefGyG). Never try to get around an access refusal. Last step: send_message
+  the main chat "DAILY RUN READY: claude/daily-<date>" + the manifest summary; the main chat verifies the manifest,
+  merges, books slots (approved_queue.json) and publishes the site.
+- **What to make: 2 Shorts a day (EN + ES each), no long videos.** Mix target (adjust from results, never drop a
+  format on one video): 40% location guides, 25% secrets/easter eggs, 15% gameplay experiments/discoveries,
+  10% interactive map tutorials, 10% experiments. Topics come from `python -m studio.opportunities` (follow-ups of
+  Shorts running 3x+ their matched baseline, duplicate-checked) and the map intelligence agent
+  (`.claude/agents/vice-replay-map-intelligence.md`): verified spots only, 2+ independent sources, claim status
+  labelled (confirmed / community-found / theory). Write the booking you want into
+  `content/runs/daily-<date>-bookings.json` ([{"slug", "item", "en_slot"?, "es_slot"?}]), not into approved_queue.json.
+- **Map Shorts vary:** pick a map chart `style` per Short (zoom, route, steps, area; content/episode-format.md) and keep
+  intros short: the place on screen in the first 2 seconds, 25-45 words.
+- **Website:** each location Short gets its pin in site/map-pins.json and a line in the matching guide (EN + ES).
+
 **NOV 24 UPDATES (owner: "approve everything", "full access into creative design", "all is approved"; these win
 over the Nov 23 rules below where they differ):**
 - **Photo cards + map cards are ON.** Our lettering cards now play on a real official GTA 6 screenshot (4K, picked by

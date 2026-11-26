@@ -27,3 +27,4 @@ media/campaign/
 # this chat's Everygen claim (studio/everygen_claim.py; read by the PreToolUse hook, per container)
 .claude/everygen-claim.local.json
 media/official-hd/
+.runsafe/

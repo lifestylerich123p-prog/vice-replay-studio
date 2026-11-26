@@ -157,6 +157,14 @@ def main():
     L += [f"- Next {i['at'][5:]}: {label(i)}" for i in nxt] or ["- queue empty"]
     L.append("")
 
+    L.append("## Credits")
+    try:
+        from . import credits
+        L += ["- " + x.strip() for x in credits.lines(credits.summary())]
+    except Exception as e:  # never let accounting break the status screen
+        L.append(f"- credits: unavailable ({str(e)[:80]})")
+    L.append("")
+
     L.append("## Campaigns")
     for f in sorted((ROOT / "content" / "campaigns").glob("*.json")):
         if f.name.startswith("_"):

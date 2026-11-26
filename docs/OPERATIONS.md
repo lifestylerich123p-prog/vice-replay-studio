@@ -22,6 +22,23 @@ Only the transitions in `ALLOWED` are accepted (nothing jumps from RENDERED to U
 The approval is bound to a **content fingerprint** (script, cards, pins, sources, description, pinned comment, series
 number, voice-file bytes). Any change after AUTO_APPROVED → NEEDS_REVIEW until evaluated again.
 
+## Phase 3 tools (owner Nov 26, "Data-driven growth and autonomous optimization")
+| Need | Command | Notes |
+|---|---|---|
+| Unattended run saves its work | `python -m studio.runsafe preflight daily` / `checkpoint daily -m ".." --step ..` / `recover` | own branch `claude/daily-<date>`, SHA-256 manifest in content/runs/, retries network errors only; the 5 AM run fires into the helper session "🎬 Vice Replay: daily run" |
+| Main chat takes the helper's work | `python -m studio.runsafe inbox` then `merge <branch>` | refuses on a manifest hash mismatch |
+| Everygen money | `python -m studio.credits show` / `record --remaining N ...` | VERIFIED only from a provider reading < 24 h old with no spend since; otherwise UNVERIFIED + labelled estimate |
+| Follow-ups of winners | `python -m studio.opportunities` | 3x+ matched baseline per platform; candidates in content/learn/map-candidates.json; map intelligence agent rules |
+| Cross-platform numbers | `python -m studio.xplat` | each platform vs its own baseline; formats that work on 2+ platforms |
+| Content mix vs targets | `python -m studio.mix` | targets in config/channel.json `content_mix` |
+| Spanish voice check | `python -m studio.voice_eval` | pace, clipping, pauses, Whisper match, GTA terms; dictionary config/pronounce-es.json |
+| Map demo footage | `node tools/record_map_demo.js ../vicereplay-site <page> <search> <pin> media/site/<name>.mp4` | our own site, 1080x1920, slow-motion capture |
+| Map styles | map chart `"style"`: zoom / route / steps / area | content/episode-format.md |
+
+Render freshness is per language (`studio/renderdeps.py`, `<video>.inputs.json`): an English-only edit no longer makes the
+Spanish video stale; a title/description change only needs `make_video ... --meta-only`. The gate checks the SHA-256 of
+the exact file that passed QA right before uploading, and only auto-publishes at the plan's slot times.
+
 ## The daily loop (scheduled runs)
 | ET | Run | What it does |
 |---|---|---|

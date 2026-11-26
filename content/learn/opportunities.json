@@ -1,0 +1,169 @@
+{
+ "at": "2026-11-26T19:30:30.596260+00:00",
+ "ratio_rule": 3.0,
+ "winners": [
+  {
+   "platform": "youtube-en",
+   "id": "Ocu-HYE9Ygw",
+   "title": "GTA 6's easiest early money is underwater 💰 #GTA6 #Shorts",
+   "age_h": 6.5,
+   "views": 367,
+   "format": "map",
+   "slug": "gta6-sunken-treasure",
+   "sufficient": true,
+   "at_h": 6.5,
+   "views_at": 367,
+   "baseline": 25.5,
+   "baseline_n": 16,
+   "baseline_group": "all Shorts",
+   "ratio": 14.4,
+   "family": "money",
+   "ready": [
+    "fishing-spots",
+    "hunting-spots"
+   ],
+   "research_next": [],
+   "related_existing": []
+  },
+  {
+   "platform": "youtube-en",
+   "id": "CGAd-LB82d4",
+   "title": "GTA 6 shoe store: where to buy shoes 👟 #GTA6 #Shorts",
+   "age_h": 18.0,
+   "views": 706,
+   "format": "map",
+   "slug": "gta6-shoe-store-where",
+   "sufficient": true,
+   "at_h": 18.0,
+   "views_at": 706,
+   "baseline": 52,
+   "baseline_n": 15,
+   "baseline_group": "all Shorts",
+   "ratio": 13.6,
+   "family": "shopping",
+   "ready": [
+    "clothing-stores"
+   ],
+   "research_next": [
+    "rare-outfits"
+   ],
+   "related_existing": [
+    "gta6-ultimate-edition-shops"
+   ]
+  },
+  {
+   "platform": "youtube-en",
+   "id": "ChmiOLulOvo",
+   "title": "GTA 6: where to find Paul Walker's car 🏎️ #GTA6 #Shorts",
+   "age_h": 22.9,
+   "views": 255,
+   "format": "map",
+   "slug": "gta6-atm-robbery-guide",
+   "sufficient": true,
+   "at_h": 22.9,
+   "views_at": 255,
+   "baseline": 61,
+   "baseline_n": 13,
+   "baseline_group": "all Shorts",
+   "ratio": 4.2,
+   "family": "vehicles",
+   "ready": [],
+   "research_next": [],
+   "related_existing": []
+  },
+  {
+   "platform": "youtube-en",
+   "id": "jQbv5GPR3dk",
+   "title": "GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts",
+   "age_h": 74.0,
+   "views": 617,
+   "format": "other",
+   "slug": "gta6-tier-list-critics",
+   "sufficient": true,
+   "at_h": 24.0,
+   "views_at": 613,
+   "baseline": 52.0,
+   "baseline_n": 12,
+   "baseline_group": "same format",
+   "ratio": 11.8,
+   "family": null,
+   "ready": [],
+   "research_next": [],
+   "related_existing": []
+  },
+  {
+   "platform": "youtube-en",
+   "id": "sEg8EWL2XPA",
+   "title": "GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 #GTA6 #Shorts",
+   "age_h": 29.0,
+   "views": 213,
+   "format": "other",
+   "slug": "gta6-vs-gta5-fps",
+   "sufficient": true,
+   "at_h": 24.0,
+   "views_at": 186,
+   "baseline": 52.0,
+   "baseline_n": 12,
+   "baseline_group": "same format",
+   "ratio": 3.6,
+   "family": null,
+   "ready": [],
+   "research_next": [],
+   "related_existing": []
+  },
+  {
+   "platform": "tiktok",
+   "title": "GTA 6 shoe store: where to buy shoes 👟 Flip Flop House, Key Lento. Save this for",
+   "posted": "2026-11-25T02:21:55",
+   "age_h": 41.1,
+   "views": 7863,
+   "lang": "en",
+   "sufficient": true,
+   "baseline": 153.0,
+   "baseline_n": 12,
+   "ratio": 51.4,
+   "family": "shopping",
+   "ready": [
+    "clothing-stores"
+   ],
+   "research_next": [
+    "rare-outfits"
+   ],
+   "related_existing": [
+    "gta6-ultimate-edition-shops"
+   ]
+  },
+  {
+   "platform": "tiktok",
+   "title": "GTA 6 ya ganó 1.650 MILLONES de dólares 💰 #GTA6 #gtavi #rockstar #gaming #ps5",
+   "posted": "2026-11-19T23:39:59",
+   "age_h": 163.8,
+   "views": 588,
+   "lang": "es",
+   "sufficient": true,
+   "baseline": 126,
+   "baseline_n": 3,
+   "ratio": 4.7,
+   "family": null,
+   "ready": [],
+   "research_next": [],
+   "related_existing": []
+  },
+  {
+   "platform": "tiktok",
+   "title": "GTA 6 NZ trick: 18 hours early? 🌏 #GTA6 #GTAVI #ViceCity #gaming #gta6news",
+   "posted": "2026-11-17T22:15:50",
+   "age_h": 213.2,
+   "views": 914,
+   "lang": "en",
+   "sufficient": true,
+   "baseline": 136,
+   "baseline_n": 15,
+   "ratio": 6.7,
+   "family": null,
+   "ready": [],
+   "research_next": [],
+   "related_existing": []
+  }
+ ]
+}

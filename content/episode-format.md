@@ -101,6 +101,14 @@ Per-segment keys (all optional) in `short` / `segments`:
   "Skunk Ape · night", "n": 2}` zooms Rockstar's official map from the whole state to that spot and pulses a pin
   (`at` = a place printed on the map, see studio/mappins.PLACES, or a grid cell; `dx`/`dy` nudge it). For "where is X"
   Shorts; the spot must be in site/map-pins.json (2+ guides). Example: episodes/gta6-ufo-where.json.
+  **Map styles (Phase 3, Nov 26: don't make every map Short look the same)**: add `"style"` to the map chart.
+  `"zoom"` (default, above) · `"route"`: `{"style": "route", "from": "Vice City", "at": "Key Lento", "via": [...],
+  "label": "Shoe store", "n": 3}` traces a line from a place viewers know, then pushes in (a direction, not a road
+  route) · `"steps"`: `{"style": "steps", "steps": [{"at": "Vice Beach", "label": "Get the boat"}, {"at": "Key
+  Lento", "label": "Dive here"}]}` numbered stops one by one (how-tos, tutorials) · `"area"`: `{"style": "area",
+  "at": "Cottonmouth Lake", "r": 0.025, "label": "Search here"}` a pulsing search circle: use it whenever guides give
+  only an area or disagree (honest, instead of a precise-looking pin). Rotate styles across the week; keep intros
+  short (the place on screen in the first 2 s, 25-45 words).
 - `chart` (Nov 22): our own animated graphic as the segment's picture (studio/charts.py), e.g.
   `{"type": "bars", "items": [["IShowSpeed, launch", 68.7], ["CarryMinati", 18.1]], "unit": "M", "highlight": 0,
   "note": "YouTube view counts, Nov 22"}` (a leaderboard that grows, max 6 rows) or `{"type": "counter", "value": 3.79,

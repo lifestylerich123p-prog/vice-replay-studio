@@ -40,6 +40,7 @@ import subprocess
 import sys
 from pathlib import Path
 from zoneinfo import ZoneInfo
+from . import renderdeps
 
 ROOT = Path(__file__).resolve().parent.parent
 STORE = ROOT / "content" / "learn" / "approvals.json"
@@ -155,7 +156,21 @@ def item_spec(ep, item):
             "tags": ep.get("tags")}
 
 
-def spec_hash(ep, item):
+EN_PACKAGE = ("short_title", "short_description", "tags", "hashtags", "pinned_comment", "related_video")
+ES_PACKAGE = ("short_es", "short_pinned_comment_es", "pinned_comment_es")
+
+
+def spec_hash(ep, item, platform=None):
+    """Fingerprint of what one channel would post. With a YouTube platform and the main Short it covers only what that
+    language uses (Phase 3 #10): that render's inputs (studio/renderdeps.py), its title/description/tags/pinned comment,
+    and the shared facts (sources, claim status). An English-only wording fix leaves the Spanish approval valid; a
+    shared change (cards, pictures, sources, spot number) invalidates both."""
+    if platform in ("youtube-en", "youtube-es") and item == "short":
+        lang = "es" if platform == "youtube-es" else "en"
+        spec = {"video": renderdeps.video_inputs(ep, item, lang),
+                "package": {k: ep.get(k) for k in (ES_PACKAGE if lang == "es" else EN_PACKAGE)},
+                "facts": {k: ep.get(k) for k in ("sources", "claim_status", "claims")}}
+        return hashlib.sha256(json.dumps(spec, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
     spec = item_spec(ep, item)
     audio = sorted(set(re.findall(r'"audio(?:_es)?": "([^"]+)"', json.dumps(spec))))
     blob = json.dumps({"spec": spec, "audio": {a: _file_hash(a) for a in audio}}, sort_keys=True, ensure_ascii=False)
@@ -259,10 +274,12 @@ def run_tests():
     return r.returncode == 0, tail
 
 
-def gate(ep_path):
-    """studio.vice publish -> (blockers, advice). Any blocker fails conditions 2-5."""
-    r = subprocess.run([sys.executable, "-m", "studio.vice", "publish", str(ep_path)], cwd=ROOT, capture_output=True,
-                       text=True)
+def gate(ep_path, platform="youtube-en"):
+    """studio.vice publish -> (blockers, advice). Any blocker fails conditions 2-5. The Spanish channel's QA runs on
+    the Spanish render (QC: frames, loudness, Spanish captions vs Spanish speech)."""
+    lang = ["--lang", "es"] if platform == "youtube-es" else []
+    r = subprocess.run([sys.executable, "-m", "studio.vice", "publish", str(ep_path), *lang], cwd=ROOT,
+                       capture_output=True, text=True)
     out = r.stdout + r.stderr
     try:
         j = json.loads(out[out.find("{"):out.rfind("}") + 1])
@@ -330,8 +347,18 @@ def checks(ep_path, item="short", platform="youtube-en", publish=None, now=None,
     if not video.exists():
         block.append(f"no rendered video {video.name}")
     else:
-        if video.stat().st_mtime < ep_path.stat().st_mtime:
-            block.append(f"{video.name} is older than the episode: re-render")
+        # Phase 3: per-language inputs (studio/renderdeps.py); an English-only edit no longer stales the Spanish video
+        lang = "es" if platform == "youtube-es" else "en"
+        st = renderdeps.status(video, ep, item, lang, ep_path) if item != "main" else (
+            "stale-mtime" if video.stat().st_mtime < ep_path.stat().st_mtime else "current-mtime")
+        info["render_status"] = st
+        if st in ("stale-video", "stale-mtime"):
+            block.append(f"{video.name}: what it's made of changed since it was rendered: re-render (python -m "
+                         f"studio.make_video {ep_path.relative_to(ROOT) if ep_path.is_relative_to(ROOT) else ep_path} "
+                         f"--short{' --es' if lang == 'es' else ''})")
+        elif st == "stale-package":
+            block.append(f"{video.name}: title/description changed: python -m studio.make_video "
+                         f"episodes/{slug}.json --short{' --es' if lang == 'es' else ''} --meta-only")
         p = _probe(video) or {}
         if (p.get("w"), p.get("h")) != (1080, 1920) and item != "main":
             block.append(f"video is {p.get('w')}x{p.get('h')}, not 1080x1920")
@@ -365,7 +392,7 @@ def checks(ep_path, item="short", platform="youtube-en", publish=None, now=None,
         block.append("a video with this exact title is already on the channel")
     # 2-5: rights, spoilers/safety, QC (frames, loudness, captions vs speech), hooks
     if run_gate and not block:
-        b, advice = gate(ep_path)
+        b, advice = gate(ep_path, platform)
         block += [f"QA: {x}" for x in b]
         info["advice"] = advice
     return block, review, info
@@ -387,7 +414,7 @@ def evaluate(ep_path, item="short", platform="youtube-en", publish=None, now=Non
         transition(rec, "RENDERED", "evaluating")
     rec.update({"publish": "now" if publish == "now" else list(publish) if publish else None,
                 "title": info.get("title"), "video": info.get("video"), "duration": info.get("duration"),
-                "spec_hash": spec_hash(ep, item), "evaluated_at": dt.datetime.now(ET).strftime("%Y-%m-%d %H:%M ET"),
+                "spec_hash": spec_hash(ep, item, platform), "evaluated_at": dt.datetime.now(ET).strftime("%Y-%m-%d %H:%M ET"),
                 "blockers": block, "reviews": review, "advice": info.get("advice", [])})
     if info.get("video"):
         rec["video_sha256"] = _file_hash(info["video"])
@@ -420,11 +447,17 @@ def require(slug, item, platform, title=None, publish=None, video=None, ep=None,
         raise Blocked(f"{slug} ({item}) on {platform} is {rec.get('state')}: "
                       f"{'; '.join(rec.get('blockers') or rec.get('reviews') or []) or 'not approved'}")
     ep = ep if ep is not None else json.loads((ROOT / "episodes" / f"{slug}.json").read_text())
-    if spec_hash(ep, item) != rec.get("spec_hash"):
+    if spec_hash(ep, item, platform) != rec.get("spec_hash"):
         transition(rec, "NEEDS_REVIEW", "content changed after the gate passed: evaluate again")
         if store is None:
             _save(d)
         raise Blocked(f"{slug} ({item}) changed after it passed the gate: evaluate it again")
+    if video is not None and rec.get("video_sha256") and _file_hash(video) != rec["video_sha256"]:
+        # Phase 3 #15: the file being sent must be byte-for-byte the one that passed QA
+        transition(rec, "NEEDS_REVIEW", "video file changed after the gate passed (SHA-256 mismatch)")
+        if store is None:
+            _save(d)
+        raise Blocked(f"{slug} ({item}): the video file differs from the one that passed QA (SHA-256): evaluate again")
     if title is not None and title.strip() != (rec.get("title") or "").strip():
         raise Blocked(f"title {title!r} differs from the checked {rec.get('title')!r}")
     if publish is not None and str(publish if publish == "now" else list(publish)) != str(rec.get("publish")):

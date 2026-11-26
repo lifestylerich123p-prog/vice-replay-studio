@@ -58,6 +58,42 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 14:45 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:45 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 14:45 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 14:51 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 14:51 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -67,8 +103,8 @@
   "title": "GTA 6 mask location: your first one is here 🎭 #GTA6 #Shorts",
   "video": "output/gta6-mask-where/gta6-mask-where-short.mp4",
   "duration": 16.1,
-  "spec_hash": "bf3e9784de66efdc2b3a816ee8d627c3c1a80a768725d4e346c5eb0b696db0e1",
-  "evaluated_at": "2026-11-26 13:48 ET",
+  "spec_hash": "47eab14b1b61b78a418edd79d518fa9c0b24fc6e482292a84ba254818e2dfbd0",
+  "evaluated_at": "2026-11-26 14:51 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
@@ -133,6 +169,42 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -142,8 +214,8 @@
   "title": "GTA 6 Backrooms location: here it is 🚪 #GTA6 #Shorts",
   "video": "output/gta6-backrooms-where/gta6-backrooms-where-short.mp4",
   "duration": 13.9,
-  "spec_hash": "c1a39b3a128c54e8f6975a0c89637d169576923609e59c062677a5a77ebf186c",
-  "evaluated_at": "2026-11-26 13:48 ET",
+  "spec_hash": "5d6dc62e56b26cc1c6628265a1c09ab379691335bb4a9ea43303dbcf346f2b13",
+  "evaluated_at": "2026-11-26 14:52 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
@@ -172,6 +244,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts not re-checked before posting (python -m studio.approvals factcheck ...); the test suite hasn't passed on the current code (python -m studio.approvals tests)"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
    ]
   ],
   "publish": [
@@ -181,12 +271,11 @@
   "title": "GTA 6 Bigfoot location (Skunk Ape) 👣 #GTA6 #Shorts",
   "video": "output/gta6-skunk-ape-where/gta6-skunk-ape-where-short.mp4",
   "duration": 12.9,
-  "spec_hash": "45e766d25d14601a558a7b67ec464b36bb13e53b699c73002863f8dd1a17bc9b",
-  "evaluated_at": "2026-11-26 13:16 ET",
+  "spec_hash": "c634a132cc38f4eb47d3ebec558594ef0454f03ffd85bf56298e00add26736d7",
+  "evaluated_at": "2026-11-26 14:46 ET",
   "blockers": [],
   "reviews": [
-   "facts not re-checked before posting (python -m studio.approvals factcheck ...)",
-   "the test suite hasn't passed on the current code (python -m studio.approvals tests)"
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
   ],
   "advice": [],
   "video_sha256": "5ff88bfe4f02e4bdd97e0e5e7a4a20b11bb4efd0a56ac56879c4d0e5fc14c748"
@@ -238,6 +327,36 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "RENDERED",
+    "BLOCKED",
+    "QA: QC captions: speech matches the captioned script with 43% word error (47 words heard)"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "BLOCKED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -246,13 +365,13 @@
   ],
   "title": "GTA 6 esconde a las TORTUGAS NINJA: aquí están 🐢 #GTA6 #Shorts",
   "video": "output/gta6-ninja-turtles-where/gta6-ninja-turtles-where-short-es.mp4",
-  "duration": 15.9,
-  "spec_hash": "f0f86f1b022bc7e31723bea14b5ea529f02d0e4b33fb4c3c1d87454251bd8433",
-  "evaluated_at": "2026-11-26 13:49 ET",
+  "duration": 16.1,
+  "spec_hash": "ed05a07c7148d7fd5939c0cc2d2c71700dd8506f5fb1676c4c7ee6432b839355",
+  "evaluated_at": "2026-11-26 14:52 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "8ed7ada0d6a1f1285f178231d922d24f76941371432aad67611f65a6bd92636b"
+  "video_sha256": "7cf792190623509aeedd33636f6858c412b9882335e18ecaf92ff183c947c947"
  },
  "gta6-silent-hill-hotel:short:youtube-es": {
   "slug": "gta6-silent-hill-hotel",
@@ -295,6 +414,42 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -303,13 +458,13 @@
   ],
   "title": "GTA 6: el SECRETO de Silent Hill (clave 955214) 😱 #GTA6 #Shorts",
   "video": "output/gta6-silent-hill-hotel/gta6-silent-hill-hotel-short-es.mp4",
-  "duration": 20.9,
-  "spec_hash": "b9a55acc936768bde2471048f9d0795429fda5d884d42ca8444045d0fb4f5ca8",
-  "evaluated_at": "2026-11-26 13:49 ET",
+  "duration": 21.0,
+  "spec_hash": "264ad47c2722ea9f7925d052d0c5725ba2b054405035e935487e8756e4049c53",
+  "evaluated_at": "2026-11-26 14:52 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "a7a6fe604c4a39b3fe61f899872509e96d67cf13dc45e360ea74a060fdf08fb1"
+  "video_sha256": "3a0e5ae08848e44c937dd5950f5f24d11741000fdc479cabe9f73403a977ecfa"
  },
  "gta6-backrooms-where:short:youtube-es": {
   "slug": "gta6-backrooms-where",
@@ -352,6 +507,36 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "RENDERED",
+    "BLOCKED",
+    "QA: QC captions: speech matches the captioned script with 26% word error (40 words heard)"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "BLOCKED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 14:52 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -360,12 +545,69 @@
   ],
   "title": "GTA 6: los BACKROOMS existen y así se entra 😨 #GTA6 #Shorts",
   "video": "output/gta6-backrooms-where/gta6-backrooms-where-short-es.mp4",
-  "duration": 15.8,
-  "spec_hash": "c1a39b3a128c54e8f6975a0c89637d169576923609e59c062677a5a77ebf186c",
-  "evaluated_at": "2026-11-26 13:49 ET",
+  "duration": 16.4,
+  "spec_hash": "f0f5ff0e0ea7f7d27e1e61bb5b4a2962a7ee810134bb8ed55fbf4b33386fe79f",
+  "evaluated_at": "2026-11-26 14:52 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "445bad1dada9be2965684924bf5e44b2d66fa169b2260f702236d0a3ed650292"
+  "video_sha256": "cd8c920bef2fe68504e6e60c48ab9a29effa72fcfbff70ae2b21b0bf929f673b"
+ },
+ "gta6-barber-shop-where:short:youtube-en": {
+  "slug": "gta6-barber-shop-where",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "AUTO_APPROVED",
+  "history": [
+   [
+    "2026-11-26 14:46 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 14:46 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 14:51 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 14:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 14:51 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ]
+  ],
+  "publish": [
+   "2026-11-27",
+   "6:00 PM"
+  ],
+  "title": "GTA 6 barber shop location: the closest one 💈 #GTA6 #Shorts",
+  "video": "output/gta6-barber-shop-where/gta6-barber-shop-where-short.mp4",
+  "duration": 12.2,
+  "spec_hash": "13890b6092598c064cdcacdcbcb974f587d9047ef5b957530e7b69f71b8c66b9",
+  "evaluated_at": "2026-11-26 14:51 ET",
+  "blockers": [],
+  "reviews": [],
+  "advice": [],
+  "video_sha256": "47a63a8b04531d6c8890d7ec51254784e626d606ade22fb0d169449eadad0b0e"
  }
 }

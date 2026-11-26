@@ -78,7 +78,9 @@ def transcribe(path, lang="en"):
     raw = subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-i", str(path), "-f", "s16le", "-ac", "1", "-ar", "16000", "-"],
                          capture_output=True).stdout  # decode with ffmpeg (faster-whisper's PyAV path breaks on new av)
     audio = np.frombuffer(raw, np.int16).astype(np.float32) / 32768.0
-    model = WhisperModel("base", device="cpu", compute_type="int8", cpu_threads=4)
+    # Phase 3 (Nov 26): "base" misheard clear Spanish narration (43% errors on a Short "small" heard almost word for
+    # word), so Spanish gets the "small" model; English keeps "base"
+    model = WhisperModel("small" if lang == "es" else "base", device="cpu", compute_type="int8", cpu_threads=4)
     segs, _ = model.transcribe(audio, language=lang, word_timestamps=True, vad_filter=False)
     return [{"w": w.word.strip(), "s": round(w.start, 2), "e": round(w.end, 2), "p": round(w.probability, 2)}
             for s in segs for w in (s.words or [])]
@@ -100,15 +102,32 @@ def norm_words(text):
     return [w.strip("'") for w in t.split() if w.strip("'")]
 
 
-def wer(ref, hyp):
-    """Word error rate (edit distance / reference length)."""
+def _fold(w):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFKD", w) if not unicodedata.combining(c))
+
+
+def same_word(a, b, fuzzy=0.75):
+    """Equal, or (Phase 3, Nov 26) a long word Whisper spelled almost the same: tortubas/tortugas, Milport/Millport,
+    Tallaloco/Tallaloko (b/v/g and English names in Spanish audio). Short words must match exactly, so a real
+    mispronunciation or a garbled phrase still counts as an error."""
+    if a == b or _fold(a) == _fold(b):
+        return True
+    if fuzzy and min(len(a), len(b)) >= 5:
+        import difflib
+        return difflib.SequenceMatcher(None, _fold(a), _fold(b)).ratio() >= fuzzy
+    return False
+
+
+def wer(ref, hyp, fuzzy=0.75):
+    """Word error rate (edit distance / reference length); near-identical long words count as the same word."""
     r, h = ref, hyp
     d = list(range(len(h) + 1))
     for i in range(1, len(r) + 1):
         prev, d[0] = d[0], i
         for j in range(1, len(h) + 1):
             cur = d[j]
-            d[j] = min(d[j] + 1, d[j - 1] + 1, prev + (r[i - 1] != h[j - 1]))
+            d[j] = min(d[j] + 1, d[j - 1] + 1, prev + (not same_word(r[i - 1], h[j - 1], fuzzy)))
             prev = cur
     return d[len(h)] / max(1, len(r))
 
@@ -267,6 +286,9 @@ def check(path, episode=None, dest="vice-replay", script_key="short", project=No
             heard = whisper_letters(" ".join(w["w"] for w in words))
             if es:  # Spanish writes 3.243 for 3,243: drop the thousands dot before splitting into words
                 heard = re.sub(r"(?<=\d)\.(?=\d{3}\b)", "", heard)
+                # how Whisper writes "GTA seis" in Spanish audio: Getat6, Geteasis, ge te a seis, jeta 6
+                heard = re.sub(r"\b(?:g[eé] ?t[eé] ?a|getea|getat|jeta|gta)\s*(?:6|seis|sis)\b|\bget[ae]a?(?:t|s)?(?:6|is|sis)\b",
+                               "gta seis", heard, flags=re.I)
             heard = norm_words(heard)
             say = spoken_es if es else spoken
             e = wer(say(script), say(heard))

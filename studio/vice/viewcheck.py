@@ -195,7 +195,9 @@ def footage_segments(ep, segs, gameplay_available=False):
         if x.get("chart"):
             continue
         files = [f for f in [x.get("media")] + [y.get("media") for y in x.get("shots") or []] if f]
-        if any("media/gameplay" in str(f) for f in files) or (swap and not x.get("keep_media")):
+        # media/site/: screen recordings of our own vicereplay.com (interactive map demos, Phase 3 #5): our own
+        # material, like the cards; the map in them is Rockstar's official map (allowed), never trailer footage
+        if any("media/gameplay" in str(f) or "media/site/" in str(f) for f in files) or (swap and not x.get("keep_media")):
             continue
         out.append((k, str(files[0]).rsplit("/", 1)[-1] if files else "stock footage the renderer picks itself"))
     return out

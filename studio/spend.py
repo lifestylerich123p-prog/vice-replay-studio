@@ -229,13 +229,19 @@ def renders_needed(it, ne, ns):
         return []
     need = []
     src = ROOT / "episodes" / f"{slug}.json"
-
-    def stale(video):  # missing, or older than its episode (e.g. a map-series number changed: studio/mapseries.py)
-        return not video.exists() or (src.exists() and video.stat().st_mtime < src.stat().st_mtime)
-    if ne and stale(out / f"{slug}-short.mp4"):
-        need.append(["python", "-m", "studio.make_video", f"episodes/{slug}.json", "--short"])
-    if ns and stale(out / f"{slug}-short-es.mp4"):
-        need.append(["python", "-m", "studio.make_video", f"episodes/{slug}.json", "--short", "--es"])
+    from . import renderdeps
+    ep = json.loads(src.read_text()) if src.exists() else {}
+    # Phase 3 #10: each language's render is checked against its own inputs (studio/renderdeps.py): an English-only
+    # edit doesn't re-render the Spanish video, and a title/description change only rewrites the .txt
+    for flag, lang, video in ((ne, "en", out / f"{slug}-short.mp4"), (ns, "es", out / f"{slug}-short-es.mp4")):
+        if not flag:
+            continue
+        st = renderdeps.status(video, ep, "short", lang, src if src.exists() else None)
+        cmd = ["python", "-m", "studio.make_video", f"episodes/{slug}.json", "--short"] + (["--es"] if lang == "es" else [])
+        if renderdeps.needs_render(st):
+            need.append(cmd)
+        elif st == "stale-package":
+            need.append(cmd + ["--meta-only"])
     return need
 
 

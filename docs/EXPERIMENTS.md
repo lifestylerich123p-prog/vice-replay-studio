@@ -15,9 +15,14 @@ versus 4.0, headline 0.7, list 0.2; ~0.5% likes; ~0 viewer comments; 15 subscrib
 | A1 | Voice | Kokoro AI voice vs owner's recorded voice vs no narration (music + text) | waiting: owner voice recordings | - | - | - |
 | B1 | Visual | screenshot + map pin vs animated website map vs owner gameplay + map overlay | waiting: owner gameplay | - | - | - |
 | C1 | Hook | location revealed at frame 1 vs short location question vs problem → answer | planned: next 6 map Shorts alternate hook types (mark `"hook_type"` in the episode) | - | - | - |
+| A2 | Spanish voice | Piper es_MX (+ dictionary) vs Kokoro em_alex | waiting: Spanish channel retention per video (not pulled yet). Nov 26 voice check, 2 runs (content/learn/voice-eval-2026-11-26.md): Piper + dictionary 0.67-0.71 Whisper match vs 0.64-0.68 raw; GTA terms 'heard' 4-6/11 with the dictionary vs 5-8/11 raw (Whisper expects English spellings, so this is a weak judge); em_alex 0.77 but 3.6 words/s (fast; natural is ~2.5-3.2). Peak limit fixed Piper clipping (0 dBFS -> -1.5 dBFS, 0% clipped). No clear winner from automatic checks: needs a listener + retention | - | - | - |
+| M1 | Content mix | 40 location / 25 secrets / 15 gameplay / 10 map tutorial / 10 experimental (`python -m studio.mix`) | running | Nov 27 | weekly | - |
 | L1 | Script length | 35-55 words vs 25-45 words (directive) | planned: new Shorts from Nov 27 at 25-45 | - | - | - |
 
 ## Decisions log
+- 2026-11-26 (Phase 3): cross-platform table (`studio.xplat`): map/location 13.6x the YouTube baseline (n=3) and 57x on
+  TikTok (n=1, the shoe store); tier lists 6.6x on YouTube (n=2) but 0.1x on Instagram; news/facts ~0.4-1.0 everywhere.
+  Tier lists are NOT dropped (directive: never on one video): they stay in the 10% experimental share.
 - 2026-11-26: versus / plain-fact / headline / list Shorts parked (map 46.6 v/h vs versus 4.0, list 0.2); tier lists
   parked from the plan (6.2) but kept as a later experiment option.
 - 2026-11-26: Spanish YouTube paused to Dec 3 (37 views in 12 videos); Spanish goes to TikTok (100-600 views each).

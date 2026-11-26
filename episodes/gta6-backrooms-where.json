@@ -68,7 +68,7 @@
    "headline": "THE BACKROOMS",
    "headline_es": "LOS BACKROOMS",
    "text": "GTA 6 hides the Backrooms inside a shipping container.",
-   "text_es": "GTA seis esconde los Backrooms dentro de un contenedor.",
+   "text_es": "En GTA seis, los Backrooms están dentro de un contenedor.",
    "keep_media": true,
    "chart": {
     "type": "kinetic",
@@ -99,7 +99,7 @@
    "headline": "LAKE TALLALOKO",
    "headline_es": "LAKE TALLALOKO",
    "text": "It's at a dig site on Lake Tallaloko, north of Millport.",
-   "text_es": "Está en una excavación junto a Lake Tallaloko, al norte de Millport.",
+   "text_es": "Está en una excavación junto al lago Tallaloko, al norte de Millport.",
    "keep_media": true,
    "chart": {
     "type": "map",
@@ -208,5 +208,6 @@
  "spot": 5,
  "cta": "SPOT #6 NEXT: FOLLOW",
  "cta_es": "LUGAR #6 PRONTO: SÍGUENOS",
- "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)"
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)",
+ "claim_status": "community-found"
 }

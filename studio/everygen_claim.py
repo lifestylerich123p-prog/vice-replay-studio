@@ -231,6 +231,16 @@ def cmd_close(a, act):
         print("Log it in the Channel Map's Shared log and content/channels.md: "
               f"\"{dt.date.today()} · Vice Replay ({chat_name(me)}) · Everygen: {a.credits} credits for "
               f"{', '.join(keys)}. Balance after: {a.balance}.\"")
+        if str(a.balance) in ("?", "", "None"):
+            print("Balance not verified: read Everygen's get_credit_balance now and store it with "
+                  "python -m studio.credits record --remaining <n> --purchased <n> --sub-remaining <n> (Phase 3: "
+                  "never report an estimate as the balance).")
+        elif str(a.balance).isdigit():  # a provider-reported number: keep it as a verified reading (studio/credits.py)
+            snap = ROOT / "content" / "learn" / "credits.jsonl"
+            snap.parent.mkdir(parents=True, exist_ok=True)
+            with snap.open("a") as f:
+                f.write(json.dumps({"t": iso(), "source": "everygen get_credit_balance", "remaining": int(a.balance),
+                                    "note": f"reported with done {', '.join(keys)}"}) + "\n")
 
 
 def cmd_list(_a):

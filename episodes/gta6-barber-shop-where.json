@@ -1,0 +1,191 @@
+{
+ "series": "Map Spots",
+ "format": "location",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map, Phase 3 map styles)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-barber-shop-where",
+ "title": "Where to Get a Haircut in GTA 6",
+ "short_title": "GTA 6 barber shop location: the closest one 💈 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 barber shop location: the closest one 💈 #GTA6 #Shorts",
+  "GTA 6 haircut: the barber next to Jason's house 💈 #GTA6 #Shorts"
+ ],
+ "title_rule": "Phase 3 follow-up of the shoe store Short (13.6x its matched baseline on YouTube, 51x on TikTok; studio.opportunities); search phrase first ('gta 6 barber shop', 'gta 6 haircut')",
+ "short_description": "Where to get a haircut in GTA 6: the closest barber to Jason's house is Barnacle Beauties in southern Key Lento, next door to The Siren's Chest. Newer guides count 18 hair and beauty salons in total, including Kurt's Barber Shop in Hamlet, Salon Pérez in Little Cuba and Hair By Clair in Capri (an older guide lists 7). No story spoilers.\n\nSources: Sportskeeda, PowerPyx, TheClick, GTABase.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: la BARBERÍA más cercana está aquí 💈 #GTA6 #Shorts",
+  "description": "Dónde cortarte el pelo en GTA 6: la barbería más cercana a la casa de Jason es Barnacle Beauties, en el sur de Key Lento, junto a la joyería The Siren's Chest. Las guías más nuevas cuentan 18 peluquerías y barberías, como Kurt's Barber Shop en Hamlet, Salon Pérez en Little Cuba y Hair By Clair en Capri. Fuentes: Sportskeeda, PowerPyx, TheClick, GTABase.",
+  "tags": [
+   "GTA 6 barbería",
+   "GTA 6 cortar el pelo",
+   "GTA 6 peluquería",
+   "GTA 6 español",
+   "GTA 6 Key Lento"
+  ]
+ },
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿La encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
+ "tags": [
+  "GTA 6 barber shop",
+  "GTA 6 barber shop location",
+  "GTA 6 haircut",
+  "GTA 6 how to change hair",
+  "GTA 6 Barnacle Beauties",
+  "GTA 6 Key Lento",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6barber"
+ ],
+ "sources": [
+  "Sportskeeda - All barber shop locations in GTA 6: https://www.sportskeeda.com/gta/all-barber-shop-locations-gta-6",
+  "PowerPyx - GTA 6 all hair & beauty salon locations: https://www.powerpyx.com/gta-6-all-hair-beauty-salon-locations/",
+  "TheClick - GTA 6 Get the Chop (Barnacle Beauties): https://www.theclick.gg/gta-6-get-the-chop/",
+  "GTABase - GTA 6 interactive map, haircut layer: https://www.gtabase.com/gta-6/map/?feature=haircut"
+ ],
+ "claim_status": "community-found",
+ "facts_note": "Nov 26 map intelligence research (Sportskeeda, PowerPyx, TheClick, GTABase; search summaries): 18 salons (older Dexerto page: 7); Barnacle Beauties closest to Jason's house in Key Lento (our map pin: 4 sources). Pay-per-cut and prices are single-source: left out.",
+ "short": [
+  {
+   "headline": "CLOSEST BARBER",
+   "headline_es": "LA MÁS CERCANA",
+   "text": "The closest GTA 6 barber is next to Jason's house.",
+   "text_es": "La barbería más cercana en GTA seis está junto a la casa de Jason.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6'S CLOSEST",
+     "BARBER IS HERE"
+    ],
+    "pink": [
+     "BARBER IS HERE"
+    ],
+    "seed": 191,
+    "sub": "where to get a haircut"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "LA BARBERÍA",
+     "MÁS CERCANA"
+    ],
+    "pink": [
+     "MÁS CERCANA"
+    ],
+    "seed": 191,
+    "sub": "dónde cortarte el pelo"
+   }
+  },
+  {
+   "headline": "KEY LENTO",
+   "headline_es": "KEY LENTO",
+   "text": "Barnacle Beauties, in southern Key Lento.",
+   "text_es": "Barnacle Beauties, en el sur de Key Lento.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Key Lento",
+    "dy": 0.014,
+    "label": "Barnacle Beauties",
+    "n": 1,
+    "src": "Sportskeeda · TheClick"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Key Lento",
+    "dy": 0.014,
+    "label": "Barnacle Beauties",
+    "n": 1,
+    "src": "Sportskeeda · TheClick",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "18 SALONS",
+   "headline_es": "18 PELUQUERÍAS",
+   "text": "Newer guides count eighteen, from Hamlet to Little Cuba and Capri.",
+   "text_es": "Las guías nuevas cuentan dieciocho, de Hamlet a Little Cuba y Capri.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "steps",
+    "steps": [
+     {
+      "at": "Hamlet",
+      "label": "Kurt's Barber Shop"
+     },
+     {
+      "at": "Little Cuba",
+      "label": "Salon Pérez"
+     },
+     {
+      "at": "Capri",
+      "label": "Hair By Clair"
+     }
+    ],
+    "src": "PowerPyx · GTABase"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "steps",
+    "steps": [
+     {
+      "at": "Hamlet",
+      "label": "Kurt's Barber Shop"
+     },
+     {
+      "at": "Little Cuba",
+      "label": "Salon Pérez"
+     },
+     {
+      "at": "Capri",
+      "label": "Hair By Clair"
+     }
+    ],
+    "src": "PowerPyx · GTABase",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "ZERO DETOUR",
+   "headline_es": "SIN DESVÍO",
+   "text": "Fresh cut, zero detour, because",
+   "text_es": "Corte nuevo sin desvío, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FRESH CUT,",
+     "ZERO DETOUR"
+    ],
+    "pink": [
+     "ZERO DETOUR"
+    ],
+    "seed": 192
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "CORTE NUEVO,",
+     "SIN DESVÍO"
+    ],
+    "pink": [
+     "SIN DESVÍO"
+    ],
+    "seed": 192
+   }
+  }
+ ]
+}

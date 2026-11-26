@@ -121,7 +121,7 @@ def _gate(episode, ep, video, dest, key, gameplay, val, cover):
     return {"qc_report": md, "blockers": blockers, "advice": advice, "rights": rights.check_episode(ep, dest)["ok"]}
 
 
-def publish_draft(episode, dest):
+def publish_draft(episode, dest, lang="en"):
     """Publication draft: QC + rights + channel + views + facts on the rendered Short(s), written to draft.json.
     An episode with "shorts" is gated once per Short, plus one rights/facts check of its main video ("main"), and gets
     one combined result (blockers/advice prefixed with the Short id or "main"); a single-"short" episode gets the
@@ -160,9 +160,10 @@ def publish_draft(episode, dest):
                  "blockers": blockers, "advice": advice,
                  "upload_command_after_approval": f"python -m studio.ship {episode} --upload main --title N"}
     elif not ep.get("shorts"):
-        video = out / (f"{slug}-short-es.mp4" if ep.get("es_only") else f"{slug}-short.mp4")  # es_only: Spanish file
+        # es_only, or --lang es (Phase 3: the Spanish channel's QA runs on the Spanish render, never needs the English one)
+        video = out / (f"{slug}-short-es.mp4" if ep.get("es_only") or lang == "es" else f"{slug}-short.mp4")
         if not video.exists():
-            sys.exit(f"Render first: python -m studio.ship {episode}")
+            sys.exit(f"Render first: python -m studio.make_video {episode} --short" + (" --es" if lang == "es" else ""))
         val, cover = channel_check(ep), out / "cover.jpg"
         g = _gate(episode, ep, video, dest, "short", gameplay, val, cover)
         g["advice"] += viewcheck.check_tags(ep)  # same advice as viewcheck.check(ep)
@@ -203,7 +204,7 @@ def publish_draft(episode, dest):
                  "status": "BLOCKED" if blockers else "awaiting owner approval", "blockers": blockers, "advice": advice,
                  **({"main": main} if main else {}), "shorts": shorts,
                  "upload_command_after_approval": f"python -m studio.ship {episode} --upload {','.join(s['id'] for s in shorts)}"}
-    (out / "draft.json").write_text(json.dumps(draft, indent=1, ensure_ascii=False))
+    (out / ("draft-es.json" if lang == "es" else "draft.json")).write_text(json.dumps(draft, indent=1, ensure_ascii=False))
     print(json.dumps(draft, indent=1, ensure_ascii=False))
     return draft
 
@@ -284,6 +285,7 @@ def main():
     pb = sub.add_parser("publish")
     pb.add_argument("episode")
     pb.add_argument("--dest", default="vice-replay")
+    pb.add_argument("--lang", choices=("en", "es"), default="en", help="es: QA the Spanish render (-short-es.mp4)")
     r = sub.add_parser("rights")
     r.add_argument("asset", nargs="?")
     r.add_argument("--dest", default="vice-replay")
@@ -378,7 +380,7 @@ def main():
         from . import report
         print(report.run().read_text())
     elif x.cmd == "publish":
-        publish_draft(x.episode, x.dest)
+        publish_draft(x.episode, x.dest, x.lang)
     elif x.cmd == "rights":
         from . import rights
         rights.sync()

@@ -350,3 +350,11 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   still booked and would have been offered to the Spanish gate ahead of the line-up; parked to `es_parked`, and the
   gate now auto-publishes only at the plan's slot times. Two Spanish titles were held for not starting with "GTA 6"
   (9 line-up titles fixed), and the fact checker read "green ooze leaks" as a game leak (reworded, check kept strict).
+- 2026-11-26 (Phase 3, Spanish QA): until today the Spanish channel's QA checked the ENGLISH render; on the Spanish
+  render the caption-vs-speech check found real problems (Backrooms: "GTA seis esconde" sounded like "qué te hace y se
+  esconde"; fixed by rewording to "En GTA seis, los Backrooms están...", "junto al lago Tallaloko"). Whisper "base"
+  misheard clear Spanish (43% errors where "small" heard it almost word for word): Spanish QA uses "small" now.
+  Write Spanish lines so the voice can't blur them: don't open a sentence with "GTA seis + verb"; prefer "En GTA
+  seis, ..."; Spanish words for places where natural (el lago Tallaloko).
+- 2026-11-26 (Phase 3, voice): Piper's raw audio clipped (peaks 0 dBFS); peak limit to -1.5 dBFS added. The
+  pronunciation dictionary helps Jason / Key Lento / Vice City; respelling "GTA" or "Bigfoot" made them worse (removed).

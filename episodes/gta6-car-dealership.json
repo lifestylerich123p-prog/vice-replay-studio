@@ -1,0 +1,192 @@
+{
+ "series": "How-To",
+ "format": "tutorial",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map, Phase 3 map styles)",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-car-dealership",
+ "title": "Is There a Car Dealership in GTA 6?",
+ "short_title": "GTA 6 car dealership location: there isn't one 🚗 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 car dealership location: there isn't one 🚗 #GTA6 #Shorts",
+  "GTA 6: how to own a car (no dealership) 🚗 #GTA6 #Shorts"
+ ],
+ "title_rule": "Phase 3 follow-up of the Paul Walker car map Short (4.2x baseline); answers 'gta 6 car dealership' / 'gta 6 buy cars'",
+ "short_description": "Is there a car dealership in GTA 6? No: you can't buy cars like in GTA V. To own one, steal the car you want and register it; guides list 19 Pay 'n' Sprays that do it, from Key Lento to Port Gellhorn. Garages to keep them in are in the Vice City Real Estate app. No story spoilers.\n\nSources: GTABase, Game8, TheClick, GameRant.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: NO hay concesionario, haz esto 🚗 #GTA6 #Shorts",
+  "description": "¿Hay concesionario en GTA 6? No: no se compran coches como en GTA V. Para tener uno, roba el que quieras y regístralo; las guías cuentan 19 Pay 'n' Spray que lo hacen, de Key Lento a Port Gellhorn. Los garajes están en la app Vice City Real Estate. Fuentes: GTABase, Game8, TheClick, GameRant.",
+  "tags": [
+   "GTA 6 concesionario",
+   "GTA 6 comprar coches",
+   "GTA 6 cómo tener coche",
+   "GTA 6 español",
+   "GTA 6 Pay n Spray"
+  ]
+ },
+ "pinned_comment": "Which car are you registering first? 🚗👇",
+ "short_pinned_comment_es": "¿Qué coche vas a registrar primero? 🚗👇",
+ "tags": [
+  "GTA 6 car dealership",
+  "GTA 6 buy cars",
+  "GTA 6 how to own a car",
+  "GTA 6 Pay n Spray",
+  "GTA 6 register car",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6cars"
+ ],
+ "sources": [
+  "GTABase - Can you buy cars in GTA 6? How to acquire vehicles: https://www.gtabase.com/gta-6/articles/can-you-buy-cars-in-gta-6-how-to-acquire-vehicles",
+  "Game8 - Is there a car dealership in GTA 6: https://game8.co/games/GTA-6/archives/639287",
+  "TheClick - All Pay 'n' Spray locations in GTA 6: https://www.theclick.gg/gta-6-pay-n-spray-locations/",
+  "GameRant - GTA 6 garages and the Little Boxes trophy: https://gamerant.com/gta-6-store-cars-garage-little-boxes/"
+ ],
+ "claim_status": "community-found",
+ "facts_note": "Nov 26 map intelligence research (GTABase, Game8, TheClick, GameRant; search summaries): no dealership, steal + register; 19 Pay 'n' Sprays (TheClick, PowerPyx, GTABase agree). Moses details, registration prices and the story car purchase left out (single-source or spoiler).",
+ "short": [
+  {
+   "headline": "NO DEALERSHIP",
+   "headline_es": "NO HAY",
+   "text": "There's no car dealership in GTA 6. Here's how you get one.",
+   "text_es": "En GTA seis no hay concesionario. Así consigues coche.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "NO CAR",
+     "DEALERSHIP"
+    ],
+    "pink": [
+     "DEALERSHIP"
+    ],
+    "seed": 193,
+    "sub": "how to own a car"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "NO HAY",
+     "CONCESIONARIO"
+    ],
+    "pink": [
+     "CONCESIONARIO"
+    ],
+    "seed": 193,
+    "sub": "cómo tener coche"
+   }
+  },
+  {
+   "headline": "STEAL IT",
+   "headline_es": "RÓBALO",
+   "text": "Steal the car you want, then register it.",
+   "text_es": "Roba el coche que quieras y luego regístralo.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Steal it → register it",
+    "pink": [
+     "register it"
+    ],
+    "src": "GTABase · Game8",
+    "seed": 194,
+    "bg": "photo:media/official/vice-city-15.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Róbalo → regístralo",
+    "pink": [
+     "regístralo"
+    ],
+    "src": "GTABase · Game8",
+    "seed": 194,
+    "bg": "photo:media/official/vice-city-15.jpg"
+   }
+  },
+  {
+   "headline": "19 PAY 'N' SPRAYS",
+   "headline_es": "19 PAY 'N' SPRAY",
+   "text": "Guides list nineteen Pay 'n' Sprays that do it, from Key Lento to Port Gellhorn.",
+   "text_es": "Las guías cuentan diecinueve Pay 'n' Spray que lo hacen, de Key Lento a Port Gellhorn.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "steps",
+    "steps": [
+     {
+      "at": "Key Lento",
+      "label": "Pay 'n' Spray"
+     },
+     {
+      "at": "Hamlet",
+      "label": "Pay 'n' Spray"
+     },
+     {
+      "at": "Port Gellhorn",
+      "label": "Pay 'n' Spray"
+     }
+    ],
+    "src": "TheClick · PowerPyx · GTABase"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "steps",
+    "steps": [
+     {
+      "at": "Key Lento",
+      "label": "Pay 'n' Spray"
+     },
+     {
+      "at": "Hamlet",
+      "label": "Pay 'n' Spray"
+     },
+     {
+      "at": "Port Gellhorn",
+      "label": "Pay 'n' Spray"
+     }
+    ],
+    "src": "TheClick · PowerPyx · GTABase",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "NO SHOWROOM",
+   "headline_es": "SIN TIENDA",
+   "text": "So stop looking for a showroom, because",
+   "text_es": "Así que deja de buscar la tienda, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "STOP LOOKING",
+     "FOR A SHOWROOM"
+    ],
+    "pink": [
+     "SHOWROOM"
+    ],
+    "seed": 195
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "DEJA DE",
+     "BUSCAR TIENDA"
+    ],
+    "pink": [
+     "TIENDA"
+    ],
+    "seed": 195
+   }
+  }
+ ]
+}

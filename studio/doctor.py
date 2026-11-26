@@ -308,12 +308,21 @@ def main():
             since = et.replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
             log = subprocess.run(["git", "log", "origin/main", f"--since={since}", "--grep=Daily run", "--format=%h"],
                                  cwd=ROOT, capture_output=True, text=True, timeout=60).stdout.strip()
-            if log:
-                ok.append("Today's daily run is saved on GitHub")
+            br = f"claude/daily-{et.date().isoformat()}"  # Phase 3: the helper run saves to its own branch
+            on_gh = subprocess.run(["git", "ls-remote", "origin", f"refs/heads/{br}"], cwd=ROOT, capture_output=True,
+                                   text=True, timeout=60).stdout.strip()
+            merged = log or subprocess.run(["git", "log", "origin/main", f"--since={since}", f"--grep=Merge {br}",
+                                            "--format=%h"], cwd=ROOT, capture_output=True, text=True,
+                                           timeout=60).stdout.strip()
+            if merged:
+                ok.append("Today's daily run is saved on GitHub and merged")
+            elif on_gh:
+                warn.append(f"Today's daily run is on GitHub ({br}) but not merged yet: python -m studio.runsafe inbox, "
+                            f"then python -m studio.runsafe merge {br}")
             else:
-                warn.append("No 'Daily run' commit on GitHub today: the 5 AM run may have failed to push. Recover it from "
-                            "its log (publish-site.md, 'If the daily run's hand-off never arrives') and check GitHub "
-                            "access at claude.ai/connect-github")
+                warn.append(f"No daily run on GitHub today (no {br} branch): check the helper session's messages "
+                            "(FAILED PUSH / BLOCKED preflight) and its .runsafe/state.json; its local commits are pushed "
+                            "by python -m studio.runsafe recover on the next run")
     except Exception as e:  # noqa: BLE001 - a git problem must not stop the health check
         warn.append(f"Couldn't check today's daily run on GitHub ({type(e).__name__})")
 

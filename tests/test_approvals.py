@@ -38,7 +38,7 @@ def world(tmp_path, monkeypatch):
     ap.FACTS.write_text(json.dumps({"gta6-x": {"date": "2026-11-26", "note": "ok"}}))
     ap.TESTS.write_text(json.dumps({"passed": True, "code": ap.code_hash(), "at": NOW.isoformat()}))
     monkeypatch.setattr(ap, "_probe", lambda v: {"w": 1080, "h": 1920, "audio": True, "dur": 15.0})
-    monkeypatch.setattr(ap, "gate", lambda p: ([], []))
+    monkeypatch.setattr(ap, "gate", lambda p, *a: ([], []))
     return {"ep": epf, "out": out}
 
 
@@ -57,7 +57,7 @@ def test_case1_never_checked_video_is_blocked(world):
 
 
 def test_case2_qa_failure_blocks(world, monkeypatch):
-    monkeypatch.setattr(ap, "gate", lambda p: (["QC black frames: 1.2 s"], []))
+    monkeypatch.setattr(ap, "gate", lambda p, *a: (["QC black frames: 1.2 s"], []))
     r = evaluate(world)
     assert r["state"] == "BLOCKED" and "black frames" in r["blockers"][0]
     with pytest.raises(ap.Blocked):
@@ -182,3 +182,69 @@ def test_only_the_plan_slots_auto_publish(world):
     r = ap.evaluate(world["ep"], "short", "youtube-es", ("2026-11-28", "8:00 AM"), now=NOW)
     assert any("not an auto-publishing slot" in x for x in r["reviews"])
     assert ap.auto_cfg("youtube-es")["slots"] == ["12:30 PM", "7:00 PM"]
+
+
+def _spanish(world):
+    ep = json.loads(world["ep"].read_text())
+    ep["short_es"] = {"title": "GTA 6: dónde está X 🗺️ #GTA6 #Shorts"}
+    for seg in ep["short"]:
+        seg["text_es"] = "Está aquí."
+    world["ep"].write_text(json.dumps(ep))
+    (world["out"] / "gta6-x-short-es.txt").write_text(f"TITLE\n{ep['short_es']['title']}\n\nDESCRIPTION\nDónde.\n")
+    (world["out"] / "gta6-x-short-es.mp4").write_bytes(b"video-es")
+    return ep
+
+
+def test_english_only_edit_keeps_the_spanish_render_and_approval(world, monkeypatch):
+    """Phase 3 #10: the Spanish gate no longer waits for English re-renders after an English-only change."""
+    from studio import renderdeps
+    monkeypatch.setattr(renderdeps, "ROOT", ap.ROOT)
+    ep = _spanish(world)
+    es_video = world["out"] / "gta6-x-short-es.mp4"
+    renderdeps.write(es_video, ep, "short", "es")
+    es_slot = ("2026-11-28", "12:30 PM")
+    assert ap.evaluate(world["ep"], "short", "youtube-es", es_slot, now=NOW)["state"] == "AUTO_APPROVED"
+    ep["short"][0]["text"] = "X is right here."          # English wording only
+    ep["short_title"] = "GTA 6 x location: found it 🗺️ #GTA6 #Shorts"
+    world["ep"].write_text(json.dumps(ep))
+    assert renderdeps.status(es_video, ep, "short", "es", world["ep"]) == "current"
+    ap.require("gta6-x", "short", "youtube-es", publish=es_slot, now=NOW)  # still approved
+    r = ap.evaluate(world["ep"], "short", "youtube-es", es_slot, now=NOW)
+    assert r["state"] == "AUTO_APPROVED", r
+
+
+def test_shared_change_invalidates_both_languages(world, monkeypatch):
+    from studio import renderdeps
+    monkeypatch.setattr(renderdeps, "ROOT", ap.ROOT)
+    ep = _spanish(world)
+    es_video = world["out"] / "gta6-x-short-es.mp4"
+    renderdeps.write(es_video, ep, "short", "es")
+    before = (ap.spec_hash(ep, "short", "youtube-en"), ap.spec_hash(ep, "short", "youtube-es"))
+    ep["short"][1]["chart"] = {"type": "map", "at": "Vice Beach"}   # a shared visual
+    assert renderdeps.status(es_video, ep, "short", "es", world["ep"]) == "stale-video"
+    after = (ap.spec_hash(ep, "short", "youtube-en"), ap.spec_hash(ep, "short", "youtube-es"))
+    assert before[0] != after[0] and before[1] != after[1]
+    ep2 = dict(ep, sources=["A", "B", "C"])                         # shared facts
+    assert ap.spec_hash(ep2, "short", "youtube-es") != after[1]
+
+
+def test_spanish_title_change_needs_only_meta_refresh(world, monkeypatch):
+    from studio import renderdeps
+    monkeypatch.setattr(renderdeps, "ROOT", ap.ROOT)
+    ep = _spanish(world)
+    es_video = world["out"] / "gta6-x-short-es.mp4"
+    renderdeps.write(es_video, ep, "short", "es")
+    ep["short_es"]["title"] = "GTA 6: el lugar SECRETO de X 🗺️ #GTA6 #Shorts"
+    assert renderdeps.status(es_video, ep, "short", "es") == "stale-package"
+    renderdeps.write_package(es_video, ep, "short", "es")
+    assert renderdeps.status(es_video, ep, "short", "es") == "current"
+
+
+def test_upload_needs_the_exact_file_that_passed_qa(world):
+    """Phase 3 #15: SHA-256 of the approved video is checked right before sending."""
+    evaluate(world)
+    video = world["out"] / "gta6-x-short.mp4"
+    ap.require("gta6-x", "short", "youtube-en", video=video, publish=SLOT, now=NOW)
+    video.write_bytes(b"a different file")
+    with pytest.raises(ap.Blocked, match="SHA-256"):
+        ap.require("gta6-x", "short", "youtube-en", video=video, publish=SLOT, now=NOW)

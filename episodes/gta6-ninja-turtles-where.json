@@ -202,5 +202,6 @@
  ],
  "spot": 7,
  "cta": "SPOT #8 NEXT: FOLLOW",
- "cta_es": "LUGAR #8 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #8 PRONTO: SÍGUENOS",
+ "claim_status": "community-found"
 }

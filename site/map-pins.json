@@ -943,17 +943,19 @@
    "dy": 0.014,
    "src": [
     "Dexerto",
+    "GTABase",
+    "PowerPyx",
     "Sportskeeda",
     "Tech4Gamers",
     "TheClick"
    ],
    "en": {
     "t": "Barnacle Beauties (barber & salon)",
-    "d": "The first salon, closest to Jason's house: southern Key Lento, next door to The Siren's Chest jewelry store. Guides count 7 to 18 salons; on the map they're orange scissors."
+    "d": "The first salon, closest to Jason's house: southern Key Lento, next door to The Siren's Chest jewelry store. Newer guides count 18 hair and beauty salons (an older one lists 7); on the map they're orange scissors."
    },
    "es": {
     "t": "Barnacle Beauties (peluquería)",
-    "d": "La primera peluquería, la más cercana a la casa de Jason: el sur de Key Lento, junto a la joyería The Siren's Chest."
+    "d": "La primera peluquería, la más cercana a la casa de Jason: el sur de Key Lento, junto a la joyería The Siren's Chest. Las guías nuevas cuentan 18 peluquerías."
    },
    "aliases": [
     "barber",

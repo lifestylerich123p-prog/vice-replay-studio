@@ -50,6 +50,15 @@ quizzes stay, no new versus/fact/headline Shorts (parked ones sit in approved_qu
 prompts ("Found it? Reply ✅ — or 😭"; last card "FOUND IT? COMMENT YES"); Spanish YouTube paused until Dec 3
 (`spanish_youtube_paused_until`); 8:00 AM slot for each day's first map Short, test week Nov 28-Dec 4 (review Dec 5).
 
+**Phase 3 (owner Nov 26, "Data-driven growth and autonomous optimization")**: both channels stay autonomous through
+the gate. Mix target 40% location / 25% secrets / 15% gameplay experiments / 10% interactive map tutorials / 10%
+experimental (`studio.mix`, adjust from results, never drop a format on one video). Follow-ups only via
+`studio.opportunities` (3x+ matched baseline, duplicate-checked, verified) and the map intelligence agent
+(`.claude/agents/vice-replay-map-intelligence.md`, candidates in content/learn/map-candidates.json). Money:
+`studio.credits` (verified balance or UNVERIFIED, never an estimate as fact). The 5 AM run saves through `studio.runsafe`
+on its own branch; the main chat merges. Sensitive topics carry `claim_status` (confirmed / community-found / theory /
+hypothetical / fiction). Details: docs/OPERATIONS.md "Phase 3 tools".
+
 ## Rules for this channel
 - **Footage**: everything in `media/` is used as backgrounds. Allowed: official Rockstar screenshots
   (`media/official/`, 175 incl. 37 Ultimate Edition shots of cars/shops/style, named by place/character/car, incl. vintage-* and `leonida-map-poster.jpg`, Rockstar's

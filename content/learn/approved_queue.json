@@ -348,7 +348,7 @@
    "slug": "gta6-dexter-apartment-map",
    "item": "short",
    "en": [
-    "2026-12-07",
+    "2026-12-11",
     "8:00 AM"
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
@@ -359,7 +359,8 @@
     "2026-12-03",
     "1:30 PM"
    ],
-   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM"
+   "es_parked_note": "Nov 26: not in the Spanish line-up (docs/ES-RECOVERY.md); Spanish YouTube publishes only the line-up at 12:30 PM / 7:00 PM",
+   "moved_phase3": "Nov 26: swapped with the interactive map tutorial (content mix: secrets 46% vs 25% target, map tutorials 0% vs 10%)"
   },
   {
    "slug": "gta6-military-base-jets",
@@ -800,6 +801,46 @@
    ],
    "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)",
    "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)"
+  },
+  {
+   "slug": "gta6-barber-shop-where",
+   "item": "short",
+   "en": [
+    "2026-11-27",
+    "6:00 PM"
+   ],
+   "es": [
+    "2026-12-07",
+    "12:30 PM"
+   ],
+   "series": "Map Spots",
+   "approved": "Phase 3 (owner Nov 26, 'Both channels must remain fully autonomous'): verified follow-up/tutorial; publishes only if studio/approvals.py passes; follow-up of the shoe store Short (13.6x its matched baseline, studio.opportunities)"
+  },
+  {
+   "slug": "gta6-car-dealership",
+   "item": "short",
+   "en": [
+    "2026-12-10",
+    "6:00 PM"
+   ],
+   "es": [
+    "2026-12-07",
+    "7:00 PM"
+   ],
+   "approved": "Phase 3 (owner Nov 26, 'Both channels must remain fully autonomous'): verified follow-up/tutorial; publishes only if studio/approvals.py passes; follow-up of the Paul Walker car Short (4.2x); answers 'gta 6 car dealership'"
+  },
+  {
+   "slug": "gta6-interactive-map-howto",
+   "item": "short",
+   "en": [
+    "2026-12-07",
+    "8:00 AM"
+   ],
+   "es": [
+    "2026-12-08",
+    "12:30 PM"
+   ],
+   "approved": "Phase 3 (owner Nov 26, 'Both channels must remain fully autonomous'): verified follow-up/tutorial; publishes only if studio/approvals.py passes; 10% interactive map tutorials (site demo recorded from our own site)"
   }
  ],
  "paused": [

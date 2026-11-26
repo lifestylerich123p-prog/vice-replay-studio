@@ -395,30 +395,9 @@ MAP_AREA = (200, 200, 5575, 7700)  # the printed map inside the poster's white g
 MAP_ARTWORK = [(3950, 6200, 5250, 7350), (420, 380, 1420, 1520)]  # seal + "LEONIDA" title; the "Visit Leonida" legend
 
 
-def map_frame(base, spec, t, w, h):
-    """A "where is it" card (owner approved Nov 24: the official map with pins/zoom in videos): Rockstar's official
-    Leonida map, starting on the whole state and zooming to `at` (a place printed on the map, a grid cell like "G7", or
-    [x, y] fractions; `dx`/`dy` nudge it), then a pulsing numbered pin and our `label`. Spec: {"type": "map",
-    "at": "Kelly County", "label": "UFO · after 2 AM", "n": 1, "to": 0.28 (final visible width share)}."""
-    from . import mappins
-    if "img" not in _MAP:
-        _MAP["img"] = mappins.map_image()
-    im = _MAP["img"]
-    W, H = im.size
-    fx, fy = mappins.where(spec.get("at", "Vice City"))
-    tx, ty = (fx + spec.get("dx", 0)) * W, (fy + spec.get("dy", 0)) * H
-    dur = max(spec.get("_dur", 4.0), 0.5)
-    p = min(1.0, t / (dur * 0.55))
-    e = 1 - (1 - p) ** 3
-    vh0 = min(H, W * h / w)                   # start: the whole map (height on a Short, width on a 16:9 video)
-    sx, sy = W / 2, H / 2
-    if spec.get("z0"):  # after a payoff hook already showed the pin: start closer, on the spot, and push in
-        vh0, sx, sy = min(vh0, W * float(spec["z0"]) * h / w), tx, ty
-    vh1 = W * float(spec.get("to", 0.28)) * h / w
-    vh = vh0 * (1 - e) + vh1 * e
-    vw = vh * w / h
-    cx = sx * (1 - e) + tx * e
-    cy = sy * (1 - e) + ty * e
+def _map_view(W, H, tx, ty, cx, cy, vw, vh, e=1.0):
+    """Top-left of a map view centred on (cx, cy): kept inside the printed map and off the poster's artwork, with the
+    target (tx, ty) between 15% and 85% of the frame (moves blend in with `e`, so a zoom never jumps)."""
     # Nov 24 review: zooms near the coast showed the poster's white border (grid ruler digits, a cut-off "L").
     # Keep the view inside the printed map (MAP_AREA); while the view is still wider than it, keep it all in view.
     ax0, ay0, ax1, ay1 = MAP_AREA
@@ -442,9 +421,42 @@ def map_frame(base, spec, t, w, h):
                 x0, y0 = x0 + (nx - x0) * e, y0 + (ny - y0) * e
     if vw > W:                                # wider than the map: centre it on a dark band
         x0 = (W - vw) / 2
+    return x0, y0
+
+
+def _map_crop(im, x0, y0, vw, vh, w, h):
     frame = im.crop((int(x0), int(y0), int(x0 + vw), int(y0 + vh))).resize((w, h), Image.BILINEAR)
-    if vw > W:
-        frame = frame.copy()
+    return frame.copy() if vw > im.size[0] else frame
+
+
+def map_frame(base, spec, t, w, h):
+    """A "where is it" card (owner approved Nov 24: the official map with pins/zoom in videos): Rockstar's official
+    Leonida map, starting on the whole state and zooming to `at` (a place printed on the map, a grid cell like "G7", or
+    [x, y] fractions; `dx`/`dy` nudge it), then a pulsing numbered pin and our `label`. Spec: {"type": "map",
+    "at": "Kelly County", "label": "UFO · after 2 AM", "n": 1, "to": 0.28 (final visible width share)}."""
+    from . import mappins
+    if "img" not in _MAP:
+        _MAP["img"] = mappins.map_image()
+    if spec.get("style", "zoom") != "zoom":  # Phase 3 #5: route / steps / area variants (map_styles below)
+        return MAP_STYLES[spec["style"]](spec, t, w, h)
+    im = _MAP["img"]
+    W, H = im.size
+    fx, fy = mappins.where(spec.get("at", "Vice City"))
+    tx, ty = (fx + spec.get("dx", 0)) * W, (fy + spec.get("dy", 0)) * H
+    dur = max(spec.get("_dur", 4.0), 0.5)
+    p = min(1.0, t / (dur * 0.55))
+    e = 1 - (1 - p) ** 3
+    vh0 = min(H, W * h / w)                   # start: the whole map (height on a Short, width on a 16:9 video)
+    sx, sy = W / 2, H / 2
+    if spec.get("z0"):  # after a payoff hook already showed the pin: start closer, on the spot, and push in
+        vh0, sx, sy = min(vh0, W * float(spec["z0"]) * h / w), tx, ty
+    vh1 = W * float(spec.get("to", 0.28)) * h / w
+    vh = vh0 * (1 - e) + vh1 * e
+    vw = vh * w / h
+    cx = sx * (1 - e) + tx * e
+    cy = sy * (1 - e) + ty * e
+    x0, y0 = _map_view(W, H, tx, ty, cx, cy, vw, vh, e)
+    frame = _map_crop(im, x0, y0, vw, vh, w, h)
     d = ImageDraw.Draw(frame)
     px, py = (tx - x0) / vw * w, (ty - y0) / vh * h
     if p >= 1.0:
@@ -453,8 +465,13 @@ def map_frame(base, spec, t, w, h):
         mappins._pin(d, px, py, spec.get("n", ""), 1.9 * pulse)
         if spec.get("label"):
             mappins._label(d, px, py, spec["label"], 1.6, w, spec.get("side"))
+    return _map_finish(frame, d, spec, w, h)
+
+
+def _map_finish(frame, d, spec, w, h):
+    """Credit line + the numbered-series badge, shared by every map style."""
     f = brand.font(brand.BODY_FONT, 26)
-    credit = "Map: Rockstar Games (official)"
+    credit = "Mapa: Rockstar Games (oficial)" if spec.get("locale") == "es" else "Map: Rockstar Games (official)"
     d.text((w - f.getlength(credit) - 24, h - 130), credit, font=f, fill=(255, 255, 255))
     if spec.get("spot") and h > w:
         # Nov 26 (owner APPROVE: numbered map series, studio/mapseries.py): "MAP SPOT #7" just under the headline slab
@@ -468,6 +485,149 @@ def map_frame(base, spec, t, w, h):
                             fill=brand.PINK, outline=(255, 255, 255), width=3)
         d.text((bx + pad, by + pad - fb.size * 0.06), txt, font=fb, fill=(255, 255, 255))
     return frame
+
+
+# ---------- map styles (owner Nov 26, Phase 3 #5: "Do not make every map video look identical") ----------
+# "zoom" (default): whole state -> pin. "route": a traced line from a place viewers know to the spot, then a push-in
+# (a direction, not a road route: the label says "from"). "steps": numbered stops one after another (a how-to path).
+# "area": a pulsing search circle for spots that guides only give as an area ("around Cottonmouth Lake"): honest when
+# guides differ, instead of a precise-looking pin.
+
+def _ease(p):
+    p = max(0.0, min(1.0, p))
+    return 1 - (1 - p) ** 3
+
+
+def _pt(mappins, at, im):
+    fx, fy = mappins.where(at)
+    return fx * im.size[0], fy * im.size[1]
+
+
+def _span_view(im, pts, w, h, pad=1.7, min_share=0.22):
+    """A view (cx, cy, vw, vh) that shows every point, at least `min_share` of the map's width wide."""
+    W, H = im.size
+    xs, ys = [p[0] for p in pts], [p[1] for p in pts]
+    cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
+    need_w = max((max(xs) - min(xs)) * pad, (max(ys) - min(ys)) * pad * w / h, W * min_share)
+    vw = min(need_w, W)
+    return cx, cy, vw, vw * h / w
+
+
+def _to_frame(pt, x0, y0, vw, vh, w, h):
+    return (pt[0] - x0) / vw * w, (pt[1] - y0) / vh * h
+
+
+def map_route(spec, t, w, h):
+    from . import mappins
+    im = _MAP["img"]
+    a, b = _pt(mappins, spec.get("from", "Vice City"), im), _pt(mappins, spec.get("at", "Vice City"), im)
+    via = [_pt(mappins, v, im) for v in spec.get("via", [])]
+    path = [a] + via + [b]
+    dur = max(spec.get("_dur", 4.0), 0.5)
+    draw_p = _ease(t / (dur * 0.5))                 # the line traces in the first half
+    zoom_p = _ease((t - dur * 0.55) / (dur * 0.35))  # then the camera pushes in on the spot
+    cx0, cy0, vw0, vh0 = _span_view(im, path, w, h)
+    vw1 = im.size[0] * float(spec.get("to", 0.28))
+    vh1 = vw1 * h / w
+    vw, vh = vw0 + (vw1 - vw0) * zoom_p, vh0 + (vh1 - vh0) * zoom_p
+    cx, cy = cx0 + (b[0] - cx0) * zoom_p, cy0 + (b[1] - cy0) * zoom_p
+    x0, y0 = _map_view(im.size[0], im.size[1], b[0], b[1], cx, cy, vw, vh, 1.0)
+    frame = _map_crop(im, x0, y0, vw, vh, w, h)
+    d = ImageDraw.Draw(frame)
+    seg = [(_to_frame(p, x0, y0, vw, vh, w, h)) for p in path]
+    lens = [((seg[i + 1][0] - seg[i][0]) ** 2 + (seg[i + 1][1] - seg[i][1]) ** 2) ** 0.5 for i in range(len(seg) - 1)]
+    total, left, pts = sum(lens) or 1, draw_p * (sum(lens) or 1), [seg[0]]
+    for (p0, p1), L in zip(zip(seg, seg[1:]), lens):
+        if left <= 0:
+            break
+        k = min(1.0, left / L) if L else 1.0
+        pts.append((p0[0] + (p1[0] - p0[0]) * k, p0[1] + (p1[1] - p0[1]) * k))
+        left -= L
+    lw = max(6, int(w * 0.012))
+    if len(pts) > 1:
+        d.line(pts, fill=(20, 10, 30), width=lw + 6, joint="curve")
+        d.line(pts, fill=brand.PINK, width=lw, joint="curve")
+        hx, hy = pts[-1]
+        r = lw * 1.3
+        d.ellipse((hx - r, hy - r, hx + r, hy + r), fill=(255, 255, 255))
+    sx, sy = seg[0]
+    r = lw * 1.6
+    d.ellipse((sx - r, sy - r, sx + r, sy + r), fill=brand.CYAN, outline=(255, 255, 255), width=3)
+    if spec.get("from_label", spec.get("from")):
+        mappins._label(d, sx, sy, spec.get("from_label") or spec["from"], 1.3, w, spec.get("from_side", "left"))
+    if draw_p >= 1.0:
+        bx, by = seg[-1]
+        k = max(0.0, t - dur * 0.5) * FPS
+        mappins._pin(d, bx, by, spec.get("n", ""), 1.9 * (1 + 0.18 * abs((k / FPS * 2) % 2 - 1)))
+        if spec.get("label"):
+            mappins._label(d, bx, by, spec["label"], 1.6, w, spec.get("side"))
+    return _map_finish(frame, d, spec, w, h)
+
+
+def map_steps(spec, t, w, h):
+    from . import mappins
+    im = _MAP["img"]
+    stops = spec.get("steps") or [{"at": spec.get("at", "Vice City"), "label": spec.get("label", "")}]
+    pts = [_pt(mappins, s["at"], im) for s in stops]
+    dur = max(spec.get("_dur", 4.0), 0.5)
+    cx, cy, vw, vh = _span_view(im, pts, w, h, pad=1.9, min_share=float(spec.get("to", 0.3)))
+    for _ in range(12):  # the view is pushed inside the printed map: widen it until every stop is well inside
+        x0, y0 = _map_view(im.size[0], im.size[1], pts[-1][0], pts[-1][1], cx, cy, vw, vh, 1.0)
+        fp = [_to_frame(p, x0, y0, vw, vh, w, h) for p in pts]
+        if all(0.12 * w <= x <= 0.88 * w and 0.15 * h <= y <= 0.85 * h for x, y in fp) or vw >= im.size[0]:
+            break
+        vw, vh = min(im.size[0], vw * 1.18), min(im.size[0], vw * 1.18) * h / w
+    frame = _map_crop(im, x0, y0, vw, vh, w, h)
+    d = ImageDraw.Draw(frame)
+    each = dur * 0.8 / len(stops)
+    fp = [_to_frame(p, x0, y0, vw, vh, w, h) for p in pts]
+    shown = [i for i in range(len(stops)) if t >= i * each]
+    if len(shown) > 1:
+        d.line([fp[i] for i in shown], fill=brand.PINK, width=max(5, int(w * 0.009)))
+    for i in shown:
+        k = (t - i * each) * FPS
+        grow = min(1.0, k / (0.25 * FPS))
+        px, py = fp[i]
+        mappins._pin(d, px, py, stops[i].get("n", i + 1), 1.6 * max(0.3, grow))
+        if stops[i].get("label") and grow >= 1.0:
+            mappins._label(d, px, py, stops[i]["label"], 1.3, w, stops[i].get("side"))
+    return _map_finish(frame, d, spec, w, h)
+
+
+def map_area(spec, t, w, h):
+    from . import mappins
+    im = _MAP["img"]
+    c = _pt(mappins, spec.get("at", "Vice City"), im)
+    c = (c[0] + spec.get("dx", 0) * im.size[0], c[1] + spec.get("dy", 0) * im.size[1])
+    dur = max(spec.get("_dur", 4.0), 0.5)
+    e = _ease(t / (dur * 0.55))
+    W, H = im.size
+    vh0, vh1 = min(H, W * h / w), W * float(spec.get("to", 0.3)) * h / w
+    vh = vh0 * (1 - e) + vh1 * e
+    vw = vh * w / h
+    cx, cy = W / 2 * (1 - e) + c[0] * e, H / 2 * (1 - e) + c[1] * e
+    x0, y0 = _map_view(W, H, c[0], c[1], cx, cy, vw, vh, e)
+    frame = _map_crop(im, x0, y0, vw, vh, w, h).convert("RGBA")
+    if e >= 0.99:
+        px, py = _to_frame(c, x0, y0, vw, vh, w, h)
+        r = float(spec.get("r", 0.025)) * W / vw * w
+        k = (t - dur * 0.55) * 2
+        rr = r * (1 + 0.06 * abs(k % 2 - 1))
+        layer = Image.new("RGBA", frame.size, (0, 0, 0, 0))
+        dl = ImageDraw.Draw(layer)
+        dl.ellipse((px - rr, py - rr, px + rr, py + rr), fill=brand.PINK + (70,), outline=brand.PINK + (255,),
+                   width=max(4, int(w * 0.007)))
+        frame = Image.alpha_composite(frame, layer)
+        d = ImageDraw.Draw(frame)
+        lab = spec.get("label") or ("Busca por aquí" if spec.get("locale") == "es" else "Search this area")
+        tw = brand.font(brand.BODY_FONT, int(26 * 1.6)).getlength(lab)
+        # centred under the circle, never on top of it
+        mappins._label(d, px - tw / 2 - 12 * 1.6 - 40 * 1.6, py + rr + 40, lab, 1.6, w, "right")
+    frame = frame.convert("RGB")
+    return _map_finish(frame, ImageDraw.Draw(frame), spec, w, h)
+
+
+MAP_STYLES = {"route": map_route, "steps": map_steps, "area": map_area}
 
 
 DRAW = {"bars": bars_frame, "counter": counter_frame, "line": line_frame, "quote": quote_frame, "list": list_frame,

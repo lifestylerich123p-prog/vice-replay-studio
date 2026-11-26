@@ -1,0 +1,128 @@
+{
+ "series": "How-To",
+ "format": "tutorial",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "site demo (our interactive map, Phase 3 map tutorials)",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-interactive-map-howto",
+ "title": "GTA 6 Interactive Map: Find Any Spot in Seconds",
+ "short_title": "GTA 6 interactive map: every verified spot, free 🗺️ #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 interactive map: every verified spot, free 🗺️ #GTA6 #Shorts",
+  "GTA 6 map: find any secret in 5 seconds 🗺️ #GTA6 #Shorts"
+ ],
+ "title_rule": "Phase 3 10% interactive map tutorials; 'gta 6 interactive map' search phrase; drives the website",
+ "short_description": "Our free GTA 6 interactive map: 44 spots so far (stores, easter eggs, wildlife, cars), each from two or more guides, on Rockstar's official map. Type what you need, like shoe, and it flies you to the pin with directions; tick spots as you find them. English: https://vicereplay.com/guides/gta-6-map-leonida-places/ · Español: https://vicereplay.com/es/guias/mapa-gta-6/\n\nMap: Rockstar Games (official map download). Pins and directions: Vice Replay.",
+ "short_es": {
+  "title": "GTA 6: el MAPA interactivo con todos los lugares 🗺️ #GTA6 #Shorts",
+  "description": "Nuestro mapa interactivo gratis de GTA 6: 44 lugares por ahora (tiendas, easter eggs, animales, coches), cada uno de dos o más guías, sobre el mapa oficial de Rockstar. Escribe lo que buscas, por ejemplo zapatos, y te lleva al pin con indicaciones. https://vicereplay.com/es/guias/mapa-gta-6/",
+  "tags": [
+   "GTA 6 mapa interactivo",
+   "GTA 6 mapa",
+   "GTA 6 dónde está",
+   "GTA 6 español",
+   "GTA 6 lugares secretos"
+  ]
+ },
+ "pinned_comment": "What should we pin next? Tell us 👇",
+ "short_pinned_comment_es": "¿Qué lugar ponemos en el mapa? Dinos 👇",
+ "tags": [
+  "GTA 6 interactive map",
+  "GTA 6 map",
+  "GTA 6 map all locations",
+  "GTA 6 secrets map",
+  "GTA 6 where to find",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6map",
+  "#gta6tips"
+ ],
+ "sources": [
+  "Vice Replay interactive map (44 pins, each from 2+ guides): https://vicereplay.com/guides/gta-6-map-leonida-places/",
+  "Rockstar Games - GTA VI official downloads (the Leonida map): https://www.rockstargames.com/VI/downloads"
+ ],
+ "facts_note": "Nov 26: pin count from site/map-pins.json (44); demo recorded from the local site checkout with tools/record_map_demo.js (EN + ES pages).",
+ "short": [
+  {
+   "headline": "ONE FREE MAP",
+   "headline_es": "UN MAPA GRATIS",
+   "text": "Every GTA 6 spot we've verified, on one free map.",
+   "text_es": "Todos los lugares de GTA seis que verificamos, en un mapa gratis.",
+   "keep_media": true,
+   "media": "../media/site/map-demo-shoe-en.mp4",
+   "media_start": 3.3,
+   "media_es": "../media/site/map-demo-shoe-es.mp4",
+   "media_start_es": 3.4
+  },
+  {
+   "headline": "TYPE IT",
+   "headline_es": "ESCRÍBELO",
+   "text": "Type what you need, like shoe, and it flies you there.",
+   "text_es": "Escribe lo que buscas, como zapatos, y te lleva ahí.",
+   "keep_media": true,
+   "media": "../media/site/map-demo-shoe-en.mp4",
+   "media_start": 1.0,
+   "media_es": "../media/site/map-demo-shoe-es.mp4",
+   "media_start_es": 1.0
+  },
+  {
+   "headline": "44 SPOTS",
+   "headline_es": "44 LUGARES",
+   "text": "Forty-four spots so far, each from two or more guides.",
+   "text_es": "Cuarenta y cuatro lugares por ahora, cada uno de dos o más guías.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 44,
+    "label": "spots pinned",
+    "src": "vicereplay.com · 2+ guides each"
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 44,
+    "label": "lugares en el mapa",
+    "src": "vicereplay.com · 2+ guías cada uno",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "FREE",
+   "headline_es": "GRATIS",
+   "text": "It's free at vicereplay dot com, and",
+   "text_es": "Es gratis en vicereplay punto com, y",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FREE AT",
+     "VICEREPLAY.COM"
+    ],
+    "pink": [
+     "VICEREPLAY.COM"
+    ],
+    "seed": 196
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GRATIS EN",
+     "VICEREPLAY.COM"
+    ],
+    "pink": [
+     "VICEREPLAY.COM"
+    ],
+    "seed": 196
+   }
+  }
+ ],
+ "claim_status": "community-found"
+}

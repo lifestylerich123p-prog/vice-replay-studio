@@ -339,5 +339,34 @@
   ],
   "status": "cleared",
   "notes": "Added Nov 25, 2026 (main chat): episode-format.md offers \"image\": \"vice:2\" for thumbnails but no record matched it, so the gate denied our own art."
+ },
+ {
+  "id": "vicereplay-site-recordings",
+  "asset_class": "screen recordings of our own website (interactive map demos)",
+  "match": [
+   "media/site/*"
+  ],
+  "owner": "Vice Replay (site UI, pins, text) + Rockstar Games (the official map image in the tiles)",
+  "permission": "our own site; the official Leonida map is Rockstar's downloadable map (rockstargames.com/VI/downloads), already allowed in our videos",
+  "license_url": "https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz",
+  "commercial_use": "own material; the map: tolerated, not licensed",
+  "creator_restrictions": "only recorded with tools/record_map_demo.js from the local site checkout; no third-party pages",
+  "music_rights": "n/a (silent)",
+  "campaign": null,
+  "attribution": "the map credit shows on screen (Map: Rockstar Games (official) · pins: Vice Replay)",
+  "expires": null,
+  "content_id_risk": "low",
+  "platforms_allowed": [
+   "YouTube",
+   "Instagram",
+   "TikTok",
+   "vicereplay.com"
+  ],
+  "destinations_allowed": [
+   "vice-replay",
+   "vice-replay-es"
+  ],
+  "status": "conditional",
+  "notes": "Phase 3 (owner Nov 26): interactive map demonstrations"
  }
 ]

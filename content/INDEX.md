@@ -24,6 +24,9 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| ? | gta6-interactive-map-howto | Short | GTA 6 Interactive Map: Find Any Spot in Seconds | - |
+| ? | gta6-car-dealership | Short | Is There a Car Dealership in GTA 6? | - |
+| ? | gta6-barber-shop-where | Short | Where to Get a Haircut in GTA 6 | - |
 | 2026-11-26 | gta6-white-fox-where | Short | GTA 6 Legendary Animals: Where to Find the White Fox | - |
 | 2026-11-26 | gta6-vice-city-real-miami | Short | GTA 6's Vice City vs Real Miami: 5 Places | - |
 | 2026-11-26 | gta6-tattoo-shops-where | Short | GTA 6 Tattoo Shop Locations: All 11 and Where to Start | - |

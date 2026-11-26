@@ -1,0 +1,410 @@
+{
+ "_note": "Kept by the map intelligence agent (.claude/agents/vice-replay-map-intelligence.md). 'verified' = 2+ source sites + map label/grid + claim status. studio.opportunities reads this.",
+ "families": {
+  "shopping": {
+   "keywords": [
+    "shoe",
+    "shoes",
+    "store",
+    "shop",
+    "clothing",
+    "clothes",
+    "outfit",
+    "mask",
+    "tattoo",
+    "barber",
+    "haircut",
+    "jewelry",
+    "jewellery",
+    "tienda",
+    "zapatos",
+    "ropa",
+    "máscara",
+    "tatuaje"
+   ],
+   "note": "places to buy/change your look or sell loot"
+  },
+  "money": {
+   "keywords": [
+    "money",
+    "cash",
+    "atm",
+    "treasure",
+    "shipwreck",
+    "sell",
+    "dinero",
+    "cajero",
+    "tesoro"
+   ]
+  },
+  "creatures": {
+   "keywords": [
+    "bigfoot",
+    "skunk ape",
+    "ufo",
+    "ghost",
+    "panther",
+    "bear",
+    "fox",
+    "alligator",
+    "crab",
+    "shark",
+    "caimán",
+    "pantera",
+    "zorro",
+    "cangrejo",
+    "ovni",
+    "fantasma"
+   ]
+  },
+  "easter-eggs": {
+   "keywords": [
+    "easter egg",
+    "portal",
+    "backrooms",
+    "silent hill",
+    "turtles",
+    "red dead",
+    "dexter",
+    "secret",
+    "secreto",
+    "tortugas"
+   ]
+  },
+  "vehicles": {
+   "keywords": [
+    "car",
+    "cars",
+    "helicopter",
+    "jet",
+    "jets",
+    "stanier",
+    "paul walker",
+    "boat",
+    "plane",
+    "bike",
+    "coche",
+    "helicóptero"
+   ]
+  },
+  "map": {
+   "keywords": [
+    "map",
+    "mapa",
+    "where",
+    "location",
+    "dónde"
+   ],
+   "note": "interactive map tutorials, map how-tos"
+  }
+ },
+ "candidates": [
+  {
+   "key": "clothing-stores",
+   "family": "shopping",
+   "title_en": "GTA 6 clothing store locations",
+   "title_es": "GTA 6: dónde comprar ROPA",
+   "search": [
+    "gta 6 clothing store",
+    "gta 6 clothes shop",
+    "gta 6 tienda de ropa"
+   ],
+   "keywords": [
+    "clothing store",
+    "clothing stores",
+    "clothes shop",
+    "tienda de ropa"
+   ],
+   "place": "Port Gellhorn (Bargain World, cheapest), Key Lento, Vice Beach, Waning Sands, Capri, Hamlet",
+   "grid": null,
+   "claim_status": "community-found",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-all-clothing-stores-locations/",
+    "https://www.sportskeeda.com/esports/all-gta-6-clothing-store-locations",
+    "https://www.theclick.gg/gta-6-clothing-store-locations/",
+    "https://www.gtabase.com/gta-6/map/?feature=clothing"
+   ],
+   "status": "verified",
+   "notes": "Nov 26 research: 67 stores (PowerPyx, TheClick) vs 77 GTABase pins: say 'guides count 67'. Change clothes at safehouses. Prices single-source (Game8): leave out.",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
+  },
+  {
+   "key": "barber-shops",
+   "family": "shopping",
+   "title_en": "GTA 6 barber shop location: change your hair",
+   "title_es": "GTA 6: dónde cortarte el PELO",
+   "search": [
+    "gta 6 barber shop",
+    "gta 6 haircut",
+    "gta 6 barbería"
+   ],
+   "keywords": [
+    "barber",
+    "haircut",
+    "barbería"
+   ],
+   "place": "Key Lento (Barnacle Beauties), Hamlet, Little Cuba, Capri, Crosstown",
+   "grid": null,
+   "claim_status": "community-found",
+   "sources": [
+    "https://www.sportskeeda.com/gta/all-barber-shop-locations-gta-6",
+    "https://www.powerpyx.com/gta-6-all-hair-beauty-salon-locations/",
+    "https://www.theclick.gg/gta-6-get-the-chop/",
+    "https://www.gtabase.com/gta-6/map/?feature=haircut"
+   ],
+   "status": "produced",
+   "notes": "episodes/gta6-barber-shop-where.json (Nov 26)",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
+  },
+  {
+   "key": "rare-outfits",
+   "family": "shopping",
+   "title_en": "GTA 6 rare outfits and where to get them",
+   "title_es": "GTA 6: ropa SECRETA y dónde está",
+   "search": [
+    "gta 6 rare outfits",
+    "gta 6 secret outfit",
+    "gta 6 ropa secreta"
+   ],
+   "keywords": [
+    "rare outfit",
+    "secret outfit",
+    "hidden clothing",
+    "ropa secreta"
+   ],
+   "place": "Key Lento (Wonder Whale, Ultimate Edition), Vice City north of Bayside (Stock 305)",
+   "grid": null,
+   "claim_status": "confirmed",
+   "sources": [
+    "https://www.shacknews.com/article/151407/find-ultimate-edition-vice-city-pack-bonuses-gta6",
+    "https://www.redbull.com/us-en/gta-6-ultimate-edition-bonuses",
+    "https://www.sportskeeda.com/esports/where-find-stock-305-gta-6-clothing-store-location",
+    "https://www.gamesradar.com/games/grand-theft-auto/gta-6-ultimate-edition-pre-order-bonuses/"
+   ],
+   "status": "researching",
+   "notes": "Only the Ultimate Edition items are verified (Macca the Gator gear at the Wonder Whale; Stock 305). Tommy Vercetti shirt, Mario hats, missable Chapter 1 items: single source, not verified. Overlaps gta6-ultimate-edition-shops: check before making.",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
+  },
+  {
+   "key": "car-dealership",
+   "family": "vehicles",
+   "title_en": "GTA 6 car dealership: where to buy cars",
+   "title_es": "GTA 6: dónde COMPRAR coches",
+   "search": [
+    "gta 6 car dealership",
+    "gta 6 buy cars",
+    "gta 6 concesionario"
+   ],
+   "keywords": [
+    "dealership",
+    "buy cars",
+    "concesionario"
+   ],
+   "place": "none: steal + register (19 Pay 'n' Sprays)",
+   "grid": null,
+   "claim_status": "community-found",
+   "sources": [
+    "https://www.gtabase.com/gta-6/articles/can-you-buy-cars-in-gta-6-how-to-acquire-vehicles",
+    "https://game8.co/games/GTA-6/archives/639287",
+    "https://www.theclick.gg/gta-6-pay-n-spray-locations/",
+    "https://gamerant.com/gta-6-store-cars-garage-little-boxes/"
+   ],
+   "status": "produced",
+   "notes": "episodes/gta6-car-dealership.json (Nov 26). Keep the one-time story car purchase out (spoiler).",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
+  },
+  {
+   "key": "safehouses",
+   "family": "map",
+   "title_en": "GTA 6 safehouse locations",
+   "title_es": "GTA 6: todas las CASAS que puedes comprar",
+   "search": [
+    "gta 6 safehouses",
+    "gta 6 houses to buy",
+    "gta 6 casas"
+   ],
+   "keywords": [
+    "safehouse",
+    "safehouses",
+    "casas"
+   ],
+   "place": null,
+   "grid": null,
+   "claim_status": null,
+   "sources": [],
+   "status": "idea",
+   "notes": "",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0
+  },
+  {
+   "key": "interactive-map-howto",
+   "family": "map",
+   "title_en": "GTA 6 map: find every secret in 10 seconds (interactive map)",
+   "title_es": "GTA 6: el MAPA interactivo con todos los secretos",
+   "search": [
+    "gta 6 interactive map",
+    "gta 6 map all locations",
+    "gta 6 mapa interactivo"
+   ],
+   "keywords": [
+    "interactive map",
+    "mapa interactivo"
+   ],
+   "place": null,
+   "grid": null,
+   "claim_status": null,
+   "sources": [],
+   "status": "produced",
+   "notes": "10% map tutorials: screen-record vicereplay.com map (our own site, no third-party footage) | produced Nov 26: episodes/gta6-interactive-map-howto.json",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0
+  },
+  {
+   "key": "map-legend-howto",
+   "family": "map",
+   "title_en": "GTA 6 map icons explained",
+   "title_es": "GTA 6: qué significa cada ICONO del mapa",
+   "search": [
+    "gta 6 map icons",
+    "gta 6 map legend",
+    "gta 6 iconos mapa"
+   ],
+   "keywords": [
+    "map icons",
+    "legend",
+    "iconos"
+   ],
+   "place": null,
+   "grid": null,
+   "claim_status": null,
+   "sources": [],
+   "status": "idea",
+   "notes": "",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0
+  },
+  {
+   "key": "sharks",
+   "family": "creatures",
+   "title_en": "GTA 6 shark location",
+   "title_es": "GTA 6: dónde hay TIBURONES",
+   "search": [
+    "gta 6 shark",
+    "gta 6 tiburón"
+   ],
+   "keywords": [
+    "shark",
+    "tiburón"
+   ],
+   "place": null,
+   "grid": null,
+   "claim_status": null,
+   "sources": [],
+   "status": "idea",
+   "notes": "",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0
+  },
+  {
+   "key": "fishing-spots",
+   "family": "money",
+   "title_en": "GTA 6 best fishing spots",
+   "title_es": "GTA 6: dónde PESCAR",
+   "search": [
+    "gta 6 fishing",
+    "gta 6 pescar"
+   ],
+   "keywords": [
+    "fishing",
+    "pescar"
+   ],
+   "place": "Key Lento (rods at the pier west of Jason's house; Chuck's Tackle & Shot lures), Gambit Bay (Cal's challenge)",
+   "grid": null,
+   "claim_status": "community-found",
+   "sources": [
+    "https://www.shacknews.com/article/151389/how-to-go-fishing-gta6",
+    "https://www.gtabase.com/gta-6/articles/how-to-fish-in-gta-6",
+    "https://www.theclick.gg/gta-6-all-fish-locations/",
+    "https://www.gtabase.com/gta-6/missions/catch-a-bigger-fish"
+   ],
+   "status": "verified",
+   "notes": "Fishing pays NO cash (fish auto-released; 3 sources): angle = 'does it pay?'. 35 species. Rod spot differs (pier vs boat): say 'by the pier' carefully. Lake Leonida bass: fan wiki only.",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
+  },
+  {
+   "key": "hunting-spots",
+   "family": "money",
+   "title_en": "GTA 6 hunting locations",
+   "title_es": "GTA 6: dónde CAZAR",
+   "search": [
+    "gta 6 hunting",
+    "gta 6 cazar"
+   ],
+   "keywords": [
+    "hunting",
+    "cazar"
+   ],
+   "place": "Lummox County (Killtelligence Provisions by Mount Kalaga)",
+   "grid": null,
+   "claim_status": "community-found",
+   "sources": [
+    "https://www.gtabase.com/gta-6/strangers/veteran-hunted",
+    "https://www.powerpyx.com/gta-6-veteran-hunted-meet-bret-walkthrough/",
+    "https://www.theclick.gg/gta-6-how-to-sell-animals/",
+    "https://www.gtabase.com/gta-6/strangers/brets-hunting-decks"
+   ],
+   "status": "verified",
+   "notes": "Unlocks Chapter 2, Jason only; first hunt $500 + rifle (GTABase, PowerPyx) -> rifle = gun: show the shop/map, never the weapon. Per-animal prices not verified.",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
+  }
+ ],
+ "spanish_seeds_2026_11_26": [
+  "dónde encontrar: Vandal 'Todos los puntos de meditación – Localización', GTABase ES 'Todas las ubicaciones seguras' (safes)",
+  "cómo conseguir: Vandal '¿Cómo conseguir dinero rápido?', Vandal 'Ultimate Edition: contenidos exclusivos y cómo desbloquearlos'",
+  "lugares secretos: Infobae 'GTA 6 tiene una isla secreta de perros' (one source: research before using)",
+  "note: seeds from search summaries, not proven keywords"
+ ]
+}

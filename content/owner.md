@@ -6,6 +6,14 @@
 - Review page (pinned, updated by every run): https://claude.ai/artifact/DWvVW2BQrHZP9Xfs5Ve17Q
 
 ## Standing approvals
+
+- **2026-11-26, "VICE REPLAY — PHASE 3: DATA-DRIVEN GROWTH AND AUTONOMOUS OPTIMIZATION"**: both channels fully
+  autonomous (videos that pass independent checks publish without per-video approval); prioritize practical value over
+  generic news/tier lists/comparisons; mix 40/25/15/10/10 (adjust from data, don't drop a format on one video); map
+  intelligence agent; follow-up engine (no duplicates); varied map visuals; Spanish-first scripts, 12:30 PM / 7 PM;
+  pronunciation dictionary, voice license check, paid voices selective; verified credit accounting; GitHub reliability
+  for the 5 AM run; per-language render dependencies; contextual leak checks; labelled claims; website guides linked to
+  videos; cross-platform analytics; investigate official TikTok/Instagram publishing; concise daily report.
 - 2026-11-17: Breaking-news auto-post. The owner approved publishing breaking-news Shorts WITHOUT asking first,
   only under the rules in `.claude/commands/breaking-news.md` (score 8+/10, 2+ reputable sources, max 2 per day,
   Shorts only, no spoilers, no repeats). Everything else still waits for the owner's "approve". The owner can turn

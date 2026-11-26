@@ -89,7 +89,27 @@ def piper_tts(text, voice, speed, wav):
                        input=text, text=True, capture_output=True)
     if r.returncode or not Path(wav).exists() or Path(wav).stat().st_size < 1000:
         raise RuntimeError(f"piper failed: {r.stderr[-200:]}")
+    peak_limit(wav)
     return wav
+
+
+def peak_limit(wav, ceiling_db=-1.5):
+    """Phase 3 voice check (Nov 26): Piper's raw output peaks at 0 dBFS with samples at full scale (clipping). Scale
+    the whole line down so its peak sits at `ceiling_db` (no compression: the delivery stays as spoken)."""
+    import wave
+    import numpy as np
+    with wave.open(str(wav)) as w:
+        params, raw = w.getparams(), w.readframes(w.getnframes())
+    if params.sampwidth != 2:
+        return
+    x = np.frombuffer(raw, dtype=np.int16).astype(np.float64)
+    peak = np.max(np.abs(x)) if len(x) else 0
+    ceiling = 32767 * 10 ** (ceiling_db / 20)
+    if peak > ceiling:
+        y = np.clip(np.round(x * (ceiling / peak)), -32768, 32767).astype(np.int16)
+        with wave.open(str(wav), "wb") as w:
+            w.setparams(params)
+            w.writeframes(y.tobytes())
 
 
 def http_tts(url, headers, payload, out):
@@ -127,6 +147,8 @@ def tts(text, voice, rate, out_base):
     """Voice engines: "eleven:<voice_id>" (ElevenLabs) and "openai:<voice>" (OpenAI) are paid APIs;
     Kokoro voices (am_*, af_*, bm_*, bf_*) run locally for free; en-US-*Neural voices use Microsoft
     edge-tts (needs a normal internet connection). Falls back to robotic espeak-ng."""
+    from . import pronounce  # Phase 3: GTA names said right (config/pronounce-<lang>.json); captions keep the spelling
+    text = pronounce.apply(text, pronounce.lang_of_voice(voice))
     if voice.startswith("piper:"):  # free local voice (Spanish default since Nov 26)
         try:
             speed = 1 + int(rate.strip("%+")) / 100 if rate.strip("%+-").isdigit() else 1.08
@@ -634,8 +656,10 @@ def segment_key(i, seg, w, h, vertical, enc, voice, rate, vo_file=None):
     vo = None
     if vo_file and (ROOT / vo_file).exists():
         vo = hashlib.sha256((ROOT / vo_file).read_bytes()).hexdigest()
+    from . import pronounce
     payload = {"i": i, "seg": seg, "w": w, "h": h, "vertical": vertical, "enc": enc, "voice": voice, "rate": rate,
-               "vo": vo, "photos_before": sorted(cardphotos.used()), "code": code_hash()}
+               "vo": vo, "photos_before": sorted(cardphotos.used()), "code": code_hash(),
+               "lexicon": pronounce.terms(pronounce.lang_of_voice(voice))}  # a respelling change re-voices the card
     return hashlib.sha256(json.dumps(payload, sort_keys=True, default=str).encode()).hexdigest()
 
 
@@ -1085,10 +1109,13 @@ def main():
     ap.add_argument("--preview", action="store_true", help="fast low-res draft")
     ap.add_argument("--voice", help=f"edge-tts voice (default {DEFAULT_VOICE})")
     ap.add_argument("--es", action="store_true", help="Spanish-voiced Shorts (free Kokoro em_alex voice, text_es; files end in -es)")
+    ap.add_argument("--meta-only", action="store_true", help="Shorts: rewrite only the title/description .txt "
+                    "(studio/renderdeps.py: a package change doesn't need a new render)")
     a = ap.parse_args()
 
     ep_path = Path(a.episode).resolve()
     ep = json.loads(ep_path.read_text())
+    ep_disk = json.loads(ep_path.read_text())  # renderdeps fingerprints the episode as loaded (rendering adds _payoff etc.)
     base = ep_path.parent
     slug = ep.get("slug") or re.sub(r"[^a-z0-9]+", "-", ep["title"].lower()).strip("-")
     vertical = a.short
@@ -1119,15 +1146,27 @@ def main():
                 if not all(x.get("text_es") for x in sh["segments"]):
                     print(f"skip Spanish {sh.get('id') or 'short'}: a segment has no text_es")
                     continue
-                segs = [dict(x, text=x["text_es"], headline=x.get("headline_es") or x.get("headline"), _lang="es")
+                segs = [dict(x, text=x["text_es"], headline=x.get("headline_es") or x.get("headline"), _lang="es",
+                             media=x.get("media_es") or x.get("media"),  # Phase 3: Spanish-first visuals (es site demo)
+                             media_start=x.get("media_start_es", x.get("media_start")))
                         for x in sh["segments"]]
                 es_shorts.append(dict(sh, segments=segs, title=es.get("title") or sh.get("title"),
                                       description=es.get("description") or sh.get("description"), lang_suffix="-es"))
             shorts = es_shorts
+        from . import renderdeps
         for sh in shorts:
             name = f"{slug}-short" + (f"-{sh['id']}" if sh.get("id") else "") + sh.get("lang_suffix", "")
+            item_key, lang = sh.get("id") or "short", "es" if a.es else "en"
             print(f"== Short: {name}")
-            final, _, used = build(ep, base, slug, sh["segments"], True, a.preview, enc, w, h, voice, rate, name)
+            if a.meta_only:
+                final = out_dir / f"{name}.mp4"
+                if not final.exists():
+                    print(f"skip {name}: not rendered yet (meta-only needs the video)")
+                    continue
+                mp = renderdeps.manifest_path(final)
+                used = json.loads(mp.read_text()).get("used_footage", True) if mp.exists() else True
+            else:
+                final, _, used = build(ep, base, slug, sh["segments"], True, a.preview, enc, w, h, voice, rate, name)
             tags = " ".join("#" + t for t in sh.get("hashtags", ["GTA6", "GTAVI", "Shorts"]))
             lines = ["TITLE", sh.get("title") or ep["title"], "", "DESCRIPTION", sh.get("description", ""), ""]
             if used:
@@ -1139,7 +1178,13 @@ def main():
             lines += ["Vice Replay es un canal de fans, no afiliado con Rockstar Games." if a.es else
                       "Vice Replay is a fan channel, not affiliated with Rockstar Games.", "", tags]
             (out_dir / f"{name}.txt").write_text("\n".join(lines))
+            if a.meta_only:
+                renderdeps.write_package(final, ep_disk, item_key, lang)
+                print(f"Done (title/description only): {out_dir / (name + '.txt')}")
+                continue
             fix_timestamps(final)
+            if not a.preview:
+                renderdeps.write(final, ep_disk, item_key, lang, used_footage=used)
             print(f"Done: {final}  ({fmt_ts(duration(final))})")
         return
     final, chapters, used_footage = build(ep, base, slug, ep["segments"], False, a.preview, enc, w, h, voice,
