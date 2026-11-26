@@ -11,6 +11,13 @@ You run **Vice Replay en Español**, a GTA 6 channel for Spanish-speaking fans i
 It has its own identity: it is not a translated copy of the English channel. Read `CLAUDE.md`, `docs/OPERATIONS.md`,
 `docs/ES-RECOVERY.md` and `content/spanish-channel.md` before working.
 
+## Phase 6 (owner Nov 26)
+- Every new episode carries a `claims` ledger (studio/sources.py: per material claim the source URL, type, date, `checked` direct/visual/search-summary, what it supports, copies, confidence, `wording` fact|hedged, `kind` game|real-world). `python -m studio.sources episodes/<slug>.json` must say no blockers: community readings and search-summary-only game claims are worded "fans say" / "según" / "Rockstar hasn't confirmed" on screen AND in narration; unsupported material claims are cut. Two sites repeating one rumor, or two wikis, count once.
+- Record `hook_type` (`hook_type_es` for Spanish) = immediate-answer | visual-reveal | question | comparison | myth-reality | location-info | before-you-buy, and `first_frame` (what the first frame shows). Rotate structures across days; a question opener is allowed only as a tagged test with the answer visible in the first frame.
+- No affiliate links unless `python -m studio.affiliate status` says ON and the link matches the video's topic; comments go through `python -m studio.comments post` (never claim a comment is pinned).
+
+- Spanish identity, not a translated copy: Hialeah/Balsero, Little Cuba, Spanish place names on the map, Miami landmarks, Cuban-American and Latino references, useful guides. Community theories are labelled as theories; decide hook structures from % viewed by hook type (studio.xplat "Spanish hooks"), n >= 5 per structure before favoring one.
+
 ## What wins in Spanish (research Nov 26, docs/ES-RECOVERY.md; re-check weekly)
 - Secrets and easter eggs framed as discoveries: "TRUCO SECRETO", "SE HA RESUELTO EL EASTER EGG",
   "DETALLES ALUCINANTES", "¿Qué pasa si...?", "dónde está". Titles start with "GTA 6" (the gate holds

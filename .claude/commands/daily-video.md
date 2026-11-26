@@ -4,6 +4,11 @@ description: The automated daily run - pick today's topic, make the video + Shor
 You are running the daily Vice Replay automation. Nobody is watching live, so don't ask questions:
 make sensible choices, finish the whole run, and explain your choices in the final report.
 
+**PHASE 6 (owner Nov 26, "Operational validation, growth and revenue"; wins over everything below, Phase 3 included):**
+- Every new episode carries a `claims` ledger (studio/sources.py: per material claim the source URL, type, date, `checked` direct/visual/search-summary, what it supports, copies, confidence, `wording` fact|hedged, `kind` game|real-world). `python -m studio.sources episodes/<slug>.json` must say no blockers: community readings and search-summary-only game claims are worded "fans say" / "según" / "Rockstar hasn't confirmed" on screen AND in narration; unsupported material claims are cut. Two sites repeating one rumor, or two wikis, count once.
+- Record `hook_type` (`hook_type_es` for Spanish) = immediate-answer | visual-reveal | question | comparison | myth-reality | location-info | before-you-buy, and `first_frame` (what the first frame shows). Rotate structures across days; a question opener is allowed only as a tagged test with the answer visible in the first frame.
+- No affiliate links unless `python -m studio.affiliate status` says ON and the link matches the video's topic; comments go through `python -m studio.comments post` (never claim a comment is pinned).
+
 **PHASE 3 (owner Nov 26, "Data-driven growth and autonomous optimization"; wins over EVERYTHING below):**
 - **Where this runs and how it saves.** The run fires into the persistent helper session "🎬 Vice Replay: daily run"
   (cloned with this repo; push verified). It NEVER pushes to main, posts, uploads or books slots. Start with

@@ -34,29 +34,55 @@ FORMATS = [  # first match wins; from the title/caption when the episode can't t
 ]
 
 
-HOOKS = [  # Phase 4 #8: hook structures, tracked per episode ("hook_type") or read from the first line
-    ("location-reveal", r"\b(is (right )?(in|at|here|next to)|right in|here's exactly where|está (en|aquí|junto)|aquí está)\b"),
-    ("warning", r"\b(before you|don't|do not|stop|antes de|no (compres|gastes|hagas))\b"),
-    ("curiosity", r"\b(most players|nobody|walk (straight )?past|hidden|secret|casi nadie|escond)\b"),
-    ("myth-check", r"\b(does .* exist|is it real|there's no|there is no|isn't real|no hay|existe)\b"),
-    ("benefit", r"\b(free|gratis|track|save|in seconds|one tap|un toque)\b"),
-    ("result-first", r"\d|\b(already|just|ya)\b"),
+HOOKS = [  # Phase 6 #3 (owner Nov 26): the 7 hook structures we test; an episode's "hook_type" wins, else the first line
+    ("question", r"\?\s*$|^\s*¿"),
+    ("before-you-buy", r"\b(before you|don't (buy|spend|waste)|do not|antes de (comprar|gastar)|no (compres|gastes))\b"),
+    ("myth-reality", r"\b(myth|does .* (exist|pay)|is it real|isn't real|no hay|existe|mito|de verdad)\b"),
+    ("comparison", r"\b(vs\.?|versus|same spot as|like the real|just like|igual que|mismo sitio|como el .* real)\b"),
+    ("location-info", r"\b(is (right )?(in|at|here|next to)|right in|here's exactly where|está (en|aquí|junto|al)|aquí está|"
+                      r"location|ubicaci[oó]n|dónde)\b"),
+    ("visual-reveal", r"\b(look at|watch this|mira (esto|este)|this is|esto es)\b"),
+    ("immediate-answer", r"\d|\b(already|just|ya|se llama|is called)\b"),
 ]
+HOOK_ALIASES = {"location-reveal": "location-info", "warning": "before-you-buy", "myth-check": "myth-reality",
+                "result-first": "immediate-answer", "curiosity": "question", "benefit": "location-info",
+                "statement": "immediate-answer"}
 
 
-def hook_of(slug, title=""):
+def hook_of(slug, title="", lang="en"):
     p = ROOT / "episodes" / f"{slug}.json" if slug else None
     first = ""
     if p and p.exists():
         ep = json.loads(p.read_text())
-        if ep.get("hook_type"):
-            return ep["hook_type"]
-        first = ((ep.get("short") or [{}])[0].get("text") or "")
-    t = (first or title or "").lower()
+        tagged = ep.get("hook_type_es" if lang == "es" else "hook_type") or ep.get("hook_type")
+        if tagged:
+            return HOOK_ALIASES.get(tagged, tagged)
+        seg = (ep.get("short") or [{}])[0]
+        first = (seg.get("text_es") if lang == "es" else None) or seg.get("text") or ""
+    t = re.split(r"(?<=[.!?])\s", (first or title or "").strip().lower())[0]
+    t = re.sub(r"\bgta\s*(6|vi|seis|5|v)\b", "", t)  # the game's name isn't a number hook
     for name, pat in HOOKS:
         if re.search(pat, t):
             return name
-    return "statement"
+    return "immediate-answer"
+
+
+def first_frame(slug, lang="en"):
+    """What the first frame shows (recorded with the hook): the episode's "first_frame", else the first card's kind."""
+    p = ROOT / "episodes" / f"{slug}.json" if slug else None
+    if not (p and p.exists()):
+        return None
+    ep = json.loads(p.read_text())
+    if ep.get("first_frame"):
+        return ep["first_frame"]
+    seg = (ep.get("short") or [{}])[0]
+    c = (seg.get("chart_es") if lang == "es" else None) or seg.get("chart") or {}
+    kind = c.get("type")
+    if kind == "map":
+        return f"map-pin ({c.get('style', 'zoom')})"
+    if c.get("bg") or kind in ("text", "quote", "list"):
+        return f"{kind or 'card'} on photo"
+    return kind or ("footage" if seg.get("media") else "unknown")
 
 
 def fmt_of(text, card=None):
@@ -122,7 +148,8 @@ def youtube_es_rows():
                     "completion_pct": v.get("averageViewPercentage"), "avg_watch_s": v.get("averageViewDuration"),
                     "followers": v.get("subscribersGained"), "likes": v.get("likes"), "shares": v.get("shares"),
                     "comments": None, "saves": None, "engaged": None, "voice": u.get("voice"), "cost_credits": None,
-                    "hook_type": hook_of(u.get("slug"), u.get("title", ""))})
+                    "hook_type": hook_of(u.get("slug"), u.get("title", ""), "es"),
+                    "first_frame": first_frame(u.get("slug"), "es")})
     return out
 
 
@@ -209,6 +236,18 @@ def hook_table(rows):
     return {k: {"median_rel": round(statistics.median(v), 2), "n": len(v), "preliminary": len(v) < 5} for k, v in g.items()}
 
 
+def hook_table_es(rows):
+    """Spanish retention by hook structure (Phase 6 #3): median % viewed and views per hook type, with first frames.
+    n < 5 = preliminary; never pick a winner from 1-2 videos."""
+    g = {}
+    for r in rows:
+        if r["platform"] == "youtube-es" and r.get("completion_pct") is not None:
+            g.setdefault(r.get("hook_type") or "immediate-answer", []).append(r)
+    return {k: {"median_pct_viewed": round(statistics.median(x["completion_pct"] for x in v), 1),
+                "median_views": statistics.median(x.get("views") or 0 for x in v), "n": len(v), "preliminary": len(v) < 5,
+                "first_frames": sorted({x.get("first_frame") or "?" for x in v})} for k, v in g.items()}
+
+
 def age_table(rows):
     """Median YouTube views at 1 h / 24 h / 72 h / 7 d / 28 d (after launch week), with n; n < 5 = preliminary."""
     out = {}
@@ -235,7 +274,7 @@ def build():
         if w and w.get("ratio") is not None:
             r.update(metric=w["views_at"], baseline=w["baseline"], rel=w["ratio"], at_h=w["at_h"])
     res = {"at": dt.datetime.now(dt.timezone.utc).isoformat(), "baselines": {f"{p}/{l}": b for (p, l), b in base.items()},
-           "formats": across(rows), "hooks": hook_table(rows), "ages": age_table(rows), "posts": rows,
+           "formats": across(rows), "hooks": hook_table(rows), "hooks_es": hook_table_es(rows), "ages": age_table(rows), "posts": rows,
            "website": website_rows(),
            "missing": ["YouTube engaged views (not in our pull)", "TikTok likes/comments/shares (not requested from Windsor yet)",
                        "Instagram views/reach/saves (needs the owner's one-click Windsor Instagram connect)"]}
@@ -252,6 +291,10 @@ def build():
     L += ["", "## Hooks (YouTube, median rel, n; n < 5 = preliminary)"]
     L += [f"- {k}: {d['median_rel']} (n={d['n']}{', preliminary' if d['preliminary'] else ''})"
           for k, d in sorted(res["hooks"].items(), key=lambda x: -x[1]["median_rel"])]
+    L += ["", "## Spanish hooks: median % viewed by hook structure (n; first frames; n < 5 = preliminary)"]
+    L += [f"- {k}: {d['median_pct_viewed']}% viewed, {d['median_views']} views (n={d['n']}"
+          f"{', preliminary' if d['preliminary'] else ''}; first frames: {', '.join(d['first_frames'])})"
+          for k, d in sorted(res.get("hooks_es", {}).items(), key=lambda x: -x[1]["median_pct_viewed"])] or ["- no data yet"]
     L += ["", "## YouTube views by age (median, n)"]
     L += [f"- {k}: {d['median']} (n={d['n']}{', preliminary' if d['preliminary'] else ''})" for k, d in res["ages"].items()]
     es = [r for r in rows if r["platform"] == "youtube-es" and r.get("completion_pct") is not None and r.get("views")]

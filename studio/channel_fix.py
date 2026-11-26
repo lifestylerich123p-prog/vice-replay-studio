@@ -60,7 +60,8 @@ def main():
         if "not affiliated" not in body_sn["description"].lower():
             body_sn["description"] = (body_sn["description"].rstrip() + "\n\n" + line)[:4900]
             did.append("not-affiliated line")
-        if item.get("append") and "tag=vicereplay-20" not in body_sn["description"]:
+        from . import affiliate  # Phase 6 #6: no affiliate links while the Associates account is unconfirmed
+        if item.get("append") and affiliate.active() and "tag=vicereplay-20" not in body_sn["description"]:
             body_sn["description"] = (body_sn["description"].rstrip() + "\n\n" + item["append"])[:4900]
             did.append("affiliate links")
         tags = list(dict.fromkeys(body_sn["tags"] + plan.get("common_tags", []) + item.get("tags", [])))[:30]

@@ -14,10 +14,10 @@
   "GTA 6 Sahara Arena location: Miami's real Heat arena 🏀 #GTA6 #Shorts"
  ],
  "title_rule": "Map Shorts lead with the search phrase ('gta 6 sahara arena', 'gta 6 kaseya center')",
- "short_description": "GTA 6 Sahara Arena location: it's labelled on Rockstar's official map in Downtown Vice City, on the bay east of Crosstown, the same spot Miami's Kaseya Center (home of the Miami Heat) holds in real life. Fan guides and GTA Wiki call it GTA 6's Kaseya Center; the name comes from Sahara, GTA's Amazon parody. In real life, on November 18, 2026, the Heat hosted \"A Night in Vice City\" at Kaseya Center: Vice City jerseys (Nike, Cactus Jack, Rockstar) and a Vice City court. No story spoilers.\n\nSources: Rockstar Games (official map), NBA.com (Miami Heat), ABC7/AP, GTABoom, GTA Wiki, Yardbarker, GTA6 Intel.",
+ "short_description": "GTA 6 Sahara Arena location: it's labelled on Rockstar's official map in Downtown Vice City, on the bay east of Crosstown, the same spot Miami's Kaseya Center (home of the Miami Heat) holds in real life. Fan guides and GTA Wiki call it GTA 6's Kaseya Center (Rockstar hasn't said so). In real life, on November 18, 2026, the Heat hosted \"A Night in Vice City\" at Kaseya Center: Vice City jerseys (Nike, Cactus Jack, Rockstar) and a Vice City court. No story spoilers.\n\nSources: Rockstar Games (official map), NBA.com (Miami Heat), ABC7/AP, GTABoom, GTA Wiki, Yardbarker, GTA6 Intel.",
  "short_es": {
   "title": "GTA 6: el KASEYA Center de Vice City 🏀 #GTA6 #Shorts",
-  "description": "El Sahara Arena de GTA 6 está en el mapa oficial de Rockstar: Downtown Vice City, junto a la bahía, al este de Crosstown, justo donde está el Kaseya Center de los Miami Heat en la vida real. Las guías de fans y la GTA Wiki lo llaman el Kaseya Center de GTA 6; el nombre viene de Sahara, la parodia de Amazon en GTA. Y en la vida real, el 18 de noviembre de 2026, los Heat jugaron \"A Night in Vice City\" en el Kaseya Center con camisetas y cancha de Vice City (Nike, Cactus Jack y Rockstar). Sin spoilers.\n\nFuentes: Rockstar Games (mapa oficial), NBA.com (Miami Heat), ABC7/AP, GTABoom, GTA Wiki, Yardbarker.",
+  "description": "El Sahara Arena de GTA 6 está en el mapa oficial de Rockstar: Downtown Vice City, junto a la bahía, al este de Crosstown, justo donde está el Kaseya Center de los Miami Heat en la vida real. Las guías de fans y la GTA Wiki lo llaman el Kaseya Center de GTA 6 (Rockstar no lo ha dicho). Y en la vida real, el 18 de noviembre de 2026, los Heat jugaron \"A Night in Vice City\" en el Kaseya Center con camisetas y cancha de Vice City (Nike, Cactus Jack y Rockstar). Sin spoilers.\n\nFuentes: Rockstar Games (mapa oficial), NBA.com (Miami Heat), ABC7/AP, GTABoom, GTA Wiki, Yardbarker.",
   "tags": [
    "GTA 6 Sahara Arena",
    "GTA 6 Kaseya Center",
@@ -95,14 +95,14 @@
    }
   },
   {
-   "headline": "THE HEAT'S ARENA",
-   "headline_es": "LA ARENA DE LOS HEAT",
-   "text": "Fans call it the Heat's arena, named after Sahara, GTA's Amazon.",
-   "text_es": "Los fans la llaman la arena de los Heat, con el nombre de Sahara, el Amazon de GTA.",
+   "headline": "FANS: HEAT'S ARENA",
+   "headline_es": "SEGÚN LOS FANS",
+   "text": "Fans call it the Heat's arena in the game.",
+   "text_es": "Los fans la llaman la arena de los Heat.",
    "keep_media": true,
    "chart": {
     "type": "text",
-    "text": "Sahara Arena = Kaseya Center, home of the Heat",
+    "text": "Fans say: Sahara Arena = Kaseya Center",
     "pink": [
      "Kaseya Center"
     ],
@@ -112,7 +112,7 @@
    },
    "chart_es": {
     "type": "text",
-    "text": "Sahara Arena = Kaseya Center, casa de los Heat",
+    "text": "Los fans dicen: Sahara Arena = Kaseya Center",
     "pink": [
      "Kaseya Center"
     ],
@@ -206,5 +206,132 @@
     "locale": "es"
    }
   }
- ]
+ ],
+ "claims": [
+  {
+   "claim": "Sahara Arena is labelled on Rockstar's official map in Downtown Vice City by the bay",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "Sahara Arena"
+   ],
+   "wording": "fact",
+   "confidence": "high",
+   "evidence": [
+    {
+     "url": "https://www.rockstargames.com/VI/downloads",
+     "type": "official",
+     "published": "2026-11-19",
+     "checked": "visual",
+     "supports": "Label 'Sahara Arena' east of Crosstown/FLAM next to the water (marker test at mappins 'Sahara Arena')"
+    }
+   ]
+  },
+  {
+   "claim": "Miami's Kaseya Center sits downtown on Biscayne Bay and is the Miami Heat's home",
+   "material": true,
+   "kind": "real-world",
+   "keywords": [
+    "Kaseya Center"
+   ],
+   "wording": "fact",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kaseya_Center",
+     "type": "real-world",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Arena in downtown Miami on Biscayne Bay, home of the Heat",
+     "copies": null
+    },
+    {
+     "url": "https://www.nba.com/heat/vicecity",
+     "type": "news",
+     "published": "2026-11",
+     "checked": "search-summary",
+     "supports": "Heat home game at Kaseya Center",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "Sahara Arena is GTA 6's version of the Kaseya Center",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "= Kaseya",
+    "heat's arena",
+    "arena de los heat"
+   ],
+   "wording": "hedged",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://x.com/GTAWikiOfficial/status/2102431695488082349",
+     "type": "wiki",
+     "published": "2026",
+     "checked": "search-summary",
+     "supports": "'The Kaseya Center is represented in GTA 6 as the Sahara Arena'",
+     "copies": null
+    },
+    {
+     "url": "https://www.yardbarker.com/general_sports/articles/every_sports_stadium_landmark_in_gta_6/s1_17898_44587582",
+     "type": "news",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Lists Sahara Arena as the Kaseya Center stand-in",
+     "copies": null
+    },
+    {
+     "url": "https://gta6intel.com/businesses/sahara-arena",
+     "type": "guide",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Real-world inspiration: Kaseya Center",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "On Nov 18, 2026 the Heat played 'A Night in Vice City' at Kaseya Center with Vice City jerseys and court",
+   "material": true,
+   "kind": "real-world",
+   "keywords": [
+    "Vice City jerseys",
+    "camisetas"
+   ],
+   "wording": "fact",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://www.nba.com/heat/vicecity",
+     "type": "news",
+     "published": "2026-11",
+     "checked": "search-summary",
+     "supports": "Nov 18 2026, 7 PM ET, Kaseya Center, 'A Night in Vice City'",
+     "copies": null
+    },
+    {
+     "url": "https://abc7.com/post/miami-heat-vice-city-jersey-celebrates-gta-6-launch/20053386/",
+     "type": "news",
+     "published": "2026-11",
+     "checked": "search-summary",
+     "supports": "Vice City jerseys with Nike, Cactus Jack and Rockstar",
+     "copies": null
+    },
+    {
+     "url": "https://www.gtaboom.com/miami-heat-unveils-gta-6-jerseys-for-vice-city-night-on-november-18-92fc",
+     "type": "news",
+     "published": "2026-11",
+     "checked": "search-summary",
+     "supports": "Vice City court + jerseys for Nov 18",
+     "copies": null
+    }
+   ]
+  }
+ ],
+ "hook_type": "comparison",
+ "hook_type_es": "comparison",
+ "first_frame": "map-pin (zoom): Sahara Arena pinned on Rockstar's official map"
 }

@@ -258,8 +258,18 @@ def check_short(ep, key, title, segs, gameplay_available=False):
         # the surprising result at once ("Eighteen hours early." 82%; "GTA 6 cheats are real, but there's a catch" 75%).
         opener = re.split(r"(?<=[.?!])\s", (segs[0].get("text") or "").strip())[0]
         if opener.endswith("?"):
-            blockers.append(f"hook: Short '{key}' opens with a question ({opener!r}). Questions first kept 35% of viewers "
-                            f"vs 60% for a statement: open with the surprising result itself, then the catch")
+            # Phase 6 #3 (owner Nov 26): "Do not permanently prohibit all question-based hooks. A question can be
+            # effective when it creates immediate curiosity and the visuals support it." A deliberate question test
+            # (hook_type "question") whose first frame already shows the answer (a map pin / photo card) is allowed
+            first_card = (segs[0].get("chart") or {})
+            visual = first_card.get("type") == "map" or bool(first_card.get("bg")) or bool(segs[0].get("media"))
+            if ep.get("hook_type") == "question" and visual:
+                warnings.append(f"hook: Short '{key}' opens with a question as a TEST ({opener!r}); compare its % viewed "
+                                f"with statement hooks in studio.xplat before using it again")
+            else:
+                blockers.append(f"hook: Short '{key}' opens with a question ({opener!r}). Questions first kept 35% of "
+                                f"viewers vs 60% for a statement: open with the result, or mark it \"hook_type\": "
+                                f"\"question\" with the answer visible in the first frame (map pin / photo) as a test")
         if not re.search(r"\d", segs[0].get("headline") or "") and not segs[0].get("chart"):
             warnings.append(f"hook: Short '{key}' opens without a number on screen; our Shorts with a number in the first "
                             f"headline kept 65% of viewers vs 49% (put the number in the headline or open on a `chart`)")

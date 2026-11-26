@@ -318,6 +318,20 @@ def checks(ep_path, item="short", platform="youtube-en", publish=None, now=None,
     # 1: facts
     if len(ep.get("sources") or []) < 2:
         block.append("fewer than 2 sources in the episode")
+    # Phase 6 #5: claim-level ledger (studio/sources.py): unsupported material claims or non-confirmed claims said as
+    # fact are held; from `claims_required_from` on, a Short needs its ledger (written at the 2-day re-check)
+    from . import sources
+    if ep.get("claims"):
+        sv = sources.evaluate(ep)
+        block.extend("sources: " + b for b in sv["blockers"])
+    else:
+        try:
+            req_from = json.loads((ROOT / "config" / "channel.json").read_text()).get("claims_required_from")
+        except (OSError, ValueError):
+            req_from = None
+        if req_from and (when or now).date().isoformat() >= req_from:
+            review.append("no claim ledger (\"claims\": source type, direct or search-summary, independence, "
+                          "confidence, wording; python -m studio.sources episodes/<slug>.json)")
     fc = (_load(FACTS).get(slug) or {}).get("date") or ep.get("facts_checked")
     target = (when or now).date()
     if not fc:

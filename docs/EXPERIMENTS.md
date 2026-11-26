@@ -27,3 +27,15 @@ versus 4.0, headline 0.7, list 0.2; ~0.5% likes; ~0 viewer comments; 15 subscrib
 - 2026-11-26: versus / plain-fact / headline / list Shorts parked (map 46.6 v/h vs versus 4.0, list 0.2); tier lists
   parked from the plan (6.2) but kept as a later experiment option.
 - 2026-11-26: Spanish YouTube paused to Dec 3 (37 views in 12 videos); Spanish goes to TikTok (100-600 views each).
+
+## H2: Spanish hook structures (Phase 6 #3, started Nov 26)
+- Question: which opening structure keeps Spanish viewers watching? Structures: immediate-answer, visual-reveal,
+  question, comparison, myth-reality, location-info, before-you-buy (episode `hook_type_es`, else classified from the
+  first Spanish line by studio.xplat; `first_frame` records what the first frame shows).
+- Baseline (18 Spanish uploads before Nov 27): all statement/result openers over footage or text cards; median 5.9%
+  viewed (studio.xplat, 28-day Analytics). No contrast yet, so no conclusion.
+- First arms: Balsero (question, answer pin on screen), Sahara Arena ES (comparison), Little Cuba (immediate-answer,
+  map pin). Then rotate the 7 structures across the Spanish slots.
+- Decision rule: compare median % viewed and views at 72 h per structure with n >= 5 each, similar topics (map/location
+  vs news), and the same voice where possible; until then every result is preliminary. A question opener stays a test
+  (gate warning, not a blocker) only when tagged and the first frame shows the answer.

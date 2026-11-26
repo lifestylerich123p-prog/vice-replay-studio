@@ -121,5 +121,66 @@ class CycleVerdictTest(unittest.TestCase):
         self.assertTrue(cycle.verdict([("a", "FAIL", ""), ("b", "PASS", "")]).startswith("NOT OPERATIONAL"))
 
 
+from studio import sources  # noqa: E402
+
+G = lambda u, t="guide", c="search-summary", copies=None: {"url": u, "type": t, "checked": c, "supports": "x", "copies": copies}
+
+
+class SourcesTest(unittest.TestCase):
+    def test_official_inspected_is_confirmed(self):
+        st, conf, _ = sources.verdict({"evidence": [G("https://www.rockstargames.com/VI", "official", "visual")]})
+        self.assertEqual((st, conf), ("confirmed", "high"))
+
+    def test_rumor_repeated_by_two_wikis_counts_once(self):
+        ev = [G("https://gta.wiki/a", "wiki"), G("https://gta.fandom.com/b", "wiki")]
+        self.assertEqual(len(sources.independent(ev)), 1)
+        self.assertEqual(sources.verdict({"evidence": ev, "wording": "hedged"})[0], "theory")
+
+    def test_copy_of_another_source_is_not_independent(self):
+        ev = [G("https://a.com/x"), G("https://b.com/y", copies="https://a.com/x")]
+        self.assertEqual(sources.verdict({"evidence": ev, "material": True})[0], "unsupported")
+
+    def test_summary_only_game_claim_must_be_hedged_everywhere(self):
+        claim = {"claim": "X is Y", "kind": "game", "wording": "hedged", "keywords": ["kaseya"],
+                 "evidence": [G("https://a.com/x"), G("https://b.com/y", "news")]}
+        ep = {"claims": [claim], "short": [{"text": "Fans say it's the Kaseya Center.",
+                                            "chart": {"type": "text", "text": "Sahara Arena = Kaseya Center"}}]}
+        r = sources.evaluate(ep)
+        self.assertTrue(any("chart" in b for b in r["blockers"]))
+        ep["short"][0]["chart"]["text"] = "Fans say: Sahara Arena = Kaseya Center"
+        self.assertEqual(sources.evaluate(ep)["blockers"], [])
+        claim["wording"] = "fact"
+        self.assertTrue(sources.evaluate(ep)["blockers"])  # reported claim can't be worded as fact
+
+    def test_real_world_fact_in_two_outlets_is_confirmed(self):
+        c = {"kind": "real-world", "evidence": [G("https://nba.com/a", "news"), G("https://abc7.com/b", "news")]}
+        self.assertEqual(sources.verdict(c)[0], "confirmed")
+
+    def test_unsupported_material_claim_blocks(self):
+        r = sources.evaluate({"claims": [{"claim": "secret island", "evidence": [G("https://a.com/x")]}], "short": []})
+        self.assertTrue(r["blockers"])
+
+
+class QuestionHookTest(unittest.TestCase):
+    def _ep(self, tagged, card):
+        ep = {"slug": "t", "title": "GTA 6 test", "short_title": "GTA 6 test #Shorts", "short": [
+            {"headline": "HIALEAH", "text": "Where's Hialeah in GTA 6? Look: Balsero.", "chart": card},
+            {"headline": "B", "text": "Comment yes.", "chart": {"type": "kinetic", "lines": ["A"]}}]}
+        if tagged:
+            ep["hook_type"] = "question"
+        return ep
+
+    def test_untagged_question_still_blocked_tagged_with_visual_allowed(self):
+        from studio.vice import viewcheck
+        q = lambda b: [x for x in b if "question" in x]
+        b, w = viewcheck.check(self._ep(False, {"type": "map", "at": "Balsero"}), recent=[])
+        self.assertTrue(q(b))
+        b, w = viewcheck.check(self._ep(True, {"type": "map", "at": "Balsero"}), recent=[])
+        self.assertFalse(q(b))
+        self.assertTrue(q(w))
+        b, w = viewcheck.check(self._ep(True, {"type": "kinetic", "lines": ["WHERE?"]}), recent=[])
+        self.assertTrue(q(b))  # no supporting visual: still a blocker
+
+
 if __name__ == "__main__":
     unittest.main()

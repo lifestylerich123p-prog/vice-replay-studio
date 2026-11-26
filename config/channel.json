@@ -97,12 +97,21 @@
     "on": true,
     "_note": "Nov 24 owner approved: official screenshots (vetted pool, exact-name first) behind lettering cards in videos; trailer clips stay out"
   },
-  "content_mix": {"location": 45, "secrets": 25, "gameplay": 0, "map_tutorial": 20, "experimental": 10,
-    "_note": "Phase 3 targets 40/25/15/10/10; Phase 4 (owner Nov 26): gameplay footage isn't available yet, so its 15% goes to location (+5) and map tutorials (+10) until the owner's recordings arrive (rights/gameplay-sources.md). Never drop a format on one video (python -m studio.mix)"},
+  "content_mix": {
+    "location": 45,
+    "secrets": 25,
+    "gameplay": 0,
+    "map_tutorial": 20,
+    "experimental": 10,
+    "_note": "Phase 3 targets 40/25/15/10/10; Phase 4 (owner Nov 26): gameplay footage isn't available yet, so its 15% goes to location (+5) and map tutorials (+10) until the owner's recordings arrive (rights/gameplay-sources.md). Never drop a format on one video (python -m studio.mix)"
+  },
   "auto_publish": {
     "on": true,
     "max_per_day": 2,
-    "slots": ["8:00 AM", "6:00 PM"],
+    "slots": [
+      "8:00 AM",
+      "6:00 PM"
+    ],
     "consecutive_failures": 0,
     "paused_reason": null,
     "_note": "Owner Nov 26 (Autonomous publishing authorization update): English YouTube Shorts publish automatically at their slot only when studio/approvals.py passes all 10 conditions. Pause: python -m studio.approvals pause \"why\"; two failed uploads in a row pause it automatically."
@@ -110,10 +119,15 @@
   "auto_publish_es": {
     "on": true,
     "max_per_day": 2,
-    "slots": ["12:30 PM", "7:00 PM"],
+    "slots": [
+      "12:30 PM",
+      "7:00 PM"
+    ],
     "consecutive_failures": 0,
     "paused_reason": null,
     "_note": "Owner Nov 26 (Vice Replay en Español autonomous growth directive): Spanish Shorts publish automatically only when studio/approvals.py passes every check for platform youtube-es (destination channel verified by studio.youtube_es, Spanish render + title, facts, QA, duplicates). Pause: python -m studio.approvals pause \"why\" --platform youtube-es."
   },
-  "_voice_es_note": "Nov 26: free local Piper voice (Apache-2.0, Mexican Spanish) is the Spanish default; Whisper test: 0.71 word match and 'GTA 6' heard right vs 0.65 for Kokoro em_alex. Everygen Viral Adam (paid) only for winners."
+  "_voice_es_note": "Nov 26: free local Piper voice (Apache-2.0, Mexican Spanish) is the Spanish default; Whisper test: 0.71 word match and 'GTA 6' heard right vs 0.65 for Kokoro em_alex. Everygen Viral Adam (paid) only for winners.",
+  "claims_required_from": "2026-11-30",
+  "_claims_note": "Phase 6 #5 (owner Nov 26): Shorts booked on/after this date need a claim ledger (studio/sources.py) or the gate holds them."
 }

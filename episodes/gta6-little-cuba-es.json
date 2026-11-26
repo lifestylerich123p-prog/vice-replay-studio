@@ -235,5 +235,7 @@
   }
  ],
  "voice_note": "Owner Nov 23: 100% Cuban + Everygen voice. Viral Adam chosen: Pham failed the caption check (51% word error, non-native Spanish); Viral Adam passed.",
- "series_id": "miami"
+ "series_id": "miami",
+ "hook_type_es": "immediate-answer",
+ "first_frame": "map-pin (zoom): Little Cuba pinned on Rockstar's official map"
 }

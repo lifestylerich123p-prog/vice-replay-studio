@@ -65,10 +65,10 @@
  "facts_note": "Nov 26 Phase 5 (Spanish-exclusive, Latino relevance). Checked via web search summaries Nov 26; direct page fetches were not available in this session. Re-check right before upload (gate factcheck).",
  "short": [
   {
-   "headline": "HIALEAH EN GTA 6",
-   "headline_es": "HIALEAH EN GTA 6",
-   "text": "This GTA 6 neighborhood is called Balsero. Fans say it's Hialeah.",
-   "text_es": "Este barrio de GTA seis se llama Balsero. Los fans dicen que es Hialeah.",
+   "headline": "¿Y HIALEAH?",
+   "headline_es": "¿Y HIALEAH?",
+   "text": "Where's Hialeah in GTA 6? Look at this neighborhood: Balsero.",
+   "text_es": "¿Dónde está Hialeah en GTA seis? Mira este barrio: Balsero.",
    "keep_media": true,
    "chart": {
     "type": "map",
@@ -91,8 +91,8 @@
   {
    "headline": "BALSERO = 1994",
    "headline_es": "BALSERO = 1994",
-   "text": "Balseros: the Cubans who came on rafts in 1994, and many stayed in Hialeah.",
-   "text_es": "Balseros: así llamaban a los cubanos de las balsas del noventa y cuatro, y muchos se quedaron en Hialeah.",
+   "text": "Balseros: the Cubans who came on rafts in 1994, and according to GTA Wiki many stayed in Hialeah.",
+   "text_es": "Balseros: así llamaban a los cubanos de las balsas del noventa y cuatro, y según la GTA Wiki, muchos se quedaron en Hialeah.",
    "keep_media": true,
    "chart": {
     "type": "text",
@@ -121,8 +121,8 @@
   {
    "headline": "JUNTO AL AEROPUERTO",
    "headline_es": "JUNTO AL AEROPUERTO",
-   "text": "It sits north of the airport, among factories and rail yards, like the real Hialeah.",
-   "text_es": "Está al norte del aeropuerto, entre fábricas y trenes, como el Hialeah real.",
+   "text": "It sits north of the airport, between rail lines; fans compare it to the real Hialeah.",
+   "text_es": "Está al norte del aeropuerto, entre vías de tren; los fans lo comparan con el Hialeah real.",
    "keep_media": true,
    "chart": {
     "type": "map",
@@ -175,8 +175,8 @@
   {
    "headline": "¿ERES DE HIALEAH?",
    "headline_es": "¿ERES DE HIALEAH?",
-   "text": "From Hialeah? Comment yes, because",
-   "text_es": "Si eres de Hialeah, comenta sí, porque",
+   "text": "From Hialeah? Comment yes.",
+   "text_es": "Si eres de Hialeah, comenta sí.",
    "keep_media": true,
    "chart": {
     "type": "kinetic",
@@ -202,5 +202,149 @@
     "locale": "es"
    }
   }
- ]
+ ],
+ "claims": [
+  {
+   "claim": "BALSERO is a district label on Rockstar's official map, north of the airport, with rail lines",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "Balsero",
+    "al norte del aeropuerto"
+   ],
+   "wording": "fact",
+   "confidence": "high",
+   "evidence": [
+    {
+     "url": "https://www.rockstargames.com/VI/downloads",
+     "type": "official",
+     "published": "2026-11-19",
+     "checked": "visual",
+     "supports": "Label BALSERO printed north-east of VCIA; rail lines through the district (HD poster media/official/leonida-map-poster.jpg, marker test at mappins 'Balsero')"
+    },
+    {
+     "url": "https://allthings.how/gta-6-map-leonida-official/",
+     "type": "guide",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Lists Balsero among the 16 Vice City districts on the official map",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "'Balseros' were the Cubans who left on rafts in the 1994 rafter crisis",
+   "material": true,
+   "kind": "real-world",
+   "keywords": [
+    "balsas",
+    "balseros"
+   ],
+   "wording": "fact",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1994_Cuban_rafter_crisis",
+     "type": "real-world",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "1994 crisis, ~35,000 Cubans by raft",
+     "copies": null
+    },
+    {
+     "url": "https://scholar.library.miami.edu/digital/exhibits/show/guantanamo/crisis",
+     "type": "real-world",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "University of Miami library exhibit on the 1994 rafter crisis",
+     "copies": null
+    },
+    {
+     "url": "https://gta.wiki/w/Balsero",
+     "type": "wiki",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Name refers to the 1994 rafter crisis",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "Many 1994 rafters settled in Hialeah",
+   "material": true,
+   "kind": "real-world",
+   "keywords": [
+    "se quedaron en Hialeah"
+   ],
+   "wording": "hedged",
+   "confidence": "low",
+   "evidence": [
+    {
+     "url": "https://gta.wiki/w/Balsero",
+     "type": "wiki",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "'many of these Cubans later settling in Hialeah'",
+     "copies": null
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hialeah,_Florida",
+     "type": "real-world",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Hialeah has a Cuban-American majority (does not name the 1994 rafters)",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "Fans read Balsero as Rockstar's Hialeah (industrial area by the airport; railyard = CSX Hialeah Yard)",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "es Hialeah",
+    "Hialeah real"
+   ],
+   "wording": "hedged",
+   "confidence": "low",
+   "evidence": [
+    {
+     "url": "https://gta.wiki/w/Balsero",
+     "type": "wiki",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "'seems to be based on the industrial areas around Miami International Airport, particularly Hialeah'",
+     "copies": null
+    },
+    {
+     "url": "https://map.gtadb.org/",
+     "type": "community",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Balsero Railyard matched to CSX Hialeah Yard",
+     "copies": null
+    },
+    {
+     "url": "https://gtapedia.net/en/locations/",
+     "type": "guide",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "DISAGREES: NW Miami along the Miami River",
+     "copies": null
+    },
+    {
+     "url": "https://wantedlevelguide.com/miami/is-hialeah-in-gta-6/",
+     "type": "guide",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "No place named Hialeah; no confirmed stand-in",
+     "copies": null
+    }
+   ]
+  }
+ ],
+ "hook_type": "question",
+ "hook_type_es": "question",
+ "first_frame": "map-pin (zoom): BALSERO pinned on Rockstar's official map, answer visible before the question ends",
+ "hook_test": "Phase 6 #3 Spanish hook test: question + answer-on-screen; compare % viewed with immediate-answer (Little Cuba) and comparison (Sahara ES) in studio.xplat 'Spanish hooks'"
 }
