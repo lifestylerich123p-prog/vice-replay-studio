@@ -9,11 +9,12 @@ YT = "https://www.youtube.com/@vicereplaytv-q8s"
 YT_ES = "https://www.youtube.com/@vicereplayes"  # Vice Replay en Español (UCWPnqYqYu9_CLsJ8Bk1MPgQ)
 import re as _re
 # Deals shown as direct Amazon buttons on the links page (bio link) and the homepage. Update prices here when they
-# change (checked Nov 24, 2026: Kotaku/Gamerant DualSense $54; 9to5Toys Pulse Elite ~$110; Sony sale Nov 16-30).
+# change. Nov 26 (Amazon Associates program policy): NO product prices next to Amazon links unless served by Amazon
+# (PA-API, < 24 h); say "on sale" / "see today's price" instead.
 DEALS_CHECKED = "Nov 24"
 DEALS = [("🛍️ Amazon's full Black Friday sale", "TVs, consoles, everything on sale through Nov 30", "https://www.amazon.com/deals"),
-         ("🎮 PS5 DualSense controller: $54.99", "usually $74 · the best GTA 6 deal this week", "PS5 DualSense wireless controller"),
-         ("🎧 PlayStation Pulse Elite headset: ~$110", "usually $150", "PlayStation Pulse Elite wireless headset"),
+         ("🎮 PS5 DualSense controller: on sale", "see today's price on Amazon · the best GTA 6 deal this week", "PS5 DualSense wireless controller"),
+         ("🎧 PlayStation Pulse Elite headset: on sale", "see today's price on Amazon", "PlayStation Pulse Elite wireless headset"),
          ("💾 2 TB PS5 SSD with heatsink", "GTA 6 is 212 GB: the upgrade that fits", "PS5 compatible 2TB NVMe SSD with heatsink"),
          ("🌴 GTA 6 for PS5", "full price at US stores right now", "https://www.amazon.com/dp/B0H6K928WL"),
          ("📦 Free 30-day Amazon Prime trial", "fast delivery on all of the above", "https://www.amazon.com/tryprimefree")]

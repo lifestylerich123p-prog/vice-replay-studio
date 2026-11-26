@@ -991,6 +991,50 @@
     "perista",
     "joyas"
    ]
+  },
+  {
+   "cat": "places",
+   "at": "Balsero",
+   "src": [
+    "Rockstar Games (official map)",
+    "GTA Wiki",
+    "GTADB"
+   ],
+   "en": {
+    "t": "Balsero",
+    "d": "Industrial Vice City neighborhood north of the airport, with rail yards. Its name recalls the Cuban 'balseros' (rafters) of 1994; fan guides read it as Rockstar's Hialeah (GTA Wiki, GTADB), others as NW Miami by the river (GTApedia). Rockstar hasn't said."
+   },
+   "es": {
+    "t": "Balsero",
+    "d": "Barrio industrial de Vice City al norte del aeropuerto, con patios de trenes. Su nombre recuerda a los balseros cubanos de 1994; guías de fans lo ven como el Hialeah de Rockstar (GTA Wiki, GTADB) y otra como el noroeste de Miami junto al río (GTApedia). Rockstar no lo ha dicho."
+   },
+   "aliases": [
+    "hialeah",
+    "balseros",
+    "cuban",
+    "cubano"
+   ]
+  },
+  {
+   "cat": "places",
+   "at": "Sahara Arena",
+   "src": [
+    "Rockstar Games (official map)"
+   ],
+   "en": {
+    "t": "Sahara Arena",
+    "d": "Downtown arena on the bay, labelled on Rockstar's official map."
+   },
+   "es": {
+    "t": "Sahara Arena",
+    "d": "Estadio junto a la bahía en Downtown, marcado en el mapa oficial de Rockstar."
+   },
+   "aliases": [
+    "arena",
+    "kaseya",
+    "basketball",
+    "baloncesto"
+   ]
   }
  ]
 }

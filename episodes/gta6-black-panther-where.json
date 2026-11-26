@@ -201,5 +201,6 @@
  ],
  "spot": 18,
  "cta": "SPOT #19 NEXT: FOLLOW",
- "cta_es": "LUGAR #19 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #19 PRONTO: SÍGUENOS",
+ "series_id": "hidden"
 }

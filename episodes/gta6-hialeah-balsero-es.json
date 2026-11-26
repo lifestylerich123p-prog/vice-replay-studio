@@ -1,0 +1,206 @@
+{
+ "title": "GTA 6: ¿dónde está Hialeah? La pista se llama Balsero",
+ "slug": "gta6-hialeah-balsero-es",
+ "series": "Map Spots",
+ "series_id": "miami",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "es_only": true,
+ "style": "vice (lettering cards + official map zoom/route, Nov 26 Phase 5)",
+ "short_title": "GTA 6: where is Hialeah? Look for Balsero #GTA6 #Shorts",
+ "short_description": "Spanish-channel-only Short (Phase 5 #5 Spanish-exclusive, Latino relevance: the Balsero label on Rockstar's official map and the community's Hialeah reading).",
+ "short_es": {
+  "title": "GTA 6: ¿dónde está HIALEAH? 🇨🇺 #GTA6 #Shorts",
+  "description": "¿Hialeah en GTA 6? Con ese nombre no aparece en el mapa oficial. Pero al norte del aeropuerto de Vice City, el mapa de Rockstar tiene un barrio llamado BALSERO: así se llamó a los cubanos que llegaron en balsa en la crisis de 1994, y muchos se quedaron en Hialeah. La GTA Wiki dice que Balsero parece basado en las zonas industriales junto al aeropuerto de Miami, sobre todo Hialeah, y la base de datos GTADB compara su patio de trenes con el CSX Hialeah Yard. Ojo: Rockstar no lo ha confirmado y otra guía (GTApedia) lo relaciona con el río Miami. Sin spoilers.\n\nMapa: Rockstar Games (mapa oficial de Leonida). Fuentes: GTA Wiki, GTADB, Wanted Level Guide, GTApedia, AllThings.How, Wikipedia (crisis de los balseros de 1994).",
+  "tags": [
+   "GTA 6 Hialeah",
+   "Hialeah GTA 6",
+   "GTA 6 Balsero",
+   "GTA 6 cubanos",
+   "GTA 6 Miami",
+   "GTA 6 mapa",
+   "GTA 6 Vice City barrios",
+   "GTA 6 español",
+   "GTA VI"
+  ],
+  "title_options": [
+   "GTA 6: ¿dónde está HIALEAH? 🇨🇺 #GTA6 #Shorts",
+   "GTA 6 tiene un barrio llamado BALSERO 🇨🇺 #GTA6 #Shorts"
+  ],
+  "title_note": "Phase 5 Spanish-market style: 'GTA 6' first, one CAPS word + one emoji; the question is answered honestly in the video (no Hialeah by name; Balsero is the community's candidate, not confirmed)."
+ },
+ "short_playlist": "GTA 6 Shorts",
+ "short_pinned_comment_es": "¿Eres de Hialeah? Responde ✅ y dinos qué le falta a Balsero 👇",
+ "pinned_comment": "From Hialeah? Reply ✅ 👇",
+ "tags": [
+  "GTA 6 Hialeah",
+  "GTA 6 Balsero",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#hialeah",
+  "#cubanos",
+  "#miami"
+ ],
+ "site_target_es": "/es/guias/mapa-gta-6/",
+ "claim_status": "community-found",
+ "claim_note": "The BALSERO label is printed on Rockstar's official map (checked on media/official/leonida-map-poster.jpg, pin at mappins 'Balsero'). The Hialeah link is community reading (GTA Wiki 'seems to be based on' + GTADB railyard = CSX Hialeah Yard), not confirmed by Rockstar; GTApedia reads it as NW Miami along the Miami River; Wanted Level Guide: no place named Hialeah. The video says so.",
+ "sources": [
+  "Rockstar Games - official Leonida map (GTA VI downloads, Balsero label): https://www.rockstargames.com/VI/downloads",
+  "GTA Wiki - Balsero (name from the 1994 rafter crisis; seems based on the industrial areas by Miami International Airport, particularly Hialeah): https://gta.wiki/w/Balsero",
+  "GTADB landmarks map - Balsero Railyard matched to CSX Hialeah Yard: https://map.gtadb.org/",
+  "Wanted Level Guide - Is Hialeah in GTA 6? (no place named Hialeah, not confirmed): https://wantedlevelguide.com/miami/is-hialeah-in-gta-6/",
+  "GTApedia - GTA 6 locations (Balsero as industry/docks of NW Miami along the Miami River): https://gtapedia.net/en/locations/",
+  "AllThings.How - official GTA 6 map, the 16 Vice City districts incl. Balsero: https://allthings.how/gta-6-map-leonida-official/",
+  "Wikipedia - 1994 Cuban rafter crisis (balseros): https://en.wikipedia.org/wiki/1994_Cuban_rafter_crisis",
+  "Wikipedia - Hialeah, Florida (Cuban-American majority): https://en.wikipedia.org/wiki/Hialeah,_Florida"
+ ],
+ "facts_note": "Nov 26 Phase 5 (Spanish-exclusive, Latino relevance). Checked via web search summaries Nov 26; direct page fetches were not available in this session. Re-check right before upload (gate factcheck).",
+ "short": [
+  {
+   "headline": "HIALEAH EN GTA 6",
+   "headline_es": "HIALEAH EN GTA 6",
+   "text": "This GTA 6 neighborhood is called Balsero. Fans say it's Hialeah.",
+   "text_es": "Este barrio de GTA seis se llama Balsero. Los fans dicen que es Hialeah.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Balsero",
+    "label": "Balsero",
+    "n": 1,
+    "to": 0.2,
+    "src": "Mapa oficial de Rockstar"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Balsero",
+    "label": "Balsero",
+    "n": 1,
+    "to": 0.2,
+    "src": "Mapa oficial de Rockstar",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "BALSERO = 1994",
+   "headline_es": "BALSERO = 1994",
+   "text": "Balseros: the Cubans who came on rafts in 1994, and many stayed in Hialeah.",
+   "text_es": "Balseros: así llamaban a los cubanos de las balsas del noventa y cuatro, y muchos se quedaron en Hialeah.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Balseros: Cubans on rafts, 1994 → Hialeah",
+    "pink": [
+     "1994",
+     "Hialeah"
+    ],
+    "src": "GTA Wiki · Wikipedia",
+    "seed": 271,
+    "bg": "photo:media/official/vice-city-03.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Balseros: cubanos en balsa, 1994 → Hialeah",
+    "pink": [
+     "1994",
+     "Hialeah"
+    ],
+    "src": "GTA Wiki · Wikipedia",
+    "seed": 271,
+    "bg": "photo:media/official/vice-city-03.jpg",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "JUNTO AL AEROPUERTO",
+   "headline_es": "JUNTO AL AEROPUERTO",
+   "text": "It sits north of the airport, among factories and rail yards, like the real Hialeah.",
+   "text_es": "Está al norte del aeropuerto, entre fábricas y trenes, como el Hialeah real.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "route",
+    "from": "VCIA",
+    "at": "Balsero",
+    "label": "Balsero",
+    "n": 1,
+    "src": "GTA Wiki · GTADB"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "route",
+    "from": "VCIA",
+    "at": "Balsero",
+    "label": "Balsero",
+    "n": 1,
+    "src": "GTA Wiki · GTADB",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "SIN CONFIRMAR",
+   "headline_es": "SIN CONFIRMAR",
+   "text": "Careful: Rockstar hasn't confirmed it, and another guide points to the Miami River.",
+   "text_es": "Ojo: Rockstar no lo confirma, y otra guía apunta al río Miami.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Fans say Hialeah · Rockstar hasn't confirmed it",
+    "pink": [
+     "Hialeah"
+    ],
+    "src": "GTA Wiki · GTADB · GTApedia",
+    "seed": 273,
+    "bg": "photo:media/official/vice-city-01.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Los fans dicen Hialeah · Rockstar no lo confirma",
+    "pink": [
+     "Hialeah"
+    ],
+    "src": "GTA Wiki · GTADB · GTApedia",
+    "seed": 273,
+    "bg": "photo:media/official/vice-city-01.jpg",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "¿ERES DE HIALEAH?",
+   "headline_es": "¿ERES DE HIALEAH?",
+   "text": "From Hialeah? Comment yes, because",
+   "text_es": "Si eres de Hialeah, comenta sí, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FROM HIALEAH?",
+     "COMMENT YES"
+    ],
+    "pink": [
+     "COMMENT YES"
+    ],
+    "seed": 274
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿ERES DE HIALEAH?",
+     "COMENTA SÍ"
+    ],
+    "pink": [
+     "COMENTA SÍ"
+    ],
+    "seed": 274,
+    "locale": "es"
+   }
+  }
+ ]
+}

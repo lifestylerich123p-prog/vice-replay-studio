@@ -2246,6 +2246,7 @@
    "exists": true,
    "episodes": [
     "gta6-10-numbers",
+    "gta6-hialeah-balsero-es",
     "gta6-launch-day-survival-guide",
     "gta6-new-zealand-trick",
     "gta6-physical-edition-no-disc",
@@ -2267,6 +2268,7 @@
    "exists": true,
    "episodes": [
     "gta6-game-awards-explained",
+    "gta6-hialeah-balsero-es",
     "gta6-sell-jewelry-where",
     "gta6-silent-hill-hotel",
     "gta6-tattoo-shops-where"
@@ -2318,6 +2320,7 @@
    "episodes": [
     "gta6-bad-bunny-radio-es",
     "gta6-ghost-ship-where",
+    "gta6-sahara-arena-where",
     "gta6-silent-hill-hotel"
    ],
    "rights_id": "rockstar-official-screens",
@@ -2382,7 +2385,8 @@
    "exists": true,
    "episodes": [
     "gta6-beginner-tips-nobody-tells-you",
-    "gta6-how-long-to-beat"
+    "gta6-how-long-to-beat",
+    "gta6-sahara-arena-where"
    ],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",

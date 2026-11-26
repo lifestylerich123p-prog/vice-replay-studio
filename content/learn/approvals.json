@@ -1119,5 +1119,47 @@
    "title: 'GTA 6 fishing: does it pay? The answer is no 🎣' is 46 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
   ],
   "video_sha256": "5d38f54a4fb866f5d469bee5786213a07a0d687b7b50c8addc210ba7a8c915cb"
+ },
+ "gta6-hialeah-balsero-es:short:youtube-es": {
+  "slug": "gta6-hialeah-balsero-es",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-26 15:51 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 15:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 15:51 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no publishing slot; the test suite hasn't passed on the current code (python -m studio.approvals tests)"
+   ]
+  ],
+  "publish": null,
+  "title": "GTA 6: ¿dónde está HIALEAH? 🇨🇺 #GTA6 #Shorts",
+  "video": "output/gta6-hialeah-balsero-es/gta6-hialeah-balsero-es-short-es.mp4",
+  "duration": 24.9,
+  "spec_hash": "244c314094c98c9e5bda227237929ac9cdec90dad7329d0128fb106814f359ef",
+  "evaluated_at": "2026-11-26 15:51 ET",
+  "blockers": [],
+  "reviews": [
+   "no publishing slot",
+   "the test suite hasn't passed on the current code (python -m studio.approvals tests)"
+  ],
+  "advice": [
+   "facts: Short 'short' makes a 'nothing yet' claim (\"hasn't confirmed\") that can stop being true within hours (Nov 23: 'zero patch notes' was outdated the same afternoon). Re-check it within 2 h of the slot, or say it as a dated fact (\"3 updates in 10 days\")",
+   "views: Short 'short' is 58 words (~21 s); target 13-20 s (35-55 words), payoff as the last line, last line loops into the first"
+  ],
+  "video_sha256": "0b53bb326b848cdbe9468037a4269db29ab84b85f239ee4e460339d89f3f8cfa"
  }
 }

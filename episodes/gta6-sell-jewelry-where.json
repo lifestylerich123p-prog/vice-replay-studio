@@ -226,5 +226,6 @@
  ],
  "spot": 12,
  "cta": "SPOT #13 NEXT: FOLLOW",
- "cta_es": "LUGAR #13 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #13 PRONTO: SÍGUENOS",
+ "series_id": "gps"
 }

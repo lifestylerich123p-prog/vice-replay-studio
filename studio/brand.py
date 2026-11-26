@@ -119,7 +119,33 @@ def fit_lines(text, fnt_path, max_w, start_size, min_size=40):
     return font(fnt_path, min_size), [text]
 
 
-def headline_card(text, w, h, vertical=False, cta=None):
+# Phase 5 (owner Nov 26): recognizable recurring series; a colored badge next to the channel bug (EN / ES name)
+SERIES = {
+    "gps": ("VICE REPLAY GPS", "GPS VICE REPLAY", (0, 229, 210)),
+    "mythbusters": ("GTA MYTHBUSTERS", "MITOS DE GTA", (255, 140, 0)),
+    "hidden": ("HIDDEN VICE CITY", "VICE CITY OCULTO", (155, 107, 255)),
+    "before-you-buy": ("BEFORE YOU BUY", "ANTES DE COMPRAR", (255, 197, 49)),
+    "explained": ("VICE CITY EXPLAINED", "VICE CITY EXPLICADO", (61, 220, 132)),
+    "miami": ("MIAMI vs VICE CITY", "MIAMI vs VICE CITY", (255, 31, 142)),
+    "map-school": ("MAP SCHOOL", "ESCUELA DEL MAPA", (0, 160, 255)),
+}
+
+
+def series_badge(series, lang, height):
+    name_en, name_es, color = SERIES[series]
+    txt = name_es if lang == "es" else name_en
+    f = font(HEADLINE_FONT, int(height * 0.8))
+    pad = int(height * 0.35)
+    tw = f.getlength(txt)
+    im = Image.new("RGBA", (int(tw + 2 * pad), int(height * 1.3)), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    d.rounded_rectangle((0, 0, im.width - 1, im.height - 1), radius=int(height * 0.3), fill=color + (240,))
+    dark = sum(color) > 450  # light badge colors get dark text
+    d.text((pad, int(height * 0.12)), txt, font=f, fill=NIGHT if dark else WHITE)
+    return im
+
+
+def headline_card(text, w, h, vertical=False, cta=None, series=None, lang="en"):
     """Transparent overlay: slanted pink slab with the segment headline + channel bug (+ a follow pill on a Short's
     last segment, placed above YouTube's bottom UI and below the captions)."""
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
@@ -155,6 +181,9 @@ def headline_card(text, w, h, vertical=False, cta=None):
             d.text((x0, y - f.size * 0.06), ln, font=f, fill=WHITE)
     wm = wordmark(int(h * (0.026 if vertical else 0.04)))
     im.paste(wm, (int(w * 0.03), int(h * 0.03)), wm)
+    if series in SERIES:
+        bd = series_badge(series, lang, int(h * (0.022 if vertical else 0.034)))
+        im.paste(bd, (int(w * 0.03 + wm.width + w * 0.02), int(h * 0.03 + (wm.height - bd.height) / 2)), bd)
     return im
 
 

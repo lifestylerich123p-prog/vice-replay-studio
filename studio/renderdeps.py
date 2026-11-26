@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 # top-level episode keys the renderer reads (studio/make_video.py, cardphotos.py); the rest is package/metadata
 SHARED_KEYS = ("use_gameplay", "spot", "sfx", "rate", "payoff_hook", "outro_card", "music_level", "music_duck", "music",
-               "mood", "format", "follow_cta", "card_photos", "sources", "map_style")
+               "mood", "format", "follow_cta", "card_photos", "sources", "map_style", "series_id")
 LANG_KEYS = {"en": ("cta", "voice", "voice_override"), "es": ("cta_es", "voice_es", "rate_es")}
 
 

@@ -399,6 +399,150 @@
    ],
    "credits": 0,
    "checked": "2026-11-26"
+  },
+  {
+   "key": "miami-balsero-hialeah",
+   "family": "map",
+   "title_en": "GTA 6: where is Hialeah?",
+   "title_es": "GTA 6: ¿dónde está HIALEAH? 🇨🇺",
+   "search": [
+    "hialeah gta 6",
+    "gta 6 balsero"
+   ],
+   "keywords": [
+    "hialeah",
+    "balsero"
+   ],
+   "place": "Balsero (label on Rockstar's map, north of VCIA)",
+   "grid": null,
+   "claim_status": "community-found",
+   "sources": [
+    "https://www.rockstargames.com/VI/downloads",
+    "https://gta.wiki/w/Balsero",
+    "https://map.gtadb.org/",
+    "https://wantedlevelguide.com/miami/is-hialeah-in-gta-6/",
+    "https://gtapedia.net/en/locations/"
+   ],
+   "status": "produced",
+   "notes": "Spanish-only Short gta6-hialeah-balsero-es (Fri Dec 4 7:00 PM ET). Hialeah link = GTA Wiki 'seems based on' + GTADB railyard = CSX Hialeah Yard; GTApedia says NW Miami/Miami River; not confirmed by Rockstar.",
+   "langs": [
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
+  },
+  {
+   "key": "miami-sahara-arena",
+   "family": "map",
+   "title_en": "GTA 6 Sahara Arena location",
+   "title_es": "GTA 6: el KASEYA Center de Vice City 🏀",
+   "search": [
+    "gta 6 sahara arena",
+    "gta 6 kaseya center",
+    "gta 6 miami heat"
+   ],
+   "keywords": [
+    "sahara arena",
+    "kaseya"
+   ],
+   "place": "Sahara Arena (label on Rockstar's map, Downtown by the bay)",
+   "grid": null,
+   "claim_status": "community-found",
+   "sources": [
+    "https://www.rockstargames.com/VI/downloads",
+    "https://www.nba.com/heat/vicecity",
+    "https://abc7.com/post/miami-heat-vice-city-jersey-celebrates-gta-6-launch/20053386/",
+    "https://www.gtaboom.com/miami-heat-unveils-gta-6-jerseys-for-vice-city-night-on-november-18-92fc",
+    "https://x.com/GTAWikiOfficial/status/2102431695488082349",
+    "https://www.yardbarker.com/general_sports/articles/every_sports_stadium_landmark_in_gta_6/s1_17898_44587582"
+   ],
+   "status": "produced",
+   "notes": "gta6-sahara-arena-where EN Tue Dec 1 8:00 AM, ES Sat Dec 5 12:30 PM. Nov 18 game score not used (not re-verified).",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
+  },
+  {
+   "key": "miami-la-perle",
+   "family": "map",
+   "title_en": "GTA 6 La Perle = Little Haiti?",
+   "title_es": "GTA 6: LA PERLE es Little Haiti",
+   "search": [
+    "gta 6 la perle",
+    "gta 6 little haiti"
+   ],
+   "keywords": [
+    "la perle",
+    "little haiti"
+   ],
+   "place": "La Perle (label on Rockstar's map)",
+   "grid": null,
+   "claim_status": "community-found",
+   "sources": [],
+   "status": "researching",
+   "notes": "Label confirmed on the official map; the Little Haiti reading needs 2+ guides re-checked before scripting.",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
+  },
+  {
+   "key": "spanish-place-names",
+   "family": "map",
+   "title_en": "GTA 6 places with Spanish names",
+   "title_es": "GTA 6: existe un lugar llamado BORRACHERO 😂",
+   "search": [
+    "gta 6 borrachero",
+    "gta 6 nombres en español"
+   ],
+   "keywords": [
+    "borrachero",
+    "riquezas",
+    "abismo"
+   ],
+   "place": "Borrachero Sound, Riquezas Keys, Abismo Key (labels on Rockstar's map)",
+   "grid": null,
+   "claim_status": "confirmed",
+   "sources": [
+    "https://www.rockstargames.com/VI/downloads"
+   ],
+   "status": "researching",
+   "notes": "Spanish-only idea; each label must be located on the HD poster (marker test) before the map cards; the meaning of each Spanish word is dictionary fact.",
+   "langs": [
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
+  },
+  {
+   "key": "fast-travel-skip",
+   "family": "map",
+   "title_en": "GTA 6 fast travel: the $100 skip",
+   "title_es": "GTA 6: viaje RÁPIDO por 100 dólares",
+   "search": [
+    "gta 6 fast travel"
+   ],
+   "keywords": [
+    "fast travel",
+    "taxi"
+   ],
+   "place": null,
+   "grid": null,
+   "claim_status": "community-found",
+   "sources": [],
+   "status": "researching",
+   "notes": "Before You Buy series idea (Dotesports, Slashgear, GamesRadar named in the agent report): re-check the price and the tip before scripting.",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "credits": 0,
+   "checked": "2026-11-26"
   }
  ],
  "spanish_seeds_2026_11_26": [

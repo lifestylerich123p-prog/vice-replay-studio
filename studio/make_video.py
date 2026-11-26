@@ -745,13 +745,14 @@ def render_segment(i, seg, audio, w, h, vertical, work, enc):
     if vertical and seg.get("chart") and slab and (_said_by_card(slab, seg.get("chart_es") if lang_ == "es" and
                                                     seg.get("chart_es") else seg["chart"]) or (i == 0 and seg.get("_payoff"))):
         slab = ""  # Nov 24 hook v2 + review: the card already shouts it; one statement instead of three (any segment)
-    brand.headline_card(slab, w, h, vertical, seg.get("cta")).save(ov)
+    brand.headline_card(slab, w, h, vertical, seg.get("cta"), seg.get("_series"), lang_).save(ov)
     lang = seg.get("_lang", "en")
     times = align_words(seg["text"], audio, lang) if seg.get("_align", True) else None
     seg["_aligned"] = bool(times)
     subs = caption_file(seg["text"], 0.2, dur, work / f"cap_{i}.ass", w, h, vertical, times=times, lang=lang)
     caps = f"subtitles='{subs}':fontsdir='{brand.FONTS}',"
-    if vertical and i == 0 and (seg.get("_payoff") or _card_says_it(seg["text"], seg.get("chart"))):
+    card = seg.get("chart_es") if lang_ == "es" and seg.get("chart_es") else seg.get("chart")  # the card ON SCREEN
+    if vertical and i == 0 and (seg.get("_payoff") or _card_says_it(seg["text"], card)):
         caps = ""  # Nov 24 review: one text layer per idea; the hook lettering already says it (and on a payoff hook the
         # captions ran under the pin and its label)
     out = work / f"seg_{i:02d}.mp4"
@@ -1138,6 +1139,8 @@ def main():
                     "segments": ep["short"]}] if ep.get("short") else []) + ep.get("shorts", [])
         if not shorts:
             sys.exit("No 'short' or 'shorts' in this episode.")
+        if ep.get("series_id") in brand.SERIES:  # Phase 5: the recurring series badge on every card of the Short
+            shorts = [dict(sh, segments=[dict(x, _series=ep["series_id"]) for x in sh["segments"]]) for sh in shorts]
         if ep.get("spot") and ep.get("short"):  # numbered map series (studio/mapseries.py): badge on its map cards
             one = sum((x.get("chart") or {}).get("type") == "map" for x in shorts[0]["segments"]) == 1
             shorts[0] = dict(shorts[0], segments=[with_spot(x, ep["spot"], one) for x in shorts[0]["segments"]])

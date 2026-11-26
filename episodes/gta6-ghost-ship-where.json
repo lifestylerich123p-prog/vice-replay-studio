@@ -234,5 +234,6 @@
  "spot": 11,
  "cta": "SPOT #12 NEXT: FOLLOW",
  "cta_es": "LUGAR #12 PRONTO: SÍGUENOS",
- "claim_status": "community-found"
+ "claim_status": "community-found",
+ "series_id": "hidden"
 }

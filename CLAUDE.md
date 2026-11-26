@@ -47,8 +47,8 @@ Spanish (free Kokoro voice; Viral Adam only for winners while Everygen is low); 
 day; no new long videos until the ATM and map-secrets guides pull search views.
 **Owner Nov 26 "DO IT"** (map cards 46.6 views/h vs versus 4.0, list 0.2): **3 map/how-to Shorts a day**, tier lists and
 quizzes stay, no new versus/fact/headline Shorts (parked ones sit in approved_queue.json `paused`); one-tap comment
-prompts ("Found it? Reply ✅ — or 😭"; last card "FOUND IT? COMMENT YES"); Spanish YouTube paused until Dec 3
-(`spanish_youtube_paused_until`); 8:00 AM slot for each day's first map Short, test week Nov 28-Dec 4 (review Dec 5).
+prompts ("Found it? Reply ✅ — or 😭"; last card "FOUND IT? COMMENT YES"); the Dec 3 Spanish YouTube pause was
+lifted the same day by the Spanish autonomous directive (see "Spanish channel"); 8:00 AM slot for each day's first map Short, test week Nov 28-Dec 4 (review Dec 5).
 
 **Phase 3 (owner Nov 26, "Data-driven growth and autonomous optimization")**: both channels stay autonomous through
 the gate. Mix target 40% location / 25% secrets / 15% gameplay experiments / 10% interactive map tutorials / 10%
@@ -117,7 +117,7 @@ hypothetical / fiction). Details: docs/OPERATIONS.md "Phase 3 tools".
   again. A failed upload is reconciled with YouTube before any retry; 2 failures in a row pause it
   (`python -m studio.approvals pause "why"` / `resume`). The 3:45 AM run does it (`python -m studio.spend upload`); the
   1 PM report verifies on YouTube before calling anything published (`python -m studio.approvals verify`). Spanish
-  YouTube is NOT auto-published (paused); TikTok (owner posts by hand) and Instagram keep their arrangements. Never
+  YouTube auto-publishes only through its own gate (`youtube-es`, see "Spanish channel"); TikTok (owner posts by hand) and Instagram keep their arrangements. Never
   bypass a check to make a slot; contact the owner for repeated failures, conflicting sources, spending, strategy
   changes, copyright/account issues. Uploads go to their own API bucket (1 unit, 100/day) since 2026, not 1,600 units.
 - **Several chats**: only the main control chat posts (YouTube, Instagram, comments, site); helper chats work on

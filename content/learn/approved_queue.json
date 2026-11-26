@@ -301,14 +301,14 @@
     "8:00 AM"
    ],
    "es": [
-    "2026-12-04",
+    "2026-12-12",
     "7:00 PM"
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
    "moved_plan": "was ['2026-11-29', '11:00 AM']",
    "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
-   "moved_by": "2026-11-26: studio.schedule gave 2026-11-30 6:00 PM to gta6-fishing-pays (followup, location); this one is secrets (over target) and wasn't uploaded yet"
+   "moved_by": "2026-11-26: studio.schedule gave 2026-12-04 7:00 PM to gta6-hialeah-balsero-es (evergreen, location); this one is secrets (over target) and wasn't uploaded yet"
   },
   {
    "slug": "gta6-ultimate-cars-where",
@@ -727,10 +727,11 @@
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
    "moved_plan": "was ['2026-12-06', '10:00 AM']",
    "es": [
-    "2026-12-05",
+    "2026-12-13",
     "12:30 PM"
    ],
-   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)"
+   "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
+   "moved_by": "2026-11-26: studio.schedule gave 2026-12-05 12:30 PM to gta6-sahara-arena-where (evergreen, location); this one is secrets (over target) and wasn't uploaded yet"
   },
   {
    "slug": "gta6-black-bear-where",
@@ -764,7 +765,7 @@
    "slug": "gta6-ghost-ship-where",
    "item": "short",
    "en": [
-    "2026-12-01",
+    "2026-12-21",
     "8:00 AM"
    ],
    "approved": "Nov 26 (owner \"CONTINUE TO DO IT\": map finds replace the parked Shorts; viral ones go earlier): ghost ship / St. Lucia Lighthouse, Little Hardin Island (6 guides); re-check right before upload",
@@ -775,7 +776,8 @@
     "7:00 PM"
    ],
    "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
-   "moved_phase4": "Phase 4 flexible slot (Nov 26): moved for the verified clothing-store follow-up of the shoe store winner; secrets were 43% of the 14-day mix vs a 25% target; this item wasn't uploaded yet"
+   "moved_phase4": "Phase 4 flexible slot (Nov 26): moved for the verified clothing-store follow-up of the shoe store winner; secrets were 43% of the 14-day mix vs a 25% target; this item wasn't uploaded yet",
+   "moved_by": "2026-11-26: studio.schedule gave 2026-12-01 8:00 AM to gta6-sahara-arena-where (evergreen, location); this one is secrets (over target) and wasn't uploaded yet"
   },
   {
    "slug": "gta6-little-cuba-es",
@@ -899,6 +901,26 @@
    ],
    "es": [
     "2026-12-04",
+    "12:30 PM"
+   ]
+  },
+  {
+   "slug": "gta6-hialeah-balsero-es",
+   "item": "short",
+   "es": [
+    "2026-12-04",
+    "7:00 PM"
+   ]
+  },
+  {
+   "slug": "gta6-sahara-arena-where",
+   "item": "short",
+   "en": [
+    "2026-12-01",
+    "8:00 AM"
+   ],
+   "es": [
+    "2026-12-05",
     "12:30 PM"
    ]
   }

@@ -65,6 +65,8 @@ PLACES = {
     "Waxman Island": (790, 745), "Southside": (634, 909), "Peacock Bay": (679, 894), "T.H. Power Station": (642, 1000),
     "Frogswater": (443, 480), "Howe Dairy": (432, 527), "Tequesta Retreat": (742, 832), "Port Vice City": (808, 778),
     "Paradise RV Park": (481, 953), "Gullet Marsh": (511, 1000), "Gellhorn": (365, 625),
+    # Nov 26 (Phase 5): read off the HD poster, marker test on the printed label
+    "Balsero": (599, 700), "Sahara Arena": (739, 721), "Tisha-Wocka Flea Market": (566, 702),
 }
 COLS = {str(i + 1): x for i, x in enumerate([88, 193, 299, 405, 511, 617, 723, 829, 935])}
 ROWS = {r: y for r, y in zip("ABCDEFGHIJKLM", [76, 168, 274, 380, 487, 593, 698, 805, 912, 1018, 1124, 1231, 1327])}

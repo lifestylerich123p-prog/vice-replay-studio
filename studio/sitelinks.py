@@ -83,6 +83,8 @@ def build(site=SITE):
         for lang in ("en", "es"):
             if lang == "es" and not (ep.get("short_es") or {}).get("title"):
                 continue
+            if lang == "en" and ep.get("es_only"):  # Spanish-channel-only Shorts never post in English
+                continue
             out = Path(site) / short_path(ep["slug"], lang).strip("/") / "index.html"
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(page(ep, lang))
