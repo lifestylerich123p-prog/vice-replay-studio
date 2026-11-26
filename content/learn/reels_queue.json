@@ -334,20 +334,14 @@
   "posted": "skipped: the Short shows trailer images (owner Nov 23: lettering/modern cards only)"
  },
  {
-  "at": "2026-11-27 12:35",
-  "episode": "episodes/gta6-shoe-store-where.json",
-  "item": "short",
-  "note": "Moved from Wed 8:35 PM (Wed already had 4 Instagram posts; cap 4/day)."
+  "at": "2026-11-26 08:05",
+  "episode": "episodes/gta6-sunken-treasure.json",
+  "item": "short"
  },
  {
   "at": "2026-11-26 09:35",
   "episode": "episodes/gta6-ultimate-vs-standard.json",
   "item": "short"
- },
- {
-  "at": "2026-12-01 15:05",
-  "carousel": "content/carousels/gta6-secrets-map.json",
-  "note": "Moved from Thu Nov 26 11:00 (Thursday had 5 Instagram posts; cap 4)."
  },
  {
   "at": "2026-11-26 11:05",
@@ -378,10 +372,31 @@
   "item": "short"
  },
  {
+  "at": "2026-11-27 11:05",
+  "episode": "episodes/gta6-atm-robbery-guide.json",
+  "item": "news"
+ },
+ {
+  "at": "2026-11-27 12:35",
+  "episode": "episodes/gta6-shoe-store-where.json",
+  "item": "short",
+  "note": "Moved from Wed 8:35 PM (Wed already had 4 Instagram posts; cap 4/day)."
+ },
+ {
+  "at": "2026-11-27 12:35",
+  "episode": "episodes/gta6-giant-crab.json",
+  "item": "short"
+ },
+ {
   "at": "2026-11-27 15:00",
   "carousel": "content/carousels/goodbye-gta-5.json",
   "note": "Goodbye GTA 5: 13 years in numbers (farewell-to-GTA-5 trend; pairs with the 13-years Short at 9:30 AM) | moved Nov 23 to 3 PM: Friday's 9:35/11:05/12:35 Reels left no room at noon",
   "posted": "skipped: Nov 24 (studio.ig_stats): our 5 carousels got a median of 0 likes vs 8 for Reels; kept only useful/save-worthy carousels (secrets map, week-one numbers, Game Awards odds). Owner: 'continue checks and ways to help'."
+ },
+ {
+  "at": "2026-11-28 10:05",
+  "episode": "episodes/gta-tier-list-maps.json",
+  "item": "short"
  },
  {
   "at": "2026-11-28 15:00",
@@ -399,6 +414,17 @@
   "at": "2026-11-29 16:00",
   "carousel": "content/carousels/gta6-week-one-numbers.json",
   "note": "Nov 23: teaser for the Sunday hub video (GTA 6 in 10 Numbers, 3:30 PM): post only once that video is public"
+ },
+ {
+  "at": "2026-11-30 14:05",
+  "episode": "episodes/gta6-atm-robbery-guide.json",
+  "item": "tips",
+  "note": "Paul Walker car map Short (YouTube ChmiOLulOvo, posted Nov 25 3:45 PM); Nov 26-29 already full at 4/day"
+ },
+ {
+  "at": "2026-12-01 15:05",
+  "carousel": "content/carousels/gta6-secrets-map.json",
+  "note": "Moved from Thu Nov 26 11:00 (Thursday had 5 Instagram posts; cap 4)."
  },
  {
   "at": "2026-12-06 16:00",
@@ -429,11 +455,5 @@
   "note": "YouTube: no claim (owner checked); low reach likely duplicate-moment; pair with next Lacy clip",
   "hold": "paused Nov 19 4:15 PM: Lacy clips stalled on YouTube (repetitive-content risk); waiting on owner",
   "posted": "skipped: campaign clips now post on ClipCircuit, not @vice.replaytv (owner, Nov 20)"
- },
- {
-  "at": "2026-11-30 14:05",
-  "episode": "episodes/gta6-atm-robbery-guide.json",
-  "item": "tips",
-  "note": "Paul Walker car map Short (YouTube ChmiOLulOvo, posted Nov 25 3:45 PM); Nov 26-29 already full at 4/day"
  }
 ]
