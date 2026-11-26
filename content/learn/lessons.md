@@ -320,3 +320,11 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   lists (median 270 views at 3 h) and map "where is X" Shorts: the Paul Walker car map Short (ChmiOLulOvo, posted
   Nov 25 3:45 PM, an afternoon slot) had 171 views after ~4 h (~40 v/h vs our 2 v/h median), and the shoe-store map
   TikTok reached 2,653 views (18% watched to the end). Next: map + tier first, one map Short every day (owner Nov 25).
+- 2026-11-26 (comments, owner "learn from comments"; `python -m studio.comment_insights`, 1,254 top comments on the 15
+  hottest GTA 6 videos + ours, content/learn/comment-insights-2026-11-26.md): what players talk about most is REALISM
+  and COMPARISONS: NPCs/physics/details (88 comments, ~8,000 likes) and GTA 6 vs GTA 5 / RDR2 (92 comments). Secrets with
+  an exact spot get the biggest single reactions (6,600 likes on the Vice City portal easter egg). Florida-man humour
+  lands (an "alligator blood" joke: 1,274 likes). In Spanish, Jason & Lucia's relationship is a question people ask
+  ("¿son novios?", 748 likes). Story, Online, bugs and streamers barely come up in the top comments. On OUR channel the
+  few comments are about 30 FPS and waiting for the PC version. Questions under viral entertainment videos are mostly
+  jokes: use YouTube search terms (search-terms.json) for "where is X" demand, comments for themes and tone.

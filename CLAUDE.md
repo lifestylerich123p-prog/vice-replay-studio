@@ -133,6 +133,8 @@ said where the store is).
 - **Learning**: `python -m studio.learn` (our numbers + hottest GTA 6 videos; YouTube API key in the environment);
   lessons in `content/learn/lessons.md`. `/stats` logs Studio screenshots into `content/performance.md`.
   `python -m studio.flops` = 48 h flop review (Shorts under 50 views: main chat sets them private, never deletes).
+  `python -m studio.comment_insights` (owner Nov 26 "learn from comments"): themes + questions from the top comments
+  on the hottest GTA 6 videos and ours (content/learn/comment-insights-<date>.md; Mon + Thu in the 1 PM checklist).
 - **Quota = posting + replies** (owner, Nov 22 night: "every posting credit must be used posting or answering
   comments"): no subtitle files on Shorts (`shorts_subtitles` in config/channel.json), keep reads lean, and every
   night at 2:04 AM ET the main chat runs `python -m studio.spend` (+ `upload`): approved Shorts from

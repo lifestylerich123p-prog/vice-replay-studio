@@ -159,3 +159,11 @@ Next (each needs 2+ sources at writing time):
 4. **"¿Qué falta de Miami en GTA 6?"** (Versailles, Calle Ocho, Marlins park...): opinion/poll Short, comments bait;
    say clearly these are wishes, not in the game.
 
+## From the comments (Nov 26, studio.comment_insights)
+1. **VS realism Shorts** (the #1 comment topic): "GTA 6 vs GTA 5: the NPCs" style, one checked detail per VS card
+   (cops remember you = booked Thu Nov 26; next: NPC reactions, wanted level, phone, swimming). Facts 2+ sources.
+2. **Secrets with the exact spot** (biggest reactions): keep the map Short a day; lead with the secret, pin the spot.
+3. **Florida-man tone** in wildlife/map hooks ("Florida rules: the gator is in the pool"), no violence focus.
+4. **Spanish-only: "¿Jason y Lucía son pareja?"** (Rockstar's own character pages; no story spoilers).
+5. **"Is GTA 6 coming to PC?"** (our own commenters): answer what Rockstar has and hasn't said, 2+ sources, no rumours as fact.
+

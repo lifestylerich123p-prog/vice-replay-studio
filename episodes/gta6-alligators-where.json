@@ -63,30 +63,30 @@
  "facts_note": "Nov 26 (YouTube search 'gta 6 alligator', 56 views to our LACY clip, no Short of ours answers it). Grassrivers = the alligator region (Rockstar, GTABase, games.gg, Red Bull, Xbox Play); open water + vegetated shores (GTABase, Xbox Play); airboats are Grassrivers' vehicle (Rockstar, Red Bull); a gator in a residential pool is in Rockstar's first trailer (Xbox Play, EGamers). Left out: albino alligators (no source confirms) and exact spawn points (guides say none are published yet).",
  "short": [
   {
-   "headline": "FIND A GATOR",
-   "headline_es": "ENCUENTRA UNO",
+   "headline": "GATORS LIVE HERE",
+   "headline_es": "VIVEN AQUÍ",
    "keep_media": true,
-   "text": "Want a GTA 6 alligator? Here's where to look.",
-   "text_es": "¿Quieres ver un caimán en GTA seis? Aquí tienes dónde buscar.",
+   "text": "Most GTA 6 alligators live in one swamp. Here it is.",
+   "text_es": "Casi todos los caimanes de GTA seis viven en un pantano. Es este.",
    "chart": {
     "type": "kinetic",
     "lines": [
-     "WANT A",
-     "GTA 6 GATOR?"
+     "GTA 6 GATORS",
+     "LIVE HERE"
     ],
     "pink": [
-     "GTA 6 GATOR?"
+     "LIVE HERE"
     ],
     "seed": 71
    },
    "chart_es": {
     "type": "kinetic",
     "lines": [
-     "¿QUIERES UN",
-     "CAIMÁN?"
+     "LOS CAIMANES",
+     "VIVEN AQUÍ"
     ],
     "pink": [
-     "CAIMÁN?"
+     "VIVEN AQUÍ"
     ],
     "seed": 71
    }
