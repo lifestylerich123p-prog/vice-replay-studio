@@ -76,9 +76,9 @@
   "registry_est": 20000
  },
  "2026-11-25": {
-  "used": 17939,
+  "used": 17941,
   "calls": {
-   "GET channels": 140,
+   "GET channels": 142,
    "GET playlistItems": 58,
    "GET videos": 79,
    "PUT channels": 3,
