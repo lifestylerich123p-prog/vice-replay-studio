@@ -2,6 +2,7 @@
 # Add a guide() call per new video, run: python tools/site_guides.py, then commit+push vicereplay-site.
 import os
 import sys, html, json
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # studio.* (affiliate policy, mappins)
 SITE = os.environ.get("VICEREPLAY_SITE") or os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "vicereplay-site")
 DOMAIN = "https://vicereplay.com"
 TAG = "vicereplay-20"
@@ -28,14 +29,15 @@ def deals_html(heading="🔥 Black Friday deals on Amazon"):
 
 
 def tag_amazon(doc):
-    """Safety net: every amazon.com link on every page carries our Associates tag (Prime trial links too: they pay a bounty)."""
-    def fix(m):
-        u = m.group(1)
-        return m.group(0) if "tag=" in u else f'href="{u}{"&" if "?" in u else "?"}tag={TAG}"'
-    return _re.sub(r'href="(https://www\.amazon\.com/[^"]*)"', fix, doc)
+    """Every amazon.com link follows the affiliate policy (studio/affiliate.py): tagged only while the Associates
+    account is confirmed active; plain links otherwise (owner Nov 26, Phase 6 #6)."""
+    from studio import affiliate
+    return _re.sub(r'href="(https://www\.amazon\.com/[^"]*)"', lambda m: f'href="{html.escape(affiliate.url(html.unescape(m.group(1))), quote=True)}"', doc)
 
 
-def amz(q): return f"{q}?tag={TAG}" if q.startswith("http") else f"https://www.amazon.com/s?k={q.replace(' ','+')}&tag={TAG}"
+def amz(q):
+    from studio import affiliate
+    return affiliate.url(q if q.startswith("http") else f"https://www.amazon.com/s?k={q.replace(' ','+')}")
 
 CSS = """:root{--bg:#0d0717;--panel:#170d26;--panel-2:#21123a;--line:#3a2357;--fg:#f4eefc;--muted:#b7a9cf;--pink:#ff1f8e;--cyan:#00e5d2;
 --display:"Anton","Impact","Arial Narrow",sans-serif;--body:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:dark}

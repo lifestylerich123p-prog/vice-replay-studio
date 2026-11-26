@@ -1077,21 +1077,10 @@ def build(ep, base, slug, segments, vertical, preview, enc, w, h, voice, rate, n
 
 
 def affiliate_block(ep):
-    """Amazon affiliate links + required disclosure (content/affiliate.json). Episode `affiliate`: list of set
-    names, or [] to leave links out."""
-    cfg_path = ROOT / "content" / "affiliate.json"
-    if not cfg_path.exists():
-        return []
-    cfg = json.loads(cfg_path.read_text())
-    if not cfg.get("enabled"):
-        return []
-    names = ep.get("affiliate", cfg.get("default_sets", []))
-    items = [it for n in names for it in cfg["sets"].get(n, [])]
-    if not items:
-        return []
-    sep = lambda u: "&" if "?" in u else "?"
-    lines = [cfg["heading"]] + [f"{label}: {url}{sep(url)}tag={cfg['tag']}" for label, url in items]
-    return lines + [cfg["disclosure"], ""]
+    """Amazon links + disclosure, only when the Associates account is confirmed and the link set matches what the
+    video is about (studio/affiliate.py; owner Nov 26 Phase 6 #6)."""
+    from . import affiliate
+    return affiliate.block(ep)
 
 
 def with_spot(seg, n, pin=False):

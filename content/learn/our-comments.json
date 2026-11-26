@@ -1,0 +1,22 @@
+{
+ "posted": {
+  "n78uk6y2gKE": {
+   "comment_id": "UgzJVrNMdmug2XYU_nh4AaABAg",
+   "lang": "en",
+   "text": "Which one are you using for this method: the winch pickup or the tow truck? Let us know below.",
+   "url": "https://www.youtube.com/watch?v=n78uk6y2gKE&lc=UgzJVrNMdmug2XYU_nh4AaABAg",
+   "posted": "2026-11-26T21:40:00",
+   "pinned": "not verified (YouTube's API can't pin; pin it in YouTube Studio)",
+   "confirmed": "read back from YouTube 2026-11-26"
+  }
+ },
+ "failed": [
+  {
+   "video": "n78uk6y2gKE",
+   "lang": "en",
+   "step": "duplicate",
+   "why": "already commented on n78uk6y2gKE (content/learn/our-comments.json)",
+   "at": "2026-11-26T21:26:04"
+  }
+ ]
+}

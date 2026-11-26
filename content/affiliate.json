@@ -1,76 +1,75 @@
 {
- "enabled": true,
- "tag": "vicereplay-20",
- "heading": "GEAR FOR GTA 6 (affiliate links)",
- "disclosure": "Some links above are affiliate links: as an Amazon Associate I earn from qualifying purchases, at no extra cost to you.",
- "sets": {
-  "storage": [
-   [
-    "PS5 storage upgrade (2TB SSD)",
-    "https://www.amazon.com/s?k=PS5+compatible+2TB+NVMe+SSD+with+heatsink"
-   ],
-   [
-    "Xbox Series X|S storage expansion card",
-    "https://www.amazon.com/s?k=Xbox+Series+X+S+storage+expansion+card+2TB"
-   ],
-   [
-    "Free 30-day Amazon Prime trial (fast delivery)",
-    "https://www.amazon.com/tryprimefree"
-   ]
-  ],
-  "game": [
-   [
-    "GTA 6 for PS5",
-    "https://www.amazon.com/dp/B0H6K928WL"
-   ],
-   [
-    "GTA 6 for Xbox Series X|S",
-    "https://www.amazon.com/dp/B0H6K49W6Y"
-   ],
-   [
-    "Free 30-day Amazon Prime trial (fast delivery)",
-    "https://www.amazon.com/tryprimefree"
-   ]
-  ],
-  "gear": [
-   [
-    "PS5 DualSense controller",
-    "https://www.amazon.com/s?k=PS5+DualSense+controller"
-   ],
-   [
-    "Gaming headset",
-    "https://www.amazon.com/s?k=gaming+headset+PS5+Xbox"
-   ],
-   [
-    "Capture card (record your gameplay)",
-    "https://www.amazon.com/s?k=capture+card+PS5+1080p"
-   ]
-  ],
-  "deals": [
-   [
-    "PS5 DualSense controller (about $54 this week)",
-    "https://www.amazon.com/s?k=PS5+DualSense+wireless+controller"
-   ],
-   [
-    "PlayStation Pulse Elite headset (about $110)",
-    "https://www.amazon.com/s?k=PlayStation+Pulse+Elite+wireless+headset"
-   ],
-   [
-    "PS5 storage upgrade (2TB SSD with heatsink)",
-    "https://www.amazon.com/s?k=PS5+compatible+2TB+NVMe+SSD+with+heatsink"
-   ],
-   [
-    "GTA 6 for PS5",
-    "https://www.amazon.com/dp/B0H6K928WL"
-   ],
-   [
-    "Free 30-day Amazon Prime trial (fast delivery)",
-    "https://www.amazon.com/tryprimefree"
-   ]
-  ]
- },
- "default_sets": [
-  "storage",
-  "game"
- ]
+  "enabled": true,
+  "tag": "vicereplay-20",
+  "heading": "GEAR FOR GTA 6 (affiliate links)",
+  "disclosure": "Some links above are affiliate links: as an Amazon Associate I earn from qualifying purchases, at no extra cost to you.",
+  "sets": {
+    "storage": [
+      [
+        "PS5 storage upgrade (2TB SSD)",
+        "https://www.amazon.com/s?k=PS5+compatible+2TB+NVMe+SSD+with+heatsink"
+      ],
+      [
+        "Xbox Series X|S storage expansion card",
+        "https://www.amazon.com/s?k=Xbox+Series+X+S+storage+expansion+card+2TB"
+      ],
+      [
+        "Free 30-day Amazon Prime trial (fast delivery)",
+        "https://www.amazon.com/tryprimefree"
+      ]
+    ],
+    "game": [
+      [
+        "GTA 6 for PS5",
+        "https://www.amazon.com/dp/B0H6K928WL"
+      ],
+      [
+        "GTA 6 for Xbox Series X|S",
+        "https://www.amazon.com/dp/B0H6K49W6Y"
+      ],
+      [
+        "Free 30-day Amazon Prime trial (fast delivery)",
+        "https://www.amazon.com/tryprimefree"
+      ]
+    ],
+    "gear": [
+      [
+        "PS5 DualSense controller",
+        "https://www.amazon.com/s?k=PS5+DualSense+controller"
+      ],
+      [
+        "Gaming headset",
+        "https://www.amazon.com/s?k=gaming+headset+PS5+Xbox"
+      ],
+      [
+        "Capture card (record your gameplay)",
+        "https://www.amazon.com/s?k=capture+card+PS5+1080p"
+      ]
+    ],
+    "deals": [
+      [
+        "PS5 DualSense controller",
+        "https://www.amazon.com/s?k=PS5+DualSense+wireless+controller"
+      ],
+      [
+        "PlayStation Pulse Elite headset",
+        "https://www.amazon.com/s?k=PlayStation+Pulse+Elite+wireless+headset"
+      ],
+      [
+        "PS5 storage upgrade (2TB SSD with heatsink)",
+        "https://www.amazon.com/s?k=PS5+compatible+2TB+NVMe+SSD+with+heatsink"
+      ],
+      [
+        "GTA 6 for PS5",
+        "https://www.amazon.com/dp/B0H6K928WL"
+      ],
+      [
+        "Free 30-day Amazon Prime trial (fast delivery)",
+        "https://www.amazon.com/tryprimefree"
+      ]
+    ]
+  },
+  "default_sets": [],
+  "account_status": "unconfirmed",
+  "account_status_note": "Owner Nov 26 Phase 6: no affiliate links anywhere until the owner confirms in Associates Central that the account is open, the tax interview is done and a payment method is set. Then set 'active' (python -m studio.affiliate status)."
 }

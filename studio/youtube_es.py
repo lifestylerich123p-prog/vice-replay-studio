@@ -284,7 +284,7 @@ def main():
             except SystemExit as e:
                 done[key][step] = f"failed: {e}"
         if pin and publish_at:
-            done[key]["comment"] = f"pending: post after {when} ET"
+            done[key]["comment"] = f"pending: post after {when} ET: python -m studio.comments post {vid} --slug {slug} --lang es"
         done_file.write_text(json.dumps(done, indent=2, ensure_ascii=False))
     print(json.dumps(done, indent=2, ensure_ascii=False))
 

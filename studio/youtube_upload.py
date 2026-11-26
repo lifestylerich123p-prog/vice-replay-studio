@@ -620,7 +620,8 @@ def main():
              if isinstance(d, dict) and str(d.get("comment", "")).startswith("pending") and d.get("comment_text")]
     if later:
         last = max(later, key=lambda x: dt.datetime.strptime(x[2], "%I:%M %p"))[2]
-        cmd = "python -m studio.youtube_upload " + " ".join(f"--comment {v} {json.dumps(t)}" for v, t, _ in later)
+        # Phase 6 #8: the safe comment tool (channel check, public check, no duplicate, affiliate policy, read-back)
+        cmd = "\n".join(f"python -m studio.comments post {v} --text {json.dumps(t, ensure_ascii=False)}" for v, t, _ in later)
         print(f"\nCOMMENTS TO POST AFTER {last} ET (videos are private until then):\n{cmd}")
 
 
