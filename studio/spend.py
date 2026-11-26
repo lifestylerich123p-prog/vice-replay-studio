@@ -204,14 +204,26 @@ def renders_needed(it, ne, ns):
     if key != "short":
         return []
     need = []
-    if ne and not (out / f"{slug}-short.mp4").exists():
+    src = ROOT / "episodes" / f"{slug}.json"
+
+    def stale(video):  # missing, or older than its episode (e.g. a map-series number changed: studio/mapseries.py)
+        return not video.exists() or (src.exists() and video.stat().st_mtime < src.stat().st_mtime)
+    if ne and stale(out / f"{slug}-short.mp4"):
         need.append(["python", "-m", "studio.make_video", f"episodes/{slug}.json", "--short"])
-    if ns and not (out / f"{slug}-short-es.mp4").exists():
+    if ns and stale(out / f"{slug}-short-es.mp4"):
         need.append(["python", "-m", "studio.make_video", f"episodes/{slug}.json", "--short", "--es"])
     return need
 
 
 def upload():
+    # Nov 26 (owner APPROVE ALL: numbered map series): number the spots right before uploading, so a Short booked in
+    # between renumbers only the ones not uploaded yet; renders_needed() then re-renders those (episode is newer)
+    try:
+        from . import mapseries
+        for m in mapseries.number():
+            print(f"map series: {m['slug']} is now spot #{m['n']} (re-rendered before upload)")
+    except (OSError, ValueError, KeyError) as e:
+        print(f"! map series numbering skipped: {type(e).__name__}")
     for it, ne, ns in plan():
         for cmd in renders_needed(it, ne, ns):
             print("$", " ".join(cmd), "(video missing: rendering it first)")

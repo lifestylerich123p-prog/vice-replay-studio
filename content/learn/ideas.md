@@ -3,6 +3,41 @@
 Rules: re-check every fact on the day you use it (2+ sources), label estimates/reports, no story spoilers, no
 isolated cutscenes. Mark an idea USED (date + slug) when it ships. Researched by the main chat; sources inline.
 
+## Daily research, Nov 26 (main chat: 4 agents for news, map finds, market and search gaps)
+Ranked for the owner's approval; sources were read from search summaries (pages blocked from the cloud session),
+so re-check each one on the day. MAP / WHERE first:
+1. MADE (gta6-mask-where, booked Fri 8 AM, momentum after the shoe store): "gta 6 mask location / mask shop" ->
+   Chuck's Tackle & Shot, Key Lento (PC Gamer, PCGamesN, GAMES.GG, Game8).
+2. MADE (gta6-backrooms-where, waiting for approval): the Backrooms, dig site on Lake Tallaloko's east shore north of
+   Millport, open orange container (GAMES.GG, Xbox Play, Final Boss, GTA6 Track, Game Rant). Item/reward disputed.
+3. Randy's Wish List (G + YT autocomplete: "randy's wishlist", "randy car locations", Infernus, Thrax): 16-18 cars
+   (guides disagree), ~$30-35K each delivered undamaged, mid-Chapter 3 (timesaver.gg, theclick.gg). One map Short per
+   car; Infernus = Crosstown police garage, 7th floor (needs a 2nd source).
+4. Silent Hill hotel (Marbelle Hotel, southern Crosstown, safe code 955214, fog lifts; Dexerto + Game Rant).
+5. Legendary (Snapmatic) animals as a sub-series: White Fox by Howe Dairy, Black Bear in south Hamlet, Coyote north
+   of Belville, Panther on Belpoint Island west of Capri (Insider Gaming + Mobalytics; total 9 or 11 disputed).
+6. Tattoo shops (shoe-store family; "gta 6 tattoo shops"): 11 parlors, orange heart icon, Map > Style > Tattoos;
+   Electric Fang (Stockyard) is Ultimate Edition only (GAMES.GG + Dexerto).
+7. Bank limit (G + YT "gta 6 bank limit"): BuckMe limits rise with the main story (Rockstar Support page itself)
+   + Family Savings goals (GAMES.GG). How-to Short + guide section.
+8. Fences: sell jewelry to Yasmani in Little Cuba (best, Chapter 3), Tyrone in La Perle (PC Gamer + Beebom).
+9. TMNT drain (north of Millport by Tallaloko Dam vs East Lummox County: sources disagree) and the ghost ship
+   (St. Lucia Lighthouse, Little Hardin Island; sources disagree) -> only once 2 guides agree on the spot.
+SKIPPED on purpose: Mario/Luigi hats (the trigger is a bong), Hyde Island Saw hunt (violent focus), Hurricane
+bunker/zoo (no reliable source), leaks.
+NEWS / TIPS (not pure facts: each needs a "do this" or a ranking):
+- "You can't replay GTA 6 missions. Do this instead" (Kotaku, GameSpot, Insider Gaming, Nov 25: 15 manual saves).
+- "5 things Rockstar CUT from GTA 6" countdown: tennis, cinema/theatre, crawling, home decorating, crafting
+  (GamesRadar + Dexerto, from PC Games interview, Nov 25).
+- "Every 'GTA 6 PC download' is fake" (Take-Two DMCA on 3,007 GitHub repos of an unofficial port, Nov 24: PC Gamer,
+  GamesRadar, Dexerto; no leaked footage, no links) + refresh /guides/gta-6-pc-release-date/ (position 22.8; "gta 6
+  pc" was the #1 English and #2 Spanish search on Nov 24).
+- VS card "GTA 6 vs Call of Duty: -42% daily players" (Alinea estimate; PC Gamer + GamesRadar; label it an estimate).
+- Countdown "5 controls GTA 6 never tells you" (Kotaku: flipping cars, sitting; manual saves).
+- VS "GTA 6 killed one-button hotwiring" (GamesRadar).
+SPANISH: Little Cuba = Little Havana (already booked: gta6-little-cuba-es, Nov 30); Bad Bunny is a radio host on
+Cocoteo FM (quiz card; Grupo Animal + Univision); price in hours of work by country (gta6-precio-por-pais-es, Fri).
+
 ## Week of Nov 30 (main chat, Nov 23; plan in content/week-2026-11-30.md)
 Made and waiting for approval: gta6-top-3-rides (remade as cards), gta6-vs-red-dead-2 (VS), gta-tier-list-sales
 (Tier List #2), gta-cities-quiz (Quiz #3). For the daily run: Fri countdown "old GTA brands back in GTA 6" (Sprunk,

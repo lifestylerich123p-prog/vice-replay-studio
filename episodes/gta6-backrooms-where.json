@@ -1,0 +1,84 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": ["GTA6", "GTAVI", "Shorts"],
+ "slug": "gta6-backrooms-where",
+ "title": "Where to Find the Backrooms in GTA 6",
+ "short_title": "GTA 6 Backrooms location: it's in a container 🚪 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 Backrooms location: it's in a container 🚪 #GTA6 #Shorts",
+  "GTA 6 has the Backrooms, but there's a catch #GTA6 #Shorts",
+  "Where are the Backrooms in GTA 6? #GTA6 #Shorts"
+ ],
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete: 'gta 6 backrooms')",
+ "short_description": "Where to find the Backrooms easter egg in GTA 6: a small dig site on the east shore of Lake Tallaloko, north of Millport (Lummox County). Find the open orange shipping container, walk in and use the item on the table at the back. Guides disagree on what the item is, and the reward isn't confirmed yet. No story spoilers.\n\nSources: GAMES.GG, Xbox Play, Final Boss, GTA6 Track, Hold to Reset, Game Rant, Sportskeeda.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6 tiene los BACKROOMS: dónde están 🚪 #GTA6 #Shorts",
+  "description": "Los Backrooms de GTA 6 están en una pequeña excavación en la orilla este de Lake Tallaloko, al norte de Millport (Lummox County). Busca el contenedor naranja abierto, entra y usa el objeto de la mesa del fondo. Fuentes: GAMES.GG, Xbox Play, Final Boss, GTA6 Track, Game Rant, Sportskeeda."
+ },
+ "pinned_comment": "Would you go in alone? 🚪👇",
+ "short_pinned_comment_es": "¿Entrarías solo? 🚪👇",
+ "tags": ["GTA 6 Backrooms", "GTA 6 Backrooms location", "GTA 6 easter eggs", "GTA 6 secrets", "GTA 6 Lake Tallaloko", "GTA 6 Millport", "GTA 6", "GTA VI"],
+ "tiktok_hashtags": ["#gta6", "#gtavi", "#backrooms", "#gta6eastereggs"],
+ "sources": [
+  "GAMES.GG - Grand Theft Auto 6 Backrooms guide: https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-backrooms-location-how-to-enter/",
+  "Xbox Play - GTA 6 Backrooms location: https://xboxplay.games/gta-6/gta-6-where-to-find-the-backrooms-dimension-easter-egg-77518",
+  "Final Boss - GTA 6 Backrooms location: https://finalboss.io/gta-6-backrooms-location",
+  "GTA6 Track - Secret dimension container, Lake Tallaloko: https://www.gta6track.com/news/gta-6-secret-dimension-container-lake-tallaloko",
+  "Hold to Reset - How to enter the Backrooms in GTA 6: https://holdtoreset.com/how-to-enter-the-backrooms-in-gta-6/",
+  "Game Rant - Where to find the Backrooms dimension: https://gamerant.com/gta-6-where-to-find-the-backrooms-dimension/",
+  "Sportskeeda - How to travel to the Backrooms in GTA 6: https://www.sportskeeda.com/esports/how-travel-backrooms-gta-6"
+ ],
+ "facts_note": "Nov 26 research (map-finds agent + own search): location agreed by 5+ guides (dig/construction site, east or southeast shore of Lake Tallaloko, north of Millport; open orange container). NOT said on screen: the item (guides disagree: takeout box / small item / pill), the reward (stamina + tattoo: one guide) and the unlock time (unconfirmed). 'Lake Tallaloko' is printed on Rockstar's map (pin nudged to the east shore). Read from search summaries: re-check right before upload.",
+ "short": [
+  {
+   "headline": "THE BACKROOMS",
+   "headline_es": "LOS BACKROOMS",
+   "text": "GTA 6 hides the Backrooms inside a shipping container.",
+   "text_es": "GTA seis esconde los Backrooms dentro de un contenedor.",
+   "keep_media": true,
+   "chart": {"type": "kinetic", "lines": ["GTA 6 HAS", "THE BACKROOMS"], "pink": ["THE BACKROOMS"], "sub": "here's where", "seed": 191},
+   "chart_es": {"type": "kinetic", "lines": ["GTA 6 TIENE", "LOS BACKROOMS"], "pink": ["LOS BACKROOMS"], "sub": "aquí están", "seed": 191}
+  },
+  {
+   "headline": "LAKE TALLALOKO",
+   "headline_es": "LAKE TALLALOKO",
+   "text": "It's at a dig site on Lake Tallaloko, north of Millport.",
+   "text_es": "Está en una excavación junto a Lake Tallaloko, al norte de Millport.",
+   "keep_media": true,
+   "chart": {"type": "map", "at": "Lake Tallaloko", "dx": 0.008, "dy": 0.005, "label": "Backrooms", "n": 1, "src": "GAMES.GG · Xbox Play · Game Rant"},
+   "chart_es": {"type": "map", "at": "Lake Tallaloko", "dx": 0.008, "dy": 0.005, "label": "Backrooms", "n": 1, "src": "GAMES.GG · Xbox Play · Game Rant", "locale": "es"}
+  },
+  {
+   "headline": "FIND THIS",
+   "headline_es": "BUSCA ESTO",
+   "text": "Find the open orange shipping container.",
+   "text_es": "Busca el contenedor naranja abierto.",
+   "keep_media": true,
+   "chart": {"type": "text", "text": "The OPEN orange container", "pink": ["orange"], "src": "GAMES.GG · GTA6 Track", "seed": 192, "bg": "photo:media/official/mount-kalaga-02.jpg"},
+   "chart_es": {"type": "text", "text": "El contenedor naranja ABIERTO", "pink": ["naranja"], "src": "GAMES.GG · GTA6 Track", "seed": 192, "bg": "photo:media/official/mount-kalaga-02.jpg"}
+  },
+  {
+   "headline": "GO IN",
+   "headline_es": "ENTRA",
+   "text": "Walk in and use the item on the table.",
+   "text_es": "Entra y usa el objeto de la mesa.",
+   "keep_media": true,
+   "chart": {"type": "text", "text": "Walk in → use the item on the table", "pink": ["the table"], "src": "Xbox Play · Final Boss", "seed": 193, "bg": "photo:media/official/mount-kalaga-05.jpg"},
+   "chart_es": {"type": "text", "text": "Entra → usa el objeto de la mesa", "pink": ["la mesa"], "src": "Xbox Play · Final Boss", "seed": 193, "bg": "photo:media/official/mount-kalaga-05.jpg"}
+  },
+  {
+   "headline": "WOULD YOU?",
+   "headline_es": "¿ENTRARÍAS?",
+   "text": "Would you go in? Tell me, because",
+   "text_es": "¿Entrarías? Dímelo, porque",
+   "keep_media": true,
+   "chart": {"type": "kinetic", "lines": ["WOULD YOU", "GO IN?"], "pink": ["GO IN?"], "seed": 194},
+   "chart_es": {"type": "kinetic", "lines": ["¿ENTRARÍAS", "SOLO?"], "pink": ["SOLO?"], "seed": 194}
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "series": "Momentum",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": ["GTA6", "GTAVI", "Shorts"],
+ "slug": "gta6-mask-where",
+ "title": "Where to Buy a Mask in GTA 6",
+ "short_title": "GTA 6 mask location: your first one is here 🎭 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 mask location: your first one is here 🎭 #GTA6 #Shorts",
+  "GTA 6 mask shop: it's next to Jason's house 🎭 #GTA6 #Shorts",
+  "Where to buy a mask in GTA 6 #GTA6 #Shorts"
+ ],
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete: 'gta 6 mask location', 'gta 6 mask shop', 'gta 6 where to buy mask')",
+ "short_description": "Where to buy your first mask in GTA 6: Chuck's Tackle & Shot in Key Lento, just east of (down the road from) Jason's house. Look for the stand with the alligator head on top; the map index lists it under weapons / Ammu-Nation. The first face covering is a neck gaiter (Game8 lists a $35 bandana on the Neckwear shelf): pull it up over your face. To wear it: hold L1 / LB for the loadout, open items and pick the mask; the D-pad changes how it's worn. Most Ammu-Nation stores sell face coverings too, but many are out of reach early on. No story spoilers.\n\nSources: PC Gamer, PCGamesN, GamesRadar, Game8, Dork.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: dónde comprar tu PRIMERA máscara 🎭 #GTA6 #Shorts",
+  "description": "Tu primera máscara en GTA 6 se compra en Chuck's Tackle & Shot, en Key Lento, justo al este de la casa de Jason. Busca el puesto con la cabeza de caimán encima. Compra un pañuelo de cuello y súbelo para taparte la cara: mantén L1 / LB, entra en objetos y elígelo. Casi todas las Ammu-Nation venden también, pero muchas no están abiertas al principio. Fuentes: PC Gamer, PCGamesN, GamesRadar, Game8, Dork."
+ },
+ "pinned_comment": "Bandana or full mask: what's your heist look? 🎭👇",
+ "short_pinned_comment_es": "¿Pañuelo o máscara completa? ¿Cuál es tu look para atracos? 🎭👇",
+ "tags": ["GTA 6 mask", "GTA 6 mask location", "GTA 6 mask shop", "where to buy a mask in GTA 6", "GTA 6 how to wear a mask", "GTA 6 Chuck's Tackle and Shot", "GTA 6 Key Lento", "GTA 6", "GTA VI"],
+ "tiktok_hashtags": ["#gta6", "#gtavi", "#gta6tips", "#gta6mask"],
+ "sources": [
+  "PC Gamer - Want to stay anonymous when doing crimes in GTA 6? Grab yourself a mask: https://www.pcgamer.com/games/grand-theft-auto/gta-6-mask-location/",
+  "PCGamesN - How to get a mask in GTA 6: https://www.pcgamesn.com/grand-theft-auto-vi/mask-where-to-find",
+  "GamesRadar - How to get a mask in GTA 6 and disguise yourself from cops: https://www.gamesradar.com/games/grand-theft-auto/gta-6-masks-how-to-get-equip/",
+  "Game8 - List of all masks and where to buy them: https://game8.co/games/GTA-6/archives/638735",
+  "Dork - Where to find a mask in GTA 6, and how it helps you avoid the police: https://readdork.com/features/where-find-mask-gta-6-how-helps",
+  "GAMES.GG - How to get a mask in Grand Theft Auto 6: https://games.gg/grand-theft-auto-vi/guides/how-to-get-a-mask-in-grand-theft-auto-6/"
+ ],
+ "facts_note": "Nov 26 momentum follow-up to the shoe store map Short (692 views, 55/h) and the search gap 'gta 6 mask shop / mask location' (Google + YouTube autocomplete). Store + Key Lento + east of Jason's house: PC Gamer, PCGamesN, GAMES.GG (and Game8). Gaiter: PCGamesN + Dork (Game8 says bandana, so the card says 'neck gaiter' and the description mentions both). Controls: GamesRadar/PCGamesN search summaries. Masks hide you from the police: GamesRadar + Dork headlines. Game8's 'Gear Up mission first' detail is single-source: left out. Read from search-result summaries (the pages couldn't be opened from the cloud session): re-check right before upload.",
+ "short": [
+  {
+   "headline": "FIRST MASK",
+   "headline_es": "PRIMERA MÁSCARA",
+   "text": "Your first GTA 6 mask is next to Jason's house.",
+   "text_es": "Tu primera máscara en GTA seis está junto a la casa de Jason.",
+   "keep_media": true,
+   "chart": {"type": "kinetic", "lines": ["GTA 6'S FIRST", "MASK IS HERE"], "pink": ["MASK IS HERE"], "sub": "where to buy a mask", "seed": 181},
+   "chart_es": {"type": "kinetic", "lines": ["TU PRIMERA", "MÁSCARA ESTÁ AQUÍ"], "pink": ["MÁSCARA"], "sub": "dónde comprarla", "seed": 181}
+  },
+  {
+   "headline": "KEY LENTO",
+   "headline_es": "KEY LENTO",
+   "text": "Chuck's Tackle and Shot, just east of it in Key Lento.",
+   "text_es": "Chuck's Tackle and Shot, justo al este, en Key Lento.",
+   "keep_media": true,
+   "chart": {"type": "map", "at": "Key Lento", "label": "Chuck's Tackle & Shot", "n": 1, "src": "PC Gamer · PCGamesN · GAMES.GG"},
+   "chart_es": {"type": "map", "at": "Key Lento", "label": "Chuck's Tackle & Shot", "n": 1, "src": "PC Gamer · PCGamesN · GAMES.GG", "locale": "es"}
+  },
+  {
+   "headline": "LOOK FOR THIS",
+   "headline_es": "BUSCA ESTO",
+   "text": "Look for the alligator head on the stand.",
+   "text_es": "Busca la cabeza de caimán sobre el puesto.",
+   "keep_media": true,
+   "chart": {"type": "text", "text": "The stand with an alligator head on top", "pink": ["alligator head"], "src": "GamesRadar", "seed": 182, "bg": "photo:media/official/leonida-keys-02.jpg"},
+   "chart_es": {"type": "text", "text": "El puesto con una cabeza de caimán encima", "pink": ["cabeza de caimán"], "src": "GamesRadar", "seed": 182, "bg": "photo:media/official/leonida-keys-02.jpg"}
+  },
+  {
+   "headline": "BUY A GAITER",
+   "headline_es": "COMPRA UN PAÑUELO",
+   "text": "Buy a neck gaiter and pull it over your face.",
+   "text_es": "Compra un pañuelo de cuello y súbelo para taparte la cara.",
+   "keep_media": true,
+   "chart": {"type": "text", "text": "Neck gaiter → pull it over your face", "pink": ["over your face"], "src": "PCGamesN · Dork", "seed": 183, "bg": "photo:media/official/leonida-keys-05.jpg"},
+   "chart_es": {"type": "text", "text": "Pañuelo de cuello → súbelo a la cara", "pink": ["a la cara"], "src": "PCGamesN · Dork", "seed": 183, "bg": "photo:media/official/leonida-keys-05.jpg"}
+  },
+  {
+   "headline": "PUT IT ON",
+   "headline_es": "PÓNTELA",
+   "text": "Hold L1 or LB, and pick it under items.",
+   "text_es": "Mantén L1 o LB y elígela en objetos.",
+   "keep_media": true,
+   "chart": {"type": "text", "text": "Hold L1 / LB → Items → mask", "pink": ["L1 / LB"], "src": "GamesRadar · PCGamesN", "seed": 184, "bg": "photo:media/official/leonida-keys-03.jpg"},
+   "chart_es": {"type": "text", "text": "Mantén L1 / LB → Objetos → máscara", "pink": ["L1 / LB"], "src": "GamesRadar · PCGamesN", "seed": 184, "bg": "photo:media/official/leonida-keys-03.jpg"}
+  },
+  {
+   "headline": "COPS CAN'T SEE",
+   "headline_es": "LA POLICÍA NO TE VE",
+   "text": "It hides your face from the cops, and",
+   "text_es": "Te tapa la cara ante la policía, y",
+   "keep_media": true,
+   "chart": {"type": "kinetic", "lines": ["HIDES YOUR", "FACE FROM COPS"], "pink": ["FACE"], "seed": 185},
+   "chart_es": {"type": "kinetic", "lines": ["TE TAPA", "LA CARA"], "pink": ["LA CARA"], "seed": 185}
+  }
+ ]
+}
