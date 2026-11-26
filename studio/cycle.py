@@ -80,7 +80,8 @@ def check(day, offline=False, now=None):
     states = {f"{s} {l}": ("SCHEDULED" if (s, l) in pre else recs[(s, l)].get("state", "none")) for s, l, _ in items}
     up = [k for k, v in states.items() if v in ("SCHEDULED", "PUBLISHED")]
     held = {k: v for k, v in states.items() if v not in ("SCHEDULED", "PUBLISHED")}
-    add("uploads", "PASS" if items and not held else ("FAIL" if held else "WAIT"),
+    before_run = day > now.date().isoformat() or (day == now.date().isoformat() and (now.hour, now.minute) < (3, 45))
+    add("uploads", "PASS" if items and not held else ("WAIT" if held and before_run else ("FAIL" if held else "WAIT")),
         f"uploaded {len(up)}/{len(items)}" + (f"; not uploaded: {held}" if held else ""))
 
     # 4-5, 12: YouTube: channel, publishAt, public
@@ -142,7 +143,8 @@ def check(day, offline=False, now=None):
         add("helper merged", "PASS" if merged else "WAIT", "in origin/main" if merged else
             "not merged yet (python -m studio.runsafe merge " + br + ")")
     local, origin = _git("rev-parse", "HEAD"), _git("rev-parse", "origin/main")
-    dirty = _git("status", "--porcelain")
+    dirty = "\n".join(l for l in (_git("status", "--porcelain") or "").splitlines()
+                       if not l.endswith(("content/learn/quota.json", "content/learn/tests_status.json")))  # run logs
     add("main pushed", "PASS" if local == origin and not dirty else "FAIL",
         "local main = origin/main, clean" if local == origin and not dirty else
         f"local {str(local)[:8]} vs origin {str(origin)[:8]}{', uncommitted changes' if dirty else ''}")
