@@ -23,7 +23,16 @@
  "short_description": "GTA 6 map quiz: three of Rockstar's official screenshots, one from each region. Guess the place, then we zoom Rockstar's official Leonida map to it: the Leonida Keys, Mount Kalaga National Park and Port Gellhorn. Score yourself out of 3. Sources: Rockstar Games (official site, screenshots and map), GamesRadar, PC Gamer, Beebom.",
  "short_es": {
   "title": "QUIZ del mapa de GTA 6: ¿dónde es esto? 🗺️ #GTA6 #Shorts",
-  "description": "Quiz del mapa de GTA 6: tres capturas oficiales de Rockstar, una por región. Adivina el lugar y después lo marcamos en el mapa oficial de Leonida: Leonida Keys, Mount Kalaga y Port Gellhorn. Fuentes: Rockstar Games, GamesRadar, PC Gamer, Beebom."
+  "description": "Quiz del mapa de GTA 6: tres capturas oficiales de Rockstar, una por región. Adivina el lugar y después lo marcamos en el mapa oficial de Leonida: Leonida Keys, Mount Kalaga y Port Gellhorn. Fuentes: Rockstar Games, GamesRadar, PC Gamer, Beebom.",
+  "tags": [
+   "GTA 6 español",
+   "quiz GTA 6",
+   "mapa de GTA 6",
+   "lugares de GTA 6",
+   "Leonida",
+   "GTA 6",
+   "GTA VI"
+  ]
  },
  "pinned_comment": "What did you score out of 3? 🗺️👇",
  "short_pinned_comment_es": "¿Cuántas acertaste de 3? 🗺️👇",
@@ -94,7 +103,7 @@
    "chart": {
     "type": "kinetic",
     "lines": [
-     "#1",
+     "GUESS #1",
      "WHERE IS THIS?"
     ],
     "pink": [
@@ -107,7 +116,7 @@
    "chart_es": {
     "type": "kinetic",
     "lines": [
-     "#1",
+     "ADIVINA #1",
      "¿DÓNDE ES ESTO?"
     ],
     "pink": [
@@ -148,7 +157,7 @@
    "chart": {
     "type": "kinetic",
     "lines": [
-     "#2",
+     "GUESS #2",
      "WHERE IS THIS?"
     ],
     "pink": [
@@ -161,7 +170,7 @@
    "chart_es": {
     "type": "kinetic",
     "lines": [
-     "#2",
+     "ADIVINA #2",
      "¿DÓNDE ES ESTO?"
     ],
     "pink": [
@@ -202,7 +211,7 @@
    "chart": {
     "type": "kinetic",
     "lines": [
-     "#3",
+     "GUESS #3",
      "WHERE IS THIS?"
     ],
     "pink": [
@@ -215,7 +224,7 @@
    "chart_es": {
     "type": "kinetic",
     "lines": [
-     "#3",
+     "ADIVINA #3",
      "¿DÓNDE ES ESTO?"
     ],
     "pink": [

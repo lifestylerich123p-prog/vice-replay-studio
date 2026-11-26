@@ -14,16 +14,25 @@
  "guide": "gta-6-map-leonida-places",
  "slug": "gta6-special-cars-tier-list",
  "title": "GTA 6's Special Cars, Ranked",
- "short_title": "GTA 6 special cars ranked: the best one is free 😤 #GTA6 #Shorts",
+ "short_title": "GTA 6's best special car is free 😤 #GTA6 #Shorts",
  "short_title_options": [
-  "GTA 6 special cars ranked: the best one is free 😤 #GTA6 #Shorts",
-  "GTA 6 Ultimate cars ranked (a free car wins) #GTA6 #Shorts",
-  "GTA 6's best special car costs $0 #GTA6 #Shorts"
+  "GTA 6's best special car is free 😤 #GTA6 #Shorts",
+  "GTA 6 special cars ranked: the best one is free #GTA6 #Shorts",
+  "GTA 6 Ultimate cars ranked (a free car wins) #GTA6 #Shorts"
  ],
  "short_description": "Our tier list of GTA 6's special rides: the Ultimate Edition's Dominator Buggy (Chapter 2, Paradise RV Park), Squalo boat (Chapter 4, canal south of Washington Beach) and '95 Grotti Cheetah (Chapter 5, Tequesta Retreat), the Vintage pack's '55 Stanier (Ocean View Hotel, Vice Beach) and Paul Walker's Fast & Furious tribute car, the Maibatsu Penumbra FF, free to find in a villa garage on Vespucci Island. Locations from 2+ guides each; the ranking is our take. Sources: GameSpot, GTABase, GamesRadar, Red Bull, PC Gamer, Jalopnik, BGR, games.gg.",
  "short_es": {
   "title": "Los autos ESPECIALES de GTA 6: el mejor es gratis 😤 #GTA6 #Shorts",
-  "description": "Nuestra tier list de los vehículos especiales de GTA 6: Dominator Buggy, lancha Squalo y Grotti Cheetah del 95 (Ultimate Edition), el Stanier del 55 (pack Vintage) y el auto de Paul Walker, gratis en un garaje de Vespucci Island. Fuentes: GameSpot, GTABase, GamesRadar, Red Bull, PC Gamer, Jalopnik, BGR."
+  "description": "Nuestra tier list de los vehículos especiales de GTA 6: Dominator Buggy, lancha Squalo y Grotti Cheetah del 95 (Ultimate Edition), el Stanier del 55 (pack Vintage) y el auto de Paul Walker, gratis en un garaje de Vespucci Island. Fuentes: GameSpot, GTABase, GamesRadar, Red Bull, PC Gamer, Jalopnik, BGR.",
+  "tags": [
+   "GTA 6 español",
+   "tier list GTA 6",
+   "autos de GTA 6",
+   "auto de Paul Walker GTA 6",
+   "GTA 6 Ultimate Edition",
+   "GTA 6",
+   "GTA VI"
+  ]
  },
  "pinned_comment": "Which one did you grab first? 🚗👇",
  "short_pinned_comment_es": "¿Cuál agarraste primero? 🚗👇",
@@ -156,8 +165,8 @@
   {
    "headline": "B TIER",
    "headline_es": "TIER B",
-   "text": "B tier: the Squalo boat and the fifty five Stanier.",
-   "text_es": "Tier B: la lancha Squalo y el Stanier del cincuenta y cinco.",
+   "text": "B tier: the Squalo boat and the Stanier.",
+   "text_es": "Tier B: la lancha Squalo y el Stanier.",
    "keep_media": true,
    "chart": {
     "type": "tier",

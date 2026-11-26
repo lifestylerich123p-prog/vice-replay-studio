@@ -24,10 +24,13 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| 2026-11-25 | gta6-trivia-night | video | GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz) | - |
+| 2026-11-26 | gta6-vice-city-real-miami | Short | GTA 6's Vice City vs Real Miami: 5 Places | - |
+| 2026-11-26 | gta6-special-cars-tier-list | Short | GTA 6's Special Cars, Ranked | - |
+| 2026-11-26 | gta6-map-quiz-places | Short | GTA 6 Map Quiz: Name These 3 Places | - |
+| 2026-11-25 | gta6-trivia-night | video | GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz) | main: kSufP4pt08I |
 | 2026-11-25 | gta6-trivia-3-questions | Short | GTA 6 trivia only real fans get right | - |
 | 2026-11-25 | gta6-hacker-hotel-tv | Short | The GTA 6 leak came from a hotel TV | - |
-| 2026-11-25 | gta6-atm-robbery-guide | video | GTA 6 ATM Robbery Guide: Winch, Tow Truck and the Dye Pack Catch | - |
+| 2026-11-25 | gta6-atm-robbery-guide | video | GTA 6 ATM Robbery Guide: Winch, Tow Truck and the Dye Pack Catch | tips: ChmiOLulOvo |
 | 2026-11-24 | gta6-waink-app | Short | GTA 6's WAiNK App: Scan 100 Spots for a Trophy | - |
 | 2026-11-24 | gta6-vs-gta5-online | Short | GTA 6 vs GTA 5 Online: Two Weeks Then, No Date Now | - |
 | 2026-11-24 | gta6-vs-gta5-map | Short | GTA 6 vs GTA 5: The Map Is About Twice the Size | - |
@@ -87,8 +90,8 @@ Read this first instead of searching the repo.
 | 2026-11-23 | gta-cities-quiz | Short | GTA Cities Quiz: Only Real Fans Get 3/3 | - |
 | 2026-11-22 | gta6-trailer-views | Short | GTA 6's First Trailer Is Still No. 1 (309M Views) | short: Zb40bCmejBQ |
 | 2026-11-22 | gta6-top-3-rides | Short | GTA 6: The Top 3 Rides in Rockstar's Gameplay | - |
-| 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 |
-| 2026-11-22 | gta6-no-darts | Short | GTA 6 Has No Darts. Rockstar Says Why | short: JYYfpuj-jwQ |
+| 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 (private) |
+| 2026-11-22 | gta6-no-darts | Short | GTA 6 Has No Darts. Rockstar Says Why | short: JYYfpuj-jwQ (private) |
 | 2026-11-22 | gta6-no-60fps-ps5-pro | Short | GTA 6 Has No 60 FPS Mode, Not Even on PS5 Pro | short: 6p9VtX-UaVU (private) |
 | 2026-11-22 | gta6-money-chart-es | Short | GTA 6 hizo 5 VECES el lanzamiento de GTA 5... con trampa | - |
 | 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | short: y4jQTwLJwP4 (private) |
@@ -133,14 +136,16 @@ Read this first instead of searching the repo.
 ## Channel uploads (from the last learn run)
 | YouTube id | Title | Views |
 |---|---|---|
-| aYBokm3TIYE | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts | 9465 |
-| oYqPC06109w | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy | 5329 |
-| jQbv5GPR3dk | GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts | 617 |
+| aYBokm3TIYE | LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts | 9488 |
+| ChmiOLulOvo | GTA 6: where to find Paul Walker's car 🏎️ #GTA6 #Shorts | 171 |
+| oYqPC06109w | Lacy's INSANE GTA 6 Marathon Plan 💀🔥 #lacy | 5330 |
 | ty0KP7MLaKU | LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts | 1855 |
+| jQbv5GPR3dk | GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts | 617 |
+| sEg8EWL2XPA | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 #GTA6 #Shorts | 100 |
 | uCNHbnOqgs0 | IShowSpeed teared up over his family's name in GTA 6 #GTA6 #Shorts | 1192 |
 | b4pWGuZNPJY | GTA 6 already made $1.65 BILLION #GTA6 #Shorts | 1380 |
-| Egb3otGWJIg | The first person to finish GTA 6 wasn't IShowSpeed #GTA6 #Shorts | 660 |
 | Z8jQK8nZ1cQ | GTA 6 on PS5 vs PS5 Pro: the verdict is in #GTA6 #Shorts | 1189 |
+| Egb3otGWJIg | The first person to finish GTA 6 wasn't IShowSpeed #GTA6 #Shorts | 660 |
 | DG_MpuSMDV8 | GTA 6 is already OUT in New Zealand (the catch) #GTA6 #Shorts | 1307 |
 | vlPV5Yre8T8 | GTA 6 cheats are real... but there's a catch #GTA6 #Shorts | 1172 |
 | YKR0s2dWJ8o | GTA 6 NZ trick: 18 hours early? #GTA6 #Shorts | 1344 |
@@ -150,41 +155,42 @@ Read this first instead of searching the repo.
 | _5ZWAUY75y4 | Lucia's actress is CONFIRMED before launch #GTA6 #Shorts | 1223 |
 | gvIH1aLtJuc | IShowSpeed heads to New Zealand for GTA 6? #GTA6 #Shorts | 1001 |
 | DBlAdqc1orw | GTA 6 is OUT: do these 3 things first #GTA6 #Shorts | 834 |
-| Zb40bCmejBQ | GTA 6's first trailer STILL wins (309M views) #GTA6 #Shorts | 5 |
 | 6bPAn80dKno | 7 MILLION people watched GTA 6 at once #GTA6 #Shorts | 779 |
-| vkvg5KPqb70 | Don't grind money in GTA 6 Chapter 1 (here's the catch) #GTA6 #Shorts | 578 |
+| vkvg5KPqb70 | Don't grind money in GTA 6 Chapter 1 (here's the catch) #GTA6 #Shorts | 579 |
+| Zb40bCmejBQ | GTA 6's first trailer STILL wins (309M views) #GTA6 #Shorts | 28 |
 | Y4AT3Y4kcmg | GTA 6 at 9 PM the night before? #GTA6 #Shorts | 798 |
+| aU1Js-p-FCo | Every GTA ranked by sales: GTA 5 is alone #GTA6 #Shorts | 103 |
+| fckK4qbyd48 | GTA 6's Platinum trophy is already taken #GTA6 #Shorts | 30 |
 | bVoHzywwvgc | IShowSpeed beat GTA 6 in 52 HOURS... then lost his save #GTA6 #Shorts | 268 |
-| K9Ii3rntcog | GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Shorts | 67 |
-| aU1Js-p-FCo | Every GTA ranked by sales: GTA 5 is alone #GTA6 #Shorts | 68 |
-| 9lTZNbwbSec | GTA 6 physical edition has NO DISC #GTA6 #Shorts | 400 |
-| sEg8EWL2XPA | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 #GTA6 #Shorts | 8 |
-| fckK4qbyd48 | GTA 6's Platinum trophy is already taken #GTA6 #Shorts | 11 |
-| xvA4O2ytSnE | GTA 6 locks 5 shops behind the $100 edition #GTA6 #Shorts | 158 |
+| 9lTZNbwbSec | GTA 6 physical edition has NO DISC #GTA6 #Shorts | 402 |
+| K9Ii3rntcog | GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Shorts | 74 |
 | 4EuMnzlLKTY | Rockstar's boss just broke his silence on GTA 6 #GTA6 #Shorts | 374 |
-| zfjEiiiQdJk | GTA 6 Black Friday deals have a catch #GTA6 #Shorts | 180 |
+| xvA4O2ytSnE | GTA 6 locks 5 shops behind the $100 edition #GTA6 #Shorts | 160 |
 | xvudsg_o6ow | GTA 6 just got nominated for GAME OF THE YEAR #GTA6 #Shorts | 353 |
+| zfjEiiiQdJk | GTA 6 Black Friday deals have a catch #GTA6 #Shorts | 180 |
 | wPPhLBHS7-M | GTA 6 in 3 days: what you need to know #GTA6 #Shorts | 379 |
 | KlelqBLnEUI | GTA 6 made $3.79 BILLION in ONE day (official) #GTA6 #Shorts | 199 |
-| pcoMWOraJA4 | GTA 6 Unlock Time in Every Time Zone (US, UK, EU, Australia) | 297 |
-| yU-xKsoUdbM | GTA 6 won't let you replay missions #GTA6 #Shorts | 172 |
 | ZUcedkldfsE | Kai Cenat's 130 HOUR GTA warm-up is over #GTA6 #Shorts | 277 |
+| pcoMWOraJA4 | GTA 6 Unlock Time in Every Time Zone (US, UK, EU, Australia) | 297 |
+| yU-xKsoUdbM | GTA 6 won't let you replay missions #GTA6 #Shorts | 173 |
 | uvWNXugdvSo | 4 things GTA 5 had that GTA 6 doesn't #GTA6 #Shorts | 131 |
 | yKISW4fJj3Y | Those GTA 6 cheat codes are FAKE #GTA6 #Shorts | 237 |
 | DIFRHVF6T0E | YouTube is streaming GTA 6 for 24 HOURS #GTA6 #Shorts | 254 |
-| LYmF6sSQtYE | GTA 6's Metacritic 99: only ONE other game #GTA6 #Shorts | 28 |
-| jVcY1N4bBHU | GTA 6 finally has patch notes: 7 fixes #GTA6 #Shorts | 24 |
+| pPYdMlKMaEI | GTA 6 Black Friday: Take-Two says no discount #GTA6 #Shorts | 7 |
+| LYmF6sSQtYE | GTA 6's Metacritic 99: only ONE other game #GTA6 #Shorts | 27 |
+| jVcY1N4bBHU | GTA 6 update 1.002.002: every fix #GTA6 #Shorts | 24 |
 | kQ_OUxG_GYk | GTA 6: 39 million PS5 players in 4 days #GTA6 #Shorts | 31 |
 | Rt18FhG-DYk | GTA 6 details: the video game store going bust #GTA6 #Shorts | 75 |
-| kLxIVUzSOaI | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore | 175 |
-| JYYfpuj-jwQ | Rockstar: even we don't have unlimited time (GTA 6) #GTA6 #Shorts | 30 |
 | rhf1qryjRSM | Rockstar sent GTA 6 packages to streamers #GTA6 #Shorts | 97 |
-| -C9KX5Afwgw | GTA 6 New Zealand Trick: Play Early or Risk Your Account? | 106 |
-| pPYdMlKMaEI | GTA 6 Black Friday: Take-Two says no discount #GTA6 #Shorts | 1 |
+| kLxIVUzSOaI | GTA 6 Is More Than Vice City! 🌴 6 Locations to Explore | 175 |
+| kSufP4pt08I | GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz) | 2 |
+| JYYfpuj-jwQ | Rockstar: even we don't have unlimited time (GTA 6) #GTA6 #Shorts | 30 |
 | uRIkm8L3Gr8 | 68 MILLION views on ONE GTA 6 stream #GTA6 #Shorts | 36 |
+| -C9KX5Afwgw | GTA 6 New Zealand Trick: Play Early or Risk Your Account? | 106 |
 | c_l7udfLNnk | LACY vs a GTA 6 shark 🦈😳 #LACY #GTA6 #shortsyoutube | 8 |
 | GjhaJdjHR4Q | GTA 6 Is Bigger Than Vice City: 6 Places to Know | 16 |
 | YqnShunG7WY | GTA 6 Survival Guide: 7 Things to Do Before You Play | 15 |
+| fmE0eA1ayf4 | GTA 6's hacker got 7 years, then walked free 😳 #GTA6 #Shorts | 0 |
 | EJOdYW3sx44 | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | 0 |
 | rHaMTePDRUQ | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | 0 |
 | S_H61BzbFKA | GTA 6 Black Friday: What's Actually Worth Buying | 0 |
