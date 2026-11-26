@@ -33,8 +33,8 @@
    "GTA VI"
   ]
  },
- "pinned_comment": "Did you find it on your first night? Yes or no 🦍👇",
- "short_pinned_comment_es": "¿Lo encontraste la primera noche? 🦍👇",
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
  "tags": [
   "GTA 6 Bigfoot",
   "GTA 6 Skunk Ape",
@@ -163,5 +163,6 @@
  "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete)",
  "spot": 5,
  "cta": "SPOT #6 NEXT: FOLLOW",
- "cta_es": "LUGAR #6 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #6 PRONTO: SÍGUENOS",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)"
 }

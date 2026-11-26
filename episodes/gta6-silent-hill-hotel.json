@@ -31,8 +31,8 @@
    "GTA 6 Crosstown"
   ]
  },
- "pinned_comment": "Would you stay the night? 🌫️👇",
- "short_pinned_comment_es": "¿Te quedarías a dormir ahí? 🌫️👇",
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
  "tags": [
   "GTA 6 Silent Hill",
   "GTA 6 Silent Hill easter egg",
@@ -194,30 +194,30 @@
    }
   },
   {
-   "headline": "WOULD YOU STAY?",
-   "headline_es": "¿TE QUEDARÍAS?",
-   "text": "Would you stay the night? Tell me, because",
-   "text_es": "¿Te quedarías a dormir? Dímelo, porque",
+   "headline": "FOUND IT?",
+   "headline_es": "¿LO ENCONTRASTE?",
+   "text": "Found it? Comment yes, because",
+   "text_es": "¿Lo encontraste? Comenta sí, porque",
    "keep_media": true,
    "chart": {
     "type": "kinetic",
     "lines": [
-     "WOULD YOU",
-     "STAY?"
+     "FOUND IT?",
+     "COMMENT YES"
     ],
     "pink": [
-     "STAY?"
+     "COMMENT YES"
     ],
     "seed": 205
    },
    "chart_es": {
     "type": "kinetic",
     "lines": [
-     "¿TE",
-     "QUEDARÍAS?"
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
     ],
     "pink": [
-     "QUEDARÍAS?"
+     "COMENTA SÍ"
     ],
     "seed": 205
    }
@@ -225,5 +225,6 @@
  ],
  "spot": 14,
  "cta": "SPOT #15 NEXT: FOLLOW",
- "cta_es": "LUGAR #15 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #15 PRONTO: SÍGUENOS",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)"
 }

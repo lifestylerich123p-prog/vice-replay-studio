@@ -24,3 +24,15 @@ def test_missing_videos_get_rendered_before_upload():
     assert spend.renders_needed(it, False, True) == [["python", "-m", "studio.make_video", "episodes/no-such-slug.json",
                                                       "--short", "--es"]]
     assert spend.renders_needed(dict(it, item="tips"), False, True) == []
+
+
+def test_spanish_pause_skips_slots_inside_it(monkeypatch):
+    """Owner Nov 26 "DO IT": no Spanish YouTube uploads until the pause date; Spanish winners book after it."""
+    import datetime as dt
+    from studio import spend
+    monkeypatch.setattr(spend, "es_paused_until", lambda: "2026-12-03")
+    assert spend.es_paused({"es": ["2026-11-30", "10:00 AM"]})
+    assert not spend.es_paused({"es": ["2026-12-03", "12:30 PM"]})
+    assert not spend.es_paused({"en": ["2026-11-30", "9:30 AM"]})
+    slot = spend.next_es_slot(dt.datetime(2026, 11, 27, 9, 0, tzinfo=spend.quota.ET), set())
+    assert slot == ["2026-12-03", "12:30 PM"]

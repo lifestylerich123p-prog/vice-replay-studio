@@ -33,8 +33,8 @@
    "GTA VI"
   ]
  },
- "pinned_comment": "Cheetah, Buggy or Squalo: which one did you grab first? 👇",
- "short_pinned_comment_es": "¿Cheetah, Buggy o Squalo? 👇",
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
  "tags": [
   "GTA 6 Ultimate Edition",
   "GTA 6 Ultimate Edition cars",
@@ -157,19 +157,19 @@
    }
   },
   {
-   "headline": "WHICH FIRST?",
-   "headline_es": "¿CUÁL PRIMERO?",
-   "text": "Which one first? Tell me, because",
-   "text_es": "¿Cuál primero? Dime, porque",
+   "headline": "FOUND IT?",
+   "headline_es": "¿LO ENCONTRASTE?",
+   "text": "Found it? Comment yes, because",
+   "text_es": "¿Lo encontraste? Comenta sí, porque",
    "keep_media": true,
    "chart": {
     "type": "kinetic",
     "lines": [
-     "WHICH ONE",
-     "FIRST?"
+     "FOUND IT?",
+     "COMMENT YES"
     ],
     "pink": [
-     "FIRST?"
+     "COMMENT YES"
     ],
     "seed": 52,
     "sub": "Cheetah, Buggy or Squalo"
@@ -177,11 +177,11 @@
    "chart_es": {
     "type": "kinetic",
     "lines": [
-     "¿CUÁL",
-     "PRIMERO?"
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
     ],
     "pink": [
-     "PRIMERO?"
+     "COMENTA SÍ"
     ],
     "seed": 52,
     "sub": "Cheetah, Buggy o Squalo"
@@ -192,5 +192,6 @@
  "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete)",
  "spot": 10,
  "cta": "SPOT #11 NEXT: FOLLOW",
- "cta_es": "LUGAR #11 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #11 PRONTO: SÍGUENOS",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)"
 }

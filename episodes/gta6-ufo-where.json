@@ -29,8 +29,8 @@
   ]
  },
  "short_playlist": "GTA 6 Map: Where to Find It",
- "pinned_comment": "Did it show up on your first night? Yes or no 👇",
- "short_pinned_comment_es": "¿Te apareció la primera noche? Sí o no 👇",
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
  "tags": [
   "GTA 6 UFO",
   "GTA 6 UFO location",
@@ -200,5 +200,6 @@
  "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete)",
  "spot": 18,
  "cta": "SPOT #19 NEXT: FOLLOW",
- "cta_es": "LUGAR #19 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #19 PRONTO: SÍGUENOS",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)"
 }

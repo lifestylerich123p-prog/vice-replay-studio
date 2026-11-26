@@ -31,8 +31,8 @@
    "GTA 6 easter eggs"
   ]
  },
- "pinned_comment": "Would you go in alone? 🚪👇",
- "short_pinned_comment_es": "¿Entrarías solo? 🚪👇",
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
  "tags": [
   "GTA 6 Backrooms",
   "GTA 6 Backrooms location",
@@ -172,30 +172,30 @@
    }
   },
   {
-   "headline": "WOULD YOU?",
-   "headline_es": "¿ENTRARÍAS?",
-   "text": "Would you go in? Tell me, because",
-   "text_es": "¿Entrarías? Dímelo, porque",
+   "headline": "FOUND IT?",
+   "headline_es": "¿LO ENCONTRASTE?",
+   "text": "Found it? Comment yes, because",
+   "text_es": "¿Lo encontraste? Comenta sí, porque",
    "keep_media": true,
    "chart": {
     "type": "kinetic",
     "lines": [
-     "WOULD YOU",
-     "GO IN?"
+     "FOUND IT?",
+     "COMMENT YES"
     ],
     "pink": [
-     "GO IN?"
+     "COMMENT YES"
     ],
     "seed": 194
    },
    "chart_es": {
     "type": "kinetic",
     "lines": [
-     "¿ENTRARÍAS",
-     "SOLO?"
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
     ],
     "pink": [
-     "SOLO?"
+     "COMENTA SÍ"
     ],
     "seed": 194
    }
@@ -203,5 +203,6 @@
  ],
  "spot": 6,
  "cta": "SPOT #7 NEXT: FOLLOW",
- "cta_es": "LUGAR #7 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #7 PRONTO: SÍGUENOS",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)"
 }

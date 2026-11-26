@@ -34,8 +34,8 @@
    "GTA VI"
   ]
  },
- "pinned_comment": "Seen one yet? Swamp or pool? 🐊👇",
- "short_pinned_comment_es": "¿Ya viste uno? ¿Pantano o piscina? 🐊👇",
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
  "tags": [
   "GTA 6 alligator",
   "GTA 6 alligators",
@@ -190,30 +190,30 @@
    }
   },
   {
-   "headline": "SEEN ONE?",
-   "headline_es": "¿YA VISTE UNO?",
+   "headline": "FOUND IT?",
+   "headline_es": "¿LO ENCONTRASTE?",
    "keep_media": true,
-   "text": "Seen one yet? Tell me, because",
-   "text_es": "¿Ya viste uno? Dime, porque",
+   "text": "Found it? Comment yes, because",
+   "text_es": "¿Lo encontraste? Comenta sí, porque",
    "chart": {
     "type": "kinetic",
     "lines": [
-     "SEEN ONE",
-     "YET?"
+     "FOUND IT?",
+     "COMMENT YES"
     ],
     "pink": [
-     "YET?"
+     "COMMENT YES"
     ],
     "seed": 75
    },
    "chart_es": {
     "type": "kinetic",
     "lines": [
-     "¿YA VISTE",
-     "UNO?"
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
     ],
     "pink": [
-     "UNO?"
+     "COMENTA SÍ"
     ],
     "seed": 75
    }
@@ -222,5 +222,6 @@
  "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete)",
  "spot": 20,
  "cta": "SPOT #21 NEXT: FOLLOW",
- "cta_es": "LUGAR #21 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #21 PRONTO: SÍGUENOS",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)"
 }

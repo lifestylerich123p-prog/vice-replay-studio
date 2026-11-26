@@ -31,8 +31,8 @@
    "GTA 6 Port Gellhorn"
   ]
  },
- "pinned_comment": "Which legendary animal should we find next? 🦊👇",
- "short_pinned_comment_es": "¿Qué animal legendario buscamos ahora? 🦊👇",
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
  "tags": [
   "GTA 6 white fox",
   "GTA 6 legendary animals",
@@ -191,30 +191,30 @@
    }
   },
   {
-   "headline": "SEEN IT?",
-   "headline_es": "¿YA LO VISTE?",
-   "text": "Seen it yet? Tell me, because",
-   "text_es": "¿Ya lo viste? Dímelo, porque",
+   "headline": "FOUND IT?",
+   "headline_es": "¿LO ENCONTRASTE?",
+   "text": "Found it? Comment yes, because",
+   "text_es": "¿Lo encontraste? Comenta sí, porque",
    "keep_media": true,
    "chart": {
     "type": "kinetic",
     "lines": [
-     "SEEN IT",
-     "YET?"
+     "FOUND IT?",
+     "COMMENT YES"
     ],
     "pink": [
-     "YET?"
+     "COMMENT YES"
     ],
     "seed": 215
    },
    "chart_es": {
     "type": "kinetic",
     "lines": [
-     "¿YA LO",
-     "VISTE?"
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
     ],
     "pink": [
-     "VISTE?"
+     "COMENTA SÍ"
     ],
     "seed": 215
    }
@@ -222,5 +222,6 @@
  ],
  "spot": 15,
  "cta": "SPOT #16 NEXT: FOLLOW",
- "cta_es": "LUGAR #16 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #16 PRONTO: SÍGUENOS",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)"
 }

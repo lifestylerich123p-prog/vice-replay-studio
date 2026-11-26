@@ -34,8 +34,8 @@
    "GTA VI"
   ]
  },
- "pinned_comment": "Tommy's shirt or Tommy's bike: which do you want first? 👇",
- "short_pinned_comment_es": "¿La camisa o la moto de Tommy? 👇",
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
  "tags": [
   "GTA 6 Tommy Vercetti",
   "GTA 6 Vice City portal",
@@ -192,5 +192,6 @@
  "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete)",
  "spot": 8,
  "cta": "SPOT #9 NEXT: FOLLOW",
- "cta_es": "LUGAR #9 PRONTO: SÍGUENOS"
+ "cta_es": "LUGAR #9 PRONTO: SÍGUENOS",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)"
 }

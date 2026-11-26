@@ -41,6 +41,22 @@ def winners_rule():
     return r if r.get("on") else None
 
 
+def es_paused_until():
+    """config/channel.json `spanish_youtube_paused_until` (owner Nov 26 "DO IT": the Spanish YouTube channel had 37 views
+    in 12 videos, so no Spanish YouTube uploads for a week; Spanish goes to TikTok). A date "YYYY-MM-DD" or None."""
+    try:
+        d = json.loads((ROOT / "config" / "channel.json").read_text()).get("spanish_youtube_paused_until")
+    except (OSError, ValueError):
+        return None
+    return d if d and d > dt.date.today().isoformat() else None
+
+
+def es_paused(it):
+    """True when this item's Spanish slot falls inside the pause (it is not uploaded; studio.doctor lists it)."""
+    until = es_paused_until()
+    return bool(until and it.get("es") and it["es"][0] < until)
+
+
 def es_waits(it):
     """True while a Spanish version still has to prove itself on the English channel (winners-only rule)."""
     if it.get("es_only") or not winners_rule():
@@ -71,7 +87,11 @@ ES_TIMES = ("12:30 PM", "1:30 PM", "11:00 AM")  # the Spanish audience's best wi
 
 
 def next_es_slot(after, taken):
-    """First free Spanish daytime slot at or after `after` (ET datetime), not in `taken` {(date, time)}."""
+    """First free Spanish daytime slot at or after `after` (ET datetime), not in `taken` {(date, time)}; never inside a
+    Spanish YouTube pause (`spanish_youtube_paused_until`)."""
+    until = es_paused_until()
+    if until:
+        after = max(after, dt.datetime.strptime(until, "%Y-%m-%d").replace(tzinfo=quota.ET))
     day = after.date()
     for _ in range(14):
         for t in ES_TIMES:
@@ -149,7 +169,7 @@ def pending():
     for it in q:
         key = (it["slug"], it.get("item", "short"))
         need_en = bool(it.get("en")) and not it.get("es_only") and key not in en
-        need_es = bool(it.get("es")) and key not in es and not es_waits(it)
+        need_es = bool(it.get("es")) and key not in es and not es_waits(it) and not es_paused(it)
         if need_en or need_es:
             out.append((it, need_en, need_es))
     first = lambda it: min(dt.datetime.strptime(f"{d} {t}", "%Y-%m-%d %I:%M %p") for d, t in
