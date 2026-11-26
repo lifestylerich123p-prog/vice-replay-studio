@@ -35,7 +35,8 @@
     "2026-11-25",
     "11:00 AM"
    ],
-   "approved": "Nov 22 10 AM"
+   "approved": "Nov 22 10 AM",
+   "es_status": "skipped: 95 views at 39 h (bar 150)"
   },
   {
    "slug": "gta6-99-club",
@@ -48,7 +49,8 @@
     "2026-11-24",
     "11:00 AM"
    ],
-   "approved": "Nov 22 9:15 AM"
+   "approved": "Nov 22 9:15 AM",
+   "es_status": "skipped: 28 views at 37 h (bar 150)"
   },
   {
    "slug": "gta6-trailer-views",
@@ -273,7 +275,8 @@
    "es": [
     "2026-11-24",
     "12:30 PM"
-   ]
+   ],
+   "es_status": "skipped: 24 views at 42 h (bar 150)"
   },
   {
    "slug": "gta-tier-list-sales",
@@ -286,7 +289,8 @@
    "es": [
     "2026-12-02",
     "12:30 PM"
-   ]
+   ],
+   "es_status": "skipped: 122 views at 40 h (bar 150)"
   },
   {
    "slug": "gta6-top-3-rides",
