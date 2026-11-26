@@ -1,0 +1,439 @@
+{
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "series": "Tier List",
+ "style": "vice (GTA 6-style lettering cards + official map zoom, Nov 26)",
+ "short_playlist": "GTA 6 Shorts",
+ "guide": "gta-6-map-leonida-places",
+ "slug": "gta6-special-cars-tier-list",
+ "title": "GTA 6's Special Cars, Ranked",
+ "short_title": "GTA 6 special cars ranked: the best one is free 😤 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 special cars ranked: the best one is free 😤 #GTA6 #Shorts",
+  "GTA 6 Ultimate cars ranked (a free car wins) #GTA6 #Shorts",
+  "GTA 6's best special car costs $0 #GTA6 #Shorts"
+ ],
+ "short_description": "Our tier list of GTA 6's special rides: the Ultimate Edition's Dominator Buggy (Chapter 2, Paradise RV Park), Squalo boat (Chapter 4, canal south of Washington Beach) and '95 Grotti Cheetah (Chapter 5, Tequesta Retreat), the Vintage pack's '55 Stanier (Ocean View Hotel, Vice Beach) and Paul Walker's Fast & Furious tribute car, the Maibatsu Penumbra FF, free to find in a villa garage on Vespucci Island. Locations from 2+ guides each; the ranking is our take. Sources: GameSpot, GTABase, GamesRadar, Red Bull, PC Gamer, Jalopnik, BGR, games.gg.",
+ "short_es": {
+  "title": "Los autos ESPECIALES de GTA 6: el mejor es gratis 😤 #GTA6 #Shorts",
+  "description": "Nuestra tier list de los vehículos especiales de GTA 6: Dominator Buggy, lancha Squalo y Grotti Cheetah del 95 (Ultimate Edition), el Stanier del 55 (pack Vintage) y el auto de Paul Walker, gratis en un garaje de Vespucci Island. Fuentes: GameSpot, GTABase, GamesRadar, Red Bull, PC Gamer, Jalopnik, BGR."
+ },
+ "pinned_comment": "Which one did you grab first? 🚗👇",
+ "short_pinned_comment_es": "¿Cuál agarraste primero? 🚗👇",
+ "tags": [
+  "GTA 6 tier list",
+  "GTA 6 best cars",
+  "GTA 6 Ultimate Edition cars",
+  "GTA 6 Paul Walker car",
+  "GTA 6 Grotti Cheetah",
+  "GTA 6 Squalo",
+  "GTA 6 Stanier",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#tierlist",
+  "#gta6cars"
+ ],
+ "sources": [
+  "GTABase - How to claim Ultimate Edition benefits: https://www.gtabase.com/gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6",
+  "GamesRadar - Ultimate Edition pre-order bonuses: https://www.gamesradar.com/games/grand-theft-auto/gta-6-ultimate-edition-pre-order-bonuses/",
+  "Red Bull - Ultimate Edition bonuses: https://www.redbull.com/int-en/gta-6-ultimate-edition-bonuses",
+  "GameSpot - All Ultimate Edition bonuses: https://www.gamespot.com/articles/how-to-get-all-gta-6-ultimate-edition-bonuses/",
+  "PC Gamer - how to collect the Vintage Vice City Pack: https://www.pcgamer.com/games/grand-theft-auto/gta-6-pre-order-bonus-vintage-vice-city-pack/",
+  "GTABase - Vapid Stanier '55: https://www.gtabase.com/gta-6/vehicles/vapid-stanier-55",
+  "Gfinity - how to get the Vintage Vice City Pack: https://www.gfinityesports.com/article/how-to-get-gta-6-vintage-vice-city-pack-and-whats-included",
+  "Jalopnik - Where to find the Paul Walker Fast & Furious tribute car in GTA 6: https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
+  "BGR - GTA 6's hidden Fast and Furious Paul Walker car: https://www.bgr.com/2322463/gta-6-hidden-fast-and-furious-paul-walker-car/",
+  "games.gg - GTA 6 Paul Walker car location: https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-paul-walker-car-location-how-to-get/",
+  "Insider Gaming - Paul Walker GTA 6 easter egg: https://insider-gaming.com/paul-walker-gta-6-easter-egg/"
+ ],
+ "facts_note": "Locations/chapters from site/map-pins.json (2+ guides each, Nov 24 research; Paul Walker car re-checked Nov 25: Jalopnik, BGR, games.gg; pin from VICE, Red Bull, GamesRadar, The Click). The tiers are our opinion and the video says so.",
+ "short": [
+  {
+   "headline": "IT'S FREE",
+   "headline_es": "ES GRATIS",
+   "keep_media": true,
+   "text": "GTA 6's best special car is free. Our tier list.",
+   "text_es": "El mejor auto especial de GTA seis es gratis. Nuestra tier list.",
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "THE BEST ONE",
+     "IS FREE"
+    ],
+    "pink": [
+     "IS FREE"
+    ],
+    "seed": 60
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "EL MEJOR",
+     "ES GRATIS"
+    ],
+    "pink": [
+     "ES GRATIS"
+    ],
+    "seed": 60
+   }
+  },
+  {
+   "headline": "C TIER",
+   "headline_es": "TIER C",
+   "text": "C tier: the Dominator Buggy, Chapter 2.",
+   "text_es": "Tier C: el Dominator Buggy, capítulo dos.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "GTA 6 SPECIAL RIDES",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      []
+     ],
+     [
+      "C",
+      [
+       "Dominator Buggy"
+      ]
+     ]
+    ],
+    "static": [
+     "C"
+    ],
+    "src": "GameSpot · GTABase",
+    "seed": 61
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "AUTOS ESPECIALES",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      []
+     ],
+     [
+      "C",
+      [
+       "Dominator Buggy"
+      ]
+     ]
+    ],
+    "static": [
+     "C"
+    ],
+    "src": "GameSpot · GTABase",
+    "seed": 61
+   }
+  },
+  {
+   "headline": "B TIER",
+   "headline_es": "TIER B",
+   "text": "B tier: the Squalo boat and the fifty five Stanier.",
+   "text_es": "Tier B: la lancha Squalo y el Stanier del cincuenta y cinco.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "GTA 6 SPECIAL RIDES",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      [
+       "Squalo boat",
+       "'55 Stanier"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Dominator Buggy"
+      ]
+     ]
+    ],
+    "static": [
+     "C"
+    ],
+    "src": "GamesRadar · PC Gamer",
+    "seed": 61
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "AUTOS ESPECIALES",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      []
+     ],
+     [
+      "B",
+      [
+       "Lancha Squalo",
+       "Stanier del 55"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Dominator Buggy"
+      ]
+     ]
+    ],
+    "static": [
+     "C"
+    ],
+    "src": "GamesRadar · PC Gamer",
+    "seed": 61
+   }
+  },
+  {
+   "headline": "A TIER",
+   "headline_es": "TIER A",
+   "text": "A tier: the Cheetah, but not until Chapter 5.",
+   "text_es": "Tier A: el Cheetah, pero hasta el capítulo cinco.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "GTA 6 SPECIAL RIDES",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      [
+       "'95 Cheetah"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Squalo boat",
+       "'55 Stanier"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Dominator Buggy"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B"
+    ],
+    "src": "GTABase · GamesRadar",
+    "seed": 61
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "AUTOS ESPECIALES",
+    "rows": [
+     [
+      "S",
+      []
+     ],
+     [
+      "A",
+      [
+       "Cheetah del 95"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Lancha Squalo",
+       "Stanier del 55"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Dominator Buggy"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B"
+    ],
+    "src": "GTABase · GamesRadar",
+    "seed": 61
+   }
+  },
+  {
+   "headline": "S TIER",
+   "headline_es": "TIER S",
+   "text": "S tier: Paul Walker's car. And it's free.",
+   "text_es": "Tier S: el auto de Paul Walker. Y es gratis.",
+   "keep_media": true,
+   "chart": {
+    "type": "tier",
+    "title": "GTA 6 SPECIAL RIDES",
+    "rows": [
+     [
+      "S",
+      [
+       "Paul Walker's car"
+      ]
+     ],
+     [
+      "A",
+      [
+       "'95 Cheetah"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Squalo boat",
+       "'55 Stanier"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Dominator Buggy"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B",
+     "A"
+    ],
+    "src": "Jalopnik · BGR",
+    "seed": 61
+   },
+   "chart_es": {
+    "type": "tier",
+    "title": "AUTOS ESPECIALES",
+    "rows": [
+     [
+      "S",
+      [
+       "El auto de Paul Walker"
+      ]
+     ],
+     [
+      "A",
+      [
+       "Cheetah del 95"
+      ]
+     ],
+     [
+      "B",
+      [
+       "Lancha Squalo",
+       "Stanier del 55"
+      ]
+     ],
+     [
+      "C",
+      [
+       "Dominator Buggy"
+      ]
+     ]
+    ],
+    "static": [
+     "C",
+     "B",
+     "A"
+    ],
+    "src": "Jalopnik · BGR",
+    "seed": 61
+   }
+  },
+  {
+   "headline": "WHERE IT IS",
+   "headline_es": "DÓNDE ESTÁ",
+   "keep_media": true,
+   "text": "Villa garage, Vespucci Island.",
+   "text_es": "Garaje de una villa, Vespucci Island.",
+   "chart": {
+    "type": "map",
+    "at": "Vespucci Island",
+    "label": "Paul Walker's car",
+    "n": 1,
+    "src": "Jalopnik · BGR · games.gg"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Vespucci Island",
+    "label": "Auto de Paul Walker",
+    "n": 1,
+    "src": "Jalopnik · BGR · games.gg",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "YOUR PICK?",
+   "headline_es": "¿Y TÚ?",
+   "keep_media": true,
+   "text": "Which one did you grab first? Tell me, because",
+   "text_es": "¿Cuál agarraste primero? Dime, porque",
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WHICH ONE",
+     "DID YOU GRAB?"
+    ],
+    "pink": [
+     "DID YOU GRAB?"
+    ],
+    "seed": 62
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CUÁL",
+     "AGARRASTE?"
+    ],
+    "pink": [
+     "AGARRASTE?"
+    ],
+    "seed": 62
+   }
+  }
+ ]
+}

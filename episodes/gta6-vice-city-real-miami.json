@@ -1,0 +1,228 @@
+{
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "series": "Map Spots",
+ "style": "vice (lettering cards + official map zoom, Nov 26)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "guide": "gta-6-map-leonida-places",
+ "slug": "gta6-vice-city-real-miami",
+ "title": "GTA 6's Vice City vs Real Miami: 5 Places",
+ "short_title": "GTA 6's Vice City is real Miami: 5 spots 🌴 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6's Vice City is real Miami: 5 spots 🌴 #GTA6 #Shorts",
+  "GTA 6 vs real Miami: 5 places on the map #GTA6 #Shorts",
+  "GTA 6 Vice City vs Miami: number 5 is huge #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6's Vice City vs real Miami, five places pinned on Rockstar's official Leonida map: Little Cuba (Little Havana), Downtown (downtown Miami), Port Vice City (PortMiami), the VCIA airport (Miami International) and Vice-Dale County (Miami-Dade). Each match is in two or more guides; Rockstar itself names Little Cuba and the VC Port. Sources: Rockstar Games, Forbes, GTA6 Life, The Miami Guide, Miami New Times, iTechGuides, Quartz, Axios.",
+ "short_es": {
+  "title": "Vice City es MIAMI de verdad: 5 lugares 🌴 #GTA6 #Shorts",
+  "description": "Vice City de GTA 6 contra el Miami real, cinco lugares en el mapa oficial de Leonida: Little Cuba (Pequeña Habana), Downtown (el centro de Miami), Port Vice City (PortMiami), el aeropuerto VCIA (Miami International) y Vice-Dale County (Miami-Dade). Fuentes: Rockstar Games, Forbes, GTA6 Life, The Miami Guide, Miami New Times."
+ },
+ "pinned_comment": "Which Miami spot should we find next? 🌴👇",
+ "short_pinned_comment_es": "¿Qué lugar de Miami buscamos ahora? 🌴👇",
+ "tags": [
+  "GTA 6 Vice City vs Miami",
+  "GTA 6 real locations",
+  "GTA 6 Miami",
+  "GTA 6 Little Cuba",
+  "GTA 6 Little Havana",
+  "GTA 6 map",
+  "Vice City",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#miami",
+  "#vicecity"
+ ],
+ "sources": [
+  "Rockstar Games - Only in Leonida (Little Cuba, the VC Port): https://www.rockstargames.com/VI",
+  "Forbes - GTA 6's Vice City is packed with real Miami (Oct 27, 2026): https://www.forbes.com/sites/brianmazique/2026/10/27/gta-6s-vice-city-is-packed-with-real-miami---heres-every-spot-so-far/",
+  "GTA6 Life - GTA 6 real-life locations: https://gta6-life.com/en/guides/gta-6-real-life-locations/",
+  "The Miami Guide - GTA VI in Miami, real locations: https://themiamiguide.com/gta-6-miami/",
+  "Miami New Times - 20 Miami landmarks in GTA 6: https://www.miaminewtimes.com/arts/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001",
+  "iTechGuides - GTA 6 Vice City's real Miami counterparts: https://www.itechguides.com/gta-6-vice-city-real-miami-counterparts-across-leonida/",
+  "Quartz - GTA 6 Vice City real places: https://qz.com/gta-6-vice-city-real-florida-places",
+  "Axios Miami - Every Miami landmark in the GTA VI trailer: https://www.axios.com/local/miami/2023/12/05/gta-6-trailer-vice-city-landmarks"
+ ],
+ "facts_note": "Each match in 2+ sources: Little Cuba = Little Havana (Rockstar, Forbes, GTA6 Life); Downtown = downtown Miami (The Miami Guide, Miami New Times, iTechGuides); Port Vice City = PortMiami (Rockstar names the VC Port; iTechGuides, Axios); VCIA = Miami International Airport (iTechGuides, Quartz); Vice-Dale County = Miami-Dade (GTA6 Life, Forbes, The Miami Guide). Left out: Ocean Beach = South Beach (Rockstar) because Ocean Beach isn't printed on the map, and Vice Beach = Miami Beach (only one guide).",
+ "short": [
+  {
+   "headline": "REAL MIAMI",
+   "headline_es": "MIAMI REAL",
+   "keep_media": true,
+   "text": "GTA 6's Vice City is real Miami. Five spots, on Rockstar's own map.",
+   "text_es": "La Vice City de GTA seis es Miami de verdad. Cinco lugares, en el mapa de Rockstar.",
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "VICE CITY IS",
+     "REAL MIAMI"
+    ],
+    "pink": [
+     "REAL MIAMI"
+    ],
+    "seed": 51
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "VICE CITY ES",
+     "MIAMI REAL"
+    ],
+    "pink": [
+     "MIAMI REAL"
+    ],
+    "seed": 51
+   }
+  },
+  {
+   "headline": "LITTLE CUBA",
+   "headline_es": "LITTLE CUBA",
+   "text": "Little Cuba is Little Havana.",
+   "text_es": "Little Cuba es la Pequeña Habana.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Little Cuba",
+    "label": "= Little Havana",
+    "n": 1,
+    "src": "Rockstar · Forbes"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Little Cuba",
+    "label": "= Pequeña Habana",
+    "n": 1,
+    "src": "Rockstar · Forbes",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "DOWNTOWN",
+   "headline_es": "DOWNTOWN",
+   "text": "Downtown is downtown Miami.",
+   "text_es": "Downtown es el centro de Miami.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Downtown",
+    "label": "= downtown Miami",
+    "n": 2,
+    "src": "The Miami Guide · Miami New Times"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Downtown",
+    "label": "= centro de Miami",
+    "n": 2,
+    "src": "The Miami Guide · Miami New Times",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "PORT VICE CITY",
+   "headline_es": "PORT VICE CITY",
+   "text": "Port Vice City is PortMiami, the cruise port.",
+   "text_es": "Port Vice City es PortMiami, el puerto de cruceros.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Port Vice City",
+    "label": "= PortMiami",
+    "n": 3,
+    "src": "Rockstar · Axios"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Port Vice City",
+    "label": "= PortMiami",
+    "n": 3,
+    "src": "Rockstar · Axios",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "THE AIRPORT",
+   "headline_es": "THE AIRPORT",
+   "text": "Vice City's airport is Miami International.",
+   "text_es": "El aeropuerto de Vice City es el de Miami.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "VCIA",
+    "label": "= Miami International",
+    "n": 4,
+    "src": "iTechGuides · Quartz"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "VCIA",
+    "label": "= aeropuerto de Miami",
+    "n": 4,
+    "src": "iTechGuides · Quartz",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "VICE-DALE",
+   "headline_es": "VICE-DALE",
+   "text": "And Vice-Dale County? That's Miami-Dade.",
+   "text_es": "¿Y Vice-Dale County? Es Miami-Dade.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Vice-Dale County",
+    "label": "= Miami-Dade",
+    "n": 5,
+    "src": "GTA6 Life · Forbes"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Vice-Dale County",
+    "label": "= Miami-Dade",
+    "n": 5,
+    "src": "GTA6 Life · Forbes",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "WHAT'S NEXT?",
+   "headline_es": "¿CUÁL SIGUE?",
+   "keep_media": true,
+   "text": "Which Miami spot should we find next? Tell me, because",
+   "text_es": "¿Qué lugar de Miami buscamos ahora? Dime, porque",
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WHICH SPOT",
+     "IS NEXT?"
+    ],
+    "pink": [
+     "IS NEXT?"
+    ],
+    "seed": 52
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿QUÉ LUGAR",
+     "SIGUE?"
+    ],
+    "pink": [
+     "SIGUE?"
+    ],
+    "seed": 52
+   }
+  }
+ ]
+}

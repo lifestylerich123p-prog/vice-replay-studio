@@ -1,0 +1,280 @@
+{
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "series": "Quiz",
+ "style": "vice (lettering cards on official screenshots + official map zoom, Nov 26)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "guide": "gta-6-map-leonida-places",
+ "slug": "gta6-map-quiz-places",
+ "title": "GTA 6 Map Quiz: Name These 3 Places",
+ "short_title": "GTA 6 map quiz: name these 3 places 🗺️ #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 map quiz: name these 3 places 🗺️ #GTA6 #Shorts",
+  "GTA 6 quiz: where in Leonida is this? #GTA6 #Shorts",
+  "GTA 6 map quiz: most fans miss number 3 #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6 map quiz: three of Rockstar's official screenshots, one from each region. Guess the place, then we zoom Rockstar's official Leonida map to it: the Leonida Keys, Mount Kalaga National Park and Port Gellhorn. Score yourself out of 3. Sources: Rockstar Games (official site, screenshots and map), GamesRadar, PC Gamer, Beebom.",
+ "short_es": {
+  "title": "QUIZ del mapa de GTA 6: ¿dónde es esto? 🗺️ #GTA6 #Shorts",
+  "description": "Quiz del mapa de GTA 6: tres capturas oficiales de Rockstar, una por región. Adivina el lugar y después lo marcamos en el mapa oficial de Leonida: Leonida Keys, Mount Kalaga y Port Gellhorn. Fuentes: Rockstar Games, GamesRadar, PC Gamer, Beebom."
+ },
+ "pinned_comment": "What did you score out of 3? 🗺️👇",
+ "short_pinned_comment_es": "¿Cuántas acertaste de 3? 🗺️👇",
+ "tags": [
+  "GTA 6 map quiz",
+  "GTA 6 quiz",
+  "GTA 6 map",
+  "GTA 6 locations",
+  "GTA 6 Leonida",
+  "Leonida Keys",
+  "Mount Kalaga",
+  "Port Gellhorn",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6map",
+  "#quiz"
+ ],
+ "sources": [
+  "Rockstar Games - Grand Theft Auto VI official site (Leonida's regions): https://www.rockstargames.com/VI",
+  "Rockstar Games - official screenshots and Leonida map (downloads): https://www.rockstargames.com/VI/downloads",
+  "GamesRadar - Every GTA 6 location revealed: https://www.gamesradar.com/games/grand-theft-auto/gta-6-locations",
+  "PC Gamer - Charting the GTA 6 map: https://www.pcgamer.com/games/grand-theft-auto/gta6-map",
+  "Beebom - All GTA 6 locations in Leonida: https://beebom.com/gta-6-locations/"
+ ],
+ "facts_note": "Region names and which screenshot shows which region come from Rockstar's official site/downloads (files named by region); the six regions are listed the same way by GamesRadar, PC Gamer and Beebom. The Keys pin sits on Key Lento (the region name itself isn't a pin in studio/mappins).",
+ "short": [
+  {
+   "headline": "MAP QUIZ",
+   "headline_es": "QUIZ DEL MAPA",
+   "keep_media": true,
+   "text": "Three official GTA 6 shots. Can you name the place?",
+   "text_es": "Tres capturas oficiales de GTA seis. ¿Sabes dónde es?",
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "NAME THESE 3",
+     "GTA 6 PLACES"
+    ],
+    "pink": [
+     "GTA 6 PLACES"
+    ],
+    "seed": 41,
+    "bg": "photo:media/official/leonida-keys-01.jpg"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿DÓNDE ES",
+     "ESTO?"
+    ],
+    "pink": [
+     "ESTO?"
+    ],
+    "seed": 41,
+    "bg": "photo:media/official/leonida-keys-01.jpg"
+   }
+  },
+  {
+   "headline": "GUESS #1",
+   "headline_es": "ADIVINA #1",
+   "text": "Number one. Where is this?",
+   "text_es": "Número uno. ¿Dónde es esto?",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "#1",
+     "WHERE IS THIS?"
+    ],
+    "pink": [
+     "WHERE IS THIS?"
+    ],
+    "seed": 42,
+    "band": "top",
+    "bg": "photo:media/official/leonida-keys-01.jpg"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "#1",
+     "¿DÓNDE ES ESTO?"
+    ],
+    "pink": [
+     "¿DÓNDE ES ESTO?"
+    ],
+    "seed": 42,
+    "band": "top",
+    "bg": "photo:media/official/leonida-keys-01.jpg"
+   }
+  },
+  {
+   "headline": "LEONIDA KEYS",
+   "headline_es": "LEONIDA KEYS",
+   "text": "The Leonida Keys.",
+   "text_es": "Los Leonida Keys.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Key Lento",
+    "label": "Leonida Keys",
+    "n": 1,
+    "src": "Rockstar · GamesRadar"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Key Lento",
+    "label": "Leonida Keys",
+    "n": 1,
+    "src": "Rockstar · GamesRadar"
+   }
+  },
+  {
+   "headline": "GUESS #2",
+   "headline_es": "ADIVINA #2",
+   "text": "Number two. Red cliffs and one highway.",
+   "text_es": "Número dos. Acantilados rojos y una carretera.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "#2",
+     "WHERE IS THIS?"
+    ],
+    "pink": [
+     "WHERE IS THIS?"
+    ],
+    "seed": 43,
+    "band": "top",
+    "bg": "photo:media/official/mount-kalaga-04.jpg"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "#2",
+     "¿DÓNDE ES ESTO?"
+    ],
+    "pink": [
+     "¿DÓNDE ES ESTO?"
+    ],
+    "seed": 43,
+    "band": "top",
+    "bg": "photo:media/official/mount-kalaga-04.jpg"
+   }
+  },
+  {
+   "headline": "MOUNT KALAGA",
+   "headline_es": "MOUNT KALAGA",
+   "text": "Mount Kalaga National Park.",
+   "text_es": "El parque nacional Mount Kalaga.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Mount Kalaga",
+    "label": "Mount Kalaga",
+    "n": 2,
+    "src": "Rockstar · PC Gamer"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Mount Kalaga",
+    "label": "Mount Kalaga",
+    "n": 2,
+    "src": "Rockstar · PC Gamer"
+   }
+  },
+  {
+   "headline": "GUESS #3",
+   "headline_es": "ADIVINA #3",
+   "text": "Number three. Sunset over a sleepy port town.",
+   "text_es": "Número tres. Atardecer en un pueblo con puerto.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "#3",
+     "WHERE IS THIS?"
+    ],
+    "pink": [
+     "WHERE IS THIS?"
+    ],
+    "seed": 44,
+    "band": "top",
+    "bg": "photo:media/official/port-gellhorn-06.jpg"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "#3",
+     "¿DÓNDE ES ESTO?"
+    ],
+    "pink": [
+     "¿DÓNDE ES ESTO?"
+    ],
+    "seed": 44,
+    "band": "top",
+    "bg": "photo:media/official/port-gellhorn-06.jpg"
+   }
+  },
+  {
+   "headline": "PORT GELLHORN",
+   "headline_es": "PORT GELLHORN",
+   "text": "Port Gellhorn.",
+   "text_es": "Port Gellhorn.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "label": "Port Gellhorn",
+    "n": 3,
+    "src": "Rockstar · Beebom"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Port Gellhorn",
+    "label": "Port Gellhorn",
+    "n": 3,
+    "src": "Rockstar · Beebom"
+   }
+  },
+  {
+   "headline": "YOUR SCORE?",
+   "headline_es": "¿CUÁNTAS?",
+   "keep_media": true,
+   "text": "How many did you get? Tell me below, because",
+   "text_es": "¿Cuántas acertaste? Dímelo abajo, porque",
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "HOW MANY",
+     "DID YOU GET?"
+    ],
+    "pink": [
+     "DID YOU GET?"
+    ],
+    "seed": 45
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CUÁNTAS",
+     "ACERTASTE?"
+    ],
+    "pink": [
+     "ACERTASTE?"
+    ],
+    "seed": 45
+   }
+  }
+ ]
+}
