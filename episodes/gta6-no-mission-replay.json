@@ -4,12 +4,16 @@
  "mood": "hype",
  "use_gameplay": false,
  "style": "vice (lettering cards on official screenshots, Nov 24)",
- "hashtags": ["GTA6", "GTAVI", "Shorts"],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
  "slug": "gta6-no-mission-replay",
  "title": "GTA 6 Has No Mission Replay: How to Save Instead",
- "short_title": "GTA 6 replay missions: you can't, do this instead 💾 #GTA6 #Shorts",
+ "short_title": "GTA 6 replay missions: do this instead 💾 #GTA6 #Shorts",
  "short_title_options": [
-  "GTA 6 replay missions: you can't, do this instead 💾 #GTA6 #Shorts",
+  "GTA 6 replay missions: do this instead 💾 #GTA6 #Shorts",
   "GTA 6 has no mission replay, but there's a fix #GTA6 #Shorts",
   "Can you replay missions in GTA 6? #GTA6 #Shorts"
  ],
@@ -18,12 +22,32 @@
  "short_es": {
   "title": "GTA 6 NO deja repetir misiones: haz esto 💾 #GTA6 #Shorts",
   "description": "¿Se pueden repetir misiones en GTA 6? No: no hay repetición de misiones ni selector de capítulos. A cambio tienes 15 ranuras de guardado manual: guarda en una ranura NUEVA antes de cada misión grande. Durante las misiones no se puede guardar a mano. Fuentes: Insider Gaming, PowerPyx, Engadget, Dexerto.",
-  "tags": ["GTA 6 repetir misiones", "GTA 6 guardar partida", "GTA 6 trucos", "GTA 6 español", "GTA 6 consejos"]
+  "tags": [
+   "GTA 6 repetir misiones",
+   "GTA 6 guardar partida",
+   "GTA 6 trucos",
+   "GTA 6 español",
+   "GTA 6 consejos"
+  ]
  },
  "pinned_comment": "Which mission would you replay first? (no spoilers 🙏) 💾👇",
  "short_pinned_comment_es": "¿Qué misión repetirías primero? (sin spoilers 🙏) 💾👇",
- "tags": ["GTA 6 replay missions", "can you replay missions in GTA 6", "GTA 6 save slots", "GTA 6 how to save", "GTA 6 tips", "GTA 6 chapter select", "GTA 6", "GTA VI"],
- "tiktok_hashtags": ["#gta6", "#gtavi", "#gta6tips", "#gaming"],
+ "tags": [
+  "GTA 6 replay missions",
+  "can you replay missions in GTA 6",
+  "GTA 6 save slots",
+  "GTA 6 how to save",
+  "GTA 6 tips",
+  "GTA 6 chapter select",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gaming"
+ ],
  "sources": [
   "Insider Gaming - GTA 6 doesn't allow you to replay story missions: https://insider-gaming.com/gta-6-doesnt-allow-you-to-replay-story-missions/",
   "PowerPyx - no mission replay or chapter select: https://www.powerpyx.com/?p=370493",
@@ -40,8 +64,30 @@
    "text": "GTA 6 won't let you replay a single mission.",
    "text_es": "GTA seis no te deja repetir ni una misión.",
    "keep_media": true,
-   "chart": {"type": "kinetic", "lines": ["NO MISSION", "REPLAY IN GTA 6"], "pink": ["NO MISSION"], "sub": "do this instead", "seed": 221},
-   "chart_es": {"type": "kinetic", "lines": ["NO PUEDES", "REPETIR MISIONES"], "pink": ["NO PUEDES"], "sub": "haz esto", "seed": 221}
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "NO MISSION",
+     "REPLAY IN GTA 6"
+    ],
+    "pink": [
+     "NO MISSION"
+    ],
+    "sub": "do this instead",
+    "seed": 221
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "NO PUEDES",
+     "REPETIR MISIONES"
+    ],
+    "pink": [
+     "NO PUEDES"
+    ],
+    "sub": "haz esto",
+    "seed": 221
+   }
   },
   {
    "headline": "NO CHAPTER SELECT",
@@ -49,8 +95,26 @@
    "text": "There's no replay and no chapter select.",
    "text_es": "No hay repetición ni selector de capítulos.",
    "keep_media": true,
-   "chart": {"type": "text", "text": "No replay. No chapter select.", "pink": ["No chapter select."], "src": "PowerPyx · Insider Gaming · Engadget", "seed": 222, "bg": "photo:media/official/vice-city-10.jpg"},
-   "chart_es": {"type": "text", "text": "Sin repetición. Sin capítulos.", "pink": ["Sin capítulos."], "src": "PowerPyx · Insider Gaming · Engadget", "seed": 222, "bg": "photo:media/official/vice-city-10.jpg"}
+   "chart": {
+    "type": "text",
+    "text": "No replay. No chapter select.",
+    "pink": [
+     "No chapter select."
+    ],
+    "src": "PowerPyx · Insider Gaming · Engadget",
+    "seed": 222,
+    "bg": "photo:media/official/vice-city-10.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Sin repetición. Sin capítulos.",
+    "pink": [
+     "Sin capítulos."
+    ],
+    "src": "PowerPyx · Insider Gaming · Engadget",
+    "seed": 222,
+    "bg": "photo:media/official/vice-city-10.jpg"
+   }
   },
   {
    "headline": "15 SLOTS",
@@ -58,8 +122,26 @@
    "text": "You get fifteen manual save slots. Use them.",
    "text_es": "Tienes quince ranuras de guardado manual. Úsalas.",
    "keep_media": true,
-   "chart": {"type": "text", "text": "15 manual save slots", "pink": ["15"], "src": "Insider Gaming · Dexerto", "seed": 223, "bg": "photo:media/official/vice-city-15.jpg"},
-   "chart_es": {"type": "text", "text": "15 ranuras de guardado", "pink": ["15"], "src": "Insider Gaming · Dexerto", "seed": 223, "bg": "photo:media/official/vice-city-15.jpg"}
+   "chart": {
+    "type": "text",
+    "text": "15 manual save slots",
+    "pink": [
+     "15"
+    ],
+    "src": "Insider Gaming · Dexerto",
+    "seed": 223,
+    "bg": "photo:media/official/vice-city-15.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "15 ranuras de guardado",
+    "pink": [
+     "15"
+    ],
+    "src": "Insider Gaming · Dexerto",
+    "seed": 223,
+    "bg": "photo:media/official/vice-city-15.jpg"
+   }
   },
   {
    "headline": "NEW SLOT",
@@ -67,8 +149,26 @@
    "text": "Save before every big mission, in a new slot.",
    "text_es": "Guarda antes de cada misión grande, en una ranura nueva.",
    "keep_media": true,
-   "chart": {"type": "text", "text": "Big mission next? NEW slot first", "pink": ["NEW slot"], "src": "Vice Replay tip", "seed": 224, "bg": "photo:media/official/leonida-keys-04.jpg"},
-   "chart_es": {"type": "text", "text": "¿Misión grande? Ranura NUEVA", "pink": ["NUEVA"], "src": "Consejo de Vice Replay", "seed": 224, "bg": "photo:media/official/leonida-keys-04.jpg"}
+   "chart": {
+    "type": "text",
+    "text": "Big mission next? NEW slot first",
+    "pink": [
+     "NEW slot"
+    ],
+    "src": "Vice Replay tip",
+    "seed": 224,
+    "bg": "photo:media/official/leonida-keys-04.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "¿Misión grande? Ranura NUEVA",
+    "pink": [
+     "NUEVA"
+    ],
+    "src": "Consejo de Vice Replay",
+    "seed": 224,
+    "bg": "photo:media/official/leonida-keys-04.jpg"
+   }
   },
   {
    "headline": "WHICH ONE?",
@@ -76,8 +176,28 @@
    "text": "Which mission would you redo? Tell me, because",
    "text_es": "¿Qué misión repetirías? Dímelo, porque",
    "keep_media": true,
-   "chart": {"type": "kinetic", "lines": ["WHICH ONE", "WOULD YOU REDO?"], "pink": ["REDO?"], "seed": 225},
-   "chart_es": {"type": "kinetic", "lines": ["¿CUÁL", "REPETIRÍAS?"], "pink": ["REPETIRÍAS?"], "seed": 225}
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WHICH ONE",
+     "WOULD YOU REDO?"
+    ],
+    "pink": [
+     "REDO?"
+    ],
+    "seed": 225
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿CUÁL",
+     "REPETIRÍAS?"
+    ],
+    "pink": [
+     "REPETIRÍAS?"
+    ],
+    "seed": 225
+   }
   }
  ]
 }
