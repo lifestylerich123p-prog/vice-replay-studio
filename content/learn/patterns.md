@@ -6,3 +6,4 @@
 - 2026-11-21: top words ending, finally, pov, are, how, lucia, best, true; caps 6/30; numbers 10/30; Shorts 23/50; #1 "选择心仪的物品#gta  #gta6  #shorts" (784,863.3/h)
 - 2026-11-24: top words one, demasiado, kpop, plays, cars, insane, paglu, friend; caps 7/30; numbers 9/30; Shorts 24/50; #1 "That One GTA 6 Paglu Friend🎮🤣 #gta6 #relatable #comedy #trending #shorts" (416,550.4/h)
 - 2026-11-24: top words finally, one, kpop, got, plays, gangnam, vice, city; caps 8/30; numbers 7/30; Shorts 24/50; #1 "When you Finally take a Break from GTA 6 💀💔 | Kuldeep Singhaniaa #shorts #gta6" (378,297.5/h)
+- 2026-11-26: top words plays, togi, ps5, one, paglu, friend, relatable, comedy; caps 6/30; numbers 11/30; Shorts 24/50; #1 "Togi plays GTA6 🎮 #togi" (350,760.4/h)

@@ -307,3 +307,16 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - 2026-11-25 (process): this cloud session had a Python 3.13 `pip` on PATH while `python` is 3.11, so
   `pip install -r requirements.txt` installed nothing usable (requests/Pillow missing). Use
   `python -m pip install -r requirements.txt`.
+
+- 2026-11-26 flop review: "Rockstar: even we don't have unlimited time (GTA 6) #GTA6 #Shorts" had 30 views at 56 h (news/facts, graph (older charts), opener statement, title hook statement, 16-30 s, posted morning <12); set private (not deleted).
+- 2026-11-26 flop review: "68 MILLION views on ONE GTA 6 stream #GTA6 #Shorts" had 36 views at 72 h (news/facts, trailer/screenshots, opener question, title hook number, 16-30 s, posted evening 17-21); set private (not deleted).
+- 2026-11-26 (mid-week verdict, owner Nov 22 "continue to monitor": facts-only vs footage): the planned head-to-head
+  can't be run as booked: 4 of the 5 footage Shorts (Dexter, 60 FPS, rides, Lucia outfits) stayed PRIVATE after the
+  Nov 23 switch to lettering cards. By picture type (scorecard, all 39 Shorts): trailer/screenshots (retired) median
+  431 views at 24 h, 4.6 v/h, 62% watched; lettering cards 67 at 24 h, 2.9 v/h, 67%; older graph charts 28, 1.6 v/h,
+  32%. The pure facts Shorts named in the test: darts 28, 99 club 28, inflation 63 views at 24 h (darts set private
+  by the flop rule today); Spanish facts Shorts 0-5 views. So the plain-fact format lost by ~7-15x to the old
+  screenshot Shorts, and the owner's Nov 24 "no pure fact Shorts" rule was right. What wins on the new cards: tier
+  lists (median 270 views at 3 h) and map "where is X" Shorts: the Paul Walker car map Short (ChmiOLulOvo, posted
+  Nov 25 3:45 PM, an afternoon slot) had 171 views after ~4 h (~40 v/h vs our 2 v/h median), and the shoe-store map
+  TikTok reached 2,653 views (18% watched to the end). Next: map + tier first, one map Short every day (owner Nov 25).
