@@ -83,6 +83,10 @@ def ledger_summary(rows, now=None):
                            "chat": r.get("chat"), "what": c.get("what", ""), "project": c.get("project", "vice-replay"),
                            "balance_reported": None if str(r.get("balance", "?")) in ("?", "", "None")
                            else r.get("balance")})
+        elif act == "external":  # another project's spend, logged afterwards so the shared balance reconciles
+            spends.append({"t": r["t"], "job": job, "credits": int(r.get("credits") or 0), "chat": r.get("chat"),
+                           "what": "EXTERNAL: " + r.get("reason", ""), "project": r.get("project", "?"),
+                           "balance_reported": None})
         elif act in ("release", "failed"):
             c = open_claims.pop(job, {})
             failed.append({"t": r["t"], "job": job, "act": act, "reason": r.get("reason", ""),
@@ -92,6 +96,7 @@ def ledger_summary(rows, now=None):
                                "what": "FAILED: " + r.get("reason", ""), "project": c.get("project", "vice-replay"),
                                "balance_reported": None})
     spends = [s for s in spends if s["credits"] > 0 or s["job"].startswith(("voice:", "image:", "video:", "clips:"))]
+    spends.sort(key=lambda s: s["t"])
     day, month, episode, project = defaultdict(int), defaultdict(int), defaultdict(int), defaultdict(int)
     for s in spends:
         project[s.get("project", "vice-replay")] += s["credits"]
@@ -170,8 +175,8 @@ def lines(s):
         out.append("Everygen: UNVERIFIED, no provider reading recorded (python -m studio.credits record ...)")
     month = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m")
     today = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
-    out.append(f"  Vice Replay ledger: today {led['per_day'].get(today, 0)}, this month {led['per_month'].get(month, 0)} "
-               f"credits; {len(led['spends'])} paid requests logged")
+    out.append(f"  Shared ledger (all projects): today {led['per_day'].get(today, 0)}, this month "
+               f"{led['per_month'].get(month, 0)} credits; {len(led['spends'])} paid requests logged")
     if led["per_episode"]:
         top = sorted(led["per_episode"].items(), key=lambda x: -x[1])[:5]
         out.append("  per episode: " + ", ".join(f"{k} {v}" for k, v in top))

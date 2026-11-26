@@ -22,7 +22,7 @@ from . import scorecard
 
 ROOT = Path(__file__).resolve().parent.parent
 LEARN = ROOT / "content" / "learn"
-ET = dt.timezone(dt.timedelta(hours=-5))
+ET = __import__("zoneinfo").ZoneInfo("America/New_York")  # DST-safe (Phase 5)
 
 FORMATS = [  # first match wins; from the title/caption when the episode can't tell
     ("map/location", r"\b(where|location|located|d[oó]nde|map spot|lugar #|shop|store|tienda|zapater|barber|dealership)\b"),

@@ -1,1 +1,2 @@
 {"t": "2026-11-26T19:03:48Z", "source": "everygen get_credit_balance", "remaining": 74, "purchased_remaining": 74, "subscription_remaining": 0, "subscription_used": 500, "subscription_max": 500, "note": "Phase 3 first verified reading; account shared with What If Arena + ClipCircuit"}
+{"t": "2026-11-26T20:27:25Z", "source": "everygen get_credit_balance", "remaining": 64, "purchased_remaining": 64, "subscription_remaining": 0, "subscription_used": 500, "subscription_max": 500, "note": "Phase 5 reconciliation: What If Arena spent 10 after the 19:03 reading"}

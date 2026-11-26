@@ -33,7 +33,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 STATE = ROOT / ".runsafe" / "state.json"
 RUNS = ROOT / "content" / "runs"
-ET = dt.timezone(dt.timedelta(hours=-5))
+ET = __import__("zoneinfo").ZoneInfo("America/New_York")  # DST-safe (Phase 5)
 NET_ERR = re.compile(r"could not resolve|unable to access|connection|timed out|rpc failed|early eof|hung up|"
                      r"temporarily unavailable|returned error: 5\d\d|sideband", re.I)
 AUTH_ERR = re.compile(r"403|401|permission|denied|authenticat|not allowed|forbidden|write access", re.I)

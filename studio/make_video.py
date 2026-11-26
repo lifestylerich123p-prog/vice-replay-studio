@@ -1173,6 +1173,11 @@ def main():
                 final, _, used = build(ep, base, slug, sh["segments"], True, a.preview, enc, w, h, voice, rate, name)
             tags = " ".join("#" + t for t in sh.get("hashtags", ["GTA6", "GTAVI", "Shorts"]))
             lines = ["TITLE", sh.get("title") or ep["title"], "", "DESCRIPTION", sh.get("description", ""), ""]
+            if item_key == "short":  # Phase 5: a measurable link per Short (studio/sitelinks.py, /v/<slug>/)
+                from . import sitelinks
+                ln = sitelinks.line(ep_disk, lang)
+                if ln and ln.split(": ", 1)[-1] not in (sh.get("description") or ""):
+                    lines[4:5] = [sh.get("description", ""), "", ln]
             if used:
                 lines += ["Imágenes de GTA VI: Rockstar Games, usadas para noticias y comentario." if a.es else
                           "GTA VI footage/screenshots: Rockstar Games, used for news and commentary.", ""]

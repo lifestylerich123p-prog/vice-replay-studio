@@ -1,6 +1,7 @@
 # Builds the guide pages, /links/, sitemap.xml and robots.txt for vicereplay.com (repo vicereplay-site).
 # Add a guide() call per new video, run: python tools/site_guides.py, then commit+push vicereplay-site.
-import os, html, json
+import os
+import sys, html, json
 SITE = os.environ.get("VICEREPLAY_SITE") or os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "vicereplay-site")
 DOMAIN = "https://vicereplay.com"
 TAG = "vicereplay-20"
@@ -1101,6 +1102,12 @@ page("terms/", "Terms of Use · Vice Replay", "Terms of use for vicereplay.com a
 INDEXNOW_KEY = "42ea7b879d668a2c990cad4a77c32361"  # public by design: proves to Bing/IndexNow that we own the site
 open(os.path.join(SITE, f"{INDEXNOW_KEY}.txt"), "w").write(INDEXNOW_KEY)
 open(os.path.join(SITE, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
+try:  # Phase 5: measurable video -> site short links (/v/<slug>/, noindex), studio/sitelinks.py
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from studio import sitelinks as _sl
+    _sl.build(SITE)
+except Exception as _e:  # noqa: BLE001 - never break the guide build over the short links
+    print(f"short links skipped: {_e}")
 _newest = max([d for *_, d in GUIDES] + ["2026-11-18"]); _newest_es = max([d for *_, d in GUIDES_ES] + ["2026-11-18"])  # hubs change whenever a guide is added
 # About pages (Nov 24 upgrade): who we are and how we check facts. Google's quality guidance weighs trust; a fan site
 # earns it by showing its rules. No owner name or location here (owner info stays private).

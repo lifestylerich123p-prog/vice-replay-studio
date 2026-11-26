@@ -268,6 +268,16 @@ def cmd_close(a, act):
                                     "note": f"reported with done {', '.join(keys)}"}) + "\n")
 
 
+def cmd_external(a):
+    """Phase 5 (Nov 26): What If Arena spent 10 credits outside this ledger; logging it keeps one shared truth."""
+    if a.project not in PROJECTS:
+        raise Refused(f"--project must be one of {', '.join(PROJECTS)}")
+    rows = [{"t": iso(), "job": k.lower(), "act": "external", "chat": chat_id(), "credits": a.credits,
+             "project": a.project, "reason": a.reason, "balance": a.balance} for k in a.jobs]
+    push_rows(rows, lambda last: None)
+    print(f"EXTERNAL spend logged: {a.credits} credits by {a.project} ({a.reason}); balance after {a.balance}")
+
+
 def cmd_list(_a):
     _, rows = fetch_ledger()
     last = state(rows)
@@ -323,6 +333,13 @@ def main(argv=None):
     r = sub.add_parser("release")
     r.add_argument("jobs", nargs="+")
     r.add_argument("--reason", required=True)
+    x = sub.add_parser("external", help="record a spend made outside this ledger (another project's chat), so the "
+                                        "shared balance reconciles: external <job> --credits N --project P --reason ..")
+    x.add_argument("jobs", nargs="+")
+    x.add_argument("--credits", type=int, required=True)
+    x.add_argument("--project", required=True)
+    x.add_argument("--reason", required=True)
+    x.add_argument("--balance", default="?")
     f = sub.add_parser("failed", help="the provider call failed; --charged = credits it still took (0 if none)")
     f.add_argument("jobs", nargs="+")
     f.add_argument("--reason", required=True)
@@ -335,7 +352,7 @@ def main(argv=None):
             return cmd_hook(a)
         {"claim": cmd_claim, "list": cmd_list,
          "done": lambda x: cmd_close(x, "done"), "release": lambda x: cmd_close(x, "release"),
-         "failed": lambda x: cmd_close(x, "failed")}[a.cmd](a)
+         "failed": lambda x: cmd_close(x, "failed"), "external": cmd_external}[a.cmd](a)
     except Refused as e:
         print(f"NOT CLAIMED: {e}" if a.cmd == "claim" else f"REFUSED: {e}", file=sys.stderr)
         return 1
