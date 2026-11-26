@@ -1,0 +1,206 @@
+{
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "series": "Map Spots",
+ "slug": "gta6-ninja-turtles-where",
+ "title": "GTA 6 Ninja Turtles Easter Egg: Where to Find It",
+ "short_title": "GTA 6 Ninja Turtles easter egg location 🐢 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 Ninja Turtles easter egg location 🐢 #GTA6 #Shorts",
+  "GTA 6 hid the Ninja Turtles, with a catch #GTA6 #Shorts",
+  "Where are the Ninja Turtles in GTA 6? #GTA6 #Shorts"
+ ],
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete: 'gta 6 ninja turtles')",
+ "short_description": "The GTA 6 Ninja Turtles easter egg: a storm drain just north of Millport, by Lake Tallaloko and the Tallaloko Dam (guides differ on the exact spot: the strip between the town and the lake, or the dam's pumping station). Go at night: green ooze leaks through a crack in the concrete under a staircase, with four tiny turtles, pizza boxes and a rat nearby. Rockstar hasn't confirmed it, and the game never says the name. No story spoilers.\n\n📍 Map Spot #12 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nSources: VGTimes, Middle East Gamer, Complex, GTA Culture, EGW.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6 esconde a las TORTUGAS ninja 🐢 #GTA6 #Shorts",
+  "description": "El easter egg de las Tortugas Ninja en GTA 6: un desagüe al norte de Millport, junto a Lake Tallaloko y la presa (las guías difieren en el punto exacto). Ve de noche: baba verde bajo una escalera, cuatro tortuguitas, cajas de pizza y una rata. Rockstar no lo ha confirmado. Fuentes: VGTimes, Middle East Gamer, Complex.\n\n📍 Lugar #12 de nuestra serie del mapa de GTA 6: todos están en la lista \"GTA 6 Map: Where to Find It\".",
+  "tags": [
+   "GTA 6 tortugas ninja",
+   "GTA 6 easter eggs",
+   "GTA 6 secretos",
+   "GTA 6 español",
+   "GTA 6 Millport"
+  ]
+ },
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts",
+ "tags": [
+  "GTA 6 Ninja Turtles",
+  "GTA 6 TMNT easter egg",
+  "GTA 6 easter eggs",
+  "GTA 6 secrets",
+  "GTA 6 Millport",
+  "GTA 6 Lake Tallaloko",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#ninjaturtles",
+  "#gta6eastereggs"
+ ],
+ "sources": [
+  "VGTimes - GTA 6 players discover TMNT easter egg: https://vgtimes.com/gaming-news/175706-gta-6-players-discover-teenage-mutant-ninja-turtles-easter-egg-featuring-green-mutagen-pizza-and-splinter.html",
+  "Middle East Gamer - GTA 6 Ninja Turtles easter egg: https://www.middleeastgamer.com/gta-6-ninja-turtles-easter-egg/",
+  "Complex - GTA VI players discover a TMNT easter egg: https://www.complex.com/pop-culture/a/markelibert/gta-6-teenage-mutant-ninja-turtles-easter-egg",
+  "GTA Culture - All GTA 6 easter eggs: https://gtaculture.com/guides/gta-6-easter-eggs",
+  "EGW - Terminator and TMNT easter eggs: https://egw.news/gaming/news/38711/how-to-find-terminator-2-and-tmnt-easter-eggs-in-g-VhWuU4jzU"
+ ],
+ "facts_note": "Nov 26 research (map-finds agent + own search): north of Millport by Lake Tallaloko / the Tallaloko Dam, at night, green ooze under a staircase, 4 small turtles, pizza boxes, a rat: VGTimes, Middle East Gamer, Complex, GTA Culture, EGW. Exact spot disputed (between town and lake vs the dam's pumping station): pin between the two, description says so. Not confirmed by Rockstar: said. Read from search summaries: re-check right before upload.",
+ "short": [
+  {
+   "headline": "NINJA TURTLES",
+   "headline_es": "TORTUGAS NINJA",
+   "text": "GTA 6 hid baby Ninja Turtles in a storm drain.",
+   "text_es": "GTA seis escondió tortugas ninja bebé en un desagüe.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 HID THE",
+     "NINJA TURTLES"
+    ],
+    "pink": [
+     "NINJA TURTLES"
+    ],
+    "sub": "easter egg",
+    "seed": 271
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 ESCONDE LAS",
+     "TORTUGAS NINJA"
+    ],
+    "pink": [
+     "TORTUGAS NINJA"
+    ],
+    "sub": "easter egg",
+    "seed": 271
+   }
+  },
+  {
+   "headline": "MILLPORT",
+   "headline_es": "MILLPORT",
+   "text": "It's just north of Millport, by the Tallaloko Dam.",
+   "text_es": "Está justo al norte de Millport, junto a la presa de Tallaloko.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Millport",
+    "dx": -0.0147,
+    "dy": -0.0129,
+    "label": "The drain",
+    "n": 1,
+    "src": "VGTimes · Middle East Gamer"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Millport",
+    "dx": -0.0147,
+    "dy": -0.0129,
+    "label": "El desagüe",
+    "n": 1,
+    "src": "VGTimes · Middle East Gamer",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "GO AT NIGHT",
+   "headline_es": "DE NOCHE",
+   "text": "Go at night, and look under the staircase.",
+   "text_es": "Ve de noche y mira bajo la escalera.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Night → under the staircase",
+    "pink": [
+     "Night"
+    ],
+    "src": "Middle East Gamer · GTA Culture",
+    "seed": 272,
+    "bg": "photo:media/official/mount-kalaga-01.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Noche → bajo la escalera",
+    "pink": [
+     "Noche"
+    ],
+    "src": "Middle East Gamer · GTA Culture",
+    "seed": 272,
+    "bg": "photo:media/official/mount-kalaga-01.jpg"
+   }
+  },
+  {
+   "headline": "LOOK FOR THIS",
+   "headline_es": "BUSCA ESTO",
+   "text": "Green ooze, four tiny turtles, and pizza boxes.",
+   "text_es": "Baba verde, cuatro tortuguitas y cajas de pizza.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Green ooze · 4 tiny turtles · pizza",
+    "pink": [
+     "Green ooze"
+    ],
+    "src": "VGTimes · Complex",
+    "seed": 273,
+    "bg": "photo:media/official/mount-kalaga-03.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Baba verde · 4 tortuguitas · pizza",
+    "pink": [
+     "Baba verde"
+    ],
+    "src": "VGTimes · Complex",
+    "seed": 273,
+    "bg": "photo:media/official/mount-kalaga-03.jpg"
+   }
+  },
+  {
+   "headline": "FOUND IT?",
+   "headline_es": "¿LO ENCONTRASTE?",
+   "text": "Found it? Comment yes, because",
+   "text_es": "¿Lo encontraste? Comenta sí, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FOUND IT?",
+     "COMMENT YES"
+    ],
+    "pink": [
+     "COMMENT YES"
+    ],
+    "seed": 274
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
+    ],
+    "pink": [
+     "COMENTA SÍ"
+    ],
+    "seed": 274
+   }
+  }
+ ],
+ "spot": 12,
+ "cta": "SPOT #13 NEXT: FOLLOW",
+ "cta_es": "LUGAR #13 PRONTO: SÍGUENOS"
+}

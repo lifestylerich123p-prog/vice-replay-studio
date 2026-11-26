@@ -412,14 +412,15 @@
    "slug": "gta6-ultimate-cars-where",
    "item": "short",
    "en": [
-    "2026-12-01",
-    "12:30 PM"
+    "2026-12-07",
+    "9:30 AM"
    ],
    "es": [
     "2026-12-02",
     "1:30 PM"
    ],
-   "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)"
+   "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
+   "moved": "Nov 26: Dec 1 12:30 PM -> Dec 7 9:30 AM (evergreen) so the viral Ninja Turtles find goes out sooner"
   },
   {
    "slug": "gta6-early-helicopter",
@@ -440,14 +441,15 @@
    "slug": "gta6-dexter-apartment-map",
    "item": "short",
    "en": [
-    "2026-12-02",
-    "12:30 PM"
+    "2026-12-07",
+    "11:00 AM"
    ],
    "es": [
     "2026-12-03",
     "1:30 PM"
    ],
-   "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)"
+   "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
+   "moved": "Nov 26: Dec 2 12:30 PM -> Dec 7 11:00 AM (evergreen) so the viral ghost ship find goes out sooner"
   },
   {
    "slug": "gta6-military-base-jets",
@@ -817,6 +819,24 @@
     "12:30 PM"
    ],
    "approved": "Nov 26 (owner \"DO IT\": map Shorts replace the parked versus/fact Shorts, \"as I confirm them\"): legendary animal #3 (black bear, south Hamlet), in the 80-hours slot; 4 guides; re-check right before upload"
+  },
+  {
+   "slug": "gta6-ninja-turtles-where",
+   "item": "short",
+   "en": [
+    "2026-12-01",
+    "12:30 PM"
+   ],
+   "approved": "Nov 26 (owner \"CONTINUE TO DO IT\": map finds replace the parked Shorts; viral ones go earlier): Ninja Turtles drain north of Millport (viral find: 30K+ likes; 5 sources); re-check right before upload"
+  },
+  {
+   "slug": "gta6-ghost-ship-where",
+   "item": "short",
+   "en": [
+    "2026-12-02",
+    "12:30 PM"
+   ],
+   "approved": "Nov 26 (owner \"CONTINUE TO DO IT\": map finds replace the parked Shorts; viral ones go earlier): ghost ship / St. Lucia Lighthouse, Little Hardin Island (6 guides); re-check right before upload"
   }
  ],
  "paused": [
