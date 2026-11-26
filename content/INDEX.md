@@ -230,7 +230,7 @@ Read this first instead of searching the repo.
 | 2026-11-24 | /guides/gta-6-criminal-profile/ | GTA 6 Criminal Profile: All Levels and How to Lower It |
 | 2026-11-22 | /guides/gta-6-darts/ | Does GTA 6 Have Darts? No, and Rockstar Explains Why (Pool Is In) |
 | 2026-11-24 | /guides/gta-6-deals/ | GTA 6 Deals and Discount Codes: What's Real This Week (Checked) |
-| 2026-11-24 | /guides/gta-6-easter-eggs/ | GTA 6 Easter Eggs: The Best Secrets and Where to Find Them (Map) |
+| 2026-11-24 | /guides/gta-6-easter-eggs/ | GTA 6 Easter Eggs: Every Location So Far (Map) |
 | 2026-11-23 | /guides/gta-6-game-awards/ | GTA 6 at The Game Awards 2026: All 8 Nominations, Rivals and Odds |
 | 2026-11-18 | /guides/gta-6-gift-guide/ | GTA 6 Gift Guide 2026: Best Gifts for a GTA 6 Fan (PS5 and Xbox) |
 | 2026-11-24 | /guides/gta-6-hacker-sentence/ | Did They Catch the GTA 6 Hacker? Arion Kurtaj's Sentence Explained (Nov 2026) |
@@ -263,14 +263,14 @@ Read this first instead of searching the repo.
 | 2026-11-24 | /es/guias/precio-gta-6/ | Precio de GTA 6 en cada país: España, México, Colombia y Argentina |
 | 2026-11-19 | /es/guias/ps5-pro-gta-6-vale-la-pena/ | ¿Vale la pena la PS5 Pro para GTA 6? 30 FPS, PSSR y lo que realmente cambia |
 | 2026-11-25 | /es/guias/robar-cajeros-gta-6/ | Cómo robar cajeros en GTA 6: el método del cabrestante (y la trampa) |
-| 2026-11-24 | /es/guias/secretos-gta-6/ | Easter eggs de GTA 6: los mejores secretos y dónde encontrarlos (mapa) |
+| 2026-11-24 | /es/guias/secretos-gta-6/ | Easter eggs de GTA 6: todas las ubicaciones (mapa) |
 | 2026-11-24 | /es/guias/tienda-de-zapatos-gta-6/ | Tienda de zapatos de GTA 6: dónde comprar zapatos (mapa) |
 | built-in | /guides/gta-6-unlock-time/ | GTA 6 Unlock Time: When You Can Play in Every Time Zone |
 | built-in | /guides/gta-6-new-zealand-trick/ | GTA 6 New Zealand Trick: Can You Play Early, and Is It Safe? |
 | built-in | /guides/gta-6-launch-checklist/ | GTA 6 Launch Checklist: Download Size, Price and What's Missing on Day One |
 | built-in | /guides/gta-6-storage/ | How Many GB Is GTA 6? 212 GB, and How to Make Room on PS5 and Xbox |
 | built-in | /guides/gta-6-cheats/ | GTA 6 Cheat Codes: Money, Armor, Ammo + How to Unlock |
-| built-in | /guides/gta-6-pc-release-date/ | Is GTA 6 on PC? PC Release Date and What's Actually Reported |
+| built-in | /guides/gta-6-pc-release-date/ | Is GTA 6 on PC? No Date Yet (Early 2027 Only Reported) |
 | built-in | /guides/gta-6-launch-streams/ | GTA 6 Launch Streams: YouTube's 24-Hour Livestream and Kai Cenat's 100% Marathon |
 | built-in | /guides/gta-6-reviews/ | GTA 6 Reviews: 99 on Metacritic, Tied for the Best Score Ever |
 | built-in | /guides/gta-6-game-awards-nominations/ | GTA 6 at The Game Awards 2026: 8 Nominations Including Game of the Year |
@@ -278,7 +278,7 @@ Read this first instead of searching the repo.
 | built-in | /es/guias/trucos-gta-6/ | Trucos de GTA 6: dinero, chaleco, munición y cómo desbloquearlos |
 | built-in | /es/guias/espacio-gta-6/ | ¿Sin espacio para GTA 6? Cómo liberar espacio en PS5 y Xbox (212 GB) |
 | built-in | /es/guias/hora-de-lanzamiento-gta-6/ | GTA 6: a qué hora se desbloquea en cada país |
-| built-in | /es/guias/gta-6-pc/ | GTA 6 en PC: fecha de salida y lo que se sabe |
+| built-in | /es/guias/gta-6-pc/ | GTA 6 en PC: sin fecha todavía (lo que se sabe) |
 | built-in | /es/guias/gta-6-lanzamiento-en-vivo/ | GTA 6 en vivo: parches, récords y noticias tras el lanzamiento |
 
 ## Screenshot groups in media/official/
