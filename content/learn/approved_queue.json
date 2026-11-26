@@ -94,15 +94,15 @@
    "slug": "gta6-80-hours",
    "item": "short",
    "en": [
-    "2026-12-05",
-    "11:00 AM"
-   ],
-   "es": [
-    "2026-12-05",
+    "2026-12-10",
     "12:30 PM"
    ],
+   "es": [
+    "2026-12-12",
+    "1:30 PM"
+   ],
    "approved": "Nov 22 10 PM (approve)",
-   "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots"
+   "moved": "Nov 26: moved later so a map/tier Short takes its slot (owner approved the swap with the 3 new Shorts; plain-fact Shorts lost ~7-15x this week); then Dec 10 12:30 PM (Dec 9 needed a map Short; Dec 10 stays light for Game Awards night)"
   },
   {
    "slug": "gta6-5-things",
@@ -215,14 +215,15 @@
    "slug": "gta6-criminal-profile",
    "item": "short",
    "en": [
-    "2026-12-01",
+    "2026-12-09",
     "11:00 AM"
    ],
    "es": [
-    "2026-12-02",
+    "2026-12-11",
     "12:30 PM"
    ],
-   "approved": "Nov 24 ~3:30 PM ET (owner: \"Ok do what you think\" to: criminal profile tips Short Tue Dec 1 11:00, 3 records to Sun Dec 6 11:00); search gap 'gta 6 how to lower criminal profile' (guide EN+ES live); RE-CHECK facts before upload (owner rule); Spanish winners-only"
+   "approved": "Nov 24 ~3:30 PM ET (owner: \"Ok do what you think\" to: criminal profile tips Short Tue Dec 1 11:00, 3 records to Sun Dec 6 11:00); search gap 'gta 6 how to lower criminal profile' (guide EN+ES live); RE-CHECK facts before upload (owner rule); Spanish winners-only",
+   "moved": "Nov 26: moved later so a map/tier Short takes its slot (owner approved the swap with the 3 new Shorts; plain-fact Shorts lost ~7-15x this week)"
   },
   {
    "slug": "gta6-easter-eggs-tier-list",
@@ -571,14 +572,15 @@
    "slug": "gta6-red-dead-easter-eggs",
    "item": "short",
    "en": [
-    "2026-12-03",
+    "2026-12-09",
     "12:30 PM"
    ],
    "es": [
     "2026-12-04",
     "1:30 PM"
    ],
-   "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)"
+   "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
+   "moved": "Nov 26: to Dec 9 so that day has a map Short (owner Nov 25: one map video a day); Dec 3 keeps the jets map Short"
   },
   {
    "slug": "gta6-skunk-ape-where",
@@ -687,14 +689,15 @@
    "slug": "gta6-trading-cards",
    "item": "short",
    "en": [
-    "2026-11-30",
+    "2026-12-08",
     "11:00 AM"
    ],
    "es": [
-    "2026-12-01",
-    "12:30 PM"
+    "2026-12-11",
+    "1:30 PM"
    ],
-   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only."
+   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
+   "moved": "Nov 26: moved later so a map/tier Short takes its slot (owner approved the swap with the 3 new Shorts; plain-fact Shorts lost ~7-15x this week)"
   },
   {
    "slug": "gta6-waink-app",
@@ -782,6 +785,45 @@
     "2026-12-10",
     "12:30 PM"
    ]
+  },
+  {
+   "slug": "gta6-vice-city-real-miami",
+   "item": "short",
+   "en": [
+    "2026-11-30",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-12-01",
+    "12:30 PM"
+   ],
+   "approved": "Nov 26 (owner: \"approve and check everything\"): map/tier formats from the mid-week verdict; facts in 2+ sources (re-check right before upload)"
+  },
+  {
+   "slug": "gta6-map-quiz-places",
+   "item": "short",
+   "en": [
+    "2026-12-01",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-12-02",
+    "12:30 PM"
+   ],
+   "approved": "Nov 26 (owner: \"approve and check everything\"): map/tier formats from the mid-week verdict; facts in 2+ sources (re-check right before upload)"
+  },
+  {
+   "slug": "gta6-special-cars-tier-list",
+   "item": "short",
+   "en": [
+    "2026-12-05",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-12-12",
+    "12:30 PM"
+   ],
+   "approved": "Nov 26 (owner: \"approve and check everything\"): map/tier formats from the mid-week verdict; facts in 2+ sources (re-check right before upload)"
   }
  ],
  "paused": [
