@@ -14,16 +14,17 @@
  "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
  "slug": "gta6-early-helicopter",
  "title": "GTA 6's Easiest Early Helicopter",
- "short_title": "GTA 6: the easiest early helicopter 🚁 #GTA6 #Shorts",
+ "short_title": "GTA 6 helicopter location: the easiest early one 🚁 #GTA6 #Shorts",
  "short_title_options": [
+  "GTA 6 helicopter location: the easiest early one 🚁 #GTA6 #Shorts",
   "GTA 6: the easiest early helicopter 🚁 #GTA6 #Shorts",
   "GTA 6's free helicopter has one catch #GTA6 #Shorts",
   "Where to find a helicopter early in GTA 6 #GTA6 #Shorts"
  ],
- "short_description": "The easiest early helicopter in GTA 6: a private dock in Southwind. Turn off at the Sherwin Boatworks and Chicki's Tiki Bar signs; the dock is east of the parking lot. It isn't a guaranteed spawn, so check back if it's empty. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: PC Gamer, The Click, TheGamer, PowerPyx.",
+ "short_description": "The easiest early helicopter in GTA 6: a private dock in Southwind. Turn off at the Sherwin Boatworks and Chicki's Tiki Bar signs; the dock is east of the parking lot. It isn't a guaranteed spawn, so check back if it's empty. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\n📍 Map Spot #10 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nMap: Rockstar Games' official Leonida map. Sources: PC Gamer, The Click, TheGamer, PowerPyx.",
  "short_es": {
   "title": "El HELICÓPTERO más fácil de GTA 6 🚁 #GTA6 #Shorts",
-  "description": "El helicóptero más fácil al principio de GTA 6: un muelle privado en Southwind. Gira en los carteles de Sherwin Boatworks y Chicki's Tiki Bar; el muelle está al este del aparcamiento. No siempre aparece. Fuentes: PC Gamer, The Click, TheGamer, PowerPyx.",
+  "description": "El helicóptero más fácil al principio de GTA 6: un muelle privado en Southwind. Gira en los carteles de Sherwin Boatworks y Chicki's Tiki Bar; el muelle está al este del aparcamiento. No siempre aparece. Fuentes: PC Gamer, The Click, TheGamer, PowerPyx.\n\n📍 Lugar #10 de nuestra serie del mapa de GTA 6: todos están en la lista \"GTA 6 Map: Where to Find It\".",
   "tags": [
    "GTA 6 helicóptero",
    "GTA 6 Southwind",
@@ -156,5 +157,9 @@
    }
   }
  ],
- "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload.",
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete)",
+ "spot": 10,
+ "cta": "SPOT #11 NEXT: FOLLOW",
+ "cta_es": "LUGAR #11 PRONTO: SÍGUENOS"
 }

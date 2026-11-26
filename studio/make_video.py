@@ -1033,6 +1033,18 @@ def affiliate_block(ep):
     return lines + [cfg["disclosure"], ""]
 
 
+def with_spot(seg, n, pin=False):
+    """A segment whose map cards (English and Spanish) carry the series number (studio/mapseries.py). `pin`: the
+    Short has a single pin, so the pin itself shows the spot number too (no "1" next to "MAP SPOT #5")."""
+    seg = dict(seg)
+    for key in ("chart", "chart_es"):
+        if isinstance(seg.get(key), dict) and seg[key].get("type") == "map":
+            seg[key] = dict(seg[key], spot=n, spot_lang="es" if key == "chart_es" else "en")
+            if pin and seg[key].get("n", 1) in (1, "1"):
+                seg[key]["n"] = n
+    return seg
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("episode")
@@ -1063,6 +1075,9 @@ def main():
                     "segments": ep["short"]}] if ep.get("short") else []) + ep.get("shorts", [])
         if not shorts:
             sys.exit("No 'short' or 'shorts' in this episode.")
+        if ep.get("spot") and ep.get("short"):  # numbered map series (studio/mapseries.py): badge on its map cards
+            one = sum((x.get("chart") or {}).get("type") == "map" for x in shorts[0]["segments"]) == 1
+            shorts[0] = dict(shorts[0], segments=[with_spot(x, ep["spot"], one) for x in shorts[0]["segments"]])
         if a.es:
             voice = a.voice or ep.get("voice_es") or channel_setting("voice_es") or "em_alex"
             es_shorts = []

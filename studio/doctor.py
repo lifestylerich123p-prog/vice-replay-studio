@@ -129,6 +129,18 @@ def main():
             ok.append("A map Short is booked every day for the next 7 days")
     except (OSError, ValueError, KeyError) as e:
         warn.append(f"Map-a-day check failed: {type(e).__name__}")
+    # 1b2. The numbered map series (owner APPROVE, Nov 26): a booked spot's badge number must match its place
+    try:
+        from . import mapseries
+        off = mapseries.stale(mapseries.current())
+        if off:
+            warn.append("Map series numbers out of order (a Short was moved): " +
+                        ", ".join(f"{m['slug']} is #{m['n']}, says #{m['stored']}" for m in off[:4]) +
+                        ": run `python -m studio.mapseries number`, then re-render with `python -m studio.ship`")
+        else:
+            ok.append("Map series numbers match the schedule")
+    except (OSError, ValueError, KeyError) as e:
+        warn.append(f"Map series check failed: {type(e).__name__}")
     # 1c. Booked videos in the next 48 h must be rendered, 30 fps and past their quality check (Nov 24)
     try:
         from . import readiness

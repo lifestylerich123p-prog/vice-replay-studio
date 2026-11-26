@@ -353,3 +353,16 @@
   read-only); once connected the 1 PM checklist reports the site's weekly clicks and top query. (4) "gta 6 shoe store
   private room" (88 search views) is NOT answered: it's the GTA 5 strip-club meme (owner's no-sexualized-content
   rule); next search gap answered instead: "gta 6 alligator" (gta6-alligators-where).
+- 2026-11-26 (owner: "APPROVE", then "APROVE ALL OF THEM", for the 7 changes in the "what can be done different"
+  report: 15 subscribers, after-launch Shorts ~28 views in 24 h; map + tier win, facts and long videos don't, Spanish
+  works on TikTok but not on the Spanish YouTube channel): (1) **Search-phrase titles**: map/how-to Shorts start with
+  what people type (YouTube autocomplete), e.g. "GTA 6 giant crab location + password 🦀"; 17 booked ones retitled,
+  live ones keep their titles. (2) **Follow up a winner the same day** (momentum): the shoe store map Short took off
+  (692 views, 55/h) -> a "where" follow-up in the same family. (3) **Numbered map series** (`studio.mapseries`):
+  spots numbered in posting order, "MAP SPOT #N" badge on the map card, "SPOT #N+1 NEXT: FOLLOW" pill, a
+  "📍 Map Spot #N" description line, the playlist "GTA 6 Map: Where to Find It" kept in spot order and pinned as the
+  FIRST section of the channel home. (4) **Spanish to TikTok**: every map Short gets a Spanish version in the TikTok
+  files (1 PM checklist). Voice: Viral Adam only for winners (Everygen ~74 credits left, plan credits Dec 12); the
+  free Kokoro voice for the rest. (5) **No new long videos** until the two search guides (ATM, map secrets) pull
+  search views; Shorts only. (6) Owner's gameplay is the biggest lever (reminder sent; recorded radio off, Drive
+  folder). (7) **Instagram numbers** in the 1 PM checklist (views per Reel/carousel) to judge the 4-a-day cap.

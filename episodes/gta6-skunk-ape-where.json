@@ -14,16 +14,17 @@
  "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
  "slug": "gta6-skunk-ape-where",
  "title": "Where to Find GTA 6's Bigfoot",
- "short_title": "GTA 6's Bigfoot is real: where to look 👣 #GTA6 #Shorts",
+ "short_title": "GTA 6 Bigfoot location (Skunk Ape) 👣 #GTA6 #Shorts",
  "short_title_options": [
+  "GTA 6 Bigfoot location (Skunk Ape) 👣 #GTA6 #Shorts",
   "GTA 6's Bigfoot is real: where to look 👣 #GTA6 #Shorts",
   "GTA 6's Bigfoot is real, but there's a catch #GTA6 #Shorts",
   "Where to find the Skunk Ape in GTA 6 #GTA6 #Shorts"
  ],
- "short_description": "Where to find the Skunk Ape, GTA 6's Bigfoot: the lakeside road at Cottonmouth Lake, south of Hamlet in Grassrivers. Look for a deer carcass; it's available early in Chapter 1, and night is best. Kirk's 'Mr. Mangrove' side quests (flyer at Skeeter's bar in Hamlet) take it further. Guides also name Gullet Marsh. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: GTABase, GamesRadar, Dexerto, Game8, VICE.",
+ "short_description": "Where to find the Skunk Ape, GTA 6's Bigfoot: the lakeside road at Cottonmouth Lake, south of Hamlet in Grassrivers. Look for a deer carcass; it's available early in Chapter 1, and night is best. Kirk's 'Mr. Mangrove' side quests (flyer at Skeeter's bar in Hamlet) take it further. Guides also name Gullet Marsh. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\n📍 Map Spot #5 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nMap: Rockstar Games' official Leonida map. Sources: GTABase, GamesRadar, Dexerto, Game8, VICE.",
  "short_es": {
   "title": "El PIE GRANDE de GTA 6 existe: dónde buscarlo 🦍 #GTA6 #Shorts",
-  "description": "Dónde encontrar al Skunk Ape, el Pie Grande de GTA 6: la carretera junto a Cottonmouth Lake, al sur de Hamlet. Busca un ciervo muerto; desde el capítulo 1 y mejor de noche. Fuentes: GTABase, GamesRadar, Dexerto, Game8, VICE.",
+  "description": "Dónde encontrar al Skunk Ape, el Pie Grande de GTA 6: la carretera junto a Cottonmouth Lake, al sur de Hamlet. Busca un ciervo muerto; desde el capítulo 1 y mejor de noche. Fuentes: GTABase, GamesRadar, Dexerto, Game8, VICE.\n\n📍 Lugar #5 de nuestra serie del mapa de GTA 6: todos están en la lista \"GTA 6 Map: Where to Find It\".",
   "tags": [
    "GTA 6 Pie Grande",
    "GTA 6 Skunk Ape",
@@ -158,5 +159,9 @@
    }
   }
  ],
- "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload.",
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete)",
+ "spot": 5,
+ "cta": "SPOT #6 NEXT: FOLLOW",
+ "cta_es": "LUGAR #6 PRONTO: SÍGUENOS"
 }

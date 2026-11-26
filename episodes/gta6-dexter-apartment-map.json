@@ -14,16 +14,17 @@
  "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
  "slug": "gta6-dexter-apartment-map",
  "title": "Dexter's Apartment in GTA 6",
- "short_title": "GTA 6 has Dexter's apartment: here's where 👀 #GTA6 #Shorts",
+ "short_title": "GTA 6 Dexter easter egg: his apartment is here 👀 #GTA6 #Shorts",
  "short_title_options": [
+  "GTA 6 Dexter easter egg: his apartment is here 👀 #GTA6 #Shorts",
   "GTA 6 has Dexter's apartment: here's where 👀 #GTA6 #Shorts",
   "GTA 6 has Dexter's apartment, with one catch #GTA6 #Shorts",
   "Where to find Dexter's apartment in GTA 6 #GTA6 #Shorts"
  ],
- "short_description": "GTA 6 has a nod to the TV series Dexter: a light-blue waterfront building with a spiral staircase on Washington Island, east of Vice City. The door stays locked, and a look-alike of Dexter's boat sits at a dock to the west. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: Dexerto, The Click, TheGamer, GamesRadar.",
+ "short_description": "GTA 6 has a nod to the TV series Dexter: a light-blue waterfront building with a spiral staircase on Washington Island, east of Vice City. The door stays locked, and a look-alike of Dexter's boat sits at a dock to the west. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\n📍 Map Spot #11 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nMap: Rockstar Games' official Leonida map. Sources: Dexerto, The Click, TheGamer, GamesRadar.",
  "short_es": {
   "title": "GTA 6 tiene el APARTAMENTO de Dexter 😳 #GTA6 #Shorts",
-  "description": "Un guiño a la serie Dexter en GTA 6: un edificio azul claro junto al agua, con escalera de caracol, en Washington Island. La puerta no se abre y al oeste hay un barco igual al de Dexter. Fuentes: Dexerto, The Click, TheGamer, GamesRadar.",
+  "description": "Un guiño a la serie Dexter en GTA 6: un edificio azul claro junto al agua, con escalera de caracol, en Washington Island. La puerta no se abre y al oeste hay un barco igual al de Dexter. Fuentes: Dexerto, The Click, TheGamer, GamesRadar.\n\n📍 Lugar #11 de nuestra serie del mapa de GTA 6: todos están en la lista \"GTA 6 Map: Where to Find It\".",
   "tags": [
    "GTA 6 Dexter",
    "GTA 6 easter eggs",
@@ -160,5 +161,9 @@
    }
   }
  ],
- "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload.",
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete)",
+ "spot": 11,
+ "cta": "SPOT #12 NEXT: FOLLOW",
+ "cta_es": "LUGAR #12 PRONTO: SÍGUENOS"
 }

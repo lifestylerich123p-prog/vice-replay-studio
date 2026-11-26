@@ -39,6 +39,12 @@ search traffic after launch, news recaps don't) until the owner's gameplay arriv
 (Nov 24: both recent long videos had 0 views; related/browse traffic is ~0, so long-form isn't being recommended); Spanish channel winners +
 max 1 Spanish-only/day; Instagram stays at the owner's cap of 4/day (Mosseri: no magic number). Review Dec 8 (scheduled): if after-launch 3-Short
 days get under half the views per Short of 2-Short days and no more total views, go to 2/day.
+**Owner Nov 26 "APPROVE ALL"** (details content/owner.md): map/how-to Short titles START with the search phrase
+(YouTube autocomplete: "GTA 6 giant crab location + password 🦀"); map Shorts are a numbered series
+(`python -m studio.mapseries`: `number` before rendering a new spot, `sync` after uploads keeps the "GTA 6 Map: Where
+to Find It" playlist in order, pinned first on the channel home); every map Short also goes to the TikTok files in
+Spanish (free Kokoro voice; Viral Adam only for winners while Everygen is low); follow up a taking-off Short the same
+day; no new long videos until the ATM and map-secrets guides pull search views.
 
 ## Rules for this channel
 - **Footage**: everything in `media/` is used as backgrounds. Allowed: official Rockstar screenshots

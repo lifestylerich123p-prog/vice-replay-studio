@@ -13,7 +13,7 @@
   "Shorts"
  ],
  "guide": "gta-6-shoe-stores",
- "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam (Nov 26: Spanish map Shorts for TikTok, owner APPROVE)",
  "short_title": "GTA 6 shoe store: where to buy shoes 👟 #GTA6 #Shorts",
  "short_title_options": [
   "GTA 6 shoe store: where to buy shoes 👟 #GTA6 #Shorts",
@@ -88,7 +88,8 @@
     ],
     "sub": "dónde comprar",
     "seed": 141
-   }
+   },
+   "audio_es": "media/voice/gta6-shoe-store-where/es/seg1.wav"
   },
   {
    "headline": "FLIP FLOP HOUSE",
@@ -111,7 +112,8 @@
     "n": 1,
     "dx": -0.006,
     "dy": -0.022
-   }
+   },
+   "audio_es": "media/voice/gta6-shoe-store-where/es/seg2.wav"
   },
   {
    "headline": "THE REST",
@@ -138,7 +140,8 @@
     "src": "PowerPyx · GTABase · Gamertweak",
     "seed": 142,
     "bg": "photo:media/official/leonida-keys-01.jpg"
-   }
+   },
+   "audio_es": "media/voice/gta6-shoe-store-where/es/seg3.wav"
   },
   {
    "headline": "14 TO 17 STORES",
@@ -169,7 +172,8 @@
     ],
     "sub": "Mapa → Estilo → Calzado",
     "seed": 143
-   }
+   },
+   "audio_es": "media/voice/gta6-shoe-store-where/es/seg4.wav"
   }
  ]
 }

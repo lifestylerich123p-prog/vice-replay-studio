@@ -11,11 +11,12 @@
   "Shorts"
  ],
  "guide": "gta-6-map-leonida-places",
- "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam (Nov 26: Spanish map Shorts for TikTok, owner APPROVE)",
  "slug": "gta6-giant-crab",
  "title": "GTA 6's Giant Crab Easter Egg",
- "short_title": "GTA 6 has a giant crab: here's where 🦀 #GTA6 #Shorts",
+ "short_title": "GTA 6 giant crab location + password 🦀 #GTA6 #Shorts",
  "short_title_options": [
+  "GTA 6 giant crab location + password 🦀 #GTA6 #Shorts",
   "GTA 6 has a giant crab: here's where 🦀 #GTA6 #Shorts",
   "GTA 6's giant crab needs a password #GTA6 #Shorts",
   "GTA 6 giant crab location (password CLEAVES) #GTA6 #Shorts"
@@ -84,7 +85,8 @@
      "CANGREJO GIGANTE"
     ],
     "seed": 111
-   }
+   },
+   "audio_es": "media/voice/gta6-giant-crab/es/seg1.wav"
   },
   {
    "headline": "GULLET MARSH",
@@ -105,7 +107,8 @@
     "label": "Puesto del cangrejo",
     "n": 1,
     "dy": -0.009
-   }
+   },
+   "audio_es": "media/voice/gta6-giant-crab/es/seg2.wav"
   },
   {
    "headline": "POWER FIRST",
@@ -130,7 +133,8 @@
     ],
     "seed": 112,
     "src": "Dexerto · TheGamer · The Click"
-   }
+   },
+   "audio_es": "media/voice/gta6-giant-crab/es/seg3.wav"
   },
   {
    "headline": "PASSWORD: CLEAVES",
@@ -159,8 +163,10 @@
      "CLEAVES"
     ],
     "seed": 113
-   }
+   },
+   "audio_es": "media/voice/gta6-giant-crab/es/seg4.wav"
   }
  ],
- "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload.",
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete)"
 }

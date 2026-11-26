@@ -456,6 +456,17 @@ def map_frame(base, spec, t, w, h):
     f = brand.font(brand.BODY_FONT, 26)
     credit = "Map: Rockstar Games (official)"
     d.text((w - f.getlength(credit) - 24, h - 130), credit, font=f, fill=(255, 255, 255))
+    if spec.get("spot") and h > w:
+        # Nov 26 (owner APPROVE: numbered map series, studio/mapseries.py): "MAP SPOT #7" just under the headline slab
+        # (which ends at ~24% of a Short), inside the safe zone, clear of the pin in the middle
+        es = spec.get("locale") == "es" or spec.get("spot_lang") == "es"
+        txt = ("LUGAR" if es else "MAP SPOT") + f" #{spec['spot']}"
+        fb = brand.font(brand.HEADLINE_FONT, int(h * 0.024))
+        bx, by, pad = int(w * 0.045), int(h * 0.262), int(h * 0.009)
+        bw = fb.getlength(txt)
+        d.rounded_rectangle((bx, by, bx + bw + 2 * pad, by + fb.size + 2 * pad), radius=int(fb.size * 0.35),
+                            fill=brand.PINK, outline=(255, 255, 255), width=3)
+        d.text((bx + pad, by + pad - fb.size * 0.06), txt, font=fb, fill=(255, 255, 255))
     return frame
 
 
@@ -554,6 +565,7 @@ def still(spec, w, h, out, seed=0):
         bg = _backdrop(w, h, seed=sd)
     spec = dict(spec, _dur=4.0, cover=True)
     spec.pop("src", None)  # one text layer: the source line comes back on the card's own segment
+    spec.pop("spot", None)  # the series badge sits where the hook lettering goes: it shows on the map card itself
     draw(bg, spec, 60.0, w, h).convert("RGB").save(out, quality=95)
     return Path(out)
 

@@ -14,16 +14,17 @@
  "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
  "slug": "gta6-vercetti-portal",
  "title": "GTA 6's Tommy Vercetti Portal",
- "short_title": "GTA 6 hides a portal to 2002 Vice City 🌀 #GTA6 #Shorts",
+ "short_title": "GTA 6 Vice City portal: where to find it 🌀 #GTA6 #Shorts",
  "short_title_options": [
+  "GTA 6 Vice City portal: where to find it 🌀 #GTA6 #Shorts",
   "GTA 6 hides a portal to 2002 Vice City 🌀 #GTA6 #Shorts",
   "GTA 6 has Tommy Vercetti's shirt, with a catch #GTA6 #Shorts",
   "How to get Tommy Vercetti's shirt in GTA 6 #GTA6 #Shorts"
  ],
- "short_description": "GTA 6's Tommy Vercetti easter egg: a 12-switch puzzle that starts at the Badger radio tower in Key Lento and ends at the Turtle Head power station east of Hamlet, between 7 PM and 6 AM. The reward: Tommy Vercetti's shirt and bike. Fast travel or switching characters resets it. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: GameSpot, Dexerto, PCGamesN, TheGamer, The Click.",
+ "short_description": "GTA 6's Tommy Vercetti easter egg: a 12-switch puzzle that starts at the Badger radio tower in Key Lento and ends at the Turtle Head power station east of Hamlet, between 7 PM and 6 AM. The reward: Tommy Vercetti's shirt and bike. Fast travel or switching characters resets it. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\n📍 Map Spot #7 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nMap: Rockstar Games' official Leonida map. Sources: GameSpot, Dexerto, PCGamesN, TheGamer, The Click.",
  "short_es": {
   "title": "GTA 6 esconde un PORTAL al Vice City de 2002 🌴 #GTA6 #Shorts",
-  "description": "El easter egg de Tommy Vercetti en GTA 6: 12 interruptores desde la torre de radio Badger en Key Lento hasta la central de Turtle Head, entre las 7 PM y las 6 AM. Premio: la camisa y la moto de Tommy. Fuentes: GameSpot, Dexerto, PCGamesN, TheGamer, The Click.",
+  "description": "El easter egg de Tommy Vercetti en GTA 6: 12 interruptores desde la torre de radio Badger en Key Lento hasta la central de Turtle Head, entre las 7 PM y las 6 AM. Premio: la camisa y la moto de Tommy. Fuentes: GameSpot, Dexerto, PCGamesN, TheGamer, The Click.\n\n📍 Lugar #7 de nuestra serie del mapa de GTA 6: todos están en la lista \"GTA 6 Map: Where to Find It\".",
   "tags": [
    "GTA 6 Tommy Vercetti",
    "GTA 6 portal",
@@ -187,5 +188,9 @@
    }
   }
  ],
- "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload."
+ "facts_note": "Nov 24 map research: every location in 2+ launch-week guides (site/map-pins.json); re-check right before upload.",
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete)",
+ "spot": 7,
+ "cta": "SPOT #8 NEXT: FOLLOW",
+ "cta_es": "LUGAR #8 PRONTO: SÍGUENOS"
 }
