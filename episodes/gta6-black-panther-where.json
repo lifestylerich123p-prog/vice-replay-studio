@@ -1,0 +1,205 @@
+{
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "series": "Map Spots",
+ "slug": "gta6-black-panther-where",
+ "title": "GTA 6 Legendary Animals: Where to Find the Black Panther",
+ "short_title": "GTA 6 legendary animals: black panther location 🐆 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 legendary animals: black panther location 🐆 #GTA6 #Shorts",
+  "GTA 6's panther pays $15K, with a catch #GTA6 #Shorts",
+  "Where is the panther in GTA 6? #GTA6 #Shorts"
+ ],
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete: 'gta 6 legendary animals locations')",
+ "short_description": "Where to find the black panther, one of GTA 6's unique (\"Snapmatic\") animals: Belpoint Island, just west of Capri. It only spawns after Bret Vogel texts you its clue (his hunting questline starts after you meet him in Chapter 2). Guides list its payout at $8,600 to $15,000. No story spoilers.\n\n📍 Map Spot #19 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nSources: Insider Gaming, Mobalytics, Pro-Gamer, Keylento wiki.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: dónde está la PANTERA negra 🐆 #GTA6 #Shorts",
+  "description": "La pantera negra de GTA 6 vive en Belpoint Island, al oeste de Capri. Solo aparece después de la pista de Bret (desde el capítulo 2). Las guías dicen que paga entre 8.600 y 15.000 dólares. Fuentes: Insider Gaming, Mobalytics.\n\n📍 Lugar #19 de nuestra serie del mapa de GTA 6: todos están en la lista \"GTA 6 Map: Where to Find It\".",
+  "tags": [
+   "GTA 6 pantera",
+   "GTA 6 animales legendarios",
+   "GTA 6 español",
+   "GTA 6 Capri",
+   "GTA 6 secretos"
+  ]
+ },
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts",
+ "tags": [
+  "GTA 6 panther",
+  "GTA 6 black panther location",
+  "GTA 6 legendary animals",
+  "GTA 6 legendary animals locations",
+  "GTA 6 Snapmatic animals",
+  "GTA 6 Belpoint",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6animals"
+ ],
+ "sources": [
+  "Insider Gaming - Every Snapmatic animal location in GTA 6: https://insider-gaming.com/every-snapmatic-animal-location-gta-6-hunting-legendary-animals/",
+  "Mobalytics - All unique animal map locations: https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-unique-animal-locations",
+  "Pro-Gamer - All 11 Snapmatic and legendary animal locations: https://pro-gamer.gg/all-snapmatic-animal-locations-gta-6-legendary-animals-bret-clues-rewards-guide/",
+  "Keylento wiki - All Snapmatic animal locations: https://keylento.app/en/wiki/all-snapmatic-animal-locations-legendary-animals"
+ ],
+ "facts_note": "Nov 26 research: Belpoint Island west of Capri, payout $8,600-15,000 (Insider Gaming, Mobalytics, Pro-Gamer, Keylento wiki agree); needs Bret's clue. 'Belpoint' is printed on Rockstar's map (pin nudged onto the island). One guide calls it a saber-tooth panther: not said. Rifles not named (no-guns rule). Read from search summaries: re-check right before upload.",
+ "short": [
+  {
+   "headline": "BLACK PANTHER",
+   "headline_es": "PANTERA NEGRA",
+   "text": "GTA 6 has a black panther, and it hides on this island.",
+   "text_es": "GTA seis tiene una pantera negra, y se esconde en esta isla.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 HAS A",
+     "BLACK PANTHER"
+    ],
+    "pink": [
+     "BLACK PANTHER"
+    ],
+    "sub": "legendary animal",
+    "seed": 251
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 TIENE UNA",
+     "PANTERA NEGRA"
+    ],
+    "pink": [
+     "PANTERA NEGRA"
+    ],
+    "sub": "animal legendario",
+    "seed": 251
+   }
+  },
+  {
+   "headline": "BELPOINT",
+   "headline_es": "BELPOINT",
+   "text": "Belpoint Island, just west of Capri.",
+   "text_es": "Belpoint Island, justo al oeste de Capri.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Belpoint",
+    "dx": 0.02,
+    "dy": 0.01,
+    "label": "Panther",
+    "n": 1,
+    "src": "Insider Gaming · Mobalytics"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Belpoint",
+    "dx": 0.02,
+    "dy": 0.01,
+    "label": "Pantera",
+    "n": 1,
+    "src": "Insider Gaming · Mobalytics",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "BRET'S CLUE",
+   "headline_es": "LA PISTA DE BRET",
+   "text": "It only spawns after Bret texts you its clue.",
+   "text_es": "Solo aparece después de que Bret te mande su pista.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Only after Bret's clue text",
+    "pink": [
+     "Bret's clue"
+    ],
+    "src": "Insider Gaming · Mobalytics",
+    "seed": 252,
+    "bg": "photo:media/official/leonida-keys-03.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Solo tras la pista de Bret",
+    "pink": [
+     "pista de Bret"
+    ],
+    "src": "Insider Gaming · Mobalytics",
+    "seed": 252,
+    "bg": "photo:media/official/leonida-keys-03.jpg"
+   }
+  },
+  {
+   "headline": "$15,000",
+   "headline_es": "15.000 $",
+   "text": "It can pay up to fifteen thousand dollars.",
+   "text_es": "Puede pagar hasta quince mil dólares.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Pays $8,600 to $15,000",
+    "pink": [
+     "$15,000"
+    ],
+    "src": "Mobalytics · Pro-Gamer",
+    "seed": 253,
+    "bg": "photo:media/official/leonida-keys-06.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Paga de 8.600 a 15.000 $",
+    "pink": [
+     "15.000 $"
+    ],
+    "src": "Mobalytics · Pro-Gamer",
+    "seed": 253,
+    "bg": "photo:media/official/leonida-keys-06.jpg"
+   }
+  },
+  {
+   "headline": "FOUND IT?",
+   "headline_es": "¿LO ENCONTRASTE?",
+   "text": "Found it? Comment yes, because",
+   "text_es": "¿Lo encontraste? Comenta sí, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FOUND IT?",
+     "COMMENT YES"
+    ],
+    "pink": [
+     "COMMENT YES"
+    ],
+    "seed": 254
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
+    ],
+    "pink": [
+     "COMENTA SÍ"
+    ],
+    "seed": 254
+   }
+  }
+ ],
+ "spot": 19,
+ "cta": "SPOT #20 NEXT: FOLLOW",
+ "cta_es": "LUGAR #20 PRONTO: SÍGUENOS"
+}

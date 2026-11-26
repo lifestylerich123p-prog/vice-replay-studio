@@ -1,0 +1,203 @@
+{
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "series": "Map Spots",
+ "slug": "gta6-black-bear-where",
+ "title": "GTA 6 Legendary Animals: Where to Find the Black Bear",
+ "short_title": "GTA 6 legendary animals: black bear location 🐻 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 legendary animals: black bear location 🐻 #GTA6 #Shorts",
+  "GTA 6's black bear pays $12K, with a catch #GTA6 #Shorts",
+  "Where is the black bear in GTA 6? #GTA6 #Shorts"
+ ],
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete: 'gta 6 legendary animals locations')",
+ "short_description": "Where to find the black bear, one of GTA 6's unique (\"Snapmatic\") animals: the southern edge of Hamlet, in the swamp country of southern Leonida. It only spawns after Bret Vogel texts you its clue (his hunting questline starts after you meet him in Chapter 2). Guides list its payout at $6,800 to $12,000. No story spoilers.\n\n📍 Map Spot #24 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nSources: Insider Gaming, Mobalytics, Pro-Gamer, Keylento wiki.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: dónde está el OSO negro 🐻 #GTA6 #Shorts",
+  "description": "El oso negro de GTA 6 vive en el borde sur de Hamlet. Solo aparece después de la pista de Bret (desde el capítulo 2). Las guías dicen que paga entre 6.800 y 12.000 dólares. Fuentes: Insider Gaming, Mobalytics.\n\n📍 Lugar #24 de nuestra serie del mapa de GTA 6: todos están en la lista \"GTA 6 Map: Where to Find It\".",
+  "tags": [
+   "GTA 6 oso negro",
+   "GTA 6 animales legendarios",
+   "GTA 6 español",
+   "GTA 6 Hamlet",
+   "GTA 6 secretos"
+  ]
+ },
+ "pinned_comment": "Found it? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Lo encontraste? Responde ✅ — o 😭 si sigues buscando 👇",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts",
+ "tags": [
+  "GTA 6 black bear",
+  "GTA 6 bear location",
+  "GTA 6 legendary animals",
+  "GTA 6 legendary animals locations",
+  "GTA 6 Snapmatic animals",
+  "GTA 6 Hamlet",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6animals"
+ ],
+ "sources": [
+  "Insider Gaming - Every Snapmatic animal location in GTA 6: https://insider-gaming.com/every-snapmatic-animal-location-gta-6-hunting-legendary-animals/",
+  "Mobalytics - All unique animal map locations: https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-unique-animal-locations",
+  "Pro-Gamer - All 11 Snapmatic and legendary animal locations: https://pro-gamer.gg/all-snapmatic-animal-locations-gta-6-legendary-animals-bret-clues-rewards-guide/",
+  "Keylento wiki - All Snapmatic animal locations: https://keylento.app/en/wiki/all-snapmatic-animal-locations-legendary-animals"
+ ],
+ "facts_note": "Nov 26 research: southern edge of Hamlet, payout $6,800-12,000 (Insider Gaming, Mobalytics, Pro-Gamer, Keylento wiki; one guide files it under Grassrivers, same area); needs Bret's clue. Rifles not named (no-guns rule). Read from search summaries: re-check right before upload.",
+ "short": [
+  {
+   "headline": "BLACK BEAR",
+   "headline_es": "OSO NEGRO",
+   "text": "GTA 6's black bear lives just south of Hamlet.",
+   "text_es": "El oso negro de GTA seis vive justo al sur de Hamlet.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 HAS A",
+     "BLACK BEAR"
+    ],
+    "pink": [
+     "BLACK BEAR"
+    ],
+    "sub": "legendary animal",
+    "seed": 261
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 TIENE UN",
+     "OSO NEGRO"
+    ],
+    "pink": [
+     "OSO NEGRO"
+    ],
+    "sub": "animal legendario",
+    "seed": 261
+   }
+  },
+  {
+   "headline": "HAMLET",
+   "headline_es": "HAMLET",
+   "text": "Look on the southern edge of Hamlet.",
+   "text_es": "Busca en el borde sur de Hamlet.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Hamlet",
+    "dy": 0.008,
+    "label": "Black Bear",
+    "n": 1,
+    "src": "Insider Gaming · Mobalytics"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Hamlet",
+    "dy": 0.008,
+    "label": "Oso negro",
+    "n": 1,
+    "src": "Insider Gaming · Mobalytics",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "BRET'S CLUE",
+   "headline_es": "LA PISTA DE BRET",
+   "text": "It only spawns after Bret texts you its clue.",
+   "text_es": "Solo aparece después de que Bret te mande su pista.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Only after Bret's clue text",
+    "pink": [
+     "Bret's clue"
+    ],
+    "src": "Insider Gaming · Mobalytics",
+    "seed": 262,
+    "bg": "photo:media/official/grassrivers-03.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Solo tras la pista de Bret",
+    "pink": [
+     "pista de Bret"
+    ],
+    "src": "Insider Gaming · Mobalytics",
+    "seed": 262,
+    "bg": "photo:media/official/grassrivers-03.jpg"
+   }
+  },
+  {
+   "headline": "$12,000",
+   "headline_es": "12.000 $",
+   "text": "It pays up to twelve thousand dollars.",
+   "text_es": "Paga hasta doce mil dólares.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Pays $6,800 to $12,000",
+    "pink": [
+     "$12,000"
+    ],
+    "src": "Mobalytics · Pro-Gamer",
+    "seed": 263,
+    "bg": "photo:media/official/grassrivers-05.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Paga de 6.800 a 12.000 $",
+    "pink": [
+     "12.000 $"
+    ],
+    "src": "Mobalytics · Pro-Gamer",
+    "seed": 263,
+    "bg": "photo:media/official/grassrivers-05.jpg"
+   }
+  },
+  {
+   "headline": "FOUND IT?",
+   "headline_es": "¿LO ENCONTRASTE?",
+   "text": "Found it? Comment yes, because",
+   "text_es": "¿Lo encontraste? Comenta sí, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FOUND IT?",
+     "COMMENT YES"
+    ],
+    "pink": [
+     "COMMENT YES"
+    ],
+    "seed": 264
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
+    ],
+    "pink": [
+     "COMENTA SÍ"
+    ],
+    "seed": 264
+   }
+  }
+ ],
+ "spot": 24,
+ "cta": "SPOT #25 NEXT: FOLLOW",
+ "cta_es": "LUGAR #25 PRONTO: SÍGUENOS"
+}

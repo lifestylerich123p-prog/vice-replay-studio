@@ -55,7 +55,7 @@ PLACES = {
     "Little Cuba": (676, 747), "VCIA": (580, 798), "Washington Island": (850, 603), "Vespucci Island": (781, 677), "Rialto Islands": (783, 658), "Washington Beach": (875, 622),
     "Ambrosia": (567, 500), "Leonard County": (715, 503), "Belville": (672, 554), "Lake Leonida": (618, 437),
     "Lummox County": (510, 283), "Mount Kalaga": (515, 318), "Millport": (673, 323), "Lake Tallaloko": (643, 287), "Bonanza": (493, 199),
-    "Grayson": (389, 305), "Waning Sands": (756, 452), "Draper Island": (252, 419), "Capri": (294, 738),
+    "Grayson": (389, 305), "Waning Sands": (756, 452), "Draper Island": (252, 419), "Capri": (294, 738), "Belpoint": (180, 769),
     "Breakwater Quarry": (443, 817), "Grassrivers": (461, 928), "Hamlet": (573, 958), "Bluegrass": (573, 885),
     "South Vice-Dale": (632, 945), "Watson Bay": (442, 985), "Mariana County": (421, 1021),
     "Pelican Valley": (533, 1025), "Cottonmouth Lake": (536, 1078), "Gambit Bay": (566, 1106), "Key Lento": (581, 1165),
