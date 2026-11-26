@@ -366,3 +366,11 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   research: re-check each specific name before scripting it.
 - 2026-11-26 (Phase 4, voice): with Whisper "small", Piper es_MX claude scored 0.81 word match vs 0.68 for es_MX ald
   (Unlicense); ald misread plain words, so claude stays the default.
+- 2026-11-26 (Phase 5, Spanish openings): first frames repeated the title and the voice spent 3-6 s on it. Fixed on
+  new Spanish Shorts: the payoff pin opens the video and the first line states the result (gate: question openers
+  blocked). Little Cuba ES now opens on its map pin with the recorded Viral Adam line kept (0 credits). Renderer bug
+  found on the way: the first-card caption skip read the ENGLISH card in Spanish renders, so a Spanish map opener lost
+  its captions; it now reads the card on screen (studio/make_video.py).
+- 2026-11-26 (Phase 5, sources): direct page fetches were refused in this session; facts came from web search
+  summaries naming 2+ sites. Community readings (Balsero = Hialeah, Sahara Arena = Kaseya Center) are labelled
+  community-found and the script says Rockstar hasn't confirmed; disagreements (GTApedia: Miami River) are stated.

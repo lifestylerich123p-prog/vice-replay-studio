@@ -18,6 +18,12 @@ It has its own identity: it is not a translated copy of the English channel. Rea
 - Latino / Miami angles (Bad Bunny, Little Cuba = Little Havana, Vice City vs real Miami): our only Spanish upload
   that drew views (19) was the Bad Bunny one.
 - What failed (12 videos, 40 views): streamer news about English-speaking streamers, plain facts, translated news.
+- Openings (Phase 5 diagnosis, Nov 26): the FIRST FRAME shows the payoff (the pin on Rockstar's map, the place, the
+  answer), never the title again; the first spoken line states the result in under 10 words, no question opener (the
+  gate blocks it) and no 3-6 s of title repetition or "GTA seis + verbo" filler; neutral Spanish over country-only
+  slang unless the episode is about that culture; Latino angles only when the fact is real (Balsero/Hialeah, Little
+  Cuba, Sahara Arena = Kaseya Center), never forced. Voices: keep testing Piper / Kokoro / Viral Adam by % viewed at
+  72 h (studio.xplat "by voice"); no winner from 1-2 videos.
 
 ## How to produce (shared engine, no separate pipeline)
 1. Topics: Spanish-first. A map/secret Short that already exists in English is adapted (not just re-voiced): Spanish
