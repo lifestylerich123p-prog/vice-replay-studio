@@ -366,3 +366,16 @@
   free Kokoro voice for the rest. (5) **No new long videos** until the two search guides (ATM, map secrets) pull
   search views; Shorts only. (6) Owner's gameplay is the biggest lever (reminder sent; recorded radio off, Drive
   folder). (7) **Instagram numbers** in the 1 PM checklist (views per Reel/carousel) to judge the 4-a-day cap.
+- 2026-11-26 11:50 AM (owner "Aprove and check if we have to change something again with views and comments", then
+  "DO IT"): data (studio.learn --mine): map cards 46.6 views/h median vs tier 6.2, versus 4.0, headline 0.7, list 0.2;
+  the 8 AM sunken-treasure map Short ~100 views/h; today's versus + list Shorts at 0 views after 2 h; ~0.5% likes and 0
+  viewer comments even on winners; Spanish channel 37 views in 12 videos. Changes: (1) **3 map/how-to Shorts a day**:
+  the 4 booked versus Shorts (stream wars, vs Red Dead 2, vs GTA 5 Online, vs GTA 5 leads) and 2 fact Shorts (5 things,
+  80 hours) are PARKED in approved_queue.json `paused` (not deleted); their slots get new map finds (tattoo shops Sat
+  Nov 28 11 AM, where to sell jewelry Tue Dec 1 8 AM; Dec 6 10 AM, Dec 7 9:30 + 11 AM, Dec 10 12:30 PM still to
+  fill). Tier lists and quizzes stay. (2) **One-tap comment prompts**: pinned comments on map Shorts = "Found it? Reply
+  ✅ — or 😭 if you're still looking 👇"; map Shorts that ended on an open question now end on "FOUND IT? COMMENT YES"
+  (Spanish lines with paid Viral Adam audio kept). (3) **Spanish YouTube paused until Dec 3**
+  (config/channel.json `spanish_youtube_paused_until`; studio.spend skips Spanish uploads in the window and books
+  winners after it; Spanish-only uploads parked; the already-uploaded price-per-country Short stays). (4) **8:00 AM
+  map test week** (Nov 28-Dec 4): each day's first map Short moved to 8:00 AM; review Dec 5.

@@ -45,6 +45,10 @@ days get under half the views per Short of 2-Short days and no more total views,
 to Find It" playlist in order, pinned first on the channel home); every map Short also goes to the TikTok files in
 Spanish (free Kokoro voice; Viral Adam only for winners while Everygen is low); follow up a taking-off Short the same
 day; no new long videos until the ATM and map-secrets guides pull search views.
+**Owner Nov 26 "DO IT"** (map cards 46.6 views/h vs versus 4.0, list 0.2): **3 map/how-to Shorts a day**, tier lists and
+quizzes stay, no new versus/fact/headline Shorts (parked ones sit in approved_queue.json `paused`); one-tap comment
+prompts ("Found it? Reply ✅ — or 😭"; last card "FOUND IT? COMMENT YES"); Spanish YouTube paused until Dec 3
+(`spanish_youtube_paused_until`); 8:00 AM slot for each day's first map Short, test week Nov 28-Dec 4 (review Dec 5).
 
 ## Rules for this channel
 - **Footage**: everything in `media/` is used as backgrounds. Allowed: official Rockstar screenshots
