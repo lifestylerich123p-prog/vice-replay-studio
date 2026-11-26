@@ -82,14 +82,14 @@
   },
   "caption_style": "animated",
   "voice": "af_heart",
-  "voice_es": "em_alex",
+  "voice_es": "piper:es_MX-claude-high",
   "_voice_note": "Nov 22 owner: \"use the best voice rated\" -> Kokoro af_heart (grade A; am_michael was C+). Kokoro grades no Spanish voice, so Spanish stays em_alex until the owner picks.",
   "shorts_subtitles": false,
   "_shorts_subtitles_note": "Nov 22 night, owner: \"every posting credit must be used posting or answering comments\". Subtitle files cost 400 quota units each and Shorts already have burned-in captions; set true to upload subtitle tracks on Shorts again (long videos always get them).",
   "spanish_winners_only": {
-    "on": true,
+    "on": false,
     "min_views_24h": 150,
-    "_note": "Owner Nov 23 (\"Approve next steps\"): until Vice Replay en Español has an audience, a Spanish version of an English Short is uploaded only if the English one did well in its first 24 h (views >= max(min_views_24h, median 24 h views of our last 7 days)). Spanish-only Shorts (es_only, no English original) are not affected. studio.spend decides; set on=false to go back to EN+ES for every Short."
+    "_note": "Owner Nov 23 (\"Approve next steps\"): until Vice Replay en Español has an audience, a Spanish version of an English Short is uploaded only if the English one did well in its first 24 h (views >= max(min_views_24h, median 24 h views of our last 7 days)). Spanish-only Shorts (es_only, no English original) are not affected. studio.spend decides; set on=false to go back to EN+ES for every Short. | Nov 26: OFF (owner: Vice Replay en Español is its own autonomous GTA 6 channel; every Spanish upload passes the publishing gate instead)."
   },
   "transition_sound": "swell",
   "_transition_sound_note": "Nov 24 owner: didn't like the old noise whoosh between slides. swell (default) | tick | whoosh | none",
@@ -97,13 +97,19 @@
     "on": true,
     "_note": "Nov 24 owner approved: official screenshots (vetted pool, exact-name first) behind lettering cards in videos; trailer clips stay out"
   },
-  "spanish_youtube_paused_until": "2026-12-03",
-  "_spanish_pause_note": "Owner Nov 26 \"DO IT\": no Spanish YouTube uploads until Dec 3 (37 views in 12 videos); Spanish versions go to TikTok. Review Dec 3: resume only if the TikTok Spanish numbers or a winner justify it.",
   "auto_publish": {
     "on": true,
     "max_per_day": 2,
     "consecutive_failures": 0,
     "paused_reason": null,
     "_note": "Owner Nov 26 (Autonomous publishing authorization update): English YouTube Shorts publish automatically at their slot only when studio/approvals.py passes all 10 conditions. Pause: python -m studio.approvals pause \"why\"; two failed uploads in a row pause it automatically."
-  }
+  },
+  "auto_publish_es": {
+    "on": true,
+    "max_per_day": 2,
+    "consecutive_failures": 0,
+    "paused_reason": null,
+    "_note": "Owner Nov 26 (Vice Replay en Español autonomous growth directive): Spanish Shorts publish automatically only when studio/approvals.py passes every check for platform youtube-es (destination channel verified by studio.youtube_es, Spanish render + title, facts, QA, duplicates). Pause: python -m studio.approvals pause \"why\" --platform youtube-es."
+  },
+  "_voice_es_note": "Nov 26: free local Piper voice (Apache-2.0, Mexican Spanish) is the Spanish default; Whisper test: 0.71 word match and 'GTA 6' heard right vs 0.65 for Kokoro em_alex. Everygen Viral Adam (paid) only for winners."
 }

@@ -379,3 +379,13 @@
   (config/channel.json `spanish_youtube_paused_until`; studio.spend skips Spanish uploads in the window and books
   winners after it; Spanish-only uploads parked; the already-uploaded price-per-country Short stays). (4) **8:00 AM
   map test week** (Nov 28-Dec 4): each day's first map Short moved to 8:00 AM; review Dec 5.
+- 2026-11-26 1 PM (owner, three messages): (1) "VICE REPLAY — MASTER OPERATING DIRECTIVE v2.0": audit
+  (docs/AUDIT-2026-11-26.md), map-first 14-day plan (2 English Shorts a day at 8:00 AM + 6:00 PM ET, 70% location
+  guides / 20% map tutorials / 10% experiments), experiments (docs/EXPERIMENTS.md), operations (docs/OPERATIONS.md).
+  (2) "AUTONOMOUS PUBLISHING AUTHORIZATION UPDATE" (supersedes per-video approval): English Shorts publish
+  automatically when studio/approvals.py passes all 10 conditions; holds are reported; 2 failures pause; TikTok and
+  Instagram keep their arrangements. (3) "Vice Replay en Español — Autonomous Growth Directive" (answering which channel
+  the Spanish brief was for: Vice Replay en Español, NOT What If Arena): its own autonomous GTA 6 channel, Spanish pause
+  lifted, winners-only off, publishing through the gate (youtube-es), Vice Replay budget (not What If Arena's $49),
+  no credit purchases. Parked (not deleted) out-of-plan items: versus/fact/tier/list Shorts, the 10-numbers hub,
+  stream-wars long video, Game Awards explainer + 8-noms Short, mission-replay tip.

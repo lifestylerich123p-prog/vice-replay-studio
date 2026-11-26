@@ -126,14 +126,16 @@ said where the store is).
 - **Instagram** (@vice.replaytv, owner approved Nov 19): every uploaded Short and about one carousel/image a day go
   out through `content/learn/reels_queue.json` (max 4 posts/day; campaign clips paused since Meta's Nov 19 ad flag);
   how: `.claude/commands/instagram.md`.
-- **Spanish channel** ("Vice Replay en Español", UCWPnqYqYu9_CLsJ8Bk1MPgQ, connected Nov 22): **winners-only since Nov
-  23** (owner "Approve next steps"; `spanish_winners_only` in config/channel.json): a Spanish version of an English Short
-  goes up only if the English one did well in its first 24 h (`studio.spend` books it in the next 12:30-1:30 PM Spanish
-  slot, or logs it skipped); `studio.youtube_es` refuses the rest unless `--force-es` (owner asks). Spanish-only Shorts
-  (`es_only`) are not affected. Before that rule, an owner "approve" for Shorts posted the English AND Spanish versions
-  (`studio.ship --upload` runs `studio.youtube_es` too); Spanish titles
-  use the Spanish-market style (one CAPS word + one emoji) and `short_pinned_comment_es`; setup steps in `content/owner.md`; channel kit + first uploads in `content/spanish-channel.md`; registry
-  `content/learn/uploads-es.json`.
+- **Spanish channel** ("Vice Replay en Español", UCWPnqYqYu9_CLsJ8Bk1MPgQ): since Nov 26 (owner: "Vice Replay en
+  Español — Autonomous Growth Directive") its OWN autonomous GTA 6 channel for Spanish speakers, not a translated copy:
+  director `.claude/agents/vice-replay-es-director.md`, plan + diagnosis `docs/ES-RECOVERY.md` (12 videos/40 views:
+  wrong topics; secrets, easter eggs, "dónde está" and Miami/Latino angles instead), market
+  `content/learn/market-es-<date>.md`, daily director run 10:23 AM ET. 2 Spanish Shorts a day max at 12:30 PM and
+  7:00 PM ET (test slots), booked as `"es"` slots in approved_queue.json, published automatically ONLY through the gate
+  on platform `youtube-es` (Spanish render + Spanish title, facts, QA, duplicates; `studio.youtube_es` refuses any token
+  that isn't the Spanish channel). Free local Piper voice (`voice_es` piper:es_MX-claude-high); Everygen Viral Adam only
+  for proven winners with a claim. Winners-only rule OFF. Titles: Spanish-market style (one CAPS word + one emoji);
+  registry `content/learn/uploads-es.json`.
 - **TikTok**: the owner posts by hand; Shorts go to the "📱 Vice Replay: TikTok files" chat (see owner.md;
   `studio.ship --tiktok` pushes them to the `tiktok-files` branch).
 - **Campaigns** (Whop/Content Rewards): only campaigns with `owner_approved: true` (set only when the owner approves

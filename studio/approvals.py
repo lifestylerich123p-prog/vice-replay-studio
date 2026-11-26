@@ -88,19 +88,21 @@ def _save(d, path=None):
     path.write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n")
 
 
-def auto_cfg():
+def auto_cfg(platform="youtube-en"):
+    """auto_publish (English) / auto_publish_es (Vice Replay en Español, owner Nov 26: its own autonomous channel)."""
+    key = "auto_publish_es" if platform == "youtube-es" else "auto_publish"
     try:
-        c = json.loads(CONFIG.read_text()).get("auto_publish") or {}
+        c = json.loads(CONFIG.read_text()).get(key) or {}
     except (OSError, ValueError):
         c = {}
     return {"on": bool(c.get("on")), "max_per_day": int(c.get("max_per_day", 2)), "paused_reason": c.get("paused_reason"),
             "failures": int(c.get("consecutive_failures", 0))}
 
 
-def _set_cfg(**kw):
+def _set_cfg(platform="youtube-en", **kw):
     raw = CONFIG.read_text()
     cfg = json.loads(raw)
-    cfg.setdefault("auto_publish", {}).update(kw)
+    cfg.setdefault("auto_publish_es" if platform == "youtube-es" else "auto_publish", {}).update(kw)
     indent = 2 if raw.startswith('{\n  "') else (1 if raw.startswith('{\n "') else None)
     CONFIG.write_text(json.dumps(cfg, ensure_ascii=False, indent=indent) + "\n")
 
@@ -176,9 +178,17 @@ def _when(publish):
     return dt.datetime.strptime(f"{d} {t}", "%Y-%m-%d %I:%M %p").replace(tzinfo=ET)
 
 
-def _video_path(slug, item):
+def _video_path(slug, item, platform="youtube-en"):
     out = ROOT / "output" / slug
-    return out / (f"{slug}.mp4" if item == "main" else f"{slug}-short" + ("" if item == "short" else f"-{item}") + ".mp4")
+    if item == "main":
+        return out / f"{slug}.mp4"
+    return out / (f"{slug}-short" + ("" if item == "short" else f"-{item}") + ("-es" if platform == "youtube-es" else "")
+                  + ".mp4")
+
+
+def postguard_norm(t):
+    import re as _re
+    return _re.sub(r"[^a-z0-9áéíóúñü$%']+", " ", _re.sub(r"#\w+", "", (t or "").lower())).strip()
 
 
 def _title_desc(video):
@@ -209,15 +219,20 @@ def segments(ep, item):
     return next((s.get("segments", []) for s in ep.get("shorts", []) if s.get("id") == item), [])
 
 
-def plan_format_ok(ep, item):
-    """Condition 8 (directive v2.0 content allocation): location guides, map tutorials, or a marked experiment."""
+def plan_format_ok(ep, item, platform="youtube-en"):
+    """Condition 8. English (directive v2.0 allocation): location guides, map tutorials, or a marked experiment.
+    Spanish (owner Nov 26, its own identity): secrets, guides, tips, quizzes, comparisons, Miami vs Vice City,
+    Latino humour... anything with a real angle; only bare headline/news cards are held."""
     types = {(s.get("chart") or {}).get("type") for s in segments(ep, item)}
+    if platform == "youtube-es":
+        return bool(types - {None, "headline"}) or bool(ep.get("experiment"))
     return "map" in types or ep.get("format") in ("tips", "tutorial") or bool(ep.get("experiment"))
 
 
-def _registry():
+def _registry(platform="youtube-en"):
+    name = "uploads-es.json" if platform == "youtube-es" else "uploads.json"
     try:
-        return json.loads((ROOT / "content" / "learn" / "uploads.json").read_text())
+        return json.loads((ROOT / "content" / "learn" / name).read_text())
     except (OSError, ValueError):
         return {}
 
@@ -260,11 +275,10 @@ def checks(ep_path, item="short", platform="youtube-en", publish=None, now=None,
     ep = json.loads(ep_path.read_text())
     slug, now = ep["slug"], now or dt.datetime.now(ET)
     block, review, info = [], [], {}
-    cfg = auto_cfg()
+    cfg = auto_cfg(platform)
     # 10: scope and switches
-    if platform != "youtube-en":
-        review.append("auto-publishing covers the English YouTube channel only (Spanish YouTube is paused; TikTok and "
-                      "Instagram keep their own arrangements)")
+    if platform not in ("youtube-en", "youtube-es"):
+        review.append("auto-publishing covers YouTube only (TikTok and Instagram keep their own arrangements)")
     if not cfg["on"]:
         review.append(f"auto-publishing is paused ({cfg['paused_reason'] or 'switched off'})")
     when = _when(publish)
@@ -289,14 +303,25 @@ def checks(ep_path, item="short", platform="youtube-en", publish=None, now=None,
     elif (target - dt.date.fromisoformat(fc)).days > 2:
         review.append(f"facts last re-checked {fc}: re-check within 2 days of the slot")
     # 8: plan / value
-    if not plan_format_ok(ep, item):
+    if not plan_format_ok(ep, item, platform):
         review.append("format outside the 14-day plan (location guide, map tutorial or marked experiment)")
     # 9: tests
     ok, why = tests_ok(now)
     if not ok:
         review.append(why)
     # render: exists, fresh, 1080x1920, audio, 8-60 s
-    video = _video_path(slug, item)
+    video = _video_path(slug, item, platform)
+    if platform == "youtube-es":  # the Spanish channel only ever gets a Spanish render with Spanish text everywhere
+        segs = segments(ep, item)
+        if not segs or not all(x.get("text_es") for x in segs):
+            block.append("a segment has no Spanish line (text_es): no Spanish render possible")
+        missing = [x["audio_es"] for x in segs if x.get("audio_es") and not _file_hash(x["audio_es"])]
+        if missing:
+            block.append(f"Spanish voice files missing: {missing[:2]}")
+        es_meta = (ep.get("short_es") if item == "short" else
+                   next((x.get("es") for x in ep.get("shorts", []) if x.get("id") == item), None)) or ep.get("es") or {}
+        if not es_meta.get("title"):
+            block.append("no Spanish title (short_es.title)")
     if not video.exists():
         block.append(f"no rendered video {video.name}")
     else:
@@ -312,7 +337,11 @@ def checks(ep_path, item="short", platform="youtube-en", publish=None, now=None,
         info["video"], info["duration"] = str(video.relative_to(ROOT)), round(p.get("dur", 0), 1)
         # 6: title and description
         title, desc = _title_desc(video)
-        want = ep.get("short_title") if item == "short" else None
+        want = ep.get("short_title") if item == "short" and platform == "youtube-en" else None
+        if platform == "youtube-es":
+            want = ((ep.get("short_es") or {}).get("title") if item == "short" else None)
+            if title and title.strip() == (ep.get("short_title") or "").strip():
+                block.append("the Spanish render carries the English title")
         if not title or not desc:
             block.append("rendered title/description missing (render with studio.ship)")
         else:
@@ -320,11 +349,11 @@ def checks(ep_path, item="short", platform="youtube-en", publish=None, now=None,
                 review.append(f"title doesn't start with GTA 6: {title!r}")
             if len(title) > 100:
                 block.append("title longer than 100 characters")
-            if want and title.strip() != want.strip():
+            if want and title.strip() != want.strip() and postguard_norm(title) != postguard_norm(want):
                 block.append(f"rendered title {title!r} differs from the episode's {want!r}: re-render")
         info["title"], info["description"] = title, desc
     # 7: duplicates
-    reg = _registry()
+    reg = _registry(platform)
     if any((r.get("slug"), r.get("item")) == (slug, item) for r in reg.values()):
         block.append("already uploaded (registry)")
     if info.get("title") and any((r.get("title") or "").strip() == info["title"].strip() for r in reg.values()):
@@ -374,7 +403,7 @@ def require(slug, item, platform, title=None, publish=None, video=None, ep=None,
     """What every uploader asks right before sending. Returns the record or raises Blocked."""
     d = store if store is not None else _load()
     rec = d.get(key_of(slug, item, platform))
-    cfg = auto_cfg()
+    cfg = auto_cfg(platform)
     if not cfg["on"]:
         raise Blocked(f"auto-publishing is paused ({cfg['paused_reason'] or 'switched off'})")
     if not rec:
@@ -425,18 +454,18 @@ def reconcile(slug, item, platform, found_id=None):
     return rec
 
 
-def upload_result(ok, note=""):
-    """Count failures in a row; two pause auto-publishing (directive section 7)."""
-    cfg = auto_cfg()
+def upload_result(ok, note="", platform="youtube-en"):
+    """Count failures in a row; two pause that channel's auto-publishing (directive section 7)."""
+    cfg = auto_cfg(platform)
     if ok:
         if cfg["failures"]:
-            _set_cfg(consecutive_failures=0)
+            _set_cfg(platform, consecutive_failures=0)
         return
     n = cfg["failures"] + 1
     if n >= 2:
-        _set_cfg(consecutive_failures=n, on=False, paused_reason=f"{n} upload failures in a row: {note[:120]}")
+        _set_cfg(platform, consecutive_failures=n, on=False, paused_reason=f"{n} upload failures in a row: {note[:120]}")
     else:
-        _set_cfg(consecutive_failures=n)
+        _set_cfg(platform, consecutive_failures=n)
 
 
 def verify(now=None):
@@ -505,14 +534,16 @@ def main():
         for line in verify() or ["nothing due to verify"]:
             print(line)
     elif a.cmd == "pause":
-        _set_cfg(on=False, paused_reason=a.target or "paused by hand")
-        print("auto-publishing paused")
+        _set_cfg(a.platform, on=False, paused_reason=a.target or "paused by hand")
+        print(f"auto-publishing paused ({a.platform})")
     elif a.cmd == "resume":
-        _set_cfg(on=True, paused_reason=None, consecutive_failures=0)
-        print("auto-publishing on")
+        _set_cfg(a.platform, on=True, paused_reason=None, consecutive_failures=0)
+        print(f"auto-publishing on ({a.platform})")
     else:
-        cfg = auto_cfg()
-        print(f"auto-publishing: {'ON' if cfg['on'] else 'PAUSED: ' + str(cfg['paused_reason'])}, max {cfg['max_per_day']}/day")
+        for pf in ("youtube-en", "youtube-es"):
+            cfg = auto_cfg(pf)
+            print(f"auto-publishing {pf}: {'ON' if cfg['on'] else 'PAUSED: ' + str(cfg['paused_reason'])}, "
+                  f"max {cfg['max_per_day']}/day")
         for k, r in sorted(_load().items(), key=lambda kv: str(kv[1].get("publish"))):
             print(f"{r.get('state', '?'):14} {k:52} {r.get('publish')}  {(r.get('title') or '')[:50]}")
             for x in (r.get("blockers") or []) + (r.get("reviews") or []):

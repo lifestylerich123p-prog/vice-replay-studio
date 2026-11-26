@@ -254,27 +254,30 @@ def upload():
         print(("tests passed: " if passed else "! tests FAILED (nothing posts until they pass): ") + tail)
     held = []
     for it, ne, ns in plan():
-        if ns:  # Spanish YouTube is never auto-published (owner Nov 26); the owner asks for it in chat
-            print(f"- {it['slug']}: Spanish YouTube not auto-published (owner Nov 26)")
-            ns = False
-        if not ne:
-            continue
         for cmd in renders_needed(it, ne, ns):
             print("$", " ".join(cmd), "(video missing or older than its episode: rendering it first)")
             subprocess.run(cmd, cwd=ROOT)
-        try:
-            rec = approvals.evaluate(ROOT / "episodes" / f"{it['slug']}.json", it.get("item", "short"), "youtube-en",
-                                     tuple(it["en"]))
-        except approvals.Blocked as e:
-            print(f"! hold {it['slug']}: {e}")
-            held.append((it, str(e)))
+        # each channel is checked on its own (English: 8 AM / 6 PM map plan; Spanish: its own identity, owner Nov 26)
+        for lang, need, platform in (("en", ne, "youtube-en"), ("es", ns, "youtube-es")):
+            if not need:
+                continue
+            try:
+                rec = approvals.evaluate(ROOT / "episodes" / f"{it['slug']}.json", it.get("item", "short"), platform,
+                                         tuple(it[lang]))
+            except approvals.Blocked as e:
+                rec = {"state": "BLOCKED", "blockers": [str(e)]}
+            if rec["state"] != "AUTO_APPROVED":
+                reasons = "; ".join(rec.get("blockers") or rec.get("reviews") or [])
+                print(f"! hold {it['slug']} {platform} ({rec['state']}): {reasons[:300]}")
+                held.append((dict(it, en=it[lang]), reasons))
+                if lang == "en":
+                    ne = False
+                else:
+                    ns = False
+                continue
+            print(f"AUTO_APPROVED {it['slug']} {platform} for {' '.join(it[lang])} ET: all publishing conditions passed")
+        if not (ne or ns):
             continue
-        if rec["state"] != "AUTO_APPROVED":
-            reasons = "; ".join(rec.get("blockers") or rec.get("reviews") or [])
-            print(f"! hold {it['slug']} ({rec['state']}): {reasons[:300]}")
-            held.append((it, reasons))
-            continue
-        print(f"AUTO_APPROVED {it['slug']} for {' '.join(it['en'])} ET: all publishing conditions passed")
         for cmd in commands(it, ne, ns):
             print("$", " ".join(cmd))
             r = subprocess.run(cmd, cwd=ROOT)

@@ -25,7 +25,7 @@ import json
 import sys
 from pathlib import Path
 
-from . import postguard
+from . import approvals, postguard
 from .review_page import extra_time, times_for
 from .youtube_upload import (ET, ROOT, add_to_playlist, clean_tags, comment, req, slot, srt_from_timings, token,
                              shorts_subtitles, token_for, upload, upload_caption, yt_safe)
@@ -236,13 +236,33 @@ def main():
             continue
         when = a.at or (short_t if key == "short" else news_t if key == "news" else extra_time(day))
         publish_at = slot(day, when)
-        desc = yt_safe((es.get("description") or "").strip() + f"\n\n{SITE_ES}\n{EN_LINK}\n\n{NOT_AFFILIATED}")
+        # Nov 26 (owner: connect Spanish videos with vicereplay.com): map Shorts point to the Spanish interactive map
+        has_map = any((x.get("chart_es") or x.get("chart") or {}).get("type") == "map" for x in ep.get("short") or [])
+        site = ("📍 Mapa interactivo de GTA 6 (todos los lugares): https://vicereplay.com/es/guias/mapa-gta-6/\n"
+                if has_map else "") + SITE_ES
+        desc = yt_safe((es.get("description") or "").strip() + f"\n\n{site}\n{EN_LINK}\n\n{NOT_AFFILIATED}")
         # the topic's own Spanish tags first (es.tags / tags_es), then the channel basics (Nov 22: every Spanish
         # upload had the same 6 generic tags)
         tags = clean_tags(es.get("tags") or ep.get("tags_es"), base=TAGS_ES)
+        # Owner Nov 26: Vice Replay en Español publishes on its own, ONLY through the publishing gate (studio/approvals.py)
+        approvals.reconcile(slug, key, "youtube-es")
+        try:
+            approvals.require(slug, key, "youtube-es", title=title, video=video, publish=(day.isoformat(), when))
+        except approvals.Blocked as e:
+            print(f"BLOCKED {key} (es): {e}")
+            continue
         print(f"uploading {key} (es): {title} -> {'now' if not publish_at else when + ' ET'}")
-        v = upload(tok, video, title, desc, tags, publish_at, lang="es")
+        approvals.set_state(slug, key, "youtube-es", "UPLOADING", "upload started")
+        try:
+            v = upload(tok, video, title, desc, tags, publish_at, lang="es")
+        except BaseException as e:
+            approvals.set_state(slug, key, "youtube-es", "FAILED", f"upload error: {str(e)[:160]}")
+            approvals.upload_result(False, f"{slug} {key}: {str(e)[:100]}", "youtube-es")
+            raise
         vid = v["id"]
+        approvals.set_state(slug, key, "youtube-es", "SCHEDULED" if publish_at else "PUBLISHED",
+                            f"uploaded, scheduled {day} {when} ET" if publish_at else "uploaded, public now", video_id=vid)
+        approvals.upload_result(True, platform="youtube-es")
         done[key] = {"id": vid, "url": f"https://www.youtube.com/watch?v={vid}", "title": title,
                      "scheduled_et": when if publish_at else "published now"}
         done_file.write_text(json.dumps(done, indent=2, ensure_ascii=False))

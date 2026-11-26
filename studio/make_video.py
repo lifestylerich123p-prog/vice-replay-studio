@@ -66,6 +66,32 @@ def kokoro_tts(text, voice, speed, wav):
     return wav
 
 
+PIPER_URL = "https://huggingface.co/rhasspy/piper-voices/resolve/main/{lang}/{region}/{name}/{quality}/"
+
+
+def piper_tts(text, voice, speed, wav):
+    """Piper: free open-source neural voice that runs locally (owner Nov 26: natural Spanish narration without paid
+    credits). voice = "piper:es_MX-claude-high" (Apache-2.0; Nov 26 test: Whisper heard "GTA 6" correctly, 0.71 word
+    match vs 0.65 for Kokoro em_alex). The model (~63 MB) downloads once into assets/voice/ (not committed)."""
+    name = voice.split(":", 1)[1]
+    locale, speaker, quality = name.rsplit("-", 2)[0], name.rsplit("-", 2)[1], name.rsplit("-", 2)[2]
+    model = VOICE_DIR / f"{name}.onnx"
+    if not model.exists():
+        import urllib.request
+        VOICE_DIR.mkdir(parents=True, exist_ok=True)
+        base = PIPER_URL.format(lang=locale.split("_")[0], region=locale, name=speaker, quality=quality)
+        for f in (f"{name}.onnx", f"{name}.onnx.json"):
+            print(f"  downloading voice model {f} (one time)...")
+            urllib.request.urlretrieve(base + f, VOICE_DIR / (f + ".part"))
+            (VOICE_DIR / (f + ".part")).rename(VOICE_DIR / f)
+    length = 1 / max(0.5, speed)  # piper's --length_scale: below 1 = faster
+    r = subprocess.run([sys.executable, "-m", "piper", "-m", str(model), "-f", str(wav), "--length_scale", f"{length:.3f}"],
+                       input=text, text=True, capture_output=True)
+    if r.returncode or not Path(wav).exists() or Path(wav).stat().st_size < 1000:
+        raise RuntimeError(f"piper failed: {r.stderr[-200:]}")
+    return wav
+
+
 def http_tts(url, headers, payload, out):
     import os
     import urllib.request
@@ -101,6 +127,13 @@ def tts(text, voice, rate, out_base):
     """Voice engines: "eleven:<voice_id>" (ElevenLabs) and "openai:<voice>" (OpenAI) are paid APIs;
     Kokoro voices (am_*, af_*, bm_*, bf_*) run locally for free; en-US-*Neural voices use Microsoft
     edge-tts (needs a normal internet connection). Falls back to robotic espeak-ng."""
+    if voice.startswith("piper:"):  # free local voice (Spanish default since Nov 26)
+        try:
+            speed = 1 + int(rate.strip("%+")) / 100 if rate.strip("%+-").isdigit() else 1.08
+            return piper_tts(text, voice, speed, out_base.with_suffix(".wav"))
+        except Exception as e:
+            print(f"  ! Piper voice failed ({type(e).__name__}: {e}); using Kokoro em_alex")
+            voice = "em_alex"
     if ":" in voice:
         try:
             return premium_tts(text, voice, out_base)

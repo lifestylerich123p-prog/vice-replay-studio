@@ -23,7 +23,8 @@ def world(tmp_path, monkeypatch):
     monkeypatch.setattr(ap, "CONFIG", tmp_path / "channel.json")
     (tmp_path / "content" / "learn").mkdir(parents=True)
     (tmp_path / "content" / "learn" / "uploads.json").write_text("{}")
-    ap.CONFIG.write_text(json.dumps({"auto_publish": {"on": True, "max_per_day": 2}}))
+    ap.CONFIG.write_text(json.dumps({"auto_publish": {"on": True, "max_per_day": 2},
+                                     "auto_publish_es": {"on": True, "max_per_day": 2}}))
     ep = {"slug": "gta6-x", "short_title": "GTA 6 x location 🗺️ #GTA6 #Shorts", "short_description": "Where x is.",
           "sources": ["A - a", "B - b"], "short": [{"text": "X is here.", "chart": {"type": "kinetic"}},
                                                     {"text": "In Key Lento.", "chart": {"type": "map", "at": "Key Lento"}}]}
@@ -115,7 +116,7 @@ def test_plan_format_tests_and_limits(world, monkeypatch):
     assert any("14-day plan" in x for x in evaluate(world)["reviews"])
     ap.TESTS.write_text(json.dumps({"passed": False}))
     assert any("test suite" in x for x in evaluate(world)["reviews"])
-    assert any("English YouTube" in x for x in ap.evaluate(world["ep"], "short", "youtube-es", SLOT, now=NOW)["reviews"])
+    assert any("YouTube only" in x for x in ap.evaluate(world["ep"], "short", "instagram", SLOT, now=NOW)["reviews"])
 
 
 def test_two_failures_pause_auto_publishing(world):
@@ -144,3 +145,31 @@ def test_fact_recheck_does_not_change_the_fingerprint(world):
     before = ap.spec_hash(ep, "short")
     ep["facts_checked"] = "2026-11-27"
     assert ap.spec_hash(ep, "short") == before
+
+
+def test_spanish_channel_needs_a_spanish_render_and_title(world):
+    """Owner Nov 26: Vice Replay en Español publishes on its own, never with English text or the English title."""
+    ep = json.loads(world["ep"].read_text())
+    (world["out"] / "gta6-x-short-es.mp4").write_bytes(b"video-es")
+    (world["out"] / "gta6-x-short-es.txt").write_text(f"TITLE\n{ep['short_title']}\n\nDESCRIPTION\nDónde está x.\n")
+    r = ap.evaluate(world["ep"], "short", "youtube-es", ("2026-11-28", "12:30 PM"), now=NOW)
+    assert r["state"] == "BLOCKED"
+    assert any("Spanish line" in x for x in r["blockers"]) and any("Spanish title" in x for x in r["blockers"])
+    ep["short_es"] = {"title": "GTA 6: dónde está X 🗺️ #GTA6 #Shorts"}
+    for seg in ep["short"]:
+        seg["text_es"] = "Está aquí."
+    world["ep"].write_text(json.dumps(ep))
+    (world["out"] / "gta6-x-short-es.txt").write_text(f"TITLE\n{ep['short_es']['title']}\n\nDESCRIPTION\nDónde.\n")
+    (world["out"] / "gta6-x-short-es.mp4").write_bytes(b"video-es2")
+    r = ap.evaluate(world["ep"], "short", "youtube-es", ("2026-11-28", "12:30 PM"), now=NOW)
+    assert r["state"] == "AUTO_APPROVED", r
+    # each channel has its own approval: the English one is still unchecked
+    with pytest.raises(ap.Blocked):
+        ap.require("gta6-x", "short", "youtube-en", now=NOW)
+    ap.require("gta6-x", "short", "youtube-es", publish=("2026-11-28", "12:30 PM"), now=NOW)
+
+
+def test_spanish_pause_is_separate(world):
+    ap.upload_result(False, "x", "youtube-es")
+    ap.upload_result(False, "y", "youtube-es")
+    assert not ap.auto_cfg("youtube-es")["on"] and ap.auto_cfg("youtube-en")["on"]
