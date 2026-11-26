@@ -72,3 +72,16 @@ the exact file that passed QA right before uploading, and only auto-publishes at
 summarised by several API guides (Google's own page could not be opened from the cloud session; confirm in Google
 Cloud Console → APIs → YouTube Data API v3 → Quotas). The general 10,000-unit pool now only pays for playlists,
 comments, thumbnails, reads and searches. `studio/quota.py` and `studio/spend.py` were updated Nov 26.
+
+## Phase 7 operational settings: where each one lives (no duplicate config files)
+| Area (owner Phase 7 #33) | Where it is set |
+|---|---|
+| channels, autonomous publishing, slots, caps, emergency stop | config/channel.json `auto_publish`, `auto_publish_es` (`python -m studio.approvals pause/resume`) |
+| fact / rights / identity / hash-bound authorization / duplicates / calendar | studio/approvals.py (10 conditions), studio/sources.py (`claims_required_from`), studio.calcheck |
+| affiliate marketing (account, properties, tracking ID, disclosures, compat, rules) | content/affiliate.json + studio/affiliate.py |
+| comments | studio/comments.py, ledger content/learn/our-comments.json |
+| website | tools/site_guides.py, site/*.json, studio/sitelinks.py |
+| credits (fresh balance, reservations, buffer 5, no purchases) | studio/credits.py, studio/everygen_claim.py |
+| analytics (separate channels/platforms, review ages 1/24/72/168/672 h) | studio/xplat.py, studio/learn.py, content/learn/searchconsole-*.json |
+| security (no secrets in git, least privilege) | .gitignore, environment network secrets, docs/WEBSITE-ANALYTICS.md token scopes |
+| business monitoring | python -m studio.cycle, studio.status, studio.doctor, 1 PM report |

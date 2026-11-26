@@ -70,6 +70,53 @@
     ]
   },
   "default_sets": [],
-  "account_status": "unconfirmed",
-  "account_status_note": "Owner Nov 26 Phase 6: no affiliate links anywhere until the owner confirms in Associates Central that the account is open, the tax interview is done and a payment method is set. Then set 'active' (python -m studio.affiliate status)."
+  "account_status": "active",
+  "account_status_note": "Owner Phase 7 (Nov 26): 'Amazon Associates account: confirmed active and in good standing'. Account standing is the owner's confirmation; each PROPERTY still needs evidence it is listed in Associates Central (properties below).",
+  "properties": {
+    "vicereplay.com": {
+      "status": "listed",
+      "evidence": "content/owner.md: the site's bio link page 'is listed in Amazon Associates' (owner, Nov 2026)"
+    },
+    "youtube-en": {
+      "status": "unverified",
+      "url": "https://www.youtube.com/@ViceReplayTV-q8s",
+      "evidence": null,
+      "to_verify": "Associates Central > Account > Edit your website and mobile app list: is this channel listed?"
+    },
+    "youtube-es": {
+      "status": "unverified",
+      "url": "https://www.youtube.com/channel/UCWPnqYqYu9_CLsJ8Bk1MPgQ",
+      "evidence": null,
+      "to_verify": "same list"
+    },
+    "instagram": {
+      "status": "unverified",
+      "url": "https://www.instagram.com/vice.replaytv/",
+      "evidence": null,
+      "to_verify": "same list"
+    },
+    "tiktok": {
+      "status": "not-used",
+      "evidence": "TikTok posts are manual; no Amazon links there"
+    }
+  },
+  "tracking_id": {
+    "id": "vicereplay-20",
+    "marketplace": "amazon.com (US)",
+    "verified": "owner-confirmed account; ID used on the site since Nov 2026; per-ID click counts need Associates Central reports (owner login)"
+  },
+  "disclosure_es": "Como afiliado de Amazon, gano una comisión por las compras que cumplen los requisitos (As an Amazon Associate I earn from qualifying purchases).",
+  "heading_es": "EQUIPO PARA GTA 6 (enlaces de afiliado)",
+  "rules": {
+    "prices": "none typed by us (Amazon: prices only from Amazon-served links/API)",
+    "images": "no Amazon product images stored or uploaded",
+    "links": "direct amazon.com links only; never through /v/ or third-party shorteners",
+    "placement": "disclosure at the top of the link block / first lines of a description; spoken in the video when a product is recommended on screen",
+    "verification": "search-summary-only (Nov 26): affiliate-program.amazon.com isn't reachable from this environment"
+  },
+  "compat": {
+    "storage": "PS5: M.2 2230-22110 PCIe Gen4 NVMe, 250 GB-8 TB, heatsink (Sony support page); Xbox Series X|S: Seagate/WD expansion cards only",
+    "game": "GTA VI PS5 / Xbox Series X|S listings",
+    "gear": "DualSense (PS5), wired/wireless gaming headsets, capture cards for console recording"
+  }
 }

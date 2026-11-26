@@ -8,6 +8,8 @@ from unittest import mock
 from studio import affiliate, comments, cycle
 
 ACTIVE = {"enabled": True, "account_status": "active", "tag": "vicereplay-20", "heading": "GEAR (affiliate links)",
+          "properties": {"youtube-en": {"status": "listed"}, "vicereplay.com": {"status": "listed"}},
+          "compat": {"storage": "PS5 M.2 Gen4", "game": "x", "gear": "x"},
           "disclosure": "As an Amazon Associate I earn from qualifying purchases.",
           "sets": {"storage": [["PS5 storage upgrade (2TB SSD)", "https://www.amazon.com/s?k=ps5+ssd"]],
                    "deals": [["DualSense (about $54 this week)", "https://www.amazon.com/dp/X"]]}}
@@ -16,6 +18,20 @@ SSD = "PS5 storage: https://www.amazon.com/s?k=ps5+ssd&tag=vicereplay-20 (affili
 
 
 class AffiliateTest(unittest.TestCase):
+    def test_confirmed_account_but_unlisted_property_gets_no_links(self):
+        c = dict(ACTIVE, properties={"vicereplay.com": {"status": "listed"}, "youtube-en": {"status": "unverified"}})
+        ep = {"title": "GTA 6 storage: how much space", "affiliate": ["storage"]}
+        self.assertEqual(affiliate.block(ep, c, "youtube-en"), [])
+        self.assertTrue(affiliate.url("https://www.amazon.com/dp/X", c, "vicereplay.com").endswith("tag=vicereplay-20"))
+        self.assertTrue(any("isn't verified" in p for p in affiliate.check(SSD, "GTA 6 SSD storage", c, "youtube-en")))
+
+    def test_nine_check_placement(self):
+        ok = affiliate.placement(SSD, "GTA 6 install size: free up SSD storage", "vicereplay.com", ACTIVE)
+        self.assertTrue(affiliate.affiliate_eligible(ok), ok.failures())
+        bad = affiliate.placement(SSD + " $54", "GTA 6 ATM robbery guide", "tiktok", ACTIVE)
+        self.assertEqual(set(bad.failures()) >= {"product_relevant", "platform_allowed", "program_compliant",
+                                                 "property_verified"}, True)
+
     def test_unconfirmed_account_blocks_every_link(self):
         self.assertIn("unconfirmed", affiliate.check(SSD, "GTA 6 storage size: 150 GB SSD", UNCONFIRMED)[0])
         self.assertEqual(affiliate.block({"affiliate": ["storage"], "title": "GTA 6 storage size"}, UNCONFIRMED), [])

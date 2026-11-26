@@ -237,7 +237,7 @@ def page(path, title, desc, body, image=None, jsonld=None, lang="en", canonical=
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in jsonld)
     if lang == "es":
         menu = f'<a href="/es/guias/gta-6-lanzamiento-en-vivo/">Noticias</a><a href="/es/guias/mapa-gta-6/">Mapa</a><a href="/es/">Guías</a><a href="/es/equipo/">Equipo</a><a href="{YT_ES}" target="_blank" rel="noopener">YouTube</a><a href="/{ALT.get(path, "")}">EN</a>'
-        foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/es/acerca/">Quiénes somos</a> · <a href="/es/guias/mapa-gta-6/">Mapa de GTA 6</a> · <a href="/privacy/" hreflang="en">Privacidad</a> · <a href="/terms/" hreflang="en">Términos</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como Afiliado de Amazon, gano con las compras que califican: algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
+        foot = 'Negocios y patrocinios: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/es/acerca/">Quiénes somos</a> · <a href="/es/guias/mapa-gta-6/">Mapa de GTA 6</a> · <a href="/privacy/" hreflang="en">Privacidad</a> · <a href="/terms/" hreflang="en">Términos</a><br>Vice Replay es un canal de fans y no está afiliado con Rockstar Games ni con Take-Two Interactive. Grand Theft Auto y GTA son marcas de Take-Two Interactive. Como afiliado de Amazon, gano una comisión por las compras que cumplen los requisitos (As an Amazon Associate I earn from qualifying purchases): algunos enlaces de este sitio son de afiliado, sin costo extra para ti.'
     else:
         menu = f'<a href="/guides/gta-6-launch-live/">News</a><a href="/guides/gta-6-map-leonida-places/">Map</a><a href="/guides/">Guides</a><a href="/gear/">Gear</a><a href="{YT}" target="_blank" rel="noopener">YouTube</a>' + (f'<a href="/{ALT[path]}" hreflang="es">ES</a>' if path in ALT else "")
         foot = 'Business &amp; sponsors: <a href="mailto:contact@vicereplay.com">contact@vicereplay.com</a> · <a href="/contact/">Work with us</a> · <a href="/about/">About us</a> · <a href="/guides/gta-6-map-leonida-places/">GTA 6 map</a> · <a href="/links/">All our links</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a><br>Vice Replay is a fan channel and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. As an Amazon Associate I earn from qualifying purchases: some links on this site are affiliate links, at no extra cost to you.'
@@ -414,8 +414,9 @@ ES_GEAR = [  # Nov 24 review: Spanish pages showed the English affiliate box, di
     ("Xbox Series X|S storage expansion card", "Tarjeta de expansión de almacenamiento para Xbox Series X|S"),
     ("PS5 DualSense controller", "Mando DualSense de PS5"), ("Gaming headset (PS5 / Xbox)", "Auriculares gaming (PS5 / Xbox)"),
     ("Affiliate links: as an Amazon Associate I earn from qualifying purchases, at no extra cost to you. We haven't tested these "
-     "products; check reviews and compatibility before you buy.", "Enlaces de afiliado: como Afiliado de Amazon, gano con las compras "
-     "que califican, sin costo extra para ti. No hemos probado estos productos; revisa opiniones y compatibilidad antes de comprar."),
+     "products; check reviews and compatibility before you buy.", "Enlaces de afiliado: como afiliado de Amazon, gano una comisión por "
+     "las compras que cumplen los requisitos (As an Amazon Associate I earn from qualifying purchases), sin costo extra para ti. "
+     "No hemos probado estos productos; revisa opiniones y compatibilidad antes de comprar."),
     ('<a href="/gear/">All gear picks</a>', '<a href="/es/equipo/">Todo nuestro equipo</a>'),
     ("If you're short on space for the 212 GB install, these searches show current options and prices:",
      "Si te falta espacio para los 212 GB, estas búsquedas muestran opciones y precios actuales:"),
@@ -1025,7 +1026,7 @@ page("es/equipo/", "Equipo para GTA 6 (Amazon) · Vice Replay", "Equipo para GTA
      banner('Equipo para <span>GTA&nbsp;6</span>', 'deals-gear')
      + '<p class="lede">Lo que más nos preguntan: espacio para instalar GTA 6, control, audífonos y el juego. Los botones buscan en Amazon.com con precios actuales.</p>'
      + f'<div class="box"><h3>Equipo para GTA 6 (enlaces de afiliado)</h3><div class="btns">{_es_items}</div>'
-     + '<p class="sources" style="margin:10px 0 0">Enlaces de afiliado: como Afiliado de Amazon gano con las compras que califican, sin costo extra para ti. '
+     + '<p class="sources" style="margin:10px 0 0">Enlaces de afiliado: como afiliado de Amazon, gano una comisión por las compras que cumplen los requisitos (As an Amazon Associate I earn from qualifying purchases), sin costo extra para ti. '
        'No hemos probado estos productos: revisa reseñas y compatibilidad antes de comprar. Los enlaces llevan a Amazon.com (Estados Unidos); '
        'desde México u otros países revisa el envío y el precio final.</p></div>'
      + '<p>¿Sin espacio para GTA 6? Antes de comprar, prueba lo gratis: <a href="/es/guias/espacio-gta-6/">nuestra guía de espacio</a>.</p>', lang="es")

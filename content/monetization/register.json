@@ -14,7 +14,18 @@
   "disclosure": "Nothing extra for YPP itself. Any paid promotion inside a video still needs Studio's 'My video contains paid promotion' box plus an early disclosure in the video, spoken or on screen (FTC).",
   "payment": "Paid through AdSense for YouTube every month once the payments-account balance passes the threshold (USD 100 in AdSense's threshold table). Identity and address checks happen first, at a lower balance (support.google.com/adsense/answer/1709871).",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.google.com/youtube/answer/72851", "https://support.google.com/youtube/answer/12843009", "https://support.google.com/youtube/answer/13429240", "https://support.google.com/youtube/answer/72857", "https://support.google.com/youtube/answer/7101720", "https://support.google.com/adsense/answer/1709871"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.google.com/youtube/answer/72851",
+    "https://support.google.com/youtube/answer/12843009",
+    "https://support.google.com/youtube/answer/13429240",
+    "https://support.google.com/youtube/answer/72857",
+    "https://support.google.com/youtube/answer/7101720",
+    "https://support.google.com/adsense/answer/1709871"
+   ]
+  },
   "trust_risk": "Low. The real risk is a refused review: every video must keep real commentary and our own cards.",
   "priority": 1,
   "notes": "This environment could not open support.google.com (DNS blocked), so these facts come from search reads of the official pages. Watch time from the Shorts feed doesn't count toward the 3,000 hours, and views from paid ads don't count toward any bar. Progress gets tracked, never projected."
@@ -33,7 +44,16 @@
   "disclosure": "Nothing extra for YPP itself. Sponsored segments need the Studio paid-promotion box and an in-video disclosure.",
   "payment": "AdSense for YouTube: monthly, USD 100 threshold (support.google.com/adsense/answer/1709871).",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.google.com/youtube/answer/12843009", "https://blog.youtube/news-and-events/youtube-partner-program-updates-2027-new-opportunities-earn/", "https://support.google.com/youtube/answer/72851", "https://support.google.com/youtube/answer/1311392"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.google.com/youtube/answer/12843009",
+    "https://blog.youtube/news-and-events/youtube-partner-program-updates-2027-new-opportunities-earn/",
+    "https://support.google.com/youtube/answer/72851",
+    "https://support.google.com/youtube/answer/1311392"
+   ]
+  },
   "trust_risk": "Low. The reused/inauthentic-content review (answer/1311392) is the risk, so we never mass-produce near-identical videos.",
   "priority": 1,
   "notes": "Confirms the Channel Map's Nov 22 log (content/channels.md: the bar doubles for NEW channels on Feb 1, 2027). The official help page and the YouTube Blog say the same thing (search read, Nov 26). Third-party coverage (tubefilter, mediapost; unverified) agrees."
@@ -52,7 +72,14 @@
   "disclosure": "Same as English. Sponsored Spanish videos need a Spanish-language disclosure in the video.",
   "payment": "AdSense for YouTube (USD 100 threshold).",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.google.com/youtube/answer/72851", "https://support.google.com/youtube/answer/12843009"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.google.com/youtube/answer/72851",
+    "https://support.google.com/youtube/answer/12843009"
+   ]
+  },
   "trust_risk": "Low.",
   "priority": 3,
   "notes": "docs/ES-RECOVERY.md has the growth plan. No monetization work makes sense here before the channel has an audience."
@@ -64,11 +91,20 @@
   "our_status": "0 subscribers, 40 lifetime views (status.md), 31 views in the last 28-day pull (analytics-es.json).",
   "geo": "Same YPP country list (based on the owner's country).",
   "cost": "$0.",
-  "owner_actions": ["None until the fan-funding tier is close"],
+  "owner_actions": [
+   "None until the fan-funding tier is close"
+  ],
   "disclosure": "Same as English.",
   "payment": "AdSense for YouTube (USD 100 threshold).",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.google.com/youtube/answer/12843009", "https://blog.youtube/news-and-events/youtube-partner-program-updates-2027-new-opportunities-earn/"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.google.com/youtube/answer/12843009",
+    "https://blog.youtube/news-and-events/youtube-partner-program-updates-2027-new-opportunities-earn/"
+   ]
+  },
   "trust_risk": "Low.",
   "priority": 3,
   "notes": "The Feb 1, 2027 bar will apply to this channel."
@@ -80,11 +116,21 @@
   "our_status": "Neither channel is in YPP. English: 28,768 Shorts-feed views for Oct 29-Nov 26 (analytics.json). Spanish: 31 views (analytics-es.json).",
   "geo": "YPP countries. The pool is worked out per viewer country (answer/12504220 example).",
   "cost": "$0.",
-  "owner_actions": ["Accept the Shorts Monetization Module when applying to the ad-revenue tier"],
+  "owner_actions": [
+   "Accept the Shorts Monetization Module when applying to the ad-revenue tier"
+  ],
   "disclosure": "None extra.",
   "payment": "Through AdSense for YouTube with other YPP earnings.",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.google.com/youtube/answer/12504220", "https://support.google.com/youtube/answer/12843009", "https://support.google.com/youtube/answer/72902"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.google.com/youtube/answer/12504220",
+    "https://support.google.com/youtube/answer/12843009",
+    "https://support.google.com/youtube/answer/72902"
+   ]
+  },
   "trust_risk": "Low.",
   "priority": 2,
   "notes": "Platform reality: for a Shorts-first channel, Shorts views pay nothing until the ad-revenue tier. From Feb 2027 they pay only in months with 10M Shorts views per 90 days. A YPP partner below that line earns from long-form only, which is one more reason to keep the search guides that tie each Shorts series together."
@@ -93,19 +139,30 @@
   "program": "Amazon Associates (US), tag vicereplay-20",
   "official_url": "https://affiliate-program.amazon.com/help/operating/policies",
   "eligibility": "Amazon reviews the application after 3 qualifying sales within 180 days of applying (personal orders don't count). Without them the application lapses, and a rejected account can't be reinstated. Listed sites must be public and original. Social pages must be listed by their exact URL and be established ('in most cases at least 500 organic followers/likes', Participation Requirements). Prices and availability may appear only through an Amazon-served link or Creators API/PA-API data. Non-image data can be cached for up to 24 h, and pricing refreshed less often than hourly needs a date/time stamp. Special Links are banned offline and in e-books or printed material. Email and DMs are allowed only to recipients who opted in.",
-  "our_status": "The tag is live on vicereplay.com (/gear/, /links/, home, the deals and Black Friday guides, and the footer statement) and in long-video descriptions through content/affiliate.json. Account status, application date, qualifying-sales count, tax interview and payment method: unknown: owner must check Associates Central (Reports, Account Settings). Commissions: unknown (no figure in the repo). Fixed prices came out of the site's DEALS list on Nov 26 (tools/site_guides.py), but two price notes remain. content/affiliate.json set 'deals' still labels links '(about $54 this week)' and '(about $110)'. episodes/gta6-black-friday-deals.json has '$54 (usually $74)' and '$110 (usually $150)' in its description, and that video (S_H61BzbFKA) is public; its live description needs checking. Which social accounts are listed in Associates Central: unknown: owner must check. content/owner.md says the vicereplay.com links page is listed.",
+  "our_status": "Owner confirmed Nov 26 (Phase 7): account active and in good standing, tracking ID vicereplay-20. Links live on vicereplay.com (listed property). YouTube EN/ES and Instagram not yet verified as listed in Associates Central: no links there until they are (python -m studio.affiliate status). Clicks/orders/earnings: unavailable (Associates Central reports need the owner's login).",
   "geo": "Commissions come only from amazon.com (US store) purchases. Spanish-speaking viewers who buy on amazon.com.mx or amazon.es earn nothing on this tag: those are separate programs (see the Amazon Afiliados entry).",
   "cost": "$0. Small code fixes (us) plus account checks (owner).",
   "owner_actions": [
-   "Associates Central: report the account status (approved / under review / closed), the 180-day deadline date and the qualifying-sales count to the main chat",
-   "Finish the tax interview and add a payment method (direct deposit or gift card)",
-   "Confirm which sites are listed. vicereplay.com should be. Add youtube.com/@ViceReplayTV-q8s only if Amazon accepts a 15-subscriber channel (the 500-follower guideline)",
-   "Optional: see whether the Amazon Influencer Program accepts the channel (amazon.com/shop/info)"
+   "Confirm in Associates Central > Account > website and mobile app list that the two YouTube channels and Instagram are listed (or add them)",
+   "Export the Earnings/Orders report (by tracking ID) weekly, or tell us where to read it"
   ],
   "disclosure": "Amazon's required sentence must appear clearly and conspicuously on the site and, for social content, be tied to the account: 'As an Amazon Associate I earn from qualifying purchases.' FTC (Endorsement Guides Q&A): disclose next to each link, and use plain words, since 'affiliate link' alone may not be understood ('paid link' counts as adequate). When a video itself recommends a product, disclose early in the video, spoken or on screen. The description alone isn't enough, and the FTC treats an end-only disclosure as weak.",
   "payment": "Paid about 60 days after the end of each month: direct deposit or gift card from USD 10, cheque from USD 100. Smaller balances roll over. Published rates (help page about 527 days old in the search index): digital video games 2%, physical video games and consoles 1%. The Prime Free Trial bounty shows as $12 on one dated table and $3 on another page, so it is unconfirmed.",
-  "status": "eligible-owner-action",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://affiliate-program.amazon.com/help/operating/policies", "https://affiliate-program.amazon.com/help/operating/agreement", "https://affiliate-program.amazon.com/help/operating/participation/", "https://affiliate-program.amazon.com/help/node/topic/G8TW5AE9XL2VX9VM", "https://affiliate-program.amazon.com/help/node/topic/GQ5CMSPVXBXSFDFV", "https://affiliate-program.amazon.com/help/node/topic/GRXPHT8U84RAYDXZ", "https://affiliate-program.amazon.com/help/node/topic/GP8Z3AZ27ZFHTEUL", "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking"]},
+  "status": "active",
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://affiliate-program.amazon.com/help/operating/policies",
+    "https://affiliate-program.amazon.com/help/operating/agreement",
+    "https://affiliate-program.amazon.com/help/operating/participation/",
+    "https://affiliate-program.amazon.com/help/node/topic/G8TW5AE9XL2VX9VM",
+    "https://affiliate-program.amazon.com/help/node/topic/GQ5CMSPVXBXSFDFV",
+    "https://affiliate-program.amazon.com/help/node/topic/GRXPHT8U84RAYDXZ",
+    "https://affiliate-program.amazon.com/help/node/topic/GP8Z3AZ27ZFHTEUL",
+    "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking"
+   ]
+  },
   "trust_risk": "Medium if done wrong: hard-coded prices, stale 'on sale' or 'best deal this week' wording after the sale (the site DEALS text says 'through Nov 30'), undisclosed links, or implying we tested gear we never used. Low when links sit only on relevant pages, carry a disclosure and use rel=sponsored.",
   "priority": 1,
   "notes": "This session couldn't open affiliate-program.amazon.com (DNS blocked), so these are search reads of Amazon's own pages, several of them dated. Re-read the live Operating Agreement in Associates Central. Fix first (us, main chat): drop the price words from the content/affiliate.json 'deals' labels and from the S_H61BzbFKA description, and remove the Black Friday 'on sale' lines after Nov 30. Shorts description links aren't clickable (content/episode-format.md), so Shorts never carry Amazon links."
@@ -117,11 +174,19 @@
   "our_status": "Not applied. Spanish channel: 0 subscribers, 31 views in 28 days (analytics-es.json). No Spanish-speaking country is in the site's top 5 Search Console countries (searchconsole-2026-11-26.json).",
   "geo": "Mexico store (amazon.com.mx) and Spain store (amazon.es) are separate accounts, terms and tax setups.",
   "cost": "$0. Owner paperwork for each country (invoicing in Mexico).",
-  "owner_actions": ["None now. Revisit only once Spanish pages or videos show real traffic from MX or ES"],
+  "owner_actions": [
+   "None now. Revisit only once Spanish pages or videos show real traffic from MX or ES"
+  ],
   "disclosure": "Each program has its own required statement (not verified). The FTC rule still applies to US viewers.",
   "payment": "Not verified.",
   "status": "research",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://afiliados.amazon.com.mx/help/node/topic/GEMYB5AERQ42DJBU"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://afiliados.amazon.com.mx/help/node/topic/GEMYB5AERQ42DJBU"
+   ]
+  },
   "trust_risk": "Low.",
   "priority": 5,
   "notes": "Third-party guides (shopify.com/es, tiendanube; unverified) quote a 1-20% range. Not used."
@@ -133,11 +198,21 @@
   "our_status": "The owner's Impact.com marketplace application (Best Buy / Walmart / Newegg) was DECLINED on Nov 18, 2026 ('new site, no traffic yet', content/owner.md). The Impact meta tag stays on the home page. The owner planned to reapply in ~30-60 days.",
   "geo": "US orders only (US shipping and billing addresses).",
   "cost": "$0. Effort: reapplication by the owner.",
-  "owner_actions": ["Reapply through Impact (Creator path, with a social channel connected) once the site and channel have steady traffic; content/owner.md suggests ~30-60 days after Nov 18"],
+  "owner_actions": [
+   "Reapply through Impact (Creator path, with a social channel connected) once the site and channel have steady traffic; content/owner.md suggests ~30-60 days after Nov 18"
+  ],
   "disclosure": "FTC rules (clear disclosure near links and in the video). Best Buy's exact required wording wasn't verified.",
   "payment": "Impact pays about 60 days after the end of each calendar month. No minimum or maximum is guaranteed.",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://www.bestbuy.com/site/best-buy-affiliate-program/creator-program-faqs/pcmcat1741639882344.c?id=pcmcat1741639882344", "https://www.bestbuy.com/site/best-buy-affiliate-program/creator-terms-and-conditions/pcmcat1741014869361.c?id=pcmcat1741014869361", "https://www.bestbuy.com/site/best-buy-affiliate-program/affiliate-terms-and-conditions/pcmcat748302046001.c?id=pcmcat748302046001"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://www.bestbuy.com/site/best-buy-affiliate-program/creator-program-faqs/pcmcat1741639882344.c?id=pcmcat1741639882344",
+    "https://www.bestbuy.com/site/best-buy-affiliate-program/creator-terms-and-conditions/pcmcat1741014869361.c?id=pcmcat1741014869361",
+    "https://www.bestbuy.com/site/best-buy-affiliate-program/affiliate-terms-and-conditions/pcmcat748302046001.c?id=pcmcat748302046001"
+   ]
+  },
   "trust_risk": "Low. It's an official retailer of consoles and accessories, and the expired-deal rule matches ours.",
   "priority": 3,
   "notes": "Category rates are visible only inside Impact."
@@ -149,11 +224,19 @@
   "our_status": "Not applied (no record in the repo).",
   "geo": "Regional pages exist (US, UK, several EU countries) with different contacts. US eligibility details weren't verified.",
   "cost": "$0. Owner creates a Partnerize account.",
-  "owner_actions": ["Optional: apply in Partnerize (identity, tax, bank details) once the site has steady traffic, given the Impact decline"],
+  "owner_actions": [
+   "Optional: apply in Partnerize (identity, tax, bank details) once the site has steady traffic, given the Impact decline"
+  ],
   "disclosure": "FTC rules. The programme's own wording wasn't verified.",
   "payment": "Bank transfer through Partnerize (official page). Threshold and timing weren't verified.",
   "status": "research",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://direct.playstation.com/en-us/playstation-affiliate-programme"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://direct.playstation.com/en-us/playstation-affiliate-programme"
+   ]
+  },
   "trust_risk": "Low (official first-party store).",
   "priority": 4,
   "notes": "A fit for PS5 Pro / controller / SSD pages, since GTA 6 is on PS5."
@@ -165,11 +248,20 @@
   "our_status": "Not applied. The owner's Impact marketplace application was declined Nov 18 (content/owner.md).",
   "geo": "Unverified.",
   "cost": "$0.",
-  "owner_actions": ["None until an official program page is confirmed"],
+  "owner_actions": [
+   "None until an official program page is confirmed"
+  ],
   "disclosure": "FTC rules.",
   "payment": "Unverified.",
   "status": "research",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://www.authorityhacker.com/microsoft-affiliate-program-review/", "https://geniuslink.com/blog/microsoft-affiliate-program/"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://www.authorityhacker.com/microsoft-affiliate-program-review/",
+    "https://geniuslink.com/blog/microsoft-affiliate-program/"
+   ]
+  },
   "trust_risk": "Low (first-party store), once confirmed.",
   "priority": 4,
   "notes": "Every fact here comes from third parties and is labelled unverified."
@@ -181,11 +273,20 @@
   "our_status": "Not applied.",
   "geo": "US (unverified).",
   "cost": "$0. Owner creates a Rakuten account.",
-  "owner_actions": ["None now"],
+  "owner_actions": [
+   "None now"
+  ],
   "disclosure": "FTC rules.",
   "payment": "Unverified.",
   "status": "research",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://geniuslink.com/blog/gamestop-affiliate-program/", "https://www.creator-hero.com/blog/gamestop-affiliate-program-in-depth-review-pros-and-cons"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://geniuslink.com/blog/gamestop-affiliate-program/",
+    "https://www.creator-hero.com/blog/gamestop-affiliate-program-in-depth-review-pros-and-cons"
+   ]
+  },
   "trust_risk": "Low (official retailer).",
   "priority": 5,
   "notes": "Third-party data only."
@@ -197,11 +298,20 @@
   "our_status": "Not applied. Rockstar has announced no GTA 6 PC release date (PC Gamer and others, Nov 2026), so there is no GTA 6 product to link.",
   "geo": "Global store (not verified per country).",
   "cost": "$0.",
-  "owner_actions": ["None until a GTA 6 PC edition is officially on sale"],
+  "owner_actions": [
+   "None until a GTA 6 PC edition is officially on sale"
+  ],
   "disclosure": "FTC rules.",
   "payment": "Not verified.",
   "status": "research",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://www.greenmangaming.com/affiliates/", "https://www.pcgamer.com/no-gta-6-pc-release-announced"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://www.greenmangaming.com/affiliates/",
+    "https://www.pcgamer.com/no-gta-6-pc-release-announced"
+   ]
+  },
   "trust_risk": "Low (authorised retailer), but off-topic until GTA 6 is on PC.",
   "priority": 5,
   "notes": "Revisit only when Rockstar announces a PC edition."
@@ -217,7 +327,15 @@
   "disclosure": "n/a",
   "payment": "n/a",
   "status": "rejected-trust-risk",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://www.pcgamer.com/natural-selection-2-developer-deactivates-over-a-thousand-steam-keys-warns-of-shady-resellers", "https://www.gameinformer.com/b/news/archive/2016/06/21/indie-publisher-says-grey-market-game-key-reseller-cost-company-450000.aspx", "https://www.engadget.com/2019/07/17/g2a-key-gift-game-developers-explained/"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://www.pcgamer.com/natural-selection-2-developer-deactivates-over-a-thousand-steam-keys-warns-of-shady-resellers",
+    "https://www.gameinformer.com/b/news/archive/2016/06/21/indie-publisher-says-grey-market-game-key-reseller-cost-company-450000.aspx",
+    "https://www.engadget.com/2019/07/17/g2a-key-gift-game-developers-explained/"
+   ]
+  },
   "trust_risk": "High. Developers report keys bought with stolen cards and later deactivated, so viewers can lose their money. GTA 6 is console-only anyway.",
   "priority": 5,
   "notes": "Official storefronts only (PlayStation Direct, Microsoft/Xbox, Best Buy, Amazon, authorised resellers)."
@@ -237,7 +355,14 @@
   "disclosure": "Follow each campaign's credit rules. The streamer or brand paying per view is a material connection: the owner should decide on a disclosure (YouTube's paid-promotion box or a 'paid clip' line). Whether Content Rewards requires one wasn't verified.",
   "payment": "Whop pays automatically after approval, based on views. A Whop-hosted creator-terms page (authority unconfirmed) describes 7-day earning rounds followed by a 3-day hold.",
   "status": "active",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards", "https://whop.com/blog/content-rewards/"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards",
+    "https://whop.com/blog/content-rewards/"
+   ]
+  },
   "trust_risk": "Medium: streamer footage on a commentary channel. It stays acceptable only under each campaign's grant, posted on ClipCircuit.",
   "priority": 2,
   "notes": "Rates come from the docs. Whop's blog cites an average of about $1 per 1,000 views for clippers (marketing claim, not a projection for us). Every non-GTA campaign goes to ClipCircuit (content/channels.md)."
@@ -256,7 +381,16 @@
   "disclosure": "A privacy-policy update for ad cookies (/privacy/ exists).",
   "payment": "Monthly once the balance reaches USD 100. Identity/address verification starts at USD 10 (answer/1709871).",
   "status": "research",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.google.com/adsense/answer/9724", "https://support.google.com/adsense/answer/14230", "https://support.google.com/adsense/answer/1709871", "https://support.google.com/adsense/answer/10502938"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.google.com/adsense/answer/9724",
+    "https://support.google.com/adsense/answer/14230",
+    "https://support.google.com/adsense/answer/1709871",
+    "https://support.google.com/adsense/answer/10502938"
+   ]
+  },
   "trust_risk": "Medium. Many pages show official Rockstar screenshots and the official map, and Rockstar's policy counts making money from its material as commercial use. Ads also clutter a free tool.",
   "priority": 3,
   "notes": "My inference, not Google's ruling: pages built on Rockstar art may draw a policy rejection or a takedown risk. Text-only guides are the safer test pages."
@@ -268,11 +402,21 @@
   "our_status": "No GA4 on the site. Sessions: unknown: owner must check Cloudflare Web Analytics. Search Console's first impression: Nov 20, 2026. Domain registration date: unknown: owner must check Cloudflare.",
   "geo": "Only traffic from the 7 listed countries counts.",
   "cost": "$0. The owner creates a GA4 property, and we add the tag (a site build plus a cookie-consent check).",
-  "owner_actions": ["Create a GA4 property for vicereplay.com and give the main chat the measurement ID"],
+  "owner_actions": [
+   "Create a GA4 property for vicereplay.com and give the main chat the measurement ID"
+  ],
   "disclosure": "Ad-cookie notice in /privacy/.",
   "payment": "Not verified this session.",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://www.mediavine.com/application-requirements/", "https://help.mediavine.com/what-does-it-take-to-get-approved-by-mediavine", "https://www.mediavine.com/blog/mediavine-application-process-ga4/"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://www.mediavine.com/application-requirements/",
+    "https://help.mediavine.com/what-does-it-take-to-get-approved-by-mediavine",
+    "https://www.mediavine.com/blog/mediavine-application-process-ga4/"
+   ]
+  },
   "trust_risk": "Medium (same Rockstar-art question as AdSense).",
   "priority": 3,
   "notes": "An older Mediavine page says 1,000 sessions. The newer pages say 5,000."
@@ -284,11 +428,20 @@
   "our_status": "Pageviews: unknown: owner must check Cloudflare Web Analytics. 6 search clicks (Nov 20-23). No GA4.",
   "geo": "Traffic-share rule: US/CA/UK/AU/NZ.",
   "cost": "$0 (needs GA4).",
-  "owner_actions": ["None until Mediavine Journey's bar is met"],
+  "owner_actions": [
+   "None until Mediavine Journey's bar is met"
+  ],
   "disclosure": "Ad-cookie notice.",
   "payment": "Not verified.",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://help.raptive.com/hc/en-us/articles/360032840891-Who-is-eligible-for-Raptive", "https://raptive.com/blog/opening-the-door-to-more-creators-who-meet-raptive-quality-standards/"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://help.raptive.com/hc/en-us/articles/360032840891-Who-is-eligible-for-Raptive",
+    "https://raptive.com/blog/opening-the-door-to-more-creators-who-meet-raptive-quality-standards/"
+   ]
+  },
   "trust_risk": "Medium (same as AdSense).",
   "priority": 4,
   "notes": ""
@@ -300,11 +453,21 @@
   "our_status": "Users: unknown (Cloudflare). Search clicks: 6 (Nov 20-23).",
   "geo": "Not verified.",
   "cost": "$0.",
-  "owner_actions": ["None. Don't apply to the Incubator early: a rejection is permanent for this site"],
+  "owner_actions": [
+   "None. Don't apply to the Incubator early: a rejection is permanent for this site"
+  ],
   "disclosure": "Ad-cookie notice.",
   "payment": "Not verified.",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.ezoic.com/kb/article/getting-started-ezoics-requirements", "https://support.ezoic.com/kb/article/ezoic-incubator-program", "https://www.ezoic.com/incubator"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.ezoic.com/kb/article/getting-started-ezoics-requirements",
+    "https://support.ezoic.com/kb/article/ezoic-incubator-program",
+    "https://www.ezoic.com/incubator"
+   ]
+  },
   "trust_risk": "Medium.",
   "priority": 5,
   "notes": ""
@@ -316,11 +479,20 @@
   "our_status": "Not in YPP (15 subscribers EN, 0 ES).",
   "geo": "Narrower list than YPP (see the official page).",
   "cost": "$0.",
-  "owner_actions": ["Check Studio > Earn > Shopping once YPP is reached"],
+  "owner_actions": [
+   "Check Studio > Earn > Shopping once YPP is reached"
+  ],
   "disclosure": "YouTube tags products automatically. FTC in-video disclosure still applies.",
   "payment": "Through YPP/AdSense (not re-verified).",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.google.com/youtube/answer/13376398", "https://support.google.com/youtube/answer/13429240"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.google.com/youtube/answer/13376398",
+    "https://support.google.com/youtube/answer/13429240"
+   ]
+  },
   "trust_risk": "Low with honest picks.",
   "priority": 4,
   "notes": ""
@@ -332,11 +504,20 @@
   "our_status": "Not in YPP.",
   "geo": "Listed countries only.",
   "cost": "$0.",
-  "owner_actions": ["None until the ad-revenue tier"],
+  "owner_actions": [
+   "None until the ad-revenue tier"
+  ],
   "disclosure": "Studio paid-promotion box plus an in-video disclosure.",
   "payment": "Not verified.",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.google.com/youtube/answer/9385307", "https://blog.youtube/news-and-events/introducing-youtube-brandconnect-platform-creators-and-brands-collaborate/"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.google.com/youtube/answer/9385307",
+    "https://blog.youtube/news-and-events/introducing-youtube-brandconnect-platform-creators-and-brands-collaborate/"
+   ]
+  },
   "trust_risk": "Low.",
   "priority": 4,
   "notes": ""
@@ -355,7 +536,15 @@
   "disclosure": "Tick Studio's paid-promotion box. Say 'sponsored by X' or 'X sent us this for free' at the start, and use '#ad' in the description. Spanish videos need a Spanish disclosure.",
   "payment": "Per contract (no rates stated here).",
   "status": "research",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.google.com/youtube/answer/154235", "https://support.google.com/youtube/answer/17596007", "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.google.com/youtube/answer/154235",
+    "https://support.google.com/youtube/answer/17596007",
+    "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking"
+   ]
+  },
   "trust_risk": "High with the wrong sponsor (gambling, crypto, 'free money', account services) or with fake 'we tested it' claims. Low for relevant gaming gear we can talk about honestly.",
   "priority": 4,
   "notes": "Realistically, at 15 subscribers offers will be free products or game keys at most. This register states no rates."
@@ -367,11 +556,20 @@
   "our_status": "15 YouTube subscribers (EN). TikTok follower count: unknown: owner must check.",
   "geo": "Per campaign.",
   "cost": "$0.",
-  "owner_actions": ["At 250 YouTube subscribers: create the Creator account (YouTube only; keep TikTok a personal account)"],
+  "owner_actions": [
+   "At 250 YouTube subscribers: create the Creator account (YouTube only; keep TikTok a personal account)"
+  ],
   "disclosure": "Campaign rules plus Studio's paid-promotion box when keys or payment come with obligations.",
   "payment": "Mostly keys. Paid campaigns per program (not verified).",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.lurkit.com/how-do-i-make-a-creator-account", "https://support.lurkit.com/how-many-followers-do-i-need-on-tiktok-at-lurkit"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.lurkit.com/how-do-i-make-a-creator-account",
+    "https://support.lurkit.com/how-many-followers-do-i-need-on-tiktok-at-lurkit"
+   ]
+  },
   "trust_risk": "Medium: most games are off-niche. Only GTA-adjacent open-world or driving games fit.",
   "priority": 4,
   "notes": "TikTok's Business Account rule conflicts with TikTok Creator Rewards, which requires a personal account."
@@ -383,11 +581,21 @@
   "our_status": "TikTok 30-day pull (tiktok-2026-11-26.json): 24 videos, 12,584 views, best 7,863, 5 new followers attributed to them. 0 of 24 videos run 60 s or longer. Total followers: unknown: owner must check TikTok.",
   "geo": "Creator Academy lists US, UK, Germany, Japan, South Korea, France, Mexico, Brazil. Regional terms differ (JP/KR terms cite 50,000 followers).",
   "cost": "$0, plus effort for 60 s+ cuts once eligible.",
-  "owner_actions": ["Check the follower count and keep the account personal (the owner posts by hand)"],
+  "owner_actions": [
+   "Check the follower count and keep the account personal (the owner posts by hand)"
+  ],
   "disclosure": "TikTok's branded-content toggle for any paid post.",
   "payment": "Per the regional terms (not re-verified). The earlier report noted a $50 minimum in the US terms (unverified this session).",
   "status": "not-eligible-yet",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://www.tiktok.com/creator-academy/article/creator-rewards-program", "https://www.tiktok.com/creator-academy/article/eligibility", "https://www.tiktok.com/legal/page/global/creator-rewards-program-mx/en"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://www.tiktok.com/creator-academy/article/creator-rewards-program",
+    "https://www.tiktok.com/creator-academy/article/eligibility",
+    "https://www.tiktok.com/legal/page/global/creator-rewards-program-mx/en"
+   ]
+  },
   "trust_risk": "Low.",
   "priority": 4,
   "notes": "Platform reality: TikTok pays nothing for our under-1-minute Shorts-style posts."
@@ -399,11 +607,20 @@
   "our_status": "38 posts tracked in ig-stats.json. Views/reach not pulled (xplat.json 'missing'). Followers: unknown: owner must check the Professional Dashboard.",
   "geo": "Not verified.",
   "cost": "$0.",
-  "owner_actions": ["Check eligibility in the Professional Dashboard"],
+  "owner_actions": [
+   "Check eligibility in the Professional Dashboard"
+  ],
   "disclosure": "Instagram's Paid partnership label for any sponsored post.",
   "payment": "Per Instagram payout terms (not verified).",
   "status": "research",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://help.instagram.com/738469380549477", "https://about.fb.com/news/2023/02/earn-money-on-instagram-with-gifts/"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://help.instagram.com/738469380549477",
+    "https://about.fb.com/news/2023/02/earn-money-on-instagram-with-gifts/"
+   ]
+  },
   "trust_risk": "Low.",
   "priority": 5,
   "notes": "Meta flagged our campaign clips on Nov 19 (CLAUDE.md). Check that the account still meets the Partner Monetization Policies."
@@ -415,11 +632,22 @@
   "our_status": "Nothing built. No measurement of map usage in the repo. Site search clicks: 6 (Nov 20-23).",
   "geo": "Per platform.",
   "cost": "$0 on Ko-fi's free plan. Effort: a page plus perks built only on our own work.",
-  "owner_actions": ["Decide later, once map usage is measured. A Ko-fi or Patreon account needs the owner's identity and payout details"],
+  "owner_actions": [
+   "Decide later, once map usage is measured. A Ko-fi or Patreon account needs the owner's identity and payout details"
+  ],
   "disclosure": "State plainly that everything on the map stays free and that supporters get only our own extras (e.g. no ads).",
   "payment": "Per platform (Ko-fi pays via Stripe/PayPal; Patreon payout fees, e.g. $0.25 per Stripe bank transfer in the US).",
   "status": "research",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://ko-fi.com/pricing", "https://help.ko-fi.com/hc/en-us/articles/360002506494-Does-Ko-fi-take-a-fee", "https://support.patreon.com/hc/en-us/articles/36426991446797-A-standard-platform-fee-for-new-creators-effective-after-August-4-2025", "https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://ko-fi.com/pricing",
+    "https://help.ko-fi.com/hc/en-us/articles/360002506494-Does-Ko-fi-take-a-fee",
+    "https://support.patreon.com/hc/en-us/articles/36426991446797-A-standard-platform-fee-for-new-creators-effective-after-August-4-2025",
+    "https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material"
+   ]
+  },
   "trust_risk": "High if any part of today's free map moves behind a paywall. Medium for a tip jar on pages built on Rockstar art (looks like monetizing Rockstar's material).",
   "priority": 5,
   "notes": "content/legal.md: monetization of fan content is tolerated, not licensed. Large free GTA map sites exist (unverified), so uptake is uncertain."
@@ -431,11 +659,23 @@
   "our_status": "Nothing built. No email list and no demand data.",
   "geo": "Gumroad sells worldwide (tax handled by Gumroad).",
   "cost": "$0 upfront. Effort: writing and checking the product (facts from 2+ sources, no spoilers).",
-  "owner_actions": ["Decide whether to sell anything at all. A Gumroad account needs identity and payout details (the Gumroad connector in this workspace must not be used to create or publish without the owner)"],
+  "owner_actions": [
+   "Decide whether to sell anything at all. A Gumroad account needs identity and payout details (the Gumroad connector in this workspace must not be used to create or publish without the owner)"
+  ],
   "disclosure": "The product page states it is fan-made and not affiliated with Rockstar/Take-Two, and contains no Rockstar art.",
   "payment": "Gumroad payouts per its terms (schedule not re-verified).",
   "status": "research",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://gumroad.com/pricing", "https://gumroad.com/help/article/66-gumroads-fees", "https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material", "https://www.rockstargames.com/legal", "https://affiliate-program.amazon.com/help/operating/policies"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://gumroad.com/pricing",
+    "https://gumroad.com/help/article/66-gumroads-fees",
+    "https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material",
+    "https://www.rockstargames.com/legal",
+    "https://affiliate-program.amazon.com/help/operating/policies"
+   ]
+  },
   "trust_risk": "Medium-high: selling GTA 6 info that free sites give away can read as a cash grab, and a GTA name in a paid product title raises a trademark question (the owner's call; not legal advice).",
   "priority": 5,
   "notes": "The safer first step is the FREE checklist from the earlier report, which shows demand before anything is sold."
@@ -451,7 +691,15 @@
   "disclosure": "n/a",
   "payment": "n/a",
   "status": "rejected-trust-risk",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material", "https://www.rockstargames.com/community-resources/mod-guidelines", "https://www.rockstargames.com/legal"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material",
+    "https://www.rockstargames.com/community-resources/mod-guidelines",
+    "https://www.rockstargames.com/legal"
+   ]
+  },
   "trust_risk": "High: takedowns, account risk and audience trust.",
   "priority": 5,
   "notes": "content/legal.md."
@@ -467,7 +715,14 @@
   "disclosure": "n/a",
   "payment": "n/a",
   "status": "rejected-trust-risk",
-  "verification": {"method": "search-summary-only", "date": "2026-11-26", "sources": ["https://support.google.com/youtube/answer/9229611", "https://support.google.com/youtube/answer/10291745"]},
+  "verification": {
+   "method": "search-summary-only",
+   "date": "2026-11-26",
+   "sources": [
+    "https://support.google.com/youtube/answer/9229611",
+    "https://support.google.com/youtube/answer/10291745"
+   ]
+  },
   "trust_risk": "High: a young gaming audience, platform strikes, and it breaks our own rules.",
   "priority": 5,
   "notes": "This also rules out fake scarcity ('only today'), 'free V-Bucks'-style giveaways and any offer that needs an account login."

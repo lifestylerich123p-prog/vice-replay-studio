@@ -3,7 +3,7 @@
  "lang": "es",
  "title": "Mejor SSD para GTA 6 en PS5 (212 GB): qué comprar y qué evitar",
  "h1": "Mejor SSD para GTA 6: <span>la mejora para PS5</span>",
- "desc": "GTA 6 ocupa hasta 212 GB. Qué SSD funciona en PS5 (NVMe Gen4, disipador, 5.500 MB/s), qué tamaño elegir, la opción de Xbox y cómo instalarlo.",
+ "desc": "GTA 6 ocupa unos 210 GB según los datos de la PlayStation Store (hasta 212 GB al precargar; Rockstar no ha publicado un tamaño oficial). Qué SSD funciona en PS5 (NVMe Gen4, disipador, 5.500 MB/s), qué tamaño elegir, la opción de Xbox y cómo instalarlo.",
  "date": "2026-11-19",
  "video": null,
  "card": [
@@ -11,7 +11,7 @@
   "LA MEJORA PARA PS5",
   "car-vapid-stanier-01.jpg"
  ],
- "lede": "GTA 6 ocupa hasta 212 GB, así que mucha gente ve \"espacio insuficiente\" esta semana. Prueba primero los <a href=\"/es/guias/espacio-gta-6/\">trucos gratis</a>. Si aún necesitas espacio, esta es la mejora que funciona, según los requisitos de Sony.",
+ "lede": "GTA 6 ocupa unos 210 GB según los datos de la PlayStation Store (hasta 212 GB al precargar; Rockstar no ha publicado un tamaño oficial), así que mucha gente ve \"espacio insuficiente\" esta semana. Prueba primero los <a href=\"/es/guias/espacio-gta-6/\">trucos gratis</a>. Si aún necesitas espacio, esta es la mejora que funciona, según los requisitos de Sony.",
  "sections": [
   [
    "Lo que pide tu PS5 (requisitos de Sony)",
@@ -37,7 +37,7 @@
  "faq": [
   [
    "¿Qué SSD necesito para GTA 6 en PS5?",
-   "Un SSD M.2 NVMe PCIe Gen4 con disipador; Sony recomienda 5.500 MB/s de lectura o más. GTA 6 ocupa hasta 212 GB."
+   "Un SSD M.2 NVMe PCIe Gen4 con disipador; Sony recomienda 5.500 MB/s de lectura o más. GTA 6 ocupa unos 210 GB según los datos de la PlayStation Store (hasta 212 GB al precargar; Rockstar no ha publicado un tamaño oficial)."
   ],
   [
    "¿Puedo jugar GTA 6 desde un USB?",
@@ -51,6 +51,15 @@
   [
    "PlayStation: SSD M.2 en PS5",
    "https://www.playstation.com/es-mx/support/hardware/ps5-install-m2-ssd/"
+  ],
+  [
+   "GTABoom: GTA 6 reportedly a 210 GB download on PS5",
+   "https://www.gtaboom.com/gta-6-is-reportedly-a-210-gb-download-on-ps5-4269"
+  ],
+  [
+   "Tom's Hardware: PS5 update adds 8 TB SSD support",
+   "https://www.tomshardware.com/news/playstation-5-update-adds-support-for-8tb-ssds"
   ]
- ]
+ ],
+ "modified": "2026-11-26"
 }

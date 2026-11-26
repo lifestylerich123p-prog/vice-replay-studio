@@ -24,7 +24,6 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| ? | gta6-nombres-espanol-mapa-es | Short | GTA 6: los lugares con nombre en español del mapa | - |
 | 2026-11-26 | gta6-white-fox-where | Short | GTA 6 Legendary Animals: Where to Find the White Fox | - |
 | 2026-11-26 | gta6-vice-city-real-miami | Short | GTA 6's Vice City vs Real Miami: 5 Places | - |
 | 2026-11-26 | gta6-tattoo-shops-where | Short | GTA 6 Tattoo Shop Locations: All 11 and Where to Start | - |
@@ -32,6 +31,7 @@ Read this first instead of searching the repo.
 | 2026-11-26 | gta6-silent-hill-hotel | Short | GTA 6 Silent Hill Easter Egg: Marbelle Hotel Location and Safe Code | - |
 | 2026-11-26 | gta6-sell-jewelry-where | Short | GTA 6: Where to Sell Jewelry (Best Fence) | - |
 | 2026-11-26 | gta6-sahara-arena-where | Short | GTA 6 Sahara Arena: where it is and the real Miami arena behind it | - |
+| 2026-11-26 | gta6-nombres-espanol-mapa-es | Short | GTA 6: los lugares con nombre en español del mapa | - |
 | 2026-11-26 | gta6-no-mission-replay | Short | GTA 6 Has No Mission Replay: How to Save Instead | - |
 | 2026-11-26 | gta6-ninja-turtles-where | Short | GTA 6 Ninja Turtles Easter Egg: Where to Find It | - |
 | 2026-11-26 | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | - |

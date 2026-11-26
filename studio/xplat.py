@@ -241,7 +241,8 @@ def hook_table_es(rows):
     n < 5 = preliminary; never pick a winner from 1-2 videos."""
     g = {}
     for r in rows:
-        if r["platform"] == "youtube-es" and r.get("completion_pct") is not None:
+        # a video nobody watched has no retention: 0 views would count as "0% viewed" and drag every median down
+        if r["platform"] == "youtube-es" and r.get("completion_pct") is not None and (r.get("views") or 0) > 0:
             g.setdefault(r.get("hook_type") or "immediate-answer", []).append(r)
     return {k: {"median_pct_viewed": round(statistics.median(x["completion_pct"] for x in v), 1),
                 "median_views": statistics.median(x.get("views") or 0 for x in v), "n": len(v), "preliminary": len(v) < 5,

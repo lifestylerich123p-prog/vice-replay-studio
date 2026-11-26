@@ -28,3 +28,12 @@ impressions yet (days old): re-check weekly before building more pages of the sa
   "Related video". Not a concatenation of Shorts: new route segments, explanations and map demonstrations.
 - Decision point: Fri Dec 4 (7 days of search data on both guides). Make it only if either guide shows search traffic
   (YouTube search views > 0 and growing) and the assets cover it without trailer clips.
+
+## Cloudflare token: exact minimum (owner action, Phase 7 #11)
+Cloudflare dashboard -> My Profile -> API Tokens -> Create Token -> Create Custom Token:
+- Permissions: **Account | Account Analytics | Read** (nothing else: no Zone, DNS, Workers or Edit rights)
+- Account Resources: Include -> the Vice Replay account only; optional: Client IP filtering off, TTL as you like
+- Save it as a network secret in this environment's settings: host `api.cloudflare.com`, header `Authorization`,
+  value `Bearer <token>` (never paste it in chat). Also add the account ID (not secret) to the environment variables as
+  `CF_ACCOUNT_ID`. We then read Web Analytics (GraphQL `rumPageloadEventsAdaptiveGroups`: page views by path, incl. the
+  `/v/<slug>/` video short links, referrers, countries) read-only.

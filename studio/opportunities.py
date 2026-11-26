@@ -113,8 +113,11 @@ def evaluate_follow_up(winner, candidates, index, budget_credits=0, lang="en"):
 # calibrate them against real results (content/learn/xplat.json) before trusting small differences.
 from dataclasses import dataclass, field
 
-WEIGHTS = {"search_demand": 0.20, "relative_performance": 0.20, "audience_relevance": 0.15, "originality": 0.10,
-           "visual_potential": 0.10, "asset_availability": 0.15, "timeliness": 0.10}
+# Owner Phase 7 #21 starting weights (sum 1.0; uncalibrated: re-fit once 20+ follow-ups have 72 h results).
+WEIGHTS = {"search_demand": 0.17, "relative_performance": 0.17, "audience_relevance": 0.14, "visual_potential": 0.12,
+           "asset_availability": 0.10, "originality": 0.10, "timeliness": 0.08, "website_value": 0.07,
+           "monetization_relevance": 0.05}
+COST_WEIGHT = 0.5  # cost (0..1 = Everygen credits / 20, capped) costs up to half a point: zero-credit work wins ties
 
 
 @dataclass
@@ -126,17 +129,32 @@ class Opportunity:
     visual_potential: float       # 0..1: a map place/grid known 0.8 (+0.2 with a site demo), else 0.5
     asset_availability: float     # 0..1: our own assets cover it (map, cards, site) 1.0, needs footage 0.3
     timeliness: float             # 0..1: winner < 48 h old 1.0, < 7 days 0.6, else 0.3
-    estimated_credit_cost: float  # paid credits / 10 (0 for free tools)
+    estimated_credit_cost: float  # 0..1: paid Everygen credits / 20, capped (0 for free tools)
     facts_verified: bool
     duplicate: bool
     rights_verified: bool
     evidence: dict = field(default_factory=dict)  # where each input came from: analytics / research / hypothesis
+    website_value: float = 0.3          # 0..1: becomes a map pin / guide on vicereplay.com 1.0, a pin-able place 0.8
+    monetization_relevance: float = 0.0  # 0..1: a relevant, compliant affiliate topic (studio.affiliate.RELEVANCE) 1.0
+
+    def __post_init__(self):
+        for k in list(WEIGHTS) + ["estimated_credit_cost"]:
+            v = getattr(self, k)
+            if not isinstance(v, (int, float)) or not 0.0 <= v <= 1.0:
+                raise ValueError(f"opportunity input {k}={v!r} must be within 0..1")
 
 
 def score_opportunity(o):
     if not o.facts_verified or o.duplicate or not o.rights_verified:
         return float("-inf")
-    return round(sum(getattr(o, k) * w for k, w in WEIGHTS.items()) - o.estimated_credit_cost * 5, 3)
+    return round(sum(getattr(o, k) * w for k, w in WEIGHTS.items()) - o.estimated_credit_cost * COST_WEIGHT, 3)
+
+
+def _affiliate_relevance(cand):
+    """1.0 when the topic itself is about something a compliant product link helps with (storage, controller...)."""
+    from . import affiliate
+    text = " ".join([cand.get("title_en", ""), " ".join(cand.get("keywords") or []), " ".join(cand.get("search") or [])])
+    return 1.0 if any(affiliate.relevant(n, text) for n in ("storage", "controller", "headset", "gear")) else 0.0
 
 
 def search_views(phrases):
@@ -165,7 +183,9 @@ def opportunity_for(cand, winner, index):
         visual_potential=0.8 if (cand.get("place") or cand.get("grid")) else 0.5,
         asset_availability=1.0 if cand.get("family") in ("map", "shopping", "money", "creatures", "easter-eggs", "vehicles") else 0.3,
         timeliness=1.0 if age < 48 else 0.6 if age < 168 else 0.3,
-        estimated_credit_cost=cand.get("credits", 0) / 10,
+        estimated_credit_cost=min(1.0, (cand.get("credits") or 0) / 20),
+        website_value=1.0 if cand.get("site_target") else 0.8 if (cand.get("place") or cand.get("grid")) else 0.3,
+        monetization_relevance=_affiliate_relevance(cand),
         facts_verified=cand.get("status") == "verified" and len(_domains(cand.get("sources"))) >= 2,
         duplicate=bool(already_produced(cand, index)) or cand.get("status") == "produced",
         rights_verified=True,  # our own map/cards/site; footage-based topics must set "rights_verified": false until cleared

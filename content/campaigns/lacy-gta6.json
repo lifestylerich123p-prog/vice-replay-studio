@@ -1,59 +1,72 @@
 {
-  "owner_approved": true,
-  "owner_approved_on": "2026-11-19",
-  "name": "$12,500 LACY GTA VI Marathon Pool Campaign (Reach)",
-  "platform": "Content Rewards",
-  "campaign_url": "https://contentrewards.com/c/campaigns/a5c63fad-cd53-4b81-9305-4a2d1696872a",
-  "rules_url": "https://reachclipping.com/LACYGTA (owner pasted the full rules in chat, Nov 19)",
-  "status": "joined (owner screenshot in chat, Nov 19 7:09 AM)",
-  "pay_type": "pool",
-  "pool": 12500,
-  "pool_rule": "Split by each clipper's share of approved views when the marathon ends; 750K total views to share the pool (campaign page Nov 19; the Nov 12 article said 1M).",
-  "platforms": [
-    "TikTok",
-    "Instagram Reels",
-    "YouTube Shorts",
-    "X"
+ "owner_approved": true,
+ "owner_approved_on": "2026-11-19",
+ "name": "$12,500 LACY GTA VI Marathon Pool Campaign (Reach)",
+ "platform": "Content Rewards",
+ "campaign_url": "https://contentrewards.com/c/campaigns/a5c63fad-cd53-4b81-9305-4a2d1696872a",
+ "rules_url": "https://reachclipping.com/LACYGTA (owner pasted the full rules in chat, Nov 19)",
+ "status": "joined (owner screenshot in chat, Nov 19 7:09 AM)",
+ "pay_type": "pool",
+ "pool": 12500,
+ "pool_rule": "Split by each clipper's share of approved views when the marathon ends; 750K total views to share the pool (campaign page Nov 19; the Nov 12 article said 1M).",
+ "platforms": [
+  "TikTok",
+  "Instagram Reels",
+  "YouTube Shorts",
+  "X"
+ ],
+ "engine": "everygen",
+ "clip_seconds": 30,
+ "captions": true,
+ "on_screen_credit": "Lacy",
+ "required_hashtags": [
+  "#LACY"
+ ],
+ "required_in_caption": "LACY's name in the caption or text overlay",
+ "rules": [
+  "Source: any stream, video or clip featuring Lacy during his GTA marathon, from November 18, 2026.",
+  "Lacy must be the primary focus, in the actual edit (not only the intro).",
+  "Platforms: TikTok, Instagram Reels, YouTube Shorts and X only.",
+  "Audience at least 50% from native English-speaking countries (USA, CA, AU, UK, NZ): English captions and on-screen text, no non-target slang.",
+  "Posting account must be in a related niche (gaming/GTA/streamer clips is fine).",
+  "Caption or text overlay must mention LACY's name; caption must use #LACY.",
+  "Only approved videos count; must reach the total view requirement (750K approved views) to share the pool.",
+  "Never portray Lacy negatively; no hate farming or false negative narratives (rejection or ban).",
+  "No view or engagement manipulation of any kind: botting, reposts, collab posts.",
+  "NO LOGOS OF ANY KIND: no Vice Replay logo/watermark, no channel badges, no game or brand logos.",
+  "No repetitive or non-matching thumbnails; no Japanese captions/descriptions.",
+  "Look for: funny moments, memorable quotes, reactions and memorable moments from the marathon.",
+  "Submit each clip in Content Rewards within 30 minutes of posting (Whop account verified with connected socials).",
+  "One strike and you're out: botting, AI-generated content or gaming the system. Real footage only, no AI voice/visuals.",
+  "Reach recommends a dedicated LACY clipping account (e.g. LACYClips) unless the account is a relevant clip page with 100+ followers."
+ ],
+ "source_footage": "Lacy's GTA 6 marathon stream replays on his YouTube channel (UCeoZXkaJDtdTHafgoZeDcAA; he streams on twitch.tv/lacy), plus any stream/video/clip featuring Lacy during the marathon from Nov 18.",
+ "source_queue": [
+  "https://www.youtube.com/watch?v=5Oru4XpAYZw (GTA 6 MARATHON DAY 1, 9h39m, from the owner)",
+  "https://www.youtube.com/watch?v=mMtyL4AGIrk (GTA 6 MARATHON DAY 1, 11h08m)"
+ ],
+ "max_clips_per_day": 2,
+ "submit_within_minutes": 30,
+ "notes": "Crowded pool (Reach GTA 6 pools: 502 clippers). Low priority vs KreekCraft. No logos: don't add any Vice Replay branding to these clips. Owner (Nov 19): use Everygen but be careful with credits: search one stretch (max 1 hour), finish at most 2 clips per batch, report credits spent; the free Drive inbox (studio.campaign_inbox) stays as backup. Day 1 VODs are longer than Everygen find_clips' 8-hour limit: search one stretch (e.g. the first hour) instead. Pool needs 750K approved views across OUR clips to get any share: realistic only with a big account.",
+ "priority": 2,
+ "audience_min_tier1": "50% from USA, Canada, Australia, UK, New Zealand",
+ "no_logos": true,
+ "youtube_channel_id": "UCeoZXkaJDtdTHafgoZeDcAA",
+ "layout": "blur",
+ "layout_note": "blur = whole stream frame on a blurred 9:16 background, so the streamer's camera and any required overlay stay visible.",
+ "twitch_login": "lacy",
+ "post_on": "ClipCircuit (@ClipCircuit-m5f) YouTube/TikTok/Instagram, posted by the owner. Never on Vice Replay (owner, Nov 20).",
+ "obligations_check_2026_11_26": {
+  "owner_decision": "Phase 7: keep the 6 clips public while obligations are checked; never delete; no transfer/repost to ClipCircuit without verified terms and rights.",
+  "found": [
+   "Pay type is a POOL: $12,500 split by each clipper's share of APPROVED views when the marathon ends (this file, from the campaign page + rules the owner pasted Nov 19). Views on a video removed or hidden before the split may not count, so changing visibility now could cut our share.",
+   "Rules require submitting each clip in Content Rewards within 30 minutes of posting; content/campaigns/tracker.md has no 'submitted' or 'earned' entries for these clips, so whether they were submitted/approved is UNKNOWN.",
+   "Campaign status (running/ended), pool payout date and our approved-view count are not visible without signing in: the public page https://contentrewards.com/c/campaigns/a5c63fad-cd53-4b81-9305-4a2d1696872a renders no campaign data (checked Nov 26).",
+   "Rights: footage is Lacy's stream, clipped under the campaign's terms; nothing on file says the permission outlives the campaign.",
+   "Contribution (YouTube Analytics, 28 days to Nov 26): ty0KP7MLaKU 1,855 views / 0 subs, aYBokm3TIYE 9,417 / 2 subs, Eikozi0uFec 1,008 / 1 sub; c_l7udfLNnk, x8C9oncanac, 9QNojUuqHtc not in the top-video report. 3 of the channel's 23 subscribers in that period.",
+   "Positioning: the owner's Nov 20 rule puts campaign clips on ClipCircuit because reposted clips can make Vice Replay look like an aggregator (YPP reused-content review looks at the whole channel)."
   ],
-  "engine": "everygen",
-  "clip_seconds": 30,
-  "captions": true,
-  "on_screen_credit": "Lacy",
-  "required_hashtags": [
-    "#LACY"
-  ],
-  "required_in_caption": "LACY's name in the caption or text overlay",
-  "rules": [
-    "Source: any stream, video or clip featuring Lacy during his GTA marathon, from November 18, 2026.",
-    "Lacy must be the primary focus, in the actual edit (not only the intro).",
-    "Platforms: TikTok, Instagram Reels, YouTube Shorts and X only.",
-    "Audience at least 50% from native English-speaking countries (USA, CA, AU, UK, NZ): English captions and on-screen text, no non-target slang.",
-    "Posting account must be in a related niche (gaming/GTA/streamer clips is fine).",
-    "Caption or text overlay must mention LACY's name; caption must use #LACY.",
-    "Only approved videos count; must reach the total view requirement (750K approved views) to share the pool.",
-    "Never portray Lacy negatively; no hate farming or false negative narratives (rejection or ban).",
-    "No view or engagement manipulation of any kind: botting, reposts, collab posts.",
-    "NO LOGOS OF ANY KIND: no Vice Replay logo/watermark, no channel badges, no game or brand logos.",
-    "No repetitive or non-matching thumbnails; no Japanese captions/descriptions.",
-    "Look for: funny moments, memorable quotes, reactions and memorable moments from the marathon.",
-    "Submit each clip in Content Rewards within 30 minutes of posting (Whop account verified with connected socials).",
-    "One strike and you're out: botting, AI-generated content or gaming the system. Real footage only, no AI voice/visuals.",
-    "Reach recommends a dedicated LACY clipping account (e.g. LACYClips) unless the account is a relevant clip page with 100+ followers."
-  ],
-  "source_footage": "Lacy's GTA 6 marathon stream replays on his YouTube channel (UCeoZXkaJDtdTHafgoZeDcAA; he streams on twitch.tv/lacy), plus any stream/video/clip featuring Lacy during the marathon from Nov 18.",
-  "source_queue": [
-    "https://www.youtube.com/watch?v=5Oru4XpAYZw (GTA 6 MARATHON DAY 1, 9h39m, from the owner)",
-    "https://www.youtube.com/watch?v=mMtyL4AGIrk (GTA 6 MARATHON DAY 1, 11h08m)"
-  ],
-  "max_clips_per_day": 2,
-  "submit_within_minutes": 30,
-  "notes": "Crowded pool (Reach GTA 6 pools: 502 clippers). Low priority vs KreekCraft. No logos: don't add any Vice Replay branding to these clips. Owner (Nov 19): use Everygen but be careful with credits: search one stretch (max 1 hour), finish at most 2 clips per batch, report credits spent; the free Drive inbox (studio.campaign_inbox) stays as backup. Day 1 VODs are longer than Everygen find_clips' 8-hour limit: search one stretch (e.g. the first hour) instead. Pool needs 750K approved views across OUR clips to get any share: realistic only with a big account.",
-  "priority": 2,
-  "audience_min_tier1": "50% from USA, Canada, Australia, UK, New Zealand",
-  "no_logos": true,
-  "youtube_channel_id": "UCeoZXkaJDtdTHafgoZeDcAA",
-  "layout": "blur",
-  "layout_note": "blur = whole stream frame on a blurred 9:16 background, so the streamer's camera and any required overlay stay visible.",
-  "twitch_login": "lacy",
-  "post_on": "ClipCircuit (@ClipCircuit-m5f) YouTube/TikTok/Instagram, posted by the owner. Never on Vice Replay (owner, Nov 20)."
+  "needs_owner": "Content Rewards / Whop dashboard (sign-in): campaign status, which clips were submitted and approved, approved views, payout date and amount.",
+  "recommendation": "Keep public until the pool is paid and final. Then set them UNLISTED (not private, not deleted): links keep working for any payout audit, they stop shaping Vice Replay's public identity, and they don't stay in public view under a campaign permission that has ended. Re-check if the dashboard shows any rule requiring them to stay public longer."
+ }
 }

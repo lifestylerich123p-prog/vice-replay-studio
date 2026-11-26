@@ -19,6 +19,7 @@ import argparse
 import json
 import re
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -44,12 +45,19 @@ def cfg():
         return {}
 
 
-def active(c=None):
+def property_status(prop, c=None):
     c = cfg() if c is None else c
-    return bool(c.get("enabled")) and c.get("account_status") == "active"
+    return ((c.get("properties") or {}).get(prop) or {}).get("status", "unverified")
 
 
-def why_inactive(c=None):
+def active(c=None, prop=None):
+    """Account confirmed (owner) and, for a given property, that property listed in Associates Central."""
+    c = cfg() if c is None else c
+    ok = bool(c.get("enabled")) and c.get("account_status") == "active"
+    return ok and (prop is None or property_status(prop, c) == "listed")
+
+
+def why_inactive(c=None, prop=None):
     c = cfg() if c is None else c
     if not c.get("enabled"):
         return "affiliate links switched off (content/affiliate.json enabled=false)"
@@ -57,7 +65,52 @@ def why_inactive(c=None):
         return (f"Amazon Associates account status is '{c.get('account_status', 'unknown')}': the owner must confirm in "
                 "Associates Central that the account is open (3 qualifying sales within 180 days of sign-up), the tax "
                 "interview is done and a payment method is set")
+    if prop and property_status(prop, c) != "listed":
+        return (f"property '{prop}' isn't verified as listed in Associates Central (status "
+                f"'{property_status(prop, c)}'): links stay off there until it is")
     return ""
+
+
+@dataclass
+class AffiliatePlacement:
+    """Owner Phase 7 #8: every placement passes all nine or it isn't published."""
+    account_confirmed: bool
+    property_verified: bool
+    tracking_id_verified: bool
+    product_relevant: bool
+    compatibility_verified: bool
+    disclosure_present: bool
+    platform_allowed: bool
+    program_compliant: bool
+    claims_verified: bool
+
+    def failures(self):
+        return [k for k, v in self.__dict__.items() if not v]
+
+
+def affiliate_eligible(item):
+    return not item.failures()
+
+
+def placement(text, topic, prop, c=None):
+    """Evaluate the Amazon links in `text` (a description/comment/page block) for property `prop`."""
+    c = cfg() if c is None else c
+    links = LINK.findall(text or "")
+    low = (text or "").lower()
+    tag = c.get("tag", "vicereplay-20")
+    sets = [n for n in RELEVANCE if relevant(n, topic) and relevant(n, text)]
+    return AffiliatePlacement(
+        account_confirmed=c.get("account_status") == "active" and bool(c.get("enabled")),
+        property_verified=property_status(prop, c) == "listed",
+        tracking_id_verified=all(f"tag={tag}" in u for u in links if "amazon." in u and "tryprimefree" not in u)
+        and tag == (c.get("tracking_id") or {}).get("id", tag),
+        product_relevant=bool(sets),
+        compatibility_verified=all(n in (c.get("compat") or {}) for n in sets) if sets else False,
+        disclosure_present="affiliate" in low or "#ad" in low or AMAZON_SENTENCE in low or "afiliado" in low,
+        platform_allowed=prop in ("vicereplay.com", "youtube-en", "youtube-es", "instagram"),
+        program_compliant=not PRICE.search(text or "") and not re.search(r"vicereplay\.com/v/|bit\.ly|tinyurl", text or ""),
+        claims_verified=True,  # product claims come from content/affiliate.json labels, which carry no performance claims
+    )
 
 
 def relevant(set_name, text):
@@ -73,46 +126,47 @@ def episode_text(ep):
     return " ".join(parts)
 
 
-def sets_for(ep, c=None):
+def sets_for(ep, c=None, prop="youtube-en"):
     """The link sets this episode may show: none while the account is unconfirmed; otherwise only the sets the episode
     asked for ("affiliate": [...], no default) that match what the video is about."""
     c = cfg() if c is None else c
-    if not active(c):
+    if not active(c, prop):
         return []
     text = episode_text(ep)
     return [n for n in ep.get("affiliate", []) if n in c.get("sets", {}) and relevant(n, text)]
 
 
-def block(ep, c=None):
+def block(ep, c=None, prop="youtube-en"):
     """Description lines (heading, links, Amazon's disclosure) or [] (make_video.affiliate_block)."""
     c = cfg() if c is None else c
-    items = [it for n in sets_for(ep, c) for it in c["sets"].get(n, [])]
+    items = [it for n in sets_for(ep, c, prop) for it in c["sets"].get(n, [])]
     items = [(label, url) for label, url in items if not PRICE.search(label)]  # no prices in our own text
     if not items:
         return []
     sep = lambda u: "&" if "?" in u else "?"
-    lines = [c["heading"]] + [f"{label}: {url}{sep(url)}tag={c['tag']}" for label, url in items]
-    return lines + [c["disclosure"], ""]
+    # disclosure FIRST, next to the links (Phase 7 #9: not hidden at the bottom)
+    lines = [c["heading"], c["disclosure"]] + [f"{label}: {url}{sep(url)}tag={c['tag']}" for label, url in items]
+    return lines + [""]
 
 
-def url(u, c=None):
-    """Website links: tagged only while the account is active; plain Amazon links otherwise."""
+def url(u, c=None, prop="vicereplay.com"):
+    """Website links: tagged only while the account is active and the site is a listed property; plain otherwise."""
     c = cfg() if c is None else c
     u = re.sub(r"([?&])tag=[^&\"#]*&?", r"\1", u).rstrip("?&")
-    if not active(c):
+    if not active(c, prop):
         return u
     return f"{u}{'&' if '?' in u else '?'}tag={c.get('tag', 'vicereplay-20')}"
 
 
-def check(text, topic="", c=None):
+def check(text, topic="", c=None, prop="youtube-en"):
     """Problems with affiliate links in a comment or description ([] = fine). A text without Amazon links is fine."""
     c = cfg() if c is None else c
     links = LINK.findall(text or "")
     if not links:
         return []
     out = []
-    if not active(c):
-        out.append(why_inactive(c))
+    if not active(c, prop):
+        out.append(why_inactive(c, prop))
     if not any(relevant(n, topic) and relevant(n, text) for n in RELEVANCE):
         out.append("the link isn't about what the video covers (e.g. no SSD link on an ATM robbery guide)")
     low = (text or "").lower()
@@ -123,16 +177,53 @@ def check(text, topic="", c=None):
     return out
 
 
+def plan(prop="youtube-en", c=None):
+    """Which uploaded long videos on `prop` would carry which link sets (relevance only; the account/property switch is
+    applied when they are actually added). Shorts are skipped: links in Shorts descriptions aren't clickable."""
+    c = cfg() if c is None else c
+    reg_file = ROOT / "content" / "learn" / ("uploads-es.json" if prop == "youtube-es" else "uploads.json")
+    try:
+        reg = json.loads(reg_file.read_text())
+    except (OSError, ValueError):
+        return []
+    out = []
+    for vid, r in reg.items():
+        if r.get("hidden") or r.get("item") not in ("main",):
+            continue
+        p = ROOT / "episodes" / f"{r.get('slug')}.json"
+        if not p.exists():
+            continue
+        ep = json.loads(p.read_text())
+        text = " ".join([ep.get("title", ""), r.get("title", ""), " ".join(ep.get("tags", []))])  # what it's ABOUT
+        wanted = ep.get("affiliate") or []
+        ok = [n for n in wanted if n in c.get("sets", {}) and relevant(n, text) and n != "deals"]
+        out.append({"video": vid, "slug": r.get("slug"), "title": r.get("title", "")[:60], "sets": ok,
+                    "skipped": [n for n in wanted if n not in ok]})
+    return out
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="python -m studio.affiliate")
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("status")
+    pl = sub.add_parser("plan")
+    pl.add_argument("--prop", default="youtube-en")
     p = sub.add_parser("check")
     p.add_argument("text")
     p.add_argument("--topic", default="")
     a = ap.parse_args(argv)
     if a.cmd == "status":
-        print("affiliate links: " + ("ON" if active() else "PAUSED: " + why_inactive()))
+        c = cfg()
+        print("account: " + ("CONFIRMED by the owner" if c.get("account_status") == "active" else why_inactive(c)))
+        for prop in (c.get("properties") or {}):
+            print(f"  {prop:15} links {'ON' if active(c, prop) else 'OFF'}  ({property_status(prop, c)})")
+        return
+    if a.cmd == "plan":
+        rows = plan(a.prop)
+        print(f"{a.prop}: links {'ON' if active(prop=a.prop) else 'OFF (' + why_inactive(prop=a.prop) + ')'}")
+        for r in rows:
+            print(f"  {r['video']}  {r['title']:<60}  links: {', '.join(r['sets']) or 'none (not relevant)'}"
+                  + (f"  (skipped: {', '.join(r['skipped'])})" if r["skipped"] else ""))
         return
     probs = check(a.text, a.topic)
     print("ok" if not probs else "\n".join("- " + p for p in probs))

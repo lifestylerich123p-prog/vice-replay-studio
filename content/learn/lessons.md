@@ -374,3 +374,8 @@ short, specific and backed by a number. Remove lessons that later data proves wr
 - 2026-11-26 (Phase 5, sources): direct page fetches were refused in this session; facts came from web search
   summaries naming 2+ sites. Community readings (Balsero = Hialeah, Sahara Arena = Kaseya Center) are labelled
   community-found and the script says Rockstar hasn't confirmed; disagreements (GTApedia: Miami River) are stated.
+- 2026-11-26 (Phase 7, Spanish data): the "5.9% median viewed" for Spanish Shorts was an artifact: 4 of 10 had 0 views
+  and counted as 0%. Videos that got any views kept them (91%, 116%, 136%, 91% viewed; Bad Bunny 11.7% of 11 views).
+  The Spanish problem is DISTRIBUTION (31 views in 28 days, 0 subscribers), not retention: fix reach first (consistent
+  2/day Spanish slots, Spanish search phrases in titles, Spanish-first topics), keep testing hooks. xplat now skips
+  zero-view videos in % viewed medians.

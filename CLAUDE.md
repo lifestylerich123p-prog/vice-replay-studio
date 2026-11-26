@@ -59,6 +59,8 @@ experimental (`studio.mix`, adjust from results, never drop a format on one vide
 on its own branch; the main chat merges. Sensitive topics carry `claim_status` (confirmed / community-found / theory /
 hypothetical / fiction). Details: docs/OPERATIONS.md "Phase 3 tools".
 
+**Phase 6-7 (owner Nov 26)**: comments only via `python -m studio.comments post` (channel/public/duplicate/affiliate checks + read-back; never say "pinned"). Affiliate links only through `studio/affiliate.py` (`python -m studio.affiliate status|plan`): account confirmed by the owner, but each PROPERTY must be listed in Associates Central (vicereplay.com yes; YouTube EN/ES + Instagram unverified = no links there), relevant to the video/page, disclosure first, no typed prices, direct amazon.com links only. Every Short needs a `claims` ledger from Nov 30 (`python -m studio.sources`: direct vs search-summary, independence, hedged wording) and `hook_type`/`first_frame`. `python -m studio.cycle` is the one-table check of the autonomous cycle. Lacy campaign clips stay public until the pool pays out (content/campaigns/lacy-gta6.json). No subscriptions, credit purchases or paid ads.
+
 ## Rules for this channel
 - **Footage**: everything in `media/` is used as backgrounds. Allowed: official Rockstar screenshots
   (`media/official/`, 175 incl. 37 Ultimate Edition shots of cars/shops/style, named by place/character/car, incl. vintage-* and `leonida-map-poster.jpg`, Rockstar's
