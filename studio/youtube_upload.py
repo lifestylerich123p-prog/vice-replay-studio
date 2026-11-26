@@ -29,7 +29,7 @@ import urllib.request
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import postguard
+from . import approvals, postguard
 from .review_page import extra_time, times_for
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -560,11 +560,31 @@ def main():
                 why = postguard.same_story(title_candidates(ep, key, title), recent)
             if why:
                 print(f"skip {key}: {why}. Another chat or run already posted it; --force uploads anyway.")
+                vid_seen = next((v for v, r in guard[0].items() if (r.get("slug"), r.get("item")) == (slug, key)), None)
+                approvals.reconcile(slug, key, "youtube-en", found_id=vid_seen or "on the channel (same title)")
                 continue
+            approvals.reconcile(slug, key, "youtube-en")  # a failed earlier attempt that never reached YouTube
+        # Directive v2.0 (Nov 26): only the exact package the owner approved, for this platform and this time
+        try:
+            approvals.require(slug, key, "youtube-en", title=title, video=path,
+                              publish="now" if a.now else (day.isoformat(), when))
+        except approvals.Blocked as e:
+            print(f"BLOCKED {key}: {e}")
+            continue
         publish_at = None if a.now else slot(day, when)
         print(f"uploading {key}: {title}  ->  {'now' if not publish_at else when + ' ET'}")
-        v = upload(tok, path, title, desc, tg, publish_at, es=es)
+        approvals.set_state(slug, key, "youtube-en", "UPLOADING", "upload started")
+        try:
+            v = upload(tok, path, title, desc, tg, publish_at, es=es)
+        except BaseException as e:  # timeouts included: the next run asks YouTube before trying again
+            approvals.set_state(slug, key, "youtube-en", "FAILED", f"upload error: {str(e)[:160]}")
+            approvals.upload_result(False, f"{slug} {key}: {str(e)[:100]}")
+            raise
         vid = v["id"]
+        approvals.set_state(slug, key, "youtube-en", "SCHEDULED" if publish_at else "PUBLISHED",
+                            f"uploaded, scheduled {day} {when} ET" if publish_at else "uploaded, public now",
+                            video_id=vid)
+        approvals.upload_result(True)
         done[key] = {"id": vid, "url": f"https://www.youtube.com/watch?v={vid}", "title": title,
                      "scheduled_et": when if publish_at else "published now",
                      "privacy_returned": v.get("status", {}).get("privacyStatus")}

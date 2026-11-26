@@ -1,5 +1,5 @@
 {
- "_note": "Approved Shorts not yet uploaded (owner approvals in content/owner.md). studio.spend uploads the earliest ones early, scheduled for these slots, whenever the day's quota has room; studio.ship's duplicate guard skips anything already up. Dates/times are US Eastern.",
+ "_note": "Publishing queue (owner directive v2.0 + autonomous publishing, Nov 26, 2026): items here are CANDIDATES for their slot. studio.spend uploads one only when studio/approvals.py's gate passes all 10 conditions right before upload; otherwise it is held (NEEDS_REVIEW / BLOCKED) and reported. Times are US Eastern. Spanish YouTube is never auto-published.",
  "items": [
   {
    "slug": "gta6-money-chart-es",
@@ -69,15 +69,17 @@
    "slug": "gta6-4-secrets",
    "item": "short",
    "en": [
-    "2026-11-30",
-    "12:30 PM"
+    "2026-12-04",
+    "8:00 AM"
    ],
    "es": [
     "2026-12-04",
     "9:30 AM"
    ],
    "approved": "Nov 23 6:45 AM (APPROVE; GTA 6-style countdown cards)",
-   "moved": "Nov 24 (owner 'Research those maps pictures more / Approve everything'): map Shorts get earlier slots; now shows where each secret is (official map zooms)"
+   "moved": "Nov 24 (owner 'Research those maps pictures more / Approve everything'): map Shorts get earlier slots; now shows where each secret is (official map zooms)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-11-30', '12:30 PM']"
   },
   {
    "slug": "gta6-vs-gta5-fps",
@@ -106,29 +108,6 @@
    "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)"
   },
   {
-   "slug": "gta6-game-awards-8-noms",
-   "item": "short",
-   "en": [
-    "2026-12-08",
-    "12:30 PM"
-   ],
-   "es": [
-    "2026-11-28",
-    "12:30 PM"
-   ],
-   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)",
-   "moved": "Nov 25: Fri 11:00 AM went to tier list #5 (momentum; owner approved the set)"
-  },
-  {
-   "slug": "gta6-10-numbers",
-   "item": "main",
-   "en": [
-    "2026-11-29",
-    "3:30 PM"
-   ],
-   "approved": "Nov 23 (owner \"all\": Sunday long-video slot, starting with GTA 6 in 10 Numbers)"
-  },
-  {
    "slug": "gta6-ultimate-vs-standard",
    "item": "short",
    "en": [
@@ -137,47 +116,6 @@
    ],
    "approved": "Nov 23 (owner \"all\": fill the open slots with new lettering Shorts; owner can pull any before its slot)",
    "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
-  },
-  {
-   "slug": "gta6-criminal-profile",
-   "item": "short",
-   "en": [
-    "2026-12-09",
-    "11:00 AM"
-   ],
-   "es": [
-    "2026-12-11",
-    "12:30 PM"
-   ],
-   "approved": "Nov 24 ~3:30 PM ET (owner: \"Ok do what you think\" to: criminal profile tips Short Tue Dec 1 11:00, 3 records to Sun Dec 6 11:00); search gap 'gta 6 how to lower criminal profile' (guide EN+ES live); RE-CHECK facts before upload (owner rule); Spanish winners-only",
-   "moved": "Nov 26: moved later so a map/tier Short takes its slot (owner approved the swap with the 3 new Shorts; plain-fact Shorts lost ~7-15x this week)"
-  },
-  {
-   "slug": "gta6-easter-eggs-tier-list",
-   "item": "short",
-   "en": [
-    "2026-12-02",
-    "11:00 AM"
-   ],
-   "es": [
-    "2026-12-03",
-    "1:30 PM"
-   ],
-   "approved": "Nov 24 ~5:30 PM ET (owner: \"Approve\" 3 GTA 6 vs GTA 5 comparisons + 1 tier list in place of the 4 weakest fact/quiz Shorts; tier cards 16.9 v/h, comparisons 6.0 v/h on the scorecard); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
-   "moved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts)"
-  },
-  {
-   "slug": "gta6-vs-gta5-map",
-   "item": "short",
-   "en": [
-    "2026-12-04",
-    "11:00 AM"
-   ],
-   "es": [
-    "2026-12-05",
-    "1:30 PM"
-   ],
-   "approved": "Nov 24 ~5:30 PM ET (owner: \"Approve\" 3 GTA 6 vs GTA 5 comparisons + 1 tier list in place of the 4 weakest fact/quiz Shorts; tier cards 16.9 v/h, comparisons 6.0 v/h on the scorecard); RE-CHECK facts before upload (owner rule); Spanish winners-only."
   },
   {
    "slug": "gta6-patch-notes-7-fixes",
@@ -206,34 +144,6 @@
     "12:30 PM"
    ],
    "es_status": "skipped: 122 views at 40 h (bar 150)"
-  },
-  {
-   "slug": "gta6-top-3-rides",
-   "item": "short",
-   "en": [
-    "2026-11-30",
-    "9:30 AM"
-   ],
-   "es": [
-    "2026-11-30",
-    "1:30 PM"
-   ],
-   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): remade as lettering cards",
-   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high"
-  },
-  {
-   "slug": "gta-cities-quiz",
-   "item": "short",
-   "en": [
-    "2026-12-03",
-    "11:00 AM"
-   ],
-   "es": [
-    "2026-12-03",
-    "12:30 PM"
-   ],
-   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): Thursday quiz",
-   "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots"
   },
   {
    "slug": "gta-tier-list-protagonists",
@@ -266,24 +176,17 @@
    "slug": "gta6-2021-house",
    "item": "short",
    "en": [
-    "2026-11-29",
-    "8:00 AM"
+    "2026-12-02",
+    "6:00 PM"
    ],
    "es": [
     "2026-11-30",
     "12:30 PM"
    ],
    "approved": "Nov 24 ~2:45 PM ET (owner: \"Approve\" the swap table: GTA 5 vs 6 cops + protagonists tier list Thu, 2021 house Sun; B-tier tier list taking off); map series; Rockstar hasn't confirmed it was planned (said in the Short); RE-CHECK facts before upload (owner rule); Spanish winners-only",
-   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-11-29 10:00 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)"
-  },
-  {
-   "slug": "gta6-game-awards-explained",
-   "item": "main",
-   "en": [
-    "2026-12-06",
-    "3:30 PM"
-   ],
-   "approved": "Nov 23 ~7 PM (owner \"APPROVE what you should do next: in your opinion\"): Sunday long-video slot; re-check every fact Dec 5-6"
+   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-11-29 10:00 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-11-29', '8:00 AM']"
   },
   {
    "slug": "gta-tier-list-maps",
@@ -326,15 +229,6 @@
    "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); hacker sentencing, afternoon slot under the big-news exception"
   },
   {
-   "slug": "gta6-stream-wars",
-   "item": "main",
-   "en": [
-    "2026-11-30",
-    "3:30 PM"
-   ],
-   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); long video, optional slot per the daily run"
-  },
-  {
    "slug": "gta6-money-tier-list",
    "item": "short",
    "en": [
@@ -346,20 +240,6 @@
     "1:30 PM"
    ],
    "approved": "Nov 24 ~11:30 AM (owner \"Approve everything for good of the channel\"); tier list (the format that took off) on the top search topic"
-  },
-  {
-   "slug": "gta6-key-cloner-3-steps",
-   "item": "short",
-   "en": [
-    "2026-12-04",
-    "12:30 PM"
-   ],
-   "es": [
-    "2026-12-06",
-    "12:30 PM"
-   ],
-   "approved": "Nov 24 ~11:30 AM (owner \"Approve everything for good of the channel\"); how-to on a top search topic",
-   "moved": "Nov 25 (owner: \"Start posting the maps videos at least one a day\"): moved so every day has a map Short"
   },
   {
    "slug": "gta6-ibai-cero-espectadores-es",
@@ -385,48 +265,54 @@
    "slug": "gta6-ufo-where",
    "item": "short",
    "en": [
-    "2026-12-07",
-    "12:30 PM"
+    "2026-12-03",
+    "8:00 AM"
    ],
    "es": [
     "2026-12-09",
     "12:30 PM"
    ],
    "approved": "Nov 24 ~12:30 PM (owner 'Research those maps pictures more' + 'Approve everything'; the zoom-to-pin map Short offered earlier that day); gate clean; RE-CHECK the facts before upload (owner rule)",
-   "moved": "Nov 25 3 AM swap fallback (unschedule blocked): UFO to Mon Dec 7 12:30 PM (its Sat Nov 28 12:30 slot now belongs to gta6-impound-app); Spanish moved after it (winners-only)."
+   "moved": "Nov 25 3 AM swap fallback (unschedule blocked): UFO to Mon Dec 7 12:30 PM (its Sat Nov 28 12:30 slot now belongs to gta6-impound-app); Spanish moved after it (winners-only).",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-07', '12:30 PM']"
   },
   {
    "slug": "gta6-vercetti-portal",
    "item": "short",
    "en": [
-    "2026-11-29",
-    "11:00 AM"
+    "2026-11-30",
+    "6:00 PM"
    ],
    "es": [
     "2026-11-30",
     "1:30 PM"
    ],
-   "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)"
+   "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-11-29', '11:00 AM']"
   },
   {
    "slug": "gta6-ultimate-cars-where",
    "item": "short",
    "en": [
-    "2026-12-07",
-    "9:30 AM"
+    "2026-12-05",
+    "8:00 AM"
    ],
    "es": [
     "2026-12-02",
     "1:30 PM"
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
-   "moved": "Nov 26: Dec 1 12:30 PM -> Dec 7 9:30 AM (evergreen) so the viral Ninja Turtles find goes out sooner"
+   "moved": "Nov 26: Dec 1 12:30 PM -> Dec 7 9:30 AM (evergreen) so the viral Ninja Turtles find goes out sooner",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-07', '9:30 AM']"
   },
   {
    "slug": "gta6-early-helicopter",
    "item": "short",
    "en": [
-    "2026-12-02",
+    "2026-12-06",
     "8:00 AM"
    ],
    "es": [
@@ -435,28 +321,32 @@
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots",
-   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-12-02 9:30 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)"
+   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-12-02 9:30 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-02', '8:00 AM']"
   },
   {
    "slug": "gta6-dexter-apartment-map",
    "item": "short",
    "en": [
     "2026-12-07",
-    "11:00 AM"
+    "8:00 AM"
    ],
    "es": [
     "2026-12-03",
     "1:30 PM"
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
-   "moved": "Nov 26: Dec 2 12:30 PM -> Dec 7 11:00 AM (evergreen) so the viral ghost ship find goes out sooner"
+   "moved": "Nov 26: Dec 2 12:30 PM -> Dec 7 11:00 AM (evergreen) so the viral ghost ship find goes out sooner",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-07', '11:00 AM']"
   },
   {
    "slug": "gta6-military-base-jets",
    "item": "short",
    "en": [
-    "2026-12-03",
-    "8:00 AM"
+    "2026-12-07",
+    "6:00 PM"
    ],
    "es": [
     "2026-12-04",
@@ -464,28 +354,32 @@
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots",
-   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-12-03 9:30 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)"
+   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-12-03 9:30 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-03', '8:00 AM']"
   },
   {
    "slug": "gta6-red-dead-easter-eggs",
    "item": "short",
    "en": [
-    "2026-12-09",
-    "12:30 PM"
+    "2026-12-08",
+    "8:00 AM"
    ],
    "es": [
     "2026-12-04",
     "1:30 PM"
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
-   "moved": "Nov 26: to Dec 9 so that day has a map Short (owner Nov 25: one map video a day); Dec 3 keeps the jets map Short"
+   "moved": "Nov 26: to Dec 9 so that day has a map Short (owner Nov 25: one map video a day); Dec 3 keeps the jets map Short",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-09', '12:30 PM']"
   },
   {
    "slug": "gta6-skunk-ape-where",
    "item": "short",
    "en": [
     "2026-11-28",
-    "8:00 AM"
+    "6:00 PM"
    ],
    "es": [
     "2026-12-04",
@@ -493,7 +387,9 @@
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "moved": "Nov 25 (owner: \"Start posting the maps videos at least one a day\"): moved so every day has a map Short",
-   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-11-28 12:30 PM; the 8 AM sunken-treasure map Short hit ~100 views/h)"
+   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-11-28 12:30 PM; the 8 AM sunken-treasure map Short hit ~100 views/h)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-11-28', '8:00 AM']"
   },
   {
    "slug": "gta6-giant-crab",
@@ -513,15 +409,17 @@
    "slug": "gta6-mod-shops",
    "item": "short",
    "en": [
-    "2026-12-05",
-    "10:00 AM"
+    "2026-12-04",
+    "6:00 PM"
    ],
    "es": [
     "2026-12-06",
     "1:30 PM"
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); map series, 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
-   "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots"
+   "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-05', '10:00 AM']"
   },
   {
    "slug": "gta6-shoe-store-where",
@@ -547,20 +445,6 @@
    "approved": "Nov 24 (owner: \"Check online how channels like this are run and see if we can implement\" + \"all is approved\"): long search guide that ties the map Shorts together (their Related video); RE-CHECK facts before upload"
   },
   {
-   "slug": "gta6-impound-app",
-   "item": "short",
-   "en": [
-    "2026-12-05",
-    "1:30 PM"
-   ],
-   "es": [
-    "2026-12-05",
-    "1:30 PM"
-   ],
-   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
-   "moved": "Nov 26: Sun Nov 29 12:30 PM -> Sat Dec 5 1:30 PM to make room for the mission-replay how-to (owner approved the swap)"
-  },
-  {
    "slug": "gta6-sunken-treasure",
    "item": "short",
    "en": [
@@ -575,57 +459,19 @@
    "moved": "Nov 25 (owner: \"Start posting the maps videos at least one a day\"): moved so every day has a map Short"
   },
   {
-   "slug": "gta6-trading-cards",
-   "item": "short",
-   "en": [
-    "2026-12-08",
-    "11:00 AM"
-   ],
-   "es": [
-    "2026-12-11",
-    "1:30 PM"
-   ],
-   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
-   "moved": "Nov 26: moved later so a map/tier Short takes its slot (owner approved the swap with the 3 new Shorts; plain-fact Shorts lost ~7-15x this week)"
-  },
-  {
-   "slug": "gta6-waink-app",
-   "item": "short",
-   "en": [
-    "2026-12-05",
-    "12:30 PM"
-   ],
-   "es": [
-    "2026-12-06",
-    "1:30 PM"
-   ],
-   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only."
-  },
-  {
-   "slug": "gta6-stunt-jumps",
-   "item": "short",
-   "en": [
-    "2026-12-06",
-    "11:00 AM"
-   ],
-   "es": [
-    "2026-12-07",
-    "1:30 PM"
-   ],
-   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only."
-  },
-  {
    "slug": "gta6-vintage-stanier",
    "item": "short",
    "en": [
-    "2026-12-06",
-    "12:30 PM"
+    "2026-12-09",
+    "6:00 PM"
    ],
    "es": [
     "2026-12-07",
     "12:30 PM"
    ],
-   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only."
+   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-06', '12:30 PM']"
   },
   {
    "slug": "gta6-atm-robbery-guide",
@@ -654,13 +500,15 @@
    "item": "short",
    "en": [
     "2026-12-08",
-    "9:30 AM"
+    "6:00 PM"
    ],
    "approved": "Nov 25 ~3:30 PM ET (owner: \"Approve and post one now\"): the Nov 25 daily set, recovered from its log; facts re-checked Nov 25 (ATM winch + marked bills, Paul Walker car)",
    "es": [
     "2026-12-10",
     "1:30 PM"
-   ]
+   ],
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-08', '9:30 AM']"
   },
   {
    "slug": "gta6-atm-robbery-guide",
@@ -679,54 +527,47 @@
    "slug": "gta6-vice-city-real-miami",
    "item": "short",
    "en": [
-    "2026-11-30",
-    "8:00 AM"
+    "2026-12-06",
+    "6:00 PM"
    ],
    "es": [
     "2026-12-01",
     "12:30 PM"
    ],
    "approved": "Nov 26 (owner: \"approve and check everything\"): map/tier formats from the mid-week verdict; facts in 2+ sources (re-check right before upload)",
-   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-11-30 11:00 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)"
+   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-11-30 11:00 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-11-30', '8:00 AM']"
   },
   {
    "slug": "gta6-map-quiz-places",
    "item": "short",
    "en": [
-    "2026-12-01",
-    "11:00 AM"
+    "2026-12-03",
+    "6:00 PM"
    ],
    "es": [
     "2026-12-02",
     "12:30 PM"
    ],
-   "approved": "Nov 26 (owner: \"approve and check everything\"): map/tier formats from the mid-week verdict; facts in 2+ sources (re-check right before upload)"
-  },
-  {
-   "slug": "gta6-special-cars-tier-list",
-   "item": "short",
-   "en": [
-    "2026-12-05",
-    "11:00 AM"
-   ],
-   "es": [
-    "2026-12-12",
-    "12:30 PM"
-   ],
-   "approved": "Nov 26 (owner: \"approve and check everything\"): map/tier formats from the mid-week verdict; facts in 2+ sources (re-check right before upload)"
+   "approved": "Nov 26 (owner: \"approve and check everything\"): map/tier formats from the mid-week verdict; facts in 2+ sources (re-check right before upload)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-01', '11:00 AM']"
   },
   {
    "slug": "gta6-alligators-where",
    "item": "short",
    "en": [
-    "2026-12-10",
-    "9:30 AM"
+    "2026-12-09",
+    "8:00 AM"
    ],
    "es": [
     "2026-12-13",
     "1:30 PM"
    ],
-   "approved": "Nov 26 (owner: \"approve\"): map Short answering the 'gta 6 alligator' search; gate clean; facts in 2+ sources (re-check right before upload)"
+   "approved": "Nov 26 (owner: \"approve\"): map Short answering the 'gta 6 alligator' search; gate clean; facts in 2+ sources (re-check right before upload)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-10', '9:30 AM']"
   },
   {
    "slug": "gta6-mask-where",
@@ -735,44 +576,42 @@
     "2026-11-27",
     "8:00 AM"
    ],
-   "approved": "Nov 26 (owner: \"APROVE ALL OF THEM\" for the 7 changes, incl. #2 'follow up a winner the same day'): momentum follow-up to the shoe store map Short (692 views, 55/h) answering 'gta 6 mask location / mask shop'; facts in 4 guides (re-check right before upload); 4th Short of the day in the best morning slot, like Thursday's sunken treasure"
+   "approved": "Nov 26 (owner: \"APROVE ALL OF THEM\" for the 7 changes, incl. #2 'follow up a winner the same day'): momentum follow-up to the shoe store map Short (692 views, 55/h) answering 'gta 6 mask location / mask shop'; facts in 4 guides (re-check right before upload); 4th Short of the day in the best morning slot, like Thursday's sunken treasure",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)"
   },
   {
    "slug": "gta6-backrooms-where",
    "item": "short",
    "en": [
     "2026-11-28",
-    "1:30 PM"
+    "8:00 AM"
    ],
-   "approved": "Nov 26 (owner: \"CONTINUE TO RESEARH APPROVE\" after the Sat 1:30 PM proposal): new map find from the daily research; location in 5+ guides, item/reward left out (disputed); re-check right before upload"
-  },
-  {
-   "slug": "gta6-no-mission-replay",
-   "item": "short",
-   "en": [
-    "2026-11-29",
-    "12:30 PM"
-   ],
-   "approved": "Nov 26 (owner: \"Aprove\", after the research Shorts were sent): how-to answering 'gta 6 replay missions' (7 outlets); re-check right before upload"
+   "approved": "Nov 26 (owner: \"CONTINUE TO RESEARH APPROVE\" after the Sat 1:30 PM proposal): new map find from the daily research; location in 5+ guides, item/reward left out (disputed); re-check right before upload",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-11-28', '1:30 PM']"
   },
   {
    "slug": "gta6-silent-hill-hotel",
    "item": "short",
    "en": [
-    "2026-12-03",
-    "12:30 PM"
+    "2026-11-30",
+    "8:00 AM"
    ],
-   "approved": "Nov 26 (owner: \"Aprove\", after the research Shorts were sent): map spot answering 'gta 6 silent hill easter egg' (6 guides incl. VGC, Dexerto); re-check right before upload"
+   "approved": "Nov 26 (owner: \"Aprove\", after the research Shorts were sent): map spot answering 'gta 6 silent hill easter egg' (6 guides incl. VGC, Dexerto); re-check right before upload",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-03', '12:30 PM']"
   },
   {
    "slug": "gta6-white-fox-where",
    "item": "short",
    "en": [
-    "2026-12-04",
+    "2026-12-02",
     "8:00 AM"
    ],
    "approved": "Nov 26 (owner: \"Aprove\", after the research Shorts were sent): map spot answering 'gta 6 legendary animals / white fox' (Insider Gaming, Mobalytics); re-check right before upload",
-   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-12-04 9:30 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)"
+   "moved_8am": "Nov 26 owner \"DO IT\": 8:00 AM map test week (was 2026-12-04 9:30 AM; the 8 AM sunken-treasure map Short hit ~100 views/h)",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-04', '8:00 AM']"
   },
   {
    "slug": "gta6-precio-por-pais-es",
@@ -788,55 +627,67 @@
    "slug": "gta6-tattoo-shops-where",
    "item": "short",
    "en": [
-    "2026-11-28",
-    "11:00 AM"
+    "2026-11-29",
+    "6:00 PM"
    ],
-   "approved": "Nov 26 (owner \"DO IT\": map Shorts replace the parked versus/fact Shorts, \"as I confirm them\"): tattoo shops (search 'gta 6 tattoo shops'; shoe-store family), in the stream-wars slot; 5 guides; re-check right before upload"
+   "approved": "Nov 26 (owner \"DO IT\": map Shorts replace the parked versus/fact Shorts, \"as I confirm them\"): tattoo shops (search 'gta 6 tattoo shops'; shoe-store family), in the stream-wars slot; 5 guides; re-check right before upload",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-11-28', '11:00 AM']"
   },
   {
    "slug": "gta6-sell-jewelry-where",
    "item": "short",
    "en": [
     "2026-12-01",
-    "8:00 AM"
+    "6:00 PM"
    ],
-   "approved": "Nov 26 (owner \"DO IT\": map Shorts replace the parked versus/fact Shorts, \"as I confirm them\"): where to sell jewelry (search 'gta 6 where to sell jewelry'), in the vs-Red-Dead slot moved to the 8 AM test; 6 guides; re-check right before upload"
+   "approved": "Nov 26 (owner \"DO IT\": map Shorts replace the parked versus/fact Shorts, \"as I confirm them\"): where to sell jewelry (search 'gta 6 where to sell jewelry'), in the vs-Red-Dead slot moved to the 8 AM test; 6 guides; re-check right before upload",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-01', '8:00 AM']"
   },
   {
    "slug": "gta6-black-panther-where",
    "item": "short",
    "en": [
-    "2026-12-06",
-    "10:00 AM"
+    "2026-12-05",
+    "6:00 PM"
    ],
-   "approved": "Nov 26 (owner \"DO IT\": map Shorts replace the parked versus/fact Shorts, \"as I confirm them\"): legendary animal #2 (panther, Belpoint), in the vs-GTA-5-Online slot; 4 guides; re-check right before upload"
+   "approved": "Nov 26 (owner \"DO IT\": map Shorts replace the parked versus/fact Shorts, \"as I confirm them\"): legendary animal #2 (panther, Belpoint), in the vs-GTA-5-Online slot; 4 guides; re-check right before upload",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-06', '10:00 AM']"
   },
   {
    "slug": "gta6-black-bear-where",
    "item": "short",
    "en": [
     "2026-12-10",
-    "12:30 PM"
+    "8:00 AM"
    ],
-   "approved": "Nov 26 (owner \"DO IT\": map Shorts replace the parked versus/fact Shorts, \"as I confirm them\"): legendary animal #3 (black bear, south Hamlet), in the 80-hours slot; 4 guides; re-check right before upload"
+   "approved": "Nov 26 (owner \"DO IT\": map Shorts replace the parked versus/fact Shorts, \"as I confirm them\"): legendary animal #3 (black bear, south Hamlet), in the 80-hours slot; 4 guides; re-check right before upload",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-10', '12:30 PM']"
   },
   {
    "slug": "gta6-ninja-turtles-where",
    "item": "short",
    "en": [
-    "2026-12-01",
-    "12:30 PM"
+    "2026-11-29",
+    "8:00 AM"
    ],
-   "approved": "Nov 26 (owner \"CONTINUE TO DO IT\": map finds replace the parked Shorts; viral ones go earlier): Ninja Turtles drain north of Millport (viral find: 30K+ likes; 5 sources); re-check right before upload"
+   "approved": "Nov 26 (owner \"CONTINUE TO DO IT\": map finds replace the parked Shorts; viral ones go earlier): Ninja Turtles drain north of Millport (viral find: 30K+ likes; 5 sources); re-check right before upload",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-01', '12:30 PM']"
   },
   {
    "slug": "gta6-ghost-ship-where",
    "item": "short",
    "en": [
-    "2026-12-02",
-    "12:30 PM"
+    "2026-12-01",
+    "8:00 AM"
    ],
-   "approved": "Nov 26 (owner \"CONTINUE TO DO IT\": map finds replace the parked Shorts; viral ones go earlier): ghost ship / St. Lucia Lighthouse, Little Hardin Island (6 guides); re-check right before upload"
+   "approved": "Nov 26 (owner \"CONTINUE TO DO IT\": map finds replace the parked Shorts; viral ones go earlier): ghost ship / St. Lucia Lighthouse, Little Hardin Island (6 guides); re-check right before upload",
+   "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
+   "moved_plan": "was ['2026-12-02', '12:30 PM']"
   }
  ],
  "paused": [
@@ -1084,6 +935,222 @@
    ],
    "approved": "Nov 24 ~12:15 PM (owner: \"Do what you think will help the channel, all is approved\"); Spanish-only map Short, Viral Adam voice done (5 credits), 2+ guides per spot; RE-CHECK facts before upload (owner rule)",
    "paused": "Nov 26 owner \"DO IT\": Spanish YouTube paused until Dec 3 (37 views in 12 videos); Spanish versions go to TikTok instead."
+  },
+  {
+   "slug": "gta6-game-awards-8-noms",
+   "item": "short",
+   "en": [
+    "2026-12-08",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-11-28",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~7:40 AM (APPROVE; lettering Shorts from the growth research)",
+   "moved": "Nov 25: Fri 11:00 AM went to tier list #5 (momentum; owner approved the set)",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-10-numbers",
+   "item": "main",
+   "en": [
+    "2026-11-29",
+    "3:30 PM"
+   ],
+   "approved": "Nov 23 (owner \"all\": Sunday long-video slot, starting with GTA 6 in 10 Numbers)",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-criminal-profile",
+   "item": "short",
+   "en": [
+    "2026-12-09",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-12-11",
+    "12:30 PM"
+   ],
+   "approved": "Nov 24 ~3:30 PM ET (owner: \"Ok do what you think\" to: criminal profile tips Short Tue Dec 1 11:00, 3 records to Sun Dec 6 11:00); search gap 'gta 6 how to lower criminal profile' (guide EN+ES live); RE-CHECK facts before upload (owner rule); Spanish winners-only",
+   "moved": "Nov 26: moved later so a map/tier Short takes its slot (owner approved the swap with the 3 new Shorts; plain-fact Shorts lost ~7-15x this week)",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-easter-eggs-tier-list",
+   "item": "short",
+   "en": [
+    "2026-12-02",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-12-03",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~5:30 PM ET (owner: \"Approve\" 3 GTA 6 vs GTA 5 comparisons + 1 tier list in place of the 4 weakest fact/quiz Shorts; tier cards 16.9 v/h, comparisons 6.0 v/h on the scorecard); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
+   "moved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts)",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-vs-gta5-map",
+   "item": "short",
+   "en": [
+    "2026-12-04",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-12-05",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~5:30 PM ET (owner: \"Approve\" 3 GTA 6 vs GTA 5 comparisons + 1 tier list in place of the 4 weakest fact/quiz Shorts; tier cards 16.9 v/h, comparisons 6.0 v/h on the scorecard); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-top-3-rides",
+   "item": "short",
+   "en": [
+    "2026-11-30",
+    "9:30 AM"
+   ],
+   "es": [
+    "2026-11-30",
+    "1:30 PM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): remade as lettering cards",
+   "moved": "Nov 24: reorder (owner 'Approve everything'): rankings/tier lists/versus into the earliest morning slots while launch interest is high",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta-cities-quiz",
+   "item": "short",
+   "en": [
+    "2026-12-03",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-12-03",
+    "12:30 PM"
+   ],
+   "approved": "Nov 23 ~3:45 PM (owner: \"approve\" the plan): Thursday quiz",
+   "moved": "Nov 24 data (scorecard: tips/discovery 6.3 v/h, morning slots best): map Shorts take the 9:30/10:00 slots",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-game-awards-explained",
+   "item": "main",
+   "en": [
+    "2026-12-06",
+    "3:30 PM"
+   ],
+   "approved": "Nov 23 ~7 PM (owner \"APPROVE what you should do next: in your opinion\"): Sunday long-video slot; re-check every fact Dec 5-6",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-stream-wars",
+   "item": "main",
+   "en": [
+    "2026-11-30",
+    "3:30 PM"
+   ],
+   "approved": "Nov 24 ~8 AM (owner \"Approve\" to the Nov 24 daily run set, recovered from its log); long video, optional slot per the daily run",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-key-cloner-3-steps",
+   "item": "short",
+   "en": [
+    "2026-12-04",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-12-06",
+    "12:30 PM"
+   ],
+   "approved": "Nov 24 ~11:30 AM (owner \"Approve everything for good of the channel\"); how-to on a top search topic",
+   "moved": "Nov 25 (owner: \"Start posting the maps videos at least one a day\"): moved so every day has a map Short",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-impound-app",
+   "item": "short",
+   "en": [
+    "2026-12-05",
+    "1:30 PM"
+   ],
+   "es": [
+    "2026-12-05",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
+   "moved": "Nov 26: Sun Nov 29 12:30 PM -> Sat Dec 5 1:30 PM to make room for the mission-replay how-to (owner approved the swap)",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-trading-cards",
+   "item": "short",
+   "en": [
+    "2026-12-08",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-12-11",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
+   "moved": "Nov 26: moved later so a map/tier Short takes its slot (owner approved the swap with the 3 new Shorts; plain-fact Shorts lost ~7-15x this week)",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-waink-app",
+   "item": "short",
+   "en": [
+    "2026-12-05",
+    "12:30 PM"
+   ],
+   "es": [
+    "2026-12-06",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-stunt-jumps",
+   "item": "short",
+   "en": [
+    "2026-12-06",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-12-07",
+    "1:30 PM"
+   ],
+   "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-special-cars-tier-list",
+   "item": "short",
+   "en": [
+    "2026-12-05",
+    "11:00 AM"
+   ],
+   "es": [
+    "2026-12-12",
+    "12:30 PM"
+   ],
+   "approved": "Nov 26 (owner: \"approve and check everything\"): map/tier formats from the mid-week verdict; facts in 2+ sources (re-check right before upload)",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
+  },
+  {
+   "slug": "gta6-no-mission-replay",
+   "item": "short",
+   "en": [
+    "2026-11-29",
+    "12:30 PM"
+   ],
+   "approved": "Nov 26 (owner: \"Aprove\", after the research Shorts were sent): how-to answering 'gta 6 replay missions' (7 outlets); re-check right before upload",
+   "paused": "Nov 26 owner directive v2.0 + autonomous publishing: 2 Shorts a day (8 AM, 6 PM), 70% location guides / 20% map tutorials / 10% experiments; this one is outside the 14-day plan (parked, not deleted)"
   }
  ]
 }

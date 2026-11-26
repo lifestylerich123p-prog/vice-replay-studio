@@ -98,5 +98,12 @@
     "_note": "Nov 24 owner approved: official screenshots (vetted pool, exact-name first) behind lettering cards in videos; trailer clips stay out"
   },
   "spanish_youtube_paused_until": "2026-12-03",
-  "_spanish_pause_note": "Owner Nov 26 \"DO IT\": no Spanish YouTube uploads until Dec 3 (37 views in 12 videos); Spanish versions go to TikTok. Review Dec 3: resume only if the TikTok Spanish numbers or a winner justify it."
+  "_spanish_pause_note": "Owner Nov 26 \"DO IT\": no Spanish YouTube uploads until Dec 3 (37 views in 12 videos); Spanish versions go to TikTok. Review Dec 3: resume only if the TikTok Spanish numbers or a winner justify it.",
+  "auto_publish": {
+    "on": true,
+    "max_per_day": 2,
+    "consecutive_failures": 0,
+    "paused_reason": null,
+    "_note": "Owner Nov 26 (Autonomous publishing authorization update): English YouTube Shorts publish automatically at their slot only when studio/approvals.py passes all 10 conditions. Pause: python -m studio.approvals pause \"why\"; two failed uploads in a row pause it automatically."
+  }
 }

@@ -1,0 +1,23 @@
+# Experiments (hypotheses, results, decisions)
+
+Rules (directive v2.0): compare matched cohorts (same format and topic type, same observation window: 3 h, 24 h,
+72 h, 7 days; search-driven vs feed-driven kept apart), use medians, never decide on one video. A 50% lift in the
+24-hour median is a target, not proof. Data: `python -m studio.learn --mine` (scorecard.md, history.jsonl).
+
+Baseline (Nov 26): after-launch Shorts median ~28 views at 24 h; map cards 46.6 views/h median (n=3), tier 6.2,
+versus 4.0, headline 0.7, list 0.2; ~0.5% likes; ~0 viewer comments; 15 subscribers.
+
+| ID | Question | Variants | Status | Started | Read on | Result |
+|---|---|---|---|---|---|---|
+| S1 | Best slot for the day's best map Short | 8:00 AM vs 6:00 PM (2/day plan, Nov 27-Dec 10); old 8 AM test week folded in | running | Nov 27 | Dec 5 (reminder set), Dec 10 | - |
+| D1 | Comment prompt | open question vs one-tap ("Found it? Reply ✅ / 😭", last card "FOUND IT? COMMENT YES") | running | Nov 27 | Dec 5 | - |
+| D2 | End-card promise | "SPOT #N+1 NEXT: FOLLOW" pill vs default "FOLLOW FOR DAILY GTA 6" | planned (needs a no-number control week) | - | - | - |
+| A1 | Voice | Kokoro AI voice vs owner's recorded voice vs no narration (music + text) | waiting: owner voice recordings | - | - | - |
+| B1 | Visual | screenshot + map pin vs animated website map vs owner gameplay + map overlay | waiting: owner gameplay | - | - | - |
+| C1 | Hook | location revealed at frame 1 vs short location question vs problem → answer | planned: next 6 map Shorts alternate hook types (mark `"hook_type"` in the episode) | - | - | - |
+| L1 | Script length | 35-55 words vs 25-45 words (directive) | planned: new Shorts from Nov 27 at 25-45 | - | - | - |
+
+## Decisions log
+- 2026-11-26: versus / plain-fact / headline / list Shorts parked (map 46.6 v/h vs versus 4.0, list 0.2); tier lists
+  parked from the plan (6.2) but kept as a later experiment option.
+- 2026-11-26: Spanish YouTube paused to Dec 3 (37 views in 12 videos); Spanish goes to TikTok (100-600 views each).

@@ -22,7 +22,11 @@ ROOT = Path(__file__).resolve().parent.parent
 LEDGER = ROOT / "content" / "learn" / "quota.json"
 PT, ET = ZoneInfo("America/Los_Angeles"), ZoneInfo("America/New_York")
 DAILY = int(os.environ.get("YT_DAILY_QUOTA", "10000"))
-UPLOAD = 1600 + 400 + 400 + 50 + 50  # insert + English and Spanish subtitles + playlist + pinned comment
+UPLOAD = 50 + 50 + 50  # playlist + pinned comment + thumbnail (no subtitle files on Shorts since Nov 22)
+# Nov 26 (owner directive v2.0): videos.insert is now billed to a separate "uploads" bucket (1 unit, 100 uploads a
+# day per project, per Google's 2026 quota docs as summarised by several API guides; the old 1,600-unit figure is
+# outdated). It no longer counts against the 10,000-unit pool, so uploads are tracked by count (UPLOADS_PER_DAY).
+UPLOADS_PER_DAY = 100
 MARGIN = 500  # other runs (auto-replies, breaking news) spend from the same pool
 
 
@@ -38,7 +42,7 @@ def cost(method, url):
     if method == "GET":
         return {"search": 100, "captions": 50}.get(res, 1)
     if res == "videos" and method == "POST":
-        return 1600
+        return 0  # separate uploads bucket (see UPLOADS_PER_DAY)
     if res == "captions":
         return 400 if method == "POST" else 450
     if res == "thumbnails" or sub == "set":

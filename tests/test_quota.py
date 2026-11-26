@@ -6,7 +6,9 @@ from studio import quota
 
 
 def test_costs_match_youtube_docs():
-    assert quota.cost("POST", "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet") == 1600
+    # 2026: videos.insert is billed to its own uploads bucket (100/day), not the 10,000-unit pool
+    assert quota.cost("POST", "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet") == 0
+    assert quota.UPLOADS_PER_DAY == 100
     assert quota.cost("POST", "https://www.googleapis.com/upload/youtube/v3/captions?uploadType=multipart") == 400
     assert quota.cost("GET", "https://youtube.googleapis.com/youtube/v3/captions?part=snippet&videoId=x") == 50
     assert quota.cost("POST", "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet") == 50
@@ -22,10 +24,10 @@ def test_limit_is_learned(tmp_path, monkeypatch):
     assert quota.limit() == 10000
     (tmp_path / "quota.json").write_text(json.dumps({"2000-01-01": {"used": 0, "registry_est": 17500}}))
     assert quota.limit() == 17500  # a clean day with more raises it
-    quota.spend("POST", "https://www.googleapis.com/upload/youtube/v3/videos?x")
-    assert quota.used_today() == 1600 and quota.left_today() == 17500 - 1600 - quota.MARGIN
+    quota.spend("GET", "https://youtube.googleapis.com/youtube/v3/search?q=gta")  # 100 units from the shared pool
+    assert quota.used_today() == 100 and quota.left_today() == 17500 - 100 - quota.MARGIN
     quota.mark_exhausted()  # a real "used up" pins the limit to what we had spent
-    assert quota.limit() == 1600 and quota.left_today() == 0
+    assert quota.limit() == 100 and quota.left_today() == 0
 
 
 def test_free_slots_skip_taken_and_past(monkeypatch):

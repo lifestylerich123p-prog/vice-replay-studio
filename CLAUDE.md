@@ -98,19 +98,24 @@ prompts ("Found it? Reply ✅ — or 😭"; last card "FOUND IT? COMMENT YES"); 
   7 seconds (make_video keeps openings calm automatically) and no violence/gore montages as the focus.
 - **Not official**: no Rockstar logos; descriptions keep the "not affiliated" line. No story spoilers in titles or
   thumbnails. Every video needs a real angle; no near-identical/mass-produced videos (demonetization).
-- **Uploading needs the owner's approval in chat** ("approve", "approve the Shorts", "approve, use title 2"...): run
-  `python -m studio.ship episodes/<slug>.json --upload <all|main,short,news,tips,replies> [--title N]` (or
-  `studio.youtube_upload` directly). Never upload campaign clips. Apply requested changes first. Scheduled videos are
-  private until their time, so schedule the printed "COMMENTS TO POST" command with send_later for 10 minutes after
-  each time ("Post today's pinned comments now: <command>") and run it when it fires. Commit `content/learn/uploads.json` (the upload registry) and refresh the
-  dashboard (`/dashboard`) after uploading. Report links and times; remind
-  the owner to pin comments, set "Related video" on Shorts, add thumbnails B/C (Test & Compare: long videos only, not Shorts). Missing YT_* vars:
-  say so and list manual steps.
+- **Publishing = the automatic gate** (owner Nov 26, "Autonomous publishing authorization update", replacing per-video
+  approval for the ENGLISH channel): a Short publishes automatically at its slot (8:00 AM / 6:00 PM ET, max 2 a day)
+  ONLY when `studio/approvals.py` passes all 10 conditions (facts in 2+ sources re-checked within 2 days:
+  `python -m studio.approvals factcheck`; `studio.vice publish` QA; 1080x1920 + audio; final title/description; no
+  duplicate; map/location/tutorial or marked experiment; test suite passed on the current code; switch on; slot in the
+  future). States RESEARCHED → VERIFIED → PRODUCED → RENDERED → QA_PASSED → AUTO_APPROVED → SCHEDULED → PUBLISHED;
+  BLOCKED / NEEDS_REVIEW are held and reported. The approval is bound to the content fingerprint: any change = evaluate
+  again. A failed upload is reconciled with YouTube before any retry; 2 failures in a row pause it
+  (`python -m studio.approvals pause "why"` / `resume`). The 3:45 AM run does it (`python -m studio.spend upload`); the
+  1 PM report verifies on YouTube before calling anything published (`python -m studio.approvals verify`). Spanish
+  YouTube is NOT auto-published (paused); TikTok (owner posts by hand) and Instagram keep their arrangements. Never
+  bypass a check to make a slot; contact the owner for repeated failures, conflicting sources, spending, strategy
+  changes, copyright/account issues. Uploads go to their own API bucket (1 unit, 100/day) since 2026, not 1,600 units.
 - **Several chats**: only the main control chat posts (YouTube, Instagram, comments, site); helper chats work on
   their own `claude/...` branch and never post. `git pull --rebase origin main` before every commit. Details and the
   duplicate-post guard (studio/postguard.py): `content/owner.md`.
-- **Standing approvals** (details and dates in `content/owner.md`): breaking-news Shorts that pass every rule in
-  `.claude/commands/breaking-news.md`; comment auto-replies (`auto-replies.md`, `python -m studio.replies`); any
+- **Standing approvals** (details and dates in `content/owner.md`): breaking-news runs are REPORT-ONLY since Nov 26
+  (news Shorts aren't in the 2-a-day map plan); comment auto-replies (`auto-replies.md`, `python -m studio.replies`); any
   time-limited approval written there. Nothing else is posted without asking.
 - **Momentum** (`momentum.md`, daily): one follow-up Short with something new when a Short takes off; owner approves
   in the main chat. **Website**: daily guide (+ Spanish) via `site/` + `tools/site_guides.py`, published from the main

@@ -49,6 +49,7 @@ def test_too_young_english_short_keeps_waiting(tmp_path, monkeypatch):
     assert "es_status" not in json.loads((learn / "approved_queue.json").read_text())["items"][0]
 
 
-def test_next_es_slot_skips_taken():
+def test_next_es_slot_skips_taken(monkeypatch):
+    monkeypatch.setattr(spend, "es_paused_until", lambda: None)  # no Spanish pause in this test
     after = dt.datetime(2026, 11, 25, 10, 0, tzinfo=quota.ET)
     assert spend.next_es_slot(after, {("2026-11-25", "12:30 PM")}) == ["2026-11-25", "1:30 PM"]

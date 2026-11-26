@@ -21,7 +21,7 @@ from . import quota
 ROOT = Path(__file__).resolve().parent.parent
 LEARN = ROOT / "content" / "learn"
 QUEUE = LEARN / "approved_queue.json"
-PER_CHANNEL = 1750  # videos.insert 1,600 + playlist 50 + thumbnail 50 + duplicate-guard reads
+PER_CHANNEL = 160  # videos.insert is billed to its own uploads bucket (100/day) since 2026; playlist 50 + thumbnail 50 + reads
 KEEP = 300          # left for comments posted after Shorts go live
 
 
@@ -244,24 +244,45 @@ def upload():
             print(f"map series: {m['slug']} is now spot #{m['n']} (re-rendered before upload)")
     except (OSError, ValueError, KeyError) as e:
         print(f"! map series numbering skipped: {type(e).__name__}")
+    # Owner, Nov 26 ("Autonomous publishing authorization update"): a video posts automatically only when every
+    # mandatory check passes (studio/approvals.py); anything uncertain is held for review, never posted.
+    from . import approvals
+    ok, why = approvals.tests_ok()
+    if not ok:
+        print(f"$ python -m studio.approvals tests ({why})")
+        passed, tail = approvals.run_tests()
+        print(("tests passed: " if passed else "! tests FAILED (nothing posts until they pass): ") + tail)
+    held = []
     for it, ne, ns in plan():
-        for cmd in renders_needed(it, ne, ns):
-            print("$", " ".join(cmd), "(video missing: rendering it first)")
-            subprocess.run(cmd, cwd=ROOT)
-        gate = subprocess.run(["python", "-m", "studio.vice", "publish", f"episodes/{it['slug']}.json"],
-                              cwd=ROOT, capture_output=True, text=True)
-        out = gate.stdout + gate.stderr
-        i = out.find('"blockers"')
-        blockers = out[i:out.find("]", i)] if i >= 0 else ""
-        if blockers.strip() not in ('"blockers": [', ""):
-            print(f"! skip {it['slug']}: publish check has blockers: {blockers[13:300]}")
+        if ns:  # Spanish YouTube is never auto-published (owner Nov 26); the owner asks for it in chat
+            print(f"- {it['slug']}: Spanish YouTube not auto-published (owner Nov 26)")
+            ns = False
+        if not ne:
             continue
+        for cmd in renders_needed(it, ne, ns):
+            print("$", " ".join(cmd), "(video missing or older than its episode: rendering it first)")
+            subprocess.run(cmd, cwd=ROOT)
+        try:
+            rec = approvals.evaluate(ROOT / "episodes" / f"{it['slug']}.json", it.get("item", "short"), "youtube-en",
+                                     tuple(it["en"]))
+        except approvals.Blocked as e:
+            print(f"! hold {it['slug']}: {e}")
+            held.append((it, str(e)))
+            continue
+        if rec["state"] != "AUTO_APPROVED":
+            reasons = "; ".join(rec.get("blockers") or rec.get("reviews") or [])
+            print(f"! hold {it['slug']} ({rec['state']}): {reasons[:300]}")
+            held.append((it, reasons))
+            continue
+        print(f"AUTO_APPROVED {it['slug']} for {' '.join(it['en'])} ET: all publishing conditions passed")
         for cmd in commands(it, ne, ns):
             print("$", " ".join(cmd))
             r = subprocess.run(cmd, cwd=ROOT)
             if r.returncode:
                 print(f"! {it['slug']}: upload step failed (exit {r.returncode}); stopping")
                 return
+    if held:
+        print(f"\nHELD FOR REVIEW ({len(held)}): " + "; ".join(f"{h['slug']} {' '.join(h['en'])}" for h, _ in held))
     # Nov 24: the backup titles (option 2, a "catch" angle on the map Shorts) were never used because nothing ran the
     # swap. Underperformers 24-96 h old get their option-2 title once (owner's standing approval; ~60 units each).
     try:
