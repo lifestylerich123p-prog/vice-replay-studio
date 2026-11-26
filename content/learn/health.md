@@ -1,13 +1,13 @@
-# System health (2026-11-25 20:31 UTC, `python -m studio.doctor`)
+# System health (2026-11-26 00:58 UTC, `python -m studio.doctor`)
 
 - 🟢 YouTube connection works
 - 🟢 A map Short is booked every day for the next 7 days
 - 🟢 Every video booked in the next 48 h is rendered and passed its checks
-- 🟢 Learner fresh (2 h old)
+- 🟢 Learner fresh (1 h old)
 - 🟢 YouTube keys from Nov 22 (Google app in production: no 7-day expiry)
 - 🟢 Spanish channel (Vice Replay en Español) connection works
 - 🟢 Every recent public upload has our comment
-- 🟢 Instagram @vice.replaytv works (33 posts, 17 followers; 3/100 posts used today)
+- 🟢 Instagram @vice.replaytv works (34 posts, 17 followers; 4/100 posts used today)
 - 🟢 Website is up
 - 🟢 Today's daily run is saved on GitHub
 - 🟢 Disk: 22.5 GB free
