@@ -431,6 +431,8 @@ def main():
             if added >= limit:
                 print(f"Stopped at {limit} today to keep quota for uploads; run again tomorrow for the rest.")
                 break
+            if key != "main" and not shorts_subtitles():  # Nov 26: no subtitle files on Shorts (owner's quota rule)
+                continue
             slug = f.parent.name
             name = f"{slug}" if key == "main" else f"{slug}-short" + ("" if key == "short" else f"-{key}")
             en = english_srt(f.parent / f"{name}.timings.json")
