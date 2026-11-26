@@ -3,7 +3,7 @@
  "lang": "en",
  "title": "Is PS5 Pro Worth It for GTA 6? Still 30 FPS: Our Verdict",
  "h1": "PS5 Pro for GTA 6: <span>worth it?</span>",
- "desc": "Short answer: GTA 6 runs at 30 FPS on every console, PS5 Pro included. What the Pro does improve, and who should still buy one.",
+ "desc": "No 60 FPS: GTA 6 runs at 30 FPS on PS5 Pro too, and Rockstar says no performance mode before PC. What the Pro adds, its 2 TB storage, and who should buy one.",
  "date": "2026-11-19",
  "video": null,
  "card": [
@@ -50,10 +50,13 @@
   [
    "Do you need a PS5 Pro to play GTA 6?",
    "No. GTA 6 runs at 30 FPS on the regular PS5 and Xbox Series X|S too. The PS5 Pro adds sharper PSSR upscaling and ray-traced shadows, not a higher frame rate."
+  ],
+  [
+   "Does the PS5 Pro have enough storage for GTA 6?",
+   "Yes for most people. The PS5 Pro has a 2 TB SSD (about 1.89 TB usable), and GTA 6 is reportedly about 210 GB. You'd only add an M.2 SSD if your game library already fills the drive; our <a href=\"/guides/gta-6-best-ssd/\">PS5 SSD guide</a> explains Sony's requirements."
   ]
  ],
  "gear": [
-  "game",
   "storage"
  ],
  "sources": [
@@ -80,6 +83,14 @@
   [
    "Notebookcheck: Rockstar's console targets and PS5 Pro upgrades",
    "https://notebookcheck.net/Rockstar-reveals-GTA-6-console-performance-targets-and-PS5-Pro-upgrades.1447121.0.html"
+  ],
+  [
+   "TechRadar: PS5 Pro specs (2 TB SSD)",
+   "https://www.techradar.com/gaming/ps5-pro-specs"
+  ],
+  [
+   "Push Square: PS5 Pro gives you almost all its 2 TB",
+   "https://www.pushsquare.com/news/2024/11/ps5-pro-actually-gives-you-almost-all-its-2tb-of-storage-to-use"
   ]
  ],
  "pair": "ps5-pro-gta-6-vale-la-pena",

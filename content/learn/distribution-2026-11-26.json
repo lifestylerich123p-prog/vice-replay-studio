@@ -1,0 +1,149 @@
+{
+ "source": "YouTube Analytics API (each channel's own token), 28 days",
+ "range": [
+  "2026-10-29",
+  "2026-11-26"
+ ],
+ "es": {
+  "totals": [
+   {
+    "views": 31,
+    "engagedViews": 10,
+    "estimatedMinutesWatched": 3,
+    "averageViewDuration": 19,
+    "subscribersGained": 0,
+    "subscribersLost": 0
+   }
+  ],
+  "traffic": [
+   {
+    "insightTrafficSourceType": "YT_SEARCH",
+    "views": 23,
+    "engagedViews": 7
+   },
+   {
+    "insightTrafficSourceType": "SHORTS",
+    "views": 4,
+    "engagedViews": 1
+   },
+   {
+    "insightTrafficSourceType": "EXT_URL",
+    "views": 2,
+    "engagedViews": 1
+   },
+   {
+    "insightTrafficSourceType": "YT_CHANNEL",
+    "views": 1,
+    "engagedViews": 1
+   },
+   {
+    "insightTrafficSourceType": "YT_OTHER_PAGE",
+    "views": 1,
+    "engagedViews": 0
+   },
+   {
+    "insightTrafficSourceType": "NO_LINK_OTHER",
+    "views": 0,
+    "engagedViews": 0
+   }
+  ],
+  "creator_type": [
+   {
+    "creatorContentType": "shorts",
+    "views": 31
+   }
+  ]
+ },
+ "en": {
+  "range": [
+   "2026-10-29",
+   "2026-11-26"
+  ],
+  "totals": [
+   {
+    "views": 38441,
+    "engagedViews": 16647,
+    "averageViewPercentage": 74.48,
+    "subscribersGained": 25
+   }
+  ],
+  "traffic": [
+   {
+    "insightTrafficSourceType": "SHORTS",
+    "views": 28965,
+    "engagedViews": 12769
+   },
+   {
+    "insightTrafficSourceType": "YT_SEARCH",
+    "views": 8812,
+    "engagedViews": 3523
+   },
+   {
+    "insightTrafficSourceType": "YT_OTHER_PAGE",
+    "views": 400,
+    "engagedViews": 208
+   },
+   {
+    "insightTrafficSourceType": "SUBSCRIBER",
+    "views": 107,
+    "engagedViews": 37
+   },
+   {
+    "insightTrafficSourceType": "EXT_URL",
+    "views": 67,
+    "engagedViews": 42
+   },
+   {
+    "insightTrafficSourceType": "YT_CHANNEL",
+    "views": 46,
+    "engagedViews": 30
+   },
+   {
+    "insightTrafficSourceType": "RELATED_VIDEO",
+    "views": 22,
+    "engagedViews": 20
+   },
+   {
+    "insightTrafficSourceType": "NO_LINK_OTHER",
+    "views": 15,
+    "engagedViews": 13
+   },
+   {
+    "insightTrafficSourceType": "SHORTS_CONTENT_LINKS",
+    "views": 3,
+    "engagedViews": 3
+   },
+   {
+    "insightTrafficSourceType": "NOTIFICATION",
+    "views": 2,
+    "engagedViews": 1
+   },
+   {
+    "insightTrafficSourceType": "PLAYLIST",
+    "views": 1,
+    "engagedViews": 1
+   },
+   {
+    "insightTrafficSourceType": "SOUND_PAGE",
+    "views": 1,
+    "engagedViews": 0
+   }
+  ],
+  "by_type": [
+   {
+    "creatorContentType": "shorts",
+    "views": 37977
+   },
+   {
+    "creatorContentType": "videoOnDemand",
+    "views": 472
+   }
+  ]
+ },
+ "not_available_via_api": [
+  "viewed vs swiped away (YouTube Studio only)",
+  "Shorts feed impressions",
+  "unique/returning viewers for Shorts"
+ ],
+ "es_country": "withheld by YouTube (too few views for country breakdown)"
+}

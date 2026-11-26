@@ -129,7 +129,7 @@ class Opportunity:
     visual_potential: float       # 0..1: a map place/grid known 0.8 (+0.2 with a site demo), else 0.5
     asset_availability: float     # 0..1: our own assets cover it (map, cards, site) 1.0, needs footage 0.3
     timeliness: float             # 0..1: winner < 48 h old 1.0, < 7 days 0.6, else 0.3
-    estimated_credit_cost: float  # 0..1: paid Everygen credits / 20, capped (0 for free tools)
+    estimated_credit_cost: float  # 0..1: production_cost(): credits, minutes, licensing, upkeep, rendering
     facts_verified: bool
     duplicate: bool
     rights_verified: bool
@@ -148,6 +148,22 @@ def score_opportunity(o):
     if not o.facts_verified or o.duplicate or not o.rights_verified:
         return float("-inf")
     return round(sum(getattr(o, k) * w for k, w in WEIGHTS.items()) - o.estimated_credit_cost * COST_WEIGHT, 3)
+
+
+LICENSING = {"own": 0.0, "official": 0.3, "permission": 0.7, "third-party": 1.0}
+MAINTENANCE = {"low": 0.0, "medium": 0.5, "high": 1.0}  # high = prices/deals/patch facts that go stale within days
+
+
+def production_cost(cand):
+    """0..1 cost (owner Phase 8 #12: more than Everygen credits). Weighted: paid credits / 20 (0.40), production
+    minutes / 180 (0.25), licensing complexity (0.15), upkeep (0.10), rendering (0.10: long video 1.0, Short 0.2).
+    Inputs come from the candidate (credits, minutes, licensing, maintenance, format); defaults = a free map Short."""
+    credits = min(1.0, (cand.get("credits") or 0) / 20)
+    minutes = min(1.0, (cand.get("minutes") or 45) / 180)
+    lic = LICENSING.get(cand.get("licensing", "official"), 0.3)
+    upkeep = MAINTENANCE.get(cand.get("maintenance", "low"), 0.0)
+    render = 1.0 if cand.get("format") == "long" else 0.2
+    return round(0.40 * credits + 0.25 * minutes + 0.15 * lic + 0.10 * upkeep + 0.10 * render, 3)
 
 
 def _affiliate_relevance(cand):
@@ -183,7 +199,7 @@ def opportunity_for(cand, winner, index):
         visual_potential=0.8 if (cand.get("place") or cand.get("grid")) else 0.5,
         asset_availability=1.0 if cand.get("family") in ("map", "shopping", "money", "creatures", "easter-eggs", "vehicles") else 0.3,
         timeliness=1.0 if age < 48 else 0.6 if age < 168 else 0.3,
-        estimated_credit_cost=min(1.0, (cand.get("credits") or 0) / 20),
+        estimated_credit_cost=production_cost(cand),
         website_value=1.0 if cand.get("site_target") else 0.8 if (cand.get("place") or cand.get("grid")) else 0.3,
         monetization_relevance=_affiliate_relevance(cand),
         facts_verified=cand.get("status") == "verified" and len(_domains(cand.get("sources"))) >= 2,

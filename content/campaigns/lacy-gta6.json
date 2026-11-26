@@ -68,5 +68,80 @@
   ],
   "needs_owner": "Content Rewards / Whop dashboard (sign-in): campaign status, which clips were submitted and approved, approved views, payout date and amount.",
   "recommendation": "Keep public until the pool is paid and final. Then set them UNLISTED (not private, not deleted): links keep working for any payout audit, they stop shaping Vice Replay's public identity, and they don't stay in public view under a campaign permission that has ended. Re-check if the dashboard shows any rule requiring them to stay public longer."
- }
+ },
+ "clips": [
+  {
+   "url": "https://youtube.com/shorts/ty0KP7MLaKU",
+   "title": "LACY tried to pet a GTA 6 alligator 🐊😭 #LACY #GTA6 #Shorts",
+   "visibility": "public",
+   "public_views": 1855,
+   "views_checked": "2026-11-26",
+   "submitted": "unknown (Content Rewards dashboard)",
+   "approved_views": "unknown",
+   "payout_eligible": "unknown",
+   "expected_payout_date": "unknown",
+   "payout_received": null
+  },
+  {
+   "url": "https://youtube.com/shorts/aYBokm3TIYE",
+   "title": "LACY found a shoe store in GTA 6 👟😭 #LACY #GTA6 #Shorts",
+   "visibility": "public",
+   "public_views": 9557,
+   "views_checked": "2026-11-26",
+   "submitted": "unknown (Content Rewards dashboard)",
+   "approved_views": "unknown",
+   "payout_eligible": "unknown",
+   "expected_payout_date": "unknown",
+   "payout_received": null
+  },
+  {
+   "url": "https://youtube.com/shorts/Eikozi0uFec",
+   "title": "LACY tried to lose the cops in a drive-thru 🍔😭 #LACY #GTA6 #shorts",
+   "visibility": "public",
+   "public_views": 1009,
+   "views_checked": "2026-11-26",
+   "submitted": "unknown (Content Rewards dashboard)",
+   "approved_views": "unknown",
+   "payout_eligible": "unknown",
+   "expected_payout_date": "unknown",
+   "payout_received": null
+  },
+  {
+   "url": "https://youtube.com/shorts/c_l7udfLNnk",
+   "title": "LACY vs a GTA 6 shark 🦈😳 #LACY #GTA6 #shortsyoutube",
+   "visibility": "public",
+   "public_views": 8,
+   "views_checked": "2026-11-26",
+   "submitted": "unknown (Content Rewards dashboard)",
+   "approved_views": "unknown",
+   "payout_eligible": "unknown",
+   "expected_payout_date": "unknown",
+   "payout_received": null
+  },
+  {
+   "url": "https://youtube.com/shorts/x8C9oncanac",
+   "title": "LACY got tackled mid-robbery in GTA 6 😳😭 #LACY #GTA6 #Shorts",
+   "visibility": "public",
+   "public_views": 2,
+   "views_checked": "2026-11-26",
+   "submitted": "unknown (Content Rewards dashboard)",
+   "approved_views": "unknown",
+   "payout_eligible": "unknown",
+   "expected_payout_date": "unknown",
+   "payout_received": null
+  },
+  {
+   "url": "https://youtube.com/shorts/9QNojUuqHtc",
+   "title": "Lacy can't steal cars in GTA 6 😭🔑 #LACY #GTA6 #Shorts",
+   "visibility": "public",
+   "public_views": 7,
+   "views_checked": "2026-11-26",
+   "submitted": "unknown (Content Rewards dashboard)",
+   "approved_views": "unknown",
+   "payout_eligible": "unknown",
+   "expected_payout_date": "unknown",
+   "payout_received": null
+  }
+ ],
+ "revenue_note": "The $12,500 pool is the campaign's total, NOT our revenue: our share depends on approved views and is unverified until paid."
 }

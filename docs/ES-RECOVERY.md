@@ -37,3 +37,22 @@ RESUELTO EL EASTER EGG", "DETALLES ALUCINANTES", "¿Qué pasa si...?"), 30-60 s,
 ## Results (fill in at 24 h / 72 h / 7 days)
 | Video | Slot | Views 24 h | Views 7 d | Notes |
 |---|---|---|---|---|
+
+## Distribution diagnosis (Phase 8, Nov 26; YouTube Analytics, 28 days, both channels' own data)
+| | English | Spanish |
+|---|---|---|
+| views | 38,441 | 31 |
+| engaged views | 16,647 (43%) | 10 (32%) |
+| from the Shorts feed | 28,965 (75%) | 4 (13%) |
+| from YouTube search | 8,812 (23%) | 23 (74%) |
+| subscribers gained | 25 | 0 |
+
+Finding (measured): the Spanish Shorts are barely being shown in the Shorts feed; almost every view comes from
+someone searching (top terms: "otra noche en miami gta 6", "dardos gta 5", "windpress gta6"). Retention can't be judged
+until the feed shows the videos to real audiences. Not measurable via the API: viewed vs swiped away, feed
+impressions, unique/returning viewers (Studio only), countries (withheld below YouTube's threshold).
+Hypotheses (unproven, to test): new channel with 0 subscribers and irregular uploads (paused Nov 24-26) gets little
+feed testing; titles don't match what Spanish speakers search. Tests: (1) steady 2 Spanish Shorts/day from Nov 27 (queue
+booked through Dec 9); (2) titles that start with real Spanish search phrases (competitors-2026-11-26.md); (3) track
+feed vs search share weekly in content/learn/distribution-<date>.json. Decision rule: if after 14 days of steady posting
+the feed share is still under 25%, test Spanish search-guide Shorts as the main format.

@@ -37,3 +37,8 @@ Cloudflare dashboard -> My Profile -> API Tokens -> Create Token -> Create Custo
   value `Bearer <token>` (never paste it in chat). Also add the account ID (not secret) to the environment variables as
   `CF_ACCOUNT_ID`. We then read Web Analytics (GraphQL `rumPageloadEventsAdaptiveGroups`: page views by path, incl. the
   `/v/<slug>/` video short links, referrers, countries) read-only.
+- Checked Nov 26 (Phase 8 #14, search summaries of Cloudflare's docs): the GraphQL Analytics API needs a token with
+  **Account Analytics: Read**, and Web Analytics data (`rumPageloadEventsAdaptiveGroups`) is queried per account with
+  `accountTag` (= the account ID). Web Analytics is account-level, so restrict the token to the one account; there is no
+  zone to restrict it to for this dataset. Sources: developers.cloudflare.com/analytics/graphql-api/getting-started/authentication/api-token-auth/ ,
+  developers.cloudflare.com/fundamentals/api/reference/permissions/ .

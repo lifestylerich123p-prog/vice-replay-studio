@@ -32,7 +32,12 @@ def tag_amazon(doc):
     """Every amazon.com link follows the affiliate policy (studio/affiliate.py): tagged only while the Associates
     account is confirmed active; plain links otherwise (owner Nov 26, Phase 6 #6)."""
     from studio import affiliate
-    return _re.sub(r'href="(https://www\.amazon\.com/[^"]*)"', lambda m: f'href="{html.escape(affiliate.url(html.unescape(m.group(1))), quote=True)}"', doc)
+    def fix(m):
+        u = html.unescape(m.group(1))
+        if "/gp/help/" in u:  # Amazon's own help/privacy pages are information, not product links: never tagged
+            return f'href="{html.escape(_re.sub(r"[?&]tag=[^&#]*", "", u), quote=True)}"'
+        return f'href="{html.escape(affiliate.url(u), quote=True)}"'
+    return _re.sub(r'href="(https://www\.amazon\.com/[^"]*)"', fix, doc)
 
 
 def amz(q):
@@ -430,7 +435,16 @@ def es_gear(body):
     return body
 
 
+# Phase 8 #6/#10 commercial review (content/monetization/site-affiliate-review.json): pages where buying something isn't
+# part of the reader's question carry no product box at all
+NO_GEAR = {"gta-6-cheats", "trucos-gta-6", "gta-6-new-zealand-trick", "gta-6-unlock-time", "hora-de-lanzamiento-gta-6",
+           "gta-6-pc-release-date", "gta-6-pc"}
+
+
 def soften_gear(slug, body, lang):
+    if slug in NO_GEAR:
+        return _re.sub(r'<div class="box"><h3>Gear for GTA 6 \(affiliate links\)</h3>.*?All gear picks</a></p></div>', "",
+                       body, count=1, flags=_re.S)
     if slug not in NEWS_SLUGS:
         return body
     line = ('<p class="sources">Short on space or need a controller? <a href="/es/equipo/">Nuestro equipo para GTA 6</a> (enlaces de afiliado).</p>'

@@ -28,3 +28,6 @@ media/campaign/
 .claude/everygen-claim.local.json
 media/official-hd/
 .runsafe/
+
+# Associates Central exports (owner drops them here; only aggregates go to content/revenue/ledger.json)
+content/revenue/raw/

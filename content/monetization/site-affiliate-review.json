@@ -1,0 +1,272 @@
+{
+ "note": "Commercial-content review (owner Phase 8 #10), Nov 26. A gear box stays only where buying something is part of the reader's question. Amazon link validity can't be checked from this environment (amazon.com not reachable); prices: none typed; images: none; personal testing: never claimed ('We haven't tested these products').",
+ "pages": {
+  "gta-6-best-ssd.json": {
+   "sets": [
+    "storage"
+   ],
+   "customer_question": "Which SSD do I need for GTA 6 on PS5/Xbox?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "mejor-ssd-gta-6.json": {
+   "sets": [
+    "storage"
+   ],
+   "customer_question": "¿Qué SSD necesito para GTA 6 en PS5/Xbox?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "gta-6-black-friday.json": {
+   "sets": [
+    "storage",
+    "gear",
+    "game"
+   ],
+   "customer_question": "What GTA 6 gear is actually on sale this week?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "gta-6-deals.json": {
+   "sets": [
+    "gear",
+    "storage"
+   ],
+   "customer_question": "Are there real GTA 6 deals or discount codes?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "ofertas-gta-6.json": {
+   "sets": [
+    "storage"
+   ],
+   "customer_question": "¿Hay ofertas reales de GTA 6?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "gta-6-gift-guide.json": {
+   "sets": [
+    "game",
+    "storage",
+    "gear"
+   ],
+   "customer_question": "What do I buy a GTA 6 fan?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "gta-6-physical-edition.json": {
+   "sets": [
+    "game",
+    "storage"
+   ],
+   "customer_question": "What's in the physical edition and do I still need space?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "gta-6-ultimate-edition.json": {
+   "sets": [
+    "game"
+   ],
+   "customer_question": "Is the Ultimate Edition worth buying?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "precio-gta-6.json": {
+   "sets": [
+    "game"
+   ],
+   "customer_question": "¿Cuánto cuesta GTA 6 en mi país?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "gta-6-ps5-pro-worth-it.json": {
+   "sets": [
+    "storage"
+   ],
+   "customer_question": "Should I buy a PS5 Pro for GTA 6? (and do I need more storage)",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "ps5-pro-gta-6-vale-la-pena.json": {
+   "sets": [
+    "storage"
+   ],
+   "customer_question": "¿Vale la pena la PS5 Pro para GTA 6?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "gta-6-best-settings.json": {
+   "sets": [
+    "gear"
+   ],
+   "customer_question": "How do I set up my TV/console/audio for GTA 6?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "gta-6-launch-day-survival-guide.json": {
+   "sets": [
+    "storage"
+   ],
+   "customer_question": "Will GTA 6 fit on my console on launch day?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "gta-6-launch-day-survival-guide-es.json": {
+   "sets": [
+    "storage"
+   ],
+   "customer_question": "¿Me cabe GTA 6 en la consola?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  },
+  "gta-6-vs-gta-5.json": {
+   "sets": [
+    "game"
+   ],
+   "customer_question": "Is GTA 6 worth buying if I play GTA 5?",
+   "relevant": true,
+   "compat_source": "content/affiliate.json compat (Sony M.2 page for storage)",
+   "disclosed": "box heading + Amazon sentence inside the box (EN; ES adds the Spanish sentence)",
+   "prices": "none typed",
+   "false_urgency": "none (Black Friday page carries an expiry)",
+   "testing_claims": "none",
+   "mobile": "same responsive layout as every guide (not re-tested here)",
+   "links_valid": "not checkable from this environment"
+  }
+ },
+ "removed": [
+  "como-ganar-dinero-gta-6.json",
+  "como-hacer-gta-6.json",
+  "consejos-gta-6-principiantes.json",
+  "cuanto-dura-gta-6.json",
+  "dardos-gta-6.json",
+  "gta-6-atm-robbery.json",
+  "gta-6-beginner-tips.json",
+  "gta-6-characters.json",
+  "gta-6-cheats",
+  "gta-6-cifras-semana-lanzamiento.json",
+  "gta-6-clothing-stores.json",
+  "gta-6-criminal-profile.json",
+  "gta-6-darts.json",
+  "gta-6-easter-eggs.json",
+  "gta-6-game-awards.json",
+  "gta-6-how-long-to-beat.json",
+  "gta-6-how-to.json",
+  "gta-6-launch-week-numbers.json",
+  "gta-6-make-money.json",
+  "gta-6-map-leonida-places.json",
+  "gta-6-map-size.json",
+  "gta-6-new-zealand-trick",
+  "gta-6-notas-del-parche.json",
+  "gta-6-online-cuando-sale.json",
+  "gta-6-online.json",
+  "gta-6-patch-notes.json",
+  "gta-6-pc",
+  "gta-6-pc-release-date",
+  "gta-6-premios-game-awards.json",
+  "gta-6-radio-stations.json",
+  "gta-6-records-streaming-es.json",
+  "gta-6-shoe-stores.json",
+  "gta-6-streaming-records.json",
+  "gta-6-trophies.json",
+  "gta-6-unlock-time",
+  "hora-de-lanzamiento-gta-6",
+  "mapa-gta-6.json",
+  "perfil-criminal-gta-6.json",
+  "robar-cajeros-gta-6.json",
+  "secretos-gta-6.json",
+  "tienda-de-zapatos-gta-6.json",
+  "tiendas-de-ropa-gta-6.json",
+  "trucos-gta-6"
+ ],
+ "kept_inline_pages": {
+  "gta-6-storage / espacio-gta-6": "How much space does GTA 6 need? (storage)",
+  "gta-6-launch-checklist / guia-lanzamiento-gta-6": "launch prep: space for the install (storage, game)",
+  "/gear/ + /es/equipo/": "the gear pages themselves",
+  "home + /links/": "small deals block during Black Friday week (expires)"
+ }
+}
