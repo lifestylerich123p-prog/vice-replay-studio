@@ -5,12 +5,16 @@
  "use_gameplay": false,
  "style": "vice (lettering cards + official map zoom, Nov 24)",
  "short_playlist": "GTA 6 Map: Where to Find It",
- "hashtags": ["GTA6", "GTAVI", "Shorts"],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
  "slug": "gta6-silent-hill-hotel",
  "title": "GTA 6 Silent Hill Easter Egg: Marbelle Hotel Location and Safe Code",
- "short_title": "GTA 6 Silent Hill easter egg: hotel + safe code 🌫️ #GTA6 #Shorts",
+ "short_title": "GTA 6 Silent Hill easter egg + safe code 🌫️ #GTA6 #Shorts",
  "short_title_options": [
-  "GTA 6 Silent Hill easter egg: hotel + safe code 🌫️ #GTA6 #Shorts",
+  "GTA 6 Silent Hill easter egg + safe code 🌫️ #GTA6 #Shorts",
   "GTA 6 turns into Silent Hill, with one catch #GTA6 #Shorts",
   "Where is the Silent Hill hotel in GTA 6? #GTA6 #Shorts"
  ],
@@ -19,12 +23,32 @@
  "short_es": {
   "title": "GTA 6 se convierte en SILENT HILL: el hotel 🌫️ #GTA6 #Shorts",
   "description": "El easter egg de Silent Hill en GTA 6: el Marbelle Hotel abandonado, en el sur de Crosstown (NW 8th Street, cerca del club Nine1Nine). Entra por la puerta de atrás y sube: se apagan las luces y la niebla cubre la ciudad. La clave de la caja fuerte de la planta baja es 955214 (dinero y un reloj Crowex). Fuentes: VGC, Dexerto, Hold to Reset, TheClick, Playnews.",
-  "tags": ["GTA 6 Silent Hill", "GTA 6 easter egg Silent Hill", "GTA 6 secretos", "GTA 6 español", "GTA 6 Crosstown"]
+  "tags": [
+   "GTA 6 Silent Hill",
+   "GTA 6 easter egg Silent Hill",
+   "GTA 6 secretos",
+   "GTA 6 español",
+   "GTA 6 Crosstown"
+  ]
  },
  "pinned_comment": "Would you stay the night? 🌫️👇",
  "short_pinned_comment_es": "¿Te quedarías a dormir ahí? 🌫️👇",
- "tags": ["GTA 6 Silent Hill", "GTA 6 Silent Hill easter egg", "GTA 6 Marbelle Hotel", "GTA 6 safe code", "GTA 6 easter eggs", "GTA 6 Crosstown", "GTA 6", "GTA VI"],
- "tiktok_hashtags": ["#gta6", "#gtavi", "#silenthill", "#gta6eastereggs"],
+ "tags": [
+  "GTA 6 Silent Hill",
+  "GTA 6 Silent Hill easter egg",
+  "GTA 6 Marbelle Hotel",
+  "GTA 6 safe code",
+  "GTA 6 easter eggs",
+  "GTA 6 Crosstown",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#silenthill",
+  "#gta6eastereggs"
+ ],
  "sources": [
   "VGC - GTA 6 Marbelle Hotel location and safe code: https://www.videogameschronicle.com/guide/gta-6-marbelle-hotel-location-and-safe-code-how-to-find-the-silent-hill-easter-egg/",
   "Dexerto - Marbelle Hotel easter egg: https://www.dexerto.com/wikis/gta-6/easter-eggs/marbelle-hotel--silent-hill-easter-egg/",
@@ -41,8 +65,30 @@
    "text": "One GTA 6 hotel turns the whole city into Silent Hill.",
    "text_es": "Un hotel de GTA seis convierte la ciudad en Silent Hill.",
    "keep_media": true,
-   "chart": {"type": "kinetic", "lines": ["THIS HOTEL IS", "SILENT HILL"], "pink": ["SILENT HILL"], "sub": "GTA 6 easter egg", "seed": 201},
-   "chart_es": {"type": "kinetic", "lines": ["ESTE HOTEL ES", "SILENT HILL"], "pink": ["SILENT HILL"], "sub": "easter egg de GTA 6", "seed": 201}
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "THIS HOTEL IS",
+     "SILENT HILL"
+    ],
+    "pink": [
+     "SILENT HILL"
+    ],
+    "sub": "GTA 6 easter egg",
+    "seed": 201
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "ESTE HOTEL ES",
+     "SILENT HILL"
+    ],
+    "pink": [
+     "SILENT HILL"
+    ],
+    "sub": "easter egg de GTA 6",
+    "seed": 201
+   }
   },
   {
    "headline": "CROSSTOWN",
@@ -50,8 +96,21 @@
    "text": "The Marbelle Hotel, in southern Crosstown.",
    "text_es": "El Marbelle Hotel, en el sur de Crosstown.",
    "keep_media": true,
-   "chart": {"type": "map", "at": "Crosstown", "label": "Marbelle Hotel", "n": 1, "src": "VGC · Dexerto · Hold to Reset"},
-   "chart_es": {"type": "map", "at": "Crosstown", "label": "Marbelle Hotel", "n": 1, "src": "VGC · Dexerto · Hold to Reset", "locale": "es"}
+   "chart": {
+    "type": "map",
+    "at": "Crosstown",
+    "label": "Marbelle Hotel",
+    "n": 1,
+    "src": "VGC · Dexerto · Hold to Reset"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Crosstown",
+    "label": "Marbelle Hotel",
+    "n": 1,
+    "src": "VGC · Dexerto · Hold to Reset",
+    "locale": "es"
+   }
   },
   {
    "headline": "GO UPSTAIRS",
@@ -59,8 +118,26 @@
    "text": "Go in the back door and head upstairs.",
    "text_es": "Entra por la puerta de atrás y sube las escaleras.",
    "keep_media": true,
-   "chart": {"type": "text", "text": "Back door → go upstairs", "pink": ["upstairs"], "src": "VGC · Dexerto", "seed": 202, "bg": "photo:media/official/vice-city-22.jpg"},
-   "chart_es": {"type": "text", "text": "Puerta de atrás → sube", "pink": ["sube"], "src": "VGC · Dexerto", "seed": 202, "bg": "photo:media/official/vice-city-22.jpg"}
+   "chart": {
+    "type": "text",
+    "text": "Back door → go upstairs",
+    "pink": [
+     "upstairs"
+    ],
+    "src": "VGC · Dexerto",
+    "seed": 202,
+    "bg": "photo:media/official/vice-city-22.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Puerta de atrás → sube",
+    "pink": [
+     "sube"
+    ],
+    "src": "VGC · Dexerto",
+    "seed": 202,
+    "bg": "photo:media/official/vice-city-22.jpg"
+   }
   },
   {
    "headline": "FOG",
@@ -68,8 +145,26 @@
    "text": "The lights die, and fog swallows the city.",
    "text_es": "Se apagan las luces y la niebla cubre la ciudad.",
    "keep_media": true,
-   "chart": {"type": "text", "text": "Lights out. Fog everywhere.", "pink": ["Fog"], "src": "Hold to Reset · TheClick", "seed": 203, "bg": "photo:media/official/vice-city-08.jpg"},
-   "chart_es": {"type": "text", "text": "Sin luz. Niebla por todas partes.", "pink": ["Niebla"], "src": "Hold to Reset · TheClick", "seed": 203, "bg": "photo:media/official/vice-city-08.jpg"}
+   "chart": {
+    "type": "text",
+    "text": "Lights out. Fog everywhere.",
+    "pink": [
+     "Fog"
+    ],
+    "src": "Hold to Reset · TheClick",
+    "seed": 203,
+    "bg": "photo:media/official/vice-city-08.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Sin luz. Niebla por todas partes.",
+    "pink": [
+     "Niebla"
+    ],
+    "src": "Hold to Reset · TheClick",
+    "seed": 203,
+    "bg": "photo:media/official/vice-city-08.jpg"
+   }
   },
   {
    "headline": "SAFE CODE",
@@ -77,8 +172,26 @@
    "text": "The safe code: nine, five, five, two, one, four.",
    "text_es": "La clave de la caja fuerte: nueve, cinco, cinco, dos, uno, cuatro.",
    "keep_media": true,
-   "chart": {"type": "text", "text": "Safe code: 955214", "pink": ["955214"], "src": "VGC · Playnews · gta6.house", "seed": 204, "bg": "photo:media/official/vice-city-03.jpg"},
-   "chart_es": {"type": "text", "text": "Caja fuerte: 955214", "pink": ["955214"], "src": "VGC · Playnews · gta6.house", "seed": 204, "bg": "photo:media/official/vice-city-03.jpg"}
+   "chart": {
+    "type": "text",
+    "text": "Safe code: 955214",
+    "pink": [
+     "955214"
+    ],
+    "src": "VGC · Playnews · gta6.house",
+    "seed": 204,
+    "bg": "photo:media/official/vice-city-03.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Caja fuerte: 955214",
+    "pink": [
+     "955214"
+    ],
+    "src": "VGC · Playnews · gta6.house",
+    "seed": 204,
+    "bg": "photo:media/official/vice-city-03.jpg"
+   }
   },
   {
    "headline": "WOULD YOU STAY?",
@@ -86,8 +199,28 @@
    "text": "Would you stay the night? Tell me, because",
    "text_es": "¿Te quedarías a dormir? Dímelo, porque",
    "keep_media": true,
-   "chart": {"type": "kinetic", "lines": ["WOULD YOU", "STAY?"], "pink": ["STAY?"], "seed": 205},
-   "chart_es": {"type": "kinetic", "lines": ["¿TE", "QUEDARÍAS?"], "pink": ["QUEDARÍAS?"], "seed": 205}
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WOULD YOU",
+     "STAY?"
+    ],
+    "pink": [
+     "STAY?"
+    ],
+    "seed": 205
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿TE",
+     "QUEDARÍAS?"
+    ],
+    "pink": [
+     "QUEDARÍAS?"
+    ],
+    "seed": 205
+   }
   }
  ]
 }

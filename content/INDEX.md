@@ -24,11 +24,11 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
-| ? | gta6-white-fox-where | Short | GTA 6 Legendary Animals: Where to Find the White Fox | - |
-| ? | gta6-silent-hill-hotel | Short | GTA 6 Silent Hill Easter Egg: Marbelle Hotel Location and Safe Code | - |
-| ? | gta6-no-mission-replay | Short | GTA 6 Has No Mission Replay: How to Save Instead | - |
+| 2026-11-26 | gta6-white-fox-where | Short | GTA 6 Legendary Animals: Where to Find the White Fox | - |
 | 2026-11-26 | gta6-vice-city-real-miami | Short | GTA 6's Vice City vs Real Miami: 5 Places | - |
 | 2026-11-26 | gta6-special-cars-tier-list | Short | GTA 6's Special Cars, Ranked | - |
+| 2026-11-26 | gta6-silent-hill-hotel | Short | GTA 6 Silent Hill Easter Egg: Marbelle Hotel Location and Safe Code | - |
+| 2026-11-26 | gta6-no-mission-replay | Short | GTA 6 Has No Mission Replay: How to Save Instead | - |
 | 2026-11-26 | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | - |
 | 2026-11-26 | gta6-map-quiz-places | Short | GTA 6 Map Quiz: Name These 3 Places | - |
 | 2026-11-26 | gta6-backrooms-where | Short | Where to Find the Backrooms in GTA 6 | - |
