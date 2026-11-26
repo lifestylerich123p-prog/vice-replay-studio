@@ -3,12 +3,13 @@
 Rules: re-check every fact on the day you use it (2+ sources), label estimates/reports, no story spoilers, no
 isolated cutscenes. Mark an idea USED (date + slug) when it ships. Researched by the main chat; sources inline.
 
-## OPEN SLOTS for map Shorts (owner Nov 26 "DO IT": versus/fact Shorts parked)
-Mon Dec 7 9:30 AM and 11:00 AM are empty: fill with "where is X" map Shorts (2+ guides agree on the spot). Not for
-these: the bank limit (only Rockstar's "limit rises with the story" is confirmed; thresholds are single-guide), more
-legendary animals the same week (fox Dec 4, panther Dec 6, bear Dec 10 already; coyote north of Belville is ready
-for a later week). Candidates: barber shop locations ("gta 6 barber shop locations"), Randy's Wish List cars once 2
-guides agree on one car's spot, TMNT drain / ghost ship once 2 guides agree.
+## Map slots after the Nov 26 "DO IT" (all filled)
+Freed slots got: tattoo shops (Sat Nov 28 11 AM), where to sell jewelry (Tue Dec 1 8 AM), Ninja Turtles drain (Tue Dec 1
+12:30 PM), ghost ship (Wed Dec 2 12:30 PM), black panther (Sun Dec 6 10 AM), black bear (Thu Dec 10 12:30 PM); the
+evergreen Ultimate cars + Dexter Shorts moved to Mon Dec 7. Ready for later weeks: barber shops (Barnacle Beauties,
+southern Key Lento, next to The Siren's Chest; Dexerto, Sportskeeda, Tech4Gamers, TheClick; count 7 vs 18 disputed),
+coyote (farmland north of Belville, $9,500-16,750; Insider Gaming, Mobalytics). Not yet: bank limit (thin), Randy's
+cars (guides disagree).
 
 ## Daily research, Nov 26 (main chat: 4 agents for news, map finds, market and search gaps)
 Ranked for the owner's approval; sources were read from search summaries (pages blocked from the cloud session),
