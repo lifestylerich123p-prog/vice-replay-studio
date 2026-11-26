@@ -3,6 +3,13 @@
 Rules: re-check every fact on the day you use it (2+ sources), label estimates/reports, no story spoilers, no
 isolated cutscenes. Mark an idea USED (date + slug) when it ships. Researched by the main chat; sources inline.
 
+## OPEN SLOTS for map Shorts (owner Nov 26 "DO IT": versus/fact Shorts parked)
+Mon Dec 7 9:30 AM and 11:00 AM are empty: fill with "where is X" map Shorts (2+ guides agree on the spot). Not for
+these: the bank limit (only Rockstar's "limit rises with the story" is confirmed; thresholds are single-guide), more
+legendary animals the same week (fox Dec 4, panther Dec 6, bear Dec 10 already; coyote north of Belville is ready
+for a later week). Candidates: barber shop locations ("gta 6 barber shop locations"), Randy's Wish List cars once 2
+guides agree on one car's spot, TMNT drain / ghost ship once 2 guides agree.
+
 ## Daily research, Nov 26 (main chat: 4 agents for news, map finds, market and search gaps)
 Ranked for the owner's approval; sources were read from search summaries (pages blocked from the cloud session),
 so re-check each one on the day. MAP / WHERE first:
