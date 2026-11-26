@@ -1,0 +1,223 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 24)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-white-fox-where",
+ "title": "GTA 6 Legendary Animals: Where to Find the White Fox",
+ "short_title": "GTA 6 legendary animals: white fox location 🦊 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 legendary animals: white fox location 🦊 #GTA6 #Shorts",
+  "GTA 6's white fox pays $10K+, with a catch #GTA6 #Shorts",
+  "Where is the white fox in GTA 6? #GTA6 #Shorts"
+ ],
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase (YouTube autocomplete: 'gta 6 legendary animals locations', 'gta 6 white fox')",
+ "short_description": "Where to find the white fox, one of GTA 6's unique (\"Snapmatic\") animals: around Howe Dairy, east of Port Gellhorn, in the woods north of the Emerald River (a small area boxed in by roads). It only spawns after Bret Vogel texts you its clue (his hunting questline starts after you meet him in Chapter 2). Guides list its payout at $10,500 to $18,250. No story spoilers.\n\nSources: Insider Gaming, Mobalytics, PowerPyx.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: dónde está el ZORRO blanco 🦊 #GTA6 #Shorts",
+  "description": "El zorro blanco de GTA 6 vive cerca de Howe Dairy, al este de Port Gellhorn, en el bosque al norte del Emerald River. Solo aparece después de que Bret te mande su pista (desde el capítulo 2). Las guías dicen que paga entre 10.500 y 18.250 dólares. Fuentes: Insider Gaming, Mobalytics, PowerPyx.",
+  "tags": [
+   "GTA 6 zorro blanco",
+   "GTA 6 animales legendarios",
+   "GTA 6 secretos",
+   "GTA 6 español",
+   "GTA 6 Port Gellhorn"
+  ]
+ },
+ "pinned_comment": "Which legendary animal should we find next? 🦊👇",
+ "short_pinned_comment_es": "¿Qué animal legendario buscamos ahora? 🦊👇",
+ "tags": [
+  "GTA 6 white fox",
+  "GTA 6 legendary animals",
+  "GTA 6 legendary animals locations",
+  "GTA 6 Snapmatic animals",
+  "GTA 6 Howe Dairy",
+  "GTA 6 Bret",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6animals"
+ ],
+ "sources": [
+  "Insider Gaming - Every Snapmatic animal location in GTA 6: https://insider-gaming.com/every-snapmatic-animal-location-gta-6-hunting-legendary-animals/",
+  "Mobalytics - All unique animal map locations: https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-unique-animal-locations",
+  "PowerPyx - Veteran Hunted (Meet Bret) walkthrough: https://www.powerpyx.com/gta-6-veteran-hunted-meet-bret-walkthrough/"
+ ],
+ "facts_note": "Nov 26 research: Howe Dairy / east of Port Gellhorn / north of the Emerald River (Insider Gaming + Mobalytics, plus the map-finds agent's sources); needs Bret's clue first (Insider Gaming; PowerPyx has the Meet Bret mission); payout range $10,500-18,250 (Mobalytics + other guides) -> said as 'over ten thousand'. The rifle is not named (no-guns rule); guides disagree on the total number of unique animals (9 vs 11): not said. Read from search summaries: re-check right before upload.",
+ "short": [
+  {
+   "headline": "WHITE FOX",
+   "headline_es": "ZORRO BLANCO",
+   "text": "GTA 6 hides a white fox, and it lives right here.",
+   "text_es": "GTA seis esconde un zorro blanco, y vive justo aquí.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 HAS A",
+     "WHITE FOX"
+    ],
+    "pink": [
+     "WHITE FOX"
+    ],
+    "sub": "legendary animal",
+    "seed": 211
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "GTA 6 TIENE UN",
+     "ZORRO BLANCO"
+    ],
+    "pink": [
+     "ZORRO BLANCO"
+    ],
+    "sub": "animal legendario",
+    "seed": 211
+   }
+  },
+  {
+   "headline": "HOWE DAIRY",
+   "headline_es": "HOWE DAIRY",
+   "text": "Around Howe Dairy, east of Port Gellhorn.",
+   "text_es": "Cerca de Howe Dairy, al este de Port Gellhorn.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Howe Dairy",
+    "label": "White Fox",
+    "n": 1,
+    "src": "Insider Gaming · Mobalytics"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Howe Dairy",
+    "label": "Zorro blanco",
+    "n": 1,
+    "src": "Insider Gaming · Mobalytics",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "THE WOODS",
+   "headline_es": "EL BOSQUE",
+   "text": "Search the woods north of the Emerald River.",
+   "text_es": "Busca en el bosque al norte del Emerald River.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Woods north of the Emerald River",
+    "pink": [
+     "Emerald River"
+    ],
+    "src": "Insider Gaming",
+    "seed": 212,
+    "bg": "photo:media/official/port-gellhorn-02.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Bosque al norte del Emerald River",
+    "pink": [
+     "Emerald River"
+    ],
+    "src": "Insider Gaming",
+    "seed": 212,
+    "bg": "photo:media/official/port-gellhorn-02.jpg"
+   }
+  },
+  {
+   "headline": "BRET'S CLUE",
+   "headline_es": "LA PISTA DE BRET",
+   "text": "It only shows up after Bret texts you a clue.",
+   "text_es": "Solo aparece después de que Bret te mande una pista.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Only after Bret's clue text",
+    "pink": [
+     "Bret's clue"
+    ],
+    "src": "Insider Gaming · PowerPyx",
+    "seed": 213,
+    "bg": "photo:media/official/port-gellhorn-03.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Solo tras la pista de Bret",
+    "pink": [
+     "pista de Bret"
+    ],
+    "src": "Insider Gaming · PowerPyx",
+    "seed": 213,
+    "bg": "photo:media/official/port-gellhorn-03.jpg"
+   }
+  },
+  {
+   "headline": "$18,250",
+   "headline_es": "18.250 $",
+   "text": "It can pay over ten thousand dollars.",
+   "text_es": "Puede pagar más de diez mil dólares.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Pays $10,500 to $18,250",
+    "pink": [
+     "$18,250"
+    ],
+    "src": "Mobalytics",
+    "seed": 214,
+    "bg": "photo:media/official/port-gellhorn-01.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Paga de 10.500 a 18.250 $",
+    "pink": [
+     "18.250 $"
+    ],
+    "src": "Mobalytics",
+    "seed": 214,
+    "bg": "photo:media/official/port-gellhorn-01.jpg"
+   }
+  },
+  {
+   "headline": "SEEN IT?",
+   "headline_es": "¿YA LO VISTE?",
+   "text": "Seen it yet? Tell me, because",
+   "text_es": "¿Ya lo viste? Dímelo, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "SEEN IT",
+     "YET?"
+    ],
+    "pink": [
+     "YET?"
+    ],
+    "seed": 215
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿YA LO",
+     "VISTE?"
+    ],
+    "pink": [
+     "VISTE?"
+    ],
+    "seed": 215
+   }
+  }
+ ]
+}
