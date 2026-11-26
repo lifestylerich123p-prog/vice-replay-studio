@@ -665,15 +665,15 @@
    "slug": "gta6-impound-app",
    "item": "short",
    "en": [
-    "2026-11-29",
-    "12:30 PM"
+    "2026-12-05",
+    "1:30 PM"
    ],
    "es": [
     "2026-12-05",
     "1:30 PM"
    ],
    "approved": "Nov 24 ~6:30 PM ET (owner: \"Do it\": two map/how-to Shorts a day, weekly anchors Tue VS + Wed tier list, no pure fact Shorts); RE-CHECK facts before upload (owner rule); Spanish winners-only.",
-   "moved": "Nov 25 (owner: \"Start posting the maps videos at least one a day\"): moved so every day has a map Short"
+   "moved": "Nov 26: Sun Nov 29 12:30 PM -> Sat Dec 5 1:30 PM to make room for the mission-replay how-to (owner approved the swap)"
   },
   {
    "slug": "gta6-sunken-treasure",
@@ -859,6 +859,33 @@
     "1:30 PM"
    ],
    "approved": "Nov 26 (owner: \"CONTINUE TO RESEARH APPROVE\" after the Sat 1:30 PM proposal): new map find from the daily research; location in 5+ guides, item/reward left out (disputed); re-check right before upload"
+  },
+  {
+   "slug": "gta6-no-mission-replay",
+   "item": "short",
+   "en": [
+    "2026-11-29",
+    "12:30 PM"
+   ],
+   "approved": "Nov 26 (owner: \"Aprove\", after the research Shorts were sent): how-to answering 'gta 6 replay missions' (7 outlets); re-check right before upload"
+  },
+  {
+   "slug": "gta6-silent-hill-hotel",
+   "item": "short",
+   "en": [
+    "2026-12-03",
+    "12:30 PM"
+   ],
+   "approved": "Nov 26 (owner: \"Aprove\", after the research Shorts were sent): map spot answering 'gta 6 silent hill easter egg' (6 guides incl. VGC, Dexerto); re-check right before upload"
+  },
+  {
+   "slug": "gta6-white-fox-where",
+   "item": "short",
+   "en": [
+    "2026-12-04",
+    "9:30 AM"
+   ],
+   "approved": "Nov 26 (owner: \"Aprove\", after the research Shorts were sent): map spot answering 'gta 6 legendary animals / white fox' (Insider Gaming, Mobalytics); re-check right before upload"
   }
  ],
  "paused": [
