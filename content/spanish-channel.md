@@ -57,3 +57,9 @@ After launch: Spanish-streamer stories (see content/learn/ideas.md and content/l
 ## Quota
 Both channels use the same Google project, so their uploads share one daily YouTube allowance
 (`python -m studio.quota`). Three Spanish uploads use about 7,500 units.
+
+## What to make in Spanish (Nov 26)
+Winners-only stays (config/channel.json `spanish_winners_only`). Spanish-only Shorts (max 1 a day): Miami/Latino
+angles (Bad Bunny, Little Cuba, Vice City vs real Miami) and map "dónde está" Shorts, the only kinds that drew views in
+Spanish so far (channel: 0 subscribers, 31 views in its first 11 videos as of Nov 26). Skip Spanish versions of
+streamer news and plain facts.

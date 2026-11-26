@@ -1,0 +1,221 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 26)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "guide": "gta-6-map-leonida-places",
+ "voice_es_note": "Spanish voice: Everygen Viral Adam, only if the English Short wins its first 24 h",
+ "slug": "gta6-alligators-where",
+ "title": "Where to Find Alligators in GTA 6",
+ "short_title": "GTA 6 alligators: where to find them 🐊 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 alligators: where to find them 🐊 #GTA6 #Shorts",
+  "Where are the alligators in GTA 6? #GTA6 #Shorts",
+  "GTA 6 alligators: even in the pools 😳 #GTA6 #Shorts"
+ ],
+ "short_description": "Where to find alligators in GTA 6: Grassrivers, the swamp region in southern Leonida. Check open water and the grassy shores, take an airboat to cross the swamp fast, and watch the pools in town: Rockstar showed animal control pulling a gator out of one. Guides haven't published exact spawn points yet. Sources: Rockstar Games, GTABase, games.gg, Red Bull, Xbox Play, EGamers.",
+ "short_es": {
+  "title": "Los CAIMANES de GTA 6: dónde encontrarlos 🐊 #GTA6 #Shorts",
+  "description": "Dónde encontrar caimanes en GTA 6: Grassrivers, el pantano del sur de Leonida. Busca en aguas abiertas y en las orillas con hierba, usa un aerodeslizador y vigila las piscinas de la ciudad. Fuentes: Rockstar Games, GTABase, games.gg, Red Bull.",
+  "tags": [
+   "GTA 6 español",
+   "caimanes GTA 6",
+   "GTA 6 Grassrivers",
+   "mapa de GTA 6",
+   "GTA 6",
+   "GTA VI"
+  ]
+ },
+ "pinned_comment": "Seen one yet? Swamp or pool? 🐊👇",
+ "short_pinned_comment_es": "¿Ya viste uno? ¿Pantano o piscina? 🐊👇",
+ "tags": [
+  "GTA 6 alligator",
+  "GTA 6 alligators",
+  "GTA 6 alligator location",
+  "where to find alligators GTA 6",
+  "GTA 6 Grassrivers",
+  "GTA 6 animals",
+  "GTA 6 map",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#alligator",
+  "#gta6map"
+ ],
+ "sources": [
+  "Rockstar Games - Grand Theft Auto VI official site, Grassrivers (alligators, airboats): https://www.rockstargames.com/VI",
+  "GTABase - American Alligator in GTA 6: https://www.gtabase.com/gta-6/animals/alligator",
+  "games.gg - GTA 6 alligators, where to find them in Leonida: https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-alligators-where-to-find-them-in-leonida/",
+  "Red Bull - GTA 6 wildlife: https://www.redbull.com/us-en/gta-6-wildlife",
+  "Xbox Play - GTA 6 alligator locations: https://xboxplay.games/gta-6/gta-6-alligator-locations-where-to-find-hunt-gators-77394",
+  "EGamers - GTA 6 alligators, Grassrivers locations: https://egamers.io/gta-6-alligators-grassrivers-locations-the-alligator-kills-challenge-and-swamp-dangers/"
+ ],
+ "facts_note": "Nov 26 (YouTube search 'gta 6 alligator', 56 views to our LACY clip, no Short of ours answers it). Grassrivers = the alligator region (Rockstar, GTABase, games.gg, Red Bull, Xbox Play); open water + vegetated shores (GTABase, Xbox Play); airboats are Grassrivers' vehicle (Rockstar, Red Bull); a gator in a residential pool is in Rockstar's first trailer (Xbox Play, EGamers). Left out: albino alligators (no source confirms) and exact spawn points (guides say none are published yet).",
+ "short": [
+  {
+   "headline": "FIND A GATOR",
+   "headline_es": "ENCUENTRA UNO",
+   "keep_media": true,
+   "text": "Want a GTA 6 alligator? Here's where to look.",
+   "text_es": "¿Quieres ver un caimán en GTA seis? Aquí tienes dónde buscar.",
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WANT A",
+     "GTA 6 GATOR?"
+    ],
+    "pink": [
+     "GTA 6 GATOR?"
+    ],
+    "seed": 71
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿QUIERES UN",
+     "CAIMÁN?"
+    ],
+    "pink": [
+     "CAIMÁN?"
+    ],
+    "seed": 71
+   }
+  },
+  {
+   "headline": "GRASSRIVERS",
+   "headline_es": "GRASSRIVERS",
+   "keep_media": true,
+   "text": "Grassrivers, Leonida's swamp in the south.",
+   "text_es": "Grassrivers, el pantano del sur de Leonida.",
+   "chart": {
+    "type": "map",
+    "at": "Grassrivers",
+    "label": "Alligators",
+    "n": 1,
+    "src": "Rockstar · GTABase"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Grassrivers",
+    "label": "Caimanes",
+    "n": 1,
+    "src": "Rockstar · GTABase",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "LOOK HERE",
+   "headline_es": "BUSCA AQUÍ",
+   "keep_media": true,
+   "text": "Check open water and the grassy shores.",
+   "text_es": "Busca en aguas abiertas y en las orillas con hierba.",
+   "chart": {
+    "type": "text",
+    "text": "Open water + grassy shores",
+    "pink": [
+     "grassy shores"
+    ],
+    "seed": 72,
+    "src": "GTABase · Xbox Play"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Aguas abiertas + orillas con hierba",
+    "pink": [
+     "orillas"
+    ],
+    "seed": 72,
+    "src": "GTABase · Xbox Play"
+   }
+  },
+  {
+   "headline": "TAKE AN AIRBOAT",
+   "headline_es": "USA UN AERODESLIZADOR",
+   "keep_media": true,
+   "text": "Take an airboat. It's the fastest way through the swamp.",
+   "text_es": "Usa un aerodeslizador. Es lo más rápido en el pantano.",
+   "chart": {
+    "type": "text",
+    "text": "Airboat = fastest through the swamp",
+    "pink": [
+     "Airboat"
+    ],
+    "seed": 73,
+    "src": "Rockstar · Red Bull"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Aerodeslizador = lo más rápido",
+    "pink": [
+     "Aerodeslizador"
+    ],
+    "seed": 73,
+    "src": "Rockstar · Red Bull"
+   }
+  },
+  {
+   "headline": "EVEN IN POOLS",
+   "headline_es": "HASTA EN PISCINAS",
+   "keep_media": true,
+   "text": "And watch the pools in town. Rockstar showed one there.",
+   "text_es": "Y vigila las piscinas de la ciudad. Rockstar mostró uno ahí.",
+   "chart": {
+    "type": "text",
+    "text": "Even in pools in town",
+    "pink": [
+     "pools"
+    ],
+    "seed": 74,
+    "src": "Rockstar trailer · Xbox Play"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Hasta en piscinas de la ciudad",
+    "pink": [
+     "piscinas"
+    ],
+    "seed": 74,
+    "src": "Tráiler de Rockstar · Xbox Play"
+   }
+  },
+  {
+   "headline": "SEEN ONE?",
+   "headline_es": "¿YA VISTE UNO?",
+   "keep_media": true,
+   "text": "Seen one yet? Tell me, because",
+   "text_es": "¿Ya viste uno? Dime, porque",
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "SEEN ONE",
+     "YET?"
+    ],
+    "pink": [
+     "YET?"
+    ],
+    "seed": 75
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿YA VISTE",
+     "UNO?"
+    ],
+    "pink": [
+     "UNO?"
+    ],
+    "seed": 75
+   }
+  }
+ ]
+}

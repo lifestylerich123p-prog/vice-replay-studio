@@ -345,3 +345,11 @@
   Skunk Ape to Sat; key cloner and impound app moved back). `studio.doctor` warns about any day in the next 7 with no
   map Short; new map Shorts still need the owner's "approve". Same day: the trivia video's browser upload stalled at
   7%, the owner deleted it and said "Upload", so the main chat uploaded it by API (kSufP4pt08I).
+- 2026-11-26 (owner: "Do what you think is best", after the channel/website report): (1) TikTok first for map Shorts:
+  the 1 PM checklist also pushes TOMORROW's booked map Shorts to the TikTok files chat, so they go on TikTok a day
+  before YouTube (the shoe-store map TikTok: 2,653 views, 3x anything else). (2) Spanish channel (0 subscribers, 31
+  views in 11 videos): stays winners-only; Spanish-only Shorts focus on Miami/Latino angles and map Shorts, the only
+  ones that drew views in Spanish (Bad Bunny 16). (3) Search Console: connect link sent to the owner (Windsor,
+  read-only); once connected the 1 PM checklist reports the site's weekly clicks and top query. (4) "gta 6 shoe store
+  private room" (88 search views) is NOT answered: it's the GTA 5 strip-club meme (owner's no-sexualized-content
+  rule); next search gap answered instead: "gta 6 alligator" (gta6-alligators-where).
