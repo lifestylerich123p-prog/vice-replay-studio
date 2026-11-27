@@ -116,5 +116,14 @@
    "GET comments": 1
   },
   "registry_est": 900
+ },
+ "2026-11-27": {
+  "used": 63,
+  "calls": {
+   "GET channels": 7,
+   "GET playlistItems": 5,
+   "GET playlists": 1,
+   "POST playlistItems": 1
+  }
  }
 }

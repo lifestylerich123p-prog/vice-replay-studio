@@ -38,7 +38,7 @@ Read this first instead of searching the repo.
 | 2026-11-26 | gta6-nombres-espanol-mapa-es | Short | GTA 6: los lugares con nombre en español del mapa | - |
 | 2026-11-26 | gta6-no-mission-replay | Short | GTA 6 Has No Mission Replay: How to Save Instead | - |
 | 2026-11-26 | gta6-ninja-turtles-where | Short | GTA 6 Ninja Turtles Easter Egg: Where to Find It | - |
-| 2026-11-26 | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | - |
+| 2026-11-26 | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | short: YlVyesTxTZg |
 | 2026-11-26 | gta6-map-quiz-places | Short | GTA 6 Map Quiz: Name These 3 Places | - |
 | 2026-11-26 | gta6-map-easter-eggs-filter | Short | GTA 6 Easter Eggs Map: Show Only the Secrets | - |
 | 2026-11-26 | gta6-map-checklist | Short | GTA 6 Map Checklist: Track Every Spot You Find | - |

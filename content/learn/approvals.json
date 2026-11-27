@@ -3,7 +3,7 @@
   "slug": "gta6-mask-where",
   "item": "short",
   "platform": "youtube-en",
-  "state": "AUTO_APPROVED",
+  "state": "SCHEDULED",
   "history": [
    [
     "2026-11-26 13:16 ET",
@@ -148,6 +148,36 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-27 03:49 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-27 03:49 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-27 03:49 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-27 03:49 ET",
+    "AUTO_APPROVED",
+    "UPLOADING",
+    "upload started"
+   ],
+   [
+    "2026-11-27 03:50 ET",
+    "UPLOADING",
+    "SCHEDULED",
+    "uploaded, scheduled 2026-11-27 8:00 AM ET"
    ]
   ],
   "publish": [
@@ -158,11 +188,12 @@
   "video": "output/gta6-mask-where/gta6-mask-where-short.mp4",
   "duration": 16.1,
   "spec_hash": "b4e15fec3f22fd7e79590004e3825f346a864958d4f2ccf584fbc3604f7876ca",
-  "evaluated_at": "2026-11-27 02:12 ET",
+  "evaluated_at": "2026-11-27 03:49 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "2e0855d2b3133b8d4e8fcfad01ec00d406018fcdbe5cc0c0e2d0545b2c47246b"
+  "video_sha256": "2e0855d2b3133b8d4e8fcfad01ec00d406018fcdbe5cc0c0e2d0545b2c47246b",
+  "video_id": "YlVyesTxTZg"
  },
  "gta6-backrooms-where:short:youtube-en": {
   "slug": "gta6-backrooms-where",
@@ -1004,7 +1035,7 @@
   "slug": "gta6-mask-where",
   "item": "short",
   "platform": "youtube-es",
-  "state": "BLOCKED",
+  "state": "NEEDS_REVIEW",
   "history": [
    [
     "2026-11-26 15:22 ET",
@@ -1017,6 +1048,24 @@
     "RENDERED",
     "BLOCKED",
     "gta6-mask-where-short-es.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-mask-where.json --short --es)"
+   ],
+   [
+    "2026-11-27 03:49 ET",
+    "BLOCKED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-27 03:49 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-27 03:49 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-27: re-check within 2"
    ]
   ],
   "publish": [
@@ -1025,17 +1074,16 @@
   ],
   "title": "GTA 6: dónde comprar tu PRIMERA máscara 🎭 #GTA6 #Shorts",
   "video": "output/gta6-mask-where/gta6-mask-where-short-es.mp4",
-  "duration": 17.8,
-  "spec_hash": "3302d0c6554598ad53625c6a06e3b75a8790e2fbb51918fc7808e331859730eb",
-  "evaluated_at": "2026-11-26 15:22 ET",
-  "blockers": [
-   "gta6-mask-where-short-es.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-mask-where.json --short --es)"
-  ],
+  "duration": 20.9,
+  "spec_hash": "b63e83697ff433799ddb25c5c36fd47acd904c599c23dbd0f9c1f1a08ac4d45d",
+  "evaluated_at": "2026-11-27 03:49 ET",
+  "blockers": [],
   "reviews": [
-   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
+   "facts last re-checked 2026-11-27: re-check within 2 days of the slot"
   ],
   "advice": [],
-  "video_sha256": "c69c94927309866839c8b7e4707e14ba5599210c42db9314b80d1d5bd7a9224b"
+  "video_sha256": "8803e2924210f112760d9208467bb385e98d7d1718f4e039c29f587dfd4159a5"
  },
  "gta6-map-easter-eggs-filter:short:youtube-en": {
   "slug": "gta6-map-easter-eggs-filter",
@@ -1374,5 +1422,47 @@
    "views: Short 'short' is 58 words (~21 s); target 13-20 s (35-55 words), payoff as the last line, last line loops into the first"
   ],
   "video_sha256": "0b53bb326b848cdbe9468037a4269db29ab84b85f239ee4e460339d89f3f8cfa"
+ },
+ "gta6-shoe-store-where:short:youtube-es": {
+  "slug": "gta6-shoe-store-where",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-27 03:49 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-27 03:49 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-27 03:49 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ]
+  ],
+  "publish": [
+   "2026-12-01",
+   "12:30 PM"
+  ],
+  "title": "GTA 6 tienda de ZAPATOS: dónde está 👟 #GTA6 #Shorts",
+  "video": "output/gta6-shoe-store-where/gta6-shoe-store-where-short-es.mp4",
+  "duration": 16.8,
+  "spec_hash": "14ffc90793b88f9b93cc307d62fdb564db2397e6e2ab0c8ea350b721c119f7ba",
+  "evaluated_at": "2026-11-27 03:49 ET",
+  "blockers": [],
+  "reviews": [
+   "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
+  ],
+  "advice": [],
+  "video_sha256": "e5484ea7ba17371e150e3664a06ee410b380032ccbaa557f80dcd87aafad05ea"
  }
 }
