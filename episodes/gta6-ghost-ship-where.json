@@ -161,7 +161,7 @@
     ],
     "src": "VICE · TheClick",
     "seed": 283,
-    "bg": "photo:media/official/leonida-keys-03.jpg"
+    "bg": "photo:media/official/vice-city-15.jpg"
    },
    "chart_es": {
     "type": "text",
@@ -171,7 +171,7 @@
     ],
     "src": "VICE · TheClick",
     "seed": 283,
-    "bg": "photo:media/official/leonida-keys-03.jpg"
+    "bg": "photo:media/official/vice-city-15.jpg"
    }
   },
   {
@@ -235,5 +235,6 @@
  "cta": "SPOT #12 NEXT: FOLLOW",
  "cta_es": "LUGAR #12 PRONTO: SÍGUENOS",
  "claim_status": "community-found",
- "series_id": "hidden"
+ "series_id": "hidden",
+ "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: leonida-keys-03 -> vice-city-15 (guns / character close-ups / swimwear / drinking are not allowed)."
 }

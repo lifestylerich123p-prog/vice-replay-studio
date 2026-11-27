@@ -244,6 +244,19 @@ def check_short(ep, key, title, segs, gameplay_available=False):
                                     f"year); for a price say 'seventy nine dollars and ninety nine cents'")
     except ImportError:
         pass
+    # Phase 9 (Nov 26): a card's explicit "bg": "photo:..." bypassed the vetted pool, and a gun close-up, rifles and
+    # character close-ups reached booked Shorts. Card backgrounds must come from studio/cardphotos.py POOL (viewed one by
+    # one: places and cars only, no guns, close-ups, revealing poses, swimwear or drinking).
+    from .. import cardphotos
+    pool = {x for v in cardphotos.POOL.values() for x in v}
+    for k, x in enumerate(segs):
+        for ck in ("chart", "chart_es"):
+            bg = str((x.get(ck) or {}).get("bg") or "")
+            if bg.startswith("photo:"):
+                stem = bg.rsplit("/", 1)[-1].rsplit(".", 1)[0]
+                if stem not in pool:
+                    blockers.append(f"picture: Short '{key}' segment {k + 1} ({ck}) uses '{stem}', which isn't in the vetted "
+                                    f"card-photo pool (studio/cardphotos.py POOL): pick a pool photo of the same place")
     # Nov 23: on the GTA 6-style lettering cards a headline that wraps to 2 lines runs into the big lettering
     from .. import vicecards
     for k, x in enumerate(segs):

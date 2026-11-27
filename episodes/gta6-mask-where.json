@@ -154,7 +154,7 @@
     ],
     "src": "PCGamesN · Dork",
     "seed": 183,
-    "bg": "photo:media/official/leonida-keys-05.jpg"
+    "bg": "photo:media/official/leonida-keys-04.jpg"
    },
    "chart_es": {
     "type": "text",
@@ -164,7 +164,7 @@
     ],
     "src": "PCGamesN · Dork",
     "seed": 183,
-    "bg": "photo:media/official/leonida-keys-05.jpg"
+    "bg": "photo:media/official/leonida-keys-04.jpg"
    }
   },
   {
@@ -181,7 +181,7 @@
     ],
     "src": "GamesRadar · PCGamesN",
     "seed": 184,
-    "bg": "photo:media/official/leonida-keys-03.jpg"
+    "bg": "photo:media/official/leonida-keys-07.jpg"
    },
    "chart_es": {
     "type": "text",
@@ -191,7 +191,7 @@
     ],
     "src": "GamesRadar · PCGamesN",
     "seed": 184,
-    "bg": "photo:media/official/leonida-keys-03.jpg"
+    "bg": "photo:media/official/leonida-keys-07.jpg"
    }
   },
   {
@@ -224,5 +224,6 @@
    }
   }
  ],
- "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)"
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)",
+ "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: leonida-keys-05 -> leonida-keys-04, leonida-keys-03 -> leonida-keys-07 (guns / character close-ups / swimwear / drinking are not allowed)."
 }

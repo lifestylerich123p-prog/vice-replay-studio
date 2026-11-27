@@ -931,6 +931,42 @@
     "2026-12-09",
     "12:30 PM"
    ]
+  },
+  {
+   "slug": "gta6-3-lugares-secretos-es",
+   "item": "short",
+   "es": [
+    "2026-12-09",
+    "7:00 PM"
+   ]
+  },
+  {
+   "slug": "gta6-map-size-scale",
+   "item": "short",
+   "en": [
+    "2026-12-13",
+    "6:00 PM"
+   ],
+   "es": [
+    "2026-12-10",
+    "12:30 PM"
+   ]
+  },
+  {
+   "slug": "gta6-map-spanish-words",
+   "item": "short",
+   "en": [
+    "2026-12-14",
+    "8:00 AM"
+   ]
+  },
+  {
+   "slug": "gta6-mercado-pulgas-es",
+   "item": "short",
+   "es": [
+    "2026-12-10",
+    "7:00 PM"
+   ]
   }
  ],
  "paused": [

@@ -177,6 +177,17 @@ class SourcesTest(unittest.TestCase):
         self.assertTrue(r["blockers"])
 
 
+class CardPhotoPoolTest(unittest.TestCase):
+    def test_background_outside_vetted_pool_blocks(self):
+        from studio.vice import viewcheck
+        ep = {"slug": "t", "title": "GTA 6 test", "short_title": "GTA 6 test #Shorts", "short": [
+            {"headline": "A", "text": "GTA 6 test card one.", "chart": {"type": "text", "text": "x", "bg": "photo:media/official/vice-city-12.jpg"}},
+            {"headline": "B", "text": "Comment yes.", "chart": {"type": "text", "text": "y", "bg": "photo:media/official/vice-city-10.jpg"}}]}
+        b, _ = viewcheck.check(ep, recent=[])
+        self.assertTrue(any("vice-city-12" in x for x in b))
+        self.assertFalse(any("vice-city-10" in x for x in b))
+
+
 class QuestionHookTest(unittest.TestCase):
     def _ep(self, tagged, card):
         ep = {"slug": "t", "title": "GTA 6 test", "short_title": "GTA 6 test #Shorts", "short": [

@@ -157,7 +157,7 @@
     ],
     "src": "VGTimes · Complex",
     "seed": 273,
-    "bg": "photo:media/official/mount-kalaga-03.jpg"
+    "bg": "photo:media/official/mount-kalaga-04.jpg"
    },
    "chart_es": {
     "type": "text",
@@ -167,7 +167,7 @@
     ],
     "src": "VGTimes · Complex",
     "seed": 273,
-    "bg": "photo:media/official/mount-kalaga-03.jpg"
+    "bg": "photo:media/official/mount-kalaga-04.jpg"
    }
   },
   {
@@ -203,5 +203,6 @@
  "spot": 7,
  "cta": "SPOT #8 NEXT: FOLLOW",
  "cta_es": "LUGAR #8 PRONTO: SÍGUENOS",
- "claim_status": "community-found"
+ "claim_status": "community-found",
+ "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: mount-kalaga-03 -> mount-kalaga-04 (guns / character close-ups / swimwear / drinking are not allowed)."
 }

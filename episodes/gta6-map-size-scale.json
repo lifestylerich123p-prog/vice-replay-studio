@@ -1,0 +1,358 @@
+{
+ "title": "GTA 6 map size: how big Leonida really is",
+ "slug": "gta6-map-size-scale",
+ "series": "Map Spots",
+ "series_id": "explained",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (official-map scale cards: steps across the state, area pulse, route; Phase 9 map-scale test)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "short_title": "GTA 6 map size: how big Leonida really is 🗺️ #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 map size: how big Leonida really is 🗺️ #GTA6 #Shorts",
+  "How big is the GTA 6 map? 🗺️ #GTA6 #Shorts"
+ ],
+ "title_rule": "search phrase first ('gta 6 map size')",
+ "short_description": "GTA 6 map size: according to Rockstar North, Leonida is about twice the size of GTA 5's map, and Vice City alone is reportedly about double Los Santos. Rockstar has also reportedly said Leonida's landmass is close to GTA 4, GTA 5 and Red Dead Redemption 2 combined. Fan square-mile estimates differ because some include the ocean around the Keys, so there's no exact official figure yet. No story spoilers.\n\nMap: Rockstar Games (official Leonida map). Sources: TweakTown, IBTimes, Dexerto, Insider Gaming, esports.gg.",
+ "short_es": {
+  "title": "GTA 6: qué tan GRANDE es el mapa 🗺️ #GTA6 #Shorts",
+  "description": "Tamaño del mapa de GTA 6: según Rockstar North, Leonida mide más o menos el doble que el mapa de GTA 5, y Vice City sola sería el doble que Los Santos. Rockstar también habría dicho que la tierra de Leonida se acerca a GTA 4, GTA 5 y Red Dead Redemption 2 juntos. Las cifras de los fans cambian porque algunas cuentan el mar de los cayos: no hay un número oficial exacto. Sin spoilers.\n\nMapa: Rockstar Games (mapa oficial de Leonida). Fuentes: TweakTown, IBTimes, Dexerto, Insider Gaming, esports.gg.",
+  "tags": [
+   "GTA 6 mapa",
+   "GTA 6 tamaño del mapa",
+   "GTA 6 mapa oficial",
+   "GTA 6 Leonida",
+   "GTA 6 Vice City",
+   "GTA 6 español",
+   "GTA VI"
+  ],
+  "title_options": [
+   "GTA 6: qué tan GRANDE es el mapa 🗺️ #GTA6 #Shorts"
+  ]
+ },
+ "pinned_comment": "Which part of Leonida are you exploring first? 👇",
+ "short_pinned_comment_es": "¿Qué parte de Leonida exploras primero? 👇",
+ "tags": [
+  "GTA 6 map size",
+  "GTA 6 map",
+  "how big is the GTA 6 map",
+  "GTA 6 Leonida",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gta6map",
+  "#leonida"
+ ],
+ "site_target": "/guides/gta-6-map-size/",
+ "site_target_es": "/es/guias/mapa-gta-6/",
+ "hook_type": "immediate-answer",
+ "hook_type_es": "immediate-answer",
+ "first_frame": "map steps: a pinned line across the whole state on Rockstar's official map (Ambrosia -> Vice City -> Key Lento -> Mile Zero)",
+ "format_test": "map-scale (Phase 9 H4: map-scale visuals vs standard single-pin location cards)",
+ "claim_status": "community-found",
+ "claims": [
+  {
+   "claim": "Rockstar North says Leonida is about twice the size of GTA 5's map",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "twice the size of gta 5",
+    "el doble que el mapa de gta"
+   ],
+   "wording": "hedged",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://www.tweaktown.com/news/114382/gta-6s-map-is-roughly-twice-gta-5s-and-almost-as-big-as-gta-4-gta-5-and-rdr2-combined/index.html",
+     "type": "news",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Rob Nelson: roughly twice GTA 5",
+     "copies": null
+    },
+    {
+     "url": "https://www.ibtimes.co.uk/gta-6-update-rockstar-confirms-map-twice-size-gta-5-1829061",
+     "type": "news",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Rockstar: twice the size of GTA 5",
+     "copies": null
+    },
+    {
+     "url": "https://www.dexerto.com/wikis/gta-6/leonida-map-size/",
+     "type": "guide",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Leonida map size",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "Vice City alone is about double Los Santos",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "double los santos",
+    "el doble que los santos"
+   ],
+   "wording": "hedged",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://www.dexerto.com/wikis/gta-6/leonida-map-size/",
+     "type": "guide",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Vice City proper double Los Santos",
+     "copies": null
+    },
+    {
+     "url": "https://esports.gg/guides/grand-theft-auto-6/how-big-is-the-map-of-leonida-in-gta-6-full-map-size-explained/",
+     "type": "guide",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "Vice City vs Los Santos",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "Leonida's landmass is close to GTA 4, GTA 5 and RDR2 combined",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "combined",
+    "juntos"
+   ],
+   "wording": "hedged",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://www.tweaktown.com/news/114382/gta-6s-map-is-roughly-twice-gta-5s-and-almost-as-big-as-gta-4-gta-5-and-rdr2-combined/index.html",
+     "type": "news",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "almost as big as GTA 4, GTA 5 and RDR2 combined",
+     "copies": null
+    },
+    {
+     "url": "https://fandomwire.com/rockstar-gta-6-map-three-previous-worlds-combined/",
+     "type": "news",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "three previous worlds combined",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "Fan size estimates differ because some include the ocean around the Keys",
+   "material": false,
+   "kind": "game",
+   "keywords": [
+    "count the ocean",
+    "cuentan el mar"
+   ],
+   "wording": "hedged",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://esports.gg/guides/grand-theft-auto-6/how-big-is-the-map-of-leonida-in-gta-6-full-map-size-explained/",
+     "type": "guide",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "estimates vary",
+     "copies": null
+    },
+    {
+     "url": "https://www.latestly.com/gaming/gta-6-map-size-7592878.html",
+     "type": "news",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "fan estimates",
+     "copies": null
+    }
+   ]
+  }
+ ],
+ "sources": [
+  "TweakTown - GTA 6's map is roughly twice GTA 5's: https://www.tweaktown.com/news/114382/gta-6s-map-is-roughly-twice-gta-5s-and-almost-as-big-as-gta-4-gta-5-and-rdr2-combined/index.html",
+  "IBTimes - Rockstar confirms map twice the size of GTA 5: https://www.ibtimes.co.uk/gta-6-update-rockstar-confirms-map-twice-size-gta-5-1829061",
+  "Dexerto - Leonida map size: https://www.dexerto.com/wikis/gta-6/leonida-map-size/",
+  "esports.gg - how big is Leonida: https://esports.gg/guides/grand-theft-auto-6/how-big-is-the-map-of-leonida-in-gta-6-full-map-size-explained/"
+ ],
+ "facts_note": "Phase 9: every size statement is attributed (Rockstar North / reportedly); no fan square-mile figure is shown as fact.",
+ "short": [
+  {
+   "headline": "2x GTA 5",
+   "headline_es": "2x GTA 5",
+   "text": "According to Rockstar North, GTA 6's map is about twice the size of GTA 5's.",
+   "text_es": "Según Rockstar North, el mapa de GTA seis es más o menos el doble que el mapa de GTA cinco.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "steps",
+    "steps": [
+     {
+      "at": "Ambrosia",
+      "label": "Ambrosia"
+     },
+     {
+      "at": "Vice City",
+      "label": "Vice City"
+     },
+     {
+      "at": "Key Lento",
+      "label": "Key Lento"
+     },
+     {
+      "at": "Mile Zero Air Station",
+      "label": "Mile Zero"
+     }
+    ],
+    "src": "Map: Rockstar Games (official)"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "steps",
+    "steps": [
+     {
+      "at": "Ambrosia",
+      "label": "Ambrosia"
+     },
+     {
+      "at": "Vice City",
+      "label": "Vice City"
+     },
+     {
+      "at": "Key Lento",
+      "label": "Key Lento"
+     },
+     {
+      "at": "Mile Zero Air Station",
+      "label": "Mile Zero"
+     }
+    ],
+    "src": "Mapa oficial de Rockstar",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "VICE CITY ALONE",
+   "headline_es": "SOLO VICE CITY",
+   "text": "Vice City alone is reportedly double Los Santos.",
+   "text_es": "Y Vice City sola sería el doble que Los Santos, según las guías.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "area",
+    "at": "Vice City",
+    "label": "Vice City",
+    "n": 1,
+    "src": "Map: Rockstar · Dexerto"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "area",
+    "at": "Vice City",
+    "label": "Vice City",
+    "n": 1,
+    "src": "Mapa: Rockstar · Dexerto",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "3 MAPS IN ONE",
+   "headline_es": "3 MAPAS EN UNO",
+   "text": "Rockstar reportedly says its land is close to GTA 4, GTA 5 and Red Dead 2 combined.",
+   "text_es": "Según Rockstar, su tierra se acerca a GTA cuatro, GTA cinco y Red Dead dos juntos.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "GTA 4 + GTA 5 + Red Dead 2, reportedly",
+    "pink": [
+     "reportedly"
+    ],
+    "src": "TweakTown · FandomWire",
+    "seed": 311,
+    "bg": "photo:media/official/vice-city-11.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "GTA 4 + GTA 5 + Red Dead 2, según Rockstar",
+    "pink": [
+     "según Rockstar"
+    ],
+    "src": "TweakTown · FandomWire",
+    "seed": 311,
+    "bg": "photo:media/official/vice-city-11.jpg",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "WHY ESTIMATES DIFFER",
+   "headline_es": "¿POR QUÉ NO CUADRA?",
+   "text": "Fan estimates differ because some count the ocean around the Keys.",
+   "text_es": "Las cifras de los fans no cuadran porque algunas cuentan el mar de los cayos.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "route",
+    "from": "Key Lento",
+    "at": "Mile Zero Air Station",
+    "label": "the Keys",
+    "n": 1,
+    "src": "Map: Rockstar Games (official)"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "route",
+    "from": "Key Lento",
+    "at": "Mile Zero Air Station",
+    "label": "los cayos",
+    "n": 1,
+    "src": "Mapa oficial de Rockstar",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "EXPLORE IT ALL",
+   "headline_es": "EXPLÓRALO TODO",
+   "text": "Explore all of it on our free interactive map.",
+   "text_es": "Explóralo todo en nuestro mapa interactivo gratis.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "EXPLORE IT ALL",
+     "FREE MAP · LINK BELOW"
+    ],
+    "pink": [
+     "FREE MAP · LINK BELOW"
+    ],
+    "seed": 312
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "EXPLÓRALO TODO",
+     "MAPA GRATIS · ENLACE ABAJO"
+    ],
+    "pink": [
+     "MAPA GRATIS · ENLACE ABAJO"
+    ],
+    "seed": 312,
+    "locale": "es"
+   }
+  }
+ ],
+ "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: vice-city-12 -> vice-city-11 (guns / character close-ups / swimwear / drinking are not allowed)."
+}

@@ -112,6 +112,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 18:51 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 18:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 18:51 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -121,12 +139,12 @@
   "title": "GTA 6 mask location: your first one is here 🎭 #GTA6 #Shorts",
   "video": "output/gta6-mask-where/gta6-mask-where-short.mp4",
   "duration": 16.1,
-  "spec_hash": "47eab14b1b61b78a418edd79d518fa9c0b24fc6e482292a84ba254818e2dfbd0",
-  "evaluated_at": "2026-11-26 15:22 ET",
+  "spec_hash": "b4e15fec3f22fd7e79590004e3825f346a864958d4f2ccf584fbc3604f7876ca",
+  "evaluated_at": "2026-11-26 18:51 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "416e771da0d47685030c7bc5a66b9be4a4e7135490c7a71df52ce04d501b9669"
+  "video_sha256": "2e0855d2b3133b8d4e8fcfad01ec00d406018fcdbe5cc0c0e2d0545b2c47246b"
  },
  "gta6-backrooms-where:short:youtube-en": {
   "slug": "gta6-backrooms-where",
@@ -411,6 +429,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 18:51 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 18:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 18:51 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -420,12 +456,12 @@
   "title": "GTA 6 esconde a las TORTUGAS NINJA: aquí están 🐢 #GTA6 #Shorts",
   "video": "output/gta6-ninja-turtles-where/gta6-ninja-turtles-where-short-es.mp4",
   "duration": 16.1,
-  "spec_hash": "ed05a07c7148d7fd5939c0cc2d2c71700dd8506f5fb1676c4c7ee6432b839355",
-  "evaluated_at": "2026-11-26 15:23 ET",
+  "spec_hash": "e90a9a83056049523ad8b2cfe8d6d14a5e2c03b1a9f34d2e82f83b9c5cd3b6b9",
+  "evaluated_at": "2026-11-26 18:51 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "7cf792190623509aeedd33636f6858c412b9882335e18ecaf92ff183c947c947"
+  "video_sha256": "78ecd67153880f6eb772a674a2503338c6747e7b9b6100320c8095e4eb7bd88e"
  },
  "gta6-silent-hill-hotel:short:youtube-es": {
   "slug": "gta6-silent-hill-hotel",

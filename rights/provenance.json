@@ -820,7 +820,6 @@
    "file": "media/official/electric-fang-tattoo-01.jpg",
    "exists": true,
    "episodes": [
-    "gta6-tattoo-shops-where",
     "gta6-ultimate-edition-shops"
    ],
    "rights_id": "rockstar-official-screens",
@@ -1491,6 +1490,7 @@
    "exists": true,
    "episodes": [
     "gta6-beginner-tips-nobody-tells-you",
+    "gta6-black-panther-where",
     "gta6-is-out",
     "gta6-map-quiz-places",
     "gta6-new-zealand-trick",
@@ -1532,9 +1532,6 @@
    "file": "media/official/leonida-keys-03.jpg",
    "exists": true,
    "episodes": [
-    "gta6-black-panther-where",
-    "gta6-ghost-ship-where",
-    "gta6-mask-where",
     "gta6-new-zealand-trick",
     "gta6-physical-edition-no-disc"
    ],
@@ -1552,6 +1549,7 @@
    "exists": true,
    "episodes": [
     "gta6-launch-day-survival-guide",
+    "gta6-mask-where",
     "gta6-no-mission-replay",
     "gta6-physical-edition-no-disc"
    ],
@@ -1567,9 +1565,7 @@
   {
    "file": "media/official/leonida-keys-05.jpg",
    "exists": true,
-   "episodes": [
-    "gta6-mask-where"
-   ],
+   "episodes": [],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
    "creator": "Rockstar Games / Take-Two Interactive",
@@ -1598,7 +1594,8 @@
    "file": "media/official/leonida-keys-07.jpg",
    "exists": true,
    "episodes": [
-    "gta6-ghost-ship-where"
+    "gta6-ghost-ship-where",
+    "gta6-mask-where"
    ],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
@@ -1849,7 +1846,8 @@
    "file": "media/official/mount-kalaga-02.jpg",
    "exists": true,
    "episodes": [
-    "gta6-backrooms-where"
+    "gta6-backrooms-where",
+    "gta6-white-fox-where"
    ],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
@@ -1863,9 +1861,7 @@
   {
    "file": "media/official/mount-kalaga-03.jpg",
    "exists": true,
-   "episodes": [
-    "gta6-ninja-turtles-where"
-   ],
+   "episodes": [],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
    "creator": "Rockstar Games / Take-Two Interactive",
@@ -1879,7 +1875,8 @@
    "file": "media/official/mount-kalaga-04.jpg",
    "exists": true,
    "episodes": [
-    "gta6-map-quiz-places"
+    "gta6-map-quiz-places",
+    "gta6-ninja-turtles-where"
    ],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
@@ -1937,9 +1934,7 @@
   {
    "file": "media/official/port-gellhorn-02.jpg",
    "exists": true,
-   "episodes": [
-    "gta6-white-fox-where"
-   ],
+   "episodes": [],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
    "creator": "Rockstar Games / Take-Two Interactive",
@@ -1952,9 +1947,7 @@
   {
    "file": "media/official/port-gellhorn-03.jpg",
    "exists": true,
-   "episodes": [
-    "gta6-white-fox-where"
-   ],
+   "episodes": [],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
    "creator": "Rockstar Games / Take-Two Interactive",
@@ -1969,7 +1962,8 @@
    "exists": true,
    "episodes": [
     "gta6-map-quiz-places",
-    "gta6-sell-jewelry-where"
+    "gta6-sell-jewelry-where",
+    "gta6-white-fox-where"
    ],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
@@ -2354,6 +2348,7 @@
    "exists": true,
    "episodes": [
     "gta6-no-mission-replay",
+    "gta6-sahara-arena-where",
     "gta6-storage-full"
    ],
    "rights_id": "rockstar-official-screens",
@@ -2369,6 +2364,7 @@
    "file": "media/official/vice-city-11.jpg",
    "exists": true,
    "episodes": [
+    "gta6-map-size-scale",
     "youtube-24h-gta6-stream"
    ],
    "rights_id": "rockstar-official-screens",
@@ -2385,8 +2381,7 @@
    "exists": true,
    "episodes": [
     "gta6-beginner-tips-nobody-tells-you",
-    "gta6-how-long-to-beat",
-    "gta6-sahara-arena-where"
+    "gta6-how-long-to-beat"
    ],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
@@ -2437,6 +2432,7 @@
    "episodes": [
     "gta6-beginner-tips-nobody-tells-you",
     "gta6-car-dealership",
+    "gta6-ghost-ship-where",
     "gta6-no-mission-replay",
     "gta6-sell-jewelry-where",
     "youtube-24h-gta6-stream"
@@ -2468,6 +2464,7 @@
    "exists": true,
    "episodes": [
     "gta6-is-out",
+    "gta6-mercado-pulgas-es",
     "gta6-new-zealand-trick",
     "gta6-physical-edition-no-disc",
     "youtube-24h-gta6-stream"
@@ -2559,7 +2556,9 @@
   {
    "file": "media/official/vice-city-26.jpg",
    "exists": true,
-   "episodes": [],
+   "episodes": [
+    "gta6-mercado-pulgas-es"
+   ],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
    "creator": "Rockstar Games / Take-Two Interactive",
@@ -2572,7 +2571,9 @@
   {
    "file": "media/official/vice-city-27.jpg",
    "exists": true,
-   "episodes": [],
+   "episodes": [
+    "gta6-tattoo-shops-where"
+   ],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
    "creator": "Rockstar Games / Take-Two Interactive",

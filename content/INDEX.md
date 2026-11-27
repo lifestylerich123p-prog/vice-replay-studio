@@ -24,6 +24,10 @@ Read this first instead of searching the repo.
 ## Episodes (newest first)
 | Date | Slug | Kind | Title | YouTube ids |
 |---|---|---|---|---|
+| ? | gta6-mercado-pulgas-es | Short | GTA 6: dónde está el mercado de pulgas Tisha-Wocka | - |
+| ? | gta6-map-spanish-words | Short | GTA 6 map: 3 hidden Spanish words | - |
+| ? | gta6-map-size-scale | Short | GTA 6 map size: how big Leonida really is | - |
+| ? | gta6-3-lugares-secretos-es | Short | GTA 6: 3 lugares secretos que quizás no viste | - |
 | 2026-11-26 | gta6-white-fox-where | Short | GTA 6 Legendary Animals: Where to Find the White Fox | - |
 | 2026-11-26 | gta6-vice-city-real-miami | Short | GTA 6's Vice City vs Real Miami: 5 Places | - |
 | 2026-11-26 | gta6-tattoo-shops-where | Short | GTA 6 Tattoo Shop Locations: All 11 and Where to Start | - |

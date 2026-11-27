@@ -123,7 +123,7 @@
     ],
     "src": "Insider Gaming",
     "seed": 212,
-    "bg": "photo:media/official/port-gellhorn-02.jpg"
+    "bg": "photo:media/official/port-gellhorn-06.jpg"
    },
    "chart_es": {
     "type": "text",
@@ -133,7 +133,7 @@
     ],
     "src": "Insider Gaming",
     "seed": 212,
-    "bg": "photo:media/official/port-gellhorn-02.jpg"
+    "bg": "photo:media/official/port-gellhorn-06.jpg"
    }
   },
   {
@@ -150,7 +150,7 @@
     ],
     "src": "Insider Gaming · PowerPyx",
     "seed": 213,
-    "bg": "photo:media/official/port-gellhorn-03.jpg"
+    "bg": "photo:media/official/mount-kalaga-02.jpg"
    },
    "chart_es": {
     "type": "text",
@@ -160,7 +160,7 @@
     ],
     "src": "Insider Gaming · PowerPyx",
     "seed": 213,
-    "bg": "photo:media/official/port-gellhorn-03.jpg"
+    "bg": "photo:media/official/mount-kalaga-02.jpg"
    }
   },
   {
@@ -224,5 +224,6 @@
  "cta": "SPOT #14 NEXT: FOLLOW",
  "cta_es": "LUGAR #14 PRONTO: SÍGUENOS",
  "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts (map winners had 0 viewer comments)",
- "series_id": "hidden"
+ "series_id": "hidden",
+ "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: port-gellhorn-02 -> port-gellhorn-06, port-gellhorn-03 -> mount-kalaga-02 (guns / character close-ups / swimwear / drinking are not allowed)."
 }

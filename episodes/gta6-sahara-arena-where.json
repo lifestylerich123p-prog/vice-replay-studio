@@ -136,7 +136,7 @@
     ],
     "src": "NBA.com · ABC7/AP · GTABoom",
     "seed": 282,
-    "bg": "photo:media/official/vice-city-12.jpg"
+    "bg": "photo:media/official/vice-city-10.jpg"
    },
    "chart_es": {
     "type": "text",
@@ -146,7 +146,7 @@
     ],
     "src": "NBA.com · ABC7/AP · GTABoom",
     "seed": 282,
-    "bg": "photo:media/official/vice-city-12.jpg",
+    "bg": "photo:media/official/vice-city-10.jpg",
     "locale": "es"
    }
   },
@@ -333,5 +333,6 @@
  ],
  "hook_type": "comparison",
  "hook_type_es": "comparison",
- "first_frame": "map-pin (zoom): Sahara Arena pinned on Rockstar's official map"
+ "first_frame": "map-pin (zoom): Sahara Arena pinned on Rockstar's official map",
+ "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: vice-city-12 -> vice-city-10 (guns / character close-ups / swimwear / drinking are not allowed)."
 }

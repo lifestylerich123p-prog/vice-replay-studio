@@ -1,0 +1,276 @@
+{
+ "title": "GTA 6: dónde está el mercado de pulgas Tisha-Wocka",
+ "slug": "gta6-mercado-pulgas-es",
+ "series": "Map Spots",
+ "series_id": "hidden",
+ "format": "news",
+ "mood": "bright",
+ "use_gameplay": false,
+ "es_only": true,
+ "style": "vice (official-map zoom/route + city cards; Phase 9 Spanish-exclusive location discovery)",
+ "short_title": "GTA 6: where the Tisha-Wocka flea market is #GTA6 #Shorts",
+ "short_description": "Spanish-channel-only location discovery (Phase 9): Tisha-Wocka Flea Market, labelled on Rockstar's official map.",
+ "short_es": {
+  "title": "GTA 6: dónde está el MERCADO de pulgas 🛍️ #GTA6 #Shorts",
+  "description": "GTA 6 ubicaciones: el mercado de pulgas Tisha-Wocka está marcado en el mapa oficial de Rockstar, al norte del aeropuerto de Vice City y junto al barrio Balsero. La descripción de Vice City de Rockstar lo menciona por sus 'marcas de imitación' (según Game Informer). Una wiki de fans dice que se inspira en el mercado de pulgas de Opa-locka, en Miami; Rockstar no lo ha confirmado. Sin spoilers.\n\nMapa: Rockstar Games (mapa oficial de Leonida). Fuentes: Game Informer, The Games Wiki.",
+  "tags": [
+   "GTA 6 mercado de pulgas",
+   "GTA 6 Tisha-Wocka",
+   "GTA 6 ubicaciones",
+   "GTA 6 tiendas",
+   "GTA 6 Miami",
+   "GTA 6 mapa",
+   "GTA 6 español",
+   "GTA VI"
+  ],
+  "title_options": [
+   "GTA 6: dónde está el MERCADO de pulgas 🛍️ #GTA6 #Shorts"
+  ]
+ },
+ "short_playlist": "GTA 6 Shorts",
+ "short_pinned_comment_es": "¿Cómo le dicen en tu país: pulga, pulguero, tianguis o mercadillo? 👇",
+ "pinned_comment": "What do you call a flea market where you live? 👇",
+ "tags": [
+  "GTA 6 flea market",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gta6español",
+  "#miami"
+ ],
+ "site_target_es": "/es/guias/mapa-gta-6/",
+ "hook_type": "immediate-answer",
+ "hook_type_es": "immediate-answer",
+ "first_frame": "map-pin (zoom): Tisha-Wocka Flea Market label on Rockstar's official map",
+ "format_test": "Spanish-first location discovery (Phase 9 #10.3)",
+ "claim_status": "community-found",
+ "claims": [
+  {
+   "claim": "Rockstar's official map labels the Tisha-Wocka Flea Market north of the airport, next to Balsero",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "Tisha-Wocka",
+    "junto a Balsero"
+   ],
+   "wording": "fact",
+   "confidence": "high",
+   "evidence": [
+    {
+     "url": "https://www.rockstargames.com/VI/downloads",
+     "type": "official",
+     "published": "2026-11-19",
+     "checked": "visual",
+     "supports": "label printed on the HD poster west of BALSERO (marker test at mappins 'Tisha-Wocka Flea Market')",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "Rockstar's Vice City description mentions the bootleg brands of the Tisha-Wocka flea market",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "marcas de imitación",
+    "bootleg brands"
+   ],
+   "wording": "hedged",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://gameinformer.com/2025/05/06/rockstar-shows-off-six-major-areas-of-vice-city-in-grand-theft-auto-vi",
+     "type": "news",
+     "published": "2025-05-06",
+     "checked": "search-summary",
+     "supports": "quotes Rockstar: 'the bootleg brands of the Tisha-Wocka flea market'",
+     "copies": null
+    },
+    {
+     "url": "https://thegameswiki.com/gta6/wiki/tisha-wocka-flea-market",
+     "type": "wiki",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "quotes the same Rockstar description",
+     "copies": "https://gameinformer.com/2025/05/06/rockstar-shows-off-six-major-areas-of-vice-city-in-grand-theft-auto-vi"
+    },
+    {
+     "url": "https://www.rockstargames.com/VI",
+     "type": "official",
+     "published": null,
+     "checked": "direct",
+     "supports": "NOT found on the current page (checked Nov 26): kept as 'reported'",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "It is based on the Opa-locka flea market in Miami",
+   "material": false,
+   "kind": "game",
+   "keywords": [
+    "Opa-locka"
+   ],
+   "wording": "hedged",
+   "confidence": "low",
+   "evidence": [
+    {
+     "url": "https://thegameswiki.com/gta6/wiki/tisha-wocka-flea-market",
+     "type": "wiki",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "'based on the Opa-Locka Indoor Flea Market'; name a play on Opa-locka",
+     "copies": null
+    }
+   ]
+  }
+ ],
+ "sources": [
+  "Game Informer - Rockstar shows off six major areas of Vice City: https://gameinformer.com/2025/05/06/rockstar-shows-off-six-major-areas-of-vice-city-in-grand-theft-auto-vi",
+  "The Games Wiki - Tisha-Wocka Flea Market: https://thegameswiki.com/gta6/wiki/tisha-wocka-flea-market",
+  "Rockstar Games - official Leonida map (GTA VI downloads): https://www.rockstargames.com/VI/downloads"
+ ],
+ "short": [
+  {
+   "headline": "MERCADO DE PULGAS",
+   "headline_es": "MERCADO DE PULGAS",
+   "text": "GTA 6 has its own flea market: Tisha-Wocka.",
+   "text_es": "GTA seis tiene su propio mercado de pulgas: Tisha-Wocka.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Tisha-Wocka Flea Market",
+    "label": "Tisha-Wocka",
+    "n": 1,
+    "to": 0.12,
+    "src": "Map: Rockstar Games (official)"
+   },
+   "chart_es": {
+    "type": "map",
+    "at": "Tisha-Wocka Flea Market",
+    "label": "Tisha-Wocka",
+    "n": 1,
+    "to": 0.12,
+    "src": "Mapa oficial de Rockstar",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "JUNTO A BALSERO",
+   "headline_es": "JUNTO A BALSERO",
+   "text": "It's north of the airport, right next to Balsero.",
+   "text_es": "Está al norte del aeropuerto, junto a Balsero.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "route",
+    "from": "VCIA",
+    "at": "Tisha-Wocka Flea Market",
+    "label": "Tisha-Wocka",
+    "n": 1,
+    "src": "Map: Rockstar Games (official)"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "route",
+    "from": "VCIA",
+    "at": "Tisha-Wocka Flea Market",
+    "label": "Tisha-Wocka",
+    "n": 1,
+    "src": "Mapa oficial de Rockstar",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "IMITACIONES",
+   "headline_es": "IMITACIONES",
+   "text": "According to Rockstar, it's known for its bootleg brands.",
+   "text_es": "Según Rockstar, es famoso por sus marcas de imitación.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Known for bootleg brands, according to Rockstar",
+    "pink": [
+     "bootleg brands"
+    ],
+    "src": "Rockstar · Game Informer",
+    "seed": 331,
+    "bg": "photo:media/official/vice-city-26.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Famoso por sus marcas de imitación, según Rockstar",
+    "pink": [
+     "marcas de imitación"
+    ],
+    "src": "Rockstar · Game Informer",
+    "seed": 331,
+    "bg": "photo:media/official/vice-city-26.jpg",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "¿OPA-LOCKA?",
+   "headline_es": "¿OPA-LOCKA?",
+   "text": "And according to a fan wiki, it's based on the Opa-locka flea market in Miami.",
+   "text_es": "Y según una wiki de fans, se inspira en la pulga de Opa-locka, en Miami.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Fans say: based on Opa-locka's flea market",
+    "pink": [
+     "Opa-locka"
+    ],
+    "src": "The Games Wiki (not confirmed)",
+    "seed": 332,
+    "bg": "photo:media/official/vice-city-17.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Según los fans: la pulga de Opa-locka",
+    "pink": [
+     "Opa-locka"
+    ],
+    "src": "The Games Wiki (sin confirmar)",
+    "seed": 332,
+    "bg": "photo:media/official/vice-city-17.jpg",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "¿CÓMO LE DICES?",
+   "headline_es": "¿CÓMO LE DICES?",
+   "text": "What do you call it: flea market or swap meet?",
+   "text_es": "¿Cómo le dices tú: pulga, pulguero o tianguis?",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FLEA MARKET",
+     "OR SWAP MEET?"
+    ],
+    "pink": [
+     "OR SWAP MEET?"
+    ],
+    "seed": 333
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿PULGA, PULGUERO",
+     "O TIANGUIS?"
+    ],
+    "pink": [
+     "O TIANGUIS?"
+    ],
+    "seed": 333,
+    "locale": "es"
+   }
+  }
+ ]
+}

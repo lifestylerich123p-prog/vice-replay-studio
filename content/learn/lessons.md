@@ -387,3 +387,9 @@ short, specific and backed by a number. Remove lessons that later data proves wr
   (VicePulse) - the one top format that needs no gameplay. Spanish phrases typed in 5/5 countries: 'gta 6 lugares
   secretos', 'gta 6 secretos', 'gta 6 mapa oficial/interactivo', 'gta 6 tienda de zapatos'. Our booked Spanish titles
   already lead with these phrases; apply 'N lugares SECRETOS' when a Short covers 2-3 verified spots (never padding).
+- 2026-11-26 (Phase 9, competitor learning, NORMALIZED; supersedes the 'secretos win' note above): python -m studio.competitors
+  (592 videos, 17 channels, each vs its own channel's median views/hour, videos 6 h-30 days old). EN: numbered titles
+  2.42x vs 0.89x (n=43/234, 8 channels) = testable; map-scale 25x but n=4 = insufficient. ES: 'secreto' titles 0.5x
+  (n=23), 'ubicación' 0.26x (n=21), questions 2.82x (n=22, 7 channels) = testable; numbers 0.77x insufficient.
+  Correlation only. Experiments booked: ES numbered-secrets (Dec 9 7 PM), ES question hook (Balsero, Dec 4), EN
+  map-scale, EN numbered episode.

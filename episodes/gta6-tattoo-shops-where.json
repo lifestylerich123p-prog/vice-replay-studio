@@ -182,7 +182,7 @@
     ],
     "src": "Dexerto · TechWiser",
     "seed": 234,
-    "bg": "photo:media/official/electric-fang-tattoo-01.jpg"
+    "bg": "photo:media/official/vice-city-27.jpg"
    },
    "chart_es": {
     "type": "text",
@@ -192,7 +192,7 @@
     ],
     "src": "Dexerto · TechWiser",
     "seed": 234,
-    "bg": "photo:media/official/electric-fang-tattoo-01.jpg"
+    "bg": "photo:media/official/vice-city-27.jpg"
    }
   },
   {
@@ -231,5 +231,6 @@
  "voice_es": "em_alex",
  "rate_es": "-8%",
  "voice_ab": "Phase 4 A2 (Nov 26): Kokoro em_alex at -8% vs Piper es_MX claude vs recorded Viral Adam on comparable Spanish Shorts; compare % viewed at 72 h (studio.xplat 'by voice')",
- "series_id": "gps"
+ "series_id": "gps",
+ "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: electric-fang-tattoo-01 -> vice-city-27 (guns / character close-ups / swimwear / drinking are not allowed)."
 }

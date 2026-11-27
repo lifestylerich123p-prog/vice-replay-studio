@@ -1,0 +1,246 @@
+{
+ "title": "GTA 6 map: 3 hidden Spanish words",
+ "slug": "gta6-map-spanish-words",
+ "series": "Map Spots",
+ "series_id": "hidden",
+ "format": "news",
+ "mood": "bright",
+ "use_gameplay": false,
+ "style": "vice (official-map steps + zooms; Phase 9 EN numbered test)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "short_title": "GTA 6 map: 3 hidden Spanish words 🗺️ #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 map: 3 hidden Spanish words 🗺️ #GTA6 #Shorts",
+  "3 Spanish words hidden on GTA 6's map 🗺️ #GTA6 #Shorts"
+ ],
+ "short_description": "GTA 6 map secrets: Rockstar's official Leonida map has three Spanish place names with real meanings. Balsero (north of the airport) means 'rafter', the word used for the Cubans who crossed to Florida on rafts in 1994. Riquezas Keys (next to Mile Zero Air Station) means 'riches'. Abismo Key (on the Keys highway) means 'abyss'; according to GTA Wiki it's based on Bahia Honda Key, whose Spanish name means 'deep bay'. No story spoilers.\n\nMap: Rockstar Games (official Leonida map). Sources: Rockstar Games, Wikipedia, Vocabulary.com, SpanishDict, GTA Wiki.",
+ "pinned_comment": "Spot another Spanish name on the map? Drop it below 👇",
+ "tags": [
+  "GTA 6 map",
+  "GTA 6 map secrets",
+  "GTA 6 Spanish names",
+  "GTA 6 Balsero",
+  "GTA 6 Leonida Keys",
+  "GTA VI"
+ ],
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gta6map",
+  "#gta6secrets"
+ ],
+ "site_target": "/guides/gta-6-map-leonida-places/",
+ "hook_type": "immediate-answer",
+ "first_frame": "map steps: three named pins (Balsero, Riquezas Keys, Abismo Key) on Rockstar's official map",
+ "format_test": "numbered (Phase 9 H3 EN: numbered titles 2.42x channel median across 8 competitor channels, n=43; compare with our single-spot map Shorts of the same week)",
+ "claim_status": "confirmed",
+ "claims": [
+  {
+   "claim": "Rockstar's official map labels Balsero, Riquezas Keys and Abismo Key",
+   "material": true,
+   "kind": "game",
+   "keywords": [
+    "Balsero",
+    "Riquezas",
+    "Abismo"
+   ],
+   "wording": "fact",
+   "confidence": "high",
+   "evidence": [
+    {
+     "url": "https://www.rockstargames.com/VI/downloads",
+     "type": "official",
+     "published": "2026-11-19",
+     "checked": "visual",
+     "supports": "labels BALSERO, RIQUEZAS KEYS, ABISMO KEY printed on the HD Leonida poster (marker tests in studio/mappins.py)",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "'balsero' means rafter, the word for the Cubans who crossed to Florida on rafts in 1994",
+   "material": true,
+   "kind": "real-world",
+   "keywords": [
+    "rafter"
+   ],
+   "wording": "fact",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://www.vocabulary.com/dictionary/es/balsero",
+     "type": "real-world",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "rafter / raft person (also ferry operator)",
+     "copies": null
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1994_Cuban_rafter_crisis",
+     "type": "real-world",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "1994 Cuban rafter crisis",
+     "copies": null
+    },
+    {
+     "url": "https://spanishnow.pages.dev/dictionary/balsero/",
+     "type": "real-world",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "rafter; Cubans crossing the Florida Straits",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "'riquezas' means riches and 'abismo' means abyss",
+   "material": true,
+   "kind": "real-world",
+   "keywords": [
+    "means riches",
+    "means abyss"
+   ],
+   "wording": "fact",
+   "confidence": "medium",
+   "evidence": [
+    {
+     "url": "https://www.vocabulary.com/dictionary/es/riqueza",
+     "type": "real-world",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "wealth, riches",
+     "copies": null
+    },
+    {
+     "url": "https://hyperdic.net/es/abismo",
+     "type": "real-world",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "abyss",
+     "copies": null
+    },
+    {
+     "url": "https://www.spanishdict.com/translate/riches",
+     "type": "real-world",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "riches = riquezas",
+     "copies": null
+    }
+   ]
+  },
+  {
+   "claim": "Abismo Key is based on Bahia Honda Key",
+   "material": false,
+   "kind": "game",
+   "keywords": [
+    "Bahia Honda"
+   ],
+   "wording": "hedged",
+   "confidence": "low",
+   "evidence": [
+    {
+     "url": "https://gta.wiki/w/Abismo_Key",
+     "type": "wiki",
+     "published": null,
+     "checked": "search-summary",
+     "supports": "rendition of Bahia Honda Key",
+     "copies": null
+    }
+   ]
+  }
+ ],
+ "sources": [
+  "Rockstar Games - official Leonida map (GTA VI downloads): https://www.rockstargames.com/VI/downloads",
+  "Wikipedia - 1994 Cuban rafter crisis: https://en.wikipedia.org/wiki/1994_Cuban_rafter_crisis",
+  "Vocabulary.com - balsero / riqueza: https://www.vocabulary.com/dictionary/es/balsero",
+  "GTA Wiki - Abismo Key: https://gta.wiki/w/Abismo_Key"
+ ],
+ "facts_note": "Phase 9: labels read by eye on the official HD poster; meanings from dictionary entries (search summaries); the Bahia Honda link is GTA Wiki only and said as such. Spanish channel has its own version (gta6-nombres-espanol-mapa-es); this is English-only.",
+ "short": [
+  {
+   "headline": "3 SPANISH WORDS",
+   "text": "GTA 6's map hides three Spanish words, and they mean something.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "steps",
+    "steps": [
+     {
+      "at": "Balsero",
+      "label": "Balsero"
+     },
+     {
+      "at": "Riquezas Keys",
+      "label": "Riquezas Keys"
+     },
+     {
+      "at": "Abismo Key",
+      "label": "Abismo Key"
+     }
+    ],
+    "src": "Map: Rockstar Games (official)"
+   }
+  },
+  {
+   "headline": "1. BALSERO",
+   "text": "One: Balsero. Spanish for rafter, like the Cubans who crossed to Florida in 1994.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Balsero",
+    "label": "Balsero",
+    "n": 1,
+    "to": 0.14,
+    "src": "Map: Rockstar Games (official)"
+   }
+  },
+  {
+   "headline": "2. RIQUEZAS KEYS",
+   "text": "Two: Riquezas Keys. It means riches, right next to the Mile Zero air base.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Riquezas Keys",
+    "label": "Riquezas Keys",
+    "n": 2,
+    "to": 0.14,
+    "src": "Map: Rockstar Games (official)"
+   }
+  },
+  {
+   "headline": "3. ABISMO KEY",
+   "text": "Three: Abismo Key means abyss. According to GTA Wiki, it's based on Bahia Honda.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "at": "Abismo Key",
+    "label": "Abismo Key",
+    "n": 3,
+    "to": 0.14,
+    "src": "Map: Rockstar Games (official)"
+   }
+  },
+  {
+   "headline": "SPOT ANOTHER?",
+   "text": "Spot another Spanish name? Comment it.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "SPOT ANOTHER?",
+     "COMMENT IT"
+    ],
+    "pink": [
+     "COMMENT IT"
+    ],
+    "seed": 321
+   }
+  }
+ ]
+}

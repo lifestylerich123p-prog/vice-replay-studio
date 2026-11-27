@@ -78,5 +78,21 @@
  "gta6-nombres-espanol-mapa-es": {
   "date": "2026-11-26",
   "note": "Nov 26: Borrachero Sound, Riquezas Keys, Abismo Key read by eye on Rockstar's HD Leonida poster (direct visual, marker test); Bahia Honda link = GTA Wiki only (search summary), said as 'según la GTA Wiki'; 'borrachero' not defined (meaning unverified)."
+ },
+ "gta6-3-lugares-secretos-es": {
+  "date": "2026-11-26",
+  "note": "Phase 9: three secrets re-used from their EN fact-checks (Dexter apartment: Dexerto, The Click, TheGamer, GamesRadar; 2021 house: Dexerto, Kotaku, VGC, games.gg; Arthur's hat: GamesRadar, TheGamer, Dexerto). Search summaries: every line hedged."
+ },
+ "gta6-map-spanish-words": {
+  "date": "2026-11-26",
+  "note": "Phase 9 (Nov 26): claims ledger in the episode (python -m studio.sources: no blockers); labels read by eye on Rockstar's HD poster; other facts from search summaries, hedged where reported."
+ },
+ "gta6-mercado-pulgas-es": {
+  "date": "2026-11-26",
+  "note": "Phase 9 (Nov 26): claims ledger in the episode (python -m studio.sources: no blockers); labels read by eye on Rockstar's HD poster; other facts from search summaries, hedged where reported."
+ },
+ "gta6-map-size-scale": {
+  "date": "2026-11-26",
+  "note": "Phase 9 (Nov 26): claims ledger in the episode (python -m studio.sources: no blockers); labels read by eye on Rockstar's HD poster; other facts from search summaries, hedged where reported."
  }
 }

@@ -39,3 +39,18 @@ versus 4.0, headline 0.7, list 0.2; ~0.5% likes; ~0 viewer comments; 15 subscrib
 - Decision rule: compare median % viewed and views at 72 h per structure with n >= 5 each, similar topics (map/location
   vs news), and the same voice where possible; until then every result is preliminary. A question opener stays a test
   (gate warning, not a blocker) only when tagged and the first frame shows the answer.
+
+## H3: numbered titles vs single-spot titles (Phase 9, started Nov 26)
+- Evidence to test: competitor learning (studio.competitors, Nov 26) EN numbered titles 2.42x their channel median vs
+  0.89x (n=43/234, 8 channels); ES numbered 0.77x (insufficient) and ES 'secreto' titles 0.5x (n=23, 7 channels).
+  Correlation only; earlier single-channel FAZZGTA example is NOT evidence.
+- Arms: EN "GTA 6 map: 3 hidden Spanish words" (gta6-map-spanish-words) vs that week's single-spot EN map Shorts;
+  ES "GTA 6: 3 lugares SECRETOS que quizás no viste" (gta6-3-lugares-secretos-es, Wed Dec 9 7 PM) vs single-spot ES map
+  Shorts of the same week. Same card style, comparable length (20-26 s).
+- Measure: views at 24 h / 72 h / 7 d, % viewed, Shorts-feed vs search share, subscribers. Decision after n >= 5 per arm.
+
+## H4: map-scale visuals vs single-pin location cards (Phase 9, started Nov 26)
+- Evidence to test: competitor map-scale Shorts 25x (EN, n=4) and 13x (ES, n=6) their channel medians: insufficient n,
+  strong signal. Arm: "GTA 6 map size: how big Leonida really is" (gta6-map-size-scale, EN + ES; steps across the state,
+  area pulse on Vice City, route over the Keys; every size figure attributed, no fan square-mile number shown as fact).
+- Measure as H3; also website referrals to /guides/gta-6-map-size/ (Cloudflare once the token exists).
