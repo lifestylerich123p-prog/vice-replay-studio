@@ -1,0 +1,50 @@
+{
+ "run": "daily",
+ "branch": "claude/daily-2026-11-27",
+ "checkpoints": [
+  {
+   "at": "2026-11-27T10:18:25.890642+00:00",
+   "step": "episode",
+   "message": "Episodes: gta6-hunting-where + gta6-fast-travel-skip",
+   "files": 3
+  },
+  {
+   "at": "2026-11-27T10:19:13.795970+00:00",
+   "step": "site",
+   "message": "Site: hunting pin + guide lines (EN/ES), fast travel how-to (EN/ES)",
+   "files": 5
+  },
+  {
+   "at": "2026-11-27T10:28:20.431259+00:00",
+   "step": "episode",
+   "message": "Episodes: QA fixes (pool photos, statement hook, shorter scripts) + bookings",
+   "files": 6
+  },
+  {
+   "at": "2026-11-27T10:35:23.935396+00:00",
+   "step": "render",
+   "message": "Renders: gta6-hunting-where + gta6-fast-travel-skip (EN+ES), QA 0 blockers",
+   "files": 2
+  },
+  {
+   "at": "2026-11-27T10:35:29.070417+00:00",
+   "step": "report",
+   "message": "Daily run report",
+   "files": 0
+  }
+ ],
+ "files": {
+  "content/learn/opportunities.json": "a2485796f686d7923b813879a0d4ba908ac955f9fde06643d3f02812662df4b2",
+  "episodes/gta6-fast-travel-skip.json": "f21ffb61c5d685b612a2e7ea0c638d72164de79df65497e4b475b81b6f6893a6",
+  "episodes/gta6-hunting-where.json": "a817c01985525a317de40ae78ce996583c5120257ddbf94c151f51819124ef30",
+  "site/guides/como-ganar-dinero-gta-6.json": "1dc9657eb3dd59b56322fe72c4afdd7119a8b2609dbcc86e0e3b2d63a645ffab",
+  "site/guides/como-hacer-gta-6.json": "64737f282fc301373df8541a1990d36db7f5fea004a10e5a4e8c3c55e27d5426",
+  "site/guides/gta-6-how-to.json": "6999b8d1eddd558b57241e3af34ca263cb1eab5198b1521cd8625f8be737464b",
+  "site/guides/gta-6-make-money.json": "6586e5f68f145a3d8211392bb85881be484da89d4169d46b1bd7c8ae38f6d02c",
+  "site/map-pins.json": "07c01c8c6f50e16445bb9d05f92492dda481c5fb3ed3118869d5ca2ae29f3f0f",
+  "content/INDEX.md": "3e1b78f52ae12ec1ad1a8a7c5345816d7c99673937a8d39b6e3dd4021b784be4",
+  "content/learn/quota.json": "804215873e00f2b74b9731404bef994e4a394460476ed12fc0a5e6f9ebfc36f3",
+  "content/runs/daily-2026-11-27-bookings.json": "bee86dd319b79e18c13dba4254e900cf2f6491864da2d69237b16e527514c485",
+  "database/vice.db": "82d88ae502d82a9cfdb05463a7def6e2f55a4cf6d2da226da346857370eb50dd"
+ }
+}

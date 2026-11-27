@@ -1,0 +1,228 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map area, Nov 27)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-hunting-where",
+ "title": "GTA 6: Where to Start Hunting (Bret, Mount Kalaga)",
+ "short_title": "GTA 6 hunting: where to start + first $500 🦌 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 hunting: where to start + first $500 🦌 #GTA6 #Shorts",
+  "GTA 6 fishing pays nothing. Hunting pays. Here's where #GTA6 #Shorts",
+  "Where do you start hunting in GTA 6? #GTA6 #Shorts"
+ ],
+ "title_rule": "Nov 26 owner APPROVE: map Shorts lead with the search phrase ('gta 6 hunting'); follow-up of the 5.9x money winner (studio.opportunities: hunting-spots ready)",
+ "short_description": "Where to start hunting in GTA 6: Bret texts Jason in Chapter 2 and the first hunt, Veteran Hunted, starts in the far north of Lummox County by Mount Kalaga. Go as Jason, alone. The first job pays $500, and Bret has more hunting jobs after it. Unlike fishing (catch and release, no cash), hunting pays. A clean shot keeps the animal's quality up. Details come from fan guides (GTABase, PowerPyx, eGamers): check your map. No story spoilers.\n\nSources: GTABase, PowerPyx, eGamers, AllThings.How.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: dónde CAZAR y ganar 500 dólares 🦌 #GTA6 #Shorts",
+  "description": "Dónde empezar a cazar en GTA 6: Bret le escribe a Jason en el capítulo 2 y la primera caza, Veteran Hunted, empieza al norte de Lummox County, junto a Mount Kalaga. Ve con Jason, solo. El primer trabajo paga 500 dólares. A diferencia de la pesca (sin dinero), la caza sí paga. Fuentes: GTABase, PowerPyx, eGamers.",
+  "tags": [
+   "GTA 6 cazar",
+   "GTA 6 caza",
+   "GTA 6 Mount Kalaga",
+   "GTA 6 español",
+   "GTA 6 dinero"
+  ]
+ },
+ "pinned_comment": "Found Bret? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Encontraste a Bret? Responde ✅ — o 😭 si sigues buscando 👇",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts",
+ "tags": [
+  "GTA 6 hunting",
+  "GTA 6 where to hunt",
+  "GTA 6 Bret",
+  "GTA 6 Veteran Hunted",
+  "GTA 6 Mount Kalaga",
+  "GTA 6 money",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6money"
+ ],
+ "sources": [
+  "GTABase - Veteran Hunted: https://www.gtabase.com/gta-6/strangers/veteran-hunted",
+  "PowerPyx - Veteran Hunted (meet Bret) walkthrough: https://www.powerpyx.com/gta-6-veteran-hunted-meet-bret-walkthrough/",
+  "eGamers - GTA 6 hunting guide, Veteran Hunted with Bret: https://egamers.io/gta-6-hunting-guide-how-to-finish-veteran-hunted-with-bret/",
+  "GTABase - Bret's Hunting Decks: https://www.gtabase.com/gta-6/strangers/brets-hunting-decks",
+  "AllThings.How - fishing and hunting, catch and release explained: https://allthings.how/gta-6-how-fishing-and-hunting-work-catch-and-release-explained/"
+ ],
+ "facts_note": "Nov 27 re-check (web search): Bret texts Jason in Chapter 2, mission Veteran Hunted in the far north of Lummox County near Mount Kalaga, Jason only and alone (GTABase, PowerPyx, eGamers); $500 via BuckMe for the first hunt (GTABase, PowerPyx); more Bret jobs after (GTABase Bret's Hunting Decks); fishing is catch-and-release, hunting sells (AllThings.How + map-candidates fishing note, 3 sources). Exact pin not given: map card uses the 'area' style. The rifle is a gun: never shown. Per-animal prices single-source: left out.",
+ "short": [
+  {
+   "headline": "HUNT HERE",
+   "headline_es": "CAZA AQUÍ",
+   "text": "Hunting in GTA 6 starts at Mount Kalaga.",
+   "text_es": "La caza en GTA seis empieza en Mount Kalaga.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "START HUNTING",
+     "RIGHT HERE"
+    ],
+    "pink": [
+     "RIGHT HERE"
+    ],
+    "sub": "GTA 6 hunting",
+    "seed": 271,
+    "bg": "photo:media/official/mount-kalaga-01.jpg"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "EMPIEZA A CAZAR",
+     "JUSTO AQUÍ"
+    ],
+    "pink": [
+     "JUSTO AQUÍ"
+    ],
+    "sub": "caza en GTA 6",
+    "seed": 271,
+    "bg": "photo:media/official/mount-kalaga-01.jpg"
+   }
+  },
+  {
+   "headline": "MOUNT KALAGA",
+   "headline_es": "MOUNT KALAGA",
+   "text": "Far north of Lummox County.",
+   "text_es": "Al norte de Lummox County.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "area",
+    "at": "Mount Kalaga",
+    "r": 0.03,
+    "label": "Bret: first hunt",
+    "n": 1,
+    "src": "GTABase · PowerPyx · eGamers"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "area",
+    "at": "Mount Kalaga",
+    "r": 0.03,
+    "label": "Bret: primera caza",
+    "n": 1,
+    "src": "GTABase · PowerPyx · eGamers",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "CHAPTER 2",
+   "headline_es": "CAPÍTULO 2",
+   "text": "Bret texts Jason in Chapter 2. Go alone.",
+   "text_es": "Bret le escribe a Jason en el capítulo dos. Ve solo.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Chapter 2 · Jason only · go alone",
+    "pink": [
+     "Jason only"
+    ],
+    "src": "GTABase · PowerPyx",
+    "seed": 272,
+    "bg": "photo:media/official/mount-kalaga-04.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Capítulo 2 · solo Jason · ve solo",
+    "pink": [
+     "solo Jason"
+    ],
+    "src": "GTABase · PowerPyx",
+    "seed": 272,
+    "bg": "photo:media/official/mount-kalaga-04.jpg"
+   }
+  },
+  {
+   "headline": "FIRST $500",
+   "headline_es": "PRIMEROS $500",
+   "text": "The first hunt pays five hundred dollars.",
+   "text_es": "La primera caza paga quinientos dólares.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 500,
+    "prefix": "$",
+    "unit": "",
+    "label": "first hunt, paid by Bret",
+    "src": "GTABase · PowerPyx"
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 500,
+    "prefix": "$",
+    "unit": "",
+    "label": "primera caza, la paga Bret",
+    "src": "GTABase · PowerPyx"
+   }
+  },
+  {
+   "headline": "FISHING? $0",
+   "headline_es": "¿PESCAR? $0",
+   "text": "Our take: fishing pays zero. Hunting pays.",
+   "text_es": "Nuestra opinión: pescar paga cero. Cazar sí paga.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Fishing: catch and release. Hunting: cash.",
+    "pink": [
+     "cash"
+    ],
+    "src": "AllThings.How · GTABase",
+    "seed": 273,
+    "bg": "photo:media/official/mount-kalaga-05.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Pesca: se suelta. Caza: dinero.",
+    "pink": [
+     "dinero"
+    ],
+    "src": "AllThings.How · GTABase",
+    "seed": 273,
+    "bg": "photo:media/official/mount-kalaga-05.jpg"
+   }
+  },
+  {
+   "headline": "FOUND IT?",
+   "headline_es": "¿LO ENCONTRASTE?",
+   "text": "Found Bret? Comment yes, because",
+   "text_es": "¿Encontraste a Bret? Comenta sí, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FOUND IT?",
+     "COMMENT YES"
+    ],
+    "pink": [
+     "COMMENT YES"
+    ],
+    "seed": 274
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
+    ],
+    "pink": [
+     "COMENTA SÍ"
+    ],
+    "seed": 274
+   }
+  }
+ ]
+}

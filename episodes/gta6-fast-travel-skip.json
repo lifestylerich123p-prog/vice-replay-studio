@@ -1,0 +1,243 @@
+{
+ "series": "How To",
+ "format": "tutorial",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards on official photos, Nov 27)",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-fast-travel-skip",
+ "title": "GTA 6: How to Fast Travel (the $100 Skip)",
+ "short_title": "GTA 6 fast travel: the $100 skip 🚕 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 fast travel: the $100 skip 🚕 #GTA6 #Shorts",
+  "GTA 6 has no fast travel menu. Do this instead #GTA6 #Shorts",
+  "How do you fast travel in GTA 6? #GTA6 #Shorts"
+ ],
+ "title_rule": "search phrase first ('gta 6 fast travel'); map-candidates fast-travel-skip",
+ "short_description": "How to fast travel in GTA 6: there's no map menu for it. Call a Paradise Taxi (open right after the first mission) or, later, book a ride on the RydeMe phone app, then pay to skip the trip: guides say the skip costs $100 on top of the fare, and RydeMe takes it from your BuckMe bank account. Guides differ on when RydeMe unlocks (Chapter 1 or 2). No story spoilers.\n\nSources: GTABase, Dotesports, BGR, GamerFuzion.\n\nMore GTA 6 how-tos at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: viaje RÁPIDO por 100 dólares 🚕 #GTA6 #Shorts",
+  "description": "Cómo viajar rápido en GTA 6: no hay menú en el mapa. Llama a un Paradise Taxi (desde la primera misión) o, más tarde, pide un viaje con la app RydeMe, y paga para saltarte el trayecto: según las guías, saltarlo cuesta 100 dólares más la tarifa. Fuentes: GTABase, Dotesports, BGR.",
+  "tags": [
+   "GTA 6 viaje rápido",
+   "GTA 6 taxi",
+   "GTA 6 RydeMe",
+   "GTA 6 español",
+   "GTA 6 trucos"
+  ]
+ },
+ "pinned_comment": "Worth $100 to skip the drive? Reply ✅ — or 😭 👇",
+ "short_pinned_comment_es": "¿Vale 100 dólares saltarse el viaje? Responde ✅ — o 😭 👇",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts",
+ "tags": [
+  "GTA 6 fast travel",
+  "GTA 6 how to fast travel",
+  "GTA 6 taxi",
+  "GTA 6 RydeMe",
+  "GTA 6 Paradise Taxi",
+  "GTA 6 tips",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips"
+ ],
+ "sources": [
+  "GTABase - How to fast travel in GTA 6: https://www.gtabase.com/gta-6/articles/how-to-fast-travel-in-gta-6",
+  "Dotesports - GTA 6 fast travel: https://dotesports.com/gta/guides/gta-6-fast-travel",
+  "BGR - You can fast travel in GTA 6 using this $100 trick: https://www.bgr.com/2322381/gta-6-fast-travel-trick/",
+  "GamerFuzion - GTA 6 fast travel, RydeMe and taxis (it costs $100): https://www.gamerfuzion.com/gta-6-fast-travel-rydeme-taxi-how-to/",
+  "KeenGamer - How to fast travel and unlock RydeMe: https://www.keengamer.com/articles/guides/gta-vi-how-to-fast-travel-and-unlock-rydeme/"
+ ],
+ "facts_note": "Nov 27 web search: no map fast travel; Paradise Taxi after the first mission; RydeMe app later, paid from the BuckMe bank account; skip = $100 on top of the fare (GTABase, Dotesports, BGR, GamerFuzion agree). RydeMe unlock: guides disagree (Chapter 1 vs 2) -> the Short says 'later', the description states the disagreement. Mission names not used (spoiler-light).",
+ "short": [
+  {
+   "headline": "NO FAST TRAVEL?",
+   "headline_es": "¿SIN VIAJE RÁPIDO?",
+   "text": "No fast travel menu in GTA 6. Do this.",
+   "text_es": "GTA seis no tiene menú de viaje rápido. Haz esto.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "SKIP THE DRIVE",
+     "FOR $100"
+    ],
+    "pink": [
+     "FOR $100"
+    ],
+    "sub": "GTA 6 fast travel",
+    "seed": 281,
+    "bg": "photo:media/official/vice-city-08.jpg"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "SÁLTATE EL VIAJE",
+     "POR $100"
+    ],
+    "pink": [
+     "POR $100"
+    ],
+    "sub": "viaje rápido en GTA 6",
+    "seed": 281,
+    "bg": "photo:media/official/vice-city-08.jpg"
+   }
+  },
+  {
+   "headline": "CALL A TAXI",
+   "headline_es": "LLAMA UN TAXI",
+   "text": "Call a Paradise Taxi. It's open after the first mission.",
+   "text_es": "Llama a un Paradise Taxi. Está desde la primera misión.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "bg": "vice",
+    "title": "HOW TO FAST TRAVEL",
+    "items": [
+     [
+      "1. Call Paradise Taxi",
+      "YES"
+     ],
+     [
+      "2. Pick the spot",
+      "YES"
+     ],
+     [
+      "3. Pay to skip",
+      "$100"
+     ]
+    ]
+   },
+   "chart_es": {
+    "type": "list",
+    "bg": "vice",
+    "title": "VIAJE RÁPIDO",
+    "items": [
+     [
+      "1. Llama a Paradise Taxi",
+      "SÍ"
+     ],
+     [
+      "2. Elige el destino",
+      "SÍ"
+     ],
+     [
+      "3. Paga para saltar",
+      "$100"
+     ]
+    ]
+   }
+  },
+  {
+   "headline": "OR RYDEME",
+   "headline_es": "O RYDEME",
+   "text": "Later, the RydeMe app works too.",
+   "text_es": "Después, la app RydeMe también sirve.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Later: the RydeMe app does it too",
+    "pink": [
+     "RydeMe"
+    ],
+    "src": "GTABase · KeenGamer",
+    "seed": 282,
+    "bg": "photo:media/official/vice-city-10.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Después: la app RydeMe también",
+    "pink": [
+     "RydeMe"
+    ],
+    "src": "GTABase · KeenGamer",
+    "seed": 282,
+    "bg": "photo:media/official/vice-city-10.jpg"
+   }
+  },
+  {
+   "headline": "$100 SKIP",
+   "headline_es": "SALTO DE $100",
+   "text": "Skipping the ride costs one hundred dollars, plus the fare.",
+   "text_es": "Saltarte el viaje cuesta cien dólares, más la tarifa.",
+   "keep_media": true,
+   "chart": {
+    "type": "counter",
+    "value": 100,
+    "prefix": "$",
+    "unit": "",
+    "label": "to skip the ride, plus the fare",
+    "src": "Dotesports · BGR · GamerFuzion"
+   },
+   "chart_es": {
+    "type": "counter",
+    "value": 100,
+    "prefix": "$",
+    "unit": "",
+    "label": "por saltar el viaje, más la tarifa",
+    "src": "Dotesports · BGR · GamerFuzion"
+   }
+  },
+  {
+   "headline": "OUR TAKE",
+   "headline_es": "NUESTRA OPINIÓN",
+   "text": "Our take: worth it for long trips only.",
+   "text_es": "Nuestra opinión: solo vale para viajes largos.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Worth it for long trips only",
+    "pink": [
+     "long trips"
+    ],
+    "seed": 283,
+    "bg": "photo:media/official/grassrivers-02.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Solo vale para viajes largos",
+    "pink": [
+     "viajes largos"
+    ],
+    "seed": 283,
+    "bg": "photo:media/official/grassrivers-02.jpg"
+   }
+  },
+  {
+   "headline": "WORTH $100?",
+   "headline_es": "¿VALE $100?",
+   "text": "Would you pay it? Comment yes or no, because",
+   "text_es": "¿Lo pagarías? Comenta sí o no, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "WORTH $100?",
+     "COMMENT YES"
+    ],
+    "pink": [
+     "COMMENT YES"
+    ],
+    "seed": 284
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿VALE $100?",
+     "COMENTA SÍ"
+    ],
+    "pink": [
+     "COMENTA SÍ"
+    ],
+    "seed": 284
+   }
+  }
+ ]
+}

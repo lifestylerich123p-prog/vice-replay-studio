@@ -27,135 +27,137 @@ Read this first instead of searching the repo.
 | 2026-11-27 | gta6-mercado-pulgas-es | Short | GTA 6: dónde está el mercado de pulgas Tisha-Wocka | - |
 | 2026-11-27 | gta6-map-spanish-words | Short | GTA 6 map: 3 hidden Spanish words | - |
 | 2026-11-27 | gta6-map-size-scale | Short | GTA 6 map size: how big Leonida really is | - |
+| 2026-11-27 | gta6-hunting-where | Short | GTA 6: Where to Start Hunting (Bret, Mount Kalaga) | - |
+| 2026-11-27 | gta6-fast-travel-skip | Short | GTA 6: How to Fast Travel (the $100 Skip) | - |
 | 2026-11-27 | gta6-3-lugares-secretos-es | Short | GTA 6: 3 lugares secretos que quizás no viste | - |
 | 2026-11-26 | gta6-white-fox-where | Short | GTA 6 Legendary Animals: Where to Find the White Fox | - |
+| 2026-11-26 | gta6-waink-app | Short | GTA 6's WAiNK App: Scan 100 Spots for a Trophy | - |
+| 2026-11-26 | gta6-vs-red-dead-2 | Short | GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers | - |
+| 2026-11-26 | gta6-vs-gta5-online | Short | GTA 6 vs GTA 5 Online: Two Weeks Then, No Date Now | - |
+| 2026-11-26 | gta6-vs-gta5-map | Short | GTA 6 vs GTA 5: The Map Is About Twice the Size | - |
+| 2026-11-26 | gta6-vs-gta5-leads | Short | GTA 6 vs GTA 5: Two Leads Instead of Three | - |
+| 2026-11-26 | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | - |
+| 2026-11-26 | gta6-vintage-stanier | Short | GTA 6 Vintage Pack Car: Where to Find the '55 Stanier | - |
 | 2026-11-26 | gta6-vice-city-real-miami | Short | GTA 6's Vice City vs Real Miami: 5 Places | - |
+| 2026-11-26 | gta6-vercetti-portal | Short | GTA 6's Tommy Vercetti Portal | - |
+| 2026-11-26 | gta6-ultimate-vs-standard | Short | GTA 6: The $100 Edition Beat the $80 One | - |
+| 2026-11-26 | gta6-ultimate-edition-shops | Short | GTA 6 Locks 5 Shops Behind the $100 Edition | - |
+| 2026-11-26 | gta6-ultimate-cars-where | Short | Where Your GTA 6 Ultimate Edition Cars Are | - |
+| 2026-11-26 | gta6-ufo-where | Short | Where to Find the UFO in GTA 6 | - |
+| 2026-11-26 | gta6-trivia-night | video | GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz) | - |
+| 2026-11-26 | gta6-trivia-3-questions | Short | GTA 6 trivia only real fans get right | - |
+| 2026-11-26 | gta6-trailer-views | Short | GTA 6's First Trailer Is Still No. 1 (309M Views) | - |
+| 2026-11-26 | gta6-trading-cards | Short | GTA 6 Has 480 Trading Cards: How to Cash Them | - |
+| 2026-11-26 | gta6-top-3-rides | Short | GTA 6: The Top 3 Rides in Rockstar's Gameplay | - |
 | 2026-11-26 | gta6-tattoo-shops-where | Short | GTA 6 Tattoo Shop Locations: All 11 and Where to Start | - |
+| 2026-11-26 | gta6-sunken-treasure | Short | GTA 6 Sunken Treasure: Easy Early Money | - |
+| 2026-11-26 | gta6-stunt-jumps | Short | GTA 6 Stunt Jumps: 130 of Them, and How to Find Them | - |
 | 2026-11-26 | gta6-special-cars-tier-list | Short | GTA 6's Special Cars, Ranked | - |
+| 2026-11-26 | gta6-skunk-ape-where | Short | Where to Find GTA 6's Bigfoot | - |
+| 2026-11-26 | gta6-sin-doblaje-es | Short | GTA 6 no tiene doblaje al español | - |
 | 2026-11-26 | gta6-silent-hill-hotel | Short | GTA 6 Silent Hill Easter Egg: Marbelle Hotel Location and Safe Code | - |
+| 2026-11-26 | gta6-shoe-store-where | Short | GTA 6 Shoe Store: Where to Buy Shoes | - |
 | 2026-11-26 | gta6-sell-jewelry-where | Short | GTA 6: Where to Sell Jewelry (Best Fence) | - |
 | 2026-11-26 | gta6-sahara-arena-where | Short | GTA 6 Sahara Arena: where it is and the real Miami arena behind it | - |
+| 2026-11-26 | gta6-red-dead-easter-eggs | Short | 2 Red Dead Easter Eggs in GTA 6 | - |
+| 2026-11-26 | gta6-ranking-rides | Short | Ranking the 6 Rides in Rockstar's GTA 6 Gameplay | - |
+| 2026-11-26 | gta6-race-hud-details | Short | GTA 6 Races: Look at the Corner of the Screen | - |
+| 2026-11-26 | gta6-precio-por-pais-es | Short | GTA 6: cuánto cuesta en cada país | - |
+| 2026-11-26 | gta6-patch-notes-7-fixes | Short | Rockstar Finally Posted GTA 6 Patch Notes: 7 Fixes | - |
 | 2026-11-26 | gta6-nombres-espanol-mapa-es | Short | GTA 6: los lugares con nombre en español del mapa | - |
 | 2026-11-26 | gta6-no-mission-replay | Short | GTA 6 Has No Mission Replay: How to Save Instead | - |
+| 2026-11-26 | gta6-no-60fps-ps5-pro | Short | GTA 6 Has No 60 FPS Mode, Not Even on PS5 Pro | - |
 | 2026-11-26 | gta6-ninja-turtles-where | Short | GTA 6 Ninja Turtles Easter Egg: Where to Find It | - |
-| 2026-11-26 | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | short: YlVyesTxTZg |
+| 2026-11-26 | gta6-money-tier-list | Short | Every Way to Make Money in GTA 6, Ranked | - |
+| 2026-11-26 | gta6-money-chart-es | Short | GTA 6 hizo 5 VECES el lanzamiento de GTA 5... con trampa | - |
+| 2026-11-26 | gta6-mod-shops | Short | Where to Mod Your Car in GTA 6 | - |
+| 2026-11-26 | gta6-military-base-jets | Short | Where to Find Fighter Jets in GTA 6 | - |
+| 2026-11-26 | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | - |
+| 2026-11-26 | gta6-mapa-oficial-es | Short | El mapa oficial de GTA 6 en HD | - |
+| 2026-11-26 | gta6-map-secrets-guide | video | GTA 6 Map: Every Secret and Exactly Where to Find It | - |
 | 2026-11-26 | gta6-map-quiz-places | Short | GTA 6 Map Quiz: Name These 3 Places | - |
+| 2026-11-26 | gta6-map-is-florida | Short | GTA 6's Official Map Is Florida: 4 Matches and 1 Fake | - |
 | 2026-11-26 | gta6-map-easter-eggs-filter | Short | GTA 6 Easter Eggs Map: Show Only the Secrets | - |
 | 2026-11-26 | gta6-map-checklist | Short | GTA 6 Map Checklist: Track Every Spot You Find | - |
+| 2026-11-26 | gta6-little-cuba-es | Short | GTA 6 está lleno de Cuba | - |
+| 2026-11-26 | gta6-launch-quiz | Short | GTA 6 Launch Quiz: Only Real Fans Get 3/3 | - |
+| 2026-11-26 | gta6-key-cloner-3-steps | Short | GTA 6's Key Cloner in 3 Steps | - |
+| 2026-11-26 | gta6-jason-quiet | Short | GTA 6's Jason Was Inspired by Steve McQueen | - |
 | 2026-11-26 | gta6-interactive-map-howto | Short | GTA 6 Interactive Map: Find Any Spot in Seconds | - |
+| 2026-11-26 | gta6-impound-app | Short | GTA 6 Impound: Get Your Car Back Without the Cops | - |
+| 2026-11-26 | gta6-illojuan-vs-rubius-es | Short | IlloJuan vs Rubius: el duelo de espectadores de GTA 6 | - |
+| 2026-11-26 | gta6-ibai-cero-espectadores-es | Short | Ibai y el streamer de GTA 6 con cero espectadores | - |
 | 2026-11-26 | gta6-hialeah-balsero-es | Short | GTA 6: ¿dónde está Hialeah? La pista se llama Balsero | - |
+| 2026-11-26 | gta6-has-anyone-finished | Short | Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch) | - |
+| 2026-11-26 | gta6-hacker-hotel-tv | Short | The GTA 6 leak came from a hotel TV | - |
+| 2026-11-26 | gta6-guess-the-ride | Short | Guess the GTA 6 Ride From One Detail | - |
+| 2026-11-26 | gta6-giant-crab | Short | GTA 6's Giant Crab Easter Egg | - |
 | 2026-11-26 | gta6-ghost-ship-where | Short | GTA 6 Ghost Ship Easter Egg: Lighthouse Location and Cursed Knife | - |
+| 2026-11-26 | gta6-game-awards-record | Short | GTA 6 Can't Break the Game Awards Record | - |
+| 2026-11-26 | gta6-game-awards-explained | video | GTA 6 at The Game Awards 2026: All 8 Nominations Explained | - |
+| 2026-11-26 | gta6-game-awards-8-noms | Short | GTA 6 Has the Most Game Awards Nominations: 8 | - |
 | 2026-11-26 | gta6-fishing-pays | Short | Does Fishing Pay in GTA 6? | - |
-| 2026-11-26 | gta6-clothing-stores-where | Short | Where to Buy Clothes in GTA 6 | short: kKtexV69F-Q |
+| 2026-11-26 | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | - |
+| 2026-11-26 | gta6-easter-eggs-tier-list | Short | GTA 6 Easter Eggs Ranked: Our Tier List | - |
+| 2026-11-26 | gta6-early-helicopter | Short | GTA 6's Easiest Early Helicopter | - |
+| 2026-11-26 | gta6-dexter-apartment-map | Short | Dexter's Apartment in GTA 6 | - |
+| 2026-11-26 | gta6-dexter-apartment | Short | Players Found Dexter's Apartment in GTA 6 | - |
+| 2026-11-26 | gta6-criminal-profile | Short | GTA 6 Criminal Profile: It Can Give Up on You | - |
+| 2026-11-26 | gta6-cops-remember | Short | GTA 6 Cops Remember Your Outfit: How to Lose Them | - |
+| 2026-11-26 | gta6-clothing-stores-where | Short | Where to Buy Clothes in GTA 6 | - |
+| 2026-11-26 | gta6-cheapest-gta-inflation | Short | GTA 6 Is the CHEAPEST GTA Ever (After Inflation) | - |
 | 2026-11-26 | gta6-car-dealership | Short | Is There a Car Dealership in GTA 6? | - |
 | 2026-11-26 | gta6-black-panther-where | Short | GTA 6 Legendary Animals: Where to Find the Black Panther | - |
+| 2026-11-26 | gta6-black-friday-no-discount | Short | GTA 6 Black Friday: Take-Two Says No Discount | - |
 | 2026-11-26 | gta6-black-bear-where | Short | GTA 6 Legendary Animals: Where to Find the Black Bear | - |
-| 2026-11-26 | gta6-barber-shop-where | Short | Where to Get a Haircut in GTA 6 | short: WvHbn0jE1Ms |
-| 2026-11-26 | gta6-backrooms-where | Short | Where to Find the Backrooms in GTA 6 | short: yBc7KGUJWsc |
+| 2026-11-26 | gta6-barber-shop-where | Short | Where to Get a Haircut in GTA 6 | - |
+| 2026-11-26 | gta6-bad-bunny-radio-es | Short | Bad Bunny tiene su propia radio en GTA 6 | - |
+| 2026-11-26 | gta6-backrooms-where | Short | Where to Find the Backrooms in GTA 6 | - |
 | 2026-11-26 | gta6-alligators-where | Short | Where to Find Alligators in GTA 6 | - |
-| 2026-11-25 | gta6-trivia-night | video | GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz) | main: kSufP4pt08I |
-| 2026-11-25 | gta6-trivia-3-questions | Short | GTA 6 trivia only real fans get right | - |
-| 2026-11-25 | gta6-hacker-hotel-tv | Short | The GTA 6 leak came from a hotel TV | - |
-| 2026-11-25 | gta6-atm-robbery-guide | video | GTA 6 ATM Robbery Guide: Winch, Tow Truck and the Dye Pack Catch | tips: ChmiOLulOvo, main: n78uk6y2gKE, news: Isga_2KMNTc |
-| 2026-11-24 | gta6-waink-app | Short | GTA 6's WAiNK App: Scan 100 Spots for a Trophy | - |
-| 2026-11-24 | gta6-vs-gta5-online | Short | GTA 6 vs GTA 5 Online: Two Weeks Then, No Date Now | - |
-| 2026-11-24 | gta6-vs-gta5-map | Short | GTA 6 vs GTA 5: The Map Is About Twice the Size | - |
-| 2026-11-24 | gta6-vs-gta5-leads | Short | GTA 6 vs GTA 5: Two Leads Instead of Three | - |
-| 2026-11-24 | gta6-vintage-stanier | Short | GTA 6 Vintage Pack Car: Where to Find the '55 Stanier | - |
-| 2026-11-24 | gta6-vercetti-portal | Short | GTA 6's Tommy Vercetti Portal | - |
-| 2026-11-24 | gta6-ultimate-cars-where | Short | Where Your GTA 6 Ultimate Edition Cars Are | - |
-| 2026-11-24 | gta6-ufo-where | Short | Where to Find the UFO in GTA 6 | - |
-| 2026-11-24 | gta6-trading-cards | Short | GTA 6 Has 480 Trading Cards: How to Cash Them | - |
-| 2026-11-24 | gta6-sunken-treasure | Short | GTA 6 Sunken Treasure: Easy Early Money | short: Ocu-HYE9Ygw |
-| 2026-11-24 | gta6-stunt-jumps | Short | GTA 6 Stunt Jumps: 130 of Them, and How to Find Them | - |
-| 2026-11-24 | gta6-stream-wars | video | GTA 6 Stream Wars: IShowSpeed vs Everyone (Real Numbers) | news: fmE0eA1ayf4 |
-| 2026-11-24 | gta6-skunk-ape-where | Short | Where to Find GTA 6's Bigfoot | - |
-| 2026-11-24 | gta6-shoe-store-where | Short | GTA 6 Shoe Store: Where to Buy Shoes | short: CGAd-LB82d4 |
-| 2026-11-24 | gta6-red-dead-easter-eggs | Short | 2 Red Dead Easter Eggs in GTA 6 | - |
-| 2026-11-24 | gta6-money-tier-list | Short | Every Way to Make Money in GTA 6, Ranked | short: iUMOzeRaG7A |
-| 2026-11-24 | gta6-mod-shops | Short | Where to Mod Your Car in GTA 6 | - |
-| 2026-11-24 | gta6-military-base-jets | Short | Where to Find Fighter Jets in GTA 6 | - |
-| 2026-11-24 | gta6-mapa-oficial-es | Short | El mapa oficial de GTA 6 en HD | - |
-| 2026-11-24 | gta6-map-secrets-guide | video | GTA 6 Map: Every Secret and Exactly Where to Find It | main: nbxIU7S67c4 |
-| 2026-11-24 | gta6-key-cloner-3-steps | Short | GTA 6's Key Cloner in 3 Steps | - |
-| 2026-11-24 | gta6-impound-app | Short | GTA 6 Impound: Get Your Car Back Without the Cops | - |
-| 2026-11-24 | gta6-illojuan-vs-rubius-es | Short | IlloJuan vs Rubius: el duelo de espectadores de GTA 6 | - |
-| 2026-11-24 | gta6-ibai-cero-espectadores-es | Short | Ibai y el streamer de GTA 6 con cero espectadores | - |
-| 2026-11-24 | gta6-giant-crab | Short | GTA 6's Giant Crab Easter Egg | short: sZvpH1td1jU |
-| 2026-11-24 | gta6-easter-eggs-tier-list | Short | GTA 6 Easter Eggs Ranked: Our Tier List | - |
-| 2026-11-24 | gta6-early-helicopter | Short | GTA 6's Easiest Early Helicopter | - |
-| 2026-11-24 | gta6-dexter-apartment-map | Short | Dexter's Apartment in GTA 6 | - |
-| 2026-11-24 | gta6-criminal-profile | Short | GTA 6 Criminal Profile: It Can Give Up on You | - |
-| 2026-11-24 | gta6-cops-remember | Short | GTA 6 Cops Remember Your Outfit: How to Lose Them | short: h9gMGI8gUiU |
-| 2026-11-24 | gta6-bad-bunny-radio-es | Short | Bad Bunny tiene su propia radio en GTA 6 | - |
-| 2026-11-24 | gta6-2021-house | Short | GTA 6's House That Was Hidden in a 2021 Game | - |
-| 2026-11-23 | gta6-vs-red-dead-2 | Short | GTA 6 vs Red Dead 2: 3 Rounds, Real Numbers | - |
-| 2026-11-23 | gta6-vs-gta5-fps | Short | GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 | short: sEg8EWL2XPA |
-| 2026-11-23 | gta6-update-no-patch-notes | Short | GTA 6 Got 3 Updates and Zero Patch Notes | short: KI-6wP_Jhik (private) |
-| 2026-11-23 | gta6-ultimate-vs-standard | Short | GTA 6: The $100 Edition Beat the $80 One | short: Aln9RLi-KjY |
-| 2026-11-23 | gta6-tier-list-critics | Short | GTA 6 Tier List: Every GTA Ranked by Critics | short: jQbv5GPR3dk |
-| 2026-11-23 | gta6-sin-doblaje-es | Short | GTA 6 no tiene doblaje al español | - |
-| 2026-11-23 | gta6-precio-por-pais-es | Short | GTA 6: cuánto cuesta en cada país | - |
-| 2026-11-23 | gta6-patch-notes-7-fixes | Short | Rockstar Finally Posted GTA 6 Patch Notes: 7 Fixes | short: jVcY1N4bBHU |
-| 2026-11-23 | gta6-little-cuba-es | Short | GTA 6 está lleno de Cuba | - |
-| 2026-11-23 | gta6-launch-quiz | Short | GTA 6 Launch Quiz: Only Real Fans Get 3/3 | - |
-| 2026-11-23 | gta6-game-awards-record | Short | GTA 6 Can't Break the Game Awards Record | - |
-| 2026-11-23 | gta6-game-awards-explained | video | GTA 6 at The Game Awards 2026: All 8 Nominations Explained | - |
-| 2026-11-23 | gta6-game-awards-8-noms | Short | GTA 6 Has the Most Game Awards Nominations: 8 | - |
-| 2026-11-23 | gta6-first-platinum | Short | GTA 6's Platinum Trophy Is Already Taken | short: fckK4qbyd48 |
-| 2026-11-23 | gta6-black-friday-no-discount | Short | GTA 6 Black Friday: Take-Two Says No Discount | short: pPYdMlKMaEI |
-| 2026-11-23 | gta6-80-hours | Short | GTA 6 Is Rockstar's Longest Story Ever: About 80 Hours | - |
-| 2026-11-23 | gta6-5-things | Short | GTA 6: 5 Things You Didn't Know (All Checked) | - |
-| 2026-11-23 | gta6-4-secrets | Short | 4 Secrets Players Just Found in GTA 6 | - |
-| 2026-11-23 | gta6-3-records | Short | GTA 6 Broke 3 Records in One Week | - |
-| 2026-11-23 | gta6-13-years | Short | GTA 6 Took 13 Years. No Other GTA Took Even 6 | - |
+| 2026-11-26 | gta6-99-club | Short | GTA 6's 99 on Metacritic: Only ONE Other Game Has It | - |
+| 2026-11-26 | gta6-80-hours | Short | GTA 6 Is Rockstar's Longest Story Ever: About 80 Hours | - |
+| 2026-11-26 | gta6-5-things | Short | GTA 6: 5 Things You Didn't Know (All Checked) | - |
+| 2026-11-26 | gta6-4-secrets | Short | 4 Secrets Players Just Found in GTA 6 | - |
+| 2026-11-26 | gta6-3-records | Short | GTA 6 Broke 3 Records in One Week | - |
+| 2026-11-26 | gta6-2021-house | Short | GTA 6's House That Was Hidden in a 2021 Game | - |
+| 2026-11-26 | gta6-13-years | Short | GTA 6 Took 13 Years. No Other GTA Took Even 6 | - |
+| 2026-11-26 | gta-tier-list-sales | Short | Every GTA Ranked by Sales: GTA 5 Gets Its Own Tier | - |
+| 2026-11-26 | gta-tier-list-protagonists | Short | Every GTA Protagonist Ranked: CJ Isn't S Tier | - |
+| 2026-11-26 | gta-tier-list-maps | Short | Every GTA Map Ranked: Los Santos Is Only B Tier | - |
+| 2026-11-26 | gta-history-quiz | Short | GTA History Quiz: Only Real Fans Get 3/3 | - |
+| 2026-11-26 | gta-cities-quiz | Short | GTA Cities Quiz: Only Real Fans Get 3/3 | - |
+| 2026-11-25 | gta6-atm-robbery-guide | video | GTA 6 ATM Robbery Guide: Winch, Tow Truck and the Dye Pack Catch | - |
+| 2026-11-24 | gta6-stream-wars | video | GTA 6 Stream Wars: IShowSpeed vs Everyone (Real Numbers) | - |
+| 2026-11-23 | gta6-update-no-patch-notes | Short | GTA 6 Got 3 Updates and Zero Patch Notes | - |
+| 2026-11-23 | gta6-tier-list-critics | Short | GTA 6 Tier List: Every GTA Ranked by Critics | - |
+| 2026-11-23 | gta6-first-platinum | Short | GTA 6's Platinum Trophy Is Already Taken | - |
 | 2026-11-23 | gta6-10-numbers | video | GTA 6 in 10 Numbers: The First Week, Explained | - |
-| 2026-11-23 | gta-tier-list-sales | Short | Every GTA Ranked by Sales: GTA 5 Gets Its Own Tier | short: aU1Js-p-FCo |
-| 2026-11-23 | gta-tier-list-protagonists | Short | Every GTA Protagonist Ranked: CJ Isn't S Tier | short: OliGdX-eRFY |
-| 2026-11-23 | gta-tier-list-maps | Short | Every GTA Map Ranked: Los Santos Is Only B Tier | short: UEZZx84mzQI |
-| 2026-11-23 | gta-cities-quiz | Short | GTA Cities Quiz: Only Real Fans Get 3/3 | - |
-| 2026-11-22 | gta6-trailer-views | Short | GTA 6's First Trailer Is Still No. 1 (309M Views) | short: Zb40bCmejBQ |
-| 2026-11-22 | gta6-top-3-rides | Short | GTA 6: The Top 3 Rides in Rockstar's Gameplay | - |
-| 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | main: EJOdYW3sx44, news: uRIkm8L3Gr8 (private) |
-| 2026-11-22 | gta6-no-darts | Short | GTA 6 Has No Darts. Rockstar Says Why | short: JYYfpuj-jwQ (private) |
-| 2026-11-22 | gta6-no-60fps-ps5-pro | Short | GTA 6 Has No 60 FPS Mode, Not Even on PS5 Pro | short: 6p9VtX-UaVU (private) |
-| 2026-11-22 | gta6-money-chart-es | Short | GTA 6 hizo 5 VECES el lanzamiento de GTA 5... con trampa | - |
-| 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | short: y4jQTwLJwP4 (private) |
-| 2026-11-22 | gta6-jason-quiet | Short | GTA 6's Jason Was Inspired by Steve McQueen | - |
-| 2026-11-22 | gta6-dexter-apartment | Short | Players Found Dexter's Apartment in GTA 6 | short: dOv6212lgj4 (private) |
-| 2026-11-22 | gta6-cheapest-gta-inflation | Short | GTA 6 Is the CHEAPEST GTA Ever (After Inflation) | short: K9Ii3rntcog |
-| 2026-11-22 | gta6-99-club | Short | GTA 6's 99 on Metacritic: Only ONE Other Game Has It | short: LYmF6sSQtYE |
-| 2026-11-22 | gta-history-quiz | Short | GTA History Quiz: Only Real Fans Get 3/3 | - |
-| 2026-11-21 | gta6-ultimate-edition-shops | Short | GTA 6 Locks 5 Shops Behind the $100 Edition | short: xvA4O2ytSnE |
-| 2026-11-21 | gta6-map-is-florida | Short | GTA 6's Official Map Is Florida: 4 Matches and 1 Fake | short: 9ZmygQdJRBA (private) |
-| 2026-11-21 | gta6-how-long-to-beat | video | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | short: bVoHzywwvgc, main: rHaMTePDRUQ, tips: M7oKevOPY08 (private) |
-| 2026-11-21 | gta6-guess-the-ride | Short | Guess the GTA 6 Ride From One Detail | short: I2VEKQUia8w (private) |
-| 2026-11-21 | gta6-first-to-finish | Short | The First Person to Finish GTA 6 Wasn't IShowSpeed | short: Egb3otGWJIg |
-| 2026-11-20 | gta6-video-store-closing | Short | GTA 6 Has a Video Game Store, and It's Closing | short: Rt18FhG-DYk |
-| 2026-11-20 | gta6-took-away-gta5 | Short | GTA 6 Took Away 4 Things GTA 5 Gave You | short: uvWNXugdvSo |
-| 2026-11-20 | gta6-ranking-rides | Short | Ranking the 6 Rides in Rockstar's GTA 6 Gameplay | short: QzFhpT4dNVQ (private) |
-| 2026-11-20 | gta6-race-hud-details | Short | GTA 6 Races: Look at the Corner of the Screen | short: sP1fq11WMmw (private) |
-| 2026-11-20 | gta6-ishowspeed-watkins | Short | IShowSpeed Teared Up Over His Family's Name in GTA 6 | short: uCNHbnOqgs0 |
-| 2026-11-20 | gta6-has-anyone-finished | Short | Has Anyone Finished GTA 6 Yet? (The 7-Hour Catch) | short: WsJ96ZkU2do (private) |
-| 2026-11-20 | gta6-black-friday-deals | video | GTA 6 Black Friday: What's Actually Worth Buying | main: S_H61BzbFKA |
-| 2026-11-20 | gta6-beginner-tips-nobody-tells-you | video | GTA 6 Beginner Tips Nobody Tells You (No Spoilers) | main: PJgR2lmq_Nc (private), short_old_stills_version: 0Eme-O7jAj0 (private), news_old_stills_version: _LVtHaU0YfM (private), short: yU-xKsoUdbM, news: LHTxGyakWyI (private) |
-| 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | short: 6bPAn80dKno |
-| 2026-11-19 | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | main: 3T1de9Fnygg (private), short: RAs1Sx_7Zh8 (private), news: Z8jQK8nZ1cQ, tips: 6QbWET74cQs (private) |
-| 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | short: vlPV5Yre8T8 |
-| 2026-11-19 | gta6-cheat-codes-that-work | Short | GTA 6 Cheat Codes That Actually Work (Verified) | short: acNIOalmWzM (private) |
-| 2026-11-19 | gta6-chapter-1-money-catch | Short | Don't Grind Money in GTA 6 Chapter 1 (The Catch) | short_old_stills_version: UbRSdarrTQ4 (private), short: vkvg5KPqb70 |
-| 2026-11-19 | gta6-black-friday-catch | Short | GTA 6 Black Friday Deals Have a Catch | short_old_stills_version: oNwtReI03YU (private), short: zfjEiiiQdJk |
-| 2026-11-19 | gta6-17-million-sold | Short | GTA 6 Already Made $1.65 Billion (Estimate) | short: b4pWGuZNPJY |
-| 2026-11-18 | houser-launch-statement | Short | Rockstar's Sam Houser Breaks Silence as GTA 6 Launches | short: 4EuMnzlLKTY |
-| 2026-11-18 | gta6-storage-full | video | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | main: MIvka1jBpJ0 (private), short: Wl6K3f5FtVU |
-| 2026-11-18 | gta6-physical-edition-no-disc | video | GTA 6 Physical Edition Has No Disc: What You're Buying | main: RmONg7-uN4w (private), short: 9lTZNbwbSec, news: rhf1qryjRSM |
-| 2026-11-18 | gta6-out-in-new-zealand | Short | GTA 6 Is Already Out in New Zealand: The Catch | short: DG_MpuSMDV8 |
-| 2026-11-18 | gta6-metacritic-99 | Short | GTA 6 Scores 99 on Metacritic, Tied for Best Ever | short: S5L5Mah6LIU |
+| 2026-11-22 | gta6-this-week-launch | video | GTA 6 This Week: $3.79 Billion, a 99 and 68M Views | - |
+| 2026-11-22 | gta6-no-darts | Short | GTA 6 Has No Darts. Rockstar Says Why | - |
+| 2026-11-22 | gta6-lucia-outfits | Short | GTA 6: Lucia's 8 Outfits (One You Can't Get Now) | - |
+| 2026-11-21 | gta6-how-long-to-beat | video | GTA 6 Is Almost Twice as Long as GTA 5 (No Spoilers) | - |
+| 2026-11-20 | gta6-video-store-closing | Short | GTA 6 Has a Video Game Store, and It's Closing | - |
+| 2026-11-20 | gta6-took-away-gta5 | Short | GTA 6 Took Away 4 Things GTA 5 Gave You | - |
+| 2026-11-20 | gta6-ishowspeed-watkins | Short | IShowSpeed Teared Up Over His Family's Name in GTA 6 | - |
+| 2026-11-20 | gta6-black-friday-deals | video | GTA 6 Black Friday: What's Actually Worth Buying | - |
+| 2026-11-20 | gta6-beginner-tips-nobody-tells-you | video | GTA 6 Beginner Tips Nobody Tells You (No Spoilers) | - |
+| 2026-11-19 | gta6-streaming-record | Short | GTA 6 Breaks Streaming Launch Records | - |
+| 2026-11-19 | gta6-launch-day-survival-guide | video | GTA 6 Launch Day Survival Guide: Servers, 30 FPS & Settings | - |
+| 2026-11-19 | gta6-cheats-catch | Short | GTA 6 Cheats Are Real, But There's a Catch | - |
+| 2026-11-19 | gta6-cheat-codes-that-work | Short | GTA 6 Cheat Codes That Actually Work (Verified) | - |
+| 2026-11-19 | gta6-chapter-1-money-catch | Short | Don't Grind Money in GTA 6 Chapter 1 (The Catch) | - |
+| 2026-11-19 | gta6-black-friday-catch | Short | GTA 6 Black Friday Deals Have a Catch | - |
+| 2026-11-19 | gta6-17-million-sold | Short | GTA 6 Already Made $1.65 Billion (Estimate) | - |
+| 2026-11-18 | houser-launch-statement | Short | Rockstar's Sam Houser Breaks Silence as GTA 6 Launches | - |
+| 2026-11-18 | gta6-storage-full | video | GTA 6 Not Enough Space? Free Fixes + the Right SSD Upgrade | - |
+| 2026-11-18 | gta6-physical-edition-no-disc | video | GTA 6 Physical Edition Has No Disc: What You're Buying | - |
+| 2026-11-18 | gta6-out-in-new-zealand | Short | GTA 6 Is Already Out in New Zealand: The Catch | - |
+| 2026-11-18 | gta6-metacritic-99 | Short | GTA 6 Scores 99 on Metacritic, Tied for Best Ever | - |
 | 2026-11-17 | lucia-actress-confirmed | Short | Lucia's Actress Confirmed Before GTA 6 Launch | - |
 | 2026-11-17 | gta6-unlock-time-every-time-zone | Short | GTA 6 Unlock Time in Every Time Zone (US, UK, EU, Australia) | - |
 | 2026-11-17 | gta6-new-zealand-trick | video | GTA 6 New Zealand Trick: Play Early or Risk Your Account? | - |
-| 2026-11-17 | gta6-is-out | Short | GTA 6 Is Out: Do These 3 Things First | short: DBlAdqc1orw |
-| 2026-11-17 | gta6-cheat-codes | Short | GTA 6 Cheat Codes: Real or Fake? | short: yKISW4fJj3Y |
+| 2026-11-17 | gta6-is-out | Short | GTA 6 Is Out: Do These 3 Things First | - |
+| 2026-11-17 | gta6-cheat-codes | Short | GTA 6 Cheat Codes: Real or Fake? | - |
 | 2026-11-16 | youtube-24h-gta6-stream | Short | YouTube's 24-Hour GTA 6 Launch Stream | - |
 | 2026-11-16 | gta6-3-days | video | GTA 6 Launches in 3 Days: Unlock Time, Download Size & Price | - |
 
