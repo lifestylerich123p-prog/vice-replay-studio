@@ -19,6 +19,12 @@
    "step": "episode",
    "message": "Episodes: QA fixes (pool photos, statement hook, shorter scripts) + bookings",
    "files": 6
+  },
+  {
+   "at": "2026-11-27T10:35:23.935396+00:00",
+   "step": "render",
+   "message": "Renders: gta6-hunting-where + gta6-fast-travel-skip (EN+ES), QA 0 blockers",
+   "files": 2
   }
  ],
  "files": {
@@ -31,8 +37,8 @@
   "site/guides/gta-6-make-money.json": "6586e5f68f145a3d8211392bb85881be484da89d4169d46b1bd7c8ae38f6d02c",
   "site/map-pins.json": "07c01c8c6f50e16445bb9d05f92492dda481c5fb3ed3118869d5ca2ae29f3f0f",
   "content/INDEX.md": "3e1b78f52ae12ec1ad1a8a7c5345816d7c99673937a8d39b6e3dd4021b784be4",
-  "content/learn/quota.json": "8b5a1c51c31f32f55effdf703eee66812ccc9b954ab559b7762fad7572c4e1ff",
+  "content/learn/quota.json": "804215873e00f2b74b9731404bef994e4a394460476ed12fc0a5e6f9ebfc36f3",
   "content/runs/daily-2026-11-27-bookings.json": "bee86dd319b79e18c13dba4254e900cf2f6491864da2d69237b16e527514c485",
-  "database/vice.db": "3e45288ebbe934e9f634ba78e97697af0c31d0e50ce0a081d26f8fbff71ecf80"
+  "database/vice.db": "82d88ae502d82a9cfdb05463a7def6e2f55a4cf6d2da226da346857370eb50dd"
  }
 }
