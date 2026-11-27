@@ -174,7 +174,7 @@ original; our own data (content/learn/hooks-2026-11-22.md) showed which hooks, l
 - **Flop review** (`python -m studio.flops`): public Shorts under 50 views 48 h after going public; `--apply` (main chat)
   sets them private (never deleted), marks uploads.json `hidden` and logs their pattern in lessons.md. Campaign clips,
   website embeds and the Spanish channel are never touched.
-- **Schedule** (`studio/quota.py`): daytime slots 9:30 / 11:00 / 12:30 ET first; evening only for big news or the recap.
+- **Schedule** (`studio/quota.py` reads the gate's slots from config/channel.json): English 8:00 AM + 6:00 PM, Spanish 12:30 PM + 7:00 PM ET, max 2 a day each (owner Phase 10).
 - **Tags** (`studio/youtube_upload.clean_tags`, `studio/retag.py`): 8-15 topic tags per upload within YouTube's 500
   characters; `retag` fixes videos already up.
 - **Both channels** (`studio/youtube_es.py`, `studio/channel_layout.py`): every approved Short also posts on Vice Replay

@@ -20,39 +20,30 @@ non-GTA campaign; What If Arena = AI videos.
    `--preview`, `--short`, `--short --es`.)
 4. Report the output paths and 3 alternative titles (under 60 characters, "GTA 6" first).
 
-## Posting schedule (US Eastern; adjust from analytics)
-Weekdays: main Short 9:30 AM, tips Short 12:30 PM, main 3:30 PM, news Short 8:30 PM. Saturday: 10 AM, 12:30, 1:30,
-8 PM. Sunday: 10 AM, 12:30, 2:30, 7:30 PM (Nov 21 data: morning Shorts ~21 views/h vs 0.7 for 12-5 PM). Big news: post
-as soon as it's ready. Upload early, scheduled. Nov 22 data (21 Shorts since launch, median views/h by ET post time):
-6-11 AM 16, 11 AM-2 PM 10, 2-6 PM 2.7, 6 PM-6 AM 1.9: Shorts go in the daytime slots (9:30, 11:00, 12:30); 3:30/8:30 PM
-only for big news or long videos (`studio.quota` lists daytime first).
-**How many a day** (owner Nov 24: "search online how many videos we should be posting a day and go from there"): no
-official YouTube number; 2026 studies say 1-3 Shorts/day (vidIQ, 10.2M channels: growth rises with cadence; Metricool,
-~800K videos: monthly Shorts views keep rising with volume, while 35+ Shorts/month drags long-form). Our scorecard's
-"Shorts that day" table shows no drop per Short on busy days. So: **3 English Shorts/day** (owner Nov 24 "Do it": **2
-map/how-to answers + 1 anchor** a day, Tue GTA 6 vs GTA 5, Wed tier list, Thu quiz; no pure fact Shorts; daily-video.md
-rule 8; owner Nov 25 "Start posting the maps videos at least one a day": **every day has at least one map Short**, a
-Short with an official-map card; `studio.doctor` warns about any day in the next 7 without one) (9:30, 11:00, 12:30;
-weekends 10, 11 or 12:30, 1:30), a 4th only for breaking news; **long videos only for big events** (Game Awards etc.) **and search guides** that tie a Shorts series together
-(e.g. episodes/gta6-map-secrets-guide.json: chapters per spot, every map Short's "Related video"; guides keep pulling
-search traffic after launch, news recaps don't) until the owner's gameplay arrives
-(Nov 24: both recent long videos had 0 views; related/browse traffic is ~0, so long-form isn't being recommended); Spanish channel winners +
-max 1 Spanish-only/day; Instagram stays at the owner's cap of 4/day (Mosseri: no magic number). Review Dec 8 (scheduled): if after-launch 3-Short
-days get under half the views per Short of 2-Short days and no more total views, go to 2/day.
-**Owner Nov 26 "APPROVE ALL"** (details content/owner.md): map/how-to Short titles START with the search phrase
-(YouTube autocomplete: "GTA 6 giant crab location + password 🦀"); map Shorts are a numbered series
-(`python -m studio.mapseries`: `number` before rendering a new spot, `sync` after uploads keeps the "GTA 6 Map: Where
-to Find It" playlist in order, pinned first on the channel home); every map Short also goes to the TikTok files in
-Spanish (free Kokoro voice; Viral Adam only for winners while Everygen is low); follow up a taking-off Short the same
-day; no new long videos until the ATM and map-secrets guides pull search views.
-**Owner Nov 26 "DO IT"** (map cards 46.6 views/h vs versus 4.0, list 0.2): **3 map/how-to Shorts a day**, tier lists and
-quizzes stay, no new versus/fact/headline Shorts (parked ones sit in approved_queue.json `paused`); one-tap comment
-prompts ("Found it? Reply ✅ — or 😭"; last card "FOUND IT? COMMENT YES"); the Dec 3 Spanish YouTube pause was
-lifted the same day by the Spanish autonomous directive (see "Spanish channel"); 8:00 AM slot for each day's first map Short, test week Nov 28-Dec 4 (review Dec 5).
+## Posting schedule (America/New_York; canonical numbers: config/channel.json)
+**Owner Phase 10 (Nov 26; applied after the Nov 27 cycle was verified):** English **8:00 AM + 6:00 PM ET**, Spanish
+**12:30 PM + 7:00 PM ET**, **max 2 routine automatic Shorts per channel per day**, only through the publishing gate
+(`config/channel.json` `auto_publish` / `auto_publish_es`: change numbers there, don't restate them elsewhere). Slots are
+opportunities, not quotas: never publish weak content to fill one. **No 3rd English Short yet**: the Dec 8 review
+(report-only) recommends whether a 3rd daily Short would add engaged views without hurting quality or cost; the owner
+decides. Pre-gate exceptions already booked may stay if they pass every check; one big verified event (Game Awards
+results) may get a timely post through the same checks (docs/AUTOMATION.md). Upload early, scheduled (3:45 AM run).
+Why: Nov 22-24 data put morning Shorts far ahead of afternoon/evening; Nov 26 map cards 46.6 views/h vs versus 4.0.
+**What to make** (owner Nov 24-26 + Phase 10): map/location and how-to Shorts first; every day has at least one map
+Short (`studio.doctor` warns); tier lists/quizzes only as experiments; no new generic news/fact/versus/headline Shorts
+(parked ones in approved_queue.json `paused`); map/how-to titles START with the search phrase ("GTA 6 giant crab
+location + password 🦀"); map Shorts are a numbered series per channel (`python -m studio.mapseries`: `number` before
+rendering a new spot, `sync` after uploads; English playlist "GTA 6 Map: Where to Find It" pinned first on the channel
+home); one-tap comment prompts ("Found it? Reply ✅ — or 😭"); follow-ups to a taking-off Short via
+`studio.opportunities`, booked in FREE slots (never displace an approved, numbered Short); every map Short also goes to
+the TikTok files. **Long videos**: on hold until the Dec 4 review shows search traction for the ATM/map-secrets guides;
+then only useful searchable guides, never compilations of Shorts. Instagram: owner cap 4 posts/day. Reviews (all
+report-only): Dec 3 Spanish week, Dec 5 slot test, Dec 8 frequency.
 
 **Phase 3 (owner Nov 26, "Data-driven growth and autonomous optimization")**: both channels stay autonomous through
-the gate. Mix target 40% location / 25% secrets / 15% gameplay experiments / 10% interactive map tutorials / 10%
-experimental (`studio.mix`, adjust from results, never drop a format on one video). Follow-ups only via
+the gate. Mix targets live in config/channel.json `content_mix` (`studio.mix`; Phase 10, while there's no licensed
+gameplay: 35% location / 25% numbered secrets / 20% map tutorials / 10% map-scale / 10% experiments; adjust from results,
+never drop a format on one video, never invent discoveries to hit a share). Follow-ups only via
 `studio.opportunities` (3x+ matched baseline, duplicate-checked, verified) and the map intelligence agent
 (`.claude/agents/vice-replay-map-intelligence.md`, candidates in content/learn/map-candidates.json). Money:
 `studio.credits` (verified balance or UNVERIFIED, never an estimate as fact). The 5 AM run saves through `studio.runsafe`
@@ -164,13 +155,13 @@ said where the store is).
   `python -m studio.comment_insights` (owner Nov 26 "learn from comments"): themes + questions from the top comments
   on the hottest GTA 6 videos and ours (content/learn/comment-insights-<date>.md; Mon + Thu in the 1 PM checklist).
 - **Quota = posting + replies** (owner, Nov 22 night: "every posting credit must be used posting or answering
-  comments"): no subtitle files on Shorts (`shorts_subtitles` in config/channel.json), keep reads lean, and every
-  night at 2:04 AM ET the main chat runs `python -m studio.spend` (+ `upload`): approved Shorts from
-  `content/learn/approved_queue.json` go up early, scheduled for their slots, then every open comment on both
-  channels gets an answer (`studio.replies list` / `list --es`). Add each newly approved Short to approved_queue.json.
+  comments"): no subtitle files on Shorts (`shorts_subtitles` in config/channel.json), keep reads lean. Nightly: 2:04 AM
+  ET fact re-checks + comment answers on both channels (`studio.replies list` / `list --es`); 3:45 AM ET
+  `python -m studio.spend upload` puts gate-approved Shorts from `content/learn/approved_queue.json` up early, scheduled
+  for their slots. Every scheduled job is listed in docs/AUTOMATION.md. Add each newly approved Short to approved_queue.json.
 - **Status**: `python -m studio.status` = one screen (health, YouTube schedule + views, free slots + quota, Instagram
   posted/next, campaigns + clip views); use it for "how are we doing?". `python -m studio.quota`: YouTube units left
-  today (learned limit, resets 3 AM ET) and free posting slots for 3 days; fill DAYTIME free slots before extras.
+  today (learned limit, resets 3 AM ET) and free posting slots for 3 days (the gate's slots from config/channel.json).
 - **Health**: `python -m studio.doctor` (free) checks the YouTube connection (no 7-day expiry since the Google app was
   published Nov 22), missing pinned
   comments (`--fix` posts approved ones), the website and disk. After reconnecting YouTube, write today's date to

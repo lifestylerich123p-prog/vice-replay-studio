@@ -27,9 +27,9 @@ Owner asked Nov 23 ("1,2,4"). Facts checked Nov 23 in 2+ sources each; **re-chec
 | Fri Dec 11, 11:00 AM | **Scorecard Short** (template C): every category won/lost, "our call was 6". Needs owner approval (made on results night, sent with the night report) | made on results night |
 | Sun Dec 13, 3:30 PM | Weekly long video: "GTA 6 at The Game Awards: every win and loss, explained" (hub slot) | idea, plan in the Dec 11 daily run |
 
-**Quota:** a results upload needs ~1,750 units (EN) on Dec 10's quota. When booking Dec 10, book at most two
-daytime Shorts (leave 12:30 PM free) so ~3,500 units stay open for the night. If the quota is short at night, post the
-English Short at 3:05 AM Dec 11 (right after the reset) instead of waiting.
+**Quota (updated Nov 27):** uploads now use their own API bucket (1 unit each, 100 a day), so results night isn't
+limited by the shared quota; Dec 10 keeps its normal two English Shorts (8:00 AM / 6:00 PM). The results-night post
+happens only if every publishing check passes (docs/AUTOMATION.md, trig_01PHr6YJZgTwz5Knn3vo65N5).
 
 ## Templates (lettering cards only, no trailer images; headlines 19 characters or less; 35-55 words)
 **A. GTA 6 won Game of the Year** (`gta6-game-awards-goty-win`):

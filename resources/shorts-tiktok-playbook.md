@@ -51,7 +51,7 @@ How the `short` block of an episode should be written and posted. Rewritten Nov 
 
 ## Posting
 
-- Daytime slots: 9:30, 11:00, 12:30 ET (6-11 AM median 16 views/h, 11 AM-2 PM 10, 2-6 PM 2.7, evening 1.9).
+- Slots (owner Phase 10; canonical in config/channel.json): English 8:00 AM + 6:00 PM, Spanish 12:30 PM + 7:00 PM ET, max 2 a day each (Nov 22 data: 6-11 AM median 16 views/h, 11 AM-2 PM 10, 2-6 PM 2.7, evening 1.9).
   3:30 / 8:30 PM only for big news or the Sunday recap.
 - Every Short goes up in English and in Spanish (Vice Replay en Español), Spanish title in the Spanish-market style
   (one CAPS word + one emoji), chart words in `chart_es`.

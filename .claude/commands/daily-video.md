@@ -60,9 +60,10 @@ over the Nov 23 rules below where they differ):**
    fact, one verdict line ("our take: ..."), a card mix that differs from the last uploads, headlines of 19 characters
    or less, one `seed` per Short, prices spoken as "seventy nine dollars and ninety nine cents". Facts in 2+ sources.
    YouTube (July 2026) doesn't pay "generic, repetitive content easily made with templates": vary formats and angles.
-3. **Slots:** 9:30 / 11:00 / 12:30 PM ET on both channels (evenings only for big news). `python -m studio.quota` counts
-   the approved queue as booked. Deliver for approval; once the owner approves in the main chat, the Short goes into
-   content/learn/approved_queue.json and the daily 3:45 AM run uploads it after the quota reset.
+3. **Slots:** the gate's slots only (config/channel.json): English 8:00 AM + 6:00 PM, Spanish 12:30 PM + 7:00 PM ET,
+   max 2 a day each. `python -m studio.quota` counts the approved queue as booked. The helper writes wanted FREE slots to
+   content/runs/daily-<date>-bookings.json; the main chat merges, books them in free slots (never displacing an
+   approved, numbered Short) and the 3:45 AM run uploads them only if the publishing gate passes.
 4. **Spanish channel:** at least one Spanish-only angle a day (local prices, Latin American interest, Cuban/Mexican
    style), not only translations; Spanish slots lean 12:30 PM ET (lunch in Mexico, evening in Spain).
 5. **Long videos:** only the weekly hub (Sunday, 16:9 lettering cards like episodes/gta6-10-numbers.json); no daily long
@@ -135,7 +136,7 @@ scripts of 76+ words median 404 vs 56-75 words 836. So:
   YouTube units a day for Shorts). Long guides belong on the website.
 - **No tips/how-to Shorts at all** (settings, fixes, cheat lists, beginner tips, "do this first"): website guides only.
 - **Every Short is a catch, a number/verdict or a streamer story**, built on a `chart` (or owner gameplay), 56-75 words
-  max (`studio.vice publish` blocks 76+), posted 9:30 / 11:00 / 12:30.
+  max (`studio.vice publish` blocks 76+), posted in the gate's slots (config/channel.json).
 - Hide (private, never delete) any Short under 50 views after 48 h, and add its pattern to content/learn/lessons.md:
   run `python -m studio.flops` (lists them; changes nothing) and put its list in the report; the main chat runs
   `--apply`. Before picking today's layout, read the scorecard's "By picture" / "By opener" tables.
@@ -179,8 +180,7 @@ streamer stories (IShowSpeed family name: 1,179 views, posted 9:28 AM), number/c
   cheats unlock after the credits"). Facts from people who finished: only times, records, trophy-tracker %,
   what unlocks after the credits. NEVER the ending, who lives/dies, reactions to the ending (most coverage of
   IShowSpeed's reaction spoils it), late chapters or story beats.
-- **12:30 PM: one comparison or money/"catch" Short** (GTA 6 vs 5, prices, records). No plain tips Shorts.
-- **8:30 PM: only big confirmed news.** Max 3 own Shorts a day; one strong Short beats three weak ones.
+- **Slots (owner Phase 10, canonical in config/channel.json): English 8:00 AM + 6:00 PM, Spanish 12:30 PM + 7:00 PM ET, max 2 a day each.** No generic comparison/news/fact Shorts; one strong Short beats three weak ones.
 - **Tutorials / how-to / "where is X" go to the WEBSITE guide** (Google search demand: saving, bank account,
   money, lose the cops, easy mode, settings) and to the long video, not to Shorts, until owner gameplay exists
   (a tutorial needs the real menus and map). Use `media/official/leonida-map-poster.jpg` with `magnify`/`zoom`
@@ -256,8 +256,8 @@ its "generic or repetitive" rule hits same-template channels. So, every day:
    **First run `python -m studio.status`**: any slot already shown with ⏰ today is TAKEN (the main chat may have
    scheduled a Short there); leave that Short out of `shorts` and don't upload into a taken slot. Its "Free slot"
    lines (from `python -m studio.quota`) list the open slots for 3 days and how many uploads today's YouTube quota
-   still fits: propose DAYTIME free slots only (9:30/10 AM first, then 12:30 PM; evening slots only for big confirmed
-   news: since launch, posts after 7 PM got 0-30 views). More narrated Shorts in bad slots don't add views and make
+   still fits: propose only FREE gate slots (English 8:00 AM / 6:00 PM, Spanish 12:30 PM / 7:00 PM ET); never ask to
+   displace an approved, numbered Short. More narrated Shorts in bad slots don't add views and make
    the channel look mass-produced; owner gameplay or a real angle does. Also skip topics
    those scheduled videos already cover (e.g. Fri Nov 20 12:30 PM = "Don't grind money in Chapter 1"). For that news Short, prefer what big streamers and creators are
    doing with GTA 6 right now (launch marathons, records, viral moments, reactions), else the most-talked-

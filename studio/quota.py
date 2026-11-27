@@ -143,21 +143,23 @@ def reset_in():
     return f"{h} h {rem // 60} min (midnight Pacific = 3 AM ET)"
 
 
-DAYTIME = ("9:30 AM", "11:00 AM", "12:30 PM")  # Nov 22 data (21 Shorts since launch): 6-11 AM median 16 views/h,
-# 11 AM-2 PM 10, 2-6 PM 2.7, 6 PM-6 AM 1.9. Fill these first; afternoon/evening slots are for big news or long videos.
+GATE_DEFAULT = {"en": ("8:00 AM", "6:00 PM"), "es": ("12:30 PM", "7:00 PM")}
 
 
-def slots_for(d):
-    """The posting slots of a day (ET): the CLAUDE.md / review_page schedule plus the 11 AM Short slot."""
-    from .review_page import extra_time, times_for
-    main, short, news = times_for(d)
-    day = {short, extra_time(d), main, news} | ({"11:00 AM"} if d.weekday() < 5 else set())
-    return sorted(day, key=lambda s: dt.datetime.strptime(s, "%I:%M %p"))
+def gate_slots(lang="en"):
+    """The publishing slots (ET) from config/channel.json `auto_publish` / `auto_publish_es` (owner Phase 10, Nov 26:
+    English 8:00 AM + 6:00 PM, Spanish 12:30 PM + 7:00 PM, max 2 a day). The config is the one source of truth."""
+    try:
+        cfg = json.loads((ROOT / "config" / "channel.json").read_text())
+        slots = (cfg.get("auto_publish" if lang == "en" else "auto_publish_es") or {}).get("slots")
+    except (OSError, ValueError):
+        slots = None
+    return tuple(slots or GATE_DEFAULT[lang])
 
 
-def is_daytime(slot):
-    t = dt.datetime.strptime(slot, "%I:%M %p").time()
-    return dt.time(6) <= t < dt.time(14)
+def slots_for(d, lang="en"):
+    """The publishing slots of a day (ET): the gate's slots (same every day; old 9:30/11:00/12:30/3:30/8:30 retired)."""
+    return sorted(gate_slots(lang), key=lambda s: dt.datetime.strptime(s, "%I:%M %p"))
 
 
 def scheduled(tok=None):
@@ -205,7 +207,7 @@ def free_slots(sched, days=3, lang="en"):
         d = today + dt.timedelta(days=k)
         taken = sched.get(d, []) + booked.get(d, [])
         free = []
-        for s in slots_for(d):
+        for s in slots_for(d, lang):
             at = dt.datetime.combine(d, dt.datetime.strptime(s, "%I:%M %p").time(), ET)
             if at <= dt.datetime.now(ET) + dt.timedelta(minutes=30):
                 continue
@@ -228,13 +230,10 @@ def main():
     print(f"Room for {left // UPLOAD} more upload(s) today (~{UPLOAD:,} units each with subtitles, playlist, comment).")
     sched = scheduled()
     plan = free_slots(sched)
-    print("\nFree posting slots (CLAUDE.md schedule + 11 AM; a video within 45 min of a slot fills it):")
+    print("\nFree publishing slots (the gate's slots from config/channel.json; a video within 45 min of a slot fills it):")
     for d, free in plan:
         n = len(sched.get(d, []))
-        daylist = [x for x in free if is_daytime(x)]
-        late = [x for x in free if not is_daytime(x)]
-        print(f"- {d:%a %b %d}: {n} scheduled; free daytime: {', '.join(daylist) or 'none'}"
-              + (f"; later (big news / long video only): {', '.join(late)}" if late else ""))
+        print(f"- {d:%a %b %d}: {n} scheduled; free: {', '.join(free) or 'none'}")
     if len(sys.argv) > 1 and sys.argv[1] == "spare":
         print(f"\nSpare units after today's free slots: {spare_units(len(plan[0][1])):,}")
 
