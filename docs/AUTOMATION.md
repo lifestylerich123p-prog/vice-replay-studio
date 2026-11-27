@@ -50,7 +50,9 @@ assumptions (no Everygen spend without a claim; Vice Replay zero-credit first), 
 duplicates, timezone, current business objectives. Report-only jobs (Dec 3, Dec 5, Dec 8 frequency, momentum, scout,
 breaking news) can never pause a channel or change frequency/slots.
 
-## Still to align after the Nov 27 cycle is verified (owner Phase 10 #1)
-Files that still describe the old 9:30 / 11:00 / 12:30 slots or 3 Shorts a day: CLAUDE.md (posting schedule
-section), README.md, studio/quota.py `DAYTIME`, .claude/commands/daily-video.md (12:30 PM slot, "DAYTIME free
-slots"), resources/shorts-tiktok-playbook.md, docs/vice-system.md, content/game-awards-2026.md (quota note).
+## Aligned after the Nov 27 cycle was verified (8:35 AM ET)
+CLAUDE.md, README.md, studio/quota.py (free slots read the gate config), .claude/commands/daily-video.md,
+resources/shorts-tiktok-playbook.md, docs/vice-system.md and content/game-awards-2026.md now all point to the one
+schedule in config/channel.json (EN 8:00 AM + 6:00 PM, ES 12:30 PM + 7:00 PM, max 2 a day each). The scheduler
+(`studio.schedule place`) books new Shorts in free slots and never displaces a numbered map Short or a finished video.
+Recurring jobs were renamed "Vice Replay · <time ET> <what it does>" (names only).
