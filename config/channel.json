@@ -129,5 +129,21 @@
   },
   "_voice_es_note": "Nov 26: free local Piper voice (Apache-2.0, Mexican Spanish) is the Spanish default; Whisper test: 0.71 word match and 'GTA 6' heard right vs 0.65 for Kokoro em_alex. Everygen Viral Adam (paid) only for winners.",
   "claims_required_from": "2026-11-30",
-  "_claims_note": "Phase 6 #5 (owner Nov 26): Shorts booked on/after this date need a claim ledger (studio/sources.py) or the gate holds them."
+  "_claims_note": "Phase 6 #5 (owner Nov 26): Shorts booked on/after this date need a claim ledger (studio/sources.py) or the gate holds them.",
+  "series_registry": {
+    "_note": "Owner Phase 10 #4 (Nov 26; built Nov 27 after the first verified cycle): each channel numbers its own map series in its own posting order (studio/mapseries.py). Numbers already shown in uploaded videos are kept (never reset to 1); new ones continue after the highest. A description names a playlist only when it exists on that channel (verified Nov 27 via playlists.list).",
+    "english": {
+      "map_spots": {
+        "playlist": "GTA 6 Map: Where to Find It",
+        "playlist_id": "PLIR1RqYmYNO4"
+      }
+    },
+    "spanish": {
+      "map_spots": {
+        "playlist": null,
+        "playlist_id": null,
+        "_note": "no Spanish map-series playlist exists (only the general 'GTA 6 en Español' PLf81PGcQlKHM): Spanish lines name no playlist"
+      }
+    }
+  }
 }

@@ -132,10 +132,11 @@ def main():
     # 1b2. The numbered map series (owner APPROVE, Nov 26): a booked spot's badge number must match its place
     try:
         from . import mapseries
-        off = mapseries.stale(mapseries.current())
+        off = [dict(m, ch="EN") for m in mapseries.stale(mapseries.current("en"))] + \
+            [dict(m, ch="ES") for m in mapseries.stale(mapseries.current("es"))]  # Phase 10: each channel's own series
         if off:
             warn.append("Map series numbers out of order (a Short was moved): " +
-                        ", ".join(f"{m['slug']} is #{m['n']}, says #{m['stored']}" for m in off[:4]) +
+                        ", ".join(f"{m['ch']} {m['slug']} is #{m['n']}, says #{m['stored']}" for m in off[:4]) +
                         ": run `python -m studio.mapseries number`, then re-render with `python -m studio.ship`")
         else:
             ok.append("Map series numbers match the schedule")

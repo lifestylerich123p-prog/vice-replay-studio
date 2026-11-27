@@ -204,5 +204,6 @@
  "cta": "SPOT #26 NEXT: FOLLOW",
  "cta_es": "LUGAR #26 PRONTO: SÍGUENOS",
  "claim_status": "community-found",
- "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: mount-kalaga-03 -> mount-kalaga-04 (guns / character close-ups / swimwear / drinking are not allowed)."
+ "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: mount-kalaga-03 -> mount-kalaga-04 (guns / character close-ups / swimwear / drinking are not allowed).",
+ "spot_es": 25
 }

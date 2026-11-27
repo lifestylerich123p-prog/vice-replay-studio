@@ -22,7 +22,7 @@
  "short_description": "Where is the shoe store in GTA 6? The first one is Flip Flop House, off Sunbelt Highway in Key Lento (on the left coming from the north). To find the rest, open the map, pick Style, then the Footwear filter: guides count 14 to 17 shoe stores. No story spoilers. Every spot is pinned on our interactive map at vicereplay.com (Guides → GTA 6 Map).\n\nMap: Rockstar Games' official Leonida map. Sources: PowerPyx, Gamertweak, GTABase, Xboxplay, Playnews.",
  "short_es": {
   "title": "GTA 6 tienda de ZAPATOS: dónde está 👟 #GTA6 #Shorts",
-  "description": "La primera tienda de zapatos de GTA 6 es Flip Flop House, junto a Sunbelt Highway en Key Lento. Para ver las demás: mapa, Estilo, filtro Calzado (las guías cuentan entre 14 y 17). Fuentes: PowerPyx, Gamertweak, GTABase.",
+  "description": "La primera tienda de zapatos de GTA 6 es Flip Flop House, junto a Sunbelt Highway en Key Lento. Para ver las demás: mapa, Estilo, filtro Calzado (las guías cuentan entre 14 y 17). Fuentes: PowerPyx, Gamertweak, GTABase.\n\n📍 Lugar #28 de nuestra serie del mapa de GTA 6.",
   "tags": [
    "GTA 6 tienda de zapatos",
    "GTA 6 zapatos",
@@ -182,5 +182,7 @@
  ],
  "site_target": "/guides/gta-6-shoe-stores/",
  "site_target_es": "/es/guias/tienda-de-zapatos-gta-6/",
- "series_id": "gps"
+ "series_id": "gps",
+ "spot_es": 28,
+ "cta_es": "LUGAR #29 PRONTO: SÍGUENOS"
 }

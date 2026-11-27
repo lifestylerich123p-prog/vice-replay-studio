@@ -1083,6 +1083,12 @@ def affiliate_block(ep):
     return affiliate.block(ep)
 
 
+def spot_for(ep, lang="en"):
+    """The series number this language's render shows: English `spot`, Spanish `spot_es` (owner Phase 10 #4: Spanish
+    Shorts never borrow the English number; no `spot_es` = no badge)."""
+    return ep.get("spot_es") if lang == "es" else ep.get("spot")
+
+
 def with_spot(seg, n, pin=False):
     """A segment whose map cards (English and Spanish) carry the series number (studio/mapseries.py). `pin`: the
     Short has a single pin, so the pin itself shows the spot number too (no "1" next to "MAP SPOT #5")."""
@@ -1130,9 +1136,10 @@ def main():
             sys.exit("No 'short' or 'shorts' in this episode.")
         if ep.get("series_id") in brand.SERIES:  # Phase 5: the recurring series badge on every card of the Short
             shorts = [dict(sh, segments=[dict(x, _series=ep["series_id"]) for x in sh["segments"]]) for sh in shorts]
-        if ep.get("spot") and ep.get("short"):  # numbered map series (studio/mapseries.py): badge on its map cards
+        spot_n = spot_for(ep, "es" if a.es else "en")  # each channel's own series number (owner Phase 10 #4)
+        if spot_n and ep.get("short"):  # numbered map series (studio/mapseries.py): badge on its map cards
             one = sum((x.get("chart") or {}).get("type") == "map" for x in shorts[0]["segments"]) == 1
-            shorts[0] = dict(shorts[0], segments=[with_spot(x, ep["spot"], one) for x in shorts[0]["segments"]])
+            shorts[0] = dict(shorts[0], segments=[with_spot(x, spot_n, one) for x in shorts[0]["segments"]])
         if a.es:
             voice = a.voice or ep.get("voice_es") or channel_setting("voice_es") or "em_alex"
             rate = ep.get("rate_es", rate)  # Phase 4: the Spanish voice's own pace (Kokoro em_alex runs fast)

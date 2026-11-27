@@ -18,9 +18,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 # top-level episode keys the renderer reads (studio/make_video.py, cardphotos.py); the rest is package/metadata
-SHARED_KEYS = ("use_gameplay", "spot", "sfx", "rate", "payoff_hook", "outro_card", "music_level", "music_duck", "music",
+SHARED_KEYS = ("use_gameplay", "sfx", "rate", "payoff_hook", "outro_card", "music_level", "music_duck", "music",
                "mood", "format", "follow_cta", "card_photos", "sources", "map_style", "series_id")
-LANG_KEYS = {"en": ("cta", "voice", "voice_override"), "es": ("cta_es", "voice_es", "rate_es")}
+# Phase 10 #4: the series number is per language (English `spot`, Spanish `spot_es`)
+LANG_KEYS = {"en": ("cta", "voice", "voice_override", "spot"), "es": ("cta_es", "voice_es", "rate_es", "spot_es")}
 
 
 def _sha(p):
@@ -64,7 +65,7 @@ def video_inputs(ep, item="short", lang="en"):
     audio = sorted({s[k] for s in segs for k in ("audio", "audio_es") if s.get(k)})
     keys = SHARED_KEYS + LANG_KEYS[lang]
     return {"lang": lang, "item": item, "segments": segs,
-            "episode": {k: ep[k] for k in keys if k in ep and not (k == "spot" and item != "short")},
+            "episode": {k: ep[k] for k in keys if k in ep and not (k in ("spot", "spot_es") and item != "short")},
             "voice_config": _cfg_voice(lang), "lexicon": lexicon_hash(lang),
             "audio_files": {a: _sha(a) for a in audio}}
 

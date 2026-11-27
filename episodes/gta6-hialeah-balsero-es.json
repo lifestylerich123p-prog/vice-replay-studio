@@ -12,7 +12,7 @@
  "short_description": "Spanish-channel-only Short (Phase 5 #5 Spanish-exclusive, Latino relevance: the Balsero label on Rockstar's official map and the community's Hialeah reading).",
  "short_es": {
   "title": "GTA 6: ¿dónde está HIALEAH? 🇨🇺 #GTA6 #Shorts",
-  "description": "¿Hialeah en GTA 6? Con ese nombre no aparece en el mapa oficial. Pero al norte del aeropuerto de Vice City, el mapa de Rockstar tiene un barrio llamado BALSERO: así se llamó a los cubanos que llegaron en balsa en la crisis de 1994, y muchos se quedaron en Hialeah. La GTA Wiki dice que Balsero parece basado en las zonas industriales junto al aeropuerto de Miami, sobre todo Hialeah, y la base de datos GTADB compara su patio de trenes con el CSX Hialeah Yard. Ojo: Rockstar no lo ha confirmado y otra guía (GTApedia) lo relaciona con el río Miami. Sin spoilers.\n\nMapa: Rockstar Games (mapa oficial de Leonida). Fuentes: GTA Wiki, GTADB, Wanted Level Guide, GTApedia, AllThings.How, Wikipedia (crisis de los balseros de 1994).",
+  "description": "¿Hialeah en GTA 6? Con ese nombre no aparece en el mapa oficial. Pero al norte del aeropuerto de Vice City, el mapa de Rockstar tiene un barrio llamado BALSERO: así se llamó a los cubanos que llegaron en balsa en la crisis de 1994, y muchos se quedaron en Hialeah. La GTA Wiki dice que Balsero parece basado en las zonas industriales junto al aeropuerto de Miami, sobre todo Hialeah, y la base de datos GTADB compara su patio de trenes con el CSX Hialeah Yard. Ojo: Rockstar no lo ha confirmado y otra guía (GTApedia) lo relaciona con el río Miami. Sin spoilers.\n\n📍 Lugar #32 de nuestra serie del mapa de GTA 6.\n\nMapa: Rockstar Games (mapa oficial de Leonida). Fuentes: GTA Wiki, GTADB, Wanted Level Guide, GTApedia, AllThings.How, Wikipedia (crisis de los balseros de 1994).",
   "tags": [
    "GTA 6 Hialeah",
    "Hialeah GTA 6",
@@ -346,5 +346,7 @@
  "hook_type": "question",
  "hook_type_es": "question",
  "first_frame": "map-pin (zoom): BALSERO pinned on Rockstar's official map, answer visible before the question ends",
- "hook_test": "Phase 6 #3 Spanish hook test: question + answer-on-screen; compare % viewed with immediate-answer (Little Cuba) and comparison (Sahara ES) in studio.xplat 'Spanish hooks'"
+ "hook_test": "Phase 6 #3 Spanish hook test: question + answer-on-screen; compare % viewed with immediate-answer (Little Cuba) and comparison (Sahara ES) in studio.xplat 'Spanish hooks'",
+ "spot_es": 32,
+ "cta_es": "LUGAR #33 PRONTO: SÍGUENOS"
 }

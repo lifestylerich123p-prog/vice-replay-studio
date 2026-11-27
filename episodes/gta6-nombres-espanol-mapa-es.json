@@ -12,7 +12,7 @@
  "short_description": "Spanish-channel-only Short (Phase 6 #4: Spanish place names printed on Rockstar's official map; hook test arm: visual-reveal).",
  "short_es": {
   "title": "GTA 6 tiene lugares en ESPAÑOL en el mapa 🗺️ #GTA6 #Shorts",
-  "description": "El mapa oficial de GTA 6 (Leonida) tiene lugares con nombre en español: Riquezas Keys, junto a la base aérea Mile Zero; Abismo Key, en la carretera de los cayos entre Southwind y Key Lento; y Borrachero Sound, en la costa oeste junto a Wild Hog Point. Según la GTA Wiki, Abismo Key se inspira en Bahía Honda, en los cayos de Florida (Rockstar no lo ha dicho). ¿Viste otro nombre en español? Sin spoilers.\n\nMapa: Rockstar Games (mapa oficial de Leonida, rockstargames.com/VI/downloads). Fuentes: Rockstar Games, GTA Wiki.",
+  "description": "El mapa oficial de GTA 6 (Leonida) tiene lugares con nombre en español: Riquezas Keys, junto a la base aérea Mile Zero; Abismo Key, en la carretera de los cayos entre Southwind y Key Lento; y Borrachero Sound, en la costa oeste junto a Wild Hog Point. Según la GTA Wiki, Abismo Key se inspira en Bahía Honda, en los cayos de Florida (Rockstar no lo ha dicho). ¿Viste otro nombre en español? Sin spoilers.\n\n📍 Lugar #38 de nuestra serie del mapa de GTA 6.\n\nMapa: Rockstar Games (mapa oficial de Leonida, rockstargames.com/VI/downloads). Fuentes: Rockstar Games, GTA Wiki.",
   "tags": [
    "GTA 6 mapa",
    "GTA 6 nombres en español",
@@ -250,5 +250,7 @@
     "locale": "es"
    }
   }
- ]
+ ],
+ "spot_es": 38,
+ "cta_es": "LUGAR #39 PRONTO: SÍGUENOS"
 }
