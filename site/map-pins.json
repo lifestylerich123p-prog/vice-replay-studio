@@ -1096,6 +1096,30 @@
     "nombres en español",
     "bahía"
    ]
+  },
+  {
+   "cat": "wild",
+   "at": "Mount Kalaga",
+   "dy": -0.012,
+   "src": [
+    "GTABase",
+    "PowerPyx",
+    "eGamers"
+   ],
+   "en": {
+    "t": "Hunting: Bret's first hunt",
+    "d": "Bret texts Jason in Chapter 2; the first hunt (Veteran Hunted) starts in the far north of Lummox County by Mount Kalaga and pays $500. Guides give the area, not an exact spot."
+   },
+   "es": {
+    "t": "Caza: la primera caza de Bret",
+    "d": "Bret le escribe a Jason en el capítulo 2; la primera caza (Veteran Hunted) empieza al norte de Lummox County, junto a Mount Kalaga, y paga 500 dólares. Las guías dan la zona, no un punto exacto."
+   },
+   "aliases": [
+    "hunting",
+    "cazar",
+    "caza",
+    "bret"
+   ]
   }
  ]
 }

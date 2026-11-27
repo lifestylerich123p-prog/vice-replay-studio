@@ -7,11 +7,22 @@
    "step": "episode",
    "message": "Episodes: gta6-hunting-where + gta6-fast-travel-skip",
    "files": 3
+  },
+  {
+   "at": "2026-11-27T10:19:13.795970+00:00",
+   "step": "site",
+   "message": "Site: hunting pin + guide lines (EN/ES), fast travel how-to (EN/ES)",
+   "files": 5
   }
  ],
  "files": {
   "content/learn/opportunities.json": "a2485796f686d7923b813879a0d4ba908ac955f9fde06643d3f02812662df4b2",
   "episodes/gta6-fast-travel-skip.json": "412f527362f58c998dafa0e777b2aee2a1ffe42dd99c05bc2b21d43a7fd0eb76",
-  "episodes/gta6-hunting-where.json": "1bcec0aef6f5655e57813f5cc14e409802cd622109c153b908e86979e6413c69"
+  "episodes/gta6-hunting-where.json": "1bcec0aef6f5655e57813f5cc14e409802cd622109c153b908e86979e6413c69",
+  "site/guides/como-ganar-dinero-gta-6.json": "1dc9657eb3dd59b56322fe72c4afdd7119a8b2609dbcc86e0e3b2d63a645ffab",
+  "site/guides/como-hacer-gta-6.json": "64737f282fc301373df8541a1990d36db7f5fea004a10e5a4e8c3c55e27d5426",
+  "site/guides/gta-6-how-to.json": "6999b8d1eddd558b57241e3af34ca263cb1eab5198b1521cd8625f8be737464b",
+  "site/guides/gta-6-make-money.json": "6586e5f68f145a3d8211392bb85881be484da89d4169d46b1bd7c8ae38f6d02c",
+  "site/map-pins.json": "07c01c8c6f50e16445bb9d05f92492dda481c5fb3ed3118869d5ca2ae29f3f0f"
  }
 }
