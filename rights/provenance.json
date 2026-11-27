@@ -860,7 +860,9 @@
   {
    "file": "media/official/grassrivers-02.jpg",
    "exists": true,
-   "episodes": [],
+   "episodes": [
+    "gta6-fast-travel-skip"
+   ],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
    "creator": "Rockstar Games / Take-Two Interactive",
@@ -1831,6 +1833,7 @@
    "file": "media/official/mount-kalaga-01.jpg",
    "exists": true,
    "episodes": [
+    "gta6-hunting-where",
     "gta6-ninja-turtles-where"
    ],
    "rights_id": "rockstar-official-screens",
@@ -1875,6 +1878,7 @@
    "file": "media/official/mount-kalaga-04.jpg",
    "exists": true,
    "episodes": [
+    "gta6-hunting-where",
     "gta6-map-quiz-places",
     "gta6-ninja-turtles-where"
    ],
@@ -1891,7 +1895,8 @@
    "file": "media/official/mount-kalaga-05.jpg",
    "exists": true,
    "episodes": [
-    "gta6-backrooms-where"
+    "gta6-backrooms-where",
+    "gta6-hunting-where"
    ],
    "rights_id": "rockstar-official-screens",
    "source": "official screenshots",
@@ -2313,6 +2318,7 @@
    "exists": true,
    "episodes": [
     "gta6-bad-bunny-radio-es",
+    "gta6-fast-travel-skip",
     "gta6-ghost-ship-where",
     "gta6-sahara-arena-where",
     "gta6-silent-hill-hotel"
@@ -2347,6 +2353,7 @@
    "file": "media/official/vice-city-10.jpg",
    "exists": true,
    "episodes": [
+    "gta6-fast-travel-skip",
     "gta6-no-mission-replay",
     "gta6-sahara-arena-where",
     "gta6-storage-full"
