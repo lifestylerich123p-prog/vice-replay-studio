@@ -765,8 +765,8 @@
    "slug": "gta6-ghost-ship-where",
    "item": "short",
    "en": [
-    "2026-12-21",
-    "8:00 AM"
+    "2026-12-14",
+    "6:00 PM"
    ],
    "approved": "Nov 26 (owner \"CONTINUE TO DO IT\": map finds replace the parked Shorts; viral ones go earlier): ghost ship / St. Lucia Lighthouse, Little Hardin Island (6 guides); re-check right before upload",
    "plan": "14-day plan (owner directive v2.0, Nov 26): published automatically only if the publishing gate passes (studio/approvals.py)",
@@ -777,7 +777,8 @@
    ],
    "es_plan": "Nov 26 owner: Vice Replay en Español autonomous (its own GTA 6 line-up, 12:30 PM + 7:00 PM ET test slots); publishes only through the gate (youtube-es)",
    "moved_phase4": "Phase 4 flexible slot (Nov 26): moved for the verified clothing-store follow-up of the shoe store winner; secrets were 43% of the 14-day mix vs a 25% target; this item wasn't uploaded yet",
-   "moved_by": "2026-11-26: studio.schedule gave 2026-12-01 8:00 AM to gta6-sahara-arena-where (evergreen, location); this one is secrets (over target) and wasn't uploaded yet"
+   "moved_by": "2026-11-26: studio.schedule gave 2026-12-01 8:00 AM to gta6-sahara-arena-where (evergreen, location); this one is secrets (over target) and wasn't uploaded yet",
+   "moved": "Nov 26 9 PM ET (Phase 10 #8): Dec 21 8 AM -> Dec 14 6 PM, the first free English slot; sea/underwater follow-up of the sunken-treasure winner (7.4x baseline); no other video moved, series number unchanged (#30)"
   },
   {
    "slug": "gta6-little-cuba-es",

@@ -42,3 +42,12 @@ Cloudflare dashboard -> My Profile -> API Tokens -> Create Token -> Create Custo
   `accountTag` (= the account ID). Web Analytics is account-level, so restrict the token to the one account; there is no
   zone to restrict it to for this dataset. Sources: developers.cloudflare.com/analytics/graphql-api/getting-started/authentication/api-token-auth/ ,
   developers.cloudflare.com/fundamentals/api/reference/permissions/ .
+- Re-checked Nov 26, 9:30 PM ET (owner Phase 10 #20): developers.cloudflare.com can't be fetched from this environment
+  (host not in the network allowlist; not worked around), so this is again from search summaries, not the pages
+  themselves: a Cloudflare staff answer on community.cloudflare.com (t/444678) says account-level GraphQL datasets need
+  "Account Analytics: Read" (zone datasets would need zone "Analytics: Read", which we don't need); community examples
+  query `viewer { accounts(filter: {accountTag: ...}) { rumPageloadEventsAdaptiveGroups(...) } }` with `count`,
+  `sum { visits }` and `dimensions { requestPath }`. Endpoint to confirm on the first real call:
+  `https://api.cloudflare.com/client/v4/graphql` (POST). If the token works but every count is 0, check that the
+  beacon is actually ingesting (a community thread traced zeros to the beacon, not the token) before concluding
+  "no traffic". Until the token exists, video -> website clicks are reported as "not measurable yet".
