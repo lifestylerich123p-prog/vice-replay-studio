@@ -1,0 +1,17 @@
+{
+ "run": "daily",
+ "branch": "claude/daily-2026-11-27",
+ "checkpoints": [
+  {
+   "at": "2026-11-27T10:18:25.890642+00:00",
+   "step": "episode",
+   "message": "Episodes: gta6-hunting-where + gta6-fast-travel-skip",
+   "files": 3
+  }
+ ],
+ "files": {
+  "content/learn/opportunities.json": "a2485796f686d7923b813879a0d4ba908ac955f9fde06643d3f02812662df4b2",
+  "episodes/gta6-fast-travel-skip.json": "412f527362f58c998dafa0e777b2aee2a1ffe42dd99c05bc2b21d43a7fd0eb76",
+  "episodes/gta6-hunting-where.json": "1bcec0aef6f5655e57813f5cc14e409802cd622109c153b908e86979e6413c69"
+ }
+}
