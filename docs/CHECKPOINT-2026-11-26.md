@@ -1,6 +1,8 @@
 # End-of-night checkpoint: Thu Nov 26, 2026 (~9:30 PM ET)
 
-Recovery point: git tag `checkpoint-2026-11-26-night` on vice-replay-studio and vicereplay-site (main). Rendered
+Recovery point (commits on main, both pushed to GitHub): vice-replay-studio `74640b6b2332`, vicereplay-site `d03ee70fdc5f`
+(`git checkout <commit>`). Git tags were refused by this environment's git proxy (HTTP 403), so the commit IDs are the
+recovery point. Rendered
 videos (`output/`) are not in git: if this container is lost, the 3:45 AM run re-renders any missing or stale video
 from its episode file before the gate (studio/spend.py `renders_needed`), and the gate re-checks it.
 
