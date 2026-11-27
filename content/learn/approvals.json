@@ -877,6 +877,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-27 03:51 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-27 03:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-27 03:51 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -887,7 +905,7 @@
   "video": "output/gta6-barber-shop-where/gta6-barber-shop-where-short.mp4",
   "duration": 12.2,
   "spec_hash": "c8a0a5a7a261cd9c2c8837aedc5125620c1c275a97c487dba2080ea52f15a6cb",
-  "evaluated_at": "2026-11-26 19:47 ET",
+  "evaluated_at": "2026-11-27 03:51 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
@@ -1464,5 +1482,47 @@
   ],
   "advice": [],
   "video_sha256": "e5484ea7ba17371e150e3664a06ee410b380032ccbaa557f80dcd87aafad05ea"
+ },
+ "gta6-giant-crab:short:youtube-es": {
+  "slug": "gta6-giant-crab",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-27 03:51 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-27 03:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-27 03:51 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ]
+  ],
+  "publish": [
+   "2026-12-11",
+   "7:00 PM"
+  ],
+  "title": "GTA 6 tiene un CANGREJO gigante: está aquí 🦀 #GTA6 #Shorts",
+  "video": "output/gta6-giant-crab/gta6-giant-crab-short-es.mp4",
+  "duration": 14.8,
+  "spec_hash": "3e32a5b37a636464d0d06b31f1424ee6008a5f6f5d80d63503a2c878f6b30ef2",
+  "evaluated_at": "2026-11-27 03:51 ET",
+  "blockers": [],
+  "reviews": [
+   "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
+  ],
+  "advice": [],
+  "video_sha256": "24998bf7c4c45cc3d42b124f15445129e511b19408155f293ff671c5cd072476"
  }
 }
