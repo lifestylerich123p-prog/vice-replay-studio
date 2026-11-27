@@ -3,7 +3,7 @@
   "slug": "gta6-mask-where",
   "item": "short",
   "platform": "youtube-en",
-  "state": "SCHEDULED",
+  "state": "PUBLISHED",
   "history": [
    [
     "2026-11-26 13:16 ET",
@@ -178,6 +178,12 @@
     "UPLOADING",
     "SCHEDULED",
     "uploaded, scheduled 2026-11-27 8:00 AM ET"
+   ],
+   [
+    "2026-11-27 08:20 ET",
+    "SCHEDULED",
+    "PUBLISHED",
+    "verified public on YouTube"
    ]
   ],
   "publish": [
@@ -193,7 +199,8 @@
   "reviews": [],
   "advice": [],
   "video_sha256": "2e0855d2b3133b8d4e8fcfad01ec00d406018fcdbe5cc0c0e2d0545b2c47246b",
-  "video_id": "YlVyesTxTZg"
+  "video_id": "YlVyesTxTZg",
+  "published_verified": "2026-11-27 08:20 ET"
  },
  "gta6-backrooms-where:short:youtube-en": {
   "slug": "gta6-backrooms-where",
