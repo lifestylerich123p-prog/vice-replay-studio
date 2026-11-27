@@ -46,12 +46,12 @@ Read this first instead of searching the repo.
 | 2026-11-26 | gta6-hialeah-balsero-es | Short | GTA 6: ¿dónde está Hialeah? La pista se llama Balsero | - |
 | 2026-11-26 | gta6-ghost-ship-where | Short | GTA 6 Ghost Ship Easter Egg: Lighthouse Location and Cursed Knife | - |
 | 2026-11-26 | gta6-fishing-pays | Short | Does Fishing Pay in GTA 6? | - |
-| 2026-11-26 | gta6-clothing-stores-where | Short | Where to Buy Clothes in GTA 6 | - |
+| 2026-11-26 | gta6-clothing-stores-where | Short | Where to Buy Clothes in GTA 6 | short: kKtexV69F-Q |
 | 2026-11-26 | gta6-car-dealership | Short | Is There a Car Dealership in GTA 6? | - |
 | 2026-11-26 | gta6-black-panther-where | Short | GTA 6 Legendary Animals: Where to Find the Black Panther | - |
 | 2026-11-26 | gta6-black-bear-where | Short | GTA 6 Legendary Animals: Where to Find the Black Bear | - |
-| 2026-11-26 | gta6-barber-shop-where | Short | Where to Get a Haircut in GTA 6 | - |
-| 2026-11-26 | gta6-backrooms-where | Short | Where to Find the Backrooms in GTA 6 | - |
+| 2026-11-26 | gta6-barber-shop-where | Short | Where to Get a Haircut in GTA 6 | short: WvHbn0jE1Ms |
+| 2026-11-26 | gta6-backrooms-where | Short | Where to Find the Backrooms in GTA 6 | short: yBc7KGUJWsc |
 | 2026-11-26 | gta6-alligators-where | Short | Where to Find Alligators in GTA 6 | - |
 | 2026-11-25 | gta6-trivia-night | video | GTA 6 Trivia: 50 Facts, Leaks & Spoilers (Quiz) | main: kSufP4pt08I |
 | 2026-11-25 | gta6-trivia-3-questions | Short | GTA 6 trivia only real fans get right | - |

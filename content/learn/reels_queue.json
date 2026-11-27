@@ -407,6 +407,16 @@
   "posted": "skipped: Nov 24 (studio.ig_stats): our 5 carousels got a median of 0 likes vs 8 for Reels; kept only useful/save-worthy carousels (secrets map, week-one numbers, Game Awards odds). Owner: 'continue checks and ways to help'."
  },
  {
+  "at": "2026-11-27 18:05",
+  "episode": "episodes/gta6-barber-shop-where.json",
+  "item": "short"
+ },
+ {
+  "at": "2026-11-28 08:05",
+  "episode": "episodes/gta6-backrooms-where.json",
+  "item": "short"
+ },
+ {
   "at": "2026-11-28 10:05",
   "episode": "episodes/gta-tier-list-maps.json",
   "item": "short"
@@ -422,6 +432,11 @@
   "episode": "episodes/gta6-trailer-views.json",
   "item": "short",
   "note": "moved from Wed 12:35: Wed had 5 posts (4/day cap); Sat has 3"
+ },
+ {
+  "at": "2026-11-28 18:05",
+  "episode": "episodes/gta6-clothing-stores-where.json",
+  "item": "short"
  },
  {
   "at": "2026-11-29 16:00",
