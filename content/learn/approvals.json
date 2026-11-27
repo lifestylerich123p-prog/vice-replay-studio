@@ -130,6 +130,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-27 02:12 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-27 02:12 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-27 02:12 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -140,7 +158,7 @@
   "video": "output/gta6-mask-where/gta6-mask-where-short.mp4",
   "duration": 16.1,
   "spec_hash": "b4e15fec3f22fd7e79590004e3825f346a864958d4f2ccf584fbc3604f7876ca",
-  "evaluated_at": "2026-11-26 18:51 ET",
+  "evaluated_at": "2026-11-27 02:12 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
@@ -885,6 +903,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-27 02:12 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-27 02:12 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-27 02:12 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -893,15 +929,15 @@
   ],
   "title": "GTA 6 clothing store location: buy clothes here 👕 #GTA6 #Shorts",
   "video": "output/gta6-clothing-stores-where/gta6-clothing-stores-where-short.mp4",
-  "duration": 15.8,
-  "spec_hash": "6af2c60088fef6c90780fb35577b6a926e28b8f64b37b495accceb6e00acdd72",
-  "evaluated_at": "2026-11-26 15:24 ET",
+  "duration": 15.1,
+  "spec_hash": "e8d41ed3799e246c87b9a94fca045af2e5c40458a03ab37ebc3ae0ed82c0e750",
+  "evaluated_at": "2026-11-27 02:12 ET",
   "blockers": [],
   "reviews": [],
   "advice": [
    "title: 'GTA 6 clothing store location: buy clothes here 👕' is 49 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
   ],
-  "video_sha256": "d827a44a7b7c92123e7ffe0dbc3ba3c87d9ffff7226fe50b749e69d24e30ad06"
+  "video_sha256": "1a4d9ae5c3777f213d2e99ca598d04f907a2ef507fd135a235f76d56ea8e7157"
  },
  "gta6-clothing-stores-where:short:youtube-es": {
   "slug": "gta6-clothing-stores-where",
