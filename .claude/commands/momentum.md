@@ -3,6 +3,13 @@ description: Afternoon momentum check - spot a Short that is taking off and prep
 ---
 Momentum run for Vice Replay. Nobody is watching live: don't ask questions. Read `content/INDEX.md` first.
 
+**Since Nov 26 (owner Phase 3) the scheduled afternoon run is report-only** (its prompt in the scheduled task wins over
+the steps below): it runs `python -m studio.status` + `python -m studio.opportunities` and, when a Short is 3x+ its
+matched baseline with a "ready" verified follow-up not already made or booked, sends one "MOMENTUM: ..." message to the
+main chat, which makes it (`studio.ship`) and places it (`studio.schedule place <slug> --lang en --priority followup`);
+it publishes only through the publishing gate, with no per-video owner approval. The steps below are the old
+owner-approval flow, kept for reference (the title swap in step 0 now runs in the 3:45 AM upload run).
+
 0. Run `python -m studio.title_swap` (owner's standing approval: swaps the title of uploads that underperform after
    24-96 h to their option 2, once). Report any swap in the final message.
 1. Run `python -m studio.learn --mine` (our uploads with views per hour). From `content/learn/channel.json`, take our

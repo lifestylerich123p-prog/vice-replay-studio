@@ -14,10 +14,10 @@
   "How big is the GTA 6 map? 🗺️ #GTA6 #Shorts"
  ],
  "title_rule": "search phrase first ('gta 6 map size')",
- "short_description": "GTA 6 map size: according to Rockstar North, Leonida is about twice the size of GTA 5's map, and Vice City alone is reportedly about double Los Santos. Rockstar has also reportedly said Leonida's landmass is close to GTA 4, GTA 5 and Red Dead Redemption 2 combined. Fan square-mile estimates differ because some include the ocean around the Keys, so there's no exact official figure yet. No story spoilers.\n\nMap: Rockstar Games (official Leonida map). Sources: TweakTown, IBTimes, Dexerto, Insider Gaming, esports.gg.",
+ "short_description": "GTA 6 map size: according to Rockstar North, Leonida is about twice the size of GTA 5's map, and Vice City alone is reportedly about double Los Santos. Rockstar has also reportedly said Leonida's landmass is close to GTA 4, GTA 5 and Red Dead Redemption 2 combined. Fan square-mile estimates differ because some include the ocean around the Keys, so there's no exact official figure yet. No story spoilers.\n\n📍 Map Spot #28 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nMap: Rockstar Games (official Leonida map). Sources: TweakTown, IBTimes, Dexerto, Insider Gaming, esports.gg.",
  "short_es": {
   "title": "GTA 6: qué tan GRANDE es el mapa 🗺️ #GTA6 #Shorts",
-  "description": "Tamaño del mapa de GTA 6: según Rockstar North, Leonida mide más o menos el doble que el mapa de GTA 5, y Vice City sola sería el doble que Los Santos. Rockstar también habría dicho que la tierra de Leonida se acerca a GTA 4, GTA 5 y Red Dead Redemption 2 juntos. Las cifras de los fans cambian porque algunas cuentan el mar de los cayos: no hay un número oficial exacto. Sin spoilers.\n\nMapa: Rockstar Games (mapa oficial de Leonida). Fuentes: TweakTown, IBTimes, Dexerto, Insider Gaming, esports.gg.",
+  "description": "Tamaño del mapa de GTA 6: según Rockstar North, Leonida mide más o menos el doble que el mapa de GTA 5, y Vice City sola sería el doble que Los Santos. Rockstar también habría dicho que la tierra de Leonida se acerca a GTA 4, GTA 5 y Red Dead Redemption 2 juntos. Las cifras de los fans cambian porque algunas cuentan el mar de los cayos: no hay un número oficial exacto. Sin spoilers.\n\n📍 Lugar #28 de nuestra serie del mapa de GTA 6: todos están en la lista \"GTA 6 Map: Where to Find It\".\n\nMapa: Rockstar Games (mapa oficial de Leonida). Fuentes: TweakTown, IBTimes, Dexerto, Insider Gaming, esports.gg.",
   "tags": [
    "GTA 6 mapa",
    "GTA 6 tamaño del mapa",
@@ -354,5 +354,8 @@
    }
   }
  ],
- "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: vice-city-12 -> vice-city-11 (guns / character close-ups / swimwear / drinking are not allowed)."
+ "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: vice-city-12 -> vice-city-11 (guns / character close-ups / swimwear / drinking are not allowed).",
+ "spot": 28,
+ "cta": "SPOT #29 NEXT: FOLLOW",
+ "cta_es": "LUGAR #29 PRONTO: SÍGUENOS"
 }

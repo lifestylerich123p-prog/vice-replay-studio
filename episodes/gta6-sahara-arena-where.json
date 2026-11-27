@@ -14,10 +14,10 @@
   "GTA 6 Sahara Arena location: Miami's real Heat arena 🏀 #GTA6 #Shorts"
  ],
  "title_rule": "Map Shorts lead with the search phrase ('gta 6 sahara arena', 'gta 6 kaseya center')",
- "short_description": "GTA 6 Sahara Arena location: it's labelled on Rockstar's official map in Downtown Vice City, on the bay east of Crosstown, the same spot Miami's Kaseya Center (home of the Miami Heat) holds in real life. Fan guides and GTA Wiki call it GTA 6's Kaseya Center (Rockstar hasn't said so). In real life, on November 18, 2026, the Heat hosted \"A Night in Vice City\" at Kaseya Center: Vice City jerseys (Nike, Cactus Jack, Rockstar) and a Vice City court. No story spoilers.\n\nSources: Rockstar Games (official map), NBA.com (Miami Heat), ABC7/AP, GTABoom, GTA Wiki, Yardbarker, GTA6 Intel.",
+ "short_description": "GTA 6 Sahara Arena location: it's labelled on Rockstar's official map in Downtown Vice City, on the bay east of Crosstown, the same spot Miami's Kaseya Center (home of the Miami Heat) holds in real life. Fan guides and GTA Wiki call it GTA 6's Kaseya Center (Rockstar hasn't said so). In real life, on November 18, 2026, the Heat hosted \"A Night in Vice City\" at Kaseya Center: Vice City jerseys (Nike, Cactus Jack, Rockstar) and a Vice City court. No story spoilers.\n\n📍 Map Spot #8 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nSources: Rockstar Games (official map), NBA.com (Miami Heat), ABC7/AP, GTABoom, GTA Wiki, Yardbarker, GTA6 Intel.",
  "short_es": {
   "title": "GTA 6: el KASEYA Center de Vice City 🏀 #GTA6 #Shorts",
-  "description": "El Sahara Arena de GTA 6 está en el mapa oficial de Rockstar: Downtown Vice City, junto a la bahía, al este de Crosstown, justo donde está el Kaseya Center de los Miami Heat en la vida real. Las guías de fans y la GTA Wiki lo llaman el Kaseya Center de GTA 6 (Rockstar no lo ha dicho). Y en la vida real, el 18 de noviembre de 2026, los Heat jugaron \"A Night in Vice City\" en el Kaseya Center con camisetas y cancha de Vice City (Nike, Cactus Jack y Rockstar). Sin spoilers.\n\nFuentes: Rockstar Games (mapa oficial), NBA.com (Miami Heat), ABC7/AP, GTABoom, GTA Wiki, Yardbarker.",
+  "description": "El Sahara Arena de GTA 6 está en el mapa oficial de Rockstar: Downtown Vice City, junto a la bahía, al este de Crosstown, justo donde está el Kaseya Center de los Miami Heat en la vida real. Las guías de fans y la GTA Wiki lo llaman el Kaseya Center de GTA 6 (Rockstar no lo ha dicho). Y en la vida real, el 18 de noviembre de 2026, los Heat jugaron \"A Night in Vice City\" en el Kaseya Center con camisetas y cancha de Vice City (Nike, Cactus Jack y Rockstar). Sin spoilers.\n\n📍 Lugar #8 de nuestra serie del mapa de GTA 6: todos están en la lista \"GTA 6 Map: Where to Find It\".\n\nFuentes: Rockstar Games (mapa oficial), NBA.com (Miami Heat), ABC7/AP, GTABoom, GTA Wiki, Yardbarker.",
   "tags": [
    "GTA 6 Sahara Arena",
    "GTA 6 Kaseya Center",
@@ -334,5 +334,8 @@
  "hook_type": "comparison",
  "hook_type_es": "comparison",
  "first_frame": "map-pin (zoom): Sahara Arena pinned on Rockstar's official map",
- "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: vice-city-12 -> vice-city-10 (guns / character close-ups / swimwear / drinking are not allowed)."
+ "safety_note": "Phase 9 (Nov 26): card backgrounds outside the vetted pool (studio/cardphotos.py POOL) replaced: vice-city-12 -> vice-city-10 (guns / character close-ups / swimwear / drinking are not allowed).",
+ "spot": 8,
+ "cta": "SPOT #9 NEXT: FOLLOW",
+ "cta_es": "LUGAR #9 PRONTO: SÍGUENOS"
 }

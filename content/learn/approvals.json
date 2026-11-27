@@ -447,6 +447,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 19:49 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 19:49 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 19:49 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -455,13 +473,13 @@
   ],
   "title": "GTA 6 esconde a las TORTUGAS NINJA: aquí están 🐢 #GTA6 #Shorts",
   "video": "output/gta6-ninja-turtles-where/gta6-ninja-turtles-where-short-es.mp4",
-  "duration": 16.1,
-  "spec_hash": "e90a9a83056049523ad8b2cfe8d6d14a5e2c03b1a9f34d2e82f83b9c5cd3b6b9",
-  "evaluated_at": "2026-11-26 18:51 ET",
+  "duration": 16.0,
+  "spec_hash": "d787738d0fbb6ffe5fbf9c9d844aa0708373350e41fdc7a2d29d72fe31c6d63f",
+  "evaluated_at": "2026-11-26 19:49 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "78ecd67153880f6eb772a674a2503338c6747e7b9b6100320c8095e4eb7bd88e"
+  "video_sha256": "d4f7e5bb2f390e2912bc1428dd49f4c4f80818d5e1e328f2b246082dc3659c68"
  },
  "gta6-silent-hill-hotel:short:youtube-es": {
   "slug": "gta6-silent-hill-hotel",
@@ -738,6 +756,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 19:47 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 19:47 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 19:47 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -747,12 +783,12 @@
   "title": "GTA 6 barber shop location: the closest one 💈 #GTA6 #Shorts",
   "video": "output/gta6-barber-shop-where/gta6-barber-shop-where-short.mp4",
   "duration": 12.2,
-  "spec_hash": "13890b6092598c064cdcacdcbcb974f587d9047ef5b957530e7b69f71b8c66b9",
-  "evaluated_at": "2026-11-26 15:23 ET",
+  "spec_hash": "c8a0a5a7a261cd9c2c8837aedc5125620c1c275a97c487dba2080ea52f15a6cb",
+  "evaluated_at": "2026-11-26 19:47 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "47a63a8b04531d6c8890d7ec51254784e626d606ade22fb0d169449eadad0b0e"
+  "video_sha256": "b38ea7499164740e4415deade677294764cfef12fb4b6678804d058ac46b981b"
  },
  "gta6-clothing-stores-where:short:youtube-en": {
   "slug": "gta6-clothing-stores-where",
