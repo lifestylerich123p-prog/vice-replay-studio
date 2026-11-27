@@ -271,6 +271,8 @@ Read this first instead of searching the repo.
 | 2026-11-24 | /guides/gta-6-trophies/ | GTA 6 Trophies: How Hard Is the Platinum? (55 Trophies, 100%) |
 | 2026-11-21 | /guides/gta-6-ultimate-edition/ | Is GTA 6 Ultimate Edition Worth It? The 5 Shops Only It Unlocks (No Spoilers) |
 | 2026-11-18 | /guides/gta-6-vs-gta-5/ | GTA 6 vs GTA 5: The Biggest Differences Explained |
+| 2026-11-26 | /es/guias/gta-6-xbox-almacenamiento/ | GTA 6 en Xbox: cuánto espacio ocupa y si cabe en la Series S |
+| 2026-11-26 | /guides/gta-6-xbox-storage-size/ | GTA 6 Xbox Storage Size: Will It Fit on Series S? (Series S vs X) |
 | 2026-11-24 | /es/guias/mapa-gta-6/ | Mapa de GTA 6: mapa oficial en HD e interactivo, con secretos |
 | 2026-11-19 | /es/guias/mejor-ssd-gta-6/ | Mejor SSD para GTA 6 en PS5 (212 GB): qué comprar y qué evitar |
 | 2026-11-24 | /es/guias/ofertas-gta-6/ | GTA 6: ofertas y códigos de descuento reales esta semana |
