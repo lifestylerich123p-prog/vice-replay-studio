@@ -259,6 +259,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -268,12 +286,12 @@
   "title": "GTA 6 Backrooms location: here it is 🚪 #GTA6 #Shorts",
   "video": "output/gta6-backrooms-where/gta6-backrooms-where-short.mp4",
   "duration": 13.9,
-  "spec_hash": "5d6dc62e56b26cc1c6628265a1c09ab379691335bb4a9ea43303dbcf346f2b13",
-  "evaluated_at": "2026-11-26 15:23 ET",
+  "spec_hash": "2a7441ca2f6bfc8de937424719f6104606809107f39ad46451c5b0fa1bc997cc",
+  "evaluated_at": "2026-11-26 20:51 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "5c7b955c90c151296b17c927e3ff83bd18818c787b8131a5addfe9e536d51b67"
+  "video_sha256": "9b23b219775b1144df9478d31161c234e8aa8b62081627b625d374f967820bf9"
  },
  "gta6-skunk-ape-where:short:youtube-en": {
   "slug": "gta6-skunk-ape-where",
@@ -576,6 +594,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -585,12 +621,12 @@
   "title": "GTA 6: el SECRETO de Silent Hill (clave 955214) 😱 #GTA6 #Shorts",
   "video": "output/gta6-silent-hill-hotel/gta6-silent-hill-hotel-short-es.mp4",
   "duration": 21.0,
-  "spec_hash": "264ad47c2722ea9f7925d052d0c5725ba2b054405035e935487e8756e4049c53",
-  "evaluated_at": "2026-11-26 15:23 ET",
+  "spec_hash": "64ac6bd1b0f56c545b49d5e65e35422bf992d45f66f05f4e86db4aa666ccbffe",
+  "evaluated_at": "2026-11-26 20:51 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "3a0e5ae08848e44c937dd5950f5f24d11741000fdc479cabe9f73403a977ecfa"
+  "video_sha256": "76d7d04e8e8486605d8bf4980ad4d285da056e78d946ebeabf2ed11798289d1d"
  },
  "gta6-backrooms-where:short:youtube-es": {
   "slug": "gta6-backrooms-where",
@@ -681,6 +717,24 @@
     "QA_PASSED",
     "AUTO_APPROVED",
     "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "AUTO_APPROVED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -690,12 +744,12 @@
   "title": "GTA 6: los BACKROOMS existen y así se entra 😨 #GTA6 #Shorts",
   "video": "output/gta6-backrooms-where/gta6-backrooms-where-short-es.mp4",
   "duration": 16.4,
-  "spec_hash": "f0f5ff0e0ea7f7d27e1e61bb5b4a2962a7ee810134bb8ed55fbf4b33386fe79f",
-  "evaluated_at": "2026-11-26 15:23 ET",
+  "spec_hash": "fa8af5457bc9b9818f90930ca166773784654746e8446bbc1f070840fea712c4",
+  "evaluated_at": "2026-11-26 20:51 ET",
   "blockers": [],
   "reviews": [],
   "advice": [],
-  "video_sha256": "cd8c920bef2fe68504e6e60c48ab9a29effa72fcfbff70ae2b21b0bf929f673b"
+  "video_sha256": "a30fbf88b15b50b6767dd23d976f66f8f295820ed9ec5bcac3d1343bc987cc68"
  },
  "gta6-barber-shop-where:short:youtube-en": {
   "slug": "gta6-barber-shop-where",
@@ -1032,7 +1086,7 @@
   "slug": "gta6-tattoo-shops-where",
   "item": "short",
   "platform": "youtube-en",
-  "state": "BLOCKED",
+  "state": "NEEDS_REVIEW",
   "history": [
    [
     "2026-11-26 15:24 ET",
@@ -1045,6 +1099,24 @@
     "RENDERED",
     "BLOCKED",
     "gta6-tattoo-shops-where-short.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-tattoo-shops-where.json --short)"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "BLOCKED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 20:51 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
    ]
   ],
   "publish": [
@@ -1054,16 +1126,14 @@
   "title": "GTA 6 tattoo shops: the first one 🖋️ #GTA6 #Shorts",
   "video": "output/gta6-tattoo-shops-where/gta6-tattoo-shops-where-short.mp4",
   "duration": 18.3,
-  "spec_hash": "057aa3af7573cfd14d22c436d696701fe8d3ff40f97440ad083f7c8ddeeb2725",
-  "evaluated_at": "2026-11-26 15:24 ET",
-  "blockers": [
-   "gta6-tattoo-shops-where-short.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-tattoo-shops-where.json --short)"
-  ],
+  "spec_hash": "9d7e0e58556ea6c6897a0983c4ea5a66dd6731bef921b24eeba20c0c22386fa3",
+  "evaluated_at": "2026-11-26 20:51 ET",
+  "blockers": [],
   "reviews": [
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
   ],
   "advice": [],
-  "video_sha256": "a00163654e958b4236b8347435bdef9247619565a8154f32be238534303a0af1"
+  "video_sha256": "b1fade31d7ed10e68074de2c9e4d56a82918dc003c4ac51651f7cf58d26e8984"
  },
  "gta6-map-checklist:short:youtube-en": {
   "slug": "gta6-map-checklist",
@@ -1114,7 +1184,7 @@
   "slug": "gta6-vice-city-real-miami",
   "item": "short",
   "platform": "youtube-es",
-  "state": "BLOCKED",
+  "state": "NEEDS_REVIEW",
   "history": [
    [
     "2026-11-26 15:24 ET",
@@ -1127,27 +1197,62 @@
     "RENDERED",
     "BLOCKED",
     "gta6-vice-city-real-miami-short-es.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-vice-city-real-miami.json --short --es); rendered title 'V"
+   ],
+   [
+    "2026-11-26 20:52 ET",
+    "BLOCKED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 20:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 20:52 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-26 20:52 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-26 20:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-26 20:52 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
    "2026-11-30",
    "12:30 PM"
   ],
-  "title": "Vice City es MIAMI de verdad: 5 lugares 🌴 #GTA6 #Shorts",
+  "title": "GTA 6: Vice City es MIAMI de verdad (5 lugares) 🌴 #GTA6 #Shorts",
   "video": "output/gta6-vice-city-real-miami/gta6-vice-city-real-miami-short-es.mp4",
-  "duration": 20.4,
-  "spec_hash": "fce56197f99de97c4ac11008490fb4b94bf676725ced18688d2d75d2ba06bbc2",
-  "evaluated_at": "2026-11-26 15:24 ET",
-  "blockers": [
-   "gta6-vice-city-real-miami-short-es.mp4: what it's made of changed since it was rendered: re-render (python -m studio.make_video episodes/gta6-vice-city-real-miami.json --short --es)",
-   "rendered title 'Vice City es MIAMI de verdad: 5 lugares 🌴 #GTA6 #Shorts' differs from the episode's 'GTA 6: Vice City es MIAMI de verdad (5 lugares) 🌴 #GTA6 #Shorts': re-render"
-  ],
+  "duration": 23.0,
+  "spec_hash": "d08527984d2ea69219e4a41a5ae9285a4e3de2c4afa32efefdf2d5515204d3a4",
+  "evaluated_at": "2026-11-26 20:52 ET",
+  "blockers": [],
   "reviews": [
-   "facts not re-checked before posting (python -m studio.approvals factcheck ...)",
-   "title doesn't start with GTA 6: 'Vice City es MIAMI de verdad: 5 lugares 🌴 #GTA6 #Shorts'"
+   "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
   ],
-  "advice": [],
-  "video_sha256": "6bb44f942bfeb2ce2eddfc8746608f860d616632cbc15806da1e015f0e462853"
+  "advice": [
+   "title: 'GTA 6 real life locations: Vice City vs Miami 🌴' is 47 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
+  ],
+  "video_sha256": "c3e8f12394c4ab069b2fc08a5dc8a6ef01ff013552280acfd333bb9e345bb816"
  },
  "gta6-fishing-pays:short:youtube-en": {
   "slug": "gta6-fishing-pays",
