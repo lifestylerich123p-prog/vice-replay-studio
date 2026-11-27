@@ -73,6 +73,19 @@ summarised by several API guides (Google's own page could not be opened from the
 Cloud Console → APIs → YouTube Data API v3 → Quotas). The general 10,000-unit pool now only pays for playlists,
 comments, thumbnails, reads and searches. `studio/quota.py` and `studio/spend.py` were updated Nov 26.
 
+## Autonomous publishing cycle: OPERATIONAL (verified Fri Nov 27, 2026, 8:35 AM ET)
+First full real cycle, every step with evidence (details: content/learn/lessons.md, cycle checks 1-3):
+- 2:04 AM nightly prep: facts re-checked (mask, clothing stores; a disputed shop label cut and re-rendered), 0 open comments.
+- 3:45 AM upload run: 8 Shorts passed the gate and were uploaded scheduled (4 EN, 4 ES); 60 later items held (facts not
+  due yet); none of the held items uploaded; map series synced.
+- 4:41 AM cycle check 1: all 8 private on the right channel with publishAt = slot and the right title; no duplicates.
+- 5:13 AM helper run: claude/daily-2026-11-27 pushed with manifest; 6:31 AM cycle check 2 PASS; merged by the main chat
+  8:33 AM after the SHA-256 manifest check (8/8 content files identical).
+- 8:00 AM: the first automatically published Short went public on Vice Replay at 8:00:04 AM ET:
+  https://youtube.com/shorts/YlVyesTxTZg (gta6-mask-where); comment posted and read back; Data API picks it up
+  (YouTube Analytics lags 1-2 days); 0 Everygen credits.
+Still to watch daily (studio.cycle + the 1 PM report): every later slot verified public only after YouTube says so.
+
 ## Phase 7 operational settings: where each one lives (no duplicate config files)
 | Area (owner Phase 7 #33) | Where it is set |
 |---|---|
