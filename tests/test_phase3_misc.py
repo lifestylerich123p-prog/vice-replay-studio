@@ -31,6 +31,9 @@ def test_mix_categories():
     assert mix.category({"slug": "gta6-barber-shop-where", "short": [{"chart": {"type": "map"}}]}) == "location"
     assert mix.category({"slug": "x", "experiment": True}) == "experimental"
     assert sum(mix.targets().values()) == 100
+    # owner Phase 10 #7: map-scale visualizations are their own category (even when marked as an experiment)
+    assert mix.category({"slug": "gta6-map-size-scale", "experiment": True}) == "map_scale"
+    assert mix.targets()["map_scale"] == 10 and mix.targets()["location"] == 35
 
 
 def test_xplat_keeps_platforms_separate():

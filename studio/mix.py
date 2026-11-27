@@ -16,7 +16,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT = {"location": 40, "secrets": 25, "gameplay": 15, "map_tutorial": 10, "experimental": 10}
+DEFAULT = {"location": 35, "secrets": 25, "map_tutorial": 20, "map_scale": 10, "experimental": 10, "gameplay": 0}
 SECRET = re.compile(r"easter egg|secret|secreto|hidden|bigfoot|skunk ape|ufo|ghost|portal|backrooms|silent hill|turtles|"
                     r"red dead|dexter|crab|panther|bear|fox|alligator", re.I)
 
@@ -37,6 +37,9 @@ def category(ep):
         return "map_tutorial"
     if "media/gameplay" in blob or ep.get("gameplay_experiment"):
         return "gameplay"
+    blob_t = " ".join([ep.get("slug", ""), ep.get("short_title") or "", ep.get("format") or ""])
+    if ep.get("map_scale") or re.search(r"map[- ]size|map[- ]scale|how big|tama[nñ]o del mapa", blob_t, re.I):
+        return "map_scale"  # owner Phase 10 #7: map-scale visualizations are their own 10%
     if ep.get("experiment"):
         return "experimental"
     text = " ".join([ep.get("slug", ""), ep.get("short_title") or ""])

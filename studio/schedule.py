@@ -6,7 +6,8 @@ with videos that are already publicly scheduled without a documented reason").
 
 Puts an item into the earliest plan slot (EN 8:00 AM / 6:00 PM, ES 12:30 PM / 7:00 PM; config auto_publish*.slots)
 that is free, or held by a WEAKER item that can still move: not uploaded (registry), not past the gate into
-UPLOADING / SCHEDULED / PUBLISHED, no "pinned": true, and weaker = lower priority class or (same class) a category
+UPLOADING / SCHEDULED / PUBLISHED, no "pinned": true, not a numbered map-series Short and not already rendered
+(owner Phase 4: only unproduced concepts move; Phase 10: never displace approved videos unnecessarily), and weaker = lower priority class or (same class) a category
 that's over its content_mix target while the new one is under. The moved item goes to the first free plan slot after
 the window, with "moved_by" + reason on it. Never touches an uploaded or scheduled video.
 """
@@ -30,12 +31,31 @@ def _registry(lang):
     return {(r.get("slug"), r.get("item", "short")) for r in reg.values()}
 
 
+def _series_member(it):
+    """A numbered map Short (studio/mapseries.py): moving it would renumber every later spot."""
+    try:
+        ep = json.loads((ROOT / "episodes" / f"{it['slug']}.json").read_text())
+    except (OSError, ValueError):
+        return False
+    return ep.get("series") == "Map Spots" or ep.get("spot") is not None or ep.get("spot_es") is not None
+
+
+def _rendered(it, lang):
+    """The item's video for this language is already produced (owner Phase 4: only UNPRODUCED concepts may move)."""
+    slug = it["slug"]
+    return (ROOT / "output" / slug / f"{slug}-short{'-es' if lang == 'es' else ''}.mp4").exists()
+
+
 def movable(it, lang, uploaded, store):
     if it.get("pinned") or (it["slug"], it.get("item", "short")) in uploaded:
         return False
     rec = store.get(approvals.key_of(it["slug"], it.get("item", "short"), "youtube-es" if lang == "es" else "youtube-en"))
     # anything that already passed the gate keeps its slot (its approval is bound to it)
-    return not (rec and rec.get("state") in ("AUTO_APPROVED", "UPLOADING", "SCHEDULED", "PUBLISHED"))
+    if rec and rec.get("state") in ("AUTO_APPROVED", "UPLOADING", "SCHEDULED", "PUBLISHED"):
+        return False
+    # Phase 10 (Nov 27: it moved the numbered, rendered tattoo Short #7 to Dec 15): never displace a numbered map Short
+    # or a finished video; only weaker, unproduced concepts make way, otherwise the new item takes a free slot
+    return not _series_member(it) and not _rendered(it, lang)
 
 
 def category_of(slug):

@@ -98,12 +98,13 @@
     "_note": "Nov 24 owner approved: official screenshots (vetted pool, exact-name first) behind lettering cards in videos; trailer clips stay out"
   },
   "content_mix": {
-    "location": 45,
+    "location": 35,
     "secrets": 25,
-    "gameplay": 0,
     "map_tutorial": 20,
+    "map_scale": 10,
     "experimental": 10,
-    "_note": "Phase 3 targets 40/25/15/10/10; Phase 4 (owner Nov 26): gameplay footage isn't available yet, so its 15% goes to location (+5) and map tutorials (+10) until the owner's recordings arrive (rights/gameplay-sources.md). Never drop a format on one video (python -m studio.mix)"
+    "gameplay": 0,
+    "_note": "Owner Phase 10 #7 (Nov 26; applied Nov 27 after the verified cycle): while independently licensed gameplay is unavailable, 35% location guides / 25% numbered secrets and discoveries / 20% interactive map tutorials / 10% map-scale visualizations / 10% other controlled experiments. Starting targets, not quotas: adjust from audience results, never drop a format on one video, never invent discoveries to fill a share, never displace approved videos to fix the mix. (Phase 3/4 history: 40/25/15/10/10, then 45/25/0/20/10 without gameplay.)"
   },
   "auto_publish": {
     "on": true,

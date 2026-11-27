@@ -53,3 +53,18 @@ def test_never_moves_uploaded_or_gate_approved_items():
         assert r["moved"] is None or r["moved"]["slug"] not in ("secret-up", "secret-ok")
     except ValueError:
         pass  # nothing else movable: refusing is correct
+
+
+def test_never_moves_a_numbered_map_short_or_a_finished_video(monkeypatch):
+    """Phase 10 (Nov 27): place moved the numbered, rendered tattoo Short #7 to make room; now the new item takes the
+    first FREE slot instead, and only unproduced, unnumbered concepts can make way."""
+    items = full(3)
+    items[1]["slug"] = "secret-mapspot"   # numbered map Short
+    items[3]["slug"] = "secret-rendered"  # finished video
+    monkeypatch.setattr(schedule, "_series_member", lambda it: it["slug"] == "secret-mapspot")
+    monkeypatch.setattr(schedule, "_rendered", lambda it, lang: it["slug"] == "secret-rendered")
+    qq = q(*items)
+    r = run(qq, "tut", {"tut": "map_tutorial", "secret-mapspot": "secrets", "secret-rendered": "secrets"}, within=5)
+    assert r["moved"] is None
+    assert r["placed"]["en"] == [(NOW.date() + dt.timedelta(days=4)).isoformat(), "8:00 AM"]  # first free slot
+    assert {i["slug"]: i["en"] for i in qq["items"]}["secret-mapspot"] == items[1]["en"]
