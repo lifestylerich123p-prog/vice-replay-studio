@@ -968,6 +968,32 @@
     "2026-12-10",
     "7:00 PM"
    ]
+  },
+  {
+   "slug": "gta6-hunting-where",
+   "item": "short",
+   "en": [
+    "2026-12-15",
+    "8:00 AM"
+   ],
+   "es": [
+    "2026-12-13",
+    "7:00 PM"
+   ],
+   "approved": "Phase 3/10 autonomous: helper run Nov 27 (claude/daily-2026-11-27, manifest SHA-256 verified, merged by the main chat 8:35 AM ET; vice publish 0 blockers). Booked in free slots only (no approved video displaced). Publishes only if the gate passes. Follow-up of the underwater-money winner (studio.opportunities: hunting-spots)."
+  },
+  {
+   "slug": "gta6-fast-travel-skip",
+   "item": "short",
+   "en": [
+    "2026-12-15",
+    "6:00 PM"
+   ],
+   "es": [
+    "2026-12-14",
+    "12:30 PM"
+   ],
+   "approved": "Phase 3/10 autonomous: helper run Nov 27 (claude/daily-2026-11-27, manifest SHA-256 verified, merged by the main chat 8:35 AM ET; vice publish 0 blockers). Booked in free slots only (no approved video displaced). Publishes only if the gate passes. How-to; RydeMe unlock chapter disputed between guides -> says 'later'."
   }
  ],
  "paused": [
