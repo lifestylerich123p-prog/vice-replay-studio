@@ -56,3 +56,8 @@ resources/shorts-tiktok-playbook.md, docs/vice-system.md and content/game-awards
 schedule in config/channel.json (EN 8:00 AM + 6:00 PM, ES 12:30 PM + 7:00 PM, max 2 a day each). The scheduler
 (`studio.schedule place`) books new Shorts in free slots and never displaces a numbered map Short or a finished video.
 Recurring jobs were renamed "Vice Replay · <time ET> <what it does>" (names only).
+
+## Paused Fri Nov 27 - Mon Nov 30 (owner low on weekly usage: "until Sunday work on your own")
+Breaking news (trig_01MTxMGMgd8nF44C6VxmmFHZ, ends Nov 30 anyway), momentum (trig_01BDJUjM9FysWFCqmPJsfA4s) and 9:13 PM
+comment replies (trig_01T8agB7rbk9ewL6C1w314Zr) are off; the 2:04 AM run and the 1 PM report cover their work.
+trig_01HQkXuqynQDcEhJPVHzDJKL (Mon Nov 30 12:50 PM ET) re-enables momentum + replies. Everything else runs as listed.
