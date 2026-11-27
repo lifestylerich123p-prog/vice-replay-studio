@@ -25,6 +25,12 @@
    "step": "render",
    "message": "Renders: gta6-hunting-where + gta6-fast-travel-skip (EN+ES), QA 0 blockers",
    "files": 2
+  },
+  {
+   "at": "2026-11-27T10:35:29.070417+00:00",
+   "step": "report",
+   "message": "Daily run report",
+   "files": 0
   }
  ],
  "files": {
