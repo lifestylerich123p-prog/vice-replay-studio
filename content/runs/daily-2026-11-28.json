@@ -25,6 +25,12 @@
    "step": "report",
    "message": "Daily run report",
    "files": 0
+  },
+  {
+   "at": "2026-11-28T10:24:32.471148+00:00",
+   "step": "report",
+   "message": "Bookings: slot note updated to current queue",
+   "files": 1
   }
  ],
  "files": {
@@ -36,7 +42,7 @@
   "site/map-pins.json": "66c3fbbc8743c962e47d43ac71ac03c2bcce605b191f62aa0952f3d8dc5055f2",
   "content/INDEX.md": "54fb699bfc58c2433a73f4c35c33a82d4ec8949e4b91e4346f323e87a6cc665a",
   "content/learn/quota.json": "d6dcea279a6e2388e39cf0b04dd91cd9ca8ee404ad9baed8591f2cc2d3176f00",
-  "content/runs/daily-2026-11-28-bookings.json": "cf053d088e84034503e69f808dde81714daddaa1cd24fbbbe92787f25a29e96c",
+  "content/runs/daily-2026-11-28-bookings.json": "d912691ea4d71620bda6c0085444fb2fecf63c7f0b63b69cddeca8bc6b536b48",
   "database/vice.db": "905280d5822c9c9f1e06e586186dd28af2fb62befa684a0828ee57242fed3820"
  }
 }
