@@ -1,0 +1,248 @@
+{
+ "series": "How To",
+ "format": "tutorial",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards on official photos, Nov 28)",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-skip-time-sleep",
+ "title": "GTA 6: How to Skip Time (Sleep to Change Day or Night)",
+ "short_title": "GTA 6 how to skip time: sleep 🛏️ #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 how to skip time: sleep 🛏️ #GTA6 #Shorts",
+  "GTA 6 has no clock cheat. Use the bed #GTA6 #Shorts",
+  "How do you make it night in GTA 6? #GTA6 #Shorts"
+ ],
+ "title_rule": "search phrase first ('gta 6 how to skip time', 'gta 6 change time of day')",
+ "hook_type": "statement",
+ "first_frame": "kinetic card 'SKIP TO NIGHT' on a Vice City photo",
+ "short_description": "How to skip time in GTA 6: go to any safehouse you've unlocked, use the bed and pick when you want to wake up. The clock jumps straight there: handy for night jobs or a sunset drive. Tip from the guides: make a manual save after you wake up. Taxis can take you home if you're far away. No story spoilers.\n\nSources: KeenGamer, Video Games Chronicle, PowerPyx, TalkEsport.\n\nMore GTA 6 how-tos at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: cómo PASAR el tiempo 🛏️ #GTA6 #Shorts",
+  "description": "Cómo pasar el tiempo en GTA 6: ve a cualquier refugio desbloqueado, usa la cama y elige a qué hora despertar. El reloj salta directo: ideal para trabajos de noche. Consejo: guarda la partida al despertar. Fuentes: KeenGamer, Video Games Chronicle, PowerPyx.",
+  "tags": [
+   "GTA 6 pasar el tiempo",
+   "GTA 6 dormir",
+   "GTA 6 noche",
+   "GTA 6 español",
+   "GTA 6 trucos"
+  ]
+ },
+ "pinned_comment": "Day or night player? Reply ☀️ or 🌙 👇",
+ "short_pinned_comment_es": "¿Juegas de día o de noche? Responde ☀️ o 🌙 👇",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts",
+ "tags": [
+  "GTA 6 how to skip time",
+  "GTA 6 sleep",
+  "GTA 6 change time of day",
+  "GTA 6 night",
+  "GTA 6 safehouse",
+  "GTA 6 tips",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips"
+ ],
+ "sources": [
+  "KeenGamer - How to skip time and sleep in GTA 6: https://www.keengamer.com/articles/guides/how-to-skip-time-and-sleep-in-gta-6-day-length-and-best-time-for-crimes/",
+  "Video Games Chronicle - How to change the time of day in GTA 6: https://www.videogameschronicle.com/guide/how-to-change-the-time-of-day-in-gta-6/",
+  "TalkEsport - How to change time of day in GTA 6: https://www.talkesport.com/gta-6/how-to-change-time-of-day-gta-6/",
+  "PowerPyx (GTA 6 guide): https://www.powerpyx.com/?p=370476"
+ ],
+ "facts_note": "Nov 28 web search (search summaries; page fetches blocked by the network, re-check before upload): sleep in a safehouse bed, pick the wake-up time, clock jumps (KeenGamer, VGC, TalkEsport); manual save after waking (one guide, phrased as a tip); bed is not a save point (our no-mission-replay facts). Exact wake times single-source: left out. Older preview pages saying 'not announced' are pre-launch. Claim status: community-found.",
+ "short": [
+  {
+   "headline": "SKIP TO NIGHT",
+   "headline_es": "SALTA A LA NOCHE",
+   "text": "Night in GTA 6 is one bed away.",
+   "text_es": "La noche en GTA seis está a una cama de distancia.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "SKIP TO",
+     "NIGHT"
+    ],
+    "pink": [
+     "NIGHT"
+    ],
+    "sub": "GTA 6 time skip",
+    "seed": 301,
+    "bg": "photo:media/official/vice-city-22.jpg"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "SALTA A LA",
+     "NOCHE"
+    ],
+    "pink": [
+     "NOCHE"
+    ],
+    "sub": "pasar el tiempo",
+    "seed": 301,
+    "bg": "photo:media/official/vice-city-22.jpg"
+   }
+  },
+  {
+   "headline": "3 STEPS",
+   "headline_es": "3 PASOS",
+   "text": "Go to a safehouse, use the bed, pick your wake-up time.",
+   "text_es": "Ve a un refugio, usa la cama y elige a qué hora despertar.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "bg": "vice",
+    "title": "HOW TO SKIP TIME",
+    "items": [
+     [
+      "1. Any safehouse",
+      "YES"
+     ],
+     [
+      "2. Use the bed",
+      "YES"
+     ],
+     [
+      "3. Pick wake-up",
+      "YES"
+     ]
+    ]
+   },
+   "chart_es": {
+    "type": "list",
+    "bg": "vice",
+    "title": "PASAR EL TIEMPO",
+    "items": [
+     [
+      "1. Cualquier refugio",
+      "SÍ"
+     ],
+     [
+      "2. Usa la cama",
+      "SÍ"
+     ],
+     [
+      "3. Elige la hora",
+      "SÍ"
+     ]
+    ]
+   }
+  },
+  {
+   "headline": "CLOCK JUMPS",
+   "headline_es": "EL RELOJ SALTA",
+   "text": "The clock jumps straight there.",
+   "text_es": "El reloj salta directo a esa hora.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Pick your hour. The clock jumps",
+    "pink": [
+     "jumps"
+    ],
+    "src": "KeenGamer · VGC · TalkEsport",
+    "seed": 302,
+    "bg": "photo:media/official/vice-city-27.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Elige la hora. El reloj salta",
+    "pink": [
+     "salta"
+    ],
+    "src": "KeenGamer · VGC · TalkEsport",
+    "seed": 302,
+    "bg": "photo:media/official/vice-city-27.jpg"
+   }
+  },
+  {
+   "headline": "THEN SAVE",
+   "headline_es": "LUEGO GUARDA",
+   "text": "Then make a manual save. The bed doesn't save for you.",
+   "text_es": "Luego guarda a mano. La cama no guarda por ti.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Bed ≠ save. Save after you wake up",
+    "pink": [
+     "Save"
+    ],
+    "src": "KeenGamer",
+    "seed": 303,
+    "bg": "photo:media/official/leonida-keys-02.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Cama ≠ guardar. Guarda al despertar",
+    "pink": [
+     "Guarda"
+    ],
+    "src": "KeenGamer",
+    "seed": 303,
+    "bg": "photo:media/official/leonida-keys-02.jpg"
+   }
+  },
+  {
+   "headline": "OUR TAKE",
+   "headline_es": "NUESTRA OPINIÓN",
+   "text": "Our take: Vice City at night is the best view in the game.",
+   "text_es": "Nuestra opinión: Vice City de noche es la mejor vista del juego.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Vice City looks best at night",
+    "pink": [
+     "night"
+    ],
+    "seed": 304,
+    "bg": "photo:media/official/vice-city-17.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Vice City se ve mejor de noche",
+    "pink": [
+     "de noche"
+    ],
+    "seed": 304,
+    "bg": "photo:media/official/vice-city-17.jpg"
+   }
+  },
+  {
+   "headline": "DAY OR NIGHT?",
+   "headline_es": "¿DÍA O NOCHE?",
+   "text": "Day or night player? Comment below, because",
+   "text_es": "¿Juegas de día o de noche? Comenta, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "DAY OR NIGHT?",
+     "COMMENT NOW"
+    ],
+    "pink": [
+     "COMMENT NOW"
+    ],
+    "seed": 305
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿DÍA O NOCHE?",
+     "COMENTA YA"
+    ],
+    "pink": [
+     "COMENTA YA"
+    ],
+    "seed": 305
+   }
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "series": "Map Spots",
+ "format": "news",
+ "mood": "hype",
+ "use_gameplay": false,
+ "style": "vice (lettering cards + official map zoom, Nov 28)",
+ "short_playlist": "GTA 6 Map: Where to Find It",
+ "hashtags": [
+  "GTA6",
+  "GTAVI",
+  "Shorts"
+ ],
+ "slug": "gta6-sell-cars-where",
+ "title": "GTA 6: Where to Sell Stolen Cars (Moses, Port Gellhorn)",
+ "short_title": "GTA 6 where to sell stolen cars 🚗💰 #GTA6 #Shorts",
+ "short_title_options": [
+  "GTA 6 where to sell stolen cars 🚗💰 #GTA6 #Shorts",
+  "GTA 6: Moses won't buy cars stolen near him #GTA6 #Shorts",
+  "Where do you sell cars in GTA 6? #GTA6 #Shorts"
+ ],
+ "title_rule": "search phrase first ('gta 6 where to sell stolen cars'); follow-up of the money winners (3.6x ranked, 7.8x underwater)",
+ "hook_type": "statement",
+ "first_frame": "kinetic card 'SELL STOLEN CARS HERE' on a Port Gellhorn photo",
+ "short_description": "Where to sell stolen cars in GTA 6: Moses in Port Gellhorn (Kelly County) buys cars without a tracker once you've done his Chapter 2 job. He won't take cars stolen right next to his garage, and damage lowers the price. High-end cars with trackers go to Randy later in the story (Chapter 3 in most guides). Payouts in guides vary a lot: check the offer in-game. No story spoilers.\n\nSources: PC Gamer, KeenGamer, GTABase, timesaver.gg.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_es": {
+  "title": "GTA 6: dónde VENDER coches robados 🚗 #GTA6 #Shorts",
+  "description": "Dónde vender coches robados en GTA 6: Moses, en Port Gellhorn, compra coches sin rastreador desde su trabajo del capítulo 2. No acepta coches robados junto a su taller y los daños bajan el precio. Los coches de lujo con rastreador van a Randy, más adelante. Fuentes: PC Gamer, KeenGamer, GTABase.",
+  "tags": [
+   "GTA 6 vender coches",
+   "GTA 6 Moses",
+   "GTA 6 Port Gellhorn",
+   "GTA 6 español",
+   "GTA 6 dinero"
+  ]
+ },
+ "pinned_comment": "Found Moses? Reply ✅ — or 😭 if you're still looking 👇",
+ "short_pinned_comment_es": "¿Encontraste a Moses? Responde ✅ — o 😭 si sigues buscando 👇",
+ "comment_rule": "Nov 26 owner \"DO IT\": one-tap comment prompts",
+ "tags": [
+  "GTA 6 where to sell stolen cars",
+  "GTA 6 sell cars",
+  "GTA 6 Moses",
+  "GTA 6 Port Gellhorn",
+  "GTA 6 Randy",
+  "GTA 6 money",
+  "GTA 6",
+  "GTA VI"
+ ],
+ "tiktok_hashtags": [
+  "#gta6",
+  "#gtavi",
+  "#gta6tips",
+  "#gta6money"
+ ],
+ "sources": [
+  "PC Gamer - GTA 6 fence locations: https://www.pcgamer.com/games/grand-theft-auto/gta-6-fence-locations/",
+  "KeenGamer - How to fence stolen goods, all fence locations: https://www.keengamer.com/articles/guides/how-to-fence-stolen-goods-in-gta-6-all-fence-locations-and-marked-bills/",
+  "GTABase - How to steal cars in GTA 6 (steal, sell, keep): https://www.gtabase.com/articles/gta-6/gta-6-car-stealing-guide-how-to-steal-sell-keep-vehicles",
+  "timesaver.gg - Moses: https://timesaver.gg/tools/gta-6/money/moses",
+  "games.gg - How to sell cars in GTA 6: https://games.gg/grand-theft-auto-vi/guides/how-to-sell-cars-in-grand-theft-auto-6/"
+ ],
+ "facts_note": "Nov 28 web search (search summaries; page fetches blocked by the network, re-check before upload): Moses, Port Gellhorn (Kelly County), Chapter 2, buys cars without trackers; refuses cars stolen near his garage; damage lowers price (timesaver, GTABase, KeenGamer, PC Gamer listed). Randy buys tracked high-end cars, Chapter 3 (our gta-6-make-money guide: GameSpot, GamesRadar). Payouts disagree ($1-3K vs 10K+): not stated. Claim status: community-found.",
+ "short": [
+  {
+   "headline": "SELL CARS HERE",
+   "headline_es": "VENDE AQUÍ",
+   "text": "Stolen cars in GTA 6 sell in Port Gellhorn.",
+   "text_es": "Los coches robados en GTA seis se venden en Port Gellhorn.",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "SELL STOLEN",
+     "CARS HERE"
+    ],
+    "pink": [
+     "CARS HERE"
+    ],
+    "sub": "GTA 6 money",
+    "seed": 291,
+    "bg": "photo:media/official/port-gellhorn-01.jpg"
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "VENDE COCHES",
+     "ROBADOS AQUÍ"
+    ],
+    "pink": [
+     "ROBADOS AQUÍ"
+    ],
+    "sub": "dinero en GTA 6",
+    "seed": 291,
+    "bg": "photo:media/official/port-gellhorn-01.jpg"
+   }
+  },
+  {
+   "headline": "MOSES",
+   "headline_es": "MOSES",
+   "text": "Moses buys them, from Chapter 2.",
+   "text_es": "Moses te los compra, desde el capítulo dos.",
+   "keep_media": true,
+   "chart": {
+    "type": "map",
+    "style": "zoom",
+    "at": "Port Gellhorn",
+    "label": "Moses (cars)",
+    "n": 1,
+    "src": "GTABase · KeenGamer · timesaver"
+   },
+   "chart_es": {
+    "type": "map",
+    "style": "zoom",
+    "at": "Port Gellhorn",
+    "label": "Moses (coches)",
+    "n": 1,
+    "src": "GTABase · KeenGamer · timesaver",
+    "locale": "es"
+   }
+  },
+  {
+   "headline": "NO TRACKERS",
+   "headline_es": "SIN RASTREADOR",
+   "text": "Only cars without a tracker.",
+   "text_es": "Solo coches sin rastreador.",
+   "keep_media": true,
+   "chart": {
+    "type": "list",
+    "bg": "vice",
+    "title": "MOSES BUYS",
+    "items": [
+     [
+      "No tracker",
+      "YES"
+     ],
+     [
+      "Stolen next door",
+      "NO"
+     ],
+     [
+      "Smashed up",
+      "LESS"
+     ]
+    ]
+   },
+   "chart_es": {
+    "type": "list",
+    "bg": "vice",
+    "title": "MOSES COMPRA",
+    "items": [
+     [
+      "Sin rastreador",
+      "SÍ"
+     ],
+     [
+      "Robado al lado",
+      "NO"
+     ],
+     [
+      "Destrozado",
+      "MENOS"
+     ]
+    ]
+   }
+  },
+  {
+   "headline": "NOT NEXT DOOR",
+   "headline_es": "NO AL LADO",
+   "text": "Don't steal it next to his garage. He won't buy it.",
+   "text_es": "No lo robes junto a su taller. No te lo compra.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Stolen near his garage? He says no.",
+    "pink": [
+     "no"
+    ],
+    "src": "timesaver · GTABase",
+    "seed": 292,
+    "bg": "photo:media/official/port-gellhorn-06.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "¿Robado junto a su taller? Dice que no.",
+    "pink": [
+     "no"
+    ],
+    "src": "timesaver · GTABase",
+    "seed": 292,
+    "bg": "photo:media/official/port-gellhorn-06.jpg"
+   }
+  },
+  {
+   "headline": "TRACKED? RANDY",
+   "headline_es": "¿RASTREADOR? RANDY",
+   "text": "Our take: save the tracked supercars for Randy later.",
+   "text_es": "Nuestra opinión: guarda los coches con rastreador para Randy.",
+   "keep_media": true,
+   "chart": {
+    "type": "text",
+    "text": "Tracked supercars: Randy, later",
+    "pink": [
+     "Randy"
+    ],
+    "src": "GameSpot · GamesRadar",
+    "seed": 293,
+    "bg": "photo:media/official/car-grotti-cheetah-02.jpg"
+   },
+   "chart_es": {
+    "type": "text",
+    "text": "Coches con rastreador: Randy, después",
+    "pink": [
+     "Randy"
+    ],
+    "src": "GameSpot · GamesRadar",
+    "seed": 293,
+    "bg": "photo:media/official/car-grotti-cheetah-02.jpg"
+   }
+  },
+  {
+   "headline": "FOUND HIM?",
+   "headline_es": "¿LO ENCONTRASTE?",
+   "text": "Found Moses? Comment yes, because",
+   "text_es": "¿Encontraste a Moses? Comenta sí, porque",
+   "keep_media": true,
+   "chart": {
+    "type": "kinetic",
+    "lines": [
+     "FOUND HIM?",
+     "COMMENT YES"
+    ],
+    "pink": [
+     "COMMENT YES"
+    ],
+    "seed": 294
+   },
+   "chart_es": {
+    "type": "kinetic",
+    "lines": [
+     "¿LO ENCONTRASTE?",
+     "COMENTA SÍ"
+    ],
+    "pink": [
+     "COMENTA SÍ"
+    ],
+    "seed": 294
+   }
+  }
+ ]
+}
