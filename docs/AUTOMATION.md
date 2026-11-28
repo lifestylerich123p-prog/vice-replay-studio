@@ -14,15 +14,15 @@ session** (`list_triggers` → `update_trigger`), then update this file. Times a
 ## Recurring
 | Job | When (ET) | Session | May do | Audit Nov 26 |
 |---|---|---|---|---|
-| trig_019pesiorLpAZ6Nkd8bExXDY nightly prep | daily 2:04 AM | main | fact re-checks + claim ledgers for the next 2 days' slots (both channels), comment replies; **no uploads** | OK |
+| trig_019pesiorLpAZ6Nkd8bExXDY nightly prep | daily 2:04 AM | main | fact re-checks + claim ledgers for the next 2 days' slots (both channels), applies the Nov 28 growth experiment variant (content/learn/experiments.json, one variable), comment replies; **no uploads** | OK |
 | trig_01DpEa4hojQ9uFfxLbMLq7xF autonomous publishing | daily 3:45 AM | main | numbers the map series, re-renders stale videos, runs tests if code changed, uploads ONLY gate-approved Shorts (EN + ES) scheduled for their slot, title swap | OK (tonight's first real run; untouched) |
 | trig_01AQ4TgsmpD4BDUjmTeJxe1n helper daily run | daily 5:13 AM | helper | research + 2 Shorts on branch `claude/daily-<date>`; never pushes main, posts or spends | OK |
 | trig_011QXer4L5s5BHgWLNJwjm7i Spanish director | daily 10:23 AM | main | Spanish research/production 5 days ahead, books `es` slots, gate evaluation | **fixed**: hard-coded old mix → `content_mix`; Phase 10 Spanish priorities, measures, voice + hook recorded, no new paid voice |
-| trig_013tmcD9vz8dUNRShCpwjMdk owner report | daily 1:05 PM | main | verify published, calendar, learning, merge helper branch, TikTok files, comments, Instagram queue times, website (`studio.sitecheck --live` daily + after each publish, pins/guides/FAQ per verified Short, deal re-check), Mondays gear + monetization research (report-only), one owner message (Nov 28 owner list: published + upcoming, inventory per channel, growth/retention, website, affiliate, spending, verified balance, failures + recovery; lean runs) | OK |
+| trig_013tmcD9vz8dUNRShCpwjMdk owner report | daily 1:05 PM | main | verify published, calendar, learning, merge helper branch, TikTok files, comments, Instagram queue times, website (`studio.sitecheck --live` daily + after each publish, pins/guides/FAQ per verified Short, deal re-check), Mondays gear + monetization research (report-only), studio.growth + experiment results + GROWTH section, merges claude/scout-* branches, one owner message (Nov 28 owner list: published + upcoming, inventory per channel, growth/retention, website, affiliate, spending, verified balance, failures + recovery; lean runs) | OK |
 | trig_01BDJUjM9FysWFCqmPJsfA4s momentum | daily 2:47 PM | fresh | **report-only**: studio.opportunities → message to main chat | **fixed**: removed "owner replies approve" flow |
 | trig_01T8agB7rbk9ewL6C1w314Zr comment replies | daily 9:13 PM | fresh | English comment replies only, commits replied.json | **fixed**: dropped the 1:13 PM run (duplicated the 1 PM report's replies) |
 | trig_01MTxMGMgd8nF44C6VxmmFHZ breaking news | every 3 h, Nov 17-30 only | fresh | report-only | OK: owner Phase 10 lets it end Nov 30 |
-| trig_01Ruh8nL2kasGH91G3capjhk weekly scout | Sun 11:37 AM | fresh | report-only: studio.learn, xplat, studio.competitors, monthly review | OK |
+| trig_01Ruh8nL2kasGH91G3capjhk weekly scout | Sun 11:37 AM | fresh | report-only: studio.growth, xplat, studio.competitors (+ owner's Nov 28 channel list, small outliers, Spanish searches, map-site features); saves to branch claude/scout-<date> and messages main (merged in the 1 PM report), never main/uploads | OK |
 | trig_01XX9xXTp8xfb4i3yYUFP9uF website publish | when poked | main | site files only | **fixed**: removed "owner replies approve to upload" |
 
 ## One-shots (pending)
