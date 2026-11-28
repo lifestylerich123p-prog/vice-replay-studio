@@ -73,6 +73,16 @@ def check_sheet(videos, dest):
         sheet.save(dest, quality=80)
 
 
+def free_reel_time(q, at, step_min=15):
+    """First time at or after `at` that no other unposted, non-campaign item in the Instagram queue holds. The queue
+    posts ONE due item per wake-up, so two Reels at the same minute put every later Reel one run behind (Nov 27)."""
+    import datetime as dt
+    taken = {i.get("at") for i in q if not i.get("posted") and not i.get("campaign")}
+    while at.strftime("%Y-%m-%d %H:%M") in taken:
+        at += dt.timedelta(minutes=step_min)
+    return at
+
+
 def queue_reels(ep_path, upload_txt, date=None):
     """Every uploaded Short also goes to Instagram Reels (owner approved Nov 19): add it to
     content/learn/reels_queue.json 5 minutes after its YouTube time and print the wake-ups to schedule."""
@@ -93,6 +103,7 @@ def queue_reels(ep_path, upload_txt, date=None):
             at = dt.datetime.now(et) + dt.timedelta(minutes=2)
         else:
             at = dt.datetime.combine(day, dt.datetime.strptime(when, "%I:%M %p").time(), et) + dt.timedelta(minutes=5)
+        at = free_reel_time(q, at)
         item = {"at": at.strftime("%Y-%m-%d %H:%M"), "episode": str(Path(ep_path).relative_to(ROOT)), "item": key}
         if not any(i.get("episode") == item["episode"] and i.get("item") == key for i in q):
             q.append(item)
