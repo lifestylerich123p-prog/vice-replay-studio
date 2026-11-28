@@ -19,9 +19,10 @@
   "title over 70 characters on /guides/gta-6-launch-streams/ (80)",
   "title over 70 characters on /guides/gta-6-physical-edition/ (71)",
   "title over 70 characters on /guides/gta-6-radio-stations/ (77)",
-  "title over 70 characters on /guides/gta-6-ultimate-edition/ (77)",
-  "site checkout has uncommitted changes (3 file(s)): publish or discard them"
+  "title over 70 characters on /guides/gta-6-ultimate-edition/ (77)"
  ],
- "site_commit": "b530a9c2782e",
- "checked_at": "2026-11-28T19:34"
+ "site_commit": "4a79fc7ad503",
+ "live_checked": 8,
+ "live_failed": [],
+ "checked_at": "2026-11-28T19:41"
 }
