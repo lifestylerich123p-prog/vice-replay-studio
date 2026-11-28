@@ -298,6 +298,19 @@ def main():
                         "fix in tools/site_guides.py or add a NOTICES note (python -m studio.site_stale lists them)")
     except Exception:  # noqa: BLE001 - a missing site checkout must not break the health check
         pass
+    # 3a2. Built-site audit (owner Nov 28 #7): broken links, canonical/hreflang/sitemap, affiliate tags + disclosure,
+    # scripts, secrets, map pins (python -m studio.sitecheck lists everything; warnings stay in its own output)
+    try:
+        from .sitecheck import check_pins, check_site
+        sc = check_site(ROOT.parent / "vicereplay-site")
+        sc["problems"] += [w for w in check_pins() if "source" in w or "category" in w]
+        if sc["problems"]:
+            warn.append(f"Website check: {len(sc['problems'])} problem(s), e.g. {sc['problems'][0][:120]} "
+                        "(python -m studio.sitecheck)")
+        else:
+            ok.append(f"Website check: {sc['pages']} pages, links/canonical/hreflang/sitemap/affiliate OK")
+    except Exception:  # noqa: BLE001 - a missing site checkout must not break the health check
+        pass
 
     # 3b. Did today's 5 AM daily run save its work? (Nov 21: its push got a 403 and nobody noticed for hours)
     try:
