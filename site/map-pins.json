@@ -1120,6 +1120,30 @@
     "caza",
     "bret"
    ]
+  },
+  {
+   "cat": "cars",
+   "at": "Port Gellhorn",
+   "dx": 0.01,
+   "src": [
+    "GTABase",
+    "KeenGamer",
+    "timesaver.gg"
+   ],
+   "en": {
+    "t": "Moses: sell stolen cars",
+    "d": "Moses buys stolen cars without a tracker from Chapter 2. He won't take cars stolen right by his garage, and damage lowers the price. Guides give the town, not an exact spot."
+   },
+   "es": {
+    "t": "Moses: vende coches robados",
+    "d": "Moses compra coches robados sin rastreador desde el capítulo 2. No acepta coches robados junto a su taller y los daños bajan el precio. Las guías dan el pueblo, no un punto exacto."
+   },
+   "aliases": [
+    "sell cars",
+    "vender coches",
+    "moses",
+    "stolen cars"
+   ]
   }
  ]
 }
