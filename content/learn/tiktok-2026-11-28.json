@@ -1,0 +1,69 @@
+{
+ "source": "Windsor tiktok_organic (read-only), last_30dT, pulled 2026-11-28 1 PM ET; 33 rows, most relevant kept (older launch-week rows in tiktok-2026-11-26.json)",
+ "newest_post": "2026-11-28T14:46:52",
+ "videos": [
+  {
+   "video_create_datetime": "2026-11-25T02:21:55",
+   "video_caption": "GTA 6 shoe store: where to buy shoes 👟 Flip Flop House, Key Lento. Save this for when you play 📌 #gta6 #gtavi #gta6shoes #gta6tips",
+   "video_views_count": 17445,
+   "video_full_watched_rate": 0.1882,
+   "video_average_time_watched": 6.36,
+   "video_duration": 11.34,
+   "video_new_followers": 7
+  },
+  {
+   "video_create_datetime": "2026-11-28T14:46:52",
+   "video_caption": "GTA 6 mask location: your first one is here 🎭 Save this for when you play 📌 #gta6 #gtavi #gta6mask #gta6tips",
+   "video_views_count": 416,
+   "video_full_watched_rate": 0.1488,
+   "video_average_time_watched": 7.1,
+   "video_duration": 16.075,
+   "video_new_followers": 0
+  },
+  {
+   "video_create_datetime": "2026-11-28T14:44:53",
+   "video_caption": "GTA 6: dónde comprar tu PRIMERA máscara 🎭 #gta6 #gtavi #gta6español #vicecity",
+   "video_views_count": 174,
+   "video_full_watched_rate": 0.1356,
+   "video_average_time_watched": 9.03,
+   "video_duration": 17.787,
+   "video_new_followers": 0
+  },
+  {
+   "video_create_datetime": "2026-11-28T14:45:50",
+   "video_caption": "GTA 6 tiene un CANGREJO gigante: está aquí 🦀 #gta6 #gtavi #gta6español #vicecity",
+   "video_views_count": 78,
+   "video_full_watched_rate": 0.0897,
+   "video_average_time_watched": 4.76,
+   "video_duration": 14.81,
+   "video_new_followers": 0
+  },
+  {
+   "video_create_datetime": "2026-11-25T20:28:00",
+   "video_caption": "Every way to make money in GTA 6, ranked 💰 Agree? #gta6 #gtavi #gta6money #tierlist",
+   "video_views_count": 213,
+   "video_full_watched_rate": 0.0531,
+   "video_average_time_watched": 5.37,
+   "video_duration": 17.804,
+   "video_new_followers": 0
+  },
+  {
+   "video_create_datetime": "2026-11-26T22:17:35",
+   "video_caption": "GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 #gta6 #gtavi #ps5pro #gaming",
+   "video_views_count": 151,
+   "video_full_watched_rate": 0.0727,
+   "video_average_time_watched": 4.94,
+   "video_duration": 18.636,
+   "video_new_followers": 0
+  },
+  {
+   "video_create_datetime": "2026-11-25T02:25:07",
+   "video_caption": "En el Miami de GTA 6 el DJ es Bad Bunny 🐰🎧",
+   "video_views_count": 130,
+   "video_full_watched_rate": 0.0276,
+   "video_average_time_watched": 5.22,
+   "video_duration": 25.009,
+   "video_new_followers": 0
+  }
+ ]
+}

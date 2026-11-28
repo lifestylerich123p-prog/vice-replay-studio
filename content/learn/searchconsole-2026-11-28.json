@@ -1,0 +1,70 @@
+{
+ "source": "Windsor searchconsole (read-only), last_7d by page, pulled 2026-11-28 1 PM ET",
+ "range": "last 7 days",
+ "totals": {
+  "clicks": 22,
+  "impressions": 546,
+  "ctr": 0.04,
+  "spanish_pages": "no /es/ page in the rows (unavailable/0 impressions reported)"
+ },
+ "pages": [
+  {
+   "page": "/",
+   "clicks": 17,
+   "impressions": 103,
+   "ctr": 0.165,
+   "position": 13.2
+  },
+  {
+   "page": "/contact/",
+   "clicks": 2,
+   "impressions": 8,
+   "ctr": 0.25,
+   "position": 3.6
+  },
+  {
+   "page": "/guides/gta-6-gift-guide/",
+   "clicks": 1,
+   "impressions": 93,
+   "ctr": 0.011,
+   "position": 11.4
+  },
+  {
+   "page": "/guides/gta-6-launch-streams/",
+   "clicks": 1,
+   "impressions": 14,
+   "ctr": 0.071,
+   "position": 6.9
+  },
+  {
+   "page": "/guides/gta-6-ps5-pro-worth-it/",
+   "clicks": 1,
+   "impressions": 176,
+   "ctr": 0.006,
+   "position": 11.1
+  },
+  {
+   "page": "/guides/gta-6-characters/",
+   "clicks": 0,
+   "impressions": 51,
+   "ctr": 0,
+   "position": 7.9
+  },
+  {
+   "page": "/guides/gta-6-unlock-time/",
+   "clicks": 0,
+   "impressions": 77,
+   "ctr": 0,
+   "position": 8.3
+  },
+  {
+   "page": "/guides/gta-6-pc-release-date/",
+   "clicks": 0,
+   "impressions": 17,
+   "ctr": 0,
+   "position": 33.0
+  }
+ ],
+ "top_queries": "not pulled today (page view only)",
+ "queries_total_rows": null
+}

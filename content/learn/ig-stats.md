@@ -4,17 +4,17 @@ Views/reach need the Meta app permission instagram_manage_insights (not granted 
 
 | Kind | n | median views | median reach | median likes | median saves |
 |---|---|---|---|---|---|
-| Reel | 31 | 0 | 0 | 8 | 0 |
+| Reel | 37 | 0 | 0 | 10 | 0 |
 | Carousel | 6 | 0.0 | 0.0 | 0.0 | 0.0 |
 | Image | 1 | 0 | 0 | 0 | 0 |
 
 ## Best 5
 
+- ? views, 46 likes, 41 comments · Reel · GTA 6's Metacritic 99: only ONE other game #GTA6 · https://www.instagram.com/reel/DgIhHQWlEXf/
 - ? views, 119 likes, 1 comments · Reel · First 3 settings to change in GTA 6 #GTA6 · https://www.instagram.com/reel/Df7ofLggsKV/
-- ? views, 46 likes, 30 comments · Reel · GTA 6's Metacritic 99: only ONE other game #GTA6 · https://www.instagram.com/reel/DgIhHQWlEXf/
 - ? views, 69 likes, 4 comments · Reel · Don't grind money in GTA 6 Chapter 1 (here's the catch) #GTA6 · https://www.instagram.com/reel/Df-Nz2dDb9y/
-- ? views, 41 likes, 1 comments · Reel · GTA 6 cheat codes that actually work (screenshot this) #GTA6 · https://www.instagram.com/reel/Df8GvsnkUo1/
-- ? views, 34 likes, 3 comments · Reel · GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 #GTA6 · https://www.instagram.com/reel/DgKxdpdTc1o/
+- ? views, 64 likes, 1 comments · Reel · Every way to make money in GTA 6, ranked 💰 #GTA6 · https://www.instagram.com/reel/DgP6wgfONlv/
+- ? views, 61 likes, 1 comments · Reel · GTA 6 mask location: your first one is here 🎭 #GTA6 · https://www.instagram.com/reel/DgPwIRShv97/
 
 ## Worst 5
 
