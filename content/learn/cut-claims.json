@@ -1,0 +1,9 @@
+{
+ "_note": "Claims cut from a video by a fact-check (no 2 independent sources). studio.sitecheck flags any of these phrases on vicereplay.com as a PROBLEM, so the website never keeps what a video had to drop. Add the key phrase when a fact-check cuts a claim; remove an entry only when 2+ independent sources confirm it.",
+ "claims": [
+  {"phrase": "Benny Moré", "from": "gta6-little-cuba-es", "date": "2026-11-28", "why": "not confirmed on the GTA 6 soundtrack"},
+  {"phrase": "Robertiko Ramos", "from": "gta6-little-cuba-es", "date": "2026-11-28", "why": "tattoo-artist claim without 2 sources"},
+  {"phrase": "Gloria and Emilio Estefan", "from": "gta6-little-cuba-es", "date": "2026-11-28", "why": "La Ola hosts not confirmed (search Nov 28 found only her music on the tracklist)"},
+  {"phrase": "Gloria y Emilio Estefan", "from": "gta6-little-cuba-es", "date": "2026-11-28", "why": "same, Spanish wording"}
+ ]
+}

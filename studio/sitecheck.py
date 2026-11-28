@@ -8,7 +8,7 @@ Checks: internal links and images resolve; one canonical per page and its target
 point back; sitemap URLs exist and every indexable page is listed; title, meta description and viewport present, no
 duplicate titles; JSON-LD parses; Amazon links are direct amazon.com links with tag vicereplay-20 on a page carrying
 the disclosure; target=_blank links have rel=noopener; scripts only from our site or Cloudflare's beacon; no
-secret-looking strings in published files; site checkout clean (rollback = its git history); map pins use a known
+secret-looking strings in published files; no claim a video fact-check cut (content/learn/cut-claims.json); site checkout clean (rollback = its git history); map pins use a known
 category and 2+ sources unless the place is printed on Rockstar's official map. Freshness (pre-launch wording, deal
 prices, expired deal pages) stays in studio.site_stale. Result: content/learn/sitecheck.json (the daily report reads it).
 """
@@ -157,6 +157,13 @@ def check_site(site=SITE):
                 problems.append(f"sitemap lists a missing page: {loc}")
         for url in sorted(indexable - listed):
             warnings.append(f"indexable page not in sitemap.xml: {url}")
+    cut = ROOT / "content" / "learn" / "cut-claims.json"  # claims a video fact-check had to drop
+    phrases = [c["phrase"] for c in json.loads(cut.read_text()).get("claims", [])] if cut.exists() else []
+    for url, doc in pages.items():
+        text = html.unescape(re.sub(r"<[^>]+>", " ", doc)).lower()
+        for ph in phrases:
+            if ph.lower() in text:
+                problems.append(f"cut claim still on the site: {ph!r} on {url} (content/learn/cut-claims.json)")
     for f in site.rglob("*"):
         if f.is_file() and ".git" not in f.parts and f.suffix in (".html", ".js", ".json", ".xml", ".txt", ".css"):
             if SECRET.search(f.read_text(errors="ignore")):

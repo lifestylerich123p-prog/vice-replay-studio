@@ -55,6 +55,19 @@ class SiteCheck(unittest.TestCase):
         self.assertIn("hreflang not reciprocal", text)
         self.assertIn("secret-looking string", text)
 
+    def test_cut_claim_on_site_is_a_problem(self):
+        import studio.sitecheck as sc
+        tmp = Path(tempfile.mkdtemp())
+        (tmp / "content" / "learn").mkdir(parents=True)
+        (tmp / "content" / "learn" / "cut-claims.json").write_text(json.dumps({"claims": [{"phrase": "Benny Moré"}]}))
+        site = self.build({"/": page("Home", "/", "<p>On the radio: Benny Mor&eacute;</p>")}, ["/"])
+        old, sc.ROOT = sc.ROOT, tmp
+        try:
+            text = " | ".join(check_site(site)["problems"])
+        finally:
+            sc.ROOT = old
+        self.assertIn("cut claim still on the site: 'Benny Moré'", text)
+
     def test_pins_need_two_sources_unless_official(self):
         f = Path(tempfile.mkdtemp()) / "pins.json"
         f.write_text(json.dumps({"cats": [{"id": "eggs"}, {"id": "places"}], "pins": [
