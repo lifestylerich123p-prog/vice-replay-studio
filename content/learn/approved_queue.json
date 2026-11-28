@@ -994,6 +994,32 @@
     "12:30 PM"
    ],
    "approved": "Phase 3/10 autonomous: helper run Nov 27 (claude/daily-2026-11-27, manifest SHA-256 verified, merged by the main chat 8:35 AM ET; vice publish 0 blockers). Booked in free slots only (no approved video displaced). Publishes only if the gate passes. How-to; RydeMe unlock chapter disputed between guides -> says 'later'."
+  },
+  {
+   "slug": "gta6-sell-cars-where",
+   "item": "short",
+   "approved": "Nov 28 1 PM run: helper daily-2026-11-28 (verified, gate decides)",
+   "en": [
+    "2026-12-16",
+    "8:00 AM"
+   ],
+   "es": [
+    "2026-12-15",
+    "12:30 PM"
+   ]
+  },
+  {
+   "slug": "gta6-skip-time-sleep",
+   "item": "short",
+   "approved": "Nov 28 1 PM run: helper daily-2026-11-28 (verified, gate decides)",
+   "en": [
+    "2026-12-16",
+    "6:00 PM"
+   ],
+   "es": [
+    "2026-12-14",
+    "7:00 PM"
+   ]
   }
  ],
  "paused": [

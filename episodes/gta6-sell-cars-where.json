@@ -21,10 +21,10 @@
  "title_rule": "search phrase first ('gta 6 where to sell stolen cars'); follow-up of the money winners (3.6x ranked, 7.8x underwater)",
  "hook_type": "statement",
  "first_frame": "kinetic card 'SELL STOLEN CARS HERE' on a Port Gellhorn photo",
- "short_description": "Where to sell stolen cars in GTA 6: Moses in Port Gellhorn (Kelly County) buys cars without a tracker once you've done his Chapter 2 job. He won't take cars stolen right next to his garage, and damage lowers the price. High-end cars with trackers go to Randy later in the story (Chapter 3 in most guides). Payouts in guides vary a lot: check the offer in-game. No story spoilers.\n\nSources: PC Gamer, KeenGamer, GTABase, timesaver.gg.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
+ "short_description": "Where to sell stolen cars in GTA 6: Moses in Port Gellhorn (Kelly County) buys cars without a tracker once you've done his Chapter 2 job. He won't take cars stolen right next to his garage, and damage lowers the price. High-end cars with trackers go to Randy later in the story (Chapter 3 in most guides). Payouts in guides vary a lot: check the offer in-game. No story spoilers.\n\n📍 Map Spot #32 of our GTA 6 map series: every spot is in the playlist \"GTA 6 Map: Where to Find It\".\n\nSources: PC Gamer, KeenGamer, GTABase, timesaver.gg.\n\nEvery spot is pinned on our interactive map at vicereplay.com (Guides).",
  "short_es": {
   "title": "GTA 6: dónde VENDER coches robados 🚗 #GTA6 #Shorts",
-  "description": "Dónde vender coches robados en GTA 6: Moses, en Port Gellhorn, compra coches sin rastreador desde su trabajo del capítulo 2. No acepta coches robados junto a su taller y los daños bajan el precio. Los coches de lujo con rastreador van a Randy, más adelante. Fuentes: PC Gamer, KeenGamer, GTABase.",
+  "description": "Dónde vender coches robados en GTA 6: Moses, en Port Gellhorn, compra coches sin rastreador desde su trabajo del capítulo 2. No acepta coches robados junto a su taller y los daños bajan el precio. Los coches de lujo con rastreador van a Randy, más adelante. Fuentes: PC Gamer, KeenGamer, GTABase.\n\n📍 Lugar #48 de nuestra serie del mapa de GTA 6.",
   "tags": [
    "GTA 6 vender coches",
    "GTA 6 Moses",
@@ -246,5 +246,9 @@
     "seed": 294
    }
   }
- ]
+ ],
+ "spot": 32,
+ "cta": "SPOT #33 NEXT: FOLLOW",
+ "spot_es": 48,
+ "cta_es": "LUGAR #49 PRONTO: SÍGUENOS"
 }

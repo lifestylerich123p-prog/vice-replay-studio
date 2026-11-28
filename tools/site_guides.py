@@ -12,19 +12,19 @@ import re as _re
 # Deals shown as direct Amazon buttons on the links page (bio link) and the homepage. Update prices here when they
 # change. Nov 26 (Amazon Associates program policy): NO product prices next to Amazon links unless served by Amazon
 # (PA-API, < 24 h); say "on sale" / "see today's price" instead.
-DEALS_CHECKED = "Nov 24"
-DEALS = [("🛍️ Amazon's full Black Friday sale", "TVs, consoles, everything on sale through Nov 30", "https://www.amazon.com/deals"),
-         ("🎮 PS5 DualSense controller: on sale", "see today's price on Amazon · the best GTA 6 deal this week", "PS5 DualSense wireless controller"),
-         ("🎧 PlayStation Pulse Elite headset: on sale", "see today's price on Amazon", "PlayStation Pulse Elite wireless headset"),
+DEALS_CHECKED = "Nov 28"
+DEALS = [("🛍️ Amazon's full Black Friday sale", "Amazon's own deals page: see what is on sale today", "https://www.amazon.com/deals"),
+         ("🎮 PS5 DualSense controller", "see today's price on Amazon", "PS5 DualSense wireless controller"),
+         ("🎧 PlayStation Pulse Elite headset", "see today's price on Amazon", "PlayStation Pulse Elite wireless headset"),
          ("💾 2 TB PS5 SSD with heatsink", "GTA 6 is 212 GB: the upgrade that fits", "PS5 compatible 2TB NVMe SSD with heatsink"),
-         ("🌴 GTA 6 for PS5", "full price at US stores right now", "https://www.amazon.com/dp/B0H6K928WL"),
+         ("🌴 GTA 6 for PS5", "see today's price on Amazon", "https://www.amazon.com/dp/B0H6K928WL"),
          ("📦 Free 30-day Amazon Prime trial", "fast delivery on all of the above", "https://www.amazon.com/tryprimefree")]
 
 
 def deals_html(heading="🔥 Black Friday deals on Amazon"):
     items = "".join(f'<a class="item" href="{amz(q)}" target="_blank" rel="sponsored noopener">{html.escape(t)}<small>{html.escape(sub)}</small><span aria-hidden="true">→</span></a>' for t, sub, q in DEALS)
     return (f'<div class="box"><h3>{heading}</h3><div class="btns">{items}</div><p class="sources" style="margin:10px 0 0">'
-            f'Prices checked {DEALS_CHECKED} and they change fast. Affiliate links: as an Amazon Associate we earn from qualifying '
+            f'List reviewed {DEALS_CHECKED}: we don\'t quote prices or sale claims, Amazon shows today\'s price. Affiliate links: as an Amazon Associate we earn from qualifying '
             f'purchases, at no extra cost to you. <a href="/guides/gta-6-black-friday/">All GTA 6 Black Friday deals</a></p></div>')
 
 
@@ -1172,7 +1172,7 @@ def refresh_home():
     doc = open(path).read()
     deals = "".join(f'\n    <li><a class="item big" href="{amz(q)}" target="_blank" rel="sponsored noopener">{html.escape(t)}<span aria-hidden="true">→</span></a></li>'
                     for t, sub, q in DEALS)
-    deals_sec = (f'<section class="group" id="deals"><h2>🔥 Black Friday deals on Amazon</h2><p>Checked {DEALS_CHECKED} · prices change fast · '
+    deals_sec = (f'<section class="group" id="deals"><h2>🔥 Black Friday deals on Amazon</h2><p>Reviewed {DEALS_CHECKED} · no prices quoted, Amazon shows the current price · '
                  f'<a href="/guides/gta-6-deals/" style="color:#00e5d2">every real GTA 6 deal</a></p><ul class="links">{deals}\n  </ul>'
                  '<p style="font-size:13px;opacity:.75">Affiliate links: as an Amazon Associate we earn from qualifying purchases, at no extra cost to you.</p></section>')
     newest = [g for g in GUIDES if g[0] not in ("gta-6-launch-live", "gta-6-map-leonida-places")][:5]
