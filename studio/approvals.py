@@ -10,7 +10,7 @@ evaluate() runs the owner's 10 conditions for one video, platform and slot:
   2-5 spoilers/safety/copyright, visual/technical defects, narration vs captions, audio: `studio.vice publish`
       (rights registry, fact flags, QC: black/frozen frames, loudness, captions vs speech, hooks) + 1080x1920, audio
       stream, 8-60 s
-  6 title + description final (rendered .txt = episode title, "GTA 6" first, <= 100 chars, description present)
+  6 title + description final (rendered .txt = episode title, mentions "GTA 6", <= 100 chars, description present)
   7 no duplicate (registry on every branch is checked again by the uploader; here: slug/item and title not posted)
   8 real value: a map/location card, a how-to/tutorial, or an episode marked "experiment" (14-day plan: 70% location
     guides, 20% map tutorials, 10% experiments); generic tier/versus/headline Shorts go to NEEDS_REVIEW
@@ -391,8 +391,8 @@ def checks(ep_path, item="short", platform="youtube-en", publish=None, now=None,
         if not title or not desc:
             block.append("rendered title/description missing (render with studio.ship)")
         else:
-            if not title.startswith("GTA"):
-                review.append(f"title doesn't start with GTA 6: {title!r}")
+            if "GTA" not in title.upper():  # owner Nov 28: natural titles may put "GTA 6" anywhere, never leave it out
+                review.append(f"title doesn't mention GTA 6: {title!r}")
             if len(title) > 100:
                 block.append("title longer than 100 characters")
             if want and title.strip() != want.strip() and postguard_norm(title) != postguard_norm(want):

@@ -27,8 +27,15 @@ It has its own identity: it is not a translated copy of the English channel. Rea
 
 ## What wins in Spanish (research Nov 26, docs/ES-RECOVERY.md; re-check weekly)
 - Secrets and easter eggs framed as discoveries: "TRUCO SECRETO", "SE HA RESUELTO EL EASTER EGG",
-  "DETALLES ALUCINANTES", "¿Qué pasa si...?", "dónde está". Titles start with "GTA 6" (the gate holds
-  any other title), then one CAPS word + one emoji: "GTA 6: el SECRETO de Silent Hill (clave 955214) 😱".
+  "DETALLES ALUCINANTES", "¿Qué pasa si...?", "dónde está". **Owner Nov 28 (growth directive):** titles in
+  natural Latin American Spanish that match what people search and mention "GTA 6" anywhere ("Dónde vender carros
+  robados en GTA 6", "3 lugares secretos de GTA 6", "Cómo pasar el tiempo en GTA 6"): no required CAPS word, max one
+  hashtag, "carros" not "coches". The old "GTA 6: el SECRETO de... 😱" style is the experiment CONTROL: on the
+  experiment slots in content/learn/experiments.json (es-title-natural) use the natural title, elsewhere either.
+- **Growth audit Nov 28** (content/learn/growth-plan.md): the Shorts feed barely tests this channel (10% of its views;
+  search 71%), so Spanish grows search-first: Spanish-original topics from Spanish searches ("dónde está/encontrar",
+  "cómo conseguir/ganar dinero", "trucos", "secretos", "errores que debes evitar", "cosas que no sabías"), not
+  translations of English Shorts; never wait for an English result before making a Spanish topic.
 - Latino / Miami angles (Bad Bunny, Little Cuba = Little Havana, Vice City vs real Miami): our only Spanish upload
   that drew views (19) was the Bad Bunny one.
 - What failed (12 videos, 40 views): streamer news about English-speaking streamers, plain facts, translated news.

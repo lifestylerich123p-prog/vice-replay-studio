@@ -27,7 +27,7 @@ the on-screen headline says the same claim in 2-4 words (no "?"); show the payof
 
 ## Titles (main video)
 
-Rules from `CLAUDE.md`: under 60 characters, "GTA 6" first, three options per video.
+Rules from `CLAUDE.md` (owner Nov 28): under 60 characters, natural, say what the viewer gains, mention "GTA 6" (anywhere), max one hashtag, no repeated CAPS, three options per video. See content/learn/growth-plan.md.
 
 - GTA 6 [Topic]: [Specific payoff]
 - GTA 6 [Number] [Things] Nobody Tells You

@@ -9,7 +9,7 @@ Vice Replay (owner, Nov 20: reposted clips can mark the main channel an aggregat
 non-GTA campaign; What If Arena = AI videos.
 
 ## How a video gets made
-1. **Research** with web search: check `content/learn/scorecard.md`, `ideas.md`, `lessons.md`, `content/performance.md` and the latest
+1. **Research** with web search: read `content/learn/growth-plan.md` first (owner Nov 28 growth directive: what the numbers say, first frame = payoff, natural titles, 7-day experiment in `content/learn/experiments.json`), then check `content/learn/scorecard.md`, `ideas.md`, `lessons.md`, `content/performance.md` and the latest
    `content/learn/market-*.md` first and lean toward what works. Use only facts from today/recent days, keep source
    URLs for `sources`, and label rumors/leaks ("reportedly", "according to leaks").
 2. **Write** `episodes/<slug>.json` exactly as `content/episode-format.md` says (read it first: segments, hook in the
@@ -18,7 +18,7 @@ non-GTA campaign; What If Arena = AI videos.
    Shorts, Spanish-voice Shorts, `output/<slug>/check.jpg`). Read check.jpg once: captions readable, headline not
    clipped, no black bars/frames; read `output/<slug>/description.txt`. (Manual: `studio.make_video` with
    `--preview`, `--short`, `--short --es`.)
-4. Report the output paths and 3 alternative titles (under 60 characters, "GTA 6" first).
+4. Report the output paths and 3 alternative titles (under 60 characters, natural, must mention "GTA 6"; owner Nov 28).
 
 ## Posting schedule (America/New_York; canonical numbers: config/channel.json)
 **Owner Phase 10 (Nov 26; applied after the Nov 27 cycle was verified):** English **8:00 AM + 6:00 PM ET**, Spanish
@@ -136,7 +136,7 @@ said where the store is).
   7:00 PM ET (test slots), booked as `"es"` slots in approved_queue.json, published automatically ONLY through the gate
   on platform `youtube-es` (Spanish render + Spanish title, facts, QA, duplicates; `studio.youtube_es` refuses any token
   that isn't the Spanish channel). Free local Piper voice (`voice_es` piper:es_MX-claude-high); Everygen Viral Adam only
-  for proven winners with a claim. Winners-only rule OFF. Titles: "GTA 6" first, then Spanish-market style (one CAPS word + one emoji; the gate holds others);
+  for proven winners with a claim. Winners-only rule OFF. Titles (owner Nov 28): natural Latin American Spanish search phrases that mention "GTA 6" ("Dónde vender carros robados en GTA 6"), no required CAPS word, max one hashtag; the old CAPS + emoji style is the experiment control (content/learn/experiments.json);
   registry `content/learn/uploads-es.json`.
 - **TikTok**: the owner posts by hand; Shorts go to the "📱 Vice Replay: TikTok files" chat (see owner.md;
   `studio.ship --tiktok` pushes them to the `tiktok-files` branch).

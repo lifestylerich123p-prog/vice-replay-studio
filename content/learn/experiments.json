@@ -1,0 +1,18 @@
+{
+ "_note": "Owner Nov 28 growth directive: 7-day creative experiment, one variable per channel, alternating slots (the other slot is the control). The 2:04 AM run applies the variant to the experiment item of the next 2 days' slots BEFORE the 3:45 AM render/gate, records it under 'applied'; the 1 PM report measures with python -m studio.growth at matched ages. Preliminary until 5+ per arm.",
+ "experiments": [
+  {"id": "en-opening-map-first", "lang": "en", "variable": "opening frame",
+   "variant": "map-first: segment 1 is a map card on the spot (pin/zoom on Rockstar's official map), headline states the answer; the rest of the Short unchanged",
+   "control": "current opening (statement card on a photo)",
+   "applies_to": "location Shorts only; otherwise record n/a and leave it unchanged",
+   "experiment_slots": {"2026-11-30": "6:00 PM", "2026-12-01": "8:00 AM", "2026-12-02": "6:00 PM", "2026-12-03": "8:00 AM", "2026-12-04": "6:00 PM", "2026-12-05": "8:00 AM", "2026-12-06": "6:00 PM"},
+   "applied": []},
+  {"id": "es-title-natural", "lang": "es", "variable": "title",
+   "variant": "natural Latin American search-phrase title that mentions GTA 6, no CAPS word, at most one hashtag (#GTA6), <= 60 characters, no claim beyond the video",
+   "control": "current Spanish title style (one CAPS word + emoji + #GTA6 #Shorts)",
+   "applies_to": "every Spanish Short in an experiment slot",
+   "experiment_slots": {"2026-11-30": "12:30 PM", "2026-12-01": "7:00 PM", "2026-12-02": "12:30 PM", "2026-12-03": "7:00 PM", "2026-12-04": "12:30 PM", "2026-12-05": "7:00 PM", "2026-12-06": "12:30 PM"},
+   "applied": []}
+ ],
+ "results": []
+}
