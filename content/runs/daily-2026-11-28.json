@@ -13,14 +13,24 @@
    "step": "site",
    "message": "Site: Moses pin + sell-cars and skip-time how-tos (EN/ES)",
    "files": 3
+  },
+  {
+   "at": "2026-11-28T10:24:25.198680+00:00",
+   "step": "render",
+   "message": "Renders: gta6-sell-cars-where + gta6-skip-time-sleep (EN+ES), QA 0 blockers; bookings",
+   "files": 5
   }
  ],
  "files": {
   "content/learn/opportunities.json": "b3280cec3f93008eba62615c518ce2fa3b56417d09ae59781a3525d52c4bd6a1",
   "episodes/gta6-sell-cars-where.json": "9511ee68d9302afea300c847aae8317a53528c358d1973cc32f84488f40dc423",
-  "episodes/gta6-skip-time-sleep.json": "038d6038bda6b1b73adf43ad53da6d84be5a20a1dc0c1fb5c97fae26109c758f",
+  "episodes/gta6-skip-time-sleep.json": "7c5777660a8963a900b8c94573a1e41259d1fe596e9f872a696afa5e5015e7f9",
   "site/guides/como-hacer-gta-6.json": "b0ffa8d41b477e155c074bf4390543b879f26ef73a1b48061dabb5040b4bb1f6",
   "site/guides/gta-6-how-to.json": "e55a82ffa2ae5fb4c7b5ad85376afeb3cefc84ab5b136583fccd33f4aa5468d0",
-  "site/map-pins.json": "66c3fbbc8743c962e47d43ac71ac03c2bcce605b191f62aa0952f3d8dc5055f2"
+  "site/map-pins.json": "66c3fbbc8743c962e47d43ac71ac03c2bcce605b191f62aa0952f3d8dc5055f2",
+  "content/INDEX.md": "54fb699bfc58c2433a73f4c35c33a82d4ec8949e4b91e4346f323e87a6cc665a",
+  "content/learn/quota.json": "d6dcea279a6e2388e39cf0b04dd91cd9ca8ee404ad9baed8591f2cc2d3176f00",
+  "content/runs/daily-2026-11-28-bookings.json": "cf053d088e84034503e69f808dde81714daddaa1cd24fbbbe92787f25a29e96c",
+  "database/vice.db": "905280d5822c9c9f1e06e586186dd28af2fb62befa684a0828ee57242fed3820"
  }
 }

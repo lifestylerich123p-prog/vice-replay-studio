@@ -61,8 +61,8 @@
   {
    "headline": "SKIP TO NIGHT",
    "headline_es": "SALTA A LA NOCHE",
-   "text": "Want night in GTA 6? Sleep it off.",
-   "text_es": "¿Quieres que sea de noche en GTA seis? Duerme.",
+   "text": "Night in GTA 6 is one bed away.",
+   "text_es": "La noche en GTA seis está a una cama de distancia.",
    "keep_media": true,
    "chart": {
     "type": "kinetic",
@@ -203,7 +203,7 @@
      "night"
     ],
     "seed": 304,
-    "bg": "photo:media/official/vice-city-26.jpg"
+    "bg": "photo:media/official/vice-city-17.jpg"
    },
    "chart_es": {
     "type": "text",
@@ -212,7 +212,7 @@
      "de noche"
     ],
     "seed": 304,
-    "bg": "photo:media/official/vice-city-26.jpg"
+    "bg": "photo:media/official/vice-city-17.jpg"
    }
   },
   {
