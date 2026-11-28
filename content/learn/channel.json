@@ -1,8 +1,34 @@
 {
-  "checked": "2026-11-27T18:06+00:00",
+  "checked": "2026-11-28T18:08+00:00",
   "channel_id": "UCzk9Wts3WFynOHZQJRWOQIw",
   "subscribers": "15",
   "videos": [
+    {
+      "id": "yBc7KGUJWsc",
+      "title": "GTA 6 Backrooms location: here it is \ud83d\udeaa #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-28T13:00:29Z",
+      "seconds": 14,
+      "type": "Short",
+      "views": 698,
+      "likes": 11,
+      "comments": 1,
+      "views_per_hour": 136.0,
+      "url": "https://www.youtube.com/watch?v=yBc7KGUJWsc"
+    },
+    {
+      "id": "UEZZx84mzQI",
+      "title": "GTA maps ranked: Los Santos is only B tier \ud83d\ude2c #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-28T15:00:06Z",
+      "seconds": 18,
+      "type": "Short",
+      "views": 337,
+      "likes": 1,
+      "comments": 1,
+      "views_per_hour": 107.3,
+      "url": "https://www.youtube.com/watch?v=UEZZx84mzQI"
+    },
     {
       "id": "aYBokm3TIYE",
       "title": "LACY found a shoe store in GTA 6 \ud83d\udc5f\ud83d\ude2d #LACY #GTA6 #Shorts",
@@ -10,24 +36,11 @@
       "published": "2026-11-19T13:00:40Z",
       "seconds": 16,
       "type": "Short",
-      "views": 9604,
+      "views": 9637,
       "likes": 70,
       "comments": 1,
-      "views_per_hour": 48.7,
+      "views_per_hour": 43.6,
       "url": "https://www.youtube.com/watch?v=aYBokm3TIYE"
-    },
-    {
-      "id": "iUMOzeRaG7A",
-      "title": "Every way to make money in GTA 6, ranked \ud83d\udcb0 #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-27T14:30:30Z",
-      "seconds": 18,
-      "type": "Short",
-      "views": 118,
-      "likes": 1,
-      "comments": 1,
-      "views_per_hour": 32.7,
-      "url": "https://www.youtube.com/watch?v=iUMOzeRaG7A"
     },
     {
       "id": "CGAd-LB82d4",
@@ -36,24 +49,11 @@
       "published": "2026-11-26T01:30:22Z",
       "seconds": 12,
       "type": "Short",
-      "views": 1064,
-      "likes": 6,
+      "views": 1220,
+      "likes": 7,
       "comments": 1,
-      "views_per_hour": 26.2,
+      "views_per_hour": 18.9,
       "url": "https://www.youtube.com/watch?v=CGAd-LB82d4"
-    },
-    {
-      "id": "YlVyesTxTZg",
-      "title": "GTA 6 mask location: your first one is here \ud83c\udfad #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-27T13:00:04Z",
-      "seconds": 17,
-      "type": "Short",
-      "views": 127,
-      "likes": 1,
-      "comments": 1,
-      "views_per_hour": 24.9,
-      "url": "https://www.youtube.com/watch?v=YlVyesTxTZg"
     },
     {
       "id": "oYqPC06109w",
@@ -65,8 +65,60 @@
       "views": 5331,
       "likes": 42,
       "comments": 6,
-      "views_per_hour": 17.1,
+      "views_per_hour": 15.9,
       "url": "https://www.youtube.com/watch?v=oYqPC06109w"
+    },
+    {
+      "id": "YlVyesTxTZg",
+      "title": "GTA 6 mask location: your first one is here \ud83c\udfad #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-27T13:00:04Z",
+      "seconds": 17,
+      "type": "Short",
+      "views": 383,
+      "likes": 3,
+      "comments": 1,
+      "views_per_hour": 13.1,
+      "url": "https://www.youtube.com/watch?v=YlVyesTxTZg"
+    },
+    {
+      "id": "Isga_2KMNTc",
+      "title": "Rockstar's games ranked: Red Dead 2 isn't S tier \ud83d\ude24 #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-27T16:00:01Z",
+      "seconds": 21,
+      "type": "Short",
+      "views": 288,
+      "likes": 3,
+      "comments": 2,
+      "views_per_hour": 11.0,
+      "url": "https://www.youtube.com/watch?v=Isga_2KMNTc"
+    },
+    {
+      "id": "ty0KP7MLaKU",
+      "title": "LACY tried to pet a GTA 6 alligator \ud83d\udc0a\ud83d\ude2d #LACY #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-19T12:48:31Z",
+      "seconds": 22,
+      "type": "Short",
+      "views": 1858,
+      "likes": 21,
+      "comments": 3,
+      "views_per_hour": 8.4,
+      "url": "https://www.youtube.com/watch?v=ty0KP7MLaKU"
+    },
+    {
+      "id": "sZvpH1td1jU",
+      "title": "GTA 6 giant crab location + password \ud83e\udd80 #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-27T17:30:17Z",
+      "seconds": 13,
+      "type": "Short",
+      "views": 197,
+      "likes": 0,
+      "comments": 1,
+      "views_per_hour": 8.0,
+      "url": "https://www.youtube.com/watch?v=sZvpH1td1jU"
     },
     {
       "id": "Ocu-HYE9Ygw",
@@ -78,47 +130,34 @@
       "views": 403,
       "likes": 1,
       "comments": 1,
-      "views_per_hour": 13.8,
+      "views_per_hour": 7.6,
       "url": "https://www.youtube.com/watch?v=Ocu-HYE9Ygw"
     },
     {
-      "id": "sZvpH1td1jU",
-      "title": "GTA 6 giant crab location + password \ud83e\udd80 #GTA6 #Shorts",
+      "id": "iUMOzeRaG7A",
+      "title": "Every way to make money in GTA 6, ranked \ud83d\udcb0 #GTA6 #Shorts",
       "channel": "Vice Replay",
-      "published": "2026-11-27T17:30:17Z",
+      "published": "2026-11-27T14:30:30Z",
+      "seconds": 18,
+      "type": "Short",
+      "views": 198,
+      "likes": 2,
+      "comments": 1,
+      "views_per_hour": 7.2,
+      "url": "https://www.youtube.com/watch?v=iUMOzeRaG7A"
+    },
+    {
+      "id": "WvHbn0jE1Ms",
+      "title": "GTA 6 barber shop location: the closest one \ud83d\udc88 #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-27T23:00:19Z",
       "seconds": 13,
       "type": "Short",
-      "views": 10,
-      "likes": 0,
-      "comments": 1,
-      "views_per_hour": 10.0,
-      "url": "https://www.youtube.com/watch?v=sZvpH1td1jU"
-    },
-    {
-      "id": "ty0KP7MLaKU",
-      "title": "LACY tried to pet a GTA 6 alligator \ud83d\udc0a\ud83d\ude2d #LACY #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-19T12:48:31Z",
-      "seconds": 22,
-      "type": "Short",
-      "views": 1855,
-      "likes": 21,
-      "comments": 3,
-      "views_per_hour": 9.4,
-      "url": "https://www.youtube.com/watch?v=ty0KP7MLaKU"
-    },
-    {
-      "id": "Isga_2KMNTc",
-      "title": "Rockstar's games ranked: Red Dead 2 isn't S tier \ud83d\ude24 #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-27T16:00:01Z",
-      "seconds": 21,
-      "type": "Short",
-      "views": 19,
+      "views": 127,
       "likes": 1,
       "comments": 1,
-      "views_per_hour": 9.0,
-      "url": "https://www.youtube.com/watch?v=Isga_2KMNTc"
+      "views_per_hour": 6.6,
+      "url": "https://www.youtube.com/watch?v=WvHbn0jE1Ms"
     },
     {
       "id": "b4pWGuZNPJY",
@@ -130,7 +169,7 @@
       "views": 1380,
       "likes": 26,
       "comments": 1,
-      "views_per_hour": 7.0,
+      "views_per_hour": 6.2,
       "url": "https://www.youtube.com/watch?v=b4pWGuZNPJY"
     },
     {
@@ -143,34 +182,8 @@
       "views": 1192,
       "likes": 25,
       "comments": 2,
-      "views_per_hour": 6.9,
+      "views_per_hour": 6.1,
       "url": "https://www.youtube.com/watch?v=uCNHbnOqgs0"
-    },
-    {
-      "id": "ChmiOLulOvo",
-      "title": "GTA 6: where to find Paul Walker's car \ud83c\udfce\ufe0f #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-25T20:36:05Z",
-      "seconds": 21,
-      "type": "Short",
-      "views": 303,
-      "likes": 4,
-      "comments": 1,
-      "views_per_hour": 6.7,
-      "url": "https://www.youtube.com/watch?v=ChmiOLulOvo"
-    },
-    {
-      "id": "jQbv5GPR3dk",
-      "title": "GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-23T17:30:05Z",
-      "seconds": 18,
-      "type": "Short",
-      "views": 617,
-      "likes": 3,
-      "comments": 2,
-      "views_per_hour": 6.4,
-      "url": "https://www.youtube.com/watch?v=jQbv5GPR3dk"
     },
     {
       "id": "Z8jQK8nZ1cQ",
@@ -182,8 +195,21 @@
       "views": 1189,
       "likes": 16,
       "comments": 5,
-      "views_per_hour": 6.4,
+      "views_per_hour": 5.7,
       "url": "https://www.youtube.com/watch?v=Z8jQK8nZ1cQ"
+    },
+    {
+      "id": "OliGdX-eRFY",
+      "title": "GTA protagonists ranked: CJ isn't S tier \ud83d\ude24 #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-26T17:30:06Z",
+      "seconds": 16,
+      "type": "Short",
+      "views": 272,
+      "likes": 2,
+      "comments": 3,
+      "views_per_hour": 5.6,
+      "url": "https://www.youtube.com/watch?v=OliGdX-eRFY"
     },
     {
       "id": "DG_MpuSMDV8",
@@ -195,21 +221,8 @@
       "views": 1307,
       "likes": 33,
       "comments": 1,
-      "views_per_hour": 6.1,
+      "views_per_hour": 5.5,
       "url": "https://www.youtube.com/watch?v=DG_MpuSMDV8"
-    },
-    {
-      "id": "OliGdX-eRFY",
-      "title": "GTA protagonists ranked: CJ isn't S tier \ud83d\ude24 #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-26T17:30:06Z",
-      "seconds": 16,
-      "type": "Short",
-      "views": 148,
-      "likes": 1,
-      "comments": 3,
-      "views_per_hour": 6.0,
-      "url": "https://www.youtube.com/watch?v=OliGdX-eRFY"
     },
     {
       "id": "vlPV5Yre8T8",
@@ -221,7 +234,7 @@
       "views": 1172,
       "likes": 21,
       "comments": 1,
-      "views_per_hour": 5.8,
+      "views_per_hour": 5.2,
       "url": "https://www.youtube.com/watch?v=vlPV5Yre8T8"
     },
     {
@@ -234,47 +247,21 @@
       "views": 1344,
       "likes": 30,
       "comments": 2,
-      "views_per_hour": 5.7,
+      "views_per_hour": 5.2,
       "url": "https://www.youtube.com/watch?v=YKR0s2dWJ8o"
     },
     {
-      "id": "Egb3otGWJIg",
-      "title": "The first person to finish GTA 6 wasn't IShowSpeed #GTA6 #Shorts",
+      "id": "jQbv5GPR3dk",
+      "title": "GTA 6 tier list: Vice City is only B tier #GTA6 #Shorts",
       "channel": "Vice Replay",
-      "published": "2026-11-22T15:00:12Z",
-      "seconds": 29,
+      "published": "2026-11-23T17:30:05Z",
+      "seconds": 18,
       "type": "Short",
-      "views": 661,
-      "likes": 16,
-      "comments": 3,
-      "views_per_hour": 5.4,
-      "url": "https://www.youtube.com/watch?v=Egb3otGWJIg"
-    },
-    {
-      "id": "sEg8EWL2XPA",
-      "title": "GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-25T14:30:27Z",
-      "seconds": 19,
-      "type": "Short",
-      "views": 267,
-      "likes": 6,
-      "comments": 1,
-      "views_per_hour": 5.2,
-      "url": "https://www.youtube.com/watch?v=sEg8EWL2XPA"
-    },
-    {
-      "id": "S5L5Mah6LIU",
-      "title": "GTA 6 just got a 99 on Metacritic #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-19T02:51:25Z",
-      "seconds": 29,
-      "type": "Short",
-      "views": 1075,
-      "likes": 16,
-      "comments": 15,
-      "views_per_hour": 5.2,
-      "url": "https://www.youtube.com/watch?v=S5L5Mah6LIU"
+      "views": 617,
+      "likes": 3,
+      "comments": 2,
+      "views_per_hour": 5.1,
+      "url": "https://www.youtube.com/watch?v=jQbv5GPR3dk"
     },
     {
       "id": "Eikozi0uFec",
@@ -286,8 +273,21 @@
       "views": 1009,
       "likes": 8,
       "comments": 0,
-      "views_per_hour": 5.1,
+      "views_per_hour": 4.6,
       "url": "https://www.youtube.com/watch?v=Eikozi0uFec"
+    },
+    {
+      "id": "S5L5Mah6LIU",
+      "title": "GTA 6 just got a 99 on Metacritic #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-19T02:51:25Z",
+      "seconds": 29,
+      "type": "Short",
+      "views": 1075,
+      "likes": 16,
+      "comments": 15,
+      "views_per_hour": 4.6,
+      "url": "https://www.youtube.com/watch?v=S5L5Mah6LIU"
     },
     {
       "id": "_5ZWAUY75y4",
@@ -299,8 +299,34 @@
       "views": 1223,
       "likes": 27,
       "comments": 2,
-      "views_per_hour": 5.1,
+      "views_per_hour": 4.6,
       "url": "https://www.youtube.com/watch?v=_5ZWAUY75y4"
+    },
+    {
+      "id": "Egb3otGWJIg",
+      "title": "The first person to finish GTA 6 wasn't IShowSpeed #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-22T15:00:12Z",
+      "seconds": 29,
+      "type": "Short",
+      "views": 662,
+      "likes": 17,
+      "comments": 3,
+      "views_per_hour": 4.5,
+      "url": "https://www.youtube.com/watch?v=Egb3otGWJIg"
+    },
+    {
+      "id": "ChmiOLulOvo",
+      "title": "GTA 6: where to find Paul Walker's car \ud83c\udfce\ufe0f #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-25T20:36:05Z",
+      "seconds": 21,
+      "type": "Short",
+      "views": 303,
+      "likes": 4,
+      "comments": 1,
+      "views_per_hour": 4.4,
+      "url": "https://www.youtube.com/watch?v=ChmiOLulOvo"
     },
     {
       "id": "Wl6K3f5FtVU",
@@ -312,7 +338,7 @@
       "views": 981,
       "likes": 15,
       "comments": 1,
-      "views_per_hour": 5.0,
+      "views_per_hour": 4.4,
       "url": "https://www.youtube.com/watch?v=Wl6K3f5FtVU"
     },
     {
@@ -325,8 +351,21 @@
       "views": 1001,
       "likes": 22,
       "comments": 1,
-      "views_per_hour": 4.3,
+      "views_per_hour": 3.9,
       "url": "https://www.youtube.com/watch?v=gvIH1aLtJuc"
+    },
+    {
+      "id": "sEg8EWL2XPA",
+      "title": "GTA 6 vs GTA 5 on PS5: 30 FPS vs 60 #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-25T14:30:27Z",
+      "seconds": 19,
+      "type": "Short",
+      "views": 278,
+      "likes": 6,
+      "comments": 1,
+      "views_per_hour": 3.7,
+      "url": "https://www.youtube.com/watch?v=sEg8EWL2XPA"
     },
     {
       "id": "DBlAdqc1orw",
@@ -338,7 +377,7 @@
       "views": 834,
       "likes": 26,
       "comments": 1,
-      "views_per_hour": 4.1,
+      "views_per_hour": 3.6,
       "url": "https://www.youtube.com/watch?v=DBlAdqc1orw"
     },
     {
@@ -351,21 +390,8 @@
       "views": 779,
       "likes": 22,
       "comments": 1,
-      "views_per_hour": 3.8,
-      "url": "https://www.youtube.com/watch?v=6bPAn80dKno"
-    },
-    {
-      "id": "vkvg5KPqb70",
-      "title": "Don't grind money in GTA 6 Chapter 1 (here's the catch) #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-20T17:30:37Z",
-      "seconds": 30,
-      "type": "Short",
-      "views": 579,
-      "likes": 6,
-      "comments": 1,
       "views_per_hour": 3.4,
-      "url": "https://www.youtube.com/watch?v=vkvg5KPqb70"
+      "url": "https://www.youtube.com/watch?v=6bPAn80dKno"
     },
     {
       "id": "Y4AT3Y4kcmg",
@@ -377,8 +403,21 @@
       "views": 798,
       "likes": 13,
       "comments": 2,
-      "views_per_hour": 3.4,
+      "views_per_hour": 3.1,
       "url": "https://www.youtube.com/watch?v=Y4AT3Y4kcmg"
+    },
+    {
+      "id": "vkvg5KPqb70",
+      "title": "Don't grind money in GTA 6 Chapter 1 (here's the catch) #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-20T17:30:37Z",
+      "seconds": 30,
+      "type": "Short",
+      "views": 580,
+      "likes": 6,
+      "comments": 1,
+      "views_per_hour": 3.0,
+      "url": "https://www.youtube.com/watch?v=vkvg5KPqb70"
     },
     {
       "id": "aU1Js-p-FCo",
@@ -390,21 +429,8 @@
       "views": 189,
       "likes": 3,
       "comments": 1,
-      "views_per_hour": 2.5,
+      "views_per_hour": 1.9,
       "url": "https://www.youtube.com/watch?v=aU1Js-p-FCo"
-    },
-    {
-      "id": "Zb40bCmejBQ",
-      "title": "GTA 6's first trailer STILL wins (309M views) #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-25T17:30:29Z",
-      "seconds": 16,
-      "type": "Short",
-      "views": 105,
-      "likes": 0,
-      "comments": 1,
-      "views_per_hour": 2.2,
-      "url": "https://www.youtube.com/watch?v=Zb40bCmejBQ"
     },
     {
       "id": "9lTZNbwbSec",
@@ -416,7 +442,7 @@
       "views": 402,
       "likes": 4,
       "comments": 1,
-      "views_per_hour": 1.9,
+      "views_per_hour": 1.7,
       "url": "https://www.youtube.com/watch?v=9lTZNbwbSec"
     },
     {
@@ -429,7 +455,7 @@
       "views": 268,
       "likes": 6,
       "comments": 1,
-      "views_per_hour": 1.8,
+      "views_per_hour": 1.6,
       "url": "https://www.youtube.com/watch?v=bVoHzywwvgc"
     },
     {
@@ -442,8 +468,21 @@
       "views": 374,
       "likes": 10,
       "comments": 1,
-      "views_per_hour": 1.7,
+      "views_per_hour": 1.6,
       "url": "https://www.youtube.com/watch?v=4EuMnzlLKTY"
+    },
+    {
+      "id": "Zb40bCmejBQ",
+      "title": "GTA 6's first trailer STILL wins (309M views) #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-25T17:30:29Z",
+      "seconds": 16,
+      "type": "Short",
+      "views": 109,
+      "likes": 0,
+      "comments": 1,
+      "views_per_hour": 1.5,
+      "url": "https://www.youtube.com/watch?v=Zb40bCmejBQ"
     },
     {
       "id": "xvudsg_o6ow",
@@ -455,7 +494,7 @@
       "views": 353,
       "likes": 4,
       "comments": 4,
-      "views_per_hour": 1.5,
+      "views_per_hour": 1.3,
       "url": "https://www.youtube.com/watch?v=xvudsg_o6ow"
     },
     {
@@ -468,21 +507,8 @@
       "views": 379,
       "likes": 5,
       "comments": 1,
-      "views_per_hour": 1.5,
+      "views_per_hour": 1.3,
       "url": "https://www.youtube.com/watch?v=wPPhLBHS7-M"
-    },
-    {
-      "id": "K9Ii3rntcog",
-      "title": "GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-24T16:00:29Z",
-      "seconds": 18,
-      "type": "Short",
-      "views": 101,
-      "likes": 0,
-      "comments": 1,
-      "views_per_hour": 1.4,
-      "url": "https://www.youtube.com/watch?v=K9Ii3rntcog"
     },
     {
       "id": "xvA4O2ytSnE",
@@ -491,10 +517,10 @@
       "published": "2026-11-22T17:30:11Z",
       "seconds": 29,
       "type": "Short",
-      "views": 165,
+      "views": 167,
       "likes": 0,
       "comments": 1,
-      "views_per_hour": 1.4,
+      "views_per_hour": 1.2,
       "url": "https://www.youtube.com/watch?v=xvA4O2ytSnE"
     },
     {
@@ -507,21 +533,8 @@
       "views": 183,
       "likes": 1,
       "comments": 1,
-      "views_per_hour": 1.3,
+      "views_per_hour": 1.1,
       "url": "https://www.youtube.com/watch?v=zfjEiiiQdJk"
-    },
-    {
-      "id": "fckK4qbyd48",
-      "title": "GTA 6's Platinum trophy is already taken #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-25T13:00:20Z",
-      "seconds": 20,
-      "type": "Short",
-      "views": 64,
-      "likes": 1,
-      "comments": 1,
-      "views_per_hour": 1.2,
-      "url": "https://www.youtube.com/watch?v=fckK4qbyd48"
     },
     {
       "id": "KlelqBLnEUI",
@@ -533,7 +546,7 @@
       "views": 199,
       "likes": 6,
       "comments": 1,
-      "views_per_hour": 1.2,
+      "views_per_hour": 1.1,
       "url": "https://www.youtube.com/watch?v=KlelqBLnEUI"
     },
     {
@@ -546,7 +559,7 @@
       "views": 277,
       "likes": 2,
       "comments": 0,
-      "views_per_hour": 1.2,
+      "views_per_hour": 1.1,
       "url": "https://www.youtube.com/watch?v=ZUcedkldfsE"
     },
     {
@@ -559,8 +572,34 @@
       "views": 297,
       "likes": 0,
       "comments": 1,
-      "views_per_hour": 1.2,
+      "views_per_hour": 1.1,
       "url": "https://www.youtube.com/watch?v=pcoMWOraJA4"
+    },
+    {
+      "id": "K9Ii3rntcog",
+      "title": "GTA 6 is the CHEAPEST GTA ever (inflation) #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-24T16:00:29Z",
+      "seconds": 18,
+      "type": "Short",
+      "views": 102,
+      "likes": 0,
+      "comments": 1,
+      "views_per_hour": 1.0,
+      "url": "https://www.youtube.com/watch?v=K9Ii3rntcog"
+    },
+    {
+      "id": "fckK4qbyd48",
+      "title": "GTA 6's Platinum trophy is already taken #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-25T13:00:20Z",
+      "seconds": 20,
+      "type": "Short",
+      "views": 69,
+      "likes": 1,
+      "comments": 1,
+      "views_per_hour": 0.9,
+      "url": "https://www.youtube.com/watch?v=fckK4qbyd48"
     },
     {
       "id": "yU-xKsoUdbM",
@@ -572,7 +611,7 @@
       "views": 173,
       "likes": 3,
       "comments": 1,
-      "views_per_hour": 1.1,
+      "views_per_hour": 0.9,
       "url": "https://www.youtube.com/watch?v=yU-xKsoUdbM"
     },
     {
@@ -585,7 +624,7 @@
       "views": 240,
       "likes": 6,
       "comments": 4,
-      "views_per_hour": 1.0,
+      "views_per_hour": 0.9,
       "url": "https://www.youtube.com/watch?v=yKISW4fJj3Y"
     },
     {
@@ -598,21 +637,8 @@
       "views": 254,
       "likes": 5,
       "comments": 1,
-      "views_per_hour": 1.0,
-      "url": "https://www.youtube.com/watch?v=DIFRHVF6T0E"
-    },
-    {
-      "id": "fmE0eA1ayf4",
-      "title": "GTA 6's hacker got 7 years, then walked free \ud83d\ude33 #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-25T20:30:22Z",
-      "seconds": 22,
-      "type": "Short",
-      "views": 41,
-      "likes": 1,
-      "comments": 1,
       "views_per_hour": 0.9,
-      "url": "https://www.youtube.com/watch?v=fmE0eA1ayf4"
+      "url": "https://www.youtube.com/watch?v=DIFRHVF6T0E"
     },
     {
       "id": "uvWNXugdvSo",
@@ -624,34 +650,34 @@
       "views": 130,
       "likes": 2,
       "comments": 1,
-      "views_per_hour": 0.9,
+      "views_per_hour": 0.8,
       "url": "https://www.youtube.com/watch?v=uvWNXugdvSo"
     },
     {
+      "id": "fmE0eA1ayf4",
+      "title": "GTA 6's hacker got 7 years, then walked free \ud83d\ude33 #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-25T20:30:22Z",
+      "seconds": 22,
+      "type": "Short",
+      "views": 47,
+      "likes": 1,
+      "comments": 1,
+      "views_per_hour": 0.7,
+      "url": "https://www.youtube.com/watch?v=fmE0eA1ayf4"
+    },
+    {
       "id": "h9gMGI8gUiU",
-      "title": "GTA 6 vs GTA 5 cops: they remember you \ud83d\ude94 #GTA6 #Shorts",
+      "title": "GTA 6 cops remember your outfit #GTA6 #Shorts",
       "channel": "Vice Replay",
       "published": "2026-11-26T16:00:03Z",
       "seconds": 18,
       "type": "Short",
-      "views": 17,
-      "likes": 0,
-      "comments": 1,
-      "views_per_hour": 0.7,
-      "url": "https://www.youtube.com/watch?v=h9gMGI8gUiU"
-    },
-    {
-      "id": "LYmF6sSQtYE",
-      "title": "GTA 6's Metacritic 99: only ONE other game #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-24T17:30:37Z",
-      "seconds": 20,
-      "type": "Short",
-      "views": 41,
+      "views": 26,
       "likes": 1,
       "comments": 1,
-      "views_per_hour": 0.6,
-      "url": "https://www.youtube.com/watch?v=LYmF6sSQtYE"
+      "views_per_hour": 0.5,
+      "url": "https://www.youtube.com/watch?v=h9gMGI8gUiU"
     },
     {
       "id": "kLxIVUzSOaI",
@@ -663,8 +689,21 @@
       "views": 175,
       "likes": 7,
       "comments": 0,
-      "views_per_hour": 0.6,
+      "views_per_hour": 0.5,
       "url": "https://www.youtube.com/watch?v=kLxIVUzSOaI"
+    },
+    {
+      "id": "LYmF6sSQtYE",
+      "title": "GTA 6 beat every Rockstar game's review score #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-24T17:30:37Z",
+      "seconds": 20,
+      "type": "Short",
+      "views": 41,
+      "likes": 1,
+      "comments": 1,
+      "views_per_hour": 0.4,
+      "url": "https://www.youtube.com/watch?v=LYmF6sSQtYE"
     },
     {
       "id": "Rt18FhG-DYk",
@@ -676,7 +715,7 @@
       "views": 76,
       "likes": 2,
       "comments": 2,
-      "views_per_hour": 0.5,
+      "views_per_hour": 0.4,
       "url": "https://www.youtube.com/watch?v=Rt18FhG-DYk"
     },
     {
@@ -689,21 +728,8 @@
       "views": 98,
       "likes": 1,
       "comments": 1,
-      "views_per_hour": 0.5,
-      "url": "https://www.youtube.com/watch?v=rhf1qryjRSM"
-    },
-    {
-      "id": "Aln9RLi-KjY",
-      "title": "GTA 6: the $100 edition beat the $80 one \ud83d\udcb0 #GTA6 #Shorts",
-      "channel": "Vice Replay",
-      "published": "2026-11-26T14:30:24Z",
-      "seconds": 20,
-      "type": "Short",
-      "views": 12,
-      "likes": 0,
-      "comments": 1,
       "views_per_hour": 0.4,
-      "url": "https://www.youtube.com/watch?v=Aln9RLi-KjY"
+      "url": "https://www.youtube.com/watch?v=rhf1qryjRSM"
     },
     {
       "id": "-C9KX5Afwgw",
@@ -725,7 +751,7 @@
       "published": "2026-11-24T13:00:05Z",
       "seconds": 17,
       "type": "Short",
-      "views": 24,
+      "views": 29,
       "likes": 0,
       "comments": 1,
       "views_per_hour": 0.3,
@@ -743,6 +769,19 @@
       "comments": 1,
       "views_per_hour": 0.3,
       "url": "https://www.youtube.com/watch?v=kQ_OUxG_GYk"
+    },
+    {
+      "id": "Aln9RLi-KjY",
+      "title": "GTA 6 fans paid $100, not $80. Here's why #GTA6 #Shorts",
+      "channel": "Vice Replay",
+      "published": "2026-11-26T14:30:24Z",
+      "seconds": 20,
+      "type": "Short",
+      "views": 12,
+      "likes": 0,
+      "comments": 1,
+      "views_per_hour": 0.2,
+      "url": "https://www.youtube.com/watch?v=Aln9RLi-KjY"
     },
     {
       "id": "pPYdMlKMaEI",
@@ -784,6 +823,19 @@
       "url": "https://www.youtube.com/watch?v=GjhaJdjHR4Q"
     },
     {
+      "id": "nbxIU7S67c4",
+      "title": "GTA 6 Map: Every Secret and Exactly Where to Find It",
+      "channel": "Vice Replay",
+      "published": "2026-11-27T20:30:13Z",
+      "seconds": 141,
+      "type": "Short",
+      "views": 0,
+      "likes": 0,
+      "comments": 1,
+      "views_per_hour": 0.0,
+      "url": "https://www.youtube.com/watch?v=nbxIU7S67c4"
+    },
+    {
       "id": "n78uk6y2gKE",
       "title": "GTA 6: How to Rob ATMs With a Winch, Step by Step",
       "channel": "Vice Replay",
@@ -803,7 +855,7 @@
       "published": "2026-11-22T19:30:14Z",
       "seconds": 129,
       "type": "Short",
-      "views": 0,
+      "views": 1,
       "likes": 1,
       "comments": 1,
       "views_per_hour": 0.0,
@@ -829,7 +881,7 @@
       "published": "2026-11-21T15:30:29Z",
       "seconds": 99,
       "type": "Short",
-      "views": 1,
+      "views": 2,
       "likes": 0,
       "comments": 1,
       "views_per_hour": 0.0,

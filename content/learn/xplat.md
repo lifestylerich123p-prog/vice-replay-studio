@@ -1,10 +1,10 @@
-# Cross-platform performance (2026-11-27T13:37 UTC, `python -m studio.xplat`)
+# Cross-platform performance (2026-11-28T18:08 UTC, `python -m studio.xplat`)
 
 Each platform is compared only with itself (rel = views / that platform's median; YouTube at 24 h, after launch week; Instagram by likes until views are connected).
 
 ## Baselines
-- youtube/en: median 67
-- youtube-es/es: median 1.5
+- youtube/en: median 75
+- youtube-es/es: median 1
 - tiktok/en: median 138.5
 - tiktok/es: median 156.5
 - instagram/en: median 8
@@ -12,33 +12,33 @@ Each platform is compared only with itself (rel = views / that platform's median
 ## Formats (median rel per platform, n)
 | Format | YouTube | TikTok | Instagram | Works on |
 |---|---|---|---|---|
-| map/location | 6.2 (3) | 56.77 (1) | 0.0 (1) | youtube |
+| map/location | 0.85 (8) | 56.77 (1) | 0.0 (1) | - |
 | tutorial/how-to | 0.0 (1) | 0.87 (3) | 14.88 (1) | - |
 | streamer | 10.5 (1) | 1.19 (1) | 1.31 (6) | instagram |
-| versus | 2.4 (2) | 1.26 (2) | 4.25 (1) | youtube, tiktok ✅ consistent |
-| tier list | 3.4 (3) | 0.92 (1) | 0.12 (3) | youtube |
-| news/facts | 0.4 (11) | 0.98 (16) | 1.0 (19) | youtube-es |
+| tier list | 5.6 (6) | 0.92 (1) | 0.12 (3) | youtube |
+| versus | 4.5 (1) | 1.26 (2) | 4.25 (1) | tiktok |
+| news/facts | 0.4 (12) | 0.98 (16) | 1.0 (19) | youtube-es |
 
 ## Hooks (YouTube, median rel, n; n < 5 = preliminary)
-- location-info: 14.5 (n=1, preliminary)
-- immediate-answer: 1.1 (n=20)
+- immediate-answer: 1.0 (n=26)
+- location-info: 1.0 (n=3, preliminary)
 
 ## Spanish hooks: median % viewed by hook structure (n; first frames; n < 5 = preliminary)
-- immediate-answer: 91.1% viewed, 4.5 views (n=6; first frames: footage, kinetic, kinetic on photo, text on photo, unknown)
+- immediate-answer: 90.9% viewed, 4 views (n=7; first frames: footage, kinetic, kinetic on photo, text on photo, unknown)
 
 ## YouTube views by age (median, n)
 - 1h: 3 (n=3, preliminary)
-- 24h: 67 (n=17)
-- 72h: 94.5 (n=6)
+- 24h: 75 (n=25)
+- 72h: 101 (n=13)
 - 7d: None (n=0, preliminary)
 - 28d: None (n=0, preliminary)
 
 ## Spanish YouTube: average % viewed by voice (28 days)
-- unknown (before Nov 26): 91.1% (n=6)
+- unknown (before Nov 26): 90.9% (n=7)
 
 ## Top posts per platform
-- youtube: GTA 6 tier list: Vice City is only B tier #GTA6 #S (15.0x); GTA 6 shoe store: where to buy shoes 👟 #GTA6 #Shor (14.5x); The first person to finish GTA 6 wasn't IShowSpeed (10.5x)
-- youtube-es: En el MIAMI de GTA 6 el DJ es Bad Bunny 🐰 #GTA6 #S (7.33x); El PRIMERO en terminar GTA 6 NO fue IShowSpeed 😳 # (5.33x); GTA 6 NO tiene dardos... Rockstar explica por qué  (3.33x)
+- youtube: GTA maps ranked: Los Santos is only B tier 😬 #GTA6 (42.1x); GTA 6 tier list: Vice City is only B tier #GTA6 #S (15.0x); The first person to finish GTA 6 wasn't IShowSpeed (10.5x)
+- youtube-es: En el MIAMI de GTA 6 el DJ es Bad Bunny 🐰 #GTA6 #S (19.0x); El PRIMERO en terminar GTA 6 NO fue IShowSpeed 😳 # (8.0x); GTA 6 NO tiene dardos... Rockstar explica por qué  (5.0x)
 - tiktok: GTA 6 shoe store: where to buy shoes 👟 Flip Flop H (56.77x); GTA 6 NZ trick: 18 hours early? 🌏 #GTA6 #GTAVI #Vi (6.6x); GTA 6 ya ganó 1.650 MILLONES de dólares 💰 #GTA6 #g (3.76x)
 - instagram: First 3 settings to change in GTA 6 #GTA6 (14.88x); Don't grind money in GTA 6 Chapter 1 (here's the c (8.62x); GTA 6's Metacritic 99: only ONE other game #GTA6 (5.75x)
 - website (Search Console): https://vicereplay.com/guides/gta-6-ps5-pro-worth-it/ 126 impr / 0 clicks; https://vicereplay.com/ 73 impr / 7 clicks; https://vicereplay.com/guides/gta-6-characters/ 46 impr / 0 clicks

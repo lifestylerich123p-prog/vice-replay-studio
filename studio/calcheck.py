@@ -112,6 +112,13 @@ def live(store=None):
             continue
         pa = items[0]["status"].get("publishAt")
         want = to_utc(*r["publish"]).strftime("%Y-%m-%dT%H:%M")
+        if not pa and items[0]["status"].get("privacyStatus") == "public":
+            # YouTube clears publishAt once a scheduled video goes public: fine if it went live within 30 min of the slot
+            went = dt.datetime.fromisoformat(items[0]["snippet"]["publishedAt"].replace("Z", "+00:00"))
+            if abs((went - to_utc(*r["publish"])).total_seconds()) <= 1800:
+                continue
+            out.append(f"{k}: public since {went:%Y-%m-%dT%H:%M} UTC, not at the approved {want} UTC")
+            continue
         if not pa or not pa.startswith(want):
             out.append(f"{k}: YouTube publishAt {pa} != approved {want} UTC ({label(r['publish'][0])} {r['publish'][1]} ET)")
     return out

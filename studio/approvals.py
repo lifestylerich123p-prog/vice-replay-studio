@@ -525,14 +525,23 @@ def verify(now=None):
     slot passed are looked up on YouTube; public ones become PUBLISHED. Returns report lines."""
     from .youtube_upload import req, token
     d, now = _load(), now or dt.datetime.now(ET)
-    due = {k: r for k, r in d.items() if r.get("platform") == "youtube-en" and r.get("state") == "SCHEDULED"
+    due = {k: r for k, r in d.items() if r.get("platform") in ("youtube-en", "youtube-es") and r.get("state") == "SCHEDULED"
            and r.get("video_id") and (_when(r.get("publish")) or now) <= now}
     lines = []
     if not due:
         return lines
-    ids = ",".join(r["video_id"] for r in due.values())
-    res, _ = req("GET", f"https://youtube.googleapis.com/youtube/v3/videos?part=status,snippet&id={ids}", token())
-    live = {v["id"]: v for v in res.get("items", [])}
+    live = {}
+    for plat in ("youtube-en", "youtube-es"):  # each channel is read with its own key (Nov 28: Spanish was skipped)
+        ids = ",".join(r["video_id"] for r in due.values() if r.get("platform") == plat)
+        if not ids:
+            continue
+        if plat == "youtube-es":
+            from . import youtube_es as y
+            tok = y.token_for(y.config().get("vice-replay-es", {}).get("channel_id"), y.ENV)
+        else:
+            tok = token()
+        res, _ = req("GET", f"https://youtube.googleapis.com/youtube/v3/videos?part=status,snippet&id={ids}", tok)
+        live.update({v["id"]: v for v in res.get("items", [])})
     for k, r in due.items():
         v = live.get(r["video_id"])
         status = (v or {}).get("status", {}).get("privacyStatus")
