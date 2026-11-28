@@ -94,5 +94,9 @@
  "gta6-map-size-scale": {
   "date": "2026-11-26",
   "note": "Phase 9 (Nov 26): claims ledger in the episode (python -m studio.sources: no blockers); labels read by eye on Rockstar's HD poster; other facts from search summaries, hedged where reported."
+ },
+ "gta6-little-cuba-es": {
+  "date": "2026-11-28",
+  "note": "Nov 28: kept only claims re-checked at 2:04 AM ET today: Little Cuba = Rockstar's official name (Only in Leonida, quoted by GTA 6 Life + GTA Hype) and Celia Cruz on the soundtrack (GTABase + KeenGamer, search summaries). Cut Benny Moré, Gloria Estefan/La Ola host line and the tattoo-artist claim (no"
  }
 }

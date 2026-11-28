@@ -1471,7 +1471,7 @@
   "slug": "gta6-little-cuba-es",
   "item": "short",
   "platform": "youtube-es",
-  "state": "NEEDS_REVIEW",
+  "state": "AUTO_APPROVED",
   "history": [
    [
     "2026-11-26 15:24 ET",
@@ -1520,6 +1520,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
+   ],
+   [
+    "2026-11-28 10:27 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 10:27 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-28 10:27 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
    ]
   ],
   "publish": [
@@ -1528,15 +1546,13 @@
   ],
   "title": "GTA 6, ¿qué BOLÁ asere? Esto es pura Cuba 🇨🇺 #GTA6 #Shorts",
   "video": "output/gta6-little-cuba-es/gta6-little-cuba-es-short-es.mp4",
-  "duration": 21.4,
-  "spec_hash": "090635fe65d5d07ed77daa1ae561f6eb02f803c682ab0727542ec07868245f64",
-  "evaluated_at": "2026-11-28 03:49 ET",
+  "duration": 14.4,
+  "spec_hash": "f332b4ffda2234283af644553524a075fa8a1e12280c3a150cd33dfd99c631f9",
+  "evaluated_at": "2026-11-28 10:27 ET",
   "blockers": [],
-  "reviews": [
-   "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
-  ],
+  "reviews": [],
   "advice": [],
-  "video_sha256": "d60db7a5ee5a5732d3f84525bfc4624f965d654f6930e615a84061563dea5640"
+  "video_sha256": "e32061a1c20abd1f41999a32c15c9863f96f5e0cb51d69ee3649f80d94117b52"
  },
  "gta6-tattoo-shops-where:short:youtube-en": {
   "slug": "gta6-tattoo-shops-where",

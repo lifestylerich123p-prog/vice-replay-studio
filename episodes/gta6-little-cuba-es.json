@@ -10,7 +10,7 @@
  "short_description": "Spanish-channel-only Short (Cuban style).",
  "short_es": {
   "title": "GTA 6, ¿qué BOLÁ asere? Esto es pura Cuba 🇨🇺 #GTA6 #Shorts",
-  "description": "Asere, ¿qué bolá? GTA 6 está lleno de Cuba: Rockstar le puso Little Cuba a su barrio inspirado en la Pequeña Habana (página oficial Only in Leonida: \"bustling panaderías\"); en Radio La Ola, la emisora de Gloria y Emilio Estefan, suenan Celia Cruz, Benny Moré, Gloria Estefan y Cachao; y los tatuajes de la ciudad son del artista cubano Robertiko Ramos. ¿Está en talla o no? Sin spoilers.\n\nFuentes: Rockstar Games (Only in Leonida), Consequence, NME, RouteNote, CiberCuba, Periódico Cubano.",
+  "description": "Asere, ¿qué bolá? GTA 6 está lleno de Cuba: Rockstar le puso Little Cuba a su barrio inspirado en la Pequeña Habana (página oficial Only in Leonida: \"bustling panaderías\"), y en la radio suena Celia Cruz. ¿Está en talla o no? Sin spoilers.\n\nFuentes: Rockstar Games (Only in Leonida), GTABase, KeenGamer.",
   "tags": [
    "GTA 6 cubano",
    "Cuba en GTA 6",
@@ -55,12 +55,10 @@
   "Rockstar Games - Only in Leonida (Little Cuba, \"bustling panaderías\"), as quoted by GTA 6 Life: https://gta6-life.com/en/database/gta-6-little-cuba/",
   "GTA Hype - Vice City neighbourhoods: https://www.gta6hype.com/map/vice-city/",
   "Consequence - GTA 6 radio stations, full song list: https://consequence.net/2026/11/gta-6-radio-stations-songs-soundtrack/",
-  "Consequence - GTA 6 radio DJs include Gloria Estefan: https://consequence.net/2026/11/gta-6-radio-djs-keith-richards-bad-bunny-gloria-estefan/",
   "NME - every song on the GTA 6 soundtrack: https://www.nme.com/guides/gaming-guides/grand-theft-auto-6-soundtrack-every-confirmed-song-artist-so-far-3973760",
-  "RouteNote - Radio La Ola tracklist: https://routenote.com/radar/gta-6-radio-la-ola-tracklist-every-song-on-gloria-estefans-station/",
-  "CiberCuba - Emilio and Gloria Estefan, Celia Cruz, Benny Moré and Willy Chirino bring Cuban flavor to GTA VI: https://en.cibercuba.com/noticias/2026-11-21-u208487-e208487-s27065-nid346272-emilio-gloria-estefan-celia-cruz-benny-more",
   "CiberCuba - the tattoos of a Cuban artist appear in GTA VI: https://en.cibercuba.com/noticias/2026-11-20-u208487-e208487-s27065-nid346237-estoy-gta-vi-tatuajes-artista-cubano-aparecen",
-  "Periódico Cubano - Robertiko Ramos's tattoos reach Vice City: https://www.periodicocubano.com/talento-cubano-en-gta-vi-los-tatuajes-de-robertiko-ramos-llegan-a-vice-city/"
+  "Periódico Cubano - Robertiko Ramos's tattoos reach Vice City: https://www.periodicocubano.com/talento-cubano-en-gta-vi-los-tatuajes-de-robertiko-ramos-llegan-a-vice-city/",
+  "GTABase + KeenGamer - GTA 6 soundtrack lists Celia Cruz (re-checked Nov 28 2:04 AM ET, search summaries)"
  ],
  "short": [
   {
@@ -88,7 +86,6 @@
     "src": "Mapa oficial de Rockstar",
     "locale": "es"
    },
-   "audio_es": "media/voice/gta6-little-cuba-es/adam/seg1.wav",
    "opening_note": "Phase 5 Spanish diagnosis (Nov 26): the first frame repeated the title; it now opens on the payoff (Little Cuba pinned on Rockstar's official map). Recorded Viral Adam line kept (no new spend)."
   },
   {
@@ -120,90 +117,38 @@
     "locale": "es",
     "sub": "con sus panaderías",
     "src": "Rockstar (Only in Leonida)"
-   },
-   "audio_es": "media/voice/gta6-little-cuba-es/adam/seg2.wav"
+   }
   },
   {
-   "headline": "RADIO LA OLA",
-   "headline_es": "RADIO LA OLA",
-   "text": "On the radio: Celia Cruz, Benny Moré and Gloria Estefan. Sugar!",
-   "text_es": "En la radio, Celia Cruz, Benny Moré y Gloria Estefan. ¡Azúcar!",
-   "keep_media": true,
-   "chart": {
-    "type": "list",
-    "title": "RADIO LA OLA",
-    "items": [
-     [
-      "Celia Cruz",
-      "SÍ"
-     ],
-     [
-      "Benny Moré",
-      "SÍ"
-     ],
-     [
-      "Gloria Estefan",
-      "SÍ"
-     ]
-    ],
-    "locale": "es",
-    "seed": 61,
-    "src": "Consequence · NME · RouteNote"
-   },
-   "chart_es": {
-    "type": "list",
-    "title": "RADIO LA OLA",
-    "items": [
-     [
-      "Celia Cruz",
-      "SÍ"
-     ],
-     [
-      "Benny Moré",
-      "SÍ"
-     ],
-     [
-      "Gloria Estefan",
-      "SÍ"
-     ]
-    ],
-    "locale": "es",
-    "seed": 61,
-    "src": "Consequence · NME · RouteNote"
-   },
-   "audio_es": "media/voice/gta6-little-cuba-es/adam/seg3.wav"
-  },
-  {
-   "headline": "TATUAJES CUBANOS",
-   "headline_es": "TATUAJES CUBANOS",
-   "text": "And the tattoos are by Cuban artist Robertiko Ramos.",
-   "text_es": "Y los tatuajes son del cubano Robertiko Ramos.",
+   "headline": "¡AZÚCAR!",
+   "headline_es": "¡AZÚCAR!",
+   "text": "And on the radio you hear Celia Cruz. Sugar!",
+   "text_es": "Y en la radio suena Celia Cruz. ¡Azúcar!",
    "keep_media": true,
    "chart": {
     "type": "text",
-    "text": "Tatuajes de un cubano: Robertiko Ramos",
+    "text": "En la radio: Celia Cruz",
     "pink": [
-     "Robertiko",
-     "Ramos"
+     "Celia",
+     "Cruz"
     ],
     "seed": 61,
     "locale": "es",
-    "sub": "sus diseños están en Vice City",
-    "src": "CiberCuba · Periódico Cubano"
+    "sub": "¡Azúcar!",
+    "src": "GTABase · KeenGamer"
    },
    "chart_es": {
     "type": "text",
-    "text": "Tatuajes de un cubano: Robertiko Ramos",
+    "text": "En la radio: Celia Cruz",
     "pink": [
-     "Robertiko",
-     "Ramos"
+     "Celia",
+     "Cruz"
     ],
     "seed": 61,
     "locale": "es",
-    "sub": "sus diseños están en Vice City",
-    "src": "CiberCuba · Periódico Cubano"
-   },
-   "audio_es": "media/voice/gta6-little-cuba-es/adam/seg4.wav"
+    "sub": "¡Azúcar!",
+    "src": "GTABase · KeenGamer"
+   }
   },
   {
    "headline": "¿ESTÁ EN TALLA?",
@@ -230,12 +175,15 @@
     "seed": 61,
     "locale": "es",
     "sub": "SÍ o NO, en los comentarios"
-   },
-   "audio_es": "media/voice/gta6-little-cuba-es/adam/seg5.wav"
+   }
   }
  ],
  "voice_note": "Owner Nov 23: 100% Cuban + Everygen voice. Viral Adam chosen: Pham failed the caption check (51% word error, non-native Spanish); Viral Adam passed.",
  "series_id": "miami",
  "hook_type_es": "immediate-answer",
- "first_frame": "map-pin (zoom): Little Cuba pinned on Rockstar's official map"
+ "first_frame": "map-pin (zoom): Little Cuba pinned on Rockstar's official map",
+ "voice_es_used": "piper:es_MX-claude-high (Nov 28: re-voiced after cutting unconfirmed lines; no new paid voice)",
+ "notes": [
+  "Nov 28: cut Benny Moré, Gloria Estefan and the tattoo-artist claim (no 2 independent sources); kept Little Cuba (Rockstar) + Celia Cruz (GTABase, KeenGamer)."
+ ]
 }
