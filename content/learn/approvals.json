@@ -206,7 +206,7 @@
   "slug": "gta6-backrooms-where",
   "item": "short",
   "platform": "youtube-en",
-  "state": "SCHEDULED",
+  "state": "PUBLISHED",
   "history": [
    [
     "2026-11-26 13:16 ET",
@@ -363,6 +363,12 @@
     "UPLOADING",
     "SCHEDULED",
     "uploaded, scheduled 2026-11-28 8:00 AM ET"
+   ],
+   [
+    "2026-11-28 08:11 ET",
+    "SCHEDULED",
+    "PUBLISHED",
+    "verified public on YouTube"
    ]
   ],
   "publish": [
@@ -378,7 +384,8 @@
   "reviews": [],
   "advice": [],
   "video_sha256": "9b23b219775b1144df9478d31161c234e8aa8b62081627b625d374f967820bf9",
-  "video_id": "yBc7KGUJWsc"
+  "video_id": "yBc7KGUJWsc",
+  "published_verified": "2026-11-28 08:11 ET"
  },
  "gta6-skunk-ape-where:short:youtube-en": {
   "slug": "gta6-skunk-ape-where",
@@ -972,7 +979,7 @@
   "slug": "gta6-barber-shop-where",
   "item": "short",
   "platform": "youtube-en",
-  "state": "SCHEDULED",
+  "state": "PUBLISHED",
   "history": [
    [
     "2026-11-26 14:46 ET",
@@ -1075,6 +1082,12 @@
     "UPLOADING",
     "SCHEDULED",
     "uploaded, scheduled 2026-11-27 6:00 PM ET"
+   ],
+   [
+    "2026-11-28 08:11 ET",
+    "SCHEDULED",
+    "PUBLISHED",
+    "verified public on YouTube"
    ]
   ],
   "publish": [
@@ -1090,7 +1103,8 @@
   "reviews": [],
   "advice": [],
   "video_sha256": "b38ea7499164740e4415deade677294764cfef12fb4b6678804d058ac46b981b",
-  "video_id": "WvHbn0jE1Ms"
+  "video_id": "WvHbn0jE1Ms",
+  "published_verified": "2026-11-28 08:11 ET"
  },
  "gta6-clothing-stores-where:short:youtube-en": {
   "slug": "gta6-clothing-stores-where",
