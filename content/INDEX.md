@@ -32,7 +32,7 @@ Read this first instead of searching the repo.
 | 2026-11-27 | gta6-3-lugares-secretos-es | Short | GTA 6: 3 lugares secretos que quizás no viste | - |
 | 2026-11-26 | gta6-white-fox-where | Short | GTA 6 Legendary Animals: Where to Find the White Fox | - |
 | 2026-11-26 | gta6-vice-city-real-miami | Short | GTA 6's Vice City vs Real Miami: 5 Places | - |
-| 2026-11-26 | gta6-tattoo-shops-where | Short | GTA 6 Tattoo Shop Locations: All 11 and Where to Start | - |
+| 2026-11-26 | gta6-tattoo-shops-where | Short | GTA 6 Tattoo Shop Locations: All 11 and Where to Start | short: 3BaP7cJUbNI |
 | 2026-11-26 | gta6-special-cars-tier-list | Short | GTA 6's Special Cars, Ranked | - |
 | 2026-11-26 | gta6-silent-hill-hotel | Short | GTA 6 Silent Hill Easter Egg: Marbelle Hotel Location and Safe Code | - |
 | 2026-11-26 | gta6-sell-jewelry-where | Short | GTA 6: Where to Sell Jewelry (Best Fence) | - |
@@ -42,7 +42,7 @@ Read this first instead of searching the repo.
 | 2026-11-26 | gta6-ninja-turtles-where | Short | GTA 6 Ninja Turtles Easter Egg: Where to Find It | - |
 | 2026-11-26 | gta6-mask-where | Short | Where to Buy a Mask in GTA 6 | short: YlVyesTxTZg |
 | 2026-11-26 | gta6-map-quiz-places | Short | GTA 6 Map Quiz: Name These 3 Places | - |
-| 2026-11-26 | gta6-map-easter-eggs-filter | Short | GTA 6 Easter Eggs Map: Show Only the Secrets | - |
+| 2026-11-26 | gta6-map-easter-eggs-filter | Short | GTA 6 Easter Eggs Map: Show Only the Secrets | short: QiHKVdGaVGs |
 | 2026-11-26 | gta6-map-checklist | Short | GTA 6 Map Checklist: Track Every Spot You Find | - |
 | 2026-11-26 | gta6-interactive-map-howto | Short | GTA 6 Interactive Map: Find Any Spot in Seconds | - |
 | 2026-11-26 | gta6-hialeah-balsero-es | Short | GTA 6: ¿dónde está Hialeah? La pista se llama Balsero | - |

@@ -439,6 +439,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -449,7 +467,7 @@
   "video": "output/gta6-skunk-ape-where/gta6-skunk-ape-where-short.mp4",
   "duration": 12.9,
   "spec_hash": "4dce55c1e8da1963883c580c639c9f0eaf17153301da6632cc82819a58daec73",
-  "evaluated_at": "2026-11-27 04:20 ET",
+  "evaluated_at": "2026-11-28 03:58 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -1307,6 +1325,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-27: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:47 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:47 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:47 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-27: re-check within 2"
    ]
   ],
   "publish": [
@@ -1317,7 +1353,7 @@
   "video": "output/gta6-mask-where/gta6-mask-where-short-es.mp4",
   "duration": 20.9,
   "spec_hash": "b63e83697ff433799ddb25c5c36fd47acd904c599c23dbd0f9c1f1a08ac4d45d",
-  "evaluated_at": "2026-11-27 03:49 ET",
+  "evaluated_at": "2026-11-28 03:47 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -1330,7 +1366,7 @@
   "slug": "gta6-map-easter-eggs-filter",
   "item": "short",
   "platform": "youtube-en",
-  "state": "NEEDS_REVIEW",
+  "state": "SCHEDULED",
   "history": [
    [
     "2026-11-26 15:24 ET",
@@ -1367,6 +1403,36 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "AUTO_APPROVED",
+    "UPLOADING",
+    "upload started"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "UPLOADING",
+    "SCHEDULED",
+    "uploaded, scheduled 2026-11-29 8:00 AM ET"
    ]
   ],
   "publish": [
@@ -1377,16 +1443,15 @@
   "video": "output/gta6-map-easter-eggs-filter/gta6-map-easter-eggs-filter-short.mp4",
   "duration": 13.7,
   "spec_hash": "be27fd1f8825d39e235cd4d19e6a46fedac95fdfe30ba04c07bc89eb634a2205",
-  "evaluated_at": "2026-11-27 03:54 ET",
+  "evaluated_at": "2026-11-28 03:48 ET",
   "blockers": [],
-  "reviews": [
-   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
-  ],
+  "reviews": [],
   "advice": [
    "hook: Short 'short' opens without a number on screen; our Shorts with a number in the first headline kept 65% of viewers vs 49% (put the number in the headline or open on a `chart`)",
    "title: 'GTA 6 easter eggs map: only the secrets, free 🥚' is 47 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
   ],
-  "video_sha256": "90e5a0295442257e81501ce9382ea5739955e8b32fba305a68ee1263253a1080"
+  "video_sha256": "90e5a0295442257e81501ce9382ea5739955e8b32fba305a68ee1263253a1080",
+  "video_id": "QiHKVdGaVGs"
  },
  "gta6-little-cuba-es:short:youtube-es": {
   "slug": "gta6-little-cuba-es",
@@ -1423,6 +1488,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
    ]
   ],
   "publish": [
@@ -1433,7 +1516,7 @@
   "video": "output/gta6-little-cuba-es/gta6-little-cuba-es-short-es.mp4",
   "duration": 21.4,
   "spec_hash": "090635fe65d5d07ed77daa1ae561f6eb02f803c682ab0727542ec07868245f64",
-  "evaluated_at": "2026-11-27 03:54 ET",
+  "evaluated_at": "2026-11-28 03:49 ET",
   "blockers": [],
   "reviews": [
    "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
@@ -1445,7 +1528,7 @@
   "slug": "gta6-tattoo-shops-where",
   "item": "short",
   "platform": "youtube-en",
-  "state": "NEEDS_REVIEW",
+  "state": "SCHEDULED",
   "history": [
    [
     "2026-11-26 15:24 ET",
@@ -1494,6 +1577,36 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "all technical checks passed"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "QA_PASSED",
+    "AUTO_APPROVED",
+    "all 10 publishing conditions passed"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "AUTO_APPROVED",
+    "UPLOADING",
+    "upload started"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "UPLOADING",
+    "SCHEDULED",
+    "uploaded, scheduled 2026-11-29 6:00 PM ET"
    ]
   ],
   "publish": [
@@ -1504,13 +1617,12 @@
   "video": "output/gta6-tattoo-shops-where/gta6-tattoo-shops-where-short.mp4",
   "duration": 18.3,
   "spec_hash": "9d7e0e58556ea6c6897a0983c4ea5a66dd6731bef921b24eeba20c0c22386fa3",
-  "evaluated_at": "2026-11-27 03:54 ET",
+  "evaluated_at": "2026-11-28 03:49 ET",
   "blockers": [],
-  "reviews": [
-   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
-  ],
+  "reviews": [],
   "advice": [],
-  "video_sha256": "b1fade31d7ed10e68074de2c9e4d56a82918dc003c4ac51651f7cf58d26e8984"
+  "video_sha256": "b1fade31d7ed10e68074de2c9e4d56a82918dc003c4ac51651f7cf58d26e8984",
+  "video_id": "3BaP7cJUbNI"
  },
  "gta6-map-checklist:short:youtube-en": {
   "slug": "gta6-map-checklist",
@@ -1553,6 +1665,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -1563,7 +1693,7 @@
   "video": "output/gta6-map-checklist/gta6-map-checklist-short.mp4",
   "duration": 11.3,
   "spec_hash": "4c853c0524723509e10f4e24b53edc55f119ba07b0a4f91271e9c9fb832b80b9",
-  "evaluated_at": "2026-11-27 03:55 ET",
+  "evaluated_at": "2026-11-28 03:50 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -1647,6 +1777,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -1655,9 +1803,9 @@
   ],
   "title": "GTA 6: Vice City es MIAMI de verdad (5 lugares) 🌴 #GTA6 #Shorts",
   "video": "output/gta6-vice-city-real-miami/gta6-vice-city-real-miami-short-es.mp4",
-  "duration": 23.0,
-  "spec_hash": "d08527984d2ea69219e4a41a5ae9285a4e3de2c4afa32efefdf2d5515204d3a4",
-  "evaluated_at": "2026-11-27 03:56 ET",
+  "duration": 23.3,
+  "spec_hash": "7dfb3541b003d938552282afebb8251e8f5bf7db051e532eb68cb130e0ae7c01",
+  "evaluated_at": "2026-11-28 03:50 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -1666,7 +1814,7 @@
   "advice": [
    "title: 'GTA 6 real life locations: Vice City vs Miami 🌴' is 47 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
   ],
-  "video_sha256": "c3e8f12394c4ab069b2fc08a5dc8a6ef01ff013552280acfd333bb9e345bb816"
+  "video_sha256": "02b2feb97b74f62db763f1d6cd720462be5bce41102d63b39f2b2645f0b48f37"
  },
  "gta6-fishing-pays:short:youtube-en": {
   "slug": "gta6-fishing-pays",
@@ -1709,6 +1857,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -1719,7 +1885,7 @@
   "video": "output/gta6-fishing-pays/gta6-fishing-pays-short.mp4",
   "duration": 14.9,
   "spec_hash": "723804cdbd32224e3ae6865e2464e8c63125db49c7e7f864dc72ec9f274c29d2",
-  "evaluated_at": "2026-11-27 03:56 ET",
+  "evaluated_at": "2026-11-28 03:50 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -1771,6 +1937,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
    ]
   ],
   "publish": [
@@ -1779,9 +1963,9 @@
   ],
   "title": "GTA 6: ¿dónde está HIALEAH? 🇨🇺 #GTA6 #Shorts",
   "video": "output/gta6-hialeah-balsero-es/gta6-hialeah-balsero-es-short-es.mp4",
-  "duration": 26.4,
-  "spec_hash": "e3acc040b8da3d9e7b1da41b0aac94250d02da3146b42d58e2bc02b6a1d53a68",
-  "evaluated_at": "2026-11-27 04:03 ET",
+  "duration": 26.2,
+  "spec_hash": "dc874379977b535b1135db141a76b49fabdc07b5b3a77d89d68964d1fa4b9ecb",
+  "evaluated_at": "2026-11-28 03:53 ET",
   "blockers": [],
   "reviews": [
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
@@ -1791,7 +1975,7 @@
    "facts: Short 'short' makes a 'nothing yet' claim (\"hasn't confirmed\") that can stop being true within hours (Nov 23: 'zero patch notes' was outdated the same afternoon). Re-check it within 2 h of the slot, or say it as a dated fact (\"3 updates in 10 days\")",
    "views: Short 'short' is 61 words (~23 s); target 13-20 s (35-55 words), payoff as the last line, last line loops into the first"
   ],
-  "video_sha256": "823968b2dec487b9d7dab4c167bb62f46d946fb6e889a9b9dfbc3ff24f02b864"
+  "video_sha256": "8360ade88ff3777a809a8fd8c4be669bbc8a117f57c88ced2210197d739c8319"
  },
  "gta6-shoe-store-where:short:youtube-es": {
   "slug": "gta6-shoe-store-where",
@@ -1816,6 +2000,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:47 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:47 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:47 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -1825,15 +2027,15 @@
   "title": "GTA 6 tienda de ZAPATOS: dónde está 👟 #GTA6 #Shorts",
   "video": "output/gta6-shoe-store-where/gta6-shoe-store-where-short-es.mp4",
   "duration": 16.8,
-  "spec_hash": "14ffc90793b88f9b93cc307d62fdb564db2397e6e2ab0c8ea350b721c119f7ba",
-  "evaluated_at": "2026-11-27 03:49 ET",
+  "spec_hash": "658a08bb9a36098e094ad32b80031d67c18c6aa9299712a949847dfc116a9f0b",
+  "evaluated_at": "2026-11-28 03:47 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
   ],
   "advice": [],
-  "video_sha256": "e5484ea7ba17371e150e3664a06ee410b380032ccbaa557f80dcd87aafad05ea"
+  "video_sha256": "1c5c800fae1abf227ca6f5bd14515803f32caeb9baaa231c6821cfca6e48485b"
  },
  "gta6-giant-crab:short:youtube-es": {
   "slug": "gta6-giant-crab",
@@ -1858,6 +2060,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:47 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:47 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:47 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -1867,15 +2087,15 @@
   "title": "GTA 6 tiene un CANGREJO gigante: está aquí 🦀 #GTA6 #Shorts",
   "video": "output/gta6-giant-crab/gta6-giant-crab-short-es.mp4",
   "duration": 14.8,
-  "spec_hash": "3e32a5b37a636464d0d06b31f1424ee6008a5f6f5d80d63503a2c878f6b30ef2",
-  "evaluated_at": "2026-11-27 03:51 ET",
+  "spec_hash": "dd8f97152d05235de3dc41523636389a16ea03ea66309bca75eb976214fd919f",
+  "evaluated_at": "2026-11-28 03:47 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
   ],
   "advice": [],
-  "video_sha256": "24998bf7c4c45cc3d42b124f15445129e511b19408155f293ff671c5cd072476"
+  "video_sha256": "8ee1093f3e23552e9530f8744b7c91d5efdaaeb2ff64ac79ec2068328e6f4132"
  },
  "gta6-barber-shop-where:short:youtube-es": {
   "slug": "gta6-barber-shop-where",
@@ -1900,6 +2120,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -1908,16 +2146,16 @@
   ],
   "title": "GTA 6: la BARBERÍA más cercana está aquí 💈 #GTA6 #Shorts",
   "video": "output/gta6-barber-shop-where/gta6-barber-shop-where-short-es.mp4",
-  "duration": 14.6,
-  "spec_hash": "48d2c7b757809d5310d2a882410cca6f8d056c3178198d6df8808a706bb721d0",
-  "evaluated_at": "2026-11-27 03:51 ET",
+  "duration": 14.7,
+  "spec_hash": "48a5b28ecc6383ab3ed67926a5b02195735c6e527f7722299a585bcec03b31fc",
+  "evaluated_at": "2026-11-28 03:48 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
   ],
   "advice": [],
-  "video_sha256": "24ee4c56db1fb9e553bf02e2f420409f701609f5674c402ffa8d3b194728f3d7"
+  "video_sha256": "e20f999ff7dfb0b87579f160d8261816177035837c391a32fb8b8996fa3fbdd6"
  },
  "gta6-ninja-turtles-where:short:youtube-en": {
   "slug": "gta6-ninja-turtles-where",
@@ -1942,6 +2180,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -1952,7 +2208,7 @@
   "video": "output/gta6-ninja-turtles-where/gta6-ninja-turtles-where-short.mp4",
   "duration": 14.1,
   "spec_hash": "7bf4806a3037c813f7bc497125e7dfae45490c6d0fb27c89a7968b735055d655",
-  "evaluated_at": "2026-11-27 03:52 ET",
+  "evaluated_at": "2026-11-28 03:48 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -1984,6 +2240,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -1994,7 +2268,7 @@
   "video": "output/gta6-silent-hill-hotel/gta6-silent-hill-hotel-short.mp4",
   "duration": 16.3,
   "spec_hash": "cef9410a2c638badd47d031855b977c5446e9cf8f73262203dd5279d6c13e2ef",
-  "evaluated_at": "2026-11-27 03:53 ET",
+  "evaluated_at": "2026-11-28 03:48 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2026,6 +2300,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:48 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-28: re-check within 2"
    ]
   ],
   "publish": [
@@ -2036,11 +2328,11 @@
   "video": "output/gta6-map-easter-eggs-filter/gta6-map-easter-eggs-filter-short-es.mp4",
   "duration": 15.5,
   "spec_hash": "0617952a705bf43cc5ddf2259862d5cf5278eb54b99321347b00e139df1a3282",
-  "evaluated_at": "2026-11-27 03:54 ET",
+  "evaluated_at": "2026-11-28 03:48 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
-   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   "facts last re-checked 2026-11-28: re-check within 2 days of the slot"
   ],
   "advice": [
    "hook: Short 'short' opens without a number on screen; our Shorts with a number in the first headline kept 65% of viewers vs 49% (put the number in the headline or open on a `chart`)",
@@ -2071,6 +2363,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:49 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-28: re-check within 2"
    ]
   ],
   "publish": [
@@ -2080,15 +2390,15 @@
   "title": "GTA 6: dónde están los TATUAJES 🖋️ #GTA6 #Shorts",
   "video": "output/gta6-tattoo-shops-where/gta6-tattoo-shops-where-short-es.mp4",
   "duration": 20.7,
-  "spec_hash": "9f1d86fe34836af8013d61207f6a31fde637b4d6f245ba6a333ab77d457f72ac",
-  "evaluated_at": "2026-11-27 03:55 ET",
+  "spec_hash": "5ba6a81765ea91cc90317bccb12bbddfcaaaf5a72ac348aa3e3a390ba06c925f",
+  "evaluated_at": "2026-11-28 03:49 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
-   "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   "facts last re-checked 2026-11-28: re-check within 2 days of the slot"
   ],
   "advice": [],
-  "video_sha256": "2543aaa9d948b93d2c14ed5cbc4ee320d7a19d631be3a7a2f838d9d3cf990156"
+  "video_sha256": "2765a37d1c90f0989de5273283430a3571688b6852b2863e459966189159ad1e"
  },
  "gta6-map-checklist:short:youtube-es": {
   "slug": "gta6-map-checklist",
@@ -2113,6 +2423,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -2123,7 +2451,7 @@
   "video": "output/gta6-map-checklist/gta6-map-checklist-short-es.mp4",
   "duration": 13.2,
   "spec_hash": "778d467fb0e347ac3cc3062e6d3e8dbe96c7cdb856d0175d0f715bbce2ea4431",
-  "evaluated_at": "2026-11-27 03:55 ET",
+  "evaluated_at": "2026-11-28 03:50 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2159,6 +2487,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:50 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2169,7 +2515,7 @@
   "video": "output/gta6-vice-city-real-miami/gta6-vice-city-real-miami-short.mp4",
   "duration": 20.9,
   "spec_hash": "d9a7565b87e03111166fe102c2a81966cba63a476385725131785149d413c8cc",
-  "evaluated_at": "2026-11-27 03:55 ET",
+  "evaluated_at": "2026-11-28 03:50 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2203,6 +2549,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -2213,7 +2577,7 @@
   "video": "output/gta6-fishing-pays/gta6-fishing-pays-short-es.mp4",
   "duration": 17.4,
   "spec_hash": "49457c854e432f2977dd148008850fc7ae907fa8a885a3be1e7a3b311bb172d7",
-  "evaluated_at": "2026-11-27 03:56 ET",
+  "evaluated_at": "2026-11-28 03:51 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2247,6 +2611,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
    ]
   ],
   "publish": [
@@ -2257,7 +2639,7 @@
   "video": "output/gta6-sahara-arena-where/gta6-sahara-arena-where-short.mp4",
   "duration": 16.9,
   "spec_hash": "8dfcc6db4776b7cf787730e94c824e60afb98843b486347113838fb3ee8649a5",
-  "evaluated_at": "2026-11-27 03:56 ET",
+  "evaluated_at": "2026-11-28 03:51 ET",
   "blockers": [],
   "reviews": [
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
@@ -2288,6 +2670,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
    ]
   ],
   "publish": [
@@ -2296,15 +2696,15 @@
   ],
   "title": "GTA 6: el KASEYA Center de Vice City 🏀 #GTA6 #Shorts",
   "video": "output/gta6-sahara-arena-where/gta6-sahara-arena-where-short-es.mp4",
-  "duration": 19.7,
-  "spec_hash": "0a21b4f40d044c25399560f6454d283056eef6f40d9c90e49c3b5a1706883d63",
-  "evaluated_at": "2026-11-27 03:56 ET",
+  "duration": 19.9,
+  "spec_hash": "4fffbb76cc5112ea1ddf2abb112deb4a7986fcb3427e7539642f21236ecab0ef",
+  "evaluated_at": "2026-11-28 03:51 ET",
   "blockers": [],
   "reviews": [
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
   ],
   "advice": [],
-  "video_sha256": "838f39040bbb2afd22640f63ca18f9a4cabcc7cdc69333bc4ff9856ef6b41110"
+  "video_sha256": "dd573b50a8f6150747d1bd17e73f12352f3c4671e8d0a2700a0634f7b173a65f"
  },
  "gta6-sell-jewelry-where:short:youtube-en": {
   "slug": "gta6-sell-jewelry-where",
@@ -2329,6 +2729,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -2339,7 +2757,7 @@
   "video": "output/gta6-sell-jewelry-where/gta6-sell-jewelry-where-short.mp4",
   "duration": 16.4,
   "spec_hash": "0e330953c80907e4dde881224a498e462d10aa327b98a868694a646af3752471",
-  "evaluated_at": "2026-11-27 03:57 ET",
+  "evaluated_at": "2026-11-28 03:51 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2371,6 +2789,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:51 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -2379,16 +2815,16 @@
   ],
   "title": "GTA 6: dónde VENDER joyas 💎 #GTA6 #Shorts",
   "video": "output/gta6-sell-jewelry-where/gta6-sell-jewelry-where-short-es.mp4",
-  "duration": 20.6,
-  "spec_hash": "40e0a32a371363391c8ffbc5c8303d6f3b384a4e95f088c779449078965bc2ee",
-  "evaluated_at": "2026-11-27 03:57 ET",
+  "duration": 20.9,
+  "spec_hash": "b586dd63413620a1d987fb32e59c6b200dd20094823a220cf09ac236583b7ac1",
+  "evaluated_at": "2026-11-28 03:51 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
   ],
   "advice": [],
-  "video_sha256": "1bf32a7cb479929b0db09b0230c3f298b6169af147a74efccdf112c642d97712"
+  "video_sha256": "cca0b2ade8817ada84fefb51714fd4cdde7565d3049859fb306cc9356952fb26"
  },
  "gta6-white-fox-where:short:youtube-en": {
   "slug": "gta6-white-fox-where",
@@ -2413,6 +2849,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -2423,7 +2877,7 @@
   "video": "output/gta6-white-fox-where/gta6-white-fox-where-short.mp4",
   "duration": 15.2,
   "spec_hash": "9afe835e1d59635b5fd37ac7926ac1d53a34e06d03320d1c98af2015f0a85581",
-  "evaluated_at": "2026-11-27 03:57 ET",
+  "evaluated_at": "2026-11-28 03:52 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2436,7 +2890,7 @@
   "slug": "gta6-white-fox-where",
   "item": "short",
   "platform": "youtube-es",
-  "state": "BLOCKED",
+  "state": "NEEDS_REVIEW",
   "history": [
    [
     "2026-11-27 03:57 ET",
@@ -2449,6 +2903,24 @@
     "RENDERED",
     "BLOCKED",
     "QA: QC captions: speech matches the captioned script with 28% word error (53 words heard)"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "BLOCKED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -2457,18 +2929,16 @@
   ],
   "title": "GTA 6: dónde está el ZORRO blanco 🦊 #GTA6 #Shorts",
   "video": "output/gta6-white-fox-where/gta6-white-fox-where-short-es.mp4",
-  "duration": 18.3,
-  "spec_hash": "809161e4c69196453eae89ed3533c4831f8c1fec42e22b8b730bc2738ee42a05",
-  "evaluated_at": "2026-11-27 03:57 ET",
-  "blockers": [
-   "QA: QC captions: speech matches the captioned script with 28% word error (53 words heard)"
-  ],
+  "duration": 18.5,
+  "spec_hash": "f9b46eea97203bfa7de1482ac80eeaf75efbe5028eb11d5f26c9155bfdca37c9",
+  "evaluated_at": "2026-11-28 03:52 ET",
+  "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
   ],
   "advice": [],
-  "video_sha256": "0121be8953b454d217080a73d8cd9d1738f7da6ff566ae655653f3ec0f078b74"
+  "video_sha256": "cd9c14aa1f0f1c925834a357597ea37092b978b4b9cfb2334967d8d43933ee09"
  },
  "gta6-mapa-oficial-es:short:youtube-es": {
   "slug": "gta6-mapa-oficial-es",
@@ -2493,6 +2963,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2502,15 +2990,15 @@
   "title": "GTA 6: el MAPA oficial en HD (y gratis) 🗺️ #GTA6 #Shorts",
   "video": "output/gta6-mapa-oficial-es/gta6-mapa-oficial-es-short-es.mp4",
   "duration": 24.2,
-  "spec_hash": "4ffa1f7f27638fb82d4d71ddff7fe4ddb4f271157ef82fd0ade8bde532c24e48",
-  "evaluated_at": "2026-11-27 03:59 ET",
+  "spec_hash": "8c87bedb98a68bde077753133298fd4ba9b9d8db1e1254753774c2c899a144ba",
+  "evaluated_at": "2026-11-28 03:52 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
   ],
   "advice": [],
-  "video_sha256": "fa440f411551399561ff9c924ba2f332e141828bae3a93803016bf03d80344b5"
+  "video_sha256": "fe50bdabb15b3f4d520d5144248281346c2c47f3eb727762a33bb6a45c557f61"
  },
  "gta6-2021-house:short:youtube-en": {
   "slug": "gta6-2021-house",
@@ -2535,6 +3023,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2545,7 +3051,7 @@
   "video": "output/gta6-2021-house/gta6-2021-house-short.mp4",
   "duration": 18.0,
   "spec_hash": "8dd8a2f10ce90c8f80a1af98a36f975fc260eb96c11f5c07c76edcbf15fbb4f0",
-  "evaluated_at": "2026-11-27 03:59 ET",
+  "evaluated_at": "2026-11-28 03:52 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2579,6 +3085,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:52 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2589,7 +3113,7 @@
   "video": "output/gta6-ufo-where/gta6-ufo-where-short.mp4",
   "duration": 16.2,
   "spec_hash": "d7b331489e88a01dce4e6d12cf760b8f354139f8025f37dcc5a82c5b2e73f4a5",
-  "evaluated_at": "2026-11-27 03:59 ET",
+  "evaluated_at": "2026-11-28 03:52 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2621,6 +3145,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2629,16 +3171,16 @@
   ],
   "title": "GTA 6: el OVNI existe y está aquí 👽 #GTA6 #Shorts",
   "video": "output/gta6-ufo-where/gta6-ufo-where-short-es.mp4",
-  "duration": 19.9,
-  "spec_hash": "392dcd094bdc1834540934f00d9387f5ecaf7ad5c98c613aec8eeba03006177c",
-  "evaluated_at": "2026-11-27 04:00 ET",
+  "duration": 20.0,
+  "spec_hash": "0ea64b64b5857eb8c60fb16f43185d70dcc3faefd40b72d0bbb0e94ecf01c216",
+  "evaluated_at": "2026-11-28 03:53 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
   ],
   "advice": [],
-  "video_sha256": "511301f4586de94a96d4f5ab90c58885dbc647ba20684e8318821d8eb6b9ac67"
+  "video_sha256": "41c0bd08725bf8eb18a8a14929dca7019b0d988adcc5e3bcd6c6bd332f73ea14"
  },
  "gta6-map-quiz-places:short:youtube-en": {
   "slug": "gta6-map-quiz-places",
@@ -2663,6 +3205,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2673,7 +3233,7 @@
   "video": "output/gta6-map-quiz-places/gta6-map-quiz-places-short.mp4",
   "duration": 17.5,
   "spec_hash": "e08412b245f5294e01a7e9c8b0487eade644132f7a143f466c21f96704de54e3",
-  "evaluated_at": "2026-11-27 04:00 ET",
+  "evaluated_at": "2026-11-28 03:53 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2705,6 +3265,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2715,7 +3293,7 @@
   "video": "output/gta6-4-secrets/gta6-4-secrets-short.mp4",
   "duration": 22.9,
   "spec_hash": "939af90a6919bc13ae9da90aa87eb19b0eb794d0cc76999213925e3dbc2e7bfd",
-  "evaluated_at": "2026-11-27 04:02 ET",
+  "evaluated_at": "2026-11-28 03:53 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2749,6 +3327,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:53 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2759,7 +3355,7 @@
   "video": "output/gta6-mod-shops/gta6-mod-shops-short.mp4",
   "duration": 12.3,
   "spec_hash": "fc64d7f5370ef42498821690fbf934c045877263a35d5b14c4eec3b2d6f3285b",
-  "evaluated_at": "2026-11-27 04:03 ET",
+  "evaluated_at": "2026-11-28 03:53 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2793,6 +3389,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2803,7 +3417,7 @@
   "video": "output/gta6-ultimate-cars-where/gta6-ultimate-cars-where-short.mp4",
   "duration": 15.1,
   "spec_hash": "35961cf6348de92d054a9717a39f93a80d82f8cdbb85d4ca03646e177dbcf764",
-  "evaluated_at": "2026-11-27 04:03 ET",
+  "evaluated_at": "2026-11-28 03:54 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2837,6 +3451,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -2847,7 +3479,7 @@
   "video": "output/gta6-black-panther-where/gta6-black-panther-where-short.mp4",
   "duration": 13.2,
   "spec_hash": "b47a57c637bb2202baa8b148a4b2ffc35e5e27a03ab16ed9c8f2e630543fe50d",
-  "evaluated_at": "2026-11-27 04:03 ET",
+  "evaluated_at": "2026-11-28 03:54 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2881,6 +3513,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -2889,9 +3539,9 @@
   ],
   "title": "GTA 6: dónde está la PANTERA negra 🐆 #GTA6 #Shorts",
   "video": "output/gta6-black-panther-where/gta6-black-panther-where-short-es.mp4",
-  "duration": 15.3,
-  "spec_hash": "743daf95d80ac876c876e16c6fd2c36275963cf9e6156dd0d0fb0175f562ba2d",
-  "evaluated_at": "2026-11-27 04:03 ET",
+  "duration": 15.4,
+  "spec_hash": "11f66da4e7b54cdc4acf700a7dd9299fa1dc22e1627a444ed1af7da37ebbe622",
+  "evaluated_at": "2026-11-28 03:54 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2900,7 +3550,7 @@
   "advice": [
    "title: 'GTA 6 legendary animals: black panther location 🐆' is 49 characters; the top GTA 6 Shorts with titles of 40 or less averaged 95K views/h vs 70K for longer ones"
   ],
-  "video_sha256": "dbaaff09c7bee463878fe2641889f043d2c7451913710193c3c6fd8d4fe010ac"
+  "video_sha256": "199127c5cd9d785441890d02e64656fa95639345adabbf7d4b254936c17c8b9b"
  },
  "gta6-early-helicopter:short:youtube-en": {
   "slug": "gta6-early-helicopter",
@@ -2925,6 +3575,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2935,7 +3603,7 @@
   "video": "output/gta6-early-helicopter/gta6-early-helicopter-short.mp4",
   "duration": 14.0,
   "spec_hash": "c7d5a89775f5af1758624202fbc86429ab405c110490da4b41c27c8facf82836",
-  "evaluated_at": "2026-11-27 04:04 ET",
+  "evaluated_at": "2026-11-28 03:54 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -2969,6 +3637,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -2979,7 +3665,7 @@
   "video": "output/gta6-sin-doblaje-es/gta6-sin-doblaje-es-short-es.mp4",
   "duration": 24.2,
   "spec_hash": "806ddd72b598d7c4c30adc4940a431e4769c0ba03e74f9456fe601e1911841ac",
-  "evaluated_at": "2026-11-27 04:05 ET",
+  "evaluated_at": "2026-11-28 03:54 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3013,6 +3699,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:54 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -3023,7 +3727,7 @@
   "video": "output/gta6-alligators-where/gta6-alligators-where-short.mp4",
   "duration": 16.9,
   "spec_hash": "33f556d8100742c45c7dd5abd85a31db0a5206ac62a87bc32c5b92afb8c63e4c",
-  "evaluated_at": "2026-11-27 04:05 ET",
+  "evaluated_at": "2026-11-28 03:54 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3055,6 +3759,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -3064,15 +3786,15 @@
   "title": "GTA 6: dónde encontrar los CAIMANES 🐊 #GTA6 #Shorts",
   "video": "output/gta6-alligators-where/gta6-alligators-where-short-es.mp4",
   "duration": 21.8,
-  "spec_hash": "11535ad65459583a25e438712681250f836cb7d4acb0d9220325cfc3beaab6a7",
-  "evaluated_at": "2026-11-27 04:06 ET",
+  "spec_hash": "636f519ff67f537fbf581cbbccea8f601d646d7665ff3eb9deae5b1ad3119487",
+  "evaluated_at": "2026-11-28 03:55 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
   ],
   "advice": [],
-  "video_sha256": "34f4742b3af70615e2e56a0860615c464c1052ec0997761f1642f9fd103f64b4"
+  "video_sha256": "20dcd8216a7755ef31cffb269b4da940abd658fe486440b6d83670daa4bbe027"
  },
  "gta6-interactive-map-howto:short:youtube-en": {
   "slug": "gta6-interactive-map-howto",
@@ -3097,6 +3819,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -3107,7 +3847,7 @@
   "video": "output/gta6-interactive-map-howto/gta6-interactive-map-howto-short.mp4",
   "duration": 12.1,
   "spec_hash": "95a40ff9545084d28c4f38ed82f09d50df15a10c5c8c6a2fd12fcdcffe27f7be",
-  "evaluated_at": "2026-11-27 04:08 ET",
+  "evaluated_at": "2026-11-28 03:55 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3142,6 +3882,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -3152,7 +3910,7 @@
   "video": "output/gta6-interactive-map-howto/gta6-interactive-map-howto-short-es.mp4",
   "duration": 15.2,
   "spec_hash": "20edbce9d8ddf82b8deb0586ef5d070bfd2cbe5964899c6e0de20de413e5e323",
-  "evaluated_at": "2026-11-27 04:08 ET",
+  "evaluated_at": "2026-11-28 03:55 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3187,6 +3945,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -3197,7 +3973,7 @@
   "video": "output/gta6-military-base-jets/gta6-military-base-jets-short.mp4",
   "duration": 13.5,
   "spec_hash": "c33f7ee1e1342c62370b2ec43c5b107df5b111bb1d740c23ffe9f050b2bde94d",
-  "evaluated_at": "2026-11-27 04:08 ET",
+  "evaluated_at": "2026-11-28 03:55 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3229,6 +4005,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -3239,7 +4033,7 @@
   "video": "output/gta6-car-dealership/gta6-car-dealership-short.mp4",
   "duration": 13.4,
   "spec_hash": "dfb12364f45979d5cb102904eecd8826a76cd8fe58f3318fd0f5c418b607282f",
-  "evaluated_at": "2026-11-27 04:11 ET",
+  "evaluated_at": "2026-11-28 03:55 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3273,6 +4067,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -3283,7 +4095,7 @@
   "video": "output/gta6-car-dealership/gta6-car-dealership-short-es.mp4",
   "duration": 15.0,
   "spec_hash": "7f796d87ce5cbaeb9b345cb4082b292bd6af79827c40688a860ee28132b08c9b",
-  "evaluated_at": "2026-11-27 04:12 ET",
+  "evaluated_at": "2026-11-28 03:55 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3317,6 +4129,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:55 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -3327,7 +4157,7 @@
   "video": "output/gta6-red-dead-easter-eggs/gta6-red-dead-easter-eggs-short.mp4",
   "duration": 12.2,
   "spec_hash": "f9439000bd236feb356b4a22c8fba7d415d2beb524769f7a4c89436998412e17",
-  "evaluated_at": "2026-11-27 04:12 ET",
+  "evaluated_at": "2026-11-28 03:55 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3361,6 +4191,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -3371,7 +4219,7 @@
   "video": "output/gta6-atm-robbery-guide/gta6-atm-robbery-guide-short.mp4",
   "duration": 19.6,
   "spec_hash": "5a2223033341f63657023620def841556c0c90a141e50b07fa2a5255933ad0a3",
-  "evaluated_at": "2026-11-27 04:18 ET",
+  "evaluated_at": "2026-11-28 03:56 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3409,6 +4257,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -3419,7 +4285,7 @@
   "video": "output/gta6-ghost-ship-where/gta6-ghost-ship-where-short.mp4",
   "duration": 15.9,
   "spec_hash": "82af684f771eeafc986d0ac0ade1332b48d437fbf9c1d283fca8553332b8dfb2",
-  "evaluated_at": "2026-11-27 04:18 ET",
+  "evaluated_at": "2026-11-28 03:56 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3451,6 +4317,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -3459,16 +4343,16 @@
   ],
   "title": "GTA 6: el BARCO FANTASMA sale a la 1:30 AM 👻 #GTA6 #Shorts",
   "video": "output/gta6-ghost-ship-where/gta6-ghost-ship-where-short-es.mp4",
-  "duration": 21.4,
-  "spec_hash": "7ffa5b972462489bb34d268c4bfa95279ca4f939ab9b76da9879d30f4947f038",
-  "evaluated_at": "2026-11-27 04:18 ET",
+  "duration": 21.5,
+  "spec_hash": "ed9aa21ebdfa725e8f0de18846ce1f71a7197db38ac41e7941f353c60933d2d0",
+  "evaluated_at": "2026-11-28 03:56 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
   ],
   "advice": [],
-  "video_sha256": "d4348f96373e3529211e19f6d0dce5bea5d32f92b00f5d35c34a309722e6d0b6"
+  "video_sha256": "d06fd81798543d8caf783df4debc214da754ba8b390040de35f178b3bffe8519"
  },
  "gta6-nombres-espanol-mapa-es:short:youtube-es": {
   "slug": "gta6-nombres-espanol-mapa-es",
@@ -3493,6 +4377,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:56 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
    ]
   ],
   "publish": [
@@ -3502,14 +4404,14 @@
   "title": "GTA 6 tiene lugares en ESPAÑOL en el mapa 🗺️ #GTA6 #Shorts",
   "video": "output/gta6-nombres-espanol-mapa-es/gta6-nombres-espanol-mapa-es-short-es.mp4",
   "duration": 21.5,
-  "spec_hash": "56f5c88edd4a5e6b0c91ffc05b0108aa52e16992557ab367030c2a84edb51449",
-  "evaluated_at": "2026-11-27 04:19 ET",
+  "spec_hash": "b40e74ea06dcd58afbbc6580cab77316f287b763d54b4d4f934e1a615cf346ab",
+  "evaluated_at": "2026-11-28 03:56 ET",
   "blockers": [],
   "reviews": [
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
   ],
   "advice": [],
-  "video_sha256": "9252fcedcb1692703b7be82bec6e52ba13aa1fa678992561c4eabe533a865f83"
+  "video_sha256": "72320b6f9dda680ad7a3fdc56cb7e33e0927c1f1a65cc90cdf58a5b446cecbec"
  },
  "gta6-vintage-stanier:short:youtube-en": {
   "slug": "gta6-vintage-stanier",
@@ -3534,6 +4436,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -3544,7 +4464,7 @@
   "video": "output/gta6-vintage-stanier/gta6-vintage-stanier-short.mp4",
   "duration": 14.7,
   "spec_hash": "8399f29aca9e5d492a5d01a5d8d953ae996a2f8bd4230a3fe59aff802008aa55",
-  "evaluated_at": "2026-11-27 04:19 ET",
+  "evaluated_at": "2026-11-28 03:57 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3576,6 +4496,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
    ]
   ],
   "publish": [
@@ -3584,9 +4522,9 @@
   ],
   "title": "GTA 6: 3 lugares SECRETOS que quizás no viste 🤫 #GTA6 #Shorts",
   "video": "output/gta6-3-lugares-secretos-es/gta6-3-lugares-secretos-es-short-es.mp4",
-  "duration": 26.6,
-  "spec_hash": "4d5745416a3a4e65835e8df0f618930c1a40d475ae70b91aa4cbdc898d5233c3",
-  "evaluated_at": "2026-11-27 04:19 ET",
+  "duration": 26.9,
+  "spec_hash": "b9750e403365f09df8ecacca32bf7877913ffe0c2ead37979abaecccaa14ede2",
+  "evaluated_at": "2026-11-28 03:57 ET",
   "blockers": [],
   "reviews": [
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
@@ -3594,7 +4532,7 @@
   "advice": [
    "views: Short 'short' is 63 words (~23 s); target 13-20 s (35-55 words), payoff as the last line, last line loops into the first"
   ],
-  "video_sha256": "ec4f39228edc4a4f24e8ae76d15f4567674e8db3075b7c677d478b9bc8eb26b1"
+  "video_sha256": "5b4d48650ac7a9c25971475cf0137b938c829772c2148ef6ec2213e431f4f6f7"
  },
  "gta6-black-bear-where:short:youtube-en": {
   "slug": "gta6-black-bear-where",
@@ -3619,6 +4557,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts last re-checked 2026-11-26: re-check within 2"
    ]
   ],
   "publish": [
@@ -3629,7 +4585,7 @@
   "video": "output/gta6-black-bear-where/gta6-black-bear-where-short.mp4",
   "duration": 11.8,
   "spec_hash": "b049e744f3370bfae208922313fb985c1785c4d608d9fcc76bcb88df02fef104",
-  "evaluated_at": "2026-11-27 04:19 ET",
+  "evaluated_at": "2026-11-28 03:57 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3663,6 +4619,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
    ]
   ],
   "publish": [
@@ -3673,7 +4647,7 @@
   "video": "output/gta6-map-size-scale/gta6-map-size-scale-short.mp4",
   "duration": 22.3,
   "spec_hash": "f20cadbf2fd5159e18de978fcdde38e6b2b68d6f2942493dcc70e5addf28381f",
-  "evaluated_at": "2026-11-27 04:20 ET",
+  "evaluated_at": "2026-11-28 03:57 ET",
   "blockers": [],
   "reviews": [
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
@@ -3707,6 +4681,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:57 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
    ]
   ],
   "publish": [
@@ -3715,9 +4707,9 @@
   ],
   "title": "GTA 6: qué tan GRANDE es el mapa 🗺️ #GTA6 #Shorts",
   "video": "output/gta6-map-size-scale/gta6-map-size-scale-short-es.mp4",
-  "duration": 24.5,
-  "spec_hash": "ad23b480671565e11dcbf9fe13daece2f25b53715e59383a4f3d5aad054f25f2",
-  "evaluated_at": "2026-11-27 04:20 ET",
+  "duration": 24.8,
+  "spec_hash": "25083c1a7db5d3c4b4a005811de6176865bc5eb5bca706eb8ab4a568f9f49f22",
+  "evaluated_at": "2026-11-28 03:57 ET",
   "blockers": [],
   "reviews": [
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
@@ -3726,7 +4718,7 @@
    "hook: Short 'short' first sentence is 15 words; the best openers say the result in 3-10 words",
    "views: Short 'short' is 60 words (~22 s); target 13-20 s (35-55 words), payoff as the last line, last line loops into the first"
   ],
-  "video_sha256": "95a9d9ffa4dc77ed812d5a4c54ec3fd6c773b7a3dd9e9b4ffcfe21289c11c635"
+  "video_sha256": "186d71d912374732fd359a19959286334b059365775bf0878537580c403b4b36"
  },
  "gta6-mercado-pulgas-es:short:youtube-es": {
   "slug": "gta6-mercado-pulgas-es",
@@ -3751,6 +4743,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
    ]
   ],
   "publish": [
@@ -3759,15 +4769,15 @@
   ],
   "title": "GTA 6: dónde está el MERCADO de pulgas 🛍️ #GTA6 #Shorts",
   "video": "output/gta6-mercado-pulgas-es/gta6-mercado-pulgas-es-short-es.mp4",
-  "duration": 18.3,
-  "spec_hash": "63854a2e59f6fee98a621ccbac059a4db2d08ae3f16a526d27841394787211f2",
-  "evaluated_at": "2026-11-27 04:20 ET",
+  "duration": 18.2,
+  "spec_hash": "65e5b192175e3cd1c3ce715cc519f2a2548feacaf7aa5c1c32e4dd124b67519a",
+  "evaluated_at": "2026-11-28 03:58 ET",
   "blockers": [],
   "reviews": [
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
   ],
   "advice": [],
-  "video_sha256": "e9b5c3bc9131806fabfaaf98328c088c7c8ac61983f627bf86993ce2dd86b784"
+  "video_sha256": "3aa88a54135e285a00af5686efbeb509724cb91e54639cb57de3657f8604e93a"
  },
  "gta6-dexter-apartment-map:short:youtube-en": {
   "slug": "gta6-dexter-apartment-map",
@@ -3792,6 +4802,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -3802,7 +4830,7 @@
   "video": "output/gta6-dexter-apartment-map/gta6-dexter-apartment-map-short.mp4",
   "duration": 13.2,
   "spec_hash": "114f2ac5b6fa18d1573122098617859e19a74ad7467cdbeda62c1e724b2303c3",
-  "evaluated_at": "2026-11-27 04:20 ET",
+  "evaluated_at": "2026-11-28 03:58 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3836,6 +4864,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -3844,16 +4890,16 @@
   ],
   "title": "GTA 6: el PIE GRANDE existe y aquí se busca 🦍 #GTA6 #Shorts",
   "video": "output/gta6-skunk-ape-where/gta6-skunk-ape-where-short-es.mp4",
-  "duration": 15.8,
-  "spec_hash": "4a13a0ee348bad96fb32edf0a11ca7e313834238653302cf0938fb974e21f287",
-  "evaluated_at": "2026-11-27 04:21 ET",
+  "duration": 15.5,
+  "spec_hash": "ef0322ef85237aeda2d343a79bef62af3c3bc3cd821581dc07284372cc6a53a9",
+  "evaluated_at": "2026-11-28 03:58 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
   ],
   "advice": [],
-  "video_sha256": "bd1f17d871edc6ca496a0bbad33eeab7a5f12089c514adad9bf8af3f67b22d9b"
+  "video_sha256": "8cfacac4c83087a11469b64fc1293c0979bc71f60c456a89e00c5edb20eb6d85"
  },
  "gta6-vercetti-portal:short:youtube-en": {
   "slug": "gta6-vercetti-portal",
@@ -3878,6 +4924,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:58 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -3888,7 +4952,7 @@
   "video": "output/gta6-vercetti-portal/gta6-vercetti-portal-short.mp4",
   "duration": 15.3,
   "spec_hash": "72cd8bba0ea9d5f5e5ba97ac6881df63309382fd35f5227d91d1667c637d18e4",
-  "evaluated_at": "2026-11-27 04:21 ET",
+  "evaluated_at": "2026-11-28 03:58 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
@@ -3920,6 +4984,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
    ]
   ],
   "publish": [
@@ -3928,16 +5010,16 @@
   ],
   "title": "GTA 6 esconde un PORTAL al Vice City de 2002 🌴 #GTA6 #Shorts",
   "video": "output/gta6-vercetti-portal/gta6-vercetti-portal-short-es.mp4",
-  "duration": 18.0,
-  "spec_hash": "4f487ec44115ff2b33000e7aedffa96f09fbe61b1e299c70fe88f6645389ef0d",
-  "evaluated_at": "2026-11-27 04:21 ET",
+  "duration": 18.2,
+  "spec_hash": "d4a708c59a4804b5a3440dcc809f8b733121ea8ad61a0772659d34c6866d7fe6",
+  "evaluated_at": "2026-11-28 03:59 ET",
   "blockers": [],
   "reviews": [
    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
    "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
   ],
   "advice": [],
-  "video_sha256": "a5deb80d1ebc620c23e53f4c0c106abbafd1a702f02e5135a3b4d4bc14e98cc0"
+  "video_sha256": "0bf29eb8416e5cfc2941431eba518cc24a506d3fc6de646105934fd5826a5fc7"
  },
  "gta6-map-spanish-words:short:youtube-en": {
   "slug": "gta6-map-spanish-words",
@@ -3962,6 +5044,24 @@
     "QA_PASSED",
     "NEEDS_REVIEW",
     "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "NEEDS_REVIEW",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
    ]
   ],
   "publish": [
@@ -3972,7 +5072,7 @@
   "video": "output/gta6-map-spanish-words/gta6-map-spanish-words-short.mp4",
   "duration": 23.2,
   "spec_hash": "1c78186de34428c0a3758672f3b0c4f3673ab13e399ab5481e3574c262c855f8",
-  "evaluated_at": "2026-11-27 04:21 ET",
+  "evaluated_at": "2026-11-28 03:59 ET",
   "blockers": [],
   "reviews": [
    "facts last re-checked 2026-11-26: re-check within 2 days of the slot"
@@ -3981,5 +5081,169 @@
    "views: Short 'short' is 59 words (~22 s); target 13-20 s (35-55 words), payoff as the last line, last line loops into the first"
   ],
   "video_sha256": "7d793a94b42ac15b86bd8823cae88c69fc9d7af5bc834525e10d5f5446288c17"
+ },
+ "gta6-hunting-where:short:youtube-en": {
+  "slug": "gta6-hunting-where",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-28 03:59 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ]
+  ],
+  "publish": [
+   "2026-12-15",
+   "8:00 AM"
+  ],
+  "title": "GTA 6 hunting: where to start + first $500 🦌 #GTA6 #Shorts",
+  "video": "output/gta6-hunting-where/gta6-hunting-where-short.mp4",
+  "duration": 15.1,
+  "spec_hash": "59e66e233c895ea2c04914ec57f7598c7ce51e6f807bb086d634b3acd2454d64",
+  "evaluated_at": "2026-11-28 03:59 ET",
+  "blockers": [],
+  "reviews": [
+   "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
+  ],
+  "advice": [],
+  "video_sha256": "6957d666f7b05524f99894b9f0d62460a06196e30528554826455046a20241ac"
+ },
+ "gta6-hunting-where:short:youtube-es": {
+  "slug": "gta6-hunting-where",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "BLOCKED",
+  "history": [
+   [
+    "2026-11-28 03:59 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "RENDERED",
+    "BLOCKED",
+    "QA: QC captions: speech matches the captioned script with 29% word error (47 words heard)"
+   ]
+  ],
+  "publish": [
+   "2026-12-13",
+   "7:00 PM"
+  ],
+  "title": "GTA 6: dónde CAZAR y ganar 500 dólares 🦌 #GTA6 #Shorts",
+  "video": "output/gta6-hunting-where/gta6-hunting-where-short-es.mp4",
+  "duration": 18.2,
+  "spec_hash": "91187bbce93ca8584cdce542bd872ec028c276f0c606cb29bab950953e651c86",
+  "evaluated_at": "2026-11-28 03:59 ET",
+  "blockers": [
+   "QA: QC captions: speech matches the captioned script with 29% word error (47 words heard)"
+  ],
+  "reviews": [
+   "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
+  ],
+  "advice": [],
+  "video_sha256": "de0558fb47eb06b9ff5a350527fe9904e24d32c7e2f5544a8683eda260a239f8"
+ },
+ "gta6-fast-travel-skip:short:youtube-en": {
+  "slug": "gta6-fast-travel-skip",
+  "item": "short",
+  "platform": "youtube-en",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-28 03:59 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ]
+  ],
+  "publish": [
+   "2026-12-15",
+   "6:00 PM"
+  ],
+  "title": "GTA 6 fast travel: the $100 skip 🚕 #GTA6 #Shorts",
+  "video": "output/gta6-fast-travel-skip/gta6-fast-travel-skip-short.mp4",
+  "duration": 17.2,
+  "spec_hash": "bcf3c74f6bca4a6a9e96f64e24d8b57a3cf78f5795a7e05e7b22214a6f2e77ef",
+  "evaluated_at": "2026-11-28 03:59 ET",
+  "blockers": [],
+  "reviews": [
+   "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
+  ],
+  "advice": [],
+  "video_sha256": "f9aae0df1ec326461671d3bc8e44d40dbba7e37e637e3e858a162ed89a4886bb"
+ },
+ "gta6-fast-travel-skip:short:youtube-es": {
+  "slug": "gta6-fast-travel-skip",
+  "item": "short",
+  "platform": "youtube-es",
+  "state": "NEEDS_REVIEW",
+  "history": [
+   [
+    "2026-11-28 03:59 ET",
+    "PRODUCED",
+    "RENDERED",
+    "evaluating"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "RENDERED",
+    "QA_PASSED",
+    "technical checks passed"
+   ],
+   [
+    "2026-11-28 03:59 ET",
+    "QA_PASSED",
+    "NEEDS_REVIEW",
+    "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json); facts not re-checked before posting (python -m stud"
+   ]
+  ],
+  "publish": [
+   "2026-12-14",
+   "12:30 PM"
+  ],
+  "title": "GTA 6: viaje RÁPIDO por 100 dólares 🚕 #GTA6 #Shorts",
+  "video": "output/gta6-fast-travel-skip/gta6-fast-travel-skip-short-es.mp4",
+  "duration": 20.7,
+  "spec_hash": "e9770115be0bf5b4f8e223475973420dab66450745ec5c10bbb036c2940c8d02",
+  "evaluated_at": "2026-11-28 03:59 ET",
+  "blockers": [],
+  "reviews": [
+   "no claim ledger (\"claims\": source type, direct or search-summary, independence, confidence, wording; python -m studio.sources episodes/<slug>.json)",
+   "facts not re-checked before posting (python -m studio.approvals factcheck ...)"
+  ],
+  "advice": [],
+  "video_sha256": "e20e8411af6aaddbf3652e05457e85f6fc0b94d252d8bdc310cad10f5bcf4d78"
  }
 }

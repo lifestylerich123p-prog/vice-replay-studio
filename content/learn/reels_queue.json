@@ -447,9 +447,19 @@
   "item": "short"
  },
  {
+  "at": "2026-11-29 08:05",
+  "episode": "episodes/gta6-map-easter-eggs-filter.json",
+  "item": "short"
+ },
+ {
   "at": "2026-11-29 16:00",
   "carousel": "content/carousels/gta6-week-one-numbers.json",
   "note": "Nov 23: teaser for the Sunday hub video (GTA 6 in 10 Numbers, 3:30 PM): post only once that video is public"
+ },
+ {
+  "at": "2026-11-29 18:05",
+  "episode": "episodes/gta6-tattoo-shops-where.json",
+  "item": "short"
  },
  {
   "at": "2026-11-30 14:05",
