@@ -19,6 +19,12 @@
    "step": "render",
    "message": "Renders: gta6-sell-cars-where + gta6-skip-time-sleep (EN+ES), QA 0 blockers; bookings",
    "files": 5
+  },
+  {
+   "at": "2026-11-28T10:24:27.468170+00:00",
+   "step": "report",
+   "message": "Daily run report",
+   "files": 0
   }
  ],
  "files": {
