@@ -16,7 +16,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT = {"location": 35, "secrets": 25, "map_tutorial": 20, "map_scale": 10, "experimental": 10, "gameplay": 0}
+DEFAULT = {"location": 30, "map_tutorial": 5, "map_scale": 5, "tutorial": 25, "secrets": 15, "ranking": 10, "experimental": 10, "gameplay": 0}
 SECRET = re.compile(r"easter egg|secret|secreto|hidden|bigfoot|skunk ape|ufo|ghost|portal|backrooms|silent hill|turtles|"
                     r"red dead|dexter|crab|panther|bear|fox|alligator", re.I)
 
@@ -43,10 +43,15 @@ def category(ep):
     if ep.get("experiment"):
         return "experimental"
     text = " ".join([ep.get("slug", ""), ep.get("short_title") or ""])
+    # owner Nov 28: comparisons/rankings and gameplay tutorials are their own shares
+    if re.search(r"\branked\b|ranking|\btier\b|\bvs\b|versus|compar", text, re.I):
+        return "ranking"
     if SECRET.search(text):
         return "secrets"
     if '"type": "map"' in blob or re.search(r"where|location|d[oó]nde|dealership|shop|store", text, re.I):
         return "location"
+    if re.search(r"how[- ]to|c[oó]mo|tutorial|skip[- ]time|\bguide\b", text, re.I):
+        return "tutorial"
     return "experimental"
 
 

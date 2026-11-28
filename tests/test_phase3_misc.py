@@ -33,7 +33,11 @@ def test_mix_categories():
     assert sum(mix.targets().values()) == 100
     # owner Phase 10 #7: map-scale visualizations are their own category (even when marked as an experiment)
     assert mix.category({"slug": "gta6-map-size-scale", "experiment": True}) == "map_scale"
-    assert mix.targets()["map_scale"] == 10 and mix.targets()["location"] == 35
+    assert mix.targets()["map_scale"] == 5 and mix.targets()["location"] == 30  # owner Nov 28 mix
+    assert mix.targets()["tutorial"] == 25 and mix.targets()["ranking"] == 10
+    assert mix.category({"slug": "gta6-skip-time-sleep", "short_title": "GTA 6 how to skip time"}) == "tutorial"
+    assert mix.category({"slug": "gta-tier-list-maps", "short_title": "GTA maps ranked"}) == "ranking"
+    assert mix.category({"slug": "gta6-sell-cars-where", "short_title": "GTA 6 where to sell stolen cars"}) == "location"
 
 
 def test_xplat_keeps_platforms_separate():

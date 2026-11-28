@@ -51,3 +51,38 @@ One variable per channel, alternating slots so time of day doesn't decide it; th
 Each verified location Short -> map pin + guide section (2+ sources), linked both ways; search terms that bring
 YouTube views become guide FAQs. Clickable routes to the site: channel profile links, the map-secrets long guide
 (related video), Instagram profile link; Shorts descriptions/comments are not clickable.
+
+## Update Nov 28 afternoon (owner: "growth optimization")
+**The winning formula, from our own best post** (TikTok shoe store: 17,445 views, 7 followers, 18.8% full watch;
+YouTube copy 1,204 views, 118% viewed = rewatched): a real search question ("gta 6 shoe store" was our #1 YouTube
+search term); ~12 s in 4 beats; line 1 = the answer with the place name ("...is in Key Lento"); beat 2 = the map card
+on the spot; beat 3 = one useful extra step ("open the map, pick Style, then Footwear"); beat 4 ends mid-sentence so
+it loops; caption = answer + "Save this for when you play 📌". Weaker TikTok posts were 25-40 s news cards with
+0-8% full watch. Mask location (16 s, same pattern) got 416 views in ~4 h. Rule for new location Shorts: 10-18 s,
+answer in the first line, map by second 3, one useful extra, loop ending; no padding segments. Original every time:
+same structure, new verified place; never re-post the same video.
+
+**Mix for future uncommitted production** (config/channel.json content_mix, studio.mix): 40% location + interactive
+map guides (location 30 + map_tutorial 5 + map_scale 5) / 25% gameplay tutorials ("how to") / 15% secrets / 10%
+comparisons + rankings (maps tier list: 337 views in 3 h) / 10% experiments. Booked Shorts stay where they are.
+
+**Internal retention targets** (not platform benchmarks): stayed-to-watch PROXY (engaged views / views, from the API)
+above 45% (now ~38%); average % viewed above 75% (now ~65%); subs per 1,000 engaged views above 0. The proxy is NOT
+Studio's "stayed to watch" number; that one needs a Studio screenshot (/stats). Levers in order: answer first, map pin
+in the first 2 s, 10-18 s length, faster beats, satisfying loop ending. One variable per test (experiments.json).
+
+**Spanish website (no /es/ impressions in 28 days)**: technical checks pass (30 Spanish URLs in the sitemap, robots
+allow, html lang=es, reciprocal hreflang, index,follow, linked from the English home). So it's discovery/ranking, not
+a block. Unknown without Search Console's Pages report: whether Google has indexed them (owner can check Indexing >
+Pages, filter /es/, and request indexing for /es/ and /es/guias/mapa-gta-6/). Next: Spanish pages only where Spanish
+searches exist (search_demand + autocomplete), Spanish YouTube descriptions/profile pointing to /es/, no translated
+doorway pages.
+
+**PS5 Pro guide (176 impressions/7 d, ~position 8-12, 0 clicks)**: queries are "is ps5 pro worth it for gta 6" and
+"gta 6 fps ps5 pro"; title/description already match. Added a sourced "Is GTA 6 PS5 Pro Enhanced?" FAQ (EN + ES;
+4K claims marked as leaks). Re-check its position next week before changing more.
+
+**Gameplay footage (free, legal)**: the only clean source for real demonstrations is the owner's own capture
+(PS5 Create button -> Drive "Gameplay Drop Zone", radio/music off; studio.gameplay pulls it; provenance in
+rights/). Official Rockstar media stays as already allowed (screenshots, official map). Other creators only with
+written permission recorded in rights/registry.json. Never AI footage presented as gameplay, never downloaded clips.

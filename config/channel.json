@@ -98,13 +98,15 @@
     "_note": "Nov 24 owner approved: official screenshots (vetted pool, exact-name first) behind lettering cards in videos; trailer clips stay out"
   },
   "content_mix": {
-    "location": 35,
-    "secrets": 25,
-    "map_tutorial": 20,
-    "map_scale": 10,
+    "location": 30,
+    "map_tutorial": 5,
+    "map_scale": 5,
+    "tutorial": 25,
+    "secrets": 15,
+    "ranking": 10,
     "experimental": 10,
     "gameplay": 0,
-    "_note": "Owner Phase 10 #7 (Nov 26; applied Nov 27 after the verified cycle): while independently licensed gameplay is unavailable, 35% location guides / 25% numbered secrets and discoveries / 20% interactive map tutorials / 10% map-scale visualizations / 10% other controlled experiments. Starting targets, not quotas: adjust from audience results, never drop a format on one video, never invent discoveries to fill a share, never displace approved videos to fix the mix. (Phase 3/4 history: 40/25/15/10/10, then 45/25/0/20/10 without gameplay.)"
+    "_note": "Owner Nov 28 (growth directive, future uncommitted production only): 40% location + interactive map guides (location 30 + map_tutorial 5 + map_scale 5) / 25% useful gameplay tutorials / 15% secrets and discoveries / 10% comparisons and rankings / 10% experiments. Starting hypotheses, adjusted per language from results; never move approved, uploaded or numbered Shorts to fix the mix; never invent discoveries. (History: Phase 10 35/25/20/10/10; Phase 3/4 40/25/15/10/10.)"
   },
   "auto_publish": {
     "on": true,
