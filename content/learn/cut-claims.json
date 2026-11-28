@@ -1,9 +1,22 @@
 {
- "_note": "Claims cut from a video by a fact-check (no 2 independent sources). studio.sitecheck flags any of these phrases on vicereplay.com as a PROBLEM, so the website never keeps what a video had to drop. Add the key phrase when a fact-check cuts a claim; remove an entry only when 2+ independent sources confirm it.",
+ "_note": "Rejected-claims registry (owner Nov 28): claims a fact-check cut from a video or the website. studio.sitecheck flags any 'phrase' on vicereplay.com as a PROBLEM, and video scripts must not reuse them. Each entry keeps the original rejection reason, the evidence checked and the verification date. Reconsider an entry ONLY when credible new evidence appears AND an independent fact-check passes (2+ independent sources, python -m studio.approvals factcheck); then set status 'confirmed', add the new sources and date, and keep the history (never delete an entry silently).",
  "claims": [
-  {"phrase": "Benny Moré", "from": "gta6-little-cuba-es", "date": "2026-11-28", "why": "not confirmed on the GTA 6 soundtrack"},
-  {"phrase": "Robertiko Ramos", "from": "gta6-little-cuba-es", "date": "2026-11-28", "why": "tattoo-artist claim without 2 sources"},
-  {"phrase": "Gloria and Emilio Estefan", "from": "gta6-little-cuba-es", "date": "2026-11-28", "why": "La Ola hosts not confirmed (search Nov 28 found only her music on the tracklist)"},
-  {"phrase": "Gloria y Emilio Estefan", "from": "gta6-little-cuba-es", "date": "2026-11-28", "why": "same, Spanish wording"}
+  {"phrase": "Benny Moré", "status": "rejected", "from": "gta6-little-cuba-es (video)",
+   "claim": "Benny Moré plays on the GTA 6 radio",
+   "why": "no independent source confirms it on the GTA 6 soundtrack",
+   "evidence": "Nov 28 2:04 AM ET re-check (web search, search summaries): Celia Cruz confirmed by GTABase + KeenGamer; no source for Benny Moré",
+   "checked": "2026-11-28"},
+  {"phrase": "Robertiko Ramos", "status": "rejected", "from": "gta6-little-cuba-es (video)",
+   "claim": "GTA 6's tattoos are by Cuban artist Robertiko Ramos",
+   "why": "single-sourced (Cuban news sites quoting each other), no second independent source",
+   "evidence": "Nov 28 2:04 AM ET re-check: no independent confirmation found",
+   "checked": "2026-11-28"},
+  {"phrase": "Gloria and Emilio Estefan", "status": "rejected", "from": "gta6-little-cuba-es (video) + /guides/gta-6-radio-stations/ (website)",
+   "claim": "Gloria and Emilio Estefan host Radio La Ola",
+   "why": "hosting not confirmed; sources only show Gloria Estefan's music on La Ola's tracklist",
+   "evidence": "Nov 28 10:45 AM ET web search: GTABase La Ola page + GTA Wiki list her song, no host credit; Red Bull notes Rockstar hasn't confirmed some station details. Website cell changed to 'Not confirmed yet'",
+   "checked": "2026-11-28"},
+  {"phrase": "Gloria y Emilio Estefan", "status": "rejected", "from": "gta6-little-cuba-es (Spanish description)",
+   "claim": "same as above, Spanish wording", "why": "same as above", "evidence": "same as above", "checked": "2026-11-28"}
  ]
 }
