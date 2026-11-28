@@ -1,0 +1,17 @@
+{
+ "run": "daily",
+ "branch": "claude/daily-2026-11-28",
+ "checkpoints": [
+  {
+   "at": "2026-11-28T10:16:44.701844+00:00",
+   "step": "episode",
+   "message": "Episodes: gta6-sell-cars-where + gta6-skip-time-sleep",
+   "files": 3
+  }
+ ],
+ "files": {
+  "content/learn/opportunities.json": "b3280cec3f93008eba62615c518ce2fa3b56417d09ae59781a3525d52c4bd6a1",
+  "episodes/gta6-sell-cars-where.json": "9511ee68d9302afea300c847aae8317a53528c358d1973cc32f84488f40dc423",
+  "episodes/gta6-skip-time-sleep.json": "038d6038bda6b1b73adf43ad53da6d84be5a20a1dc0c1fb5c97fae26109c758f"
+ }
+}
